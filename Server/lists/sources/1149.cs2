@@ -1,0 +1,138 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_1149(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9) {
+	flow_0:
+		IF (a3 == a6) 
+			GOTO	flow_1
+		GOTO	flow_2
+	flow_1:
+		IF (a3 == 3) 
+			GOTO	flow_3
+	flow_2:
+		IF (a4 == cs2method_10614()) 
+			GOTO	flow_3
+		GOTO	flow_4
+	flow_3:
+		cs2method_10520(15458492, a2);
+		cs2method_10758(idx17mapData('i', 'd', 736, a6), a5);
+		cs2method_20680(new function<script_3933>(int a0,int a1,int a2,int a3,int a4,int a5) {
+			cs2method_10520(a4, a2);
+			if (a3 == 1) {
+				cs2method_10758(idx17mapData('i', 'd', 3480, a0), a5);
+			} else if (a1 == a0) {
+				cs2method_10758(idx17mapData('i', 'd', 736, a0), a5);
+			} else {
+				cs2method_10758(idx17mapData('i', 'd', 735, a0), a5);
+			}
+			return;
+		}, new WidgetPointer(a2), 15458492, 1, a6, new WidgetPointer(a5), a3, "Ii1iIi", new WidgetPointer(a1));
+		cs2method_20750(new function<script_3933>(int a0,int a1,int a2,int a3,int a4,int a5) {
+			cs2method_10520(a0, a3);
+			if (a4 == 1) {
+				cs2method_10758(idx17mapData('i', 'd', 3480, a1), a2);
+			} else if (a5 == a1) {
+				cs2method_10758(idx17mapData('i', 'd', 736, a1), a2);
+			} else {
+				cs2method_10758(idx17mapData('i', 'd', 735, a1), a2);
+			}
+			return;
+		}, new WidgetPointer(a2), 11709087, 0, a6, new WidgetPointer(a5), a3, "Ii1iIi", new WidgetPointer(a1));
+		GOTO	flow_5
+	flow_4:
+		cs2method_10520(11709087, a2);
+		cs2method_10758(idx17mapData('i', 'd', 735, a6), a5);
+		cs2method_20680(new function<script_3933>(int a0,int a1,int a2,int a3,int a4,int a5) {
+			cs2method_10520(a4, a0);
+			if (a3 == 1) {
+				cs2method_10758(idx17mapData('i', 'd', 3480, a1), a2);
+			} else if (a5 == a1) {
+				cs2method_10758(idx17mapData('i', 'd', 736, a1), a2);
+			} else {
+				cs2method_10758(idx17mapData('i', 'd', 735, a1), a2);
+			}
+			return;
+		}, new WidgetPointer(a2), 15458492, 1, a6, new WidgetPointer(a5), a3, "Ii1iIi", new WidgetPointer(a1));
+		cs2method_20750(new function<script_3933>(int a0,int a1,int a2,int a3,int a4,int a5) {
+			cs2method_10520(a0, a2);
+			if (a4 == 1) {
+				cs2method_10758(idx17mapData('i', 'd', 3480, a1), a3);
+			} else if (a5 == a1) {
+				cs2method_10758(idx17mapData('i', 'd', 736, a1), a3);
+			} else {
+				cs2method_10758(idx17mapData('i', 'd', 735, a1), a3);
+			}
+			return;
+		}, new WidgetPointer(a2), 11709087, 0, a6, new WidgetPointer(a5), a3, "Ii1iIi", new WidgetPointer(a1));
+	flow_5:
+		cs2method_20390(new function<script_2698>(int a0,int a1,int a2,int a3,int a4) {
+			int v2;
+			int v0 = cs2method_10614();
+			int v3 = 0;
+			if (a4 == 1) {
+				v2 = 2;
+			} else if (a4 == 2) {
+				v2 = 0;
+			} else {
+				v2 = v0;
+			}
+			if (a4 == cs2method_11055() && v2 == v0) {
+				return;
+			}
+			int v1 = -1;
+			if (a4 != 3) {
+				int v4 = v2;
+				cs2method_11071(2);
+				cs2method_10827(2);
+				if (cs2_configs['cfg4132'] != 5) {
+					script_709(cs2_configs['cfg4132'], v4);
+					script_8885(cs2_configs['cfg4132']);
+				} else {
+					cs2method_10470(v4);
+				}
+				int v5 = cs2method_10614();
+				if (v4 != v5) {
+					script_2694("RuneScape was unable to enter that display mode." + "<br>" + "<br>" + "Please visit our website for more information.", a2, "", 0, "");
+					script_2596(a0, v5, a1, a3, a2);
+					return;
+				}
+				script_2596(a0, v5, a1, a3, a2);
+				if (v5 == 2) {
+					cs2_configs['cfg994'] = 2;
+				}
+				return;
+			}
+			if (cs2method_10210() == 0) {
+				script_2694("Fullscreen mode is only available to RuneScape members." + "<br>" + "<br>" + "Please visit the RuneScape website to learn about other benefits of membership.", a2, "Members' benefits", 0, "members_benefits.ws");
+				return;
+			}
+			if (cs2method_10501() > cs2_configs['cfg178']) {
+				int v4 = cs2_configs['cfg178'];
+				opc_struct10844(2,0,0) v5 = cs2method_10844(v4);
+				if (cs2method_10931(v5.intpart_0, v5.intpart_1) == 1) {
+					if (a2 == 4) {
+						script_7932();
+					}
+					script_2596(a0, a4, a1, a3, a2);
+					script_2700(2, a2, 0, 0);
+					return;
+				}
+			}
+			if (a2 == 1) {
+				cs2method_10810("Unable to enter fullscreen mode at that resolution.");
+			}
+			script_2596(a0, a4, a1, a3, a2);
+			return;
+		}, a6, a7, a8, a9, a0, "iiiii", new WidgetPointer(a1));
+		return;
+}

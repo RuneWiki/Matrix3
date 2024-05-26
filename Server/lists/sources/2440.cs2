@@ -1,0 +1,21 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2440() {
+	int v0 = cs2method_10968(cs2_configs['cfg819'], 2);
+	if (v0 < 1) {
+		cs2method_10026(983057, "Catch: Nothing");
+	} else {
+		cs2method_10026(983057, "Catch: " + (string)cs2method_10379(v0) + " Fish");
+	}
+	return;
+}

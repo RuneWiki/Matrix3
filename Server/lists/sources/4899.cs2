@@ -1,0 +1,78 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4899(int a0) {
+	client_configs['cfg1978'].bitcfg6679 = a0;
+	script_4935();
+	script_4940();
+	switch (a0) {
+		case 0:
+			cs2method_10467(1, 82640943);
+			cs2method_10467(1, 82444394);
+			cs2method_10467(1, 82444393);
+			cs2method_10467(0, 82509829);
+			cs2method_10026(82509977, "");
+			cs2method_10467(1, 82509974);
+			break;
+		case 1:
+			cs2method_10467(0, 82640943);
+			cs2method_10467(1, 82444394);
+			cs2method_10467(1, 82444393);
+			cs2method_10026(82641162, "");
+			cs2method_10467(1, 82641159);
+			cs2method_10467(1, 82509829);
+			script_5009();
+			script_5011();
+			break;
+		case 2:
+			script_4860();
+			script_4863();
+			script_4859();
+			cs2method_10467(1, 82640943);
+			cs2method_10467(0, 82444394);
+			cs2method_10467(0, 82444393);
+			cs2method_10026(82444485, "");
+			cs2method_10467(1, 82444482);
+			cs2method_10467(1, 82509829);
+			script_5009();
+			break;
+		case 4:
+			cs2method_10467(0, 82640943);
+			cs2method_10467(1, 82444394);
+			cs2method_10467(1, 82444393);
+			cs2method_10026(82641162, "Please select an available spot from the map.");
+			cs2method_10467(0, 82641159);
+			cs2method_10467(1, 82509829);
+			script_5010();
+			script_4935();
+			break;
+		case 3:
+			cs2method_10467(0, 82640943);
+			cs2method_10467(1, 82444394);
+			cs2method_10467(1, 82444393);
+			cs2method_10026(82641162, "Please select a spot from the map.");
+			cs2method_10467(0, 82641159);
+			cs2method_10467(1, 82509829);
+			script_5010();
+			break;
+		case 5:
+			cs2method_10467(1, 82640943);
+			cs2method_10467(0, 82444394);
+			cs2method_10467(0, 82444393);
+			cs2method_10026(82444485, "Please select an available spot from the map.");
+			cs2method_10467(0, 82444482);
+			cs2method_10467(1, 82509829);
+			script_5009();
+	}
+	script_4853();
+	return;
+}

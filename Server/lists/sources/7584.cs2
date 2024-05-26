@@ -1,0 +1,91 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7584(int a0,int a1,int a2) {
+	int v3;
+	int v0;
+	int v1 = 0;
+	int v2 = 0;
+	switch (a2) {
+		case 10747907:
+			if (client_configs['cfg3527'].bitcfg18021 > 140 && a0 == 0) {
+				return;
+			}
+			v3 = 35;
+			v0 = client_configs['cfg3527'].bitcfg18080;
+			break;
+		case 10747908:
+			if (client_configs['cfg3527'].bitcfg18021 > 150 && a0 == 0) {
+				return;
+			}
+			v3 = 148;
+			v0 = client_configs['cfg3527'].bitcfg18081;
+			break;
+		case 10747909:
+			if (client_configs['cfg3527'].bitcfg18021 > 160 && a0 == 0) {
+				return;
+			}
+			v3 = 261;
+			v0 = client_configs['cfg3527'].bitcfg18082;
+			break;
+		case 10747910:
+			if (client_configs['cfg3527'].bitcfg18021 > 170 && a0 == 0) {
+				return;
+			}
+			v3 = 374;
+			v0 = client_configs['cfg3527'].bitcfg18083;
+			break;
+		default:
+			return;
+	}
+	switch (a1) {
+		case 10747917:
+			if (v0 == 1 && a0 == 0) {
+				return;
+			}
+			break;
+		case 10747918:
+			if (v0 == 2 && a0 == 0) {
+				return;
+			}
+			break;
+		case 10747919:
+			if (v0 == 4 && a0 == 0) {
+				return;
+			}
+			break;
+		case 10747920:
+			if (v0 == 3 && a0 == 0) {
+				return;
+			}
+	}
+	cs2method_10112(v3, 63, 0, 0, a1);
+	if (a0 == 1) {
+		return;
+	}
+	switch (v0) {
+		case 0:
+			return;
+		case 1:
+			script_7585(10747917);
+			break;
+		case 2:
+			script_7585(10747918);
+			break;
+		case 4:
+			script_7585(10747919);
+			break;
+		case 3:
+			script_7585(10747920);
+	}
+	return;
+}

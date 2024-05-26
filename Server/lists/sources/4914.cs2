@@ -1,0 +1,211 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+object script_4914(int a0) {
+	int v6 = script_4824(a0);
+	object v4 = "";
+	int v3 = 0;
+	int v7 = 0;
+	int v5 = 0;
+	switch (a0) {
+		case 21:
+			v7 = clan_chat_configs['cfg2329'].bitcfg6709;
+			v3 = clan_chat_configs['cfg2329'].bitcfg6710;
+			v5 = clan_chat_configs['cfg2335'].bitcfg6714;
+			break;
+		case 22:
+			v7 = clan_chat_configs['cfg2339'].bitcfg6717;
+			v3 = clan_chat_configs['cfg2339'].bitcfg6718;
+			v5 = clan_chat_configs['cfg2345'].bitcfg6722;
+			break;
+		case 23:
+			v7 = clan_chat_configs['cfg2349'].bitcfg6725;
+			v3 = clan_chat_configs['cfg2349'].bitcfg6726;
+			v5 = clan_chat_configs['cfg2355'].bitcfg6730;
+			break;
+		case 24:
+			v7 = clan_chat_configs['cfg2359'].bitcfg6733;
+			v3 = clan_chat_configs['cfg2359'].bitcfg6734;
+			v5 = clan_chat_configs['cfg2365'].bitcfg6738;
+			break;
+		case 25:
+			v7 = clan_chat_configs['cfg2369'].bitcfg6741;
+			v3 = clan_chat_configs['cfg2369'].bitcfg6742;
+			v5 = clan_chat_configs['cfg2375'].bitcfg6746;
+			break;
+		case 26:
+			v7 = clan_chat_configs['cfg2379'].bitcfg6749;
+			v3 = clan_chat_configs['cfg2379'].bitcfg6750;
+			v5 = clan_chat_configs['cfg2385'].bitcfg6754;
+			break;
+		case 27:
+			v7 = clan_chat_configs['cfg2389'].bitcfg6757;
+			v3 = clan_chat_configs['cfg2389'].bitcfg6758;
+			v5 = clan_chat_configs['cfg2395'].bitcfg6762;
+			break;
+		case 28:
+			v7 = clan_chat_configs['cfg2399'].bitcfg6765;
+			v3 = clan_chat_configs['cfg2399'].bitcfg6766;
+			v5 = clan_chat_configs['cfg2405'].bitcfg6770;
+			break;
+		case 31:
+			v7 = clan_chat_configs['cfg2459'].bitcfg6813;
+			v3 = clan_chat_configs['cfg2459'].bitcfg6814;
+			v5 = clan_chat_configs['cfg2465'].bitcfg6818;
+			break;
+		case 32:
+			v7 = clan_chat_configs['cfg2469'].bitcfg6821;
+			v3 = clan_chat_configs['cfg2469'].bitcfg6822;
+			v5 = clan_chat_configs['cfg2475'].bitcfg6826;
+			break;
+		case 33:
+			v7 = clan_chat_configs['cfg2479'].bitcfg6829;
+			v3 = clan_chat_configs['cfg2479'].bitcfg6830;
+			v5 = clan_chat_configs['cfg2485'].bitcfg6834;
+			break;
+		case 34:
+			v7 = clan_chat_configs['cfg2489'].bitcfg6837;
+			v3 = clan_chat_configs['cfg2489'].bitcfg6838;
+			v5 = clan_chat_configs['cfg2495'].bitcfg6842;
+			break;
+		case 35:
+			v7 = clan_chat_configs['cfg2499'].bitcfg6845;
+			v3 = clan_chat_configs['cfg2499'].bitcfg6846;
+			v5 = clan_chat_configs['cfg2505'].bitcfg6850;
+			break;
+		case 41:
+			v7 = clan_chat_configs['cfg2409'].bitcfg6773;
+			v3 = clan_chat_configs['cfg2409'].bitcfg6774;
+			v5 = clan_chat_configs['cfg2415'].bitcfg6778;
+			break;
+		case 42:
+			v7 = clan_chat_configs['cfg2419'].bitcfg6781;
+			v3 = clan_chat_configs['cfg2419'].bitcfg6782;
+			v5 = clan_chat_configs['cfg2425'].bitcfg6786;
+			break;
+		case 43:
+			v7 = clan_chat_configs['cfg2429'].bitcfg6789;
+			v3 = clan_chat_configs['cfg2429'].bitcfg6790;
+			v5 = clan_chat_configs['cfg2435'].bitcfg6794;
+			break;
+		case 44:
+			v7 = clan_chat_configs['cfg2439'].bitcfg6797;
+			v3 = clan_chat_configs['cfg2439'].bitcfg6798;
+			v5 = clan_chat_configs['cfg2445'].bitcfg6802;
+			break;
+		case 45:
+			v7 = clan_chat_configs['cfg2449'].bitcfg6805;
+			v3 = clan_chat_configs['cfg2449'].bitcfg6806;
+			v5 = clan_chat_configs['cfg2455'].bitcfg6810;
+			break;
+		case 51:
+			v7 = clan_chat_configs['cfg2509'].bitcfg6853;
+			v3 = clan_chat_configs['cfg2509'].bitcfg6854;
+			v5 = clan_chat_configs['cfg2515'].bitcfg6858;
+			break;
+		case 61:
+			v7 = clan_chat_configs['cfg2845'].bitcfg6861;
+			v3 = clan_chat_configs['cfg2845'].bitcfg6862;
+			v5 = clan_chat_configs['cfg2851'].bitcfg6866;
+			break;
+		case 100:
+			v7 = clan_chat_configs['cfg2209'].bitcfg6885;
+			v3 = clan_chat_configs['cfg2209'].bitcfg6886;
+			v5 = clan_chat_configs['cfg2215'].bitcfg6890;
+			break;
+		case 101:
+			v7 = clan_chat_configs['cfg2219'].bitcfg6893;
+			v3 = clan_chat_configs['cfg2219'].bitcfg6894;
+			v5 = clan_chat_configs['cfg2225'].bitcfg6898;
+			break;
+		case 102:
+			v7 = clan_chat_configs['cfg2239'].bitcfg6909;
+			v3 = clan_chat_configs['cfg2239'].bitcfg6910;
+			v5 = clan_chat_configs['cfg2245'].bitcfg6914;
+			break;
+		case 103:
+			v7 = clan_chat_configs['cfg2189'].bitcfg6869;
+			v3 = clan_chat_configs['cfg2189'].bitcfg6870;
+			v5 = clan_chat_configs['cfg2195'].bitcfg6874;
+			break;
+		case 104:
+			v7 = clan_chat_configs['cfg2229'].bitcfg6901;
+			v3 = clan_chat_configs['cfg2229'].bitcfg6902;
+			v5 = clan_chat_configs['cfg2235'].bitcfg6906;
+			break;
+		case 105:
+			v7 = clan_chat_configs['cfg2199'].bitcfg6877;
+			v3 = clan_chat_configs['cfg2199'].bitcfg6878;
+			v5 = clan_chat_configs['cfg2205'].bitcfg6882;
+			break;
+		case 106:
+			v7 = clan_chat_configs['cfg2259'].bitcfg6925;
+			v3 = clan_chat_configs['cfg2259'].bitcfg6926;
+			v5 = clan_chat_configs['cfg2265'].bitcfg6930;
+			break;
+		case 107:
+			v7 = clan_chat_configs['cfg2269'].bitcfg6933;
+			v3 = clan_chat_configs['cfg2269'].bitcfg6934;
+			v5 = clan_chat_configs['cfg2275'].bitcfg6938;
+			break;
+		case 108:
+			v7 = clan_chat_configs['cfg2279'].bitcfg6941;
+			v3 = clan_chat_configs['cfg2279'].bitcfg6942;
+			v5 = clan_chat_configs['cfg2285'].bitcfg6946;
+			break;
+		case 109:
+			v7 = clan_chat_configs['cfg2249'].bitcfg6917;
+			v3 = clan_chat_configs['cfg2249'].bitcfg6918;
+			v5 = clan_chat_configs['cfg2255'].bitcfg6922;
+			break;
+		case 110:
+			v7 = clan_chat_configs['cfg2289'].bitcfg6949;
+			v3 = clan_chat_configs['cfg2289'].bitcfg6950;
+			v5 = clan_chat_configs['cfg2295'].bitcfg6954;
+			break;
+		case 111:
+			v7 = clan_chat_configs['cfg2299'].bitcfg6957;
+			v3 = clan_chat_configs['cfg2299'].bitcfg6958;
+			v5 = clan_chat_configs['cfg2305'].bitcfg6962;
+			break;
+		case 112:
+			v7 = clan_chat_configs['cfg2309'].bitcfg6965;
+			v3 = clan_chat_configs['cfg2309'].bitcfg6966;
+			v5 = clan_chat_configs['cfg2315'].bitcfg6970;
+			break;
+		case 113:
+			v7 = clan_chat_configs['cfg2319'].bitcfg6973;
+			v3 = clan_chat_configs['cfg2319'].bitcfg6974;
+			v5 = clan_chat_configs['cfg2325'].bitcfg6978;
+	}
+	if (v7 <= 0) {
+		return "empty customisation";
+	}
+	int v1 = idx17mapData('i', 'g', 4043, v7);
+	if (v1 == -1) {
+		return "";
+	}
+	int v0 = idx17mapData('i', 'g', v1, v3);
+	if (v0 == -1) {
+		return "";
+	}
+	int v8 = idx17mapData('i', 'g', v0, 1);
+	if (v8 == -1) {
+		return "";
+	}
+	int v2 = idx17mapData('i', 'J', v8, v5);
+	if (v2 == -1) {
+		return "";
+	}
+	object v9 = idx22mapAttribute(v2, 1566);
+	return v9;
+}

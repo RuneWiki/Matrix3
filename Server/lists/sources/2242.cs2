@@ -1,0 +1,67 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2242() {
+	cs2method_10567(27502, 3, 0);
+	cs2method_10026(60751894, "Turns taken score: " + (string)cs2method_10379(client_configs['cfg2948']) + " x 101 = " + (string)cs2method_10379(cs2method_10051(client_configs['cfg2948'], 101)));
+	cs2method_10026(60751898, "Resources spare: " + (string)cs2method_10379(cs2method_10060(client_configs['cfg2962'], cs2method_10060(client_configs['cfg2961'], client_configs['cfg2960']))) + " x -10 = -" + (string)cs2method_10379(cs2method_10051(cs2method_10060(client_configs['cfg2962'], cs2method_10060(client_configs['cfg2961'], client_configs['cfg2960'])), 10)));
+	if (client_configs['cfg2948'] < 16) {
+		cs2method_10026(60751899, "Completed within turn limit: -100");
+	} else {
+		cs2method_10026(60751899, "Not completed within turn limit: 0");
+	}
+	cs2method_10026(60751900, "Workers employed: " + (string)cs2method_10379(client_configs['cfg2955']) + " x -10 = -" + (string)cs2method_10379(cs2method_10051(client_configs['cfg2955'], 10)));
+	cs2method_10026(60751904, "Turns taken: " + (string)cs2method_10379(client_configs['cfg2948']));
+	if (client_configs['cfg2943'].bitcfg14974 == 0) {
+		cs2method_10026(60751895, "Oven not repaired: 50");
+	} else {
+		cs2method_10026(60751895, "Oven repaired: 0");
+	}
+	if (client_configs['cfg2943'].bitcfg14976 == 0) {
+		cs2method_10026(60751896, "Conveyor not repaired: 50");
+	} else {
+		cs2method_10026(60751896, "Conveyor repaired: 0");
+	}
+	if (client_configs['cfg2943'].bitcfg14975 == 0) {
+		cs2method_10026(60751897, "Painter not repaired: 50");
+	} else {
+		cs2method_10026(60751897, "Painter repaired: 0");
+	}
+	int v1 = 0;
+	int v2 = cs2method_10051(client_configs['cfg2948'], 101);
+	if (client_configs['cfg2943'].bitcfg14975 == 0) {
+		v2 = cs2method_10060(v2, 50);
+	}
+	if (client_configs['cfg2943'].bitcfg14974 == 0) {
+		v2 = cs2method_10060(v2, 50);
+	}
+	if (client_configs['cfg2943'].bitcfg14976 == 0) {
+		v2 = cs2method_10060(v2, 50);
+	}
+	int v0 = cs2method_10461(v2, cs2method_10051(cs2method_10060(client_configs['cfg2962'], cs2method_10060(client_configs['cfg2961'], client_configs['cfg2960'])), 10));
+	if (client_configs['cfg2948'] < 16) {
+		v0 = cs2method_10461(v0, 100);
+	}
+	int v3 = cs2method_10461(v0, cs2method_10051(client_configs['cfg2955'], 10));
+	if (v3 < 0) {
+		v3 = 0;
+	}
+	if (v3 > 32768) {
+		v3 = 32768;
+	}
+	if (v3 == client_configs['cfg2944'].bitcfg14989) {
+		cs2method_10026(60751903, "Final score: " + (string)cs2method_10379(v3) + " (New best score)");
+	} else {
+		cs2method_10026(60751903, "Final score: " + (string)cs2method_10379(v3));
+	}
+	return;
+}

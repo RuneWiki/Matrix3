@@ -1,0 +1,80 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1387() {
+	int v14 = 61341703;
+	int v13 = 61341705;
+	int v34 = 61341704;
+	int v24 = 61341719;
+	int v32 = 61341720;
+	int v33 = 61341721;
+	cs2method_10283(0, 0, 1, 1, v14);
+	int v30 = cs2method_10924(7674);
+	int v37 = cs2method_10236(v14);
+	int v21 = cs2method_10823(v14);
+	int v8 = 60;
+	int v18 = cs2method_10060(27, 4);
+	int v5 = 0;
+	int v10 = 0;
+	int v17 = 0;
+	int v7 = 0;
+	int v12 = 0;
+	int v11 = v37;
+	int v2 = v21;
+	int v25 = v8;
+	int v9 = v18;
+	int v20 = 16;
+	int v29 = v30;
+	script_1899_struct(5,0,0) v3 = script_1899(v11, v2, v25, v9, v20, v29);
+	int v22 = v3.intpart_4;
+	int v0 = v3.intpart_3;
+	int v38 = v3.intpart_2;
+	int v6 = v3.intpart_1;
+	int v1 = v3.intpart_0;
+	int v15 = cs2method_10051(v18, v1);
+	if (v22 == 1) {
+		cs2method_10283(16, 0, 1, 1, v14);
+	} else {
+		cs2method_10273(v13);
+	}
+	globalarray_0 = new int[v6];
+	for (int v19 = 0; v19 < v6; v19 = cs2method_10060(v19, 1)) {
+		globalarray_0[v19] = script_8108(v38, v0, v19);
+	}
+	int v26 = 0;
+	int v35 = 0;
+	if (v22 == 1) {
+		cs2method_11130(0, v15, v14);
+		script_31(v13, v14, 792, 789, 790, 791, 773, 788);
+	} else {
+		cs2method_11130(0, 0, v14);
+	}
+	for (int v31 = 0, int v28 = 0, int v4 = 0, int v16 = 0, int v23 = 0; v31 < v30; v31 = cs2method_10060(v31, 1)) {
+		int v40 = cs2method_10038(v31, v6);
+		int v39 = cs2method_10968(v31, v6);
+		int v36 = globalarray_0[v40];
+		int v27 = cs2method_10060(cs2method_10051(v39, v18), 4);
+		if (cs2method_11038(v34, v31) == 1) {
+			cs2method_10063(v36, v27, 0, 0);
+		}
+		if (cs2method_11038(v24, v31) == 1) {
+			cs2method_10063(v36, v27, 0, 0);
+		}
+		if (cs2method_11038(v32, v31) == 1) {
+			cs2method_10063(cs2method_10060(v36, 25), cs2method_10060(v27, 2), 0, 0);
+		}
+		if (cs2method_11038(v33, v31) == 1) {
+			cs2method_10063(cs2method_10060(v36, 40), cs2method_10060(v27, 14), 0, 0);
+		}
+	}
+	return;
+}

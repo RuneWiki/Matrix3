@@ -1,0 +1,60 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_8830_struct(2,0,0) script_8830(int a0,int a1) {
+	int v10 = 0;
+	int v15 = 0;
+	switch (cs2method_10262()) {
+		case 0:
+			int v2 = a1;
+			int v7 = a0;
+			script_8831_struct(2,0,0) v1 = script_8831(v2, v7);
+			v15 = v1.intpart_1;
+			v10 = v1.intpart_0;
+			break;
+		case 2:
+			int v11 = a1;
+			int v3 = a0;
+			script_8832_struct(2,0,0) v14 = script_8832(v11, v3);
+			v15 = v14.intpart_1;
+			v10 = v14.intpart_0;
+			break;
+		case 1:
+			int v13 = a1;
+			int v0 = a0;
+			script_8833_struct(2,0,0) v5 = script_8833(v13, v0);
+			v15 = v5.intpart_1;
+			v10 = v5.intpart_0;
+			break;
+		case 6:
+			int v12 = a1;
+			int v9 = a0;
+			script_8834_struct(2,0,0) v4 = script_8834(v12, v9);
+			v15 = v4.intpart_1;
+			v10 = v4.intpart_0;
+			break;
+		case 3:
+			int v6 = a1;
+			int v16 = a0;
+			script_8835_struct(2,0,0) v8 = script_8835(v6, v16);
+			v15 = v8.intpart_1;
+			v10 = v8.intpart_0;
+	}
+	if (cs2method_10262() != 0 && v10 == 0) {
+		int v19 = a1;
+		int v18 = a0;
+		script_8831_struct(2,0,0) v17 = script_8831(v19, v18);
+		v15 = v17.intpart_1;
+		v10 = v17.intpart_0;
+	}
+	return new script_8830_struct(v10, v15);
+}

@@ -1,0 +1,18 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_2148(int a0,int a1) {
+	int v1 = idx17mapData('i', 'J', 169, a0);
+	int v0 = idx17mapData('i', 'J', idx22mapAttribute(v1, 61), a1);
+	cs2_configs['cfg698'] = script_1432();
+	return script_2149(v0);
+}

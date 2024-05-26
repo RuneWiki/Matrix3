@@ -1,0 +1,51 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2829() {
+	if (cs2method_10133() < cs2_configs['cfg1092']) {
+		return;
+	}
+	cs2_configs['cfg1092'] = cs2method_10060(cs2method_10133(), 5);
+	switch (cs2method_10769(59375988)) {
+		case 4107:
+			cs2method_10758(4108, 59375988);
+			break;
+		case 4108:
+			cs2method_10758(4109, 59375988);
+			break;
+		case 4109:
+			cs2method_10758(4110, 59375988);
+			break;
+		case 4110:
+			cs2method_10758(4111, 59375988);
+			break;
+		case 4111:
+			cs2method_10758(4112, 59375988);
+			break;
+		case 4112:
+			cs2method_10758(4113, 59375988);
+			break;
+		case 4113:
+			cs2method_10758(4114, 59375988);
+			break;
+		case 4114:
+			cs2method_10758(4107, 59375988);
+			break;
+		default:
+			cs2method_10758(4107, 59375988);
+	}
+	cs2_configs['cfg1773'] = cs2method_10060(cs2_configs['cfg1773'], 1);
+	if (cs2_configs['cfg1773'] >= 2000) {
+		script_4015();
+	}
+	return;
+}

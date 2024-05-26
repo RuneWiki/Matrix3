@@ -1,0 +1,361 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5891(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11) {
+	object v19;
+	int v20 = 0;
+	int v0 = 0;
+	int v12 = -1;
+	int v5 = 0;
+	int v14 = 0;
+	object v9 = "";
+	int v3 = idx22mapAttribute(21332, 1379);
+	int v8 = idx22mapAttribute(21332, 1380);
+	int v10 = idx22mapAttribute(21332, 1381);
+	int v17 = 0;
+	int v16 = -1;
+	cs2method_10467(1, 36831260);
+	cs2method_10273(a11);
+	cs2method_10273(a2);
+	cs2method_10273(a4);
+	cs2method_10273(a5);
+	object v18 = "";
+	while (idx17mapData('i', 'i', 8561, v20) != -1) {
+		int v21 = cs2method_10805(cs2method_10236(a11), 20280, idx17mapData('i', 's', 8562, v20));
+		int v22 = cs2method_10060(cs2method_10051(15, v21), 10);
+		cs2method_10606(a11, 4, v20);
+		cs2method_10013(0, 20, 1, 0);
+		cs2method_10797(idx17mapData('i', 's', 8562, v20));
+		cs2method_10692(17814);
+		cs2method_11105(0, 0, 0);
+		cs2method_10811(16763653);
+		cs2method_10606(a0, 5, v20);
+		if (script_5888(v20) == 1) {
+			v19 = "Click here to deselect all messages in this section.";
+			int v21 = 18542;
+			cs2method_10310(18543);
+			cs2method_20703(new function<script_5336>(int a0,int a1,int a2) {
+				if (cs2method_11038(a1, a2) == 1) {
+					cs2method_10310(a0);
+				}
+				return;
+			}, new WidgetPointer(-32768,3), -2147483643, v21, "Iid");
+			cs2method_10057(1, "Deselect All");
+		} else {
+			v19 = "Click here to select all messages in this section.";
+			int v21 = 18543;
+			cs2method_10310(18542);
+			cs2method_20703(new function<script_5336>(int a0,int a1,int a2) {
+				if (cs2method_11038(a0, a2) == 1) {
+					cs2method_10310(a1);
+				}
+				return;
+			}, new WidgetPointer(-32768,3), -2147483643, v21, "Iid");
+			cs2method_10057(1, "Select All");
+		}
+		cs2method_20353(new function<script_8799>(int a0,object a1,int a2) {
+			script_8800(a2, a0, a1);
+			return;
+		}, (string)v19, new WidgetPointer(a0), v20, "sIi");
+		cs2method_10013(18, 18, 0, 0);
+		v20 = cs2method_10060(v20, 1);
+	}
+	int v2 = 0;
+	while (idx17mapData('i', 'i', 8559, v0) != -1) {
+		int v4 = idx17mapData('i', 'i', 8559, v0);
+		int v7 = idx17mapData('i', 'J', 8560, v4);
+		if (v7 != -1) {
+			object v21 = idx22mapAttribute(v7, 4157);
+			int v25 = cs2method_10805(cs2method_10236(a2), 20452, v21);
+			cs2method_10606(a8, 3, v0);
+			cs2method_10238(1);
+			cs2method_10013(0, cs2method_10060(cs2method_11048(20, cs2method_10051(12, v25)), 4), 1, 0);
+			cs2method_10606(a4, 5, v0);
+			if (script_5886(v4) == 1) {
+				int v26 = 18542;
+				cs2method_10310(18543);
+				cs2method_20703(new function<script_5336>(int a0,int a1,int a2) {
+					if (cs2method_11038(a1, a2) == 1) {
+						cs2method_10310(a0);
+					}
+					return;
+				}, new WidgetPointer(-32768,3), -2147483643, v26, "Iid");
+			} else {
+				int v26 = 18543;
+				cs2method_10310(18542);
+				cs2method_20703(new function<script_5336>(int a0,int a1,int a2) {
+					if (cs2method_11038(a0, a1) == 1) {
+						cs2method_10310(a2);
+					}
+					return;
+				}, new WidgetPointer(-32768,3), -2147483643, v26, "Iid");
+			}
+			cs2method_10013(18, 18, 0, 0);
+			cs2method_10057(1, "Select");
+			cs2method_10606(a3, 5, v0);
+			cs2method_10013(20, 20, 0, 0);
+			cs2method_10310(v3);
+			cs2method_20674(new function<script_5892>(int a0,int a1,int a2,int a3) {
+				int v2 = idx22mapAttribute(21333, 1379);
+				int v0 = idx22mapAttribute(21333, 1380);
+				int v1 = idx22mapAttribute(21333, 1381);
+				if (cs2method_11038(a3, a1) == 1) {
+					cs2method_10310(v2);
+				}
+				if (cs2method_11038(a2, a1) == 1) {
+					cs2method_10310(v0);
+				}
+				if (cs2method_11038(a0, a1) == 1) {
+					cs2method_10310(v1);
+				}
+				return;
+			}, new WidgetPointer(a3), new WidgetPointer(a5), new WidgetPointer(a1), v0, "IIIi");
+			cs2method_20884(new function<script_5899>(int a0,int a1,int a2,int a3) {
+				int v1 = idx22mapAttribute(21332, 1379);
+				int v0 = idx22mapAttribute(21332, 1380);
+				int v2 = idx22mapAttribute(21332, 1381);
+				if (cs2method_11038(a2, a1) == 1) {
+					cs2method_10310(v1);
+				}
+				if (cs2method_11038(a0, a1) == 1) {
+					cs2method_10310(v0);
+				}
+				if (cs2method_11038(a3, a1) == 1) {
+					cs2method_10310(v2);
+				}
+				return;
+			}, new WidgetPointer(a3), new WidgetPointer(a5), new WidgetPointer(a1), v0, "IIIi");
+			cs2method_10606(a5, 5, v0);
+			cs2method_10013(cs2method_10051(20, 2), 20, 1, 0);
+			cs2method_10310(v8);
+			cs2method_20674(new function<script_5892>(int a0,int a1,int a2,int a3) {
+				int v2 = idx22mapAttribute(21333, 1379);
+				int v1 = idx22mapAttribute(21333, 1380);
+				int v0 = idx22mapAttribute(21333, 1381);
+				if (cs2method_11038(a3, a0) == 1) {
+					cs2method_10310(v2);
+				}
+				if (cs2method_11038(a1, a0) == 1) {
+					cs2method_10310(v1);
+				}
+				if (cs2method_11038(a2, a0) == 1) {
+					cs2method_10310(v0);
+				}
+				return;
+			}, new WidgetPointer(a3), new WidgetPointer(a5), new WidgetPointer(a1), v0, "IIIi");
+			cs2method_20884(new function<script_5899>(int a0,int a1,int a2,int a3) {
+				int v0 = idx22mapAttribute(21332, 1379);
+				int v2 = idx22mapAttribute(21332, 1380);
+				int v1 = idx22mapAttribute(21332, 1381);
+				if (cs2method_11038(a0, a2) == 1) {
+					cs2method_10310(v0);
+				}
+				if (cs2method_11038(a1, a2) == 1) {
+					cs2method_10310(v2);
+				}
+				if (cs2method_11038(a3, a2) == 1) {
+					cs2method_10310(v1);
+				}
+				return;
+			}, new WidgetPointer(a3), new WidgetPointer(a5), new WidgetPointer(a1), v0, "IIIi");
+			cs2method_10606(a1, 5, v0);
+			cs2method_10013(20, 20, 0, 0);
+			cs2method_10310(v10);
+			cs2method_20674(new function<script_5892>(int a0,int a1,int a2,int a3) {
+				int v1 = idx22mapAttribute(21333, 1379);
+				int v2 = idx22mapAttribute(21333, 1380);
+				int v0 = idx22mapAttribute(21333, 1381);
+				if (cs2method_11038(a3, a0) == 1) {
+					cs2method_10310(v1);
+				}
+				if (cs2method_11038(a1, a0) == 1) {
+					cs2method_10310(v2);
+				}
+				if (cs2method_11038(a2, a0) == 1) {
+					cs2method_10310(v0);
+				}
+				return;
+			}, new WidgetPointer(a3), new WidgetPointer(a5), new WidgetPointer(a1), v0, "IIIi");
+			cs2method_20884(new function<script_5899>(int a0,int a1,int a2,int a3) {
+				int v0 = idx22mapAttribute(21332, 1379);
+				int v1 = idx22mapAttribute(21332, 1380);
+				int v2 = idx22mapAttribute(21332, 1381);
+				if (cs2method_11038(a1, a0) == 1) {
+					cs2method_10310(v0);
+				}
+				if (cs2method_11038(a3, a0) == 1) {
+					cs2method_10310(v1);
+				}
+				if (cs2method_11038(a2, a0) == 1) {
+					cs2method_10310(v2);
+				}
+				return;
+			}, new WidgetPointer(a3), new WidgetPointer(a5), new WidgetPointer(a1), v0, "IIIi");
+			object v23 = idx17mapData('i', 's', 3716, script_5887(v4));
+			cs2method_10606(a10, 4, v0);
+			cs2method_10797(v23);
+			cs2method_10013(5, 20, 1, 0);
+			cs2method_10692(20452);
+			cs2method_11105(0, 1, 0);
+			cs2method_10811(7705248);
+			cs2method_20703(new function<script_5903>(int a0,int a1,int a2,int a3,int a4) {
+				script_5907(36831288, 36831291, 36831237, 36831255, a1);
+				return;
+			}, new WidgetPointer(a7), new WidgetPointer(562,59), new WidgetPointer(a10), new WidgetPointer(562,23), v0, "IIIIi");
+			cs2method_10057(1, "Select");
+			object v24 = idx22mapAttribute(v7, 4157);
+			cs2method_10606(a2, 4, v0);
+			int v22 = cs2method_10805(cs2method_10236(a2), 20452, v24);
+			cs2method_10797(v24);
+			cs2method_10013(0, cs2method_10051(12, v22), 1, 0);
+			cs2method_10692(20452);
+			cs2method_11105(0, 0, 0);
+			cs2method_10811(7705248);
+			cs2method_20353(new function<script_8799>(int a0,object a1,int a2) {
+				script_8800(a0, a2, a1);
+				return;
+			}, idx22mapAttribute(v7, 4158), new WidgetPointer(a2), v0, "sIi");
+		}
+		v0 = cs2method_10060(v0, 1);
+	}
+	for (int v15 = 0, int v13 = 0, int v6 = 0, int v11 = 0, int v1 = 0; idx17mapData('i', 'i', 8561, v6) != -1; v6 = cs2method_10060(v6, 1), v11 = 0, v1 = 0, v13 = cs2method_10060(v13, 15)) {
+		if (cs2method_11038(a11, v6) == 1) {
+			cs2method_10063(0, v13, 0, 0);
+			if (cs2method_11038(a0, v6) == 1) {
+				cs2method_10063(0, v13, 0, 0);
+			}
+			v13 = cs2method_10060(v13, cs2method_10664());
+			while (idx17mapData('i', 'i', 8559, v11) != -1) {
+				int v21 = idx17mapData('i', 'i', 8559, v11);
+				int v22 = idx17mapData('i', 'J', 8560, v21);
+				if (v22 != -1 && idx22mapAttribute(v22, 4156) == v6) {
+					if (cs2method_11038(a8, v11) == 1) {
+						cs2method_10063(0, v13, 0, 0);
+						if (cs2method_10038(v1, 2) == 0) {
+							cs2method_10811(464928);
+						} else {
+							cs2method_10811(1846324);
+						}
+						v1 = cs2method_10060(v1, 1);
+						v15 = cs2method_10664();
+					}
+					v13 = cs2method_10060(v13, 2);
+					if (cs2method_11038(a4, v11) == 1) {
+						cs2method_10063(0, v13, 0, 0);
+						v15 = cs2method_11048(cs2method_10664(), v15);
+					}
+					if (cs2method_11038(a3, v11) == 1) {
+						cs2method_10063(0, v13, 0, 0);
+						v15 = cs2method_11048(cs2method_10664(), v15);
+					}
+					if (cs2method_11038(a5, v11) == 1) {
+						cs2method_10063(0, v13, 1, 0);
+						v15 = cs2method_11048(cs2method_10664(), v15);
+					}
+					if (cs2method_11038(a1, v11) == 1) {
+						cs2method_10063(0, v13, 2, 0);
+						v15 = cs2method_11048(cs2method_10664(), v15);
+					}
+					if (cs2method_11038(a10, v11) == 1) {
+						cs2method_10063(5, v13, 0, 0);
+						v15 = cs2method_11048(cs2method_10664(), v15);
+					}
+					if (cs2method_11038(a2, v11) == 1) {
+						cs2method_10063(0, v13, 0, 0);
+						v15 = cs2method_11048(cs2method_10664(), v15);
+					}
+					v13 = cs2method_10060(cs2method_10060(v13, v15), 2);
+				}
+				v11 = cs2method_10060(v11, 1);
+			}
+		}
+	}
+	cs2method_11130(0, v13, a6);
+	script_7791(a9, a6);
+	cs2method_20348(new function<script_5913>(int a0,int a1) {
+		int v3 = 0;
+		int v1 = 18542;
+		int v2 = -1;
+		while (v3 <= cs2method_10924(8559)) {
+			int v5 = idx17mapData('i', 'i', 8559, v3);
+			if (cs2method_11038(a1, v3) == 1) {
+				if (script_5886(v5) == 1) {
+					cs2method_10310(18543);
+					cs2method_20703(new function<script_5336>(int a0,int a1,int a2) {
+						if (cs2method_11038(a2, a0) == 1) {
+							cs2method_10310(a1);
+						}
+						return;
+					}, new WidgetPointer(-32768,3), -2147483643, v1, "Iid");
+				} else {
+					v1 = 18543;
+					cs2method_10310(18542);
+					cs2method_20703(new function<script_5336>(int a0,int a1,int a2) {
+						if (cs2method_11038(a2, a1) == 1) {
+							cs2method_10310(a0);
+						}
+						return;
+					}, new WidgetPointer(-32768,3), -2147483643, v1, "Iid");
+				}
+			}
+			v3 = cs2method_10060(v3, 1);
+		}
+		for (int v4 = 0, object v0 = ""; idx17mapData('i', 'i', 8561, v4) != -1; v4 = cs2method_10060(v4, 1)) {
+			if (cs2method_11038(a0, v4) == 1) {
+				object v5;
+				if (script_5888(v4) == 1) {
+					v5 = "Click here to deselect all messages in this section.";
+					int v6 = 18542;
+					cs2method_10310(18543);
+					cs2method_20703(new function<script_5336>(int a0,int a1,int a2) {
+						if (cs2method_11038(a0, a1) == 1) {
+							cs2method_10310(a2);
+						}
+						return;
+					}, new WidgetPointer(-32768,3), -2147483643, v6, "Iid");
+					cs2method_10057(1, "Deselect All");
+				} else {
+					v5 = "Click here to select all messages in this section.";
+					int v6 = 18543;
+					cs2method_10310(18542);
+					cs2method_20703(new function<script_5336>(int a0,int a1,int a2) {
+						if (cs2method_11038(a2, a0) == 1) {
+							cs2method_10310(a1);
+						}
+						return;
+					}, new WidgetPointer(-32768,3), -2147483643, v6, "Iid");
+					cs2method_10057(1, "Select All");
+				}
+				cs2method_20353(new function<script_8799>(int a0,object a1,int a2) {
+					script_8800(a0, a2, a1);
+					return;
+				}, (string)v5, new WidgetPointer(a0), v4, "sIi");
+			}
+		}
+		return;
+	}, new WidgetPointer(-32768,3), new WidgetPointer(a0), 4340, 4340, 4340, 4340, 4341, 4341, 4341, 4341, 4342, 4342, 4342, 4342, 4343, 4343, 4343, 4343, 4344, 4344, 4344, 4344, 4345, 4345, 4345, 4345, 4346, 4346, 4346, 4346, 4347, 4347, 4347, 4347, 4348, 4348, 4348, 4348, 36, "IIY", new WidgetPointer(a4));
+	cs2method_20348(new function<script_5914>(int a0) {
+		int v1 = 0;
+		object v2 = "";
+		int v3 = -1;
+		while (v1 <= cs2method_10924(8559)) {
+			int v4 = idx17mapData('i', 'i', 8559, v1);
+			object v0 = idx17mapData('i', 's', 3716, script_5887(v4));
+			if (cs2method_11038(a0, v1) == 1) {
+				cs2method_10797(v0);
+			}
+			v1 = cs2method_10060(v1, 1);
+		}
+		return;
+	}, new WidgetPointer(-32768,3), 4340, 4340, 4340, 4340, 4341, 4341, 4341, 4341, 4342, 4342, 4342, 4342, 4343, 4343, 4343, 4343, 4344, 4344, 4344, 4344, 4345, 4345, 4345, 4345, 4346, 4346, 4346, 4346, 4347, 4347, 4347, 4347, 4348, 4348, 4348, 4348, 36, "IY", new WidgetPointer(a10));
+	return;
+}

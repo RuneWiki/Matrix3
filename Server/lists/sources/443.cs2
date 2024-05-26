@@ -1,0 +1,78 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_443() {
+	int v0 = 5;
+	for (int v8 = 5, int v10 = 0, int v6 = 0, int v9 = 1, int v5 = 0, int v7 = 1, int v1 = 0, int v3 = 0; v0 < 270; v8 = 5) {
+		while (v8 < 200) {
+			cs2method_10606(66977811, 5, v10);
+			cs2method_10013(36, 32, 0, 0);
+			cs2method_10063(v8, v0, 0, 0);
+			if (cs2method_10640(583, v10) != -1) {
+				cs2method_11070(cs2method_10640(583, v10), cs2method_11065(583, v10));
+				cs2method_10200("<col=ff981f>" + (string)cs2method_10018(cs2method_10640(583, v10)));
+				cs2method_10057(1, "Remove 1");
+				cs2method_10057(2, "Remove 5");
+				cs2method_10057(3, "Remove 10");
+				cs2method_10057(4, "Remove All");
+				cs2method_10057(5, "Remove X");
+				cs2method_10057(10, "Examine");
+				cs2method_10356(1);
+				v6 = cs2method_10060(v6, 1);
+				if (v6 > 5) {
+					v9 = cs2method_10060(v9, 1);
+					v6 = 1;
+				}
+			}
+			cs2method_10606(66977806, 5, v10);
+			cs2method_10013(36, 32, 0, 0);
+			cs2method_10063(v8, v0, 0, 0);
+			if (cs2method_10418(583, v10) != -1) {
+				cs2method_11070(cs2method_10418(583, v10), cs2method_10595(583, v10));
+				cs2method_10200("<col=ff981f>" + (string)cs2method_10018(cs2method_10418(583, v10)));
+				cs2method_10057(1, "Examine");
+				cs2method_10356(1);
+				v5 = cs2method_10060(v5, 1);
+				if (v5 > 5) {
+					v7 = cs2method_10060(v7, 1);
+					v5 = 1;
+				}
+			}
+			v8 = cs2method_10060(v8, 40);
+			v10 = cs2method_10060(v10, 1);
+		}
+		v0 = cs2method_10060(v0, 40);
+	}
+	int v2 = cs2method_10060(cs2method_10051(v9, 40), 5);
+	if (v2 > cs2method_10823(66977811)) {
+		cs2method_11130(0, v2, 66977811);
+		script_31(66977812, 66977811, 2598, 2595, 2596, 2597, 2593, 2594);
+		cs2method_10112(6, cs2method_10152(66977811), 0, 0, 66977811);
+	} else {
+		cs2method_11130(0, 0, 66977811);
+		cs2method_10251(0, 0, 66977811);
+		cs2method_10273(66977812);
+		cs2method_10112(16, cs2method_10152(66977811), 0, 0, 66977811);
+	}
+	int v4 = cs2method_10060(cs2method_10051(v7, 40), 5);
+	if (v4 > cs2method_10823(66977806)) {
+		cs2method_11130(0, v4, 66977806);
+		script_31(66977808, 66977806, 2598, 2595, 2596, 2597, 2593, 2594);
+		cs2method_10112(6, cs2method_10152(66977806), 0, 0, 66977806);
+	} else {
+		cs2method_11130(0, 0, 66977806);
+		cs2method_10251(0, 0, 66977806);
+		cs2method_10273(66977808);
+		cs2method_10112(16, cs2method_10152(66977806), 0, 0, 66977806);
+	}
+	return;
+}

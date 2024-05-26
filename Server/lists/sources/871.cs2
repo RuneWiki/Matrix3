@@ -1,0 +1,29 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_871() {
+	int v6 = cs2method_10461(20, 0);
+	int v2 = cs2method_10461(80, 0);
+	int v5 = cs2method_10968(v2, v6);
+	int v0 = cs2method_10051(client_configs['cfg2847'].bitcfg14325, v5);
+	int v4 = cs2method_10968(1024, v2);
+	cs2_configs['cfg111'] = v0;
+	int v1 = cs2method_10051(cs2_configs['cfg111'], v4);
+	int v3 = cs2method_10060(v1, 512);
+	int v8 = cs2method_10461(2048, v3);
+	cs2method_10740(0, 0, 0, 0, v8, 388, 46989316);
+	script_896();
+	int v9 = cs2method_10051(idx17mapData('i', 'i', 1422, client_configs['cfg2847'].bitcfg14321), cs2method_10968(1024, v6));
+	int v7 = cs2method_10060(v9, 512);
+	cs2method_10740(0, 0, 0, 0, v7, 365, 46989315);
+	return;
+}

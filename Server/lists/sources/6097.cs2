@@ -1,0 +1,74 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6097(int a0) {
+	if (a0 == 1) {
+		cs2method_10467(1, 82903269);
+		cs2method_10467(0, 82903073);
+		cs2method_10283(cs2method_10236(82903069), 22, 0, 0, 82903069);
+		cs2method_10283(cs2method_10236(82903068), 20, 0, 0, 82903068);
+		cs2method_10520(16248247, 82903270);
+		cs2method_10520(15052881, 82903074);
+		cs2method_10758(10465, 82903266);
+		cs2method_10758(10466, 82903267);
+		cs2method_10758(10465, 82903268);
+		cs2method_10758(10463, 82903070);
+		cs2method_10758(10464, 82903071);
+		cs2method_10758(10463, 82903072);
+		cs2method_20680(new function<script_6098>(int a0,int a1,int a2,int a3,int a4) {
+			script_6099(a0, a4, a3, a2, a1);
+			return;
+		}, 1, 1, new WidgetPointer(1265,226), new WidgetPointer(1265,227), new WidgetPointer(1265,228), "iiIII", new WidgetPointer(1265,29));
+		cs2method_20750(new function<script_6098>(int a0,int a1,int a2,int a3,int a4) {
+			script_6099(a1, a0, a4, a2, a3);
+			return;
+		}, 1, 0, new WidgetPointer(1265,226), new WidgetPointer(1265,227), new WidgetPointer(1265,228), "iiIII", new WidgetPointer(1265,29));
+		cs2method_20680(new function<script_6098>(int a0,int a1,int a2,int a3,int a4) {
+			script_6099(a4, a3, a1, a0, a2);
+			return;
+		}, 0, 1, new WidgetPointer(1265,30), new WidgetPointer(1265,31), new WidgetPointer(1265,32), "iiIII", new WidgetPointer(1265,28));
+		cs2method_20750(new function<script_6098>(int a0,int a1,int a2,int a3,int a4) {
+			script_6099(a4, a0, a3, a1, a2);
+			return;
+		}, 0, 0, new WidgetPointer(1265,30), new WidgetPointer(1265,31), new WidgetPointer(1265,32), "iiIII", new WidgetPointer(1265,28));
+	} else {
+		cs2method_10467(1, 82903073);
+		cs2method_10467(0, 82903269);
+		cs2method_10283(cs2method_10236(82903068), 22, 0, 0, 82903068);
+		cs2method_10283(cs2method_10236(82903069), 20, 0, 0, 82903069);
+		cs2method_10520(16248247, 82903074);
+		cs2method_10520(15052881, 82903270);
+		cs2method_10758(10465, 82903070);
+		cs2method_10758(10466, 82903071);
+		cs2method_10758(10465, 82903072);
+		cs2method_10758(10463, 82903266);
+		cs2method_10758(10464, 82903267);
+		cs2method_10758(10463, 82903268);
+		cs2method_20680(new function<script_6098>(int a0,int a1,int a2,int a3,int a4) {
+			script_6099(a1, a3, a2, a0, a4);
+			return;
+		}, 1, 1, new WidgetPointer(1265,30), new WidgetPointer(1265,31), new WidgetPointer(1265,32), "iiIII", new WidgetPointer(1265,28));
+		cs2method_20750(new function<script_6098>(int a0,int a1,int a2,int a3,int a4) {
+			script_6099(a0, a2, a3, a1, a4);
+			return;
+		}, 1, 0, new WidgetPointer(1265,30), new WidgetPointer(1265,31), new WidgetPointer(1265,32), "iiIII", new WidgetPointer(1265,28));
+		cs2method_20680(new function<script_6098>(int a0,int a1,int a2,int a3,int a4) {
+			script_6099(a3, a1, a2, a0, a4);
+			return;
+		}, 0, 1, new WidgetPointer(1265,226), new WidgetPointer(1265,227), new WidgetPointer(1265,228), "iiIII", new WidgetPointer(1265,29));
+		cs2method_20750(new function<script_6098>(int a0,int a1,int a2,int a3,int a4) {
+			script_6099(a3, a1, a4, a0, a2);
+			return;
+		}, 0, 0, new WidgetPointer(1265,226), new WidgetPointer(1265,227), new WidgetPointer(1265,228), "iiIII", new WidgetPointer(1265,29));
+	}
+	return;
+}

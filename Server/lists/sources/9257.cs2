@@ -1,0 +1,52 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_9257(int a0,int a1) {
+	if (client_configs['cfg1784'] == -1) {
+		return 1;
+	}
+	switch (client_configs['cfg1784']) {
+		case 7350:
+		case 7349:
+		case 17342:
+		case 17343:
+		case 17192:
+		case 17247:
+		case 17193:
+		case 17246:
+		case 6820:
+		case 6821:
+		case 6818:
+		case 6819:
+			if (a0 != 1436 && a0 != 7936) {
+				if (a1 == 1) {
+					cs2method_10810("This familiar can only carry blank and pure rune essence that are uncerted.");
+				}
+				return 1;
+			}
+			break;
+		default:
+			if (a0 == 1436 || a0 == 7936) {
+				if (a1 == 1) {
+					cs2method_10810("Only an abyssal familiar can carry blank rune essence.");
+				}
+				return 1;
+			}
+	}
+	if (a0 == 29492 || a0 == 29494) {
+		if (a1 == 1) {
+			cs2method_10810("The familiar cannot hold bonds.");
+		}
+		return 1;
+	}
+	return 0;
+}

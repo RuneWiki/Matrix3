@@ -1,0 +1,71 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_5794(int a0) {
+	script_5796(a0, 1, 80084993, 80084994, 80085041, -1, -1, -1);
+	int v0 = script_5795(a0);
+	cs2method_10251(0, 0, 80085019);
+	cs2method_10283(cs2method_10236(80084999), 330, 0, 0, 80084999);
+	cs2method_10283(512, 334, 0, 0, 96796984);
+	switch (a0) {
+		flow_1:
+			case 584:
+			cs2method_10758(9457, 80084998);
+			cs2method_10758(9456, 80085030);
+			GOTO	flow_11
+		flow_3:
+			case 585:
+			cs2method_10758(9482, 80084998);
+			cs2method_10758(9483, 80085030);
+			GOTO	flow_11
+		flow_4:
+			case 586:
+			cs2method_10758(9467, 80084998);
+			cs2method_10758(9468, 80085030);
+			GOTO	flow_11
+		flow_5:
+			case 587:
+			cs2method_10758(9464, 80084998);
+			cs2method_10758(9465, 80085030);
+			GOTO	flow_11
+		flow_6:
+			case 588:
+			cs2method_10758(9470, 80084998);
+			cs2method_10758(9471, 80085030);
+			GOTO	flow_11
+		flow_7:
+			case 589:
+			cs2method_10758(9473, 80084998);
+			cs2method_10758(9474, 80085030);
+			GOTO	flow_11
+		flow_8:
+			case 590:
+			cs2method_10758(9458, 80084998);
+			cs2method_10758(9459, 80085030);
+			GOTO	flow_11
+		flow_9:
+			case 591:
+			cs2method_10758(9461, 80084998);
+			cs2method_10758(9462, 80085030);
+			GOTO	flow_11
+		flow_10:
+			case 592:
+			cs2method_10758(9476, 80084998);
+			cs2method_10758(9477, 80085030);
+			GOTO	flow_11
+		flow_11:
+			case 593:
+			default:
+			return;
+	}
+}

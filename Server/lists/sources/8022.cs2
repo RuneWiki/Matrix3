@@ -1,0 +1,53 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8022(int a0) {
+	int v2 = 69206021;
+	int v0 = 69206042;
+	int v4 = 69206047;
+	if (a0 == 79953938) {
+		v2 = 79953927;
+		v0 = 79953945;
+		v4 = 79953950;
+	}
+	int v8 = 0;
+	int v3 = 0;
+	int v7 = 0;
+	int v6 = 0;
+	object v9 = "Keep doing this for as long as you want.";
+	int v5 = 0;
+	object v1 = "";
+	if (client_configs['cfg1269'].bitcfg3561 != 3036 && client_configs['cfg1269'].bitcfg3561 != 3037 && client_configs['cfg1269'].bitcfg3561 != 3038 && client_configs['cfg1269'].bitcfg3561 != 3039 && client_configs['cfg1269'].bitcfg3561 != 3040 && client_configs['cfg1269'].bitcfg3561 != 3041) {
+		cs2method_10467(1, v2);
+	}
+	if (client_configs['cfg1293'].bitcfg3617 == 1) {
+		if (v8 != 0 && cs2method_10771() == 1) {
+			cs2method_10467(0, v2);
+			script_4542(cs2method_10122(v3, v7, 100), v0, v4);
+			script_4212(v4, "", 494, 15458492, 0);
+			object v10 = (string)cs2method_10379(v3) + " of " + (string)cs2method_10379(v7) + " Tasks done in this stage.";
+			cs2method_21121(new function<script_8799>(int a0,int a1,object a2) {
+				script_8800(a0, a1, a2);
+				return;
+			}, (string)v10, new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(v2));
+			cs2method_20750(new function<script_8805>() {
+				script_8808();
+				return;
+			}, "", new WidgetPointer(v2));
+		} else {
+			if (client_configs['cfg1269'].bitcfg3561 == 3036 || client_configs['cfg1269'].bitcfg3561 == 3037 || client_configs['cfg1269'].bitcfg3561 == 3038 || client_configs['cfg1269'].bitcfg3561 == 3039 || client_configs['cfg1269'].bitcfg3561 == 3040 || client_configs['cfg1269'].bitcfg3561 == 3041) {
+				cs2method_10467(0, v2);
+			}
+		}
+	}
+	return;
+}

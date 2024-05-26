@@ -1,0 +1,56 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8866(int a0) {
+	int v6 = idx22mapAttribute(21304, 3503);
+	int v3 = idx22mapAttribute(21300, 3503);
+	int v2 = 0;
+	int v0 = 0;
+	int v1 = 0;
+	int v5 = 0;
+	int v4 = 0;
+	if (client_configs['cfg3680'].bitcfg22315 == 0) {
+		if (a0 == 1) {
+			if (cs2method_10908(idx22mapAttribute(21304, 3505)) == 1 && cs2method_10908(idx22mapAttribute(21300, 3505)) == 1) {
+				int v7;
+				if (cs2method_10191(v6) > cs2method_10461(cs2method_10236(96796679), cs2method_10060(cs2method_10191(v6), cs2method_10236(v6)))) {
+					v7 = cs2method_10461(cs2method_10191(v6), cs2method_10236(v3));
+				} else {
+					v7 = cs2method_10060(cs2method_10191(v6), cs2method_10236(v6));
+				}
+				int v8 = cs2method_10461(cs2method_10060(cs2method_10152(v6), cs2method_10968(cs2method_10823(v6), 2)), cs2method_10968(cs2method_10823(v3), 2));
+				cs2method_10112(v7, v8, 0, 0, v3);
+				script_8387(v7, v8, cs2method_10236(v3), cs2method_10823(v3), 1008);
+			}
+		} else {
+			int v12 = 1008;
+			script_8717_struct(4,0,0) v9 = script_8717(v12);
+			int v8 = v9.intpart_3;
+			int v10 = v9.intpart_2;
+			int v11 = v9.intpart_1;
+			int v7 = v9.intpart_0;
+			/* 
+				java.lang.RuntimeException: Stack underflow
+					at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:178)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+					at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+					at tests.Main.main(Main.java:69)
+				
+			 */
+		}
+	} else {
+		script_3815();
+	}
+	return;
+}

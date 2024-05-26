@@ -1,0 +1,104 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+script_10024_struct(1,1,0) script_10024(int a0) {
+	flow_0:
+		if (cs2method_10416(a0) == 1 && cs2method_10771() == 0) {
+			return new script_10024_struct(2, "");
+		}
+		if (client_configs['cfg3002'].bitcfg15102 == 1 && client_configs['cfg1295'] < 400) {
+			return new script_10024_struct(2, "0");
+		}
+		switch (a0) {
+			case 3105:
+			case 18788:
+				if (client_configs['cfg2339'] < 80) {
+					return new script_10024_struct(1, "The sherpa's feet must be very small. I can't get them on.");
+				}
+				break;
+			case 4567:
+				if (cs2method_10938(1) < 30) {
+					return new script_10024_struct(1, "The helmet is too heavy. You need at least 30 Defence to wear it.");
+				}
+				break;
+			case 4827:
+				if (client_configs['cfg2272'].bitcfg10461 == 0) {
+					return new script_10024_struct(1, "This bow looks quite powerful. You should talk to Grish to find out more about it before trying to use it.");
+				}
+				break;
+			case 8856:
+				if (cs2method_11065(94, 3) != 0) {
+					return new script_10024_struct(1, "You will need to make sure your sword hand is free to equip this shield.");
+				}
+				break;
+			case 7537:
+				if (cs2method_10376(94, 65) > 0) {
+					return new script_10024_struct(1, "You need to remove your claws first.");
+				}
+		}
+		switch (cs2method_10843(a0)) {
+			case 71:
+				if (a0 != 2866 && client_configs['cfg2272'].bitcfg10460 == 0) {
+					return new script_10024_struct(1, "This arrow type looks very powerful. You're not sure how you should use it yet.");
+				}
+				break;
+			case 495:
+			case 496:
+				return new script_10024_struct(1, "You can't equip that.");
+			case 65:
+				if (cs2method_10936(94, 7537) > 0) {
+					return new script_10024_struct(1, "You need to remove your claw first.");
+				}
+		}
+		if (client_configs['cfg2271'].bitcfg10443 == 1) {
+			if (cs2method_10873(a0) == 3 || cs2method_10873(a0) == 5) {
+				return new script_10024_struct(1, "You can't hold anything in your hands while in the penguin suit.");
+			}
+			if (a0 == 6583) {
+				return new script_10024_struct(1, "You can't turn into a stone while controlling the penguin suit.");
+			}
+		}
+		if (client_configs['cfg2271'].bitcfg10443 == 0 && (a0 == 24863 || a0 == 24864)) {
+			return new script_10024_struct(1, "You can only wear that while in the penguin suit.");
+		}
+		IF (a0 == 7671) 
+			GOTO	flow_40
+		IF (a0 == 7673 && cs2method_10640(94, 9) != -1) 
+			GOTO	flow_41
+		GOTO	flow_42
+	flow_40:
+	flow_41:
+		return new script_10024_struct(1, "You cannot wear the boxing gloves over other gloves.");
+	flow_42:
+		if (cs2method_10873(a0) == 9 && (cs2method_10640(94, 3) == 7671 || cs2method_10640(94, 3) == 7673)) {
+			return new script_10024_struct(1, "You cannot wear any other gloves under boxing gloves.");
+		}
+		if (cs2method_10640(94, 4) == 284 && cs2method_10873(a0) == 9) {
+			return new script_10024_struct(1, "You can't wear those on top of this protective jacket.");
+		}
+		if (cs2method_10640(94, 3) == 10023 || cs2method_10640(94, 3) == 10024) {
+			if (cs2method_10873(a0) == 9) {
+				return new script_10024_struct(1, "You can't wear those on top of a falconry glove.");
+			}
+			if (cs2method_10873(a0) == 5 || cs2method_10873(a0) == 3) {
+				return new script_10024_struct(1, "You need both hands free when you are wearing a falconry glove.");
+			}
+		}
+		if (client_configs['cfg2167'].bitcfg9644 == 1) {
+			return new script_10024_struct(1, "There's not enough room inside the Barrelchest disguise to mess around with your equipment!");
+		}
+		if (client_configs['cfg4356'].bitcfg22034 == 1) {
+			return new script_10024_struct(2, "You should step away from the controls before equipping anything.");
+		}
+		return new script_10024_struct(0, "");
+}

@@ -1,0 +1,147 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4883(int a0,object a1,int a2) {
+	int v3 = script_4964(a0);
+	int v6 = script_4971(v3);
+	int v1 = cs2method_10155(a0);
+	int v2 = cs2method_10155(v1);
+	int v4 = script_5216(v3);
+	if (v4 == -1) {
+		v4 = a0;
+	}
+	object v0 = "";
+	int v5 = 0;
+	if (cs2method_10172() == 1) {
+		switch (a0) {
+			case 82444848:
+				a2 = 1;
+				a1 = "Build a new party room chair customisation.";
+				if (clan_chat_configs['cfg2209'].bitcfg6885 > 0) {
+					v5 = 1;
+				}
+				break;
+			case 82444856:
+				a2 = 1;
+				a1 = "Build a new party room table customisation.";
+				if (clan_chat_configs['cfg2219'].bitcfg6893 > 0) {
+					v5 = 1;
+				}
+				break;
+			case 82444852:
+				a2 = 1;
+				a1 = "Build a new flag customisation.";
+				if (clan_chat_configs['cfg2239'].bitcfg6909 > 0) {
+					v5 = 1;
+				}
+				break;
+			case 82444860:
+				a2 = 1;
+				a1 = "Build a new potted plant customisation.";
+				if (clan_chat_configs['cfg2189'].bitcfg6869 > 0) {
+					v5 = 1;
+				}
+				break;
+			case 82444864:
+				a2 = 1;
+				a1 = "Build a new sundial customisation.";
+				if (clan_chat_configs['cfg2229'].bitcfg6901 > 0) {
+					v5 = 1;
+				}
+				break;
+			case 82444868:
+				a2 = 1;
+				a1 = "Build a new keep flag customisation.";
+				if (clan_chat_configs['cfg2199'].bitcfg6877 > 0) {
+					v5 = 1;
+				}
+				break;
+			case 82444872:
+				a2 = 1;
+				a1 = "Build a new keep tapestry customisation.";
+				if (clan_chat_configs['cfg2259'].bitcfg6925 > 0) {
+					v5 = 1;
+				}
+				break;
+			case 82444876:
+				a2 = 1;
+				a1 = "Build a new keep banner customisation.";
+				if (clan_chat_configs['cfg2269'].bitcfg6933 > 0) {
+					v5 = 1;
+				}
+				break;
+			case 82444880:
+				a2 = 1;
+				a1 = "Build a new keep shield customisation.";
+				if (clan_chat_configs['cfg2279'].bitcfg6941 > 0) {
+					v5 = 1;
+				}
+				break;
+			case 82444884:
+				a2 = 1;
+				a1 = "Build a new keep fireplace customisation.";
+				if (clan_chat_configs['cfg2249'].bitcfg6917 > 0) {
+					v5 = 1;
+				}
+				break;
+			case 82444888:
+				a2 = 1;
+				a1 = "Build a new keep lower window customisation.";
+				if (clan_chat_configs['cfg2289'].bitcfg6949 > 0) {
+					v5 = 1;
+				}
+				break;
+			case 82444892:
+				a2 = 1;
+				a1 = "Build a new keep upper window customisation.";
+				if (clan_chat_configs['cfg2299'].bitcfg6957 > 0) {
+					v5 = 1;
+				}
+				break;
+			case 82444896:
+				a2 = 1;
+				a1 = "Build a new keep door customisation.";
+				if (clan_chat_configs['cfg2309'].bitcfg6965 > 0) {
+					v5 = 1;
+				}
+				break;
+			case 82444900:
+				a2 = 1;
+				a1 = "Build a new keep wall pattern customisation.";
+				if (clan_chat_configs['cfg2319'].bitcfg6973 > 0) {
+					v5 = 1;
+				}
+				break;
+			default:
+				a1 = "Build over: " + (string)script_4914(v6);
+		}
+		if (v5 == 1) {
+			a1 = "Build over " + (string)script_4914(v6);
+		}
+		if (cs2method_10191(v1) < cs2method_10461(cs2method_10968(cs2method_10236(v2), 2), 30)) {
+			a2 = 1;
+		}
+	}
+	cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,object a12) {
+		script_7769(a7, a6, a5, a9, a2, a4, a0, a8, a1, a10, a3, a12, a11);
+		return;
+	}, new WidgetPointer(1258,121), new WidgetPointer(a0), -1, (string)a1, 120, 17813, 17813, 16777215, 13, 4, a2, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(a0));
+	cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,object a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+		script_7769(a3, a12, a5, a7, a8, a10, a6, a1, a0, a11, a2, a4, a9);
+		return;
+	}, new WidgetPointer(1258,121), new WidgetPointer(a0), -1, (string)a1, 120, 17813, 17813, 16777215, 13, 4, a2, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(v4));
+	cs2method_20750(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(1258,121), "I", new WidgetPointer(a0));
+	return;
+}

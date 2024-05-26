@@ -1,0 +1,38 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9057() {
+	int v6 = 1;
+	script_8891_struct(4,0,0) v9 = script_8891(v6);
+	object v4 = script_8893(v9.intpart_0, v9.intpart_1, v9.intpart_2, v9.intpart_3);
+	int v2 = 2;
+	script_8891_struct(4,0,0) v3 = script_8891(v2);
+	object v10 = script_8893(v3.intpart_0, v3.intpart_1, v3.intpart_2, v3.intpart_3);
+	int v1 = 0;
+	object v7 = "";
+	script_8892_struct(1,1,0) v0 = script_8892();
+	object v8 = v0.objectpart_0;
+	int v5 = v0.intpart_0;
+	if (v5 == 1) {
+		cs2method_10026(98238489, "<col=7e9cc4>" + "Saradomin Leads By");
+	} else if (v5 == 2) {
+		cs2method_10026(98238489, "<col=ff0000>" + "Zamorak Leads By");
+	} else {
+		cs2method_10026(98238489, "<col=ffcd05>" + "Both teams equally matched");
+	}
+	cs2method_10026(98238490, v8);
+	cs2method_10026(98238519, v4);
+	cs2method_10026(98238606, v10);
+	cs2method_10026(98238488, "Week " + (string)cs2method_10379(script_8925()));
+	script_9058();
+	return;
+}

@@ -1,0 +1,35 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7514(int a0,int a1) {
+	object v0 = "";
+	int v2 = -1;
+	switch (a1) {
+		case 1:
+			v2 = cs2method_10769(91029511);
+			break;
+		case 2:
+			v2 = cs2method_10769(91029512);
+			break;
+		case 3:
+			v2 = cs2method_10769(91029513);
+			break;
+		case 4:
+			v2 = cs2method_10769(91029514);
+			break;
+		case 5:
+			v2 = cs2method_10769(91029515);
+	}
+	object v1 = script_7515(v2);
+	script_8800(a0, -1, v1);
+	return;
+}

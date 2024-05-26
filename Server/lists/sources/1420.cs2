@@ -1,0 +1,33 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+int script_1420() {
+	flow_0:
+		if (client_configs['cfg1114'] == 3) {
+			return 0;
+		}
+		IF (cs2_configs['cfg173'] != 1) 
+			GOTO	flow_3
+		GOTO	flow_7
+	flow_3:
+		IF (client_configs['cfg1113'].bitcfg3028 == 0) 
+			GOTO	flow_5
+		IF (client_configs['cfg1113'].bitcfg3028 == 1 && client_configs['cfg1113'].bitcfg3031 == 1 && (cs2method_10555() == 1 || cs2method_10473() == 1)) 
+			GOTO	flow_6
+		GOTO	flow_7
+	flow_5:
+	flow_6:
+		return 1;
+	flow_7:
+		return 0;
+}

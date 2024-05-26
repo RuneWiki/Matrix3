@@ -1,0 +1,41 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3023() {
+	cs2method_10283(cs2method_10461(cs2method_10191(59572255), cs2method_10191(59572254)), 0, 0, 1, 59572269);
+	cs2method_10283(cs2method_10461(cs2method_10461(cs2method_10236(59572265), cs2method_10236(59572269)), 2), 0, 0, 1, 59572270);
+	cs2method_11130(0, 0, 59572265);
+	cs2method_10251(0, 0, 59572265);
+	script_31(59572271, 59572265, 792, 789, 790, 791, 773, 788);
+	cs2method_11130(0, 0, 59572302);
+	cs2method_10251(0, 0, 59572302);
+	script_31(59572303, 59572302, 792, 789, 790, 791, 773, 788);
+	cs2method_11130(0, 0, 59572276);
+	cs2method_10251(0, 0, 59572276);
+	script_31(59572277, 59572276, 792, 789, 790, 791, 773, 788);
+	cs2_configs['cfg1122'] = cs2method_10823(59572276);
+	script_3029(59572269, 59572268, 59572270, 59572266, 59572265, 59572271);
+	cs2method_20073(new function<script_3028>(int a0,int a1,int a2,int a3,int a4,int a5) {
+		script_3029(a0, a3, a2, a4, a5, a1);
+		return;
+	}, new WidgetPointer(909,45), new WidgetPointer(909,44), new WidgetPointer(909,46), new WidgetPointer(909,42), new WidgetPointer(909,41), new WidgetPointer(909,47), "IIIIII", new WidgetPointer(909,41));
+	script_3041(59572311, 59572310, 59572308, 59572302, 59572303);
+	cs2method_20073(new function<script_3040>(int a0,int a1,int a2,int a3,int a4) {
+		script_3041(a3, a4, a0, a2, a1);
+		return;
+	}, new WidgetPointer(909,87), new WidgetPointer(909,86), new WidgetPointer(909,84), new WidgetPointer(909,78), new WidgetPointer(909,79), "IIIII", new WidgetPointer(909,78));
+	script_3024(59572280);
+	cs2_configs['cfg2505'] = "";
+	cs2_configs['cfg1274'] = -1;
+	script_3401();
+	return;
+}

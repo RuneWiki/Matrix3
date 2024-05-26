@@ -1,0 +1,92 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5490(object a0) {
+	cs2method_10273((int)cs2_configs['cfg2241']);
+	object v5 = "<col=ebe0bc>";
+	int v4 = (int)cs2_configs['cfg2241'];
+	int v0 = 0;
+	cs2method_10606(v4, 3, v0);
+	cs2method_10013(4, 4, 1, 1);
+	cs2method_10063(0, 0, 1, 1);
+	cs2method_10238(1);
+	cs2method_10811(0);
+	int v7 = cs2method_10060(v0, 1);
+	cs2method_10606(v4, 5, v7);
+	cs2method_10013(10, 10, 0, 0);
+	cs2method_10063(0, 0, 0, 0);
+	cs2method_10310(4650);
+	cs2method_10434(1);
+	int v2 = cs2method_10060(v7, 1);
+	cs2method_10606(v4, 5, v2);
+	cs2method_10013(10, 10, 0, 0);
+	cs2method_10063(0, 0, 2, 0);
+	cs2method_10310(4650);
+	int v9 = cs2method_10060(v2, 1);
+	cs2method_10606(v4, 5, v9);
+	cs2method_10013(10, 10, 0, 0);
+	cs2method_10063(0, 0, 0, 2);
+	cs2method_10310(4650);
+	cs2method_10230(1);
+	cs2method_10434(1);
+	int v11 = cs2method_10060(v9, 1);
+	cs2method_10606(v4, 5, v11);
+	cs2method_10013(10, 10, 0, 0);
+	cs2method_10063(0, 0, 2, 2);
+	cs2method_10310(4650);
+	cs2method_10230(1);
+	int v12 = cs2method_10060(v11, 1);
+	cs2method_10606(v4, 5, v12);
+	cs2method_10013(20, 10, 1, 0);
+	cs2method_10063(0, 0, 1, 0);
+	cs2method_10310(4649);
+	cs2method_10577(1);
+	int v6 = cs2method_10060(v12, 1);
+	cs2method_10606(v4, 5, v6);
+	cs2method_10013(20, 10, 1, 0);
+	cs2method_10063(0, 0, 1, 2);
+	cs2method_10310(4649);
+	cs2method_10577(1);
+	cs2method_10230(1);
+	int v3 = cs2method_10060(v6, 1);
+	cs2method_10606(v4, 5, v3);
+	cs2method_10013(10, 20, 0, 1);
+	cs2method_10063(0, 0, 0, 1);
+	cs2method_10310(4651);
+	cs2method_10577(1);
+	cs2method_10434(1);
+	int v8 = cs2method_10060(v3, 1);
+	cs2method_10606(v4, 5, v8);
+	cs2method_10013(10, 20, 0, 1);
+	cs2method_10063(0, 0, 2, 1);
+	cs2method_10310(4651);
+	cs2method_10577(1);
+	int v10 = cs2method_10060(v8, 1);
+	cs2method_10273((int)cs2_configs['cfg2242']);
+	if (cs2_configs['cfg1691'] != -1) {
+		int v14 = cs2_configs['cfg1691'];
+		int v16 = (int)cs2_configs['cfg2240'];
+		int v15 = (int)cs2_configs['cfg2242'];
+		object v13 = a0;
+		/* 
+			mgi.tools.jagdecs2.DecompilerException: No documentation for:CALL_CS2	9568
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:198)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+				at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+				at tests.Main.main(Main.java:69)
+			
+		 */
+	}
+	int v1 = script_7235(26867, (int)cs2_configs['cfg2240'], a0, v5, (int)cs2_configs['cfg2242'], 0);
+	return;
+}

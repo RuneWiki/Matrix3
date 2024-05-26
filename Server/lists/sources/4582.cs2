@@ -1,0 +1,36 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+string script_4582(int a0,int a1,int a2) {
+	if (a0 > 0) {
+		if (a2 > 0) {
+			if (a1 > 0) {
+				return (string)cs2method_10379(a0) + " " + (string)script_4583("day", a0, "days") + ", " + (string)cs2method_10379(a2) + " " + (string)script_4583("hour", a0, "hours") + " and " + (string)cs2method_10379(a1) + " " + (string)script_4583("minute", a0, "minutes");
+			}
+			return (string)cs2method_10379(a0) + " " + (string)script_4583("day", a0, "days") + " and " + (string)cs2method_10379(a2) + " " + (string)script_4583("hour", a0, "hours");
+		}
+		if (a1 > 0) {
+			return (string)cs2method_10379(a0) + " " + (string)script_4583("day", a0, "days") + " and " + (string)cs2method_10379(a1) + " " + (string)script_4583("minute", a0, "minutes");
+		}
+		return (string)cs2method_10379(a0) + " " + (string)script_4583("day", a0, "days");
+	}
+	if (a2 > 0) {
+		if (a1 > 0) {
+			return (string)cs2method_10379(a2) + " " + (string)script_4583("hour", a0, "hours") + " and " + (string)cs2method_10379(a1) + " " + (string)script_4583("minute", a0, "minutes");
+		}
+		return (string)cs2method_10379(a2) + " " + (string)script_4583("hour", a0, "hours");
+	}
+	if (a1 > 0) {
+		return (string)cs2method_10379(a1) + " " + (string)script_4583("minute", a0, "minutes");
+	}
+	return "";
+}

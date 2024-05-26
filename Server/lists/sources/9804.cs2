@@ -1,0 +1,105 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9804(int a0,int a1) {
+	switch (a1) {
+		case 68157564:
+			if (client_configs['cfg4166'].bitcfg21695 == 1) {
+				cs2method_10026(68157567, "Owned");
+				cs2method_10467(0, 68157565);
+				cs2method_10670(14375, 1, 0, 150);
+			} else {
+				cs2method_10026(68157567, "Unlock");
+				cs2method_10670(36962, 1, 0, 150);
+			}
+			break;
+		case 68157571:
+			if (client_configs['cfg4166'].bitcfg21696 == 1) {
+				cs2method_10026(68157574, "Owned");
+				cs2method_10467(0, 68157572);
+				cs2method_10670(14375, 1, 0, 150);
+			} else {
+				cs2method_10026(68157574, "Unlock");
+				cs2method_10670(36962, 1, 0, 150);
+			}
+			break;
+		case 68157578:
+			if (client_configs['cfg4166'].bitcfg21697 == 1) {
+				cs2method_10026(68157581, "Owned");
+				cs2method_10467(0, 68157579);
+				cs2method_10670(14375, 1, 0, 150);
+			} else {
+				cs2method_10026(68157581, "Unlock");
+				cs2method_10670(36962, 1, 0, 150);
+			}
+			break;
+		case 68157585:
+			if (client_configs['cfg4166'].bitcfg21698 == 1) {
+				cs2method_10026(68157588, "Owned");
+				cs2method_10467(0, 68157586);
+				cs2method_10670(14375, 1, 0, 150);
+			} else {
+				cs2method_10026(68157588, "Unlock");
+				cs2method_10670(36962, 1, 0, 150);
+			}
+			break;
+		case 68157613:
+			if (client_configs['cfg4166'].bitcfg21699 == 1) {
+				cs2method_10026(68157616, "Owned");
+				cs2method_10467(0, 68157614);
+				cs2method_10670(14375, 1, 0, 150);
+			} else {
+				cs2method_10026(68157616, "Unlock");
+				cs2method_10670(36962, 1, 0, 150);
+			}
+			break;
+		case 68157620:
+			if (client_configs['cfg4166'].bitcfg21700 == 1) {
+				cs2method_10026(68157623, "Owned");
+				cs2method_10467(0, 68157621);
+				cs2method_10670(14375, 1, 0, 150);
+			} else {
+				cs2method_10026(68157623, "Unlock");
+				cs2method_10670(36962, 1, 0, 150);
+			}
+			break;
+		case 68157627:
+			if (client_configs['cfg4166'].bitcfg21701 == 1) {
+				cs2method_10026(68157630, "Owned");
+				cs2method_10467(0, 68157628);
+				cs2method_10670(14375, 1, 0, 150);
+			} else {
+				cs2method_10026(68157630, "Unlock");
+				cs2method_10670(36962, 1, 0, 150);
+			}
+			break;
+		case 68157634:
+			if (client_configs['cfg4166'].bitcfg21702 == 1) {
+				cs2method_10026(68157637, "Owned");
+				cs2method_10467(0, 68157635);
+				cs2method_10670(14375, 1, 0, 150);
+			} else {
+				cs2method_10026(68157637, "Unlock");
+				cs2method_10670(36962, 1, 0, 150);
+			}
+			break;
+		case 68157445:
+			cs2method_10026(68157445, "Wins: " + (string)cs2method_10379(client_configs['cfg4166'].bitcfg21704) + "    Reward points: " + (string)cs2method_10379(client_configs['cfg4166'].bitcfg21703));
+			break;
+		case 68157536:
+			cs2method_10026(68157536, "Level: " + (string)cs2method_10379(client_configs['cfg4168']));
+			break;
+		case 68157491:
+			cs2method_10026(68157491, "Level: " + (string)cs2method_10379(client_configs['cfg4167']));
+	}
+	return;
+}

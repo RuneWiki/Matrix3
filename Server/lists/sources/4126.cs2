@@ -1,0 +1,125 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+string script_4126(int a0) {
+	object v5;
+	int v3 = 0;
+	int v16 = 0;
+	int v9 = 0;
+	int v14 = 1;
+	object v10 = "";
+	object v15 = "";
+	int v1 = a0;
+	script_2413_struct(3,0,0) v17 = script_2413(v1);
+	int v7 = v17.intpart_2;
+	int v0 = v17.intpart_1;
+	int v6 = v17.intpart_0;
+	int v13 = v6;
+	int v12 = v0;
+	int v4 = v7;
+	script_4127_struct(3,0,0) v18 = script_4127(v13, v12, v4);
+	int v11 = v18.intpart_2;
+	int v8 = v18.intpart_1;
+	int v2 = v18.intpart_0;
+	if (v11 == 0) {
+		return "Black";
+	}
+	if (v11 == 255) {
+		return "White";
+	}
+	if (v11 < 97) {
+		v10 = "Dark ";
+	} else if (v11 == 127 && v8 >= 240) {
+		v10 = "Vivid ";
+	} else if (v11 > 157) {
+		v10 = "Light ";
+	} else {
+		v14 = 0;
+	}
+	switch (a0) {
+		case 65535:
+		case 255:
+		case 65280:
+		case 16744448:
+		case 8388863:
+		case 4194559:
+		case 16711935:
+		case 16776960:
+		case 16711680:
+			v10 = "Pure ";
+			v14 = 1;
+	}
+	if (v14 == 1) {
+		if (v8 == 0) {
+			object v19 = "grey";
+		}
+		if (v2 < 10) {
+			v5 = "red";
+		} else if (v2 < 45) {
+			v5 = "orange";
+		} else if (v2 < 75) {
+			v5 = "yellow";
+		} else if (v2 < 140) {
+			v5 = "green";
+		} else if (v2 < 160) {
+			v5 = "turquoise";
+		} else if (v2 < 195) {
+			v5 = "cyan";
+		} else if (v2 < 250) {
+			v5 = "blue";
+		} else if (v2 < 265) {
+			v5 = "indigo";
+		} else if (v2 < 280) {
+			v5 = "violet";
+		} else if (v2 < 290) {
+			v5 = "purple";
+		} else if (v2 < 305) {
+			v5 = "magenta";
+		} else if (v2 < 345) {
+			v5 = "pink";
+		} else {
+			v5 = "red";
+		}
+	} else {
+		if (v8 == 0) {
+			object v19 = "Grey";
+		}
+		if (v2 < 10) {
+			v5 = "Red";
+		} else if (v2 < 45) {
+			v5 = "Orange";
+		} else if (v2 < 75) {
+			v5 = "Yellow";
+		} else if (v2 < 140) {
+			v5 = "Green";
+		} else if (v2 < 160) {
+			v5 = "Turquoise";
+		} else if (v2 < 195) {
+			v5 = "Cyan";
+		} else if (v2 < 250) {
+			v5 = "Blue";
+		} else if (v2 < 265) {
+			v5 = "Indigo";
+		} else if (v2 < 280) {
+			v5 = "Violet";
+		} else if (v2 < 290) {
+			v5 = "Purple";
+		} else if (v2 < 305) {
+			v5 = "Magenta";
+		} else if (v2 < 345) {
+			v5 = "Pink";
+		} else {
+			v5 = "Red";
+		}
+	}
+	return (string)v10 + (string)v5 + ".";
+}

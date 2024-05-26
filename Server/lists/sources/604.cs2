@@ -1,0 +1,21 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_604() {
+	if (client_configs['cfg135'] == -1) {
+		return;
+	}
+	cs2_configs['cfg85'] = cs2method_11048(cs2method_10461(cs2_configs['cfg85'], 1), 1);
+	cs2method_10026(6881332, (string)cs2method_10055(cs2_configs['cfg85'], 1) + " gp");
+	script_609();
+	return;
+}

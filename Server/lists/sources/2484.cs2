@@ -1,0 +1,55 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2484() {
+	int v0 = 1;
+	cs2_configs['cfg838'] = client_configs['cfg1624'].bitcfg5207;
+	while (v0 <= 4 && (int)idx17mapData('i', 'I', 2383, v0) != 42926100) {
+		if (v0 <= cs2_configs['cfg838']) {
+			cs2method_10520(14784543, (int)idx17mapData('i', 'I', 2384, v0));
+			cs2method_11127(1, (int)idx17mapData('i', 'I', 2383, v0), "Select");
+			switch (v0) {
+				case 1:
+					cs2method_10026((int)idx17mapData('i', 'I', 2384, v0), "Conflict");
+					break;
+				case 2:
+					cs2method_10026((int)idx17mapData('i', 'I', 2384, v0), "Siege");
+					break;
+				case 3:
+					cs2method_10026((int)idx17mapData('i', 'I', 2384, v0), "Hoard");
+					break;
+				case 4:
+					cs2method_10026((int)idx17mapData('i', 'I', 2384, v0), "Rescue");
+			}
+		} else {
+			cs2method_10520(10053120, (int)idx17mapData('i', 'I', 2384, v0));
+			cs2method_11127(1, (int)idx17mapData('i', 'I', 2383, v0), "Select");
+			switch (v0) {
+				case 2:
+					cs2method_10026((int)idx17mapData('i', 'I', 2384, v0), "Siege" + "<br>" + "- Locked");
+					break;
+				case 3:
+					cs2method_10026((int)idx17mapData('i', 'I', 2384, v0), "Hoard" + "<br>" + "- Locked");
+					break;
+				case 4:
+					cs2method_10026((int)idx17mapData('i', 'I', 2384, v0), "Rescue" + "<br>" + "- Locked");
+			}
+		}
+		v0 = cs2method_10060(v0, 1);
+	}
+	cs2method_10520(10053120, 42926122);
+	cs2method_10520(10053120, 42926111);
+	cs2method_10520(10053120, 42926118);
+	cs2method_10520(10053120, 42926106);
+	script_2486();
+	return;
+}

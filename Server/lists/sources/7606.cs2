@@ -1,0 +1,21 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_7606() {
+	int v0 = cs2method_10640(94, 3);
+	if (v0 == -1) {
+		return -1;
+	}
+	int v1 = itemDefsAttribute(v0, 686);
+	int v2 = script_7602(v1);
+	return v2;
+}

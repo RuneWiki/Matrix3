@@ -1,0 +1,99 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3704(int a0,int a1) {
+	if (a1 == 0) {
+		switch (a0) {
+			case 68878377:
+				cs2method_10758(18093, 68878337);
+				cs2method_10758(18094, 68878336);
+				cs2method_10758(18095, 68878338);
+				break;
+			case 68878376:
+				cs2method_10758(18093, 68878464);
+				cs2method_10758(18094, 68878463);
+				cs2method_10758(18095, 68878465);
+				break;
+			case 68878358:
+				cs2method_10026(68878349, "Every task will yield an XP lamp.");
+				break;
+			case 68878359:
+				cs2method_10026(68878349, "Hiker boots and gloves: Collect a Road Trip journal.");
+				break;
+			case 68878360:
+				cs2method_10026(68878349, "Hiker cap: 5 tasks completed.");
+				break;
+			case 68878361:
+				cs2method_10026(68878349, "Hiker jacket: 10 tasks completed.");
+				break;
+			case 68878362:
+				cs2method_10026(68878349, "Hiker leggings: 15 tasks completed.");
+				break;
+			case 68878363:
+				cs2method_10026(68878349, "Hiker backpack: All tasks completed.");
+				break;
+			case 68878364:
+				cs2method_10026(68878349, "Cheeky Monkey: All tasks completed.");
+				break;
+			case 68878365:
+				cs2method_10026(68878349, "Partyhat firemaking: All tasks completed.");
+		}
+	} else if (a1 == 1) {
+		if (a0 == 68878377) {
+			if (cs2method_10609(68878357) == 1) {
+				cs2method_10758(18087, 68878337);
+				cs2method_10758(18088, 68878336);
+				cs2method_10758(18089, 68878338);
+			} else {
+				cs2method_10758(18090, 68878337);
+				cs2method_10758(18091, 68878336);
+				cs2method_10758(18092, 68878338);
+			}
+		} else if (cs2method_10609(68878357) == 1) {
+			cs2method_10758(18090, 68878464);
+			cs2method_10758(18091, 68878463);
+			cs2method_10758(18092, 68878465);
+		} else {
+			cs2method_10758(18087, 68878464);
+			cs2method_10758(18088, 68878463);
+			cs2method_10758(18089, 68878465);
+		}
+	} else {
+		if (a1 == 2) {
+			if (a0 == 68878377) {
+				cs2method_10467(1, 68878357);
+				cs2method_10467(0, 68878356);
+				cs2method_10026(68878349, "Select a task on the left for more information");
+				cs2method_10467(1, 68878350);
+				cs2method_10467(0, 68878351);
+				cs2method_10467(0, 68878405);
+				cs2method_10467(0, 68878406);
+				cs2method_10112(-60, -60, 0, 0, 68878380);
+				cs2method_10758(18090, 68878464);
+				cs2method_10758(18091, 68878463);
+				cs2method_10758(18092, 68878465);
+			} else {
+				cs2method_10467(0, 68878357);
+				cs2method_10467(1, 68878356);
+				cs2method_10026(68878349, "Hover over a reward on the left for more information");
+				cs2method_10467(1, 68878350);
+				cs2method_10467(1, 68878351);
+				cs2method_10467(1, 68878405);
+				cs2method_10467(1, 68878406);
+				cs2method_10758(18090, 68878337);
+				cs2method_10758(18091, 68878336);
+				cs2method_10758(18092, 68878338);
+			}
+		}
+	}
+	return;
+}

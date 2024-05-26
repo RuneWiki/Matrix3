@@ -1,0 +1,38 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7432(int a0,int a1,int a2,int a3) {
+	if (cs2method_10461(cs2method_10133(), a2) < 5) {
+		return;
+	}
+	cs2method_20389(load function<7432>, a0, cs2method_10133(), new WidgetPointer(-32768,3), new WidgetPointer(a3), "iiII", new WidgetPointer(a1));
+	int v15 = -1;
+	int v11 = -1;
+	int v14 = 0;
+	int v16 = 0;
+	int v1 = -1;
+	object v17 = "";
+	int v9 = 0;
+	int v5 = a3;
+	script_7434_struct(6,1,0) v7 = script_7434(v5);
+	int v8 = v7.intpart_5;
+	object v12 = v7.objectpart_0;
+	int v2 = v7.intpart_4;
+	int v4 = v7.intpart_3;
+	int v3 = v7.intpart_2;
+	int v13 = v7.intpart_1;
+	int v0 = v7.intpart_0;
+	int v6 = cs2method_10060(v8, a0);
+	int v10 = cs2method_11048(cs2method_10872(v6, v4), v3);
+	script_7433(v10, a3, 1);
+	return;
+}

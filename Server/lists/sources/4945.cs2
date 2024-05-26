@@ -1,0 +1,53 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_4945(int a0) {
+	if (cs2method_10172() == 1) {
+		if (clan_chat_configs['cfg2552'].bitcfg6483 == a0) {
+			return 1;
+		}
+		if (clan_chat_configs['cfg2552'].bitcfg6484 == a0) {
+			return 2;
+		}
+		if (clan_chat_configs['cfg2552'].bitcfg6485 == a0) {
+			return 3;
+		}
+		if (clan_chat_configs['cfg2552'].bitcfg6486 == a0) {
+			return 4;
+		}
+		if (clan_chat_configs['cfg2552'].bitcfg6487 == a0) {
+			return 5;
+		}
+		if (clan_chat_configs['cfg2552'].bitcfg6488 == a0) {
+			return 6;
+		}
+		if (clan_chat_configs['cfg2559'].bitcfg6489 == a0) {
+			return 7;
+		}
+		if (clan_chat_configs['cfg2559'].bitcfg6490 == a0) {
+			return 8;
+		}
+		if (clan_chat_configs['cfg2559'].bitcfg6491 == a0) {
+			return 9;
+		}
+		if (clan_chat_configs['cfg2559'].bitcfg6492 == a0) {
+			return 10;
+		}
+		if (clan_chat_configs['cfg2559'].bitcfg6493 == a0) {
+			return 11;
+		}
+		if (clan_chat_configs['cfg2559'].bitcfg6494 == a0) {
+			return 12;
+		}
+	}
+	return -1;
+}

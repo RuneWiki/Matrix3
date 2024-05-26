@@ -1,0 +1,120 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+object script_2781() {
+	object v6 = "";
+	int v0 = cs2method_10948();
+	int v11 = 0;
+	int v4 = 0;
+	int v5 = 0;
+	opc_struct10790(3,0,0) v8 = cs2method_10790();
+	int v12 = v8.intpart_2;
+	int v3 = v8.intpart_1;
+	int v10 = v8.intpart_0;
+	int v1 = cs2method_10461(cs2method_10968(v10, 1440), 11745);
+	int v9 = cs2method_10587();
+	int v2 = cs2method_10528();
+	int v7 = cs2method_10461(v2, v0);
+	if (v2 <= v9 || v7 < 0) {
+		v7 = 0;
+	}
+	if (v9 != 0 && cs2method_10060(v1, v0) >= v9 && cs2_configs['cfg1315'] != v0 && v1 <= 14) {
+		if (v1 <= 7) {
+			if (v1 <= 3) {
+				if (v1 <= 1) {
+					if (v1 == 0) {
+						if (v7 > 0 && v7 <= 14) {
+							if (v7 <= 7) {
+								if (v7 <= 3) {
+									if (v7 == 1) {
+										v6 = "Your credit card has expired and your membership credit has run out. Please re-subscribe using a new credit card to restart your membership." + "<br>" + "<br>" + "If you renew today, you will pay the lower 'loyalty' rate. After this, your discount will no longer be available.";
+										cs2_configs['cfg1316'] = v0;
+									} else {
+										if (cs2method_10060(cs2_configs['cfg1316'], 2) < v0) {
+											v6 = "Your credit card has expired and your membership credit has run out. Please re-subscribe using a new credit card to restart your membership." + "<br>" + "<br>" + "If you renew within the next " + (string)cs2method_10379(v7) + " days, you will pay the lower 'loyalty' rate. After this, your discount will no longer be available.";
+											cs2_configs['cfg1316'] = v0;
+										}
+									}
+								} else {
+									if (cs2method_10060(cs2_configs['cfg1316'], 4) < v0) {
+										v6 = "Your credit card has expired and your membership credit has run out. Please re-subscribe using a new credit card to restart your membership." + "<br>" + "<br>" + "If you renew within the next " + (string)cs2method_10379(v7) + " days, you will pay the lower 'loyalty' rate. After this, your discount will no longer be available.";
+										if (v7 == 7) {
+											cs2_configs['cfg1316'] = v0;
+										} else {
+											cs2_configs['cfg1316'] = cs2method_10461(v0, cs2method_10461(7, v7));
+										}
+									}
+								}
+							} else {
+								if (cs2method_10060(cs2_configs['cfg1316'], 7) < v0) {
+									v6 = "Your credit card has expired and your membership credit has run out. Please re-subscribe using a new credit card to restart your membership." + "<br>" + "<br>" + "If you renew within the next " + (string)cs2method_10379(v7) + " days, you will pay the lower 'loyalty' rate. After this, your discount will no longer be available.";
+									if (v7 == 14) {
+										cs2_configs['cfg1316'] = v0;
+									} else {
+										cs2_configs['cfg1316'] = cs2method_10461(v0, cs2method_10461(14, v7));
+									}
+								}
+							}
+						}
+					} else {
+						if (v7 > 0) {
+							v6 = "Your credit card has expired. Please re-subscribe using a new credit card to continue your membership." + "<br>" + "<br>" + "If you renew within the next " + (string)cs2method_10379(v7) + " days, you will continue paying your lower 'loyalty' rate. After this, your discount will no longer be available.";
+						} else {
+							v6 = "Your credit card has expired. Please re-subscribe using a new credit card to continue your membership.";
+						}
+						cs2_configs['cfg1315'] = v0;
+					}
+				} else {
+					if (cs2method_10060(cs2_configs['cfg1315'], 2) < v0) {
+						if (v7 > 0) {
+							v6 = "Your credit card has expired. Please re-subscribe using a new credit card to continue your membership." + "<br>" + "<br>" + "If you renew within the next " + (string)cs2method_10379(v7) + " days, you will continue paying your lower 'loyalty' rate. After this, your discount will no longer be available.";
+						} else {
+							v6 = "Your credit card has expired. Please re-subscribe using a new credit card to continue your membership.";
+						}
+						if (v1 == 3) {
+							cs2_configs['cfg1315'] = v0;
+						} else {
+							cs2_configs['cfg1315'] = cs2method_10461(v0, cs2method_10461(3, v1));
+						}
+					}
+				}
+			} else {
+				if (cs2method_10060(cs2_configs['cfg1315'], 4) < v0) {
+					if (v7 > 0) {
+						v6 = "Your credit card has expired. Please re-subscribe using a new credit card to continue your membership." + "<br>" + "<br>" + "If you renew within the next " + (string)cs2method_10379(v7) + " days, you will continue paying your lower 'loyalty' rate. After this, your discount will no longer be available.";
+					} else {
+						v6 = "Your credit card has expired. Please re-subscribe using a new credit card to continue your membership.";
+					}
+					if (v1 == 7) {
+						cs2_configs['cfg1315'] = v0;
+					} else {
+						cs2_configs['cfg1315'] = cs2method_10461(v0, cs2method_10461(7, v1));
+					}
+				}
+			}
+		} else {
+			if (cs2method_10060(cs2_configs['cfg1315'], 7) < v0) {
+				if (v7 > 0) {
+					v6 = "Your credit card has expired. Please re-subscribe using a new credit card to continue your membership." + "<br>" + "<br>" + "If you renew within the next " + (string)cs2method_10379(v7) + " days, you will continue paying your lower 'loyalty' rate. After this, your discount will no longer be available.";
+				} else {
+					v6 = "Your credit card has expired. Please re-subscribe using a new credit card to continue your membership.";
+				}
+				if (v1 == 14) {
+					cs2_configs['cfg1315'] = v0;
+				} else {
+					cs2_configs['cfg1315'] = cs2method_10461(v0, cs2method_10461(14, v1));
+				}
+			}
+		}
+	}
+	return v6;
+}

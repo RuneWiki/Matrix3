@@ -1,0 +1,56 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9985() {
+	cs2method_10467(1, 37814319);
+	cs2method_10467(1, 37814320);
+	cs2method_10467(1, 37814321);
+	cs2method_10467(1, 37814322);
+	cs2method_10467(1, 37814323);
+	cs2method_10467(1, 37814324);
+	cs2method_10467(1, 37814325);
+	cs2method_10467(1, 37814326);
+	cs2method_10467(1, 37814327);
+	cs2method_10467(1, 37814328);
+	cs2method_10467(1, 37814329);
+	cs2method_10467(1, 37814330);
+	cs2method_10467(1, 37814331);
+	cs2method_10467(1, 37814332);
+	cs2method_10467(1, 37814333);
+	cs2method_10467(1, 37814334);
+	cs2method_10467(1, 37814312);
+	cs2method_10467(1, 37814313);
+	cs2method_10467(1, 37814314);
+	cs2method_10467(1, 37814315);
+	cs2method_10467(1, 37814316);
+	cs2method_10467(1, 37814317);
+	cs2method_10467(1, 37814302);
+	cs2method_10467(1, 37814318);
+	for (int v4 = 0, int v0 = -1, int v3 = 0, int v7 = 8, int v1 = 8, int v5 = -1, int v2 = -1; v3 < 22; v3 = cs2method_10060(v3, 1)) {
+		int v8 = script_9971(v3, 22);
+		int v6 = script_9979(v8, 37814278);
+		if (v6 != -1) {
+			int v8;
+			int v9;
+			if (v3 >= 11) {
+				v8 = 49;
+				v9 = cs2method_10060(cs2method_10051(cs2method_10461(v3, 11), 41), 8);
+			} else {
+				v8 = 8;
+				v9 = cs2method_10060(cs2method_10051(v3, 41), 8);
+			}
+			cs2method_10467(0, v6);
+			cs2method_10112(v9, v8, 0, 0, v6);
+		}
+	}
+	return;
+}

@@ -1,0 +1,22 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8264() {
+	if (client_configs['cfg1173'].bitcfg3034 == 1) {
+		cs2method_10467(1, 94502999);
+		cs2method_10467(0, 94503000);
+	} else {
+		cs2method_10467(0, 94502999);
+		cs2method_10467(1, 94503000);
+	}
+	return;
+}

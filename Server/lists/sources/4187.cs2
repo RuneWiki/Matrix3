@@ -1,0 +1,23 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_4187_struct(2,0,0) script_4187() {
+	int v1 = 0;
+	int v0 = 0;
+	int v2 = 0;
+	int v4 = 0;
+	int v7 = 1440;
+	int v3 = cs2method_10038(cs2method_11115(), v7);
+	int v5 = cs2method_10461(v7, v3);
+	int v6 = cs2method_10968(v5, 60);
+	return new script_4187_struct(v6, v5);
+}

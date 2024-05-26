@@ -1,0 +1,33 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1405() {
+	if (client_configs['cfg1369'].bitcfg3954 == 1) {
+		cs2method_10026(49545226, "Draughts: Options");
+		script_1406(49545219);
+	} else if (client_configs['cfg1369'].bitcfg3954 == 2) {
+		cs2method_10026(49545226, "Runelink: Options");
+		script_1406(49545220);
+	} else if (client_configs['cfg1369'].bitcfg3954 == 3) {
+		cs2method_10026(49545226, "Runesquares: Options");
+		script_1406(49545224);
+	} else {
+		if (client_configs['cfg1369'].bitcfg3954 == 4) {
+			cs2method_10026(49545226, "Runeversi: Options");
+			script_1406(49545222);
+		}
+	}
+	script_1407();
+	script_1408();
+	script_1409();
+	return;
+}

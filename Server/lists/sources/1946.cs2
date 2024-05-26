@@ -1,0 +1,115 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1946() {
+	int v0 = 0;
+	object v1 = "";
+	cs2method_20750(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(810,5), "I", new WidgetPointer(810,10));
+	if (cs2_configs['cfg589'] == 99999992) {
+		cs2method_10026(53084241, "You abandon the game!");
+		cs2method_10026(53084177, "You abandon the game." + "<br>" + "<br>" + "The mystics don't seem happy and scowl at you, muttering unpleasant sentiments under their breath." + "<br>" + "<br>" + "You notice that you received no score as a result.");
+		cs2method_10026(53084218, "-100%");
+		cs2method_10026(53084192, "");
+		cs2method_10026(53084193, "");
+		object v2 = "The awards tab is not available when you leave a game early.";
+		cs2method_21121(new function<script_7781>(object a0,int a1,int a2,int a3,int a4) {
+			script_7788(a0, a2, -1, a3, a1, a4);
+			return;
+		}, new WidgetPointer(810,10), new WidgetPointer(810,5), (string)v2, 25, 189, "IIsii", new WidgetPointer(810,10));
+	} else {
+		if (cs2_configs['cfg588'] == 1) {
+			cs2method_10026(53084192, cs2method_10379(cs2_configs['cfg597']));
+			cs2method_10026(53084193, cs2method_10379(cs2_configs['cfg598']));
+		} else {
+			cs2method_10026(53084192, cs2method_10379(cs2_configs['cfg598']));
+			cs2method_10026(53084193, cs2method_10379(cs2_configs['cfg597']));
+		}
+		if (cs2_configs['cfg588'] == cs2_configs['cfg589']) {
+			cs2method_10026(53084241, "Your valiant team takes the victory!");
+			if (v0 == 1) {
+				cs2method_10026(53084177, "With the heroic conquest of all resources and facilities, your team have ripped success from the feeble fingers of your unworthy foes." + "<br>" + "<br>" + "The mystics stand in awe of your power, and you hear them praising you in excited whispers." + "<br>" + "<br>" + "You notice that they have increased your score as a reward.");
+			} else {
+				cs2method_10026(53084177, "The heroic, skilful and brave deeds of your team have ripped success from the feeble fingers of your unworthy foes." + "<br>" + "<br>" + "The mystics stand in awe of your power, and you hear them praising you in excited whispers." + "<br>" + "<br>" + "You notice that they have increased your score as a reward.");
+			}
+			cs2method_10026(53084218, "+10%");
+		} else if (cs2_configs['cfg589'] == 0) {
+			cs2method_10026(53084241, "The game was a draw!");
+			cs2method_10026(53084177, "As if ordained by fate, the teams were equally brave and skillful, resulting in a draw." + "<br>" + "<br>" + "The mystics nod knowingly, and you hear them discussing how the balance of the universe is reflected beautifully in the conflict's outcome." + "<br>" + "<br>");
+			cs2method_10026(53084218, "+0%");
+		} else {
+			cs2method_10026(53084241, "The enemy team has defeated you!");
+			if (v0 == 1) {
+				cs2method_10026(53084177, "Despite your best efforts, your team was beaten; the victory snatched away as the enemy took control of all resources and facilities." + "<br>" + "<br>" + "The mystics frown at you, and shake their heads sadly." + "<br>" + "<br>" + "You hear them arguing over whether they overestimated you, or if you were just unlucky.");
+			}
+			cs2method_10026(53084177, "Despite your best efforts, your team was beaten; the victory snatched away by your fearsome foes." + "<br>" + "<br>" + "The mystics frown at you, and shake their heads sadly." + "<br>" + "<br>" + "You hear them arguing over whether they overestimated you, or if you were just unlucky.");
+			cs2method_10026(53084218, "+0%");
+		}
+	}
+	cs2method_10026(53084219, cs2method_10379(cs2_configs['cfg590']));
+	cs2method_10026(53084219, cs2method_10379(cs2_configs['cfg590']));
+	cs2method_10026(53084220, cs2method_10379(cs2_configs['cfg591']));
+	cs2method_10026(53084221, cs2method_10379(cs2_configs['cfg592']));
+	cs2method_10026(53084222, cs2method_10379(cs2_configs['cfg593']));
+	cs2method_10026(53084183, cs2method_10379(cs2_configs['cfg594']));
+	cs2method_10026(53084185, cs2method_10379(cs2_configs['cfg595']));
+	if (cs2_configs['cfg589'] != 99999992) {
+		cs2method_10026(53084223, cs2method_10379(cs2_configs['cfg596']));
+	} else {
+		cs2method_10026(53084223, cs2method_10379(0));
+	}
+	if (cs2_configs['cfg600'] > 0 || cs2_configs['cfg603'] > 0) {
+		cs2method_10026(53084296, cs2method_10379(cs2_configs['cfg599']));
+		cs2method_10026(53084295, cs2method_10379(cs2_configs['cfg600']));
+		cs2method_10026(53084299, cs2method_10379(cs2_configs['cfg601']));
+		cs2method_10026(53084300, cs2method_10379(cs2_configs['cfg602']));
+		cs2method_10026(53084298, cs2method_10379(cs2_configs['cfg603']));
+		cs2method_10026(53084297, cs2method_10379(cs2_configs['cfg604']));
+		cs2method_10026(53084301, cs2method_10379(cs2_configs['cfg605']));
+		cs2method_10026(53084302, cs2method_10379(cs2_configs['cfg606']));
+		script_1587(53084278, 53084303, 495, cs2_configs['cfg2443']);
+		script_1587(53084277, 53084303, 495, cs2_configs['cfg2444']);
+		script_1587(53084281, 53084303, 495, cs2_configs['cfg2445']);
+		script_1587(53084282, 53084303, 495, cs2_configs['cfg2446']);
+		script_1587(53084280, 53084303, 495, cs2_configs['cfg2447']);
+		script_1587(53084279, 53084303, 495, cs2_configs['cfg2448']);
+		script_1587(53084283, 53084303, 495, cs2_configs['cfg2449']);
+		script_1587(53084284, 53084303, 495, cs2_configs['cfg2450']);
+		if (cs2_configs['cfg607'] > 0) {
+			cs2method_10026(53084287, cs2method_10379(cs2_configs['cfg607']));
+		}
+		if (cs2_configs['cfg608'] > 0) {
+			cs2method_10026(53084286, cs2method_10379(cs2_configs['cfg608']));
+		}
+		if (cs2_configs['cfg609'] > 0) {
+			cs2method_10026(53084290, cs2method_10379(cs2_configs['cfg609']));
+		}
+		if (cs2_configs['cfg610'] > 0) {
+			cs2method_10026(53084291, cs2method_10379(cs2_configs['cfg610']));
+		}
+		if (cs2_configs['cfg611'] > 0) {
+			cs2method_10026(53084289, cs2method_10379(cs2_configs['cfg611']));
+		}
+		if (cs2_configs['cfg612'] > 0) {
+			cs2method_10026(53084288, cs2method_10379(cs2_configs['cfg612']));
+		}
+		if (cs2_configs['cfg613'] > 0) {
+			cs2method_10026(53084292, cs2method_10379(cs2_configs['cfg613']));
+		}
+		if (cs2_configs['cfg614'] > 0) {
+			cs2method_10026(53084293, cs2method_10379(cs2_configs['cfg614']));
+		}
+	}
+	return;
+}

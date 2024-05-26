@@ -1,0 +1,18 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_8925() {
+	if (client_configs['cfg3079'] >= 4223 && client_configs['cfg3079'] <= 4234) {
+		return 10;
+	}
+	return cs2method_11048(cs2method_10060(1, cs2method_10968(cs2method_10461(client_configs['cfg3079'], script_8926()), 7)), 1);
+}

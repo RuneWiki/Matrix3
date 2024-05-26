@@ -1,0 +1,43 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9420(int a0) {
+	cs2method_10670(36961, 1, 0, 200);
+	cs2method_10467(0, 46596115);
+	int v0 = idx17mapData('i', 'J', 8211, a0);
+	int v2 = idx22mapAttribute(v0, 3931);
+	object v1 = "Are you sure you want to claim this reward?";
+	if (cs2method_10938(1) < itemDefsAttribute(v2, 750)) {
+		v1 = cs2method_10427(v1, "<br>" + "<col=ff0000>" + "You require " + (string)cs2method_10379(itemDefsAttribute(v2, 750)) + " Defence to wear this armour.");
+	}
+	cs2method_10026(46596186, v1);
+	if (client_configs['cfg3975'].bitcfg21115 == 3) {
+		cs2method_10026(46596184, cs2method_10018(idx22mapAttribute(v0, 3931)));
+		if (idx22mapAttribute(v0, 3941) == 1) {
+			cs2method_10039(-1, -1, 46596185);
+			cs2method_10758(idx22mapAttribute(v0, 3948), 46596185);
+		} else {
+			cs2method_10039(idx22mapAttribute(v0, 3931), -1, 46596185);
+		}
+	} else if (idx22mapAttribute(v0, 3941) == 1) {
+		cs2method_10039(-1, -1, 46596185);
+		cs2method_10758(idx22mapAttribute(v0, 3949), 46596185);
+	} else {
+		cs2method_10039(idx22mapAttribute(v0, 3932), -1, 46596185);
+	}
+	cs2method_10026(46596184, cs2method_10018(idx22mapAttribute(v0, 3932)));
+	cs2method_20486(new function<script_9411>(int a0,int a1) {
+		script_9412(a1, a0);
+		return;
+	}, a0, 1, "ii", new WidgetPointer(711,86));
+	return;
+}

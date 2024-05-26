@@ -1,0 +1,224 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9303() {
+	if (cs2_configs['cfg3852'] <= 0) {
+		cs2_configs['cfg3852'] = 0;
+	}
+	cs2method_10273(41877519);
+	cs2method_10273(41877520);
+	int v1 = script_9320(client_configs['cfg3934'].bitcfg20972);
+	if (v1 == -1) {
+		return;
+	}
+	int v3 = idx17mapData('i', 'i', v1, cs2_configs['cfg3852']);
+	int v11 = idx17mapData('i', 'J', 8081, v3);
+	if (v11 == -1) {
+		return;
+	}
+	int v8 = 0;
+	int v7 = 0;
+	int v10 = v7;
+	int v9 = v8;
+	if (idx22mapAttribute(v11, 3842) != -1) {
+		int v16 = idx22mapAttribute(v11, 3842);
+		int v17 = idx22mapAttribute(v11, 3847);
+		int v15 = 0;
+		int v14 = v8;
+		script_9306_struct(2,0,0) v13 = script_9306(v16, v17, v15, v14);
+		v8 = v13.intpart_1;
+		v7 = v13.intpart_0;
+	}
+	if (idx22mapAttribute(v11, 3843) != -1) {
+		int v16 = idx22mapAttribute(v11, 3843);
+		int v17 = idx22mapAttribute(v11, 3848);
+		int v15 = v7;
+		int v14 = v8;
+		script_9306_struct(2,0,0) v13 = script_9306(v16, v17, v15, v14);
+		v8 = v13.intpart_1;
+		v7 = v13.intpart_0;
+	}
+	if (idx22mapAttribute(v11, 3844) != -1) {
+		int v15 = idx22mapAttribute(v11, 3844);
+		int v14 = idx22mapAttribute(v11, 3849);
+		int v17 = v7;
+		int v16 = v8;
+		script_9306_struct(2,0,0) v13 = script_9306(v15, v14, v17, v16);
+		v8 = v13.intpart_1;
+		v7 = v13.intpart_0;
+	}
+	if (idx22mapAttribute(v11, 3845) != -1) {
+		int v13 = idx22mapAttribute(v11, 3845);
+		int v17 = idx22mapAttribute(v11, 3850);
+		int v14 = v7;
+		int v16 = v8;
+		script_9306_struct(2,0,0) v15 = script_9306(v13, v17, v14, v16);
+		v8 = v15.intpart_1;
+		v7 = v15.intpart_0;
+	}
+	if (idx22mapAttribute(v11, 3846) != -1) {
+		int v13 = idx22mapAttribute(v11, 3846);
+		int v15 = idx22mapAttribute(v11, 3851);
+		int v17 = v7;
+		int v14 = v8;
+		script_9306_struct(2,0,0) v16 = script_9306(v13, v15, v17, v14);
+		v8 = v16.intpart_1;
+		v7 = v16.intpart_0;
+	}
+	if (idx22mapAttribute(v11, 3641) != -1) {
+		int v14 = idx22mapAttribute(v11, 3641);
+		int v16 = idx22mapAttribute(v11, 4224);
+		int v13 = v7;
+		int v15 = v8;
+		script_9306_struct(2,0,0) v17 = script_9306(v14, v16, v13, v15);
+		v8 = v17.intpart_1;
+		v7 = v17.intpart_0;
+	}
+	if (idx22mapAttribute(v11, 4221) != -1) {
+		int v16 = idx22mapAttribute(v11, 4221);
+		int v13 = idx22mapAttribute(v11, 4225);
+		int v14 = v7;
+		int v15 = v8;
+		script_9306_struct(2,0,0) v17 = script_9306(v16, v13, v14, v15);
+		v8 = v17.intpart_1;
+		v7 = v17.intpart_0;
+	}
+	if (idx22mapAttribute(v11, 4222) != -1) {
+		int v15 = idx22mapAttribute(v11, 4222);
+		int v16 = idx22mapAttribute(v11, 4226);
+		int v13 = v7;
+		int v17 = v8;
+		script_9306_struct(2,0,0) v14 = script_9306(v15, v16, v13, v17);
+		v8 = v14.intpart_1;
+		v7 = v14.intpart_0;
+	}
+	if (idx22mapAttribute(v11, 4223) != -1) {
+		int v16 = idx22mapAttribute(v11, 4223);
+		int v15 = idx22mapAttribute(v11, 4227);
+		int v14 = v7;
+		int v17 = v8;
+		script_9306_struct(2,0,0) v13 = script_9306(v16, v15, v14, v17);
+		v8 = v13.intpart_1;
+		v7 = v13.intpart_0;
+	}
+	if (v9 != v8 || v10 != v7) {
+		v8 = cs2method_10060(v8, 50);
+	}
+	int v0 = v7;
+	int v5 = v8;
+	if (idx22mapAttribute(v11, 3852) != -1) {
+		int v13 = idx22mapAttribute(v11, 3852);
+		int v14 = idx22mapAttribute(v11, 3857);
+		int v17 = 0;
+		int v16 = v8;
+		script_9307_struct(2,0,0) v15 = script_9307(v13, v14, v17, v16);
+		v8 = v15.intpart_1;
+		v7 = v15.intpart_0;
+	}
+	if (idx22mapAttribute(v11, 3853) != -1) {
+		int v17 = idx22mapAttribute(v11, 3853);
+		int v14 = idx22mapAttribute(v11, 3858);
+		int v15 = v7;
+		int v16 = v8;
+		script_9307_struct(2,0,0) v13 = script_9307(v17, v14, v15, v16);
+		v8 = v13.intpart_1;
+		v7 = v13.intpart_0;
+	}
+	if (idx22mapAttribute(v11, 3854) != -1) {
+		int v17 = idx22mapAttribute(v11, 3854);
+		int v16 = idx22mapAttribute(v11, 3859);
+		int v14 = v7;
+		int v13 = v8;
+		script_9307_struct(2,0,0) v15 = script_9307(v17, v16, v14, v13);
+		v8 = v15.intpart_1;
+		v7 = v15.intpart_0;
+	}
+	if (idx22mapAttribute(v11, 3855) != -1) {
+		int v15 = idx22mapAttribute(v11, 3855);
+		int v14 = idx22mapAttribute(v11, 3860);
+		int v13 = v7;
+		int v16 = v8;
+		script_9307_struct(2,0,0) v17 = script_9307(v15, v14, v13, v16);
+		v8 = v17.intpart_1;
+		v7 = v17.intpart_0;
+	}
+	if (idx22mapAttribute(v11, 3856) != -1) {
+		int v13 = idx22mapAttribute(v11, 3856);
+		int v16 = idx22mapAttribute(v11, 3861);
+		int v17 = v7;
+		int v15 = v8;
+		script_9307_struct(2,0,0) v14 = script_9307(v13, v16, v17, v15);
+		v8 = v14.intpart_1;
+		v7 = v14.intpart_0;
+	}
+	if (idx22mapAttribute(v11, 4228) != -1) {
+		int v16 = idx22mapAttribute(v11, 4228);
+		int v17 = idx22mapAttribute(v11, 4232);
+		int v14 = v7;
+		int v15 = v8;
+		script_9307_struct(2,0,0) v13 = script_9307(v16, v17, v14, v15);
+		v8 = v13.intpart_1;
+		v7 = v13.intpart_0;
+	}
+	if (idx22mapAttribute(v11, 4229) != -1) {
+		int v13 = idx22mapAttribute(v11, 4229);
+		int v14 = idx22mapAttribute(v11, 4233);
+		int v16 = v7;
+		int v15 = v8;
+		script_9307_struct(2,0,0) v17 = script_9307(v13, v14, v16, v15);
+		v8 = v17.intpart_1;
+		v7 = v17.intpart_0;
+	}
+	if (idx22mapAttribute(v11, 4230) != -1) {
+		int v14 = idx22mapAttribute(v11, 4230);
+		int v15 = idx22mapAttribute(v11, 4234);
+		int v13 = v7;
+		int v16 = v8;
+		script_9307_struct(2,0,0) v17 = script_9307(v14, v15, v13, v16);
+		v8 = v17.intpart_1;
+		v7 = v17.intpart_0;
+	}
+	if (idx22mapAttribute(v11, 4231) != -1) {
+		int v16 = idx22mapAttribute(v11, 4231);
+		int v13 = idx22mapAttribute(v11, 4235);
+		int v15 = v7;
+		int v17 = v8;
+		script_9307_struct(2,0,0) v14 = script_9307(v16, v13, v15, v17);
+		v8 = v14.intpart_1;
+		v7 = v14.intpart_0;
+	}
+	int v6 = idx22mapAttribute(v11, 3841);
+	if (v6 > 0) {
+		int v15 = 24154;
+		int v14 = v6;
+		int v13 = v7;
+		int v16 = v8;
+		script_9307_struct(2,0,0) v17 = script_9307(v15, v14, v13, v16);
+		v8 = v17.intpart_1;
+		v7 = v17.intpart_0;
+	}
+	if (v5 != v8 || v0 != v7) {
+		v8 = cs2method_10060(v8, 50);
+	}
+	int v4 = v7;
+	int v2 = v8;
+	object v12 = idx22mapAttribute(v11, 3862);
+	if (cs2method_10846(v12, "") != 0) {
+		v8 = script_9305(v8, idx22mapAttribute(v11, 3862));
+	}
+	cs2method_11130(0, v8, 41877519);
+	cs2method_10251(0, 0, 41877519);
+	if (v8 > cs2method_10823(41877519)) {
+		script_31(41877520, 41877519, 792, 789, 790, 791, 773, 788);
+	}
+	return;
+}

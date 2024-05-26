@@ -1,0 +1,35 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_3863(int a0,int a1,int a2) {
+	if (a1 == -1) {
+		return -1;
+	}
+	int v2 = -1;
+	if (cs2method_10324(a1) == 1) {
+		v2 = interfaceDefsAttribute(4350);
+	}
+	int v3 = (int)idx17mapData('I', 'I', 8848, a1);
+	if (v3 == -1) {
+		return -1;
+	}
+	cs2method_10112(0, a0, 0, 0, v3);
+	int v0 = cs2method_10236(a1);
+	int v1 = cs2method_10060(cs2method_10051(12, cs2method_10805(v0, 20452, cs2method_10744(a1))), 10);
+	cs2method_10283(v0, v1, 0, 0, a1);
+	cs2method_10112(0, a0, 0, 0, a1);
+	if (cs2method_11038(a2, v2) == 1) {
+		cs2method_10013(v0, v1, 0, 0);
+		cs2method_10063(0, a0, 0, 0);
+	}
+	return cs2method_10060(a0, v1);
+}

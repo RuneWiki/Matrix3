@@ -1,0 +1,88 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7359() {
+	object v7;
+	cs2method_10026(61866084, script_46(",", client_configs['cfg3452'].bitcfg17458));
+	int v2 = 0;
+	if (client_configs['cfg3365'].bitcfg16995 > 0) {
+		v2 = cs2method_10060(v2, 1);
+	}
+	if (client_configs['cfg3366'].bitcfg16999 > 0) {
+		v2 = cs2method_10060(v2, 1);
+	}
+	if (client_configs['cfg3367'].bitcfg17003 > 0) {
+		v2 = cs2method_10060(v2, 1);
+	}
+	if (client_configs['cfg3368'].bitcfg17008 > 0) {
+		v2 = cs2method_10060(v2, 1);
+	}
+	if (client_configs['cfg3369'].bitcfg17012 > 0) {
+		v2 = cs2method_10060(v2, 1);
+	}
+	if (client_configs['cfg3370'].bitcfg17016 > 0) {
+		v2 = cs2method_10060(v2, 1);
+	}
+	if (client_configs['cfg4030'].bitcfg21307 > 0) {
+		v2 = cs2method_10060(v2, 1);
+	}
+	if (client_configs['cfg4031'].bitcfg21311 > 0) {
+		v2 = cs2method_10060(v2, 1);
+	}
+	if (client_configs['cfg4032'].bitcfg21315 > 0) {
+		v2 = cs2method_10060(v2, 1);
+	}
+	cs2method_10026(61866086, cs2method_10379(v2));
+	int v0 = cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(client_configs['cfg3365'].bitcfg16994, client_configs['cfg3366'].bitcfg16998), client_configs['cfg3367'].bitcfg17002), client_configs['cfg3368'].bitcfg17007), client_configs['cfg3369'].bitcfg17011), client_configs['cfg3370'].bitcfg17015), client_configs['cfg4030'].bitcfg21306), client_configs['cfg4031'].bitcfg21310), client_configs['cfg4032'].bitcfg21314), client_configs['cfg3367'].bitcfg17006), client_configs['cfg3370'].bitcfg17019), client_configs['cfg4032'].bitcfg21318);
+	cs2method_10026(61866088, cs2method_10379(v0));
+	int v9 = cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(client_configs['cfg3454'].bitcfg17465, client_configs['cfg3454'].bitcfg17466), client_configs['cfg3454'].bitcfg17467), client_configs['cfg3454'].bitcfg17468), client_configs['cfg3454'].bitcfg17469), client_configs['cfg3454'].bitcfg17470), client_configs['cfg3454'].bitcfg17471), client_configs['cfg3454'].bitcfg17472), client_configs['cfg3454'].bitcfg17473), client_configs['cfg3454'].bitcfg17474), client_configs['cfg3455'].bitcfg17477), client_configs['cfg3455'].bitcfg17478), client_configs['cfg3455'].bitcfg17479), client_configs['cfg3455'].bitcfg17480), client_configs['cfg3455'].bitcfg17481), client_configs['cfg3455'].bitcfg17482), client_configs['cfg3455'].bitcfg17483), client_configs['cfg3455'].bitcfg17484), client_configs['cfg3455'].bitcfg17485), client_configs['cfg3455'].bitcfg17486), client_configs['cfg3456'].bitcfg17488), client_configs['cfg3456'].bitcfg17489), client_configs['cfg3456'].bitcfg17490), client_configs['cfg3456'].bitcfg17491), client_configs['cfg3456'].bitcfg17492), client_configs['cfg3456'].bitcfg17493), client_configs['cfg3456'].bitcfg17494), client_configs['cfg4033'].bitcfg21319), client_configs['cfg4033'].bitcfg21320), client_configs['cfg4033'].bitcfg21321);
+	cs2method_10026(61866090, cs2method_10379(v9));
+	int v6 = cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10872(5, client_configs['cfg3437'].bitcfg17395), cs2method_10872(5, client_configs['cfg3437'].bitcfg17396)), cs2method_10872(6, client_configs['cfg3437'].bitcfg17397)), cs2method_10872(5, client_configs['cfg3437'].bitcfg17398)), cs2method_10872(5, client_configs['cfg3437'].bitcfg17399)), cs2method_10872(5, client_configs['cfg3437'].bitcfg17400));
+	cs2method_10026(61866092, cs2method_10379(v6));
+	for (int v4 = 0, int v1 = 0; v4 < 16; v1 = cs2method_10060(v5, cs2method_10441(client_configs['cfg3380'].bitcfg17034, v4)), v4 = cs2method_10060(v4, 1)) {
+		int v11 = cs2method_10060(v1, cs2method_10441(client_configs['cfg3378'], v4));
+		int v10 = cs2method_10060(v11, cs2method_10441(client_configs['cfg3379'], v4));
+		int v5 = cs2method_10060(v10, cs2method_10441(client_configs['cfg3380'].bitcfg17033, v4));
+	}
+	while (v4 < 32) {
+		int v10 = cs2method_10060(v1, cs2method_10441(client_configs['cfg3378'], v4));
+		v1 = cs2method_10060(v10, cs2method_10441(client_configs['cfg3379'], v4));
+		v4 = cs2method_10060(v4, 1);
+	}
+	cs2method_10026(61866094, cs2method_10379(v1));
+	int v8 = cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10968(client_configs['cfg3452'].bitcfg17458, 5000), cs2method_10051(v2, 50)), cs2method_10051(v0, 20)), cs2method_10051(v9, 3)), cs2method_10051(v6, 10)), cs2method_10051(v1, 5));
+	cs2method_10026(61866096, cs2method_10379(v8));
+	object v3 = "";
+	if (v8 < 400) {
+		if (cs2method_11010() == 0) {
+			v7 = "Cabin Boy";
+		} else if (cs2method_11010() == 1) {
+			v7 = "Cabin Girl";
+		} else {
+			v7 = "Cabin Individual";
+		}
+	} else if (v8 < 800) {
+		v7 = "Bo'sun";
+	} else if (v8 < 1200) {
+		v7 = "First Officer";
+	} else if (v8 < 1600) {
+		v7 = "Cap'n";
+	} else if (v8 < 2000) {
+		v7 = "Commodore";
+	} else if (v8 < 3500) {
+		v7 = "Admiral";
+	} else {
+		v7 = "Admiral of the Fleet";
+	}
+	cs2method_10026(61866098, v7);
+	return;
+}

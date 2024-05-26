@@ -1,0 +1,69 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7586(int a0,int a1,int a2) {
+	int v5 = -1;
+	int v2 = 0;
+	int v7 = 2;
+	object v6 = "";
+	switch (a1) {
+		case 10747921:
+			v5 = 7349;
+			v2 = 1;
+			break;
+		case 10747922:
+			v5 = 7349;
+			v2 = 2;
+			break;
+		case 10747923:
+			v5 = 7349;
+			v2 = 3;
+			break;
+		case 10747924:
+			v5 = 7349;
+			v2 = 4;
+			break;
+		case 10747917:
+			v5 = 7347;
+			v2 = 1;
+			int v0 = 0;
+			break;
+		case 10747918:
+			v5 = 7347;
+			v2 = 2;
+			int v1 = 0;
+			break;
+		case 10747919:
+			v5 = 7347;
+			v2 = 4;
+			int v4 = 0;
+			break;
+		case 10747920:
+			v5 = 7347;
+			v2 = 3;
+			int v3 = 0;
+			break;
+		case 10747928:
+		case 10747927:
+		case 10747926:
+		case 10747925:
+			v6 = "You have already entered this wing, and therefore cannot move the defender you assigned to it.";
+			break;
+		default:
+			return;
+	}
+	if (v5 != -1) {
+		v6 = idx17mapData('i', 's', v5, v2);
+	}
+	script_8800(a1, -1, v6);
+	return;
+}

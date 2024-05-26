@@ -1,0 +1,90 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5358(int a0,int a1) {
+	int v0;
+	switch (a1) {
+		case 0:
+			v0 = 1;
+			break;
+		case 1:
+			v0 = 4;
+			break;
+		case 2:
+			v0 = 7;
+			break;
+		case 3:
+			v0 = 10;
+			break;
+		case 4:
+			v0 = 13;
+			break;
+		default:
+			return;
+	}
+	if (cs2method_11038(a0, 1) == 1) {
+		cs2method_10310(7766);
+		cs2method_20884(new function<script_5357>(int a0,int a1) {
+			if (cs2method_11038(a0, a1) == 1) {
+				cs2method_10310(7766);
+				cs2method_10026(74907708, "");
+			}
+			return;
+		}, 1, new WidgetPointer(a0), "iI");
+	}
+	if (cs2method_11038(a0, 4) == 1) {
+		cs2method_10310(7766);
+		cs2method_20884(new function<script_5357>(int a0,int a1) {
+			if (cs2method_11038(a1, a0) == 1) {
+				cs2method_10310(7766);
+				cs2method_10026(74907708, "");
+			}
+			return;
+		}, 4, new WidgetPointer(a0), "iI");
+	}
+	if (cs2method_11038(a0, 7) == 1) {
+		cs2method_10310(7766);
+		cs2method_20884(new function<script_5357>(int a0,int a1) {
+			if (cs2method_11038(a1, a0) == 1) {
+				cs2method_10310(7766);
+				cs2method_10026(74907708, "");
+			}
+			return;
+		}, 7, new WidgetPointer(a0), "iI");
+	}
+	if (cs2method_11038(a0, 10) == 1) {
+		cs2method_10310(7766);
+		cs2method_20884(new function<script_5357>(int a0,int a1) {
+			if (cs2method_11038(a0, a1) == 1) {
+				cs2method_10310(7766);
+				cs2method_10026(74907708, "");
+			}
+			return;
+		}, 10, new WidgetPointer(a0), "iI");
+	}
+	if (cs2method_11038(a0, 13) == 1) {
+		cs2method_10310(7766);
+		cs2method_20884(new function<script_5357>(int a0,int a1) {
+			if (cs2method_11038(a0, a1) == 1) {
+				cs2method_10310(7766);
+				cs2method_10026(74907708, "");
+			}
+			return;
+		}, 13, new WidgetPointer(a0), "iI");
+	}
+	if (cs2method_11038(a0, v0) == 1) {
+		cs2method_10310(7767);
+		cs2method_20884(new function<none>() {
+		}, "");
+	}
+	return;
+}

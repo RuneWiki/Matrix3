@@ -1,0 +1,26 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2927(int a0,int a1,object a2,int a3,int a4) {
+	if (a1 != -1) {
+		if (a3 == 1) {
+			cs2method_10026(a0, "<u=fafafa>" + (string)a2 + "</u>");
+			cs2method_10520(16448250, a0);
+			cs2method_10283(cs2method_10939(a4, a2), cs2method_10823(a1), 0, 0, a1);
+		} else {
+			cs2method_10026(a0, "<u=c8c8c8>" + (string)a2 + "</u>");
+			cs2method_10520(13158600, a0);
+			cs2method_10283(cs2method_10939(a4, a2), cs2method_10823(a1), 0, 0, a1);
+		}
+	}
+	return;
+}

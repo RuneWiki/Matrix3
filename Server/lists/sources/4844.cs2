@@ -1,0 +1,31 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4844(int a0) {
+	switch (client_configs['cfg1981'].bitcfg6981) {
+		case 1:
+			if (a0 == client_configs['cfg1982'].bitcfg6986) {
+				script_4846(a0);
+			}
+			break;
+		case 2:
+			if (a0 == client_configs['cfg1984'].bitcfg6995) {
+				script_4846(a0);
+			}
+			break;
+		case 3:
+			if (a0 == client_configs['cfg1986'].bitcfg7004) {
+				script_4846(a0);
+			}
+	}
+	return;
+}

@@ -1,0 +1,79 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9413(int a0,int a1) {
+	int v18 = -1;
+	int v8 = -1;
+	int v16 = -1;
+	int v15 = -1;
+	int v0 = -1;
+	int v14 = -1;
+	int v7 = -1;
+	int v10 = -1;
+	int v9 = 0;
+	int v12 = idx17mapData('i', 'J', 8211, a0);
+	int v17 = idx22mapAttribute(v12, 3937);
+	int v22 = a0;
+	script_9409_struct(9,0,0) v2 = script_9409(v22);
+	int v20 = v2.intpart_8;
+	int v13 = v2.intpart_7;
+	int v19 = v2.intpart_6;
+	int v6 = v2.intpart_5;
+	int v21 = v2.intpart_4;
+	int v1 = v2.intpart_3;
+	int v3 = v2.intpart_2;
+	int v4 = v2.intpart_1;
+	int v5 = v2.intpart_0;
+	if (a1 == 1) {
+		v21 = 1;
+	}
+	if (v21 == 1 && idx22mapAttribute(v12, 3943) == 1) {
+		v17 = cs2method_10122(40, 100, v17);
+	}
+	if (cs2_configs['cfg3859'] == 1) {
+		v17 = cs2method_10122(95, 100, v17);
+	}
+	int v11 = idx22mapAttribute(v12, 3939);
+	if (v21 == 1) {
+		if (idx22mapAttribute(v12, 3941) == 1) {
+			script_9415(v6, v19, v13, v20, v4, v17, v12, v21);
+			cs2method_10026(v20, "PURCHASED");
+			return;
+		}
+		if (idx22mapAttribute(v12, 3943) == 1) {
+			cs2method_10026(v20, "RECLAIM");
+		}
+		if (client_configs['cfg3980'] < v17 || cs2method_10461(client_configs['cfg3950'].bitcfg21034, 1) < v11) {
+			script_9415(v6, v19, v13, v20, v4, v17, v12, v21);
+			return;
+		}
+		if (a1 == 1) {
+			script_9415(v6, v19, v13, v20, v4, v17, v12, 1);
+			return;
+		}
+	} else {
+		if (client_configs['cfg3980'] < v17 || cs2method_10461(client_configs['cfg3950'].bitcfg21034, 1) < v11) {
+			script_9415(v6, v19, v13, v20, v4, v17, v12, v21);
+			return;
+		}
+	}
+	if (script_9414(v12) == 1) {
+		script_9415(v6, v19, v13, v20, v4, v17, v12, 1);
+		return;
+	}
+	if (idx22mapAttribute(v12, 3941) == 0 && cs2method_10684(93) == 0) {
+		script_9415(v6, v19, v13, v20, v4, v17, v12, v21);
+		return;
+	}
+	script_9416(v6, v19, v13, v20, v4, v17, v12, v21);
+	return;
+}

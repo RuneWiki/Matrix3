@@ -1,0 +1,65 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_497() {
+	int v4 = 0;
+	int v5 = 0;
+	int v3 = 0;
+	int v0 = 0;
+	object v7 = "";
+	object v2 = "";
+	object v1 = "";
+	object v6 = "";
+	if (cs2_configs['cfg1367'] != -1) {
+		object v11;
+		object v12;
+		object v13;
+		object v15;
+		int v9 = npcDefsAttribute(cs2_configs['cfg1367'], 1134);
+		if (cs2_configs['cfg1368'] > v9) {
+			v11 = "Movement: " + "<col=00c800>" + (string)cs2method_10379(cs2_configs['cfg1368']) + "<col=ff981f>" + "/" + (string)cs2method_10379(v9);
+		} else if (cs2_configs['cfg1368'] < v9) {
+			v11 = "Movement: " + "<col=c80000>" + (string)cs2method_10379(cs2_configs['cfg1368']) + "<col=ff981f>" + "/" + (string)cs2method_10379(v9);
+		} else {
+			v11 = "Movement: " + (string)cs2method_10379(cs2_configs['cfg1368']) + "/" + (string)cs2method_10379(v9);
+		}
+		int v8 = npcDefsAttribute(cs2_configs['cfg1367'], 1135);
+		if (cs2_configs['cfg1369'] > v8) {
+			v12 = "Damage: " + "<col=00c800>" + (string)cs2method_10379(cs2method_10051(cs2_configs['cfg1369'], 100)) + "<col=ff981f>" + "/" + (string)cs2method_10379(cs2method_10051(v8, 100));
+		} else if (cs2_configs['cfg1369'] < v8) {
+			v12 = "Damage: " + "<col=c80000>" + (string)cs2method_10379(cs2method_10051(cs2_configs['cfg1369'], 100)) + "<col=ff981f>" + "/" + (string)cs2method_10379(cs2method_10051(v8, 100));
+		} else {
+			v12 = "Damage: " + (string)cs2method_10379(cs2method_10051(cs2_configs['cfg1369'], 100)) + "/" + (string)cs2method_10379(cs2method_10051(v8, 100));
+		}
+		int v14 = npcDefsAttribute(cs2_configs['cfg1367'], 1136);
+		if (cs2_configs['cfg1370'] > v14) {
+			v13 = "Health: " + "<col=00c800>" + (string)cs2method_10379(cs2method_10051(cs2_configs['cfg1370'], 100)) + "<col=ff981f>" + "/" + (string)cs2method_10379(cs2method_10051(v14, 100));
+		} else if (cs2_configs['cfg1370'] < v14) {
+			v13 = "Health: " + "<col=c80000>" + (string)cs2method_10379(cs2method_10051(cs2_configs['cfg1370'], 100)) + "<col=ff981f>" + "/" + (string)cs2method_10379(cs2method_10051(v14, 100));
+		} else {
+			v13 = "Health: " + (string)cs2method_10379(cs2method_10051(cs2_configs['cfg1370'], 100)) + "/" + (string)cs2method_10379(cs2method_10051(v14, 100));
+		}
+		int v10 = npcDefsAttribute(cs2_configs['cfg1367'], 1137);
+		if (cs2_configs['cfg1371'] > v10) {
+			v15 = "Range: " + "<col=00c800>" + (string)cs2method_10379(cs2_configs['cfg1371']) + "<col=ff981f>" + "/" + (string)cs2method_10379(v10);
+		} else if (cs2_configs['cfg1371'] < v10) {
+			v15 = "Range: " + "<col=c80000>" + (string)cs2method_10379(cs2_configs['cfg1371']) + "<col=ff981f>" + "/" + (string)cs2method_10379(v10);
+		} else {
+			v15 = "Range: " + (string)cs2method_10379(cs2_configs['cfg1371']) + "/" + (string)cs2method_10379(v10);
+		}
+		cs2method_10026(66322440, v11);
+		cs2method_10026(66322441, v12);
+		cs2method_10026(66322442, v13);
+		cs2method_10026(66322443, v15);
+	}
+	return;
+}

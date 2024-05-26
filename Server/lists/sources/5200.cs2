@@ -1,0 +1,87 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_5200(int a0) {
+	switch (a0) {
+		case 1:
+			if (client_configs['cfg2334'].bitcfg10826 >= 60) {
+				return 1;
+			}
+			return 0;
+		case 2:
+			if (client_configs['cfg2774'].bitcfg13876 >= 60) {
+				return 1;
+			}
+			return 0;
+		case 3:
+			if (client_configs['cfg2170'].bitcfg9655 >= 3) {
+				return 1;
+			}
+			return 0;
+		case 4:
+			if (cs2_configs['cfg1594'] >= 56) {
+				return 1;
+			}
+			return 0;
+		case 5:
+			if (client_configs['cfg2111'].bitcfg9188 >= 100) {
+				return 1;
+			}
+			return 0;
+		case 6:
+			if (client_configs['cfg2738'] >= 7 || client_configs['cfg2739'] >= 4) {
+				return 1;
+			}
+			return 0;
+		case 7:
+			if (client_configs['cfg2702'].bitcfg13385 >= 3) {
+				return 1;
+			}
+			return 0;
+		case 8:
+			if (cs2_configs['cfg1594'] >= 17) {
+				return 1;
+			}
+			return 0;
+		case 9:
+			if (client_configs['cfg2137'].bitcfg9363 >= 6) {
+				return 1;
+			}
+			return 0;
+		case 10:
+			if (client_configs['cfg3820'].bitcfg19966 >= 170) {
+				return 1;
+			}
+			return 0;
+		case 11:
+			if (client_configs['cfg2547'] >= 7) {
+				return 1;
+			}
+			return 0;
+		case 12:
+			if (cs2_configs['cfg1594'] >= 11) {
+				return 1;
+			}
+			return 0;
+		case 14:
+			if (client_configs['cfg2268'] >= 10) {
+				return 1;
+			}
+			return 0;
+		case 15:
+			if (client_configs['cfg2885'].bitcfg14641 >= 25) {
+				return 1;
+			}
+			return 0;
+	}
+	return 0;
+}

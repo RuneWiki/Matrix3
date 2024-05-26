@@ -1,0 +1,147 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2851(int a0,int a1,int a2) {
+	switch (a2) {
+		case 2:
+			script_835();
+			return;
+		case 13:
+			if (script_9666() == 1) {
+				return;
+			}
+			cs2method_10569();
+			script_7941(96796685);
+			return;
+		case 1:
+			script_3455();
+			cs2_configs['cfg1074'] = cs2method_10038(cs2method_10060(cs2_configs['cfg1074'], 1), 4);
+			script_7199();
+			return;
+		case 83:
+			if (cs2method_10609(31129604) == 1) {
+				cs2method_10467(0, 31129604);
+				cs2method_10467(0, 31129606);
+				if (cs2_configs['cfg1074'] == 2 || cs2_configs['cfg1074'] == 3) {
+					cs2method_10467(0, 31129647);
+				}
+			} else {
+				cs2method_10467(1, 31129604);
+				cs2method_10467(1, 31129606);
+				cs2method_10467(1, 31129647);
+			}
+			return;
+	}
+	if (cs2_configs['cfg1074'] == 3) {
+		return;
+	}
+	if (cs2method_10133() < cs2method_10060(a1, 5) && cs2_configs['cfg1074'] != 2) {
+		return;
+	}
+	switch (a2) {
+		case 33:
+			if (cs2method_10262() != 2) {
+				script_2854();
+			} else {
+				return;
+			}
+			break;
+		case 48:
+			if (cs2method_10262() != 2) {
+				script_2857();
+			} else {
+				return;
+			}
+			break;
+		case 49:
+			if (cs2method_10262() != 2) {
+				script_2855();
+			} else {
+				return;
+			}
+			break;
+		case 50:
+			if (cs2method_10262() != 2) {
+				script_2856();
+			} else {
+				script_2857();
+			}
+			break;
+		case 32:
+			if (cs2method_10262() != 2) {
+				script_2858();
+			} else {
+				return;
+			}
+			break;
+		case 34:
+			if (cs2method_10262() != 2) {
+				script_2859();
+			} else {
+				script_2858();
+			}
+			break;
+		case 35:
+			if (cs2method_10262() != 2) {
+				return;
+			}
+			script_2854();
+			break;
+		case 51:
+			if (cs2method_10262() != 2) {
+				return;
+			}
+			script_2855();
+			break;
+		case 52:
+			if (cs2method_10262() != 2) {
+				return;
+			}
+			script_2856();
+			break;
+		case 36:
+			if (cs2method_10262() != 2) {
+				return;
+			}
+			script_2859();
+			break;
+		case 98:
+			script_2860();
+			break;
+		case 99:
+			script_2861();
+			break;
+		case 96:
+			script_2863();
+			break;
+		case 97:
+			script_2862();
+			break;
+		case 2:
+			script_835();
+			break;
+		case 6:
+			script_3455();
+			break;
+		case 7:
+			script_3453();
+			break;
+		case 8:
+			script_3456();
+			break;
+		default:
+			return;
+	}
+	script_2864();
+	cs2method_20380(load function<2851>, new WidgetPointer(a0), -2147483640, cs2method_10133(), "Iii", new WidgetPointer(a0));
+	return;
+}

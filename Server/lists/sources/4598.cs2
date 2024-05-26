@@ -1,0 +1,53 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4598(int a0) {
+	cs2method_10273(1048596);
+	script_4534(1048596);
+	cs2method_10273(1048615);
+	script_4534(1048615);
+	cs2method_10273(1048635);
+	script_4535(1048635);
+	script_4513(1048584, 1746);
+	script_4510(1048644, 1736);
+	script_4510(1048645, 1737);
+	script_4530(1048578);
+	script_4531(1048648);
+	script_4532(1048650);
+	script_4530(1048653);
+	script_4531(1048657);
+	script_4599("A beautiful, heavy sword.", 11694, 1, 1048590);
+	script_4599("An ancient ranger's body armour.", 20151, 1, 1048591);
+	script_4599("An ancient mage's robe legs.", 20167, 1, 1048592);
+	script_4599("A rune kiteshield in the colours of Saradomin.", 2667, 1, 1048607);
+	script_4599("A vicious, curved sword.", 4587, 1, 1048608);
+	script_4599("Keeps the doctor away.", 1955, 1, 1048609);
+	script_4599("A bow from a darker dimension.", 11235, 1, 1048610);
+	script_4599("Used for medium level missile spells.", 560, 1337, 1048611);
+	script_4599("A weapon from the Abyss.", 4151, 1, 1048612);
+	script_4599("Lovely money!", 995, 6969, 1048624);
+	script_4599("The severed head of the great dragon Elvarg!", 11279, 1, 1048625);
+	script_4599("Good for hitting things!", 2347, 1, 1048626);
+	script_4599("This cat definitely likes you.", 14090, 1, 1048627);
+	object v1 = idx17mapData('i', 's', 3796, 0);
+	cs2method_10026(1048639, v1);
+	int v0 = cs2method_10060(cs2method_11048(cs2method_10939(494, cs2method_10744(1048634)), cs2method_10939(494, v1)), 26);
+	cs2method_10283(v0, cs2method_10823(1048628), 0, 0, 1048628);
+	cs2method_10283(v0, cs2method_10823(1048635), 0, 0, 1048635);
+	cs2method_10112(cs2method_11048(cs2method_10461(cs2method_10060(v0, 1), cs2method_10968(cs2method_10461(cs2method_10236(1048579), cs2method_10236(1048580)), 2)), 0), 0, 1, 0, 1048580);
+	cs2method_20243(new function<script_4601>(int a0) {
+		script_4602(cs2_configs['cfg1514'], a0);
+		return;
+	}, new WidgetPointer(a0), 1514, 1, "IY", new WidgetPointer(a0));
+	script_4602(cs2_configs['cfg1514'], a0);
+	return;
+}

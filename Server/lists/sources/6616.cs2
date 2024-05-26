@@ -1,0 +1,58 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6616(object a0) {
+	cs2method_10467(0, 86704131);
+	cs2method_10026(86704187, a0);
+	cs2method_20162(new function<script_6617>(int a0,int a1,int a2,int a3,int a4,int a5) {
+		if (cs2method_10133() > a4) {
+			flow_1:
+				if (a2 == 0) {
+					a1 = cs2method_11048(cs2method_10461(a1, 20), 0);
+					if (a1 == 0) {
+						a2 = 1;
+					}
+				}
+				IF (a2 == 1) 
+					GOTO	flow_5
+				GOTO	flow_5
+			flow_5:
+				if (a2 == 2) {
+					a1 = cs2method_10872(cs2method_10060(a1, 20), 255);
+				}
+				if (a3 == 86769706) {
+					cs2method_10704(a1, 86769706);
+					cs2method_10704(a1, 86769665);
+				} else {
+					cs2method_10704(a1, 86704187);
+					cs2method_10704(a1, 86704137);
+				}
+				a4 = cs2method_10060(cs2method_10133(), 1);
+		}
+		if (cs2method_10133() > a5) {
+			a5 = cs2method_10060(cs2method_10133(), 30);
+			a0 = cs2method_10461(a0, 1);
+		}
+		if (a0 == 2) {
+			a2 = 2;
+		}
+		if (a0 == 0) {
+			cs2method_20162(new function<none>() {
+			}, "", new WidgetPointer(a3));
+			cs2method_10467(1, a3);
+		} else {
+			cs2method_20162(load function<6617>, a0, a5, a2, a1, a4, new WidgetPointer(a3), "iiiiiI", new WidgetPointer(a3));
+		}
+		return;
+	}, 7, 0, 0, 255, 0, new WidgetPointer(1323,3), "iiiiiI", new WidgetPointer(1323,3));
+	return;
+}

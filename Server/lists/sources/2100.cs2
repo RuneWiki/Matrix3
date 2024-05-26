@@ -1,0 +1,62 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2100(int a0,int a1) {
+	object v1;
+	object v0 = "";
+	switch (a1) {
+		case 54657051:
+		case 54657036:
+		case 54657032:
+			v1 = "The number of times that the avatar has been killed.";
+			break;
+		case 54657048:
+		case 54657037:
+		case 54657033:
+			v1 = "The Slayer level required to attack each avatar.";
+			break;
+		case 54657047:
+		case 54657038:
+		case 54657034:
+			v1 = "The remaining health of each avatar.";
+			break;
+		case 54657049:
+		case 54657050:
+			v1 = "How much time the game has remaining.";
+			break;
+		case 54657031:
+			v1 = "This column displays the blue team's statistics.";
+			break;
+		case 54657035:
+			v1 = "This column displays the red team's statistics.";
+			break;
+		case 54657052:
+			v1 = "Shows which team controls the soul obelisk.";
+			break;
+		case 54657053:
+			v1 = "Shows which team controls the western graveyard.";
+			break;
+		case 54657054:
+			v1 = "Shows which team controls the eastern graveyard.";
+			break;
+		case 54657092:
+			v1 = "Shows how much control a team has over the soul obelisk.";
+			break;
+		case 54657098:
+			v1 = "Shows how active you have been during the game.";
+			break;
+		default:
+			return;
+	}
+	script_7787(a1, a0, 25, v1, cs2method_10236(cs2method_10982(a0)));
+	return;
+}

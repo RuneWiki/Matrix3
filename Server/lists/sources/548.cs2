@@ -1,0 +1,171 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_548(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11) {
+	int v6 = 96797399;
+	if (cs2_configs['cfg80'] == 0) {
+		return;
+	}
+	int v7 = 0;
+	int v4 = 0;
+	int v12 = 0;
+	int v9 = 0;
+	int v8 = 0;
+	int v3 = 0;
+	int v0 = 0;
+	int v1 = 0;
+	int v2 = 0;
+	object v11 = "";
+	object v5 = idx17mapData('S', 's', 680, a1) + ": " + (string)cs2method_10379(cs2method_10938(a1)) + "/" + (string)cs2method_10379(cs2method_10687(a1));
+	int v10 = 0;
+	switch (a1) {
+		case 0:
+			v10 = client_configs['cfg3304'];
+			break;
+		case 2:
+			v10 = client_configs['cfg3305'];
+			break;
+		case 1:
+			v10 = client_configs['cfg3306'];
+			break;
+		case 6:
+			v10 = client_configs['cfg3307'];
+			break;
+		case 4:
+			v10 = client_configs['cfg3308'];
+			break;
+		case 5:
+			v10 = client_configs['cfg2850'];
+			break;
+		case 23:
+			v10 = client_configs['cfg3309'];
+			break;
+		case 14:
+			v10 = client_configs['cfg3310'];
+			break;
+		case 13:
+			v10 = client_configs['cfg3311'];
+			break;
+		case 12:
+			v10 = client_configs['cfg3312'];
+			break;
+		case 8:
+			v10 = client_configs['cfg3313'];
+			break;
+		case 19:
+			v10 = client_configs['cfg3314'];
+			break;
+		case 11:
+			v10 = client_configs['cfg3315'];
+			break;
+		case 10:
+			v10 = client_configs['cfg3316'];
+			break;
+		case 7:
+			v10 = client_configs['cfg3317'];
+			break;
+		case 24:
+			v10 = client_configs['cfg3318'];
+			break;
+		case 18:
+			v10 = client_configs['cfg3319'];
+			break;
+		case 20:
+			v10 = client_configs['cfg3320'];
+			break;
+		case 21:
+			v10 = client_configs['cfg3321'];
+			break;
+		case 17:
+			v10 = client_configs['cfg3322'];
+			break;
+		case 22:
+			v10 = client_configs['cfg3323'];
+			break;
+		case 3:
+			v10 = client_configs['cfg3324'];
+			break;
+		case 16:
+			v10 = client_configs['cfg3325'];
+			break;
+		case 9:
+			v10 = client_configs['cfg3326'];
+			break;
+		case 15:
+			v10 = client_configs['cfg3327'];
+			break;
+		case 25:
+			v10 = client_configs['cfg3836'];
+	}
+	if (cs2method_11038(v6, a8) == 1 && cs2method_10509(190, 495, v5) < cs2method_10488() && cs2_configs['cfg80'] == cs2method_10687(a1)) {
+		int v19;
+		cs2method_10797(v5);
+		if (cs2method_11038(v6, a10) == 1) {
+			cs2method_10797(script_8003(cs2method_10602(a1)));
+		}
+		if (cs2method_10687(a1) < 99 && cs2method_11038(v6, a11) == 1) {
+			cs2method_10797(script_8003(cs2method_10461(idx17mapData('i', 'i', 716, cs2method_10060(cs2method_10687(a1), 1)), cs2method_10602(a1))));
+		}
+		if (v10 > 0 && cs2method_11038(v6, a4) == 1) {
+			cs2method_10797(script_8003(cs2method_10968(v10, 10)));
+		}
+		if (script_4036(idx17mapData('S', 'i', 1482, a1)) == 1) {
+			int v21 = idx17mapData('S', 'i', 1482, a1);
+			script_4037_struct(3,0,0) v20 = script_4037(v21);
+			int v13 = v20.intpart_2;
+			int v16 = v20.intpart_1;
+			int v17 = v20.intpart_0;
+			int v14 = v16;
+			if (v17 == 1) {
+				v14 = idx17mapData('i', 'i', 716, v16);
+			}
+			int v22 = cs2method_11048(0, cs2method_10461(v14, cs2method_10602(a1)));
+			object v18 = script_8003(v22);
+			if (cs2method_11038(v6, a5) == 1) {
+				if (v17 == 1) {
+					int v20 = idx17mapData('i', 'i', 716, v13);
+					int v21 = idx17mapData('i', 'i', 716, v16);
+					if (cs2method_10461(v21, v20) != 0) {
+						v19 = cs2method_10122(cs2method_10461(cs2method_10602(a1), v20), cs2method_10461(v21, v20), 100);
+					} else {
+						v19 = -1;
+					}
+				} else if (cs2method_10461(v16, v13) != 0) {
+					v19 = cs2method_10122(cs2method_10461(cs2method_10602(a1), v13), cs2method_10461(v16, v13), 100);
+				} else {
+					v19 = -1;
+				}
+				if (v19 > 100) {
+					v19 = 100;
+				}
+				int v15 = cs2method_11048(v19, 0);
+				int v21 = cs2method_10051(v15, cs2method_10461(a3, 4));
+				int v20 = cs2method_10968(v21, 100);
+				cs2method_10013(v20, 16, 0, 0);
+				if (cs2method_11038(v6, a0) == 1) {
+					if (v15 > 47) {
+						cs2method_10811(0);
+					}
+					cs2method_10797((string)cs2method_10379(v15) + "%");
+				}
+				if (cs2method_11038(v6, a9) == 1) {
+					cs2method_10797(v18);
+				}
+			}
+		}
+		return;
+	}
+	cs2method_10273(v6);
+	cs2_configs['cfg80'] = cs2method_10687(a1);
+	script_547(a2, a7, a1, v6);
+	return;
+}

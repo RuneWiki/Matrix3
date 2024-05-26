@@ -1,0 +1,37 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+int script_1636(int a0) {
+	flow_0:
+		IF (a0 == 24) 
+			GOTO	flow_1
+		GOTO	flow_2
+	flow_1:
+		IF (cs2method_10338(a0) >= 120) 
+			GOTO	flow_7
+	flow_2:
+		IF (a0 == 0) 
+			GOTO	flow_3
+		GOTO	flow_4
+	flow_3:
+		IF (script_1432() >= 200) 
+			GOTO	flow_7
+	flow_4:
+		IF (a0 != 24 && a0 != 0 && cs2method_10338(a0) >= 99) 
+			GOTO	flow_7
+		GOTO	flow_8
+	flow_7:
+		return 1;
+	flow_8:
+		return 0;
+}

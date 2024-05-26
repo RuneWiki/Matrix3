@@ -1,0 +1,80 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8307(int a0,int a1) {
+	int v10 = idx17mapData('i', 'J', 7716, a0);
+	int v14 = -1;
+	int v2 = -1;
+	int v17 = -1;
+	int v8 = -1;
+	int v13 = 1;
+	int v19 = 1;
+	int v9 = -1;
+	int v15 = -1;
+	int v3 = -1;
+	int v0 = -1;
+	int v21 = 9;
+	int v4 = a0;
+	script_8701_struct(8,0,0) v12 = script_8701(v21, v4);
+	int v20 = v12.intpart_7;
+	int v18 = v12.intpart_6;
+	int v1 = v12.intpart_5;
+	int v16 = v12.intpart_4;
+	int v11 = v12.intpart_3;
+	int v5 = v12.intpart_2;
+	int v6 = v12.intpart_1;
+	int v7 = v12.intpart_0;
+	if (v18 == 1) {
+		cs2method_10467(0, idx22mapAttribute(v10, 3503));
+		cs2method_10146(idx22mapAttribute(v10, 3503));
+		if (idx22mapAttribute(v10, 3521) == 1) {
+			if (v16 != -1) {
+				v17 = script_8314(v16);
+				v8 = cs2method_10060(1, script_8372(idx22mapAttribute(idx17mapData('i', 'J', 7716, v17), 3509), v16));
+			} else {
+				if (v1 != -1) {
+					v17 = script_8314(v1);
+					v8 = script_8372(idx22mapAttribute(idx17mapData('i', 'J', 7716, v17), 3509), v1);
+				}
+			}
+		} else {
+			if (script_8137(a0) == 1) {
+				int v25 = a0;
+				int v22 = v16;
+				int v27 = v1;
+				script_8140_struct(2,0,0) v26 = script_8140(v25, v22, v27);
+				int v23 = v26.intpart_0;
+				int v24 = v26.intpart_1;
+				/* 
+					java.lang.RuntimeException: Stack underflow
+						at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+						at tests.Main.main(Main.java:69)
+					
+				 */
+			}
+		}
+		script_8387(v7, v6, v5, v11, a0);
+		if (v8 != -1 && v17 != a0) {
+			script_8356(v17, a0, v8, 1, 1);
+		}
+	} else {
+		script_8323(a0, 0);
+	}
+	if (a1 == 1) {
+		script_6739(3);
+	}
+	return;
+}

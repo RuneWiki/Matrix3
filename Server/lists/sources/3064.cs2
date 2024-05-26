@@ -1,0 +1,44 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3064(int a0) {
+	if (a0 == 1) {
+		cs2method_10026(59375820, "Play");
+		cs2method_11127(1, 59375808, "Play");
+		cs2method_20486(new function<script_3061>(int a0) {
+			int v0 = script_3062(a0);
+			/* 
+				java.lang.RuntimeException: Stack underflow
+					at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+					at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.cast(FlowBlocksGenerator.java:546)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+					at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+					at tests.Main.main(Main.java:69)
+				
+			 */
+		}, new WidgetPointer(906,192), "I", new WidgetPointer(906,192));
+	} else {
+		cs2method_10026(59375820, "Entering game...");
+		cs2method_10495(59375808);
+		cs2method_20486(new function<none>() {
+		}, "", new WidgetPointer(906,192));
+	}
+	script_3065(a0);
+	return;
+}

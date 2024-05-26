@@ -1,0 +1,49 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2496() {
+	int v2 = 1;
+	int v1 = script_2497();
+	int v3 = -1;
+	int v0 = -1;
+	while (v2 <= 9 || (int)idx17mapData('i', 'I', 2400, v2) != 2949145) {
+		if (v2 <= v1) {
+			int v5 = (int)idx17mapData('i', 'I', 2400, v2);
+			int v4 = (int)idx17mapData('i', 'I', 2402, v2);
+			cs2method_20390(new function<script_2499>(int a0) {
+				script_2500(a0);
+				return;
+			}, new WidgetPointer(-32768,3), "I", new WidgetPointer(v5));
+			cs2method_20390(new function<script_2499>(int a0) {
+				script_2500(a0);
+				return;
+			}, new WidgetPointer(v5), "I", new WidgetPointer(v4));
+			cs2method_10520(14784543, v4);
+			cs2method_11127(1, v5, "Select");
+			cs2method_11127(1, v4, "Select");
+			cs2method_10026(v4, idx17mapData('i', 's', 2403, v2));
+		} else {
+			int v4 = (int)idx17mapData('i', 'I', 2400, v2);
+			int v5 = (int)idx17mapData('i', 'I', 2402, v2);
+			cs2method_20390(new function<none>() {
+			}, "", new WidgetPointer(v4));
+			cs2method_20390(new function<none>() {
+			}, "", new WidgetPointer(v5));
+			cs2method_10520(10053120, v5);
+			cs2method_10495(v4);
+			cs2method_10495(v5);
+			cs2method_10026(v5, idx17mapData('i', 's', 2403, v2) + " - Locked");
+		}
+		v2 = cs2method_10060(v2, 1);
+	}
+	return;
+}

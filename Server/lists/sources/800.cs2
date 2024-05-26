@@ -1,0 +1,298 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_800(int a0) {
+	if (a0 == 0) {
+		return;
+	}
+	if (cs2_configs['cfg2582'] == 0) {
+		cs2_configs['cfg2582'] = a0;
+	} else if (cs2_configs['cfg2583'] == 0) {
+		cs2_configs['cfg2583'] = a0;
+	} else if (cs2_configs['cfg2584'] == 0) {
+		cs2_configs['cfg2584'] = a0;
+	} else if (cs2_configs['cfg2585'] == 0) {
+		cs2_configs['cfg2585'] = a0;
+	} else if (cs2_configs['cfg2586'] == 0) {
+		cs2_configs['cfg2586'] = a0;
+	} else if (cs2_configs['cfg2587'] == 0) {
+		cs2_configs['cfg2587'] = a0;
+	} else if (cs2_configs['cfg2588'] == 0) {
+		cs2_configs['cfg2588'] = a0;
+	} else if (cs2_configs['cfg2589'] == 0) {
+		cs2_configs['cfg2589'] = a0;
+	} else if (cs2_configs['cfg2590'] == 0) {
+		cs2_configs['cfg2590'] = a0;
+	} else if (cs2_configs['cfg2591'] == 0) {
+		cs2_configs['cfg2591'] = a0;
+	} else if (cs2_configs['cfg2592'] == 0) {
+		cs2_configs['cfg2592'] = a0;
+	} else if (cs2_configs['cfg2593'] == 0) {
+		cs2_configs['cfg2593'] = a0;
+	} else if (cs2_configs['cfg2594'] == 0) {
+		cs2_configs['cfg2594'] = a0;
+	} else if (cs2_configs['cfg2595'] == 0) {
+		cs2_configs['cfg2595'] = a0;
+	} else if (cs2_configs['cfg2596'] == 0) {
+		cs2_configs['cfg2596'] = a0;
+	} else if (cs2_configs['cfg2597'] == 0) {
+		cs2_configs['cfg2597'] = a0;
+	} else if (cs2_configs['cfg2598'] == 0) {
+		cs2_configs['cfg2598'] = a0;
+	} else if (cs2_configs['cfg2599'] == 0) {
+		cs2_configs['cfg2599'] = a0;
+	} else if (cs2_configs['cfg2600'] == 0) {
+		cs2_configs['cfg2600'] = a0;
+	} else {
+		cs2_configs['cfg2582'] = cs2_configs['cfg2583'];
+		cs2_configs['cfg2583'] = cs2_configs['cfg2584'];
+		cs2_configs['cfg2584'] = cs2_configs['cfg2585'];
+		cs2_configs['cfg2585'] = cs2_configs['cfg2586'];
+		cs2_configs['cfg2586'] = cs2_configs['cfg2587'];
+		cs2_configs['cfg2587'] = cs2_configs['cfg2588'];
+		cs2_configs['cfg2588'] = cs2_configs['cfg2589'];
+		cs2_configs['cfg2589'] = cs2_configs['cfg2590'];
+		cs2_configs['cfg2590'] = cs2_configs['cfg2591'];
+		cs2_configs['cfg2591'] = cs2_configs['cfg2592'];
+		cs2_configs['cfg2592'] = cs2_configs['cfg2593'];
+		cs2_configs['cfg2593'] = cs2_configs['cfg2594'];
+		cs2_configs['cfg2594'] = cs2_configs['cfg2595'];
+		cs2_configs['cfg2595'] = cs2_configs['cfg2596'];
+		cs2_configs['cfg2596'] = cs2_configs['cfg2597'];
+		cs2_configs['cfg2597'] = cs2_configs['cfg2598'];
+		cs2_configs['cfg2598'] = cs2_configs['cfg2599'];
+		cs2_configs['cfg2599'] = cs2_configs['cfg2600'];
+		cs2_configs['cfg2600'] = a0;
+	}
+	cs2method_10026(12648574, idx17mapData('i', 's', 995, cs2_configs['cfg2582']));
+	cs2method_10026(12648575, idx17mapData('i', 's', 995, cs2_configs['cfg2583']));
+	cs2method_10026(12648576, idx17mapData('i', 's', 995, cs2_configs['cfg2584']));
+	cs2method_10026(12648577, idx17mapData('i', 's', 995, cs2_configs['cfg2585']));
+	cs2method_10026(12648578, idx17mapData('i', 's', 995, cs2_configs['cfg2586']));
+	cs2method_10026(12648579, idx17mapData('i', 's', 995, cs2_configs['cfg2587']));
+	cs2method_10026(12648580, idx17mapData('i', 's', 995, cs2_configs['cfg2588']));
+	cs2method_10026(12648581, idx17mapData('i', 's', 995, cs2_configs['cfg2589']));
+	cs2method_10026(12648582, idx17mapData('i', 's', 995, cs2_configs['cfg2590']));
+	cs2method_10026(12648583, idx17mapData('i', 's', 995, cs2_configs['cfg2591']));
+	cs2method_10026(12648584, idx17mapData('i', 's', 995, cs2_configs['cfg2592']));
+	cs2method_10026(12648585, idx17mapData('i', 's', 995, cs2_configs['cfg2593']));
+	cs2method_10026(12648586, idx17mapData('i', 's', 995, cs2_configs['cfg2594']));
+	cs2method_10026(12648587, idx17mapData('i', 's', 995, cs2_configs['cfg2595']));
+	cs2method_10026(12648588, idx17mapData('i', 's', 995, cs2_configs['cfg2596']));
+	cs2method_10026(12648589, idx17mapData('i', 's', 995, cs2_configs['cfg2597']));
+	cs2method_10026(12648590, idx17mapData('i', 's', 995, cs2_configs['cfg2598']));
+	cs2method_10026(12648591, idx17mapData('i', 's', 995, cs2_configs['cfg2599']));
+	cs2method_10026(12648592, idx17mapData('i', 's', 995, cs2_configs['cfg2600']));
+	int v3 = 0;
+	int v1 = 0;
+	int v0 = 0;
+	int v2 = 0;
+	if (client_configs['cfg3294'].bitcfg16863 >= 70 && cs2method_10936(93, 26113) == 0 && cs2method_10936(95, 26113) == 0) {
+		int v62 = cs2_configs['cfg2582'];
+		int v169 = v3;
+		int v117 = v1;
+		int v110 = v0;
+		int v124 = v2;
+		script_870_struct(4,0,0) v25 = script_870(v62, v169, v117, v110, v124);
+		int v101 = v25.intpart_3;
+		int v49 = v25.intpart_2;
+		int v65 = v25.intpart_1;
+		int v170 = v25.intpart_0;
+		int v64 = cs2_configs['cfg2583'];
+		int v39 = v170;
+		int v73 = v65;
+		int v16 = v49;
+		int v106 = v101;
+		script_870_struct(4,0,0) v139 = script_870(v64, v39, v73, v16, v106);
+		int v183 = v139.intpart_3;
+		int v155 = v139.intpart_2;
+		int v105 = v139.intpart_1;
+		int v153 = v139.intpart_0;
+		int v72 = cs2_configs['cfg2584'];
+		int v86 = v153;
+		int v67 = v105;
+		int v63 = v155;
+		int v28 = v183;
+		script_870_struct(4,0,0) v15 = script_870(v72, v86, v67, v63, v28);
+		int v180 = v15.intpart_3;
+		int v166 = v15.intpart_2;
+		int v98 = v15.intpart_1;
+		int v115 = v15.intpart_0;
+		int v173 = cs2_configs['cfg2585'];
+		int v57 = v115;
+		int v151 = v98;
+		int v168 = v166;
+		int v109 = v180;
+		script_870_struct(4,0,0) v59 = script_870(v173, v57, v151, v168, v109);
+		int v125 = v59.intpart_3;
+		int v75 = v59.intpart_2;
+		int v192 = v59.intpart_1;
+		int v121 = v59.intpart_0;
+		int v78 = cs2_configs['cfg2586'];
+		int v42 = v121;
+		int v45 = v192;
+		int v135 = v75;
+		int v130 = v125;
+		script_870_struct(4,0,0) v69 = script_870(v78, v42, v45, v135, v130);
+		int v144 = v69.intpart_3;
+		int v112 = v69.intpart_2;
+		int v131 = v69.intpart_1;
+		int v107 = v69.intpart_0;
+		int v58 = cs2_configs['cfg2587'];
+		int v157 = v107;
+		int v43 = v131;
+		int v102 = v112;
+		int v74 = v144;
+		script_870_struct(4,0,0) v6 = script_870(v58, v157, v43, v102, v74);
+		int v152 = v6.intpart_3;
+		int v141 = v6.intpart_2;
+		int v77 = v6.intpart_1;
+		int v80 = v6.intpart_0;
+		int v11 = cs2_configs['cfg2588'];
+		int v189 = v80;
+		int v176 = v77;
+		int v32 = v141;
+		int v14 = v152;
+		script_870_struct(4,0,0) v163 = script_870(v11, v189, v176, v32, v14);
+		int v17 = v163.intpart_3;
+		int v182 = v163.intpart_2;
+		int v123 = v163.intpart_1;
+		int v88 = v163.intpart_0;
+		int v53 = cs2_configs['cfg2589'];
+		int v137 = v88;
+		int v47 = v123;
+		int v26 = v182;
+		int v160 = v17;
+		script_870_struct(4,0,0) v97 = script_870(v53, v137, v47, v26, v160);
+		int v174 = v97.intpart_3;
+		int v111 = v97.intpart_2;
+		int v96 = v97.intpart_1;
+		int v87 = v97.intpart_0;
+		int v136 = cs2_configs['cfg2590'];
+		int v48 = v87;
+		int v81 = v96;
+		int v116 = v111;
+		int v18 = v174;
+		script_870_struct(4,0,0) v175 = script_870(v136, v48, v81, v116, v18);
+		int v126 = v175.intpart_3;
+		int v23 = v175.intpart_2;
+		int v159 = v175.intpart_1;
+		int v79 = v175.intpart_0;
+		int v178 = cs2_configs['cfg2591'];
+		int v150 = v79;
+		int v38 = v159;
+		int v119 = v23;
+		int v31 = v126;
+		script_870_struct(4,0,0) v61 = script_870(v178, v150, v38, v119, v31);
+		int v91 = v61.intpart_3;
+		int v84 = v61.intpart_2;
+		int v103 = v61.intpart_1;
+		int v5 = v61.intpart_0;
+		int v24 = cs2_configs['cfg2592'];
+		int v54 = v5;
+		int v164 = v103;
+		int v52 = v84;
+		int v167 = v91;
+		script_870_struct(4,0,0) v177 = script_870(v24, v54, v164, v52, v167);
+		int v147 = v177.intpart_3;
+		int v41 = v177.intpart_2;
+		int v118 = v177.intpart_1;
+		int v158 = v177.intpart_0;
+		int v188 = cs2_configs['cfg2593'];
+		int v20 = v158;
+		int v172 = v118;
+		int v7 = v41;
+		int v55 = v147;
+		script_870_struct(4,0,0) v95 = script_870(v188, v20, v172, v7, v55);
+		int v132 = v95.intpart_3;
+		int v128 = v95.intpart_2;
+		int v156 = v95.intpart_1;
+		int v82 = v95.intpart_0;
+		int v9 = cs2_configs['cfg2594'];
+		int v114 = v82;
+		int v8 = v156;
+		int v122 = v128;
+		int v142 = v132;
+		script_870_struct(4,0,0) v34 = script_870(v9, v114, v8, v122, v142);
+		int v185 = v34.intpart_3;
+		int v146 = v34.intpart_2;
+		int v37 = v34.intpart_1;
+		int v99 = v34.intpart_0;
+		int v33 = cs2_configs['cfg2595'];
+		int v100 = v99;
+		int v66 = v37;
+		int v60 = v146;
+		int v92 = v185;
+		script_870_struct(4,0,0) v129 = script_870(v33, v100, v66, v60, v92);
+		int v93 = v129.intpart_3;
+		int v148 = v129.intpart_2;
+		int v120 = v129.intpart_1;
+		int v193 = v129.intpart_0;
+		int v191 = cs2_configs['cfg2596'];
+		int v36 = v193;
+		int v143 = v120;
+		int v108 = v148;
+		int v90 = v93;
+		script_870_struct(4,0,0) v149 = script_870(v191, v36, v143, v108, v90);
+		int v85 = v149.intpart_3;
+		int v171 = v149.intpart_2;
+		int v83 = v149.intpart_1;
+		int v13 = v149.intpart_0;
+		int v76 = cs2_configs['cfg2597'];
+		int v21 = v13;
+		int v184 = v83;
+		int v140 = v171;
+		int v104 = v85;
+		script_870_struct(4,0,0) v162 = script_870(v76, v21, v184, v140, v104);
+		int v145 = v162.intpart_3;
+		int v19 = v162.intpart_2;
+		int v187 = v162.intpart_1;
+		int v127 = v162.intpart_0;
+		int v186 = cs2_configs['cfg2598'];
+		int v113 = v127;
+		int v44 = v187;
+		int v179 = v19;
+		int v154 = v145;
+		script_870_struct(4,0,0) v51 = script_870(v186, v113, v44, v179, v154);
+		int v165 = v51.intpart_3;
+		int v181 = v51.intpart_2;
+		int v29 = v51.intpart_1;
+		int v22 = v51.intpart_0;
+		int v35 = cs2_configs['cfg2599'];
+		int v56 = v22;
+		int v133 = v29;
+		int v190 = v181;
+		int v27 = v165;
+		script_870_struct(4,0,0) v94 = script_870(v35, v56, v133, v190, v27);
+		int v89 = v94.intpart_3;
+		int v40 = v94.intpart_2;
+		int v46 = v94.intpart_1;
+		int v50 = v94.intpart_0;
+		int v4 = cs2_configs['cfg2600'];
+		int v161 = v50;
+		int v138 = v46;
+		int v71 = v40;
+		int v134 = v89;
+		script_870_struct(4,0,0) v68 = script_870(v4, v161, v138, v71, v134);
+		int v10 = v68.intpart_3;
+		int v30 = v68.intpart_2;
+		int v12 = v68.intpart_1;
+		int v70 = v68.intpart_0;
+		if (v70 == 1 && v12 == 1 && v30 == 7 && v10 == 10) {
+			cs2method_10670(21792, 1, 0, 150);
+			cs2method_10810("A key pops out of the organ mechanism.");
+			cs2method_10467(0, 12648465);
+			cs2method_10467(1, 12648571);
+		}
+	}
+	return;
+}

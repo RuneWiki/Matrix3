@@ -1,0 +1,79 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9581(int a0) {
+	if (a0 == -1) {
+		return;
+	}
+	int v3 = 0;
+	int v1 = -1;
+	int v4 = 0;
+	int v2 = 0;
+	globalarray_0 = new WidgetPointer[10];
+	int v5 = 0;
+	if (cs2method_10324(a0) == 1) {
+		v1 = cs2method_10664();
+		globalarray_0[0] = interfaceDefsAttribute(4041);
+		globalarray_0[1] = interfaceDefsAttribute(4042);
+		globalarray_0[2] = interfaceDefsAttribute(4043);
+		globalarray_0[3] = interfaceDefsAttribute(4044);
+		globalarray_0[4] = interfaceDefsAttribute(4045);
+		globalarray_0[5] = interfaceDefsAttribute(4046);
+		globalarray_0[6] = interfaceDefsAttribute(4047);
+		globalarray_0[7] = interfaceDefsAttribute(4048);
+		globalarray_0[8] = interfaceDefsAttribute(4049);
+		globalarray_0[9] = interfaceDefsAttribute(4050);
+	}
+	while (v5 < 10 && globalarray_0[v5] != -1) {
+		if (cs2method_10324(globalarray_0[v5]) == 1 && interfaceDefsAttribute(4040) != -1) {
+			if (cs2method_10609(interfaceDefsAttribute(4040)) == 1) {
+				cs2method_10013(0, interfaceDefsAttribute(4051), 1, 0);
+				v1 = cs2method_10461(v1, interfaceDefsAttribute(4051));
+			} else if (interfaceDefsAttribute(4052) != -1) {
+				cs2method_10013(0, cs2method_10060(interfaceDefsAttribute(4051), interfaceDefsAttribute(4052)), 1, 0);
+				v1 = cs2method_10461(cs2method_10461(v1, interfaceDefsAttribute(4051)), interfaceDefsAttribute(4052));
+			} else {
+				v1 = cs2method_10461(v1, interfaceDefsAttribute(4051));
+				v4 = cs2method_10060(v4, 1);
+			}
+		}
+		v5 = cs2method_10060(v5, 1);
+	}
+	int v0 = 0;
+	if (v4 > 0 && cs2method_10968(v1, v4) >= 40) {
+		v2 = 1;
+	}
+	while (v0 < 10 && globalarray_0[v0] != -1) {
+		if (cs2method_10324(globalarray_0[v0]) == 1) {
+			if (interfaceDefsAttribute(4040) != -1) {
+				cs2method_10063(0, v3, 0, 0);
+				if (cs2method_10609(interfaceDefsAttribute(4040)) == 0) {
+					if (interfaceDefsAttribute(4052) == -1) {
+						if (v2 == 1) {
+							cs2method_10013(0, cs2method_10060(interfaceDefsAttribute(4051), cs2method_10968(v1, v4)), 1, 0);
+							v1 = cs2method_10461(cs2method_10060(v1, interfaceDefsAttribute(4051)), cs2method_10664());
+							v4 = cs2method_10461(v4, 1);
+						} else if (interfaceDefsAttribute(4053) != -1) {
+							cs2method_10013(0, cs2method_10060(interfaceDefsAttribute(4051), interfaceDefsAttribute(4053)), 1, 0);
+						} else {
+							cs2method_10013(0, cs2method_10060(interfaceDefsAttribute(4051), 40), 1, 0);
+						}
+					}
+					cs2method_11047(globalarray_0[v0]);
+				}
+			}
+			v3 = cs2method_10060(v3, cs2method_10664());
+		}
+		v0 = cs2method_10060(v0, 1);
+	}
+	return;
+}

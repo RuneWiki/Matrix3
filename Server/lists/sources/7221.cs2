@@ -1,0 +1,82 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7221(int a0,int a1,int a2,int a3,int a4,int a5) {
+	cs2method_10273(a3);
+	cs2method_10273(a2);
+	for (int v7 = cs2method_10191(a2), int v6 = cs2method_10152(a2), int v2 = cs2method_10236(a2), int v3 = cs2method_10823(a2), int v1 = cs2method_10236(a1), int v4 = 0, int v0 = 0, int v5 = 0; v5 < a0; v5 = cs2method_10060(v5, 1)) {
+		int v9 = v7;
+		int v15 = v2;
+		int v11 = v1;
+		int v13 = a0;
+		int v14 = v5;
+		script_7225_struct(2,0,0) v12 = script_7225(v9, v15, v11, v13, v14);
+		int v8 = v12.intpart_1;
+		int v10 = v12.intpart_0;
+		cs2method_10606(a3, 5, v5);
+		cs2method_10063(v10, v6, 0, 0);
+		cs2method_10013(v8, v3, 0, 0);
+		cs2method_21150(new function<script_7223>(int a0,int a1,int a2,int a3,int a4,int a5,int a6) {
+			if (cs2method_11038(a5, a6) == 1) {
+				cs2method_10063(cs2method_10060(a1, a4), cs2method_10406(), 0, 0);
+				cs2method_10013(1, 1, 0, 0);
+				script_7230(a0, a2, a3, cs2method_10060(a1, a4));
+			}
+			return;
+		}, new WidgetPointer(-32768,3), new WidgetPointer(a2), new WidgetPointer(a4), new WidgetPointer(a1), -2147483647, 0, -2147483643, "IIIIiii");
+		cs2method_20902(new function<script_7224>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7) {
+			if (a1 != a2) {
+				a1 = a2;
+				a4 = cs2_configs['cfg2238'];
+			}
+			script_7227(a2, a7, a6);
+			script_7229(a2, a0, a1, a4, a7, a5, a6);
+			cs2method_10467(1, a3);
+			return;
+		}, new WidgetPointer(-32768,3), -2147483643, new WidgetPointer(-32768,6), -2147483641, new WidgetPointer(a5), new WidgetPointer(a2), new WidgetPointer(a4), new WidgetPointer(a1), "IiIiIIII");
+		cs2method_10606(a2, 5, v5);
+		cs2method_10063(cs2method_10461(v10, v7), 0, 0, 0);
+		cs2method_10013(v8, v3, 0, 0);
+		cs2method_20672(new function<script_7222>(int a0,int a1,int a2,int a3,int a4,int a5,int a6) {
+			if (cs2method_11038(a4, a3) == 1) {
+				a1 = cs2method_10060(cs2method_10060(a1, cs2method_10878()), cs2method_10191(cs2method_10974()));
+			}
+			script_7230(a4, a5, a2, a1);
+			if (cs2method_11038(a0, a3) == 1) {
+				cs2method_21150(new function<script_7223>(int a0,int a1,int a2,int a3,int a4,int a5,int a6) {
+					if (cs2method_11038(a2, a5) == 1) {
+						cs2method_10063(cs2method_10060(a0, a3), cs2method_10406(), 0, 0);
+						cs2method_10013(1, 1, 0, 0);
+						script_7230(a6, a4, a1, cs2method_10060(a0, a3));
+					}
+					return;
+				}, new WidgetPointer(a0), new WidgetPointer(a4), new WidgetPointer(a5), new WidgetPointer(a2), -2147483647, cs2method_10461(a1, cs2method_10878()), a3, "IIIIiii");
+			}
+			script_7226(a0, a3);
+			cs2method_10467(0, a6);
+			return;
+		}, new WidgetPointer(-32768,3), -2147483643, new WidgetPointer(a3), new WidgetPointer(a5), new WidgetPointer(a4), new WidgetPointer(a1), -2147483647, "IiIIIIi");
+		cs2method_20703(new function<script_7224>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7) {
+			if (a5 != a1) {
+				a5 = a1;
+				a0 = cs2_configs['cfg2238'];
+			}
+			script_7227(a1, a6, a4);
+			script_7229(a1, a3, a5, a0, a6, a2, a4);
+			cs2method_10467(1, a7);
+			return;
+		}, new WidgetPointer(a3), -2147483643, new WidgetPointer(a3), -2147483643, new WidgetPointer(a5), new WidgetPointer(-32768,3), new WidgetPointer(a4), new WidgetPointer(a1), "IiIiIIII");
+		cs2method_10057(1, "Select");
+	}
+	cs2method_10467(1, a5);
+	return;
+}

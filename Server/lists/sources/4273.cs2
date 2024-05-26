@@ -1,0 +1,60 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4273() {
+	cs2method_10467(1, 70975649);
+	cs2method_10467(1, 70975648);
+	cs2method_10467(1, 70975650);
+	cs2method_10467(0, 70975652);
+	cs2method_10467(1, 70975645);
+	cs2method_10467(1, 70975646);
+	cs2method_10467(0, 70975647);
+	cs2method_10467(1, 70975731);
+	cs2method_10467(1, 70975741);
+	cs2method_10467(0, 70975882);
+	cs2method_10467(1, 70975653);
+	cs2method_10026(70975903, cs2method_10379(cs2method_10051(2, 10)));
+	if (cs2method_10338(6) < 83) {
+		cs2method_10026(70975904, (string)cs2method_10379(cs2method_10051(cs2method_10968(2, 2), 10)) + " (halved)");
+	} else {
+		cs2method_10026(70975904, cs2method_10379(cs2method_10051(2, 10)));
+	}
+	if (cs2method_10338(6) < 80) {
+		cs2method_10026(70975905, (string)cs2method_10379(cs2method_10051(cs2method_10968(12, 2), 10)) + " (halved)");
+	} else {
+		cs2method_10026(70975905, cs2method_10379(cs2method_10051(12, 10)));
+	}
+	if (cs2method_10338(6) < 86) {
+		cs2method_10026(70975906, (string)cs2method_10379(cs2method_10051(cs2method_10968(2, 2), 10)) + " (halved)");
+	} else {
+		cs2method_10026(70975906, cs2method_10379(cs2method_10051(2, 10)));
+	}
+	cs2method_10026(70975907, cs2method_10379(cs2method_10051(10, 10)));
+	cs2method_10026(70975908, "Magic and Farming");
+	if (cs2method_10338(6) < 83) {
+		cs2method_10026(70975909, "Farming (no Magic)");
+	} else {
+		cs2method_10026(70975909, "Magic and Farming");
+	}
+	if (cs2method_10338(6) < 80) {
+		cs2method_10026(70975910, "Crafting (no Magic)");
+	} else {
+		cs2method_10026(70975910, "Magic and Crafting");
+	}
+	if (cs2method_10338(6) < 86) {
+		cs2method_10026(70975911, "Construction (no Magic)");
+	} else {
+		cs2method_10026(70975911, "Magic and Construction");
+	}
+	cs2method_10026(70975912, "Agility");
+	return;
+}

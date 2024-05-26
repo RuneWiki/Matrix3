@@ -1,0 +1,109 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8905(int a0,int a1,int a2) {
+	object v2;
+	int v1 = 0;
+	object v10 = "null";
+	switch (a0) {
+		case 97910826:
+			int v0 = cs2_configs['cfg2797'];
+			if (v0 == 1) {
+				v10 = "<col=5555ff>" + "Saradomin" + "</col>" + "-aligned players deal 10% more damage to " + "<col=ff0000>" + "Zamorak" + "</col>" + "'s units.";
+			} else {
+				v10 = "<col=5555ff>" + "Saradomin" + "</col>" + "-aligned players take 15% less damage from " + "<col=ff0000>" + "Zamorak" + "</col>" + "'s units.";
+			}
+			break;
+		case 97910825:
+			int v6 = cs2_configs['cfg2798'];
+			if (v6 == 1) {
+				v10 = "<col=5555ff>" + "Saradominist" + "</col>" + " forces have a chance to see a second special unit of each available type on the battlefield.";
+			} else {
+				v10 = "<col=5555ff>" + "Saradomin" + "</col>" + "-aligned special units bonuses are 50% more powerful.";
+			}
+			break;
+		case 97910824:
+			int v5 = cs2_configs['cfg2799'];
+			if (v5 == 1) {
+				v10 = "<col=5555ff>" + "Saradomin" + "</col>" + " aligned players gain 5% more resources from the battlefield.";
+			} else {
+				v10 = "<col=5555ff>" + "Saradomin" + "</col>" + " aligned players gain %5 more resources from outside the battlefield.";
+			}
+			break;
+		case 97910823:
+			int v9 = cs2_configs['cfg2800'];
+			if (v9 == 1) {
+				v10 = "Rewards from the quartermaster are now 5% cheaper for " + "<col=5555ff>" + "Saradomin" + "</col>" + "-aligned players.";
+			} else {
+				v10 = "5% bonus chance to obtain rare drops on the battlefield for " + "<col=5555ff>" + "Saradomin" + "</col>" + "-aligned players.";
+			}
+			break;
+		case 97910831:
+			int v7 = cs2_configs['cfg2801'];
+			if (v7 == 1) {
+				v10 = "<col=ff0000>" + "Zamorak" + "</col>" + "-aligned players deal 10% more damage to " + "<col=5555ff>" + "Saradomin" + "</col>" + "'s units.";
+			} else {
+				v10 = "<col=ff0000>" + "Zamorak" + "</col>" + "-aligned players take 15% less damage from " + "<col=5555ff>" + "Saradomin" + "</col>" + "'s units.";
+			}
+			break;
+		case 97910830:
+			int v3 = cs2_configs['cfg2802'];
+			if (v3 == 1) {
+				v10 = "<col=ff0000>" + "Zamorakian" + "</col>" + " forces have a chance to see a second special unit of each available type.";
+			} else {
+				v10 = "<col=ff0000>" + "Zamorak" + "</col>" + "-aligned special units bonuses are 50% more powerful.";
+			}
+			break;
+		case 97910829:
+			int v4 = cs2_configs['cfg2803'];
+			if (v4 == 1) {
+				v10 = "<col=ff0000>" + "Zamorak" + "</col>" + "-aligned players gain 5% more resources from the battlefield.";
+			} else {
+				v10 = "<col=ff0000>" + "Zamorak" + "</col>" + "-aligned players gain %5 more resources from outside the battlefield.";
+			}
+			break;
+		case 97910828:
+			int v8 = cs2_configs['cfg2804'];
+			if (v8 == 1) {
+				v10 = "Rewards from the quartermaster are now 5% cheaper for " + "<col=ff0000>" + "Zamorak" + "</col>" + "-aligned players.";
+			} else {
+				v10 = "5% bonus chance to obtain rare drops on the battlefield for " + "<col=ff0000>" + "Zamorak" + "</col>" + "-aligned players.";
+			}
+			break;
+		case 97910790:
+			if (cs2method_10769(a0) == 20112) {
+				v10 = "<col=5555ff>" + "Saradomin" + "</col>" + "-aligned players take 15% less damage from " + "<col=ff0000>" + "Zamorakian" + "</col>" + " units.";
+			} else {
+				if (cs2method_10769(a0) == 20113) {
+					v10 = "<col=5555ff>" + "Saradomin" + "</col>" + "-aligned players deal 15% less damage to " + "<col=ff0000>" + "Zamorakian" + "</col>" + " units.";
+				}
+			}
+			break;
+		case 97910792:
+			if (cs2method_10769(a0) == 20112) {
+				v10 = "<col=ff0000>" + "Zamorak" + "</col>" + "-aligned players take 15% less damage from " + "<col=5555ff>" + "Saradominist" + "</col>" + " units.";
+			} else {
+				if (cs2method_10769(a0) == 20113) {
+					v10 = "<col=ff0000>" + "Zamorak" + "</col>" + "-aligned players deal 15% less damage to " + "<col=5555ff>" + "Saradominist" + "</col>" + " units.";
+				}
+			}
+	}
+	if (client_configs['cfg3667'].bitcfg18730 == 1) {
+		v2 = cs2method_10427(v10, "<br>" + "<br>" + "<col=5555ff>" + "You are aligned with Saradomin.");
+	} else if (client_configs['cfg3667'].bitcfg18730 == 2) {
+		v2 = cs2method_10427(v10, "<br>" + "<br>" + "<col=ff0000>" + "You are aligned with Zamorak.");
+	} else {
+		v2 = cs2method_10427(v10, "<br>" + "<br>" + "You are currently unaligned.");
+	}
+	script_7769(97910853, a0, -1, 128, 17813, 17813, 16777215, 13, 4, 3, a2, v2, a1);
+	return;
+}

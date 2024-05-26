@@ -1,0 +1,128 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5462(int a0,int a1) {
+	int v0;
+	int v2 = -1;
+	object v1 = "";
+	switch (a0) {
+		case 1:
+			v0 = 8178;
+			v1 = "Reduced melee attack";
+			break;
+		case 2:
+			v0 = 8184;
+			v1 = "No shield";
+			break;
+		case 3:
+			v0 = 8185;
+			v1 = "No food";
+			break;
+		case 4:
+			v0 = 8181;
+			v1 = "Reduced melee defence";
+			break;
+		case 5:
+			v0 = 8187;
+			v1 = "Random freeze";
+			break;
+		case 6:
+			v0 = 8188;
+			v1 = "Halved HP";
+			break;
+		case 7:
+			v0 = 8186;
+			v1 = "No body armour";
+			break;
+		case 8:
+			v0 = 8179;
+			v1 = "Reduced ranged attack";
+			break;
+		case 9:
+			v0 = 8191;
+			v1 = "No familiar";
+			break;
+		case 10:
+			v0 = 8199;
+			v1 = "Monster stun";
+			break;
+		case 11:
+			v0 = 8193;
+			v1 = "No prayers";
+			break;
+		case 12:
+			v0 = 8190;
+			v1 = "Slippery fingers";
+			break;
+		case 13:
+			v0 = 8180;
+			v1 = "Reduced magic attack";
+			break;
+		case 14:
+			v0 = 8192;
+			v1 = "Reduced adrenaline gain";
+			break;
+		case 15:
+			v0 = 8195;
+			v1 = "No ultimate abilities";
+			break;
+		case 16:
+			v0 = 8183;
+			v1 = "Reduced magic defence";
+			break;
+		case 17:
+			v0 = 8196;
+			v1 = "Random daze";
+			break;
+		case 18:
+			v0 = 8189;
+			v1 = "Poisoned";
+			break;
+		case 19:
+			v0 = 8182;
+			v1 = "Reduced ranged defence";
+			break;
+		case 20:
+			v0 = 8197;
+			v1 = "No powerups";
+			break;
+		case 21:
+			v0 = 8194;
+			v1 = "No potions";
+			break;
+		case 22:
+			v0 = 8198;
+			v1 = "Life saver";
+			break;
+		default:
+			v0 = 8178;
+	}
+	cs2method_10606(75956255, 5, a1);
+	cs2method_10310(v0);
+	cs2method_10013(23, 23, 0, 0);
+	cs2method_10063(cs2_configs['cfg1670'], cs2_configs['cfg1671'], 2, 2);
+	cs2_configs['cfg1670'] = cs2method_10060(cs2_configs['cfg1670'], 24);
+	if (cs2_configs['cfg1670'] > 180) {
+		cs2_configs['cfg1670'] = 0;
+		cs2_configs['cfg1671'] = cs2method_10060(cs2_configs['cfg1671'], 24);
+	}
+	script_5464();
+	cs2method_20353(new function<script_7785>(int a0,int a1,int a2,int a3,object a4,int a5) {
+		script_7788(a4, a1, a3, a0, a2, a5);
+		return;
+	}, new WidgetPointer(-32768,3), a1, new WidgetPointer(1159,44), (string)v1, 10, 100, "IiIsii");
+	cs2method_20884(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(1159,44), "I");
+	return;
+}

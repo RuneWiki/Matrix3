@@ -1,0 +1,72 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2442(int a0) {
+	cs2_configs['cfg2254'] = "";
+	cs2_configs['cfg2255'] = "";
+	cs2_configs['cfg2256'] = "";
+	cs2_configs['cfg2257'] = "";
+	cs2_configs['cfg2258'] = "";
+	cs2_configs['cfg2259'] = "";
+	cs2_configs['cfg2260'] = "";
+	cs2_configs['cfg2261'] = "";
+	cs2_configs['cfg2262'] = "";
+	cs2_configs['cfg2263'] = "";
+	cs2_configs['cfg2264'] = "";
+	cs2_configs['cfg2265'] = "";
+	cs2_configs['cfg2266'] = "";
+	cs2_configs['cfg2267'] = "";
+	cs2_configs['cfg2268'] = "";
+	cs2_configs['cfg2269'] = "";
+	cs2_configs['cfg2270'] = "";
+	cs2_configs['cfg2271'] = "";
+	cs2_configs['cfg2272'] = "";
+	cs2_configs['cfg2273'] = "";
+	cs2_configs['cfg2274'] = "";
+	cs2_configs['cfg2275'] = "";
+	cs2_configs['cfg2276'] = "";
+	cs2_configs['cfg2277'] = "";
+	cs2_configs['cfg2278'] = "";
+	cs2_configs['cfg2279'] = "";
+	cs2_configs['cfg2280'] = "";
+	cs2_configs['cfg2281'] = "";
+	cs2_configs['cfg2282'] = "";
+	cs2_configs['cfg2283'] = "";
+	cs2method_20914(new function<script_2443>(int a0) {
+		script_2444(a0);
+		return;
+	}, a0, 2254, 2255, 2256, 2257, 2258, 2259, 2260, 2261, 2262, 2263, 2264, 2265, 2266, 2267, 2268, 2269, 2270, 2271, 2272, 2273, 2274, 2275, 2276, 2277, 2278, 2279, 2280, 2281, 2282, 2283, 30, "LY", new WidgetPointer(script_7799(a0, 2228240)));
+	cs2method_20348(new function<script_2448>(int a0,int a1,int a2) {
+		if (a1 != 1) {
+			return;
+		}
+		if (a0 != -1) {
+			if (a0 == client_configs['cfg98']) {
+				client_configs['cfg98'] = -1;
+			} else {
+				client_configs['cfg98'] = a0;
+			}
+		}
+		script_2449(a2, 1);
+		return;
+	}, a0, 1, -1, 98, 1, "LiiY", new WidgetPointer(script_7799(a0, 2228240)));
+	cs2method_20348(new function<script_2443>(int a0) {
+		script_2444(a0);
+		return;
+	}, a0, 99, 100, 2, "LY", new WidgetPointer(script_7799(a0, 2228234)));
+	cs2method_10467(1, script_7799(a0, 2228238));
+	cs2method_10273(script_7799(a0, 2228237));
+	cs2method_10251(0, 0, script_7799(a0, 2228237));
+	cs2method_11130(0, 0, script_7799(a0, 2228237));
+	cs2method_10467(1, script_7799(a0, 2228237));
+	return;
+}

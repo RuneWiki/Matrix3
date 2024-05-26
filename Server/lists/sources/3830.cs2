@@ -1,0 +1,19 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_3830() {
+	int v0 = 0;
+	if ((client_configs['cfg3240'].bitcfg16574 == 0 || client_configs['cfg3240'].bitcfg16574 != 1 && client_configs['cfg3240'].bitcfg16574 != 20) && (client_configs['cfg3241'].bitcfg16578 == 0 || client_configs['cfg3241'].bitcfg16578 != 1 && client_configs['cfg3241'].bitcfg16578 != 20) && (client_configs['cfg3242'].bitcfg16582 == 0 || client_configs['cfg3242'].bitcfg16582 != 1 && client_configs['cfg3242'].bitcfg16582 != 20) && (client_configs['cfg3243'].bitcfg16586 == 0 || client_configs['cfg3243'].bitcfg16586 != 1 && client_configs['cfg3243'].bitcfg16586 != 20) && (client_configs['cfg3244'].bitcfg16590 == 0 || client_configs['cfg3244'].bitcfg16590 != 1 && client_configs['cfg3244'].bitcfg16590 != 20)) {
+		v0 = 1;
+	}
+	return v0;
+}

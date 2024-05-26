@@ -1,0 +1,70 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6815(int a0,int a1) {
+	if (a1 == -1) {
+		return;
+	}
+	int v15 = -1;
+	int v21 = -1;
+	int v5 = -1;
+	int v19 = -1;
+	int v13 = a0;
+	script_6816_struct(2,0,0) v23 = script_6816(v13);
+	int v6 = v23.intpart_1;
+	int v11 = v23.intpart_0;
+	int v12 = a1;
+	script_6816_struct(2,0,0) v16 = script_6816(v12);
+	int v22 = v16.intpart_1;
+	int v17 = v16.intpart_0;
+	int v10 = -1;
+	int v7 = -1;
+	int v14 = -1;
+	int v18 = -1;
+	int v8 = a0;
+	script_6817_struct(2,0,0) v2 = script_6817(v8);
+	int v20 = v2.intpart_1;
+	int v9 = v2.intpart_0;
+	int v0 = a1;
+	script_6817_struct(2,0,0) v4 = script_6817(v0);
+	int v1 = v4.intpart_1;
+	int v3 = v4.intpart_0;
+	if (a0 == -1) {
+		return;
+	}
+	if (v3 == 88539136) {
+		return;
+	}
+	if (v11 == 13522 && v17 == -1 && script_6818(a1) == 1) {
+		cs2method_10758(-1, v9);
+		cs2method_10758(-1, v20);
+		cs2method_10758(v11, v3);
+		cs2method_10758(v6, v1);
+		int v27 = 19113;
+		int v25 = 1;
+		int v26 = 0;
+		int v24 = cs2method_10060(120, cs2method_10877(60));
+		special6(10, 10);
+		/* 
+			java.lang.RuntimeException: Stack underflow
+				at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+				at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+				at tests.Main.main(Main.java:69)
+			
+		 */
+	}
+	return;
+}

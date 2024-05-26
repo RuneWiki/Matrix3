@@ -1,0 +1,37 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_1720(int a0) {
+	if (cs2_configs['cfg4115'] == 0) {
+		switch (a0) {
+			case 0:
+				return client_configs['cfg897'].bitcfg1967;
+			case 1:
+				return client_configs['cfg897'].bitcfg1966;
+			case 2:
+				return client_configs['cfg897'].bitcfg1965;
+			case 3:
+				return client_configs['cfg898'].bitcfg2016;
+			case 4:
+				return client_configs['cfg898'].bitcfg2015;
+			case 5:
+				return client_configs['cfg898'].bitcfg2007;
+			case 6:
+				return client_configs['cfg898'].bitcfg2006;
+			case 7:
+				return client_configs['cfg898'].bitcfg2005;
+		}
+	} else {
+		return cs2method_10441(cs2_configs['cfg4115'], a0);
+	}
+	return 0;
+}

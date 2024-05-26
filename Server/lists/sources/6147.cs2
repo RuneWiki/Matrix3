@@ -1,0 +1,72 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6147(int a0,int a1,int a2,int a3,int a4) {
+	int v8 = cs2_configs['cfg1904'];
+	int v13 = 0;
+	int v7 = 0;
+	int v6 = 0;
+	int v5 = 0;
+	int v0 = 0;
+	int v11 = -1;
+	int v9 = -1;
+	int v12 = -1;
+	int v1 = -1;
+	int v3 = cs2method_10060(300, cs2method_10877(250));
+	int v10 = cs2method_10060(2, cs2method_10877(6));
+	int v2 = 0;
+	int v4 = cs2method_10060(cs2method_10060(cs2_configs['cfg1906'], 250), cs2method_10877(300));
+	cs2method_11031(0, v10);
+	cs2method_11031(1, v10);
+	while (v2 < v10) {
+		int v14 = a2;
+		int v18 = a0;
+		int v16 = cs2method_10327(v8, 1, 0, 1);
+		script_6150_struct(4,0,0) v19 = script_6150(v14, v18, v16);
+		int v22 = v19.intpart_3;
+		int v15 = v19.intpart_2;
+		int v17 = v19.intpart_1;
+		int v20 = v19.intpart_0;
+		int v21 = cs2method_10060(a1, cs2method_10122(v2, cs2method_10461(v10, 1), cs2method_10461(v4, a1)));
+		cs2method_10971(0, v2, v20, v21, v17, v21, 0);
+		cs2method_10971(1, v2, v8, cs2method_10060(400, cs2_configs['cfg1906']), v8, cs2method_10060(400, cs2_configs['cfg1906']), 0);
+		a2 = cs2method_10060(a2, a0);
+		v2 = cs2method_10060(v2, 1);
+	}
+	if (a4 == -1) {
+		a4 = v3;
+	}
+	cs2method_10382(0, 0, a4, v3, 1, 0);
+	a2 = cs2method_10461(a2, a0);
+	while (a2 < 0) {
+		a2 = cs2method_10060(a2, 8);
+	}
+	while (a2 > 7) {
+		a2 = cs2method_10461(a2, 8);
+	}
+	cs2method_20196(new function<script_6148>(int a0,int a1,int a2,int a3,int a4,int a5) {
+		if (cs2_configs['cfg1903'] >= 3) {
+			cs2method_20196(new function<none>() {
+			}, "", new WidgetPointer(a4));
+			return;
+		}
+		if (a5 < cs2method_10461(cs2method_10723(0), 2)) {
+			int v0 = cs2method_10060(a5, 1);
+			cs2method_10382(0, v0, a0, a0, 1, 0);
+			cs2method_20196(load function<6148>, new WidgetPointer(a4), a3, a2, a1, a0, v0, "Iiiiii", new WidgetPointer(a4));
+		} else {
+			script_6147(a4, a3, a2, a0, a1);
+		}
+		return;
+	}, new WidgetPointer(a3), a2, v4, a0, v3, 0, "Iiiiii", new WidgetPointer(a3));
+	return;
+}

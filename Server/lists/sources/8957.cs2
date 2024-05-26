@@ -1,0 +1,222 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8957(int a0,int a1) {
+	int v1 = 98042081;
+	cs2method_10273(v1);
+	for (int v3 = 0, int v2 = 0, int v0 = 0; v2 < a1; v2 = cs2method_10060(v2, 1)) {
+		cs2method_10606(v1, 5, v2);
+		if (cs2method_10461(a0, 1) == v2) {
+			cs2method_10310(18525);
+		} else {
+			cs2method_10310(18526);
+		}
+		cs2method_10013(18, 18, 0, 0);
+		switch (a1) {
+			case 1:
+				v3 = 0;
+				break;
+			case 2:
+				if (v2 == 0) {
+					v3 = -10;
+				} else {
+					v3 = 10;
+				}
+				break;
+			case 3:
+				if (v2 == 0) {
+					v3 = -20;
+				} else if (v2 == 1) {
+					v3 = 0;
+				} else {
+					v3 = 20;
+				}
+				break;
+			case 4:
+				switch (v2) {
+					case 0:
+						v3 = -30;
+						break;
+					case 1:
+						v3 = -10;
+						break;
+					case 2:
+						v3 = 10;
+						break;
+					case 3:
+						v3 = 30;
+				}
+				break;
+			case 5:
+				switch (v2) {
+					case 0:
+						v3 = -40;
+						break;
+					case 1:
+						v3 = -20;
+						break;
+					case 2:
+						v3 = 0;
+						break;
+					case 3:
+						v3 = 20;
+						break;
+					case 4:
+						v3 = 40;
+				}
+				break;
+			case 6:
+				switch (v2) {
+					case 0:
+						v3 = -50;
+						break;
+					case 1:
+						v3 = -30;
+						break;
+					case 2:
+						v3 = -10;
+						break;
+					case 3:
+						v3 = 10;
+						break;
+					case 4:
+						v3 = 30;
+						break;
+					case 5:
+						v3 = 50;
+				}
+				break;
+			case 7:
+				switch (v2) {
+					case 0:
+						v3 = -60;
+						break;
+					case 1:
+						v3 = -40;
+						break;
+					case 2:
+						v3 = -20;
+						break;
+					case 3:
+						v3 = 0;
+						break;
+					case 4:
+						v3 = 20;
+						break;
+					case 5:
+						v3 = 40;
+						break;
+					case 6:
+						v3 = 60;
+				}
+				break;
+			case 8:
+				switch (v2) {
+					default:
+						break;
+					case 0:
+						v3 = -70;
+						break;
+					case 1:
+						v3 = -50;
+						break;
+					case 2:
+						v3 = -30;
+						break;
+					case 3:
+						v3 = -10;
+						break;
+					case 4:
+						v3 = 10;
+						break;
+					case 5:
+						v3 = 30;
+						break;
+					case 6:
+						v3 = 50;
+						break;
+					case 7:
+						v3 = 70;
+				}
+		}
+		cs2method_10063(v3, 0, 1, 1);
+		cs2method_10057(1, "Select");
+		int v4 = script_8982(v2, a1);
+		cs2method_20703(new function<script_8980>(int a0) {
+			client_configs['cfg3643'].bitcfg18640 = cs2method_10060(a0, 1);
+			cs2method_10467(1, 98042072);
+			cs2method_10467(1, 98042077);
+			cs2method_10467(1, 98042069);
+			cs2method_10467(1, 98042064);
+			cs2method_10467(1, 98042054);
+			cs2method_10467(1, 98042046);
+			cs2method_10467(1, 98041972);
+			cs2method_10467(1, 98041973);
+			cs2method_10467(1, 98041978);
+			cs2method_10467(1, 98041994);
+			cs2method_10467(1, 98042003);
+			cs2method_10467(1, 98042009);
+			cs2method_10467(1, 98042016);
+			int v0 = -1;
+			switch (client_configs['cfg3643'].bitcfg18639) {
+				case 0:
+					v0 = 98042072;
+					break;
+				case 1:
+					v0 = 98042077;
+					break;
+				case 2:
+					switch (client_configs['cfg3643'].bitcfg18640) {
+						case 1:
+							v0 = 98042069;
+							break;
+						case 2:
+							v0 = 98042064;
+							break;
+						case 3:
+							v0 = 98042054;
+							break;
+						case 4:
+							v0 = 98042046;
+							break;
+						case 5:
+							v0 = 98042016;
+							break;
+						case 6:
+							v0 = 98042009;
+							break;
+						case 7:
+							v0 = 98042003;
+					}
+					break;
+				case 3:
+					switch (client_configs['cfg3643'].bitcfg18640) {
+						case 1:
+							v0 = 98041994;
+							break;
+						case 2:
+							v0 = 98041978;
+							break;
+						case 3:
+							v0 = 98041973;
+					}
+					break;
+				case 4:
+					v0 = 98041972;
+			}
+			cs2method_10467(0, v0);
+			script_8957(script_8960(client_configs['cfg3643'].bitcfg18639), cs2method_11048(0, cs2method_10060(client_configs['cfg3643'].bitcfg18640, 0)));
+			return;
+		}, v4, "i");
+	}
+	return;
+}

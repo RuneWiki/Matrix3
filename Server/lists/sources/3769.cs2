@@ -1,0 +1,278 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3769() {
+	int v2;
+	cs2method_10467(0, 61603849);
+	cs2method_10467(1, 61603852);
+	int v5 = 0;
+	int v6 = 0;
+	int v4 = 0;
+	int v7 = 0;
+	int v0 = 0;
+	int v1 = 0;
+	int v3 = 3016;
+	if (cs2method_10771() == 1) {
+		v3 = 3015;
+	}
+	if (cs2method_10038(cs2method_10924(v3), 5) == 0) {
+		v2 = cs2method_10051(cs2method_10968(cs2method_10924(v3), 5), 67);
+	} else {
+		v2 = cs2method_10060(cs2method_10051(cs2method_10968(cs2method_10924(v3), 5), 67), 67);
+	}
+	cs2method_10273(61603849);
+	cs2method_11130(cs2method_10051(5, 60), v2, 61603849);
+	while (v5 < cs2method_10924(v3)) {
+		cs2method_10606(61603927, 5, v0);
+		cs2method_10057(1, cs2method_10018(idx22mapAttribute(idx17mapData('i', 'J', v3, v5), 1070)));
+		cs2method_20703(new function<script_2250>(int a0) {
+			flow_0:
+				int v0 = cs2method_10968(a0, 5);
+				int v1 = 3016;
+				cs2method_10363(6185, 1, 0, 100, 350);
+				if (cs2method_10771() == 1) {
+					v1 = 3015;
+				}
+				object v2 = cs2method_10018(idx22mapAttribute(idx17mapData('i', 'J', v1, v0), 1070));
+				int v3 = 20280;
+				if (cs2method_10805(cs2method_10236(61603934), v3, v2) != 1) {
+					v3 = 17814;
+					if (cs2method_10805(cs2method_10236(61603934), v3, v2) != 1) {
+						v3 = 17813;
+						if (cs2method_10805(cs2method_10236(61603934), v3, v2) != 1) {
+							v3 = 20452;
+							if (cs2method_10805(cs2method_10236(61603934), v3, v2) != 1) {
+								v3 = 496;
+							}
+						}
+					}
+				}
+				cs2method_10170(v3, 61603934);
+				int v4 = idx17mapData('i', 'J', v1, v0);
+				IF (cs2method_10771() == 1) 
+					GOTO	flow_8
+				GOTO	flow_9
+			flow_8:
+				IF (v4 == 1004) 
+					GOTO	flow_11
+			flow_9:
+				IF (cs2method_10771() == 0 && v4 == 1004) 
+					GOTO	flow_11
+				GOTO	flow_12
+			flow_11:
+				cs2method_10467(1, 61603933);
+				cs2method_10026(61603931, idx22mapAttribute(v4, 1078));
+				cs2method_10467(0, 61603934);
+				cs2method_10026(61603934, cs2method_10018(idx22mapAttribute(v4, 1070)));
+				cs2method_10467(0, 61603935);
+				cs2method_10039(idx22mapAttribute(v4, 1070), -1, 61603935);
+				cs2method_10467(0, 61603932);
+				cs2method_10467(0, 61603943);
+				cs2method_10467(0, 61603941);
+				cs2method_10467(0, 61603942);
+				cs2method_10467(1, 61603944);
+				cs2method_10467(1, 61603945);
+				cs2method_10026(61603941, "1 : 1xp");
+				GOTO	flow_43
+			flow_12:
+				IF (cs2method_10338(24) < idx22mapAttribute(v4, 1071)) 
+					GOTO	flow_13
+				GOTO	flow_14
+			flow_13:
+				cs2method_10467(1, 61603933);
+				cs2method_10026(61603931, idx22mapAttribute(v4, 1078));
+				cs2method_10467(0, 61603934);
+				cs2method_10026(61603934, cs2method_10018(idx22mapAttribute(v4, 1070)));
+				cs2method_10467(0, 61603935);
+				cs2method_10039(idx22mapAttribute(v4, 1070), -1, 61603935);
+				cs2method_10467(0, 61603932);
+				cs2method_10467(1, 61603943);
+				cs2method_10467(1, 61603941);
+				cs2method_10467(1, 61603942);
+				cs2method_10467(0, 61603944);
+				cs2method_10467(0, 61603945);
+				cs2method_10026(61603945, "Dungeoneering " + (string)cs2method_10379(idx22mapAttribute(v4, 1071)) + " required");
+				GOTO	flow_43
+			flow_14:
+				IF (cs2method_10771() == 1 && idx17mapData('i', 'J', v1, v0) == 28312 && client_configs['cfg1096'].bitcfg2456 == 0) 
+					GOTO	flow_17
+				GOTO	flow_18
+			flow_17:
+				cs2method_10467(1, 61603933);
+				cs2method_10026(61603931, idx22mapAttribute(v4, 1078));
+				cs2method_10467(0, 61603934);
+				cs2method_10026(61603934, cs2method_10018(idx22mapAttribute(v4, 1070)));
+				cs2method_10467(0, 61603935);
+				cs2method_10039(idx22mapAttribute(v4, 1070), -1, 61603935);
+				cs2method_10467(0, 61603932);
+				cs2method_10467(1, 61603943);
+				cs2method_10467(1, 61603941);
+				cs2method_10467(1, 61603942);
+				cs2method_10467(0, 61603944);
+				cs2method_10467(0, 61603945);
+				cs2method_10026(61603945, "You already have 1 reset available to you");
+				GOTO	flow_43
+			flow_18:
+				IF (cs2method_10771() == 1 && idx17mapData('i', 'J', v1, v0) == 28314) 
+					GOTO	flow_20
+				GOTO	flow_21
+			flow_20:
+				IF (client_configs['cfg4506'].bitcfg22544 == 1) 
+					GOTO	flow_25
+			flow_21:
+				IF (idx17mapData('i', 'J', v1, v0) == 28315) 
+					GOTO	flow_22
+				GOTO	flow_23
+			flow_22:
+				IF (client_configs['cfg4506'].bitcfg22546 == 1) 
+					GOTO	flow_25
+			flow_23:
+				IF (idx17mapData('i', 'J', v1, v0) == 28316 && client_configs['cfg4506'].bitcfg22548 == 1) 
+					GOTO	flow_25
+				GOTO	flow_26
+			flow_25:
+				cs2method_10467(1, 61603933);
+				cs2method_10026(61603931, idx22mapAttribute(v4, 1078));
+				cs2method_10467(0, 61603934);
+				cs2method_10026(61603934, cs2method_10018(idx22mapAttribute(v4, 1070)));
+				cs2method_10467(0, 61603935);
+				cs2method_10039(idx22mapAttribute(v4, 1070), -1, 61603935);
+				cs2method_10467(0, 61603932);
+				cs2method_10467(1, 61603943);
+				cs2method_10467(1, 61603941);
+				cs2method_10467(1, 61603942);
+				cs2method_10467(0, 61603944);
+				cs2method_10467(0, 61603945);
+				cs2method_10026(61603945, "You already own this pet.");
+				GOTO	flow_43
+			flow_26:
+				IF (cs2method_10771() == 1 && idx17mapData('i', 'J', v1, v0) == 28311) 
+					GOTO	flow_28
+				GOTO	flow_29
+			flow_28:
+				IF (cs2method_10936(93, 31362) == 0) 
+					GOTO	flow_31
+			flow_29:
+				IF (idx17mapData('i', 'J', v1, v0) == 28313 && cs2method_10936(93, 18338) == 0) 
+					GOTO	flow_31
+				GOTO	flow_34
+			flow_31:
+				cs2method_10467(1, 61603933);
+				cs2method_10026(61603931, idx22mapAttribute(v4, 1078));
+				cs2method_10467(0, 61603934);
+				cs2method_10026(61603934, cs2method_10018(idx22mapAttribute(v4, 1070)));
+				cs2method_10467(0, 61603935);
+				cs2method_10039(idx22mapAttribute(v4, 1070), -1, 61603935);
+				cs2method_10467(0, 61603932);
+				cs2method_10467(1, 61603943);
+				cs2method_10467(1, 61603941);
+				cs2method_10467(1, 61603942);
+				cs2method_10467(0, 61603944);
+				cs2method_10467(0, 61603945);
+				if (v4 == 28313) {
+					v4 = 982;
+				}
+				cs2method_10026(61603945, "You need to have a " + (string)cs2method_10018(idx22mapAttribute(v4, 1070)) + " in your inventory.");
+				GOTO	flow_43
+			flow_34:
+				cs2method_10467(1, 61603933);
+				cs2method_10026(61603931, idx22mapAttribute(v4, 1078));
+				cs2method_10467(0, 61603934);
+				cs2method_10026(61603934, cs2method_10018(idx22mapAttribute(v4, 1070)));
+				cs2method_10467(0, 61603935);
+				cs2method_10039(idx22mapAttribute(v4, 1070), -1, 61603935);
+				cs2method_10467(0, 61603932);
+				cs2method_10467(0, 61603943);
+				cs2method_10467(0, 61603941);
+				cs2method_10467(0, 61603942);
+				cs2method_10467(1, 61603944);
+				cs2method_10467(1, 61603945);
+				if (idx22mapAttribute(v4, 4315) != 0) {
+					if (client_configs['cfg4506'].bitcfg22551 == 0) {
+						cs2method_10026(61603941, cs2method_10379(idx22mapAttribute(v4, 4315)));
+					} else if (client_configs['cfg4506'].bitcfg22551 == 1 && idx22mapAttribute(v4, 4316) != 0) {
+						cs2method_10026(61603941, cs2method_10379(idx22mapAttribute(v4, 4316)));
+					} else {
+						cs2method_10026(61603941, cs2method_10379(idx22mapAttribute(v4, 1072)));
+					}
+				} else {
+					cs2method_10026(61603941, cs2method_10379(idx22mapAttribute(v4, 1072)));
+				}
+			flow_43:
+				return;
+		}, v0, "i");
+		int v8 = v0;
+		v0 = cs2method_10060(v0, 1);
+		cs2method_10310(2206);
+		if (cs2method_10338(24) < idx22mapAttribute(idx17mapData('i', 'J', v3, v5), 1071)) {
+			cs2method_10811(16711680);
+		}
+		cs2method_10013(52, 55, 0, 0);
+		cs2method_10063(cs2method_10051(v6, 60), cs2method_10461(cs2method_10051(v4, 67), 1), 0, 0);
+		cs2method_10269(1);
+		cs2method_10606(61603927, 5, v0);
+		int v9 = cs2method_10060(v0, 1);
+		cs2method_10310(2205);
+		cs2method_10013(48, 52, 0, 0);
+		cs2method_10063(cs2method_10060(cs2method_10051(v6, 60), 2), cs2method_10060(cs2method_10051(v4, 67), 1), 0, 0);
+		cs2method_20353(new function<script_2248>(int a0) {
+			if (cs2method_11038(61603927, a0) == 1) {
+				cs2method_10269(0);
+			}
+			return;
+		}, v8, "i");
+		cs2method_20884(new function<script_2249>(int a0) {
+			if (cs2method_11038(61603927, a0) == 1) {
+				cs2method_10269(1);
+			}
+			return;
+		}, v8, "i");
+		cs2method_10606(61603927, 5, v9);
+		int v10 = cs2method_10060(v9, 1);
+		cs2method_10310(2184);
+		cs2method_10811(13107200);
+		cs2method_10013(12, 12, 0, 0);
+		cs2method_10063(cs2method_10060(cs2method_10051(v6, 60), 5), cs2method_10060(cs2method_10051(v4, 67), 40), 0, 0);
+		cs2method_10606(61603927, 4, v10);
+		v0 = cs2method_10060(v10, 1);
+		cs2method_10811(7705248);
+		cs2method_10692(17813);
+		cs2method_10173(1);
+		cs2method_11105(1, 1, 0);
+		if (idx22mapAttribute(idx17mapData('i', 'J', v3, v5), 4315) != 0) {
+			if (client_configs['cfg4506'].bitcfg22551 == 0) {
+				cs2method_10797(script_940(idx22mapAttribute(idx17mapData('i', 'J', v3, v5), 4315)));
+			} else if (client_configs['cfg4506'].bitcfg22551 == 1 && idx22mapAttribute(idx17mapData('i', 'J', v3, v5), 4316) != 0) {
+				cs2method_10797(script_940(idx22mapAttribute(idx17mapData('i', 'J', v3, v5), 4316)));
+			} else {
+				cs2method_10797(script_940(idx22mapAttribute(idx17mapData('i', 'J', v3, v5), 1072)));
+			}
+		} else {
+			cs2method_10797(script_940(idx22mapAttribute(idx17mapData('i', 'J', v3, v5), 1072)));
+		}
+		cs2method_10013(31, 12, 0, 0);
+		cs2method_10063(cs2method_10060(cs2method_10051(v6, 60), 18), cs2method_10060(cs2method_10051(v4, 67), 40), 0, 0);
+		cs2method_10606(61603927, 5, v0);
+		v0 = cs2method_10060(v0, 1);
+		cs2method_11070(idx22mapAttribute(idx17mapData('i', 'J', v3, cs2method_10968(cs2method_10461(v0, 5), 5)), 1070), -1);
+		cs2method_10013(25, 25, 0, 0);
+		cs2method_10063(cs2method_10060(cs2method_10051(v6, 60), 13), cs2method_10060(cs2method_10051(v4, 67), 9), 0, 0);
+		v6 = cs2method_10060(v6, 1);
+		if (v6 >= 5) {
+			v6 = 0;
+			v4 = cs2method_10060(v4, 1);
+		}
+		v5 = cs2method_10060(v5, 1);
+	}
+	script_31(61603851, 61603849, 792, 789, 790, 791, 773, 788);
+	return;
+}

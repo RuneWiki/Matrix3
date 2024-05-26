@@ -1,0 +1,90 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3757() {
+	cs2method_10467(1, 75169821);
+	cs2method_10467(1, 75169825);
+	if (cs2_configs['cfg4192'] == 1 || client_configs['cfg4467'] == 1) {
+		cs2method_10467(0, 75169818);
+		if (cs2method_10769(75169802) == 18525) {
+			cs2method_10758(23498, 75169862);
+		} else {
+			cs2method_10758(23499, 75169862);
+		}
+		cs2method_10467(0, 75169822);
+		if (cs2method_10769(75169851) == 18525) {
+			cs2method_10758(23498, 75169863);
+		} else {
+			cs2method_10758(23499, 75169863);
+		}
+		cs2method_10467(0, 75169826);
+		if (cs2method_10769(75169853) == 18525) {
+			cs2method_10758(23498, 75169864);
+		} else {
+			cs2method_10758(23499, 75169864);
+		}
+		cs2method_10467(0, 75169828);
+		if (cs2method_10769(75169855) == 18525) {
+			cs2method_10758(23498, 75169865);
+		} else {
+			cs2method_10758(23499, 75169865);
+		}
+		cs2method_10467(0, 75169830);
+		if (cs2method_10769(75169857) == 18525) {
+			cs2method_10758(23498, 75169866);
+		} else {
+			cs2method_10758(23499, 75169866);
+		}
+		cs2method_10520(script_693(125, 125, 125), 75169803);
+		cs2method_10520(script_693(125, 125, 125), 75169852);
+		cs2method_10520(script_693(125, 125, 125), 75169854);
+		cs2method_10520(script_693(125, 125, 125), 75169856);
+		cs2method_10520(script_693(125, 125, 125), 75169858);
+	} else {
+		cs2method_10467(1, 75169818);
+		cs2method_10467(1, 75169822);
+		cs2method_10467(1, 75169826);
+		cs2method_10467(1, 75169828);
+		cs2method_10467(1, 75169830);
+		cs2method_10520(script_693(255, 255, 255), 75169803);
+		cs2method_10520(script_693(255, 255, 255), 75169852);
+		cs2method_10520(script_693(255, 255, 255), 75169854);
+		cs2method_10520(script_693(255, 255, 255), 75169856);
+		cs2method_10520(script_693(255, 255, 255), 75169858);
+		switch (client_configs['cfg4467']) {
+			case 2:
+				cs2method_10467(0, 75169826);
+				cs2method_10520(script_693(125, 125, 125), 75169854);
+				cs2method_10467(0, 75169828);
+				cs2method_10520(script_693(125, 125, 125), 75169856);
+				cs2method_10467(0, 75169830);
+				cs2method_10520(script_693(125, 125, 125), 75169858);
+				cs2method_10467(0, 75169821);
+				break;
+			case 3:
+				cs2method_10467(0, 75169828);
+				cs2method_10520(script_693(125, 125, 125), 75169856);
+				cs2method_10467(0, 75169830);
+				cs2method_10520(script_693(125, 125, 125), 75169858);
+				cs2method_10467(0, 75169825);
+				break;
+			case 4:
+				cs2method_10467(0, 75169830);
+				cs2method_10520(script_693(125, 125, 125), 75169858);
+				cs2method_10467(0, 75169825);
+				break;
+			case 5:
+				cs2method_10467(0, 75169825);
+		}
+	}
+	return;
+}

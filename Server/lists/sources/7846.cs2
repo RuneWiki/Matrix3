@@ -1,0 +1,92 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7846(int a0) {
+	int v7;
+	int v5;
+	int v15 = 0;
+	int v2 = 0;
+	int v1 = 0;
+	int v18 = 0;
+	int v22 = 0;
+	int v12 = 0;
+	int v0 = 0;
+	int v19 = 0;
+	int v4 = 0;
+	object v20 = "passwordchoice.ws";
+	object v3 = "";
+	if (a0 == 93061559) {
+		cs2method_10283(160, 50, 0, 0, 93061411);
+		cs2method_10112(304, 354, 0, 0, 93061411);
+		cs2method_10026(93061423, "Sorry but you are ineligible to create an account.");
+		cs2method_10467(1, 93061412);
+		cs2method_10758(19764, 93061420);
+		cs2method_10759(1, 93061420);
+		cs2method_10467(0, 93061411);
+		return;
+	}
+	cs2method_10758(19762, 93061420);
+	cs2method_10759(0, 93061420);
+	cs2method_10467(0, 93061412);
+	switch (a0) {
+		default:
+			cs2method_10467(1, 93061411);
+			return;
+		case 93061194:
+			object v11 = cs2method_10744(93061429);
+			cs2method_10026(93061423, v11);
+			v7 = cs2method_10060(cs2method_10060(cs2method_10152(93061182), cs2method_10152(93061321)), cs2method_10152(93061331));
+			v5 = cs2method_10060(cs2method_10191(93061321), cs2method_10191(93061331));
+			int v8 = cs2method_10461(cs2method_10236(93061330), cs2method_10060(cs2method_10060(v5, cs2method_10236(a0)), 5));
+			int v23 = cs2method_10872(cs2method_10060(cs2method_10509(cs2method_10051(cs2method_10968(cs2method_10939(17813, cs2method_10744(93061423)), 4), 3), 17813, cs2method_10744(93061423)), cs2method_10060(25, cs2method_10051(10, 2))), v8);
+			int v9 = cs2method_10051(cs2method_10805(cs2method_10461(v23, cs2method_10060(25, cs2method_10051(10, 2))), 17813, cs2method_10744(93061423)), 13);
+			cs2method_10283(v23, v9, 0, 0, 93061411);
+			break;
+		case 93061192:
+			object v14 = cs2method_10744(93061428);
+			cs2method_10026(93061423, v14);
+			v7 = cs2method_10060(cs2method_10060(cs2method_10152(93061308), cs2method_10152(93061232)), cs2method_10152(93061233));
+			v5 = cs2method_10060(cs2method_10191(93061232), cs2method_10191(93061233));
+			int v10 = cs2method_10461(cs2method_10236(93061330), v5);
+			cs2method_10283(cs2method_10872(cs2method_10060(cs2method_10509(cs2method_10051(cs2method_10968(cs2method_10939(17813, cs2method_10744(93061423)), 4), 3), 17813, cs2method_10744(93061423)), cs2method_10060(25, cs2method_10051(10, 2))), v10), 30, 0, 0, 93061411);
+			break;
+		case 93061190:
+			object v6 = cs2method_10744(93061424);
+			cs2method_10026(93061423, v6);
+			cs2method_10283(110, cs2method_10060(cs2method_10051(cs2method_10805(cs2method_10461(110, 25), 17813, cs2method_10744(93061423)), 13), 10), 0, 0, 93061411);
+			v7 = cs2method_10060(cs2method_10060(cs2method_10152(93061308), cs2method_10152(93061234)), cs2method_10152(93061235));
+			v5 = cs2method_10060(cs2method_10191(93061234), cs2method_10191(93061235));
+			break;
+		case 93061188:
+			object v21 = cs2method_10744(93061426);
+			cs2method_10026(93061423, v21);
+			cs2method_10283(110, cs2method_10060(cs2method_10051(cs2method_10805(cs2method_10461(110, 25), 17813, cs2method_10744(93061423)), 13), 10), 0, 0, 93061411);
+			v7 = cs2method_10060(cs2method_10060(cs2method_10152(93061308), cs2method_10152(93061236)), cs2method_10152(93061237));
+			v5 = cs2method_10060(cs2method_10191(93061236), cs2method_10191(93061237));
+	}
+	int v16 = cs2method_10060(cs2method_10060(v5, cs2method_10236(a0)), 5);
+	int v17 = cs2method_10461(cs2method_10823(93061411), cs2method_10968(cs2method_10823(a0), 2));
+	int v13 = cs2method_10461(v7, v17);
+	cs2method_10112(v16, v13, 0, 0, 93061411);
+	cs2method_10467(0, 93061411);
+	if (cs2method_10846(cs2method_10744(93061423), "Email already in use. Try a different email or click " + "<u=ebe0bc>" + "here" + "</u>" + " to recover this account.") == 0) {
+		cs2method_20390(new function<script_2796>() {
+			cs2_configs['cfg2576'] = cs2_configs['cfg2555'];
+			script_7722("passwordchoice.ws");
+			return;
+		}, "", new WidgetPointer(1420,293));
+	} else {
+		cs2method_20390(new function<none>() {
+		}, "", new WidgetPointer(1420,293));
+	}
+	return;
+}

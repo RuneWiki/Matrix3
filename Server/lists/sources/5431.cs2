@@ -1,0 +1,77 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_5431(int a0) {
+	int v1 = 0;
+	int v2 = 0;
+	if (cs2method_11038(76480513, a0) == 1) {
+		int v3 = cs2method_10406();
+		int v0 = cs2method_10060(v3, 10);
+		if (v0 > 85 && v0 < 105) {
+			if (cs2_configs['cfg1664'] == 1) {
+				cs2_configs['cfg1666'] = 21;
+			} else if (cs2_configs['cfg1664'] == 2) {
+				cs2_configs['cfg1666'] = 22;
+			} else {
+				cs2_configs['cfg1666'] = cs2method_10461(cs2_configs['cfg1664'], 2);
+			}
+			cs2method_10026(76480542, idx17mapData('i', 's', 5214, cs2_configs['cfg1666']));
+			cs2method_10670(8080, 1, 0, 80);
+			if (cs2_configs['cfg1667'] == 1 && cs2_configs['cfg1663'] == cs2_configs['cfg1666']) {
+				cs2method_20162(new function<none>() {
+				}, "", new WidgetPointer(1167,1));
+				cs2method_10063(0, 90, 1, 0);
+				cs2method_10670(8103, 1, 0, 200);
+				if (a0 == 0) {
+					if (cs2method_11038(76480513, 2) == 1) {
+						cs2method_10063(0, 0, 1, 0);
+					}
+					if (cs2method_11038(76480513, 1) == 1) {
+						cs2method_10063(0, 180, 1, 0);
+					}
+				} else if (a0 == 1) {
+					if (cs2method_11038(76480513, 0) == 1) {
+						cs2method_10063(0, 0, 1, 0);
+					}
+					if (cs2method_11038(76480513, 2) == 1) {
+						cs2method_10063(0, 180, 1, 0);
+					}
+				} else {
+					if (a0 == 2) {
+						if (cs2method_11038(76480513, 1) == 1) {
+							cs2method_10063(0, 0, 1, 0);
+						}
+						if (cs2method_11038(76480513, 0) == 1) {
+							cs2method_10063(0, 180, 1, 0);
+						}
+					}
+				}
+				cs2method_10467(0, 76480562);
+				cs2method_10026(76480554, cs2method_10379(client_configs['cfg1318'].bitcfg3684));
+				cs2method_10467(1, 76480564);
+				return 0;
+			}
+			if (cs2_configs['cfg1663'] != 0 && cs2_configs['cfg1667'] == 0) {
+				script_5432();
+			}
+		}
+		if (v0 > 0 && v0 < 270) {
+			cs2method_10063(0, v0, 1, 0);
+		} else {
+			if (v0 >= 270) {
+				cs2method_10526();
+				script_5433(a0, 0);
+			}
+		}
+	}
+	return 1;
+}

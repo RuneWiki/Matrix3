@@ -1,0 +1,48 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4701(int a0,int a1,int a2,object a3) {
+	cs2_configs['cfg1553'] = a0;
+	cs2_configs['cfg1554'] = a2;
+	cs2_configs['cfg2482'] = (string)a3;
+	if (a1 == 1) {
+		if (cs2_configs['cfg1100'] == 43 || cs2_configs['cfg1100'] == 42) {
+			script_2190(0, "Leave queue", 12, "Are you sure you wish to leave the queue, you will lose your position if you do.", "", "", 1);
+			return;
+		}
+		script_3141(a2, a3);
+		if (a0 > -1 && cs2method_11038(59637824, a0) == 1) {
+			cs2method_10467(0, 59637827);
+			cs2method_10112(0, cs2method_10406(), 0, 0, 59637827);
+		}
+		if (cs2method_10966() == cs2_configs['cfg998']) {
+			if (cs2method_11038(59637781, 3) == 1) {
+				cs2method_10269(0);
+			}
+		} else {
+			if (cs2method_11038(59637781, 3) == 1) {
+				cs2method_10269(1);
+			}
+		}
+		if (cs2method_10966() == cs2_configs['cfg999']) {
+			if (cs2method_11038(59637782, 3) == 1) {
+				cs2method_10269(0);
+			}
+		} else {
+			if (cs2method_11038(59637782, 3) == 1) {
+				cs2method_10269(1);
+			}
+		}
+		script_3064(1);
+	}
+	return;
+}

@@ -1,0 +1,89 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3824() {
+	int v5 = -1;
+	int v7 = -1;
+	globalarray_0 = new int[3];
+	for (int v1 = 0, int v6 = 1, int v8 = 0; v1 < 3 && idx17mapData('i', 'J', 8829, v6) != -1; v6 = cs2method_10060(v6, 1)) {
+		int v9 = 0;
+		int v4 = idx17mapData('i', 'J', 8829, v6);
+		if (cs2method_10210() == 1 || idx22mapAttribute(v4, 4327) == 0) {
+			switch (idx22mapAttribute(v4, 4325)) {
+				case 1:
+					v9 = client_configs['cfg1261'].bitcfg3326;
+					break;
+				case 2:
+					v9 = script_3828(v4);
+					break;
+				case 3:
+					v9 = script_3829();
+					break;
+				case 4:
+					v9 = client_configs['cfg4471'].bitcfg22617;
+					break;
+				case 5:
+					v9 = client_configs['cfg3076'].bitcfg18413;
+					break;
+				case 6:
+					v9 = client_configs['cfg4471'].bitcfg22618;
+					break;
+				case 7:
+					v9 = script_3828(v4);
+					break;
+				case 8:
+					v9 = script_3828(v4);
+					break;
+				case 9:
+					v9 = client_configs['cfg4471'].bitcfg22619;
+			}
+			if (v9 == 0) {
+				int v10 = idx22mapAttribute(v4, 4324);
+				if (v10 == -1 || script_3224(idx22mapAttribute(v10, 1268)) == 1) {
+					globalarray_0[v1] = idx22mapAttribute(v4, 4325);
+					v1 = cs2method_10060(v1, 1);
+				}
+			}
+		}
+	}
+	int v2 = -1;
+	int v3 = -1;
+	int v0 = -1;
+	if (globalarray_0[0] != 0) {
+		int v9 = idx17mapData('i', 'J', 8829, globalarray_0[0]);
+		cs2method_10026(98369683, idx22mapAttribute(v9, 4328));
+		cs2method_10758(idx22mapAttribute(v9, 4326), 98369682);
+	} else {
+		cs2method_10026(98369683, "Grand Exchange");
+		cs2method_10758(23105, 98369682);
+		cs2method_10467(1, 98369684);
+		cs2method_10467(1, 98369694);
+	}
+	if (globalarray_0[1] != 0) {
+		int v9 = idx17mapData('i', 'J', 8829, globalarray_0[1]);
+		cs2method_10026(98369693, idx22mapAttribute(v9, 4328));
+		cs2method_10758(idx22mapAttribute(v9, 4326), 98369692);
+	} else {
+		cs2method_10026(98369693, "Grand Exchange");
+		cs2method_10758(23105, 98369692);
+		cs2method_10467(1, 98369694);
+	}
+	if (globalarray_0[2] != 0) {
+		int v9 = idx17mapData('i', 'J', 8829, globalarray_0[2]);
+		cs2method_10026(98369703, idx22mapAttribute(v9, 4328));
+		cs2method_10758(idx22mapAttribute(v9, 4326), 98369702);
+	} else {
+		cs2method_10026(98369703, "Grand Exchange");
+		cs2method_10758(23105, 98369702);
+	}
+	return;
+}

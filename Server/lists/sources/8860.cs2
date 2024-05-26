@@ -1,0 +1,30 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8860() {
+	int v0 = 0;
+	if (client_configs['cfg3906'] == 995) {
+		if (client_configs['cfg3908'] == 1) {
+			cs2method_10026(16252986, "Total Donation Value: " + (string)cs2method_10055(client_configs['cfg3908'], 1) + " coin");
+		} else {
+			cs2method_10026(16252986, "Total Donation Value: " + (string)cs2method_10055(client_configs['cfg3908'], 1) + " coins");
+		}
+	} else if (client_configs['cfg3906'] == 29492 || client_configs['cfg3906'] == 29494) {
+		cs2method_10026(16252986, "Total Bonds Donated: " + (string)cs2method_10055(client_configs['cfg3908'], 1));
+	} else if (v1 == 1) {
+		cs2method_10026(16252986, "Total Donation Value: " + (string)cs2method_10055(v1, 1) + " coin");
+	} else {
+		cs2method_10026(16252986, "Total Donation Value: " + (string)cs2method_10055(v1, 1) + " coins");
+	}
+	int v1 = cs2method_10051(client_configs['cfg3908'], cs2_configs['cfg3761']);
+	return;
+}

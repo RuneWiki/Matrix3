@@ -1,0 +1,44 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9629(int a0,int a1) {
+	int v3;
+	int v0 = a0;
+	int v1 = 0;
+	int v2 = -1;
+	if (cs2method_11038(a1, a0) == 1) {
+		if (interfaceDefsAttribute(4033) == 1) {
+			return;
+		}
+		if (cs2method_10713() == 20326) {
+			v3 = 0;
+			cs2method_10310(20268);
+		} else {
+			v3 = 1;
+			cs2method_10310(20326);
+		}
+		script_9631(a1, v0, v3);
+		while (v1 == 0) {
+			v0 = cs2method_10060(v0, 5);
+			if (cs2method_11038(a1, v0) == 1) {
+				if (interfaceDefsAttribute(4032) != -1) {
+					v1 = 1;
+				} else {
+					script_9628(a1, v0, v3);
+				}
+			} else {
+				v1 = 1;
+			}
+		}
+	}
+	return;
+}

@@ -1,0 +1,74 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8061(int a0,int a1) {
+	int v0 = -1;
+	for (int v2 = -1, int v1 = 0; v1 < 13; v1 = cs2method_10060(v1, 1)) {
+		switch (v1) {
+			case 0:
+				v0 = (int)cs2_configs['cfg1947'];
+				v2 = cs2_configs['cfg1948'];
+				break;
+			case 1:
+				v0 = (int)cs2_configs['cfg1949'];
+				v2 = cs2_configs['cfg1950'];
+				break;
+			case 2:
+				v0 = (int)cs2_configs['cfg1951'];
+				v2 = cs2_configs['cfg1952'];
+				break;
+			case 3:
+				v0 = (int)cs2_configs['cfg1953'];
+				v2 = cs2_configs['cfg1954'];
+				break;
+			case 4:
+				v0 = (int)cs2_configs['cfg1955'];
+				v2 = cs2_configs['cfg1956'];
+				break;
+			case 5:
+				v0 = (int)cs2_configs['cfg1957'];
+				v2 = cs2_configs['cfg1958'];
+				break;
+			case 6:
+				v0 = (int)cs2_configs['cfg1959'];
+				v2 = cs2_configs['cfg1960'];
+				break;
+			case 7:
+				v0 = (int)cs2_configs['cfg1961'];
+				v2 = cs2_configs['cfg1962'];
+				break;
+			case 8:
+				v0 = (int)cs2_configs['cfg3503'];
+				v2 = cs2_configs['cfg3504'];
+				break;
+			case 9:
+				v0 = (int)cs2_configs['cfg3505'];
+				v2 = cs2_configs['cfg3506'];
+				break;
+			case 10:
+				v0 = (int)cs2_configs['cfg3507'];
+				v2 = cs2_configs['cfg3508'];
+				break;
+			case 11:
+				v0 = (int)cs2_configs['cfg3509'];
+				v2 = cs2_configs['cfg3510'];
+				break;
+			case 12:
+				v0 = (int)cs2_configs['cfg3511'];
+				v2 = cs2_configs['cfg3512'];
+		}
+		if (v0 == a0 && v2 == a1) {
+			script_8059(v1);
+		}
+	}
+	return;
+}

@@ -1,0 +1,84 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6518(int a0,int a1) {
+	int v1 = 0;
+	int v0 = 0;
+	int v2 = 0;
+	int v6 = 0;
+	int v5 = 0;
+	int v4 = 0;
+	cs2method_10467(0, 85327909);
+	switch (a0) {
+		case 1:
+			v1 = cs2_configs['cfg1973'];
+			v0 = cs2_configs['cfg1974'];
+			v2 = cs2_configs['cfg1975'];
+			v6 = cs2_configs['cfg1976'];
+			v5 = -50;
+			v4 = -100;
+			break;
+		case 2:
+			v1 = cs2_configs['cfg1977'];
+			v0 = cs2_configs['cfg1978'];
+			v2 = cs2_configs['cfg1979'];
+			v6 = cs2_configs['cfg1980'];
+			v5 = -25;
+			v4 = -50;
+			break;
+		case 3:
+			v1 = cs2_configs['cfg1981'];
+			v0 = cs2_configs['cfg1982'];
+			v2 = cs2_configs['cfg1983'];
+			v6 = cs2_configs['cfg1984'];
+			v5 = 0;
+			v4 = 0;
+			break;
+		case 4:
+			v1 = cs2_configs['cfg1985'];
+			v0 = cs2_configs['cfg1986'];
+			v2 = cs2_configs['cfg1987'];
+			v6 = cs2_configs['cfg1988'];
+			v5 = 25;
+			v4 = 50;
+			break;
+		case 5:
+			v1 = cs2_configs['cfg1989'];
+			v0 = cs2_configs['cfg1990'];
+			v2 = cs2_configs['cfg1991'];
+			v6 = cs2_configs['cfg1992'];
+			v5 = 50;
+			v4 = 100;
+	}
+	cs2method_10026(85327916, idx17mapData('i', 's', 5995, v1));
+	if (v1 <= 0 && v0 <= 0 && v2 <= 0 && v6 <= 0) {
+		cs2method_10026(85327915, "No active conditions");
+	} else {
+		cs2method_10026(85327915, idx17mapData('i', 's', 5995, v0));
+	}
+	cs2method_10026(85327914, idx17mapData('i', 's', 5995, v2));
+	object v3 = "";
+	switch (v6) {
+		case 1:
+			v3 = "Mildly struggling";
+			break;
+		case 2:
+			v3 = "Severely struggling";
+			break;
+		case 3:
+			v3 = "Removed from the race";
+	}
+	cs2method_10026(85327917, v3);
+	cs2method_10112(v5, 71, 1, 0, 85327911);
+	cs2method_10112(v4, 47, 1, 0, 85327912);
+	return;
+}

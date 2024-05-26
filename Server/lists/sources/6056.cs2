@@ -1,0 +1,20 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_6056_struct(3,0,0) script_6056() {
+	int v2 = cs2method_10038(cs2method_10968(cs2method_11115(), 60), 24);
+	int v0 = cs2method_10038(cs2method_11115(), 60);
+	int v3 = cs2method_10461(23, v2);
+	int v1 = cs2method_10461(60, v0);
+	int v4 = cs2method_10461(cs2method_10461(client_configs['cfg4179'].bitcfg21894, 1), cs2method_10948());
+	return new script_6056_struct(v4, v3, v1);
+}

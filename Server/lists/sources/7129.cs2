@@ -1,0 +1,191 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_7129(int a0,int a1) {
+	if (a0 == -1) {
+		return 0;
+	}
+	int v14 = 0;
+	int v0 = 2;
+	int v8 = a1;
+	int v9 = 0;
+	int v10 = cs2method_10968(cs2method_10051(32, 3), 4);
+	int v20 = cs2method_10968(cs2method_10051(36, 3), 4);
+	cs2method_10273(89784379);
+	int v2 = a0;
+	int v5 = v14;
+	int v6 = v8;
+	script_7130_struct(2,0,0) v16 = script_7130(v2, v5, v6);
+	int v17 = v16.intpart_1;
+	int v13 = v16.intpart_0;
+	int v3 = itemDefsAttribute(a0, 2655);
+	int v1 = itemDefsAttribute(a0, 2665);
+	int v19 = itemDefsAttribute(a0, 4098);
+	int v15 = itemDefsAttribute(a0, 2686);
+	int v12 = itemDefsAttribute(a0, 2675);
+	int v11 = 0;
+	int v18 = 1;
+	int v7 = 0;
+	int v4 = script_7112();
+	while (v3 != -1 || v12 != -1) {
+		if (v12 != -1) {
+			int v21 = idx22mapAttribute(v12, 2655);
+			v1 = idx22mapAttribute(v12, 2665);
+			if (v21 != -1 && v1 != 0) {
+				int v24;
+				int v30;
+				v13 = cs2method_10060(v13, v0);
+				if (itemDefsAttribute(a0, 3733) == 1) {
+					v24 = script_2961(v12, v4);
+				} else {
+					v24 = script_7111(v12, v4);
+				}
+				if (v24 >= v1 || v24 == -1) {
+					v30 = 1;
+				} else {
+					v30 = 0;
+				}
+				int v21 = idx22mapAttribute(v12, 2655);
+				v1 = idx22mapAttribute(v12, 2665);
+				if (idx22mapAttribute(v12, 2686) == 0) {
+					v1 = cs2method_10051(v1, itemDefsAttribute(a0, 2653));
+				}
+				int v29 = 3;
+				int v27 = v13;
+				int v31 = 1;
+				int v26 = 2;
+				int v23 = v21;
+				int v25 = v1;
+				int v33 = v24;
+				int v32 = v30;
+				int v22 = 89784379;
+				int v28 = v17;
+				script_7131_struct(2,0,0) v34 = script_7131(v29, v27, v31, v26, v23, v25, v33, v32, v22, v28);
+				int v35 = v34.intpart_1;
+				v17 = v34.intpart_0;
+				v13 = cs2method_10060(v35, v0);
+			}
+		} else {
+			if (v1 != 0) {
+				int v21;
+				int v24;
+				v13 = cs2method_10060(v13, v0);
+				if (v1 == -1) {
+					v1 = 1;
+				}
+				if (v19 == 1) {
+					v24 = script_7115(a0, v1, v3, 1);
+				} else {
+					v24 = script_7115(-1, -1, v3, 1);
+				}
+				if (v24 >= v1 || v24 == -1) {
+					v21 = 1;
+				} else {
+					v21 = 0;
+				}
+				if (v15 == 0) {
+					v1 = cs2method_10051(v1, itemDefsAttribute(a0, 2653));
+				}
+				int v32 = 3;
+				int v34 = v13;
+				int v28 = 1;
+				int v30 = 2;
+				int v25 = v3;
+				int v22 = v1;
+				int v27 = v24;
+				int v33 = v21;
+				int v26 = 89784379;
+				int v31 = v17;
+				script_7131_struct(2,0,0) v29 = script_7131(v32, v34, v28, v30, v25, v22, v27, v33, v26, v31);
+				int v23 = v29.intpart_1;
+				v17 = v29.intpart_0;
+				v13 = cs2method_10060(v23, v0);
+			}
+		}
+		v18 = cs2method_10060(v18, 1);
+		switch (v18) {
+			case 2:
+				v3 = itemDefsAttribute(a0, 2656);
+				v1 = cs2method_11048(0, itemDefsAttribute(a0, 2666));
+				v19 = itemDefsAttribute(a0, 4099);
+				v15 = itemDefsAttribute(a0, 2687);
+				v12 = itemDefsAttribute(a0, 2676);
+				break;
+			case 3:
+				v3 = itemDefsAttribute(a0, 2657);
+				v1 = cs2method_11048(0, itemDefsAttribute(a0, 2667));
+				v19 = itemDefsAttribute(a0, 4100);
+				v15 = itemDefsAttribute(a0, 2688);
+				v12 = itemDefsAttribute(a0, 2677);
+				break;
+			case 4:
+				v3 = itemDefsAttribute(a0, 2658);
+				v1 = cs2method_11048(0, itemDefsAttribute(a0, 2668));
+				v19 = itemDefsAttribute(a0, 4101);
+				v15 = itemDefsAttribute(a0, 2689);
+				v12 = itemDefsAttribute(a0, 2678);
+				break;
+			case 5:
+				v3 = itemDefsAttribute(a0, 2659);
+				v1 = cs2method_11048(0, itemDefsAttribute(a0, 2669));
+				v19 = itemDefsAttribute(a0, 4102);
+				v15 = itemDefsAttribute(a0, 2690);
+				v12 = itemDefsAttribute(a0, 2679);
+				break;
+			case 6:
+				v3 = itemDefsAttribute(a0, 2660);
+				v1 = cs2method_11048(0, itemDefsAttribute(a0, 2670));
+				v19 = itemDefsAttribute(a0, 4103);
+				v15 = itemDefsAttribute(a0, 2691);
+				v12 = itemDefsAttribute(a0, 2680);
+				break;
+			case 7:
+				v3 = itemDefsAttribute(a0, 2661);
+				v1 = cs2method_11048(0, itemDefsAttribute(a0, 2671));
+				v19 = itemDefsAttribute(a0, 4104);
+				v15 = itemDefsAttribute(a0, 2692);
+				v12 = itemDefsAttribute(a0, 2681);
+				break;
+			case 8:
+				v3 = itemDefsAttribute(a0, 2662);
+				v1 = cs2method_11048(0, itemDefsAttribute(a0, 2672));
+				v19 = itemDefsAttribute(a0, 4105);
+				v15 = itemDefsAttribute(a0, 2693);
+				v12 = itemDefsAttribute(a0, 2682);
+				break;
+			case 9:
+				v3 = itemDefsAttribute(a0, 2663);
+				v1 = cs2method_11048(0, itemDefsAttribute(a0, 2673));
+				v19 = itemDefsAttribute(a0, 4106);
+				v15 = itemDefsAttribute(a0, 2694);
+				v12 = itemDefsAttribute(a0, 2683);
+				break;
+			case 10:
+				v3 = itemDefsAttribute(a0, 2664);
+				v1 = cs2method_11048(0, itemDefsAttribute(a0, 2674));
+				v19 = itemDefsAttribute(a0, 4107);
+				v15 = itemDefsAttribute(a0, 2695);
+				v12 = itemDefsAttribute(a0, 2684);
+				break;
+			default:
+				v3 = -1;
+				v12 = -1;
+		}
+	}
+	if (v13 == v0) {
+		v13 = 0;
+	} else {
+		v13 = cs2method_10060(v13, 10);
+	}
+	cs2method_10283(cs2method_10236(89784379), v13, 0, 0, 89784379);
+	return v13;
+}

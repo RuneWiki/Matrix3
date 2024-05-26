@@ -1,0 +1,88 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_917() {
+	int v1;
+	cs2method_10273(29425672);
+	cs2_configs['cfg742'] = 0;
+	int v2 = cs2method_10936(93, cs2_configs['cfg743']);
+	int v3 = -1;
+	if (cs2method_10461(cs2method_10461(2147483647, cs2method_10936(93, 995)), cs2method_10936(623, 995)) > 0) {
+		v1 = cs2method_10060(cs2method_10936(93, 995), cs2method_10936(623, 995));
+	} else {
+		v1 = 2147483647;
+	}
+	cs2method_10520(cs2_configs['cfg1241'], 29425666);
+	cs2method_10520(cs2_configs['cfg1241'], 29425678);
+	cs2method_10520(cs2_configs['cfg1241'], 29425686);
+	cs2method_10520(cs2_configs['cfg1241'], 29425688);
+	if (cs2_configs['cfg743'] != -1) {
+		if (cs2_configs['cfg743'] == 995) {
+			v2 = v1;
+		}
+		script_919();
+		cs2method_10467(0, 29425679);
+		cs2method_10283(16384, 147, 2, 0, 29425670);
+	} else if (client_configs['cfg135'] != -1 && script_5567(995, cs2method_10051(client_configs['cfg137'], client_configs['cfg136'])) == 0) {
+		cs2method_10520(16711680, 29425689);
+	} else {
+		cs2method_10520(cs2_configs['cfg1241'], 29425689);
+	}
+	cs2method_10121(-1, -1, 29425687);
+	cs2method_10467(1, 29425679);
+	cs2method_10283(16384, 187, 2, 0, 29425670);
+	if (cs2_configs['cfg743'] == -1) {
+		switch (v1) {
+			case 0:
+				cs2method_10026(29425689, "You have no coins.");
+				break;
+			case 1:
+				cs2method_10026(29425689, "You have one coin.");
+				break;
+			case 2147483647:
+				cs2method_10026(29425689, "You have more than " + (string)script_940(v1) + " coins!");
+				break;
+			default:
+				cs2method_10026(29425689, "You have " + (string)script_940(v1) + " coins.");
+		}
+	} else {
+		switch (v2) {
+			case 0:
+				cs2method_10026(29425689, "You have no " + idx17mapData('o', 's', 62, cs2_configs['cfg743']) + ".");
+				break;
+			case 1:
+				cs2method_10026(29425689, "You have one " + idx17mapData('o', 's', 923, cs2_configs['cfg743']) + ".");
+				break;
+			case 2147483647:
+				cs2method_10026(29425689, "You have more than " + (string)script_940(v2) + " " + idx17mapData('o', 's', 62, cs2_configs['cfg743']) + "!");
+				break;
+			default:
+				cs2method_10026(29425689, "You have " + (string)script_940(v2) + " " + idx17mapData('o', 's', 62, cs2_configs['cfg743']) + ".");
+		}
+	}
+	int v0 = 181;
+	int v4 = script_920(v0);
+	if (v4 > cs2method_10823(29425672)) {
+		v0 = 165;
+		cs2method_10273(29425672);
+		v4 = script_920(v0);
+	} else {
+		cs2method_10273(29425673);
+	}
+	cs2method_11130(v0, v4, 29425672);
+	cs2method_10283(v0, 6, 0, 1, 29425672);
+	cs2method_10251(0, 0, 29425672);
+	if (v4 > cs2method_10823(29425672)) {
+		script_31(29425673, 29425672, 792, 789, 790, 791, 773, 788);
+	}
+	return;
+}

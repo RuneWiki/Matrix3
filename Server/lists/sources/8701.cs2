@@ -1,0 +1,1937 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_8701_struct(8,0,0) script_8701(int a0,int a1) {
+	int v22 = 0;
+	int v6 = 0;
+	int v2 = 0;
+	int v7 = 0;
+	int v5 = -1;
+	int v1 = -1;
+	int v10 = 0;
+	int v16 = 0;
+	int v13 = -1;
+	int v11 = -1;
+	int v21 = -1;
+	int v14 = -1;
+	switch (a0) {
+		case 0:
+		case 1:
+		case 2:
+		case 3:
+		case 4:
+		case 11:
+			int v17 = script_8698(a0);
+			if (v17 != -1) {
+				int v0 = idx17mapData('i', 'J', v17, a1);
+				if (v0 == -1) {
+					v0 = idx17mapData('i', 'J', 7712, a1);
+				}
+				if (v0 != -1) {
+					v22 = idx22mapAttribute(v0, 3482);
+					v6 = idx22mapAttribute(v0, 3483);
+					v2 = idx22mapAttribute(v0, 3484);
+					v7 = idx22mapAttribute(v0, 3485);
+					v10 = idx22mapAttribute(v0, 3488);
+					if (script_8137(a1) == 1) {
+						v5 = idx22mapAttribute(v0, 3489);
+						v1 = idx22mapAttribute(v0, 3490);
+					} else {
+						v5 = idx22mapAttribute(v0, 3486);
+						v1 = idx22mapAttribute(v0, 3487);
+					}
+					v16 = 1;
+				}
+			}
+			break;
+		case 6:
+			switch (a1) {
+				case 1000:
+					v22 = cs2_configs['cfg3297'].bitcfg19041;
+					v6 = cs2_configs['cfg3297'].bitcfg19042;
+					v2 = cs2_configs['cfg3296'].bitcfg19037;
+					v7 = cs2_configs['cfg3296'].bitcfg19038;
+					v5 = cs2_configs['cfg3296'].bitcfg19039;
+					v1 = cs2_configs['cfg3297'].bitcfg19043;
+					v10 = cs2_configs['cfg3296'].bitcfg19040;
+					v16 = 1;
+					break;
+				case 1002:
+					v22 = cs2_configs['cfg3299'].bitcfg19048;
+					v6 = cs2_configs['cfg3299'].bitcfg19049;
+					v2 = cs2_configs['cfg3298'].bitcfg19044;
+					v7 = cs2_configs['cfg3298'].bitcfg19045;
+					v5 = cs2_configs['cfg3298'].bitcfg19046;
+					v1 = cs2_configs['cfg3299'].bitcfg19050;
+					v10 = 1;
+					v16 = 1;
+					break;
+				case 1004:
+					v22 = cs2_configs['cfg3301'].bitcfg19055;
+					v6 = cs2_configs['cfg3301'].bitcfg19056;
+					v2 = cs2_configs['cfg3300'].bitcfg19051;
+					v7 = cs2_configs['cfg3300'].bitcfg19052;
+					v5 = cs2_configs['cfg3300'].bitcfg19053;
+					v1 = cs2_configs['cfg3301'].bitcfg19057;
+					v10 = cs2_configs['cfg3300'].bitcfg19054;
+					v16 = 1;
+					break;
+				case 1003:
+					v22 = cs2_configs['cfg3303'].bitcfg19062;
+					v6 = cs2_configs['cfg3303'].bitcfg19063;
+					v2 = cs2_configs['cfg3302'].bitcfg19058;
+					v7 = cs2_configs['cfg3302'].bitcfg19059;
+					v5 = cs2_configs['cfg3302'].bitcfg19060;
+					v1 = cs2_configs['cfg3303'].bitcfg19064;
+					v10 = 1;
+					v16 = 1;
+					break;
+				case 18:
+					v22 = cs2_configs['cfg3305'].bitcfg19069;
+					v6 = cs2_configs['cfg3305'].bitcfg19070;
+					v2 = cs2_configs['cfg3304'].bitcfg19065;
+					v7 = cs2_configs['cfg3304'].bitcfg19066;
+					v5 = cs2_configs['cfg3304'].bitcfg19067;
+					v1 = cs2_configs['cfg3305'].bitcfg19071;
+					v10 = cs2_configs['cfg3304'].bitcfg19068;
+					v16 = 1;
+					break;
+				case 2:
+					v22 = cs2_configs['cfg3307'].bitcfg19076;
+					v6 = cs2_configs['cfg3307'].bitcfg19077;
+					v2 = cs2_configs['cfg3306'].bitcfg19072;
+					v7 = cs2_configs['cfg3306'].bitcfg19073;
+					v5 = cs2_configs['cfg3306'].bitcfg19074;
+					v1 = cs2_configs['cfg3307'].bitcfg19078;
+					v10 = cs2_configs['cfg3306'].bitcfg19075;
+					v16 = 1;
+					break;
+				case 1005:
+					v22 = cs2_configs['cfg3309'].bitcfg19083;
+					v6 = cs2_configs['cfg3309'].bitcfg19084;
+					v2 = cs2_configs['cfg3308'].bitcfg19079;
+					v7 = cs2_configs['cfg3308'].bitcfg19080;
+					v5 = cs2_configs['cfg3308'].bitcfg19081;
+					v1 = cs2_configs['cfg3309'].bitcfg19085;
+					v10 = cs2_configs['cfg3308'].bitcfg19082;
+					v16 = 1;
+					break;
+				case 19:
+					v22 = cs2_configs['cfg3311'].bitcfg19090;
+					v6 = cs2_configs['cfg3311'].bitcfg19091;
+					v2 = cs2_configs['cfg3310'].bitcfg19086;
+					v7 = cs2_configs['cfg3310'].bitcfg19087;
+					v5 = cs2_configs['cfg3310'].bitcfg19088;
+					v1 = cs2_configs['cfg3311'].bitcfg19092;
+					v10 = cs2_configs['cfg3310'].bitcfg19089;
+					v16 = 1;
+					break;
+				case 20:
+					v22 = cs2_configs['cfg3313'].bitcfg19097;
+					v6 = cs2_configs['cfg3313'].bitcfg19098;
+					v2 = cs2_configs['cfg3312'].bitcfg19093;
+					v7 = cs2_configs['cfg3312'].bitcfg19094;
+					v5 = cs2_configs['cfg3312'].bitcfg19095;
+					v1 = cs2_configs['cfg3313'].bitcfg19099;
+					v10 = cs2_configs['cfg3312'].bitcfg19096;
+					v16 = 1;
+					break;
+				case 21:
+					v22 = cs2_configs['cfg3315'].bitcfg19104;
+					v6 = cs2_configs['cfg3315'].bitcfg19105;
+					v2 = cs2_configs['cfg3314'].bitcfg19100;
+					v7 = cs2_configs['cfg3314'].bitcfg19101;
+					v5 = cs2_configs['cfg3314'].bitcfg19102;
+					v1 = cs2_configs['cfg3315'].bitcfg19106;
+					v10 = cs2_configs['cfg3314'].bitcfg19103;
+					v16 = 1;
+					break;
+				case 3:
+					v22 = cs2_configs['cfg3317'].bitcfg19111;
+					v6 = cs2_configs['cfg3317'].bitcfg19112;
+					v2 = cs2_configs['cfg3316'].bitcfg19107;
+					v7 = cs2_configs['cfg3316'].bitcfg19108;
+					v5 = cs2_configs['cfg3316'].bitcfg19109;
+					v1 = cs2_configs['cfg3317'].bitcfg19113;
+					v10 = cs2_configs['cfg3316'].bitcfg19110;
+					v16 = 1;
+					break;
+				case 1006:
+					v22 = cs2_configs['cfg3319'].bitcfg19118;
+					v6 = cs2_configs['cfg3319'].bitcfg19119;
+					v2 = cs2_configs['cfg3318'].bitcfg19114;
+					v7 = cs2_configs['cfg3318'].bitcfg19115;
+					v5 = cs2_configs['cfg3318'].bitcfg19116;
+					v1 = cs2_configs['cfg3319'].bitcfg19120;
+					v10 = cs2_configs['cfg3318'].bitcfg19117;
+					v16 = 1;
+					break;
+				case 1007:
+					v22 = cs2_configs['cfg3321'].bitcfg19125;
+					v6 = cs2_configs['cfg3321'].bitcfg19126;
+					v2 = cs2_configs['cfg3320'].bitcfg19121;
+					v7 = cs2_configs['cfg3320'].bitcfg19122;
+					v5 = cs2_configs['cfg3320'].bitcfg19123;
+					v1 = cs2_configs['cfg3321'].bitcfg19127;
+					v10 = cs2_configs['cfg3320'].bitcfg19124;
+					v16 = 1;
+					break;
+				case 17:
+					v22 = cs2_configs['cfg3323'].bitcfg19132;
+					v6 = cs2_configs['cfg3323'].bitcfg19133;
+					v2 = cs2_configs['cfg3322'].bitcfg19128;
+					v7 = cs2_configs['cfg3322'].bitcfg19129;
+					v5 = cs2_configs['cfg3322'].bitcfg19130;
+					v1 = cs2_configs['cfg3323'].bitcfg19134;
+					v10 = cs2_configs['cfg3322'].bitcfg19131;
+					v16 = 1;
+					break;
+				case 12:
+					v22 = cs2_configs['cfg3325'].bitcfg19139;
+					v6 = cs2_configs['cfg3325'].bitcfg19140;
+					v2 = cs2_configs['cfg3324'].bitcfg19135;
+					v7 = cs2_configs['cfg3324'].bitcfg19136;
+					v5 = cs2_configs['cfg3324'].bitcfg19137;
+					v1 = cs2_configs['cfg3325'].bitcfg19141;
+					v10 = cs2_configs['cfg3324'].bitcfg19138;
+					v16 = 1;
+					break;
+				case 1019:
+					v22 = cs2_configs['cfg3327'].bitcfg19146;
+					v6 = cs2_configs['cfg3327'].bitcfg19147;
+					v2 = cs2_configs['cfg3326'].bitcfg19142;
+					v7 = cs2_configs['cfg3326'].bitcfg19143;
+					v5 = cs2_configs['cfg3326'].bitcfg19144;
+					v1 = cs2_configs['cfg3327'].bitcfg19148;
+					v10 = cs2_configs['cfg3326'].bitcfg19145;
+					v16 = 1;
+					break;
+				case 6:
+					v22 = cs2_configs['cfg3329'].bitcfg19153;
+					v6 = cs2_configs['cfg3329'].bitcfg19154;
+					v2 = cs2_configs['cfg3328'].bitcfg19149;
+					v7 = cs2_configs['cfg3328'].bitcfg19150;
+					v5 = cs2_configs['cfg3328'].bitcfg19151;
+					v1 = cs2_configs['cfg3329'].bitcfg19155;
+					v10 = cs2_configs['cfg3328'].bitcfg19152;
+					v16 = 1;
+					break;
+				case 7:
+					v22 = cs2_configs['cfg3331'].bitcfg19160;
+					v6 = cs2_configs['cfg3331'].bitcfg19161;
+					v2 = cs2_configs['cfg3330'].bitcfg19156;
+					v7 = cs2_configs['cfg3330'].bitcfg19157;
+					v5 = cs2_configs['cfg3330'].bitcfg19158;
+					v1 = cs2_configs['cfg3331'].bitcfg19162;
+					v10 = cs2_configs['cfg3330'].bitcfg19159;
+					v16 = 1;
+					break;
+				case 5:
+					v22 = cs2_configs['cfg3333'].bitcfg19167;
+					v6 = cs2_configs['cfg3333'].bitcfg19168;
+					v2 = cs2_configs['cfg3332'].bitcfg19163;
+					v7 = cs2_configs['cfg3332'].bitcfg19164;
+					v5 = cs2_configs['cfg3332'].bitcfg19165;
+					v1 = cs2_configs['cfg3333'].bitcfg19169;
+					v10 = cs2_configs['cfg3332'].bitcfg19166;
+					v16 = 1;
+					break;
+				case 8:
+					v22 = cs2_configs['cfg3335'].bitcfg19174;
+					v6 = cs2_configs['cfg3335'].bitcfg19175;
+					v2 = cs2_configs['cfg3334'].bitcfg19170;
+					v7 = cs2_configs['cfg3334'].bitcfg19171;
+					v5 = cs2_configs['cfg3334'].bitcfg19172;
+					v1 = cs2_configs['cfg3335'].bitcfg19176;
+					v10 = cs2_configs['cfg3334'].bitcfg19173;
+					v16 = 1;
+					break;
+				case 1:
+					v22 = cs2_configs['cfg3337'].bitcfg19181;
+					v6 = cs2_configs['cfg3337'].bitcfg19182;
+					v2 = cs2_configs['cfg3336'].bitcfg19177;
+					v7 = cs2_configs['cfg3336'].bitcfg19178;
+					v5 = cs2_configs['cfg3336'].bitcfg19179;
+					v1 = cs2_configs['cfg3337'].bitcfg19183;
+					v10 = cs2_configs['cfg3336'].bitcfg19180;
+					v16 = 1;
+					break;
+				case 1008:
+					v22 = cs2_configs['cfg3339'].bitcfg19188;
+					v6 = cs2_configs['cfg3339'].bitcfg19189;
+					v2 = cs2_configs['cfg3338'].bitcfg19184;
+					v7 = cs2_configs['cfg3338'].bitcfg19185;
+					v5 = cs2_configs['cfg3338'].bitcfg19186;
+					v1 = cs2_configs['cfg3339'].bitcfg19190;
+					v10 = cs2_configs['cfg3338'].bitcfg19187;
+					v16 = 1;
+					break;
+				case 9:
+					v22 = cs2_configs['cfg3341'].bitcfg19195;
+					v6 = cs2_configs['cfg3341'].bitcfg19196;
+					v2 = cs2_configs['cfg3340'].bitcfg19191;
+					v7 = cs2_configs['cfg3340'].bitcfg19192;
+					v5 = cs2_configs['cfg3340'].bitcfg19193;
+					v1 = cs2_configs['cfg3341'].bitcfg19197;
+					v10 = cs2_configs['cfg3340'].bitcfg19194;
+					v16 = 1;
+					break;
+				case 0:
+					v22 = cs2_configs['cfg3343'].bitcfg19202;
+					v6 = cs2_configs['cfg3343'].bitcfg19203;
+					v2 = cs2_configs['cfg3342'].bitcfg19198;
+					v7 = cs2_configs['cfg3342'].bitcfg19199;
+					v5 = cs2_configs['cfg3342'].bitcfg19200;
+					v1 = cs2_configs['cfg3343'].bitcfg19204;
+					v10 = cs2_configs['cfg3342'].bitcfg19201;
+					v16 = 1;
+					break;
+				case 4:
+					v22 = cs2_configs['cfg3345'].bitcfg19209;
+					v6 = cs2_configs['cfg3345'].bitcfg19210;
+					v2 = cs2_configs['cfg3344'].bitcfg19205;
+					v7 = cs2_configs['cfg3344'].bitcfg19206;
+					v5 = cs2_configs['cfg3344'].bitcfg19207;
+					v1 = cs2_configs['cfg3345'].bitcfg19211;
+					v10 = cs2_configs['cfg3344'].bitcfg19208;
+					v16 = 1;
+					break;
+				case 22:
+					v22 = cs2_configs['cfg3347'].bitcfg19216;
+					v6 = cs2_configs['cfg3347'].bitcfg19217;
+					v2 = cs2_configs['cfg3346'].bitcfg19212;
+					v7 = cs2_configs['cfg3346'].bitcfg19213;
+					v5 = cs2_configs['cfg3346'].bitcfg19214;
+					v1 = cs2_configs['cfg3347'].bitcfg19218;
+					v10 = cs2_configs['cfg3346'].bitcfg19215;
+					v16 = 1;
+					break;
+				case 10:
+					v22 = cs2_configs['cfg3349'].bitcfg19223;
+					v6 = cs2_configs['cfg3349'].bitcfg19224;
+					v2 = cs2_configs['cfg3348'].bitcfg19219;
+					v7 = cs2_configs['cfg3348'].bitcfg19220;
+					v5 = cs2_configs['cfg3348'].bitcfg19221;
+					v1 = cs2_configs['cfg3349'].bitcfg19225;
+					v10 = cs2_configs['cfg3348'].bitcfg19222;
+					v16 = 1;
+					break;
+				case 11:
+					v22 = cs2_configs['cfg3351'].bitcfg19230;
+					v6 = cs2_configs['cfg3351'].bitcfg19231;
+					v2 = cs2_configs['cfg3350'].bitcfg19226;
+					v7 = cs2_configs['cfg3350'].bitcfg19227;
+					v5 = cs2_configs['cfg3350'].bitcfg19228;
+					v1 = cs2_configs['cfg3351'].bitcfg19232;
+					v10 = cs2_configs['cfg3350'].bitcfg19229;
+					v16 = 1;
+					break;
+				case 14:
+					v22 = cs2_configs['cfg3353'].bitcfg19237;
+					v6 = cs2_configs['cfg3353'].bitcfg19238;
+					v2 = cs2_configs['cfg3352'].bitcfg19233;
+					v7 = cs2_configs['cfg3352'].bitcfg19234;
+					v5 = cs2_configs['cfg3352'].bitcfg19235;
+					v1 = cs2_configs['cfg3353'].bitcfg19239;
+					v10 = cs2_configs['cfg3352'].bitcfg19236;
+					v16 = 1;
+					break;
+				case 16:
+					v22 = cs2_configs['cfg3355'].bitcfg19244;
+					v6 = cs2_configs['cfg3355'].bitcfg19245;
+					v2 = cs2_configs['cfg3354'].bitcfg19240;
+					v7 = cs2_configs['cfg3354'].bitcfg19241;
+					v5 = cs2_configs['cfg3354'].bitcfg19242;
+					v1 = cs2_configs['cfg3355'].bitcfg19246;
+					v10 = cs2_configs['cfg3354'].bitcfg19243;
+					v16 = 1;
+					break;
+				case 1009:
+					v22 = cs2_configs['cfg3357'].bitcfg19251;
+					v6 = cs2_configs['cfg3357'].bitcfg19252;
+					v2 = cs2_configs['cfg3356'].bitcfg19247;
+					v7 = cs2_configs['cfg3356'].bitcfg19248;
+					v5 = cs2_configs['cfg3356'].bitcfg19249;
+					v1 = cs2_configs['cfg3357'].bitcfg19253;
+					v10 = cs2_configs['cfg3356'].bitcfg19250;
+					v16 = 1;
+					break;
+				case 1010:
+					v22 = cs2_configs['cfg3359'].bitcfg19258;
+					v6 = cs2_configs['cfg3359'].bitcfg19259;
+					v2 = cs2_configs['cfg3358'].bitcfg19254;
+					v7 = cs2_configs['cfg3358'].bitcfg19255;
+					v5 = cs2_configs['cfg3358'].bitcfg19256;
+					v1 = cs2_configs['cfg3359'].bitcfg19260;
+					v10 = cs2_configs['cfg3358'].bitcfg19257;
+					v16 = 1;
+					break;
+				case 1011:
+					v22 = cs2_configs['cfg3361'].bitcfg19265;
+					v6 = cs2_configs['cfg3361'].bitcfg19266;
+					v2 = cs2_configs['cfg3360'].bitcfg19261;
+					v7 = cs2_configs['cfg3360'].bitcfg19262;
+					v5 = cs2_configs['cfg3360'].bitcfg19263;
+					v1 = cs2_configs['cfg3361'].bitcfg19267;
+					v10 = cs2_configs['cfg3360'].bitcfg19264;
+					v16 = 1;
+					break;
+				case 1012:
+					v22 = cs2_configs['cfg3363'].bitcfg19272;
+					v6 = cs2_configs['cfg3363'].bitcfg19273;
+					v2 = cs2_configs['cfg3362'].bitcfg19268;
+					v7 = cs2_configs['cfg3362'].bitcfg19269;
+					v5 = cs2_configs['cfg3362'].bitcfg19270;
+					v1 = cs2_configs['cfg3363'].bitcfg19274;
+					v10 = cs2_configs['cfg3362'].bitcfg19271;
+					v16 = 1;
+					break;
+				case 1013:
+					v22 = cs2_configs['cfg3365'].bitcfg19279;
+					v6 = cs2_configs['cfg3365'].bitcfg19280;
+					v2 = cs2_configs['cfg3364'].bitcfg19275;
+					v7 = cs2_configs['cfg3364'].bitcfg19276;
+					v5 = cs2_configs['cfg3364'].bitcfg19277;
+					v1 = cs2_configs['cfg3365'].bitcfg19281;
+					v10 = cs2_configs['cfg3364'].bitcfg19278;
+					v16 = 1;
+					break;
+				case 1014:
+					v22 = cs2_configs['cfg3367'].bitcfg19286;
+					v6 = cs2_configs['cfg3367'].bitcfg19287;
+					v2 = cs2_configs['cfg3366'].bitcfg19282;
+					v7 = cs2_configs['cfg3366'].bitcfg19283;
+					v5 = cs2_configs['cfg3366'].bitcfg19284;
+					v1 = cs2_configs['cfg3367'].bitcfg19288;
+					v10 = cs2_configs['cfg3366'].bitcfg19285;
+					v16 = 1;
+					break;
+				case 15:
+					v22 = cs2_configs['cfg3369'].bitcfg19293;
+					v6 = cs2_configs['cfg3369'].bitcfg19294;
+					v2 = cs2_configs['cfg3368'].bitcfg19289;
+					v7 = cs2_configs['cfg3368'].bitcfg19290;
+					v5 = cs2_configs['cfg3368'].bitcfg19291;
+					v1 = cs2_configs['cfg3369'].bitcfg19295;
+					v10 = cs2_configs['cfg3368'].bitcfg19292;
+					v16 = 1;
+					break;
+				case 1015:
+					v22 = cs2_configs['cfg3371'].bitcfg19300;
+					v6 = cs2_configs['cfg3371'].bitcfg19301;
+					v2 = cs2_configs['cfg3370'].bitcfg19296;
+					v7 = cs2_configs['cfg3370'].bitcfg19297;
+					v5 = cs2_configs['cfg3370'].bitcfg19298;
+					v1 = cs2_configs['cfg3371'].bitcfg19302;
+					v10 = cs2_configs['cfg3370'].bitcfg19299;
+					v16 = 1;
+					break;
+				case 1016:
+					v22 = cs2_configs['cfg3373'].bitcfg19307;
+					v6 = cs2_configs['cfg3373'].bitcfg19308;
+					v2 = cs2_configs['cfg3372'].bitcfg19303;
+					v7 = cs2_configs['cfg3372'].bitcfg19304;
+					v5 = cs2_configs['cfg3372'].bitcfg19305;
+					v1 = cs2_configs['cfg3373'].bitcfg19309;
+					v10 = cs2_configs['cfg3372'].bitcfg19306;
+					v16 = 1;
+					break;
+				case 1017:
+					v22 = cs2_configs['cfg3375'].bitcfg19314;
+					v6 = cs2_configs['cfg3375'].bitcfg19315;
+					v2 = cs2_configs['cfg3374'].bitcfg19310;
+					v7 = cs2_configs['cfg3374'].bitcfg19311;
+					v5 = cs2_configs['cfg3374'].bitcfg19312;
+					v1 = cs2_configs['cfg3375'].bitcfg19316;
+					v10 = cs2_configs['cfg3374'].bitcfg19313;
+					v16 = 1;
+					break;
+				case 1018:
+					v22 = cs2_configs['cfg3377'].bitcfg19321;
+					v6 = cs2_configs['cfg3377'].bitcfg19322;
+					v2 = cs2_configs['cfg3376'].bitcfg19317;
+					v7 = cs2_configs['cfg3376'].bitcfg19318;
+					v5 = cs2_configs['cfg3376'].bitcfg19319;
+					v1 = cs2_configs['cfg3377'].bitcfg19323;
+					v10 = cs2_configs['cfg3376'].bitcfg19320;
+					v16 = 1;
+					break;
+				case 1001:
+					v22 = cs2_configs['cfg3379'].bitcfg19328;
+					v6 = cs2_configs['cfg3379'].bitcfg19329;
+					v2 = cs2_configs['cfg3378'].bitcfg19324;
+					v7 = cs2_configs['cfg3378'].bitcfg19325;
+					v5 = cs2_configs['cfg3378'].bitcfg19326;
+					v1 = cs2_configs['cfg3379'].bitcfg19330;
+					v10 = cs2_configs['cfg3378'].bitcfg19327;
+					v16 = 1;
+					break;
+				case 23:
+					v22 = cs2_configs['cfg3779'].bitcfg20838;
+					v6 = cs2_configs['cfg3779'].bitcfg20839;
+					v2 = cs2_configs['cfg3778'].bitcfg20834;
+					v7 = cs2_configs['cfg3778'].bitcfg20835;
+					v5 = cs2_configs['cfg3778'].bitcfg20836;
+					v1 = cs2_configs['cfg3779'].bitcfg20840;
+					v10 = cs2_configs['cfg3778'].bitcfg20837;
+					v16 = 1;
+					break;
+				case 1020:
+					v22 = cs2_configs['cfg3835'].bitcfg20869;
+					v6 = cs2_configs['cfg3835'].bitcfg20870;
+					v2 = cs2_configs['cfg3834'].bitcfg20865;
+					v7 = cs2_configs['cfg3834'].bitcfg20866;
+					v5 = cs2_configs['cfg3834'].bitcfg20867;
+					v1 = cs2_configs['cfg3835'].bitcfg20871;
+					v10 = cs2_configs['cfg3834'].bitcfg20868;
+					v16 = 1;
+					break;
+				case 2008:
+					v22 = cs2_configs['cfg4112'].bitcfg21725;
+					v6 = cs2_configs['cfg4112'].bitcfg21726;
+					v2 = cs2_configs['cfg4111'].bitcfg21721;
+					v7 = cs2_configs['cfg4111'].bitcfg21722;
+					v5 = cs2_configs['cfg4111'].bitcfg21723;
+					v1 = cs2_configs['cfg4112'].bitcfg21727;
+					v10 = cs2_configs['cfg4111'].bitcfg21724;
+					v16 = 1;
+			}
+			v5 = cs2method_10461(v5, 1);
+			v1 = cs2method_10461(v1, 1);
+			break;
+		case 7:
+			switch (a1) {
+				case 1000:
+					v22 = cs2_configs['cfg3382'].bitcfg19633;
+					v6 = cs2_configs['cfg3382'].bitcfg19634;
+					v2 = cs2_configs['cfg3381'].bitcfg19629;
+					v7 = cs2_configs['cfg3381'].bitcfg19630;
+					v5 = cs2_configs['cfg3381'].bitcfg19631;
+					v1 = cs2_configs['cfg3382'].bitcfg19635;
+					v10 = cs2_configs['cfg3381'].bitcfg19632;
+					v16 = 1;
+					break;
+				case 1002:
+					v22 = cs2_configs['cfg3384'].bitcfg19640;
+					v6 = cs2_configs['cfg3384'].bitcfg19641;
+					v2 = cs2_configs['cfg3383'].bitcfg19636;
+					v7 = cs2_configs['cfg3383'].bitcfg19637;
+					v5 = cs2_configs['cfg3383'].bitcfg19638;
+					v1 = cs2_configs['cfg3384'].bitcfg19642;
+					v10 = 1;
+					v16 = 1;
+					break;
+				case 1004:
+					v22 = cs2_configs['cfg3386'].bitcfg19647;
+					v6 = cs2_configs['cfg3386'].bitcfg19648;
+					v2 = cs2_configs['cfg3385'].bitcfg19643;
+					v7 = cs2_configs['cfg3385'].bitcfg19644;
+					v5 = cs2_configs['cfg3385'].bitcfg19645;
+					v1 = cs2_configs['cfg3386'].bitcfg19649;
+					v10 = cs2_configs['cfg3385'].bitcfg19646;
+					v16 = 1;
+					break;
+				case 1003:
+					v22 = cs2_configs['cfg3388'].bitcfg19654;
+					v6 = cs2_configs['cfg3388'].bitcfg19655;
+					v2 = cs2_configs['cfg3387'].bitcfg19650;
+					v7 = cs2_configs['cfg3387'].bitcfg19651;
+					v5 = cs2_configs['cfg3387'].bitcfg19652;
+					v1 = cs2_configs['cfg3388'].bitcfg19656;
+					v10 = 1;
+					v16 = 1;
+					break;
+				case 18:
+					v22 = cs2_configs['cfg3390'].bitcfg19661;
+					v6 = cs2_configs['cfg3390'].bitcfg19662;
+					v2 = cs2_configs['cfg3389'].bitcfg19657;
+					v7 = cs2_configs['cfg3389'].bitcfg19658;
+					v5 = cs2_configs['cfg3389'].bitcfg19659;
+					v1 = cs2_configs['cfg3390'].bitcfg19663;
+					v10 = cs2_configs['cfg3389'].bitcfg19660;
+					v16 = 1;
+					break;
+				case 2:
+					v22 = cs2_configs['cfg3392'].bitcfg19668;
+					v6 = cs2_configs['cfg3392'].bitcfg19669;
+					v2 = cs2_configs['cfg3391'].bitcfg19664;
+					v7 = cs2_configs['cfg3391'].bitcfg19665;
+					v5 = cs2_configs['cfg3391'].bitcfg19666;
+					v1 = cs2_configs['cfg3392'].bitcfg19670;
+					v10 = cs2_configs['cfg3391'].bitcfg19667;
+					v16 = 1;
+					break;
+				case 1005:
+					v22 = cs2_configs['cfg3394'].bitcfg19675;
+					v6 = cs2_configs['cfg3394'].bitcfg19676;
+					v2 = cs2_configs['cfg3393'].bitcfg19671;
+					v7 = cs2_configs['cfg3393'].bitcfg19672;
+					v5 = cs2_configs['cfg3393'].bitcfg19673;
+					v1 = cs2_configs['cfg3394'].bitcfg19677;
+					v10 = cs2_configs['cfg3393'].bitcfg19674;
+					v16 = 1;
+					break;
+				case 19:
+					v22 = cs2_configs['cfg3396'].bitcfg19682;
+					v6 = cs2_configs['cfg3396'].bitcfg19683;
+					v2 = cs2_configs['cfg3395'].bitcfg19678;
+					v7 = cs2_configs['cfg3395'].bitcfg19679;
+					v5 = cs2_configs['cfg3395'].bitcfg19680;
+					v1 = cs2_configs['cfg3396'].bitcfg19684;
+					v10 = cs2_configs['cfg3395'].bitcfg19681;
+					v16 = 1;
+					break;
+				case 20:
+					v22 = cs2_configs['cfg3398'].bitcfg19689;
+					v6 = cs2_configs['cfg3398'].bitcfg19690;
+					v2 = cs2_configs['cfg3397'].bitcfg19685;
+					v7 = cs2_configs['cfg3397'].bitcfg19686;
+					v5 = cs2_configs['cfg3397'].bitcfg19687;
+					v1 = cs2_configs['cfg3398'].bitcfg19691;
+					v10 = cs2_configs['cfg3397'].bitcfg19688;
+					v16 = 1;
+					break;
+				case 21:
+					v22 = cs2_configs['cfg3400'].bitcfg19696;
+					v6 = cs2_configs['cfg3400'].bitcfg19697;
+					v2 = cs2_configs['cfg3399'].bitcfg19692;
+					v7 = cs2_configs['cfg3399'].bitcfg19693;
+					v5 = cs2_configs['cfg3399'].bitcfg19694;
+					v1 = cs2_configs['cfg3400'].bitcfg19698;
+					v10 = cs2_configs['cfg3399'].bitcfg19695;
+					v16 = 1;
+					break;
+				case 3:
+					v22 = cs2_configs['cfg3402'].bitcfg19703;
+					v6 = cs2_configs['cfg3402'].bitcfg19704;
+					v2 = cs2_configs['cfg3401'].bitcfg19699;
+					v7 = cs2_configs['cfg3401'].bitcfg19700;
+					v5 = cs2_configs['cfg3401'].bitcfg19701;
+					v1 = cs2_configs['cfg3402'].bitcfg19705;
+					v10 = cs2_configs['cfg3401'].bitcfg19702;
+					v16 = 1;
+					break;
+				case 1006:
+					v22 = cs2_configs['cfg3404'].bitcfg19710;
+					v6 = cs2_configs['cfg3404'].bitcfg19711;
+					v2 = cs2_configs['cfg3403'].bitcfg19706;
+					v7 = cs2_configs['cfg3403'].bitcfg19707;
+					v5 = cs2_configs['cfg3403'].bitcfg19708;
+					v1 = cs2_configs['cfg3404'].bitcfg19712;
+					v10 = cs2_configs['cfg3403'].bitcfg19709;
+					v16 = 1;
+					break;
+				case 1007:
+					v22 = cs2_configs['cfg3406'].bitcfg19717;
+					v6 = cs2_configs['cfg3406'].bitcfg19718;
+					v2 = cs2_configs['cfg3405'].bitcfg19713;
+					v7 = cs2_configs['cfg3405'].bitcfg19714;
+					v5 = cs2_configs['cfg3405'].bitcfg19715;
+					v1 = cs2_configs['cfg3406'].bitcfg19719;
+					v10 = cs2_configs['cfg3405'].bitcfg19716;
+					v16 = 1;
+					break;
+				case 17:
+					v22 = cs2_configs['cfg3408'].bitcfg19724;
+					v6 = cs2_configs['cfg3408'].bitcfg19725;
+					v2 = cs2_configs['cfg3407'].bitcfg19720;
+					v7 = cs2_configs['cfg3407'].bitcfg19721;
+					v5 = cs2_configs['cfg3407'].bitcfg19722;
+					v1 = cs2_configs['cfg3408'].bitcfg19726;
+					v10 = cs2_configs['cfg3407'].bitcfg19723;
+					v16 = 1;
+					break;
+				case 12:
+					v22 = cs2_configs['cfg3410'].bitcfg19731;
+					v6 = cs2_configs['cfg3410'].bitcfg19732;
+					v2 = cs2_configs['cfg3409'].bitcfg19727;
+					v7 = cs2_configs['cfg3409'].bitcfg19728;
+					v5 = cs2_configs['cfg3409'].bitcfg19729;
+					v1 = cs2_configs['cfg3410'].bitcfg19733;
+					v10 = cs2_configs['cfg3409'].bitcfg19730;
+					v16 = 1;
+					break;
+				case 1019:
+					v22 = cs2_configs['cfg3412'].bitcfg19738;
+					v6 = cs2_configs['cfg3412'].bitcfg19739;
+					v2 = cs2_configs['cfg3411'].bitcfg19734;
+					v7 = cs2_configs['cfg3411'].bitcfg19735;
+					v5 = cs2_configs['cfg3411'].bitcfg19736;
+					v1 = cs2_configs['cfg3412'].bitcfg19740;
+					v10 = cs2_configs['cfg3411'].bitcfg19737;
+					v16 = 1;
+					break;
+				case 6:
+					v22 = cs2_configs['cfg3414'].bitcfg19745;
+					v6 = cs2_configs['cfg3414'].bitcfg19746;
+					v2 = cs2_configs['cfg3413'].bitcfg19741;
+					v7 = cs2_configs['cfg3413'].bitcfg19742;
+					v5 = cs2_configs['cfg3413'].bitcfg19743;
+					v1 = cs2_configs['cfg3414'].bitcfg19747;
+					v10 = cs2_configs['cfg3413'].bitcfg19744;
+					v16 = 1;
+					break;
+				case 7:
+					v22 = cs2_configs['cfg3416'].bitcfg19752;
+					v6 = cs2_configs['cfg3416'].bitcfg19753;
+					v2 = cs2_configs['cfg3415'].bitcfg19748;
+					v7 = cs2_configs['cfg3415'].bitcfg19749;
+					v5 = cs2_configs['cfg3415'].bitcfg19750;
+					v1 = cs2_configs['cfg3416'].bitcfg19754;
+					v10 = cs2_configs['cfg3415'].bitcfg19751;
+					v16 = 1;
+					break;
+				case 5:
+					v22 = cs2_configs['cfg3418'].bitcfg19759;
+					v6 = cs2_configs['cfg3418'].bitcfg19760;
+					v2 = cs2_configs['cfg3417'].bitcfg19755;
+					v7 = cs2_configs['cfg3417'].bitcfg19756;
+					v5 = cs2_configs['cfg3417'].bitcfg19757;
+					v1 = cs2_configs['cfg3418'].bitcfg19761;
+					v10 = cs2_configs['cfg3417'].bitcfg19758;
+					v16 = 1;
+					break;
+				case 8:
+					v22 = cs2_configs['cfg3420'].bitcfg19766;
+					v6 = cs2_configs['cfg3420'].bitcfg19767;
+					v2 = cs2_configs['cfg3419'].bitcfg19762;
+					v7 = cs2_configs['cfg3419'].bitcfg19763;
+					v5 = cs2_configs['cfg3419'].bitcfg19764;
+					v1 = cs2_configs['cfg3420'].bitcfg19768;
+					v10 = cs2_configs['cfg3419'].bitcfg19765;
+					v16 = 1;
+					break;
+				case 1:
+					v22 = cs2_configs['cfg3422'].bitcfg19773;
+					v6 = cs2_configs['cfg3422'].bitcfg19774;
+					v2 = cs2_configs['cfg3421'].bitcfg19769;
+					v7 = cs2_configs['cfg3421'].bitcfg19770;
+					v5 = cs2_configs['cfg3421'].bitcfg19771;
+					v1 = cs2_configs['cfg3422'].bitcfg19775;
+					v10 = cs2_configs['cfg3421'].bitcfg19772;
+					v16 = 1;
+					break;
+				case 1008:
+					v22 = cs2_configs['cfg3424'].bitcfg19780;
+					v6 = cs2_configs['cfg3424'].bitcfg19781;
+					v2 = cs2_configs['cfg3423'].bitcfg19776;
+					v7 = cs2_configs['cfg3423'].bitcfg19777;
+					v5 = cs2_configs['cfg3423'].bitcfg19778;
+					v1 = cs2_configs['cfg3424'].bitcfg19782;
+					v10 = cs2_configs['cfg3423'].bitcfg19779;
+					v16 = 1;
+					break;
+				case 9:
+					v22 = cs2_configs['cfg3426'].bitcfg19787;
+					v6 = cs2_configs['cfg3426'].bitcfg19788;
+					v2 = cs2_configs['cfg3425'].bitcfg19783;
+					v7 = cs2_configs['cfg3425'].bitcfg19784;
+					v5 = cs2_configs['cfg3425'].bitcfg19785;
+					v1 = cs2_configs['cfg3426'].bitcfg19789;
+					v10 = cs2_configs['cfg3425'].bitcfg19786;
+					v16 = 1;
+					break;
+				case 0:
+					v22 = cs2_configs['cfg3428'].bitcfg19794;
+					v6 = cs2_configs['cfg3428'].bitcfg19795;
+					v2 = cs2_configs['cfg3427'].bitcfg19790;
+					v7 = cs2_configs['cfg3427'].bitcfg19791;
+					v5 = cs2_configs['cfg3427'].bitcfg19792;
+					v1 = cs2_configs['cfg3428'].bitcfg19796;
+					v10 = cs2_configs['cfg3427'].bitcfg19793;
+					v16 = 1;
+					break;
+				case 4:
+					v22 = cs2_configs['cfg3430'].bitcfg19801;
+					v6 = cs2_configs['cfg3430'].bitcfg19802;
+					v2 = cs2_configs['cfg3429'].bitcfg19797;
+					v7 = cs2_configs['cfg3429'].bitcfg19798;
+					v5 = cs2_configs['cfg3429'].bitcfg19799;
+					v1 = cs2_configs['cfg3430'].bitcfg19803;
+					v10 = cs2_configs['cfg3429'].bitcfg19800;
+					v16 = 1;
+					break;
+				case 22:
+					v22 = cs2_configs['cfg3432'].bitcfg19808;
+					v6 = cs2_configs['cfg3432'].bitcfg19809;
+					v2 = cs2_configs['cfg3431'].bitcfg19804;
+					v7 = cs2_configs['cfg3431'].bitcfg19805;
+					v5 = cs2_configs['cfg3431'].bitcfg19806;
+					v1 = cs2_configs['cfg3432'].bitcfg19810;
+					v10 = cs2_configs['cfg3431'].bitcfg19807;
+					v16 = 1;
+					break;
+				case 10:
+					v22 = cs2_configs['cfg3434'].bitcfg19815;
+					v6 = cs2_configs['cfg3434'].bitcfg19816;
+					v2 = cs2_configs['cfg3433'].bitcfg19811;
+					v7 = cs2_configs['cfg3433'].bitcfg19812;
+					v5 = cs2_configs['cfg3433'].bitcfg19813;
+					v1 = cs2_configs['cfg3434'].bitcfg19817;
+					v10 = cs2_configs['cfg3433'].bitcfg19814;
+					v16 = 1;
+					break;
+				case 11:
+					v22 = cs2_configs['cfg3436'].bitcfg19822;
+					v6 = cs2_configs['cfg3436'].bitcfg19823;
+					v2 = cs2_configs['cfg3435'].bitcfg19818;
+					v7 = cs2_configs['cfg3435'].bitcfg19819;
+					v5 = cs2_configs['cfg3435'].bitcfg19820;
+					v1 = cs2_configs['cfg3436'].bitcfg19824;
+					v10 = cs2_configs['cfg3435'].bitcfg19821;
+					v16 = 1;
+					break;
+				case 14:
+					v22 = cs2_configs['cfg3438'].bitcfg19829;
+					v6 = cs2_configs['cfg3438'].bitcfg19830;
+					v2 = cs2_configs['cfg3437'].bitcfg19825;
+					v7 = cs2_configs['cfg3437'].bitcfg19826;
+					v5 = cs2_configs['cfg3437'].bitcfg19827;
+					v1 = cs2_configs['cfg3438'].bitcfg19831;
+					v10 = cs2_configs['cfg3437'].bitcfg19828;
+					v16 = 1;
+					break;
+				case 16:
+					v22 = cs2_configs['cfg3440'].bitcfg19836;
+					v6 = cs2_configs['cfg3440'].bitcfg19837;
+					v2 = cs2_configs['cfg3439'].bitcfg19832;
+					v7 = cs2_configs['cfg3439'].bitcfg19833;
+					v5 = cs2_configs['cfg3439'].bitcfg19834;
+					v1 = cs2_configs['cfg3440'].bitcfg19838;
+					v10 = cs2_configs['cfg3439'].bitcfg19835;
+					v16 = 1;
+					break;
+				case 1009:
+					v22 = cs2_configs['cfg3442'].bitcfg19843;
+					v6 = cs2_configs['cfg3442'].bitcfg19844;
+					v2 = cs2_configs['cfg3441'].bitcfg19839;
+					v7 = cs2_configs['cfg3441'].bitcfg19840;
+					v5 = cs2_configs['cfg3441'].bitcfg19841;
+					v1 = cs2_configs['cfg3442'].bitcfg19845;
+					v10 = cs2_configs['cfg3441'].bitcfg19842;
+					v16 = 1;
+					break;
+				case 1010:
+					v22 = cs2_configs['cfg3444'].bitcfg19850;
+					v6 = cs2_configs['cfg3444'].bitcfg19851;
+					v2 = cs2_configs['cfg3443'].bitcfg19846;
+					v7 = cs2_configs['cfg3443'].bitcfg19847;
+					v5 = cs2_configs['cfg3443'].bitcfg19848;
+					v1 = cs2_configs['cfg3444'].bitcfg19852;
+					v10 = cs2_configs['cfg3443'].bitcfg19849;
+					v16 = 1;
+					break;
+				case 1011:
+					v22 = cs2_configs['cfg3446'].bitcfg19857;
+					v6 = cs2_configs['cfg3446'].bitcfg19858;
+					v2 = cs2_configs['cfg3445'].bitcfg19853;
+					v7 = cs2_configs['cfg3445'].bitcfg19854;
+					v5 = cs2_configs['cfg3445'].bitcfg19855;
+					v1 = cs2_configs['cfg3446'].bitcfg19859;
+					v10 = cs2_configs['cfg3445'].bitcfg19856;
+					v16 = 1;
+					break;
+				case 1012:
+					v22 = cs2_configs['cfg3448'].bitcfg19864;
+					v6 = cs2_configs['cfg3448'].bitcfg19865;
+					v2 = cs2_configs['cfg3447'].bitcfg19860;
+					v7 = cs2_configs['cfg3447'].bitcfg19861;
+					v5 = cs2_configs['cfg3447'].bitcfg19862;
+					v1 = cs2_configs['cfg3448'].bitcfg19866;
+					v10 = cs2_configs['cfg3447'].bitcfg19863;
+					v16 = 1;
+					break;
+				case 1013:
+					v22 = cs2_configs['cfg3450'].bitcfg19871;
+					v6 = cs2_configs['cfg3450'].bitcfg19872;
+					v2 = cs2_configs['cfg3449'].bitcfg19867;
+					v7 = cs2_configs['cfg3449'].bitcfg19868;
+					v5 = cs2_configs['cfg3449'].bitcfg19869;
+					v1 = cs2_configs['cfg3450'].bitcfg19873;
+					v10 = cs2_configs['cfg3449'].bitcfg19870;
+					v16 = 1;
+					break;
+				case 1014:
+					v22 = cs2_configs['cfg3452'].bitcfg19878;
+					v6 = cs2_configs['cfg3452'].bitcfg19879;
+					v2 = cs2_configs['cfg3451'].bitcfg19874;
+					v7 = cs2_configs['cfg3451'].bitcfg19875;
+					v5 = cs2_configs['cfg3451'].bitcfg19876;
+					v1 = cs2_configs['cfg3452'].bitcfg19880;
+					v10 = cs2_configs['cfg3451'].bitcfg19877;
+					v16 = 1;
+					break;
+				case 15:
+					v22 = cs2_configs['cfg3454'].bitcfg19885;
+					v6 = cs2_configs['cfg3454'].bitcfg19886;
+					v2 = cs2_configs['cfg3453'].bitcfg19881;
+					v7 = cs2_configs['cfg3453'].bitcfg19882;
+					v5 = cs2_configs['cfg3453'].bitcfg19883;
+					v1 = cs2_configs['cfg3454'].bitcfg19887;
+					v10 = cs2_configs['cfg3453'].bitcfg19884;
+					v16 = 1;
+					break;
+				case 1015:
+					v22 = cs2_configs['cfg3456'].bitcfg19892;
+					v6 = cs2_configs['cfg3456'].bitcfg19893;
+					v2 = cs2_configs['cfg3455'].bitcfg19888;
+					v7 = cs2_configs['cfg3455'].bitcfg19889;
+					v5 = cs2_configs['cfg3455'].bitcfg19890;
+					v1 = cs2_configs['cfg3456'].bitcfg19894;
+					v10 = cs2_configs['cfg3455'].bitcfg19891;
+					v16 = 1;
+					break;
+				case 1016:
+					v22 = cs2_configs['cfg3458'].bitcfg19899;
+					v6 = cs2_configs['cfg3458'].bitcfg19900;
+					v2 = cs2_configs['cfg3457'].bitcfg19895;
+					v7 = cs2_configs['cfg3457'].bitcfg19896;
+					v5 = cs2_configs['cfg3457'].bitcfg19897;
+					v1 = cs2_configs['cfg3458'].bitcfg19901;
+					v10 = cs2_configs['cfg3457'].bitcfg19898;
+					v16 = 1;
+					break;
+				case 1017:
+					v22 = cs2_configs['cfg3460'].bitcfg19906;
+					v6 = cs2_configs['cfg3460'].bitcfg19907;
+					v2 = cs2_configs['cfg3459'].bitcfg19902;
+					v7 = cs2_configs['cfg3459'].bitcfg19903;
+					v5 = cs2_configs['cfg3459'].bitcfg19904;
+					v1 = cs2_configs['cfg3460'].bitcfg19908;
+					v10 = cs2_configs['cfg3459'].bitcfg19905;
+					v16 = 1;
+					break;
+				case 1018:
+					v22 = cs2_configs['cfg3462'].bitcfg19913;
+					v6 = cs2_configs['cfg3462'].bitcfg19914;
+					v2 = cs2_configs['cfg3461'].bitcfg19909;
+					v7 = cs2_configs['cfg3461'].bitcfg19910;
+					v5 = cs2_configs['cfg3461'].bitcfg19911;
+					v1 = cs2_configs['cfg3462'].bitcfg19915;
+					v10 = cs2_configs['cfg3461'].bitcfg19912;
+					v16 = 1;
+					break;
+				case 1001:
+					v22 = cs2_configs['cfg3464'].bitcfg19920;
+					v6 = cs2_configs['cfg3464'].bitcfg19921;
+					v2 = cs2_configs['cfg3463'].bitcfg19916;
+					v7 = cs2_configs['cfg3463'].bitcfg19917;
+					v5 = cs2_configs['cfg3463'].bitcfg19918;
+					v1 = cs2_configs['cfg3464'].bitcfg19922;
+					v10 = cs2_configs['cfg3463'].bitcfg19919;
+					v16 = 1;
+					break;
+				case 23:
+					v22 = cs2_configs['cfg3781'].bitcfg20852;
+					v6 = cs2_configs['cfg3781'].bitcfg20853;
+					v2 = cs2_configs['cfg3780'].bitcfg20848;
+					v7 = cs2_configs['cfg3780'].bitcfg20849;
+					v5 = cs2_configs['cfg3780'].bitcfg20850;
+					v1 = cs2_configs['cfg3781'].bitcfg20854;
+					v10 = cs2_configs['cfg3780'].bitcfg20851;
+					v16 = 1;
+					break;
+				case 1020:
+					v22 = cs2_configs['cfg3837'].bitcfg20883;
+					v6 = cs2_configs['cfg3837'].bitcfg20884;
+					v2 = cs2_configs['cfg3836'].bitcfg20879;
+					v7 = cs2_configs['cfg3836'].bitcfg20880;
+					v5 = cs2_configs['cfg3836'].bitcfg20881;
+					v1 = cs2_configs['cfg3837'].bitcfg20885;
+					v10 = cs2_configs['cfg3836'].bitcfg20882;
+					v16 = 1;
+					break;
+				case 2008:
+					v22 = cs2_configs['cfg4114'].bitcfg21718;
+					v6 = cs2_configs['cfg4114'].bitcfg21719;
+					v2 = cs2_configs['cfg4113'].bitcfg21714;
+					v7 = cs2_configs['cfg4113'].bitcfg21715;
+					v5 = cs2_configs['cfg4113'].bitcfg21716;
+					v1 = cs2_configs['cfg4114'].bitcfg21720;
+					v10 = cs2_configs['cfg4113'].bitcfg21717;
+					v16 = 1;
+			}
+			v5 = cs2method_10461(v5, 1);
+			v1 = cs2method_10461(v1, 1);
+			break;
+		case 8:
+			switch (a1) {
+				case 1000:
+					v22 = cs2_configs['cfg2914'].bitcfg19337;
+					v6 = cs2_configs['cfg2914'].bitcfg19338;
+					v2 = cs2_configs['cfg2913'].bitcfg19333;
+					v7 = cs2_configs['cfg2913'].bitcfg19334;
+					v5 = cs2_configs['cfg2913'].bitcfg19335;
+					v1 = cs2_configs['cfg2914'].bitcfg19339;
+					v10 = cs2_configs['cfg2913'].bitcfg19336;
+					v16 = 1;
+					break;
+				case 1002:
+					v22 = cs2_configs['cfg2916'].bitcfg19344;
+					v6 = cs2_configs['cfg2916'].bitcfg19345;
+					v2 = cs2_configs['cfg2915'].bitcfg19340;
+					v7 = cs2_configs['cfg2915'].bitcfg19341;
+					v5 = cs2_configs['cfg2915'].bitcfg19342;
+					v1 = cs2_configs['cfg2916'].bitcfg19346;
+					v10 = 1;
+					v16 = 1;
+					break;
+				case 1004:
+					v22 = cs2_configs['cfg2918'].bitcfg19351;
+					v6 = cs2_configs['cfg2918'].bitcfg19352;
+					v2 = cs2_configs['cfg2917'].bitcfg19347;
+					v7 = cs2_configs['cfg2917'].bitcfg19348;
+					v5 = cs2_configs['cfg2917'].bitcfg19349;
+					v1 = cs2_configs['cfg2918'].bitcfg19353;
+					v10 = cs2_configs['cfg2917'].bitcfg19350;
+					v16 = 1;
+					break;
+				case 1003:
+					v22 = cs2_configs['cfg2920'].bitcfg19358;
+					v6 = cs2_configs['cfg2920'].bitcfg19359;
+					v2 = cs2_configs['cfg2919'].bitcfg19354;
+					v7 = cs2_configs['cfg2919'].bitcfg19355;
+					v5 = cs2_configs['cfg2919'].bitcfg19356;
+					v1 = cs2_configs['cfg2920'].bitcfg19360;
+					v10 = 1;
+					v16 = 1;
+					break;
+				case 18:
+					v22 = cs2_configs['cfg2922'].bitcfg19365;
+					v6 = cs2_configs['cfg2922'].bitcfg19366;
+					v2 = cs2_configs['cfg2921'].bitcfg19361;
+					v7 = cs2_configs['cfg2921'].bitcfg19362;
+					v5 = cs2_configs['cfg2921'].bitcfg19363;
+					v1 = cs2_configs['cfg2922'].bitcfg19367;
+					v10 = cs2_configs['cfg2921'].bitcfg19364;
+					v16 = 1;
+					break;
+				case 2:
+					v22 = cs2_configs['cfg2924'].bitcfg19372;
+					v6 = cs2_configs['cfg2924'].bitcfg19373;
+					v2 = cs2_configs['cfg2923'].bitcfg19368;
+					v7 = cs2_configs['cfg2923'].bitcfg19369;
+					v5 = cs2_configs['cfg2923'].bitcfg19370;
+					v1 = cs2_configs['cfg2924'].bitcfg19374;
+					v10 = cs2_configs['cfg2923'].bitcfg19371;
+					v16 = 1;
+					break;
+				case 1005:
+					v22 = cs2_configs['cfg2926'].bitcfg19379;
+					v6 = cs2_configs['cfg2926'].bitcfg19380;
+					v2 = cs2_configs['cfg2925'].bitcfg19375;
+					v7 = cs2_configs['cfg2925'].bitcfg19376;
+					v5 = cs2_configs['cfg2925'].bitcfg19377;
+					v1 = cs2_configs['cfg2926'].bitcfg19381;
+					v10 = cs2_configs['cfg2925'].bitcfg19378;
+					v16 = 1;
+					break;
+				case 19:
+					v22 = cs2_configs['cfg2928'].bitcfg19386;
+					v6 = cs2_configs['cfg2928'].bitcfg19387;
+					v2 = cs2_configs['cfg2927'].bitcfg19382;
+					v7 = cs2_configs['cfg2927'].bitcfg19383;
+					v5 = cs2_configs['cfg2927'].bitcfg19384;
+					v1 = cs2_configs['cfg2928'].bitcfg19388;
+					v10 = cs2_configs['cfg2927'].bitcfg19385;
+					v16 = 1;
+					break;
+				case 20:
+					v22 = cs2_configs['cfg2930'].bitcfg19393;
+					v6 = cs2_configs['cfg2930'].bitcfg19394;
+					v2 = cs2_configs['cfg2929'].bitcfg19389;
+					v7 = cs2_configs['cfg2929'].bitcfg19390;
+					v5 = cs2_configs['cfg2929'].bitcfg19391;
+					v1 = cs2_configs['cfg2930'].bitcfg19395;
+					v10 = cs2_configs['cfg2929'].bitcfg19392;
+					v16 = 1;
+					break;
+				case 21:
+					v22 = cs2_configs['cfg2932'].bitcfg19400;
+					v6 = cs2_configs['cfg2932'].bitcfg19401;
+					v2 = cs2_configs['cfg2931'].bitcfg19396;
+					v7 = cs2_configs['cfg2931'].bitcfg19397;
+					v5 = cs2_configs['cfg2931'].bitcfg19398;
+					v1 = cs2_configs['cfg2932'].bitcfg19402;
+					v10 = cs2_configs['cfg2931'].bitcfg19399;
+					v16 = 1;
+					break;
+				case 3:
+					v22 = cs2_configs['cfg2934'].bitcfg19407;
+					v6 = cs2_configs['cfg2934'].bitcfg19408;
+					v2 = cs2_configs['cfg2933'].bitcfg19403;
+					v7 = cs2_configs['cfg2933'].bitcfg19404;
+					v5 = cs2_configs['cfg2933'].bitcfg19405;
+					v1 = cs2_configs['cfg2934'].bitcfg19409;
+					v10 = cs2_configs['cfg2933'].bitcfg19406;
+					v16 = 1;
+					break;
+				case 1006:
+					v22 = cs2_configs['cfg2936'].bitcfg19414;
+					v6 = cs2_configs['cfg2936'].bitcfg19415;
+					v2 = cs2_configs['cfg2935'].bitcfg19410;
+					v7 = cs2_configs['cfg2935'].bitcfg19411;
+					v5 = cs2_configs['cfg2935'].bitcfg19412;
+					v1 = cs2_configs['cfg2936'].bitcfg19416;
+					v10 = cs2_configs['cfg2935'].bitcfg19413;
+					v16 = 1;
+					break;
+				case 1007:
+					v22 = cs2_configs['cfg2938'].bitcfg19421;
+					v6 = cs2_configs['cfg2938'].bitcfg19422;
+					v2 = cs2_configs['cfg2937'].bitcfg19417;
+					v7 = cs2_configs['cfg2937'].bitcfg19418;
+					v5 = cs2_configs['cfg2937'].bitcfg19419;
+					v1 = cs2_configs['cfg2938'].bitcfg19423;
+					v10 = cs2_configs['cfg2937'].bitcfg19420;
+					v16 = 1;
+					break;
+				case 17:
+					v22 = cs2_configs['cfg2940'].bitcfg19428;
+					v6 = cs2_configs['cfg2940'].bitcfg19429;
+					v2 = cs2_configs['cfg2939'].bitcfg19424;
+					v7 = cs2_configs['cfg2939'].bitcfg19425;
+					v5 = cs2_configs['cfg2939'].bitcfg19426;
+					v1 = cs2_configs['cfg2940'].bitcfg19430;
+					v10 = cs2_configs['cfg2939'].bitcfg19427;
+					v16 = 1;
+					break;
+				case 12:
+					v22 = cs2_configs['cfg2942'].bitcfg19435;
+					v6 = cs2_configs['cfg2942'].bitcfg19436;
+					v2 = cs2_configs['cfg2941'].bitcfg19431;
+					v7 = cs2_configs['cfg2941'].bitcfg19432;
+					v5 = cs2_configs['cfg2941'].bitcfg19433;
+					v1 = cs2_configs['cfg2942'].bitcfg19437;
+					v10 = cs2_configs['cfg2941'].bitcfg19434;
+					v16 = 1;
+					break;
+				case 1019:
+					v22 = cs2_configs['cfg2944'].bitcfg19442;
+					v6 = cs2_configs['cfg2944'].bitcfg19443;
+					v2 = cs2_configs['cfg2943'].bitcfg19438;
+					v7 = cs2_configs['cfg2943'].bitcfg19439;
+					v5 = cs2_configs['cfg2943'].bitcfg19440;
+					v1 = cs2_configs['cfg2944'].bitcfg19444;
+					v10 = cs2_configs['cfg2943'].bitcfg19441;
+					v16 = 1;
+					break;
+				case 6:
+					v22 = cs2_configs['cfg2946'].bitcfg19449;
+					v6 = cs2_configs['cfg2946'].bitcfg19450;
+					v2 = cs2_configs['cfg2945'].bitcfg19445;
+					v7 = cs2_configs['cfg2945'].bitcfg19446;
+					v5 = cs2_configs['cfg2945'].bitcfg19447;
+					v1 = cs2_configs['cfg2946'].bitcfg19451;
+					v10 = cs2_configs['cfg2945'].bitcfg19448;
+					v16 = 1;
+					break;
+				case 7:
+					v22 = cs2_configs['cfg2948'].bitcfg19456;
+					v6 = cs2_configs['cfg2948'].bitcfg19457;
+					v2 = cs2_configs['cfg2947'].bitcfg19452;
+					v7 = cs2_configs['cfg2947'].bitcfg19453;
+					v5 = cs2_configs['cfg2947'].bitcfg19454;
+					v1 = cs2_configs['cfg2948'].bitcfg19458;
+					v10 = cs2_configs['cfg2947'].bitcfg19455;
+					v16 = 1;
+					break;
+				case 5:
+					v22 = cs2_configs['cfg2950'].bitcfg19463;
+					v6 = cs2_configs['cfg2950'].bitcfg19464;
+					v2 = cs2_configs['cfg2949'].bitcfg19459;
+					v7 = cs2_configs['cfg2949'].bitcfg19460;
+					v5 = cs2_configs['cfg2949'].bitcfg19461;
+					v1 = cs2_configs['cfg2950'].bitcfg19465;
+					v10 = cs2_configs['cfg2949'].bitcfg19462;
+					v16 = 1;
+					break;
+				case 8:
+					v22 = cs2_configs['cfg2952'].bitcfg19470;
+					v6 = cs2_configs['cfg2952'].bitcfg19471;
+					v2 = cs2_configs['cfg2951'].bitcfg19466;
+					v7 = cs2_configs['cfg2951'].bitcfg19467;
+					v5 = cs2_configs['cfg2951'].bitcfg19468;
+					v1 = cs2_configs['cfg2952'].bitcfg19472;
+					v10 = cs2_configs['cfg2951'].bitcfg19469;
+					v16 = 1;
+					break;
+				case 1:
+					v22 = cs2_configs['cfg2954'].bitcfg19477;
+					v6 = cs2_configs['cfg2954'].bitcfg19478;
+					v2 = cs2_configs['cfg2953'].bitcfg19473;
+					v7 = cs2_configs['cfg2953'].bitcfg19474;
+					v5 = cs2_configs['cfg2953'].bitcfg19475;
+					v1 = cs2_configs['cfg2954'].bitcfg19479;
+					v10 = cs2_configs['cfg2953'].bitcfg19476;
+					v16 = 1;
+					break;
+				case 1008:
+					v22 = cs2_configs['cfg2956'].bitcfg19484;
+					v6 = cs2_configs['cfg2956'].bitcfg19485;
+					v2 = cs2_configs['cfg2955'].bitcfg19480;
+					v7 = cs2_configs['cfg2955'].bitcfg19481;
+					v5 = cs2_configs['cfg2955'].bitcfg19482;
+					v1 = cs2_configs['cfg2956'].bitcfg19486;
+					v10 = cs2_configs['cfg2955'].bitcfg19483;
+					v16 = 1;
+					break;
+				case 9:
+					v22 = cs2_configs['cfg2958'].bitcfg19491;
+					v6 = cs2_configs['cfg2958'].bitcfg19492;
+					v2 = cs2_configs['cfg2957'].bitcfg19487;
+					v7 = cs2_configs['cfg2957'].bitcfg19488;
+					v5 = cs2_configs['cfg2957'].bitcfg19489;
+					v1 = cs2_configs['cfg2958'].bitcfg19493;
+					v10 = cs2_configs['cfg2957'].bitcfg19490;
+					v16 = 1;
+					break;
+				case 0:
+					v22 = cs2_configs['cfg2960'].bitcfg19498;
+					v6 = cs2_configs['cfg2960'].bitcfg19499;
+					v2 = cs2_configs['cfg2959'].bitcfg19494;
+					v7 = cs2_configs['cfg2959'].bitcfg19495;
+					v5 = cs2_configs['cfg2959'].bitcfg19496;
+					v1 = cs2_configs['cfg2960'].bitcfg19500;
+					v10 = cs2_configs['cfg2959'].bitcfg19497;
+					v16 = 1;
+					break;
+				case 4:
+					v22 = cs2_configs['cfg2962'].bitcfg19505;
+					v6 = cs2_configs['cfg2962'].bitcfg19506;
+					v2 = cs2_configs['cfg2961'].bitcfg19501;
+					v7 = cs2_configs['cfg2961'].bitcfg19502;
+					v5 = cs2_configs['cfg2961'].bitcfg19503;
+					v1 = cs2_configs['cfg2962'].bitcfg19507;
+					v10 = cs2_configs['cfg2961'].bitcfg19504;
+					v16 = 1;
+					break;
+				case 22:
+					v22 = cs2_configs['cfg2964'].bitcfg19512;
+					v6 = cs2_configs['cfg2964'].bitcfg19513;
+					v2 = cs2_configs['cfg2963'].bitcfg19508;
+					v7 = cs2_configs['cfg2963'].bitcfg19509;
+					v5 = cs2_configs['cfg2963'].bitcfg19510;
+					v1 = cs2_configs['cfg2964'].bitcfg19514;
+					v10 = cs2_configs['cfg2963'].bitcfg19511;
+					v16 = 1;
+					break;
+				case 10:
+					v22 = cs2_configs['cfg2966'].bitcfg19519;
+					v6 = cs2_configs['cfg2966'].bitcfg19520;
+					v2 = cs2_configs['cfg2965'].bitcfg19515;
+					v7 = cs2_configs['cfg2965'].bitcfg19516;
+					v5 = cs2_configs['cfg2965'].bitcfg19517;
+					v1 = cs2_configs['cfg2966'].bitcfg19521;
+					v10 = cs2_configs['cfg2965'].bitcfg19518;
+					v16 = 1;
+					break;
+				case 11:
+					v22 = cs2_configs['cfg2968'].bitcfg19526;
+					v6 = cs2_configs['cfg2968'].bitcfg19527;
+					v2 = cs2_configs['cfg2967'].bitcfg19522;
+					v7 = cs2_configs['cfg2967'].bitcfg19523;
+					v5 = cs2_configs['cfg2967'].bitcfg19524;
+					v1 = cs2_configs['cfg2968'].bitcfg19528;
+					v10 = cs2_configs['cfg2967'].bitcfg19525;
+					v16 = 1;
+					break;
+				case 14:
+					v22 = cs2_configs['cfg2970'].bitcfg19533;
+					v6 = cs2_configs['cfg2970'].bitcfg19534;
+					v2 = cs2_configs['cfg2969'].bitcfg19529;
+					v7 = cs2_configs['cfg2969'].bitcfg19530;
+					v5 = cs2_configs['cfg2969'].bitcfg19531;
+					v1 = cs2_configs['cfg2970'].bitcfg19535;
+					v10 = cs2_configs['cfg2969'].bitcfg19532;
+					v16 = 1;
+					break;
+				case 16:
+					v22 = cs2_configs['cfg2972'].bitcfg19540;
+					v6 = cs2_configs['cfg2972'].bitcfg19541;
+					v2 = cs2_configs['cfg2971'].bitcfg19536;
+					v7 = cs2_configs['cfg2971'].bitcfg19537;
+					v5 = cs2_configs['cfg2971'].bitcfg19538;
+					v1 = cs2_configs['cfg2972'].bitcfg19542;
+					v10 = cs2_configs['cfg2971'].bitcfg19539;
+					v16 = 1;
+					break;
+				case 1009:
+					v22 = cs2_configs['cfg2974'].bitcfg19547;
+					v6 = cs2_configs['cfg2974'].bitcfg19548;
+					v2 = cs2_configs['cfg2973'].bitcfg19543;
+					v7 = cs2_configs['cfg2973'].bitcfg19544;
+					v5 = cs2_configs['cfg2973'].bitcfg19545;
+					v1 = cs2_configs['cfg2974'].bitcfg19549;
+					v10 = cs2_configs['cfg2973'].bitcfg19546;
+					v16 = 1;
+					break;
+				case 1010:
+					v22 = cs2_configs['cfg2976'].bitcfg19554;
+					v6 = cs2_configs['cfg2976'].bitcfg19555;
+					v2 = cs2_configs['cfg2975'].bitcfg19550;
+					v7 = cs2_configs['cfg2975'].bitcfg19551;
+					v5 = cs2_configs['cfg2975'].bitcfg19552;
+					v1 = cs2_configs['cfg2976'].bitcfg19556;
+					v10 = cs2_configs['cfg2975'].bitcfg19553;
+					v16 = 1;
+					break;
+				case 1011:
+					v22 = cs2_configs['cfg2978'].bitcfg19561;
+					v6 = cs2_configs['cfg2978'].bitcfg19562;
+					v2 = cs2_configs['cfg2977'].bitcfg19557;
+					v7 = cs2_configs['cfg2977'].bitcfg19558;
+					v5 = cs2_configs['cfg2977'].bitcfg19559;
+					v1 = cs2_configs['cfg2978'].bitcfg19563;
+					v10 = cs2_configs['cfg2977'].bitcfg19560;
+					v16 = 1;
+					break;
+				case 1012:
+					v22 = cs2_configs['cfg2980'].bitcfg19568;
+					v6 = cs2_configs['cfg2980'].bitcfg19569;
+					v2 = cs2_configs['cfg2979'].bitcfg19564;
+					v7 = cs2_configs['cfg2979'].bitcfg19565;
+					v5 = cs2_configs['cfg2979'].bitcfg19566;
+					v1 = cs2_configs['cfg2980'].bitcfg19570;
+					v10 = cs2_configs['cfg2979'].bitcfg19567;
+					v16 = 1;
+					break;
+				case 1013:
+					v22 = cs2_configs['cfg2982'].bitcfg19575;
+					v6 = cs2_configs['cfg2982'].bitcfg19576;
+					v2 = cs2_configs['cfg2981'].bitcfg19571;
+					v7 = cs2_configs['cfg2981'].bitcfg19572;
+					v5 = cs2_configs['cfg2981'].bitcfg19573;
+					v1 = cs2_configs['cfg2982'].bitcfg19577;
+					v10 = cs2_configs['cfg2981'].bitcfg19574;
+					v16 = 1;
+					break;
+				case 1014:
+					v22 = cs2_configs['cfg2984'].bitcfg19582;
+					v6 = cs2_configs['cfg2984'].bitcfg19583;
+					v2 = cs2_configs['cfg2983'].bitcfg19578;
+					v7 = cs2_configs['cfg2983'].bitcfg19579;
+					v5 = cs2_configs['cfg2983'].bitcfg19580;
+					v1 = cs2_configs['cfg2984'].bitcfg19584;
+					v10 = cs2_configs['cfg2983'].bitcfg19581;
+					v16 = 1;
+					break;
+				case 15:
+					v22 = cs2_configs['cfg2986'].bitcfg19589;
+					v6 = cs2_configs['cfg2986'].bitcfg19590;
+					v2 = cs2_configs['cfg2985'].bitcfg19585;
+					v7 = cs2_configs['cfg2985'].bitcfg19586;
+					v5 = cs2_configs['cfg2985'].bitcfg19587;
+					v1 = cs2_configs['cfg2986'].bitcfg19591;
+					v10 = cs2_configs['cfg2985'].bitcfg19588;
+					v16 = 1;
+					break;
+				case 1015:
+					v22 = cs2_configs['cfg2988'].bitcfg19596;
+					v6 = cs2_configs['cfg2988'].bitcfg19597;
+					v2 = cs2_configs['cfg2987'].bitcfg19592;
+					v7 = cs2_configs['cfg2987'].bitcfg19593;
+					v5 = cs2_configs['cfg2987'].bitcfg19594;
+					v1 = cs2_configs['cfg2988'].bitcfg19598;
+					v10 = cs2_configs['cfg2987'].bitcfg19595;
+					v16 = 1;
+					break;
+				case 1016:
+					v22 = cs2_configs['cfg2990'].bitcfg19603;
+					v6 = cs2_configs['cfg2990'].bitcfg19604;
+					v2 = cs2_configs['cfg2989'].bitcfg19599;
+					v7 = cs2_configs['cfg2989'].bitcfg19600;
+					v5 = cs2_configs['cfg2989'].bitcfg19601;
+					v1 = cs2_configs['cfg2990'].bitcfg19605;
+					v10 = cs2_configs['cfg2989'].bitcfg19602;
+					v16 = 1;
+					break;
+				case 1017:
+					v22 = cs2_configs['cfg2992'].bitcfg19610;
+					v6 = cs2_configs['cfg2992'].bitcfg19611;
+					v2 = cs2_configs['cfg2991'].bitcfg19606;
+					v7 = cs2_configs['cfg2991'].bitcfg19607;
+					v5 = cs2_configs['cfg2991'].bitcfg19608;
+					v1 = cs2_configs['cfg2992'].bitcfg19612;
+					v10 = cs2_configs['cfg2991'].bitcfg19609;
+					v16 = 1;
+					break;
+				case 1018:
+					v22 = cs2_configs['cfg2994'].bitcfg19617;
+					v6 = cs2_configs['cfg2994'].bitcfg19618;
+					v2 = cs2_configs['cfg2993'].bitcfg19613;
+					v7 = cs2_configs['cfg2993'].bitcfg19614;
+					v5 = cs2_configs['cfg2993'].bitcfg19615;
+					v1 = cs2_configs['cfg2994'].bitcfg19619;
+					v10 = cs2_configs['cfg2993'].bitcfg19616;
+					v16 = 1;
+					break;
+				case 1001:
+					v22 = cs2_configs['cfg2996'].bitcfg19624;
+					v6 = cs2_configs['cfg2996'].bitcfg19625;
+					v2 = cs2_configs['cfg2995'].bitcfg19620;
+					v7 = cs2_configs['cfg2995'].bitcfg19621;
+					v5 = cs2_configs['cfg2995'].bitcfg19622;
+					v1 = cs2_configs['cfg2996'].bitcfg19626;
+					v10 = cs2_configs['cfg2995'].bitcfg19623;
+					v16 = 1;
+					break;
+				case 23:
+					v22 = cs2_configs['cfg3770'].bitcfg20845;
+					v6 = cs2_configs['cfg3770'].bitcfg20846;
+					v2 = cs2_configs['cfg3769'].bitcfg20841;
+					v7 = cs2_configs['cfg3769'].bitcfg20842;
+					v5 = cs2_configs['cfg3769'].bitcfg20843;
+					v1 = cs2_configs['cfg3770'].bitcfg20847;
+					v10 = cs2_configs['cfg3769'].bitcfg20844;
+					v16 = 1;
+					break;
+				case 1020:
+					v22 = cs2_configs['cfg3826'].bitcfg20876;
+					v6 = cs2_configs['cfg3826'].bitcfg20877;
+					v2 = cs2_configs['cfg3825'].bitcfg20872;
+					v7 = cs2_configs['cfg3825'].bitcfg20873;
+					v5 = cs2_configs['cfg3825'].bitcfg20874;
+					v1 = cs2_configs['cfg3826'].bitcfg20878;
+					v10 = cs2_configs['cfg3825'].bitcfg20875;
+					v16 = 1;
+					break;
+				case 2008:
+					v22 = cs2_configs['cfg4103'].bitcfg21732;
+					v6 = cs2_configs['cfg4103'].bitcfg21733;
+					v2 = cs2_configs['cfg4102'].bitcfg21728;
+					v7 = cs2_configs['cfg4102'].bitcfg21729;
+					v5 = cs2_configs['cfg4102'].bitcfg21730;
+					v1 = cs2_configs['cfg4103'].bitcfg21734;
+					v10 = cs2_configs['cfg4102'].bitcfg21731;
+					v16 = 1;
+			}
+			v5 = cs2method_10461(v5, 1);
+			v1 = cs2method_10461(v1, 1);
+			break;
+		case 9:
+		case 10:
+			switch (a1) {
+				case 1000:
+					v22 = cs2_configs['cfg3005'];
+					v6 = cs2_configs['cfg3006'];
+					v2 = cs2_configs['cfg3001'];
+					v7 = cs2_configs['cfg3002'];
+					v5 = cs2_configs['cfg3003'];
+					v1 = cs2_configs['cfg3007'];
+					v10 = cs2_configs['cfg3004'];
+					v16 = 1;
+					break;
+				case 1002:
+					v22 = cs2_configs['cfg3012'];
+					v6 = cs2_configs['cfg3013'];
+					v2 = cs2_configs['cfg3008'];
+					v7 = cs2_configs['cfg3009'];
+					v5 = cs2_configs['cfg3010'];
+					v1 = cs2_configs['cfg3014'];
+					v10 = cs2_configs['cfg3011'];
+					v16 = 1;
+					break;
+				case 1004:
+					v22 = cs2_configs['cfg3019'];
+					v6 = cs2_configs['cfg3020'];
+					v2 = cs2_configs['cfg3015'];
+					v7 = cs2_configs['cfg3016'];
+					v5 = cs2_configs['cfg3017'];
+					v1 = cs2_configs['cfg3021'];
+					v10 = cs2_configs['cfg3018'];
+					v16 = 1;
+					break;
+				case 1003:
+					v22 = cs2_configs['cfg3026'];
+					v6 = cs2_configs['cfg3027'];
+					v2 = cs2_configs['cfg3022'];
+					v7 = cs2_configs['cfg3023'];
+					v5 = cs2_configs['cfg3024'];
+					v1 = cs2_configs['cfg3028'];
+					v10 = cs2_configs['cfg3025'];
+					v16 = 1;
+					break;
+				case 18:
+					v22 = cs2_configs['cfg3033'];
+					v6 = cs2_configs['cfg3034'];
+					v2 = cs2_configs['cfg3029'];
+					v7 = cs2_configs['cfg3030'];
+					v5 = cs2_configs['cfg3031'];
+					v1 = cs2_configs['cfg3035'];
+					v10 = cs2_configs['cfg3032'];
+					v16 = 1;
+					break;
+				case 2:
+					v22 = cs2_configs['cfg3040'];
+					v6 = cs2_configs['cfg3041'];
+					v2 = cs2_configs['cfg3036'];
+					v7 = cs2_configs['cfg3037'];
+					v5 = cs2_configs['cfg3038'];
+					v1 = cs2_configs['cfg3042'];
+					v10 = cs2_configs['cfg3039'];
+					v16 = 1;
+					break;
+				case 1005:
+					v22 = cs2_configs['cfg3047'];
+					v6 = cs2_configs['cfg3048'];
+					v2 = cs2_configs['cfg3043'];
+					v7 = cs2_configs['cfg3044'];
+					v5 = cs2_configs['cfg3045'];
+					v1 = cs2_configs['cfg3049'];
+					v10 = cs2_configs['cfg3046'];
+					v16 = 1;
+					break;
+				case 19:
+					v22 = cs2_configs['cfg3054'];
+					v6 = cs2_configs['cfg3055'];
+					v2 = cs2_configs['cfg3050'];
+					v7 = cs2_configs['cfg3051'];
+					v5 = cs2_configs['cfg3052'];
+					v1 = cs2_configs['cfg3056'];
+					v10 = cs2_configs['cfg3053'];
+					v16 = 1;
+					break;
+				case 20:
+					v22 = cs2_configs['cfg3061'];
+					v6 = cs2_configs['cfg3062'];
+					v2 = cs2_configs['cfg3057'];
+					v7 = cs2_configs['cfg3058'];
+					v5 = cs2_configs['cfg3059'];
+					v1 = cs2_configs['cfg3063'];
+					v10 = cs2_configs['cfg3060'];
+					v16 = 1;
+					break;
+				case 21:
+					v22 = cs2_configs['cfg3068'];
+					v6 = cs2_configs['cfg3069'];
+					v2 = cs2_configs['cfg3064'];
+					v7 = cs2_configs['cfg3065'];
+					v5 = cs2_configs['cfg3066'];
+					v1 = cs2_configs['cfg3070'];
+					v10 = cs2_configs['cfg3067'];
+					v16 = 1;
+					break;
+				case 3:
+					v22 = cs2_configs['cfg3075'];
+					v6 = cs2_configs['cfg3076'];
+					v2 = cs2_configs['cfg3071'];
+					v7 = cs2_configs['cfg3072'];
+					v5 = cs2_configs['cfg3073'];
+					v1 = cs2_configs['cfg3077'];
+					v10 = cs2_configs['cfg3074'];
+					v16 = 1;
+					break;
+				case 1006:
+					v22 = cs2_configs['cfg3082'];
+					v6 = cs2_configs['cfg3083'];
+					v2 = cs2_configs['cfg3078'];
+					v7 = cs2_configs['cfg3079'];
+					v5 = cs2_configs['cfg3080'];
+					v1 = cs2_configs['cfg3084'];
+					v10 = cs2_configs['cfg3081'];
+					v16 = 1;
+					break;
+				case 1007:
+					v22 = cs2_configs['cfg3089'];
+					v6 = cs2_configs['cfg3090'];
+					v2 = cs2_configs['cfg3085'];
+					v7 = cs2_configs['cfg3086'];
+					v5 = cs2_configs['cfg3087'];
+					v1 = cs2_configs['cfg3091'];
+					v10 = cs2_configs['cfg3088'];
+					v16 = 1;
+					break;
+				case 17:
+					v22 = cs2_configs['cfg3096'];
+					v6 = cs2_configs['cfg3097'];
+					v2 = cs2_configs['cfg3092'];
+					v7 = cs2_configs['cfg3093'];
+					v5 = cs2_configs['cfg3094'];
+					v1 = cs2_configs['cfg3098'];
+					v10 = cs2_configs['cfg3095'];
+					v16 = 1;
+					break;
+				case 12:
+					v22 = cs2_configs['cfg3103'];
+					v6 = cs2_configs['cfg3104'];
+					v2 = cs2_configs['cfg3099'];
+					v7 = cs2_configs['cfg3100'];
+					v5 = cs2_configs['cfg3101'];
+					v1 = cs2_configs['cfg3105'];
+					v10 = cs2_configs['cfg3102'];
+					v16 = 1;
+					break;
+				case 1019:
+					v22 = cs2_configs['cfg3110'];
+					v6 = cs2_configs['cfg3111'];
+					v2 = cs2_configs['cfg3106'];
+					v7 = cs2_configs['cfg3107'];
+					v5 = cs2_configs['cfg3108'];
+					v1 = cs2_configs['cfg3112'];
+					v10 = cs2_configs['cfg3109'];
+					v16 = 1;
+					break;
+				case 6:
+					v22 = cs2_configs['cfg3117'];
+					v6 = cs2_configs['cfg3118'];
+					v2 = cs2_configs['cfg3113'];
+					v7 = cs2_configs['cfg3114'];
+					v5 = cs2_configs['cfg3115'];
+					v1 = cs2_configs['cfg3119'];
+					v10 = cs2_configs['cfg3116'];
+					v16 = 1;
+					break;
+				case 7:
+					v22 = cs2_configs['cfg3124'];
+					v6 = cs2_configs['cfg3125'];
+					v2 = cs2_configs['cfg3120'];
+					v7 = cs2_configs['cfg3121'];
+					v5 = cs2_configs['cfg3122'];
+					v1 = cs2_configs['cfg3126'];
+					v10 = cs2_configs['cfg3123'];
+					v16 = 1;
+					break;
+				case 5:
+					v22 = cs2_configs['cfg3131'];
+					v6 = cs2_configs['cfg3132'];
+					v2 = cs2_configs['cfg3127'];
+					v7 = cs2_configs['cfg3128'];
+					v5 = cs2_configs['cfg3129'];
+					v1 = cs2_configs['cfg3133'];
+					v10 = cs2_configs['cfg3130'];
+					v16 = 1;
+					break;
+				case 8:
+					v22 = cs2_configs['cfg3138'];
+					v6 = cs2_configs['cfg3139'];
+					v2 = cs2_configs['cfg3134'];
+					v7 = cs2_configs['cfg3135'];
+					v5 = cs2_configs['cfg3136'];
+					v1 = cs2_configs['cfg3140'];
+					v10 = cs2_configs['cfg3137'];
+					v16 = 1;
+					break;
+				case 1:
+					v22 = cs2_configs['cfg3145'];
+					v6 = cs2_configs['cfg3146'];
+					v2 = cs2_configs['cfg3141'];
+					v7 = cs2_configs['cfg3142'];
+					v5 = cs2_configs['cfg3143'];
+					v1 = cs2_configs['cfg3147'];
+					v10 = cs2_configs['cfg3144'];
+					v16 = 1;
+					break;
+				case 1008:
+					v22 = cs2_configs['cfg3152'];
+					v6 = cs2_configs['cfg3153'];
+					v2 = cs2_configs['cfg3148'];
+					v7 = cs2_configs['cfg3149'];
+					v5 = cs2_configs['cfg3150'];
+					v1 = cs2_configs['cfg3154'];
+					v10 = cs2_configs['cfg3151'];
+					v16 = 1;
+					break;
+				case 9:
+					v22 = cs2_configs['cfg3159'];
+					v6 = cs2_configs['cfg3160'];
+					v2 = cs2_configs['cfg3155'];
+					v7 = cs2_configs['cfg3156'];
+					v5 = cs2_configs['cfg3157'];
+					v1 = cs2_configs['cfg3161'];
+					v10 = cs2_configs['cfg3158'];
+					v16 = 1;
+					break;
+				case 0:
+					v22 = cs2_configs['cfg3166'];
+					v6 = cs2_configs['cfg3167'];
+					v2 = cs2_configs['cfg3162'];
+					v7 = cs2_configs['cfg3163'];
+					v5 = cs2_configs['cfg3164'];
+					v1 = cs2_configs['cfg3168'];
+					v10 = cs2_configs['cfg3165'];
+					v16 = 1;
+					break;
+				case 4:
+					v22 = cs2_configs['cfg3173'];
+					v6 = cs2_configs['cfg3174'];
+					v2 = cs2_configs['cfg3169'];
+					v7 = cs2_configs['cfg3170'];
+					v5 = cs2_configs['cfg3171'];
+					v1 = cs2_configs['cfg3175'];
+					v10 = cs2_configs['cfg3172'];
+					v16 = 1;
+					break;
+				case 22:
+					v22 = cs2_configs['cfg3180'];
+					v6 = cs2_configs['cfg3181'];
+					v2 = cs2_configs['cfg3176'];
+					v7 = cs2_configs['cfg3177'];
+					v5 = cs2_configs['cfg3178'];
+					v1 = cs2_configs['cfg3182'];
+					v10 = cs2_configs['cfg3179'];
+					v16 = 1;
+					break;
+				case 10:
+					v22 = cs2_configs['cfg3187'];
+					v6 = cs2_configs['cfg3188'];
+					v2 = cs2_configs['cfg3183'];
+					v7 = cs2_configs['cfg3184'];
+					v5 = cs2_configs['cfg3185'];
+					v1 = cs2_configs['cfg3189'];
+					v10 = cs2_configs['cfg3186'];
+					v16 = 1;
+					break;
+				case 11:
+					v22 = cs2_configs['cfg3194'];
+					v6 = cs2_configs['cfg3195'];
+					v2 = cs2_configs['cfg3190'];
+					v7 = cs2_configs['cfg3191'];
+					v5 = cs2_configs['cfg3192'];
+					v1 = cs2_configs['cfg3196'];
+					v10 = cs2_configs['cfg3193'];
+					v16 = 1;
+					break;
+				case 14:
+					v22 = cs2_configs['cfg3201'];
+					v6 = cs2_configs['cfg3202'];
+					v2 = cs2_configs['cfg3197'];
+					v7 = cs2_configs['cfg3198'];
+					v5 = cs2_configs['cfg3199'];
+					v1 = cs2_configs['cfg3203'];
+					v10 = cs2_configs['cfg3200'];
+					v16 = 1;
+					break;
+				case 16:
+					v22 = cs2_configs['cfg3208'];
+					v6 = cs2_configs['cfg3209'];
+					v2 = cs2_configs['cfg3204'];
+					v7 = cs2_configs['cfg3205'];
+					v5 = cs2_configs['cfg3206'];
+					v1 = cs2_configs['cfg3210'];
+					v10 = cs2_configs['cfg3207'];
+					v16 = 1;
+					break;
+				case 1009:
+					v22 = cs2_configs['cfg3215'];
+					v6 = cs2_configs['cfg3216'];
+					v2 = cs2_configs['cfg3211'];
+					v7 = cs2_configs['cfg3212'];
+					v5 = cs2_configs['cfg3213'];
+					v1 = cs2_configs['cfg3217'];
+					v10 = cs2_configs['cfg3214'];
+					v16 = 1;
+					break;
+				case 1010:
+					v22 = cs2_configs['cfg3222'];
+					v6 = cs2_configs['cfg3223'];
+					v2 = cs2_configs['cfg3218'];
+					v7 = cs2_configs['cfg3219'];
+					v5 = cs2_configs['cfg3220'];
+					v1 = cs2_configs['cfg3224'];
+					v10 = cs2_configs['cfg3221'];
+					v16 = 1;
+					break;
+				case 1011:
+					v22 = cs2_configs['cfg3229'];
+					v6 = cs2_configs['cfg3230'];
+					v2 = cs2_configs['cfg3225'];
+					v7 = cs2_configs['cfg3226'];
+					v5 = cs2_configs['cfg3227'];
+					v1 = cs2_configs['cfg3231'];
+					v10 = cs2_configs['cfg3228'];
+					v16 = 1;
+					break;
+				case 1012:
+					v22 = cs2_configs['cfg3236'];
+					v6 = cs2_configs['cfg3237'];
+					v2 = cs2_configs['cfg3232'];
+					v7 = cs2_configs['cfg3233'];
+					v5 = cs2_configs['cfg3234'];
+					v1 = cs2_configs['cfg3238'];
+					v10 = cs2_configs['cfg3235'];
+					v16 = 1;
+					break;
+				case 1013:
+					v22 = cs2_configs['cfg3243'];
+					v6 = cs2_configs['cfg3244'];
+					v2 = cs2_configs['cfg3239'];
+					v7 = cs2_configs['cfg3240'];
+					v5 = cs2_configs['cfg3241'];
+					v1 = cs2_configs['cfg3245'];
+					v10 = cs2_configs['cfg3242'];
+					v16 = 1;
+					break;
+				case 1014:
+					v22 = cs2_configs['cfg3250'];
+					v6 = cs2_configs['cfg3251'];
+					v2 = cs2_configs['cfg3246'];
+					v7 = cs2_configs['cfg3247'];
+					v5 = cs2_configs['cfg3248'];
+					v1 = cs2_configs['cfg3252'];
+					v10 = cs2_configs['cfg3249'];
+					v16 = 1;
+					break;
+				case 15:
+					v22 = cs2_configs['cfg3257'];
+					v6 = cs2_configs['cfg3258'];
+					v2 = cs2_configs['cfg3253'];
+					v7 = cs2_configs['cfg3254'];
+					v5 = cs2_configs['cfg3255'];
+					v1 = cs2_configs['cfg3259'];
+					v10 = cs2_configs['cfg3256'];
+					v16 = 1;
+					break;
+				case 1015:
+					v22 = cs2_configs['cfg3264'];
+					v6 = cs2_configs['cfg3265'];
+					v2 = cs2_configs['cfg3260'];
+					v7 = cs2_configs['cfg3261'];
+					v5 = cs2_configs['cfg3262'];
+					v1 = cs2_configs['cfg3266'];
+					v10 = cs2_configs['cfg3263'];
+					v16 = 1;
+					break;
+				case 1016:
+					v22 = cs2_configs['cfg3271'];
+					v6 = cs2_configs['cfg3272'];
+					v2 = cs2_configs['cfg3267'];
+					v7 = cs2_configs['cfg3268'];
+					v5 = cs2_configs['cfg3269'];
+					v1 = cs2_configs['cfg3273'];
+					v10 = cs2_configs['cfg3270'];
+					v16 = 1;
+					break;
+				case 1017:
+					v22 = cs2_configs['cfg3278'];
+					v6 = cs2_configs['cfg3279'];
+					v2 = cs2_configs['cfg3274'];
+					v7 = cs2_configs['cfg3275'];
+					v5 = cs2_configs['cfg3276'];
+					v1 = cs2_configs['cfg3280'];
+					v10 = cs2_configs['cfg3277'];
+					v16 = 1;
+					break;
+				case 1018:
+					v22 = cs2_configs['cfg3285'];
+					v6 = cs2_configs['cfg3286'];
+					v2 = cs2_configs['cfg3281'];
+					v7 = cs2_configs['cfg3282'];
+					v5 = cs2_configs['cfg3283'];
+					v1 = cs2_configs['cfg3287'];
+					v10 = cs2_configs['cfg3284'];
+					v16 = 1;
+					break;
+				case 1001:
+					v22 = cs2_configs['cfg3292'];
+					v6 = cs2_configs['cfg3293'];
+					v2 = cs2_configs['cfg3288'];
+					v7 = cs2_configs['cfg3289'];
+					v5 = cs2_configs['cfg3290'];
+					v1 = cs2_configs['cfg3294'];
+					v10 = cs2_configs['cfg3291'];
+					v16 = 1;
+					break;
+				case 23:
+					v22 = cs2_configs['cfg3775'];
+					v6 = cs2_configs['cfg3776'];
+					v2 = cs2_configs['cfg3771'];
+					v7 = cs2_configs['cfg3772'];
+					v5 = cs2_configs['cfg3773'];
+					v1 = cs2_configs['cfg3777'];
+					v10 = cs2_configs['cfg3774'];
+					v16 = 1;
+					break;
+				case 1020:
+					v22 = cs2_configs['cfg3831'];
+					v6 = cs2_configs['cfg3832'];
+					v2 = cs2_configs['cfg3827'];
+					v7 = cs2_configs['cfg3828'];
+					v5 = cs2_configs['cfg3829'];
+					v1 = cs2_configs['cfg3833'];
+					v10 = cs2_configs['cfg3830'];
+					v16 = 1;
+					break;
+				case 2008:
+					v22 = cs2_configs['cfg4108'];
+					v6 = cs2_configs['cfg4109'];
+					v2 = cs2_configs['cfg4104'];
+					v7 = cs2_configs['cfg4105'];
+					v5 = cs2_configs['cfg4106'];
+					v1 = cs2_configs['cfg4110'];
+					v10 = cs2_configs['cfg4107'];
+					v16 = 1;
+			}
+			v5 = cs2method_10461(v5, 1);
+			v1 = cs2method_10461(v1, 1);
+	}
+	if (a0 != 9 && cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(v22, v6), v2), v7), v10) == 0 && v5 == -1 && v1 == -1) {
+		v16 = 0;
+	}
+	int v3 = idx17mapData('i', 'J', 7716, a1);
+	int v8 = idx22mapAttribute(v3, 3527);
+	if (v16 == 0 && a0 != 1) {
+		int v23 = 1;
+		int v24 = a1;
+		script_8701_struct(8,0,0) v25 = script_8701(v23, v24);
+		return new script_8701_struct(v25.intpart_0, v25.intpart_1, v25.intpart_2, v25.intpart_3, v25.intpart_4, v25.intpart_5, v25.intpart_6, v25.intpart_7);
+	}
+	if (a0 != 1) {
+		if (v8 == 0) {
+			int v28 = 1;
+			int v27 = a1;
+			script_8701_struct(8,0,0) v31 = script_8701(v28, v27);
+			int v29 = v31.intpart_7;
+			int v25 = v31.intpart_6;
+			int v26 = v31.intpart_5;
+			int v23 = v31.intpart_4;
+			v7 = v31.intpart_3;
+			v2 = v31.intpart_2;
+			int v24 = v31.intpart_1;
+			int v30 = v31.intpart_0;
+		} else if (v8 == 1) {
+			int v24 = 1;
+			int v23 = a1;
+			script_8701_struct(8,0,0) v27 = script_8701(v24, v23);
+			int v32 = v27.intpart_7;
+			int v31 = v27.intpart_6;
+			int v28 = v27.intpart_5;
+			int v25 = v27.intpart_4;
+			v7 = v27.intpart_3;
+			int v29 = v27.intpart_2;
+			int v30 = v27.intpart_1;
+			int v26 = v27.intpart_0;
+		} else {
+			if (v8 == 2) {
+				int v29 = 1;
+				int v31 = a1;
+				script_8701_struct(8,0,0) v30 = script_8701(v29, v31);
+				int v23 = v30.intpart_7;
+				int v28 = v30.intpart_6;
+				int v32 = v30.intpart_5;
+				int v25 = v30.intpart_4;
+				int v24 = v30.intpart_3;
+				v2 = v30.intpart_2;
+				int v26 = v30.intpart_1;
+				int v27 = v30.intpart_0;
+			}
+		}
+	}
+	int v20 = cs2method_11048(0, v22);
+	int v19 = cs2method_11048(0, v6);
+	int v9 = cs2method_11048(0, v2);
+	int v15 = cs2method_11048(0, v7);
+	int v4 = cs2method_11048(0, v10);
+	int v12 = cs2method_11048(-1, v5);
+	int v18 = cs2method_11048(-1, v1);
+	return new script_8701_struct(v20, v19, v9, v15, v12, v18, v4, v16);
+}

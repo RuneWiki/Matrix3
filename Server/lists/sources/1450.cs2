@@ -1,0 +1,54 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1450() {
+	int v1 = 0;
+	int v0 = cs2method_10894(95);
+	while (v1 < v0) {
+		cs2method_10606(49938647, 5, v1);
+		cs2method_10013(36, 32, 0, 0);
+		cs2method_10063(0, 0, 0, 0);
+		cs2method_10269(1);
+		if (cs2method_10640(95, v1) != -1) {
+			script_1453(v1);
+		}
+		cs2method_10356(1);
+		cs2method_10278(3355443);
+		cs2method_20353(new function<script_1480>(int a0,int a1) {
+			if (cs2_configs['cfg188'] == 0) {
+				script_8808();
+				return;
+			}
+			script_8800(a1, a0, "Item is in tab " + (string)cs2method_10379(script_1468(a0)));
+			return;
+		}, new WidgetPointer(762,215), v1, "Ii");
+		cs2method_20884(new function<script_8805>() {
+			script_8808();
+			return;
+		}, "");
+		cs2method_10606(49938704, 5, v1);
+		cs2method_10811(65535);
+		cs2method_20674(new function<script_6678>(int a0,int a1,int a2) {
+			script_6712(a0, a2, a1);
+			return;
+		}, new WidgetPointer(-32768,3), -2147483643, 1, "Ii1");
+		cs2method_20884(new function<script_6678>(int a0,int a1,int a2) {
+			script_6712(a2, a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), -2147483643, 0, "Ii1");
+		cs2method_10013(cs2method_10461(44, 36), 32, 0, 0);
+		cs2method_10063(0, 0, 0, 0);
+		cs2method_10269(1);
+		v1 = cs2method_10060(v1, 1);
+	}
+	return;
+}

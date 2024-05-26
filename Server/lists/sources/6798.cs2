@@ -1,0 +1,33 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_6798(int a0) {
+	switch (a0) {
+		case 3036:
+			return script_6783(1);
+		case 3037:
+			return script_6783(2);
+		case 3038:
+			return script_6783(3);
+		case 3039:
+			return script_6783(4);
+		case 3040:
+			return script_6783(5);
+		case 3041:
+			return script_6783(6);
+		case 3531:
+			return script_9324(client_configs['cfg3933'].bitcfg20967);
+		case 3060:
+			return script_345();
+	}
+	return idx17mapData('i', 'J', 3483, a0);
+}

@@ -1,0 +1,18 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_8872() {
+	if (cs2_configs['cfg3477'] == 0 && (cs2method_10908(idx22mapAttribute(21300, 3505)) == 1 || cs2method_10908(96797033) == 1 || cs2method_10908(96796685) == 1 || script_8785() == 1 || client_configs['cfg3814'].bitcfg19925 == 1 || client_configs['cfg3680'].bitcfg22315 == 1)) {
+		return 0;
+	}
+	return 1;
+}

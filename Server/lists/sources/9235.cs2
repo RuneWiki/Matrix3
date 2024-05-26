@@ -1,0 +1,31 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9235(int a0,int a1,int a2,object a3,int a4,int a5,int a6) {
+	if (script_6579() == 1) {
+		cs2method_20162(load function<9235>, new WidgetPointer(a6), new WidgetPointer(a4), a5, a1, a2, a0, (string)a3, "IIviiis", new WidgetPointer(a4));
+		return;
+	}
+	cs2method_20162(new function<none>() {
+	}, "", new WidgetPointer(a4));
+	if (a4 == -1 || a5 == -1) {
+		return;
+	}
+	if (a1 == -1 || a2 == -1) {
+		int v0 = a5;
+		script_9880_struct(2,0,0) v1 = script_9880(v0);
+		a2 = v1.intpart_1;
+		a1 = v1.intpart_0;
+	}
+	script_9239(a4, a5, a1, a2, a3, a0);
+	return;
+}

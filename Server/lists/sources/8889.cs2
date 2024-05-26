@@ -1,0 +1,191 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8889() {
+	if (client_configs['cfg2863'].bitcfg16467 != 0 && client_configs['cfg3185'] == 4) {
+		cs2method_20348(new function<none>() {
+		}, "", new WidgetPointer(906,241));
+		cs2method_10467(0, 59375653);
+		script_6190();
+	}
+	switch (client_configs['cfg3185']) {
+		case 0:
+			return;
+		case 1:
+			script_5940();
+			break;
+		case 2:
+			script_6190();
+			break;
+		case 3:
+		case 6:
+			cs2method_20348(new function<script_6204>() {
+				script_5523();
+				switch (client_configs['cfg3184'].bitcfg16465) {
+					case 0:
+						return;
+					case 12:
+						cs2method_10467(0, 59375655);
+						cs2method_10467(1, 59375618);
+						cs2method_10467(0, 59375620);
+						if (client_configs['cfg2863'].bitcfg16467 == 0) {
+							script_6192();
+						} else {
+							cs2method_10467(0, 59375653);
+							script_6190();
+						}
+						break;
+					case 1:
+					case 2:
+					case 8:
+					case 9:
+						script_8889();
+						script_3093(-5, "There has been a failure in validating your email. An internal error has occurred. Please try again later.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+						break;
+					case 14:
+						script_8889();
+						script_3093(-5, "There has been a failure in validating your email. An internal error has occurred. Please try again later.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+						break;
+					case 3:
+					case 4:
+						script_8889();
+						script_3093(-5, "The email validation process will continue once we have ensured that your addresses are secure. To speed up this process, please submit codes from both of your email addresses.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+						break;
+					case 5:
+					case 10:
+					case 11:
+						script_8889();
+						script_3093(-5, "There has been a failure in validating your email. The submitted code was invalid. Please check and try again.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+						break;
+					case 6:
+						script_8889();
+						script_3093(-5, "There has been a failure in validating your email. The submitted code has expired. Please re-register your email address.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+						break;
+					case 7:
+						script_8889();
+						script_3093(-5, "There has been a failure in validating your email. The code has already been submitted. Please request a new code, or submit an unused code.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+						break;
+					case 22:
+						script_5523();
+						cs2method_20162(new function<none>() {
+						}, "", new WidgetPointer(906,241));
+						cs2method_10467(1, 59375618);
+						script_3093(-5, "Your email address has been successfully set. Please leave this page open; an email has been sent to the address you provided. To verify your address, you need to click on the link in the email.", "", "", 1, 0, 2607, "Back", 0, -1, "Back", 1);
+						script_8889();
+						break;
+					case 13:
+						script_5523();
+						cs2method_20162(new function<none>() {
+						}, "", new WidgetPointer(906,241));
+						script_8889();
+						script_3093(-5, "There has been a failure in validating your email. An internal error has occurred. Please try again later.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+						break;
+					case 15:
+						script_5523();
+						cs2method_20162(new function<none>() {
+						}, "", new WidgetPointer(906,241));
+						script_8889();
+						script_3093(-5, "There has been a failure in validating your email. An internal error has occurred. Please try again later.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+						break;
+					case 16:
+						script_5523();
+						cs2method_20162(new function<none>() {
+						}, "", new WidgetPointer(906,241));
+						script_8889();
+						script_3093(-5, "There has been a failure in validating your email. An internal error has occurred. Please try again later.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+						break;
+					case 17:
+						script_5523();
+						cs2method_20162(new function<none>() {
+						}, "", new WidgetPointer(906,241));
+						script_8889();
+						script_3093(-5, "There has been a failure in validating your email. An internal error has occurred. Please try again later.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+						break;
+					case 18:
+						script_5523();
+						cs2method_20162(new function<none>() {
+						}, "", new WidgetPointer(906,241));
+						script_8889();
+						script_3093(-5, "There has been a failure in validating your email. An internal error has occurred. Please try again later.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+						break;
+					case 19:
+						script_5523();
+						cs2method_20162(new function<none>() {
+						}, "", new WidgetPointer(906,241));
+						cs2method_10467(1, 59375655);
+						script_3093(-5, "This email address has already been registered with another account.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+						script_5940();
+						break;
+					case 20:
+						script_5523();
+						cs2method_20162(new function<none>() {
+						}, "", new WidgetPointer(906,241));
+						cs2method_10467(1, 59375655);
+						script_3093(-5, "The two email addresses did not match.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+						script_5940();
+						break;
+					case 21:
+						script_5523();
+						cs2method_20162(new function<none>() {
+						}, "", new WidgetPointer(906,241));
+						cs2method_10467(1, 59375655);
+						script_3093(-5, "The email address you entered was not valid.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+						script_5940();
+						break;
+					case 31:
+						script_5523();
+						cs2method_20162(new function<none>() {
+						}, "", new WidgetPointer(906,241));
+						cs2method_10467(1, 59375655);
+						script_3093(-5, "The email address you entered could not be registered.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+						script_5940();
+						break;
+					case 23:
+						script_5523();
+						cs2method_20162(new function<none>() {
+						}, "", new WidgetPointer(906,241));
+						cs2method_10467(1, 59375618);
+						script_3093(-5, "You have successfully re-sent the email to your address. Please leave this page open; an email has been sent to the address you provided. To verify your address, you need to click on the link in the email.", "", "", 1, 0, 2607, "Back", 0, -1, "Back", 1);
+						script_8889();
+						break;
+					case 25:
+						script_5523();
+						script_8889();
+						script_3093(-5, "Your validation email failed to send. You do not have an eligible email address for the receipt of a re-sent validation code.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+						break;
+					case 29:
+						script_5523();
+						script_8889();
+						script_3093(-5, "Your validation email failed to send. You have sent too many requests in a short period of time. Please try again later.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+						break;
+					default:
+						script_5523();
+						script_8889();
+						script_3093(-5, "There has been a failure in validating your email. An internal error has occurred. Please try again later.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+				}
+				return;
+			}, 3184, 1, "Y", new WidgetPointer(906,241));
+			script_5940();
+			break;
+		case 4:
+			cs2method_20243(new function<none>() {
+			}, "", new WidgetPointer(906,241));
+			script_6192();
+			break;
+		case 5:
+			script_5940();
+			break;
+		default:
+			script_6190();
+	}
+	return;
+}

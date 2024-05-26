@@ -1,0 +1,38 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1235(int a0) {
+	cs2method_10467(0, 11862017);
+	switch (cs2_configs['cfg180']) {
+		case 1:
+			cs2method_10740(0, 0, 510, 762, 0, 410, a0);
+			break;
+		case 2:
+			cs2method_10740(0, 0, 514, 1241, 0, 410, a0);
+			break;
+		case 3:
+			cs2method_10740(0, 0, 512, 1536, 1250, 410, a0);
+			break;
+		case 4:
+			cs2method_10740(0, 0, 512, 0, 1250, 410, a0);
+			break;
+		case 5:
+			cs2method_10740(0, 0, 512, 512, 1250, 410, a0);
+			break;
+		case 6:
+			cs2method_10740(0, 0, 512, 1024, 1250, 410, a0);
+			break;
+		default:
+			cs2method_10467(1, 11862017);
+	}
+	return;
+}

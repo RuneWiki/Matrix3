@@ -1,0 +1,31 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+object script_4591(object a0) {
+	object v1 = cs2method_10181(cs2method_10765(a0));
+	for (int v5 = cs2method_10265(v1), int v0 = 0, object v4 = script_2332(v1, "_", "\u00a0"), object v2 = script_2332(v4, "-", "\u00a0"), object v3 = script_2332(v2, " ", "\u00a0"); cs2method_10368(0, v3, " ") == 0 && v5 > 0; v5 = cs2method_10265(v3)) {
+		v3 = cs2method_11025(1, v5, v3);
+	}
+	while (cs2method_10368(cs2method_10461(v5, 1), v3, " ") == cs2method_10461(v5, 1) && v5 > 0) {
+		v3 = cs2method_11025(0, cs2method_10461(v5, 1), v3);
+		v5 = cs2method_10265(v3);
+	}
+	while (cs2method_10368(0, v3, "\u00a0") == 0 && v5 > 0) {
+		v3 = cs2method_11025(1, v5, v3);
+		v5 = cs2method_10265(v3);
+	}
+	while (cs2method_10368(cs2method_10461(v5, 1), v3, "\u00a0") == cs2method_10461(v5, 1) && v5 > 0) {
+		v3 = cs2method_11025(0, cs2method_10461(v5, 1), v3);
+		v5 = cs2method_10265(v3);
+	}
+	return v3;
+}

@@ -1,0 +1,27 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_1025_struct(2,1,0) script_1025(int a0,int a1,int a2) {
+	object v1;
+	object v0 = "null";
+	int v2 = -1;
+	int v3 = 1;
+	if (script_1024(a2) == 0) {
+		v1 = "<col=000080>" + "Level " + (string)cs2method_10379(a1) + " " + "<col=800000>" + (string)cs2method_10969(680, a0) + "<col=000080>" + " is one of the requirements for " + "<col=800000>" + (string)cs2method_10969(1481, a2) + "<col=000080>" + ".";
+	} else {
+		v1 = "<col=000080>" + "You now have all the levels you need to complete " + "<col=800000>" + (string)cs2method_10969(1481, a2) + "<col=000080>" + ".";
+	}
+	if (v2 == -1) {
+		v2 = 6513;
+	}
+	return new script_1025_struct(v2, v3, v1);
+}

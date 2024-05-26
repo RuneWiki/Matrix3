@@ -1,0 +1,305 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6263() {
+	cs2method_10026(60620832, cs2method_10379(client_configs['cfg1526'].bitcfg4662));
+	cs2method_10026(60620814, cs2method_10379(client_configs['cfg1524'].bitcfg4649));
+	if (client_configs['cfg1535'].bitcfg4638 == 0) {
+		cs2method_10467(1, 60620802);
+		cs2method_10467(1, 60620801);
+	} else {
+		cs2method_10467(0, 60620802);
+		cs2method_10467(0, 60620801);
+	}
+	cs2method_10039(cs2_configs['cfg1118'], cs2_configs['cfg1119'], 60620829);
+	cs2method_10316(60620829, cs2method_10018(cs2_configs['cfg1118']));
+	cs2method_10039(cs2_configs['cfg1120'], cs2_configs['cfg1121'], 60620830);
+	cs2method_10316(60620830, cs2method_10018(cs2_configs['cfg1120']));
+	switch (cs2_configs['cfg1118']) {
+		case 384:
+			cs2method_10026(60620863, "Shark");
+			break;
+		case 372:
+			cs2method_10026(60620863, "Swordfish");
+			break;
+		case 378:
+			cs2method_10026(60620863, "Lobster");
+			break;
+		case 360:
+			cs2method_10026(60620863, "Tuna");
+			break;
+		case 332:
+			cs2method_10026(60620863, "Salmon");
+			break;
+		case 350:
+			cs2method_10026(60620863, "Pike");
+			break;
+		case 336:
+			cs2method_10026(60620863, "Trout");
+			break;
+		case 346:
+			cs2method_10026(60620863, "Herring");
+			break;
+		case 328:
+			cs2method_10026(60620863, "Sardine");
+			break;
+		case 318:
+			cs2method_10026(60620863, "Shrimp");
+			break;
+		default:
+			cs2method_10026(60620863, "");
+	}
+	switch (cs2_configs['cfg1120']) {
+		case 384:
+			cs2method_10026(60620864, "Shark");
+			break;
+		case 372:
+			cs2method_10026(60620864, "Swordfish");
+			break;
+		case 378:
+			cs2method_10026(60620864, "Lobster");
+			break;
+		case 360:
+			cs2method_10026(60620864, "Tuna");
+			break;
+		case 332:
+			cs2method_10026(60620864, "Salmon");
+			break;
+		case 350:
+			cs2method_10026(60620864, "Pike");
+			break;
+		case 336:
+			cs2method_10026(60620864, "Trout");
+			break;
+		case 346:
+			cs2method_10026(60620864, "Herring");
+			break;
+		case 328:
+			cs2method_10026(60620864, "Sardine");
+			break;
+		case 318:
+			cs2method_10026(60620864, "Shrimp");
+			break;
+		default:
+			cs2method_10026(60620864, "");
+	}
+	int v8 = -1;
+	int v25 = 0;
+	int v23 = -1;
+	int v0 = 0;
+	int v3 = 0;
+	int v7 = 0;
+	int v14 = -1;
+	int v11 = -1;
+	script_6264_struct(8,0,0) v5 = script_6264();
+	int v9 = v5.intpart_7;
+	int v1 = v5.intpart_6;
+	int v15 = v5.intpart_5;
+	int v26 = v5.intpart_4;
+	int v12 = v5.intpart_3;
+	int v24 = v5.intpart_2;
+	int v6 = v5.intpart_1;
+	int v19 = v5.intpart_0;
+	if (v26 == 0) {
+		cs2method_10026(60620865, "(Insufficient tokens)");
+	} else {
+		cs2method_10026(60620865, (string)cs2method_10379(v26) + " tokens");
+	}
+	if (v26 == 0 || client_configs['cfg1526'].bitcfg4662 < v26) {
+		cs2method_10467(0, 60620976);
+	} else {
+		cs2method_10467(1, 60620976);
+	}
+	object v20 = "Noted raw fish appropriate for your Fishing level:" + "<br>";
+	if (client_configs['cfg1535'].bitcfg4638 == 1) {
+		if (v19 != -1) {
+			v20 = (string)v20 + (string)cs2method_10379(v6) + "x " + (string)cs2method_10018(v19) + "<br>";
+		}
+		if (v24 != -1) {
+			v20 = (string)v20 + (string)cs2method_10379(v12) + "x " + (string)cs2method_10018(v24) + "<br>";
+		}
+		cs2method_10026(60620997, v20);
+		cs2method_10026(60620998, "Cost: " + (string)cs2method_10379(v26) + " tokens");
+	}
+	object v22 = "This tackle box holds:" + "<br>";
+	int v17 = 0;
+	int v16 = cs2method_10060(client_configs['cfg1527'].bitcfg4673, 1);
+	if (script_2189(v16, 0) == 1) {
+		v17 = cs2method_10060(v17, 1);
+	}
+	if (script_2189(v16, 1) == 1) {
+		v17 = cs2method_10060(v17, 1);
+	}
+	if (script_2189(v16, 2) == 1) {
+		v17 = cs2method_10060(v17, 1);
+	}
+	if (script_2189(v16, 3) == 1) {
+		v17 = cs2method_10060(v17, 1);
+	}
+	if (script_2189(v16, 4) == 1) {
+		v17 = cs2method_10060(v17, 1);
+	}
+	if (v17 == 1) {
+		v22 = (string)v22 + (string)cs2method_10379(v17) + " fishing tool" + "<br>";
+	} else {
+		if (v17 > 0) {
+			v22 = (string)v22 + (string)cs2method_10379(v17) + " fishing tools" + "<br>";
+		}
+	}
+	int v2 = 0;
+	if (script_2189(v16, 5) == 1) {
+		v2 = cs2method_10060(v2, 1);
+	}
+	if (script_2189(v16, 6) == 1) {
+		v2 = cs2method_10060(v2, 1);
+	}
+	if (script_2189(v16, 7) == 1) {
+		v2 = cs2method_10060(v2, 1);
+	}
+	if (v2 == 1) {
+		v22 = (string)v22 + (string)cs2method_10379(v2) + " stack of " + (string)cs2method_10379(script_6261(v16)) + " bait" + "<br>";
+	} else {
+		if (v2 > 0) {
+			v22 = (string)v22 + (string)cs2method_10379(v2) + " stacks of " + (string)cs2method_10379(script_6261(v16)) + " bait" + "<br>";
+		}
+	}
+	int v13 = 0;
+	if (script_2189(v16, 8) == 1) {
+		v13 = cs2method_10060(v13, 1);
+	}
+	if (script_2189(v16, 9) == 1) {
+		v13 = cs2method_10060(v13, 1);
+	}
+	if (v13 == 1) {
+		v22 = (string)v22 + (string)cs2method_10379(v13) + " fishing gloves" + "<br>";
+	} else {
+		if (v13 > 0) {
+			v22 = (string)v22 + (string)cs2method_10379(v13) + " fishing gloves" + "<br>";
+		}
+	}
+	int v4 = 0;
+	if (script_2189(v16, 10) == 1) {
+		v4 = cs2method_10060(v4, 1);
+	}
+	if (v4 == 1) {
+		v22 = (string)v22 + (string)cs2method_10379(v4) + " stack of " + (string)cs2method_10379(script_6262(v16)) + " raw fish" + "<br>";
+	} else {
+		if (v4 > 0) {
+			v22 = (string)v22 + (string)cs2method_10379(v4) + " stacks of " + (string)cs2method_10379(script_6262(v16)) + " raw fish" + "<br>";
+		}
+	}
+	object v21 = (string)v22 + "The fishing outfit" + "<br>";
+	int v18 = idx17mapData('i', 'i', 5886, v16);
+	if (client_configs['cfg1535'].bitcfg4638 == 2) {
+		cs2method_10026(60620997, v21);
+		cs2method_10026(60620998, "Cost: " + (string)cs2method_10379(v18) + " tokens");
+	}
+	cs2method_10026(60620825, (string)cs2method_10379(v18) + " tokens");
+	int v10 = idx17mapData('i', 'i', 5887, v16);
+	cs2method_10026(60620824, "Requires " + (string)cs2method_10379(v10) + " medals");
+	if (script_259(15666) == 0 && script_259(15667) == 0 && script_259(15668) == 0 && script_259(15669) == 0 && script_259(15670) == 0 && client_configs['cfg1527'].bitcfg4673 > 0) {
+		cs2method_10467(1, 60620985);
+	} else if (client_configs['cfg1526'].bitcfg4662 < v18 || client_configs['cfg1524'].bitcfg4649 < v10 || client_configs['cfg1527'].bitcfg4673 == 5) {
+		cs2method_10467(0, 60620985);
+	} else {
+		cs2method_10467(1, 60620985);
+	}
+	switch (client_configs['cfg1527'].bitcfg4673) {
+		case 0:
+			cs2method_10026(60620821, "Beginner's tackle box");
+			cs2method_10039(15666, -1, 60620988);
+			break;
+		case 1:
+			cs2method_10026(60620821, "Basic tackle box");
+			cs2method_10039(15667, -1, 60620988);
+			break;
+		case 2:
+			cs2method_10026(60620821, "Standard tackle box");
+			cs2method_10039(15668, -1, 60620988);
+			break;
+		case 3:
+			cs2method_10026(60620821, "Professional tackle box");
+			cs2method_10039(15669, -1, 60620988);
+			break;
+		case 4:
+			cs2method_10026(60620821, "Champion's tackle box");
+			cs2method_10039(15670, -1, 60620988);
+			break;
+		case 5:
+			cs2method_10026(60620821, "Champion's tackle box");
+			cs2method_10026(60620825, "(Purchased)");
+			cs2method_10026(60620824, "");
+			cs2method_10039(15670, -1, 60620988);
+	}
+	cs2method_10740(0, 0, 250, 1666, 0, 1440, 60620988);
+	cs2method_10121(24427, 0, 60620890);
+	if (client_configs['cfg1529'].bitcfg4693 == 1) {
+		cs2method_10026(60620891, "(Purchased)");
+	} else {
+		if (client_configs['cfg1535'].bitcfg4638 == 3) {
+			cs2method_10026(60620998, "Cost: " + (string)cs2method_10379(140) + " tokens");
+			cs2method_10026(60620997, "Wear this fishing hat to increase the amount of Fishing experience you earn.");
+		}
+		cs2method_10026(60620891, (string)cs2method_10379(140) + " tokens");
+	}
+	if (client_configs['cfg1526'].bitcfg4662 < 140 && client_configs['cfg1529'].bitcfg4693 == 0) {
+		cs2method_10467(0, 60620887);
+	} else {
+		cs2method_10467(1, 60620887);
+	}
+	cs2method_10121(24428, 0, 60620916);
+	if (client_configs['cfg1529'].bitcfg4694 == 1) {
+		cs2method_10026(60620917, "(Purchased)");
+	} else {
+		if (client_configs['cfg1535'].bitcfg4638 == 4) {
+			cs2method_10026(60620998, "Cost: " + (string)cs2method_10379(140) + " tokens");
+			cs2method_10026(60620997, "Wear this fishing jacket to increase the amount of Fishing experience you earn.");
+		}
+		cs2method_10026(60620917, (string)cs2method_10379(140) + " tokens");
+	}
+	if (client_configs['cfg1526'].bitcfg4662 < 140 && client_configs['cfg1529'].bitcfg4694 == 0) {
+		cs2method_10467(0, 60620913);
+	} else {
+		cs2method_10467(1, 60620913);
+	}
+	cs2method_10121(24429, 0, 60620968);
+	if (client_configs['cfg1529'].bitcfg4695 == 1) {
+		cs2method_10026(60620969, "(Purchased)");
+	} else {
+		if (client_configs['cfg1535'].bitcfg4638 == 5) {
+			cs2method_10026(60620998, "Cost: " + (string)cs2method_10379(140) + " tokens");
+			cs2method_10026(60620997, "Wear these fishing waders to increase the amount of Fishing experience you earn.");
+		}
+		cs2method_10026(60620969, (string)cs2method_10379(140) + " tokens");
+	}
+	if (client_configs['cfg1526'].bitcfg4662 < 140 && client_configs['cfg1529'].bitcfg4695 == 0) {
+		cs2method_10467(0, 60620965);
+	} else {
+		cs2method_10467(1, 60620965);
+	}
+	cs2method_10121(24430, 0, 60620942);
+	if (client_configs['cfg1529'].bitcfg4696 == 1) {
+		cs2method_10026(60620943, "(Purchased)");
+	} else {
+		if (client_configs['cfg1535'].bitcfg4638 == 6) {
+			cs2method_10026(60620998, "Cost: " + (string)cs2method_10379(140) + " tokens");
+			cs2method_10026(60620997, "Wear these fishing boots to increase the amount of Fishing experience you earn.");
+		}
+		cs2method_10026(60620943, (string)cs2method_10379(140) + " tokens");
+	}
+	if (client_configs['cfg1526'].bitcfg4662 < 140 && client_configs['cfg1529'].bitcfg4696 == 0) {
+		cs2method_10467(0, 60620939);
+	} else {
+		cs2method_10467(1, 60620939);
+	}
+	return;
+}

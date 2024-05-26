@@ -1,0 +1,155 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6389(int a0,int a1,int a2,int a3) {
+	int v4 = 0;
+	int v8 = 0;
+	int v1 = 0;
+	int v0 = 0;
+	int v3 = 0;
+	int v2 = 0;
+	if (client_configs['cfg2925'].bitcfg14847 < 18) {
+		v4 = cs2method_10060(v4, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14847), 2525));
+		v8 = cs2method_10060(v8, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14847), 2530));
+		v1 = cs2method_10060(v1, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14847), 2529));
+		v0 = cs2method_10060(v0, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14847), 2528));
+		v3 = cs2method_10060(v3, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14847), 2527));
+		v2 = cs2method_10060(v2, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14847), 2526));
+	}
+	if (client_configs['cfg2925'].bitcfg14848 < 18) {
+		v4 = cs2method_10060(v4, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14848), 2525));
+		v8 = cs2method_10060(v8, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14848), 2530));
+		v1 = cs2method_10060(v1, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14848), 2529));
+		v0 = cs2method_10060(v0, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14848), 2528));
+		v3 = cs2method_10060(v3, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14848), 2527));
+		v2 = cs2method_10060(v2, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14848), 2526));
+	}
+	if (client_configs['cfg2925'].bitcfg14849 < 18) {
+		v4 = cs2method_10060(v4, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14849), 2525));
+		v8 = cs2method_10060(v8, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14849), 2530));
+		v1 = cs2method_10060(v1, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14849), 2529));
+		v0 = cs2method_10060(v0, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14849), 2528));
+		v3 = cs2method_10060(v3, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14849), 2527));
+		v2 = cs2method_10060(v2, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14849), 2526));
+	}
+	if (client_configs['cfg2925'].bitcfg14850 < 18) {
+		v4 = cs2method_10060(v4, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14850), 2525));
+		v8 = cs2method_10060(v8, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14850), 2530));
+		v1 = cs2method_10060(v1, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14850), 2529));
+		v0 = cs2method_10060(v0, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14850), 2528));
+		v3 = cs2method_10060(v3, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14850), 2527));
+		v2 = cs2method_10060(v2, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14850), 2526));
+	}
+	cs2method_10273(25952269);
+	int v5 = 392;
+	int v7 = 342;
+	int v6 = 200;
+	cs2method_10606(25952269, 9, 0);
+	cs2method_10013(0, cs2method_10968(cs2method_10051(v4, v5), 100), 0, 0);
+	cs2method_10063(0, cs2method_10968(cs2method_10461(0, cs2method_10968(cs2method_10051(v4, v5), 100)), 2), 1, 1);
+	cs2method_10811(5216512);
+	cs2method_10421(4);
+	cs2method_10311(0);
+	cs2method_10606(25952269, 9, 1);
+	cs2method_10013(0, cs2method_10968(cs2method_10051(v0, v5), 100), 0, 0);
+	cs2method_10063(0, cs2method_10968(cs2method_10968(cs2method_10051(v0, v5), 100), 2), 1, 1);
+	cs2method_10811(5216512);
+	cs2method_10421(4);
+	cs2method_10311(0);
+	cs2method_10606(25952269, 9, 2);
+	cs2method_10013(cs2method_10968(cs2method_10051(v8, v7), 100), cs2method_10968(cs2method_10051(v8, v6), 100), 0, 0);
+	cs2method_10063(cs2method_10968(cs2method_10968(cs2method_10051(v8, v7), 100), 2), cs2method_10461(0, cs2method_10968(cs2method_10968(cs2method_10051(v8, v6), 100), 2)), 1, 1);
+	cs2method_10811(5216512);
+	cs2method_10421(3);
+	cs2method_10311(1);
+	cs2method_10606(25952269, 9, 3);
+	cs2method_10013(cs2method_10968(cs2method_10051(v1, v7), 100), cs2method_10968(cs2method_10051(v1, v6), 100), 0, 0);
+	cs2method_10063(cs2method_10968(cs2method_10968(cs2method_10051(v1, v7), 100), 2), cs2method_10968(cs2method_10968(cs2method_10051(v1, v6), 100), 2), 1, 1);
+	cs2method_10811(5216512);
+	cs2method_10421(3);
+	cs2method_10311(0);
+	cs2method_10606(25952269, 9, 4);
+	cs2method_10013(cs2method_10968(cs2method_10051(v3, v7), 100), cs2method_10968(cs2method_10051(v3, v6), 100), 0, 0);
+	cs2method_10063(cs2method_10461(0, cs2method_10968(cs2method_10968(cs2method_10051(v3, v7), 100), 2)), cs2method_10968(cs2method_10968(cs2method_10051(v3, v6), 100), 2), 1, 1);
+	cs2method_10811(5216512);
+	cs2method_10421(3);
+	cs2method_10311(1);
+	cs2method_10606(25952269, 9, 5);
+	cs2method_10013(cs2method_10968(cs2method_10051(v2, v7), 100), cs2method_10968(cs2method_10051(v2, v6), 100), 0, 0);
+	cs2method_10063(cs2method_10461(0, cs2method_10968(cs2method_10968(cs2method_10051(v2, v7), 100), 2)), cs2method_10461(0, cs2method_10968(cs2method_10968(cs2method_10051(v2, v6), 100), 2)), 1, 1);
+	cs2method_10811(5216512);
+	cs2method_10421(3);
+	cs2method_10311(0);
+	cs2method_10606(25952269, 5, 6);
+	cs2method_10063(0, cs2method_10461(0, cs2method_10968(cs2method_10051(v4, v5), 100)), 1, 1);
+	cs2method_10013(13, 13, 0, 0);
+	cs2method_10310(11626);
+	cs2method_10606(25952269, 5, 7);
+	cs2method_10063(0, cs2method_10968(cs2method_10051(v0, v5), 100), 1, 1);
+	cs2method_10013(13, 13, 0, 0);
+	cs2method_10310(11626);
+	cs2method_10606(25952269, 5, 8);
+	cs2method_10063(cs2method_10968(cs2method_10051(v8, v7), 100), cs2method_10461(0, cs2method_10968(cs2method_10051(v8, v6), 100)), 1, 1);
+	cs2method_10013(13, 13, 0, 0);
+	cs2method_10310(11626);
+	cs2method_10606(25952269, 5, 9);
+	cs2method_10063(cs2method_10968(cs2method_10051(v1, v7), 100), cs2method_10968(cs2method_10051(v1, v6), 100), 1, 1);
+	cs2method_10013(13, 13, 0, 0);
+	cs2method_10310(11626);
+	cs2method_10606(25952269, 5, 10);
+	cs2method_10063(cs2method_10461(0, cs2method_10968(cs2method_10051(v3, v7), 100)), cs2method_10968(cs2method_10051(v3, v6), 100), 1, 1);
+	cs2method_10013(13, 13, 0, 0);
+	cs2method_10310(11626);
+	cs2method_10606(25952269, 5, 11);
+	cs2method_10063(cs2method_10461(0, cs2method_10968(cs2method_10051(v2, v7), 100)), cs2method_10461(0, cs2method_10968(cs2method_10051(v2, v6), 100)), 1, 1);
+	cs2method_10013(13, 13, 0, 0);
+	cs2method_10310(11626);
+	int v9 = 0;
+	if (client_configs['cfg2923'].bitcfg14839 == 0 || client_configs['cfg2923'].bitcfg14840 == 0 || client_configs['cfg2923'].bitcfg14841 == 0) {
+		int v11 = cs2method_10060(v9, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14847), 2525));
+		int v12 = cs2method_10060(v11, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14848), 2525));
+		int v10 = cs2method_10060(v12, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14849), 2525));
+		v9 = cs2method_10060(v10, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14850), 2525));
+	}
+	if (client_configs['cfg2923'].bitcfg14839 == 1 || client_configs['cfg2923'].bitcfg14840 == 1 || client_configs['cfg2923'].bitcfg14841 == 1) {
+		int v12 = cs2method_10060(v9, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14847), 2526));
+		int v11 = cs2method_10060(v12, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14848), 2526));
+		int v10 = cs2method_10060(v11, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14849), 2526));
+		v9 = cs2method_10060(v10, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14850), 2526));
+	}
+	if (client_configs['cfg2923'].bitcfg14839 == 2 || client_configs['cfg2923'].bitcfg14840 == 2 || client_configs['cfg2923'].bitcfg14841 == 2) {
+		int v10 = cs2method_10060(v9, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14847), 2527));
+		int v12 = cs2method_10060(v10, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14848), 2527));
+		int v11 = cs2method_10060(v12, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14849), 2527));
+		v9 = cs2method_10060(v11, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14850), 2527));
+	}
+	if (client_configs['cfg2923'].bitcfg14839 == 3 || client_configs['cfg2923'].bitcfg14840 == 3 || client_configs['cfg2923'].bitcfg14841 == 3) {
+		int v11 = cs2method_10060(v9, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14847), 2528));
+		int v12 = cs2method_10060(v11, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14848), 2528));
+		int v10 = cs2method_10060(v12, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14849), 2528));
+		v9 = cs2method_10060(v10, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14850), 2528));
+	}
+	if (client_configs['cfg2923'].bitcfg14839 == 4 || client_configs['cfg2923'].bitcfg14840 == 4 || client_configs['cfg2923'].bitcfg14841 == 4) {
+		int v12 = cs2method_10060(v9, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14847), 2529));
+		int v10 = cs2method_10060(v12, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14848), 2529));
+		int v11 = cs2method_10060(v10, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14849), 2529));
+		v9 = cs2method_10060(v11, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14850), 2529));
+	}
+	if (client_configs['cfg2923'].bitcfg14839 == 5 || client_configs['cfg2923'].bitcfg14840 == 5 || client_configs['cfg2923'].bitcfg14841 == 5) {
+		int v12 = cs2method_10060(v9, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14847), 2530));
+		int v11 = cs2method_10060(v12, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14848), 2530));
+		int v10 = cs2method_10060(v11, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14849), 2530));
+		v9 = cs2method_10060(v10, itemDefsAttribute(idx17mapData('i', 'o', 5933, client_configs['cfg2925'].bitcfg14850), 2530));
+	}
+	cs2method_10026(25952268, cs2method_10379(v9));
+	return;
+}

@@ -1,0 +1,111 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4317(int a0,int a1,int a2) {
+	int v10 = -1;
+	int v43 = -1;
+	int v34 = -1;
+	int v46 = -1;
+	int v47 = -1;
+	int v36 = -1;
+	int v25 = -1;
+	int v11 = -1;
+	int v30 = -1;
+	int v41 = -1;
+	int v32 = -1;
+	int v8 = -1;
+	int v16 = -1;
+	int v7 = -1;
+	int v44 = -1;
+	int v29 = -1;
+	int v24 = -1;
+	int v15 = -1;
+	int v6 = -1;
+	int v28 = -1;
+	int v12 = -1;
+	int v17 = -1;
+	int v23 = -1;
+	int v4 = a2;
+	script_7814_struct(24,0,0) v37 = script_7814(v4);
+	int v20 = v37.intpart_23;
+	int v49 = v37.intpart_22;
+	int v33 = v37.intpart_21;
+	int v39 = v37.intpart_20;
+	int v1 = v37.intpart_19;
+	int v31 = v37.intpart_18;
+	int v27 = v37.intpart_17;
+	int v0 = v37.intpart_16;
+	int v5 = v37.intpart_15;
+	int v26 = v37.intpart_14;
+	int v3 = v37.intpart_13;
+	int v45 = v37.intpart_12;
+	int v38 = v37.intpart_11;
+	int v9 = v37.intpart_10;
+	int v13 = v37.intpart_9;
+	int v21 = v37.intpart_8;
+	int v40 = v37.intpart_7;
+	int v18 = v37.intpart_6;
+	int v22 = v37.intpart_5;
+	int v14 = v37.intpart_4;
+	int v19 = v37.intpart_3;
+	int v35 = v37.intpart_2;
+	int v42 = v37.intpart_1;
+	int v2 = v37.intpart_0;
+	int v48 = 0;
+	if (cs2method_10435() == 1) {
+		if (a1 < 0 || a1 >= cs2method_10737()) {
+			cs2_configs['cfg1518'] = -1;
+			cs2_configs['cfg2353'] = "";
+			cs2method_10810("That person isn't in your clan channel.");
+			return;
+		}
+		if (cs2method_11038(v45, a1) == 1) {
+			v48 = cs2method_10406();
+		}
+		cs2_configs['cfg1518'] = a1;
+		cs2_configs['cfg2353'] = (string)cs2method_10929(a1);
+		if (cs2method_10324(v1) == 1) {
+			cs2method_10013(1, 19, 0, 0);
+			cs2method_10063(0, v48, 2, 0);
+			cs2method_20061(new function<script_4629>(int a0,int a1,int a2) {
+				int v0 = 0;
+				if (cs2method_10324(a2) == 1) {
+					int v1;
+					if (a1 == 1) {
+						int v2 = cs2method_10060(cs2method_10488(), 3);
+						v1 = cs2method_10872(48, v2);
+						if (v1 == 48) {
+							cs2method_20061(new function<none>() {
+							}, "");
+						}
+					} else {
+						int v2 = cs2method_10461(cs2method_10488(), 3);
+						v1 = cs2method_11048(1, v2);
+						if (v1 == 1) {
+							cs2method_20061(new function<none>() {
+							}, "");
+							cs2method_10467(1, a0);
+						}
+					}
+					cs2method_10013(v1, 19, 0, 0);
+				}
+				return;
+			}, 1, new WidgetPointer(v1), new WidgetPointer(v31), "iII");
+			cs2method_10467(0, v31);
+			cs2method_10112(0, v48, 2, 0, v31);
+		}
+		script_5395(v14, v22);
+	} else {
+		cs2method_10810("You must be in your clan channel to do that.");
+	}
+	return;
+}

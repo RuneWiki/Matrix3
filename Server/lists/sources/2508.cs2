@@ -1,0 +1,62 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2508(int a0) {
+	switch (a0) {
+		case 55836719:
+			cs2_configs['cfg840'] = 0;
+			break;
+		case 55836713:
+			if (cs2_configs['cfg840'] < cs2method_10461(2147483647, 10) && cs2_configs['cfg839'] >= 10 && script_2509(10) == 1) {
+				cs2_configs['cfg840'] = cs2method_10060(cs2_configs['cfg840'], 10);
+				cs2_configs['cfg839'] = cs2method_10461(cs2_configs['cfg839'], 10);
+			}
+			break;
+		case 55836715:
+			if (cs2_configs['cfg840'] < cs2method_10461(2147483647, 100) && cs2_configs['cfg839'] >= 100 && script_2509(100) == 1) {
+				cs2_configs['cfg840'] = cs2method_10060(cs2_configs['cfg840'], 100);
+				cs2_configs['cfg839'] = cs2method_10461(cs2_configs['cfg839'], 100);
+			}
+			break;
+		case 55836721:
+			if (cs2_configs['cfg840'] < cs2method_10461(2147483647, 500) && cs2_configs['cfg839'] >= 500 && script_2509(500) == 1) {
+				cs2_configs['cfg840'] = cs2method_10060(cs2_configs['cfg840'], 500);
+				cs2_configs['cfg839'] = cs2method_10461(cs2_configs['cfg839'], 500);
+			}
+			break;
+		case 55836723:
+			if (cs2_configs['cfg840'] < cs2method_10461(2147483647, 1000) && cs2_configs['cfg839'] >= 1000 && script_2509(1000) == 1) {
+				cs2_configs['cfg840'] = cs2method_10060(cs2_configs['cfg840'], 1000);
+				cs2_configs['cfg839'] = cs2method_10461(cs2_configs['cfg839'], 1000);
+			}
+			break;
+		case 55836725:
+			if (cs2_configs['cfg840'] < cs2method_10461(2147483647, 10000) && cs2_configs['cfg839'] >= 10000 && script_2509(10000) == 1) {
+				cs2_configs['cfg840'] = cs2method_10060(cs2_configs['cfg840'], 10000);
+				cs2_configs['cfg839'] = cs2method_10461(cs2_configs['cfg839'], 10000);
+			}
+			break;
+		case 55836717:
+			if (cs2_configs['cfg839'] < script_2687()) {
+				cs2_configs['cfg840'] = cs2_configs['cfg839'];
+				cs2_configs['cfg839'] = 0;
+			} else {
+				if (cs2_configs['cfg840'] < script_2687()) {
+					cs2_configs['cfg840'] = script_2687();
+					cs2_configs['cfg839'] = cs2method_10461(cs2_configs['cfg839'], script_2687());
+				}
+			}
+	}
+	cs2method_10026(55836735, script_46(",", cs2_configs['cfg840']));
+	cs2method_10026(55836734, script_46(",", cs2_configs['cfg839']));
+	return;
+}

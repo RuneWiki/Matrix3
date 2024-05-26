@@ -1,0 +1,916 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7962(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12,int a13,int a14,int a15,int a16,int a17,int a18,int a19,int a20,int a21,int a22,int a23,int a24,int a25,int a26,int a27,int a28,int a29,int a30,int a31,int a32,int a33,int a34,int a35) {
+	int v0;
+	int v2 = -1;
+	int v5 = -1;
+	int v4 = -1;
+	cs2method_10467(1, a15);
+	cs2method_10467(1, a10);
+	cs2method_10467(1, a16);
+	cs2method_10467(1, a1);
+	cs2method_10467(1, a30);
+	cs2method_10467(1, a17);
+	cs2method_10467(1, a31);
+	cs2method_10467(1, a26);
+	cs2method_10467(1, a23);
+	cs2method_10467(1, a8);
+	cs2method_10467(1, a13);
+	cs2method_10467(1, a5);
+	cs2method_10026(a19, "");
+	cs2method_10026(a9, "");
+	cs2method_10026(a0, "");
+	cs2method_10026(a33, "");
+	cs2method_10026(a32, "");
+	cs2method_10026(a3, "");
+	cs2method_10026(a14, "");
+	cs2method_10026(a6, "");
+	cs2method_10026(a2, "");
+	cs2method_10026(a7, "");
+	cs2method_10026(a27, "");
+	cs2method_10026(a21, "");
+	cs2method_10467(1, a24);
+	cs2method_10467(1, a35);
+	cs2method_10467(1, a12);
+	cs2method_10467(1, a22);
+	cs2method_10467(1, a25);
+	cs2method_10467(1, a20);
+	cs2method_10467(1, a28);
+	cs2method_10467(1, a18);
+	cs2method_10467(1, a11);
+	cs2method_10467(1, a34);
+	cs2method_10467(1, a29);
+	cs2method_10467(1, a4);
+	script_3374(1009);
+	script_8808();
+	for (int v1 = 0, int v8 = 0, int v3 = -1, int v7 = 0, int v6 = 0; v1 < 98 && v7 < 12; v1 = cs2method_10060(v1, 1)) {
+		switch (v1) {
+			default:
+				return;
+			case 0:
+				v6 = 0;
+				v0 = client_configs['cfg896'].bitcfg1912;
+				v3 = 14679;
+				break;
+			case 1:
+				v6 = 0;
+				v0 = client_configs['cfg896'].bitcfg1913;
+				v3 = 14683;
+				break;
+			case 2:
+				v6 = 0;
+				v0 = client_configs['cfg896'].bitcfg1914;
+				v3 = 14687;
+				break;
+			case 3:
+				v6 = 1;
+				v0 = client_configs['cfg896'].bitcfg1915;
+				v3 = 14690;
+				break;
+			case 4:
+				v6 = 1;
+				v0 = client_configs['cfg896'].bitcfg1916;
+				v3 = 14710;
+				break;
+			case 5:
+				v6 = 1;
+				v0 = client_configs['cfg896'].bitcfg1917;
+				v3 = 14711;
+				break;
+			case 6:
+				v6 = 1;
+				v0 = client_configs['cfg896'].bitcfg1919;
+				v3 = 14713;
+				break;
+			case 7:
+				v6 = 1;
+				v0 = client_configs['cfg896'].bitcfg1920;
+				v3 = 14714;
+				break;
+			case 8:
+				v6 = 1;
+				v0 = client_configs['cfg896'].bitcfg1921;
+				v3 = 14716;
+				break;
+			case 9:
+				v6 = 0;
+				v0 = client_configs['cfg896'].bitcfg1922;
+				v3 = 14717;
+				break;
+			case 10:
+				v6 = 1;
+				v0 = client_configs['cfg896'].bitcfg1923;
+				v3 = 14718;
+				break;
+			case 11:
+				v6 = 1;
+				v0 = client_configs['cfg896'].bitcfg1924;
+				v3 = 14719;
+				break;
+			case 12:
+				v6 = 1;
+				v0 = client_configs['cfg896'].bitcfg1925;
+				v3 = 14720;
+				break;
+			case 13:
+				v6 = 1;
+				v0 = client_configs['cfg896'].bitcfg1926;
+				v3 = 14721;
+				break;
+			case 14:
+				v6 = 0;
+				v0 = client_configs['cfg896'].bitcfg1927;
+				v3 = 14698;
+				break;
+			case 15:
+				v6 = 1;
+				v0 = client_configs['cfg896'].bitcfg1928;
+				v3 = 14701;
+				break;
+			case 16:
+				v6 = 1;
+				v0 = client_configs['cfg896'].bitcfg1929;
+				v3 = 14706;
+				break;
+			case 17:
+				v6 = 1;
+				v0 = client_configs['cfg896'].bitcfg1930;
+				v3 = 14707;
+				break;
+			case 18:
+				v6 = 1;
+				v0 = client_configs['cfg896'].bitcfg1931;
+				v3 = 14708;
+				break;
+			case 19:
+				v6 = 0;
+				v0 = client_configs['cfg896'].bitcfg1932;
+				v3 = 14709;
+				break;
+			case 20:
+				v6 = 0;
+				v0 = client_configs['cfg896'].bitcfg1933;
+				v3 = 14729;
+				break;
+			case 21:
+				v6 = 1;
+				v0 = client_configs['cfg896'].bitcfg1934;
+				v3 = 14732;
+				break;
+			case 22:
+				v6 = 1;
+				v0 = client_configs['cfg896'].bitcfg1935;
+				v3 = 14734;
+				break;
+			case 23:
+				v6 = 1;
+				v0 = client_configs['cfg899'].bitcfg2036;
+				v3 = 14731;
+				break;
+			case 24:
+				v6 = 0;
+				v0 = client_configs['cfg896'].bitcfg1936;
+				v3 = 14739;
+				break;
+			case 25:
+				v6 = 0;
+				v0 = client_configs['cfg896'].bitcfg1937;
+				v3 = 14745;
+				break;
+			case 26:
+				v6 = 0;
+				v0 = client_configs['cfg896'].bitcfg1938;
+				v3 = 14749;
+				break;
+			case 27:
+				v6 = 0;
+				v0 = client_configs['cfg896'].bitcfg1939;
+				v3 = 14784;
+				break;
+			case 28:
+				v6 = 0;
+				v0 = client_configs['cfg896'].bitcfg1940;
+				v3 = 14787;
+				break;
+			case 29:
+				v6 = 0;
+				v0 = client_configs['cfg896'].bitcfg1941;
+				v3 = 14792;
+				break;
+			case 30:
+				v6 = 0;
+				v0 = client_configs['cfg897'].bitcfg1942;
+				v3 = 14664;
+				break;
+			case 31:
+				v6 = 0;
+				v0 = client_configs['cfg897'].bitcfg1943;
+				v3 = 14667;
+				break;
+			case 32:
+				v6 = 0;
+				v0 = client_configs['cfg897'].bitcfg1944;
+				v3 = 14672;
+				break;
+			case 33:
+				v6 = 1;
+				v0 = client_configs['cfg897'].bitcfg1945;
+				v3 = 14673;
+				break;
+			case 34:
+				v6 = 0;
+				v0 = client_configs['cfg897'].bitcfg1946;
+				v3 = 14674;
+				break;
+			case 35:
+				v6 = 0;
+				v0 = client_configs['cfg896'].bitcfg1918;
+				v3 = 14712;
+				break;
+			case 36:
+				v6 = 1;
+				v0 = client_configs['cfg897'].bitcfg1947;
+				v3 = 14704;
+				break;
+			case 37:
+				v6 = 1;
+				v0 = client_configs['cfg897'].bitcfg1948;
+				v3 = 14684;
+				break;
+			case 38:
+				v6 = 1;
+				v0 = client_configs['cfg897'].bitcfg1949;
+				v3 = 14666;
+				break;
+			case 39:
+				v6 = 1;
+				v0 = client_configs['cfg897'].bitcfg1950;
+				v3 = 14670;
+				break;
+			case 40:
+				v6 = 0;
+				v0 = client_configs['cfg897'].bitcfg1951;
+				v3 = 14795;
+				break;
+			case 41:
+				v6 = 0;
+				v0 = client_configs['cfg896'].bitcfg1910;
+				v3 = 14883;
+				break;
+			case 42:
+				v6 = 1;
+				v0 = client_configs['cfg897'].bitcfg1952;
+				v3 = 14691;
+				break;
+			case 43:
+				v6 = 1;
+				v0 = client_configs['cfg897'].bitcfg1962;
+				v3 = 14572;
+				break;
+			case 44:
+				v6 = 1;
+				v0 = client_configs['cfg897'].bitcfg1963;
+				v3 = 14573;
+				break;
+			case 45:
+				v6 = 1;
+				v0 = client_configs['cfg897'].bitcfg1964;
+				v3 = 14575;
+				break;
+			case 46:
+				v6 = 1;
+				v0 = script_1720(2);
+				v3 = 14576;
+				break;
+			case 47:
+				v6 = 1;
+				v0 = script_1720(1);
+				v3 = 14577;
+				break;
+			case 48:
+				v6 = 1;
+				v0 = script_1720(0);
+				v3 = 14578;
+				break;
+			case 49:
+				v6 = 1;
+				v0 = client_configs['cfg897'].bitcfg1968;
+				v3 = 14580;
+				break;
+			case 50:
+				v6 = 1;
+				v0 = client_configs['cfg897'].bitcfg1969;
+				v3 = 14581;
+				break;
+			case 51:
+				v6 = 1;
+				v0 = client_configs['cfg897'].bitcfg1970;
+				v3 = 14582;
+				break;
+			case 52:
+				v6 = 1;
+				v0 = client_configs['cfg899'].bitcfg1983;
+				v3 = 14579;
+				break;
+			case 53:
+				v6 = 1;
+				v0 = client_configs['cfg899'].bitcfg1984;
+				v3 = 14568;
+				break;
+			case 54:
+				v6 = 1;
+				v0 = client_configs['cfg899'].bitcfg1985;
+				v3 = 14569;
+				break;
+			case 55:
+				v6 = 1;
+				v0 = client_configs['cfg899'].bitcfg1986;
+				v3 = 14574;
+				break;
+			case 56:
+				v6 = 1;
+				v0 = client_configs['cfg899'].bitcfg1987;
+				v3 = 14570;
+				break;
+			case 57:
+				v6 = 1;
+				v0 = client_configs['cfg899'].bitcfg1988;
+				v3 = 14571;
+				break;
+			case 58:
+				v6 = 1;
+				v0 = client_configs['cfg898'].bitcfg2017;
+				v3 = 14608;
+				break;
+			case 59:
+				v6 = 1;
+				v0 = client_configs['cfg899'].bitcfg1996;
+				v3 = 14609;
+				break;
+			case 60:
+				v6 = 1;
+				v0 = client_configs['cfg899'].bitcfg1997;
+				v3 = 14610;
+				break;
+			case 61:
+				v6 = 1;
+				v0 = client_configs['cfg898'].bitcfg1998;
+				v3 = 14583;
+				break;
+			case 62:
+				if (client_configs['cfg899'].bitcfg1984 == 1 || client_configs['cfg899'].bitcfg1985 == 1 || client_configs['cfg898'].bitcfg2017 == 1) {
+					v0 = 0;
+				} else if (client_configs['cfg900'].bitcfg2038 == 1) {
+					v0 = 1;
+					v3 = 14907;
+					v6 = 1;
+				} else if (client_configs['cfg900'].bitcfg2039 == 1) {
+					v0 = 1;
+					v3 = 14906;
+					v6 = 0;
+				} else if (client_configs['cfg898'].bitcfg1999 == 1) {
+					v0 = 1;
+					v3 = 14584;
+					v6 = 1;
+				} else if (client_configs['cfg898'].bitcfg2008 == 1) {
+					v0 = 1;
+					v3 = 14597;
+					v6 = 1;
+				} else if (client_configs['cfg897'].bitcfg1959 == 1) {
+					v6 = 1;
+					v0 = 1;
+					v3 = 14549;
+				} else if (client_configs['cfg897'].bitcfg1960 == 1) {
+					v6 = 1;
+					v0 = 1;
+					v3 = 14550;
+				} else if (client_configs['cfg897'].bitcfg1961 == 1) {
+					v6 = 1;
+					v0 = 1;
+					v3 = 14551;
+				} else {
+					v0 = 0;
+				}
+				break;
+			case 63:
+				if (client_configs['cfg899'].bitcfg1988 == 1 || client_configs['cfg899'].bitcfg1997 == 1) {
+					v0 = 0;
+				} else if (client_configs['cfg900'].bitcfg2042 == 1) {
+					v0 = 1;
+					v3 = 14913;
+					v6 = 1;
+				} else if (client_configs['cfg900'].bitcfg2043 == 1) {
+					v0 = 1;
+					v3 = 14912;
+					v6 = 0;
+				} else if (client_configs['cfg898'].bitcfg2000 == 1) {
+					v0 = 1;
+					v3 = 14585;
+					v6 = 1;
+				} else if (client_configs['cfg898'].bitcfg2009 == 1) {
+					v0 = 1;
+					v3 = 14598;
+					v6 = 1;
+				} else if (client_configs['cfg897'].bitcfg1971 == 1) {
+					v6 = 1;
+					v0 = 1;
+					v3 = 14553;
+				} else if (client_configs['cfg897'].bitcfg1972 == 1) {
+					v6 = 1;
+					v0 = 1;
+					v3 = 14554;
+				} else if (client_configs['cfg897'].bitcfg1973 == 1) {
+					v6 = 1;
+					v0 = 1;
+					v3 = 14555;
+				} else {
+					v0 = 0;
+				}
+				break;
+			case 64:
+				if (client_configs['cfg899'].bitcfg1987 == 1 || client_configs['cfg899'].bitcfg1996 == 1) {
+					v0 = 0;
+				} else if (client_configs['cfg900'].bitcfg2046 == 1) {
+					v0 = 1;
+					v3 = 14917;
+					v6 = 1;
+				} else if (client_configs['cfg900'].bitcfg2047 == 1) {
+					v0 = 1;
+					v3 = 14916;
+					v6 = 0;
+				} else if (client_configs['cfg898'].bitcfg2001 == 1) {
+					v0 = 1;
+					v3 = 14587;
+					v6 = 1;
+				} else if (client_configs['cfg898'].bitcfg2010 == 1) {
+					v0 = 1;
+					v3 = 14600;
+					v6 = 1;
+				} else if (client_configs['cfg898'].bitcfg1974 == 1) {
+					v6 = 1;
+					v0 = 1;
+					v3 = 14561;
+				} else if (client_configs['cfg898'].bitcfg1975 == 1) {
+					v6 = 1;
+					v0 = 1;
+					v3 = 14562;
+				} else if (client_configs['cfg898'].bitcfg1976 == 1) {
+					v6 = 1;
+					v0 = 1;
+					v3 = 14563;
+				} else {
+					v0 = 0;
+				}
+				break;
+			case 65:
+				if (client_configs['cfg899'].bitcfg1984 == 1 || client_configs['cfg899'].bitcfg1985 == 1 || client_configs['cfg899'].bitcfg1988 == 1 || client_configs['cfg899'].bitcfg1987 == 1 || client_configs['cfg898'].bitcfg2017 == 1 || client_configs['cfg899'].bitcfg1997 == 1 || client_configs['cfg899'].bitcfg1996 == 1) {
+					v0 = 0;
+				} else if (client_configs['cfg900'].bitcfg2050 == 1) {
+					v0 = 1;
+					v3 = 14911;
+					v6 = 1;
+				} else if (client_configs['cfg900'].bitcfg2051 == 1) {
+					v0 = 1;
+					v3 = 14910;
+					v6 = 0;
+				} else if (client_configs['cfg899'].bitcfg1992 == 1) {
+					v0 = 1;
+					v3 = 14590;
+					v6 = 1;
+				} else if (client_configs['cfg898'].bitcfg2011 == 1) {
+					v0 = 1;
+					v3 = 14602;
+					v6 = 1;
+				} else if (client_configs['cfg897'].bitcfg1953 == 1) {
+					v0 = 1;
+					v3 = 14541;
+					v6 = 1;
+				} else if (client_configs['cfg897'].bitcfg1954 == 1) {
+					v0 = 1;
+					v3 = 14542;
+					v6 = 1;
+				} else if (client_configs['cfg897'].bitcfg1955 == 1) {
+					v0 = 1;
+					v3 = 14543;
+					v6 = 1;
+				} else {
+					v0 = 0;
+				}
+				break;
+			case 66:
+				if (client_configs['cfg899'].bitcfg1984 == 1 || client_configs['cfg899'].bitcfg1985 == 1 || client_configs['cfg898'].bitcfg2017 == 1) {
+					v0 = 0;
+				} else if (client_configs['cfg900'].bitcfg2040 == 1) {
+					v0 = 1;
+					v3 = 14909;
+					v6 = 1;
+				} else if (client_configs['cfg900'].bitcfg2041 == 1) {
+					v0 = 1;
+					v3 = 14908;
+					v6 = 0;
+				} else if (client_configs['cfg899'].bitcfg1989 == 1) {
+					v0 = 1;
+					v3 = 14591;
+					v6 = 1;
+				} else if (client_configs['cfg899'].bitcfg1993 == 1) {
+					v0 = 1;
+					v3 = 14603;
+					v6 = 1;
+				} else if (client_configs['cfg897'].bitcfg1956 == 1) {
+					v0 = 1;
+					v3 = 14545;
+					v6 = 1;
+				} else if (client_configs['cfg897'].bitcfg1957 == 1) {
+					v0 = 1;
+					v3 = 14546;
+					v6 = 1;
+				} else if (client_configs['cfg897'].bitcfg1958 == 1) {
+					v0 = 1;
+					v3 = 14547;
+					v6 = 1;
+				} else {
+					v0 = 0;
+				}
+				break;
+			case 67:
+				if (client_configs['cfg899'].bitcfg1988 == 1 || client_configs['cfg899'].bitcfg1997 == 1) {
+					v0 = 0;
+				} else if (client_configs['cfg900'].bitcfg2044 == 1) {
+					v0 = 1;
+					v3 = 14915;
+					v6 = 1;
+				} else if (client_configs['cfg900'].bitcfg2045 == 1) {
+					v0 = 1;
+					v3 = 14914;
+					v6 = 0;
+				} else if (client_configs['cfg899'].bitcfg1990 == 1) {
+					v0 = 1;
+					v3 = 14586;
+					v6 = 1;
+				} else if (client_configs['cfg899'].bitcfg1994 == 1) {
+					v0 = 1;
+					v3 = 14599;
+					v6 = 1;
+				} else if (client_configs['cfg898'].bitcfg1977 == 1) {
+					v6 = 1;
+					v0 = 1;
+					v3 = 14557;
+				} else if (client_configs['cfg898'].bitcfg1978 == 1) {
+					v6 = 1;
+					v0 = 1;
+					v3 = 14558;
+				} else if (client_configs['cfg898'].bitcfg1979 == 1) {
+					v6 = 1;
+					v0 = 1;
+					v3 = 14559;
+				} else {
+					v0 = 0;
+				}
+				break;
+			case 68:
+				if (client_configs['cfg899'].bitcfg1987 == 1 || client_configs['cfg899'].bitcfg1996 == 1) {
+					v0 = 0;
+				} else if (client_configs['cfg900'].bitcfg2048 == 1) {
+					v0 = 1;
+					v3 = 14919;
+					v6 = 1;
+				} else if (client_configs['cfg900'].bitcfg2049 == 1) {
+					v0 = 1;
+					v3 = 14918;
+					v6 = 0;
+				} else if (client_configs['cfg899'].bitcfg1991 == 1) {
+					v0 = 1;
+					v3 = 14588;
+					v6 = 1;
+				} else if (client_configs['cfg899'].bitcfg1995 == 1) {
+					v0 = 1;
+					v3 = 14601;
+					v6 = 1;
+				} else if (client_configs['cfg898'].bitcfg1980 == 1) {
+					v6 = 1;
+					v0 = 1;
+					v3 = 14565;
+				} else if (client_configs['cfg898'].bitcfg1981 == 1) {
+					v6 = 1;
+					v0 = 1;
+					v3 = 14566;
+				} else if (client_configs['cfg898'].bitcfg1982 == 1) {
+					v6 = 1;
+					v0 = 1;
+					v3 = 14567;
+				} else {
+					v0 = 0;
+				}
+				break;
+			case 69:
+				v6 = 1;
+				v0 = client_configs['cfg898'].bitcfg2002;
+				v3 = 14589;
+				break;
+			case 70:
+				v6 = 1;
+				v0 = client_configs['cfg898'].bitcfg2003;
+				v3 = 14592;
+				break;
+			case 71:
+				v6 = 1;
+				v0 = client_configs['cfg898'].bitcfg2004;
+				v3 = 14593;
+				break;
+			case 72:
+				v6 = 1;
+				v0 = script_1720(7);
+				v3 = 14594;
+				break;
+			case 73:
+				v6 = 1;
+				v0 = script_1720(6);
+				v3 = 14595;
+				break;
+			case 74:
+				v6 = 1;
+				v0 = script_1720(5);
+				v3 = 14596;
+				break;
+			case 75:
+				v6 = 1;
+				v0 = client_configs['cfg898'].bitcfg2013;
+				v3 = 14604;
+				break;
+			case 76:
+				v6 = 1;
+				v0 = client_configs['cfg898'].bitcfg2014;
+				v3 = 14605;
+				break;
+			case 77:
+				v6 = 1;
+				v0 = script_1720(4);
+				v3 = 14606;
+				break;
+			case 78:
+				v6 = 1;
+				v0 = script_1720(3);
+				v3 = 14607;
+				break;
+			case 79:
+				if (client_configs['cfg898'].bitcfg2018 == 1) {
+					v0 = 1;
+					v3 = 14885;
+					v6 = 1;
+				} else if (client_configs['cfg898'].bitcfg2019 == 1) {
+					v0 = 1;
+					v3 = 14886;
+					v6 = 0;
+				} else {
+					v0 = 0;
+				}
+				break;
+			case 80:
+				if (client_configs['cfg898'].bitcfg2020 == 1) {
+					v0 = 1;
+					v3 = 14887;
+					v6 = 1;
+				} else if (client_configs['cfg899'].bitcfg2021 == 1) {
+					v0 = 1;
+					v3 = 14888;
+					v6 = 0;
+				} else {
+					v0 = 0;
+				}
+				break;
+			case 81:
+				if (client_configs['cfg899'].bitcfg2022 == 1) {
+					v0 = 1;
+					v3 = 14889;
+					v6 = 1;
+				} else if (client_configs['cfg899'].bitcfg2023 == 1) {
+					v0 = 1;
+					v3 = 14890;
+					v6 = 0;
+				} else {
+					v0 = 0;
+				}
+				break;
+			case 82:
+				if (client_configs['cfg899'].bitcfg2024 == 1) {
+					v0 = 1;
+					v3 = 14891;
+					v6 = 1;
+				} else if (client_configs['cfg899'].bitcfg2025 == 1) {
+					v0 = 1;
+					v3 = 14892;
+					v6 = 0;
+				} else {
+					v0 = 0;
+				}
+				break;
+			case 83:
+				if (client_configs['cfg899'].bitcfg2026 == 1) {
+					v0 = 1;
+					v3 = 14895;
+					v6 = 1;
+				} else if (client_configs['cfg899'].bitcfg2027 == 1) {
+					v0 = 1;
+					v3 = 14896;
+					v6 = 0;
+				} else {
+					v0 = 0;
+				}
+				break;
+			case 84:
+				if (client_configs['cfg899'].bitcfg2028 == 1) {
+					v0 = 1;
+					v3 = 14897;
+					v6 = 1;
+				} else if (client_configs['cfg899'].bitcfg2029 == 1) {
+					v0 = 1;
+					v3 = 14898;
+					v6 = 0;
+				} else {
+					v0 = 0;
+				}
+				break;
+			case 85:
+				if (client_configs['cfg899'].bitcfg2030 == 1) {
+					v0 = 1;
+					v3 = 14893;
+					v6 = 1;
+				} else if (client_configs['cfg899'].bitcfg2031 == 1) {
+					v0 = 1;
+					v3 = 14894;
+					v6 = 0;
+				} else {
+					v0 = 0;
+				}
+				break;
+			case 86:
+				if (client_configs['cfg899'].bitcfg2032 == 1) {
+					v0 = 1;
+					v3 = 14899;
+					v6 = 0;
+				} else if (client_configs['cfg899'].bitcfg2033 == 1) {
+					v0 = 1;
+					v3 = 14900;
+					v6 = 1;
+				} else {
+					v0 = 0;
+				}
+				break;
+			case 87:
+				if (client_configs['cfg899'].bitcfg2034 == 1) {
+					v0 = 1;
+					v3 = 14903;
+					v6 = 1;
+				} else if (client_configs['cfg899'].bitcfg2035 == 1) {
+					v0 = 1;
+					v3 = 14904;
+					v6 = 1;
+				} else {
+					v0 = 0;
+				}
+				break;
+			case 88:
+				v0 = client_configs['cfg899'].bitcfg2037;
+				v3 = 14905;
+				v6 = 1;
+				break;
+			case 89:
+				v0 = client_configs['cfg896'].bitcfg1911;
+				v3 = 14884;
+				v6 = 0;
+				break;
+			case 90:
+				v6 = 1;
+				v0 = 1;
+				switch (client_configs['cfg900'].bitcfg2052) {
+					default:
+						v0 = 0;
+						break;
+					case 1:
+						v3 = 14692;
+						break;
+					case 2:
+						v3 = 14693;
+						break;
+					case 3:
+						v3 = 14694;
+						break;
+					case 4:
+						v3 = 14695;
+				}
+				break;
+			case 91:
+				v6 = 1;
+				v0 = client_configs['cfg900'].bitcfg2054;
+				v3 = 14901;
+				break;
+			case 92:
+				v6 = 1;
+				v0 = client_configs['cfg900'].bitcfg2055;
+				v3 = 14920;
+				break;
+			case 93:
+				v6 = 1;
+				v0 = client_configs['cfg900'].bitcfg18549;
+				v3 = 19828;
+				break;
+			case 94:
+				if (client_configs['cfg900'].bitcfg20383 == 1) {
+					v0 = 1;
+					v3 = 23129;
+					v6 = 1;
+				} else {
+					v0 = 0;
+				}
+				break;
+			case 95:
+				v6 = 1;
+				v0 = client_configs['cfg900'].bitcfg20684;
+				v3 = 19194;
+				break;
+			case 96:
+				v6 = 0;
+				v0 = client_configs['cfg900'].bitcfg22517;
+				v3 = 28290;
+				break;
+			case 97:
+				v6 = 1;
+				v0 = client_configs['cfg900'].bitcfg22516;
+				v3 = 28288;
+		}
+		if (v0 == 1) {
+			int v11 = a15;
+			int v30 = a10;
+			int v19 = a16;
+			int v33 = a1;
+			int v16 = a30;
+			int v45 = a17;
+			int v23 = a31;
+			int v36 = a26;
+			int v38 = a23;
+			int v35 = a8;
+			int v32 = a13;
+			int v44 = a5;
+			int v29 = a19;
+			int v12 = a9;
+			int v25 = a0;
+			int v46 = a33;
+			int v17 = a32;
+			int v48 = a3;
+			int v21 = a14;
+			int v18 = a6;
+			int v40 = a2;
+			int v39 = a7;
+			int v15 = a27;
+			int v34 = a21;
+			int v37 = a24;
+			int v20 = a35;
+			int v28 = a12;
+			int v42 = a22;
+			int v43 = a25;
+			int v31 = a20;
+			int v41 = a28;
+			int v47 = a18;
+			int v10 = a11;
+			int v13 = a34;
+			int v26 = a29;
+			int v27 = a4;
+			script_7071_struct(3,0,0) v24 = script_7071(v11, v30, v19, v33, v16, v45, v23, v36, v38, v35, v32, v44, v29, v12, v25, v46, v17, v48, v21, v18, v40, v39, v15, v34, v37, v20, v28, v42, v43, v31, v41, v47, v10, v13, v26, v27);
+			int v22 = v24.intpart_2;
+			int v14 = v24.intpart_1;
+			int v9 = v24.intpart_0;
+			if (v9 == -1) {
+				return;
+			}
+			cs2method_10467(0, v9);
+			cs2method_10758(idx22mapAttribute(v3, 2802), v9);
+			cs2method_21121(new function<script_8799>(int a0,object a1,int a2) {
+				script_8800(a2, a0, a1);
+				return;
+			}, idx22mapAttribute(v3, 2794), new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(v9));
+			if (v3 == 14718 && client_configs['cfg689'].bitcfg1901 > 0) {
+				cs2method_10026(v14, cs2method_10379(client_configs['cfg689'].bitcfg1901));
+			} else {
+				cs2method_10026(v14, "");
+			}
+			cs2method_10467(0, v22);
+			if (v6 == 1) {
+				cs2method_10520(5936665, v22);
+			} else {
+				cs2method_10520(13369344, v22);
+			}
+			v7 = cs2method_10060(v7, 1);
+		}
+	}
+	return;
+}

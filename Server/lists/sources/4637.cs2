@@ -1,0 +1,107 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4637(int a0) {
+	object v12 = "";
+	int v6 = 0;
+	int v1 = 0;
+	cs2method_10467(0, 10027060);
+	cs2method_10026(10027058, "");
+	cs2method_10670(6185, 1, 0, 150);
+	switch (a0) {
+		case 1:
+			if (cs2method_10609(10027112) == 0) {
+				return;
+			}
+			object v13 = "Three's Company" + "<br>" + "<br>";
+			if (script_4643(1) == 0) {
+				v13 = cs2method_10427(v13, "<col=cb6b3d>" + "Attack 30, Ranged 30, Magic 30 required to play the unabridged version." + "<br>" + "<br>");
+			}
+			v12 = cs2method_10427(v13, "Manage a party of adventurers in this saga. " + "<br>" + "<br>" + "+ Select 'Switch' to change to a target character. " + "<br>" + "+ Select 'Mark' on an enemy to focus your allies' attacks on that target." + "<br>" + "+ Human enemies will focus their attacks on you, animals will attack your allies.");
+			cs2method_10606(10027050, 4, 0);
+			break;
+		case 2:
+			if (cs2method_10609(10027125) == 0) {
+				return;
+			}
+			object v9 = "Vengeance" + "<br>" + "<br>";
+			if (script_4643(2) == 0) {
+				v9 = cs2method_10427(v9, "<col=cb6b3d>" + "Agility 55, Thieving 55 required to play the unabridged version." + "<br>" + "<br>");
+			}
+			v12 = cs2method_10427(v9, "A tragic tale of grief, warped into furious vengeance." + "<br>" + "<br>" + "+ At some point in this saga, you will become poisoned. Keep an eye on your health. You will not take poison damage whilst in a conversation." + "<br>" + "+ Look for alternative methods of defeating your human foes. Your environment may offer more indirect solutions." + "<br>" + "+ Hellhounds will drop antipoison elixirs that will lessen your suffering temporarily." + "<br>" + "+ Spiders drop food, but their bites may negate the effect of an antipoison elixir." + "<br>" + "+ Choices you make in the saga will lead you towards 'noble' or 'ruthless' vengeance.");
+			break;
+		case 4:
+			if (cs2method_10609(10027138) == 0) {
+				return;
+			}
+			object v8 = "Thok It To 'Em" + "<br>" + "<br>";
+			if (script_4643(4) == 0) {
+				v8 = cs2method_10427(v8, "<col=cb6b3d>" + "Strength 70 required to play the unabridged version." + "<br>" + "<br>");
+			}
+			v12 = cs2method_10427(v8, "Control mighty Thok, Fremennik warrior." + "<br>" + "<br>" + "+ Thok heals damage and recovers adrenaline by killing enemies. Bosses provide greater health and adrenaline boosts than normal enemies." + "<br>" + "+ Thok can eat food raw. He likes the taste.");
+			break;
+		case 5:
+			if (cs2method_10609(10027181) == 0) {
+				return;
+			}
+			v12 = "Love stories are so often tied to tragedy, and few are as tragic as this tale of two sorcerors.";
+			break;
+		case 3:
+			if (cs2method_10609(10027214) == 0) {
+				return;
+			}
+			object v2 = "Nadir" + "<br>" + "<br>";
+			if (script_4643(3) == 0) {
+				v2 = cs2method_10427(v2, "<col=cb6b3d>" + "Attack 60, Thieving 45 required to play the unabridged version." + "<br>" + "<br>");
+			}
+			v12 = cs2method_10427(v2, "Take command of the mysterious Moia." + "<br>" + "<br>" + "+ Moia works best undetected. Find information in the minds of others to progress safely." + "<br>" + "+ Avoid the suspicions of those around you to avoid later combat." + "<br>" + "+ At some point in the saga, Moia will enter a special combat mode. Keep an eye on her ability meter." + "<br>" + "+ There is a wealth of information to find. Stay a while, and listen to the people of Daemonheim.");
+			break;
+		case 6:
+			if (cs2method_10609(10027198) == 0) {
+				return;
+			}
+			object v7 = "Thok Your Block Off" + "<br>" + "<br>";
+			int v0 = 4;
+			script_4644_struct(2,0,0) v10 = script_4644(v0);
+			int v3 = v10.intpart_1;
+			int v5 = v10.intpart_0;
+			if (v5 == 0 && v3 == 0) {
+				v7 = cs2method_10427(v7, "<col=cb6b3d>" + "You must complete " + "</col>" + "Thok It To 'Em" + "<col=cb6b3d>" + " to play this saga." + "<br>" + "<br>");
+			} else {
+				if (script_4643(6) == 0) {
+					v7 = cs2method_10427(v7, "<col=cb6b3d>" + "Strength 75 required to play the unabridged version." + "<br>" + "<br>");
+				}
+			}
+			v12 = cs2method_10427(v7, "Mighty Thok returns with his brother Marmaros." + "<br>" + "<br>" + "+ Kill far more enemies than your brother Marmaros to prove your dominance." + "<br>" + "+ Thok heals damage and recovers adrenaline by killing enemies." + "<br>" + "+ Thok can heal by eating raw fish." + "<br>" + "+ Thok will upgrade his fists during the tale, dealing greater damage." + "<br>" + "+ Thok can obtain a special item that will yield him many fish.");
+	}
+	cs2method_10026(10027052, v12);
+	int v4 = cs2method_10805(366, 495, v12);
+	int v11 = cs2method_10051(v4, 15);
+	if (cs2method_11038(10027050, 0) == 1) {
+		if (a0 == 1) {
+			cs2method_10063(5, cs2method_10060(v11, 7), 0, 0);
+			cs2method_10013(366, 15, 0, 0);
+			cs2method_11105(1, 1, 0);
+			object v14 = "All three characters must survive.";
+			cs2method_10797(v14);
+			cs2method_10692(496);
+			cs2method_10811(13331261);
+			v11 = cs2method_10060(v11, 24);
+		} else {
+			cs2method_10526();
+		}
+	}
+	cs2method_11130(0, v11, 10027050);
+	script_72(10027051, 10027050, 0);
+	script_4638(a0);
+	return;
+}

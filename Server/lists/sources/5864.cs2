@@ -1,0 +1,20 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5864(int a0,int a1) {
+	if (script_9201() == 1) {
+		script_8800(a1, a0, "Total XP: " + (string)script_8019() + "<br>" + "Bonus XP: " + "<col=00ff00>" + (string)script_9202());
+	} else {
+		script_8800(a1, a0, "Total XP: " + (string)script_8019());
+	}
+	return;
+}

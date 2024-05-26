@@ -1,0 +1,46 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4472(object a0,int a1,int a2) {
+	int v1 = -1;
+	int v0 = -1;
+	int v2 = -1;
+	switch (a1) {
+		case 1:
+			script_8512(a0, cs2_configs['cfg2231']);
+			return;
+		case 5:
+			cs2method_10810("Attempting to add " + (string)a0 + " to your Friends List.");
+			object v5 = cs2method_10765(a0);
+			cs2method_11133(v5);
+			break;
+		case 6:
+			cs2method_10810("Attempting to add " + (string)a0 + " to your Ignore List.");
+			object v4 = cs2method_10765(a0);
+			cs2method_10290(v4);
+			break;
+		case 7:
+			cs2method_10810("Attempting to remove " + (string)a0 + " from your Friends List.");
+			object v6 = cs2method_10765(a0);
+			cs2_configs['cfg3936'] = (string)v6;
+			script_9961(8);
+			break;
+		case 8:
+			cs2method_10810("Attempting to remove " + (string)a0 + " from your Ignore List.");
+			object v3 = cs2method_10765(a0);
+			cs2method_10762(v3);
+			break;
+		case 9:
+			script_4465(a0);
+	}
+	return;
+}

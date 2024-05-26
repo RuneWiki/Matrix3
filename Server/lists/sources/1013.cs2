@@ -1,0 +1,43 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_1013_struct(1,1,0) script_1013(int a0) {
+	switch (a0) {
+		case 0:
+			return new script_1013_struct(1, "Allotments");
+		case 1:
+			return new script_1013_struct(1, "Hops");
+		case 2:
+			return new script_1013_struct(1, "Trees");
+		case 3:
+			return new script_1013_struct(1, "Fruit Trees");
+		case 4:
+			return new script_1013_struct(1, "Bushes");
+		case 5:
+			return new script_1013_struct(1, "Flowers");
+		case 6:
+			return new script_1013_struct(1, "Herbs");
+		case 7:
+			return new script_1013_struct(1, "Special");
+		case 8:
+			return new script_1013_struct(1, "Equipment");
+		case 9:
+			return new script_1013_struct(1, "Other");
+		case 10:
+			return new script_1013_struct(1, "Minigames");
+		case 11:
+			return new script_1013_struct(1, "Dungeoneering");
+		case 12:
+			return new script_1013_struct(1, "Milestones");
+	}
+	return new script_1013_struct(-1, "");
+}

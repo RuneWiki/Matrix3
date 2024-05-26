@@ -1,0 +1,37 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2840() {
+	cs2_configs['cfg1068'] = cs2method_10060(cs2_configs['cfg1068'], 1);
+	switch (cs2_configs['cfg1068']) {
+		default:
+			cs2method_20196(load function<2840>, "", new WidgetPointer(384,0));
+			cs2method_10382(0, cs2_configs['cfg1068'], 400, 400, 1, cs2_configs['cfg1068']);
+			break;
+		case 1:
+			cs2method_20196(load function<2840>, "", new WidgetPointer(384,0));
+			cs2method_10382(0, cs2_configs['cfg1068'], 400, 0, 1, cs2_configs['cfg1068']);
+			break;
+		case 2:
+			cs2method_20196(new function<none>() {
+			}, "", new WidgetPointer(384,0));
+			break;
+		case 3:
+			cs2method_20196(load function<2840>, "", new WidgetPointer(384,0));
+			cs2method_10382(0, cs2_configs['cfg1068'], 650, 700, 1, cs2_configs['cfg1068']);
+			break;
+		case 5:
+			cs2method_20196(new function<none>() {
+			}, "", new WidgetPointer(384,0));
+	}
+	return;
+}

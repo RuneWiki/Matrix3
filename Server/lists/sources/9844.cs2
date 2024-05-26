@@ -1,0 +1,158 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9844(int a0,int a1,int a2,int a3,int a4) {
+	int v7;
+	script_9848();
+	if (a4 == -1) {
+		return;
+	}
+	if (a1 < 0 || a1 >= cs2method_10894(a4)) {
+		return;
+	}
+	int v6 = -1;
+	int v5 = -1;
+	int v4 = 2901;
+	int v3 = 2901;
+	if (cs2method_11038(a0, a1) == 1) {
+		v6 = cs2method_10487();
+		v5 = cs2method_11089();
+		v4 = itemDefsAttribute(v6, 537);
+		v3 = itemDefsAttribute(v6, 118);
+	}
+	if (v6 == -1 || v5 <= 0) {
+		return;
+	}
+	int v1 = -1;
+	switch (a2) {
+		case 49938704:
+			if (cs2method_10936(95, cs2method_10480(v6)) > 0 && script_9827(v6) == 0) {
+				if (a4 == 94) {
+					script_9217(95, 0, v6, a1, a0, 49938647);
+					cs2method_10670(v3, 1, 0, 100);
+				} else {
+					int v8 = script_9831(v6, v5, a4, a1, 1, 1, 49938647, a0);
+					/* 
+						java.lang.RuntimeException: Stack underflow
+							at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+							at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+							at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+							at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+							at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+							at tests.Main.main(Main.java:69)
+						
+					 */
+				}
+			} else if (a4 == 94) {
+				script_9218(95, 0, v6, a1, a3, a0, 49938647);
+				cs2method_10670(v3, 1, 0, 100);
+			} else {
+				int v8 = script_9833(v6, v5, a3, a4, a1, 1, 1, script_6971(), 49938647, a0);
+				/* 
+					java.lang.RuntimeException: Stack underflow
+						at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+						at tests.Main.main(Main.java:69)
+					
+				 */
+			}
+			break;
+		case 49938647:
+			script_9845(v6, v5, a1, a4, a0, a3, a2);
+			script_9834(v6, v4);
+			cs2method_10363(44040, 1, 0, 88, 512);
+			break;
+		case 49938572:
+		case 49938685:
+			v1 = 1;
+			break;
+		case 49938580:
+		case 49938686:
+			v1 = 2;
+			break;
+		case 49938687:
+		case 49938588:
+			v1 = 3;
+			break;
+		case 49938596:
+		case 49938688:
+			v1 = 4;
+			break;
+		case 49938604:
+		case 49938689:
+			v1 = 5;
+			break;
+		case 49938612:
+		case 49938690:
+			v1 = 6;
+			break;
+		case 49938691:
+		case 49938620:
+			v1 = 7;
+			break;
+		case 49938628:
+		case 49938692:
+			v1 = 8;
+			break;
+		case 49938636:
+		case 49938693:
+			v1 = 9;
+			break;
+		default:
+			return;
+	}
+	int v2 = 0;
+	int v0 = 0;
+	if (v1 != -1) {
+		if (cs2method_10936(95, cs2method_10480(v6)) > 0 && script_9827(cs2method_10480(v6)) == 0) {
+			if (a4 == 94) {
+				script_9217(95, 0, v6, a1, a0, 49938647);
+			} else {
+				int v8 = script_9831(v6, v5, a4, a1, 1, 1, 49938647, a0);
+				/* 
+					java.lang.RuntimeException: Stack underflow
+						at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+						at tests.Main.main(Main.java:69)
+					
+				 */
+			}
+		} else {
+			if (v1 > 1) {
+				int v9 = v1;
+				script_1467_struct(2,0,0) v10 = script_1467(v9);
+				v7 = v10.intpart_1;
+				int v8 = v10.intpart_0;
+			} else {
+				v7 = script_6971();
+			}
+			if (a4 == 94) {
+				script_9218(95, 0, v6, a1, v7, a0, 49938647);
+				if (cs2method_11038(49938647, v7) == 1 && cs2method_10487() == v6) {
+					script_9843(v1, v7, 49938647);
+				}
+			} else if (script_9833(v6, v5, v7, a4, a1, 1, 1, script_6971(), 49938647, a0) == 1) {
+				script_9843(v1, v7, 49938647);
+			} else {
+				return;
+			}
+		}
+	}
+	script_9838();
+	return;
+}

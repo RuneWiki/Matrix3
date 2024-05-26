@@ -1,0 +1,138 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_4948(int a0) {
+	int v0 = script_4951(a0);
+	if (cs2method_10172() == 1) {
+		if (v0 == 1) {
+			return 1;
+		}
+		if (v0 == 2) {
+			return 2;
+		}
+		if (v0 == 3) {
+			return 3;
+		}
+		if (v0 == 4) {
+			if (clan_chat_configs['cfg2552'].bitcfg6483 == a0) {
+				return 4;
+			}
+			if (clan_chat_configs['cfg2552'].bitcfg6484 == a0) {
+				return 5;
+			}
+			if (clan_chat_configs['cfg2552'].bitcfg6485 == a0) {
+				return 6;
+			}
+			if (clan_chat_configs['cfg2552'].bitcfg6486 == a0) {
+				return 7;
+			}
+			if (clan_chat_configs['cfg2552'].bitcfg6487 == a0) {
+				return 8;
+			}
+			if (clan_chat_configs['cfg2552'].bitcfg6488 == a0) {
+				return 9;
+			}
+			if (clan_chat_configs['cfg2559'].bitcfg6489 == a0) {
+				return 10;
+			}
+			if (clan_chat_configs['cfg2559'].bitcfg6490 == a0) {
+				return 11;
+			}
+			if (clan_chat_configs['cfg2559'].bitcfg6491 == a0) {
+				return 12;
+			}
+			if (clan_chat_configs['cfg2559'].bitcfg6492 == a0) {
+				return 13;
+			}
+			if (clan_chat_configs['cfg2559'].bitcfg6493 == a0) {
+				return 14;
+			}
+			if (clan_chat_configs['cfg2559'].bitcfg6494 == a0) {
+				return 15;
+			}
+		} else {
+			if (v0 == 5 || v0 == 6) {
+				switch (a0) {
+					case 16:
+						return 16;
+					case 17:
+						return 17;
+					case 18:
+						return 18;
+					case 19:
+						return 19;
+					case 20:
+						return 20;
+					case 21:
+						return 21;
+					case 22:
+						return 22;
+					case 23:
+						return 23;
+					case 24:
+						return 24;
+					case 25:
+						return 25;
+					case 26:
+						return 26;
+					case 27:
+						return 27;
+					case 28:
+						return 28;
+					case 29:
+						return 29;
+					case 30:
+						return 30;
+					case 31:
+						return 31;
+					case 32:
+						return 32;
+					case 33:
+						return 33;
+					case 34:
+						return 34;
+					case 49:
+						return 49;
+					case 35:
+						return 35;
+					case 36:
+						return 36;
+					case 37:
+						return 40;
+					case 38:
+						return 38;
+					case 39:
+						return 39;
+					case 40:
+						return 40;
+					case 41:
+						return 41;
+					case 42:
+						return 42;
+					case 43:
+						return 43;
+					case 44:
+						return 44;
+					case 45:
+						return 45;
+					case 46:
+						return 46;
+					case 47:
+						return 47;
+					case 48:
+						return 48;
+				}
+			}
+		}
+	}
+	return -1;
+}

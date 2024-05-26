@@ -1,0 +1,70 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5538(int a0) {
+	object v1 = "";
+	int v0 = 0;
+	switch (a0) {
+		case 77201410:
+			v0 = cs2_configs['cfg1806'];
+			break;
+		case 77201411:
+			v0 = cs2_configs['cfg1807'];
+			break;
+		case 77201412:
+			v0 = cs2_configs['cfg1808'];
+			break;
+		case 77201413:
+			v0 = cs2_configs['cfg1809'];
+			break;
+		case 77201414:
+			v0 = cs2_configs['cfg1810'];
+			break;
+		case 77201438:
+			v0 = cs2_configs['cfg1808'];
+	}
+	switch (cs2_configs['cfg1725']) {
+		case 1:
+			if (v0 == 1) {
+				v1 = cs2method_10018(idx17mapData('i', 'o', 7501, client_configs['cfg1102'].bitcfg18521));
+			} else if (v0 == 4) {
+				v1 = cs2method_10018(idx17mapData('i', 'o', 7503, client_configs['cfg1102'].bitcfg18522));
+			} else {
+				v1 = cs2method_10018(idx17mapData('i', 'o', 5350, v0));
+			}
+			break;
+		case 2:
+			v1 = cs2method_10018(idx17mapData('i', 'o', 5353, v0));
+			break;
+		case 3:
+			v1 = cs2method_10018(idx17mapData('i', 'o', 5356, v0));
+			break;
+		case 4:
+			v1 = cs2method_10018(idx17mapData('i', 'o', 5359, v0));
+			break;
+		case 11:
+			if (v0 == 1) {
+				v1 = cs2method_10018(idx17mapData('i', 'o', 5732, client_configs['cfg1107'].bitcfg3008));
+			} else if (v0 == 2) {
+				v1 = cs2method_10018(idx17mapData('i', 'o', 5733, client_configs['cfg1107'].bitcfg3009));
+			} else {
+				v1 = cs2method_10018(idx17mapData('i', 'o', 5731, v0));
+			}
+			break;
+		case 12:
+			v1 = cs2method_10018(idx17mapData('i', 'o', 5734, v0));
+	}
+	if (v0 > 0 && v0 <= script_5550()) {
+		script_1163(a0, v1, -1, 77201408, 25, 190);
+	}
+	return;
+}

@@ -1,0 +1,95 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6636() {
+	if (client_configs['cfg2009'].bitcfg8711 > 0) {
+		cs2method_10758(idx17mapData('i', 'd', 6103, client_configs['cfg2009'].bitcfg8711), 87359505);
+	} else {
+		cs2method_10758(-1, 87359505);
+	}
+	if (client_configs['cfg2009'].bitcfg8712 > 0) {
+		cs2method_10758(idx17mapData('i', 'd', 6103, client_configs['cfg2009'].bitcfg8712), 87359506);
+	} else {
+		cs2method_10758(-1, 87359506);
+	}
+	if (client_configs['cfg2009'].bitcfg8713 > 0) {
+		cs2method_10758(idx17mapData('i', 'd', 6103, client_configs['cfg2009'].bitcfg8713), 87359507);
+	} else {
+		cs2method_10758(-1, 87359507);
+	}
+	if (client_configs['cfg2013'].bitcfg8736 < 3 || client_configs['cfg2009'].bitcfg8713 == 0) {
+		cs2method_10758(12343, 87359499);
+		cs2method_21121(new function<none>() {
+		}, "", new WidgetPointer(1333,19));
+		cs2method_20750(new function<none>() {
+		}, "", new WidgetPointer(1333,19));
+	} else {
+		cs2method_10758(12342, 87359499);
+		cs2method_10274(87359507, "Select");
+		cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,object a8,int a9,int a10,int a11,int a12) {
+			script_7769(a10, a1, a6, a5, a12, a9, a7, a4, a3, a11, a0, a8, a2);
+			return;
+		}, new WidgetPointer(1333,25), new WidgetPointer(-32768,3), -2147483643, idx17mapData('i', 's', 6106, client_configs['cfg2009'].bitcfg8713), 200, 17813, 17813, 16777215, 13, 4, 2, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1333,19));
+		cs2method_20750(new function<script_40>(int a0) {
+			script_41(a0);
+			return;
+		}, new WidgetPointer(1333,25), "I", new WidgetPointer(1333,19));
+	}
+	if (client_configs['cfg2013'].bitcfg8736 < 2 || client_configs['cfg2009'].bitcfg8712 == 0) {
+		cs2method_10758(12343, 87359498);
+		cs2method_21121(new function<none>() {
+		}, "", new WidgetPointer(1333,18));
+		cs2method_20750(new function<none>() {
+		}, "", new WidgetPointer(1333,18));
+	} else {
+		cs2method_10758(12342, 87359498);
+		cs2method_10274(87359506, "Select");
+		cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,object a11,int a12) {
+			script_7769(a7, a0, a9, a2, a4, a8, a12, a6, a5, a3, a1, a11, a10);
+			return;
+		}, new WidgetPointer(1333,25), new WidgetPointer(-32768,3), -2147483643, idx17mapData('i', 's', 6106, client_configs['cfg2009'].bitcfg8712), 200, 17813, 17813, 16777215, 13, 4, 2, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1333,18));
+		cs2method_20750(new function<script_40>(int a0) {
+			script_41(a0);
+			return;
+		}, new WidgetPointer(1333,25), "I", new WidgetPointer(1333,18));
+	}
+	if (client_configs['cfg2009'].bitcfg8711 == 0) {
+		cs2method_10758(12343, 87359497);
+		cs2method_21121(new function<none>() {
+		}, "", new WidgetPointer(1333,17));
+		cs2method_20750(new function<none>() {
+		}, "", new WidgetPointer(1333,17));
+	} else {
+		cs2method_10758(12342, 87359497);
+		cs2method_10274(87359505, "Select");
+		cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,object a10,int a11,int a12) {
+			script_7769(a9, a11, a8, a4, a2, a5, a1, a7, a0, a3, a6, a10, a12);
+			return;
+		}, new WidgetPointer(1333,25), new WidgetPointer(-32768,3), -2147483643, idx17mapData('i', 's', 6106, client_configs['cfg2009'].bitcfg8711), 200, 17813, 17813, 16777215, 13, 4, 2, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1333,17));
+		cs2method_20750(new function<script_40>(int a0) {
+			script_41(a0);
+			return;
+		}, new WidgetPointer(1333,25), "I", new WidgetPointer(1333,17));
+	}
+	object v0 = "Summon the avatar with no buff active.";
+	cs2method_10758(12342, 87359504);
+	cs2method_10274(87359512, "Select");
+	cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,object a8,int a9,int a10,int a11,int a12) {
+		script_7769(a4, a12, a2, a7, a3, a0, a11, a9, a5, a6, a10, a8, a1);
+		return;
+	}, new WidgetPointer(1333,25), new WidgetPointer(-32768,3), -2147483643, (string)v0, 200, 17813, 17813, 16777215, 13, 4, 2, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1333,24));
+	cs2method_20750(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(1333,25), "I", new WidgetPointer(1333,24));
+	return;
+}

@@ -1,0 +1,53 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8936(int a0,int a1,int a2,int a3,int a4) {
+	int v1 = idx22mapAttribute(a3, 3404);
+	if (a1 == 1 && idx22mapAttribute(a3, 3410) == 1) {
+		v1 = cs2method_10122(40, 100, v1);
+	}
+	if (cs2_configs['cfg2774'] == 1) {
+		v1 = cs2method_10122(95, 100, v1);
+	}
+	cs2method_10467(1, a4);
+	cs2method_10606(a0, 5, a2);
+	cs2method_10310(7893);
+	cs2method_10013(90, 23, 0, 0);
+	cs2method_10063(74, 47, 0, 0);
+	cs2method_20353(new function<script_8937>(int a0,int a1,int a2,int a3,int a4,int a5,int a6) {
+		object v0 = "";
+		if (client_configs['cfg3669'] < a0) {
+			v0 = "You cannot afford this reward." + "<br>" + "<br>";
+		}
+		if (cs2method_10461(client_configs['cfg3646'].bitcfg18645, 1) < a3) {
+			v0 = cs2method_10427(v0, "You need a higher level faction token to purchase this reward.");
+		}
+		if (a2 == 1 && a6 == 1) {
+			v0 = "You have already purchased this reward." + "<br>";
+		}
+		script_7769(97976656, a4, -1, 128, 17813, 17813, 16777215, 13, 4, 3, a1, v0, a5);
+		return;
+	}, new WidgetPointer(a0), -2147483647, -2147483646, v1, idx22mapAttribute(a3, 3406), idx22mapAttribute(a3, 3408), a1, "Iiiiiii");
+	cs2method_20884(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(1495,336), "I");
+	int v0 = cs2method_10060(a2, 1);
+	cs2method_10606(a0, 4, v0);
+	cs2method_10013(90, 23, 0, 0);
+	cs2method_10063(74, 48, 0, 0);
+	cs2method_10692(494);
+	cs2method_11105(1, 1, 0);
+	cs2method_10811(16777215);
+	cs2method_10797(cs2method_10379(v1));
+	return;
+}

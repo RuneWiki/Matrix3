@@ -1,0 +1,38 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9838() {
+	if (client_configs['cfg110'].bitcfg288 == 0) {
+		int v0 = script_1479(cs2_configs['cfg2351'], 0);
+		/* 
+			java.lang.RuntimeException: Stack underflow
+				at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+				at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+				at tests.Main.main(Main.java:69)
+			
+		 */
+	}
+	if (client_configs['cfg110'].bitcfg288 == 1) {
+		script_6587();
+	} else {
+		script_1455();
+		script_6588(client_configs['cfg110'].bitcfg288);
+	}
+	script_1459();
+	script_7077();
+	cs2_configs['cfg4146'] = cs2method_11048(cs2_configs['cfg4146'], cs2method_10060(cs2method_10133(), 30));
+	cs2_configs['cfg4147'] = 1;
+	return;
+}

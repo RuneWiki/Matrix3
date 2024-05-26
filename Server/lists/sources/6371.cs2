@@ -1,0 +1,72 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6371(int a0,int a1) {
+	cs2method_20162(new function<none>() {
+	}, "", new WidgetPointer(a0));
+	cs2method_10283(0, 0, 0, 0, script_6358(a0));
+	cs2method_10467(1, script_6358(a0));
+	switch (a1) {
+		case 0:
+			cs2_configs['cfg1947'] = new WidgetPointer(-1,65535);
+			cs2_configs['cfg1948'] = -1;
+			break;
+		case 1:
+			cs2_configs['cfg1949'] = new WidgetPointer(-1,65535);
+			cs2_configs['cfg1950'] = -1;
+			break;
+		case 2:
+			cs2_configs['cfg1951'] = new WidgetPointer(-1,65535);
+			cs2_configs['cfg1952'] = -1;
+			break;
+		case 3:
+			cs2_configs['cfg1953'] = new WidgetPointer(-1,65535);
+			cs2_configs['cfg1954'] = -1;
+			break;
+		case 4:
+			cs2_configs['cfg1955'] = new WidgetPointer(-1,65535);
+			cs2_configs['cfg1956'] = -1;
+			break;
+		case 5:
+			cs2_configs['cfg1957'] = new WidgetPointer(-1,65535);
+			cs2_configs['cfg1958'] = -1;
+			break;
+		case 6:
+			cs2_configs['cfg1959'] = new WidgetPointer(-1,65535);
+			cs2_configs['cfg1960'] = -1;
+			break;
+		case 7:
+			cs2_configs['cfg1961'] = new WidgetPointer(-1,65535);
+			cs2_configs['cfg1962'] = -1;
+			break;
+		case 8:
+			cs2_configs['cfg3503'] = new WidgetPointer(-1,65535);
+			cs2_configs['cfg3504'] = -1;
+			break;
+		case 9:
+			cs2_configs['cfg3505'] = new WidgetPointer(-1,65535);
+			cs2_configs['cfg3506'] = -1;
+			break;
+		case 10:
+			cs2_configs['cfg3507'] = new WidgetPointer(-1,65535);
+			cs2_configs['cfg3508'] = -1;
+			break;
+		case 11:
+			cs2_configs['cfg3509'] = new WidgetPointer(-1,65535);
+			cs2_configs['cfg3510'] = -1;
+			break;
+		case 12:
+			cs2_configs['cfg3511'] = new WidgetPointer(-1,65535);
+			cs2_configs['cfg3512'] = -1;
+	}
+	return;
+}

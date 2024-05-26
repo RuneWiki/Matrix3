@@ -1,0 +1,34 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6878() {
+	int v0 = 13783;
+	int v1 = 13782;
+	if (client_configs['cfg265'].bitcfg688 == 0) {
+		cs2method_10704(160, 85917910);
+		cs2method_20680(new function<none>() {
+		}, "", new WidgetPointer(1311,210));
+		cs2method_20750(new function<none>() {
+		}, "", new WidgetPointer(1311,210));
+	} else {
+		cs2method_10704(0, 85917910);
+		cs2method_20680(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), v0, "Id", new WidgetPointer(1311,210));
+		cs2method_20750(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), v1, "Id", new WidgetPointer(1311,210));
+	}
+	return;
+}

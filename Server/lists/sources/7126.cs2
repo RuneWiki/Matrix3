@@ -1,0 +1,187 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7126(int a0) {
+	int v13;
+	object v4;
+	object v8;
+	object v5;
+	object v7;
+	object v15;
+	int v12;
+	int v9 = 0;
+	int v16 = itemDefsAttribute(a0, 2696);
+	int v3 = 1;
+	object v14 = "";
+	object v2 = "";
+	if (itemDefsAttribute(a0, 3037) == 0) {
+		v13 = itemDefsAttribute(a0, 2653);
+	} else {
+		v13 = 1;
+	}
+	if (v16 != 0) {
+		object v18;
+		script_1520(89784324, 0);
+		cs2method_10758(idx17mapData('i', 'd', 371, v16), 89784371);
+		if (script_7166(a0) == 1) {
+			v5 = cs2method_10379(cs2method_10968(cs2method_10051(v13, itemDefsAttribute(a0, 2697)), 10000));
+		} else {
+			v5 = cs2method_10379(cs2method_10051(v13, itemDefsAttribute(a0, 2697)));
+		}
+		if (cs2method_10265(v5) <= 4) {
+			if (cs2method_10265(v5) == 1) {
+				v5 = cs2method_10427("0", v5);
+			}
+			v18 = (string)cs2method_11025(0, cs2method_10461(cs2method_10265(v5), 1), v5) + script_8002() + (string)cs2method_11025(cs2method_10461(cs2method_10265(v5), 1), cs2method_10265(v5), v5) + "xp";
+		} else {
+			v18 = cs2method_10427(cs2method_11025(0, cs2method_10461(cs2method_10265(v5), 1), v5), "xp");
+		}
+		cs2method_10026(89784372, v18);
+		v7 = idx17mapData('i', 's', 108, v16) + " Experience";
+	} else {
+		script_1520(89784324, 2);
+		cs2method_10758(-1, 89784371);
+		cs2method_10026(89784372, "-");
+		v7 = "No xp Gain";
+	}
+	cs2method_21121(new function<script_7768>(int a0,object a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+		script_7769(a0, a10, a6, a8, a12, a7, a2, a3, a5, a9, a11, a1, a4);
+		return;
+	}, new WidgetPointer(1371,68), new WidgetPointer(-32768,3), -1, (string)v7, cs2method_10236(89784343), 17813, 17813, 13083202, 13, 3, 2, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1370,44));
+	cs2method_20750(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(1371,68), "I", new WidgetPointer(1370,44));
+	int v0 = itemDefsAttribute(a0, 2698);
+	if (itemDefsAttribute(a0, 2996) == 0) {
+		v12 = itemDefsAttribute(a0, 2653);
+	} else {
+		v12 = 1;
+	}
+	if (v0 != 0) {
+		object v18;
+		script_1520(89784383, 0);
+		cs2method_10758(idx17mapData('i', 'd', 371, v0), 89784384);
+		if (script_7166(a0) == 1) {
+			v4 = cs2method_10379(cs2method_10968(cs2method_10051(v12, itemDefsAttribute(a0, 2699)), 10000));
+		} else {
+			v4 = cs2method_10379(cs2method_10051(v12, itemDefsAttribute(a0, 2699)));
+		}
+		if (cs2method_10265(v4) <= 4) {
+			if (cs2method_10265(v4) == 1) {
+				v4 = cs2method_10427("0", v4);
+			}
+			v18 = (string)cs2method_11025(0, cs2method_10461(cs2method_10265(v4), 1), v4) + script_8002() + (string)cs2method_11025(cs2method_10461(cs2method_10265(v4), 1), cs2method_10265(v4), v4) + "xp";
+		} else {
+			v18 = cs2method_10427(cs2method_11025(0, cs2method_10461(cs2method_10265(v4), 1), v4), "xp");
+		}
+		cs2method_10026(89784385, v18);
+		v8 = idx17mapData('i', 's', 108, v0) + " Experience";
+	} else {
+		script_1520(89784383, 2);
+		cs2method_10758(-1, 89784384);
+		cs2method_10026(89784385, "-");
+		v8 = "No Secondary xp gain";
+	}
+	cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,object a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+		script_7769(a2, a10, a1, a7, a6, a8, a0, a11, a9, a12, a3, a4, a5);
+		return;
+	}, new WidgetPointer(1371,68), new WidgetPointer(-32768,3), -1, (string)v8, cs2method_10236(89784343), 17813, 17813, 13083202, 13, 3, 2, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1370,45));
+	cs2method_20750(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(1371,68), "I", new WidgetPointer(1370,45));
+	if (itemDefsAttribute(a0, 2989) != -1) {
+		a0 = itemDefsAttribute(a0, 2989);
+	}
+	int v6 = itemDefsAttribute(a0, 2653);
+	int v1 = 0;
+	object v17 = "Sell to Store Gold Value";
+	object v10 = "Grand Exchange Gold Value";
+	object v11 = "";
+	if (cs2method_10338(6) >= 55) {
+		v15 = "High Alchemy Gold Value";
+	} else {
+		v15 = "Low Alchemy Gold Value";
+	}
+	if (cs2method_10340(a0) > 0) {
+		if (cs2_configs['cfg2223'] == 1) {
+			script_1520(89784322, 0);
+			int v18 = cs2method_10051(v6, cs2method_11048(1, cs2method_10122(cs2method_10340(a0), 100, 30)));
+			cs2method_10026(89784386, script_940(v18));
+			v17 = (string)v17 + ": " + (string)cs2method_10379(v18);
+			if (cs2_configs['cfg2224'] != -1) {
+				script_1520(89784368, 0);
+				int v19 = cs2method_10051(v6, cs2_configs['cfg2224']);
+				script_371();
+				cs2method_10026(89784389, script_940(v19));
+				v10 = (string)v10 + ": " + (string)cs2method_10379(v19);
+			} else {
+				script_368();
+				script_1520(89784368, 2);
+				cs2method_10026(89784389, "-");
+			}
+		} else {
+			script_369();
+			script_1520(89784322, 2);
+			script_1520(89784368, 2);
+			cs2method_10026(89784386, "-");
+			cs2method_10026(89784389, "-");
+		}
+		if (itemDefsAttribute(a0, 689) == 0) {
+			int v18;
+			script_1520(89784370, 0);
+			if (cs2method_10338(6) >= 55) {
+				v18 = cs2method_10051(v6, cs2method_10122(60, 100, cs2method_10340(a0)));
+			} else {
+				v18 = cs2method_10051(v6, cs2method_10122(40, 100, cs2method_10340(a0)));
+			}
+			cs2method_10026(89784391, script_940(v18));
+			v15 = (string)v15 + ": " + (string)cs2method_10379(v18);
+		} else {
+			script_1520(89784370, 2);
+			cs2method_10026(89784391, "-");
+		}
+	} else {
+		script_1520(89784322, 2);
+		script_1520(89784368, 2);
+		script_1520(89784370, 2);
+		cs2method_10026(89784386, "-");
+		cs2method_10026(89784389, "-");
+		cs2method_10026(89784391, "-");
+	}
+	cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,object a8,int a9,int a10,int a11,int a12) {
+		script_7769(a6, a4, a5, a3, a1, a11, a9, a12, a0, a10, a7, a8, a2);
+		return;
+	}, new WidgetPointer(1371,68), new WidgetPointer(-32768,3), -1, (string)v17, cs2method_10236(89784343), 17813, 17813, 13083202, 13, 3, 2, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1370,46));
+	cs2method_20750(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(1371,68), "I", new WidgetPointer(1370,46));
+	cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,object a10,int a11,int a12) {
+		script_7769(a5, a9, a2, a8, a3, a12, a11, a1, a4, a6, a7, a10, a0);
+		return;
+	}, new WidgetPointer(1371,68), new WidgetPointer(-32768,3), -1, (string)v10, cs2method_10236(89784343), 17813, 17813, 13083202, 13, 3, 2, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1370,47));
+	cs2method_20750(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(1371,68), "I", new WidgetPointer(1370,47));
+	cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,object a9,int a10,int a11,int a12) {
+		script_7769(a1, a12, a7, a8, a5, a10, a0, a3, a6, a2, a4, a9, a11);
+		return;
+	}, new WidgetPointer(1371,68), new WidgetPointer(-32768,3), -1, (string)v15, cs2method_10236(89784343), 17813, 17813, 13083202, 13, 3, 2, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1370,49));
+	cs2method_20750(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(1371,68), "I", new WidgetPointer(1370,49));
+	return;
+}

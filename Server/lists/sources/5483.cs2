@@ -1,0 +1,99 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5483(int a0,int a1,int a2,int a3) {
+	int v11 = idx17mapData('o', 'i', 5331, a1);
+	int v7 = 0;
+	int v3 = 0;
+	int v2 = 0;
+	int v12 = 0;
+	int v10 = -1;
+	object v13 = "";
+	switch (a1) {
+		case 5329:
+			if (a3 == 1) {
+				cs2method_20254(load function<5483>, new WidgetPointer(a2), new WidgetPointer(a0), a1, 0, 93, 94, 2, "IIo1Y", new WidgetPointer(a2));
+			}
+			int v9 = cs2method_10060(cs2method_10936(94, 7409), cs2method_10936(93, 7409));
+			if (v9 > 0) {
+				a1 = 7409;
+			}
+			v7 = cs2method_10060(v9, cs2method_10936(93, 5329));
+			break;
+		case 6797:
+			if (a3 == 1) {
+				cs2method_20254(load function<5483>, new WidgetPointer(a2), new WidgetPointer(a0), a1, 0, 93, 1, "IIo1Y", new WidgetPointer(a2));
+			}
+			for (int v0 = 1, int v15 = cs2method_10924(136), int v14 = v0; v14 <= v15; v14 = cs2method_10060(v14, 1)) {
+				int v1 = idx17mapData('i', 'o', 136, v14);
+				if (v1 != -1 && v1 != 6797) {
+					int v8 = cs2method_10936(93, v1);
+					if (v8 > 0) {
+						int v16 = v1;
+						v7 = cs2method_10060(v7, v8);
+						a1 = v16;
+					}
+				}
+			}
+			break;
+		default:
+			if (a3 == 1) {
+				cs2method_20254(load function<5483>, new WidgetPointer(a2), new WidgetPointer(a0), a1, 0, 93, 1, "IIo1Y", new WidgetPointer(a2));
+			}
+			v7 = cs2method_10936(93, a1);
+			break;
+		case 22444:
+			if (a3 == 1) {
+				cs2method_20254(load function<5483>, new WidgetPointer(a2), new WidgetPointer(a0), a1, 0, 93, 1, "IIo1Y", new WidgetPointer(a2));
+			}
+			int v6 = cs2method_10872(cs2method_10936(93, 22444), 1);
+			v11 = 1;
+			v7 = v6;
+			break;
+		case -1:
+			return;
+	}
+	if (v11 > 1) {
+		cs2method_11116(a1, v7, a2);
+	} else if (v7 > 0) {
+		cs2method_10039(a1, v7, a2);
+	} else {
+		cs2method_10121(a1, v7, a2);
+	}
+	cs2method_10316(a2, "<col=ff9040>" + (string)cs2method_10018(a1));
+	int v5 = 6014;
+	int v4 = 6015;
+	if (v7 > 0) {
+		if (a1 != -1) {
+			object v16 = cs2method_10018(a1);
+			cs2method_21121(new function<script_8799>(object a0,int a1,int a2) {
+				script_8800(a2, a1, a0);
+				return;
+			}, (string)v16, new WidgetPointer(a0), -1, "sIi", new WidgetPointer(a0));
+		}
+		cs2method_10704(0, a2);
+		cs2method_10758(v5, a0);
+		cs2method_20680(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), v4, "Id", new WidgetPointer(a0));
+		cs2method_20750(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), v5, "Id", new WidgetPointer(a0));
+	} else {
+		cs2method_10704(175, a2);
+		cs2method_10758(6016, a0);
+		cs2method_10906(a0);
+	}
+	return;
+}

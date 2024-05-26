@@ -1,0 +1,122 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6637(int a0) {
+	int v5 = 0;
+	int v0 = 35;
+	int v6 = 30;
+	int v1 = 0;
+	int v7 = 0;
+	int v2 = 32;
+	while (v5 <= cs2method_10924(6103)) {
+		cs2method_10606(87425063, 5, v5);
+		cs2method_10013(v2, v2, 0, 0);
+		cs2method_10310(idx17mapData('i', 'd', 6103, cs2method_10060(v5, 1)));
+		cs2method_10063(cs2method_10060(cs2method_10060(v0, cs2method_10051(v7, v2)), cs2method_10051(v6, v7)), cs2method_10060(cs2method_10060(v0, cs2method_10051(v1, v2)), cs2method_10051(v6, v1)), 0, 0);
+		cs2method_11082(1);
+		cs2method_11009(5);
+		cs2method_10065(5);
+		cs2method_10564(87425063, -1);
+		cs2method_20902(new function<script_6638>(int a0,int a1,int a2,int a3) {
+			if (cs2method_11038(a1, a0) == 1) {
+				cs2method_10758(cs2method_10713(), a3);
+			}
+			return;
+		}, new WidgetPointer(-32768,3), -2147483643, new WidgetPointer(-32768,6), -2147483641, "IiIi");
+		cs2method_20353(new function<script_7768>(object a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+			script_7769(a1, a2, a12, a5, a10, a9, a11, a4, a6, a7, a8, a0, a3);
+			return;
+		}, new WidgetPointer(1334,47), new WidgetPointer(-32768,3), -2147483643, idx17mapData('i', 's', 6106, cs2method_10060(v5, 1)), 180, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii");
+		cs2method_20884(new function<script_40>(int a0) {
+			script_41(a0);
+			return;
+		}, new WidgetPointer(1334,47), "I");
+		v5 = cs2method_10060(v5, 1);
+		if (v7 == 6) {
+			v7 = 0;
+			v1 = cs2method_10060(v1, 1);
+		} else {
+			v7 = cs2method_10060(v7, 1);
+		}
+	}
+	int v3 = 12288;
+	int v4 = 12287;
+	cs2method_10495(87425056);
+	cs2method_10495(87425057);
+	cs2method_10495(87425058);
+	cs2method_10758(12341, 87425049);
+	cs2method_10758(12341, 87425050);
+	cs2method_10758(12341, 87425051);
+	cs2method_10758(12289, 87425056);
+	cs2method_10758(12289, 87425057);
+	cs2method_10758(12289, 87425058);
+	cs2method_20680(new function<none>() {
+	}, "", new WidgetPointer(1334,32));
+	cs2method_20680(new function<none>() {
+	}, "", new WidgetPointer(1334,33));
+	cs2method_20680(new function<none>() {
+	}, "", new WidgetPointer(1334,34));
+	cs2method_20750(new function<none>() {
+	}, "", new WidgetPointer(1334,32));
+	cs2method_20750(new function<none>() {
+	}, "", new WidgetPointer(1334,33));
+	cs2method_20750(new function<none>() {
+	}, "", new WidgetPointer(1334,34));
+	if (client_configs['cfg2013'].bitcfg8736 > 2) {
+		cs2method_10758(12340, 87425051);
+		if (client_configs['cfg2013'].bitcfg8720 == 0) {
+			cs2method_10758(12287, 87425058);
+			cs2method_20680(new function<script_44>(int a0,int a1) {
+				cs2method_10758(a1, a0);
+				return;
+			}, new WidgetPointer(-32768,3), v3, "Id", new WidgetPointer(1334,34));
+			cs2method_20750(new function<script_44>(int a0,int a1) {
+				cs2method_10758(a0, a1);
+				return;
+			}, new WidgetPointer(-32768,3), v4, "Id", new WidgetPointer(1334,34));
+			cs2method_11127(1, 87425058, "Remove");
+		}
+	}
+	if (client_configs['cfg2013'].bitcfg8736 > 1) {
+		cs2method_10758(12340, 87425050);
+		if (client_configs['cfg2013'].bitcfg8719 == 0) {
+			cs2method_10758(12287, 87425057);
+			cs2method_20680(new function<script_44>(int a0,int a1) {
+				cs2method_10758(a1, a0);
+				return;
+			}, new WidgetPointer(-32768,3), v3, "Id", new WidgetPointer(1334,33));
+			cs2method_20750(new function<script_44>(int a0,int a1) {
+				cs2method_10758(a0, a1);
+				return;
+			}, new WidgetPointer(-32768,3), v4, "Id", new WidgetPointer(1334,33));
+			cs2method_11127(1, 87425057, "Remove");
+		}
+	}
+	if (client_configs['cfg2013'].bitcfg8736 > 0) {
+		cs2method_10758(12340, 87425049);
+		if (client_configs['cfg2013'].bitcfg8718 == 0) {
+			cs2method_10758(12287, 87425056);
+			cs2method_20680(new function<script_44>(int a0,int a1) {
+				cs2method_10758(a0, a1);
+				return;
+			}, new WidgetPointer(-32768,3), v3, "Id", new WidgetPointer(1334,32));
+			cs2method_20750(new function<script_44>(int a0,int a1) {
+				cs2method_10758(a1, a0);
+				return;
+			}, new WidgetPointer(-32768,3), v4, "Id", new WidgetPointer(1334,32));
+			cs2method_11127(1, 87425056, "Remove");
+		}
+	}
+	script_6641();
+	script_6646(87425069);
+	return;
+}

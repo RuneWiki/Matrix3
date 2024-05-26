@@ -1,0 +1,24 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+string script_7160(int a0) {
+	if (a0 == 30) {
+		return "All skills";
+	}
+	if (a0 == 31) {
+		return "Attack, Strength, Defence, Magic and Ranged";
+	}
+	if (idx17mapData('i', 'S', 681, a0) != -1) {
+		return idx17mapData('i', 's', 108, a0);
+	}
+	return "skill";
+}

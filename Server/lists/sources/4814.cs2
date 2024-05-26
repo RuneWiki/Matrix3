@@ -1,0 +1,421 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4814() {
+	int v19 = 0;
+	int v41 = 0;
+	int v26 = 0;
+	int v28 = 0;
+	object v35 = "";
+	cs2method_10026(82444736, "");
+	cs2method_10026(82444670, "");
+	cs2method_10026(82444598, "");
+	cs2method_10467(0, 82444734);
+	cs2method_10467(0, 82444668);
+	cs2method_10467(0, 82444596);
+	cs2method_10467(1, 82444736);
+	cs2method_10467(1, 82444670);
+	cs2method_10467(1, 82444598);
+	cs2method_20750(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(1258,149), "I", new WidgetPointer(1258,454));
+	cs2method_20750(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(1258,149), "I", new WidgetPointer(1258,388));
+	cs2method_20750(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(1258,149), "I", new WidgetPointer(1258,316));
+	cs2method_20750(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(1258,149), "I", new WidgetPointer(1258,442));
+	cs2method_20750(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(1258,149), "I", new WidgetPointer(1258,376));
+	cs2method_20750(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(1258,149), "I", new WidgetPointer(1258,304));
+	cs2method_20750(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(1258,149), "I", new WidgetPointer(1258,453));
+	cs2method_20750(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(1258,149), "I", new WidgetPointer(1258,387));
+	cs2method_20750(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(1258,149), "I", new WidgetPointer(1258,315));
+	cs2method_20750(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(1258,149), "I", new WidgetPointer(1258,441));
+	cs2method_20750(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(1258,149), "I", new WidgetPointer(1258,375));
+	cs2method_20750(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(1258,149), "I", new WidgetPointer(1258,303));
+	if (cs2method_10172() == 1) {
+		if (script_5008() == 0 || script_5144(-1) == 0) {
+			cs2method_10467(0, 82444742);
+			cs2method_10467(0, 82444676);
+			cs2method_10467(0, 82444604);
+			cs2method_10467(0, 82444730);
+			cs2method_10467(0, 82444664);
+			cs2method_10467(0, 82444592);
+			object v42 = "Your rank may not currently make alterations to this item";
+			cs2method_21121(new function<script_7768>(object a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+				script_7769(a7, a11, a3, a12, a9, a2, a8, a5, a6, a1, a4, a0, a10);
+				return;
+			}, new WidgetPointer(1258,149), new WidgetPointer(1258,454), -1, (string)v42, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,454));
+			cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,object a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+				script_7769(a4, a9, a3, a8, a6, a1, a7, a10, a0, a11, a2, a5, a12);
+				return;
+			}, new WidgetPointer(1258,149), new WidgetPointer(1258,388), -1, (string)v42, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,388));
+			cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,object a7,int a8,int a9,int a10,int a11,int a12) {
+				script_7769(a1, a5, a6, a9, a4, a12, a10, a8, a11, a2, a0, a7, a3);
+				return;
+			}, new WidgetPointer(1258,149), new WidgetPointer(1258,316), -1, (string)v42, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,316));
+			cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,object a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+				script_7769(a10, a2, a12, a11, a9, a0, a6, a8, a3, a7, a5, a4, a1);
+				return;
+			}, new WidgetPointer(1258,149), new WidgetPointer(1258,442), -1, (string)v42, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,442));
+			cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,object a9,int a10,int a11,int a12) {
+				script_7769(a1, a8, a6, a11, a3, a5, a7, a4, a2, a10, a12, a9, a0);
+				return;
+			}, new WidgetPointer(1258,149), new WidgetPointer(1258,376), -1, (string)v42, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,376));
+			cs2method_21121(new function<script_7768>(int a0,object a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+				script_7769(a5, a10, a11, a9, a3, a8, a2, a4, a0, a12, a6, a1, a7);
+				return;
+			}, new WidgetPointer(1258,149), new WidgetPointer(1258,304), -1, (string)v42, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,304));
+		} else {
+			switch (client_configs['cfg1981'].bitcfg6981) {
+				case 1:
+					v19 = client_configs['cfg1982'].bitcfg6986;
+					break;
+				case 2:
+					v19 = client_configs['cfg1984'].bitcfg6995;
+					break;
+				case 3:
+					v19 = client_configs['cfg1986'].bitcfg7004;
+			}
+			switch (script_4829(client_configs['cfg1981'].bitcfg6981)) {
+				case 1:
+					object v0 = "You may submit this customisation to the build queue.";
+					switch (v19) {
+						case 1:
+							cs2method_10467(1, 82444736);
+							cs2method_10467(0, 82444734);
+							cs2method_10467(1, 82444742);
+							cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,object a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+								script_7769(a8, a10, a2, a7, a12, a11, a0, a3, a5, a1, a9, a4, a6);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,453), -1, (string)v0, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,453));
+							break;
+						case 2:
+							cs2method_10467(1, 82444670);
+							cs2method_10467(0, 82444668);
+							cs2method_10467(1, 82444676);
+							cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,object a9,int a10,int a11,int a12) {
+								script_7769(a1, a8, a10, a7, a3, a2, a4, a5, a6, a11, a0, a9, a12);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,387), -1, (string)v0, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,387));
+							break;
+						case 3:
+							cs2method_10467(1, 82444598);
+							cs2method_10467(0, 82444596);
+							cs2method_10467(1, 82444604);
+							cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,object a8,int a9,int a10,int a11,int a12) {
+								script_7769(a6, a1, a11, a0, a5, a9, a2, a7, a10, a4, a3, a8, a12);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,315), -1, (string)v0, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,315));
+					}
+					break;
+				case 2:
+					switch (v19) {
+						case 1:
+							object v32 = "Your citadel is of an insufficient tier to buy this customisation.";
+							cs2method_10026(82444736, v32);
+							cs2method_10467(0, 82444742);
+							cs2method_10467(0, 82444736);
+							cs2method_10467(1, 82444734);
+							cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,object a8,int a9,int a10,int a11,int a12) {
+								script_7769(a4, a9, a5, a7, a12, a10, a11, a0, a6, a2, a1, a8, a3);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,454), -1, (string)v32, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,454));
+							object v25 = "You may cancel this customisation from the build queue but you will lose any resources already spent.";
+							cs2method_21121(new function<script_7768>(int a0,int a1,object a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+								script_7769(a4, a0, a5, a8, a7, a12, a6, a10, a1, a11, a3, a2, a9);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,441), -1, (string)v25, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,441));
+							object v23 = "You do not have the rank to cancel this job.";
+							cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,object a11,int a12) {
+								script_7769(a4, a0, a8, a2, a5, a12, a6, a1, a9, a3, a7, a11, a10);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,442), -1, (string)v23, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,442));
+							break;
+						case 2:
+							object v29 = "Your citadel is of an insufficient tier to buy this customisation.";
+							cs2method_10026(82444670, v29);
+							cs2method_10467(0, 82444676);
+							cs2method_10467(0, 82444670);
+							cs2method_10467(1, 82444668);
+							cs2method_21121(new function<script_7768>(int a0,object a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+								script_7769(a6, a11, a2, a5, a7, a12, a3, a8, a10, a4, a0, a1, a9);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,388), -1, (string)v29, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,388));
+							object v39 = "You may cancel this customisation from the build queue but you will lose any resources already spent.";
+							cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,object a10,int a11,int a12) {
+								script_7769(a0, a5, a4, a8, a12, a7, a11, a6, a9, a3, a1, a10, a2);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,375), -1, (string)v39, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,375));
+							object v40 = "You do not have the rank to cancel this job.";
+							cs2method_21121(new function<script_7768>(int a0,int a1,object a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+								script_7769(a6, a11, a0, a7, a8, a5, a1, a10, a9, a3, a12, a2, a4);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,376), -1, (string)v40, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,376));
+							break;
+						case 3:
+							object v16 = "Your citadel is of an insufficient tier to buy this customisation.";
+							cs2method_10026(82444598, v16);
+							cs2method_10467(0, 82444604);
+							cs2method_10467(0, 82444598);
+							cs2method_10467(1, 82444596);
+							cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,object a7,int a8,int a9,int a10,int a11,int a12) {
+								script_7769(a4, a5, a11, a0, a6, a1, a2, a3, a12, a8, a9, a7, a10);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,316), -1, (string)v16, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,316));
+							object v37 = "You may cancel this customisation from the build queue but you will lose any resources already spent.";
+							cs2method_21121(new function<script_7768>(int a0,object a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+								script_7769(a5, a2, a6, a11, a10, a12, a7, a4, a3, a9, a8, a1, a0);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,303), -1, (string)v37, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,303));
+							object v17 = "You do not have the rank to cancel this job.";
+							cs2method_21121(new function<script_7768>(int a0,object a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+								script_7769(a8, a10, a3, a7, a5, a4, a0, a9, a6, a11, a12, a1, a2);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,304), -1, (string)v17, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,304));
+					}
+					break;
+				case 3:
+					switch (v19) {
+						case 1:
+							object v21 = "Select valid options for each part of the customisation before adding to the build queue.";
+							cs2method_10026(82444736, v21);
+							cs2method_10467(0, 82444742);
+							cs2method_10467(0, 82444736);
+							cs2method_10467(1, 82444734);
+							cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,object a7,int a8,int a9,int a10,int a11,int a12) {
+								script_7769(a10, a12, a2, a11, a8, a3, a4, a9, a0, a1, a6, a7, a5);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,454), -1, (string)v21, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,454));
+							object v36 = "You may cancel this customisation from the build queue but you will lose any resources already spent.";
+							cs2method_21121(new function<script_7768>(int a0,object a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+								script_7769(a8, a9, a10, a2, a12, a0, a5, a11, a4, a7, a6, a1, a3);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,441), -1, (string)v36, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,441));
+							object v22 = "You do not have the rank to cancel this job.";
+							cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,object a11,int a12) {
+								script_7769(a12, a10, a4, a8, a7, a2, a3, a1, a6, a0, a5, a11, a9);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,442), -1, (string)v22, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,442));
+							break;
+						case 2:
+							object v18 = "You must select valid options for each part of the customisation before you can add it to the build queue.";
+							cs2method_10026(82444670, v18);
+							cs2method_10467(0, 82444676);
+							cs2method_10467(0, 82444670);
+							cs2method_10467(1, 82444668);
+							cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,object a9,int a10,int a11,int a12) {
+								script_7769(a10, a2, a1, a6, a7, a3, a5, a8, a0, a12, a11, a9, a4);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,388), -1, (string)v18, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,388));
+							object v14 = "You may cancel this customisation from the build queue but you will lose any resources already spent.";
+							cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,object a8,int a9,int a10,int a11,int a12) {
+								script_7769(a3, a2, a12, a0, a9, a1, a4, a11, a10, a5, a6, a8, a7);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,375), -1, (string)v14, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,375));
+							object v27 = "You do not have the rank to cancel this job.";
+							cs2method_21121(new function<script_7768>(int a0,int a1,object a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+								script_7769(a3, a0, a4, a7, a8, a1, a12, a10, a5, a9, a11, a2, a6);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,376), -1, (string)v27, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,376));
+							break;
+						case 3:
+							object v9 = "You must select valid options for each part of the customisation before you can add it to the build queue.";
+							cs2method_10026(82444598, v9);
+							cs2method_10467(0, 82444604);
+							cs2method_10467(0, 82444598);
+							cs2method_10467(1, 82444596);
+							cs2method_21121(new function<script_7768>(int a0,int a1,int a2,object a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+								script_7769(a8, a0, a6, a4, a11, a12, a10, a1, a5, a2, a9, a3, a7);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,316), -1, (string)v9, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,316));
+							object v7 = "You may cancel this customisation from the build queue but you will lose any resources already spent.";
+							cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,object a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+								script_7769(a7, a1, a3, a11, a8, a5, a2, a9, a12, a0, a6, a4, a10);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,303), -1, (string)v7, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,303));
+							object v31 = "You do not have the rank to cancel this job.";
+							cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,object a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+								script_7769(a4, a2, a3, a7, a1, a0, a9, a12, a8, a11, a5, a6, a10);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,304), -1, (string)v31, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,304));
+					}
+					break;
+				case 4:
+					switch (v19) {
+						case 1:
+							object v34 = "The selection you have chosen is already built in the citadel.";
+							cs2method_10026(82444736, v34);
+							cs2method_10467(0, 82444742);
+							cs2method_10467(0, 82444736);
+							cs2method_10467(1, 82444734);
+							cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,object a11,int a12) {
+								script_7769(a3, a2, a9, a4, a8, a6, a1, a0, a5, a7, a10, a11, a12);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,454), -1, (string)v34, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,454));
+							object v6 = "You may cancel this customisation from the build queue but you will lose any resources already spent.";
+							cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,object a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+								script_7769(a7, a12, a6, a2, a3, a1, a4, a0, a9, a10, a11, a5, a8);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,441), -1, (string)v6, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,441));
+							object v30 = "You do not have the rank to cancel this job.";
+							cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,object a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+								script_7769(a10, a5, a9, a8, a3, a2, a7, a1, a0, a11, a4, a6, a12);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,442), -1, (string)v30, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,442));
+							break;
+						case 2:
+							object v2 = "The selection you have chosen is already built in the citadel.";
+							cs2method_10026(82444670, v2);
+							cs2method_10467(0, 82444676);
+							cs2method_10467(0, 82444670);
+							cs2method_10467(1, 82444668);
+							cs2method_21121(new function<script_7768>(int a0,object a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+								script_7769(a3, a0, a2, a8, a12, a4, a7, a11, a6, a5, a9, a1, a10);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,388), -1, (string)v2, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,388));
+							object v5 = "You may cancel this customisation from the build queue but you will lose any resources already spent.";
+							cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,object a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+								script_7769(a10, a2, a5, a7, a9, a12, a1, a3, a4, a0, a8, a6, a11);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,375), -1, (string)v5, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,375));
+							object v15 = "You do not have the rank to cancel this job.";
+							cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,object a7,int a8,int a9,int a10,int a11,int a12) {
+								script_7769(a3, a5, a11, a12, a1, a8, a4, a9, a2, a10, a6, a7, a0);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,376), -1, (string)v15, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,376));
+							break;
+						case 3:
+							object v20 = "The selection you have chosen is already built in the citadel.";
+							cs2method_10026(82444598, v20);
+							cs2method_10467(0, 82444604);
+							cs2method_10467(0, 82444598);
+							cs2method_10467(1, 82444596);
+							cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,object a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+								script_7769(a11, a1, a12, a7, a9, a8, a2, a5, a10, a3, a0, a6, a4);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,316), -1, (string)v20, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,316));
+							object v8 = "You may cancel this customisation from the build queue but you will lose any resources already spent.";
+							cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,object a9,int a10,int a11,int a12) {
+								script_7769(a3, a6, a12, a10, a4, a1, a2, a11, a8, a7, a5, a9, a0);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,303), -1, (string)v8, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,303));
+							object v3 = "You do not have the rank to cancel this job.";
+							cs2method_21121(new function<script_7768>(object a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+								script_7769(a10, a8, a5, a2, a9, a1, a12, a6, a7, a3, a4, a0, a11);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,304), -1, (string)v3, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,304));
+					}
+					break;
+				case 5:
+					switch (v19) {
+						default:
+							break;
+						case 1:
+							object v33 = "This hotspot is currently queued to be reset, you may cancel this reset at no cost.";
+							cs2method_10026(82444736, v33);
+							cs2method_10467(0, 82444742);
+							cs2method_10467(0, 82444736);
+							cs2method_10467(1, 82444734);
+							cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,object a12) {
+								script_7769(a8, a4, a9, a5, a2, a3, a0, a6, a10, a1, a7, a12, a11);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,388), -1, (string)v33, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,454));
+							object v11 = "This hotspot is currently queued to be reset, you may cancel this reset at no cost.";
+							cs2method_21121(new function<script_7768>(int a0,int a1,int a2,object a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+								script_7769(a12, a7, a0, a2, a4, a5, a11, a9, a8, a6, a10, a3, a1);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,441), -1, (string)v11, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,441));
+							object v10 = "You do not have the rank to cancel this job.";
+							cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,object a9,int a10,int a11,int a12) {
+								script_7769(a6, a5, a3, a1, a4, a10, a11, a2, a12, a0, a7, a9, a8);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,442), -1, (string)v10, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,442));
+							break;
+						case 2:
+							object v4 = "This hotspot is currently queued to be reset, you may cancel this reset at no cost.";
+							cs2method_10026(82444670, v4);
+							cs2method_10467(0, 82444676);
+							cs2method_10467(0, 82444670);
+							cs2method_10467(1, 82444668);
+							cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,object a7,int a8,int a9,int a10,int a11,int a12) {
+								script_7769(a6, a1, a12, a2, a5, a4, a8, a9, a3, a10, a0, a7, a11);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,388), -1, (string)v4, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,388));
+							object v38 = "This hotspot is currently queued to be reset, you may cancel this reset at no cost.";
+							cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,object a7,int a8,int a9,int a10,int a11,int a12) {
+								script_7769(a3, a11, a2, a12, a1, a0, a4, a9, a8, a10, a6, a7, a5);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,375), -1, (string)v38, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,375));
+							object v12 = "You do not have the rank to cancel this job.";
+							cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,object a9,int a10,int a11,int a12) {
+								script_7769(a4, a7, a8, a3, a6, a10, a11, a5, a12, a2, a1, a9, a0);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,376), -1, (string)v12, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,376));
+							break;
+						case 3:
+							object v24 = "This hotspot is currently queued to be reset, you may cancel this reset at no cost.";
+							cs2method_10026(82444598, v24);
+							cs2method_10467(0, 82444604);
+							cs2method_10467(0, 82444598);
+							cs2method_10467(1, 82444596);
+							cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,object a7,int a8,int a9,int a10,int a11,int a12) {
+								script_7769(a4, a10, a11, a6, a3, a12, a2, a0, a8, a9, a1, a7, a5);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,316), -1, (string)v24, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,316));
+							object v1 = "This hotspot is currently queued to be reset, you may cancel this reset at no cost.";
+							cs2method_21121(new function<script_7768>(int a0,int a1,object a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+								script_7769(a1, a12, a5, a7, a8, a0, a9, a4, a11, a6, a10, a2, a3);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,303), -1, (string)v1, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,303));
+							object v13 = "You do not have the rank to cancel this job.";
+							cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,object a10,int a11,int a12) {
+								script_7769(a4, a3, a8, a6, a11, a2, a1, a0, a12, a9, a5, a10, a7);
+								return;
+							}, new WidgetPointer(1258,149), new WidgetPointer(1258,304), -1, (string)v13, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,304));
+					}
+			}
+		}
+	}
+	return;
+}

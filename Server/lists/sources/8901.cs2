@@ -1,0 +1,57 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8901() {
+	int v0 = 0;
+	if (cs2method_10236(97910840) < cs2_configs['cfg2793']) {
+		v0 = 1;
+	} else if (cs2method_10236(97910840) > cs2_configs['cfg2793']) {
+		v0 = 2;
+	} else {
+		cs2method_10467(1, 97910843);
+		cs2method_10467(1, 97910845);
+		cs2method_10467(1, 97910844);
+		cs2method_10467(1, 97910846);
+		cs2_configs['cfg2795'] = 300;
+	}
+	int v1 = 0;
+	if (v0 == 1) {
+		if (script_8900(1) == 1) {
+			return;
+		}
+		int v2 = cs2method_10872(cs2method_10060(cs2method_10236(97910840), 12), cs2_configs['cfg2793']);
+		cs2method_10467(0, 97910844);
+		cs2method_10467(0, 97910846);
+		cs2method_10112(cs2method_10461(v2, 24), -2, 0, 0, 97910844);
+		cs2method_10112(cs2method_10461(v2, 26), 9, 0, 0, 97910846);
+		cs2method_10283(cs2method_10872(cs2method_10060(cs2method_10236(97910840), 6), cs2_configs['cfg2793']), 19, 0, 0, 97910840);
+		cs2method_10283(cs2method_11048(cs2method_10461(cs2method_10236(97910838), 6), cs2_configs['cfg2794']), 19, 0, 0, 97910838);
+		cs2method_10283(cs2method_11048(cs2method_10461(cs2method_10236(97910837), 6), cs2_configs['cfg2794']), 19, 0, 0, 97910837);
+		cs2method_10283(cs2method_11048(cs2method_10461(cs2method_10236(97910839), 6), cs2_configs['cfg2794']), 19, 0, 0, 97910839);
+	} else {
+		if (v0 == 2) {
+			if (script_8900(2) == 1) {
+				return;
+			}
+			int v2 = cs2method_10872(cs2method_10060(cs2method_10236(97910837), 12), cs2_configs['cfg2794']);
+			cs2method_10467(0, 97910843);
+			cs2method_10467(0, 97910845);
+			cs2method_10112(cs2method_10461(v2, 24), -2, 2, 0, 97910843);
+			cs2method_10112(cs2method_10461(v2, 26), 9, 2, 0, 97910845);
+			cs2method_10283(cs2method_10872(cs2method_10060(cs2method_10236(97910837), 6), cs2_configs['cfg2794']), 19, 0, 0, 97910837);
+			cs2method_10283(cs2method_11048(cs2method_10461(cs2method_10236(97910841), 6), cs2_configs['cfg2793']), 19, 0, 0, 97910841);
+			cs2method_10283(cs2method_11048(cs2method_10461(cs2method_10236(97910840), 6), cs2_configs['cfg2793']), 19, 0, 0, 97910840);
+			cs2method_10283(cs2method_11048(cs2method_10461(cs2method_10236(97910842), 6), cs2_configs['cfg2793']), 19, 0, 0, 97910842);
+		}
+	}
+	return;
+}

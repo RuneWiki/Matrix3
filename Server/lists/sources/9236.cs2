@@ -1,0 +1,42 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9236(int a0,int a1,object a2,int a3,int a4,int a5,int a6,int a7,int a8) {
+	if (a3 == -1 || a0 == -1) {
+		int v1 = a4;
+		script_9880_struct(2,0,0) v0 = script_9880(v1);
+		a0 = v0.intpart_1;
+		a3 = v0.intpart_0;
+	}
+	script_9237(a1, a7, -1, a8, a4, a6, a3, a0, a5);
+	cs2method_20254(new function<script_9235>(int a0,object a1,int a2,int a3,int a4,int a5,int a6) {
+		if (script_6579() == 1) {
+			cs2method_20162(load function<9235>, new WidgetPointer(a3), new WidgetPointer(a2), a0, a5, a4, a6, (string)a1, "IIviiis", new WidgetPointer(a2));
+			return;
+		}
+		cs2method_20162(new function<none>() {
+		}, "", new WidgetPointer(a2));
+		if (a2 == -1 || a0 == -1) {
+			return;
+		}
+		if (a5 == -1 || a4 == -1) {
+			int v0 = a0;
+			script_9880_struct(2,0,0) v1 = script_9880(v0);
+			a4 = v1.intpart_1;
+			a5 = v1.intpart_0;
+		}
+		script_9239(a2, a0, a5, a4, a1, a6);
+		return;
+	}, new WidgetPointer(a1), new WidgetPointer(a7), a4, a3, a0, a5, (string)a2, a4, 1, "IIviiisY", new WidgetPointer(a7));
+	script_9239(a7, a4, a3, a0, a2, a5);
+	return;
+}

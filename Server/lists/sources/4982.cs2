@@ -1,0 +1,235 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4982(int a0,int a1,int a2,int a3,int a4) {
+	int v16 = 0;
+	int v1 = 0;
+	int v13 = 0;
+	int v11 = 0;
+	int v17 = 0;
+	int v9 = 0;
+	int v2 = 0;
+	int v14 = 0;
+	int v15 = 0;
+	int v5 = 0;
+	int v4 = 0;
+	int v3 = 0;
+	int v18 = 0;
+	int v6 = 0;
+	int v7 = 0;
+	int v10 = 0;
+	int v12 = 0;
+	int v19 = 0;
+	int v8 = cs2method_10461(a4, a3);
+	int v0 = cs2method_11048(v8, 0);
+	if (cs2method_10172() == 1) {
+		switch (a4) {
+			case 0:
+				v18 = idx22mapAttribute(a1, 1483);
+				v6 = idx22mapAttribute(a1, 1490);
+				v7 = idx22mapAttribute(a1, 1497);
+				v10 = idx22mapAttribute(a1, 1504);
+				v12 = idx22mapAttribute(a1, 1511);
+				v19 = idx22mapAttribute(a1, 1518);
+				break;
+			case 1:
+				v18 = idx22mapAttribute(a1, 1484);
+				v6 = idx22mapAttribute(a1, 1491);
+				v7 = idx22mapAttribute(a1, 1498);
+				v10 = idx22mapAttribute(a1, 1505);
+				v12 = idx22mapAttribute(a1, 1512);
+				v19 = idx22mapAttribute(a1, 1519);
+				break;
+			case 2:
+				v18 = idx22mapAttribute(a1, 1485);
+				v6 = idx22mapAttribute(a1, 1492);
+				v7 = idx22mapAttribute(a1, 1499);
+				v10 = idx22mapAttribute(a1, 1506);
+				v12 = idx22mapAttribute(a1, 1513);
+				v19 = idx22mapAttribute(a1, 1520);
+				break;
+			case 3:
+				v18 = idx22mapAttribute(a1, 1486);
+				v6 = idx22mapAttribute(a1, 1493);
+				v7 = idx22mapAttribute(a1, 1500);
+				v10 = idx22mapAttribute(a1, 1507);
+				v12 = idx22mapAttribute(a1, 1514);
+				v19 = idx22mapAttribute(a1, 1521);
+				break;
+			case 4:
+				v18 = idx22mapAttribute(a1, 1487);
+				v6 = idx22mapAttribute(a1, 1494);
+				v7 = idx22mapAttribute(a1, 1501);
+				v10 = idx22mapAttribute(a1, 1508);
+				v12 = idx22mapAttribute(a1, 1515);
+				v19 = idx22mapAttribute(a1, 1522);
+				break;
+			case 5:
+				v18 = idx22mapAttribute(a1, 1488);
+				v6 = idx22mapAttribute(a1, 1495);
+				v7 = idx22mapAttribute(a1, 1502);
+				v10 = idx22mapAttribute(a1, 1509);
+				v12 = idx22mapAttribute(a1, 1516);
+				v19 = idx22mapAttribute(a1, 1523);
+				break;
+			case 6:
+				v18 = idx22mapAttribute(a1, 1489);
+				v6 = idx22mapAttribute(a1, 1496);
+				v7 = idx22mapAttribute(a1, 1503);
+				v10 = idx22mapAttribute(a1, 1510);
+				v12 = idx22mapAttribute(a1, 1517);
+				v19 = idx22mapAttribute(a1, 1524);
+		}
+		switch (a4) {
+			case 1:
+				v16 = idx22mapAttribute(a0, 1483);
+				v1 = idx22mapAttribute(a0, 1490);
+				v13 = idx22mapAttribute(a0, 1497);
+				v11 = idx22mapAttribute(a0, 1504);
+				v17 = idx22mapAttribute(a0, 1511);
+				v9 = idx22mapAttribute(a0, 1518);
+				break;
+			case 2:
+				v16 = idx22mapAttribute(a0, 1484);
+				v1 = idx22mapAttribute(a0, 1491);
+				v13 = idx22mapAttribute(a0, 1498);
+				v11 = idx22mapAttribute(a0, 1505);
+				v17 = idx22mapAttribute(a0, 1512);
+				v9 = idx22mapAttribute(a0, 1519);
+				break;
+			case 3:
+				v16 = idx22mapAttribute(a0, 1485);
+				v1 = idx22mapAttribute(a0, 1492);
+				v13 = idx22mapAttribute(a0, 1499);
+				v11 = idx22mapAttribute(a0, 1506);
+				v17 = idx22mapAttribute(a0, 1513);
+				v9 = idx22mapAttribute(a0, 1520);
+				break;
+			case 4:
+				v16 = idx22mapAttribute(a0, 1486);
+				v1 = idx22mapAttribute(a0, 1493);
+				v13 = idx22mapAttribute(a0, 1500);
+				v11 = idx22mapAttribute(a0, 1507);
+				v17 = idx22mapAttribute(a0, 1514);
+				v9 = idx22mapAttribute(a0, 1521);
+				break;
+			case 5:
+				v16 = idx22mapAttribute(a0, 1487);
+				v1 = idx22mapAttribute(a0, 1494);
+				v13 = idx22mapAttribute(a0, 1501);
+				v11 = idx22mapAttribute(a0, 1508);
+				v17 = idx22mapAttribute(a0, 1515);
+				v9 = idx22mapAttribute(a0, 1522);
+				break;
+			case 6:
+				v16 = idx22mapAttribute(a0, 1488);
+				v1 = idx22mapAttribute(a0, 1495);
+				v13 = idx22mapAttribute(a0, 1502);
+				v11 = idx22mapAttribute(a0, 1509);
+				v17 = idx22mapAttribute(a0, 1516);
+				v9 = idx22mapAttribute(a0, 1523);
+				break;
+			case 7:
+				v16 = idx22mapAttribute(a0, 1489);
+				v1 = idx22mapAttribute(a0, 1496);
+				v13 = idx22mapAttribute(a0, 1503);
+				v11 = idx22mapAttribute(a0, 1510);
+				v17 = idx22mapAttribute(a0, 1517);
+				v9 = idx22mapAttribute(a0, 1524);
+		}
+		if (v0 > 0) {
+			switch (v0) {
+				case 1:
+					v2 = idx22mapAttribute(a0, 1483);
+					v14 = idx22mapAttribute(a0, 1490);
+					v15 = idx22mapAttribute(a0, 1497);
+					v5 = idx22mapAttribute(a0, 1504);
+					v4 = idx22mapAttribute(a0, 1511);
+					v3 = idx22mapAttribute(a0, 1518);
+					break;
+				case 2:
+					v2 = idx22mapAttribute(a0, 1484);
+					v14 = idx22mapAttribute(a0, 1491);
+					v15 = idx22mapAttribute(a0, 1498);
+					v5 = idx22mapAttribute(a0, 1505);
+					v4 = idx22mapAttribute(a0, 1512);
+					v3 = idx22mapAttribute(a0, 1519);
+					break;
+				case 3:
+					v2 = idx22mapAttribute(a0, 1485);
+					v14 = idx22mapAttribute(a0, 1492);
+					v15 = idx22mapAttribute(a0, 1499);
+					v5 = idx22mapAttribute(a0, 1506);
+					v4 = idx22mapAttribute(a0, 1513);
+					v3 = idx22mapAttribute(a0, 1520);
+					break;
+				case 4:
+					v2 = idx22mapAttribute(a0, 1486);
+					v14 = idx22mapAttribute(a0, 1493);
+					v15 = idx22mapAttribute(a0, 1500);
+					v5 = idx22mapAttribute(a0, 1507);
+					v4 = idx22mapAttribute(a0, 1514);
+					v3 = idx22mapAttribute(a0, 1521);
+					break;
+				case 5:
+					v2 = idx22mapAttribute(a0, 1487);
+					v14 = idx22mapAttribute(a0, 1494);
+					v15 = idx22mapAttribute(a0, 1501);
+					v5 = idx22mapAttribute(a0, 1508);
+					v4 = idx22mapAttribute(a0, 1515);
+					v3 = idx22mapAttribute(a0, 1522);
+					break;
+				case 6:
+					v2 = idx22mapAttribute(a0, 1488);
+					v14 = idx22mapAttribute(a0, 1495);
+					v15 = idx22mapAttribute(a0, 1502);
+					v5 = idx22mapAttribute(a0, 1509);
+					v4 = idx22mapAttribute(a0, 1516);
+					v3 = idx22mapAttribute(a0, 1523);
+			}
+		} else {
+			v2 = 0;
+			v14 = 0;
+			v15 = 0;
+			v5 = 0;
+			v4 = 0;
+			v3 = 0;
+		}
+		if (a2 == 1 && a4 == 1) {
+			v16 = cs2method_10051(v16, 2);
+			v1 = cs2method_10051(v1, 2);
+			v13 = cs2method_10051(v13, 2);
+			v11 = cs2method_10051(v11, 2);
+			v17 = cs2method_10051(v17, 2);
+			v9 = cs2method_10051(v9, 2);
+		}
+		cs2method_10026(82640954, cs2method_10379(v16));
+		cs2method_10026(82640955, cs2method_10379(v1));
+		cs2method_10026(82640956, cs2method_10379(v13));
+		cs2method_10026(82640957, cs2method_10379(v11));
+		cs2method_10026(82640958, cs2method_10379(v17));
+		cs2method_10026(82640959, cs2method_10379(v9));
+		cs2method_10026(82640962, cs2method_10379(v18));
+		cs2method_10026(82640963, cs2method_10379(v6));
+		cs2method_10026(82640964, cs2method_10379(v7));
+		cs2method_10026(82640965, cs2method_10379(v10));
+		cs2method_10026(82640966, cs2method_10379(v12));
+		cs2method_10026(82640967, cs2method_10379(v19));
+		cs2method_10026(82640969, cs2method_10379(v2));
+		cs2method_10026(82640970, cs2method_10379(v14));
+		cs2method_10026(82640971, cs2method_10379(v15));
+		cs2method_10026(82640972, cs2method_10379(v5));
+		cs2method_10026(82640973, cs2method_10379(v4));
+		cs2method_10026(82640974, cs2method_10379(v3));
+	}
+	return;
+}

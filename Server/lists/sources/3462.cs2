@@ -1,0 +1,75 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3462(int a0,int a1,int a2,int a3) {
+	switch (cs2_configs['cfg1007']) {
+		case 21:
+			cs2method_10467(1, a1);
+			cs2method_10273(a2);
+			script_2766(0, 75, a2);
+			break;
+		case 22:
+			cs2method_10467(0, a1);
+			cs2method_10273(a1);
+			script_1088(a1, 0);
+			cs2method_10273(a0);
+			cs2method_10606(a0, 6, 0);
+			cs2method_10013(0, 85, 1, 0);
+			cs2method_10063(0, 0, 1, 0);
+			cs2method_10755();
+			cs2method_10304(0, 30, 0, 0, 0, 850);
+			cs2method_10629(14230);
+			cs2method_20061(new function<script_3464>(int a0,int a1) {
+				if (cs2method_11038(a0, a1) == 1) {
+					cs2method_10304(cs2method_10179(), cs2method_10967(), cs2method_10642(), cs2method_10038(cs2method_10060(cs2method_10286(), 2), 2028), cs2method_11063(), cs2method_10215());
+				}
+				return;
+			}, new WidgetPointer(-32768,3), -2147483643, "Ii");
+			script_2647(a0);
+			cs2method_10283(cs2method_10236(a0), cs2method_10060(cs2method_10051(cs2method_10805(cs2method_10236(a3), 494, cs2method_10744(a3)), 10), 75), 0, 0, a0);
+			cs2method_10886(cs2method_10327(cs2method_10472(), 0, 0, -3), 1500, 1000, 100);
+			cs2method_10676(cs2method_10472(), 0, 1000, 100);
+			script_2768(75, a2);
+			cs2method_20162(new function<script_3463>(int a0,int a1) {
+				if (cs2_configs['cfg1007'] != 22) {
+					cs2method_20162(new function<none>() {
+					}, "", new WidgetPointer(a1));
+					return;
+				}
+				if (cs2method_10472() == a0) {
+					return;
+				}
+				cs2method_10567(33328, 1, 0);
+				cs2method_10886(cs2method_10327(cs2method_10472(), 0, 0, -3), 1500, 1, 75);
+				cs2method_10676(cs2method_10472(), 0, 1, 15);
+				cs2method_20162(load function<3463>, new WidgetPointer(-32768,3), cs2method_10472(), "Ic", new WidgetPointer(a1));
+				return;
+			}, new WidgetPointer(-32768,3), cs2method_10472(), "Ic", new WidgetPointer(a2));
+			break;
+		case 23:
+			cs2method_20162(new function<none>() {
+			}, "", new WidgetPointer(a2));
+			script_2766(0, 25, a2);
+			break;
+		case 24:
+			cs2method_10893();
+			cs2method_10273(a1);
+			cs2method_10273(a0);
+			cs2method_10467(1, a1);
+			script_2768(25, a2);
+			break;
+		default:
+			cs2method_10467(1, a1);
+			cs2method_10893();
+	}
+	return;
+}

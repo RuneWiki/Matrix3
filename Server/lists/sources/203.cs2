@@ -1,0 +1,28 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_203(int a0,int a1) {
+	if (cs2method_10535(script_8049(a0, 72679456), -1) == 1) {
+		cs2method_20162(new function<script_204>(int a0) {
+			if (cs2method_10535(script_8049(a0, 72679456), -1) == 1) {
+				return;
+			}
+			cs2method_20162(new function<none>() {
+			}, "", new WidgetPointer(script_8049(a0, 72679456)));
+			script_518(a0);
+			return;
+		}, a0, "L", new WidgetPointer(script_8049(a0, 72679456)));
+		return;
+	}
+	script_518(a0);
+	return;
+}

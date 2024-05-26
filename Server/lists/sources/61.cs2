@@ -1,0 +1,74 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_61() {
+	int v0 = 0;
+	while (v0 < 5) {
+		cs2method_10606(17039405, 5, v0);
+		cs2method_10013(36, 32, 0, 0);
+		if (v0 == 0) {
+			cs2method_10063(0, 43, 0, 0);
+		}
+		if (v0 == 1) {
+			cs2method_10063(50, 2, 0, 0);
+		}
+		if (v0 == 2) {
+			cs2method_10063(50, 43, 0, 0);
+		}
+		if (v0 == 3) {
+			cs2method_10063(50, 85, 0, 0);
+		}
+		if (v0 == 4) {
+			cs2method_10063(50, 125, 0, 0);
+		}
+		if (cs2method_10640(515, v0) != -1) {
+			cs2method_11070(cs2method_10640(515, v0), cs2method_11065(515, v0));
+			cs2method_10200(cs2method_10018(cs2method_10640(515, v0)));
+			cs2method_10057(1, "Deposit");
+			cs2method_10278(1118481);
+			cs2method_10356(1);
+			if (v0 == 0) {
+				cs2method_10758(-1, 17039400);
+			}
+			if (v0 == 1) {
+				cs2method_10758(-1, 17039396);
+			}
+			if (v0 == 2) {
+				cs2method_10758(-1, 17039397);
+			}
+			if (v0 == 3) {
+				cs2method_10758(-1, 17039398);
+			}
+			if (v0 == 4) {
+				cs2method_10758(-1, 17039399);
+			}
+		} else {
+			if (v0 == 0) {
+				cs2method_10758(159, 17039400);
+			}
+			if (v0 == 1) {
+				cs2method_10758(156, 17039396);
+			}
+			if (v0 == 2) {
+				cs2method_10758(161, 17039397);
+			}
+			if (v0 == 3) {
+				cs2method_10758(163, 17039398);
+			}
+			if (v0 == 4) {
+				cs2method_10758(165, 17039399);
+			}
+		}
+		v0 = cs2method_10060(v0, 1);
+	}
+	return;
+}

@@ -1,0 +1,64 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9462(int a0,int a1,int a2,int a3) {
+	object v1 = "No opinion.";
+	int v0 = -1;
+	switch (a2) {
+		case 2:
+			if (a0 == 1) {
+				v1 = "Longer expeditions, faster gatherers.";
+				v0 = 19016;
+			} else {
+				if (a0 == 2) {
+					v1 = "Shorter expeditions.";
+					v0 = 19013;
+				}
+			}
+			break;
+		case 0:
+			if (a0 == 1) {
+				v1 = "Longer expeditions, construct buildings faster.";
+				v0 = 19017;
+			} else {
+				if (a0 == 2) {
+					v1 = "Shorter expeditions.";
+					v0 = 19013;
+				}
+			}
+			break;
+		case 1:
+			if (a0 == 1) {
+				v1 = "Larger caravans that can hold more divine energy.";
+				v0 = 19012;
+			} else {
+				if (a0 == 2) {
+					v1 = "Tougher bodyguards, to defend the caravans better.";
+					v0 = 19014;
+				}
+			}
+			break;
+		case 3:
+			if (a0 == 1) {
+				v1 = "More convoys, attracting more opponent attention.";
+				v0 = 19011;
+			} else {
+				if (a0 == 2) {
+					v1 = "Standard convoy frequency, with lower chance of ambush.";
+					v0 = 19015;
+				}
+			}
+	}
+	cs2method_10026(a3, v1);
+	cs2method_10758(v0, a1);
+	return;
+}

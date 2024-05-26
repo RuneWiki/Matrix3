@@ -1,0 +1,79 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6408() {
+	if (client_configs['cfg2091'].bitcfg9065 == 1) {
+		script_6414(85721359, 1);
+	} else {
+		if (client_configs['cfg2092'].bitcfg9071 < 300) {
+			script_6414(85721359, 0);
+		}
+	}
+	if (client_configs['cfg2091'].bitcfg9066 == 1) {
+		script_6414(85721380, 1);
+	} else {
+		if (client_configs['cfg2092'].bitcfg9071 < 300) {
+			script_6414(85721380, 0);
+		}
+	}
+	if (client_configs['cfg2091'].bitcfg9067 == 1) {
+		script_6414(85721425, 1);
+	} else if (client_configs['cfg2092'].bitcfg9071 < 400) {
+		script_6414(85721425, 0);
+	} else {
+		if (client_configs['cfg2091'].bitcfg9054 < 250) {
+			script_6414(85721425, 1);
+		}
+	}
+	if (client_configs['cfg2092'].bitcfg9071 < 50) {
+		script_6414(85721338, 0);
+		script_6414(85721489, 0);
+		script_6414(85721519, 0);
+	}
+	if (client_configs['cfg2094'].bitcfg9083 == 1) {
+		cs2method_10026(85721351, "Already learned");
+	}
+	if (client_configs['cfg4495'].bitcfg22757 == 1) {
+		cs2method_10026(85721511, "Already learned");
+	}
+	if (client_configs['cfg4495'].bitcfg22758 == 1) {
+		cs2method_10026(85721532, "Already learned");
+	}
+	if (client_configs['cfg2093'].bitcfg9085 == 1) {
+		script_6414(85721401, 1);
+	} else {
+		if (client_configs['cfg2092'].bitcfg9071 < 400) {
+			script_6414(85721401, 0);
+		}
+	}
+	if (client_configs['cfg2091'].bitcfg9084 == 1) {
+		script_6414(85721468, 1);
+	} else {
+		if (client_configs['cfg2092'].bitcfg9071 < 2000) {
+			script_6414(85721468, 0);
+		}
+	}
+	if (client_configs['cfg4061'].bitcfg21387 == 1) {
+		script_6414(85721446, 1);
+	} else if (client_configs['cfg2092'].bitcfg9071 < 500) {
+		script_6414(85721446, 0);
+	} else {
+		if (client_configs['cfg2091'].bitcfg9054 < 250) {
+			script_6414(85721446, 1);
+		}
+	}
+	if (client_configs['cfg4354'].bitcfg21977 < 175) {
+		script_6414(85721489, 0);
+		script_6414(85721519, 0);
+	}
+	return;
+}

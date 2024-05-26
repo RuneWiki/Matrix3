@@ -1,0 +1,323 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9084(int a0) {
+	if (a0 == 1) {
+		cs2_configs['cfg2873'] = 17;
+		if (cs2_configs['cfg2753'] == 1) {
+			cs2method_10520(8207892, 92078106);
+			cs2method_10520(14647040, 92078114);
+			cs2method_20380(new function<script_7664>(int a0,int a1,int a2,int a3) {
+				int v5 = 0;
+				int v1 = 0;
+				int v4 = 0;
+				object v2 = "";
+				if (script_2709() == 0) {
+					cs2method_10810("Chat is not available until your date of birth is recorded. Please enter your DOB above.");
+					return;
+				}
+				switch (a1) {
+					case 84:
+						script_7666(cs2_configs['cfg2753'], a0);
+						script_7665(cs2_configs['cfg2753']);
+						return;
+					case 13:
+						if (script_9666() == 1) {
+							return;
+						}
+						if (cs2method_10609(92078109) == 0) {
+							script_2881();
+							return;
+						}
+						script_675();
+						script_7660();
+						return;
+					case 102:
+					case 103:
+					case 98:
+					case 99:
+					case 96:
+					case 97:
+						if (cs2method_10862() == 0 && a1 != 102 && a1 != 103) {
+							return;
+						}
+						if (cs2_configs['cfg2753'] == 1) {
+							cs2_configs['cfg2749'] = script_7673(cs2_configs['cfg2758'], a1, cs2_configs['cfg2749'], a0);
+							script_7671(cs2_configs['cfg2758'], 92078088, 92078115);
+							return;
+						}
+						if (cs2_configs['cfg2753'] == 2) {
+							cs2_configs['cfg2750'] = script_7673(cs2_configs['cfg2759'], a1, cs2_configs['cfg2750'], a0);
+							script_7671(cs2_configs['cfg2759'], 92078145, 92078146);
+							return;
+						}
+						break;
+					case 80:
+						if (cs2_configs['cfg2753'] == 1) {
+							cs2_configs['cfg2755'] = cs2_configs['cfg2749'];
+							script_7670(0, 0, 92078145, 92078146);
+							cs2_configs['cfg2750'] = cs2_configs['cfg2756'];
+							script_7671(cs2_configs['cfg2759'], 92078145, 92078146);
+						} else {
+							if (cs2_configs['cfg2753'] == 2) {
+								cs2_configs['cfg2756'] = cs2_configs['cfg2750'];
+								script_7670(0, 0, 92078088, 92078115);
+								cs2_configs['cfg2749'] = cs2_configs['cfg2755'];
+								script_7671(cs2_configs['cfg2758'], 92078088, 92078115);
+							}
+						}
+						break;
+					default:
+						object v0 = "";
+						object v3 = cs2method_10410(a2, v0);
+						if (cs2method_10698(a2) == 1 || a1 == 85 || a1 == 101) {
+							if (a2 == 60) {
+								return;
+							}
+							if (cs2_configs['cfg2753'] == 1) {
+								if (a1 != 85 && a1 != 101 && cs2method_10265(cs2method_10765(cs2_configs['cfg2758'])) >= 500) {
+									script_7667(92078087);
+									return;
+								}
+								int v13 = cs2method_10265(cs2_configs['cfg2758']);
+								int v9 = a0;
+								opc_struct10385(2,0,0) v17 = cs2method_10385(v13, v9);
+								int v11 = v17.intpart_1;
+								int v12 = v17.intpart_0;
+								if (v11 >= cs2method_10823(a0) && a1 != 85 && a1 != 101) {
+									return;
+								}
+								int v6 = cs2_configs['cfg2749'];
+								int v10 = a3;
+								int v8 = a1;
+								int v7 = a2;
+								object v15 = cs2_configs['cfg2758'];
+								script_802_struct(1,1,0) v14 = script_802(v6, v15, v10, v8, v7);
+								object v16 = v14.objectpart_0;
+								cs2_configs['cfg2749'] = v14.intpart_0;
+								cs2_configs['cfg2758'] = (string)v16;
+								cs2method_10026(a0, cs2_configs['cfg2758']);
+								if (cs2method_10846(cs2method_10744(a0), "Fox Mulder") == 0) {
+									cs2method_10026(a0, "Keep searching for the Truth.");
+								}
+								if (cs2method_10846(cs2method_10744(a0), "Zodalia") == 0) {
+									cs2method_10026(a0, "By the axe of the emperor!");
+								} else if (cs2method_10846(cs2method_10744(a0), "3.1415926535897932384626433832795028841971") == 0) {
+									cs2method_10026(a0, "I'm hungry gimme that pie!");
+								} else if (cs2method_10846(cs2method_10744(a0), "Fr33 st00f pl0x!") == 0) {
+									cs2method_10026(a0, "Have you tried picking up ashes?");
+								} else {
+									if (cs2method_10846(cs2method_10744(a0), "OMG bugs!") == 0) {
+										cs2_configs['cfg2752'] = 5000;
+									}
+								}
+								script_7671(cs2_configs['cfg2758'], 92078088, 92078115);
+							} else {
+								if (cs2_configs['cfg2753'] == 2) {
+									if (a1 != 85 && a1 != 101 && cs2method_10265(cs2method_10765(cs2_configs['cfg2759'])) >= 500) {
+										script_7667(92078107);
+										return;
+									}
+									int v6 = cs2method_10265(cs2_configs['cfg2759']);
+									int v10 = a0;
+									opc_struct10385(2,0,0) v17 = cs2method_10385(v6, v10);
+									int v16 = v17.intpart_1;
+									int v13 = v17.intpart_0;
+									if (v16 >= cs2method_10823(a0) && a1 != 85 && a1 != 101) {
+										return;
+									}
+									int v8 = cs2_configs['cfg2750'];
+									int v12 = a3;
+									int v9 = a1;
+									int v11 = a2;
+									object v7 = cs2_configs['cfg2759'];
+									script_802_struct(1,1,0) v14 = script_802(v8, v7, v12, v9, v11);
+									object v15 = v14.objectpart_0;
+									cs2_configs['cfg2750'] = v14.intpart_0;
+									cs2_configs['cfg2759'] = (string)v15;
+									cs2method_10026(a0, cs2_configs['cfg2759']);
+									script_7671(cs2_configs['cfg2759'], 92078145, 92078146);
+								}
+							}
+						}
+						script_7665(cs2_configs['cfg2753']);
+						script_1733(92078087);
+						script_1733(92078107);
+						cs2method_10026(92078087, cs2method_10379(cs2method_10461(500, cs2method_10265(cs2method_10765(cs2_configs['cfg2758'])))));
+						cs2method_10026(92078107, cs2method_10379(cs2method_10461(500, cs2method_10265(cs2method_10765(cs2_configs['cfg2759'])))));
+						return;
+				}
+				return;
+			}, -2147483640, false, new WidgetPointer(-32768,3), 0, "izIi", new WidgetPointer(1405,8));
+			cs2method_20380(new function<none>() {
+			}, "", new WidgetPointer(1405,65));
+		} else {
+			cs2method_10520(14647040, 92078106);
+			cs2method_10520(8207892, 92078114);
+			cs2method_20380(new function<script_7664>(int a0,int a1,int a2,int a3) {
+				int v1 = 0;
+				int v4 = 0;
+				int v5 = 0;
+				object v3 = "";
+				if (script_2709() == 0) {
+					cs2method_10810("Chat is not available until your date of birth is recorded. Please enter your DOB above.");
+					return;
+				}
+				switch (a2) {
+					case 84:
+						script_7666(cs2_configs['cfg2753'], a1);
+						script_7665(cs2_configs['cfg2753']);
+						return;
+					case 13:
+						if (script_9666() == 1) {
+							return;
+						}
+						if (cs2method_10609(92078109) == 0) {
+							script_2881();
+							return;
+						}
+						script_675();
+						script_7660();
+						return;
+					case 102:
+					case 103:
+					case 98:
+					case 99:
+					case 96:
+					case 97:
+						if (cs2method_10862() == 0 && a2 != 102 && a2 != 103) {
+							return;
+						}
+						if (cs2_configs['cfg2753'] == 1) {
+							cs2_configs['cfg2749'] = script_7673(cs2_configs['cfg2758'], a2, cs2_configs['cfg2749'], a1);
+							script_7671(cs2_configs['cfg2758'], 92078088, 92078115);
+							return;
+						}
+						if (cs2_configs['cfg2753'] == 2) {
+							cs2_configs['cfg2750'] = script_7673(cs2_configs['cfg2759'], a2, cs2_configs['cfg2750'], a1);
+							script_7671(cs2_configs['cfg2759'], 92078145, 92078146);
+							return;
+						}
+						break;
+					case 80:
+						if (cs2_configs['cfg2753'] == 1) {
+							cs2_configs['cfg2755'] = cs2_configs['cfg2749'];
+							script_7670(0, 0, 92078145, 92078146);
+							cs2_configs['cfg2750'] = cs2_configs['cfg2756'];
+							script_7671(cs2_configs['cfg2759'], 92078145, 92078146);
+						} else {
+							if (cs2_configs['cfg2753'] == 2) {
+								cs2_configs['cfg2756'] = cs2_configs['cfg2750'];
+								script_7670(0, 0, 92078088, 92078115);
+								cs2_configs['cfg2749'] = cs2_configs['cfg2755'];
+								script_7671(cs2_configs['cfg2758'], 92078088, 92078115);
+							}
+						}
+						break;
+					default:
+						object v2 = "";
+						object v0 = cs2method_10410(a3, v2);
+						if (cs2method_10698(a3) == 1 || a2 == 85 || a2 == 101) {
+							if (a3 == 60) {
+								return;
+							}
+							if (cs2_configs['cfg2753'] == 1) {
+								if (a2 != 85 && a2 != 101 && cs2method_10265(cs2method_10765(cs2_configs['cfg2758'])) >= 500) {
+									script_7667(92078087);
+									return;
+								}
+								int v15 = cs2method_10265(cs2_configs['cfg2758']);
+								int v7 = a1;
+								opc_struct10385(2,0,0) v8 = cs2method_10385(v15, v7);
+								int v12 = v8.intpart_1;
+								int v13 = v8.intpart_0;
+								if (v12 >= cs2method_10823(a1) && a2 != 85 && a2 != 101) {
+									return;
+								}
+								int v14 = cs2_configs['cfg2749'];
+								int v10 = a0;
+								int v9 = a2;
+								int v17 = a3;
+								object v11 = cs2_configs['cfg2758'];
+								script_802_struct(1,1,0) v16 = script_802(v14, v11, v10, v9, v17);
+								object v6 = v16.objectpart_0;
+								cs2_configs['cfg2749'] = v16.intpart_0;
+								cs2_configs['cfg2758'] = (string)v6;
+								cs2method_10026(a1, cs2_configs['cfg2758']);
+								if (cs2method_10846(cs2method_10744(a1), "Fox Mulder") == 0) {
+									cs2method_10026(a1, "Keep searching for the Truth.");
+								}
+								if (cs2method_10846(cs2method_10744(a1), "Zodalia") == 0) {
+									cs2method_10026(a1, "By the axe of the emperor!");
+								} else if (cs2method_10846(cs2method_10744(a1), "3.1415926535897932384626433832795028841971") == 0) {
+									cs2method_10026(a1, "I'm hungry gimme that pie!");
+								} else if (cs2method_10846(cs2method_10744(a1), "Fr33 st00f pl0x!") == 0) {
+									cs2method_10026(a1, "Have you tried picking up ashes?");
+								} else {
+									if (cs2method_10846(cs2method_10744(a1), "OMG bugs!") == 0) {
+										cs2_configs['cfg2752'] = 5000;
+									}
+								}
+								script_7671(cs2_configs['cfg2758'], 92078088, 92078115);
+							} else {
+								if (cs2_configs['cfg2753'] == 2) {
+									if (a2 != 85 && a2 != 101 && cs2method_10265(cs2method_10765(cs2_configs['cfg2759'])) >= 500) {
+										script_7667(92078107);
+										return;
+									}
+									int v15 = cs2method_10265(cs2_configs['cfg2759']);
+									int v6 = a1;
+									opc_struct10385(2,0,0) v9 = cs2method_10385(v15, v6);
+									int v7 = v9.intpart_1;
+									int v12 = v9.intpart_0;
+									if (v7 >= cs2method_10823(a1) && a2 != 85 && a2 != 101) {
+										return;
+									}
+									int v16 = cs2_configs['cfg2750'];
+									int v17 = a0;
+									int v11 = a2;
+									int v13 = a3;
+									object v8 = cs2_configs['cfg2759'];
+									script_802_struct(1,1,0) v14 = script_802(v16, v8, v17, v11, v13);
+									object v10 = v14.objectpart_0;
+									cs2_configs['cfg2750'] = v14.intpart_0;
+									cs2_configs['cfg2759'] = (string)v10;
+									cs2method_10026(a1, cs2_configs['cfg2759']);
+									script_7671(cs2_configs['cfg2759'], 92078145, 92078146);
+								}
+							}
+						}
+						script_7665(cs2_configs['cfg2753']);
+						script_1733(92078087);
+						script_1733(92078107);
+						cs2method_10026(92078087, cs2method_10379(cs2method_10461(500, cs2method_10265(cs2method_10765(cs2_configs['cfg2758'])))));
+						cs2method_10026(92078107, cs2method_10379(cs2method_10461(500, cs2method_10265(cs2method_10765(cs2_configs['cfg2759'])))));
+						return;
+				}
+				return;
+			}, -2147483640, false, new WidgetPointer(-32768,3), 0, "izIi", new WidgetPointer(1405,65));
+			cs2method_20380(new function<none>() {
+			}, "", new WidgetPointer(1405,8));
+		}
+	} else {
+		if (cs2_configs['cfg2873'] == 17) {
+			cs2_configs['cfg2873'] = 0;
+		}
+		cs2method_10520(8207892, 92078106);
+		cs2method_10520(8207892, 92078114);
+		cs2method_20380(new function<none>() {
+		}, "", new WidgetPointer(1405,8));
+		cs2method_20380(new function<none>() {
+		}, "", new WidgetPointer(1405,65));
+	}
+	return;
+}

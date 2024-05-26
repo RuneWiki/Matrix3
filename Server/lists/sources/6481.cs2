@@ -1,0 +1,27 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6481(int a0,int a1) {
+	if (a1 == -1) {
+		return;
+	}
+	cs2_configs['cfg1964'] = new WidgetPointer(a1);
+	cs2_configs['cfg1965'] = a0;
+	int v0 = 85917847;
+	if (cs2method_11038(a1, a0) == 1) {
+		cs2_configs['cfg1966'] = new WidgetPointer(cs2method_10787());
+		cs2method_10283(cs2method_10488(), cs2method_10664(), 0, 0, v0);
+		cs2method_10112(cs2method_10878(), cs2method_10060(cs2method_10406(), cs2method_10152(cs2method_10787())), 0, 0, v0);
+		cs2method_10670(36961, 1, 0, 100);
+	}
+	return;
+}

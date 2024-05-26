@@ -1,0 +1,49 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_1021_struct(1,1,0) script_1021(int a0) {
+	switch (a0) {
+		case 0:
+			return new script_1021_struct(0, "Smelting");
+		case 1:
+			return new script_1021_struct(0, "Bronze");
+		case 2:
+			return new script_1021_struct(1, "Blurite");
+		case 3:
+			return new script_1021_struct(0, "Iron");
+		case 4:
+			return new script_1021_struct(0, "Steel");
+		case 5:
+			return new script_1021_struct(0, "Mithril");
+		case 6:
+			return new script_1021_struct(0, "Adamantite");
+		case 7:
+			return new script_1021_struct(0, "Rune");
+		case 8:
+			return new script_1021_struct(1, "Gold");
+		case 9:
+			return new script_1021_struct(1, "Elemental");
+		case 10:
+			return new script_1021_struct(1, "Bane");
+		case 11:
+			return new script_1021_struct(0, "Artisan Workshop");
+		case 12:
+			return new script_1021_struct(0, "Other");
+		case 13:
+			return new script_1021_struct(1, "Minigames");
+		case 14:
+			return new script_1021_struct(0, "Dungeoneering");
+		case 15:
+			return new script_1021_struct(0, "Milestones");
+	}
+	return new script_1021_struct(-1, "");
+}

@@ -1,0 +1,21 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7952() {
+	int v2 = -50;
+	object v0 = cs2method_10419(0, 1);
+	object v1 = cs2method_11161(0, cs2_configs['cfg3524'], 0, cs2_configs['cfg3525'], v0);
+	object v3 = cs2method_11161(0, 0, cs2_configs['cfg3521'], v2, v1);
+	cs2method_10848(v1);
+	cs2method_10220(v3);
+	return;
+}

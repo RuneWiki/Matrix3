@@ -1,0 +1,119 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9660(int a0) {
+	object v1;
+	int v8;
+	int v6;
+	int v4;
+	int v7;
+	int v3;
+	int v11;
+	int v12;
+	int v13 = -1;
+	int v16 = -1;
+	int v15 = -1;
+	int v2 = -1;
+	int v0 = -1;
+	int v5 = -1;
+	int v14 = -1;
+	int v10 = -1;
+	object v9 = "";
+	switch (a0) {
+		case 85721246:
+			v12 = 85721267;
+			v11 = 85721259;
+			v8 = 85721260;
+			v6 = 85721263;
+			v3 = 85721264;
+			v4 = 85721265;
+			v7 = 85721266;
+			if (client_configs['cfg4061'].bitcfg22141 == 0) {
+				v1 = "100 points";
+			} else {
+				v1 = "10 points";
+			}
+			break;
+		case 85721268:
+			v12 = 85721289;
+			v11 = 85721281;
+			v8 = 85721282;
+			v6 = 85721285;
+			v3 = 85721286;
+			v4 = 85721287;
+			v7 = 85721288;
+			if (client_configs['cfg4061'].bitcfg22142 == 0) {
+				v1 = "400 points";
+			} else {
+				v1 = "40 points";
+			}
+			break;
+		case 85721290:
+			v12 = 85721311;
+			v11 = 85721303;
+			v8 = 85721304;
+			v6 = 85721307;
+			v3 = 85721308;
+			v4 = 85721309;
+			v7 = 85721310;
+			if (client_configs['cfg4061'].bitcfg22143 == 0) {
+				v1 = "600 points";
+			} else {
+				v1 = "60 points";
+			}
+			break;
+		case 85721882:
+			v12 = 85721902;
+			v11 = 85721894;
+			v8 = 85721895;
+			v6 = 85721898;
+			v3 = 85721899;
+			v4 = 85721900;
+			v7 = 85721901;
+			v1 = "125 points";
+			break;
+		case 85721903:
+			v12 = 85721923;
+			v11 = 85721915;
+			v8 = 85721916;
+			v6 = 85721919;
+			v3 = 85721920;
+			v4 = 85721921;
+			v7 = 85721922;
+			v1 = "125 points";
+			break;
+		case 85721924:
+			v12 = 85721944;
+			v11 = 85721936;
+			v8 = 85721937;
+			v6 = 85721940;
+			v3 = 85721941;
+			v4 = 85721942;
+			v7 = 85721943;
+			v1 = "125 points";
+			break;
+		default:
+			return;
+	}
+	if (v12 == -1 || v11 == -1 || v8 == -1 || v6 == -1 || v3 == -1 || v4 == -1 || v7 == -1) {
+		return;
+	}
+	cs2method_10520(16512486, v11);
+	cs2method_10520(14538955, v8);
+	cs2method_10758(7920, v6);
+	cs2method_10758(7921, v3);
+	cs2method_10758(7922, v4);
+	cs2method_10520(16512486, v7);
+	cs2method_10467(1, v12);
+	cs2method_10026(v8, v1);
+	return;
+}

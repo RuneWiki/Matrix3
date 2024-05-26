@@ -1,0 +1,24 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1478() {
+	cs2_configs['cfg2351'] = cs2_configs['cfg2506'];
+	int v0 = script_1479(cs2_configs['cfg2351'], 0);
+	if (v0 > 1) {
+		cs2method_10810("Search for '" + (string)cs2method_11053(cs2_configs['cfg2351']) + "' returned " + (string)cs2method_10379(v0) + " results.");
+	} else if (v0 == 1) {
+		cs2method_10810("Search for '" + (string)cs2method_11053(cs2_configs['cfg2351']) + "' returned " + (string)cs2method_10379(v0) + " result.");
+	} else {
+		cs2method_10810("Search for '" + (string)cs2method_11053(cs2_configs['cfg2351']) + "' returned 0 results.");
+	}
+	return;
+}

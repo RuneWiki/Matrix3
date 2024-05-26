@@ -1,0 +1,25 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_1003_struct(1,1,0) script_1003(int a0) {
+	switch (a0) {
+		case 0:
+			return new script_1003_struct(0, "Prayers");
+		case 1:
+			return new script_1003_struct(1, "Equipment");
+		case 2:
+			return new script_1003_struct(0, "Dungeoneering");
+		case 3:
+			return new script_1003_struct(0, "Milestones");
+	}
+	return new script_1003_struct(-1, "");
+}

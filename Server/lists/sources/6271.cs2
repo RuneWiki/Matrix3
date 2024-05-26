@@ -1,0 +1,64 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6271(int a0) {
+	cs2_configs['cfg1934'] = a0;
+	switch (a0) {
+		case 1:
+			cs2method_10758(11232, 84606980);
+			break;
+		case 2:
+			cs2method_10758(11232, 84606981);
+			break;
+		case 3:
+			cs2method_10758(11232, 84606982);
+			break;
+		case 4:
+			cs2method_10758(11232, 84606983);
+			break;
+		case 5:
+			cs2method_10758(11232, 84606984);
+			break;
+		case 6:
+			cs2method_10758(11232, 84606985);
+			break;
+		case 7:
+			cs2method_10758(11232, 84606986);
+			break;
+		case 8:
+			cs2method_10758(11232, 84606987);
+			break;
+		case 9:
+			cs2method_10758(11232, 84606988);
+			break;
+		case 10:
+			cs2method_10758(11232, 84606989);
+			break;
+		case 11:
+			cs2method_10758(11232, 84606990);
+			break;
+		case 12:
+			cs2method_10758(11232, 84606991);
+			break;
+		case 13:
+			cs2method_10758(11232, 84606992);
+	}
+	if (cs2method_11055() == 1) {
+		if (cs2_configs['cfg1929'] < 0) {
+			cs2_configs['cfg1929'] = 0;
+		}
+		cs2method_10467(1, 84934678);
+		cs2method_10467(0, 84934662);
+		cs2method_10112(120, 2, 2, 0, 84934679);
+	}
+	return;
+}

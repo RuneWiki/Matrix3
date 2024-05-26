@@ -1,0 +1,135 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3681(int a0,int a1) {
+	object v1 = "Add to playlist";
+	object v0 = "Remove from playlist";
+	cs2method_10057(1, "Play");
+	cs2method_10811(65280);
+	cs2method_20884(new function<script_1356>(int a0,int a1,int a2) {
+		if (cs2method_11038(a1, a2) == 1) {
+			cs2method_10811(a0);
+		}
+		return;
+	}, new WidgetPointer(-32768,3), -2147483643, 65280, "Iii");
+	cs2method_10269(0);
+	cs2method_20703(new function<script_2885>(int a0,int a1,int a2,int a3,int a4,int a5) {
+		switch (a3) {
+			case 4:
+			case 2:
+			case 3:
+				script_8808();
+				cs2_configs['cfg1'] = 0;
+				int v0 = cs2method_10060(a4, cs2method_10133());
+				if (cs2method_11038(a2, a1) == 1) {
+					cs2method_10002(a5);
+					cs2method_20061(new function<script_1621>(int a0,int a1,int a2,int a3) {
+						if (cs2method_10133() < a3) {
+							return;
+						}
+						if (cs2method_11038(a2, a1) == 1 || a1 == -1 && cs2method_10324(a2) == 1) {
+							cs2method_10002(a0);
+							cs2method_20061(new function<none>() {
+							}, "");
+						}
+						return;
+					}, new WidgetPointer(a2), a1, a0, v0, "Iiii");
+				}
+				break;
+			default:
+				return;
+		}
+		return;
+	}, new WidgetPointer(-32768,3), -2147483643, 150, 0, 20, -2147483644, "Iiiiii");
+	if (a0 == client_configs['cfg76'].bitcfg190 || a0 == client_configs['cfg76'].bitcfg191 || a0 == client_configs['cfg77'].bitcfg192 || a0 == client_configs['cfg77'].bitcfg193 || a0 == client_configs['cfg78'].bitcfg194 || a0 == client_configs['cfg78'].bitcfg195 || a0 == client_configs['cfg79'].bitcfg196 || a0 == client_configs['cfg79'].bitcfg197 || a0 == client_configs['cfg80'].bitcfg198 || a0 == client_configs['cfg80'].bitcfg199 || a0 == client_configs['cfg81'].bitcfg200 || a0 == client_configs['cfg81'].bitcfg201) {
+		cs2method_10310(2430);
+		cs2method_10057(4, v0);
+		cs2method_10057(4, v0);
+		cs2method_20353(new function<script_8799>(object a0,int a1,int a2) {
+			script_8800(a1, a2, a0);
+			return;
+		}, (string)v0, new WidgetPointer(a1), -1, "sIi");
+		cs2method_20884(new function<script_8805>() {
+			script_8808();
+			return;
+		}, "");
+	} else {
+		cs2method_10057(3, v1);
+		cs2method_10057(3, v1);
+		cs2method_10310(2429);
+		cs2method_20353(new function<script_8799>(int a0,object a1,int a2) {
+			script_8800(a2, a0, a1);
+			return;
+		}, (string)v1, new WidgetPointer(a1), -1, "sIi");
+		cs2method_20884(new function<script_8805>() {
+			script_8808();
+			return;
+		}, "");
+	}
+	cs2method_20703(new function<script_2885>(int a0,int a1,int a2,int a3,int a4,int a5) {
+		switch (a4) {
+			case 4:
+			case 2:
+			case 3:
+				script_8808();
+				cs2_configs['cfg1'] = 0;
+				int v0 = cs2method_10060(a2, cs2method_10133());
+				if (cs2method_11038(a5, a3) == 1) {
+					cs2method_10002(a1);
+					cs2method_20061(new function<script_1621>(int a0,int a1,int a2,int a3) {
+						if (cs2method_10133() < a3) {
+							return;
+						}
+						if (cs2method_11038(a0, a2) == 1 || a2 == -1 && cs2method_10324(a0) == 1) {
+							cs2method_10002(a1);
+							cs2method_20061(new function<none>() {
+							}, "");
+						}
+						return;
+					}, new WidgetPointer(a5), a3, a0, v0, "Iiii");
+				}
+				break;
+			default:
+				return;
+		}
+		return;
+	}, new WidgetPointer(-32768,3), -2147483643, 150, 0, 20, -2147483644, "Iiiiii");
+	cs2method_20703(new function<script_2885>(int a0,int a1,int a2,int a3,int a4,int a5) {
+		switch (a3) {
+			case 4:
+			case 2:
+			case 3:
+				script_8808();
+				cs2_configs['cfg1'] = 0;
+				int v0 = cs2method_10060(a5, cs2method_10133());
+				if (cs2method_11038(a2, a4) == 1) {
+					cs2method_10002(a1);
+					cs2method_20061(new function<script_1621>(int a0,int a1,int a2,int a3) {
+						if (cs2method_10133() < a2) {
+							return;
+						}
+						if (cs2method_11038(a0, a1) == 1 || a1 == -1 && cs2method_10324(a0) == 1) {
+							cs2method_10002(a3);
+							cs2method_20061(new function<none>() {
+							}, "");
+						}
+						return;
+					}, new WidgetPointer(a2), a4, a0, v0, "Iiii");
+				}
+				break;
+			default:
+				return;
+		}
+		return;
+	}, new WidgetPointer(-32768,3), -2147483643, 150, 0, 20, -2147483644, "Iiiiii");
+	return;
+}

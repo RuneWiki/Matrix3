@@ -1,0 +1,33 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_60() {
+	int v0 = 3;
+	for (int v1 = 5, int v2 = 0; v0 < 255; v1 = 5) {
+		while (v1 < 235) {
+			cs2method_10606(17039402, 5, v2);
+			cs2method_10013(36, 32, 0, 0);
+			cs2method_10063(v1, v0, 0, 0);
+			if (cs2method_10640(514, v2) != -1) {
+				cs2method_11070(cs2method_10640(514, v2), cs2method_11065(514, v2));
+				cs2method_10200(cs2method_10018(cs2method_10640(514, v2)));
+				cs2method_10057(1, "Withdraw");
+				cs2method_10278(1118481);
+				cs2method_10356(1);
+			}
+			v1 = cs2method_10060(v1, 40);
+			v2 = cs2method_10060(v2, 1);
+		}
+		v0 = cs2method_10060(v0, 44);
+	}
+	return;
+}

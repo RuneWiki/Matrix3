@@ -1,0 +1,22 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1069(int a0) {
+	if (a0 == 19 || a0 == 1019) {
+		a0 = script_7026(a0);
+	}
+	if (script_174(script_8625(a0), 0, a0, script_8607(a0)) == 0) {
+		return;
+	}
+	script_1071(script_8599(a0), script_8623(a0), -1, a0);
+	return;
+}

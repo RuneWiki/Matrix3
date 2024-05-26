@@ -1,0 +1,20 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6710(int a0,int a1) {
+	if (client_configs['cfg2982'].bitcfg15060 < a1) {
+		cs2method_10026(6160385, "You do not have enough bonus xp remaining to select this lamp.");
+	} else {
+		cs2method_10026(6160385, "You need a skill of " + (string)cs2method_10379(a0) + " or more before you can select this lamp.");
+	}
+	return;
+}

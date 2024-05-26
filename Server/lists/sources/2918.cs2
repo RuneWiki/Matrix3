@@ -1,0 +1,41 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2918(int a0) {
+	int v2;
+	int v5 = 0;
+	int v3 = 33;
+	if (a0 == 0) {
+		return;
+	}
+	int v4 = 30;
+	int v1 = -1;
+	if (cs2method_10580() == 1) {
+		v2 = 48758806;
+	} else {
+		v2 = 48758807;
+	}
+	if (cs2method_10823(57802770) < cs2method_10060(cs2method_10823(57802788), 146)) {
+		cs2method_10112(0, 0, 1, 1, 57802774);
+		cs2method_10112(0, cs2method_10060(cs2method_10152(57802774), v4), 1, 0, 57802788);
+		cs2method_10467(1, v2);
+	} else {
+		int v0 = cs2method_10060(cs2method_10152(v2), cs2method_10823(v2));
+		cs2method_10112(0, 0, 1, 1, 57802774);
+		if (cs2method_10461(cs2method_10152(57802774), 2) < v0) {
+			cs2method_10112(0, cs2method_10060(v0, 2), 1, 0, 57802774);
+		}
+		cs2method_10112(0, cs2method_10060(cs2method_10152(57802774), v4), 1, 0, 57802788);
+		cs2method_10467(0, v2);
+	}
+	return;
+}

@@ -1,0 +1,59 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5347() {
+	int v2;
+	int v0;
+	int v3 = -1;
+	int v1 = -1;
+	switch (cs2method_10262()) {
+		default:
+			v0 = 7790;
+			v2 = 7791;
+			break;
+		case 1:
+			v0 = 7794;
+			v2 = 7795;
+			break;
+		case 2:
+			v0 = 7792;
+			v2 = 7793;
+			break;
+		case 3:
+			v0 = 7796;
+			v2 = 7797;
+			break;
+		case 6:
+			v0 = 17043;
+			v2 = 17044;
+	}
+	switch (cs2_configs['cfg1659']) {
+		default:
+			cs2method_10026(74907690, "Sort By...");
+			break;
+		case 0:
+			cs2method_10026(74907690, "Price: Low-High");
+			break;
+		case 1:
+			cs2method_10026(74907690, "Price: High-Low");
+			break;
+		case 2:
+			cs2method_10026(74907690, "Name: A-Z");
+			break;
+		case 3:
+			cs2method_10026(74907690, "Name: Z-A");
+	}
+	cs2method_10467(1, 74907685);
+	cs2method_10758(v0, 74907745);
+	cs2method_10758(v2, 74907746);
+	return;
+}

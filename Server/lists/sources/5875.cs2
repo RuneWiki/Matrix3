@@ -1,0 +1,84 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_5875_struct(2,0,0) script_5875(int a0,int a1,int a2) {
+	int v3;
+	int v1 = -1;
+	switch (a2) {
+		case 1:
+			if (a0 == 1) {
+				v3 = 5694;
+			} else {
+				v3 = 5695;
+			}
+			break;
+		case 2:
+			if (a0 == 4) {
+				v3 = 5695;
+			} else {
+				if (a0 == 5) {
+					int v6 = a1;
+					script_5876_struct(2,0,0) v7 = script_5876(v6);
+					return new script_5875_struct(v7.intpart_0, v7.intpart_1);
+				}
+				v3 = 5695;
+			}
+			break;
+		case 4:
+			if (a0 == 2 || a0 == 3) {
+				v3 = 5702;
+			} else {
+				v3 = 5701;
+			}
+			break;
+		case 3:
+			v3 = 5696;
+			break;
+		case 5:
+		case 6:
+		case 7:
+			v3 = 5700;
+			break;
+		case 8:
+		case 9:
+		case 10:
+			v3 = 5699;
+			break;
+		case 11:
+			v3 = 5697;
+			break;
+		case 12:
+			if (client_configs['cfg1450'].bitcfg4334 == 0) {
+				v3 = 5698;
+			} else {
+				v3 = 5697;
+			}
+			break;
+		case 13:
+		case 14:
+			int v5 = a1;
+			script_5876_struct(2,0,0) v0 = script_5876(v5);
+			return new script_5875_struct(v0.intpart_0, v0.intpart_1);
+		default:
+			return new script_5875_struct(-1, 0);
+	}
+	int v2 = idx17mapData('i', 'o', v3, a1);
+	int v4 = 0;
+	if (v2 != -1) {
+		int v6 = itemDefsAttribute(v2, 2270);
+		if (v6 > 1) {
+			v2 = itemDefsAttribute(v2, 2271);
+		}
+		return new script_5875_struct(v2, v6);
+	}
+	return new script_5875_struct(-1, 0);
+}

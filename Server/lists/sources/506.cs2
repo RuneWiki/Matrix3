@@ -1,0 +1,18 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_506(object a0) {
+	if (cs2method_10265(cs2_configs['cfg2504']) > 0 && (cs2method_10846(cs2method_10765(a0), cs2method_10765(cs2_configs['cfg2504'])) == 0 || cs2method_10846(cs2method_10765(a0), cs2method_10765(cs2method_10954())) == 0)) {
+		return 1;
+	}
+	return 0;
+}

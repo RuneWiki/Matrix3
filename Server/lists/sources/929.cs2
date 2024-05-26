@@ -1,0 +1,164 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+int script_929(int a0,int a1) {
+	flow_0:
+		object v4 = "";
+		int v2 = itemDefsAttribute(a0, 823);
+		int v0 = 0;
+		int v8 = itemDefsAttribute(a0, 749);
+		IF (v8 != -1) 
+			GOTO	flow_1
+		GOTO	flow_11
+	flow_1:
+		IF (cs2method_10441(v2, 0) == 0) 
+			GOTO	flow_2
+		GOTO	flow_3
+	flow_2:
+		IF (cs2method_10338(v8) < itemDefsAttribute(a0, 750)) 
+			GOTO	flow_5
+	flow_3:
+		IF (cs2method_10441(v2, 0) == 1 && cs2method_10938(v8) < itemDefsAttribute(a0, 750)) 
+			GOTO	flow_5
+		GOTO	flow_11
+	flow_5:
+		if (cs2method_10873(a0) == 5 || cs2method_10873(a0) == 3 && cs2method_10843(a0) != 18 && itemDefsAttribute(a0, 2832) != 1) {
+			v4 = "You need level " + (string)cs2method_10379(itemDefsAttribute(a0, 750)) + " " + idx17mapData('S', 's', 680, v8) + " to wield this item.";
+		} else {
+			v4 = "You need level " + (string)cs2method_10379(itemDefsAttribute(a0, 750)) + " " + idx17mapData('S', 's', 680, v8) + " to wear this item.";
+		}
+		v0 = 1;
+	flow_11:
+		int v5 = itemDefsAttribute(a0, 751);
+		IF (v5 != -1) 
+			GOTO	flow_12
+		GOTO	flow_22
+	flow_12:
+		IF (cs2method_10441(v2, 1) == 0) 
+			GOTO	flow_13
+		GOTO	flow_14
+	flow_13:
+		IF (cs2method_10338(v5) < itemDefsAttribute(a0, 752)) 
+			GOTO	flow_16
+	flow_14:
+		IF (cs2method_10441(v2, 1) == 1 && cs2method_10938(v5) < itemDefsAttribute(a0, 752)) 
+			GOTO	flow_16
+		GOTO	flow_22
+	flow_16:
+		if (cs2method_10873(a0) == 5 || cs2method_10873(a0) == 3 && cs2method_10843(a0) != 18 && itemDefsAttribute(a0, 2832) != 1) {
+			v4 = cs2method_10427(v4, "You need level " + (string)cs2method_10379(itemDefsAttribute(a0, 752)) + " " + idx17mapData('S', 's', 680, v5) + " to wield this item.");
+		} else {
+			v4 = cs2method_10427(v4, "You need level " + (string)cs2method_10379(itemDefsAttribute(a0, 752)) + " " + idx17mapData('S', 's', 680, v5) + " to wear this item.");
+		}
+		v0 = 1;
+	flow_22:
+		int v7 = itemDefsAttribute(a0, 753);
+		IF (v7 != -1) 
+			GOTO	flow_23
+		GOTO	flow_33
+	flow_23:
+		IF (cs2method_10441(v2, 2) == 0) 
+			GOTO	flow_24
+		GOTO	flow_25
+	flow_24:
+		IF (cs2method_10338(v7) < itemDefsAttribute(a0, 754)) 
+			GOTO	flow_27
+	flow_25:
+		IF (cs2method_10441(v2, 2) == 1 && cs2method_10938(v7) < itemDefsAttribute(a0, 754)) 
+			GOTO	flow_27
+		GOTO	flow_33
+	flow_27:
+		if (cs2method_10873(a0) == 5 || cs2method_10873(a0) == 3 && cs2method_10843(a0) != 18 && itemDefsAttribute(a0, 2832) != 1) {
+			v4 = cs2method_10427(v4, "You need level " + (string)cs2method_10379(itemDefsAttribute(a0, 754)) + " " + idx17mapData('S', 's', 680, v7) + " to wield this item.");
+		} else {
+			v4 = cs2method_10427(v4, "You need level " + (string)cs2method_10379(itemDefsAttribute(a0, 754)) + " " + idx17mapData('S', 's', 680, v7) + " to wear this item.");
+		}
+		v0 = 1;
+	flow_33:
+		int v3 = itemDefsAttribute(a0, 755);
+		IF (v3 != -1) 
+			GOTO	flow_34
+		GOTO	flow_44
+	flow_34:
+		IF (cs2method_10441(v2, 3) == 0) 
+			GOTO	flow_35
+		GOTO	flow_36
+	flow_35:
+		IF (cs2method_10338(v3) < itemDefsAttribute(a0, 756)) 
+			GOTO	flow_38
+	flow_36:
+		IF (cs2method_10441(v2, 3) == 1 && cs2method_10938(v3) < itemDefsAttribute(a0, 756)) 
+			GOTO	flow_38
+		GOTO	flow_44
+	flow_38:
+		if (cs2method_10873(a0) == 5 || cs2method_10873(a0) == 3 && cs2method_10843(a0) != 18 && itemDefsAttribute(a0, 2832) != 1) {
+			v4 = cs2method_10427(v4, "You need level " + (string)cs2method_10379(itemDefsAttribute(a0, 756)) + " " + idx17mapData('S', 's', 680, v3) + " to wield this item.");
+		} else {
+			v4 = cs2method_10427(v4, "You need level " + (string)cs2method_10379(itemDefsAttribute(a0, 756)) + " " + idx17mapData('S', 's', 680, v3) + " to wear this item.");
+		}
+		v0 = 1;
+	flow_44:
+		int v1 = itemDefsAttribute(a0, 757);
+		IF (v1 != -1) 
+			GOTO	flow_45
+		GOTO	flow_55
+	flow_45:
+		IF (cs2method_10441(v2, 4) == 0) 
+			GOTO	flow_46
+		GOTO	flow_47
+	flow_46:
+		IF (cs2method_10338(v1) < itemDefsAttribute(a0, 758)) 
+			GOTO	flow_49
+	flow_47:
+		IF (cs2method_10441(v2, 4) == 1 && cs2method_10938(v1) < itemDefsAttribute(a0, 758)) 
+			GOTO	flow_49
+		GOTO	flow_55
+	flow_49:
+		if (cs2method_10873(a0) == 5 || cs2method_10873(a0) == 3 && cs2method_10843(a0) != 18 && itemDefsAttribute(a0, 2832) != 1) {
+			v4 = cs2method_10427(v4, "You need level " + (string)cs2method_10379(itemDefsAttribute(a0, 758)) + " " + idx17mapData('S', 's', 680, v1) + " to wield this item.");
+		} else {
+			v4 = cs2method_10427(v4, "You need level " + (string)cs2method_10379(itemDefsAttribute(a0, 758)) + " " + idx17mapData('S', 's', 680, v1) + " to wear this item.");
+		}
+		v0 = 1;
+	flow_55:
+		int v6 = itemDefsAttribute(a0, 759);
+		IF (v6 != -1) 
+			GOTO	flow_56
+		GOTO	flow_66
+	flow_56:
+		IF (cs2method_10441(v2, 5) == 0) 
+			GOTO	flow_57
+		GOTO	flow_58
+	flow_57:
+		IF (cs2method_10338(v6) < itemDefsAttribute(a0, 760)) 
+			GOTO	flow_60
+	flow_58:
+		IF (cs2method_10441(v2, 5) == 1 && cs2method_10938(v6) < itemDefsAttribute(a0, 760)) 
+			GOTO	flow_60
+		GOTO	flow_66
+	flow_60:
+		if (cs2method_10873(a0) == 5 || cs2method_10873(a0) == 3 && cs2method_10843(a0) != 18 && itemDefsAttribute(a0, 2832) != 1) {
+			v4 = cs2method_10427(v4, "You need level " + (string)cs2method_10379(itemDefsAttribute(a0, 760)) + " " + idx17mapData('S', 's', 680, v6) + " to wield this item.");
+		} else {
+			v4 = cs2method_10427(v4, "You need level " + (string)cs2method_10379(itemDefsAttribute(a0, 760)) + " " + idx17mapData('S', 's', 680, v6) + " to wear this item.");
+		}
+		v0 = 1;
+	flow_66:
+		if (v0 == 1) {
+			if (a1 == 1 && cs2method_10846(v4, "") != 0) {
+				script_7773(0, -120, v4, 1);
+			}
+			return 0;
+		}
+		return 1;
+}

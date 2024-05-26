@@ -1,0 +1,29 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_376_struct(3,0,0) script_376(int a0,int a1,int a2,int a3) {
+	int v8 = cs2method_10461(a1, a2);
+	int v4 = cs2method_10060(a0, a3);
+	int v6 = cs2method_11048(1, v4);
+	int v3 = cs2method_10968(v8, v6);
+	int v9 = cs2method_11048(1, v3);
+	int v7 = cs2method_10051(v6, v9);
+	int v0 = cs2method_10461(v8, v7);
+	int v5 = cs2method_10461(v9, 1);
+	int v1 = 0;
+	if (v5 >= 1) {
+		v1 = cs2method_10968(v0, v9);
+		v0 = cs2method_10461(v0, cs2method_10051(v5, v1));
+	}
+	int v2 = cs2method_10968(v0, 2);
+	return new script_376_struct(v9, cs2method_10060(v6, v1), v2);
+}

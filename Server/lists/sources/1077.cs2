@@ -1,0 +1,114 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_1077(int a0,int a1) {
+	flow_0:
+		int v2 = a1;
+		if (a1 == 105) {
+			if (client_configs['cfg190'].bitcfg525 != 0) {
+				a1 = 1021;
+			} else {
+				if (client_configs['cfg183'] == 0) {
+					a1 = 561;
+				}
+			}
+		}
+		cs2method_10144(a1);
+		int v0 = 0;
+		int v4 = cs2method_10186(a1);
+		int v3 = -1;
+		while (v0 < v4 && v0 < 10) {
+			switch (cs2method_10128(a1, v0)) {
+				case 0:
+					script_1078(v0, a0);
+					break;
+				case 1:
+					script_1079(v0, a0);
+					break;
+				case 10:
+					script_1079(v0, a0);
+					break;
+				case 2:
+					script_1078(v0, a0);
+			}
+			v0 = cs2method_10060(v0, 1);
+		}
+		IF (script_8613(a0) == 0 || script_8613(a0) == 4) 
+			GOTO	flow_16
+		GOTO	flow_17
+	flow_16:
+		cs2method_10028(0);
+		GOTO	flow_37
+	flow_17:
+		IF (script_8613(a0) == 1) 
+			GOTO	flow_18
+		GOTO	flow_24
+	flow_18:
+		int v1 = script_1090(script_8605(a0));
+		if (v1 == 1) {
+			cs2method_10923(cs2method_10765(script_8605(a0)));
+			script_1089();
+		} else if (v1 == -1) {
+			cs2method_10810("Sorry, this user is not on your Friends List.");
+		} else {
+			cs2method_10810("Sorry, your friend is no longer playing RuneScape.");
+		}
+		GOTO	flow_37
+	flow_24:
+		IF (script_8613(a0) == 5) 
+			GOTO	flow_25
+		GOTO	flow_26
+	flow_25:
+		cs2method_10923(cs2method_10765(script_8605(a0)));
+		script_1089();
+		GOTO	flow_37
+	flow_26:
+		IF (script_8613(a0) == 3 || script_8613(a0) == 7) 
+			GOTO	flow_27
+		GOTO	flow_28
+	flow_27:
+		cs2method_10923(cs2method_10765(script_8605(a0)));
+		script_1089();
+		GOTO	flow_37
+	flow_28:
+		IF (script_8613(a0) == 2 || script_8613(a0) == 6) 
+			GOTO	flow_29
+		GOTO	flow_30
+	flow_29:
+		cs2method_10028(1);
+		GOTO	flow_37
+	flow_30:
+		IF (script_8613(a0) == 8 || script_8613(a0) == 9) 
+			GOTO	flow_31
+		GOTO	flow_34
+	flow_31:
+		if (cs2method_10435() == 1) {
+			cs2method_10028(2);
+		}
+		GOTO	flow_37
+	flow_34:
+		IF (script_8613(a0) == 10) 
+			GOTO	flow_35
+		IF (script_8613(a0) == 11 && cs2method_10143() == 1) 
+			GOTO	flow_36
+		GOTO	flow_37
+	flow_35:
+	flow_36:
+		cs2method_10028(3);
+	flow_37:
+		script_8624(a0, v2);
+		script_8626(a0, script_8613(a0));
+		script_8608(script_8605(a0), a0);
+		script_1054(a0);
+		return;
+}

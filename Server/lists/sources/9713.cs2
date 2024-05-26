@@ -1,0 +1,27 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_9713_struct(2,0,0) script_9713(int a0) {
+	if (a0 == 0) {
+		return new script_9713_struct(67567658, 67567671);
+	}
+	if (a0 == 1) {
+		return new script_9713_struct(67567683, 67567684);
+	}
+	if (a0 == 2) {
+		return new script_9713_struct(67567685, 67567686);
+	}
+	if (a0 == 3) {
+		return new script_9713_struct(67567764, 67567765);
+	}
+	return new script_9713_struct(-1, -1);
+}

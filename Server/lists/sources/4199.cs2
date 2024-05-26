@@ -1,0 +1,43 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4199(int a0) {
+	cs2method_10758(5416, a0);
+	cs2method_10467(0, 58392652);
+	cs2method_10467(0, 58392641);
+	if (a0 == 58392632) {
+		cs2method_10026(58392651, "Cannon Room");
+		cs2method_10026(58392653, "62+");
+		cs2method_10026(58392654, "(Members only) Fix up broken cannons. This offers fast XP, for medium resource costs.");
+	}
+	if (a0 == 58392633) {
+		cs2method_10026(58392651, "Burial Armour Room");
+		cs2method_10026(58392653, "30-70");
+		cs2method_10026(58392654, "Forge burial armour in line with the taskmaster's orders. Different XP rates at a range of resource costs.");
+	}
+	if (a0 == 58392634) {
+		cs2method_10026(58392651, "Ceremonial Sword Room");
+		cs2method_10026(58392653, "70+");
+		cs2method_10026(58392654, "(Members Only) Smith beautiful ceremonial swords. High XP rate, for reasonably high resource costs.");
+	}
+	if (a0 == 58392635) {
+		cs2method_10026(58392651, "Track Room");
+		cs2method_10026(58392653, "1-30");
+		cs2method_10026(58392654, "Build up sections of mine cart tracks. Low XP rate, no resource costs.");
+	}
+	if (a0 == 58392636) {
+		cs2method_10026(58392651, "Reward Shop");
+		cs2method_10026(58392653, "--");
+		cs2method_10026(58392654, "Purchase unique rewards using respect earned in the workshop.");
+	}
+	return;
+}

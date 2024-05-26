@@ -1,0 +1,41 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2437() {
+	int v0;
+	int v4 = 0;
+	int v5 = 0;
+	int v3 = 0;
+	switch (cs2_configs['cfg816']) {
+		case 0:
+			return;
+		case 1:
+			v0 = cs2_configs['cfg817'];
+			break;
+		case 2:
+			v0 = cs2method_10122(cs2_configs['cfg817'], 125, 100);
+			break;
+		case 3:
+			v0 = cs2method_10122(cs2_configs['cfg817'], 150, 100);
+			break;
+		default:
+			v0 = cs2method_10122(cs2_configs['cfg817'], 175, 100);
+	}
+	if (v0 > 100) {
+		v0 = 100;
+	}
+	int v2 = idx17mapData('i', 'i', 1090, v0);
+	int v1 = idx17mapData('i', 'i', 1091, v0);
+	cs2method_10112(91, v2, 2, 0, 983051);
+	cs2method_10283(18, v1, 0, 0, 983051);
+	return;
+}

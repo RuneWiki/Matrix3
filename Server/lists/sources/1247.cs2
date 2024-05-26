@@ -1,0 +1,45 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1247(object a0,int a1,int a2) {
+	if (cs2method_10846(a0, "This name is already taken.") == 0 && cs2method_10265(cs2_configs['cfg2563']) == 0) {
+		a0 = "Please enter a displayname.";
+	}
+	if (a2 == 1) {
+		script_7845(a1, a0, 93061194);
+		if (a1 == 0) {
+			cs2method_10467(0, 93061331);
+			script_7846(93061194);
+		}
+	} else {
+		cs2method_10026(4194410, a0);
+		switch (a1) {
+			case 0:
+				cs2method_10758(19717, 4194341);
+				cs2method_10467(0, 4194311);
+				break;
+			case 1:
+				cs2method_10758(19716, 4194341);
+				cs2method_10467(1, 4194311);
+				break;
+			case 2:
+				cs2method_10758(18861, 4194341);
+				cs2method_10467(1, 4194311);
+				break;
+			case 3:
+				cs2method_10758(19718, 4194341);
+				cs2method_10467(1, 4194311);
+		}
+		cs2method_10467(0, 4194339);
+	}
+	return;
+}

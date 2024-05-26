@@ -1,0 +1,31 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2007(int a0,int a1,int a2,int a3) {
+	cs2method_10644(a1, -1, a0);
+	int v7 = cs2method_10461(cs2method_10236(a1), cs2method_10236(a0));
+	int v0 = cs2method_10122(cs2method_10151(), 255, v7);
+	cs2method_10112(v0, 0, 0, 0, a0);
+	int v5 = cs2method_10461(cs2method_10236(57802837), cs2method_10236(57802838));
+	int v2 = cs2method_10122(cs2method_10151(), 255, v5);
+	cs2method_10112(v2, 0, 0, 0, 57802838);
+	int v4 = cs2method_10461(cs2method_10236(93061656), cs2method_10236(93061657));
+	int v3 = cs2method_10122(cs2method_10151(), 255, v4);
+	cs2method_10112(v3, 0, 0, 0, 93061657);
+	int v1 = cs2method_10461(cs2method_10236(48758963), cs2method_10236(48758792));
+	int v6 = cs2method_10122(cs2method_10151(), 255, v1);
+	cs2method_10112(v6, 0, 0, 0, 48758792);
+	if (a3 == 1) {
+		cs2_configs['cfg1394'] = cs2method_10151();
+	}
+	return;
+}

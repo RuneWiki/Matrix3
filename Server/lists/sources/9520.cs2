@@ -1,0 +1,194 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9520(int a0,int a1,int a2,int a3) {
+	int v3 = 0;
+	int v1 = 21589;
+	int v0 = 21595;
+	object v2 = "This location is fogged in battle and cannot be identified.";
+	switch (a1) {
+		case 1:
+			v3 = client_configs['cfg3987'].bitcfg21174;
+			v2 = idx17mapData('i', 's', 8112, 6);
+			break;
+		case 2:
+			v3 = client_configs['cfg3987'].bitcfg21175;
+			v2 = idx17mapData('i', 's', 8112, 0);
+			break;
+		case 3:
+			v3 = client_configs['cfg3987'].bitcfg21176;
+			v2 = idx17mapData('i', 's', 8112, 1);
+			break;
+		case 4:
+			v3 = client_configs['cfg3987'].bitcfg21177;
+			v2 = idx17mapData('i', 's', 8112, 5);
+			break;
+		case 5:
+			v3 = client_configs['cfg3987'].bitcfg21178;
+			v2 = idx17mapData('i', 's', 8112, 11);
+			break;
+		case 6:
+			v3 = client_configs['cfg3987'].bitcfg21179;
+			v2 = idx17mapData('i', 's', 8112, 15);
+			break;
+		case 7:
+			v3 = client_configs['cfg3988'].bitcfg21180;
+			v2 = idx17mapData('i', 's', 8112, 10);
+			break;
+		case 8:
+			v3 = client_configs['cfg3988'].bitcfg21181;
+			v2 = idx17mapData('i', 's', 8112, 14);
+			break;
+		case 9:
+			v3 = client_configs['cfg3988'].bitcfg21182;
+			v2 = idx17mapData('i', 's', 8112, 2);
+			break;
+		case 10:
+			v3 = client_configs['cfg3988'].bitcfg21183;
+			v2 = idx17mapData('i', 's', 8112, 7);
+			break;
+		case 11:
+			v3 = client_configs['cfg3988'].bitcfg21184;
+			v2 = idx17mapData('i', 's', 8112, 12);
+			break;
+		case 12:
+			v3 = client_configs['cfg3988'].bitcfg21185;
+			v2 = idx17mapData('i', 's', 8112, 17);
+			break;
+		case 13:
+			v3 = client_configs['cfg3989'].bitcfg21186;
+			v2 = idx17mapData('i', 's', 8112, 4);
+			break;
+		case 14:
+			v3 = client_configs['cfg3989'].bitcfg21187;
+			v2 = idx17mapData('i', 's', 8112, 9);
+			break;
+		case 15:
+			v3 = client_configs['cfg3989'].bitcfg21188;
+			v2 = idx17mapData('i', 's', 8112, 16);
+			break;
+		case 16:
+			v3 = client_configs['cfg3989'].bitcfg21189;
+			v2 = idx17mapData('i', 's', 8112, 3);
+			break;
+		case 17:
+			v3 = client_configs['cfg3989'].bitcfg21190;
+			v2 = idx17mapData('i', 's', 8112, 8);
+			break;
+		case 18:
+			v3 = client_configs['cfg3989'].bitcfg21191;
+			v2 = idx17mapData('i', 's', 8112, 13);
+	}
+	switch (v3) {
+		case 0:
+			v1 = 21589;
+			v0 = 21595;
+			v2 = cs2method_10427(v2, ":  This site belongs to neither side.");
+			break;
+		case 1:
+			v1 = 21588;
+			v0 = 21594;
+			v2 = cs2method_10427(v2, ":  This site has a structure held by the forces of Armadyl built on it.");
+			break;
+		case 2:
+			v1 = 21587;
+			v0 = 21593;
+			v2 = cs2method_10427(v2, ":  This site has a structure held by the forces of Bandos built on it.");
+			break;
+		case 3:
+			v1 = 21592;
+			v0 = 21598;
+			v2 = cs2method_10427(v2, ":  This site cannot be captured.");
+			break;
+		case 4:
+			v1 = 21591;
+			v0 = 21597;
+			v2 = cs2method_10427(v2, ":  This site has a teleporter held by the forces of Armadyl built on it.");
+			break;
+		case 5:
+			v1 = 21590;
+			v0 = 21596;
+			v2 = cs2method_10427(v2, ":  This site has a teleporter held by the forces of Bandos built on it.");
+			break;
+		case 6:
+			v1 = 21607;
+			v0 = 21607;
+			v2 = cs2method_10427(v2, ":  This site belongs to neither side. A Bandos convoy is currently at this location.");
+			break;
+		case 7:
+			v1 = 21606;
+			v0 = 21606;
+			v2 = cs2method_10427(v2, ":  This site has a structure held by the forces of Armadyl built on it. A Bandos convoy is currently at this location.");
+			break;
+		case 8:
+			v1 = 21605;
+			v0 = 21605;
+			v2 = cs2method_10427(v2, ":  This site has a structure held by the forces of Bandos built on it. A Bandos convoy is currently at this location.");
+			break;
+		case 9:
+			v1 = 21610;
+			v0 = 21610;
+			v2 = cs2method_10427(v2, ":  This site cannot be captured. A Bandos convoy is currently at this location.");
+			break;
+		case 10:
+			v1 = 21609;
+			v0 = 21609;
+			v2 = cs2method_10427(v2, ":  This site has a teleporter held by the forces of Armadyl built on it. A Bandos convoy is currently at this location.");
+			break;
+		case 11:
+			v1 = 21608;
+			v0 = 21608;
+			v2 = cs2method_10427(v2, ":  This site has a teleporter held by the forces of Bandos built on it. A Bandos convoy is currently at this location.");
+			break;
+		case 12:
+			v1 = 21607;
+			v0 = 21607;
+			v2 = cs2method_10427(v2, ":  This site belongs to neither side. An Armadyl convoy is currently at this location.");
+			break;
+		case 13:
+			v1 = 21606;
+			v0 = 21606;
+			v2 = cs2method_10427(v2, ":  This site has a structure held by the forces of Armadyl built on it. An Armadyl convoy is currently at this location.");
+			break;
+		case 14:
+			v1 = 21605;
+			v0 = 21605;
+			v2 = cs2method_10427(v2, ":  This site has a structure held by the forces of Bandos built on it. An Armadyl convoy is currently at this location.");
+			break;
+		case 15:
+			v1 = 21610;
+			v0 = 21610;
+			v2 = cs2method_10427(v2, ":  This site cannot be captured. An Armadyl convoy is currently at this location.");
+			break;
+		case 16:
+			v1 = 21609;
+			v0 = 21609;
+			v2 = cs2method_10427(v2, ":  This site has a teleporter held by the forces of Armadyl built on it. An Armadyl convoy is currently at this location.");
+			break;
+		case 17:
+			v1 = 21608;
+			v0 = 21608;
+			v2 = cs2method_10427(v2, ":  This site has a teleporter held by the forces of Bandos built on it. An Armadyl convoy is currently at this location.");
+	}
+	cs2method_10758(v1, a0);
+	cs2method_10758(v0, a3);
+	cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,object a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+		script_7769(a5, a2, a8, a12, a10, a1, a11, a6, a7, a9, a3, a4, a0);
+		return;
+	}, new WidgetPointer(750,34), new WidgetPointer(a2), -1, (string)v2, 120, 17813, 17813, 16777215, 13, 4, 2, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(a2));
+	cs2method_11127(1, a2, "Teleport");
+	cs2method_20486(new function<script_9521>() {
+		cs2method_10810("Transporting...");
+		return;
+	}, "", new WidgetPointer(a2));
+	return;
+}

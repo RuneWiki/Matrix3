@@ -1,0 +1,211 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6103() {
+	cs2method_10026(82903080, cs2_configs['cfg2361']);
+	object v1 = "";
+	object v0 = "";
+	switch (cs2_configs['cfg1876']) {
+		case 0:
+		case 1:
+		case 3:
+		case 4:
+		case 5:
+		case 6:
+			v1 = "This is a piece of apparel.";
+			break;
+		case 2:
+		case 7:
+			v1 = "This is a piece of jewellery.";
+			break;
+		case 9:
+			v1 = "This is a shield.";
+			break;
+		case 11:
+		case 14:
+			v1 = "This is a melee weapon.";
+			break;
+		case 12:
+		case 15:
+			v1 = "This is a ranged weapon.";
+			break;
+		case 13:
+		case 16:
+			v1 = "This is a weapon for mages.";
+			break;
+		case 8:
+			v1 = "This is ammunition for a ranged weapon.";
+			break;
+		case 60:
+			v1 = "This is an aura focus.";
+			break;
+		case 31:
+		case 30:
+		case 32:
+			v1 = "This is a tool.";
+			break;
+		case 34:
+		case 33:
+			v1 = "This is a piece of food.";
+			break;
+		case 93:
+		case 92:
+		case 95:
+		case 94:
+		case 91:
+		case 90:
+		case 102:
+		case 103:
+		case 100:
+		case 101:
+		case 98:
+		case 99:
+		case 96:
+		case 97:
+		case 108:
+		case 109:
+		case 106:
+		case 107:
+		case 104:
+		case 105:
+			v1 = "This is a usable item.";
+			break;
+		case 36:
+			v1 = "This is a magic rune.";
+	}
+	cs2method_10026(82903083, v1);
+	switch (cs2_configs['cfg1876']) {
+		case 0:
+			v0 = "It is worn on the head.";
+			break;
+		case 1:
+			v0 = "It is worn on the back.";
+			break;
+		case 3:
+			v0 = "It is worn on the torso.";
+			break;
+		case 4:
+			v0 = "It is worn on the legs.";
+			break;
+		case 5:
+			v0 = "It is worn on the hands.";
+			break;
+		case 6:
+			v0 = "It is worn on the feet.";
+			break;
+		case 9:
+			v0 = "It is held in the left hand.";
+			break;
+		case 11:
+		case 12:
+		case 13:
+			v0 = "It is wielded in the right hand.";
+			break;
+		case 14:
+		case 15:
+		case 16:
+			v0 = "It is wielded in both hands.";
+			break;
+		case 2:
+			v0 = "It is worn around the neck.";
+			break;
+		case 7:
+			v0 = "It is worn on the hand.";
+			break;
+		case 8:
+			v0 = "It is carried in the quiver.";
+			break;
+		case 60:
+			v0 = "It imbues you when activated.";
+			break;
+		case 30:
+			v0 = "You can place it in your tool belt to save space.";
+			break;
+		case 31:
+			v0 = "You have one in your tool belt already.";
+			break;
+		case 34:
+			v0 = "It needs cooking to be edible.";
+			break;
+		case 36:
+			v0 = "Runes are needed to cast spells.";
+			break;
+		case 90:
+			v0 = "It is mainly used in combat.";
+			break;
+		case 91:
+			v0 = "It is mainly used in prayer.";
+			break;
+		case 92:
+			v0 = "It is mainly used in agility.";
+			break;
+		case 93:
+			v0 = "It is mainly used in herblore.";
+			break;
+		case 94:
+			v0 = "It is mainly used in thieving.";
+			break;
+		case 95:
+			v0 = "It is mainly used in crafting.";
+			break;
+		case 96:
+			v0 = "It is mainly used in runecrafting.";
+			break;
+		case 97:
+			v0 = "It is mainly used in mining.";
+			break;
+		case 98:
+			v0 = "It is mainly used in smithing.";
+			break;
+		case 99:
+			v0 = "It is mainly used in fishing.";
+			break;
+		case 100:
+			v0 = "It is mainly used in cooking.";
+			break;
+		case 101:
+			v0 = "It is mainly used in firemaking.";
+			break;
+		case 102:
+			v0 = "It is mainly used in woodcutting.";
+			break;
+		case 103:
+			v0 = "It is mainly used in fletching.";
+			break;
+		case 104:
+			v0 = "It is mainly used in slaying.";
+			break;
+		case 105:
+			v0 = "It is mainly used in farming.";
+			break;
+		case 106:
+			v0 = "It is mainly used in construction.";
+			break;
+		case 107:
+			v0 = "It is mainly used in hunting.";
+			break;
+		case 108:
+			v0 = "It is mainly used in summoning.";
+			break;
+		case 109:
+			v0 = "It is mainly used in dungeoneering.";
+			break;
+		case 70:
+			v0 = "Buying this unlocks mime emotes.";
+			break;
+		case 71:
+			v0 = "Buying this unlocks zombie emotes.";
+	}
+	cs2method_10026(82903084, v0);
+	cs2method_10467(1, 82903085);
+	return;
+}

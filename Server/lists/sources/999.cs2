@@ -1,0 +1,43 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_999_struct(1,1,0) script_999(int a0) {
+	switch (a0) {
+		case 0:
+			return new script_999_struct(1, "Weaving");
+		case 1:
+			return new script_999_struct(0, "Armour");
+		case 2:
+			return new script_999_struct(0, "Spinning");
+		case 3:
+			return new script_999_struct(0, "Pottery");
+		case 4:
+			return new script_999_struct(1, "Glass");
+		case 5:
+			return new script_999_struct(0, "Jewellery");
+		case 6:
+			return new script_999_struct(1, "Weaponry");
+		case 7:
+			return new script_999_struct(1, "Pyre ships");
+		case 8:
+			return new script_999_struct(1, "Objects");
+		case 9:
+			return new script_999_struct(0, "Other");
+		case 10:
+			return new script_999_struct(1, "Minigames");
+		case 11:
+			return new script_999_struct(0, "Dungeoneering");
+		case 12:
+			return new script_999_struct(0, "Milestones");
+	}
+	return new script_999_struct(-1, "");
+}

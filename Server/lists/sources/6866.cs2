@@ -1,0 +1,36 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6866() {
+	cs2method_10273(89128960);
+	cs2method_10273(89128962);
+	cs2method_10273(89128961);
+	int v0 = cs2method_10924(6570);
+	int v4 = 0;
+	int v5 = 1;
+	int v3 = 0;
+	int v2 = 0;
+	globalarray_0 = new int[v0];
+	globalarray_1 = new int[v0];
+	while (v4 < v0) {
+		globalarray_0[v4] = idx22mapAttribute(idx17mapData('i', 'J', 6570, v5), 2769);
+		globalarray_0[v4] = v3;
+		v3 = script_6867(v3, v5);
+		v4 = cs2method_10060(v4, 1);
+		v5 = cs2method_10060(v5, 1);
+	}
+	cs2method_10709(v0, 0, 1);
+	for (int v1 = 0, int v6 = 0; v1 < v0; v1 = cs2method_10060(v1, 1)) {
+		v6 = script_6868(globalarray_1[v1], v1, v6);
+	}
+	return;
+}

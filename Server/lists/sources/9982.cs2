@@ -1,0 +1,64 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_9982(int a0,int a1,int a2) {
+	int v2;
+	flow_0:
+		if (a2 == -1 || a0 == -1) {
+			return;
+		}
+		int v6 = 0;
+		int v5 = 0;
+		int v0 = script_9972(a1, 1);
+		int v4 = 0;
+		if (a0 == 37814304) {
+			if (v0 == -1 || cs2method_10982(a2) == 37814308) {
+				return;
+			}
+			if (a1 == script_9977(7)) {
+				script_9860(a2, -1, 0, "The Extras button must be within the first eight slots.");
+				cs2method_10810("TThe Extras button must be within the first eight slots.");
+				return;
+			}
+			v2 = -1;
+		} else if (a0 == 37814278) {
+			int v3 = script_8403(37814275);
+			int v1 = script_8404(37814275);
+			v2 = cs2method_10968(cs2method_10461(v3, 4), 41);
+			if (v1 > 44) {
+				v2 = cs2method_10060(v2, 11);
+			}
+		} else {
+			return;
+		}
+		if (a1 == script_9977(7)) {
+			v2 = cs2method_11048(0, cs2method_10872(v2, 7));
+		}
+		script_9980(a1, v2);
+		IF (v2 < 0) 
+			GOTO	flow_16
+		GOTO	flow_17
+	flow_16:
+		IF (v0 >= 0) 
+			GOTO	flow_19
+	flow_17:
+		IF (v0 < 0 && v2 >= 0) 
+			GOTO	flow_19
+		GOTO	flow_20
+	flow_19:
+		script_10002(a1);
+	flow_20:
+		script_8144();
+		script_9985();
+		return;
+}

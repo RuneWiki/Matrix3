@@ -1,0 +1,26 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1350(int a0,int a1,int a2,int a3,int a4,object a5,int a6,int a7) {
+	if (cs2method_11038(a2, a1) == 1) {
+		cs2method_10797(a5);
+		cs2method_10811(a4);
+		cs2method_20884(new function<script_1354>(int a0,int a1,int a2) {
+			if (cs2method_11038(a1, a2) == 1) {
+				cs2method_10811(a0);
+			}
+			return;
+		}, new WidgetPointer(a2), a1, a4, "Iii");
+	}
+	script_1349(a2, a0, a7, a3, a6);
+	return;
+}

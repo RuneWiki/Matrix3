@@ -1,0 +1,106 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7661() {
+	if (client_configs['cfg3593'].bitcfg18337 < 1) {
+		cs2method_10810("You need to select a category before you can submit your bug");
+		return;
+	}
+	if (cs2method_10265(cs2_configs['cfg2758']) < 1) {
+		cs2method_10810("You need to enter bug information before you can submit your bug");
+		return;
+	}
+	if (cs2method_10265(cs2_configs['cfg2759']) < 1) {
+		cs2method_10810("You need to enter bug reproduction steps before you can submit your bug");
+		return;
+	}
+	if (cs2method_10265(cs2method_10765(cs2_configs['cfg2758'])) > 500 || cs2method_10265(cs2method_10765(cs2_configs['cfg2759'])) > 500) {
+		cs2method_10810("Your bug information and reproduction steps can only be 500 characters long");
+		return;
+	}
+	switch (client_configs['cfg3593'].bitcfg18337) {
+		default:
+			cs2method_10944(0, cs2method_10765(cs2_configs['cfg2758']), cs2method_10765(cs2_configs['cfg2759']));
+			break;
+		case 1:
+			cs2method_10944(1, cs2method_10765(cs2_configs['cfg2758']), cs2method_10765(cs2_configs['cfg2759']));
+			break;
+		case 2:
+			cs2method_10944(2, cs2method_10765(cs2_configs['cfg2758']), cs2method_10765(cs2_configs['cfg2759']));
+			break;
+		case 3:
+			cs2method_10944(3, cs2method_10765(cs2_configs['cfg2758']), cs2method_10765(cs2_configs['cfg2759']));
+			break;
+		case 4:
+			cs2method_10944(4, cs2method_10765(cs2_configs['cfg2758']), cs2method_10765(cs2_configs['cfg2759']));
+			break;
+		case 5:
+			cs2method_10944(5, cs2method_10765(cs2_configs['cfg2758']), cs2method_10765(cs2_configs['cfg2759']));
+			break;
+		case 10:
+			cs2method_10944(6, cs2method_10765(cs2_configs['cfg2758']), cs2method_10765(cs2_configs['cfg2759']));
+			break;
+		case 21:
+			cs2method_10944(7, cs2method_10765(cs2_configs['cfg2758']), cs2method_10765(cs2_configs['cfg2759']));
+			break;
+		case 22:
+			cs2method_10944(8, cs2method_10765(cs2_configs['cfg2758']), cs2method_10765(cs2_configs['cfg2759']));
+			break;
+		case 31:
+			cs2method_10944(9, cs2method_10765(cs2_configs['cfg2758']), cs2method_10765(cs2_configs['cfg2759']));
+			break;
+		case 32:
+			cs2method_10944(10, cs2method_10765(cs2_configs['cfg2758']), cs2method_10765(cs2_configs['cfg2759']));
+			break;
+		case 33:
+			cs2method_10944(11, cs2method_10765(cs2_configs['cfg2758']), cs2method_10765(cs2_configs['cfg2759']));
+			break;
+		case 34:
+			cs2method_10944(12, cs2method_10765(cs2_configs['cfg2758']), cs2method_10765(cs2_configs['cfg2759']));
+			break;
+		case 35:
+			cs2method_10944(13, cs2method_10765(cs2_configs['cfg2758']), cs2method_10765(cs2_configs['cfg2759']));
+			break;
+		case 36:
+			cs2method_10944(14, cs2method_10765(cs2_configs['cfg2758']), cs2method_10765(cs2_configs['cfg2759']));
+			break;
+		case 37:
+			cs2method_10944(15, cs2method_10765(cs2_configs['cfg2758']), cs2method_10765(cs2_configs['cfg2759']));
+			break;
+		case 40:
+			cs2method_10944(16, cs2method_10765(cs2_configs['cfg2758']), cs2method_10765(cs2_configs['cfg2759']));
+			break;
+		case 50:
+			cs2method_10944(17, cs2method_10765(cs2_configs['cfg2758']), cs2method_10765(cs2_configs['cfg2759']));
+			break;
+		case 60:
+			cs2method_10944(18, cs2method_10765(cs2_configs['cfg2758']), cs2method_10765(cs2_configs['cfg2759']));
+			break;
+		case 70:
+			cs2method_10944(19, cs2method_10765(cs2_configs['cfg2758']), cs2method_10765(cs2_configs['cfg2759']));
+			break;
+		case 80:
+			cs2method_10944(20, cs2method_10765(cs2_configs['cfg2758']), cs2method_10765(cs2_configs['cfg2759']));
+			break;
+		case 91:
+			cs2method_10944(21, cs2method_10765(cs2_configs['cfg2758']), cs2method_10765(cs2_configs['cfg2759']));
+			break;
+		case 92:
+			cs2method_10944(23, cs2method_10765(cs2_configs['cfg2758']), cs2method_10765(cs2_configs['cfg2759']));
+	}
+	cs2_configs['cfg2758'] = "";
+	cs2_configs['cfg2759'] = "";
+	client_configs['cfg3593'].bitcfg18337 = 0;
+	script_675();
+	cs2method_10810("Thank you for submitting your bug report.");
+	return;
+}

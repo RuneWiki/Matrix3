@@ -1,0 +1,30 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9747(int a0,int a1,int a2,int a3) {
+	int v0 = cs2method_10060(a0, 1);
+	if (a1 == 1) {
+		cs2method_10067(22705, a2);
+	}
+	if (a0 == 1) {
+		cs2method_10067(22704, a2);
+	}
+	if (a0 == cs2method_10527(22704)) {
+		cs2method_10067(22705, a2);
+		cs2method_20162(new function<none>() {
+		}, "", new WidgetPointer(a3));
+		cs2_configs['cfg4096'] = 1;
+		script_6974();
+	}
+	cs2method_20162(load function<9747>, new WidgetPointer(a3), new WidgetPointer(a2), v0, 0, "IIii", new WidgetPointer(a3));
+	return;
+}

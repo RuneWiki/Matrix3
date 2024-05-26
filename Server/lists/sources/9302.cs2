@@ -1,0 +1,22 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9302() {
+	if (client_configs['cfg3933'].bitcfg20966 == 0 || client_configs['cfg3933'].bitcfg20966 != client_configs['cfg3934'].bitcfg20972) {
+		cs2method_10026(41877557, "Switch on Path");
+		cs2method_10758(21362, 41877534);
+	} else {
+		cs2method_10026(41877557, "Switch off Path");
+		cs2method_10758(21363, 41877534);
+	}
+	return;
+}

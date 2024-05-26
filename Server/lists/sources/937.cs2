@@ -1,0 +1,44 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_937() {
+	int v2;
+	int v3;
+	cs2method_10273(21954586);
+	int v0 = 0;
+	int v6 = 0;
+	int v5 = 4;
+	int v1 = 7;
+	if (cs2method_10350(21954586) > 0) {
+		v2 = cs2method_10968(cs2method_10461(cs2method_10350(21954586), cs2method_10051(36, v5)), cs2method_10461(v5, 1));
+	} else {
+		v2 = cs2method_10968(cs2method_10461(cs2method_10236(21954586), cs2method_10051(36, v5)), cs2method_10461(v5, 1));
+	}
+	if (cs2method_10970(21954586) > 0) {
+		v3 = cs2method_10968(cs2method_10461(cs2method_10970(21954586), cs2method_10051(32, v1)), cs2method_10461(v1, 1));
+	} else {
+		v3 = cs2method_10968(cs2method_10461(cs2method_10823(21954586), cs2method_10051(32, v1)), cs2method_10461(v1, 1));
+	}
+	for (int v4 = 0, int v7 = -1; v4 < cs2method_10894(90); v4 = cs2method_10060(v4, 1)) {
+		cs2method_10606(21954586, 3, v4);
+		cs2method_10013(36, 32, 0, 0);
+		cs2method_10063(cs2method_10051(cs2method_10060(36, v2), cs2method_10038(v4, v5)), cs2method_10051(cs2method_10968(v4, v5), cs2method_10060(32, v3)), 0, 0);
+		cs2method_10238(1);
+		cs2method_10811(16711680);
+		cs2method_10002(255);
+	}
+	cs2method_20254(new function<script_938>() {
+		script_939();
+		return;
+	}, 90, 1, "Y", new WidgetPointer(335,26));
+	return;
+}

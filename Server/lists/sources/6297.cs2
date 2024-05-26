@@ -1,0 +1,63 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6297(int a0) {
+	int v14 = 0;
+	int v10 = 0;
+	int v13 = 0;
+	int v1 = -1;
+	if (a0 == 14881 || a0 == 14882) {
+		script_7985(a0);
+		return;
+	}
+	int v9 = -1;
+	int v18 = -1;
+	int v23 = a0;
+	script_8427_struct(2,0,0) v7 = script_8427(v23);
+	int v0 = v7.intpart_1;
+	int v21 = v7.intpart_0;
+	if (v0 == -1) {
+		return;
+	}
+	if (v21 == -1) {
+		return;
+	}
+	for (int v27 = 0, int v20 = cs2method_10163(v0), int v16 = -1, int v25 = 0, int v17 = 0, int v8 = -1; v27 < v20 && v16 == -1; v27 = cs2method_10060(v27, 1)) {
+		if (cs2method_11038(v0, v27) == 1) {
+			int v28 = interfaceDefsAttribute(3438);
+			if (v28 == a0) {
+				v16 = v27;
+				v25 = cs2method_10878();
+				v17 = cs2method_10406();
+			}
+		}
+	}
+	int v24 = -1;
+	int v12 = -1;
+	int v22 = -1;
+	int v2 = -1;
+	int v5 = a0;
+	script_8428_struct(2,0,0) v15 = script_8428(v5);
+	int v6 = v15.intpart_1;
+	int v19 = v15.intpart_0;
+	int v3 = a0;
+	script_8429_struct(2,0,0) v26 = script_8429(v3);
+	int v11 = v26.intpart_1;
+	int v4 = v26.intpart_0;
+	if (v19 != -1) {
+		script_7984(a0, v19, v4, v16, v25, v17);
+	}
+	if (v6 != -1) {
+		script_7984(a0, v6, v11, v16, v25, v17);
+	}
+	return;
+}

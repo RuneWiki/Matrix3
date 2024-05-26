@@ -1,0 +1,35 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2243(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8) {
+	cs2method_10026(61276240, cs2method_10379(a7));
+	cs2method_10026(61276245, cs2method_10379(a8));
+	cs2method_10026(61276261, (string)cs2method_10379(cs2method_10968(a2, 100)) + "." + (string)cs2method_10379(cs2method_10038(a2, 100)));
+	cs2method_20162(new function<script_2244>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11) {
+		int v1 = script_2245(a9, a3, a7, 61276214, 61276209);
+		int v0 = script_2245(a5, a10, a11, 61276224, 61276219);
+		int v4 = script_2245(a2, a4, a6, 61276234, 61276229);
+		int v2 = cs2method_10060(cs2method_10060(v1, v0), v4);
+		cs2method_10283(cs2method_10060(1, cs2method_10968(cs2method_10051(223, v2), cs2method_10060(cs2method_10060(a3, a10), a4))), 10, 0, 0, 61276255);
+		int v3 = cs2method_10060(cs2method_10060(v2, a0), a8);
+		cs2method_10026(61276250, cs2method_10379(v3));
+		cs2method_10026(61276267, cs2method_10379(cs2method_10968(cs2method_10051(v3, a1), 100)));
+		if (v1 == a9 && v0 == a5 && v4 == a2) {
+			cs2method_20162(new function<none>() {
+			}, "", new WidgetPointer(935,0));
+		} else {
+			cs2method_20162(load function<2244>, v1, a9, a3, v0, a5, a10, v4, a2, a4, a0, a8, a1, "iiiiiiiiiiii", new WidgetPointer(935,0));
+		}
+		return;
+	}, 0, a3, a0, 0, a5, a4, 0, a6, a1, a7, a8, a2, "iiiiiiiiiiii", new WidgetPointer(935,0));
+	return;
+}

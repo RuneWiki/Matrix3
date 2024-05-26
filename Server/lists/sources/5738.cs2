@@ -1,0 +1,34 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5738() {
+	int v1 = cs2method_10152(81068037);
+	int v3 = 0;
+	object v0 = "";
+	object v2 = "";
+	if (client_configs['cfg3254'] != -1 && (script_3999(idx22mapAttribute(client_configs['cfg3254'], 1268)) == 0 || client_configs['cfg3254'] == 6879)) {
+		cs2method_10467(0, 81068080);
+		if (client_configs['cfg3254'] != 6879) {
+			int v8 = client_configs['cfg3256'];
+			int v7 = client_configs['cfg3254'];
+			script_5755_struct(1,1,0) v5 = script_5755(v8, v7);
+			object v6 = v5.objectpart_0;
+			int v4 = v5.intpart_0;
+			v2 = "Get your " + (string)v6 + " level to " + (string)cs2method_10379(v4) + " to unlock: ";
+		}
+		object v4 = cs2method_10427(v2, idx22mapAttribute(client_configs['cfg3254'], 1273));
+		int v5 = script_5739(1, v4, v1, 81068037, 81068080);
+	} else {
+		int v4 = script_5739(1, "Explore the world of RuneScape for new and exciting adventures!", v1, 81068037, 81068080);
+	}
+	return;
+}

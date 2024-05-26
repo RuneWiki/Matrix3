@@ -1,0 +1,284 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_6867(int a0,int a1) {
+	int v3 = idx22mapAttribute(idx17mapData('i', 'J', 6570, a1), 2770);
+	int v4 = idx22mapAttribute(idx17mapData('i', 'J', 6570, a1), 2769);
+	object v2 = idx22mapAttribute(idx17mapData('i', 'J', 6570, a1), 2760);
+	object v12 = idx22mapAttribute(idx17mapData('i', 'J', 6570, a1), 2761);
+	object v0 = "Level " + (string)cs2method_10379(v4) + " Prayer";
+	object v11 = "You have already helped Father Joakim with these celebrations, so you will receive no additional rewards.";
+	int v13 = 0;
+	int v1 = -1;
+	if (cs2method_10338(5) >= v4) {
+		v13 = 1;
+	}
+	if (v3 > 1) {
+		v0 = cs2method_10427(v0, "<br>" + "Level " + (string)cs2method_10379(v3) + " combat.");
+		if (cs2method_10004() < v3) {
+			v13 = 0;
+		}
+	}
+	int v10 = idx22mapAttribute(idx17mapData('i', 'J', 6570, a1), 2771);
+	if (v10 != -1) {
+		if (script_2156(v10) == 0) {
+			v13 = 0;
+		}
+		v0 = cs2method_10427(v0, "<br>" + idx22mapAttribute(idx17mapData('i', 'J', 2252, v10), 845) + ".");
+	}
+	int v7 = cs2method_10805(120, 494, v2);
+	if (v7 < cs2method_10805(190, 494, v12)) {
+		v7 = cs2method_10805(190, 494, v12);
+	}
+	if (v7 < cs2method_10805(130, 494, v0)) {
+		v7 = cs2method_10805(130, 494, v0);
+	}
+	int v6 = cs2method_10051(v7, 12);
+	if (a0 > 0) {
+		v6 = cs2method_10060(v6, 4);
+	}
+	cs2method_10606(89128960, 4, a0);
+	cs2method_10692(494);
+	cs2method_10173(1);
+	cs2method_11105(1, 1, 0);
+	cs2method_10975(0);
+	if (v13 == 1) {
+		cs2method_10797(v2);
+	} else {
+		cs2method_10797("Unknown");
+	}
+	cs2method_20674(new function<script_6870>(int a0,int a1) {
+		script_6871(a1, a0);
+		return;
+	}, a0, v13, "ii");
+	cs2method_20884(new function<script_6872>(int a0,int a1) {
+		if (cs2method_11038(89128960, a1) == 1) {
+			if (a0 == 1) {
+				cs2method_10811(16777215);
+			} else {
+				cs2method_10811(16711680);
+			}
+		}
+		if (cs2method_11038(89128960, cs2method_10060(a1, 1)) == 1) {
+			if (a0 == 1) {
+				cs2method_10811(16777215);
+			} else {
+				cs2method_10811(16711680);
+			}
+		}
+		if (cs2method_11038(89128960, cs2method_10060(a1, 2)) == 1) {
+			if (a0 == 1) {
+				cs2method_10811(16777215);
+			} else {
+				cs2method_10811(16711680);
+			}
+		}
+		script_41(89128962);
+		return;
+	}, a0, v13, "ii");
+	cs2method_10013(120, v6, 0, 0);
+	if (v13 == 1) {
+		cs2method_10811(16777215);
+	} else {
+		cs2method_10811(16711680);
+	}
+	int v5 = cs2method_10060(a0, 1);
+	cs2method_10606(89128960, 4, v5);
+	cs2method_10692(494);
+	cs2method_10173(1);
+	cs2method_11105(1, 1, 0);
+	cs2method_10975(0);
+	cs2method_10797(v12);
+	cs2method_20674(new function<script_6870>(int a0,int a1) {
+		script_6871(a0, a1);
+		return;
+	}, cs2method_10461(v5, 1), v13, "ii");
+	cs2method_20884(new function<script_6872>(int a0,int a1) {
+		if (cs2method_11038(89128960, a1) == 1) {
+			if (a0 == 1) {
+				cs2method_10811(16777215);
+			} else {
+				cs2method_10811(16711680);
+			}
+		}
+		if (cs2method_11038(89128960, cs2method_10060(a1, 1)) == 1) {
+			if (a0 == 1) {
+				cs2method_10811(16777215);
+			} else {
+				cs2method_10811(16711680);
+			}
+		}
+		if (cs2method_11038(89128960, cs2method_10060(a1, 2)) == 1) {
+			if (a0 == 1) {
+				cs2method_10811(16777215);
+			} else {
+				cs2method_10811(16711680);
+			}
+		}
+		script_41(89128962);
+		return;
+	}, cs2method_10461(v5, 1), v13, "ii");
+	cs2method_10013(190, v6, 0, 0);
+	if (v13 == 1) {
+		cs2method_10811(16777215);
+	} else {
+		cs2method_10811(16711680);
+	}
+	int v9 = cs2method_10060(v5, 1);
+	cs2method_10606(89128960, 4, v9);
+	cs2method_10692(494);
+	cs2method_10173(1);
+	cs2method_11105(1, 1, 0);
+	cs2method_10975(0);
+	cs2method_10797(v0);
+	cs2method_20674(new function<script_6870>(int a0,int a1) {
+		script_6871(a1, a0);
+		return;
+	}, cs2method_10461(v9, 2), v13, "ii");
+	cs2method_20884(new function<script_6872>(int a0,int a1) {
+		if (cs2method_11038(89128960, a1) == 1) {
+			if (a0 == 1) {
+				cs2method_10811(16777215);
+			} else {
+				cs2method_10811(16711680);
+			}
+		}
+		if (cs2method_11038(89128960, cs2method_10060(a1, 1)) == 1) {
+			if (a0 == 1) {
+				cs2method_10811(16777215);
+			} else {
+				cs2method_10811(16711680);
+			}
+		}
+		if (cs2method_11038(89128960, cs2method_10060(a1, 2)) == 1) {
+			if (a0 == 1) {
+				cs2method_10811(16777215);
+			} else {
+				cs2method_10811(16711680);
+			}
+		}
+		script_41(89128962);
+		return;
+	}, cs2method_10461(v9, 2), v13, "ii");
+	cs2method_10013(130, v6, 0, 0);
+	if (v13 == 1) {
+		cs2method_10811(16777215);
+	} else {
+		cs2method_10811(16711680);
+	}
+	int v8 = cs2method_10060(v9, 1);
+	cs2method_10606(89128960, 5, v8);
+	switch (cs2method_10060(cs2method_10968(v8, 4), 1)) {
+		case 1:
+			if (client_configs['cfg2849'].bitcfg14342 == 1) {
+				v1 = 13165;
+			} else {
+				v11 = "You have not yet helped Father Joakim with these celebrations.";
+			}
+			break;
+		case 2:
+			if (client_configs['cfg2849'].bitcfg14343 == 1) {
+				v1 = 13165;
+			} else {
+				v11 = "You have not yet helped Father Joakim with these celebrations.";
+			}
+			break;
+		case 3:
+			if (client_configs['cfg2849'].bitcfg14344 == 1) {
+				v1 = 13165;
+			} else {
+				v11 = "You have not yet helped Father Joakim with these celebrations.";
+			}
+			break;
+		case 4:
+			if (client_configs['cfg2849'].bitcfg14345 == 1) {
+				v1 = 13165;
+			} else {
+				v11 = "You have not yet helped Father Joakim with these celebrations.";
+			}
+			break;
+		case 5:
+			if (client_configs['cfg2849'].bitcfg14346 == 1) {
+				v1 = 13165;
+			} else {
+				v11 = "You have not yet helped Father Joakim with these celebrations.";
+			}
+			break;
+		default:
+			v1 = 13166;
+	}
+	if (v1 != -1) {
+		cs2method_10310(v1);
+		cs2method_20353(new function<script_6869>(int a0,int a1,object a2) {
+			script_5335(89128960, a0, 89128962, 50, a2, 200, 1);
+			script_6871(cs2method_10461(a0, 3), a1);
+			return;
+		}, v8, v13, (string)v11, "iis");
+		cs2method_20884(new function<script_6872>(int a0,int a1) {
+			if (cs2method_11038(89128960, a0) == 1) {
+				if (a1 == 1) {
+					cs2method_10811(16777215);
+				} else {
+					cs2method_10811(16711680);
+				}
+			}
+			if (cs2method_11038(89128960, cs2method_10060(a0, 1)) == 1) {
+				if (a1 == 1) {
+					cs2method_10811(16777215);
+				} else {
+					cs2method_10811(16711680);
+				}
+			}
+			if (cs2method_11038(89128960, cs2method_10060(a0, 2)) == 1) {
+				if (a1 == 1) {
+					cs2method_10811(16777215);
+				} else {
+					cs2method_10811(16711680);
+				}
+			}
+			script_41(89128962);
+			return;
+		}, cs2method_10461(v8, 3), v13, "ii");
+	} else {
+		cs2method_20674(new function<script_6870>(int a0,int a1) {
+			script_6871(a0, a1);
+			return;
+		}, cs2method_10461(v8, 3), v13, "ii");
+		cs2method_20884(new function<script_6872>(int a0,int a1) {
+			if (cs2method_11038(89128960, a1) == 1) {
+				if (a0 == 1) {
+					cs2method_10811(16777215);
+				} else {
+					cs2method_10811(16711680);
+				}
+			}
+			if (cs2method_11038(89128960, cs2method_10060(a1, 1)) == 1) {
+				if (a0 == 1) {
+					cs2method_10811(16777215);
+				} else {
+					cs2method_10811(16711680);
+				}
+			}
+			if (cs2method_11038(89128960, cs2method_10060(a1, 2)) == 1) {
+				if (a0 == 1) {
+					cs2method_10811(16777215);
+				} else {
+					cs2method_10811(16711680);
+				}
+			}
+			script_41(89128962);
+			return;
+		}, cs2method_10461(v8, 3), v13, "ii");
+	}
+	cs2method_10013(15, 15, 0, 0);
+	return cs2method_10060(v8, 1);
+}

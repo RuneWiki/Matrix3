@@ -1,0 +1,78 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9574() {
+	object v5;
+	int v2 = 0;
+	int v1 = 0;
+	script_4187_struct(2,0,0) v7 = script_4187();
+	int v3 = v7.intpart_1;
+	int v6 = v7.intpart_0;
+	object v0 = "";
+	if (v6 == 0) {
+		v5 = (string)cs2method_10379(v3) + "m";
+	} else {
+		v5 = (string)cs2method_10379(v6) + "h";
+	}
+	int v4 = script_9575();
+	cs2method_10758(idx17mapData('i', 'd', 1024, client_configs['cfg4034'].bitcfg21322), 67371009);
+	cs2method_10026(67371010, (string)cs2method_10379(client_configs['cfg4034'].bitcfg21323) + " " + idx17mapData('i', 's', 2164, client_configs['cfg4034'].bitcfg21322));
+	cs2method_10026(67371011, "available at " + (string)cs2method_10379(v4) + " " + idx17mapData('i', 's', 2164, client_configs['cfg4034'].bitcfg21324) + " each");
+	cs2method_10026(67371023, "Buy 1 for " + (string)cs2method_10379(v4));
+	cs2method_10026(67371028, "Buy 5 for " + (string)cs2method_10379(cs2method_10051(v4, 5)));
+	cs2method_10026(67371033, "Buy 10 for " + (string)cs2method_10379(cs2method_10051(v4, 10)));
+	cs2method_10026(67371040, "Buy " + (string)cs2method_10379(client_configs['cfg4034'].bitcfg21323) + " for " + (string)cs2method_10379(cs2method_10051(v4, client_configs['cfg4034'].bitcfg21323)));
+	if (client_configs['cfg4034'].bitcfg21323 < 10) {
+		cs2method_10467(1, 67371029);
+	}
+	if (client_configs['cfg4034'].bitcfg21323 < 5) {
+		cs2method_10467(1, 67371024);
+	}
+	if (client_configs['cfg4034'].bitcfg21323 < 1) {
+		cs2method_10467(1, 67371019);
+		cs2method_10467(1, 67371034);
+		cs2method_10026(67371035, "New stock available in " + (string)v5 + ".");
+		cs2method_10467(0, 67371035);
+	}
+	int v8 = 0;
+	switch (client_configs['cfg4034'].bitcfg21324) {
+		case 2:
+			v8 = client_configs['cfg3442'];
+			break;
+		case 3:
+			v8 = client_configs['cfg3443'];
+			break;
+		case 4:
+			v8 = client_configs['cfg3444'];
+			break;
+		case 5:
+			v8 = client_configs['cfg3445'];
+			break;
+		case 6:
+			v8 = client_configs['cfg3446'];
+			break;
+		case 7:
+			v8 = client_configs['cfg3447'];
+			break;
+		case 8:
+			v8 = client_configs['cfg4038'];
+			break;
+		case 9:
+			v8 = client_configs['cfg4039'];
+	}
+	if (v8 >= v4) {
+		cs2method_10026(67371018, "(You currently own " + (string)cs2method_10379(v8) + ")");
+	} else {
+		cs2method_10026(67371018, "<col=ff0000>" + "You do not have enough resources!");
+	}
+	return;
+}

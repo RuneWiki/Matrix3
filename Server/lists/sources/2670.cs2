@@ -1,0 +1,245 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2670(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8) {
+	if (a5 != cs2_configs['cfg91']) {
+		script_6739(5);
+	}
+	int v0 = 18077;
+	int v1 = 18078;
+	if (a5 == 0) {
+		cs2_configs['cfg91'] = 0;
+		cs2method_10467(1, a8);
+		cs2method_10467(1, a1);
+		cs2method_10467(0, a3);
+		cs2method_10467(1, a6);
+		cs2method_10495(a4);
+		cs2method_20486(new function<none>() {
+		}, "", new WidgetPointer(a4));
+		cs2method_10758(v1, a2);
+		cs2method_10758(v1, a7);
+		cs2method_10758(v1, a0);
+		cs2method_10758(v0, a4);
+		cs2method_20680(new function<none>() {
+		}, "", new WidgetPointer(a4));
+		cs2method_20750(new function<none>() {
+		}, "", new WidgetPointer(a4));
+		cs2method_11127(1, a0, "Clan");
+		cs2method_20486(new function<script_2649>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8) {
+			script_2670(a1, a8, a5, a2, a4, a6, a3, a0, a7);
+			return;
+		}, new WidgetPointer(a8), new WidgetPointer(a3), new WidgetPointer(a0), new WidgetPointer(a4), new WidgetPointer(a1), new WidgetPointer(a7), new WidgetPointer(a6), new WidgetPointer(a2), 1, "IIIIIIIIi", new WidgetPointer(a0));
+		cs2method_20680(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a0, a1);
+			return;
+		}, new WidgetPointer(-32768,3), v0, "Id", new WidgetPointer(a0));
+		cs2method_20750(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a0, a1);
+			return;
+		}, new WidgetPointer(-32768,3), v1, "Id", new WidgetPointer(a0));
+		cs2method_11127(1, a7, "Friend");
+		cs2method_20486(new function<script_2649>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8) {
+			script_2670(a6, a0, a7, a2, a5, a4, a3, a8, a1);
+			return;
+		}, new WidgetPointer(a8), new WidgetPointer(a3), new WidgetPointer(a0), new WidgetPointer(a4), new WidgetPointer(a1), new WidgetPointer(a7), new WidgetPointer(a6), new WidgetPointer(a2), 2, "IIIIIIIIi", new WidgetPointer(a7));
+		cs2method_20680(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a0, a1);
+			return;
+		}, new WidgetPointer(-32768,3), v0, "Id", new WidgetPointer(a7));
+		cs2method_20750(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), v1, "Id", new WidgetPointer(a7));
+		cs2method_11127(1, a2, "Guest");
+		cs2method_20486(new function<script_2649>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8) {
+			script_2670(a4, a0, a1, a6, a8, a3, a2, a5, a7);
+			return;
+		}, new WidgetPointer(a8), new WidgetPointer(a3), new WidgetPointer(a0), new WidgetPointer(a4), new WidgetPointer(a1), new WidgetPointer(a7), new WidgetPointer(a6), new WidgetPointer(a2), 3, "IIIIIIIIi", new WidgetPointer(a2));
+		cs2method_20680(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), v0, "Id", new WidgetPointer(a2));
+		cs2method_20750(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), v1, "Id", new WidgetPointer(a2));
+	} else if (a5 == 1) {
+		cs2_configs['cfg91'] = 1;
+		cs2method_10467(0, a8);
+		cs2method_10467(1, a3);
+		cs2method_10467(1, a1);
+		cs2method_10467(1, a6);
+		cs2method_10495(a0);
+		cs2method_20486(new function<none>() {
+		}, "", new WidgetPointer(a0));
+		cs2method_10758(v1, a2);
+		cs2method_10758(v1, a7);
+		cs2method_10758(v0, a0);
+		cs2method_10758(v1, a4);
+		cs2method_20680(new function<none>() {
+		}, "", new WidgetPointer(a0));
+		cs2method_20750(new function<none>() {
+		}, "", new WidgetPointer(a0));
+		cs2method_11127(1, a4, "Private");
+		cs2method_20486(new function<script_2649>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8) {
+			script_2670(a7, a2, a5, a8, a3, a4, a0, a1, a6);
+			return;
+		}, new WidgetPointer(a8), new WidgetPointer(a3), new WidgetPointer(a0), new WidgetPointer(a4), new WidgetPointer(a1), new WidgetPointer(a7), new WidgetPointer(a6), new WidgetPointer(a2), 0, "IIIIIIIIi", new WidgetPointer(a4));
+		cs2method_20680(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a0, a1);
+			return;
+		}, new WidgetPointer(-32768,3), v0, "Id", new WidgetPointer(a4));
+		cs2method_20750(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a0, a1);
+			return;
+		}, new WidgetPointer(-32768,3), v1, "Id", new WidgetPointer(a4));
+		cs2method_11127(1, a7, "Friend");
+		cs2method_20486(new function<script_2649>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8) {
+			script_2670(a2, a6, a1, a7, a8, a5, a3, a0, a4);
+			return;
+		}, new WidgetPointer(a8), new WidgetPointer(a3), new WidgetPointer(a0), new WidgetPointer(a4), new WidgetPointer(a1), new WidgetPointer(a7), new WidgetPointer(a6), new WidgetPointer(a2), 2, "IIIIIIIIi", new WidgetPointer(a7));
+		cs2method_20680(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a0, a1);
+			return;
+		}, new WidgetPointer(-32768,3), v0, "Id", new WidgetPointer(a7));
+		cs2method_20750(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a0, a1);
+			return;
+		}, new WidgetPointer(-32768,3), v1, "Id", new WidgetPointer(a7));
+		cs2method_11127(1, a2, "Guest");
+		cs2method_20486(new function<script_2649>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8) {
+			script_2670(a0, a8, a4, a5, a6, a7, a1, a3, a2);
+			return;
+		}, new WidgetPointer(a8), new WidgetPointer(a3), new WidgetPointer(a0), new WidgetPointer(a4), new WidgetPointer(a1), new WidgetPointer(a7), new WidgetPointer(a6), new WidgetPointer(a2), 3, "IIIIIIIIi", new WidgetPointer(a2));
+		cs2method_20680(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a0, a1);
+			return;
+		}, new WidgetPointer(-32768,3), v0, "Id", new WidgetPointer(a2));
+		cs2method_20750(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), v1, "Id", new WidgetPointer(a2));
+	} else if (a5 == 2) {
+		cs2_configs['cfg91'] = 2;
+		cs2method_10467(0, a1);
+		cs2method_10467(1, a3);
+		cs2method_10467(1, a8);
+		cs2method_10467(1, a6);
+		cs2method_10495(a7);
+		cs2method_20486(new function<none>() {
+		}, "", new WidgetPointer(a7));
+		cs2method_10758(v1, a2);
+		cs2method_10758(v0, a7);
+		cs2method_10758(v1, a0);
+		cs2method_10758(v1, a4);
+		cs2method_20680(new function<none>() {
+		}, "", new WidgetPointer(a7));
+		cs2method_20750(new function<none>() {
+		}, "", new WidgetPointer(a7));
+		cs2method_11127(1, a4, "Private");
+		cs2method_20486(new function<script_2649>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8) {
+			script_2670(a5, a1, a8, a4, a7, a3, a6, a0, a2);
+			return;
+		}, new WidgetPointer(a8), new WidgetPointer(a3), new WidgetPointer(a0), new WidgetPointer(a4), new WidgetPointer(a1), new WidgetPointer(a7), new WidgetPointer(a6), new WidgetPointer(a2), 0, "IIIIIIIIi", new WidgetPointer(a4));
+		cs2method_20680(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a0, a1);
+			return;
+		}, new WidgetPointer(-32768,3), v0, "Id", new WidgetPointer(a4));
+		cs2method_20750(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a0, a1);
+			return;
+		}, new WidgetPointer(-32768,3), v1, "Id", new WidgetPointer(a4));
+		cs2method_11127(1, a0, "Clan");
+		cs2method_20486(new function<script_2649>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8) {
+			script_2670(a5, a8, a7, a4, a3, a6, a2, a0, a1);
+			return;
+		}, new WidgetPointer(a8), new WidgetPointer(a3), new WidgetPointer(a0), new WidgetPointer(a4), new WidgetPointer(a1), new WidgetPointer(a7), new WidgetPointer(a6), new WidgetPointer(a2), 1, "IIIIIIIIi", new WidgetPointer(a0));
+		cs2method_20680(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), v0, "Id", new WidgetPointer(a0));
+		cs2method_20750(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), v1, "Id", new WidgetPointer(a0));
+		cs2method_11127(1, a2, "Guest");
+		cs2method_20486(new function<script_2649>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8) {
+			script_2670(a1, a4, a0, a6, a8, a7, a3, a5, a2);
+			return;
+		}, new WidgetPointer(a8), new WidgetPointer(a3), new WidgetPointer(a0), new WidgetPointer(a4), new WidgetPointer(a1), new WidgetPointer(a7), new WidgetPointer(a6), new WidgetPointer(a2), 3, "IIIIIIIIi", new WidgetPointer(a2));
+		cs2method_20680(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a0, a1);
+			return;
+		}, new WidgetPointer(-32768,3), v0, "Id", new WidgetPointer(a2));
+		cs2method_20750(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), v1, "Id", new WidgetPointer(a2));
+	} else {
+		cs2_configs['cfg91'] = 3;
+		cs2method_10467(0, a6);
+		cs2method_10467(1, a3);
+		cs2method_10467(1, a8);
+		cs2method_10467(1, a1);
+		cs2method_10495(a2);
+		cs2method_20486(new function<none>() {
+		}, "", new WidgetPointer(a2));
+		cs2method_10758(v0, a2);
+		cs2method_10758(v1, a7);
+		cs2method_10758(v1, a0);
+		cs2method_10758(v1, a4);
+		cs2method_20680(new function<none>() {
+		}, "", new WidgetPointer(a2));
+		cs2method_20750(new function<none>() {
+		}, "", new WidgetPointer(a2));
+		cs2method_11127(1, a4, "Private");
+		cs2method_20486(new function<script_2649>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8) {
+			script_2670(a7, a6, a3, a1, a5, a8, a0, a4, a2);
+			return;
+		}, new WidgetPointer(a8), new WidgetPointer(a3), new WidgetPointer(a0), new WidgetPointer(a4), new WidgetPointer(a1), new WidgetPointer(a7), new WidgetPointer(a6), new WidgetPointer(a2), 0, "IIIIIIIIi", new WidgetPointer(a4));
+		cs2method_20680(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), v0, "Id", new WidgetPointer(a4));
+		cs2method_20750(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), v1, "Id", new WidgetPointer(a4));
+		cs2method_11127(1, a0, "Clan");
+		cs2method_20486(new function<script_2649>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8) {
+			script_2670(a1, a2, a4, a7, a6, a3, a0, a5, a8);
+			return;
+		}, new WidgetPointer(a8), new WidgetPointer(a3), new WidgetPointer(a0), new WidgetPointer(a4), new WidgetPointer(a1), new WidgetPointer(a7), new WidgetPointer(a6), new WidgetPointer(a2), 1, "IIIIIIIIi", new WidgetPointer(a0));
+		cs2method_20680(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), v0, "Id", new WidgetPointer(a0));
+		cs2method_20750(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a0, a1);
+			return;
+		}, new WidgetPointer(-32768,3), v1, "Id", new WidgetPointer(a0));
+		cs2method_11127(1, a7, "Friend");
+		cs2method_20486(new function<script_2649>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8) {
+			script_2670(a5, a6, a0, a3, a7, a4, a1, a2, a8);
+			return;
+		}, new WidgetPointer(a8), new WidgetPointer(a3), new WidgetPointer(a0), new WidgetPointer(a4), new WidgetPointer(a1), new WidgetPointer(a7), new WidgetPointer(a6), new WidgetPointer(a2), 2, "IIIIIIIIi", new WidgetPointer(a7));
+		cs2method_20680(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), v0, "Id", new WidgetPointer(a7));
+		cs2method_20750(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a0, a1);
+			return;
+		}, new WidgetPointer(-32768,3), v1, "Id", new WidgetPointer(a7));
+	}
+	return;
+}

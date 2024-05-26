@@ -1,0 +1,27 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+string script_8001() {
+	switch (cs2method_10262()) {
+		case 0:
+			return ",";
+		case 1:
+			return ".";
+		case 2:
+			return " ";
+		case 3:
+			return ".";
+		case 6:
+			return ".";
+	}
+	return " ";
+}

@@ -1,0 +1,125 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2003() {
+	int v12;
+	int v7 = 0;
+	if (cs2method_10338(19) >= 40) {
+		v12 = client_configs['cfg1696'].bitcfg5608;
+	} else {
+		v12 = cs2method_10968(cs2method_10051(client_configs['cfg1696'].bitcfg5608, idx17mapData('i', 'i', 1369, cs2method_10338(19))), 100);
+	}
+	if (client_configs['cfg1696'].bitcfg5608 == 1) {
+		cs2method_10026(44957709, "Trade one point" + "<br>" + "for " + (string)cs2method_10055(v12, 1) + " XP?");
+	} else {
+		cs2method_10026(44957709, "Trade " + (string)cs2method_10055(client_configs['cfg1696'].bitcfg5608, 1) + " points" + "<br>" + "for " + (string)cs2method_10055(v12, 1) + " XP?");
+	}
+	cs2method_10273(44957702);
+	for (int v14 = cs2method_10924(1589), int v4 = 0, int v15 = 0, int v1 = 0, int v10 = 0, int v13 = -1, int v5 = 0, int v6 = 0; v6 < v14; v6 = cs2method_10060(v6, 1)) {
+		int v8 = idx17mapData('i', 'o', 1589, v6);
+		int v11 = idx17mapData('o', 'i', 1365, v8);
+		int v3 = cs2method_10051(cs2method_10038(v6, 9), 50);
+		int v9 = cs2method_10051(cs2method_10968(v6, 9), 54);
+		int v16 = cs2method_11048(v1, v3);
+		v10 = cs2method_11048(v10, v9);
+		v1 = v16;
+		cs2method_10606(44957702, 5, cs2method_10163(44957702));
+		cs2method_10013(48, 52, 0, 0);
+		cs2method_10063(v3, v9, 0, 0);
+		cs2method_10310(2205);
+		if (v8 == 11209) {
+			cs2method_10057(1, "Trade points for XP");
+			cs2method_20703(new function<script_69>(int a0,int a1) {
+				cs2method_10467(a1, a0);
+				return;
+			}, 0, new WidgetPointer(686,9), "1I");
+		} else {
+			cs2method_10200("<col=ff981f>" + (string)cs2method_10018(v8) + "</col>");
+			cs2method_10057(1, "Value");
+			cs2method_10057(2, "Buy 1");
+			cs2method_10057(3, "Buy 5");
+			cs2method_10057(4, "Buy 10");
+			if (v8 != 12625) {
+				cs2method_10057(5, "Buy X");
+			}
+			cs2method_10057(10, "Examine");
+		}
+		cs2method_20674(new function<script_2140>(int a0,int a1,int a2) {
+			if (cs2method_11038(a2, a1) == 1) {
+				cs2method_10002(a0);
+			}
+			return;
+		}, new WidgetPointer(-32768,3), cs2method_10060(cs2method_11051(), 1), 0, "Iii");
+		cs2method_20884(new function<script_2140>(int a0,int a1,int a2) {
+			if (cs2method_11038(a2, a0) == 1) {
+				cs2method_10002(a1);
+			}
+			return;
+		}, new WidgetPointer(-32768,3), cs2method_10060(cs2method_11051(), 1), 255, "Iii");
+		cs2method_10606(44957702, 5, cs2method_10163(44957702));
+		cs2method_10013(48, 52, 0, 0);
+		cs2method_10063(v3, v9, 0, 0);
+		cs2method_10310(2206);
+		cs2method_10002(255);
+		cs2method_10606(44957702, 5, cs2method_10163(44957702));
+		if (v8 == 11209) {
+			cs2method_10013(34, 34, 0, 0);
+			cs2method_10063(cs2method_10060(v3, 7), cs2method_10060(v9, 2), 0, 0);
+			if (cs2method_10262() == 1) {
+				cs2method_10310(2714);
+			} else {
+				cs2method_10310(2730);
+			}
+		} else {
+			cs2method_10013(36, 32, 0, 0);
+			cs2method_10063(cs2method_10060(v3, 6), cs2method_10060(v9, 4), 0, 0);
+			cs2method_10903(v8, 5);
+			cs2method_10356(1);
+		}
+		cs2method_10278(3153952);
+		cs2method_10606(44957702, 5, cs2method_10163(44957702));
+		cs2method_10013(12, 12, 0, 0);
+		cs2method_10063(cs2method_10060(v3, 2), cs2method_10060(v9, 38), 0, 0);
+		cs2method_10903(12625, 1);
+		cs2method_10606(44957702, 4, cs2method_10163(44957702));
+		cs2method_10013(31, 12, 0, 0);
+		cs2method_10063(cs2method_10060(v3, 13), cs2method_10060(v9, 39), 0, 0);
+		cs2method_10692(494);
+		cs2method_11105(2, 1, 0);
+		if (v11 == -1) {
+			cs2method_10797("N/A");
+		} else {
+			cs2method_10797(script_940(v11));
+		}
+		if (v11 <= client_configs['cfg1696'].bitcfg5608) {
+			cs2method_10811(16776960);
+		} else {
+			cs2method_10811(16711680);
+		}
+		cs2method_10173(1);
+	}
+	int v2 = cs2method_10060(v1, 48);
+	v10 = cs2method_10060(v10, 52);
+	v1 = v2;
+	int v0 = cs2method_10823(44957702);
+	cs2method_10283(v1, v0, 0, 0, 44957702);
+	if (v10 > v0) {
+		cs2method_10112(cs2method_10968(cs2method_10461(cs2method_10461(cs2method_10236(44957701), cs2method_10236(44957703)), v1), 2), 0, 0, 1, 44957702);
+		cs2method_10467(0, 44957703);
+		cs2method_11130(0, v10, 44957702);
+		script_31(44957703, 44957702, 792, 789, 790, 791, 773, 788);
+	} else {
+		cs2method_10112(0, 0, 1, 1, 44957702);
+		cs2method_10467(1, 44957703);
+	}
+	return;
+}

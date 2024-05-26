@@ -1,0 +1,72 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7810(int a0,int a1) {
+	int v49 = -1;
+	int v13 = -1;
+	int v18 = -1;
+	int v42 = -1;
+	int v23 = -1;
+	int v40 = -1;
+	int v45 = -1;
+	int v20 = -1;
+	int v8 = -1;
+	int v26 = -1;
+	int v4 = -1;
+	int v31 = -1;
+	int v25 = -1;
+	int v16 = -1;
+	int v47 = -1;
+	int v39 = -1;
+	int v12 = -1;
+	int v37 = -1;
+	int v19 = -1;
+	int v2 = -1;
+	int v24 = -1;
+	int v48 = -1;
+	int v32 = -1;
+	int v22 = -1;
+	int v33 = a1;
+	script_7814_struct(24,0,0) v17 = script_7814(v33);
+	int v34 = v17.intpart_23;
+	int v36 = v17.intpart_22;
+	int v27 = v17.intpart_21;
+	int v10 = v17.intpart_20;
+	int v35 = v17.intpart_19;
+	int v28 = v17.intpart_18;
+	int v1 = v17.intpart_17;
+	int v11 = v17.intpart_16;
+	int v15 = v17.intpart_15;
+	int v21 = v17.intpart_14;
+	int v6 = v17.intpart_13;
+	int v5 = v17.intpart_12;
+	int v14 = v17.intpart_11;
+	int v0 = v17.intpart_10;
+	int v7 = v17.intpart_9;
+	int v29 = v17.intpart_8;
+	int v41 = v17.intpart_7;
+	int v43 = v17.intpart_6;
+	int v3 = v17.intpart_5;
+	int v30 = v17.intpart_4;
+	int v46 = v17.intpart_3;
+	int v9 = v17.intpart_2;
+	int v38 = v17.intpart_1;
+	int v44 = v17.intpart_0;
+	if (cs2method_10435() == 1) {
+		if (a0 <= -1) {
+			a0 = cs2_configs['cfg1035'];
+		}
+		script_4436(v29, a0, a1);
+	}
+	script_6209();
+	return;
+}

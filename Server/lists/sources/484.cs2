@@ -1,0 +1,165 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_484(int a0) {
+	int v3;
+	int v1;
+	int v7 = -1;
+	int v5 = -1;
+	int v2 = 0;
+	int v6 = 0;
+	int v4 = 0;
+	object v0 = "";
+	cs2method_10520(16777215, a0);
+	switch (client_configs['cfg1655'].bitcfg5388) {
+		default:
+			return;
+		case 1:
+			v1 = script_486(client_configs['cfg1656'].bitcfg5396);
+			break;
+		case 2:
+			v1 = script_486(client_configs['cfg1656'].bitcfg5397);
+			break;
+		case 3:
+			v1 = script_486(client_configs['cfg1657'].bitcfg5402);
+			break;
+		case 4:
+			v1 = script_486(client_configs['cfg1657'].bitcfg5403);
+			break;
+		case 5:
+			v1 = script_486(client_configs['cfg1658'].bitcfg5406);
+			break;
+		case 6:
+			v1 = script_486(client_configs['cfg1658'].bitcfg5407);
+			break;
+		case 7:
+			v1 = script_486(client_configs['cfg1658'].bitcfg5408);
+			break;
+		case 8:
+			v1 = script_486(client_configs['cfg1658'].bitcfg5409);
+			break;
+		case 9:
+			v1 = script_486(client_configs['cfg1658'].bitcfg5410);
+			break;
+		case 10:
+			v1 = script_486(client_configs['cfg1659'].bitcfg5411);
+	}
+	switch (a0) {
+		default:
+			return;
+		case 66519173:
+			v3 = script_486(0);
+			break;
+		case 66519159:
+			v3 = script_486(1);
+			break;
+		case 66519161:
+			v3 = script_486(2);
+			break;
+		case 66519163:
+			v3 = script_486(3);
+			break;
+		case 66519165:
+			v3 = script_486(4);
+			break;
+		case 66519167:
+			v3 = script_486(5);
+			break;
+		case 66519169:
+			v3 = script_486(6);
+			break;
+		case 66519171:
+			v3 = script_486(7);
+	}
+	if (v1 == -1) {
+		cs2method_10467(1, 66519175);
+		cs2method_10467(0, 66519155);
+		cs2method_10758(npcDefsAttribute(v3, 1148), 66519042);
+		cs2method_10026(66519040, npcDefsAttribute(v3, 1139));
+		cs2method_10026(66519178, "Movement: " + (string)cs2method_10379(npcDefsAttribute(v3, 1134)));
+		cs2method_10026(66519179, "Damage: " + (string)cs2method_10379(cs2method_10051(npcDefsAttribute(v3, 1135), 100)));
+		cs2method_10026(66519180, "Health: " + (string)cs2method_10379(cs2method_10051(npcDefsAttribute(v3, 1136), 100)));
+		cs2method_10026(66519181, "Range: " + (string)cs2method_10379(npcDefsAttribute(v3, 1137)));
+		cs2method_10026(66519182, "Cost: " + (string)cs2method_10379(npcDefsAttribute(v3, 1138)));
+	} else {
+		if (v1 != v3) {
+			object v9;
+			object v12;
+			object v15;
+			object v16;
+			object v20;
+			cs2method_10758(npcDefsAttribute(v3, 1148), 66519042);
+			cs2method_10026(66519040, cs2method_10427(cs2method_10744(66519040), " ~ " + npcDefsAttribute(v3, 1139)));
+			int v13 = npcDefsAttribute(v1, 1134);
+			int v17 = npcDefsAttribute(v3, 1134);
+			if (v13 < v17) {
+				int v23 = cs2method_10461(v17, v13);
+				v20 = " ~ " + (string)cs2method_10379(npcDefsAttribute(v3, 1134)) + " (" + "<col=00c800>" + "+" + (string)cs2method_10379(v23) + "</col>" + ")";
+			} else if (v13 > v17) {
+				int v23 = cs2method_10461(v13, v17);
+				v20 = " ~ " + (string)cs2method_10379(npcDefsAttribute(v3, 1134)) + " (" + "<col=c80000>" + "-" + (string)cs2method_10379(v23) + "</col>" + ")";
+			} else {
+				v20 = " ~ " + (string)cs2method_10379(npcDefsAttribute(v3, 1134));
+			}
+			cs2method_10026(66519178, cs2method_10427(cs2method_10744(66519178), v20));
+			int v18 = npcDefsAttribute(v1, 1135);
+			int v14 = npcDefsAttribute(v3, 1135);
+			if (v18 < v14) {
+				int v23 = cs2method_10461(v14, v18);
+				v12 = " ~ " + (string)cs2method_10379(cs2method_10051(npcDefsAttribute(v3, 1135), 100)) + " (" + "<col=00c800>" + "+" + (string)cs2method_10379(cs2method_10051(v23, 100)) + "</col>" + ")";
+			} else if (v18 > v14) {
+				int v23 = cs2method_10461(v18, v14);
+				v12 = " ~ " + (string)cs2method_10379(cs2method_10051(npcDefsAttribute(v3, 1135), 100)) + " (" + "<col=c80000>" + "-" + (string)cs2method_10379(cs2method_10051(v23, 100)) + "</col>" + ")";
+			} else {
+				v12 = " ~ " + (string)cs2method_10379(cs2method_10051(npcDefsAttribute(v3, 1135), 100));
+			}
+			cs2method_10026(66519179, cs2method_10427(cs2method_10744(66519179), v12));
+			int v19 = npcDefsAttribute(v1, 1136);
+			int v11 = npcDefsAttribute(v3, 1136);
+			if (v19 < v11) {
+				int v23 = cs2method_10461(v11, v19);
+				v16 = " ~ " + (string)cs2method_10379(cs2method_10051(npcDefsAttribute(v3, 1136), 100)) + " (" + "<col=00c800>" + "+" + (string)cs2method_10379(cs2method_10051(v23, 100)) + "</col>" + ")";
+			} else if (v19 > v11) {
+				int v23 = cs2method_10461(v19, v11);
+				v16 = " ~ " + (string)cs2method_10379(cs2method_10051(npcDefsAttribute(v3, 1136), 100)) + " (" + "<col=c80000>" + "-" + (string)cs2method_10379(cs2method_10051(v23, 100)) + "</col>" + ")";
+			} else {
+				v16 = " ~ " + (string)cs2method_10379(cs2method_10051(npcDefsAttribute(v3, 1136), 100));
+			}
+			cs2method_10026(66519180, cs2method_10427(cs2method_10744(66519180), v16));
+			int v8 = npcDefsAttribute(v1, 1137);
+			int v21 = npcDefsAttribute(v3, 1137);
+			if (v8 < v21) {
+				int v23 = cs2method_10461(v21, v8);
+				v15 = " ~ " + (string)cs2method_10379(npcDefsAttribute(v3, 1137)) + " (" + "<col=00c800>" + "+" + (string)cs2method_10379(v23) + "</col>" + ")";
+			} else if (v8 > v21) {
+				int v23 = cs2method_10461(v8, v21);
+				v15 = " ~ " + (string)cs2method_10379(npcDefsAttribute(v3, 1137)) + " (" + "<col=c80000>" + "-" + (string)cs2method_10379(v23) + "</col>" + ")";
+			} else {
+				v15 = " ~ " + (string)cs2method_10379(npcDefsAttribute(v3, 1137));
+			}
+			cs2method_10026(66519181, cs2method_10427(cs2method_10744(66519181), v15));
+			int v10 = npcDefsAttribute(v1, 1138);
+			int v22 = npcDefsAttribute(v3, 1138);
+			if (v10 < v22) {
+				int v23 = cs2method_10461(v22, v10);
+				v9 = " ~ " + (string)cs2method_10379(npcDefsAttribute(v3, 1138)) + " (" + "<col=c80000>" + "+" + (string)cs2method_10379(v23) + "</col>" + ")";
+			} else if (v10 > v22) {
+				int v23 = cs2method_10461(v10, v22);
+				v9 = " ~ " + (string)cs2method_10379(npcDefsAttribute(v3, 1138)) + " (" + "<col=00c800>" + "-" + (string)cs2method_10379(v23) + "</col>" + ")";
+			} else {
+				v9 = " ~ " + (string)cs2method_10379(npcDefsAttribute(v3, 1138));
+			}
+			cs2method_10026(66519182, cs2method_10427(cs2method_10744(66519182), v9));
+		}
+	}
+	return;
+}

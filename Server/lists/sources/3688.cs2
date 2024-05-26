@@ -1,0 +1,420 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3688(int a0,int a1) {
+	int v12;
+	int v9;
+	int v6;
+	int v5;
+	int v8;
+	int v11;
+	if (script_8076(1013) == 0) {
+		script_2958(0);
+		return;
+	}
+	int v7 = cs2method_10167();
+	int v4 = 0;
+	int v10 = -1;
+	int v3 = 0;
+	int v0 = 0;
+	int v2 = 0;
+	int v1 = 0;
+	if (a0 == 0) {
+		if (cs2_configs['cfg1360'] < 10) {
+			cs2_configs['cfg1360'] = cs2method_10060(cs2_configs['cfg1360'], 1);
+			return;
+		}
+		if (cs2_configs['cfg1359'] < 5) {
+			cs2_configs['cfg1359'] = cs2method_10060(cs2_configs['cfg1359'], 1);
+			return;
+		}
+		cs2_configs['cfg1359'] = 0;
+	}
+	if (v7 < 128) {
+		v6 = 1;
+	} else if (v7 < 256) {
+		v6 = 2;
+	} else if (v7 < 384) {
+		v6 = 3;
+	} else if (v7 < 512) {
+		v6 = 4;
+	} else if (v7 < 640) {
+		v6 = 5;
+	} else if (v7 < 768) {
+		v6 = 6;
+	} else if (v7 < 896) {
+		v6 = 7;
+	} else if (v7 < 1024) {
+		v6 = 8;
+	} else if (v7 < 1152) {
+		v6 = 9;
+	} else if (v7 < 1280) {
+		v6 = 10;
+	} else if (v7 < 1408) {
+		v6 = 11;
+	} else if (v7 < 1536) {
+		v6 = 12;
+	} else if (v7 < 1664) {
+		v6 = 13;
+	} else if (v7 < 1792) {
+		v6 = 14;
+	} else if (v7 < 1920) {
+		v6 = 15;
+	} else {
+		v6 = 16;
+	}
+	switch (a1) {
+		default:
+			return;
+		case 1:
+			switch (v6) {
+				case 1:
+				case 16:
+					v4 = 1;
+					break;
+				case 2:
+				case 3:
+					v4 = 8;
+					break;
+				case 4:
+				case 5:
+					v4 = 7;
+					break;
+				case 6:
+				case 7:
+					v4 = 6;
+					break;
+				case 8:
+				case 9:
+					v4 = 5;
+					break;
+				case 10:
+				case 11:
+					v4 = 4;
+					break;
+				case 12:
+				case 13:
+					v4 = 3;
+					break;
+				case 14:
+				case 15:
+					v4 = 2;
+			}
+			break;
+		case 5:
+			switch (v6) {
+				case 1:
+				case 16:
+					v4 = 5;
+					break;
+				case 2:
+				case 3:
+					v4 = 4;
+					break;
+				case 4:
+				case 5:
+					v4 = 3;
+					break;
+				case 6:
+				case 7:
+					v4 = 2;
+					break;
+				case 8:
+				case 9:
+					v4 = 1;
+					break;
+				case 10:
+				case 11:
+					v4 = 8;
+					break;
+				case 12:
+				case 13:
+					v4 = 7;
+					break;
+				case 14:
+				case 15:
+					v4 = 6;
+			}
+			break;
+		case 7:
+			switch (v6) {
+				case 1:
+				case 16:
+					v4 = 7;
+					break;
+				case 2:
+				case 3:
+					v4 = 6;
+					break;
+				case 4:
+				case 5:
+					v4 = 5;
+					break;
+				case 6:
+				case 7:
+					v4 = 4;
+					break;
+				case 8:
+				case 9:
+					v4 = 3;
+					break;
+				case 10:
+				case 11:
+					v4 = 2;
+					break;
+				case 12:
+				case 13:
+					v4 = 1;
+					break;
+				case 14:
+				case 15:
+					v4 = 8;
+			}
+			break;
+		case 3:
+			switch (v6) {
+				case 1:
+				case 16:
+					v4 = 3;
+					break;
+				case 2:
+				case 3:
+					v4 = 2;
+					break;
+				case 4:
+				case 5:
+					v4 = 1;
+					break;
+				case 6:
+				case 7:
+					v4 = 8;
+					break;
+				case 8:
+				case 9:
+					v4 = 7;
+					break;
+				case 10:
+				case 11:
+					v4 = 6;
+					break;
+				case 12:
+				case 13:
+					v4 = 5;
+					break;
+				case 14:
+				case 15:
+					v4 = 4;
+			}
+			break;
+		case 2:
+			switch (v6) {
+				case 1:
+				case 16:
+					v4 = 2;
+					break;
+				case 2:
+				case 3:
+					v4 = 1;
+					break;
+				case 4:
+				case 5:
+					v4 = 8;
+					break;
+				case 6:
+				case 7:
+					v4 = 7;
+					break;
+				case 8:
+				case 9:
+					v4 = 6;
+					break;
+				case 10:
+				case 11:
+					v4 = 5;
+					break;
+				case 12:
+				case 13:
+					v4 = 4;
+					break;
+				case 14:
+				case 15:
+					v4 = 3;
+			}
+			break;
+		case 4:
+			switch (v6) {
+				case 1:
+				case 16:
+					v4 = 4;
+					break;
+				case 2:
+				case 3:
+					v4 = 3;
+					break;
+				case 4:
+				case 5:
+					v4 = 2;
+					break;
+				case 6:
+				case 7:
+					v4 = 1;
+					break;
+				case 8:
+				case 9:
+					v4 = 8;
+					break;
+				case 10:
+				case 11:
+					v4 = 7;
+					break;
+				case 12:
+				case 13:
+					v4 = 6;
+					break;
+				case 14:
+				case 15:
+					v4 = 5;
+			}
+			break;
+		case 8:
+			switch (v6) {
+				case 1:
+				case 16:
+					v4 = 8;
+					break;
+				case 2:
+				case 3:
+					v4 = 7;
+					break;
+				case 4:
+				case 5:
+					v4 = 6;
+					break;
+				case 6:
+				case 7:
+					v4 = 5;
+					break;
+				case 8:
+				case 9:
+					v4 = 4;
+					break;
+				case 10:
+				case 11:
+					v4 = 3;
+					break;
+				case 12:
+				case 13:
+					v4 = 2;
+					break;
+				case 14:
+				case 15:
+					v4 = 1;
+			}
+			break;
+		case 6:
+			switch (v6) {
+				default:
+					break;
+				case 1:
+				case 16:
+					v4 = 6;
+					break;
+				case 2:
+				case 3:
+					v4 = 5;
+					break;
+				case 4:
+				case 5:
+					v4 = 4;
+					break;
+				case 6:
+				case 7:
+					v4 = 3;
+					break;
+				case 8:
+				case 9:
+					v4 = 2;
+					break;
+				case 10:
+				case 11:
+					v4 = 1;
+					break;
+				case 12:
+				case 13:
+					v4 = 8;
+					break;
+				case 14:
+				case 15:
+					v4 = 7;
+			}
+	}
+	switch (v4) {
+		default:
+			return;
+		case 1:
+			v12 = cs2method_10327(cs2_configs['cfg1353'], 0, 0, 1);
+			break;
+		case 2:
+			v12 = cs2method_10327(cs2_configs['cfg1353'], 1, 0, 1);
+			break;
+		case 3:
+			v12 = cs2method_10327(cs2_configs['cfg1353'], 1, 0, 0);
+			break;
+		case 4:
+			v12 = cs2method_10327(cs2_configs['cfg1353'], 1, 0, -1);
+			break;
+		case 5:
+			v12 = cs2method_10327(cs2_configs['cfg1353'], 0, 0, -1);
+			break;
+		case 6:
+			v12 = cs2method_10327(cs2_configs['cfg1353'], -1, 0, -1);
+			break;
+		case 7:
+			v12 = cs2method_10327(cs2_configs['cfg1353'], -1, 0, 0);
+			break;
+		case 8:
+			v12 = cs2method_10327(cs2_configs['cfg1353'], -1, 0, 1);
+	}
+	if (cs2_configs['cfg1390'] == 1) {
+		v9 = 44;
+		v11 = 35;
+		v8 = 31;
+		v5 = 17;
+	} else {
+		v9 = 54;
+		v11 = 35;
+		v8 = 36;
+		v5 = 17;
+	}
+	if (cs2method_10038(cs2method_10635(v12), 64) > v9 || cs2method_10038(cs2method_10339(v12), 64) > v8 || cs2method_10038(cs2method_10635(v12), 64) < v11 || cs2method_10038(cs2method_10339(v12), 64) < v5) {
+		cs2method_10520(6579300, 66387987);
+		cs2method_10520(6579300, 66387986);
+		cs2method_10520(6579300, 66387988);
+		cs2method_10520(6579300, 66387989);
+		cs2method_10520(6579300, 66387985);
+		cs2method_10520(6579300, 66387983);
+		cs2method_10520(6579300, 66387984);
+		cs2method_10520(6579300, 66387982);
+		return;
+	}
+	cs2method_10520(0, 66387987);
+	cs2method_10520(0, 66387986);
+	cs2method_10520(0, 66387988);
+	cs2method_10520(0, 66387989);
+	cs2method_10520(0, 66387985);
+	cs2method_10520(0, 66387983);
+	cs2method_10520(0, 66387984);
+	cs2method_10520(0, 66387982);
+	cs2_configs['cfg1353'] = v12;
+	cs2method_11137(cs2_configs['cfg1353']);
+	return;
+}

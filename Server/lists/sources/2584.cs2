@@ -1,0 +1,40 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2584() {
+	cs2method_10520(16750901, 19136629);
+	cs2method_11127(1, 19136614, "Select dwarf");
+	cs2method_11127(1, 19136616, "Select goblin");
+	cs2method_11127(1, 19136615, "Select elf");
+	cs2method_20486(new function<script_2586>(int a0) {
+		script_2587();
+		cs2method_10758(1135, a0);
+		return;
+	}, new WidgetPointer(-32768,3), "I", new WidgetPointer(292,102));
+	cs2method_20486(new function<script_2586>(int a0) {
+		script_2587();
+		cs2method_10758(1135, a0);
+		return;
+	}, new WidgetPointer(-32768,3), "I", new WidgetPointer(292,104));
+	cs2method_20486(new function<script_2586>(int a0) {
+		script_2587();
+		cs2method_10758(1135, a0);
+		return;
+	}, new WidgetPointer(-32768,3), "I", new WidgetPointer(292,103));
+	cs2method_20390(new function<none>() {
+	}, "", new WidgetPointer(292,102));
+	cs2method_20390(new function<none>() {
+	}, "", new WidgetPointer(292,104));
+	cs2method_20390(new function<none>() {
+	}, "", new WidgetPointer(292,103));
+	return;
+}

@@ -1,0 +1,104 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4589(int a0) {
+	int v48 = -1;
+	int v3 = -1;
+	int v12 = -1;
+	int v14 = -1;
+	int v36 = -1;
+	int v25 = -1;
+	int v19 = -1;
+	int v31 = -1;
+	int v6 = -1;
+	int v22 = -1;
+	int v23 = -1;
+	int v50 = -1;
+	int v5 = -1;
+	int v28 = -1;
+	int v46 = -1;
+	int v10 = -1;
+	int v43 = -1;
+	int v24 = -1;
+	int v15 = -1;
+	int v44 = -1;
+	int v29 = -1;
+	int v0 = -1;
+	int v16 = -1;
+	int v9 = -1;
+	int v47 = a0;
+	script_7814_struct(24,0,0) v20 = script_7814(v47);
+	int v30 = v20.intpart_23;
+	int v4 = v20.intpart_22;
+	int v35 = v20.intpart_21;
+	int v13 = v20.intpart_20;
+	int v39 = v20.intpart_19;
+	int v7 = v20.intpart_18;
+	int v34 = v20.intpart_17;
+	int v40 = v20.intpart_16;
+	int v42 = v20.intpart_15;
+	int v45 = v20.intpart_14;
+	int v26 = v20.intpart_13;
+	int v21 = v20.intpart_12;
+	int v11 = v20.intpart_11;
+	int v37 = v20.intpart_10;
+	int v27 = v20.intpart_9;
+	int v32 = v20.intpart_8;
+	int v8 = v20.intpart_7;
+	int v38 = v20.intpart_6;
+	int v41 = v20.intpart_5;
+	int v49 = v20.intpart_4;
+	int v18 = v20.intpart_3;
+	int v17 = v20.intpart_2;
+	int v1 = v20.intpart_1;
+	int v33 = v20.intpart_0;
+	cs2method_10273(v32);
+	cs2method_10273(v38);
+	cs2method_10273(v27);
+	cs2method_10273(v37);
+	cs2method_10273(v11);
+	cs2method_10273(v21);
+	cs2method_10467(1, v1);
+	cs2method_10467(0, v26);
+	cs2method_10026(v45, "You are not currently in a Clan Chat channel.");
+	cs2method_10467(1, v40);
+	cs2method_10467(0, v17);
+	cs2method_10467(0, v49);
+	script_4469(v17, v18);
+	script_5396(v49, v41);
+	cs2method_10758(6256, v34);
+	cs2method_10467(1, v7);
+	cs2method_10283(1, 19, 0, 0, v39);
+	cs2_configs['cfg1518'] = -1;
+	cs2_configs['cfg2353'] = "";
+	cs2method_10026(v13, "");
+	object v2 = "Join your clan chat channel";
+	cs2method_21121(new function<script_8799>(object a0,int a1,int a2) {
+		script_8800(a1, a2, a0);
+		return;
+	}, (string)v2, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(1110,40));
+	cs2method_20750(new function<script_8805>() {
+		script_8808();
+		return;
+	}, "", new WidgetPointer(1110,40));
+	cs2method_11127(1, 72745000, "Join Clan Chat channel");
+	cs2method_21121(new function<script_8799>(object a0,int a1,int a2) {
+		script_8800(a2, a1, a0);
+		return;
+	}, (string)v2, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(1440,34));
+	cs2method_20750(new function<script_8805>() {
+		script_8808();
+		return;
+	}, "", new WidgetPointer(1440,34));
+	cs2method_11127(1, 94371874, "Join Clan Chat channel");
+	return;
+}

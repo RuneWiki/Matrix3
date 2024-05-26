@@ -1,0 +1,27 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2729(int a0,int a1,int a2) {
+	int v0 = cs2method_11055();
+	if (v0 != 1) {
+		if (a2 != 1) {
+			return;
+		}
+	} else {
+		if (a2 == 1) {
+			return;
+		}
+	}
+	script_2730(a1, v0);
+	cs2method_20162(load function<2729>, new WidgetPointer(-32768,3), new WidgetPointer(a1), v0, "IIi", new WidgetPointer(a0));
+	return;
+}

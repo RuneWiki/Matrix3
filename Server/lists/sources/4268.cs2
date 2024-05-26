@@ -1,0 +1,417 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4268(int a0) {
+	switch (a0) {
+		case 1:
+			cs2method_10026(70975573, "Teleport to South Falador");
+			break;
+		case 2:
+			cs2method_10026(70975573, "Repair Rune Pouch");
+			break;
+		case 3:
+			cs2method_10026(70975573, "Teleport to North Ardougne");
+			break;
+		case 4:
+			cs2method_10026(70975573, "Remote Farming");
+			break;
+		case 5:
+			cs2method_10026(70975573, "Spiritualise Food");
+			break;
+		case 6:
+			cs2method_10026(70975573, "Make Leather");
+			break;
+		case 7:
+			cs2method_10026(70975573, "Disruption Shield");
+			break;
+		case 8:
+			cs2method_10026(70975573, "Vengeance Group");
+			break;
+		case 9:
+			cs2method_10026(70975573, "Let it Rain Seeds!");
+			break;
+		case 10:
+			cs2method_10026(70975573, "Gimme Herbs!");
+			break;
+		case 11:
+			cs2method_10026(70975573, "Vial My Herbs!");
+			break;
+		case 12:
+			cs2method_10026(70975573, "Turn Lunar Lumber into Runes!");
+			break;
+		case 13:
+			cs2method_10026(70975573, "Reduce the Fish I Burn!");
+			break;
+		case 14:
+			cs2method_10026(70975573, "More Planks, Please!");
+			break;
+		case 15:
+			cs2method_10026(70975573, "Teleport to Trollheim");
+			break;
+		case 16:
+			cs2method_10026(70975573, "Teleport Group to Trollheim");
+			break;
+		case 17:
+			cs2method_10026(70975573, "Borrowed Power");
+			break;
+		case 18:
+			cs2method_10026(70975573, "Let it Rain Awesome Seeds!");
+			break;
+		case 19:
+			cs2method_10026(70975573, "I'd Like a New Patch!");
+			break;
+		case 20:
+			cs2method_10026(70975573, "Give Me An Arcane Capacitor!");
+			break;
+		case 21:
+			cs2method_10026(70975573, "Protect A Patch For Me!");
+	}
+	switch (a0) {
+		case 1:
+			cs2method_10026(70975575, "Teleports you to the south of Falador.");
+			break;
+		case 2:
+			cs2method_10026(70975575, "Use on a degraded pouch to repair it and improve its strength, so it takes longer to degrade.");
+			break;
+		case 3:
+			cs2method_10026(70975575, "Teleports you to the north of Ardougne.");
+			break;
+		case 4:
+			cs2method_10026(70975575, "View the status of farming patches and cure any disease from a distance.");
+			break;
+		case 5:
+			cs2method_10026(70975575, "Cast on ordinary food and feed it to your familiar to heal it, boost its combat stats and extend its timer.");
+			break;
+		case 6:
+			cs2method_10026(70975575, "Cast on hides to turn them into leather. This will convert 5 hides at a time.");
+			break;
+		case 7:
+			cs2method_10026(70975575, "Nullifies the next hit you receive from another player. This works against players only, not against monsters.");
+			break;
+		case 8:
+			cs2method_10026(70975575, "When cast, those nearby get to rebound damage.");
+			break;
+		case 9:
+			cs2method_10026(70975575, "Seeds will appear on the floor. Be quick to pick up the ones you want.");
+			break;
+		case 10:
+			cs2method_10026(70975575, "Puts a load of grimy herbs in your inventory.");
+			break;
+		case 11:
+			cs2method_10026(70975575, "Takes all the clean herbs in your inventory and turns them into unfinished potions of that herb type. This will work on noted herbs of up to 50 at a time.");
+			break;
+		case 12:
+			cs2method_10026(70975575, "Turns all lunar lumber in your inventory into runes. You'll need a full inventory of logs.");
+			break;
+		case 13:
+			cs2method_10026(70975575, "For the next thirty minutes, you'll find that you burn fewer fish.");
+			break;
+		case 14:
+			cs2method_10026(70975575, "This will be active for the next twenty minutes: when casting Plank Make, you will have a chance of receiving additional planks.");
+			break;
+		case 15:
+			cs2method_10026(70975575, "Teleports you to the farming patch in Trollheim.");
+			break;
+		case 16:
+			cs2method_10026(70975575, "Teleports you and those nearby to the farming patch in Trollheim.");
+			break;
+		case 17:
+			cs2method_10026(70975575, "Allows you to store and cast certain spells from the standard spellbook." + "<br>" + "After learning this last spell, your current produce will be reduced by " + (string)script_46(",", cs2method_10051(idx17mapData('i', 'i', 3674, 10), 10)) + " and the remainder can be spent on wishes.");
+			break;
+		case 18:
+			cs2method_10026(70975575, "High value seeds will appear on the floor. Be quick to pick up the ones you want.");
+			break;
+		case 19:
+			cs2method_10026(70975575, "A new allotment patch will become available nearby. It will vanish if the patch is cleared.");
+			break;
+		case 20:
+			cs2method_10026(70975575, "You'll be given an Arcane Capacitor, for use with the Borrowed Power spell.");
+			break;
+		case 21:
+			if (client_configs['cfg3167'].bitcfg16374 < 11) {
+				cs2method_10026(70975575, "Gives you a scroll which, when used on a fruit tree or tree patch, will protect that patch for the next 10 growths in that patch. ");
+			} else {
+				cs2method_10026(70975575, "Gives you a scroll which, when used on a fruit tree or tree patch, will protect that patch for the next 10 growths in that patch. You will need to use the scroll on a patch that is currently growing something and you must have the produce in your inventory that would cover the cost of protecting that patch normally.");
+			}
+	}
+	switch (a0) {
+		case 1:
+			if (client_configs['cfg3167'].bitcfg16374 < 1) {
+				cs2method_10026(70975577, "Requires level 72 Magic to cast. You must unlock the spells in order.");
+			} else {
+				cs2method_10026(70975577, "Learned!");
+			}
+			break;
+		case 2:
+			if (client_configs['cfg3167'].bitcfg16374 < 2) {
+				cs2method_10026(70975577, "Requires level 75 Magic to cast. You must unlock the spells in order.");
+			} else {
+				cs2method_10026(70975577, "Learned!");
+			}
+			break;
+		case 3:
+			if (client_configs['cfg3167'].bitcfg16374 < 3) {
+				cs2method_10026(70975577, "Requires level 76 Magic to cast. You must unlock the spells in order.");
+			} else {
+				cs2method_10026(70975577, "Learned!");
+			}
+			break;
+		case 4:
+			if (client_configs['cfg3167'].bitcfg16374 < 4) {
+				cs2method_10026(70975577, "Requires level 78 Magic to cast. You must unlock the spells in order.");
+			} else {
+				cs2method_10026(70975577, "Learned!");
+			}
+			break;
+		case 5:
+			if (client_configs['cfg3167'].bitcfg16374 < 5) {
+				cs2method_10026(70975577, "Requires level 80 Magic to cast. You must unlock the spells in order.");
+			} else {
+				cs2method_10026(70975577, "Learned!");
+			}
+			break;
+		case 6:
+			if (client_configs['cfg3167'].bitcfg16374 < 6) {
+				cs2method_10026(70975577, "Requires level 83 Magic to cast. You must unlock the spells in order.");
+			} else {
+				cs2method_10026(70975577, "Learned!");
+			}
+			break;
+		case 7:
+			if (client_configs['cfg3167'].bitcfg16374 < 7) {
+				cs2method_10026(70975577, "Requires level 90 Magic to cast. You must unlock the spells in order.");
+			} else {
+				cs2method_10026(70975577, "Learned!");
+			}
+			break;
+		case 8:
+			if (client_configs['cfg3167'].bitcfg16374 < 8) {
+				cs2method_10026(70975577, "Requires level 95 Magic to cast. You must unlock the spells in order.");
+			} else {
+				cs2method_10026(70975577, "Learned!");
+			}
+			break;
+		case 15:
+			if (client_configs['cfg3167'].bitcfg16374 < 9) {
+				cs2method_10026(70975577, "Requires level 92 Magic to cast. You must unlock the spells in order.");
+			} else {
+				cs2method_10026(70975577, "Learned!");
+			}
+			break;
+		case 16:
+			if (client_configs['cfg3167'].bitcfg16374 < 10) {
+				cs2method_10026(70975577, "Requires level 93 Magic to cast. You must unlock the spells in order.");
+			} else {
+				cs2method_10026(70975577, "Learned!");
+			}
+			break;
+		case 17:
+			if (client_configs['cfg3167'].bitcfg16374 < 11) {
+				cs2method_10026(70975577, "Requires level 99 Magic to cast. You must unlock the spells in order.");
+			} else {
+				cs2method_10026(70975577, "Learned!");
+			}
+			break;
+		default:
+			if (client_configs['cfg3167'].bitcfg16374 < 11) {
+				cs2method_10026(70975577, "You must unlock all the spells before you can use wishes.");
+			}
+	}
+	if (a0 < 9 || a0 > 14 && a0 < 18) {
+		cs2method_10467(0, 70975578);
+	} else {
+		cs2method_10467(1, 70975578);
+	}
+	switch (a0) {
+		case 1:
+			cs2method_10758(4585, 70975581);
+			break;
+		case 2:
+			cs2method_10758(4586, 70975581);
+			break;
+		case 3:
+			cs2method_10758(4587, 70975581);
+			break;
+		case 4:
+			cs2method_10758(4588, 70975581);
+			break;
+		case 5:
+			cs2method_10758(4590, 70975581);
+			break;
+		case 6:
+			cs2method_10758(4589, 70975581);
+			break;
+		case 7:
+			cs2method_10758(4591, 70975581);
+			break;
+		case 8:
+			cs2method_10758(4592, 70975581);
+			break;
+		case 15:
+			cs2method_10758(7685, 70975581);
+			break;
+		case 16:
+			cs2method_10758(7686, 70975581);
+			break;
+		case 17:
+			cs2method_10758(7687, 70975581);
+	}
+	cs2method_10467(1, 70975582);
+	cs2method_10467(1, 70975583);
+	cs2method_10467(1, 70975584);
+	cs2method_10467(1, 70975585);
+	cs2method_10467(1, 70975586);
+	cs2method_10467(1, 70975587);
+	cs2method_10467(1, 70975588);
+	cs2method_10467(1, 70975589);
+	cs2method_10467(1, 70975590);
+	cs2method_10467(1, 70975591);
+	cs2method_10467(1, 70975592);
+	cs2method_10467(1, 70975593);
+	cs2method_10467(1, 70975594);
+	cs2method_10467(1, 70975595);
+	cs2method_10467(1, 70975948);
+	cs2method_10467(1, 70975958);
+	cs2method_10467(1, 70975968);
+	cs2method_10467(1, 70976006);
+	cs2method_10467(1, 70976016);
+	cs2method_10467(1, 70976026);
+	cs2method_10467(1, 70976046);
+	switch (a0) {
+		case 1:
+			if (client_configs['cfg3167'].bitcfg16374 < 1) {
+				cs2method_10467(0, 70975582);
+			}
+			break;
+		case 2:
+			if (client_configs['cfg3167'].bitcfg16374 < 2) {
+				cs2method_10467(0, 70975583);
+			}
+			break;
+		case 3:
+			if (client_configs['cfg3167'].bitcfg16374 < 3) {
+				cs2method_10467(0, 70975584);
+			}
+			break;
+		case 4:
+			if (client_configs['cfg3167'].bitcfg16374 < 4) {
+				cs2method_10467(0, 70975585);
+			}
+			break;
+		case 5:
+			if (client_configs['cfg3167'].bitcfg16374 < 5) {
+				cs2method_10467(0, 70975586);
+			}
+			break;
+		case 6:
+			if (client_configs['cfg3167'].bitcfg16374 < 6) {
+				cs2method_10467(0, 70975587);
+			}
+			break;
+		case 7:
+			if (client_configs['cfg3167'].bitcfg16374 < 7) {
+				cs2method_10467(0, 70975588);
+			}
+			break;
+		case 8:
+			if (client_configs['cfg3167'].bitcfg16374 < 8) {
+				cs2method_10467(0, 70975589);
+			}
+			break;
+		case 9:
+			if (client_configs['cfg3167'].bitcfg16374 > 10) {
+				cs2method_10467(0, 70975590);
+			}
+			break;
+		case 10:
+			if (client_configs['cfg3167'].bitcfg16374 > 10) {
+				cs2method_10467(0, 70975591);
+			}
+			break;
+		case 11:
+			if (client_configs['cfg3167'].bitcfg16374 > 10) {
+				cs2method_10467(0, 70975592);
+			}
+			break;
+		case 12:
+			if (client_configs['cfg3167'].bitcfg16374 > 10) {
+				cs2method_10467(0, 70975593);
+			}
+			break;
+		case 13:
+			if (client_configs['cfg3167'].bitcfg16374 > 10) {
+				cs2method_10467(0, 70975594);
+			}
+			break;
+		case 14:
+			if (client_configs['cfg3167'].bitcfg16374 > 10) {
+				cs2method_10467(0, 70975595);
+			}
+			break;
+		case 15:
+			if (client_configs['cfg3167'].bitcfg16374 < 9) {
+				cs2method_10467(0, 70975948);
+			}
+			break;
+		case 16:
+			if (client_configs['cfg3167'].bitcfg16374 < 10) {
+				cs2method_10467(0, 70975958);
+			}
+			break;
+		case 17:
+			if (client_configs['cfg3167'].bitcfg16374 < 11) {
+				cs2method_10467(0, 70975968);
+			}
+			break;
+		case 18:
+			if (client_configs['cfg3167'].bitcfg16374 > 10) {
+				cs2method_10467(0, 70976006);
+			}
+			break;
+		case 19:
+			if (client_configs['cfg3167'].bitcfg16374 > 10) {
+				cs2method_10467(0, 70976016);
+			}
+			break;
+		case 20:
+			if (client_configs['cfg3167'].bitcfg16374 > 10) {
+				cs2method_10467(0, 70976026);
+			}
+			break;
+		case 21:
+			if (client_configs['cfg3167'].bitcfg16374 > 10) {
+				cs2method_10467(0, 70976046);
+			}
+	}
+	cs2method_10467(1, 70975873);
+	cs2method_10467(1, 70975560);
+	cs2method_10467(1, 70975555);
+	cs2method_10467(1, 70975550);
+	cs2method_10467(1, 70975545);
+	cs2method_10467(1, 70975540);
+	cs2method_10467(1, 70975535);
+	cs2method_10467(1, 70975530);
+	cs2method_10467(1, 70975525);
+	cs2method_10467(1, 70975520);
+	cs2method_10467(1, 70975515);
+	cs2method_10467(1, 70975510);
+	cs2method_10467(1, 70975505);
+	cs2method_10467(1, 70975500);
+	cs2method_10467(1, 70975919);
+	cs2method_10467(1, 70975930);
+	cs2method_10467(1, 70975941);
+	cs2method_10467(1, 70975981);
+	cs2method_10467(1, 70975990);
+	cs2method_10467(1, 70976000);
+	cs2method_10467(1, 70976040);
+	return;
+}

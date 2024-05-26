@@ -1,0 +1,715 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_285(int a0) {
+	int v12;
+	int v20;
+	object v21;
+	object v15;
+	object v1;
+	int v17;
+	object v16;
+	object v26;
+	object v13;
+	cs2method_10273(a0);
+	int v2 = 0;
+	script_41(93192277);
+	int v4 = 1;
+	int v27 = -1;
+	object v10 = "Hide";
+	object v22 = "Show";
+	object v0 = "`You are here'";
+	if (client_configs['cfg2805'].bitcfg14109 == 1) {
+		v10 = "Show";
+		v22 = "Hide";
+		v4 = 0;
+	}
+	cs2method_10606(a0, 5, 0);
+	cs2method_10606(a0, 4, 1);
+	cs2method_10063(-1, v2, 0, 0);
+	cs2method_10013(26, 26, 0, 0);
+	cs2method_10063(cs2method_10461(cs2method_10060(cs2method_10878(), cs2method_10488()), 1), v2, 0, 0);
+	cs2method_10013(cs2method_10878(), cs2method_10664(), 1, 0);
+	int v19 = cs2method_10488();
+	cs2method_10310(idx22mapAttribute(280, 130));
+	cs2method_10811(7705248);
+	cs2method_10692(17813);
+	cs2method_10173(1);
+	cs2method_11105(0, 1, 0);
+	cs2method_10797(v0);
+	cs2method_10200("<col=ff9040>" + (string)v0 + "</col>");
+	cs2method_10200("<col=ff9040>" + (string)v0 + "</col>");
+	cs2method_10057(1, v10);
+	cs2method_10057(1, v10);
+	object v18 = "Toggles the " + "<col=ffcb05>" + "You are here" + "</col>" + " marker.";
+	cs2method_20674(new function<script_1356>(int a0,int a1,int a2) {
+		if (cs2method_11038(a2, a0) == 1) {
+			cs2method_10811(a1);
+		}
+		return;
+	}, new WidgetPointer(a0), cs2method_11051(), 16777215, "Iii");
+	cs2method_20674(new function<script_1356>(int a0,int a1,int a2) {
+		if (cs2method_11038(a2, a1) == 1) {
+			cs2method_10811(a0);
+		}
+		return;
+	}, new WidgetPointer(a0), cs2method_11051(), 16777215, "Iii");
+	cs2method_20353(new function<script_8799>(object a0,int a1,int a2) {
+		script_8800(a1, a2, a0);
+		return;
+	}, (string)v18, new WidgetPointer(-32768,3), -2147483643, "sIi");
+	cs2method_20353(new function<script_8799>(int a0,object a1,int a2) {
+		script_8800(a2, a0, a1);
+		return;
+	}, (string)v18, new WidgetPointer(-32768,3), -2147483643, "sIi");
+	cs2method_20884(new function<script_289>(int a0,int a1,int a2) {
+		if (cs2method_11038(a1, a2) == 1) {
+			cs2method_10811(a0);
+		}
+		script_41(93192277);
+		return;
+	}, new WidgetPointer(a0), cs2method_11051(), 7705248, "Iii");
+	cs2method_20884(new function<script_289>(int a0,int a1,int a2) {
+		if (cs2method_11038(a2, a1) == 1) {
+			cs2method_10811(a0);
+		}
+		script_41(93192277);
+		return;
+	}, new WidgetPointer(a0), cs2method_11051(), 7705248, "Iii");
+	cs2method_20703(new function<script_286>(int a0,int a1,object a2,int a3,int a4,int a5,int a6) {
+		if (a5 != 1) {
+			return;
+		}
+		if (cs2method_11038(a0, a1) == 1) {
+			cs2method_10057(1, a2);
+		}
+		if (cs2method_11038(a0, a3) == 1) {
+			cs2method_10057(1, a2);
+		}
+		if (cs2method_11038(a0, a4) == 1) {
+			if (a6 == 1) {
+				cs2method_10269(0);
+			} else {
+				cs2method_10269(1);
+			}
+		}
+		if (a1 == 11) {
+			cs2method_11126(950, a6);
+		}
+		cs2method_10567(31334, 1, 0);
+		if (a1 == 20) {
+			if (a6 == 1) {
+				cs2method_11021(1, 0);
+				cs2method_11021(2, 0);
+				cs2method_10724(0, 0);
+				cs2method_10724(1, 0);
+				cs2method_10724(2, 0);
+			} else {
+				script_8104();
+			}
+		}
+		return;
+	}, -2147483644, new WidgetPointer(a0), cs2method_11051(), cs2method_11051(), 2, (string)v22, v4, "iIiiis1");
+	cs2method_20703(new function<script_286>(int a0,int a1,int a2,object a3,int a4,int a5,int a6) {
+		if (a5 != 1) {
+			return;
+		}
+		if (cs2method_11038(a0, a6) == 1) {
+			cs2method_10057(1, a3);
+		}
+		if (cs2method_11038(a0, a4) == 1) {
+			cs2method_10057(1, a3);
+		}
+		if (cs2method_11038(a0, a2) == 1) {
+			if (a1 == 1) {
+				cs2method_10269(0);
+			} else {
+				cs2method_10269(1);
+			}
+		}
+		if (a6 == 11) {
+			cs2method_11126(950, a1);
+		}
+		cs2method_10567(31334, 1, 0);
+		if (a6 == 20) {
+			if (a1 == 1) {
+				cs2method_11021(1, 0);
+				cs2method_11021(2, 0);
+				cs2method_10724(0, 0);
+				cs2method_10724(1, 0);
+				cs2method_10724(2, 0);
+			} else {
+				script_8104();
+			}
+		}
+		return;
+	}, -2147483644, new WidgetPointer(a0), cs2method_11051(), cs2method_11051(), 2, (string)v22, v4, "iIiiis1");
+	script_287(2, v4, a0, v2);
+	int v23 = cs2method_10060(v2, cs2method_10664());
+	object v7 = "Intra-map links";
+	if (client_configs['cfg2805'].bitcfg14110 == 1) {
+		v21 = "Show";
+		v26 = "Hide";
+		v12 = 0;
+	} else {
+		v21 = "Hide";
+		v26 = "Show";
+		v12 = 1;
+	}
+	cs2method_10606(a0, 5, 3);
+	cs2method_10606(a0, 4, 4);
+	cs2method_10063(3, v23, 0, 0);
+	cs2method_10013(22, 26, 0, 0);
+	cs2method_10063(cs2method_10060(cs2method_10878(), cs2method_10488()), v23, 0, 0);
+	cs2method_10013(cs2method_10060(cs2method_10878(), cs2method_10878()), cs2method_10664(), 1, 0);
+	cs2method_10811(7705248);
+	cs2method_10692(17813);
+	cs2method_10173(1);
+	cs2method_11105(0, 1, 0);
+	cs2method_10797(v7);
+	cs2method_10200("<col=ff9040>" + (string)v7 + "</col>");
+	cs2method_10200("<col=ff9040>" + (string)v7 + "</col>");
+	cs2method_10057(1, v21);
+	cs2method_10057(1, v21);
+	object v9 = "Toggles the features that show links within a map.";
+	cs2method_20674(new function<script_1356>(int a0,int a1,int a2) {
+		if (cs2method_11038(a1, a0) == 1) {
+			cs2method_10811(a2);
+		}
+		return;
+	}, new WidgetPointer(a0), cs2method_11051(), 16777215, "Iii");
+	cs2method_20674(new function<script_1356>(int a0,int a1,int a2) {
+		if (cs2method_11038(a1, a2) == 1) {
+			cs2method_10811(a0);
+		}
+		return;
+	}, new WidgetPointer(a0), cs2method_11051(), 16777215, "Iii");
+	cs2method_20353(new function<script_8799>(int a0,object a1,int a2) {
+		script_8800(a2, a0, a1);
+		return;
+	}, (string)v9, new WidgetPointer(-32768,3), -2147483643, "sIi");
+	cs2method_20353(new function<script_8799>(int a0,object a1,int a2) {
+		script_8800(a0, a2, a1);
+		return;
+	}, (string)v9, new WidgetPointer(-32768,3), -2147483643, "sIi");
+	cs2method_20884(new function<script_289>(int a0,int a1,int a2) {
+		if (cs2method_11038(a1, a0) == 1) {
+			cs2method_10811(a2);
+		}
+		script_41(93192277);
+		return;
+	}, new WidgetPointer(a0), cs2method_11051(), 7705248, "Iii");
+	cs2method_20884(new function<script_289>(int a0,int a1,int a2) {
+		if (cs2method_11038(a1, a0) == 1) {
+			cs2method_10811(a2);
+		}
+		script_41(93192277);
+		return;
+	}, new WidgetPointer(a0), cs2method_11051(), 7705248, "Iii");
+	cs2method_20703(new function<script_286>(int a0,int a1,object a2,int a3,int a4,int a5,int a6) {
+		if (a4 != 1) {
+			return;
+		}
+		if (cs2method_11038(a0, a1) == 1) {
+			cs2method_10057(1, a2);
+		}
+		if (cs2method_11038(a0, a3) == 1) {
+			cs2method_10057(1, a2);
+		}
+		if (cs2method_11038(a0, a5) == 1) {
+			if (a6 == 1) {
+				cs2method_10269(0);
+			} else {
+				cs2method_10269(1);
+			}
+		}
+		if (a1 == 11) {
+			cs2method_11126(950, a6);
+		}
+		cs2method_10567(31334, 1, 0);
+		if (a1 == 20) {
+			if (a6 == 1) {
+				cs2method_11021(1, 0);
+				cs2method_11021(2, 0);
+				cs2method_10724(0, 0);
+				cs2method_10724(1, 0);
+				cs2method_10724(2, 0);
+			} else {
+				script_8104();
+			}
+		}
+		return;
+	}, -2147483644, new WidgetPointer(a0), cs2method_11051(), cs2method_11051(), 10, (string)v26, v12, "iIiiis1");
+	cs2method_20703(new function<script_286>(int a0,int a1,int a2,int a3,int a4,object a5,int a6) {
+		if (a2 != 1) {
+			return;
+		}
+		if (cs2method_11038(a6, a3) == 1) {
+			cs2method_10057(1, a5);
+		}
+		if (cs2method_11038(a6, a1) == 1) {
+			cs2method_10057(1, a5);
+		}
+		if (cs2method_11038(a6, a4) == 1) {
+			if (a0 == 1) {
+				cs2method_10269(0);
+			} else {
+				cs2method_10269(1);
+			}
+		}
+		if (a3 == 11) {
+			cs2method_11126(950, a0);
+		}
+		cs2method_10567(31334, 1, 0);
+		if (a3 == 20) {
+			if (a0 == 1) {
+				cs2method_11021(1, 0);
+				cs2method_11021(2, 0);
+				cs2method_10724(0, 0);
+				cs2method_10724(1, 0);
+				cs2method_10724(2, 0);
+			} else {
+				script_8104();
+			}
+		}
+		return;
+	}, -2147483644, new WidgetPointer(a0), cs2method_11051(), cs2method_11051(), 10, (string)v26, v12, "iIiiis1");
+	cs2method_10606(a0, 3, 5);
+	cs2method_10063(4, cs2method_10060(v23, 12), 0, 0);
+	cs2method_10013(5, 5, 0, 0);
+	cs2method_10811(0);
+	cs2method_10238(1);
+	cs2method_10606(a0, 3, 6);
+	cs2method_10063(17, cs2method_10060(v23, 12), 0, 0);
+	cs2method_10013(5, 5, 0, 0);
+	cs2method_10811(0);
+	cs2method_10238(1);
+	cs2method_10606(a0, 3, 7);
+	cs2method_10063(3, cs2method_10060(v23, 11), 0, 0);
+	cs2method_10013(5, 5, 0, 0);
+	cs2method_10811(16776960);
+	cs2method_10238(1);
+	cs2method_10606(a0, 3, 8);
+	cs2method_10063(16, cs2method_10060(v23, 11), 0, 0);
+	cs2method_10013(5, 5, 0, 0);
+	cs2method_10811(16776960);
+	cs2method_10238(1);
+	cs2method_10606(a0, 9, 9);
+	cs2method_10063(5, cs2method_10060(v23, 13), 0, 0);
+	cs2method_10013(15, 0, 0, 0);
+	cs2method_10421(2);
+	cs2method_10811(16776960);
+	script_287(10, v12, a0, v23);
+	int v28 = cs2method_10060(v23, cs2method_10664());
+	object v5 = "Map labels";
+	if (client_configs['cfg2805'].bitcfg14111 == 1) {
+		v13 = "Show";
+		v15 = "Hide";
+		v17 = 0;
+	} else {
+		v13 = "Hide";
+		v15 = "Show";
+		v17 = 1;
+	}
+	cs2method_10606(a0, 4, 11);
+	cs2method_10063(1, v28, 0, 0);
+	cs2method_10013(23, 26, 0, 0);
+	cs2method_10692(494);
+	cs2method_11105(1, 1, 0);
+	cs2method_10173(1);
+	cs2method_10811(16777215);
+	cs2method_10797("ABC" + "<br>" + "XYZ");
+	cs2method_10606(a0, 4, 12);
+	cs2method_10063(cs2method_10060(cs2method_10878(), cs2method_10488()), v28, 0, 0);
+	cs2method_10013(cs2method_10060(cs2method_10878(), cs2method_10878()), cs2method_10664(), 1, 0);
+	cs2method_10811(7705248);
+	cs2method_10692(17813);
+	cs2method_10173(1);
+	cs2method_11105(0, 1, 0);
+	cs2method_10797(v5);
+	cs2method_10200("<col=ff9040>" + (string)v5 + "</col>");
+	cs2method_10200("<col=ff9040>" + (string)v5 + "</col>");
+	cs2method_10057(1, v13);
+	cs2method_10057(1, v13);
+	object v24 = "Toggles most text labels." + "<br>" + "Some are always shown.";
+	cs2method_20674(new function<script_1356>(int a0,int a1,int a2) {
+		if (cs2method_11038(a2, a1) == 1) {
+			cs2method_10811(a0);
+		}
+		return;
+	}, new WidgetPointer(a0), cs2method_11051(), 16777215, "Iii");
+	cs2method_20674(new function<script_1356>(int a0,int a1,int a2) {
+		if (cs2method_11038(a2, a0) == 1) {
+			cs2method_10811(a1);
+		}
+		return;
+	}, new WidgetPointer(a0), cs2method_11051(), 16777215, "Iii");
+	cs2method_20353(new function<script_8799>(int a0,object a1,int a2) {
+		script_8800(a0, a2, a1);
+		return;
+	}, (string)v24, new WidgetPointer(-32768,3), -2147483643, "sIi");
+	cs2method_20353(new function<script_8799>(int a0,object a1,int a2) {
+		script_8800(a2, a0, a1);
+		return;
+	}, (string)v24, new WidgetPointer(-32768,3), -2147483643, "sIi");
+	cs2method_20884(new function<script_289>(int a0,int a1,int a2) {
+		if (cs2method_11038(a0, a1) == 1) {
+			cs2method_10811(a2);
+		}
+		script_41(93192277);
+		return;
+	}, new WidgetPointer(a0), cs2method_11051(), 7705248, "Iii");
+	cs2method_20884(new function<script_289>(int a0,int a1,int a2) {
+		if (cs2method_11038(a0, a2) == 1) {
+			cs2method_10811(a1);
+		}
+		script_41(93192277);
+		return;
+	}, new WidgetPointer(a0), cs2method_11051(), 7705248, "Iii");
+	cs2method_20703(new function<script_286>(int a0,int a1,int a2,int a3,object a4,int a5,int a6) {
+		if (a3 != 1) {
+			return;
+		}
+		if (cs2method_11038(a1, a0) == 1) {
+			cs2method_10057(1, a4);
+		}
+		if (cs2method_11038(a1, a6) == 1) {
+			cs2method_10057(1, a4);
+		}
+		if (cs2method_11038(a1, a5) == 1) {
+			if (a2 == 1) {
+				cs2method_10269(0);
+			} else {
+				cs2method_10269(1);
+			}
+		}
+		if (a0 == 11) {
+			cs2method_11126(950, a2);
+		}
+		cs2method_10567(31334, 1, 0);
+		if (a0 == 20) {
+			if (a2 == 1) {
+				cs2method_11021(1, 0);
+				cs2method_11021(2, 0);
+				cs2method_10724(0, 0);
+				cs2method_10724(1, 0);
+				cs2method_10724(2, 0);
+			} else {
+				script_8104();
+			}
+		}
+		return;
+	}, -2147483644, new WidgetPointer(a0), cs2method_11051(), cs2method_11051(), 13, (string)v15, v17, "iIiiis1");
+	cs2method_20703(new function<script_286>(int a0,int a1,object a2,int a3,int a4,int a5,int a6) {
+		if (a6 != 1) {
+			return;
+		}
+		if (cs2method_11038(a3, a5) == 1) {
+			cs2method_10057(1, a2);
+		}
+		if (cs2method_11038(a3, a0) == 1) {
+			cs2method_10057(1, a2);
+		}
+		if (cs2method_11038(a3, a1) == 1) {
+			if (a4 == 1) {
+				cs2method_10269(0);
+			} else {
+				cs2method_10269(1);
+			}
+		}
+		if (a5 == 11) {
+			cs2method_11126(950, a4);
+		}
+		cs2method_10567(31334, 1, 0);
+		if (a5 == 20) {
+			if (a4 == 1) {
+				cs2method_11021(1, 0);
+				cs2method_11021(2, 0);
+				cs2method_10724(0, 0);
+				cs2method_10724(1, 0);
+				cs2method_10724(2, 0);
+			} else {
+				script_8104();
+			}
+		}
+		return;
+	}, -2147483644, new WidgetPointer(a0), cs2method_11051(), cs2method_11051(), 13, (string)v15, v17, "iIiiis1");
+	script_287(13, v17, a0, v28);
+	int v3 = cs2method_10060(v28, cs2method_10664());
+	object v8 = "Icon tooltips";
+	if (client_configs['cfg2805'].bitcfg14112 == 1) {
+		v1 = "Show";
+		v16 = "Hide";
+		v20 = 0;
+	} else {
+		v1 = "Hide";
+		v16 = "Show";
+		v20 = 1;
+	}
+	cs2method_10606(a0, 3, 14);
+	cs2method_10063(3, cs2method_10060(v3, 6), 0, 0);
+	cs2method_10013(20, 14, 0, 0);
+	cs2method_10238(1);
+	cs2method_10811(921102);
+	cs2method_10606(a0, 3, 15);
+	cs2method_10063(3, cs2method_10060(v3, 6), 0, 0);
+	cs2method_10013(cs2method_10488(), cs2method_10664(), 0, 0);
+	cs2method_10238(0);
+	cs2method_10811(15461606);
+	cs2method_10606(a0, 4, 16);
+	cs2method_10063(cs2method_10060(cs2method_10060(cs2method_10878(), cs2method_10488()), 2), v3, 0, 0);
+	cs2method_10013(cs2method_10060(cs2method_10878(), cs2method_10878()), 26, 1, 0);
+	cs2method_10811(7705248);
+	cs2method_10692(17813);
+	cs2method_10173(1);
+	cs2method_11105(0, 1, 0);
+	cs2method_10797(v8);
+	cs2method_10200("<col=ff9040>" + (string)v8 + "</col>");
+	cs2method_10200("<col=ff9040>" + (string)v8 + "</col>");
+	cs2method_10057(1, v1);
+	cs2method_10057(1, v1);
+	object v11 = "Toggles icon tooltips.";
+	cs2method_20674(new function<script_1356>(int a0,int a1,int a2) {
+		if (cs2method_11038(a0, a1) == 1) {
+			cs2method_10811(a2);
+		}
+		return;
+	}, new WidgetPointer(a0), cs2method_11051(), 16777215, "Iii");
+	cs2method_20674(new function<script_1356>(int a0,int a1,int a2) {
+		if (cs2method_11038(a1, a0) == 1) {
+			cs2method_10811(a2);
+		}
+		return;
+	}, new WidgetPointer(a0), cs2method_11051(), 16777215, "Iii");
+	cs2method_20353(new function<script_8799>(int a0,object a1,int a2) {
+		script_8800(a0, a2, a1);
+		return;
+	}, (string)v11, new WidgetPointer(-32768,3), -2147483643, "sIi");
+	cs2method_20353(new function<script_8799>(int a0,object a1,int a2) {
+		script_8800(a0, a2, a1);
+		return;
+	}, (string)v11, new WidgetPointer(-32768,3), -2147483643, "sIi");
+	cs2method_20884(new function<script_289>(int a0,int a1,int a2) {
+		if (cs2method_11038(a1, a2) == 1) {
+			cs2method_10811(a0);
+		}
+		script_41(93192277);
+		return;
+	}, new WidgetPointer(a0), cs2method_11051(), 7705248, "Iii");
+	cs2method_20884(new function<script_289>(int a0,int a1,int a2) {
+		if (cs2method_11038(a2, a0) == 1) {
+			cs2method_10811(a1);
+		}
+		script_41(93192277);
+		return;
+	}, new WidgetPointer(a0), cs2method_11051(), 7705248, "Iii");
+	cs2method_20703(new function<script_286>(int a0,object a1,int a2,int a3,int a4,int a5,int a6) {
+		if (a0 != 1) {
+			return;
+		}
+		if (cs2method_11038(a5, a4) == 1) {
+			cs2method_10057(1, a1);
+		}
+		if (cs2method_11038(a5, a3) == 1) {
+			cs2method_10057(1, a1);
+		}
+		if (cs2method_11038(a5, a6) == 1) {
+			if (a2 == 1) {
+				cs2method_10269(0);
+			} else {
+				cs2method_10269(1);
+			}
+		}
+		if (a4 == 11) {
+			cs2method_11126(950, a2);
+		}
+		cs2method_10567(31334, 1, 0);
+		if (a4 == 20) {
+			if (a2 == 1) {
+				cs2method_11021(1, 0);
+				cs2method_11021(2, 0);
+				cs2method_10724(0, 0);
+				cs2method_10724(1, 0);
+				cs2method_10724(2, 0);
+			} else {
+				script_8104();
+			}
+		}
+		return;
+	}, -2147483644, new WidgetPointer(a0), cs2method_11051(), cs2method_11051(), 17, (string)v16, v20, "iIiiis1");
+	cs2method_20703(new function<script_286>(int a0,int a1,object a2,int a3,int a4,int a5,int a6) {
+		if (a6 != 1) {
+			return;
+		}
+		if (cs2method_11038(a0, a1) == 1) {
+			cs2method_10057(1, a2);
+		}
+		if (cs2method_11038(a0, a4) == 1) {
+			cs2method_10057(1, a2);
+		}
+		if (cs2method_11038(a0, a3) == 1) {
+			if (a5 == 1) {
+				cs2method_10269(0);
+			} else {
+				cs2method_10269(1);
+			}
+		}
+		if (a1 == 11) {
+			cs2method_11126(950, a5);
+		}
+		cs2method_10567(31334, 1, 0);
+		if (a1 == 20) {
+			if (a5 == 1) {
+				cs2method_11021(1, 0);
+				cs2method_11021(2, 0);
+				cs2method_10724(0, 0);
+				cs2method_10724(1, 0);
+				cs2method_10724(2, 0);
+			} else {
+				script_8104();
+			}
+		}
+		return;
+	}, -2147483644, new WidgetPointer(a0), cs2method_11051(), cs2method_11051(), 17, (string)v16, v20, "iIiiis1");
+	script_287(17, v20, a0, v3);
+	int v25 = cs2method_10060(v3, cs2method_10664());
+	cs2method_10606(a0, 5, 18);
+	cs2method_10013(26, 26, 0, 0);
+	object v29 = "Double-click the map to set a marker";
+	int v6 = cs2method_11048(cs2method_10060(cs2method_10051(cs2method_10805(v19, 494, v29), 10), 3), cs2method_10664());
+	cs2method_10063(-1, cs2method_10060(v25, cs2method_10968(cs2method_10461(v6, cs2method_10664()), 2)), 0, 0);
+	cs2method_10310(idx22mapAttribute(972, 130));
+	cs2method_10606(a0, 4, 19);
+	cs2method_10063(0, v25, 2, 0);
+	cs2method_10013(v19, v6, 0, 0);
+	cs2method_10811(7705248);
+	cs2method_10173(1);
+	if (client_configs['cfg2807'] == -1 || client_configs['cfg2807'] == 0) {
+		cs2method_11105(1, 1, 0);
+		cs2method_10692(17813);
+		cs2method_10797(v29);
+	} else {
+		object v30 = "Clear your marker";
+		cs2method_11105(0, 1, 0);
+		cs2method_10692(17813);
+		cs2method_10797(v30);
+		cs2method_10057(1, v30);
+		cs2method_10057(1, v30);
+		object v31 = "Removes the marker.";
+		cs2method_20674(new function<script_1356>(int a0,int a1,int a2) {
+			if (cs2method_11038(a1, a0) == 1) {
+				cs2method_10811(a2);
+			}
+			return;
+		}, new WidgetPointer(a0), cs2method_11051(), 16777215, "Iii");
+		cs2method_20674(new function<script_1356>(int a0,int a1,int a2) {
+			if (cs2method_11038(a1, a2) == 1) {
+				cs2method_10811(a0);
+			}
+			return;
+		}, new WidgetPointer(a0), cs2method_11051(), 16777215, "Iii");
+		cs2method_20353(new function<script_8799>(object a0,int a1,int a2) {
+			script_8800(a2, a1, a0);
+			return;
+		}, (string)v31, new WidgetPointer(-32768,3), -2147483643, "sIi");
+		cs2method_20353(new function<script_8799>(object a0,int a1,int a2) {
+			script_8800(a2, a1, a0);
+			return;
+		}, (string)v31, new WidgetPointer(-32768,3), -2147483643, "sIi");
+		cs2method_20884(new function<script_289>(int a0,int a1,int a2) {
+			if (cs2method_11038(a0, a2) == 1) {
+				cs2method_10811(a1);
+			}
+			script_41(93192277);
+			return;
+		}, new WidgetPointer(a0), cs2method_11051(), 7705248, "Iii");
+		cs2method_20884(new function<script_289>(int a0,int a1,int a2) {
+			if (cs2method_11038(a1, a2) == 1) {
+				cs2method_10811(a0);
+			}
+			script_41(93192277);
+			return;
+		}, new WidgetPointer(a0), cs2method_11051(), 7705248, "Iii");
+		cs2method_20703(new function<script_286>(int a0,int a1,int a2,object a3,int a4,int a5,int a6) {
+			if (a6 != 1) {
+				return;
+			}
+			if (cs2method_11038(a1, a2) == 1) {
+				cs2method_10057(1, a3);
+			}
+			if (cs2method_11038(a1, a4) == 1) {
+				cs2method_10057(1, a3);
+			}
+			if (cs2method_11038(a1, a5) == 1) {
+				if (a0 == 1) {
+					cs2method_10269(0);
+				} else {
+					cs2method_10269(1);
+				}
+			}
+			if (a2 == 11) {
+				cs2method_11126(950, a0);
+			}
+			cs2method_10567(31334, 1, 0);
+			if (a2 == 20) {
+				if (a0 == 1) {
+					cs2method_11021(1, 0);
+					cs2method_11021(2, 0);
+					cs2method_10724(0, 0);
+					cs2method_10724(1, 0);
+					cs2method_10724(2, 0);
+				} else {
+					script_8104();
+				}
+			}
+			return;
+		}, -2147483644, new WidgetPointer(a0), -1, -1, -1, "", 0, "iIiiis1");
+		cs2method_20703(new function<script_286>(int a0,int a1,object a2,int a3,int a4,int a5,int a6) {
+			if (a3 != 1) {
+				return;
+			}
+			if (cs2method_11038(a0, a1) == 1) {
+				cs2method_10057(1, a2);
+			}
+			if (cs2method_11038(a0, a5) == 1) {
+				cs2method_10057(1, a2);
+			}
+			if (cs2method_11038(a0, a4) == 1) {
+				if (a6 == 1) {
+					cs2method_10269(0);
+				} else {
+					cs2method_10269(1);
+				}
+			}
+			if (a1 == 11) {
+				cs2method_11126(950, a6);
+			}
+			cs2method_10567(31334, 1, 0);
+			if (a1 == 20) {
+				if (a6 == 1) {
+					cs2method_11021(1, 0);
+					cs2method_11021(2, 0);
+					cs2method_10724(0, 0);
+					cs2method_10724(1, 0);
+					cs2method_10724(2, 0);
+				} else {
+					script_8104();
+				}
+			}
+			return;
+		}, -2147483644, new WidgetPointer(a0), -1, -1, -1, "", 0, "iIiiis1");
+	}
+	int v14 = cs2method_10060(v25, cs2method_10664());
+	cs2method_10697(4052, cs2method_10060(v14, 2), cs2method_10155(cs2method_10155(a0)));
+	script_9581(cs2method_10155(cs2method_10155(cs2method_10155(a0))));
+	return;
+}

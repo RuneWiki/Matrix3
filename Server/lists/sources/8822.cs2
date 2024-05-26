@@ -1,0 +1,32 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+?? script_8822(int a0,int a1) {
+	int v0 = a1;
+	int v3 = a0;
+	int v5 = 255;
+	int v2 = 0;
+	script_8823_struct(1,1,0) v1 = script_8823(v0, v3, v5, v2);
+	int v6 = v1.intpart_0;
+	v1.objectpart_0;
+	int v4 = v6;
+	/* 
+		java.lang.RuntimeException: Stack underflow
+			at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+			at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+			at tests.Main.main(Main.java:69)
+		
+	 */
+}

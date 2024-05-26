@@ -1,0 +1,24 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_7026(int a0) {
+	if (a0 == -1 || script_8314(a0) != a0 || script_8555(a0) == -1) {
+		if (cs2_configs['cfg2231'] != -1 && cs2_configs['cfg2231'] != a0 && script_8314(cs2_configs['cfg2231']) == cs2_configs['cfg2231']) {
+			a0 = cs2_configs['cfg2231'];
+		} else if (client_configs['cfg3680'].bitcfg20187 != 1) {
+			a0 = 19;
+		} else {
+			a0 = 18;
+		}
+	}
+	return a0;
+}

@@ -1,0 +1,60 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1252(int a0,int a1,int a2) {
+	if (cs2_configs['cfg1412'] == 1) {
+		return;
+	}
+	int v1 = 4194358;
+	int v2 = 4194359;
+	int v0 = 4194360;
+	switch (a1) {
+		case 13:
+			return;
+		case 84:
+			cs2_configs['cfg1412'] = 1;
+			return;
+		case 102:
+		case 103:
+		case 98:
+		case 99:
+		case 96:
+		case 97:
+			cs2_configs['cfg1099'] = script_1553(a1, cs2_configs['cfg2563'], cs2_configs['cfg1099']);
+			script_3218(v1, cs2_configs['cfg2563'], v2, v0, 16);
+			return;
+	}
+	if (cs2method_10265(cs2_configs['cfg2563']) >= 12 && a1 != 85 && a1 != 101) {
+		return;
+	}
+	if (cs2method_10761(a0, 0, "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 \u00a0_-") != -1 || a1 == 85 || a1 == 101) {
+		int v4 = cs2_configs['cfg1099'];
+		int v5 = 2;
+		int v8 = a1;
+		int v9 = a0;
+		object v6 = cs2_configs['cfg2563'];
+		script_802_struct(1,1,0) v3 = script_802(v4, v6, v5, v8, v9);
+		object v7 = v3.objectpart_0;
+		cs2_configs['cfg1099'] = v3.intpart_0;
+		cs2_configs['cfg2563'] = (string)v7;
+		cs2method_10026(v2, cs2_configs['cfg2563']);
+		if (cs2method_10265(cs2_configs['cfg2563']) <= 0) {
+			cs2method_10467(0, 4194394);
+		} else {
+			cs2method_10467(1, 4194394);
+		}
+		script_3218(v1, cs2_configs['cfg2563'], v2, v0, 16);
+		cs2method_10467(1, 4194339);
+		cs2method_10467(1, 4194311);
+	}
+	return;
+}

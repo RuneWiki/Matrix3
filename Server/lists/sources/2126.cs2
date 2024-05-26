@@ -1,0 +1,40 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2126(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7) {
+	cs2_configs['cfg681'] = cs2method_10038(cs2method_10060(cs2method_10060(cs2_configs['cfg681'], cs2method_10877(4)), 2), 2048);
+	cs2_configs['cfg684'] = cs2method_10038(cs2method_10060(cs2method_10060(cs2_configs['cfg684'], cs2method_10877(4)), 2), 2048);
+	cs2_configs['cfg687'] = cs2method_10038(cs2method_10060(cs2method_10060(cs2_configs['cfg687'], cs2method_10877(4)), 2), 2048);
+	cs2_configs['cfg690'] = cs2method_10038(cs2method_10060(cs2method_10060(cs2_configs['cfg690'], cs2method_10877(4)), 2), 2048);
+	if (cs2_configs['cfg680'] < 20 && (cs2_configs['cfg680'] < -20 || cs2method_10877(2) == 0)) {
+		cs2_configs['cfg680'] = cs2method_10872(cs2method_10060(cs2method_10060(cs2_configs['cfg680'], cs2method_10877(3)), 1), 25);
+	} else {
+		cs2_configs['cfg680'] = cs2method_11048(cs2method_10461(cs2_configs['cfg680'], cs2method_10060(cs2method_10877(3), 1)), -25);
+	}
+	if (cs2_configs['cfg683'] < 20 && (cs2_configs['cfg683'] < -20 || cs2method_10877(2) == 0)) {
+		cs2_configs['cfg683'] = cs2method_10872(cs2method_10060(cs2method_10060(cs2_configs['cfg683'], cs2method_10877(3)), 1), 25);
+	} else {
+		cs2_configs['cfg683'] = cs2method_11048(cs2method_10461(cs2_configs['cfg683'], cs2method_10060(cs2method_10877(3), 1)), -25);
+	}
+	if (cs2_configs['cfg686'] < 20 && (cs2_configs['cfg686'] < -20 || cs2method_10877(2) == 0)) {
+		cs2_configs['cfg686'] = cs2method_10872(cs2method_10060(cs2method_10060(cs2_configs['cfg686'], cs2method_10877(3)), 1), 25);
+	} else {
+		cs2_configs['cfg686'] = cs2method_11048(cs2method_10461(cs2_configs['cfg686'], cs2method_10060(cs2method_10877(3), 1)), -25);
+	}
+	if (cs2_configs['cfg689'] < 20 && (cs2_configs['cfg689'] < -20 || cs2method_10877(2) == 0)) {
+		cs2_configs['cfg689'] = cs2method_10872(cs2method_10060(cs2method_10060(cs2_configs['cfg689'], cs2method_10877(3)), 1), 25);
+	} else {
+		cs2_configs['cfg689'] = cs2method_11048(cs2method_10461(cs2_configs['cfg689'], cs2method_10060(cs2method_10877(3), 1)), -25);
+	}
+	script_2127(a6, a4, a1, a7, a0, a5, a3, a2);
+	return;
+}

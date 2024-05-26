@@ -1,0 +1,20 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2418(int a0) {
+	if (cs2_configs['cfg805'] == 6) {
+		cs2method_11127(1, a0, "Fix");
+	} else {
+		cs2method_11127(1, a0, "Inspect");
+	}
+	return;
+}

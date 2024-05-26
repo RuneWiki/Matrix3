@@ -1,0 +1,73 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8733(int a0,int a1,int a2) {
+	if (cs2method_10163(a0) > 0) {
+		cs2method_20390(new function<script_8734>(int a0,int a1,int a2) {
+			script_4506(a1, a0, a2);
+			int v0 = cs2method_10163(a1);
+			int v1 = 0;
+			while (v1 < v0) {
+				if (cs2method_11038(a1, v1) == 1 && cs2method_10265(cs2method_10447()) > 0) {
+					if (script_8699(idx17mapData('i', 'i', 7710, v1)) == 1) {
+						flow_5:
+							IF (cs2method_10580() == 1) 
+								GOTO	flow_6
+							GOTO	flow_7
+						flow_6:
+							IF (idx17mapData('i', 'i', 7710, v1) == 4) 
+								GOTO	flow_8
+						flow_7:
+							IF (script_5767() == 1 || client_configs['cfg3680'].bitcfg22315 == 1) 
+								GOTO	flow_8
+							GOTO	flow_9
+						flow_8:
+							script_7771(v1, a1);
+							GOTO	flow_10
+						flow_9:
+							cs2method_10057(1, "Select");
+							cs2method_20703(new function<script_8735>(int a0,int a1,int a2,int a3) {
+								script_7772(a0, a1, a2, a3);
+								int v0 = idx17mapData('i', 'i', 7710, a0);
+								if (script_8699(v0) == 0) {
+									cs2method_10810("That layout doesn't have any data saved to it yet. Pick another one.");
+									return;
+								}
+								if (cs2method_10580() == 1 && v0 == 4) {
+									cs2method_10810("Old School preset is only available in the Java version.");
+									return;
+								}
+								if (script_5767() == 1) {
+									cs2method_10810("Switching presets is disabled within the tutorial.");
+									return;
+								}
+								if (client_configs['cfg3680'].bitcfg22315 == 1) {
+									cs2method_10810("That feature is disabled in Legacy Mode");
+									return;
+								}
+								script_8741(v0);
+								return;
+							}, -2147483643, new WidgetPointer(a1), new WidgetPointer(a0), new WidgetPointer(a2), "iIII");
+						flow_10:
+					} else {
+						script_7771(v1, a1);
+					}
+				}
+				v1 = cs2method_10060(v1, 1);
+			}
+			return;
+		}, new WidgetPointer(a0), new WidgetPointer(a1), new WidgetPointer(a2), "III", new WidgetPointer(a1));
+		cs2method_20162(new function<none>() {
+		}, "", new WidgetPointer(a1));
+	}
+	return;
+}

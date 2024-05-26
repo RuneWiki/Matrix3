@@ -1,0 +1,78 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1951(int a0) {
+	object v14 = "You have no voyage selected.";
+	if (a0 == -1 || a0 == 17069) {
+		cs2method_10467(0, 62259492);
+		cs2method_21121(new function<script_8799>(object a0,int a1,int a2) {
+			script_8800(a2, a1, a0);
+			return;
+		}, (string)v14, new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(950,292));
+		cs2method_10026(62259239, "You have no voyage selected.");
+		cs2method_10026(62259259, "No Voyage Selected");
+		cs2method_10467(1, 62259277);
+		cs2method_10467(1, 62259281);
+		cs2method_10467(1, 62259285);
+		cs2method_10026(62259290, "-");
+		return;
+	}
+	script_2020();
+	script_2059();
+	object v2 = script_2057(a0, 0);
+	cs2method_10026(62259239, v2);
+	cs2method_10026(62259259, idx22mapAttribute(a0, 2365));
+	script_2025();
+	script_2022();
+	if (idx22mapAttribute(a0, 3056) == 0) {
+		cs2method_10467(1, 62259277);
+	} else {
+		cs2method_10467(0, 62259277);
+	}
+	if (idx22mapAttribute(a0, 3057) == 0) {
+		cs2method_10467(1, 62259281);
+	} else {
+		cs2method_10467(0, 62259281);
+	}
+	if (idx22mapAttribute(a0, 3058) == 0) {
+		cs2method_10467(1, 62259285);
+	} else {
+		cs2method_10467(0, 62259285);
+	}
+	if (idx22mapAttribute(a0, 2366) == 7 && script_1121(client_configs['cfg3406'].bitcfg17132) == 1) {
+		cs2method_10467(0, 62259468);
+		cs2method_10026(62259468, "Your captain already has four traits and cannot gain any more.");
+		cs2method_10467(1, 62259469);
+	}
+	int v15 = 0;
+	int v7 = 0;
+	int v13 = 0;
+	int v3 = idx22mapAttribute(a0, 2367);
+	int v1 = cs2method_11048(1, idx22mapAttribute(a0, 2368));
+	int v16 = cs2method_10122(115, 100, v1);
+	int v0 = cs2method_10122(85, 100, v1);
+	int v18 = cs2method_11048(cs2method_10872(v16, script_1124(client_configs['cfg3406'].bitcfg17132)), v0);
+	int v8 = cs2method_10122(v1, v18, v3);
+	int v9 = cs2method_11048(1500, v8);
+	int v10 = v9;
+	script_4705_struct(3,0,0) v6 = script_4705(v10);
+	int v17 = v6.intpart_2;
+	int v11 = v6.intpart_1;
+	int v5 = v6.intpart_0;
+	object v4 = cs2method_10379(v11);
+	if (v11 < 10) {
+		v4 = cs2method_10427("0", v4);
+	}
+	object v12 = (string)cs2method_10379(v5) + ":" + (string)v4;
+	cs2method_10026(62259290, v12);
+	return;
+}

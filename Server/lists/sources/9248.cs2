@@ -1,0 +1,32 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9248(int a0,int a1,int a2,int a3,int a4,int a5) {
+	switch (a1) {
+		case 43974681:
+			if (a0 == 43974686) {
+				script_9255(a2, a1, a5, a3, a0, a4);
+			}
+			break;
+		case 43974686:
+			if (a0 == 43974681) {
+				script_9255(a2, a1, a5, a3, a0, a4);
+			}
+			break;
+		case 7012356:
+			script_9266(a1, a5, a0);
+			break;
+		case 49938439:
+			script_10106(a1, a5, a0, a4);
+	}
+	return;
+}

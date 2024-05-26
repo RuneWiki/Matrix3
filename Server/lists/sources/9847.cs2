@@ -1,0 +1,24 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9847(int a0,int a1,int a2,int a3,int a4) {
+	if (cs2method_11038(a4, a0) == 1) {
+		if (a2 == 93) {
+			script_9240(a4, "Deposit-1", interfaceDefsAttribute(3819), 93, "Deposit-5", a1, "Deposit-10", "Deposit-" + (string)cs2method_10379(client_configs['cfg3922']), "Deposit-X", "Deposit-All", "", a3, 1, "", "", "Examine");
+		} else {
+			if (a2 == 94) {
+				script_9222(a1, a3);
+			}
+		}
+	}
+	return;
+}

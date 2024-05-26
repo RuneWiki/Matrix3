@@ -1,0 +1,22 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8959() {
+	int v1 = 0;
+	client_configs['cfg3643'] = cs2method_10668(client_configs['cfg3643'], 0);
+	client_configs['cfg3643'] = cs2method_10668(client_configs['cfg3643'], 1);
+	for (int v0 = 2; v0 < 14; v0 = cs2method_10060(v0, 1)) {
+		client_configs['cfg3643'] = cs2method_10668(client_configs['cfg3643'], v0);
+	}
+	client_configs['cfg3643'] = cs2method_10874(client_configs['cfg3643'], 13);
+	return;
+}

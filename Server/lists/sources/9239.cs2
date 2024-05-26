@@ -1,0 +1,75 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9239(int a0,int a1,int a2,int a3,object a4,int a5) {
+	int v1 = 0;
+	int v2 = -1;
+	int v5 = 0;
+	int v0 = -1;
+	int v3 = 0;
+	object v4 = "";
+	object v7 = "";
+	if (cs2method_10324(a2) == 1) {
+		v2 = interfaceDefsAttribute(3819);
+		v5 = interfaceDefsAttribute(3820);
+	}
+	int v6 = 0;
+	while (v1 <= a5) {
+		if (cs2method_11038(a2, v1) == 1) {
+			if (v1 >= a3) {
+				int v9;
+				int v10;
+				if (v5 == 0) {
+					v10 = cs2method_10640(a1, v1);
+					v9 = cs2method_11065(a1, v1);
+				} else {
+					v10 = cs2method_10418(a1, v1);
+					v9 = cs2method_10595(a1, v1);
+				}
+				if (a2 == 49938439) {
+					object v11 = itemDefsAttribute(v10, 1264);
+					v7 = itemDefsAttribute(v10, 1265);
+					v4 = v11;
+					if (cs2method_10265(v4) <= 0) {
+						if (cs2method_10873(v10) != -1 && idx17mapData('o', '1', 3446, v10) == 0) {
+							v4 = cs2method_10940(v10, 2);
+						} else {
+							if (cs2method_10441(cs2_configs['cfg95'], v1) == 1) {
+								v4 = "Eat";
+							}
+						}
+					}
+				}
+				int v8 = cs2method_10936(93, v10);
+				if (v8 > 5) {
+					script_9240(a2, (string)a4 + "-1", v2, a1, (string)a4 + "-5", v10, (string)a4 + "-10", (string)a4 + "-" + (string)cs2method_10379(client_configs['cfg3922']), (string)a4 + "-X", (string)a4 + "-All", "", v9, a0, v4, v7, "Examine");
+				} else if (v8 > 1) {
+					script_9240(a2, (string)a4 + "-1", v2, a1, (string)a4 + "-5", v10, "", (string)a4 + "-" + (string)cs2method_10379(client_configs['cfg3922']), (string)a4 + "-X", (string)a4 + "-All", "", v9, a0, v4, v7, "Examine");
+				} else {
+					script_9240(a2, a4, v2, a1, "", v10, "", "", "", "", "", v9, a0, v4, v7, "Examine");
+				}
+			} else {
+				cs2method_10620();
+				cs2method_10200("");
+				cs2method_20902(new function<none>() {
+				}, "");
+				cs2method_10065(0);
+				cs2method_11009(0);
+				cs2method_10903(-1, 0);
+				cs2method_10013(0, 0, 0, 0);
+				cs2method_10269(1);
+			}
+		}
+		v1 = cs2method_10060(v1, 1);
+	}
+	return;
+}

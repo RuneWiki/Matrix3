@@ -1,0 +1,85 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_7241(int a0) {
+	int v6;
+	int v3 = 0;
+	int v1 = 0;
+	int v2 = 0;
+	int v5 = 0;
+	int v4 = 0;
+	if (itemDefsAttribute(a0, 686) != -1) {
+		v6 = 1;
+		if (itemDefsAttribute(a0, 2827) != 0) {
+			v4 = 1;
+		} else if (itemDefsAttribute(a0, 2825) != 0) {
+			v2 = 1;
+		} else {
+			if (itemDefsAttribute(a0, 2826) != 0) {
+				v5 = 1;
+			}
+		}
+	} else if (itemDefsAttribute(a0, 2824) != 0) {
+		v2 = 1;
+		v5 = 1;
+		v4 = 1;
+	} else {
+		if (itemDefsAttribute(a0, 2821) != 0) {
+			v2 = 1;
+		}
+		if (itemDefsAttribute(a0, 2822) != 0) {
+			v5 = 1;
+		}
+		if (itemDefsAttribute(a0, 2823) != 0) {
+			v4 = 1;
+		}
+	}
+	v6 = 0;
+	int v0 = cs2method_10060(cs2method_10060(v2, v5), v4);
+	if (itemDefsAttribute(a0, 2824) != 0) {
+		if (itemDefsAttribute(a0, 2869) > 0) {
+			v3 = 9;
+		} else {
+			v3 = 8;
+		}
+	} else if (v4 == 1) {
+		if (v6 == 1) {
+			v3 = 3;
+		} else {
+			v3 = 7;
+		}
+	} else if (v2 == 1) {
+		if (v6 == 1) {
+			v3 = 1;
+		} else {
+			v3 = 5;
+		}
+	} else {
+		if (v5 == 1) {
+			if (v6 == 1) {
+				v3 = 2;
+			} else {
+				v3 = 6;
+			}
+		}
+	}
+	if (cs2method_10873(a0) == 13) {
+		if (itemDefsAttribute(a0, 643) > 0) {
+			v3 = 4;
+		} else {
+			if (itemDefsAttribute(a0, 972) > 0) {
+				v3 = 10;
+			}
+		}
+	}
+	return v3;
+}

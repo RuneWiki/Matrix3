@@ -1,0 +1,766 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1384(int a0,int a1) {
+	switch (a1) {
+		case 0:
+			cs2_configs['cfg0'] = a0;
+			break;
+		case 1:
+			cs2_configs['cfg274'] = a0;
+			break;
+		case 2:
+			cs2_configs['cfg275'] = a0;
+			break;
+		case 3:
+			cs2_configs['cfg276'] = a0;
+			break;
+		case 4:
+			cs2_configs['cfg277'] = a0;
+			break;
+		case 5:
+			cs2_configs['cfg278'] = a0;
+			break;
+		case 6:
+			cs2_configs['cfg279'] = a0;
+			break;
+		case 7:
+			cs2_configs['cfg280'] = a0;
+			break;
+		case 8:
+			cs2_configs['cfg281'] = a0;
+			break;
+		case 9:
+			cs2_configs['cfg282'] = a0;
+			break;
+		case 10:
+			cs2_configs['cfg283'] = a0;
+			break;
+		case 11:
+			cs2_configs['cfg284'] = a0;
+			break;
+		case 12:
+			cs2_configs['cfg285'] = a0;
+			break;
+		case 13:
+			cs2_configs['cfg286'] = a0;
+			break;
+		case 14:
+			cs2_configs['cfg287'] = a0;
+			break;
+		case 15:
+			cs2_configs['cfg288'] = a0;
+			break;
+		case 16:
+			cs2_configs['cfg289'] = a0;
+			break;
+		case 17:
+			cs2_configs['cfg290'] = a0;
+			break;
+		case 18:
+			cs2_configs['cfg291'] = a0;
+			break;
+		case 19:
+			cs2_configs['cfg292'] = a0;
+			break;
+		case 20:
+			cs2_configs['cfg293'] = a0;
+			break;
+		case 21:
+			cs2_configs['cfg294'] = a0;
+			break;
+		case 22:
+			cs2_configs['cfg295'] = a0;
+			break;
+		case 23:
+			cs2_configs['cfg296'] = a0;
+			break;
+		case 24:
+			cs2_configs['cfg297'] = a0;
+			break;
+		case 25:
+			cs2_configs['cfg298'] = a0;
+			break;
+		case 26:
+			cs2_configs['cfg299'] = a0;
+			break;
+		case 27:
+			cs2_configs['cfg300'] = a0;
+			break;
+		case 28:
+			cs2_configs['cfg301'] = a0;
+			break;
+		case 29:
+			cs2_configs['cfg302'] = a0;
+			break;
+		case 30:
+			cs2_configs['cfg303'] = a0;
+			break;
+		case 31:
+			cs2_configs['cfg304'] = a0;
+			break;
+		case 32:
+			cs2_configs['cfg305'] = a0;
+			break;
+		case 33:
+			cs2_configs['cfg306'] = a0;
+			break;
+		case 34:
+			cs2_configs['cfg307'] = a0;
+			break;
+		case 35:
+			cs2_configs['cfg308'] = a0;
+			break;
+		case 36:
+			cs2_configs['cfg309'] = a0;
+			break;
+		case 37:
+			cs2_configs['cfg310'] = a0;
+			break;
+		case 38:
+			cs2_configs['cfg311'] = a0;
+			break;
+		case 39:
+			cs2_configs['cfg312'] = a0;
+			break;
+		case 40:
+			cs2_configs['cfg313'] = a0;
+			break;
+		case 41:
+			cs2_configs['cfg314'] = a0;
+			break;
+		case 42:
+			cs2_configs['cfg315'] = a0;
+			break;
+		case 43:
+			cs2_configs['cfg316'] = a0;
+			break;
+		case 44:
+			cs2_configs['cfg317'] = a0;
+			break;
+		case 45:
+			cs2_configs['cfg318'] = a0;
+			break;
+		case 46:
+			cs2_configs['cfg319'] = a0;
+			break;
+		case 47:
+			cs2_configs['cfg320'] = a0;
+			break;
+		case 48:
+			cs2_configs['cfg321'] = a0;
+			break;
+		case 49:
+			cs2_configs['cfg322'] = a0;
+			break;
+		case 50:
+			cs2_configs['cfg323'] = a0;
+			break;
+		case 51:
+			cs2_configs['cfg324'] = a0;
+			break;
+		case 52:
+			cs2_configs['cfg325'] = a0;
+			break;
+		case 53:
+			cs2_configs['cfg326'] = a0;
+			break;
+		case 54:
+			cs2_configs['cfg327'] = a0;
+			break;
+		case 55:
+			cs2_configs['cfg328'] = a0;
+			break;
+		case 56:
+			cs2_configs['cfg329'] = a0;
+			break;
+		case 57:
+			cs2_configs['cfg330'] = a0;
+			break;
+		case 58:
+			cs2_configs['cfg331'] = a0;
+			break;
+		case 59:
+			cs2_configs['cfg332'] = a0;
+			break;
+		case 60:
+			cs2_configs['cfg333'] = a0;
+			break;
+		case 61:
+			cs2_configs['cfg334'] = a0;
+			break;
+		case 62:
+			cs2_configs['cfg335'] = a0;
+			break;
+		case 63:
+			cs2_configs['cfg336'] = a0;
+			break;
+		case 64:
+			cs2_configs['cfg337'] = a0;
+			break;
+		case 65:
+			cs2_configs['cfg338'] = a0;
+			break;
+		case 66:
+			cs2_configs['cfg339'] = a0;
+			break;
+		case 67:
+			cs2_configs['cfg340'] = a0;
+			break;
+		case 68:
+			cs2_configs['cfg341'] = a0;
+			break;
+		case 69:
+			cs2_configs['cfg342'] = a0;
+			break;
+		case 70:
+			cs2_configs['cfg343'] = a0;
+			break;
+		case 71:
+			cs2_configs['cfg344'] = a0;
+			break;
+		case 72:
+			cs2_configs['cfg345'] = a0;
+			break;
+		case 73:
+			cs2_configs['cfg346'] = a0;
+			break;
+		case 74:
+			cs2_configs['cfg347'] = a0;
+			break;
+		case 75:
+			cs2_configs['cfg348'] = a0;
+			break;
+		case 76:
+			cs2_configs['cfg349'] = a0;
+			break;
+		case 77:
+			cs2_configs['cfg350'] = a0;
+			break;
+		case 78:
+			cs2_configs['cfg351'] = a0;
+			break;
+		case 79:
+			cs2_configs['cfg352'] = a0;
+			break;
+		case 80:
+			cs2_configs['cfg353'] = a0;
+			break;
+		case 81:
+			cs2_configs['cfg354'] = a0;
+			break;
+		case 82:
+			cs2_configs['cfg355'] = a0;
+			break;
+		case 83:
+			cs2_configs['cfg356'] = a0;
+			break;
+		case 84:
+			cs2_configs['cfg357'] = a0;
+			break;
+		case 85:
+			cs2_configs['cfg358'] = a0;
+			break;
+		case 86:
+			cs2_configs['cfg359'] = a0;
+			break;
+		case 87:
+			cs2_configs['cfg360'] = a0;
+			break;
+		case 88:
+			cs2_configs['cfg361'] = a0;
+			break;
+		case 89:
+			cs2_configs['cfg362'] = a0;
+			break;
+		case 90:
+			cs2_configs['cfg363'] = a0;
+			break;
+		case 91:
+			cs2_configs['cfg364'] = a0;
+			break;
+		case 92:
+			cs2_configs['cfg365'] = a0;
+			break;
+		case 93:
+			cs2_configs['cfg366'] = a0;
+			break;
+		case 94:
+			cs2_configs['cfg367'] = a0;
+			break;
+		case 95:
+			cs2_configs['cfg368'] = a0;
+			break;
+		case 96:
+			cs2_configs['cfg369'] = a0;
+			break;
+		case 97:
+			cs2_configs['cfg370'] = a0;
+			break;
+		case 98:
+			cs2_configs['cfg371'] = a0;
+			break;
+		case 99:
+			cs2_configs['cfg372'] = a0;
+			break;
+		case 100:
+			cs2_configs['cfg373'] = a0;
+			break;
+		case 101:
+			cs2_configs['cfg374'] = a0;
+			break;
+		case 102:
+			cs2_configs['cfg375'] = a0;
+			break;
+		case 103:
+			cs2_configs['cfg376'] = a0;
+			break;
+		case 104:
+			cs2_configs['cfg377'] = a0;
+			break;
+		case 105:
+			cs2_configs['cfg378'] = a0;
+			break;
+		case 106:
+			cs2_configs['cfg379'] = a0;
+			break;
+		case 107:
+			cs2_configs['cfg380'] = a0;
+			break;
+		case 108:
+			cs2_configs['cfg381'] = a0;
+			break;
+		case 109:
+			cs2_configs['cfg382'] = a0;
+			break;
+		case 110:
+			cs2_configs['cfg383'] = a0;
+			break;
+		case 111:
+			cs2_configs['cfg384'] = a0;
+			break;
+		case 112:
+			cs2_configs['cfg385'] = a0;
+			break;
+		case 113:
+			cs2_configs['cfg386'] = a0;
+			break;
+		case 114:
+			cs2_configs['cfg387'] = a0;
+			break;
+		case 115:
+			cs2_configs['cfg388'] = a0;
+			break;
+		case 116:
+			cs2_configs['cfg389'] = a0;
+			break;
+		case 117:
+			cs2_configs['cfg390'] = a0;
+			break;
+		case 118:
+			cs2_configs['cfg391'] = a0;
+			break;
+		case 119:
+			cs2_configs['cfg392'] = a0;
+			break;
+		case 120:
+			cs2_configs['cfg393'] = a0;
+			break;
+		case 121:
+			cs2_configs['cfg394'] = a0;
+			break;
+		case 122:
+			cs2_configs['cfg395'] = a0;
+			break;
+		case 123:
+			cs2_configs['cfg396'] = a0;
+			break;
+		case 124:
+			cs2_configs['cfg397'] = a0;
+			break;
+		case 125:
+			cs2_configs['cfg398'] = a0;
+			break;
+		case 126:
+			cs2_configs['cfg399'] = a0;
+			break;
+		case 127:
+			cs2_configs['cfg400'] = a0;
+			break;
+		case 128:
+			cs2_configs['cfg401'] = a0;
+			break;
+		case 129:
+			cs2_configs['cfg402'] = a0;
+			break;
+		case 130:
+			cs2_configs['cfg403'] = a0;
+			break;
+		case 131:
+			cs2_configs['cfg404'] = a0;
+			break;
+		case 132:
+			cs2_configs['cfg405'] = a0;
+			break;
+		case 133:
+			cs2_configs['cfg406'] = a0;
+			break;
+		case 134:
+			cs2_configs['cfg407'] = a0;
+			break;
+		case 135:
+			cs2_configs['cfg408'] = a0;
+			break;
+		case 136:
+			cs2_configs['cfg409'] = a0;
+			break;
+		case 137:
+			cs2_configs['cfg410'] = a0;
+			break;
+		case 138:
+			cs2_configs['cfg411'] = a0;
+			break;
+		case 139:
+			cs2_configs['cfg412'] = a0;
+			break;
+		case 140:
+			cs2_configs['cfg413'] = a0;
+			break;
+		case 141:
+			cs2_configs['cfg414'] = a0;
+			break;
+		case 142:
+			cs2_configs['cfg415'] = a0;
+			break;
+		case 143:
+			cs2_configs['cfg416'] = a0;
+			break;
+		case 144:
+			cs2_configs['cfg417'] = a0;
+			break;
+		case 145:
+			cs2_configs['cfg418'] = a0;
+			break;
+		case 146:
+			cs2_configs['cfg419'] = a0;
+			break;
+		case 147:
+			cs2_configs['cfg420'] = a0;
+			break;
+		case 148:
+			cs2_configs['cfg421'] = a0;
+			break;
+		case 149:
+			cs2_configs['cfg422'] = a0;
+			break;
+		case 150:
+			cs2_configs['cfg423'] = a0;
+			break;
+		case 151:
+			cs2_configs['cfg424'] = a0;
+			break;
+		case 152:
+			cs2_configs['cfg425'] = a0;
+			break;
+		case 153:
+			cs2_configs['cfg426'] = a0;
+			break;
+		case 154:
+			cs2_configs['cfg427'] = a0;
+			break;
+		case 155:
+			cs2_configs['cfg428'] = a0;
+			break;
+		case 156:
+			cs2_configs['cfg429'] = a0;
+			break;
+		case 157:
+			cs2_configs['cfg430'] = a0;
+			break;
+		case 158:
+			cs2_configs['cfg431'] = a0;
+			break;
+		case 159:
+			cs2_configs['cfg432'] = a0;
+			break;
+		case 160:
+			cs2_configs['cfg433'] = a0;
+			break;
+		case 161:
+			cs2_configs['cfg434'] = a0;
+			break;
+		case 162:
+			cs2_configs['cfg435'] = a0;
+			break;
+		case 163:
+			cs2_configs['cfg436'] = a0;
+			break;
+		case 164:
+			cs2_configs['cfg437'] = a0;
+			break;
+		case 165:
+			cs2_configs['cfg438'] = a0;
+			break;
+		case 166:
+			cs2_configs['cfg439'] = a0;
+			break;
+		case 167:
+			cs2_configs['cfg440'] = a0;
+			break;
+		case 168:
+			cs2_configs['cfg441'] = a0;
+			break;
+		case 169:
+			cs2_configs['cfg442'] = a0;
+			break;
+		case 170:
+			cs2_configs['cfg443'] = a0;
+			break;
+		case 171:
+			cs2_configs['cfg444'] = a0;
+			break;
+		case 172:
+			cs2_configs['cfg445'] = a0;
+			break;
+		case 173:
+			cs2_configs['cfg446'] = a0;
+			break;
+		case 174:
+			cs2_configs['cfg447'] = a0;
+			break;
+		case 175:
+			cs2_configs['cfg448'] = a0;
+			break;
+		case 176:
+			cs2_configs['cfg449'] = a0;
+			break;
+		case 177:
+			cs2_configs['cfg450'] = a0;
+			break;
+		case 178:
+			cs2_configs['cfg451'] = a0;
+			break;
+		case 179:
+			cs2_configs['cfg452'] = a0;
+			break;
+		case 180:
+			cs2_configs['cfg453'] = a0;
+			break;
+		case 181:
+			cs2_configs['cfg454'] = a0;
+			break;
+		case 182:
+			cs2_configs['cfg455'] = a0;
+			break;
+		case 183:
+			cs2_configs['cfg456'] = a0;
+			break;
+		case 184:
+			cs2_configs['cfg457'] = a0;
+			break;
+		case 185:
+			cs2_configs['cfg458'] = a0;
+			break;
+		case 186:
+			cs2_configs['cfg459'] = a0;
+			break;
+		case 187:
+			cs2_configs['cfg460'] = a0;
+			break;
+		case 188:
+			cs2_configs['cfg461'] = a0;
+			break;
+		case 189:
+			cs2_configs['cfg462'] = a0;
+			break;
+		case 190:
+			cs2_configs['cfg463'] = a0;
+			break;
+		case 191:
+			cs2_configs['cfg464'] = a0;
+			break;
+		case 192:
+			cs2_configs['cfg465'] = a0;
+			break;
+		case 193:
+			cs2_configs['cfg466'] = a0;
+			break;
+		case 194:
+			cs2_configs['cfg467'] = a0;
+			break;
+		case 195:
+			cs2_configs['cfg468'] = a0;
+			break;
+		case 196:
+			cs2_configs['cfg469'] = a0;
+			break;
+		case 197:
+			cs2_configs['cfg470'] = a0;
+			break;
+		case 198:
+			cs2_configs['cfg471'] = a0;
+			break;
+		case 199:
+			cs2_configs['cfg472'] = a0;
+			break;
+		case 200:
+			cs2_configs['cfg473'] = a0;
+			break;
+		case 201:
+			cs2_configs['cfg474'] = a0;
+			break;
+		case 202:
+			cs2_configs['cfg475'] = a0;
+			break;
+		case 203:
+			cs2_configs['cfg476'] = a0;
+			break;
+		case 204:
+			cs2_configs['cfg477'] = a0;
+			break;
+		case 205:
+			cs2_configs['cfg478'] = a0;
+			break;
+		case 206:
+			cs2_configs['cfg479'] = a0;
+			break;
+		case 207:
+			cs2_configs['cfg480'] = a0;
+			break;
+		case 208:
+			cs2_configs['cfg481'] = a0;
+			break;
+		case 209:
+			cs2_configs['cfg482'] = a0;
+			break;
+		case 210:
+			cs2_configs['cfg483'] = a0;
+			break;
+		case 211:
+			cs2_configs['cfg484'] = a0;
+			break;
+		case 212:
+			cs2_configs['cfg485'] = a0;
+			break;
+		case 213:
+			cs2_configs['cfg486'] = a0;
+			break;
+		case 214:
+			cs2_configs['cfg487'] = a0;
+			break;
+		case 215:
+			cs2_configs['cfg488'] = a0;
+			break;
+		case 216:
+			cs2_configs['cfg489'] = a0;
+			break;
+		case 217:
+			cs2_configs['cfg490'] = a0;
+			break;
+		case 218:
+			cs2_configs['cfg491'] = a0;
+			break;
+		case 219:
+			cs2_configs['cfg492'] = a0;
+			break;
+		case 220:
+			cs2_configs['cfg493'] = a0;
+			break;
+		case 221:
+			cs2_configs['cfg494'] = a0;
+			break;
+		case 222:
+			cs2_configs['cfg495'] = a0;
+			break;
+		case 223:
+			cs2_configs['cfg496'] = a0;
+			break;
+		case 224:
+			cs2_configs['cfg497'] = a0;
+			break;
+		case 225:
+			cs2_configs['cfg498'] = a0;
+			break;
+		case 226:
+			cs2_configs['cfg499'] = a0;
+			break;
+		case 227:
+			cs2_configs['cfg500'] = a0;
+			break;
+		case 228:
+			cs2_configs['cfg501'] = a0;
+			break;
+		case 229:
+			cs2_configs['cfg502'] = a0;
+			break;
+		case 230:
+			cs2_configs['cfg503'] = a0;
+			break;
+		case 231:
+			cs2_configs['cfg504'] = a0;
+			break;
+		case 232:
+			cs2_configs['cfg505'] = a0;
+			break;
+		case 233:
+			cs2_configs['cfg506'] = a0;
+			break;
+		case 234:
+			cs2_configs['cfg507'] = a0;
+			break;
+		case 235:
+			cs2_configs['cfg508'] = a0;
+			break;
+		case 236:
+			cs2_configs['cfg509'] = a0;
+			break;
+		case 237:
+			cs2_configs['cfg510'] = a0;
+			break;
+		case 238:
+			cs2_configs['cfg511'] = a0;
+			break;
+		case 239:
+			cs2_configs['cfg512'] = a0;
+			break;
+		case 240:
+			cs2_configs['cfg513'] = a0;
+			break;
+		case 241:
+			cs2_configs['cfg514'] = a0;
+			break;
+		case 242:
+			cs2_configs['cfg515'] = a0;
+			break;
+		case 243:
+			cs2_configs['cfg516'] = a0;
+			break;
+		case 244:
+			cs2_configs['cfg517'] = a0;
+			break;
+		case 245:
+			cs2_configs['cfg518'] = a0;
+			break;
+		case 246:
+			cs2_configs['cfg519'] = a0;
+			break;
+		case 247:
+			cs2_configs['cfg520'] = a0;
+			break;
+		case 248:
+			cs2_configs['cfg521'] = a0;
+			break;
+		case 249:
+			cs2_configs['cfg522'] = a0;
+	}
+	return;
+}

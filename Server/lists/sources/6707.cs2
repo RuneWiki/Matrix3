@@ -1,0 +1,24 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_6707(int a0) {
+	int v0 = 0;
+	int v1 = -1;
+	while (v0 < cs2method_10924(681)) {
+		int v2 = idx17mapData('i', 'S', 681, cs2method_10060(v0, 1));
+		if (v2 != -1 && cs2method_10338(v2) >= a0) {
+			return 0;
+		}
+		v0 = cs2method_10060(v0, 1);
+	}
+	return 1;
+}

@@ -1,0 +1,22 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2078() {
+	int v0 = 0;
+	int v1 = cs2method_10461(20, cs2_configs['cfg636']);
+	if (v1 == 1) {
+		cs2method_10026(54788123, (string)cs2method_10379(v1) + " min");
+	} else {
+		cs2method_10026(54788123, (string)cs2method_10379(v1) + " mins");
+	}
+	return;
+}

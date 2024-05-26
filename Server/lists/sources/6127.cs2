@@ -1,0 +1,36 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6127(int a0) {
+	object v5 = "- Place probes in the mind of your victim to invade their consciousness and steal their memories." + "<br>" + "- Place each in a perfect position to obtain a clear memory." + "<br>" + "- Use the flashing hint circle to find the ideal positions. A faster flash is better." + "<br>" + "- You may also make use of audio hints to help find the ideal positions." + "<br>" + "- You have three probes to place." + "<br>" + "- Click the screen to add a probe in place." + "<br>" + "- You will exit the mind of your victim when you have placed all three probes.";
+	int v2 = 10;
+	int v3 = 16;
+	int v1 = cs2method_10461(cs2method_10236(83230796), cs2method_10051(v2, 2));
+	int v0 = cs2method_10805(v1, 495, v5);
+	cs2method_10637(0, 0, v3, 83230797);
+	int v4 = cs2method_10051(v3, v0);
+	cs2method_10112(v2, v2, 0, 0, 83230797);
+	cs2method_10283(v1, v4, 0, 0, 83230797);
+	cs2method_10026(83230797, v5);
+	int v6 = cs2method_10060(cs2method_10060(v4, v2), v2);
+	if (v6 < cs2method_10823(83230796)) {
+		v6 = cs2method_10823(83230796);
+	}
+	cs2method_11130(cs2method_10236(83230796), v6, 83230796);
+	script_31(83230795, 83230796, 5666, 5663, 5664, 5665, 5686, 5685);
+	if (a0 == 1) {
+		cs2method_10467(0, 83230791);
+	} else {
+		cs2method_10467(1, 83230791);
+	}
+	return;
+}

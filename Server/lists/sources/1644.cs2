@@ -1,0 +1,40 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1644() {
+	object v2 = "Auto-retaliate disabled";
+	object v0 = "Auto-retaliate" + "<br>" + "(off)";
+	int v1 = 655;
+	int v3 = 9193;
+	if (client_configs['cfg462'] != 1) {
+		v2 = "Auto-retaliate enabled";
+		v0 = "Auto-retaliate" + "<br>" + "(on)";
+		v1 = 656;
+		v3 = 9194;
+	}
+	cs2method_10026(21430289, v0);
+	cs2method_10758(v1, 21430288);
+	cs2method_20680(new function<script_44>(int a0,int a1) {
+		cs2method_10758(a1, a0);
+		return;
+	}, new WidgetPointer(-32768,3), v3, "Id", new WidgetPointer(327,16));
+	cs2method_20750(new function<script_44>(int a0,int a1) {
+		cs2method_10758(a0, a1);
+		return;
+	}, new WidgetPointer(-32768,3), v1, "Id", new WidgetPointer(327,16));
+	cs2method_21121(new function<script_8799>(object a0,int a1,int a2) {
+		script_8800(a1, a2, a0);
+		return;
+	}, (string)v2, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(327,15));
+	script_8808();
+	return;
+}

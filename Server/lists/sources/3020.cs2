@@ -1,0 +1,105 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3020(object a0,int a1) {
+	int v5 = 0;
+	object v6 = "";
+	object v4 = "";
+	int v2 = -1;
+	object v1 = "";
+	object v0 = "";
+	int v3 = -1;
+	if (cs2method_10265(cs2_configs['cfg2478']) > 0) {
+		switch (a1) {
+			case 0:
+				if (cs2method_10265(cs2_configs['cfg2478']) > 0 && cs2method_10265(a0) > 0) {
+					if (cs2method_10149() == 2) {
+						script_3047(1);
+					}
+					cs2method_10365(cs2method_10765(a0), cs2_configs['cfg2478']);
+				}
+				break;
+			case 1:
+				if (cs2method_10193() < 0) {
+					cs2method_10810("Unable to update Friends List - system busy.");
+				} else {
+					if (cs2method_10265(cs2_configs['cfg2478']) > 0) {
+						cs2method_11133(cs2_configs['cfg2478']);
+					}
+				}
+				break;
+			case 2:
+				if (cs2method_10260() < 0) {
+					cs2method_10810("Unable to update Ignore List - system busy.");
+				} else {
+					if (cs2method_10265(cs2_configs['cfg2478']) > 0) {
+						cs2method_10290(cs2_configs['cfg2478']);
+					}
+				}
+				break;
+			case 3:
+				if (cs2method_10193() < 0) {
+					cs2method_10810("Unable to update Friends List - system busy.");
+				} else {
+					if (cs2method_10265(cs2_configs['cfg2478']) > 0) {
+						cs2method_10613(cs2_configs['cfg2478']);
+					}
+				}
+				break;
+			case 4:
+				if (cs2method_10260() < 0) {
+					cs2method_10810("Unable to update Ignore List - system busy.");
+				} else {
+					if (cs2method_10265(cs2_configs['cfg2478']) > 0) {
+						cs2method_10762(cs2_configs['cfg2478']);
+					}
+				}
+				break;
+			case 5:
+				if (cs2method_10588() <= 0 && cs2method_10265(cs2_configs['cfg2478']) > 0) {
+					cs2method_10160(cs2_configs['cfg2478']);
+				}
+				break;
+			case 6:
+				cs2_configs['cfg1094'] = 0;
+				cs2method_10824(0, "bugtracker_v4", "index.html");
+				break;
+			case 7:
+				if (cs2method_10265(cs2_configs['cfg2478']) > 0) {
+					script_4465(cs2_configs['cfg2478']);
+				}
+				break;
+			case 9:
+				if (cs2method_10588() > 0 && cs2method_10265(cs2_configs['cfg2478']) > 0) {
+					script_1633(cs2_configs['cfg2478']);
+				}
+				break;
+			case 10:
+				cs2method_10099();
+				cs2_configs['cfg1100'] = -1;
+				break;
+			case 12:
+				script_3017();
+				cs2method_10099();
+				cs2_configs['cfg1100'] = -1;
+				script_4701(cs2_configs['cfg2482'], 1, cs2_configs['cfg1553'], cs2_configs['cfg1554']);
+				return;
+		}
+	}
+	cs2_configs['cfg1650'] = 0;
+	if (v5 == 1) {
+		script_3015(v2, v6, v4, v1, v0);
+	} else {
+		script_3017();
+	}
+	return;
+}

@@ -1,0 +1,62 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9796(int a0,int a1,int a2) {
+	int v0 = 0;
+	switch (a2) {
+		case 68157471:
+			if (client_configs['cfg4166'].bitcfg21695 == 1) {
+				v0 = 1;
+			}
+			break;
+		case 68157477:
+			if (client_configs['cfg4166'].bitcfg21696 == 1) {
+				v0 = 1;
+			}
+			break;
+		case 68157482:
+			if (client_configs['cfg4166'].bitcfg21697 == 1) {
+				v0 = 1;
+			}
+			break;
+		case 68157487:
+			if (client_configs['cfg4166'].bitcfg21698 == 1) {
+				v0 = 1;
+			}
+			break;
+		case 68157505:
+			if (client_configs['cfg4166'].bitcfg21699 == 1) {
+				v0 = 1;
+			}
+			break;
+		case 68157512:
+			if (client_configs['cfg4166'].bitcfg21700 == 1) {
+				v0 = 1;
+			}
+			break;
+		case 68157519:
+			if (client_configs['cfg4166'].bitcfg21701 == 1) {
+				v0 = 1;
+			}
+			break;
+		case 68157526:
+			if (client_configs['cfg4166'].bitcfg21702 == 1) {
+				v0 = 1;
+			}
+	}
+	if (client_configs['cfg4166'].bitcfg21703 >= a1 || v0 == 1) {
+		cs2method_10467(1, a2);
+	} else {
+		cs2method_10467(0, a2);
+	}
+	return;
+}

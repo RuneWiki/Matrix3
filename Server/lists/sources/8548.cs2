@@ -1,0 +1,31 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_8548_struct(3,0,0) script_8548(int a0) {
+	switch (a0) {
+		case 18:
+			return new script_8548_struct(cs2_configs['cfg8'], cs2_configs['cfg7'], cs2_configs['cfg3716']);
+		case 19:
+			return new script_8548_struct(cs2_configs['cfg2841'], cs2_configs['cfg2840'], cs2_configs['cfg3717']);
+		case 20:
+			return new script_8548_struct(cs2_configs['cfg2843'], cs2_configs['cfg2842'], cs2_configs['cfg3718']);
+		case 21:
+			return new script_8548_struct(cs2_configs['cfg2845'], cs2_configs['cfg2844'], cs2_configs['cfg3719']);
+		case 22:
+			return new script_8548_struct(cs2_configs['cfg2847'], cs2_configs['cfg2846'], cs2_configs['cfg3720']);
+		case 23:
+			return new script_8548_struct(cs2_configs['cfg3767'], cs2_configs['cfg3766'], cs2_configs['cfg3768']);
+		case 1019:
+			return new script_8548_struct(2147483647, 2147483647, 2147483647);
+	}
+	return new script_8548_struct(1, 1, 1);
+}

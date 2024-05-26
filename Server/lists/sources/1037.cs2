@@ -1,0 +1,63 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1037(int a0,int a1,int a2) {
+	script_8543(a0);
+	script_8620(a0, a1);
+	script_8618(a0, -1);
+	script_8622(a0, 0);
+	script_8612("", a0);
+	object v0 = cs2method_10259(a2);
+	if (script_8613(a0) == 1) {
+		v0 = "To " + script_8605(a0) + ": " + "<col=10f010>" + (string)v0;
+	} else if (script_8613(a0) == 2) {
+		v0 = "[" + "<col=6464a0>" + (string)cs2method_10403() + "<col=ffffff>" + "]: " + "<col=10f010>" + (string)v0;
+	} else if (script_8613(a0) == 8) {
+		if (cs2method_10435() == 1) {
+			v0 = "[" + "<col=6464a0>" + (string)cs2method_10017() + "<col=ffffff>" + "]: " + "<col=10f010>" + (string)v0;
+		}
+	} else if (script_8613(a0) == 10) {
+		if (cs2method_10143() == 1) {
+			v0 = "[" + "<col=6464a0>" + (string)cs2method_10017() + "<col=ffffff>" + "]: " + "<col=10f010>" + (string)v0;
+		}
+	} else {
+		v0 = v0;
+	}
+	cs2method_10467(1, script_8585(a0));
+	cs2method_20380(new function<none>() {
+	}, "", new WidgetPointer(script_8556(a0)));
+	cs2method_10467(0, script_8586(a0));
+	cs2method_10467(1, script_8588(a0));
+	cs2method_10467(1, script_8590(a0));
+	cs2method_10467(0, script_8594(a0));
+	cs2method_10467(1, script_8598(a0));
+	cs2method_10467(1, script_8599(a0));
+	cs2method_10467(0, script_8600(a0));
+	cs2method_10520(16777215, script_8600(a0));
+	cs2method_10170(20452, script_8600(a0));
+	cs2method_10637(0, 1, 0, script_8600(a0));
+	cs2method_10026(script_8600(a0), v0);
+	cs2method_11101(1, script_8600(a0));
+	cs2method_10273(script_8595(a0));
+	cs2method_10520(15732752, script_8596(a0));
+	cs2method_10026(script_8596(a0), "Search for: *");
+	cs2method_11101(1, script_8596(a0));
+	cs2method_11130(0, 0, script_8595(a0));
+	cs2method_10273(script_8597(a0));
+	if (cs2method_10324(script_8596(a0)) == 1) {
+		cs2method_10995(3648, a2);
+	}
+	if (cs2method_10324(script_8586(a0)) == 1) {
+		cs2method_10995(3651, 2);
+	}
+	return;
+}

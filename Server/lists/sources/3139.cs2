@@ -1,0 +1,29 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3139(int a0) {
+	if (cs2_configs['cfg998'] == a0) {
+		script_1857(script_1854());
+		script_1858(0);
+	} else {
+		if (cs2_configs['cfg999'] == a0) {
+			script_1858(0);
+		}
+	}
+	cs2_configs['cfg998'] = script_1853();
+	cs2_configs['cfg999'] = script_1854();
+	script_3113();
+	object v0 = "Your changes cannot be saved because" + "<br>" + "you are using the unsigned client.";
+	script_3143("World " + (string)cs2method_10379(a0) + " has been removed from your favourites.", 0);
+	script_3065(1);
+	return;
+}

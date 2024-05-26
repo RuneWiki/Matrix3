@@ -1,0 +1,44 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4169(int a0) {
+	if (a0 == 2) {
+		cs2method_10026(41418812, "Unhallowed hood");
+		cs2method_10039(25362, -1, 41418811);
+		cs2method_10026(41418835, "Unhallowed torso");
+		cs2method_10039(25363, -1, 41418834);
+		cs2method_10026(41418848, "Unhallowed skirt");
+		cs2method_10039(25364, -1, 41418847);
+		cs2method_10026(41418861, "Unhallowed boots");
+		cs2method_10039(25366, -1, 41418860);
+		cs2method_10026(41418874, "Unhallowed gloves");
+		cs2method_10039(25365, -1, 41418873);
+		cs2method_10026(41418887, "Unhallowed cape");
+		cs2method_10039(25367, -1, 41418886);
+	} else {
+		cs2method_10026(41418812, "Hallowed hood");
+		cs2method_10039(25356, -1, 41418811);
+		cs2method_10026(41418835, "Hallowed torso");
+		cs2method_10039(25357, -1, 41418834);
+		cs2method_10026(41418848, "Hallowed skirt");
+		cs2method_10039(25358, -1, 41418847);
+		cs2method_10026(41418861, "Hallowed boots");
+		cs2method_10039(25360, -1, 41418860);
+		cs2method_10026(41418874, "Hallowed gloves");
+		cs2method_10039(25359, -1, 41418873);
+		cs2method_10026(41418887, "Hallowed cape");
+		cs2method_10039(25361, -1, 41418886);
+	}
+	cs2method_10039(25354, -1, 41418899);
+	cs2method_10039(25355, -1, 41418915);
+	return;
+}

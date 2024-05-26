@@ -1,0 +1,113 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3991(int a0) {
+	object v14;
+	if (a0 == 4095) {
+		a0 = 4094;
+	}
+	int v11 = script_5795(a0);
+	if (v11 == -1) {
+		return;
+	}
+	script_5796(a0, 1, 60096638, 60096635, 60096592, 60096637, 60096640, -1);
+	int v18 = script_3227(a0);
+	if (v18 != 2 && client_configs['cfg1293'].bitcfg3617 == 0) {
+		cs2method_10467(0, 60096647);
+	} else {
+		cs2method_10467(1, 60096647);
+	}
+	object v22 = cs2method_10427("Difficulty : ", idx17mapData('i', 's', 3488, idx22mapAttribute(v11, 1272)));
+	object v0 = cs2method_10427("Area : ", idx17mapData('i', 's', 3487, idx22mapAttribute(v11, 1267)));
+	cs2method_10026(60096636, v22);
+	cs2method_10026(60096639, v0);
+	cs2method_10467(1, 60096601);
+	cs2method_10467(1, 60096602);
+	cs2method_10467(1, 60096603);
+	cs2method_10467(1, 60096604);
+	cs2method_10467(1, 60096605);
+	cs2method_10467(1, 60096606);
+	cs2method_10467(1, 60096607);
+	cs2method_10467(1, 60096608);
+	cs2method_10467(1, 60096609);
+	cs2method_10467(1, 60096610);
+	cs2method_10467(1, 60096611);
+	cs2method_10467(1, 60096612);
+	int v5 = 0;
+	object v15 = "";
+	int v21 = 0;
+	int v4 = a0;
+	script_3995_struct(2,1,0) v13 = script_3995(v4);
+	int v1 = v13.intpart_1;
+	object v3 = v13.objectpart_0;
+	int v9 = v13.intpart_0;
+	cs2method_10026(60096600, v3);
+	cs2method_10520(v1, 60096600);
+	cs2method_10283(cs2method_10236(60096600), cs2method_10805(cs2method_10236(60096600), 17813, v3), 0, 0, 60096600);
+	cs2method_10112(9, 16, 0, 0, 60096600);
+	for (int v8 = 34, int v2 = v8, int v20 = 0; v20 < 12; v8 = v6) {
+		int v6 = script_3222(v8, a0, v20, (int)idx17mapData('i', 'I', 3493, v20));
+		if (v6 == v8) {
+			v20 = 12;
+		} else {
+			v20 = cs2method_10060(v20, 1);
+		}
+	}
+	cs2method_11130(0, cs2method_11048(v8, cs2method_10823(60096599)), 60096599);
+	script_7791(60096613, 60096599);
+	if (v8 > cs2method_10823(60096599)) {
+		cs2method_10467(0, 60096613);
+	} else {
+		cs2method_10467(1, 60096613);
+	}
+	cs2method_10251(0, 0, 60096587);
+	int v19 = script_5797(a0, -1, 8, 1, 9, 104, 60096588, 60096589, 60096590, 60096587, 60096692);
+	int v10 = cs2method_10060(cs2method_10051(cs2method_10461(idx22mapAttribute(v11, 1293), 1), 5), idx22mapAttribute(v11, 1272));
+	object v12 = "";
+	if (idx22mapAttribute(v11, 1270) != 4094) {
+		v14 = idx22mapAttribute(idx17mapData('i', 'J', 2252, idx22mapAttribute(v11, 1270)), 951);
+	} else {
+		v14 = idx22mapAttribute(v11, 1292);
+	}
+	int v7 = idx17mapData('i', 'J', 3494, v10);
+	object v16 = "";
+	if (cs2method_10846(v14, "") == 0 && idx22mapAttribute(v11, 1322) == 0) {
+		if (a0 == 3060 && client_configs['cfg4056'].bitcfg21373 == 1) {
+			v14 = "There is no reward for completing this task.";
+		} else {
+			v14 = "Completing this Task will earn you a sum of coins based on how many Tasks you have already done.";
+		}
+	}
+	cs2method_10273(60096595);
+	int v17 = script_5798(4094, v7, 0, 5, v14, 60096595, -1, 60096692);
+	cs2method_10251(0, 0, 60096594);
+	if (v7 != -1 && v7 != 1645) {
+		int v23 = script_5798(4094, v7, 0, v17, idx22mapAttribute(v7, 1273), 60096595, -1, 60096692);
+		v17 = script_5798(4094, v7, 0, v23, idx22mapAttribute(v7, 1292), 60096595, -1, 60096692);
+		int v24 = script_5797(4094, v7, 8, 1, v17, 104, 60096596, -1, 60096597, 60096594, 60096692);
+		/* 
+			java.lang.RuntimeException: Stack underflow
+				at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+				at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+				at tests.Main.main(Main.java:69)
+			
+		 */
+	}
+	if (script_3999(a0) == 0) {
+		cs2method_10467(0, 60096581);
+		script_4019(0);
+	}
+	return;
+}

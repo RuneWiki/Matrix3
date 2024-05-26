@@ -1,0 +1,70 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8938(int a0) {
+	int v9 = -1;
+	int v1 = -1;
+	int v6 = -1;
+	int v8 = -1;
+	int v0 = -1;
+	int v14 = 0;
+	int v13 = idx17mapData('i', 'J', 7568, a0);
+	int v10 = idx22mapAttribute(v13, 3404);
+	int v11 = a0;
+	script_8928_struct(6,0,0) v2 = script_8928(v11);
+	int v4 = v2.intpart_5;
+	int v5 = v2.intpart_4;
+	int v15 = v2.intpart_3;
+	int v3 = v2.intpart_2;
+	int v7 = v2.intpart_1;
+	int v12 = v2.intpart_0;
+	if (idx22mapAttribute(v13, 3410) == 1) {
+		v10 = cs2method_10122(40, 100, v10);
+	}
+	if (cs2_configs['cfg2774'] == 1) {
+		v10 = cs2method_10122(95, 100, v10);
+	}
+	if (client_configs['cfg3669'] < v10) {
+		return;
+	}
+	if (idx22mapAttribute(v13, 3408) == 1) {
+		script_8936(v15, v7, 0, v13, 1);
+		cs2method_10797("Purchased");
+	} else {
+		if (v4 == -1) {
+			return;
+		}
+		if (idx22mapAttribute(v13, 3410) == 0) {
+			cs2method_10026(v7, "Reclaim");
+		} else {
+			cs2method_10026(v7, cs2method_10379(v10));
+		}
+		cs2method_10758(7892, v4);
+		cs2method_20680(new function<script_8930>(int a0) {
+			cs2method_10758(7895, a0);
+			return;
+		}, new WidgetPointer(v4), "I", new WidgetPointer(v4));
+		cs2method_20069(new function<script_8930>(int a0) {
+			cs2method_10758(7895, a0);
+			return;
+		}, new WidgetPointer(v4), "I", new WidgetPointer(v4));
+		cs2method_21103(new function<script_8930>(int a0) {
+			cs2method_10758(7895, a0);
+			return;
+		}, new WidgetPointer(v4), "I", new WidgetPointer(v4));
+		cs2method_20750(new function<script_8931>(int a0) {
+			cs2method_10758(7892, a0);
+			return;
+		}, new WidgetPointer(v4), "I", new WidgetPointer(v4));
+	}
+	return;
+}

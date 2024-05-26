@@ -1,0 +1,114 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7054(int a0,int a1,int a2,int a3) {
+	int v1 = 0;
+	int v2 = 0;
+	int v0 = -1;
+	int v4 = script_7975(1430, a2);
+	switch (a2) {
+		case 1:
+			v1 = client_configs['cfg727'].bitcfg1723;
+			v2 = client_configs['cfg727'].bitcfg1724;
+			break;
+		case 2:
+			v1 = client_configs['cfg728'].bitcfg1725;
+			v2 = client_configs['cfg728'].bitcfg1726;
+			break;
+		case 3:
+			v1 = client_configs['cfg729'].bitcfg1727;
+			v2 = client_configs['cfg729'].bitcfg1728;
+			break;
+		case 4:
+			v1 = client_configs['cfg730'].bitcfg1729;
+			v2 = client_configs['cfg730'].bitcfg1730;
+			break;
+		case 5:
+			v1 = client_configs['cfg731'].bitcfg1731;
+			v2 = client_configs['cfg731'].bitcfg1732;
+			break;
+		case 6:
+			v1 = client_configs['cfg732'].bitcfg1733;
+			v2 = client_configs['cfg732'].bitcfg1734;
+			break;
+		case 7:
+			v1 = client_configs['cfg733'].bitcfg1735;
+			v2 = client_configs['cfg733'].bitcfg1736;
+			break;
+		case 8:
+			v1 = client_configs['cfg734'].bitcfg1737;
+			v2 = client_configs['cfg734'].bitcfg1738;
+			break;
+		case 9:
+			v1 = client_configs['cfg735'].bitcfg1739;
+			v2 = client_configs['cfg735'].bitcfg1740;
+			break;
+		case 10:
+			v1 = client_configs['cfg736'].bitcfg1741;
+			v2 = client_configs['cfg736'].bitcfg1742;
+			break;
+		case 11:
+			v1 = client_configs['cfg737'].bitcfg1743;
+			v2 = client_configs['cfg737'].bitcfg1744;
+			break;
+		case 12:
+			v1 = client_configs['cfg738'].bitcfg1745;
+			v2 = client_configs['cfg738'].bitcfg1746;
+			break;
+		case 13:
+			v1 = client_configs['cfg4432'].bitcfg22337;
+			v2 = client_configs['cfg4432'].bitcfg22338;
+			break;
+		case 14:
+			v1 = client_configs['cfg4433'].bitcfg22339;
+			v2 = client_configs['cfg4433'].bitcfg22340;
+	}
+	int v3 = idx17mapData('i', 'J', 6740, v2);
+	if (v1 != 6) {
+		cs2method_20348(new function<none>() {
+		}, "", new WidgetPointer(v4));
+		cs2method_10704(255, v4);
+		cs2method_20162(new function<none>() {
+		}, "", new WidgetPointer(v4));
+		cs2method_10520(9868950, v4);
+		return;
+	}
+	if (v3 != a1) {
+		cs2method_20348(new function<none>() {
+		}, "", new WidgetPointer(v4));
+		cs2method_10704(255, v4);
+		cs2method_20162(new function<none>() {
+		}, "", new WidgetPointer(v4));
+		cs2method_10520(9868950, v4);
+		return;
+	}
+	if (a3 == 1) {
+		cs2method_10520(16750230, v4);
+	} else {
+		cs2method_10520(9868950, v4);
+	}
+	if (a0 == 1) {
+		cs2method_10704(cs2method_10872(cs2method_10060(cs2method_10690(v4), 5), 255), v4);
+		if (cs2method_10690(v4) >= 255) {
+			int v5 = 0;
+		}
+	} else {
+		cs2method_10704(cs2method_11048(cs2method_10461(cs2method_10690(v4), 5), 0), v4);
+		if (cs2method_10690(v4) <= 0) {
+			int v5 = 1;
+		}
+	}
+	if (script_8292(2, -1) == 1) {
+		cs2method_10704(cs2method_10690(v4), script_7975(1436, a2));
+	}
+	return;
+}

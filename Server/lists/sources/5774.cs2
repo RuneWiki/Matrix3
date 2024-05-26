@@ -1,0 +1,48 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5774(int a0,int a1) {
+	if (a1 == 1) {
+		cs2method_10758(9615, a0);
+	} else {
+		cs2method_10758(9618, a0);
+	}
+	cs2method_20680(new function<script_4009>(int a0,int a1,int a2,int a3) {
+		if (a0 == -1) {
+			script_5780(a3, a2, a1);
+		} else {
+			script_5781(a3, a2, a1, a0);
+		}
+		if (a3 == 0) {
+			script_41(60096692);
+			script_41(79953940);
+			script_41(69206037);
+			script_41(80019477);
+		}
+		return;
+	}, 1, a1, new WidgetPointer(-32768,3), -1, "iiIi", new WidgetPointer(a0));
+	cs2method_20750(new function<script_4009>(int a0,int a1,int a2,int a3) {
+		if (a0 == -1) {
+			script_5780(a3, a1, a2);
+		} else {
+			script_5781(a3, a1, a2, a0);
+		}
+		if (a3 == 0) {
+			script_41(60096692);
+			script_41(79953940);
+			script_41(69206037);
+			script_41(80019477);
+		}
+		return;
+	}, 0, a1, new WidgetPointer(-32768,3), -1, "iiIi", new WidgetPointer(a0));
+	return;
+}

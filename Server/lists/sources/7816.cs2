@@ -1,0 +1,29 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_7816_struct(6,0,0) script_7816(int a0) {
+	int v0 = 72745040;
+	int v2 = 72745070;
+	int v4 = 72745069;
+	int v3 = 72745039;
+	int v5 = 72745098;
+	int v1 = 72745071;
+	if (a0 == 94371896) {
+		v0 = 94371910;
+		v2 = 94371908;
+		v4 = 94371907;
+		v3 = 94371909;
+		v5 = 94371914;
+		v1 = 94371911;
+	}
+	return new script_7816_struct(v0, v2, v4, v3, v5, v1);
+}

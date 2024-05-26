@@ -1,0 +1,39 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9128(int a0,int a1,int a2,int a3) {
+	int v2 = client_configs['cfg3908'];
+	int v1 = script_7231(a1, a2, a0);
+	int v0 = cs2method_10060(1, v1);
+	client_configs['cfg3908'] = cs2method_10122(client_configs['cfg3905'], cs2method_10872(100, client_configs['cfg3905']), v0);
+	if (client_configs['cfg3908'] != v2) {
+		cs2method_20162(new function<script_9129>(int a0,int a1) {
+			int v0 = 0;
+			if (cs2method_10609(a1) == 1) {
+				cs2method_20162(new function<none>() {
+				}, "", new WidgetPointer(a0));
+				if (cs2_configs['cfg2238'] != -1) {
+					int v1 = cs2method_10060(1, cs2_configs['cfg2238']);
+					client_configs['cfg3908'] = cs2method_10122(client_configs['cfg3905'], cs2method_10872(100, client_configs['cfg3905']), v1);
+					script_9126();
+					script_9131();
+					script_8860();
+				}
+			}
+			return;
+		}, new WidgetPointer(a1), new WidgetPointer(a3), "II", new WidgetPointer(a1));
+		script_9126();
+		script_9131();
+		script_8860();
+	}
+	return;
+}

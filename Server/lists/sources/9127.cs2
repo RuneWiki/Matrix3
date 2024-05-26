@@ -1,0 +1,41 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9127(int a0) {
+	if (client_configs['cfg3905'] == 0) {
+		return;
+	}
+	int v0 = client_configs['cfg3908'];
+	switch (a0) {
+		case 0:
+			if (client_configs['cfg3908'] != client_configs['cfg3905']) {
+				cs2method_10670(36961, 1, 0, 255);
+			} else {
+				cs2method_10670(10046, 1, 0, 255);
+			}
+			client_configs['cfg3908'] = cs2method_10872(client_configs['cfg3905'], cs2method_10060(client_configs['cfg3908'], 1));
+			break;
+		case 1:
+			if (client_configs['cfg3908'] != 1) {
+				cs2method_10670(36961, 1, 0, 255);
+			} else {
+				cs2method_10670(10046, 1, 0, 255);
+			}
+			client_configs['cfg3908'] = cs2method_11048(1, cs2method_10461(client_configs['cfg3908'], 1));
+	}
+	if (v0 != client_configs['cfg3908']) {
+		script_9126();
+		script_9131();
+		script_8860();
+	}
+	return;
+}

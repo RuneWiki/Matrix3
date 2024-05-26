@@ -1,0 +1,41 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_8682_struct(7,0,0) script_8682(int a0) {
+	int v3 = -1;
+	int v6 = -1;
+	int v5 = -1;
+	int v0 = -1;
+	int v1 = -1;
+	int v4 = -1;
+	int v2 = -1;
+	if (a0 == 96534541) {
+		v3 = 96534535;
+		v6 = 96534534;
+		v5 = 96534533;
+		v0 = 96534536;
+		v1 = 96534537;
+		v4 = 96534538;
+		v2 = 96534528;
+	} else {
+		if (a0 == 96600088) {
+			v3 = 96600072;
+			v6 = 96600071;
+			v5 = 96600076;
+			v0 = 96600077;
+			v1 = 96600078;
+			v4 = 96600073;
+			v2 = 96600064;
+		}
+	}
+	return new script_8682_struct(v3, v6, v5, v0, v1, v4, v2);
+}

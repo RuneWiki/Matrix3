@@ -1,0 +1,29 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6192() {
+	if (cs2_configs['cfg1919'] < 1 && client_configs['cfg2863'].bitcfg16467 < 1) {
+		cs2method_10467(1, 59376027);
+		cs2method_10467(1, 59376055);
+		cs2method_10467(1, 59376053);
+		cs2method_10467(0, 59375655);
+		cs2method_10467(1, 59375618);
+		cs2method_10467(0, 59375620);
+		cs2method_10026(59375950, "You have successfully validated your email address." + "<br>" + " This gives you access to all these perks.");
+		cs2method_10026(59375951, "To collect your perks head into the game world and visit Diango in Draynor Market. Your extra bank space has already been added to your account.");
+		cs2method_10026(59376135, "continue");
+	} else {
+		cs2method_10467(0, 59375653);
+		script_6190();
+	}
+	return;
+}

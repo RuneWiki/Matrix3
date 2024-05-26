@@ -1,0 +1,134 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_8508(object a0,int a1,int a2) {
+	int v1;
+	int v2;
+	int v8;
+	int v10;
+	int v7;
+	int v13;
+	int v14;
+	int v0 = 0;
+	int v3 = 0;
+	int v5 = 0;
+	int v11 = 0;
+	int v4 = 0;
+	int v12 = 0;
+	int v9 = 0;
+	int v6 = 0;
+	if (client_configs['cfg3680'].bitcfg22315 == 0) {
+		int v17 = a2;
+		script_8547_struct(8,0,0) v15 = script_8547(v17);
+		int v16 = v15.intpart_7;
+		v7 = v15.intpart_6;
+		v10 = v15.intpart_5;
+		v1 = v15.intpart_4;
+		v13 = v15.intpart_3;
+		v2 = v15.intpart_2;
+		v14 = v15.intpart_1;
+		v8 = v15.intpart_0;
+	} else {
+		script_3780_struct(8,0,0) v16 = script_3780();
+		int v15 = v16.intpart_7;
+		v7 = v16.intpart_6;
+		v10 = v16.intpart_5;
+		v1 = v16.intpart_4;
+		v13 = v16.intpart_3;
+		v2 = v16.intpart_2;
+		v14 = v16.intpart_1;
+		v8 = v16.intpart_0;
+	}
+	switch (a1) {
+		case 109:
+			if (v8 == 1) {
+				return 0;
+			}
+			break;
+		case 2:
+		case 17:
+			if (v13 == 1 && script_506(a0) == 0 && cs2method_10563(cs2method_10765(a0)) == 0) {
+				return 0;
+			}
+			break;
+		case 3:
+		case 18:
+			if (v1 == 1 && script_506(a0) == 0 && cs2method_10563(cs2method_10765(a0)) == 0) {
+				return 0;
+			}
+			break;
+		case 100:
+		case 101:
+		case 111:
+		case 108:
+		case 106:
+		case 105:
+		case 118:
+		case 114:
+		case 113:
+		case 112:
+			if (v14 == 1 && script_506(a0) == 0 && cs2method_10563(cs2method_10765(a0)) == 0) {
+				return 0;
+			}
+			break;
+		case 42:
+		case 41:
+		case 107:
+		case 44:
+		case 45:
+			if (v7 == 1 && script_506(a0) == 0 && cs2method_10563(cs2method_10765(a0)) == 0) {
+				return 0;
+			}
+			break;
+		case 9:
+		case 20:
+			if (v10 == 1 && script_506(a0) == 0 && cs2method_10563(cs2method_10765(a0)) == 0) {
+				return 0;
+			}
+			break;
+		case 102:
+			if (v2 == 1 && script_506(a0) == 0 && cs2method_10563(cs2method_10765(a0)) == 0) {
+				return 0;
+			}
+			break;
+		case 119:
+			if (cs2method_10654(a0) == 1) {
+				return 0;
+			}
+			break;
+		case 121:
+			if (v8 == 1 || client_configs['cfg3180'].bitcfg16442 == 1) {
+				return 0;
+			}
+			break;
+		case 122:
+			if (v8 == 1 || client_configs['cfg3181'].bitcfg17864 == 1) {
+				return 0;
+			}
+			break;
+		case 123:
+			if (v8 == 1 || client_configs['cfg3522'].bitcfg9784 == 1) {
+				return 0;
+			}
+			break;
+		case 124:
+			if (v8 == 1 || client_configs['cfg3587'].bitcfg18271 == 1) {
+				return 0;
+			}
+			break;
+		case 126:
+			if (client_configs['cfg1775'].bitcfg21225 == 1) {
+				return 0;
+			}
+	}
+	return 1;
+}

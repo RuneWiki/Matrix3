@@ -1,0 +1,30 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3200(int a0) {
+	if (cs2method_10265(cs2_configs['cfg2481']) > 0) {
+		cs2method_10436(a0, cs2_configs['cfg6'], cs2_configs['cfg2481'], "");
+	}
+	script_3194();
+	if (cs2method_10265(cs2_configs['cfg2481']) > 0 && cs2method_10654(cs2_configs['cfg2481']) == 0 && cs2method_10846(cs2_configs['cfg2481'], cs2method_10927()) != 0) {
+		if (a0 == 5) {
+			cs2_configs['cfg1094'] = 1;
+		}
+		script_3203();
+	} else {
+		cs2_configs['cfg1094'] = 0;
+		if (a0 == 5) {
+			script_2190(0, "", 6, "Open a bug report form?" + "<br>" + "(opens a new window)", "", "", 1);
+		}
+	}
+	return;
+}

@@ -1,0 +1,37 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9627(int a0,int a1,int a2) {
+	int v1 = cs2method_10968(cs2method_10060(a2, a0), 2);
+	int v0 = globalarray_0[v1];
+	globalarray_0[v1] = globalarray_0[a0];
+	globalarray_0[a0] = v0;
+	for (int v3 = a2, int v5 = a2, int v2 = 0, int v4 = -1, int v6 = -1; v5 < a0; v5 = cs2method_10060(v5, 1)) {
+		int v8 = idx17mapData('i', 'J', 1805, globalarray_0[v5]);
+		int v7 = idx17mapData('i', 'J', 1805, v0);
+		if (idx22mapAttribute(v8, 4031) < idx22mapAttribute(v7, 4031)) {
+			int v7 = globalarray_0[v5];
+			globalarray_0[v5] = globalarray_0[v3];
+			globalarray_0[v3] = v7;
+			v3 = cs2method_10060(v3, 1);
+		}
+	}
+	globalarray_0[a0] = globalarray_0[v3];
+	globalarray_0[v3] = v0;
+	if (a2 < cs2method_10461(v3, 1)) {
+		script_9627(0, a2, cs2method_10461(v3, 1));
+	}
+	if (cs2method_10060(v3, 1) < a0) {
+		script_9627(0, cs2method_10060(v3, 1), a0);
+	}
+	return;
+}

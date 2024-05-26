@@ -1,0 +1,30 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9388(int a0,int a1,int a2) {
+	object v0 = "";
+	switch (a2) {
+		case 0:
+			v0 = idx22mapAttribute(25053, 3981);
+			break;
+		case 1:
+			v0 = idx22mapAttribute(25047, 3981);
+			break;
+		case 6:
+			v0 = idx22mapAttribute(25050, 3981);
+			break;
+		case 5:
+			v0 = idx22mapAttribute(25049, 3981);
+	}
+	script_8800(a0, a1, v0);
+	return;
+}

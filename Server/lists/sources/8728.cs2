@@ -1,0 +1,28 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_8728(int a0,int a1) {
+	int v12 = 0;
+	int v3 = 0;
+	int v2 = a0;
+	int v6 = a1;
+	script_8701_struct(8,0,0) v8 = script_8701(v2, v6);
+	int v0 = v8.intpart_7;
+	int v9 = v8.intpart_6;
+	int v1 = v8.intpart_5;
+	int v11 = v8.intpart_4;
+	int v5 = v8.intpart_3;
+	int v7 = v8.intpart_2;
+	int v10 = v8.intpart_1;
+	int v4 = v8.intpart_0;
+	return v1;
+}

@@ -1,0 +1,81 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_3014() {
+	flow_0:
+		object v7 = "news";
+		object v5 = "";
+		int v6 = cs2method_11097(3);
+		IF (cs2method_10948() >= 4495) 
+			GOTO	flow_1
+		GOTO	flow_2
+	flow_1:
+		IF (cs2method_10948() <= 4499) 
+			GOTO	flow_4
+	flow_2:
+		IF (cs2method_10948() >= 4503 && cs2method_10948() <= 4506) 
+			GOTO	flow_4
+		GOTO	flow_5
+	flow_4:
+		int v9 = cs2method_11097(4);
+	flow_5:
+		cs2method_10467(1, 59506703);
+		cs2method_10467(0, 59506718);
+		int v12 = 0;
+		int v11 = 0;
+		int v10 = 0;
+		opc_struct10790(3,0,0) v3 = cs2method_10790();
+		int v4 = v3.intpart_2;
+		int v8 = v3.intpart_1;
+		int v13 = v3.intpart_0;
+		int v2 = cs2method_10461(cs2method_10948(), client_configs['cfg1749']);
+		object v0 = "";
+		if (client_configs['cfg3185'] != 4 && v2 <= 5 && client_configs['cfg3184'].bitcfg16464 == 2) {
+			int v1 = cs2method_10461(5, v2);
+			if (v1 > 1) {
+				cs2method_10026(59506722, "You have " + (string)cs2method_10379(v1) + " days until you need to validate your email address.");
+				cs2method_10170(17811, 59506722);
+				cs2method_10520(0, 59506722);
+				cs2method_10637(1, 1, 22, 59506722);
+				cs2method_10112(0, 0, 1, 1, 59506722);
+				cs2method_10283(200, 10, 1, 1, 59506722);
+				cs2method_10758(20259, 59506720);
+			} else {
+				cs2method_10026(59506722, "You have one day until you need to validate your email address.");
+				cs2method_10170(17811, 59506722);
+				cs2method_10520(0, 59506722);
+				cs2method_10637(1, 1, 22, 59506722);
+				cs2method_10112(0, 0, 1, 1, 59506722);
+				cs2method_10283(200, 10, 1, 1, 59506722);
+				cs2method_10758(20259, 59506720);
+			}
+			return;
+		}
+		if (cs2_configs['cfg3905'] == 1) {
+			cs2method_11127(1, 59506689, "Click");
+		} else {
+			cs2method_10758(20916, 59506720);
+			cs2method_10026(59506722, "");
+		}
+		cs2method_10758(-1, 59506724);
+		cs2method_10283(345, 35, 0, 0, 59506722);
+		cs2method_10112(231, 5, 0, 0, 59506722);
+		cs2method_10520(923907, 59506722);
+		cs2method_10170(473, 59506722);
+		cs2method_10637(1, 2, 0, 59506722);
+		cs2method_10026(59506721, "");
+		cs2method_10112(231, 46, 0, 0, 59506721);
+		cs2method_10283(345, 70, 0, 0, 59506721);
+		cs2method_10520(923907, 59506721);
+		return;
+}

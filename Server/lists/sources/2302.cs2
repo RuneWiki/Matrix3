@@ -1,0 +1,144 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2302(int a0,int a1,int a2) {
+	int v5 = script_8599(a0);
+	int v0 = script_8596(a0);
+	int v3 = script_8595(a0);
+	int v2 = script_8597(a0);
+	int v9 = -1;
+	int v7 = cs2method_10461(cs2method_10163(v3), 1);
+	if (cs2method_10324(v0) == 1) {
+		v9 = interfaceDefsAttribute(3648);
+	}
+	int v8 = cs2method_10265(script_8611(a0));
+	int v4 = cs2method_10947(script_8619(a0), script_8611(a0));
+	int v1 = 0;
+	int v6 = -1;
+	switch (a1) {
+		case 104:
+			if (v7 == 0) {
+				return;
+			}
+			if (script_8617(a0) <= 0) {
+				script_8618(a0, cs2method_10461(v7, 1));
+			} else {
+				script_8618(a0, cs2method_10461(script_8617(a0), 1));
+			}
+			if (cs2method_11038(v3, cs2method_10060(script_8617(a0), 1)) == 1) {
+				if (cs2method_11038(v3, 0) == 1) {
+					cs2method_10063(cs2method_10878(), cs2method_10406(), 0, 0);
+					cs2method_10013(cs2method_10488(), cs2method_10664(), 0, 0);
+					cs2method_10811(5733957);
+					cs2method_10238(1);
+				}
+				if (cs2method_10406() < cs2method_10718(v3)) {
+					script_72(v2, v3, cs2method_10461(cs2method_10718(v3), cs2method_10664()));
+				} else {
+					if (cs2method_10060(cs2method_10406(), cs2method_10664()) > cs2method_10060(cs2method_10823(v3), cs2method_10718(v3))) {
+						script_72(v2, v3, cs2method_10970(v3));
+					}
+				}
+			}
+			return;
+		case 105:
+			if (v7 == 0) {
+				return;
+			}
+			if (script_8617(a0) == cs2method_10461(v7, 1)) {
+				script_8618(a0, 0);
+			} else {
+				script_8618(a0, cs2method_10060(script_8617(a0), 1));
+			}
+			if (cs2method_11038(v3, cs2method_10060(script_8617(a0), 1)) == 1) {
+				if (cs2method_11038(v3, 0) == 1) {
+					cs2method_10063(cs2method_10878(), cs2method_10406(), 0, 0);
+					cs2method_10013(cs2method_10488(), cs2method_10664(), 0, 0);
+					cs2method_10811(5733957);
+					cs2method_10238(1);
+				}
+				if (cs2method_10060(cs2method_10406(), cs2method_10664()) > cs2method_10060(cs2method_10823(v3), cs2method_10718(v3))) {
+					script_72(v2, v3, cs2method_10060(cs2method_10718(v3), cs2method_10664()));
+				} else {
+					if (cs2method_10406() < cs2method_10718(v3)) {
+						script_72(v2, v3, 0);
+					}
+				}
+			}
+			return;
+		case 102:
+			script_1050(script_8613(a0), a0, script_8605(a0));
+			return;
+		case 13:
+			script_1054(a0);
+			return;
+		case 84:
+			if (script_8617(a0) < 0) {
+				if (v8 > 0) {
+					script_8622(a0, 0);
+					cs2method_20162(new function<none>() {
+					}, "", new WidgetPointer(v0));
+					script_1041(v5, v3, v2, v9, a0);
+				} else {
+					script_1054(a0);
+				}
+			} else {
+				if (v4 > 0 && cs2method_11038(v3, cs2method_10060(script_8617(a0), 1)) == 1 && v1 < v4) {
+					while (true) {
+						int v10 = cs2method_11119();
+						if (cs2method_10846(cs2method_10447(), cs2method_10018(v10)) == 0) {
+							script_1076(v5, v9, v10, a0);
+							return;
+						}
+						v1 = cs2method_10060(v1, 1);
+					}
+				}
+			}
+			return;
+		case 85:
+			if (v8 > 0) {
+				script_8612(cs2method_11025(0, cs2method_10461(v8, 1), script_8611(a0)), a0);
+			} else if (script_8615(a0) == 0) {
+				script_1054(a0);
+			} else {
+				script_8618(a0, -1);
+				cs2method_10467(1, script_8588(a0));
+				cs2method_10467(1, script_8590(a0));
+				cs2method_10467(1, script_8594(a0));
+				cs2method_10467(0, script_8598(a0));
+				cs2method_10467(0, script_8599(a0));
+				cs2method_10467(1, script_8600(a0));
+				return;
+			}
+			break;
+		default:
+			if (cs2method_10698(a2) == 1 && v8 < 80) {
+				script_8612(cs2method_10765(cs2method_10410(a2, script_8611(a0))), a0);
+			} else {
+				return;
+			}
+	}
+	cs2method_10026(v0, "Search for: " + script_8611(a0) + "*");
+	cs2method_11101(1, v0);
+	script_8622(a0, 50);
+	cs2method_20162(new function<script_1040>(int a0,int a1,int a2,int a3,int a4,int a5) {
+		script_8622(a1, cs2method_10461(script_8621(a1), 1));
+		if (script_8621(a1) > 0) {
+			return;
+		}
+		cs2method_20162(new function<none>() {
+		}, "", new WidgetPointer(a0));
+		script_1041(a3, a5, a2, a4, a1);
+		return;
+	}, new WidgetPointer(v5), new WidgetPointer(v0), new WidgetPointer(v3), new WidgetPointer(v2), v9, a0, "IIIIei", new WidgetPointer(v0));
+	return;
+}

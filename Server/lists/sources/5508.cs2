@@ -1,0 +1,31 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5508(int a0,int a1,int a2,int a3,int a4,int a5) {
+	cs2method_10026(a1, "Research Mode will break down selected item drops and reward you with bonus XP in the skill required to make the item." + "<br>" + "<br>" + "<col=ffcb05>" + "Requirements:" + "</col>" + "<br>" + "- The spring cleaner must have at least 1 charge per item dropped" + "<br>" + "- The item must be selected from the config menu" + "<br>" + "<br>" + "<col=ffcb05>" + "Notes:" + "</col>" + "<br>" + "- You will not receive the dropped item. It will be broken down and changed to bonus XP" + "<br>" + "- For items that take multiple skills to make, bonus XP will be given in the skill used to make the final stage" + "<br>" + "- Will not affect ammo or noted items");
+	cs2method_10026(a4, "Dismantle Mode will break down selected item drops and return a portion of the base materials used to make them. It does not always return 100% of materials, there is a chance that no materials will be returned. This chance varies on what items are broken down." + "<br>" + "<br>" + "<col=ffcb05>" + "Requirements:" + "</col>" + "<br>" + "- The spring cleaner must have at least 1 charge per item dropped" + "<br>" + "- The item must be selected from the configuration menu" + "<br>" + "- You must have space in your bank to receive the materials" + "<br>" + "<br>" + "<col=ffcb05>" + "Notes:" + "</col>" + "<br>" + "- You will not receive the dropped item. It will return materials instead, which will be sent to your bank" + "<br>" + "- The returned materials will be automatically sent to your bank" + "<br>" + "- The materials returned will be the lowest stage to make the dropped item, a rune platebody would return rune ore and coal" + "<br>" + "- Will not affect ammo or noted items");
+	int v0 = script_10019(cs2method_10236(a1), 20452, 0, cs2method_10744(a1));
+	int v1 = script_10019(cs2method_10236(a4), 20452, 0, cs2method_10744(a4));
+	if (cs2method_10461(cs2method_10823(a2), 20) < v0) {
+		cs2method_11130(0, cs2method_10060(v0, 25), a2);
+		script_7791(a3, a2);
+	} else {
+		cs2method_11130(0, 0, a2);
+	}
+	if (cs2method_10461(cs2method_10823(a5), 20) < v1) {
+		cs2method_11130(0, cs2method_10060(v1, 25), a5);
+		script_7791(a0, a5);
+	} else {
+		cs2method_11130(0, 0, a2);
+	}
+	return;
+}

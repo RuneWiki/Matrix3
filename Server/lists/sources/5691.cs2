@@ -1,0 +1,193 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5691(int a0) {
+	int v2 = idx17mapData('i', 'g', 5420, a0);
+	int v1 = -1;
+	int v0 = 5;
+	int v3 = -1;
+	cs2method_10467(1, 79822854);
+	if (cs2method_10324(79822862) == 1) {
+		switch (cs2_configs['cfg1755']) {
+			case 1:
+				v1 = interfaceDefsAttribute(2223);
+				break;
+			case 2:
+				v1 = interfaceDefsAttribute(2221);
+				break;
+			case 3:
+				v1 = interfaceDefsAttribute(2222);
+				break;
+			default:
+				v1 = interfaceDefsAttribute(2224);
+		}
+	}
+	cs2method_10273(79822905);
+	while (v1 != -1) {
+		if (cs2method_11038(79822862, v1) == 1) {
+			int v4 = idx17mapData('i', 'J', v2, v1);
+			if (cs2_configs['cfg1754'] <= 0 || idx22mapAttribute(v4, 2220) == cs2_configs['cfg1754'] || cs2_configs['cfg1754'] == 1 && idx22mapAttribute(v4, 2218) == 1) {
+				cs2method_10063(0, 0, 0, 0);
+				cs2method_20061(new function<script_5692>(int a0,int a1,int a2) {
+					cs2method_10606(79822905, 5, cs2method_10163(79822905));
+					cs2method_10013(36, 32, 0, 0);
+					cs2method_10063(10, cs2method_10060(a1, 5), 0, 0);
+					if (a0 == -1) {
+						return;
+					}
+					int v3 = idx22mapAttribute(a0, 2213);
+					int v2 = idx17mapData('i', 'S', 681, idx22mapAttribute(a0, 2215));
+					int v1 = idx22mapAttribute(a0, 2212);
+					int v4 = idx22mapAttribute(a0, 2217);
+					object v0 = idx22mapAttribute(a0, 2210);
+					if (v3 != -1) {
+						if (cs2method_10265(v0) < 1) {
+							v0 = cs2method_10018(v3);
+						}
+						if (itemDefsAttribute(v3, 2640) > 0 && itemDefsAttribute(v3, 2640) != 62 && itemDefsAttribute(v3, 2641) == 0 && itemDefsAttribute(v3, 2640) == cs2_configs['cfg1753']) {
+							v2 = idx17mapData('i', 'S', 681, itemDefsAttribute(v3, 2640));
+							v1 = itemDefsAttribute(v3, 2645);
+							if (itemDefsAttribute(v3, 2639) == 1 || cs2method_10416(itemDefsAttribute(v3, 2655)) == 1 || cs2method_10416(itemDefsAttribute(v3, 2656)) == 1 || cs2method_10416(itemDefsAttribute(v3, 2650)) == 1 || cs2method_10416(v3) == 1) {
+								v4 = 1;
+							}
+						}
+					}
+					if (cs2method_10338(v2) < v1) {
+						cs2method_10013(25, 25, 0, 0);
+						cs2method_10310(8277);
+						cs2method_10063(13, cs2method_10060(a1, 9), 0, 0);
+						cs2method_20674(new function<script_5693>(int a0,int a1) {
+							int v2 = 0;
+							int v1 = 0;
+							object v0 = "Members only";
+							if (cs2method_11038(79822905, a1) == 1) {
+								cs2method_10112(cs2method_10878(), cs2method_10406(), 0, 0, 79822908);
+								if (a0 == 1) {
+									v0 = "Level up to unlock this item!";
+								}
+								int v4 = cs2method_10060(cs2method_10939(3793, v0), 10);
+								int v3 = cs2method_10060(cs2method_10051(cs2method_10805(v4, 3793, v0), 15), 10);
+								cs2method_10283(v4, v3, 0, 0, 79822908);
+								cs2method_10026(79823019, v0);
+								cs2method_10467(0, 79822908);
+							}
+							return;
+						}, -2147483643, 1, "i1");
+						cs2method_20884(new function<script_5694>() {
+							cs2method_10026(79823019, "");
+							cs2method_10467(1, 79822908);
+							return;
+						}, "");
+					} else if (v3 == -1) {
+						cs2method_10310(idx22mapAttribute(a0, 2214));
+					} else {
+						cs2method_11070(v3, -1);
+					}
+					cs2method_10606(79822905, 4, cs2method_10163(79822905));
+					cs2method_10063(45, cs2method_10060(a1, 5), 0, 0);
+					cs2method_10692(4040);
+					cs2method_10173(1);
+					if (v1 == 0) {
+						cs2method_10797("");
+					} else {
+						cs2method_10797(cs2method_10379(v1));
+					}
+					cs2method_10811(14389248);
+					cs2method_11105(1, 1, 13);
+					cs2method_10013(32, 32, 0, 0);
+					if (v4 == 1) {
+						cs2method_10606(79822905, 4, cs2method_10163(79822905));
+						cs2method_10063(74, cs2method_10060(a1, 9), 0, 0);
+						cs2method_10013(25, 20, 0, 0);
+						cs2method_20674(new function<script_5693>(int a0,int a1) {
+							int v0 = 0;
+							int v1 = 0;
+							object v2 = "Members only";
+							if (cs2method_11038(79822905, a1) == 1) {
+								cs2method_10112(cs2method_10878(), cs2method_10406(), 0, 0, 79822908);
+								if (a0 == 1) {
+									v2 = "Level up to unlock this item!";
+								}
+								int v4 = cs2method_10060(cs2method_10939(3793, v2), 10);
+								int v3 = cs2method_10060(cs2method_10051(cs2method_10805(v4, 3793, v2), 15), 10);
+								cs2method_10283(v4, v3, 0, 0, 79822908);
+								cs2method_10026(79823019, v2);
+								cs2method_10467(0, 79822908);
+							}
+							return;
+						}, -2147483643, 0, "i1");
+						cs2method_20884(new function<script_5694>() {
+							cs2method_10026(79823019, "");
+							cs2method_10467(1, 79822908);
+							return;
+						}, "");
+					}
+					cs2method_10606(79822905, 4, cs2method_10163(79822905));
+					cs2method_10063(106, cs2method_10060(a1, 8), 0, 0);
+					cs2method_10797(v0);
+					cs2method_10692(4040);
+					cs2method_10173(1);
+					cs2method_10811(15122040);
+					cs2method_11105(1, 1, 12);
+					cs2method_10013(134, 16, 1, 0);
+					if (cs2method_10846("", idx22mapAttribute(a0, 2216)) != 0) {
+						cs2method_10606(79822905, 4, cs2method_10163(79822905));
+						cs2method_10063(106, cs2method_10060(a1, 23), 0, 0);
+						cs2method_10692(3793);
+						cs2method_10173(1);
+						cs2method_10797(idx22mapAttribute(a0, 2216));
+						cs2method_10811(14389248);
+						cs2method_11105(1, 1, 13);
+						cs2method_10013(134, 16, 1, 0);
+					}
+					if (cs2method_10265(idx22mapAttribute(a0, 2211)) > 0) {
+						cs2method_10606(79822905, 5, cs2method_10163(79822905));
+						cs2method_10063(15, cs2method_10060(a1, 10), 2, 0);
+						cs2method_10310(8485);
+						cs2method_10013(17, 19, 0, 0);
+					}
+					if (cs2method_11038(79822862, a2) == 1) {
+						cs2method_10063(5, a1, 0, 0);
+						cs2method_20061(new function<none>() {
+						}, "");
+					}
+					return;
+				}, v1, v0, v4, "iiJ");
+				cs2method_10269(0);
+				v0 = cs2method_10060(cs2method_10664(), v0);
+			} else {
+				cs2method_10269(1);
+			}
+			switch (cs2_configs['cfg1755']) {
+				case 1:
+					v1 = interfaceDefsAttribute(2223);
+					break;
+				case 2:
+					v1 = interfaceDefsAttribute(2221);
+					break;
+				case 3:
+					v1 = interfaceDefsAttribute(2222);
+					break;
+				default:
+					v1 = interfaceDefsAttribute(2224);
+			}
+		} else {
+			v1 = -1;
+		}
+	}
+	cs2method_11130(0, v0, 79822855);
+	cs2method_10251(0, 0, 79822855);
+	cs2method_10283(0, v0, 1, 0, 79822862);
+	cs2method_10283(0, v0, 1, 0, 79822905);
+	script_31(79822856, 79822855, 5666, 5663, 5664, 5665, 5686, 5685);
+	return;
+}

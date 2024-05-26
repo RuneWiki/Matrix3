@@ -1,0 +1,88 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_4908(int a0) {
+	int v5;
+	int v12;
+	flow_0:
+		int v6 = -1;
+		int v20 = 0;
+		int v3 = 0;
+		int v17 = 0;
+		int v0 = 0;
+		int v10 = script_4950(a0);
+		int v14 = 0;
+		int v19 = 0;
+		int v15 = 0;
+		int v9 = 0;
+		int v18 = -1;
+		int v8 = -1;
+		int v21 = -1;
+		int v13 = 1;
+		IF (cs2method_10172() == 1) 
+			GOTO	flow_1
+		GOTO	flow_26
+	flow_1:
+		if (cs2_configs['cfg1794'] == 0) {
+			v12 = script_5116(clan_chat_configs['cfg2583'].bitcfg6524, clan_chat_configs['cfg2575'].bitcfg6507);
+		} else {
+			v12 = script_5116(clan_chat_configs['cfg2071'].bitcfg6661, clan_chat_configs['cfg2575'].bitcfg6507);
+		}
+		if (v12 == -1) {
+			return;
+		}
+		if (v10 == 6 || v10 == 5) {
+			v0 = script_4971(a0);
+			v5 = script_5171(v0);
+		} else {
+			v5 = script_4973(a0);
+		}
+		int v7 = script_4949(a0);
+		int v11 = script_4961(a0, 1);
+		int v16 = script_4953(v11);
+		if (v16 > 0) {
+			v5 = 7432;
+		}
+		int v2 = script_4961(a0, 3);
+		int v4 = script_4953(v2);
+		if ((v10 == 6 || v10 == 6 || v10 == 5) && (clan_chat_configs['cfg2144'].bitcfg6690 == v0 || clan_chat_configs['cfg2161'].bitcfg6699 == v0 || clan_chat_configs['cfg2178'].bitcfg6708 == v0)) {
+			v5 = 7432;
+		}
+		if (v4 > 0) {
+			v5 = 7432;
+		}
+		if (v10 == 5) {
+			if (clan_chat_configs['cfg2144'].bitcfg6690 == v0 || clan_chat_configs['cfg2161'].bitcfg6699 == v0 || clan_chat_configs['cfg2178'].bitcfg6708 == v0) {
+				cs2method_10758(7659, script_5216(a0));
+				cs2method_11127(2, script_4972(a0), "");
+			} else if (v7 > 0) {
+				cs2method_10758(7657, script_5216(a0));
+				cs2method_11127(2, script_4972(a0), "Reset hotspot to its default state");
+			} else {
+				cs2method_10758(7658, script_5216(a0));
+				cs2method_11127(2, script_4972(a0), "");
+			}
+		}
+		int v1 = script_4972(a0);
+		if (v1 == -1) {
+			return;
+		}
+		IF (cs2method_11038(v1, 0) == 1) 
+			GOTO	flow_25
+		GOTO	flow_26
+	flow_25:
+		cs2method_10310(v5);
+		GOTO	flow_26
+	flow_26:
+		return;
+}

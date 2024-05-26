@@ -1,0 +1,125 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7855(int a0,int a1) {
+	cs2_configs['cfg3685'] = cs2_configs['cfg2563'];
+	if (cs2method_10265(cs2_configs['cfg2563']) <= 0) {
+		script_3213("Please enter your display name here.", 93061194);
+		script_7922();
+		if (a0 == 1) {
+			script_7846(93061194);
+		}
+		script_7858();
+		return;
+	}
+	if (cs2method_10368(0, "- _", cs2method_11025(0, 1, cs2_configs['cfg2563'])) != -1) {
+		script_3213("Displaynames cannot start with a space, dash or underscore.", 93061194);
+		if (a0 == 1) {
+			script_7846(93061194);
+		}
+		script_7922();
+		script_7858();
+		return;
+	}
+	if (script_7850(cs2_configs['cfg2563']) == 0) {
+		script_3213("Please enter a valid display name.", 93061194);
+		if (a0 == 1) {
+			script_7846(93061194);
+		}
+		script_7922();
+		script_7858();
+		return;
+	}
+	if (cs2_configs['cfg3488'] != 0) {
+		script_7845(1, "", 93061194);
+		if (a0 == 1) {
+			script_7847();
+		}
+		cs2method_10467(1, 93061411);
+		script_7923();
+		script_7858();
+		return;
+	}
+	cs2method_10371(cs2_configs['cfg2563']);
+	cs2method_20162(new function<script_7856>(int a0,int a1) {
+		int v0 = cs2method_10962();
+		if (v0 == -3) {
+			return;
+		}
+		cs2method_20162(new function<none>() {
+		}, "", new WidgetPointer(1420,201));
+		if (v0 == 2) {
+			script_7845(1, "", 93061194);
+			if (a1 == 1) {
+				script_7847();
+			}
+			script_7923();
+			cs2method_10467(1, 93061411);
+			if (cs2method_10265(cs2_configs['cfg2559']) > 0) {
+				int v1 = script_3228(0, a1);
+				/* 
+					java.lang.RuntimeException: Stack underflow
+						at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.cast(FlowBlocksGenerator.java:546)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+						at tests.Main.main(Main.java:69)
+					
+				 */
+			}
+			if (a0 == 1) {
+				script_2714(15, 1);
+			}
+			script_7858();
+			return;
+		}
+		switch (v0) {
+			case -2:
+				script_3213("Error contacting server.", 93061194);
+				break;
+			case 3:
+				script_3213("Error contacting server.", 93061194);
+				break;
+			case 5:
+				script_3213("Name already in use. Try a different name or click the randomise button to generate an available one.", 93061194);
+				break;
+			case 6:
+				script_3213("Name includes inappropriate content.", 93061194);
+				break;
+			case 7:
+				script_3213("Name is banned.", 93061194);
+				break;
+			case 8:
+				script_3213("Name is reserved.", 93061194);
+				break;
+			case 4:
+				script_3213("Please enter a valid Display name.", 93061194);
+				break;
+			default:
+				script_3213("Unexpected server response.", 93061194);
+		}
+		script_7922();
+		if (a1 == 1) {
+			script_7846(93061194);
+		}
+		script_7858();
+		return;
+	}, a1, a0, "11", new WidgetPointer(1420,201));
+	return;
+}

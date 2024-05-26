@@ -1,0 +1,32 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5413() {
+	object v0 = "Shows a 'Report' option when right-clicking on other players or chat.";
+	cs2method_21121(new function<script_7782>(object a0,int a1,int a2,int a3,int a4) {
+		script_5335(a1, -1, a3, a2, a0, a4, 1);
+		return;
+	}, new WidgetPointer(-32768,3), new WidgetPointer(261,31), (string)v0, 25, 180, "IIsii", new WidgetPointer(261,28));
+	cs2method_20750(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(261,31), "I", new WidgetPointer(261,28));
+	cs2_configs['cfg2'] = 0;
+	if (client_configs['cfg1775'].bitcfg16564 == 1) {
+		cs2method_10758(6004, 17104902);
+		cs2method_10758(6005, 17104903);
+	} else {
+		cs2method_10758(6009, 17104902);
+		cs2method_10758(6010, 17104903);
+	}
+	return;
+}

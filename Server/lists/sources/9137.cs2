@@ -1,0 +1,42 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9137(int a0,int a1) {
+	object v0 = "Mark this activity as a favourite";
+	int v2 = -1;
+	switch (client_configs['cfg3919'].bitcfg20794) {
+		case 0:
+		case 1:
+			v2 = 6452;
+			break;
+		case 2:
+			v2 = 8014;
+			break;
+		case 3:
+			v2 = 8015;
+			break;
+		case 4:
+			v2 = 8016;
+			break;
+		case 5:
+			v2 = 8017;
+	}
+	int v1 = idx17mapData('i', 'J', v2, client_configs['cfg3233']);
+	if (script_9178(idx22mapAttribute(v1, 1268)) == 1) {
+		v0 = "Remove this activity from your favourites";
+		cs2method_10758(21108, 88080393);
+	} else {
+		cs2method_10758(21107, 88080393);
+	}
+	script_8800(a1, a0, v0);
+	return;
+}

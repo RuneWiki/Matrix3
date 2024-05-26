@@ -1,0 +1,47 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5228(int a0) {
+	int v2 = 0;
+	object v0 = "";
+	int v3 = script_4969(a0);
+	int v4 = -1;
+	int v5 = 2;
+	if (v3 == -1) {
+		return;
+	}
+	if (cs2method_10172() == 1) {
+		int v1 = script_4949(a0);
+		if (v1 > 0) {
+			object v6 = "Teleport to the " + idx17mapData('i', 's', 4287, v1) + " skill plot.";
+			int v7 = cs2method_10155(v3);
+			if (cs2method_10152(v3) > cs2method_10968(cs2method_10823(v7), 2)) {
+				v5 = 0;
+			}
+			cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,object a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+				script_7769(a5, a1, a7, a2, a12, a10, a8, a11, a6, a3, a0, a4, a9);
+				return;
+			}, new WidgetPointer(1259,57), new WidgetPointer(v3), -1, (string)v6, 120, 17813, 17813, 16777215, 13, 4, v5, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(v3));
+			cs2method_20750(new function<script_40>(int a0) {
+				script_41(a0);
+				return;
+			}, new WidgetPointer(1259,57), "I", new WidgetPointer(v3));
+			cs2method_11127(1, v3, "Teleport to " + idx17mapData('i', 's', 4287, v1));
+			return;
+		}
+	}
+	cs2method_21121(new function<none>() {
+	}, "", new WidgetPointer(v3));
+	cs2method_20750(new function<none>() {
+	}, "", new WidgetPointer(v3));
+	return;
+}

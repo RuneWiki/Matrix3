@@ -1,0 +1,77 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2762(int a0,int a1) {
+	switch (cs2_configs['cfg1007']) {
+		case 101:
+			cs2method_11031(0, 2);
+			cs2method_10971(0, 0, script_2764(60347213, a0), 450, script_2764(60347213, a0), 500, 0);
+			cs2method_10971(0, 1, script_2764(60363597, a0), 600, script_2764(60363597, a0), 550, 0);
+			cs2method_11031(1, 2);
+			cs2method_10971(1, 0, script_2764(60248915, a0), 350, script_2764(60248915, a0), 375, 0);
+			cs2method_10971(1, 1, script_2764(60298065, a0), 350, script_2764(60298065, a0), 375, 0);
+			cs2method_10382(0, 0, 300, 400, 1, 0);
+			break;
+		case 102:
+			cs2method_11031(0, 2);
+			cs2method_10971(0, 0, script_2764(60248921, a0), 600, script_2764(60248922, a0), 600, 0);
+			cs2method_10971(0, 1, script_2764(60265310, a0), 700, script_2764(60265309, a0), 700, 0);
+			cs2method_11031(1, 2);
+			cs2method_10971(1, 0, script_2764(60265295, a0), 400, script_2764(60265293, a0), 400, 0);
+			cs2method_10971(1, 1, script_2764(60265298, a0), 400, script_2764(60265298, a0), 400, 0);
+			cs2method_10382(0, 0, 250, 200, 1, 0);
+			break;
+		case 103:
+			cs2method_11031(0, 2);
+			cs2method_10971(0, 0, script_2764(60281685, a0), 700, script_2764(60298070, a0), 650, 0);
+			cs2method_10971(0, 1, script_2764(60298074, a0), 650, script_2764(60298074, a0), 650, 0);
+			cs2method_11031(1, 2);
+			cs2method_10971(1, 0, script_2764(60298083, a0), 5, script_2764(60298083, a0), 5, 0);
+			cs2method_10971(1, 1, script_2764(60298088, a0), 5, script_2764(60298088, a0), 5, 0);
+			cs2method_10382(0, 0, 200, 200, 1, 0);
+			break;
+		case 104:
+			cs2method_11031(0, 2);
+			cs2method_10971(0, 0, script_2764(60117861, a0), 300, script_2764(60117860, a0), 300, 0);
+			cs2method_10971(0, 1, script_2764(60150626, a0), 300, script_2764(60134242, a0), 300, 0);
+			cs2method_11031(1, 2);
+			cs2method_10971(1, 0, script_2764(60298077, a0), 250, script_2764(60298077, a0), 250, 0);
+			cs2method_10971(1, 1, script_2764(60298077, a0), 250, script_2764(60298077, a0), 250, 0);
+			cs2method_10382(0, 0, 100, 50, 1, 0);
+			break;
+		case 105:
+			cs2method_11031(0, 2);
+			cs2method_10971(0, 0, script_2764(60298079, a0), 700, script_2764(60298083, a0), 700, 0);
+			cs2method_10971(0, 1, script_2764(60216163, a0), 700, script_2764(60232547, a0), 700, 0);
+			cs2method_11031(1, 2);
+			cs2method_10971(1, 0, script_2764(60068707, a0), 5, script_2764(60068707, a0), 5, 0);
+			cs2method_10971(1, 1, script_2764(60068707, a0), 5, script_2764(60068707, a0), 5, 0);
+			cs2method_10382(0, 0, 80, 50, 1, 0);
+			break;
+		case 106:
+			script_2766(0, 40, a1);
+			break;
+		case 107:
+			script_2768(25, a1);
+			cs2method_11031(0, 2);
+			cs2method_10971(0, 0, script_2764(60281694, a0), 350, script_2764(60281695, a0), 350, 0);
+			cs2method_10971(0, 1, script_2764(60216165, a0), 550, script_2764(60232549, a0), 550, 0);
+			cs2method_11031(1, 2);
+			cs2method_10971(1, 0, script_2764(60216158, a0), 300, script_2764(60216158, a0), 300, 0);
+			cs2method_10971(1, 1, script_2764(60101470, a0), 350, script_2764(60101470, a0), 350, 0);
+			cs2method_10382(0, 0, 120, 40, 1, 0);
+			break;
+		default:
+			cs2method_10893();
+	}
+	return;
+}

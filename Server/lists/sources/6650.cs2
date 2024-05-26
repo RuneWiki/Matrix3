@@ -1,0 +1,160 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6650() {
+	int v0 = 12305;
+	int v7 = 12305;
+	int v6 = 12305;
+	int v2 = 12305;
+	int v1 = 12305;
+	int v3 = 12305;
+	int v5 = 12305;
+	int v4 = 12305;
+	int v8 = 12305;
+	switch (client_configs['cfg2011'].bitcfg8725) {
+		case 5:
+			v0 = 12304;
+			break;
+		case 3:
+			v0 = 12306;
+			break;
+		case 4:
+			v0 = 12307;
+	}
+	switch (client_configs['cfg2011'].bitcfg8726) {
+		case 5:
+			v7 = 12304;
+			break;
+		case 3:
+			v7 = 12306;
+			break;
+		case 4:
+			v7 = 12307;
+	}
+	switch (client_configs['cfg2011'].bitcfg8727) {
+		case 5:
+			v6 = 12304;
+			break;
+		case 3:
+			v6 = 12306;
+			break;
+		case 4:
+			v6 = 12307;
+	}
+	switch (client_configs['cfg2011'].bitcfg8728) {
+		case 5:
+			v2 = 12304;
+			break;
+		case 3:
+			v2 = 12306;
+			break;
+		case 4:
+			v2 = 12307;
+			break;
+		case 0:
+			v2 = 12308;
+	}
+	switch (client_configs['cfg2012'].bitcfg8731) {
+		case 5:
+			v1 = 12304;
+			break;
+		case 3:
+			v1 = 12306;
+			break;
+		case 4:
+			v1 = 12307;
+			break;
+		case 0:
+			v1 = 12308;
+	}
+	switch (client_configs['cfg2011'].bitcfg8730) {
+		case 5:
+			v4 = 12304;
+			break;
+		case 3:
+			v4 = 12306;
+			break;
+		case 4:
+			v4 = 12307;
+			break;
+		case 0:
+			v4 = 12308;
+	}
+	switch (client_configs['cfg2012'].bitcfg8733) {
+		case 5:
+			v8 = 12304;
+			break;
+		case 3:
+			v8 = 12306;
+			break;
+		case 4:
+			v8 = 12307;
+			break;
+		case 0:
+			v8 = 12308;
+	}
+	switch (client_configs['cfg2011'].bitcfg8729) {
+		case 5:
+			v3 = 12304;
+			break;
+		case 3:
+			v3 = 12306;
+			break;
+		case 4:
+			v3 = 12307;
+			break;
+		case 0:
+			v3 = 12308;
+	}
+	switch (client_configs['cfg2012'].bitcfg8732) {
+		case 5:
+			v5 = 12304;
+			break;
+		case 3:
+			v5 = 12306;
+			break;
+		case 4:
+			v5 = 12307;
+			break;
+		case 0:
+			v5 = 12308;
+	}
+	cs2method_10758(v0, 86573147);
+	cs2method_10758(v7, 86573154);
+	cs2method_10758(v6, 86573161);
+	cs2method_10758(v2, 86573196);
+	cs2method_10758(v1, 86573203);
+	cs2method_10758(v4, 86573175);
+	cs2method_10758(v8, 86573168);
+	cs2method_10758(v3, 86573182);
+	cs2method_10758(v5, 86573189);
+	cs2method_10467(1, 86573112);
+	cs2method_10467(1, 86573133);
+	cs2method_10467(1, 86573126);
+	cs2method_10467(1, 86573119);
+	if (client_configs['cfg2011'].bitcfg8725 == client_configs['cfg2011'].bitcfg8726 && client_configs['cfg2011'].bitcfg8727 == client_configs['cfg2011'].bitcfg8725 && client_configs['cfg2011'].bitcfg8728 == client_configs['cfg2011'].bitcfg8725 && client_configs['cfg2011'].bitcfg8730 == client_configs['cfg2011'].bitcfg8725 && client_configs['cfg2011'].bitcfg8729 == client_configs['cfg2011'].bitcfg8725 && client_configs['cfg2012'].bitcfg8731 == client_configs['cfg2011'].bitcfg8725 && client_configs['cfg2012'].bitcfg8733 == client_configs['cfg2011'].bitcfg8725 && client_configs['cfg2012'].bitcfg8732 == client_configs['cfg2011'].bitcfg8725) {
+		switch (client_configs['cfg2011'].bitcfg8725) {
+			case 5:
+				cs2method_10467(0, 86573133);
+				break;
+			case 1:
+				cs2method_10467(0, 86573112);
+				break;
+			case 3:
+				cs2method_10467(0, 86573126);
+				break;
+			case 4:
+				cs2method_10467(0, 86573119);
+		}
+	}
+	return;
+}

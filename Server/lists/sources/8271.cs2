@@ -1,0 +1,68 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8271(int a0,int a1) {
+	object v1;
+	object v0 = "";
+	int v3 = 5178;
+	if (cs2method_11010() == 1) {
+		v3 = 5179;
+	}
+	int v2 = 6113;
+	switch (cs2method_10262()) {
+		case 0:
+			if (cs2method_11010() == 1) {
+				v2 = 6114;
+			} else {
+				v2 = 6113;
+			}
+			break;
+		case 1:
+			if (cs2method_11010() == 1) {
+				v2 = 6116;
+			} else {
+				v2 = 6115;
+			}
+			break;
+		case 2:
+			if (cs2method_11010() == 1) {
+				v2 = 6118;
+			} else {
+				v2 = 6117;
+			}
+			break;
+		case 3:
+			if (cs2method_11010() == 1) {
+				v2 = 6120;
+			} else {
+				v2 = 6119;
+			}
+			break;
+		case 6:
+			if (cs2method_11010() == 1) {
+				v2 = 7434;
+			} else {
+				v2 = 7435;
+			}
+	}
+	if (idx17mapData('i', 'i', v2, client_configs['cfg3285']) == 1) {
+		v1 = idx17mapData('i', 's', v3, client_configs['cfg3285']);
+		cs2method_10112(0, 0, 0, 0, a0);
+		cs2method_10112(0, 0, 0, 5, a1);
+	} else {
+		v1 = idx17mapData('i', 's', v3, client_configs['cfg3285']);
+		cs2method_10112(0, 0, 0, 0, a1);
+		cs2method_10112(0, 0, 0, 5, a0);
+	}
+	cs2method_10026(a1, v1);
+	return;
+}

@@ -1,0 +1,24 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_4975(int a0) {
+	if (a0 > 0 && a0 < 300) {
+		return 1;
+	}
+	if (a0 > 300 && a0 < 600) {
+		return 2;
+	}
+	if (a0 > 600) {
+		return 3;
+	}
+	return 0;
+}

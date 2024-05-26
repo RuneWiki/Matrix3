@@ -1,0 +1,27 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_283() {
+	int v3 = 0;
+	int v4 = 0;
+	int v1 = cs2method_10122(client_configs['cfg1622'], 1000, 100);
+	int v2 = idx17mapData('i', 'i', 706, v1);
+	int v0 = idx17mapData('i', 'i', 707, v1);
+	cs2method_10112(15, v2, 2, 0, 54657098);
+	cs2method_10283(14, v0, 0, 0, 54657098);
+	if (v1 < 25) {
+		cs2method_10520(16750115, 54657098);
+	} else {
+		cs2method_10520(295686, 54657098);
+	}
+	return;
+}

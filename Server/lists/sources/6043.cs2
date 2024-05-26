@@ -1,0 +1,32 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6043(int a0,int a1,int a2) {
+	cs2method_10273(a1);
+	if (idx17mapData('i', 'S', 681, cs2_configs['cfg1796']) == -1) {
+		cs2method_10467(0, a2);
+		script_6046(a0, "Choose a skill...", 50);
+		return;
+	}
+	cs2method_10467(1, a2);
+	for (int v0 = 0; v0 < cs2_configs['cfg1796']; v0 = cs2method_10060(v0, 1)) {
+		cs2method_10606(a1, 3, v0);
+		cs2method_10269(1);
+	}
+	cs2method_10606(a1, 3, v0);
+	cs2method_10013(0, 0, 1, 1);
+	cs2method_10063(0, 0, 1, 1);
+	cs2method_10002(255);
+	cs2method_10062("Confirm: " + idx17mapData('i', 's', 108, cs2_configs['cfg1796']));
+	script_6046(a0, script_6036(idx17mapData('i', 'S', 681, cs2_configs['cfg1796']), cs2_configs['cfg1797'], cs2_configs['cfg1799']), 50);
+	return;
+}

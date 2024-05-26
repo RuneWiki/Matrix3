@@ -1,0 +1,37 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_5223_struct(2,0,0) script_5223(int a0) {
+	switch (a0) {
+		case 1:
+			return new script_5223_struct(82575422, 82575411);
+		case 2:
+			return new script_5223_struct(82575508, 82575498);
+		case 3:
+			return new script_5223_struct(82575524, 82575514);
+		case 4:
+			return new script_5223_struct(82575540, 82575530);
+		case 5:
+			return new script_5223_struct(82575556, 82575546);
+		case 6:
+			return new script_5223_struct(82575604, 82575594);
+		case 7:
+			return new script_5223_struct(82575620, 82575610);
+		case 8:
+			return new script_5223_struct(82575588, 82575578);
+		case 9:
+			return new script_5223_struct(82575573, 82575562);
+		case 10:
+			return new script_5223_struct(82575636, 82575626);
+	}
+	return new script_5223_struct(-1, -1);
+}

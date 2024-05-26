@@ -1,0 +1,23 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_7723(int a0) {
+	object v2 = "<col=ebe076>" + "Note:" + "</col>";
+	cs2method_10520(1121828, 98304334);
+	int v0 = cs2method_10060(cs2method_10939(495, v2), 3);
+	cs2method_10026(98304373, v2);
+	cs2method_10112(0, a0, 1, 0, 98304372);
+	int v3 = script_7724(v0, 98304372, 98304374, 98304375, 98304380, a0, "Please note that this quest takes place in the past, and explores a time before the gods returned to Gielinor.");
+	cs2method_10112(0, v3, 1, 0, 98304381);
+	int v1 = script_7724(v0, 98304381, 98304382, 98304383, 98304388, v3, "This is a Fifth Age quest, and it takes place in the past (RuneScape is currently in its Sixth Age). You are still able to play this quest and receive its reward." + "<br>" + "<br>" + "Feel free to play Fifth Age quests if you wish to learn more about the time before the gods' return to Gielinor.");
+	return v1;
+}

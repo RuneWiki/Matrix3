@@ -1,0 +1,64 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9334(int a0) {
+	int v3 = 45744130;
+	int v9 = 4;
+	int v2 = 0;
+	if (cs2method_11038(v3, v2) == 1) {
+		cs2method_10310(idx22mapAttribute(a0, 3899));
+		if (cs2method_11038(v3, cs2method_10060(v2, 1)) == 1 && cs2method_11038(v3, cs2method_10060(v2, 2)) == 1) {
+			cs2method_10013(cs2method_10060(cs2method_10939(20280, idx22mapAttribute(a0, 3902)), cs2method_10051(2, v9)), cs2method_10664(), 0, 0);
+			cs2method_10013(cs2method_10060(cs2method_10939(20280, idx22mapAttribute(a0, 3902)), cs2method_10051(2, v9)), cs2method_10664(), 0, 0);
+			cs2method_10797(idx22mapAttribute(a0, 3902));
+		}
+	}
+	int v8 = cs2method_10060(v2, 3);
+	if (cs2method_11038(v3, v8) == 1) {
+		cs2method_10310(idx22mapAttribute(a0, 3900));
+		if (cs2method_11038(v3, cs2method_10060(v8, 1)) == 1 && cs2method_11038(v3, cs2method_10060(v8, 2)) == 1) {
+			cs2method_10013(cs2method_10060(cs2method_10939(20280, idx22mapAttribute(a0, 3903)), cs2method_10051(2, v9)), cs2method_10664(), 0, 0);
+			cs2method_10013(cs2method_10060(cs2method_10939(20280, idx22mapAttribute(a0, 3903)), cs2method_10051(2, v9)), cs2method_10664(), 0, 0);
+			cs2method_10797(idx22mapAttribute(a0, 3903));
+		}
+	}
+	int v7 = cs2method_10060(v8, 3);
+	if (cs2method_11038(v3, v7) == 1) {
+		cs2method_10310(idx22mapAttribute(a0, 3901));
+		if (cs2method_11038(v3, cs2method_10060(v7, 1)) == 1 && cs2method_11038(v3, cs2method_10060(v7, 2)) == 1) {
+			cs2method_10013(cs2method_10060(cs2method_10939(20280, idx22mapAttribute(a0, 3904)), cs2method_10051(2, v9)), cs2method_10664(), 0, 0);
+			cs2method_10013(cs2method_10060(cs2method_10939(20280, idx22mapAttribute(a0, 3904)), cs2method_10051(2, v9)), cs2method_10664(), 0, 0);
+			cs2method_10797(idx22mapAttribute(a0, 3904));
+		}
+	}
+	int v5 = cs2method_10060(v7, 3);
+	if (cs2method_11038(v3, v5) == 1) {
+		cs2method_10797(idx22mapAttribute(a0, 3869));
+	}
+	int v0 = cs2method_10060(v5, 1);
+	if (cs2method_11038(v3, v0) == 1) {
+		cs2method_10797(idx22mapAttribute(a0, 3905));
+	}
+	int v6 = cs2method_10060(v0, 2);
+	if (cs2method_11038(v3, v6) == 1) {
+		cs2method_10797(idx22mapAttribute(a0, 3906));
+	}
+	int v4 = cs2method_10060(v6, 2);
+	if (cs2method_11038(v3, v4) == 1) {
+		cs2method_10797(idx22mapAttribute(a0, 3907));
+	}
+	int v1 = cs2method_10060(v4, 2);
+	if (cs2method_11038(v3, v1) == 1) {
+		cs2method_10797(idx22mapAttribute(a0, 3908));
+	}
+	return;
+}

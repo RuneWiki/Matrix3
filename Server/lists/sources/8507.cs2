@@ -1,0 +1,150 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_8507(int a0,int a1,int a2) {
+	int v0;
+	int v14;
+	int v17;
+	int v8;
+	int v3;
+	int v4;
+	int v2;
+	int v16;
+	int v10;
+	int v5 = 0;
+	int v15 = 0;
+	int v12 = 0;
+	int v1 = 0;
+	int v11 = 0;
+	int v6 = 0;
+	int v13 = 0;
+	int v9 = 0;
+	int v7 = 0;
+	if (client_configs['cfg3680'].bitcfg22315 == 0 || a2 == 1 || a0 == 1019) {
+		int v18 = a0;
+		script_8546_struct(9,0,0) v19 = script_8546(v18);
+		v17 = v19.intpart_8;
+		v16 = v19.intpart_7;
+		v3 = v19.intpart_6;
+		v8 = v19.intpart_5;
+		v14 = v19.intpart_4;
+		v2 = v19.intpart_3;
+		v10 = v19.intpart_2;
+		v0 = v19.intpart_1;
+		v4 = v19.intpart_0;
+	} else {
+		script_3779_struct(9,0,0) v18 = script_3779();
+		v17 = v18.intpart_8;
+		v16 = v18.intpart_7;
+		v3 = v18.intpart_6;
+		v8 = v18.intpart_5;
+		v14 = v18.intpart_4;
+		v2 = v18.intpart_3;
+		v10 = v18.intpart_2;
+		v0 = v18.intpart_1;
+		v4 = v18.intpart_0;
+	}
+	switch (a1) {
+		case 115:
+		case 127:
+		case 120:
+			return 1;
+		case 125:
+			return v17;
+		case 0:
+		case 4:
+		case 27:
+		case 26:
+		case 29:
+		case 28:
+		case 110:
+		case 109:
+		case 117:
+		case 126:
+		case 124:
+		case 123:
+		case 122:
+		case 121:
+			return v4;
+		case 1:
+			if (client_configs['cfg3680'].bitcfg22315 == 0) {
+				if (a0 == 18) {
+					return 1;
+				}
+				return 0;
+			}
+			if (a0 != 1019 && (client_configs['cfg1775'].bitcfg4290 == 2 || client_configs['cfg1775'].bitcfg4290 == 0)) {
+				return 1;
+			}
+			return 0;
+		case 2:
+		case 17:
+		case 116:
+			return v2;
+		case 7:
+			switch (a0) {
+				case 18:
+					if (client_configs['cfg3680'].bitcfg22315 == 0) {
+						return 1;
+					}
+					if (client_configs['cfg1775'].bitcfg4290 == 2 || client_configs['cfg1775'].bitcfg4290 == 0 || client_configs['cfg1775'].bitcfg4290 == 3) {
+						return 1;
+					}
+					return v14;
+				case 19:
+				case 1019:
+					return 1;
+			}
+			return v14;
+		case 3:
+		case 5:
+		case 6:
+		case 19:
+		case 18:
+		case 31:
+		case 30:
+			if (client_configs['cfg3680'].bitcfg22315 == 1 && a0 == 18 && client_configs['cfg1775'].bitcfg4290 == 0 && client_configs['cfg3680'].bitcfg20187 == 1) {
+				return 0;
+			}
+			return v14;
+		case 9:
+		case 11:
+		case 20:
+			return v8;
+		case 103:
+		case 100:
+		case 101:
+		case 111:
+		case 108:
+		case 106:
+		case 105:
+		case 119:
+		case 118:
+		case 114:
+		case 113:
+		case 112:
+			return v0;
+		case 102:
+		case 104:
+			return v10;
+		case 42:
+		case 43:
+		case 41:
+		case 107:
+			return v3;
+		case 46:
+		case 44:
+		case 45:
+			return v16;
+	}
+	return 0;
+}

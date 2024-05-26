@@ -1,0 +1,69 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8207(int a0,int a1,int a2) {
+	cs2method_10606(a0, 5, 0);
+	cs2method_10310(18695);
+	cs2method_10013(16, 16, 0, 0);
+	cs2method_10063(2, 0, 2, 1);
+	object v1 = "Clear Keybind";
+	cs2method_10057(1, v1);
+	cs2method_20703(new function<script_8822>(int a0,int a1) {
+		int v6 = a1;
+		int v0 = a0;
+		int v2 = 255;
+		int v3 = 0;
+		script_8823_struct(1,1,0) v5 = script_8823(v6, v0, v2, v3);
+		int v4 = v5.intpart_0;
+		v5.objectpart_0;
+		int v1 = v4;
+		/* 
+			java.lang.RuntimeException: Stack underflow
+				at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+				at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.cast(FlowBlocksGenerator.java:546)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+				at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+				at tests.Main.main(Main.java:69)
+			
+		 */
+	}, a1, a2, "ii");
+	cs2method_20353(new function<script_8799>(object a0,int a1,int a2) {
+		script_8800(a1, a2, a0);
+		return;
+	}, (string)v1, new WidgetPointer(-32768,3), -2147483643, "sIi");
+	cs2method_20884(new function<script_8805>() {
+		script_8808();
+		return;
+	}, "");
+	cs2method_10269(1);
+	cs2method_10606(a0, 5, 1);
+	cs2method_10310(-1);
+	cs2method_10013(18, 0, 1, 1);
+	cs2method_10063(0, 0, 0, 1);
+	object v0 = "Change Keybind";
+	cs2method_20353(new function<script_8799>(int a0,int a1,object a2) {
+		script_8800(a1, a0, a2);
+		return;
+	}, (string)v0, new WidgetPointer(-32768,3), -2147483643, "sIi");
+	cs2method_20884(new function<script_8805>() {
+		script_8808();
+		return;
+	}, "");
+	return;
+}

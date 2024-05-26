@@ -1,0 +1,418 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_2708() {
+	flow_0:
+		script_1188();
+		switch (cs2method_10440()) {
+			case 1:
+				cs2method_10052();
+				break;
+			case 2:
+				cs2method_10855();
+				break;
+			case 3:
+				cs2method_11151();
+				break;
+			case 4:
+				cs2method_10581();
+		}
+		cs2method_10462(0, 0, 4, 3, 135, 30, 3791, 3792, 6127, 16753152, 17813);
+		script_3230();
+		script_9074();
+		cs2method_10652(1);
+		if (cs2method_10580() == 1) {
+			cs2method_20553(new function<script_9081>() {
+				script_9082();
+				return;
+			}, "", new WidgetPointer(744,19));
+		}
+		if (cs2_configs['cfg176'] <= 0) {
+			cs2_configs['cfg176'] = cs2method_10051(cs2method_10060(cs2method_10877(5), 1), 10);
+		}
+		cs2method_20553(new function<script_3229>() {
+			script_3230();
+			return;
+		}, "", new WidgetPointer(744,24));
+		script_9083();
+		cs2_configs['cfg2577'] = "";
+		cs2method_11107();
+		cs2method_10448(cs2_configs['cfg2771']);
+		script_51();
+		cs2_configs['cfg547'] = 0;
+		cs2_configs['cfg1093'] = 0;
+		cs2method_11007(48758837, 882);
+		if (cs2method_10580() == 0) {
+			cs2method_10112(0, 0, 1, 0, 57802770);
+			cs2method_10283(800, 600, 0, 0, 57802770);
+		}
+		script_2595(0);
+		cs2method_20390(new function<script_1173>(int a0) {
+			script_1174(a0);
+			return;
+		}, 11, "i", new WidgetPointer(882,34));
+		cs2method_20380(new function<script_1221>(int a0,int a1) {
+			if (cs2_configs['cfg174'] == 11) {
+				return;
+			}
+			int v12 = script_2948();
+			object v18 = " ";
+			switch (cs2_configs['cfg174']) {
+				flow_3:
+					case 12:
+					return;
+					case 2:
+					switch (v12) {
+						case 21:
+						case 1:
+						case -3:
+							return;
+					}
+					if (a0 == 13) {
+						script_1174(11);
+						return;
+					}
+					return;
+					case 3:
+					switch (v12) {
+						case 21:
+						case 1:
+						case -3:
+							return;
+					}
+					switch (a0) {
+						case 13:
+							script_1174(11);
+							return;
+						case 84:
+						case 80:
+							if (cs2_configs['cfg175'] >= cs2method_10133()) {
+								return;
+							}
+							cs2_configs['cfg174'] = 4;
+							cs2_configs['cfg175'] = cs2method_10133();
+							cs2_configs['cfg1099'] = cs2method_10265(script_2949(cs2_configs['cfg2577']));
+							script_3237(39059518, 39059519, 39059520, script_2949(cs2_configs['cfg2577']), 4);
+							return;
+						case 102:
+						case 103:
+						case 98:
+						case 99:
+						case 96:
+						case 97:
+							cs2_configs['cfg1099'] = script_1553(a0, cs2_configs['cfg2576'], cs2_configs['cfg1099']);
+							script_3237(39059493, 39059494, 39059495, cs2_configs['cfg2576'], 3);
+							return;
+					}
+					IF (cs2method_10265(cs2_configs['cfg2576']) >= 320 && a0 != 85) 
+						GOTO	flow_23
+					GOTO	flow_24
+				flow_23:
+					IF (a0 != 101) 
+						GOTO	flow_25
+				flow_24:
+					IF (cs2method_10265(cs2method_10765(cs2method_10410(a1, ""))) == 0) 
+						GOTO	flow_25
+					GOTO	flow_26
+				flow_25:
+					return;
+				flow_26:
+					int v22 = cs2_configs['cfg1099'];
+					int v20 = 0;
+					int v24 = a0;
+					int v28 = a1;
+					object v10 = cs2_configs['cfg2576'];
+					script_802_struct(1,1,0) v19 = script_802(v22, v10, v20, v24, v28);
+					object v5 = v19.objectpart_0;
+					cs2_configs['cfg1099'] = v19.intpart_0;
+					cs2_configs['cfg2576'] = (string)v5;
+					cs2method_10026(39059494, cs2_configs['cfg2576']);
+					script_3237(39059493, 39059494, 39059495, cs2_configs['cfg2576'], 3);
+					return;
+					case 4:
+					switch (v12) {
+						case 21:
+						case 1:
+						case -3:
+							return;
+					}
+					switch (a0) {
+						case 13:
+							script_1174(11);
+							return;
+						case 84:
+						case 80:
+							if (cs2_configs['cfg175'] >= cs2method_10133()) {
+								return;
+							}
+							if (a0 == 84 && cs2method_10265(cs2_configs['cfg2576']) > 0) {
+								script_2945(0);
+								return;
+							}
+							cs2_configs['cfg174'] = 3;
+							cs2_configs['cfg175'] = cs2method_10133();
+							cs2_configs['cfg1099'] = cs2method_10265(cs2_configs['cfg2576']);
+							script_3237(39059493, 39059494, 39059495, cs2_configs['cfg2576'], 3);
+							return;
+						case 102:
+						case 103:
+						case 98:
+						case 99:
+						case 96:
+						case 97:
+							cs2_configs['cfg1099'] = script_1553(a0, script_2949(cs2_configs['cfg2577']), cs2_configs['cfg1099']);
+							script_3237(39059518, 39059519, 39059520, script_2949(cs2_configs['cfg2577']), 4);
+							return;
+					}
+					if (cs2method_10265(cs2_configs['cfg2577']) >= 20 && a0 != 85 && a0 != 101) {
+						return;
+					}
+					int v2 = cs2_configs['cfg1099'];
+					int v3 = 0;
+					int v9 = a0;
+					int v14 = a1;
+					object v16 = cs2_configs['cfg2577'];
+					script_802_struct(1,1,0) v13 = script_802(v2, v16, v3, v9, v14);
+					object v23 = v13.objectpart_0;
+					cs2_configs['cfg1099'] = v13.intpart_0;
+					cs2_configs['cfg2577'] = (string)v23;
+					cs2method_10026(39059519, script_2949(cs2_configs['cfg2577']));
+					script_3237(39059518, 39059519, 39059520, script_2949(cs2_configs['cfg2577']), 4);
+					return;
+					case 19:
+					switch (v12) {
+						case 21:
+						case 1:
+						case -3:
+							return;
+					}
+					switch (a0) {
+						case 84:
+							if (cs2_configs['cfg175'] >= cs2method_10133()) {
+								return;
+							}
+							if (a0 == 84 && cs2method_10265(cs2_configs['cfg4210']) > 0) {
+								script_4120();
+								return;
+							}
+							cs2_configs['cfg174'] = 19;
+							cs2_configs['cfg175'] = cs2method_10133();
+							cs2_configs['cfg1099'] = cs2method_10265(cs2_configs['cfg4210']);
+							return;
+						case 102:
+						case 103:
+						case 98:
+						case 99:
+						case 96:
+						case 97:
+							cs2_configs['cfg1099'] = script_1553(a0, cs2_configs['cfg4210'], cs2_configs['cfg1099']);
+							script_3237(39059674, 39059675, 39059676, cs2_configs['cfg4210'], 19);
+							return;
+					}
+					if (cs2method_10265(cs2_configs['cfg4210']) >= 6 && a0 != 85 && a0 != 101) {
+						return;
+					}
+					int v17 = cs2_configs['cfg1099'];
+					int v27 = 1;
+					int v26 = a0;
+					int v4 = a1;
+					object v6 = cs2_configs['cfg4210'];
+					script_802_struct(1,1,0) v15 = script_802(v17, v6, v27, v26, v4);
+					object v25 = v15.objectpart_0;
+					cs2_configs['cfg1099'] = v15.intpart_0;
+					cs2_configs['cfg4210'] = (string)v25;
+					cs2method_10026(39059675, cs2_configs['cfg4210']);
+					script_3237(39059674, 39059675, 39059676, cs2_configs['cfg4210'], 19);
+					return;
+					case 18:
+					switch (v12) {
+						case 21:
+						case 1:
+						case -3:
+							return;
+					}
+					switch (a0) {
+						case 13:
+							script_1174(11);
+							cs2method_10467(0, 39059476);
+							cs2method_10467(1, 39059553);
+							cs2_configs['cfg2576'] = "";
+							return;
+						case 84:
+						case 80:
+							if (cs2_configs['cfg175'] >= cs2method_10133()) {
+								return;
+							}
+							cs2_configs['cfg175'] = cs2method_10133();
+							if (cs2method_10265(cs2_configs['cfg2576']) > 0) {
+								script_7722("null");
+							}
+							return;
+						case 102:
+						case 103:
+						case 98:
+						case 99:
+						case 96:
+						case 97:
+							cs2_configs['cfg1099'] = script_1553(a0, cs2_configs['cfg2576'], cs2_configs['cfg1099']);
+							script_3237(39059579, 39059580, 39059578, cs2_configs['cfg2576'], 18);
+							return;
+					}
+					IF (cs2method_10265(cs2_configs['cfg2576']) >= 320 && a0 != 85) 
+						GOTO	flow_76
+					GOTO	flow_77
+				flow_76:
+					IF (a0 != 101) 
+						GOTO	flow_78
+				flow_77:
+					IF (cs2method_10265(cs2method_10765(cs2method_10410(a1, ""))) == 0) 
+						GOTO	flow_78
+					GOTO	flow_79
+				flow_78:
+					return;
+				flow_79:
+					int v1 = cs2_configs['cfg1099'];
+					int v11 = 0;
+					int v7 = a0;
+					int v21 = a1;
+					object v0 = cs2_configs['cfg2576'];
+					script_802_struct(1,1,0) v8 = script_802(v1, v0, v11, v7, v21);
+					object v29 = v8.objectpart_0;
+					cs2_configs['cfg1099'] = v8.intpart_0;
+					cs2_configs['cfg2576'] = (string)v29;
+					cs2method_10026(39059580, cs2_configs['cfg2576']);
+					script_3237(39059579, 39059580, 39059578, cs2_configs['cfg2576'], 18);
+					return;
+					case 5:
+					switch (v12) {
+						case -3:
+						case 1:
+							return;
+					}
+					if (v12 == 21 && a0 == 13) {
+						script_3235();
+						return;
+					}
+					if (a0 == 13) {
+						script_2954();
+						return;
+					}
+					return;
+					case 6:
+					case 7:
+					case 8:
+					case 14:
+					case 15:
+					script_3216(a0, a1);
+					return;
+					case 13:
+					if (a0 == 13) {
+						script_1174(cs2_configs['cfg1091']);
+						return;
+					}
+					return;
+			}
+			return;
+		}, -2147483640, false, "iz", new WidgetPointer(744,24));
+		script_1129();
+		script_1427();
+		int v3 = 0;
+		int v2 = 0;
+		IF (cs2method_10000() == 1) 
+			GOTO	flow_13
+		GOTO	flow_14
+	flow_13:
+		cs2_configs['cfg1090'] = 11;
+		cs2_configs['cfg1091'] = 11;
+		script_3239(11, 1, 0);
+		GOTO	flow_37
+	flow_14:
+		if (cs2_configs['cfg1240'] == 2 && cs2method_10085() != 0) {
+			cs2_configs['cfg1240'] = 3;
+		}
+		if (cs2_configs['cfg1240'] == 3 && cs2method_10580() == 0) {
+			cs2_configs['cfg1240'] = 4;
+		}
+		IF (cs2method_10241() == 0) 
+			GOTO	flow_21
+		GOTO	flow_24
+	flow_21:
+		IF (cs2_configs['cfg1240'] < 4 || cs2method_10775() == 1) 
+			GOTO	flow_22
+		IF (cs2method_11138() == 0 && cs2method_10580() == 1) 
+			GOTO	flow_23
+		GOTO	flow_24
+	flow_22:
+	flow_23:
+		opc_struct10562(2,0,0) v0 = cs2method_10562();
+		int v4 = v0.intpart_1;
+		int v1 = v0.intpart_0;
+		cs2_configs['cfg1240'] = 4;
+		cs2_configs['cfg1277'] = 0;
+	flow_24:
+		IF (cs2method_10241() == 0) 
+			GOTO	flow_25
+		GOTO	flow_28
+	flow_25:
+		IF (cs2_configs['cfg1240'] < 4 || cs2method_10775() == 1) 
+			GOTO	flow_26
+		IF (cs2method_11138() == 0 && cs2method_10580() == 0) 
+			GOTO	flow_27
+		GOTO	flow_28
+	flow_26:
+	flow_27:
+		cs2_configs['cfg1090'] = 0;
+		cs2_configs['cfg1091'] = 0;
+		script_3239(0, 1, 0);
+		GOTO	flow_37
+	flow_28:
+		if (cs2method_10135() == 1) {
+			cs2_configs['cfg1090'] = 5;
+			cs2_configs['cfg1091'] = 5;
+			script_3239(5, 1, 0);
+			if (cs2_configs['cfg1273'] == 1) {
+				return;
+			}
+			cs2method_20162(new function<script_3381>(int a0,int a1) {
+				int v0 = cs2method_10060(a1, 1);
+				cs2method_20162(load function<3381>, new WidgetPointer(a0), v0, "Ii", new WidgetPointer(a0));
+				if (v0 > 1) {
+					cs2_configs['cfg1273'] = 1;
+					cs2method_20162(new function<none>() {
+					}, "", new WidgetPointer(a0));
+					script_2945(0);
+				}
+				return;
+			}, new WidgetPointer(975,21), 0, "Ii", new WidgetPointer(975,21));
+		} else if (cs2_configs['cfg3684'] != 1 && script_3487(3) == 1) {
+			cs2_configs['cfg1090'] = 7;
+			cs2_configs['cfg1091'] = 7;
+			script_3239(7, 1, 0);
+		} else {
+			cs2_configs['cfg3684'] = 0;
+			cs2_configs['cfg1090'] = 11;
+			cs2_configs['cfg1091'] = 11;
+			script_3239(11, 1, 0);
+		}
+	flow_37:
+		script_3230();
+		if (cs2_configs['cfg1701'] == -1) {
+			cs2_configs['cfg1701'] = 1;
+		}
+		if (cs2method_11003() == 0) {
+			cs2method_11007(48758909, 405);
+			cs2method_10565(1, 48758909);
+		}
+		script_6720();
+		return;
+}

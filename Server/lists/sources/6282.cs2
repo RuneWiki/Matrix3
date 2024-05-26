@@ -1,0 +1,20 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6282() {
+	cs2_configs['cfg1930'] = cs2method_10461(cs2_configs['cfg1930'], 1);
+	if (cs2_configs['cfg1930'] == 0) {
+		cs2method_20162(new function<none>() {
+		}, "", new WidgetPointer(1297,165));
+	}
+	return;
+}

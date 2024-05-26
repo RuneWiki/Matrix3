@@ -1,0 +1,48 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_171() {
+	if (cs2_configs['cfg40'] == 0) {
+		cs2method_10026(25559046, "Show riddle");
+		cs2method_11127(1, 25559046, "Show");
+		cs2method_10467(0, 25559047);
+		cs2method_10467(0, 25559048);
+		cs2method_10467(0, 25559049);
+		cs2method_10467(0, 25559050);
+		cs2method_10467(0, 25559051);
+		cs2method_10467(0, 25559052);
+		cs2method_10467(0, 25559053);
+		cs2method_10467(0, 25559054);
+		cs2method_10467(1, 25559043);
+		cs2method_10467(1, 25559045);
+		cs2_configs['cfg40'] = 1;
+	} else {
+		cs2method_10026(25559046, "Hide riddle");
+		cs2method_11127(1, 25559046, "Hide");
+		cs2method_10026(25559058, "You seek the grail of old," + "<br>" + "but no longer is it a goblet of gold." + "<br>" + "Among these nine will you find what you seek," + "<br>" + "but be careful and don't peek!" + "<br>" + "A wrong choice will expel you," + "<br>" + "so consider carefully each clue." + "<br>" + "<br>" + "Three boxes contain only air," + "<br>" + "beware of three boxes, for danger lurks there." + "<br>" + "Two hold only rubbish but would fool you with disguise," + "<br>" + "only one box holds your prize." + "<br>" + "<br>" + "Clues will give the information you need," + "<br>" + "<br>" + "rubbish always sits to the right of danger, pay heed." + "<br>" + "There is nothing helpful in boxes great in height," + "<br>" + "and boxes on either end will not end your plight." + "<br>" + "A tall or small box will only bring you anger," + "<br>" + "but a square box will not put you in danger.");
+		cs2method_10520(0, 25559058);
+		cs2method_10467(1, 25559047);
+		cs2method_10467(1, 25559048);
+		cs2method_10467(1, 25559049);
+		cs2method_10467(1, 25559050);
+		cs2method_10467(1, 25559051);
+		cs2method_10467(1, 25559052);
+		cs2method_10467(1, 25559053);
+		cs2method_10467(1, 25559054);
+		cs2method_10467(0, 25559043);
+		cs2method_10467(0, 25559045);
+		cs2method_11130(190, 520, 25559059);
+		script_31(25559045, 25559059, 792, 789, 790, 791, 773, 788);
+		cs2_configs['cfg40'] = 0;
+	}
+	return;
+}

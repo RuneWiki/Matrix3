@@ -1,0 +1,49 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2392() {
+	int v0 = -1;
+	cs2method_10026(68419598, "No ability set.");
+	cs2method_10026(68419610, "No ability set.");
+	cs2method_10026(68419622, "No ability set.");
+	if (client_configs['cfg4389'].bitcfg22263 == 0) {
+		cs2method_10467(0, 68419596);
+	} else {
+		cs2method_10467(1, 68419596);
+		int v3 = idx17mapData('i', 'J', 8712, client_configs['cfg4389'].bitcfg22263);
+		if (v3 != -1) {
+			cs2method_10026(68419598, idx22mapAttribute(v3, 4240));
+		}
+	}
+	if (client_configs['cfg4389'].bitcfg22264 == 0) {
+		cs2method_10467(0, 68419606);
+	} else {
+		cs2method_10467(1, 68419606);
+		int v2 = idx17mapData('i', 'J', 8712, client_configs['cfg4389'].bitcfg22264);
+		if (v2 != -1) {
+			cs2method_10026(68419610, idx22mapAttribute(v2, 4240));
+		}
+	}
+	if (client_configs['cfg4389'].bitcfg22265 == 0) {
+		cs2method_10467(0, 68419620);
+	} else {
+		cs2method_10467(1, 68419620);
+		int v1 = idx17mapData('i', 'J', 8712, client_configs['cfg4389'].bitcfg22265);
+		if (v1 != -1) {
+			cs2method_10026(68419622, idx22mapAttribute(v1, 4240));
+		}
+	}
+	script_7999(68419598, 24113);
+	script_7999(68419610, 24113);
+	script_7999(68419622, 24113);
+	return;
+}

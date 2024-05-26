@@ -1,0 +1,81 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1068(int a0,int a1,int a2) {
+	script_8543(a0);
+	for (int v4 = cs2method_10060(a1, 1), int v6 = (int)idx17mapData('i', 'I', script_8602(a0), v4), int v1 = (int)idx17mapData('i', 'I', script_8603(a0), v4); v6 != -1; v4 = cs2method_10060(v4, 1), v6 = (int)idx17mapData('i', 'I', script_8602(a0), v4), v1 = (int)idx17mapData('i', 'I', script_8603(a0), v4)) {
+		cs2method_10273(v6);
+		cs2method_10273(v1);
+		cs2method_10467(1, v6);
+	}
+	int v5 = cs2method_10060(a1, 1);
+	while (cs2method_11038(a2, v5) == 1) {
+		cs2method_10526();
+		if (cs2method_11038(script_8601(a0), v5) == 1) {
+			cs2method_10526();
+		}
+		v5 = cs2method_10060(v5, 1);
+	}
+	int v3 = 0;
+	int v2 = (int)idx17mapData('i', 'I', script_8602(a0), a1);
+	int v0 = (int)idx17mapData('i', 'I', script_8603(a0), a1);
+	if (v2 != -1 && v0 != -1 && cs2method_11038(v2, v3) == 1) {
+		while (true) {
+			cs2method_20674(new function<script_1082>(int a0,int a1,int a2,int a3) {
+				int v0 = cs2method_10060(a3, 1);
+				if (cs2method_10609((int)idx17mapData('i', 'I', script_8602(a0), v0)) == 0) {
+					if (cs2method_11038(a1, a2) == 1) {
+						cs2method_10269(0);
+						cs2method_10811(9869175);
+					}
+					if (script_8617(a0) >= 0) {
+						int v1 = cs2method_10060(v0, 1);
+						while (cs2method_10609((int)idx17mapData('i', 'I', script_8602(a0), v1)) == 0) {
+							v1 = cs2method_10060(v1, 1);
+						}
+						if (cs2method_11038((int)idx17mapData('i', 'I', script_8603(a0), cs2method_10461(v1, 1)), script_8617(a0)) == 1) {
+							cs2method_10269(1);
+						}
+						script_8618(a0, -1);
+					}
+					return;
+				}
+				if (script_8617(a0) == a2) {
+					return;
+				}
+				if (script_8617(a0) >= 0 && cs2method_11038(a1, script_8617(a0)) == 1) {
+					cs2method_10269(1);
+				}
+				if (cs2method_11038(a1, a2) == 1) {
+					if (cs2method_10727() == 1) {
+						cs2method_10269(0);
+						cs2method_10811(5733957);
+					}
+					script_8618(a0, a2);
+				}
+				return;
+			}, a1, new WidgetPointer(v0), v3, a0, "iIii");
+			cs2method_20884(new function<script_1083>(int a0,int a1,int a2,int a3) {
+				script_1084(a0, a2, a1, a3);
+				return;
+			}, a1, new WidgetPointer(v0), v3, a0, "iIii");
+			if (cs2method_11038(v0, v3) == 1) {
+				cs2method_10269(1);
+			}
+			v3 = cs2method_10060(v3, 1);
+		}
+	}
+	script_8618(a0, -1);
+	script_1064(a1, a0);
+	script_1066(a2, a1, a0);
+	return;
+}

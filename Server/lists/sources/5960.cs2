@@ -1,0 +1,41 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5960(int a0,int a1) {
+	object v0 = "";
+	switch (script_5956(a1)) {
+		case 0:
+			cs2method_10758(9999, a0);
+			v0 = "Unlocked";
+			break;
+		case 1:
+			cs2method_10758(9997, a0);
+			v0 = "Pending Lock: This skillplot will lock once the resource target has been met.";
+			break;
+		case 2:
+			cs2method_10758(9996, a0);
+			v0 = "Pending Unlock: This skillplot will unlock once all resource targets have been met.";
+			break;
+		case 3:
+			cs2method_10758(9996, a0);
+			v0 = "Locked: This skillplot has been manually locked.";
+	}
+	cs2method_21121(new function<script_8799>(object a0,int a1,int a2) {
+		script_8800(a2, a1, a0);
+		return;
+	}, (string)v0, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(a0));
+	cs2method_20750(new function<script_8805>() {
+		script_8808();
+		return;
+	}, "", new WidgetPointer(a0));
+	return;
+}

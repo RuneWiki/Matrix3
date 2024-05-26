@@ -1,0 +1,27 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_9700(int a0,int a1) {
+	int v1;
+	int v0 = 0;
+	if (a0 == 1) {
+		v1 = client_configs['cfg627'].bitcfg1906;
+	} else if (a0 == 3) {
+		v1 = client_configs['cfg627'].bitcfg1907;
+	} else {
+		v1 = client_configs['cfg627'].bitcfg1908;
+	}
+	if (v1 == a1) {
+		return 1;
+	}
+	return 0;
+}

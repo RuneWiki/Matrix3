@@ -1,0 +1,32 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_156(int a0,object a1,int a2,object a3,int a4,object a5,object a6,int a7,object a8,object a9,object a10,object a11,int a12,int a13,object a14) {
+	if (a7 == -1) {
+		script_154(a4, a1, a9, a11, a2, a6, a8, a12, a2, a0, a3, a10, a13, a14, a5);
+		return;
+	}
+	int v0 = a2;
+	while (v0 != a7) {
+		if (v0 > a7) {
+			script_154(a4, a1, a9, a11, cs2method_10461(v0, 1), a6, a8, a12, v0, a0, a3, a10, a13, a14, a5);
+			v0 = cs2method_10461(v0, 1);
+		} else {
+			if (v0 < a7) {
+				script_154(a4, a1, a9, a11, cs2method_10060(v0, 1), a6, a8, a12, v0, a0, a3, a10, a13, a14, a5);
+				v0 = cs2method_10060(v0, 1);
+			}
+		}
+	}
+	script_154(a4, a1, a9, a11, a2, a6, a8, a12, a7, a0, a3, a10, a13, a14, a5);
+	return;
+}

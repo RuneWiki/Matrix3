@@ -1,0 +1,76 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3732() {
+	int v6;
+	int v11;
+	int v3;
+	int v9;
+	int v8;
+	int v0;
+	int v5 = 1;
+	int v4 = 0;
+	int v7 = 0;
+	int v2 = 0;
+	int v10 = 0;
+	int v1 = 0;
+	if (itemDefsAttribute(cs2_configs['cfg1799'], 4267) == 1) {
+		v5 = 0;
+		cs2method_10026(75104265, "Use all small lamps");
+		cs2method_10026(75104269, "Use all medium lamps");
+		cs2method_10026(75104273, "Use all large lamps");
+		cs2method_10026(75104277, "Use all huge lamps");
+		v8 = cs2method_10936(93, 28904);
+		v11 = cs2method_10936(93, 28905);
+		if (cs2method_10771() == 1 || cs2method_10416(28906) == 0) {
+			v2 = cs2method_10936(93, 28906);
+		}
+		if (cs2method_10771() == 1 || cs2method_10416(28907) == 0) {
+			v10 = cs2method_10936(93, 28907);
+		}
+	} else {
+		cs2method_10026(75104265, "Use all small stars");
+		cs2method_10026(75104269, "Use all medium stars");
+		cs2method_10026(75104273, "Use all large stars");
+		cs2method_10026(75104277, "Use all huge stars");
+		v8 = cs2method_10936(93, 30550);
+		v11 = cs2method_10936(93, 30523);
+		v2 = cs2method_10936(93, 29923);
+		v10 = cs2method_10936(93, 29896);
+	}
+	if (v8 > 0) {
+		v9 = client_configs['cfg4494'].bitcfg22507;
+	} else {
+		v9 = -1;
+	}
+	script_3733(v9, 75104265, 75104264);
+	if (v11 > 0) {
+		v0 = client_configs['cfg4494'].bitcfg22508;
+	} else {
+		v0 = -1;
+	}
+	script_3733(v0, 75104269, 75104268);
+	if (v2 > 0) {
+		v6 = client_configs['cfg4494'].bitcfg22509;
+	} else {
+		v6 = -1;
+	}
+	script_3733(v6, 75104273, 75104272);
+	if (v10 > 0) {
+		v3 = client_configs['cfg4494'].bitcfg22510;
+	} else {
+		v3 = -1;
+	}
+	script_3733(v3, 75104277, 75104276);
+	script_3734(v8, v11, v2, v10, v5);
+	return;
+}

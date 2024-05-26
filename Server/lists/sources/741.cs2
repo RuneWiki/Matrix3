@@ -1,0 +1,39 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_741() {
+	flow_0:
+		int v1 = client_configs['cfg2711'];
+		if (v1 == 0) {
+			return;
+		}
+		int v2 = script_739(v1);
+		int v0 = idx17mapData('i', 'm', 1151, v2);
+		if (cs2method_10441(cs2_configs['cfg104'], v2) == 1) {
+			return;
+		}
+		if (v1 == cs2_configs['cfg99'] || v1 == cs2_configs['cfg100'] || v1 == cs2_configs['cfg101']) {
+			return;
+		}
+		cs2method_10336(v0, (int)idx17mapData('i', 'I', 1153, v1));
+		script_737(v1);
+		IF (cs2_configs['cfg102'] == 12) 
+			GOTO	flow_7
+		GOTO	flow_7
+	flow_7:
+		if (cs2_configs['cfg105'] == 0) {
+			cs2method_10810("The mechanism issues forth a whine and shuts down.");
+			script_675();
+		}
+		return;
+}

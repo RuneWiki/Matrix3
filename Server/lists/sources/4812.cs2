@@ -1,0 +1,25 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4812(object a0,int a1,int a2,int a3) {
+	if (script_4761(a2) == 0) {
+		return;
+	}
+	if (cs2_configs['cfg2'] != 1) {
+		object v0 = (string)a0 + "<br>" + "Requires tier " + (string)cs2method_10379(a1) + " resources.";
+		cs2method_10758(a3, 82444786);
+		cs2method_10026(82444787, v0);
+		cs2method_10467(0, 82444775);
+		cs2_configs['cfg2'] = 1;
+	}
+	return;
+}

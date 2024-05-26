@@ -1,0 +1,38 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+string script_1751(int a0) {
+	if (a0 < 2) {
+		return "in a minute";
+	}
+	int v0 = cs2method_10968(a0, 60);
+	int v1 = cs2method_10038(a0, 60);
+	if (v0 > 1) {
+		if (v1 > 1) {
+			return "in " + (string)cs2method_10379(v0) + " hours " + (string)cs2method_10379(v1) + " minutes";
+		}
+		if (v1 == 1) {
+			return "in " + (string)cs2method_10379(v0) + " hours 1 minute";
+		}
+		return "in " + (string)cs2method_10379(v0) + " hours";
+	}
+	if (v0 == 1) {
+		if (v1 > 1) {
+			return "in 1 hour " + (string)cs2method_10379(v1) + " minutes";
+		}
+		if (v1 == 1) {
+			return "in 1 hour 1 minute";
+		}
+		return "in 1 hour";
+	}
+	return "in " + (string)cs2method_10379(v1) + " minutes";
+}

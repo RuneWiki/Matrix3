@@ -1,0 +1,57 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5699(int a0,int a1,int a2,int a3) {
+	int v10;
+	int v11;
+	int v8 = cs2method_10968(cs2method_10060(a0, a2), 2);
+	int v0 = globalarray_0[v8];
+	globalarray_0[v8] = globalarray_0[a2];
+	globalarray_0[a2] = v0;
+	for (int v2 = a0, int v3 = a0, int v9 = 0, int v7 = 0, int v5 = 0, int v6 = -1, int v1 = -1; v3 < a2; v3 = cs2method_10060(v3, 1)) {
+		int v4 = idx22mapAttribute(idx17mapData('i', 'J', a1, globalarray_0[v3]), 2213);
+		int v12 = idx22mapAttribute(idx17mapData('i', 'J', a1, v0), 2213);
+		if (v4 != -1 && itemDefsAttribute(v4, 2640) > 0 && itemDefsAttribute(v4, 2640) != 62 && itemDefsAttribute(v4, 2641) == 0) {
+			if (itemDefsAttribute(v4, 2640) == cs2_configs['cfg1753']) {
+				v11 = itemDefsAttribute(v4, 2645);
+			} else {
+				v11 = idx22mapAttribute(idx17mapData('i', 'J', a1, globalarray_0[v3]), 2212);
+			}
+		} else {
+			v11 = idx22mapAttribute(idx17mapData('i', 'J', a1, globalarray_0[v3]), 2212);
+		}
+		if (v12 != -1 && itemDefsAttribute(v12, 2640) > 0 && itemDefsAttribute(v12, 2640) != 62 && itemDefsAttribute(v12, 2641) == 0) {
+			if (itemDefsAttribute(v12, 2640) == cs2_configs['cfg1753']) {
+				v10 = itemDefsAttribute(v12, 2645);
+			} else {
+				v10 = idx22mapAttribute(idx17mapData('i', 'J', a1, v0), 2212);
+			}
+		} else {
+			v10 = idx22mapAttribute(idx17mapData('i', 'J', a1, v0), 2212);
+		}
+		if (v11 > v10) {
+			int v13 = globalarray_0[v3];
+			globalarray_0[v3] = globalarray_0[v2];
+			globalarray_0[v2] = v13;
+			v2 = cs2method_10060(v2, 1);
+		}
+	}
+	globalarray_0[a2] = globalarray_0[v2];
+	globalarray_0[v2] = v0;
+	if (a0 < cs2method_10461(v2, 1)) {
+		script_5699(0, a0, cs2method_10461(v2, 1), a1);
+	}
+	if (cs2method_10060(v2, 1) < a2) {
+		script_5699(0, cs2method_10060(v2, 1), a2, a1);
+	}
+	return;
+}

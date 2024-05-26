@@ -1,0 +1,109 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_7057(int a0) {
+	int v1;
+	if (a0 == -1) {
+		return 0;
+	}
+	int v3 = idx22mapAttribute(a0, 2793);
+	int v0 = 0;
+	switch (idx22mapAttribute(a0, 2806)) {
+		default:
+			return 0;
+		case 1:
+			v1 = 1;
+			break;
+		case 2:
+			v1 = 2;
+			break;
+		case 5:
+			v1 = 3;
+			break;
+		case 6:
+			v1 = 4;
+			break;
+		case 3:
+			v1 = 5;
+			break;
+		case 4:
+			v1 = 6;
+	}
+	for (int v5 = 0, int v4 = 0, int v2 = 0; v5 < 14; v5 = cs2method_10060(v5, 1)) {
+		int v6;
+		int v7;
+		switch (v5) {
+			case 0:
+				v7 = client_configs['cfg727'].bitcfg1724;
+				v6 = client_configs['cfg727'].bitcfg1723;
+				break;
+			case 1:
+				v7 = client_configs['cfg728'].bitcfg1726;
+				v6 = client_configs['cfg728'].bitcfg1725;
+				break;
+			case 2:
+				v7 = client_configs['cfg729'].bitcfg1728;
+				v6 = client_configs['cfg729'].bitcfg1727;
+				break;
+			case 3:
+				v7 = client_configs['cfg730'].bitcfg1730;
+				v6 = client_configs['cfg730'].bitcfg1729;
+				break;
+			case 4:
+				v7 = client_configs['cfg731'].bitcfg1732;
+				v6 = client_configs['cfg731'].bitcfg1731;
+				break;
+			case 5:
+				v7 = client_configs['cfg732'].bitcfg1734;
+				v6 = client_configs['cfg732'].bitcfg1733;
+				break;
+			case 6:
+				v7 = client_configs['cfg733'].bitcfg1736;
+				v6 = client_configs['cfg733'].bitcfg1735;
+				break;
+			case 7:
+				v7 = client_configs['cfg734'].bitcfg1738;
+				v6 = client_configs['cfg734'].bitcfg1737;
+				break;
+			case 8:
+				v7 = client_configs['cfg735'].bitcfg1740;
+				v6 = client_configs['cfg735'].bitcfg1739;
+				break;
+			case 9:
+				v7 = client_configs['cfg736'].bitcfg1742;
+				v6 = client_configs['cfg736'].bitcfg1741;
+				break;
+			case 10:
+				v7 = client_configs['cfg737'].bitcfg1744;
+				v6 = client_configs['cfg737'].bitcfg1743;
+				break;
+			case 11:
+				v7 = client_configs['cfg738'].bitcfg1746;
+				v6 = client_configs['cfg738'].bitcfg1745;
+				break;
+			case 12:
+				v7 = client_configs['cfg4432'].bitcfg22338;
+				v6 = client_configs['cfg4432'].bitcfg22337;
+				break;
+			case 13:
+				v7 = client_configs['cfg4433'].bitcfg22340;
+				v6 = client_configs['cfg4433'].bitcfg22339;
+				break;
+			default:
+				return 0;
+		}
+		if (v7 == v3 && v6 == v1) {
+			return 1;
+		}
+	}
+	return 0;
+}

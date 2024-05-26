@@ -1,0 +1,26 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_1664(int a0,int a1) {
+	int v0 = 0;
+	switch (a1) {
+		case 3:
+			v0 = cs2method_10968(itemDefsAttribute(a0, 965), 10);
+			break;
+		case 1:
+			v0 = cs2method_10968(itemDefsAttribute(a0, 641), 10);
+			break;
+		case 2:
+			v0 = cs2method_10968(itemDefsAttribute(a0, 643), 10);
+	}
+	return v0;
+}

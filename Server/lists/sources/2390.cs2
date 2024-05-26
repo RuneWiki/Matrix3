@@ -1,0 +1,92 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2390(int a0) {
+	object v11;
+	int v0 = 68354229;
+	int v8 = 68354268;
+	int v12 = 68354266;
+	int v1 = 68354269;
+	int v2 = 68354275;
+	int v10 = 0;
+	int v7 = -1;
+	cs2method_10273(v0);
+	cs2method_10273(v12);
+	if (client_configs['cfg4409'] != -1) {
+		v10 = client_configs['cfg4409'];
+		int v19 = idx17mapData('i', 'i', 8713, client_configs['cfg4409']);
+		int v18 = idx17mapData('i', 'J', 8712, v19);
+		if (script_2383(v18) == 1) {
+			cs2method_10467(0, v1);
+			if (v18 != -1 && client_configs['cfg4389'].bitcfg22262 < idx22mapAttribute(v18, 4244)) {
+				cs2method_10467(0, v2);
+			} else {
+				cs2method_10467(1, v2);
+			}
+		} else {
+			cs2method_10467(1, v1);
+		}
+		if (cs2method_11038(v8, v10) == 1) {
+			script_2996(v12, cs2method_10163(v12), cs2method_10060(cs2method_10488(), 6), cs2method_10060(cs2method_10664(), 6), cs2method_10461(cs2method_10878(), 3), cs2method_10461(cs2method_10406(), 3), 16763653, 0, 0);
+		}
+	} else {
+		cs2method_10467(1, v1);
+	}
+	if (cs2_configs['cfg4178'] != -1) {
+		v10 = cs2_configs['cfg4178'];
+		if (cs2method_11038(v8, v10) == 1) {
+			script_2996(v12, cs2method_10163(v12), cs2method_10060(cs2method_10488(), 6), cs2method_10060(cs2method_10664(), 6), cs2method_10461(cs2method_10878(), 3), cs2method_10461(cs2method_10406(), 3), 16777215, 0, 0);
+		}
+	}
+	int v4 = -1;
+	int v13 = -1;
+	int v14 = cs2method_10236(v0);
+	int v5 = cs2method_10823(v0);
+	int v17 = 0;
+	object v3 = "";
+	int v16 = idx17mapData('i', 'i', 8713, v10);
+	int v15 = idx17mapData('i', 'J', 8712, v16);
+	if (v15 == -1) {
+		return;
+	}
+	script_2994(v0, 0, 32, 32, 5, 5, idx22mapAttribute(v15, 4242), 0, 0, 0, 0);
+	script_2995(v0, 1, cs2method_10461(v14, 40), 32, 40, 5, 7705248, 21208, 1, idx22mapAttribute(v15, 4240), 1, 20, 0);
+	int v6 = cs2method_10051(cs2method_10805(cs2method_10461(v14, 20), 17813, idx22mapAttribute(v15, 4241)), 12);
+	script_2995(v0, 2, cs2method_10461(v14, 5), v6, 5, 45, 7705248, 17813, 0, idx22mapAttribute(v15, 4241), 0, 12, 0);
+	switch (idx22mapAttribute(v15, 4253)) {
+		default:
+			v11 = "Passive ability - always on.";
+			break;
+		case 1:
+			v11 = "Self cast - has immediate effect.";
+			break;
+		case 2:
+			v11 = "Requires another competitor nearby.";
+			break;
+		case 3:
+			v11 = "Requires a gorilla or monkey nearby.";
+	}
+	if (idx22mapAttribute(v15, 4247) > 0) {
+		v11 = cs2method_10427(v11, "<br>" + "Limited casts: " + (string)cs2method_10379(idx22mapAttribute(v15, 4247)) + " uses per game.");
+	} else {
+		if (idx22mapAttribute(v15, 4246) > 0) {
+			v11 = cs2method_10427(v11, "<br>" + "Cooldown: " + (string)cs2method_10379(cs2method_10122(idx22mapAttribute(v15, 4246), 100, 60)) + " seconds.");
+		}
+	}
+	int v9 = cs2method_10051(cs2method_10805(cs2method_10461(v14, 10), 17813, v11), 12);
+	script_2995(v0, 3, cs2method_10461(v14, 10), v9, 5, cs2method_10461(cs2method_10461(v5, 5), v9), 7705248, 17813, 0, v11, 0, 12, 0);
+	if (script_2383(v15) == 1) {
+		object v18 = "Cost to unlock: " + (string)cs2method_10379(idx22mapAttribute(v15, 4244));
+		script_2995(v0, 4, cs2method_10461(v14, 10), 13, 5, cs2method_10461(cs2method_10461(v5, 18), v9), 11456736, 17814, 0, v18, 0, 13, 0);
+	}
+	return;
+}

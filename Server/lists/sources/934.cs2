@@ -1,0 +1,39 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+string script_934(int a0) {
+	object v0;
+	object v1 = "";
+	int v2 = itemDefsAttribute(a0, 742);
+	switch (itemDefsAttribute(a0, 741)) {
+		case 1:
+			if (v2 == 1) {
+				v0 = "Rescued 1 dignitary in Recipe for Disaster";
+			} else {
+				v0 = "Rescued " + (string)cs2method_10379(v2) + " dignitaries in Recipe for Disaster";
+			}
+			return script_913(v0, client_configs['cfg2579'].bitcfg12710, itemDefsAttribute(a0, 742));
+		case 2:
+			return script_913("Barbarian spearmaking", client_configs['cfg607'].bitcfg1622, 2);
+		case 3:
+			return script_913("Complete: Chaos Tunnels", client_configs['cfg3043'].bitcfg15344, 10);
+		case 4:
+			return script_913("Part of quest: In Aid of the Myreque", client_configs['cfg2417'].bitcfg11498, 280);
+		case 5:
+			return script_913("Part of quest: Recipe for Disaster", client_configs['cfg2579'].bitcfg12708, 4);
+		case 6:
+			return script_913("Part of quest: Another Slice of H.A.M.", client_configs['cfg2729'].bitcfg13650, 8);
+		case 7:
+			return script_913("You need to complete the first puzzle in the Elemental Workshop IV Quest.", client_configs['cfg2487'].bitcfg12170, 7);
+	}
+	return "";
+}

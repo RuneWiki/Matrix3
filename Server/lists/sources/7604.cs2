@@ -1,0 +1,64 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+int script_7604(int a0,int a1) {
+	flow_0:
+		if (a0 == -1) {
+			return 1;
+		}
+		if (script_7608(a0) == a1) {
+			return 1;
+		}
+		IF (itemDefsAttribute(a0, 686) == 14923) 
+			GOTO	flow_5
+		GOTO	flow_6
+	flow_5:
+		IF (a1 == 14924) 
+			GOTO	flow_16
+	flow_6:
+		IF (itemDefsAttribute(a0, 686) == 14924) 
+			GOTO	flow_7
+		GOTO	flow_8
+	flow_7:
+		IF (a1 == 14923) 
+			GOTO	flow_16
+	flow_8:
+		IF (itemDefsAttribute(a0, 686) == 14921) 
+			GOTO	flow_9
+		GOTO	flow_10
+	flow_9:
+		IF (a1 == 14922) 
+			GOTO	flow_16
+	flow_10:
+		IF (itemDefsAttribute(a0, 686) == 14922) 
+			GOTO	flow_11
+		GOTO	flow_12
+	flow_11:
+		IF (a1 == 14921) 
+			GOTO	flow_16
+	flow_12:
+		IF (itemDefsAttribute(a0, 686) == 14929) 
+			GOTO	flow_13
+		GOTO	flow_14
+	flow_13:
+		IF (a1 == 14927) 
+			GOTO	flow_16
+	flow_14:
+		IF (itemDefsAttribute(a0, 686) == 14927 && a1 == 14929) 
+			GOTO	flow_16
+		GOTO	flow_17
+	flow_16:
+		return 1;
+	flow_17:
+		return 0;
+}

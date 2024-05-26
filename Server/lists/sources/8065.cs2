@@ -1,0 +1,21 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_8065_struct(2,0,0) script_8065(int a0,int a1) {
+	if (script_8292(a1, a0) == 1) {
+		return new script_8065_struct(-1, -1);
+	}
+	if (script_8292(a1, -1) == 1) {
+		return new script_8065_struct(idx22mapAttribute(21301, 3509), cs2method_10461(cs2method_10051(4, a0), 1));
+	}
+	return new script_8065_struct(script_8069(a1), -1);
+}

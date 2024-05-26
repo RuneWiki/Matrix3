@@ -1,0 +1,38 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2576(int a0,int a1) {
+	object v1;
+	object v0 = "";
+	switch (a0) {
+		case 51183658:
+		case 51183649:
+			v1 = "How much time is left for this round.";
+			break;
+		case 51183659:
+		case 51183650:
+			v1 = "How many orbs the green team have captured this round.";
+			break;
+		case 51183660:
+		case 51183651:
+			v1 = "How many orbs the yellow team have captured this round.";
+			break;
+		case 51183662:
+		case 51183653:
+			v1 = "How active you have been during this round.";
+			break;
+		default:
+			return;
+	}
+	script_7787(a0, a1, 25, v1, cs2method_10236(cs2method_10982(a1)));
+	return;
+}

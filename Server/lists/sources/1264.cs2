@@ -1,0 +1,35 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1264() {
+	object v0 = "null";
+	if (client_configs['cfg455'] == 0) {
+		cs2method_10758(762, 17104910);
+		object v1 = "Mouse buttons" + "<br>" + "(currently 2)";
+		cs2method_21121(new function<script_7782>(int a0,int a1,object a2,int a3,int a4) {
+			script_5335(a0, -1, a3, a4, a2, a1, 1);
+			return;
+		}, new WidgetPointer(-32768,3), new WidgetPointer(261,31), (string)v1, 25, 180, "IIsii", new WidgetPointer(261,14));
+	} else {
+		if (client_configs['cfg455'] == 1) {
+			cs2method_10758(761, 17104910);
+			object v1 = "Mouse buttons" + "<br>" + "(currently 1)";
+			cs2method_21121(new function<script_7782>(int a0,object a1,int a2,int a3,int a4) {
+				script_5335(a2, -1, a0, a3, a1, a4, 1);
+				return;
+			}, new WidgetPointer(-32768,3), new WidgetPointer(261,31), (string)v1, 25, 180, "IIsii", new WidgetPointer(261,14));
+		}
+	}
+	script_5641(17104910, cs2method_10038(cs2method_10060(client_configs['cfg455'], 1), 2));
+	cs2_configs['cfg2'] = 0;
+	return;
+}

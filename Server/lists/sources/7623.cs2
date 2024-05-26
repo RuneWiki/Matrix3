@@ -1,0 +1,83 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7623(int a0) {
+	int v7 = -1;
+	int v12 = -1;
+	int v0 = -1;
+	int v5 = -1;
+	int v9 = -1;
+	int v11 = -1;
+	int v1 = a0;
+	script_7621_struct(5,0,0) v10 = script_7621(v1);
+	int v6 = v10.intpart_4;
+	int v4 = v10.intpart_3;
+	int v13 = v10.intpart_2;
+	int v2 = v10.intpart_1;
+	int v3 = v10.intpart_0;
+	int v8 = idx17mapData('i', 'J', 1312, a0);
+	cs2method_10026(v3, idx22mapAttribute(v8, 3313));
+	if (idx22mapAttribute(v8, 3315) != -1) {
+		cs2method_10039(idx22mapAttribute(v8, 3315), -1, v13);
+	} else {
+		cs2method_10758(idx22mapAttribute(v8, 3316), v13);
+		int v14 = v13;
+		opc_struct10411(2,0,0) v15 = cs2method_10411(v14);
+		cs2method_10283(v15.intpart_0, v15.intpart_1, 0, 0, v13);
+	}
+	if (script_7624(v8) == 1) {
+		cs2method_10026(v2, "Claimed");
+		cs2method_10758(10260, v4);
+		int v14 = 7893;
+		cs2method_10758(v14, v6);
+		cs2method_20069(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), v14, "Id", new WidgetPointer(v6));
+		cs2method_21103(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), v14, "Id", new WidgetPointer(v6));
+		cs2method_20680(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a0, a1);
+			return;
+		}, new WidgetPointer(-32768,3), v14, "Id", new WidgetPointer(v6));
+		cs2method_20750(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), v14, "Id", new WidgetPointer(v6));
+		script_7622();
+	} else {
+		cs2method_10758(10257, v4);
+		int v14 = 7891;
+		cs2method_10758(v14, v6);
+		cs2method_21103(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), v14, "Id", new WidgetPointer(v6));
+		cs2method_20750(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), v14, "Id", new WidgetPointer(v6));
+		int v15 = 13984;
+		cs2method_20069(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), v15, "Id", new WidgetPointer(v6));
+		int v16 = 7894;
+		cs2method_20680(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), v16, "Id", new WidgetPointer(v6));
+	}
+	return;
+}

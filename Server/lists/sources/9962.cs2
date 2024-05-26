@@ -1,0 +1,81 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_9962_struct(0,4,0) script_9962(int a0) {
+	object v0 = "";
+	object v2 = "";
+	object v1 = "";
+	object v3 = "";
+	switch (a0) {
+		case 1:
+			v0 = "Confirm Save";
+			v2 = "Are you sure you wish to save over " + (string)script_9934(6) + " with your new layout?" + "<br>" + "<br>" + "Your old layout will be discarded.";
+			v1 = "Save";
+			v3 = "Cancel";
+			break;
+		case 2:
+			v0 = "Confirm Save";
+			v2 = "Are you sure you wish to save over " + (string)script_9934(7) + " with your new layout?" + "<br>" + "<br>" + "Your old layout will be discarded.";
+			v1 = "Save";
+			v3 = "Cancel";
+			break;
+		case 3:
+			v0 = "Discard Changes";
+			v2 = "Are you sure you want to discard the changes you have made?";
+			v1 = "Discard";
+			v3 = "Cancel";
+			break;
+		case 4:
+			v0 = "Save Changes";
+			v2 = "Are you sure you wish to discard your changes and exit?" + "<br>" + "<br>" + "You'll go back to your previous layout.";
+			v1 = "Discard";
+			v3 = "Cancel";
+			break;
+		case 5:
+			v0 = "Save Changes";
+			v2 = "Are you sure you wish to save over your active layout with your new layout?" + "<br>" + "<br>" + "Your old layout will be discarded.";
+			v1 = "Save";
+			v3 = "Cancel";
+			break;
+		case 6:
+			v0 = "Confirm Logout";
+			v2 = "Please confirm where to logout to." + "<br>" + "Click the cross to continue playing.";
+			v1 = "Logout";
+			v3 = "Exit to Lobby";
+			break;
+		case 7:
+			v0 = "Reset Keybinds?";
+			v2 = "Doing this will reset all keybinds to their default values.";
+			v1 = "Reset";
+			v3 = "Cancel";
+			break;
+		case 8:
+			v0 = "Delete Friend?";
+			v2 = "Are you sure you want to delete " + cs2_configs['cfg3936'] + "?";
+			v1 = "Accept";
+			v3 = "Cancel";
+			break;
+		case 9:
+			if (client_configs['cfg3680'].bitcfg22315 == 0) {
+				v0 = "Switch to Legacy";
+				v2 = "Switching to Legacy will change your combat mode and interface system to replicate the pre-EoC game. Do you want to switch?";
+				v1 = "Switch";
+				v3 = "Cancel";
+			} else {
+				v0 = "Switch to EoC";
+				v2 = "Switching to EoC will change your combat mode and interface system to the more modern version. Do you want to switch?";
+				v1 = "Accept";
+				v3 = "Cancel";
+			}
+	}
+	return new script_9962_struct(v0, v2, v1, v3);
+}

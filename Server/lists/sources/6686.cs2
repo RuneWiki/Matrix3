@@ -1,0 +1,58 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6686(int a0,int a1,int a2,int a3,int a4) {
+	object v0;
+	if (a1 != 10) {
+		cs2method_10670(6185, 1, 0, 200);
+	}
+	if (a1 != 1 || a4 == cs2_configs['cfg2015']) {
+		cs2method_10467(1, 87818264);
+		cs2_configs['cfg2015'] = -1;
+		return;
+	}
+	cs2method_10467(0, 87818264);
+	int v1 = 10;
+	object v4 = "5 Hunter XP";
+	if (a3 != -1) {
+		cs2method_10467(0, 87818267);
+		cs2method_10121(a3, 1, 87818267);
+		v1 = cs2method_10060(cs2method_10060(v1, cs2method_10236(87818267)), 5);
+		v4 = cs2method_10018(a3);
+	} else {
+		cs2method_10467(1, 87818267);
+	}
+	cs2method_10283(v1, cs2method_10823(87818268), 1, 0, 87818268);
+	object v2 = idx22mapAttribute(a4, 2636);
+	if (a2 == 1) {
+		v0 = cs2method_10427("<col=ffffff>" + (string)v4 + ":" + "</col>" + " 1 Competence Point" + "<br>", v2);
+	} else {
+		v0 = cs2method_10427("<col=ffffff>" + (string)v4 + ":" + "</col>" + " " + (string)cs2method_10055(a2, 1) + " Competence Points" + "<br>", v2);
+	}
+	if (a0 > 0) {
+		if (cs2method_10338(21) < a0) {
+			v0 = cs2method_10427(v0, "<br>" + "<col=ff0000>" + "Also requires level " + (string)cs2method_10379(a0) + " Hunter." + "</col>");
+		} else {
+			v0 = cs2method_10427(v0, "<br>" + "Also requires level " + (string)cs2method_10379(a0) + " Hunter.");
+		}
+	}
+	int v5 = cs2method_10461(cs2method_10236(87818240), v1);
+	int v3 = cs2method_10872(cs2method_11048(cs2method_10509(v5, cs2method_10643(87818268), v0), 150), v5);
+	if (v3 < v5) {
+		cs2method_10283(cs2method_10461(v5, v3), cs2method_10823(87818264), 1, 0, 87818264);
+	} else {
+		cs2method_10283(0, cs2method_10823(87818264), 1, 0, 87818264);
+	}
+	cs2method_10026(87818268, v0);
+	cs2_configs['cfg2015'] = a4;
+	return;
+}

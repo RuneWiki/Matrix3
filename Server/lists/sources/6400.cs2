@@ -1,0 +1,124 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6400(int a0) {
+	int v5;
+	int v13;
+	int v15;
+	int v16;
+	int v7;
+	int v1;
+	int v6;
+	int v4;
+	cs2method_10670(14378, 1, 0, 255);
+	int v12 = 0;
+	int v0 = -1;
+	int v9 = -1;
+	int v14 = -1;
+	int v3 = -1;
+	int v2 = -1;
+	if (cs2method_10769(85721117) == 8352) {
+		v12 = 1;
+	} else if (cs2method_10769(85721123) == 8352) {
+		v12 = 2;
+	} else if (cs2method_10769(85721129) == 8352) {
+		v12 = 3;
+	} else {
+		if (cs2method_10769(85721135) == 8352) {
+			v12 = 4;
+		}
+	}
+	if (v12 == 0) {
+		return;
+	}
+	switch (v12) {
+		case 1:
+			v7 = 85721139;
+			v15 = 85721117;
+			v6 = 85721118;
+			v16 = 85721119;
+			break;
+		case 2:
+			v7 = 85721337;
+			v15 = 85721123;
+			v6 = 85721124;
+			v16 = 85721125;
+			break;
+		case 3:
+			v7 = 85721540;
+			v15 = 85721129;
+			v6 = 85721130;
+			v16 = 85721131;
+			break;
+		case 4:
+			v7 = 85721691;
+			v15 = 85721135;
+			v6 = 85721136;
+			v16 = 85721137;
+			script_6404();
+			break;
+		default:
+			return;
+	}
+	if (v7 == -1 || v15 == -1 || v16 == -1 || v6 == -1) {
+		return;
+	}
+	cs2method_10467(1, v7);
+	script_6401(v15, v6, v16);
+	int v11 = -1;
+	int v8 = -1;
+	int v10 = -1;
+	switch (a0) {
+		case 85721116:
+			v5 = 85721139;
+			v13 = 85721117;
+			v1 = 85721118;
+			v4 = 85721119;
+			cs2method_10467(0, 85721966);
+			script_7791(85721966, 85721139);
+			break;
+		case 85721122:
+			v5 = 85721337;
+			v13 = 85721123;
+			v1 = 85721124;
+			v4 = 85721125;
+			script_6408();
+			cs2method_10467(0, 85721966);
+			script_7791(85721966, 85721337);
+			break;
+		case 85721128:
+			v5 = 85721540;
+			v13 = 85721129;
+			v1 = 85721130;
+			v4 = 85721131;
+			script_6410();
+			cs2method_10467(1, 85721966);
+			break;
+		case 85721134:
+			v5 = 85721691;
+			v13 = 85721135;
+			v1 = 85721136;
+			v4 = 85721137;
+			script_6413();
+			cs2method_10467(0, 85721966);
+			script_7791(85721966, 85721691);
+			break;
+		default:
+			return;
+	}
+	if (v5 == -1 || v13 == -1 || v4 == -1 || v1 == -1) {
+		return;
+	}
+	cs2method_10467(0, v5);
+	script_6402(v13, v1, v4);
+	return;
+}

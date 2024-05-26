@@ -1,0 +1,56 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5080(int a0) {
+	int v1 = 0;
+	int v0 = cs2method_10924(3921);
+	int v3 = -1;
+	while (v1 < v0) {
+		int v2 = idx17mapData('i', 'g', 3921, v1);
+		if (v2 != -1 && cs2method_11038(a0, cs2method_10060(cs2method_10051(v1, 10), 9)) == 1) {
+			cs2method_10797(idx17mapData('i', 's', v2, script_5089(v2)));
+		}
+		v1 = cs2method_10060(v1, 1);
+	}
+	switch (client_configs['cfg1993'].bitcfg7078) {
+		case 1:
+			if (cs2_configs['cfg1095'] == 1) {
+				cs2method_10026(73007112, "Press 'Confirm' when you've made your choices.");
+			} else {
+				cs2method_10026(73007112, "Waiting for the battle's initiator to choose the rules...");
+			}
+			break;
+		case 2:
+			if (cs2_configs['cfg1095'] == 1) {
+				cs2method_10026(73007112, "Press 'Confirm' when you've made your choices.");
+			} else {
+				cs2method_10026(73007112, "Waiting for " + cs2_configs['cfg2537'] + " to choose the rules...");
+			}
+			break;
+		case 3:
+			cs2method_10026(73007112, "Loading elements...");
+			break;
+		case 4:
+			cs2method_10026(73007112, "Building elements...");
+			break;
+		case 5:
+			cs2method_10026(73007112, "Failed to build battlefield.");
+			break;
+		case 6:
+			cs2method_10026(73007112, "Initialising build mode.");
+			break;
+		default:
+			cs2method_10026(73007112, "Loading...");
+	}
+	script_5085(a0);
+	return;
+}

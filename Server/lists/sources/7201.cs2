@@ -1,0 +1,46 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7201(int a0,int a1) {
+	object v5 = "";
+	object v4 = "";
+	switch (itemDefsAttribute(a1, 749)) {
+		default:
+			cs2method_10026(a0, "None");
+			return;
+		case 1:
+		case 18:
+		case 4:
+		case 20:
+		case 6:
+		case 10:
+		case 15:
+			object v3 = idx17mapData('S', 's', 680, itemDefsAttribute(a1, 749));
+			object v0 = cs2method_10427((string)cs2method_10379(itemDefsAttribute(a1, 750)) + " ", v3);
+			switch (itemDefsAttribute(a1, 751)) {
+				default:
+					cs2method_10026(a0, v0);
+					return;
+			}
+	}
+	case 1:
+	case 18:
+	case 4:
+	case 20:
+	case 6:
+	case 10:
+	case 15:
+		object v2 = idx17mapData('S', 's', 680, itemDefsAttribute(a1, 751));
+		object v1 = cs2method_10427(", " + (string)cs2method_10379(itemDefsAttribute(a1, 752)) + " ", v2);
+		cs2method_10026(a0, cs2method_10427(v0, v1));
+		return;
+}

@@ -1,0 +1,23 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_2728() {
+	if (script_2761() > 100) {
+		return 0;
+	}
+	for (int v0 = cs2method_10924(681); v0 > 0; v0 = cs2method_10461(v0, 1)) {
+		if (cs2method_10338(idx17mapData('i', 'S', 681, v0)) > 20) {
+			return 0;
+		}
+	}
+	return 1;
+}

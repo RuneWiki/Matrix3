@@ -1,0 +1,71 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_5730(int a0,int a1) {
+	int v0 = idx17mapData('i', 'i', 5510, a0);
+	if (script_5765(a1) == 1) {
+		return 1;
+	}
+	if (script_5767() == 1) {
+		if (v0 >= 10) {
+			return 0;
+		}
+		if (v0 == 0) {
+			return 1;
+		}
+		switch (v0) {
+			case 1:
+				if (client_configs['cfg1265'].bitcfg3454 != 1) {
+					return 0;
+				}
+				break;
+			case 2:
+				if (client_configs['cfg1265'].bitcfg3455 != 1) {
+					return 0;
+				}
+				break;
+			case 3:
+				if (client_configs['cfg1265'].bitcfg3456 != 1) {
+					return 0;
+				}
+				break;
+			case 4:
+				if (client_configs['cfg1265'].bitcfg3457 != 1) {
+					return 0;
+				}
+				break;
+			case 5:
+				if (client_configs['cfg1265'].bitcfg3458 != 1) {
+					return 0;
+				}
+				break;
+			case 6:
+				if (client_configs['cfg1265'].bitcfg3459 != 1) {
+					return 0;
+				}
+				break;
+			case 7:
+				if (client_configs['cfg1265'].bitcfg3460 != 1) {
+					return 0;
+				}
+				break;
+			case 8:
+				if (client_configs['cfg1265'].bitcfg3461 != 1) {
+					return 0;
+				}
+				break;
+			case 9:
+				return 0;
+		}
+	}
+	return 1;
+}

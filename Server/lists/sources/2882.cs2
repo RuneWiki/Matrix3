@@ -1,0 +1,25 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2882(int a0) {
+	if (client_configs['cfg35'].bitcfg207 == 1 || client_configs['cfg1113'].bitcfg3028 == 1) {
+		return;
+	}
+	if (client_configs['cfg76'].bitcfg187 == 0) {
+		script_8800(a0, -1, "Playlist on");
+		cs2method_10758(16944, a0);
+	} else {
+		script_8800(a0, -1, "Playlist off");
+		cs2method_10758(16942, a0);
+	}
+	return;
+}

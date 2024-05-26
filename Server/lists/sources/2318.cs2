@@ -1,0 +1,35 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2318(int a0) {
+	int v1 = -1;
+	switch (a0) {
+		case 68354245:
+			v1 = client_configs['cfg4389'].bitcfg22263;
+			break;
+		case 68354249:
+			v1 = client_configs['cfg4389'].bitcfg22264;
+			break;
+		case 68354253:
+			v1 = client_configs['cfg4389'].bitcfg22265;
+	}
+	if (v1 == -1) {
+		return;
+	}
+	int v0 = idx17mapData('i', 'J', 8712, v1);
+	if (v0 == -1) {
+		script_8800(a0, -1, "No ability active - drag an icon from the list on to this slot to use within the game.");
+	} else {
+		script_8800(a0, -1, cs2method_10427(cs2method_10427(idx22mapAttribute(v0, 4240), "<br>"), idx22mapAttribute(v0, 4241)));
+	}
+	return;
+}

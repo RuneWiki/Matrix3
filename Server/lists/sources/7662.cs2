@@ -1,0 +1,28 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7662() {
+	int v2 = -1;
+	int v1 = cs2method_10968(client_configs['cfg3593'].bitcfg18336, 10);
+	int v0 = idx17mapData('i', 'g', 7427, v1);
+	if (v0 != -1) {
+		if (client_configs['cfg3593'].bitcfg18337 > 0) {
+			return;
+		}
+		cs2method_10467(1, 92078136);
+		script_4499(v0, 0, cs2method_10924(v0), 4, 92078130, 92078140, 92078142, 92078141, 92078177, "Select a subcategory");
+	} else {
+		cs2method_10467(0, 92078136);
+		script_4501("No subcategories", 92078130);
+	}
+	return;
+}

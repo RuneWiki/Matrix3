@@ -1,0 +1,21 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2495() {
+	int v0 = 1;
+	cs2_configs['cfg837'] = client_configs['cfg1624'].bitcfg5210;
+	script_2496();
+	if (cs2_configs['cfg837'] > 0 && cs2_configs['cfg837'] <= 9) {
+		script_2500((int)idx17mapData('i', 'I', 2400, cs2_configs['cfg837']));
+	}
+	return;
+}

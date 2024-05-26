@@ -1,0 +1,68 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6727() {
+	int v2 = -1;
+	int v5 = -1;
+	int v4 = 0;
+	int v0 = 0;
+	cs2method_10273(88014892);
+	cs2method_10273(88014895);
+	cs2method_10273(88014897);
+	cs2method_10273(88014896);
+	cs2method_10273(88014898);
+	cs2method_10273(88014899);
+	script_3942(0);
+	script_3942(1);
+	script_3942(2);
+	script_3942(3);
+	script_3942(4);
+	int v1 = 5;
+	if (client_configs['cfg4056'].bitcfg21375 > 0) {
+		script_3942(v1);
+		script_3943(script_345(), v1, v0);
+		v0 = cs2method_10060(v0, 1);
+		int v7 = cs2method_10060(v1, 1);
+	}
+	if (client_configs['cfg3240'].bitcfg16574 > 0 && client_configs['cfg3240'].bitcfg16575 > 0) {
+		script_3943(script_6783(1), 0, v0);
+		v0 = cs2method_10060(v0, 1);
+	}
+	if (client_configs['cfg3241'].bitcfg16578 > 0 && client_configs['cfg3241'].bitcfg16579 > 0) {
+		script_3943(script_6783(2), 1, v0);
+		v0 = cs2method_10060(v0, 1);
+	}
+	if (cs2method_10210() == 1 || script_9716() == 0) {
+		if (client_configs['cfg3242'].bitcfg16582 > 0 && client_configs['cfg3242'].bitcfg16583 > 0) {
+			script_3943(script_6783(3), 2, v0);
+			v0 = cs2method_10060(v0, 1);
+		}
+		if (client_configs['cfg3243'].bitcfg16586 > 0 && client_configs['cfg3243'].bitcfg16587 > 0) {
+			script_3943(script_6783(4), 3, v0);
+			v0 = cs2method_10060(v0, 1);
+		}
+		if (client_configs['cfg3244'].bitcfg16590 > 0 && client_configs['cfg3244'].bitcfg16591 > 0) {
+			script_3943(script_6783(5), 4, v0);
+			v0 = cs2method_10060(v0, 1);
+		}
+	}
+	int v6 = -1;
+	int v3 = -1;
+	cs2method_11130(0, cs2method_10051(v0, cs2method_10060(3, 43)), 88014894);
+	cs2method_10251(0, 0, 88014894);
+	if (cs2method_10970(88014894) > cs2method_10823(88014880)) {
+		script_31(88014899, 88014894, 4343, 4340, 4341, 4342, 4337, 4336);
+	} else {
+		script_31(88014899, 88014880, 4343, 4340, 4341, 4342, 4337, 4336);
+	}
+	return;
+}

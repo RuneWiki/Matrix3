@@ -1,0 +1,31 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1755(int a0,int a1) {
+	if (cs2_configs['cfg227'] > 2) {
+		if (cs2method_10640(94, 0) == 8950) {
+			cs2method_10336(15700, a1);
+		} else {
+			cs2method_10336(15674, a1);
+		}
+		cs2method_10520(3407616, a0);
+	} else {
+		if (cs2method_10640(94, 0) == 8950) {
+			cs2method_10336(15699, a1);
+		} else {
+			cs2method_10336(15673, a1);
+		}
+		cs2method_10520(9502720, a0);
+	}
+	cs2method_10026(a0, cs2method_10379(cs2_configs['cfg227']));
+	return;
+}

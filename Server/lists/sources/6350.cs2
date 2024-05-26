@@ -1,0 +1,56 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6350() {
+	cs2method_10758(539, 15532046);
+	cs2method_10758(539, 15532047);
+	cs2method_10758(539, 15532048);
+	cs2method_10758(539, 15532049);
+	cs2method_10758(539, 15532050);
+	cs2method_10758(539, 15532051);
+	cs2method_10758(539, 15532052);
+	cs2method_10758(539, 15532053);
+	switch (client_configs['cfg3887'].bitcfg20646) {
+		case 1:
+			cs2method_10758(541, 15532046);
+			cs2method_10026(15532033, "Shadow");
+			break;
+		case 2:
+			cs2method_10758(541, 15532047);
+			cs2method_10026(15532033, "Sand");
+			break;
+		case 3:
+			cs2method_10758(541, 15532048);
+			cs2method_10026(15532033, "Fire");
+			break;
+		case 4:
+			cs2method_10758(541, 15532049);
+			cs2method_10026(15532033, "Time");
+			break;
+		case 5:
+			cs2method_10758(541, 15532050);
+			cs2method_10026(15532033, "Water");
+			break;
+		case 6:
+			cs2method_10758(541, 15532051);
+			cs2method_10026(15532033, "Life");
+			break;
+		case 7:
+			cs2method_10758(541, 15532052);
+			cs2method_10026(15532033, "Death");
+			break;
+		case 8:
+			cs2method_10758(541, 15532053);
+			cs2method_10026(15532033, "Light");
+	}
+	return;
+}

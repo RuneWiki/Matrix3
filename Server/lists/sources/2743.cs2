@@ -1,0 +1,50 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2743() {
+	cs2method_10644(4325377, -1, 4325376);
+	cs2method_21073(new function<script_2744>(int a0,int a1,int a2,int a3) {
+		int v5 = cs2method_11048(1, cs2method_10236(a2));
+		int v3 = cs2method_11048(1, cs2method_10823(a2));
+		int v1 = cs2method_11048(1, a3);
+		int v0 = cs2method_11048(1, a1);
+		int v4 = cs2method_10872(v1, cs2method_10461(v5, cs2method_10236(a0)));
+		int v2 = cs2method_10872(v0, cs2method_10461(v3, cs2method_10823(a0)));
+		cs2_configs['cfg3704'] = v4;
+		cs2_configs['cfg3705'] = v2;
+		cs2method_10112(cs2method_10122(cs2_configs['cfg3704'], v5, 16384), cs2method_10122(cs2_configs['cfg3705'], v3, 16384), 3, 3, a0);
+		return;
+	}, -2147483647, -2147483646, new WidgetPointer(66,1), new WidgetPointer(-32768,3), "iiII", new WidgetPointer(66,0));
+	cs2method_21110(new function<script_2744>(int a0,int a1,int a2,int a3) {
+		int v2 = cs2method_11048(1, cs2method_10236(a0));
+		int v5 = cs2method_11048(1, cs2method_10823(a0));
+		int v4 = cs2method_11048(1, a1);
+		int v0 = cs2method_11048(1, a3);
+		int v3 = cs2method_10872(v4, cs2method_10461(v2, cs2method_10236(a2)));
+		int v1 = cs2method_10872(v0, cs2method_10461(v5, cs2method_10823(a2)));
+		cs2_configs['cfg3704'] = v3;
+		cs2_configs['cfg3705'] = v1;
+		cs2method_10112(cs2method_10122(cs2_configs['cfg3704'], v2, 16384), cs2method_10122(cs2_configs['cfg3705'], v5, 16384), 3, 3, a2);
+		return;
+	}, -2147483647, -2147483646, new WidgetPointer(66,1), new WidgetPointer(-32768,3), "iiII", new WidgetPointer(66,0));
+	cs2method_10732(1, 4325376);
+	int v3 = cs2method_11048(1, cs2method_10236(4325377));
+	int v0 = cs2method_11048(1, cs2method_10823(4325377));
+	int v1 = cs2method_11048(1, cs2method_10461(v3, cs2method_10236(4325376)));
+	int v2 = cs2method_11048(1, cs2method_10461(v0, cs2method_10823(4325376)));
+	if (cs2_configs['cfg3704'] <= 0 || cs2_configs['cfg3705'] <= 0 || cs2_configs['cfg3704'] > v1 || cs2_configs['cfg3705'] > v2) {
+		cs2_configs['cfg3704'] = 1;
+		cs2_configs['cfg3705'] = 1;
+	}
+	cs2method_10112(cs2method_10122(cs2_configs['cfg3704'], v3, 16384), cs2method_10122(cs2_configs['cfg3705'], v0, 16384), 3, 3, 4325376);
+	return;
+}

@@ -1,0 +1,69 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7013(int a0,int a1) {
+	int v11 = 0;
+	int v5 = 0;
+	int v9 = idx22mapAttribute(idx17mapData('i', 'J', 7716, 1003), 3503);
+	int v12 = cs2method_10191(v9);
+	int v6 = cs2method_10152(v9);
+	int v7 = cs2method_10236(v9);
+	int v1 = cs2method_10823(v9);
+	int v3 = v12;
+	int v4 = v6;
+	int v13 = v7;
+	int v8 = v1;
+	int v2 = -1;
+	if (a0 == 1) {
+		cs2_configs['cfg2058'] = 0;
+		int v20 = 1003;
+		script_8138_struct(2,0,0) v18 = script_8138(v20);
+		int v17 = v18.intpart_1;
+		int v14 = v18.intpart_0;
+		if (v14 == -1 || v17 == -1) {
+			return;
+		}
+		int v21 = 1003;
+		int v16 = v14;
+		int v19 = v17;
+		script_8140_struct(2,0,0) v15 = script_8140(v21, v16, v19);
+		int v0 = v15.intpart_1;
+		int v10 = v15.intpart_0;
+		if (v17 == 0) {
+			v4 = cs2method_10060(v6, cs2method_10461(v1, v0));
+		} else {
+			v3 = cs2method_10060(v12, cs2method_10461(v7, v10));
+		}
+		cs2method_10112(v3, v4, 0, 0, v9);
+		if (script_8142(1003, v10, v0) == 1) {
+			script_8705(1003);
+			script_8390(1003);
+			script_8838(5);
+		} else {
+			cs2method_10810("There is no room to resize this now.");
+			cs2_configs['cfg2058'] = 1;
+			cs2method_10112(v12, v6, 0, 0, v9);
+			int v14 = script_8142(1003, v7, v1);
+			/* 
+				java.lang.RuntimeException: Stack underflow
+					at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+					at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+					at tests.Main.main(Main.java:69)
+				
+			 */
+		}
+	}
+	return;
+}

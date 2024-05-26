@@ -1,0 +1,31 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3872(int a0,int a1) {
+	object v1 = "Not available";
+	switch (a1) {
+		case 1:
+			v1 = cs2method_10427((string)cs2method_10379(cs2method_10060(a0, 1)) + ": ", idx17mapData('i', 's', 2535, a0));
+			break;
+		case 2:
+			v1 = "There is no spirit tree planted here.";
+			break;
+		case 3:
+			v1 = "You have not unlocked this destination.";
+			break;
+		case 4:
+			v1 = "You are currently at this tree.";
+	}
+	int v0 = (int)idx17mapData('i', 'I', 8852, a0);
+	script_8800(v0, -1, v1);
+	return;
+}

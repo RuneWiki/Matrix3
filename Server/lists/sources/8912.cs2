@@ -1,0 +1,55 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_8912(int a0,int a1,int a2) {
+	flow_0:
+		int v1 = script_8910();
+		if (cs2method_10771() == 0) {
+			v1 = cs2method_10872(100, cs2method_10060(56, v1));
+		}
+		int v0 = idx17mapData('i', 'i', 7608, v1);
+		int v2 = 0;
+		object v7 = "";
+		IF (v0 <= 0) 
+			GOTO	flow_3
+		GOTO	flow_4
+	flow_3:
+		v2 = 0;
+		GOTO	flow_8
+	flow_4:
+		IF (v0 >= 100) 
+			GOTO	flow_5
+		GOTO	flow_6
+	flow_5:
+		v2 = cs2method_10060(v2, 1);
+		v0 = cs2method_10461(v0, 100);
+		GOTO	flow_4
+	flow_6:
+		if (v0 > 60) {
+			v2 = cs2method_10060(v2, 1);
+		}
+	flow_8:
+		if (v1 < 100) {
+			v2 = cs2method_11048(v2, 1);
+		}
+		object v6 = "x" + (string)cs2method_10379(v2);
+		object v5 = "5";
+		object v3 = "3000";
+		if (cs2method_10771() == 0) {
+			v5 = "4";
+			v3 = "1320";
+		}
+		object v4 = "You are likely to find " + (string)v6 + " tears when gathering or killing." + "<br>" + "This decreases as you collect tears and resets to " + (string)v5 + " daily." + "<br>" + "You can collect a maximum of " + (string)v3 + " tears a day.";
+		script_7769(97910853, a2, -1, 400, 17813, 17813, 16777215, 13, 4, 3, a0, v4, a1);
+		return;
+}

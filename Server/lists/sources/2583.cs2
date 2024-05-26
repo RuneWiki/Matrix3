@@ -1,0 +1,28 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2583() {
+	cs2method_10520(16750901, 19136626);
+	cs2method_11127(1, 19136625, "Resupply");
+	cs2method_20486(new function<script_2592>(int a0) {
+		cs2method_10567(27123, 1, 0);
+		if (cs2method_10769(a0) == 941) {
+			cs2method_10758(942, a0);
+		} else {
+			cs2method_10758(941, a0);
+		}
+		return;
+	}, new WidgetPointer(-32768,3), "I", new WidgetPointer(292,113));
+	cs2method_20390(new function<none>() {
+	}, "", new WidgetPointer(292,113));
+	return;
+}

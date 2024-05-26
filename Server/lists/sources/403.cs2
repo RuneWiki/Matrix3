@@ -1,0 +1,37 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_403(int a0) {
+	int v0 = cs2method_10968(a0, 50);
+	int v2 = cs2method_10968(v0, 60);
+	int v3 = cs2method_10038(v0, 60);
+	if (v3 > 9) {
+		cs2method_10026(44433409, (string)cs2method_10379(v2) + ":" + (string)cs2method_10379(v3));
+	} else {
+		cs2method_10026(44433409, (string)cs2method_10379(v2) + ":0" + (string)cs2method_10379(v3));
+	}
+	if (v2 == 0 && v3 <= 5) {
+		if (cs2method_10038(cs2method_10968(a0, 20), 2) > 0) {
+			cs2method_10467(1, 44433409);
+		} else {
+			cs2method_10467(0, 44433409);
+		}
+	}
+	int v1 = cs2method_10461(a0, 1);
+	if (v1 <= 0) {
+		cs2method_20162(new function<none>() {
+		}, "", new WidgetPointer(678,12));
+	} else {
+		cs2method_20162(load function<403>, v1, "i", new WidgetPointer(678,12));
+	}
+	return;
+}

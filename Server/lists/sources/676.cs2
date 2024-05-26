@@ -1,0 +1,64 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_676() {
+	int v0 = 0;
+	for (int v1 = 0, int v2 = 0, int v6 = -1, int v9 = 20, int v8 = 10, int v3 = 0, int v4 = 0, int v5 = 0, int v7 = -1; v1 < cs2method_10924(8285); v1 = cs2method_10060(v1, 1)) {
+		int v10 = idx17mapData('i', 'J', 8285, v1);
+		int v13 = idx22mapAttribute(v10, 4001);
+		int v14 = idx22mapAttribute(v10, 4002);
+		if (v10 != -1 && v14 != -1 && v13 > 0 && v14 == idx17mapData('i', 'o', 1087, v0)) {
+			cs2method_10606(42270726, 4, v1);
+			cs2method_10013(10, v9, 1, 0);
+			cs2method_10063(5, v8, 0, 0);
+			cs2method_10797(idx22mapAttribute(v10, 4000));
+			cs2method_10692(20280);
+			cs2method_10811(16763653);
+			int v15 = cs2method_10060(v13, v0);
+			v8 = cs2method_10060(v8, v9);
+			while (v0 < cs2method_10924(1087) && v0 < v15) {
+				cs2method_10606(42270727, 5, v0);
+				cs2method_10013(36, 32, 0, 0);
+				cs2method_10063(cs2method_10060(5, cs2method_10051(42, v3)), v8, 0, 0);
+				cs2method_11070(idx17mapData('i', 'o', 1087, v0), -1);
+				cs2method_10200("<col=ff981f>" + (string)cs2method_10018(idx17mapData('i', 'o', 1087, v0)));
+				cs2method_10057(1, "Components");
+				cs2method_10057(2, "Exchange");
+				cs2method_10057(3, "Examine");
+				cs2method_10278(3355443);
+				cs2method_10356(1);
+				cs2method_20353(new function<script_8799>(int a0,object a1,int a2) {
+					script_8800(a2, a0, a1);
+					return;
+				}, (string)cs2method_10018(idx17mapData('i', 'o', 1087, v0)), new WidgetPointer(-32768,3), -2147483643, "sIi");
+				cs2method_10606(42270728, 5, v0);
+				cs2method_10013(12, 6, 0, 0);
+				cs2method_10063(cs2method_10060(5, cs2method_10051(42, v3)), v8, 0, 0);
+				cs2method_10310(1066);
+				if (v3 < 10) {
+					v3 = cs2method_10060(v3, 1);
+				} else {
+					v3 = 0;
+					v8 = cs2method_10060(v8, 36);
+				}
+				v0 = cs2method_10060(v0, 1);
+			}
+		}
+		v8 = cs2method_10060(cs2method_10060(v8, 36), 20);
+		v3 = 0;
+		int v12 = 0;
+		int v11 = -1;
+	}
+	cs2method_11130(0, v8, 42270722);
+	script_7791(42270723, 42270722);
+	return;
+}

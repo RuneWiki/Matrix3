@@ -1,0 +1,22 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5606() {
+	cs2method_10026(19005450, cs2method_10379(cs2_configs['cfg1747']));
+	cs2method_10026(19005451, cs2method_10379(cs2_configs['cfg1746']));
+	if (cs2_configs['cfg1748'] == 1) {
+		cs2method_10026(19005448, "Whitezag");
+	} else {
+		cs2method_10026(19005448, "Grayzag");
+	}
+	return;
+}

@@ -1,0 +1,35 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_9101(int a0) {
+	int v0 = 1;
+	int v1 = a0;
+	if (idx22mapAttribute(a0, 2961) == 1) {
+		if (cs2method_10338(5) >= idx22mapAttribute(a0, 2965)) {
+			v0 = 2;
+		}
+		if (cs2method_10338(5) >= idx22mapAttribute(a0, 2967)) {
+			v0 = 3;
+		}
+		switch (v0) {
+			case 1:
+				v1 = idx22mapAttribute(a0, 2964);
+				break;
+			case 2:
+				v1 = idx22mapAttribute(a0, 2966);
+				break;
+			case 3:
+				v1 = idx22mapAttribute(a0, 2968);
+		}
+	}
+	return v1;
+}

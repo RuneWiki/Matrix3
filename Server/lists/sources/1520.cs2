@@ -1,0 +1,87 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1520(int a0,int a1) {
+	if (a1 == -1) {
+		return;
+	}
+	cs2method_10273(a1);
+	int v1 = -1;
+	int v22 = -1;
+	int v18 = -1;
+	int v16 = -1;
+	int v26 = -1;
+	int v11 = -1;
+	int v7 = -1;
+	int v8 = -1;
+	int v25 = -1;
+	int v0 = a0;
+	script_1521_struct(9,0,0) v23 = script_1521(v0);
+	int v30 = v23.intpart_8;
+	int v3 = v23.intpart_7;
+	int v21 = v23.intpart_6;
+	int v9 = v23.intpart_5;
+	int v6 = v23.intpart_4;
+	int v13 = v23.intpart_3;
+	int v19 = v23.intpart_2;
+	int v14 = v23.intpart_1;
+	int v12 = v23.intpart_0;
+	int v31 = 0;
+	int v24 = -2;
+	int v15 = cs2method_10060(18, cs2method_10051(2, v24));
+	int v27 = 0;
+	cs2method_10606(a1, 5, v27);
+	cs2method_10013(9, 9, 0, 0);
+	cs2method_10063(v24, v24, 0, 0);
+	cs2method_10310(v12);
+	int v20 = cs2method_10060(v27, 1);
+	cs2method_10606(a1, 5, v20);
+	cs2method_10013(v15, 9, 1, 0);
+	cs2method_10063(0, v24, 1, 0);
+	cs2method_10310(v14);
+	int v4 = cs2method_10060(v20, 1);
+	cs2method_10606(a1, 5, v4);
+	cs2method_10013(9, 9, 0, 0);
+	cs2method_10063(v24, v24, 2, 0);
+	cs2method_10310(v19);
+	int v5 = cs2method_10060(v4, 1);
+	cs2method_10606(a1, 5, v5);
+	cs2method_10013(9, v15, 0, 1);
+	cs2method_10063(v24, 0, 0, 1);
+	cs2method_10310(v13);
+	int v28 = cs2method_10060(v5, 1);
+	cs2method_10606(a1, 5, v28);
+	cs2method_10013(v15, v15, 1, 1);
+	cs2method_10063(0, 0, 1, 1);
+	cs2method_10310(v6);
+	int v17 = cs2method_10060(v28, 1);
+	cs2method_10606(a1, 5, v17);
+	cs2method_10013(9, v15, 0, 1);
+	cs2method_10063(v24, 0, 2, 1);
+	cs2method_10310(v9);
+	int v29 = cs2method_10060(v17, 1);
+	cs2method_10606(a1, 5, v29);
+	cs2method_10013(9, 9, 0, 0);
+	cs2method_10063(v24, v24, 0, 2);
+	cs2method_10310(v21);
+	int v2 = cs2method_10060(v29, 1);
+	cs2method_10606(a1, 5, v2);
+	cs2method_10013(v15, 9, 1, 0);
+	cs2method_10063(0, v24, 1, 2);
+	cs2method_10310(v3);
+	int v10 = cs2method_10060(v2, 1);
+	cs2method_10606(a1, 5, v10);
+	cs2method_10013(9, 9, 0, 0);
+	cs2method_10063(v24, v24, 2, 2);
+	cs2method_10310(v30);
+	return;
+}

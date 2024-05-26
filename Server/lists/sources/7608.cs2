@@ -1,0 +1,27 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_7608(int a0) {
+	if (a0 == -1) {
+		return -1;
+	}
+	if (itemDefsAttribute(a0, 686) != -1 && itemDefsAttribute(a0, 686) != 19415) {
+		return itemDefsAttribute(a0, 686);
+	}
+	if (itemDefsAttribute(a0, 2832) == 1) {
+		return 19303;
+	}
+	if (idx17mapData('o', 'i', 7262, a0) == 1) {
+		return 19305;
+	}
+	return 19304;
+}

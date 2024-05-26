@@ -1,0 +1,21 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7281() {
+	cs2_configs['cfg2625'] = cs2method_10060(cs2_configs['cfg2625'], 1);
+	if (cs2_configs['cfg2625'] > 3000) {
+		cs2_configs['cfg2624'] = cs2method_10060(cs2_configs['cfg2624'], 1);
+		cs2_configs['cfg2625'] = 0;
+	}
+	script_7282();
+	return;
+}

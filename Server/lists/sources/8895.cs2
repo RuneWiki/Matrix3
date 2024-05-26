@@ -1,0 +1,42 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_8895_struct(2,0,0) script_8895() {
+	int v21 = 0;
+	int v3 = 0;
+	int v2 = 0;
+	int v17 = 0;
+	int v13 = 0;
+	int v0 = 0;
+	int v7 = 0;
+	int v1 = 0;
+	int v4 = 0;
+	int v11 = 0;
+	int v15 = 1;
+	script_8891_struct(4,0,0) v8 = script_8891(v15);
+	int v12 = v8.intpart_3;
+	int v14 = v8.intpart_2;
+	int v9 = v8.intpart_1;
+	int v5 = v8.intpart_0;
+	int v20 = 2;
+	script_8891_struct(4,0,0) v19 = script_8891(v20);
+	int v22 = v19.intpart_3;
+	int v6 = v19.intpart_2;
+	int v16 = v19.intpart_1;
+	int v23 = v19.intpart_0;
+	if (cs2method_10060(v5, v23) == 0) {
+		return new script_8895_struct(client_configs['cfg3673'], client_configs['cfg3674']);
+	}
+	int v18 = cs2method_10060(cs2method_10060(cs2method_10051(v5, 1000000), cs2method_10051(v9, 1000)), v14);
+	int v10 = cs2method_10060(cs2method_10060(cs2method_10051(v23, 1000000), cs2method_10051(v16, 1000)), v6);
+	return new script_8895_struct(v18, v10);
+}

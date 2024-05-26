@@ -1,0 +1,30 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_2149(int a0) {
+	if (script_2155(a0) == 0) {
+		return 0;
+	}
+	if (client_configs['cfg1297'] < idx22mapAttribute(a0, 895)) {
+		return 0;
+	}
+	if (cs2_configs['cfg698'] < idx22mapAttribute(a0, 896)) {
+		return 0;
+	}
+	if (script_2153(a0) == 0) {
+		return 0;
+	}
+	if (idx22mapAttribute(a0, 898) == 1 && script_2194(idx22mapAttribute(a0, 847)) == 0) {
+		return 0;
+	}
+	return 1;
+}

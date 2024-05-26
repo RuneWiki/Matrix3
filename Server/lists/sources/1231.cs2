@@ -1,0 +1,86 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_1231() {
+	int v1;
+	int v6 = -1;
+	int v5 = -1;
+	int v7 = -1;
+	int v2 = 0;
+	while (v2 < 81) {
+		flow_1:
+			int v0 = cs2method_10640(308, v2);
+			switch (v0) {
+				case 556:
+				case 6422:
+					v1 = 8975;
+					break;
+				case 555:
+				case 6424:
+					v1 = 8987;
+					break;
+				case 557:
+				case 6426:
+					v1 = 8979;
+					break;
+				case 554:
+				case 6428:
+					v1 = 8980;
+					break;
+				case 6436:
+				case 558:
+					v1 = 8982;
+					break;
+				case 6438:
+				case 559:
+					v1 = 8976;
+					break;
+				case 6432:
+				case 560:
+					v1 = 8978;
+					break;
+				case 562:
+				case 6430:
+					v1 = 8977;
+					break;
+				case 6434:
+				case 563:
+					v1 = 8981;
+					break;
+				default:
+					v1 = -1;
+			}
+			int v3 = (int)idx17mapData('i', 'I', 2274, v2);
+			IF (cs2method_10324(v3) == 1) 
+				GOTO	flow_15
+			GOTO	flow_16
+		flow_15:
+			cs2method_10681(v1);
+			GOTO	flow_16
+		flow_16:
+			IF (v0 == 6422 || v0 == 6422 || v0 == 6424 || v0 == 6426 || v0 == 6428 || v0 == 6436 || v0 == 6438 || v0 == 6432 || v0 == 6430 || v0 == 6434) 
+				GOTO	flow_17
+			GOTO	flow_19
+		flow_17:
+			int v4 = (int)idx17mapData('i', 'I', 2275, v2);
+			IF (cs2method_10324(v4) == 1) 
+				GOTO	flow_18
+			GOTO	flow_19
+		flow_18:
+			cs2method_10811(4456448);
+			GOTO	flow_19
+		flow_19:
+			v2 = cs2method_10060(v2, 1);
+	}
+	return;
+}

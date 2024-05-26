@@ -1,0 +1,33 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_5194() {
+	int v7 = -1;
+	int v3 = -1;
+	switch (client_configs['cfg414'].bitcfg1009) {
+		case 1:
+			script_5172_struct(2,0,0) v1 = script_5172();
+			int v5 = v1.intpart_1;
+			v7 = v1.intpart_0;
+			break;
+		case 2:
+			script_5173_struct(2,0,0) v6 = script_5173();
+			int v0 = v6.intpart_1;
+			v7 = v6.intpart_0;
+			break;
+		case 3:
+			script_5174_struct(2,0,0) v4 = script_5174();
+			int v2 = v4.intpart_1;
+			v7 = v4.intpart_0;
+	}
+	return v7;
+}

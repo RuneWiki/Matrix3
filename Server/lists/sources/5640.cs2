@@ -1,0 +1,29 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_5640(int a0) {
+	cs2_configs['cfg1408'] = cs2_configs['cfg1407'];
+	if (cs2_configs['cfg1407'] < 1) {
+		script_3213("Please enter your age, in years, here.", 93061192);
+		return 0;
+	}
+	if (cs2_configs['cfg1407'] > 120) {
+		script_3213("Please check the age entered and try again.", 93061192);
+		return 0;
+	}
+	script_7845(1, "", 93061192);
+	cs2method_10467(1, 93061411);
+	if (a0 == 1) {
+		script_2714(6, 1);
+	}
+	return 1;
+}

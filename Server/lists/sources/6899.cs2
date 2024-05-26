@@ -1,0 +1,57 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6899() {
+	if (cs2_configs['cfg545'] == 1) {
+		cs2method_10112(0, 30, 1, 0, 89456647);
+		cs2method_10467(0, 89456652);
+		cs2method_10273(89456652);
+		script_6680(89456652);
+		script_6902(89456654);
+		cs2method_20254(new function<script_6901>(int a0) {
+			script_6902(a0);
+			return;
+		}, new WidgetPointer(-32768,3), 136, 272, 2, "IY", new WidgetPointer(1365,14));
+	} else {
+		cs2method_10112(0, 0, 1, 1, 89456647);
+		cs2method_10467(1, 89456652);
+		cs2method_10273(89456652);
+		cs2method_10273(89456654);
+		cs2method_20254(new function<none>() {
+		}, "", new WidgetPointer(1365,14));
+	}
+	cs2method_10026(89456666, cs2_configs['cfg2554']);
+	script_4532(89456666);
+	if (cs2method_10265(cs2_configs['cfg2440']) > 0) {
+		cs2method_10026(89456649, cs2_configs['cfg2440']);
+		script_4510(89456656, 1773);
+		script_4510(89456657, 1774);
+		script_4510(89456658, 1775);
+		script_3984(89456660, 7251);
+		cs2method_10274(89456655, "Offer rematch to " + (string)cs2method_10765(cs2_configs['cfg2440']));
+		cs2method_20162(new function<script_6900>(int a0,int a1) {
+			if (cs2method_10133() < a0) {
+				return;
+			}
+			cs2method_10467(0, 89456655);
+			cs2method_20162(new function<none>() {
+			}, "", new WidgetPointer(a1));
+			return;
+		}, new WidgetPointer(-32768,3), cs2method_10060(cs2method_10133(), 50), "Ii", new WidgetPointer(1365,26));
+	} else {
+		cs2method_10026(89456649, "(Gone offline)");
+		cs2method_20162(new function<none>() {
+		}, "", new WidgetPointer(1365,26));
+	}
+	cs2method_10467(1, 89456655);
+	return;
+}

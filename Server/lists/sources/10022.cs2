@@ -1,0 +1,119 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_10022_struct(1,1,0) script_10022(int a0,int a1) {
+	switch (a1) {
+		case 4042:
+		case 4041:
+			return new script_10022_struct(1, "You can't remove your team's colours.");
+		case 4704:
+		case 25433:
+			return new script_10022_struct(1, "You can't collect any tears if you put the bowl in your pack.");
+		case 6745:
+		case 6746:
+		case 2402:
+			if (client_configs['cfg2290'].bitcfg10495 == 124) {
+				return new script_10022_struct(2, "");
+			}
+			break;
+		case 10024:
+		case 10023:
+			return new script_10022_struct(1, "You should speak to Matthias to get this removed safely.");
+		case 15464:
+		case 15461:
+		case 15460:
+		case 15463:
+		case 15462:
+		case 15457:
+		case 15456:
+		case 15459:
+		case 15458:
+		case 15454:
+		case 15455:
+		case 15452:
+		case 15453:
+		case 15450:
+		case 15451:
+		case 15448:
+		case 15449:
+		case 15446:
+		case 15447:
+		case 15445:
+			return new script_10022_struct(1, "You don't really want to remove that down here.");
+		case 10596:
+		case 10595:
+			if (cs2method_10684(93) < 1) {
+				return new script_10022_struct(2, "");
+			}
+			break;
+		case 13643:
+			if (client_configs['cfg1699'].bitcfg5616 == 0) {
+				return new script_10022_struct(1, "The wand vanishes.");
+			}
+			if (a0 != 13644) {
+				return new script_10022_struct(1, "You cannot remove the attractor wand, except by replacing it with the repeller wand.");
+			}
+			break;
+		case 13645:
+			if (client_configs['cfg1699'].bitcfg5616 == 0) {
+				return new script_10022_struct(1, "The wand vanishes.");
+			}
+			if (a0 != 13646) {
+				return new script_10022_struct(1, "You cannot remove the attractor wand, except by replacing it with the repeller wand.");
+			}
+			break;
+		case 13644:
+			if (client_configs['cfg1699'].bitcfg5616 == 0) {
+				return new script_10022_struct(1, "The wand vanishes.");
+			}
+			if (a0 != 13643) {
+				return new script_10022_struct(1, "You cannot remove the attractor wand, except by replacing it with the repeller wand.");
+			}
+			break;
+		case 13646:
+			if (client_configs['cfg1699'].bitcfg5616 == 0) {
+				return new script_10022_struct(1, "The wand vanishes.");
+			}
+			if (a0 != 13645) {
+				return new script_10022_struct(1, "You cannot remove the attractor wand, except by replacing it with the repeller wand.");
+			}
+			break;
+		case 13613:
+		case 13612:
+			if (client_configs['cfg1699'].bitcfg5616 != 0) {
+				return new script_10022_struct(1, "The wand vanishes.");
+			}
+			return new script_10022_struct(1, "You cannot remove the attractor wand, except by replacing it with the repeller wand.");
+		case 14387:
+		case 14389:
+			if (client_configs['cfg1595'].bitcfg5035 != 0) {
+				return new script_10022_struct(1, "You can't remove the cape during the game.");
+			}
+			break;
+		case 22315:
+		case 22317:
+		case 22316:
+		case 22319:
+		case 22318:
+			return new script_10022_struct(2, "");
+	}
+	if (cs2method_10376(94, 496) != 0) {
+		return new script_10022_struct(1, "You can't remove equipment while trying to balance kegs.");
+	}
+	if (client_configs['cfg2167'].bitcfg9644 == 1) {
+		return new script_10022_struct(1, "There's not enough room inside the Barrelchest disguise to mess around with your equipment!");
+	}
+	if (client_configs['cfg4356'].bitcfg22034 == 1) {
+		return new script_10022_struct(2, "You should step away from the controls before removing anything.");
+	}
+	return new script_10022_struct(0, "");
+}

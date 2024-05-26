@@ -1,0 +1,97 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6671(int a0,int a1) {
+	int v2;
+	if (cs2_configs['cfg1790'] == -1) {
+		return;
+	}
+	object v3 = "Claim item";
+	int v1 = 0;
+	object v0 = "You do not have a prize to claim.";
+	object v4 = "You do not have a prize to claim.";
+	if (client_configs['cfg1451'].bitcfg4345 <= 0) {
+		v0 = "You do not have a prize to claim.";
+		v4 = "You do not have a prize to claim.";
+		v2 = 0;
+	} else {
+		v3 = "Claim item";
+		switch (cs2_configs['cfg1790']) {
+			case 8:
+			case 9:
+			case 1:
+			case 3:
+				v2 = 1;
+				break;
+			case 5:
+				if (cs2method_10771() == 0) {
+					v2 = 0;
+				} else {
+					v2 = 1;
+				}
+				break;
+			default:
+				v2 = 0;
+		}
+		switch (cs2_configs['cfg1790']) {
+			case 1:
+				v0 = "Claim your prize to your backpack.";
+				v4 = "Your backpack doesn't have room for your prize at the moment.";
+				break;
+			case 2:
+				v0 = "Claim your prize to your backpack.";
+				v4 = "Your backpack doesn't have room for your prize at the moment.";
+				break;
+			case 3:
+				v0 = "Claim your prize to your bank.";
+				v4 = "Your bank doesn't have room for your prize at the moment.";
+				break;
+			case 4:
+				v0 = "Claim your prize to your bank.";
+				v4 = "Your bank doesn't have room for your prize at the moment.";
+				break;
+			case 5:
+			case 6:
+				v0 = "Claim your prize to your money pouch.";
+				v4 = "Your money pouch doesn't have room for your prize at the moment.";
+				break;
+			case 7:
+				v0 = "Treasure Hunter is not available at the moment. Please try later.";
+				v4 = "Treasure Hunter is not available at the moment. Please try later.";
+				break;
+			case 8:
+				v0 = "Claim to unlock this prize.";
+				v4 = "Claim to unlock this prize.";
+				v3 = "Claim prize";
+				break;
+			case 9:
+				v0 = "Add the key to your collection of earned keys.";
+				v4 = "Add the key to your collection of earned keys.";
+				v3 = "Use ticket";
+				break;
+			case 10:
+				v0 = "Loading...";
+				v4 = "Loading...";
+		}
+	}
+	cs2method_11127(1, 82117055, v3);
+	cs2method_21121(new function<script_10007>(int a0,object a1,int a2) {
+		script_10008(a1, a0, a2);
+		return;
+	}, (string)v0, new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(1253,447));
+	cs2method_21121(new function<script_10007>(int a0,object a1,int a2) {
+		script_10008(a1, a0, a2);
+		return;
+	}, (string)v4, new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(1253,448));
+	cs2method_10467(v2, 82117056);
+	return;
+}

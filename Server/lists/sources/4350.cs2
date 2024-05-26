@@ -1,0 +1,77 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4350() {
+	int v2 = -1;
+	int v0 = 0;
+	switch (client_configs['cfg2047']) {
+		case 1:
+			v0 = client_configs['cfg2018'].bitcfg8896;
+			break;
+		case 2:
+			v0 = client_configs['cfg2018'].bitcfg8897;
+			break;
+		case 3:
+			v0 = client_configs['cfg2018'].bitcfg8898;
+			break;
+		case 4:
+			v0 = client_configs['cfg2018'].bitcfg8899;
+			break;
+		case 5:
+			v0 = client_configs['cfg2019'].bitcfg8900;
+			break;
+		case 6:
+			v0 = client_configs['cfg2019'].bitcfg8901;
+			break;
+		case 7:
+			v0 = client_configs['cfg2019'].bitcfg8902;
+			break;
+		case 8:
+			v0 = client_configs['cfg2019'].bitcfg8903;
+	}
+	if (v0 > 0) {
+		int v1 = idx17mapData('i', 'g', 3689, v0);
+		if (v1 != -1) {
+			cs2method_10467(1, 71958618);
+			cs2method_10251(0, 0, 71958623);
+			switch (client_configs['cfg2047']) {
+				case 1:
+					script_4499(v1, 1, cs2method_10924(v1), 4, 71958612, 71958622, 71958624, 71958623, 71958529, idx17mapData('i', 's', v1, client_configs['cfg2035'].bitcfg8936));
+					break;
+				case 2:
+					script_4499(v1, 1, cs2method_10924(v1), 4, 71958612, 71958622, 71958624, 71958623, 71958529, idx17mapData('i', 's', v1, client_configs['cfg2035'].bitcfg8937));
+					break;
+				case 3:
+					script_4499(v1, 1, cs2method_10924(v1), 4, 71958612, 71958622, 71958624, 71958623, 71958529, idx17mapData('i', 's', v1, client_configs['cfg2036'].bitcfg8938));
+					break;
+				case 4:
+					script_4499(v1, 1, cs2method_10924(v1), 4, 71958612, 71958622, 71958624, 71958623, 71958529, idx17mapData('i', 's', v1, client_configs['cfg2036'].bitcfg8939));
+					break;
+				case 5:
+					script_4499(v1, 1, cs2method_10924(v1), 4, 71958612, 71958622, 71958624, 71958623, 71958529, idx17mapData('i', 's', v1, client_configs['cfg2037'].bitcfg8940));
+					break;
+				case 6:
+					script_4499(v1, 1, cs2method_10924(v1), 4, 71958612, 71958622, 71958624, 71958623, 71958529, idx17mapData('i', 's', v1, client_configs['cfg2037'].bitcfg8941));
+					break;
+				case 7:
+					script_4499(v1, 1, cs2method_10924(v1), 4, 71958612, 71958622, 71958624, 71958623, 71958529, idx17mapData('i', 's', v1, client_configs['cfg2038'].bitcfg8942));
+					break;
+				case 8:
+					script_4499(v1, 1, cs2method_10924(v1), 4, 71958612, 71958622, 71958624, 71958623, 71958529, idx17mapData('i', 's', v1, client_configs['cfg2038'].bitcfg8943));
+			}
+			return;
+		}
+	}
+	script_4501("Select a sub-type", 71958612);
+	cs2method_10467(0, 71958618);
+	return;
+}

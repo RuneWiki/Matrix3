@@ -1,0 +1,65 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8153(int a0,int a1) {
+	if (a0 == -1) {
+		return;
+	}
+	cs2method_10273(93847556);
+	int v3 = idx22mapAttribute(21255, 3569);
+	int v4 = 0;
+	int v2 = 0;
+	int v1 = 0;
+	int v6 = idx17mapData('i', 'i', a0, v1);
+	int v0 = -1;
+	object v7 = "";
+	int v8 = -1;
+	int v5 = -1;
+	int v9 = -1;
+	if (a1 == 2 || a1 == 1) {
+		v4 = cs2method_10060(v4, 4);
+	}
+	while (v6 != -1) {
+		if (script_9972(v6, cs2_configs['cfg4140'].bitcfg22175) == -1) {
+			int v10 = idx17mapData('i', 'J', 7716, v6);
+			if (v10 != -1) {
+				int v23 = v6;
+				script_8155_struct(1,1,0) v18 = script_8155(v23);
+				int v24 = v18.intpart_0;
+				object v20 = v18.objectpart_0;
+				int v11 = v6;
+				int v10 = v8;
+				int v14 = v5;
+				int v22 = v24;
+				int v16 = 93847556;
+				int v15 = v2;
+				int v21 = 32;
+				int v12 = v3;
+				int v13 = v4;
+				int v17 = a1;
+				object v19 = v20;
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: No documentation for:CALL_CS2	8154
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:198)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+						at tests.Main.main(Main.java:69)
+					
+				 */
+			}
+		}
+		v1 = cs2method_10060(v1, 1);
+		v6 = idx17mapData('i', 'i', a0, v1);
+	}
+	return;
+}

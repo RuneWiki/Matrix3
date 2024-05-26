@@ -1,0 +1,91 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7794(int a0,int a1) {
+	if (a0 == -1 || a1 == -1) {
+		return;
+	}
+	cs2method_20348(new function<script_3885>(int a0,int a1) {
+		script_7794(a0, a1);
+		return;
+	}, new WidgetPointer(a0), a1, 3814, 1, "IJY", new WidgetPointer(a0));
+	int v5 = idx22mapAttribute(a1, 3797);
+	int v23 = idx22mapAttribute(a1, 4358);
+	if (v23 != -1) {
+		a1 = v23;
+	}
+	int v12 = script_3898(a1, v5);
+	int v10 = idx22mapAttribute(v12, 3799);
+	int v7 = idx22mapAttribute(v12, 3798);
+	int v14 = idx22mapAttribute(v12, 3800);
+	int v21 = idx22mapAttribute(v12, 3801);
+	int v2 = idx22mapAttribute(v12, 3802);
+	int v0 = idx22mapAttribute(v12, 3803);
+	int v20 = idx22mapAttribute(v12, 3805);
+	int v22 = idx22mapAttribute(v12, 3804);
+	int v9 = idx22mapAttribute(v12, 3806);
+	int v18 = idx22mapAttribute(v12, 3808);
+	int v6 = cs2method_10051(v18, 2);
+	int v11 = 0;
+	cs2method_10273(a0);
+	cs2method_10606(a0, 5, v11);
+	cs2method_10013(v18, v18, 0, 0);
+	cs2method_10063(0, 0, 0, 0);
+	cs2method_10310(v10);
+	int v4 = cs2method_10060(v11, 1);
+	cs2method_10606(a0, 5, v4);
+	cs2method_10013(v6, v18, 1, 0);
+	cs2method_10063(0, 0, 1, 0);
+	cs2method_10310(v7);
+	cs2method_10577(1);
+	int v1 = cs2method_10060(v4, 1);
+	cs2method_10606(a0, 5, v1);
+	cs2method_10013(v18, v18, 0, 0);
+	cs2method_10063(0, 0, 2, 0);
+	cs2method_10310(v14);
+	int v16 = cs2method_10060(v1, 1);
+	cs2method_10606(a0, 5, v16);
+	cs2method_10013(v18, v6, 0, 1);
+	cs2method_10063(0, 0, 0, 1);
+	cs2method_10310(v21);
+	cs2method_10577(1);
+	int v3 = cs2method_10060(v16, 1);
+	cs2method_10606(a0, 5, v3);
+	cs2method_10013(v6, v6, 1, 1);
+	cs2method_10063(0, 0, 1, 1);
+	cs2method_10310(v2);
+	cs2method_10577(1);
+	int v15 = cs2method_10060(v3, 1);
+	cs2method_10606(a0, 5, v15);
+	cs2method_10013(v18, v6, 0, 1);
+	cs2method_10063(0, 0, 2, 1);
+	cs2method_10310(v0);
+	cs2method_10577(1);
+	int v19 = cs2method_10060(v15, 1);
+	cs2method_10606(a0, 5, v19);
+	cs2method_10013(v18, v18, 0, 0);
+	cs2method_10063(0, 0, 0, 2);
+	cs2method_10310(v20);
+	int v8 = cs2method_10060(v19, 1);
+	cs2method_10606(a0, 5, v8);
+	cs2method_10013(v6, v18, 1, 0);
+	cs2method_10063(0, 0, 1, 2);
+	cs2method_10310(v22);
+	cs2method_10577(1);
+	int v13 = cs2method_10060(v8, 1);
+	cs2method_10606(a0, 5, v13);
+	cs2method_10013(v18, v18, 0, 0);
+	cs2method_10063(0, 0, 2, 2);
+	cs2method_10310(v9);
+	int v17 = cs2method_10060(v13, 1);
+	return;
+}

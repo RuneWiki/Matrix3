@@ -1,0 +1,21 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5969(int a0) {
+	if (cs2method_10172() == 1) {
+		client_configs['cfg1978'].bitcfg6675 = clan_chat_configs['cfg2071'].bitcfg6661;
+		client_configs['cfg1978'].bitcfg6676 = clan_chat_configs['cfg2071'].bitcfg6662;
+	}
+	cs2_configs['cfg1794'] = 0;
+	script_5971(a0);
+	return;
+}

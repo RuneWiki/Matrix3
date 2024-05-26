@@ -1,0 +1,136 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2117(int a0,int a1,int a2,int a3,int a4,int a5) {
+	int v0 = cs2method_10060(a4, cs2method_10051(cs2method_10968(a1, 2), cs2method_10060(64, a4)));
+	int v1 = cs2method_10060(a4, cs2method_10051(cs2method_10038(a1, 2), cs2method_10060(160, a4)));
+	cs2method_10606(a2, 3, cs2method_10051(a0, 7));
+	cs2method_10013(160, 64, 0, 0);
+	cs2method_10063(v1, v0, 0, 0);
+	cs2method_10811(0);
+	cs2method_10002(200);
+	cs2method_10238(1);
+	cs2method_10057(1, "Choose");
+	if (a0 == 26) {
+		cs2method_10057(10, "Explain");
+		cs2method_10200("<col=ff9040>" + "Emote" + "</col>");
+	} else if (a0 == 27) {
+		cs2method_10057(10, "Explain");
+		cs2method_10200("<col=ff9040>" + "Costume point" + "</col>");
+	} else {
+		cs2method_10057(10, "Examine");
+		cs2method_10200("<col=ff9040>" + (string)cs2method_10018(cs2method_10640(307, a0)) + "</col>");
+	}
+	cs2method_20703(new function<script_2120>(int a0,int a1,int a2,int a3,int a4) {
+		if (a3 != 1) {
+			return;
+		}
+		for (int v0 = 0; v0 < cs2method_10894(307); v0 = cs2method_10060(v0, 1)) {
+			if (cs2method_11038(a1, cs2method_10051(v0, 7)) == 1) {
+				if (v0 == a2) {
+					cs2method_10002(100);
+				} else {
+					cs2method_10002(200);
+				}
+			}
+		}
+		cs2method_10026(a4, "Confirm:" + "<br>" + idx17mapData('i', 's', 2238, a2));
+		cs2method_10273(a0);
+		for (int v2 = 833, int v1 = 0; v1 < cs2method_10894(307); v1 = cs2method_10060(v1, 1)) {
+			if (v1 == a2) {
+				cs2method_10606(a0, 5, v1);
+				cs2method_10013(90, 56, 0, 0);
+				cs2method_10063(0, 0, 0, 0);
+				cs2method_10310(v2);
+				cs2method_10269(0);
+				cs2method_20884(new function<script_688>(int a0,int a1,int a2) {
+					if (cs2method_11038(a1, a2) == 1) {
+						cs2method_10310(a0);
+					}
+					return;
+				}, new WidgetPointer(-32768,3), -2147483643, v2, "Iid");
+				v2 = 834;
+				cs2method_20674(new function<script_688>(int a0,int a1,int a2) {
+					if (cs2method_11038(a1, a2) == 1) {
+						cs2method_10310(a0);
+					}
+					return;
+				}, new WidgetPointer(-32768,3), -2147483643, v2, "Iid");
+				cs2method_10057(1, "Confirm");
+				return;
+			}
+			cs2method_10606(a0, 3, v1);
+			cs2method_10063(-1, -1, 0, 0);
+			cs2method_10013(0, 0, 0, 0);
+			cs2method_10269(1);
+		}
+		return;
+	}, -2147483644, new WidgetPointer(a2), a0, new WidgetPointer(a5), new WidgetPointer(a3), "iIiII");
+	cs2method_10606(a2, 5, cs2method_10060(cs2method_10051(a0, 7), 1));
+	cs2method_10013(159, 32, 0, 0);
+	cs2method_10577(1);
+	cs2method_10310(1074);
+	cs2method_10063(v1, cs2method_10461(v0, 17), 0, 0);
+	cs2method_10606(a2, 5, cs2method_10060(cs2method_10051(a0, 7), 2));
+	cs2method_10013(160, 32, 0, 0);
+	cs2method_10577(1);
+	cs2method_10310(1074);
+	cs2method_10230(1);
+	cs2method_10063(v1, cs2method_10060(v0, 49), 0, 0);
+	cs2method_10606(a2, 5, cs2method_10060(cs2method_10051(a0, 7), 3));
+	cs2method_10013(32, 63, 0, 0);
+	cs2method_10577(1);
+	cs2method_10310(1075);
+	cs2method_10063(cs2method_10461(v1, 14), v0, 0, 0);
+	cs2method_10606(a2, 5, cs2method_10060(cs2method_10051(a0, 7), 4));
+	cs2method_10013(32, 63, 0, 0);
+	cs2method_10577(1);
+	cs2method_10310(1075);
+	cs2method_10434(1);
+	cs2method_10063(cs2method_10060(v1, 142), v0, 0, 0);
+	cs2method_10606(a2, 5, cs2method_10060(cs2method_10051(a0, 7), 5));
+	if (a0 == 26) {
+		cs2method_10013(22, 22, 0, 0);
+		cs2method_10063(cs2method_10060(v1, 15), cs2method_10060(v0, 20), 0, 0);
+		cs2method_10356(0);
+		cs2method_10310(1830);
+	} else if (a0 == 27) {
+		cs2method_10013(42, 42, 0, 0);
+		cs2method_10063(cs2method_10060(v1, 5), cs2method_10060(v0, 12), 0, 0);
+		cs2method_10356(0);
+		cs2method_10310(1044);
+	} else if (cs2method_11065(307, a0) > 1 && cs2method_10991(cs2method_10640(307, a0)) == 1) {
+		cs2method_11070(cs2method_10640(307, a0), cs2method_11065(307, a0));
+	} else {
+		cs2method_11070(cs2method_10640(307, a0), -1);
+	}
+	cs2method_10013(36, 32, 0, 0);
+	cs2method_10063(cs2method_10060(v1, 8), cs2method_10060(v0, 16), 0, 0);
+	cs2method_10356(1);
+	cs2method_10278(3153952);
+	cs2method_10606(a2, 4, cs2method_10060(cs2method_10051(a0, 7), 6));
+	cs2method_10692(496);
+	cs2method_10811(16750623);
+	cs2method_11105(1, 1, 0);
+	cs2method_10013(cs2method_10461(160, cs2method_10060(cs2method_10060(cs2method_10461(cs2method_10878(), v1), cs2method_10488()), 4)), 64, 0, 0);
+	cs2method_10063(cs2method_10461(cs2method_10461(cs2method_10060(v1, 160), cs2method_10488()), 2), v0, 0, 0);
+	if (a0 == 26) {
+		cs2method_10797("Unlock emote!");
+	} else if (a0 == 27) {
+		cs2method_10797("Save up for a costume!");
+	} else if (cs2method_11065(307, a0) == 1) {
+		cs2method_10797(idx17mapData('i', 's', 2238, a0) + ":" + "<br>" + (string)cs2method_10018(cs2method_10640(307, a0)));
+	} else {
+		cs2method_10797(idx17mapData('i', 's', 2238, a0) + ":" + "<br>" + (string)cs2method_10379(cs2method_11065(307, a0)) + " x " + (string)cs2method_10018(cs2method_10640(307, a0)));
+	}
+	return;
+}

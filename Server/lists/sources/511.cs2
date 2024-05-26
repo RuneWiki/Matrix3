@@ -1,0 +1,21 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_511() {
+	if (cs2_configs['cfg51'] > 170) {
+		cs2_configs['cfg51'] = cs2method_10461(cs2_configs['cfg51'], 1);
+		cs2method_10740(0, 0, 0, 0, 0, cs2_configs['cfg51'], 39649280);
+	} else {
+		cs2method_10336(-1, 39649280);
+	}
+	return;
+}

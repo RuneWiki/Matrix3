@@ -1,0 +1,172 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7304() {
+	int v32 = 0;
+	int v19 = 0;
+	int v28 = 0;
+	int v18 = 0;
+	switch (cs2_configs['cfg2650']) {
+		case 1:
+			v32 = client_configs['cfg3427'].bitcfg17155;
+			v19 = client_configs['cfg3427'].bitcfg17153;
+			v28 = client_configs['cfg3427'].bitcfg17152;
+			v18 = client_configs['cfg3427'].bitcfg17154;
+			break;
+		case 2:
+			v32 = client_configs['cfg3428'].bitcfg17168;
+			v19 = client_configs['cfg3428'].bitcfg17166;
+			v28 = client_configs['cfg3428'].bitcfg17165;
+			v18 = client_configs['cfg3428'].bitcfg17167;
+			break;
+		case 3:
+			v32 = client_configs['cfg3429'].bitcfg17181;
+			v19 = client_configs['cfg3429'].bitcfg17179;
+			v28 = client_configs['cfg3429'].bitcfg17178;
+			v18 = client_configs['cfg3429'].bitcfg17180;
+			break;
+		case 4:
+			v32 = client_configs['cfg3430'].bitcfg17194;
+			v19 = client_configs['cfg3430'].bitcfg17192;
+			v28 = client_configs['cfg3430'].bitcfg17191;
+			v18 = client_configs['cfg3430'].bitcfg17193;
+			break;
+		case 5:
+			v32 = client_configs['cfg3431'].bitcfg17207;
+			v19 = client_configs['cfg3431'].bitcfg17205;
+			v28 = client_configs['cfg3431'].bitcfg17204;
+			v18 = client_configs['cfg3431'].bitcfg17206;
+			break;
+		case 6:
+			v32 = client_configs['cfg3432'].bitcfg17220;
+			v19 = client_configs['cfg3432'].bitcfg17218;
+			v28 = client_configs['cfg3432'].bitcfg17217;
+			v18 = client_configs['cfg3432'].bitcfg17219;
+	}
+	int v27 = script_2356(v32, v19, v18, v28);
+	if (cs2method_10245(111, 2173, cs2_configs['cfg2626']) == 1) {
+		cs2method_10702(v27, 83624057);
+		cs2method_10067(9806, 83624057);
+		cs2method_10758(-1, 83624046);
+		cs2method_10026(83623987, "Captain - Level " + (string)cs2method_10379(cs2_configs['cfg2642']));
+	} else {
+		cs2method_10336(-1, 83624057);
+		cs2method_10758(itemDefsAttribute(cs2_configs['cfg2626'], 3080), 83624046);
+		cs2method_10026(83623987, "Crew Unit - Level " + (string)cs2method_10379(cs2_configs['cfg2642']));
+	}
+	cs2method_10110(2900, 83624057);
+	object v16 = cs2_configs['cfg2627'];
+	cs2method_10026(83624056, v16);
+	cs2method_10467(1, 83624106);
+	if (cs2_configs['cfg2626'] == -1 || cs2method_10846("No crewman", cs2_configs['cfg2627']) == 0) {
+		cs2method_10026(83624110, "Dismiss");
+		cs2method_10467(0, 83624106);
+	} else if (cs2method_10245(111, 2174, cs2_configs['cfg2626']) == 0) {
+		cs2method_10026(83624110, "Dismiss " + cs2_configs['cfg2627']);
+	} else {
+		cs2method_10026(83624110, "Jettison " + cs2_configs['cfg2627']);
+	}
+	int v6 = script_7319(client_configs['cfg3419'].bitcfg17147);
+	int v7 = cs2method_10968(cs2method_10147(v6, 57344), 8192);
+	int v20 = cs2method_10968(cs2method_10147(v6, 458752), 65536);
+	int v21 = cs2method_10968(cs2method_10147(v6, 3670016), 524288);
+	int v0 = cs2method_10968(cs2method_10147(v6, 29360128), 4194304);
+	int v26 = 10;
+	if (cs2method_10245(111, 2173, cs2_configs['cfg2626']) == 1) {
+		v26 = 20;
+	}
+	int v29 = cs2method_10051(v7, v26);
+	int v1 = cs2method_10051(v20, v26);
+	int v4 = cs2method_10051(v21, v26);
+	int v22 = cs2method_10051(v0, v26);
+	int v10 = script_7317(677, client_configs['cfg3419'].bitcfg17147);
+	int v31 = cs2method_10051(10, v10);
+	int v9 = itemDefsAttribute(cs2_configs['cfg2626'], 3081);
+	int v33 = cs2method_10122(v31, 100, v9);
+	int v5 = cs2method_10461(cs2method_10461(cs2method_10461(cs2_configs['cfg2632'], v9), v33), v29);
+	object v30 = "<col=c5bcac>" + "Base:" + "</col>" + " " + (string)cs2method_10379(v9) + "<br>" + "<col=c5bcac>" + "Level Boost:" + "</col>" + " " + (string)cs2method_10379(v33) + "<br>" + "<col=c5bcac>" + "Personal Bonus:" + "</col>" + " " + (string)cs2method_10379(v29) + "<br>" + "<col=c5bcac>" + "Traits:" + "</col>" + " " + (string)cs2method_10379(v5);
+	cs2method_10026(83623980, cs2method_10379(cs2_configs['cfg2632']));
+	cs2method_21121(new function<script_8799>(object a0,int a1,int a2) {
+		script_8800(a1, a2, a0);
+		return;
+	}, (string)v30, new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(1276,42));
+	int v23 = itemDefsAttribute(cs2_configs['cfg2626'], 3082);
+	int v11 = cs2method_10122(v31, 100, v23);
+	int v25 = cs2method_10461(cs2method_10461(cs2method_10461(cs2_configs['cfg2638'], v23), v11), v1);
+	object v34 = "<col=c5bcac>" + "Base:" + "</col>" + " " + (string)cs2method_10379(v23) + "<br>" + "<col=c5bcac>" + "Level Boost:" + "</col>" + " " + (string)cs2method_10379(v11) + "<br>" + "<col=c5bcac>" + "Personal Bonus:" + "</col>" + " " + (string)cs2method_10379(v1) + "<br>" + "<col=c5bcac>" + "Traits:" + "</col>" + " " + (string)cs2method_10379(v25);
+	cs2method_10026(83623976, cs2method_10379(cs2_configs['cfg2638']));
+	cs2method_21121(new function<script_8799>(int a0,int a1,object a2) {
+		script_8800(a1, a0, a2);
+		return;
+	}, (string)v34, new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(1276,38));
+	int v13 = itemDefsAttribute(cs2_configs['cfg2626'], 3083);
+	int v24 = cs2method_10122(v31, 100, v13);
+	int v2 = cs2method_10461(cs2method_10461(cs2method_10461(cs2_configs['cfg2634'], v13), v24), v4);
+	object v15 = "<col=c5bcac>" + "Base:" + "</col>" + " " + (string)cs2method_10379(v13) + "<br>" + "<col=c5bcac>" + "Level Boost:" + "</col>" + " " + (string)cs2method_10379(v24) + "<br>" + "<col=c5bcac>" + "Personal Bonus:" + "</col>" + " " + (string)cs2method_10379(v4) + "<br>" + "<col=c5bcac>" + "Traits:" + "</col>" + " " + (string)cs2method_10379(v2);
+	cs2method_10026(83623975, cs2method_10379(cs2_configs['cfg2634']));
+	cs2method_21121(new function<script_8799>(int a0,object a1,int a2) {
+		script_8800(a0, a2, a1);
+		return;
+	}, (string)v15, new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(1276,37));
+	int v14 = itemDefsAttribute(cs2_configs['cfg2626'], 3084);
+	int v8 = cs2method_10122(v31, 100, v14);
+	int v3 = cs2method_10461(cs2method_10461(cs2method_10461(cs2_configs['cfg2640'], v14), v8), v22);
+	object v17 = "<col=c5bcac>" + "Base:" + "</col>" + " " + (string)cs2method_10379(v14) + "<br>" + "<col=c5bcac>" + "Level Boost:" + "</col>" + " " + (string)cs2method_10379(v8) + "<br>" + "<col=c5bcac>" + "Personal Bonus:" + "</col>" + " " + (string)cs2method_10379(v22) + "<br>" + "<col=c5bcac>" + "Traits:" + "</col>" + " " + (string)cs2method_10379(v3);
+	cs2method_10026(83623979, cs2method_10379(cs2_configs['cfg2640']));
+	cs2method_21121(new function<script_8799>(int a0,int a1,object a2) {
+		script_8800(a0, a1, a2);
+		return;
+	}, (string)v17, new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(1276,41));
+	object v12 = cs2_configs['cfg2629'];
+	if (cs2method_10846(v12, "") == 0) {
+		v12 = "No Traits";
+	}
+	cs2method_10026(83624051, v12);
+	if (cs2method_10846(cs2_configs['cfg2630'], "") != 0) {
+		cs2method_21121(new function<script_8799>(int a0,object a1,int a2) {
+			script_8800(a0, a2, a1);
+			return;
+		}, cs2_configs['cfg2630'], new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(1276,115));
+		cs2method_20680(new function<script_45>(int a0,int a1) {
+			cs2method_10520(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), 16686339, "Ii", new WidgetPointer(1276,115));
+	} else {
+		cs2method_21121(new function<none>() {
+		}, "", new WidgetPointer(1276,115));
+		cs2method_20680(new function<none>() {
+		}, "", new WidgetPointer(1276,115));
+	}
+	cs2method_20750(new function<script_7305>() {
+		cs2method_10520(12958892, 83624051);
+		return;
+	}, "", new WidgetPointer(1276,115));
+	if (cs2method_10245(111, 2174, cs2_configs['cfg2626']) == 1 && cs2_configs['cfg2626'] != 26265 && cs2_configs['cfg2626'] != 26266) {
+		cs2method_10026(83624047, "Useful supplies for a journey.");
+		cs2method_10026(83623987, "Ship Supplies");
+	} else {
+		cs2method_10026(83624047, cs2_configs['cfg2628']);
+	}
+	if (client_configs['cfg3419'].bitcfg17147 < cs2method_10894(677)) {
+		if (script_7310(client_configs['cfg3419'].bitcfg17147) == 1) {
+			cs2method_10467(1, 83624106);
+		} else {
+			cs2method_10467(0, 83624106);
+		}
+		if (cs2_configs['cfg2643'] > 0 && cs2_configs['cfg2643'] < 5 && cs2method_10441(client_configs['cfg3404'], client_configs['cfg3419'].bitcfg17147) == 1) {
+			cs2method_10026(83624059, cs2method_10379(cs2_configs['cfg2643']));
+		} else {
+			cs2method_10026(83624059, "-");
+		}
+	}
+	return;
+}

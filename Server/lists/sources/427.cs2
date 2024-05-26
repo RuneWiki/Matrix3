@@ -1,0 +1,1017 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_427(int a0) {
+	int v5;
+	int v8;
+	int v6;
+	int v14;
+	int v4;
+	int v2 = 0;
+	int v9 = 0;
+	int v1 = -1;
+	int v0 = client_configs['cfg1659'].bitcfg5415;
+	int v11 = client_configs['cfg1659'].bitcfg5416;
+	int v18 = client_configs['cfg1659'].bitcfg5417;
+	int v17 = client_configs['cfg1659'].bitcfg5418;
+	if (a0 == 1) {
+		v0 = 1;
+		v11 = 3;
+		v18 = 5;
+		v17 = 6;
+	}
+	for (int v13 = 0, int v16 = -1, int v7 = -1, int v10 = -1, int v15 = -1, int v12 = 0; v12 < 4; v12 = cs2method_10060(v12, 1)) {
+		switch (v12) {
+			default:
+				int v52 = v0;
+				int v40 = 67108874;
+				int v19 = 67108909;
+				int v55 = 67108911;
+				v8 = 67108910;
+				int v42 = v52;
+				int v37 = v40;
+				int v47 = v19;
+				v4 = v55;
+				int v45 = v42;
+				int v38 = v37;
+				v14 = v47;
+				int v46 = v45;
+				v6 = v38;
+				v5 = v46;
+				break;
+			case 1:
+				int v27 = v11;
+				int v28 = 67108877;
+				int v31 = 67108902;
+				int v41 = 67108904;
+				v8 = 67108903;
+				int v57 = v27;
+				int v43 = v28;
+				int v29 = v31;
+				v4 = v41;
+				int v48 = v57;
+				int v54 = v43;
+				v14 = v29;
+				int v34 = v48;
+				v6 = v54;
+				v5 = v34;
+				break;
+			case 2:
+				int v30 = v18;
+				int v21 = 67108880;
+				int v23 = 67108895;
+				int v26 = 67108897;
+				v8 = 67108896;
+				int v35 = v30;
+				int v53 = v21;
+				int v51 = v23;
+				v4 = v26;
+				int v50 = v35;
+				int v36 = v53;
+				v14 = v51;
+				int v39 = v50;
+				v6 = v36;
+				v5 = v39;
+				break;
+			case 3:
+				int v56 = v17;
+				int v33 = 67108883;
+				int v32 = 67108888;
+				int v25 = 67108890;
+				v8 = 67108889;
+				int v44 = v56;
+				int v24 = v33;
+				int v20 = v32;
+				v4 = v25;
+				int v58 = v44;
+				int v49 = v24;
+				v14 = v20;
+				int v22 = v58;
+				v6 = v49;
+				v5 = v22;
+		}
+		if (v5 == 0) {
+			cs2method_10467(1, v6);
+			v2 = cs2method_10060(v2, 1);
+		} else {
+			int v3 = script_488(v5);
+			if (v3 != -1) {
+				cs2method_10467(0, v6);
+				cs2method_10316(v6, idx22mapAttribute(v3, 1150));
+				cs2method_10026(v14, idx22mapAttribute(v3, 1150));
+				cs2method_10758(idx22mapAttribute(v3, 1153), v4);
+				cs2method_10026(v8, cs2method_10379(idx22mapAttribute(v3, 1154)));
+			}
+			if (v5 == 9) {
+				cs2method_11127(1, v6, "Cast");
+			}
+		}
+	}
+	if (v2 == 4) {
+		cs2method_10467(1, 67108868);
+		cs2method_10467(0, 67108869);
+	} else if (v2 == 3) {
+		cs2method_10467(0, 67108868);
+		cs2method_10467(1, 67108869);
+		if (v0 != 0) {
+			cs2method_10112(0, 0, 1, 0, 67108874);
+			cs2method_21121(new function<script_432>(int a0) {
+				int v0;
+				int v1 = -1;
+				switch (a0) {
+					default:
+						return;
+					case 67108874:
+						if (cs2_configs['cfg1388'] == 1) {
+							v0 = 293;
+						} else {
+							v0 = script_488(client_configs['cfg1659'].bitcfg5415);
+						}
+						break;
+					case 67108877:
+						if (cs2_configs['cfg1388'] == 1) {
+							v0 = 300;
+						} else {
+							v0 = script_488(client_configs['cfg1659'].bitcfg5416);
+						}
+						break;
+					case 67108880:
+						if (cs2_configs['cfg1388'] == 1) {
+							v0 = 305;
+						} else {
+							v0 = script_488(client_configs['cfg1659'].bitcfg5417);
+						}
+						break;
+					case 67108883:
+						if (cs2_configs['cfg1388'] == 1) {
+							v0 = 1044;
+						} else {
+							v0 = script_488(client_configs['cfg1659'].bitcfg5418);
+						}
+				}
+				if (v0 != -1) {
+					script_10008(idx22mapAttribute(v0, 1150) + "<br>" + idx22mapAttribute(v0, 1151) + "<br>" + "Cost: " + (string)cs2method_10379(idx22mapAttribute(v0, 1154)) + "<br>" + "Cooldown: " + (string)cs2method_10379(idx22mapAttribute(v0, 1155)), a0, -1);
+				} else {
+					script_8808();
+				}
+				return;
+			}, new WidgetPointer(-32768,3), "I", new WidgetPointer(1024,10));
+		} else if (v11 != 0) {
+			cs2method_10112(0, 0, 1, 0, 67108877);
+			cs2method_21121(new function<script_432>(int a0) {
+				int v1;
+				int v0 = -1;
+				switch (a0) {
+					default:
+						return;
+					case 67108874:
+						if (cs2_configs['cfg1388'] == 1) {
+							v1 = 293;
+						} else {
+							v1 = script_488(client_configs['cfg1659'].bitcfg5415);
+						}
+						break;
+					case 67108877:
+						if (cs2_configs['cfg1388'] == 1) {
+							v1 = 300;
+						} else {
+							v1 = script_488(client_configs['cfg1659'].bitcfg5416);
+						}
+						break;
+					case 67108880:
+						if (cs2_configs['cfg1388'] == 1) {
+							v1 = 305;
+						} else {
+							v1 = script_488(client_configs['cfg1659'].bitcfg5417);
+						}
+						break;
+					case 67108883:
+						if (cs2_configs['cfg1388'] == 1) {
+							v1 = 1044;
+						} else {
+							v1 = script_488(client_configs['cfg1659'].bitcfg5418);
+						}
+				}
+				if (v1 != -1) {
+					script_10008(idx22mapAttribute(v1, 1150) + "<br>" + idx22mapAttribute(v1, 1151) + "<br>" + "Cost: " + (string)cs2method_10379(idx22mapAttribute(v1, 1154)) + "<br>" + "Cooldown: " + (string)cs2method_10379(idx22mapAttribute(v1, 1155)), a0, -1);
+				} else {
+					script_8808();
+				}
+				return;
+			}, new WidgetPointer(-32768,3), "I", new WidgetPointer(1024,13));
+		} else if (v18 != 0) {
+			cs2method_10112(0, 0, 1, 0, 67108880);
+			cs2method_21121(new function<script_432>(int a0) {
+				int v0;
+				int v1 = -1;
+				switch (a0) {
+					default:
+						return;
+					case 67108874:
+						if (cs2_configs['cfg1388'] == 1) {
+							v0 = 293;
+						} else {
+							v0 = script_488(client_configs['cfg1659'].bitcfg5415);
+						}
+						break;
+					case 67108877:
+						if (cs2_configs['cfg1388'] == 1) {
+							v0 = 300;
+						} else {
+							v0 = script_488(client_configs['cfg1659'].bitcfg5416);
+						}
+						break;
+					case 67108880:
+						if (cs2_configs['cfg1388'] == 1) {
+							v0 = 305;
+						} else {
+							v0 = script_488(client_configs['cfg1659'].bitcfg5417);
+						}
+						break;
+					case 67108883:
+						if (cs2_configs['cfg1388'] == 1) {
+							v0 = 1044;
+						} else {
+							v0 = script_488(client_configs['cfg1659'].bitcfg5418);
+						}
+				}
+				if (v0 != -1) {
+					script_10008(idx22mapAttribute(v0, 1150) + "<br>" + idx22mapAttribute(v0, 1151) + "<br>" + "Cost: " + (string)cs2method_10379(idx22mapAttribute(v0, 1154)) + "<br>" + "Cooldown: " + (string)cs2method_10379(idx22mapAttribute(v0, 1155)), a0, -1);
+				} else {
+					script_8808();
+				}
+				return;
+			}, new WidgetPointer(-32768,3), "I", new WidgetPointer(1024,16));
+		} else {
+			if (v17 != 0) {
+				cs2method_10112(0, 0, 1, 0, 67108883);
+				cs2method_21121(new function<script_432>(int a0) {
+					int v1;
+					int v0 = -1;
+					switch (a0) {
+						default:
+							return;
+						case 67108874:
+							if (cs2_configs['cfg1388'] == 1) {
+								v1 = 293;
+							} else {
+								v1 = script_488(client_configs['cfg1659'].bitcfg5415);
+							}
+							break;
+						case 67108877:
+							if (cs2_configs['cfg1388'] == 1) {
+								v1 = 300;
+							} else {
+								v1 = script_488(client_configs['cfg1659'].bitcfg5416);
+							}
+							break;
+						case 67108880:
+							if (cs2_configs['cfg1388'] == 1) {
+								v1 = 305;
+							} else {
+								v1 = script_488(client_configs['cfg1659'].bitcfg5417);
+							}
+							break;
+						case 67108883:
+							if (cs2_configs['cfg1388'] == 1) {
+								v1 = 1044;
+							} else {
+								v1 = script_488(client_configs['cfg1659'].bitcfg5418);
+							}
+					}
+					if (v1 != -1) {
+						script_10008(idx22mapAttribute(v1, 1150) + "<br>" + idx22mapAttribute(v1, 1151) + "<br>" + "Cost: " + (string)cs2method_10379(idx22mapAttribute(v1, 1154)) + "<br>" + "Cooldown: " + (string)cs2method_10379(idx22mapAttribute(v1, 1155)), a0, -1);
+					} else {
+						script_8808();
+					}
+					return;
+				}, new WidgetPointer(-32768,3), "I", new WidgetPointer(1024,19));
+			}
+		}
+	} else if (v2 == 2) {
+		cs2method_10467(0, 67108868);
+		cs2method_10467(1, 67108869);
+		if (v0 != 0) {
+			cs2method_10112(0, 0, 1, 0, 67108874);
+			cs2method_21121(new function<script_432>(int a0) {
+				int v1;
+				int v0 = -1;
+				switch (a0) {
+					default:
+						return;
+					case 67108874:
+						if (cs2_configs['cfg1388'] == 1) {
+							v1 = 293;
+						} else {
+							v1 = script_488(client_configs['cfg1659'].bitcfg5415);
+						}
+						break;
+					case 67108877:
+						if (cs2_configs['cfg1388'] == 1) {
+							v1 = 300;
+						} else {
+							v1 = script_488(client_configs['cfg1659'].bitcfg5416);
+						}
+						break;
+					case 67108880:
+						if (cs2_configs['cfg1388'] == 1) {
+							v1 = 305;
+						} else {
+							v1 = script_488(client_configs['cfg1659'].bitcfg5417);
+						}
+						break;
+					case 67108883:
+						if (cs2_configs['cfg1388'] == 1) {
+							v1 = 1044;
+						} else {
+							v1 = script_488(client_configs['cfg1659'].bitcfg5418);
+						}
+				}
+				if (v1 != -1) {
+					script_10008(idx22mapAttribute(v1, 1150) + "<br>" + idx22mapAttribute(v1, 1151) + "<br>" + "Cost: " + (string)cs2method_10379(idx22mapAttribute(v1, 1154)) + "<br>" + "Cooldown: " + (string)cs2method_10379(idx22mapAttribute(v1, 1155)), a0, -1);
+				} else {
+					script_8808();
+				}
+				return;
+			}, new WidgetPointer(-32768,3), "I", new WidgetPointer(1024,10));
+			v9 = cs2method_10060(v9, 1);
+		}
+		if (v11 != 0) {
+			if (v9 == 0) {
+				cs2method_10112(0, 0, 1, 0, 67108877);
+				cs2method_21121(new function<script_432>(int a0) {
+					int v0;
+					int v1 = -1;
+					switch (a0) {
+						default:
+							return;
+						case 67108874:
+							if (cs2_configs['cfg1388'] == 1) {
+								v0 = 293;
+							} else {
+								v0 = script_488(client_configs['cfg1659'].bitcfg5415);
+							}
+							break;
+						case 67108877:
+							if (cs2_configs['cfg1388'] == 1) {
+								v0 = 300;
+							} else {
+								v0 = script_488(client_configs['cfg1659'].bitcfg5416);
+							}
+							break;
+						case 67108880:
+							if (cs2_configs['cfg1388'] == 1) {
+								v0 = 305;
+							} else {
+								v0 = script_488(client_configs['cfg1659'].bitcfg5417);
+							}
+							break;
+						case 67108883:
+							if (cs2_configs['cfg1388'] == 1) {
+								v0 = 1044;
+							} else {
+								v0 = script_488(client_configs['cfg1659'].bitcfg5418);
+							}
+					}
+					if (v0 != -1) {
+						script_10008(idx22mapAttribute(v0, 1150) + "<br>" + idx22mapAttribute(v0, 1151) + "<br>" + "Cost: " + (string)cs2method_10379(idx22mapAttribute(v0, 1154)) + "<br>" + "Cooldown: " + (string)cs2method_10379(idx22mapAttribute(v0, 1155)), a0, -1);
+					} else {
+						script_8808();
+					}
+					return;
+				}, new WidgetPointer(-32768,3), "I", new WidgetPointer(1024,13));
+			} else {
+				cs2method_10112(0, 50, 1, 0, 67108877);
+				cs2method_21121(new function<script_432>(int a0) {
+					int v0;
+					int v1 = -1;
+					switch (a0) {
+						default:
+							return;
+						case 67108874:
+							if (cs2_configs['cfg1388'] == 1) {
+								v0 = 293;
+							} else {
+								v0 = script_488(client_configs['cfg1659'].bitcfg5415);
+							}
+							break;
+						case 67108877:
+							if (cs2_configs['cfg1388'] == 1) {
+								v0 = 300;
+							} else {
+								v0 = script_488(client_configs['cfg1659'].bitcfg5416);
+							}
+							break;
+						case 67108880:
+							if (cs2_configs['cfg1388'] == 1) {
+								v0 = 305;
+							} else {
+								v0 = script_488(client_configs['cfg1659'].bitcfg5417);
+							}
+							break;
+						case 67108883:
+							if (cs2_configs['cfg1388'] == 1) {
+								v0 = 1044;
+							} else {
+								v0 = script_488(client_configs['cfg1659'].bitcfg5418);
+							}
+					}
+					if (v0 != -1) {
+						script_10008(idx22mapAttribute(v0, 1150) + "<br>" + idx22mapAttribute(v0, 1151) + "<br>" + "Cost: " + (string)cs2method_10379(idx22mapAttribute(v0, 1154)) + "<br>" + "Cooldown: " + (string)cs2method_10379(idx22mapAttribute(v0, 1155)), a0, -1);
+					} else {
+						script_8808();
+					}
+					return;
+				}, new WidgetPointer(-32768,3), "I", new WidgetPointer(1024,13));
+			}
+			v9 = cs2method_10060(v9, 1);
+		}
+		if (v18 != 0) {
+			if (v9 == 0) {
+				cs2method_10112(0, 0, 1, 0, 67108880);
+				cs2method_21121(new function<script_432>(int a0) {
+					int v1;
+					int v0 = -1;
+					switch (a0) {
+						default:
+							return;
+						case 67108874:
+							if (cs2_configs['cfg1388'] == 1) {
+								v1 = 293;
+							} else {
+								v1 = script_488(client_configs['cfg1659'].bitcfg5415);
+							}
+							break;
+						case 67108877:
+							if (cs2_configs['cfg1388'] == 1) {
+								v1 = 300;
+							} else {
+								v1 = script_488(client_configs['cfg1659'].bitcfg5416);
+							}
+							break;
+						case 67108880:
+							if (cs2_configs['cfg1388'] == 1) {
+								v1 = 305;
+							} else {
+								v1 = script_488(client_configs['cfg1659'].bitcfg5417);
+							}
+							break;
+						case 67108883:
+							if (cs2_configs['cfg1388'] == 1) {
+								v1 = 1044;
+							} else {
+								v1 = script_488(client_configs['cfg1659'].bitcfg5418);
+							}
+					}
+					if (v1 != -1) {
+						script_10008(idx22mapAttribute(v1, 1150) + "<br>" + idx22mapAttribute(v1, 1151) + "<br>" + "Cost: " + (string)cs2method_10379(idx22mapAttribute(v1, 1154)) + "<br>" + "Cooldown: " + (string)cs2method_10379(idx22mapAttribute(v1, 1155)), a0, -1);
+					} else {
+						script_8808();
+					}
+					return;
+				}, new WidgetPointer(-32768,3), "I", new WidgetPointer(1024,16));
+			} else {
+				cs2method_10112(0, 50, 1, 0, 67108880);
+				cs2method_21121(new function<script_432>(int a0) {
+					int v0;
+					int v1 = -1;
+					switch (a0) {
+						default:
+							return;
+						case 67108874:
+							if (cs2_configs['cfg1388'] == 1) {
+								v0 = 293;
+							} else {
+								v0 = script_488(client_configs['cfg1659'].bitcfg5415);
+							}
+							break;
+						case 67108877:
+							if (cs2_configs['cfg1388'] == 1) {
+								v0 = 300;
+							} else {
+								v0 = script_488(client_configs['cfg1659'].bitcfg5416);
+							}
+							break;
+						case 67108880:
+							if (cs2_configs['cfg1388'] == 1) {
+								v0 = 305;
+							} else {
+								v0 = script_488(client_configs['cfg1659'].bitcfg5417);
+							}
+							break;
+						case 67108883:
+							if (cs2_configs['cfg1388'] == 1) {
+								v0 = 1044;
+							} else {
+								v0 = script_488(client_configs['cfg1659'].bitcfg5418);
+							}
+					}
+					if (v0 != -1) {
+						script_10008(idx22mapAttribute(v0, 1150) + "<br>" + idx22mapAttribute(v0, 1151) + "<br>" + "Cost: " + (string)cs2method_10379(idx22mapAttribute(v0, 1154)) + "<br>" + "Cooldown: " + (string)cs2method_10379(idx22mapAttribute(v0, 1155)), a0, -1);
+					} else {
+						script_8808();
+					}
+					return;
+				}, new WidgetPointer(-32768,3), "I", new WidgetPointer(1024,16));
+			}
+			v9 = cs2method_10060(v9, 1);
+		}
+		if (v17 != 0) {
+			cs2method_10112(0, 50, 1, 0, 67108883);
+			cs2method_21121(new function<script_432>(int a0) {
+				int v0;
+				int v1 = -1;
+				switch (a0) {
+					default:
+						return;
+					case 67108874:
+						if (cs2_configs['cfg1388'] == 1) {
+							v0 = 293;
+						} else {
+							v0 = script_488(client_configs['cfg1659'].bitcfg5415);
+						}
+						break;
+					case 67108877:
+						if (cs2_configs['cfg1388'] == 1) {
+							v0 = 300;
+						} else {
+							v0 = script_488(client_configs['cfg1659'].bitcfg5416);
+						}
+						break;
+					case 67108880:
+						if (cs2_configs['cfg1388'] == 1) {
+							v0 = 305;
+						} else {
+							v0 = script_488(client_configs['cfg1659'].bitcfg5417);
+						}
+						break;
+					case 67108883:
+						if (cs2_configs['cfg1388'] == 1) {
+							v0 = 1044;
+						} else {
+							v0 = script_488(client_configs['cfg1659'].bitcfg5418);
+						}
+				}
+				if (v0 != -1) {
+					script_10008(idx22mapAttribute(v0, 1150) + "<br>" + idx22mapAttribute(v0, 1151) + "<br>" + "Cost: " + (string)cs2method_10379(idx22mapAttribute(v0, 1154)) + "<br>" + "Cooldown: " + (string)cs2method_10379(idx22mapAttribute(v0, 1155)), a0, -1);
+				} else {
+					script_8808();
+				}
+				return;
+			}, new WidgetPointer(-32768,3), "I", new WidgetPointer(1024,19));
+		}
+	} else if (v2 == 1) {
+		cs2method_10467(0, 67108868);
+		cs2method_10467(1, 67108869);
+		if (v0 != 0) {
+			cs2method_10112(0, 0, 1, 0, 67108874);
+			cs2method_21121(new function<script_432>(int a0) {
+				int v0;
+				int v1 = -1;
+				switch (a0) {
+					default:
+						return;
+					case 67108874:
+						if (cs2_configs['cfg1388'] == 1) {
+							v0 = 293;
+						} else {
+							v0 = script_488(client_configs['cfg1659'].bitcfg5415);
+						}
+						break;
+					case 67108877:
+						if (cs2_configs['cfg1388'] == 1) {
+							v0 = 300;
+						} else {
+							v0 = script_488(client_configs['cfg1659'].bitcfg5416);
+						}
+						break;
+					case 67108880:
+						if (cs2_configs['cfg1388'] == 1) {
+							v0 = 305;
+						} else {
+							v0 = script_488(client_configs['cfg1659'].bitcfg5417);
+						}
+						break;
+					case 67108883:
+						if (cs2_configs['cfg1388'] == 1) {
+							v0 = 1044;
+						} else {
+							v0 = script_488(client_configs['cfg1659'].bitcfg5418);
+						}
+				}
+				if (v0 != -1) {
+					script_10008(idx22mapAttribute(v0, 1150) + "<br>" + idx22mapAttribute(v0, 1151) + "<br>" + "Cost: " + (string)cs2method_10379(idx22mapAttribute(v0, 1154)) + "<br>" + "Cooldown: " + (string)cs2method_10379(idx22mapAttribute(v0, 1155)), a0, -1);
+				} else {
+					script_8808();
+				}
+				return;
+			}, new WidgetPointer(-32768,3), "I", new WidgetPointer(1024,10));
+			v9 = cs2method_10060(v9, 1);
+		}
+		if (v11 != 0) {
+			if (v9 == 0) {
+				cs2method_10112(0, 0, 1, 0, 67108877);
+				cs2method_21121(new function<script_432>(int a0) {
+					int v0;
+					int v1 = -1;
+					switch (a0) {
+						default:
+							return;
+						case 67108874:
+							if (cs2_configs['cfg1388'] == 1) {
+								v0 = 293;
+							} else {
+								v0 = script_488(client_configs['cfg1659'].bitcfg5415);
+							}
+							break;
+						case 67108877:
+							if (cs2_configs['cfg1388'] == 1) {
+								v0 = 300;
+							} else {
+								v0 = script_488(client_configs['cfg1659'].bitcfg5416);
+							}
+							break;
+						case 67108880:
+							if (cs2_configs['cfg1388'] == 1) {
+								v0 = 305;
+							} else {
+								v0 = script_488(client_configs['cfg1659'].bitcfg5417);
+							}
+							break;
+						case 67108883:
+							if (cs2_configs['cfg1388'] == 1) {
+								v0 = 1044;
+							} else {
+								v0 = script_488(client_configs['cfg1659'].bitcfg5418);
+							}
+					}
+					if (v0 != -1) {
+						script_10008(idx22mapAttribute(v0, 1150) + "<br>" + idx22mapAttribute(v0, 1151) + "<br>" + "Cost: " + (string)cs2method_10379(idx22mapAttribute(v0, 1154)) + "<br>" + "Cooldown: " + (string)cs2method_10379(idx22mapAttribute(v0, 1155)), a0, -1);
+					} else {
+						script_8808();
+					}
+					return;
+				}, new WidgetPointer(-32768,3), "I", new WidgetPointer(1024,13));
+			} else {
+				cs2method_10112(0, 50, 1, 0, 67108877);
+				cs2method_21121(new function<script_432>(int a0) {
+					int v1;
+					int v0 = -1;
+					switch (a0) {
+						default:
+							return;
+						case 67108874:
+							if (cs2_configs['cfg1388'] == 1) {
+								v1 = 293;
+							} else {
+								v1 = script_488(client_configs['cfg1659'].bitcfg5415);
+							}
+							break;
+						case 67108877:
+							if (cs2_configs['cfg1388'] == 1) {
+								v1 = 300;
+							} else {
+								v1 = script_488(client_configs['cfg1659'].bitcfg5416);
+							}
+							break;
+						case 67108880:
+							if (cs2_configs['cfg1388'] == 1) {
+								v1 = 305;
+							} else {
+								v1 = script_488(client_configs['cfg1659'].bitcfg5417);
+							}
+							break;
+						case 67108883:
+							if (cs2_configs['cfg1388'] == 1) {
+								v1 = 1044;
+							} else {
+								v1 = script_488(client_configs['cfg1659'].bitcfg5418);
+							}
+					}
+					if (v1 != -1) {
+						script_10008(idx22mapAttribute(v1, 1150) + "<br>" + idx22mapAttribute(v1, 1151) + "<br>" + "Cost: " + (string)cs2method_10379(idx22mapAttribute(v1, 1154)) + "<br>" + "Cooldown: " + (string)cs2method_10379(idx22mapAttribute(v1, 1155)), a0, -1);
+					} else {
+						script_8808();
+					}
+					return;
+				}, new WidgetPointer(-32768,3), "I", new WidgetPointer(1024,13));
+			}
+			v9 = cs2method_10060(v9, 1);
+		}
+		if (v18 != 0) {
+			if (v9 == 1) {
+				cs2method_10112(0, 50, 1, 0, 67108880);
+				cs2method_21121(new function<script_432>(int a0) {
+					int v1;
+					int v0 = -1;
+					switch (a0) {
+						default:
+							return;
+						case 67108874:
+							if (cs2_configs['cfg1388'] == 1) {
+								v1 = 293;
+							} else {
+								v1 = script_488(client_configs['cfg1659'].bitcfg5415);
+							}
+							break;
+						case 67108877:
+							if (cs2_configs['cfg1388'] == 1) {
+								v1 = 300;
+							} else {
+								v1 = script_488(client_configs['cfg1659'].bitcfg5416);
+							}
+							break;
+						case 67108880:
+							if (cs2_configs['cfg1388'] == 1) {
+								v1 = 305;
+							} else {
+								v1 = script_488(client_configs['cfg1659'].bitcfg5417);
+							}
+							break;
+						case 67108883:
+							if (cs2_configs['cfg1388'] == 1) {
+								v1 = 1044;
+							} else {
+								v1 = script_488(client_configs['cfg1659'].bitcfg5418);
+							}
+					}
+					if (v1 != -1) {
+						script_10008(idx22mapAttribute(v1, 1150) + "<br>" + idx22mapAttribute(v1, 1151) + "<br>" + "Cost: " + (string)cs2method_10379(idx22mapAttribute(v1, 1154)) + "<br>" + "Cooldown: " + (string)cs2method_10379(idx22mapAttribute(v1, 1155)), a0, -1);
+					} else {
+						script_8808();
+					}
+					return;
+				}, new WidgetPointer(-32768,3), "I", new WidgetPointer(1024,16));
+			} else {
+				cs2method_10112(0, 100, 1, 0, 67108880);
+				cs2method_21121(new function<script_432>(int a0) {
+					int v0;
+					int v1 = -1;
+					switch (a0) {
+						default:
+							return;
+						case 67108874:
+							if (cs2_configs['cfg1388'] == 1) {
+								v0 = 293;
+							} else {
+								v0 = script_488(client_configs['cfg1659'].bitcfg5415);
+							}
+							break;
+						case 67108877:
+							if (cs2_configs['cfg1388'] == 1) {
+								v0 = 300;
+							} else {
+								v0 = script_488(client_configs['cfg1659'].bitcfg5416);
+							}
+							break;
+						case 67108880:
+							if (cs2_configs['cfg1388'] == 1) {
+								v0 = 305;
+							} else {
+								v0 = script_488(client_configs['cfg1659'].bitcfg5417);
+							}
+							break;
+						case 67108883:
+							if (cs2_configs['cfg1388'] == 1) {
+								v0 = 1044;
+							} else {
+								v0 = script_488(client_configs['cfg1659'].bitcfg5418);
+							}
+					}
+					if (v0 != -1) {
+						script_10008(idx22mapAttribute(v0, 1150) + "<br>" + idx22mapAttribute(v0, 1151) + "<br>" + "Cost: " + (string)cs2method_10379(idx22mapAttribute(v0, 1154)) + "<br>" + "Cooldown: " + (string)cs2method_10379(idx22mapAttribute(v0, 1155)), a0, -1);
+					} else {
+						script_8808();
+					}
+					return;
+				}, new WidgetPointer(-32768,3), "I", new WidgetPointer(1024,16));
+			}
+			v9 = cs2method_10060(v9, 1);
+		}
+		if (v17 != 0) {
+			cs2method_10112(0, 100, 1, 0, 67108883);
+			cs2method_21121(new function<script_432>(int a0) {
+				int v0;
+				int v1 = -1;
+				switch (a0) {
+					default:
+						return;
+					case 67108874:
+						if (cs2_configs['cfg1388'] == 1) {
+							v0 = 293;
+						} else {
+							v0 = script_488(client_configs['cfg1659'].bitcfg5415);
+						}
+						break;
+					case 67108877:
+						if (cs2_configs['cfg1388'] == 1) {
+							v0 = 300;
+						} else {
+							v0 = script_488(client_configs['cfg1659'].bitcfg5416);
+						}
+						break;
+					case 67108880:
+						if (cs2_configs['cfg1388'] == 1) {
+							v0 = 305;
+						} else {
+							v0 = script_488(client_configs['cfg1659'].bitcfg5417);
+						}
+						break;
+					case 67108883:
+						if (cs2_configs['cfg1388'] == 1) {
+							v0 = 1044;
+						} else {
+							v0 = script_488(client_configs['cfg1659'].bitcfg5418);
+						}
+				}
+				if (v0 != -1) {
+					script_10008(idx22mapAttribute(v0, 1150) + "<br>" + idx22mapAttribute(v0, 1151) + "<br>" + "Cost: " + (string)cs2method_10379(idx22mapAttribute(v0, 1154)) + "<br>" + "Cooldown: " + (string)cs2method_10379(idx22mapAttribute(v0, 1155)), a0, -1);
+				} else {
+					script_8808();
+				}
+				return;
+			}, new WidgetPointer(-32768,3), "I", new WidgetPointer(1024,16));
+		}
+	} else {
+		cs2method_10467(0, 67108868);
+		cs2method_10467(1, 67108869);
+		cs2method_10112(0, 0, 1, 0, 67108874);
+		cs2method_21121(new function<script_432>(int a0) {
+			int v1;
+			int v0 = -1;
+			switch (a0) {
+				default:
+					return;
+				case 67108874:
+					if (cs2_configs['cfg1388'] == 1) {
+						v1 = 293;
+					} else {
+						v1 = script_488(client_configs['cfg1659'].bitcfg5415);
+					}
+					break;
+				case 67108877:
+					if (cs2_configs['cfg1388'] == 1) {
+						v1 = 300;
+					} else {
+						v1 = script_488(client_configs['cfg1659'].bitcfg5416);
+					}
+					break;
+				case 67108880:
+					if (cs2_configs['cfg1388'] == 1) {
+						v1 = 305;
+					} else {
+						v1 = script_488(client_configs['cfg1659'].bitcfg5417);
+					}
+					break;
+				case 67108883:
+					if (cs2_configs['cfg1388'] == 1) {
+						v1 = 1044;
+					} else {
+						v1 = script_488(client_configs['cfg1659'].bitcfg5418);
+					}
+			}
+			if (v1 != -1) {
+				script_10008(idx22mapAttribute(v1, 1150) + "<br>" + idx22mapAttribute(v1, 1151) + "<br>" + "Cost: " + (string)cs2method_10379(idx22mapAttribute(v1, 1154)) + "<br>" + "Cooldown: " + (string)cs2method_10379(idx22mapAttribute(v1, 1155)), a0, -1);
+			} else {
+				script_8808();
+			}
+			return;
+		}, new WidgetPointer(-32768,3), "I", new WidgetPointer(1024,10));
+		cs2method_10112(0, 50, 1, 0, 67108877);
+		cs2method_21121(new function<script_432>(int a0) {
+			int v1;
+			int v0 = -1;
+			switch (a0) {
+				default:
+					return;
+				case 67108874:
+					if (cs2_configs['cfg1388'] == 1) {
+						v1 = 293;
+					} else {
+						v1 = script_488(client_configs['cfg1659'].bitcfg5415);
+					}
+					break;
+				case 67108877:
+					if (cs2_configs['cfg1388'] == 1) {
+						v1 = 300;
+					} else {
+						v1 = script_488(client_configs['cfg1659'].bitcfg5416);
+					}
+					break;
+				case 67108880:
+					if (cs2_configs['cfg1388'] == 1) {
+						v1 = 305;
+					} else {
+						v1 = script_488(client_configs['cfg1659'].bitcfg5417);
+					}
+					break;
+				case 67108883:
+					if (cs2_configs['cfg1388'] == 1) {
+						v1 = 1044;
+					} else {
+						v1 = script_488(client_configs['cfg1659'].bitcfg5418);
+					}
+			}
+			if (v1 != -1) {
+				script_10008(idx22mapAttribute(v1, 1150) + "<br>" + idx22mapAttribute(v1, 1151) + "<br>" + "Cost: " + (string)cs2method_10379(idx22mapAttribute(v1, 1154)) + "<br>" + "Cooldown: " + (string)cs2method_10379(idx22mapAttribute(v1, 1155)), a0, -1);
+			} else {
+				script_8808();
+			}
+			return;
+		}, new WidgetPointer(-32768,3), "I", new WidgetPointer(1024,13));
+		cs2method_10112(0, 100, 1, 0, 67108880);
+		cs2method_21121(new function<script_432>(int a0) {
+			int v1;
+			int v0 = -1;
+			switch (a0) {
+				default:
+					return;
+				case 67108874:
+					if (cs2_configs['cfg1388'] == 1) {
+						v1 = 293;
+					} else {
+						v1 = script_488(client_configs['cfg1659'].bitcfg5415);
+					}
+					break;
+				case 67108877:
+					if (cs2_configs['cfg1388'] == 1) {
+						v1 = 300;
+					} else {
+						v1 = script_488(client_configs['cfg1659'].bitcfg5416);
+					}
+					break;
+				case 67108880:
+					if (cs2_configs['cfg1388'] == 1) {
+						v1 = 305;
+					} else {
+						v1 = script_488(client_configs['cfg1659'].bitcfg5417);
+					}
+					break;
+				case 67108883:
+					if (cs2_configs['cfg1388'] == 1) {
+						v1 = 1044;
+					} else {
+						v1 = script_488(client_configs['cfg1659'].bitcfg5418);
+					}
+			}
+			if (v1 != -1) {
+				script_10008(idx22mapAttribute(v1, 1150) + "<br>" + idx22mapAttribute(v1, 1151) + "<br>" + "Cost: " + (string)cs2method_10379(idx22mapAttribute(v1, 1154)) + "<br>" + "Cooldown: " + (string)cs2method_10379(idx22mapAttribute(v1, 1155)), a0, -1);
+			} else {
+				script_8808();
+			}
+			return;
+		}, new WidgetPointer(-32768,3), "I", new WidgetPointer(1024,16));
+		cs2method_10112(0, 150, 1, 0, 67108883);
+		cs2method_21121(new function<script_432>(int a0) {
+			int v1;
+			int v0 = -1;
+			switch (a0) {
+				default:
+					return;
+				case 67108874:
+					if (cs2_configs['cfg1388'] == 1) {
+						v1 = 293;
+					} else {
+						v1 = script_488(client_configs['cfg1659'].bitcfg5415);
+					}
+					break;
+				case 67108877:
+					if (cs2_configs['cfg1388'] == 1) {
+						v1 = 300;
+					} else {
+						v1 = script_488(client_configs['cfg1659'].bitcfg5416);
+					}
+					break;
+				case 67108880:
+					if (cs2_configs['cfg1388'] == 1) {
+						v1 = 305;
+					} else {
+						v1 = script_488(client_configs['cfg1659'].bitcfg5417);
+					}
+					break;
+				case 67108883:
+					if (cs2_configs['cfg1388'] == 1) {
+						v1 = 1044;
+					} else {
+						v1 = script_488(client_configs['cfg1659'].bitcfg5418);
+					}
+			}
+			if (v1 != -1) {
+				script_10008(idx22mapAttribute(v1, 1150) + "<br>" + idx22mapAttribute(v1, 1151) + "<br>" + "Cost: " + (string)cs2method_10379(idx22mapAttribute(v1, 1154)) + "<br>" + "Cooldown: " + (string)cs2method_10379(idx22mapAttribute(v1, 1155)), a0, -1);
+			} else {
+				script_8808();
+			}
+			return;
+		}, new WidgetPointer(-32768,3), "I", new WidgetPointer(1024,19));
+	}
+	return;
+}

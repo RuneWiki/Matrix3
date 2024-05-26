@@ -1,0 +1,29 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1477() {
+	object v1;
+	object v0 = "";
+	if (client_configs['cfg169'].bitcfg464 == 0) {
+		v1 = "Quick task:";
+	} else {
+		v1 = "Large task:";
+	}
+	script_9554(50200577, v1, 50200597, 50200578, 21259);
+	cs2method_10026(50200581, (string)cs2method_10379(client_configs['cfg169'].bitcfg459) + " / " + (string)cs2method_10379(cs2method_10051(cs2method_10060(client_configs['cfg168'].bitcfg451, 1), 5)));
+	cs2method_10026(50200584, (string)cs2method_10379(client_configs['cfg169'].bitcfg460) + " / " + (string)cs2method_10379(cs2method_10051(cs2method_10060(client_configs['cfg168'].bitcfg452, 1), 5)));
+	cs2method_10026(50200587, (string)cs2method_10379(client_configs['cfg169'].bitcfg461) + " / " + (string)cs2method_10379(cs2method_10051(cs2method_10060(client_configs['cfg168'].bitcfg453, 1), 5)));
+	cs2method_10026(50200590, (string)cs2method_10379(client_configs['cfg169'].bitcfg462) + " / " + (string)cs2method_10379(cs2method_10051(cs2method_10060(client_configs['cfg168'].bitcfg454, 1), 5)));
+	cs2method_10026(50200593, (string)cs2method_10379(client_configs['cfg169'].bitcfg463) + " / " + (string)cs2method_10379(cs2method_10051(cs2method_10060(client_configs['cfg168'].bitcfg455, 1), 5)));
+	cs2method_10026(50200596, (string)cs2method_10379(client_configs['cfg170'].bitcfg465) + " / " + (string)cs2method_10379(cs2method_10051(cs2method_10060(client_configs['cfg168'].bitcfg456, 1), 5)));
+	return;
+}

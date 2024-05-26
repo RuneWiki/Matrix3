@@ -1,0 +1,22 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1791(int a0) {
+	int v0 = cs2method_10968(cs2_configs['cfg270'], 60);
+	int v1 = cs2method_10038(cs2_configs['cfg270'], 60);
+	if (v1 >= 10) {
+		cs2method_10026(a0, (string)cs2method_10379(v0) + "h " + (string)cs2method_10379(v1) + "m");
+	} else {
+		cs2method_10026(a0, (string)cs2method_10379(v0) + "h 0" + (string)cs2method_10379(v1) + "m");
+	}
+	return;
+}

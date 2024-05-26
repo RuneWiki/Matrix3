@@ -1,0 +1,37 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7147() {
+	if (client_configs['cfg312'].bitcfg1002 == 0) {
+		cs2method_10467(0, 89784359);
+	} else {
+		cs2method_10467(1, 89784359);
+	}
+	if (cs2method_10163(89849892) != client_configs['cfg312'].bitcfg1002) {
+		script_7221(89849892, 89850005, 89849999, 89850001, 89850004, client_configs['cfg312'].bitcfg1002);
+	}
+	if (cs2method_10609(89850005) == 1) {
+		script_7229(89849892, 0, 89849892, cs2method_10461(client_configs['cfg312'].bitcfg1003, 1), 89849999, 89850001, 89850004);
+	}
+	if (client_configs['cfg312'].bitcfg1003 == client_configs['cfg312'].bitcfg1002) {
+		cs2method_10467(0, 89849884);
+	} else {
+		cs2method_10467(1, 89849884);
+	}
+	if (client_configs['cfg312'].bitcfg1003 <= 1) {
+		cs2method_10467(0, 89849886);
+	} else {
+		cs2method_10467(1, 89849886);
+	}
+	cs2method_10274(89784357, "Make " + (string)cs2method_10379(client_configs['cfg312'].bitcfg1003) + " " + (string)cs2method_10018(client_configs['cfg1170']));
+	return;
+}

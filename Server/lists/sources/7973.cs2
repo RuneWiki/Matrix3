@@ -1,0 +1,68 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_7973(int a0,int a1) {
+	object v0 = "The action bar is locked." + "<br>" + "Click here to unlock it.";
+	object v1 = "Unlock action bar";
+	if (client_configs['cfg682'].bitcfg1892 == 1) {
+		flow_1:
+			if (a1 == 1) {
+				script_6739(12);
+			}
+			IF (cs2method_10769(a0) == 18862) 
+				GOTO	flow_4
+			GOTO	flow_5
+		flow_4:
+			GOTO	flow_9
+		flow_5:
+			IF (cs2method_10769(a0) == 18860) 
+				GOTO	flow_6
+			GOTO	flow_7
+		flow_6:
+			cs2method_10758(18862, a0);
+			GOTO	flow_9
+		flow_7:
+			IF (cs2method_10769(a0) == 18859) 
+				GOTO	flow_8
+			GOTO	flow_9
+		flow_8:
+			cs2method_10758(18861, a0);
+			GOTO	flow_9
+		flow_9:
+	} else {
+		v0 = "The action bar is unlocked." + "<br>" + "Click here to lock it.";
+		v1 = "Lock action bar";
+		if (a1 == 1) {
+			script_6739(13);
+		}
+		if (cs2method_10769(a0) == 18862) {
+			cs2method_10758(18860, a0);
+		} else if (cs2method_10769(a0) == 18860) {
+		} else if (cs2method_10769(a0) == 18859) {
+		} else {
+			cs2method_10758(18859, a0);
+		}
+	}
+	cs2method_21121(new function<script_8799>(int a0,object a1,int a2) {
+		script_8800(a0, a2, a1);
+		return;
+	}, (string)v0, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(1430,6));
+	cs2method_20750(new function<script_8805>() {
+		script_8808();
+		return;
+	}, "", new WidgetPointer(1430,6));
+	script_8808();
+	cs2method_11127(1, 93716486, v1);
+	script_6993(0, 0, 0, -1);
+	return;
+}

@@ -1,0 +1,23 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+string script_1542(int a0) {
+	int v1 = cs2method_10640(665, a0);
+	if (v1 == -1) {
+		return "";
+	}
+	object v0 = "";
+	if (cs2method_10416(v1) == 1 && cs2method_10771() == 0) {
+		v0 = " (Member's item)";
+	}
+	return (string)cs2method_10018(v1) + (string)v0;
+}

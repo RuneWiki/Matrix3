@@ -1,0 +1,52 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_8150(int a0) {
+	flow_0:
+		int v0 = 0;
+		int v2 = -1;
+		int v3 = idx17mapData('i', 'J', 7716, v0);
+		IF (a0 == 1) 
+			GOTO	flow_1
+		GOTO	flow_6
+	flow_1:
+		IF (v0 <= 22) 
+			GOTO	flow_2
+		GOTO	flow_5
+	flow_2:
+		if (v3 != -1) {
+			int v6 = 1;
+			int v5 = 21;
+			int v4 = v0;
+			script_8825_struct(2,0,0) v1 = script_8825(v5, v4);
+			script_8844(v6, v1.intpart_0, v1.intpart_1, 93782020, v0);
+		}
+		v0 = cs2method_10060(v0, 1);
+		v3 = idx17mapData('i', 'J', 7716, v0);
+		GOTO	flow_1
+	flow_5:
+		GOTO	flow_11
+	flow_6:
+		IF (v0 <= 22) 
+			GOTO	flow_7
+		GOTO	flow_11
+	flow_7:
+		if (v3 != -1 && cs2method_11038(93782020, v0) == 1) {
+			cs2method_10159(1, 0, 0, -1, 0, -1, 0, -1, 0, -1, 0);
+		}
+		v0 = cs2method_10060(v0, 1);
+		v3 = idx17mapData('i', 'J', 7716, v0);
+		GOTO	flow_6
+	flow_11:
+		return;
+}

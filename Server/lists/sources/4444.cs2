@@ -1,0 +1,329 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4444(int a0,int a1) {
+	int v20;
+	object v14;
+	object v68;
+	int v35 = -1;
+	int v38 = -1;
+	int v71 = -1;
+	int v74 = -1;
+	int v33 = -1;
+	int v42 = -1;
+	int v26 = -1;
+	int v21 = -1;
+	int v59 = -1;
+	int v25 = -1;
+	int v43 = -1;
+	int v63 = -1;
+	int v37 = -1;
+	int v10 = -1;
+	int v41 = -1;
+	int v49 = -1;
+	int v65 = -1;
+	int v7 = -1;
+	int v8 = -1;
+	int v48 = -1;
+	int v15 = a1;
+	script_7815_struct(20,0,0) v29 = script_7815(v15);
+	int v23 = v29.intpart_19;
+	int v34 = v29.intpart_18;
+	int v56 = v29.intpart_17;
+	int v19 = v29.intpart_16;
+	int v52 = v29.intpart_15;
+	int v18 = v29.intpart_14;
+	int v72 = v29.intpart_13;
+	int v1 = v29.intpart_12;
+	int v61 = v29.intpart_11;
+	int v64 = v29.intpart_10;
+	int v62 = v29.intpart_9;
+	int v60 = v29.intpart_8;
+	int v44 = v29.intpart_7;
+	int v6 = v29.intpart_6;
+	int v54 = v29.intpart_5;
+	int v36 = v29.intpart_4;
+	int v73 = v29.intpart_3;
+	int v32 = v29.intpart_2;
+	int v9 = v29.intpart_1;
+	int v27 = v29.intpart_0;
+	int v40 = 9;
+	int v0 = 23;
+	script_4445(a1);
+	cs2method_10758(6255, v72);
+	cs2method_10467(1, v62);
+	cs2method_10026(v64, "");
+	if (cs2_configs['cfg1513'] != 1) {
+		cs2_configs['cfg1513'] = 1;
+	}
+	cs2method_10273(v36);
+	cs2method_10273(v54);
+	cs2method_10273(v6);
+	cs2method_10273(v44);
+	int v11 = 0;
+	int v55 = cs2method_10737();
+	int v24 = cs2method_10236(v9);
+	if (a0 <= -1) {
+		a0 = cs2method_10191(v9);
+	}
+	int v45 = cs2method_11048(cs2method_10872(a0, cs2method_10461(cs2method_10236(v34), v24)), 0);
+	cs2_configs['cfg1506'] = v45;
+	cs2method_10112(v45, 0, 0, 1, v9);
+	cs2method_10467(0, v9);
+	cs2method_11159(149, v9);
+	int v28 = 0;
+	int v67 = 2;
+	object v12 = "";
+	int v30 = 19;
+	int v3 = cs2method_10968(cs2method_10823(v36), v30);
+	object v47 = "";
+	int v51 = 0;
+	object v70 = "";
+	int v5 = 0;
+	int v66 = 0;
+	object v4 = "";
+	int v22 = -1;
+	int v39 = script_3365(v34);
+	int v17 = cs2method_10461(cs2method_10060(v45, v39), script_3365(v36));
+	int v50 = cs2method_10461(cs2method_10236(v6), cs2method_10060(cs2method_10060(v45, cs2method_10461(v39, script_3365(v6))), v24));
+	cs2method_11127(1, v56, "Leave chat");
+	cs2method_10758(6255, v72);
+	cs2method_10283(v50, 0, 0, 1, v6);
+	cs2method_10283(v50, 0, 0, 1, v44);
+	cs2method_10026(v19, cs2method_10017());
+	object v46 = "Leave another clan's clanchat";
+	cs2method_21121(new function<script_8799>(int a0,int a1,object a2) {
+		script_8800(a1, a0, a2);
+		return;
+	}, (string)v46, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(1110,46));
+	cs2method_20750(new function<script_8805>() {
+		script_8808();
+		return;
+	}, "", new WidgetPointer(1110,46));
+	cs2method_11127(1, 72745006, "Leave Clan Chat channel");
+	cs2method_21121(new function<script_8799>(object a0,int a1,int a2) {
+		script_8800(a2, a1, a0);
+		return;
+	}, (string)v46, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(1440,40));
+	cs2method_20750(new function<script_8805>() {
+		script_8808();
+		return;
+	}, "", new WidgetPointer(1440,40));
+	cs2method_11127(1, 94371880, "Leave Clan Chat channel");
+	while (v28 < v55) {
+		object v58 = cs2method_10929(v28);
+		int v75 = cs2method_10101(v28);
+		cs2method_10606(v36, 4, cs2method_10163(v36));
+		cs2method_11105(0, 1, 0);
+		cs2method_10063(0, v67, 0, 0);
+		cs2method_10013(v17, v30, 0, 0);
+		cs2method_10811(10787197);
+		cs2method_10692(17813);
+		cs2method_10173(1);
+		cs2method_10797(v58);
+		if (cs2method_10846(v58, cs2method_10765(cs2method_10954())) != 0) {
+			if (cs2method_10563(v58) == 1) {
+				cs2method_10057(1, "Message");
+				cs2method_10057(7, "Remove friend " + (string)v58);
+			} else if (cs2method_10654(v58) == 1) {
+				cs2method_10057(8, "Remove ignore " + (string)v58);
+			} else {
+				cs2method_10057(5, "Add friend " + (string)v58);
+				cs2method_10057(6, "Add ignore " + (string)v58);
+			}
+		}
+		cs2method_20703(new function<script_4472>(object a0,int a1,int a2) {
+			int v0 = -1;
+			int v5 = -1;
+			int v2 = -1;
+			switch (a1) {
+				case 1:
+					script_8512(a0, cs2_configs['cfg2231']);
+					return;
+				case 5:
+					cs2method_10810("Attempting to add " + (string)a0 + " to your Friends List.");
+					object v3 = cs2method_10765(a0);
+					cs2method_11133(v3);
+					break;
+				case 6:
+					cs2method_10810("Attempting to add " + (string)a0 + " to your Ignore List.");
+					object v4 = cs2method_10765(a0);
+					cs2method_10290(v4);
+					break;
+				case 7:
+					cs2method_10810("Attempting to remove " + (string)a0 + " from your Friends List.");
+					object v1 = cs2method_10765(a0);
+					cs2_configs['cfg3936'] = (string)v1;
+					script_9961(8);
+					break;
+				case 8:
+					cs2method_10810("Attempting to remove " + (string)a0 + " from your Ignore List.");
+					object v6 = cs2method_10765(a0);
+					cs2method_10762(v6);
+					break;
+				case 9:
+					script_4465(a0);
+			}
+			return;
+		}, (string)v58, -2147483644, v28, "sii");
+		object v53 = "\u00a0\u00a0\u00a0" + (string)v58;
+		if (cs2method_10939(17813, v53) > v17) {
+			while (cs2method_10939(17813, (string)v53 + "...") > v17 && cs2method_10265(v53) > 0) {
+				v53 = cs2method_11025(0, cs2method_10461(cs2method_10265(v53), 1), v53);
+			}
+			v53 = (string)v53 + "...";
+			cs2method_20353(new function<script_8799>(object a0,int a1,int a2) {
+				script_8800(a1, a2, a0);
+				return;
+			}, (string)v58, new WidgetPointer(-32768,3), -2147483643, "sIi");
+			cs2method_20884(new function<script_8805>() {
+				script_8808();
+				return;
+			}, "");
+		}
+		cs2method_10797(v53);
+		cs2method_10173(1);
+		int v57 = cs2method_10838(v28);
+		if (v57 >= 1100 && v57 < 5001) {
+			v68 = "Lobby";
+			v14 = "Lobby";
+			v20 = 0;
+		} else if (v57 >= 5001 && v57 < 6000) {
+			v68 = "Classic " + (string)cs2method_10379(cs2method_10461(v57, 5000));
+			v14 = "Classic " + (string)cs2method_10379(cs2method_10461(v57, 5000));
+			v20 = 0;
+		} else {
+			v68 = cs2method_10379(v57);
+			v14 = "World " + (string)cs2method_10379(v57);
+			v20 = cs2method_10060(cs2method_10060(2, 24), 2);
+		}
+		int v76 = cs2method_10939(20452, v68);
+		cs2method_10606(v44, 5, cs2method_10163(v44));
+		if (v50 >= cs2method_10060(v76, v20)) {
+			if (v20 > 0) {
+				if (v57 > 199) {
+					cs2method_10310(11435);
+				} else if (script_9377(v57) == 1) {
+					cs2method_10310(18932);
+				} else {
+					cs2method_10310(11434);
+				}
+				cs2method_10013(24, 12, 0, 0);
+				cs2method_10063(2, cs2method_10060(v67, 1), 0, 0);
+				cs2method_20353(new function<script_8799>(int a0,object a1,int a2) {
+					script_8800(a2, a0, a1);
+					return;
+				}, (string)v14, new WidgetPointer(-32768,3), -2147483643, "sIi");
+				cs2method_20884(new function<script_8805>() {
+					script_8808();
+					return;
+				}, "");
+			}
+		} else {
+			v20 = 0;
+		}
+		if (v50 >= v76) {
+		} else {
+			cs2method_20353(new function<script_8799>(int a0,object a1,int a2) {
+				script_8800(a2, a0, a1);
+				return;
+			}, (string)v14, new WidgetPointer(-32768,3), -2147483643, "sIi");
+			cs2method_20884(new function<script_8805>() {
+				script_8808();
+				return;
+			}, "");
+			v68 = "...";
+		}
+		cs2method_10606(v6, 4, cs2method_10163(v6));
+		cs2method_10013(v50, v30, 0, 0);
+		cs2method_10063(cs2method_10060(v20, 2), v67, 0, 0);
+		cs2method_10692(17813);
+		cs2method_10173(1);
+		cs2method_11105(0, 0, 0);
+		cs2method_10797(v68);
+		if (v57 == cs2method_10966()) {
+			cs2method_10811(3979038);
+		} else {
+			cs2method_10811(16777060);
+		}
+		cs2method_20353(new function<script_8799>(int a0,int a1,object a2) {
+			script_8800(a0, a1, a2);
+			return;
+		}, (string)v14, new WidgetPointer(-32768,3), -2147483643, "sIi");
+		cs2method_20884(new function<script_8805>() {
+			script_8808();
+			return;
+		}, "");
+		cs2method_10606(v54, 5, cs2method_10163(v54));
+		if (v75 == 127) {
+			cs2method_10063(3, 3, 0, 0);
+			cs2method_10013(9, 9, 0, 0);
+		} else {
+			cs2method_10063(0, 0, 0, 0);
+			cs2method_10013(15, 15, 0, 0);
+		}
+		cs2method_10310(idx17mapData('i', 'd', 3712, v75));
+		v28 = cs2method_10060(v28, 1);
+	}
+	for (int v2 = 0, int v69 = 0; v2 < v55; v2 = cs2method_10060(v2, 1)) {
+		int v75 = v2;
+		cs2method_10257();
+		int v76 = v75;
+		if (cs2method_11038(v36, v76) == 1 && cs2method_10846(cs2method_10447(), "") != 0) {
+			v67 = cs2method_10051(v2, v30);
+			cs2method_10063(cs2method_10878(), v67, 0, 0);
+			if (cs2method_11038(v54, v76) == 1) {
+				cs2method_10063(cs2method_10878(), cs2method_10060(cs2method_10060(cs2method_10406(), v67), 3), 0, 0);
+			}
+			if (cs2method_11038(v6, v76) == 1) {
+				cs2method_10063(cs2method_10878(), v67, 0, 0);
+			}
+			if (cs2method_11038(v44, v76) == 1) {
+				cs2method_10063(cs2method_10878(), cs2method_10060(v67, 2), 0, 0);
+			}
+		}
+	}
+	if (cs2method_10051(v2, 19) > cs2method_10823(v61)) {
+		cs2method_11130(cs2method_10461(cs2method_10236(cs2method_10155(v61)), 16), cs2method_10051(v2, 19), v61);
+	} else {
+		cs2method_11130(0, 0, v61);
+	}
+	int v16 = cs2method_10718(v61);
+	cs2method_11130(cs2method_10461(cs2method_10236(cs2method_10155(v61)), 16), cs2method_10051(v30, v55), v61);
+	int v13 = cs2method_10872(v16, cs2method_10970(v61));
+	cs2method_10251(0, v13, v61);
+	script_31(v1, v61, 5666, 5663, 5664, 5665, 5686, 5685);
+	cs2method_20618(new function<script_4443>(int a0,int a1) {
+		script_7812(a1, a0);
+		return;
+	}, -1, new WidgetPointer(a1), "iI", new WidgetPointer(v36));
+	cs2method_20537(new function<script_4443>(int a0,int a1) {
+		script_7812(a0, a1);
+		return;
+	}, -1, new WidgetPointer(a1), "iI", new WidgetPointer(v36));
+	int v31 = cs2method_10051(v30, cs2method_11048(v55, v3));
+	cs2method_11130(cs2method_10461(cs2method_10236(cs2method_10155(v61)), 16), cs2method_10051(v30, v55), v61);
+	script_31(v1, v61, 5666, 5663, 5664, 5665, 5686, 5685);
+	if (v31 > cs2method_10823(v61)) {
+		cs2method_10467(0, v1);
+		cs2method_10283(16, 53, 1, 1, v61);
+		int v75 = cs2method_10872(cs2method_10718(v61), v67);
+		script_72(v1, v61, v75);
+	} else {
+		cs2method_10467(1, v1);
+		cs2method_10283(0, 53, 1, 1, v61);
+		cs2method_11130(0, 0, v61);
+		cs2method_10251(0, 0, v61);
+		script_72(v1, v61, 0);
+	}
+	return;
+}

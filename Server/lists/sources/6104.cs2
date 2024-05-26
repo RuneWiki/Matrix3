@@ -1,0 +1,21 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6104() {
+	if (client_configs['cfg299'] != -1 && client_configs['cfg301'] != -1) {
+		script_6108(client_configs['cfg299'], client_configs['cfg301']);
+		script_6111();
+	} else {
+		script_6107();
+	}
+	return;
+}

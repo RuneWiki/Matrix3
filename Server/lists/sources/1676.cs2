@@ -1,0 +1,37 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1676(int a0,int a1,int a2) {
+	if (a1 != 1) {
+		return;
+	}
+	if (a0 == a2) {
+		return;
+	}
+	script_1675(a0);
+	client_configs['cfg1686'].bitcfg5534 = a0;
+	cs2method_10273(5505046);
+	int v0 = a0;
+	script_1674_struct(2,0,0) v3 = script_1674(v0);
+	int v1 = v3.intpart_0;
+	int v2 = v3.intpart_1;
+	/* 
+		java.lang.RuntimeException: Stack underflow
+			at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+			at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+			at tests.Main.main(Main.java:69)
+		
+	 */
+}

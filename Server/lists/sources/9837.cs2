@@ -1,0 +1,115 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9837(int a0,int a1,int a2,int a3) {
+	script_9848();
+	if (a0 < 0 || a0 >= cs2method_10894(95)) {
+		return;
+	}
+	int v3 = -1;
+	int v5 = -1;
+	int v0 = 2901;
+	int v2 = 2901;
+	if (cs2method_11038(a2, a0) == 1) {
+		v3 = cs2method_10487();
+		v5 = cs2method_11089();
+		v0 = itemDefsAttribute(v3, 537);
+		int v7 = itemDefsAttribute(v3, 118);
+	}
+	if (v3 == -1 || v5 <= 0) {
+		return;
+	}
+	switch (a3) {
+		case 49938647:
+			if (cs2method_11038(a2, a0) == 1 && cs2method_11038(a3, a1) == 1) {
+				script_6580(cs2method_10487(), cs2method_11089());
+				if (cs2method_11038(a3, a1) == 1) {
+					script_6580(v3, v5);
+				}
+				cs2method_10363(44040, 1, 0, 88, 512);
+				script_9834(v3, v0);
+			}
+			break;
+		case 49938704:
+			int v1 = a0;
+			int v6 = a1;
+			int v4 = a2;
+			/* 
+				mgi.tools.jagdecs2.DecompilerException: No documentation for:CALL_CS2	9840
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:198)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+					at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+					at tests.Main.main(Main.java:69)
+				
+			 */
+		case 49938439:
+			script_9839(v3, v5, a0, a2, 93, a1, a3);
+			cs2method_10670(9704, 1, 0, 90);
+			break;
+		case 49938572:
+		case 49938685:
+			script_9843(1, a0, a2);
+			script_9834(v3, v0);
+			break;
+		case 49938580:
+		case 49938686:
+			script_9843(2, a0, a2);
+			script_9834(v3, v0);
+			break;
+		case 49938687:
+		case 49938588:
+			script_9843(3, a0, a2);
+			script_9834(v3, v0);
+			break;
+		case 49938596:
+		case 49938688:
+			script_9843(4, a0, a2);
+			script_9834(v3, v0);
+			break;
+		case 49938604:
+		case 49938689:
+			script_9843(5, a0, a2);
+			script_9834(v3, v0);
+			break;
+		case 49938612:
+		case 49938690:
+			script_9843(6, a0, a2);
+			script_9834(v3, v0);
+			break;
+		case 49938691:
+		case 49938620:
+			script_9843(7, a0, a2);
+			script_9834(v3, v0);
+			break;
+		case 49938628:
+		case 49938692:
+			script_9843(8, a0, a2);
+			script_9834(v3, v0);
+			break;
+		case 49938636:
+		case 49938693:
+			script_9843(9, a0, a2);
+			script_9834(v3, v0);
+			break;
+		case 49938560:
+		case 49938733:
+			if (script_9828(1, v3) == 1) {
+				script_9214(v3, 95, a0, a3, a2);
+			}
+			break;
+		default:
+			return;
+	}
+	script_9838();
+	return;
+}

@@ -1,0 +1,19 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3684(int a0) {
+	if (client_configs['cfg35'].bitcfg207 == 1 || client_configs['cfg1113'].bitcfg3028 == 1) {
+		return;
+	}
+	script_8800(a0, -1, "Click here to search for a song");
+	return;
+}

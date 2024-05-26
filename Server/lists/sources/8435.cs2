@@ -1,0 +1,59 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_8435_struct(7,0,0) script_8435(int a0) {
+	int v0 = -1;
+	int v5 = -1;
+	int v3 = -1;
+	int v6 = -1;
+	int v4 = -1;
+	int v1 = -1;
+	int v2 = -1;
+	switch (a0) {
+		case 1:
+			v0 = 95027200;
+			v5 = 95027203;
+			v3 = 95027201;
+			v6 = 95027206;
+			v4 = 95027204;
+			v1 = 95027205;
+			v2 = 95027202;
+			break;
+		case 2:
+			v0 = 95420423;
+			v5 = 95420417;
+			v3 = 95420424;
+			v6 = 95420426;
+			v4 = 95420418;
+			v1 = 95420425;
+			v2 = 95420416;
+			break;
+		case 3:
+			v0 = 95617031;
+			v5 = 95617025;
+			v3 = 95617032;
+			v6 = 95617034;
+			v4 = 95617026;
+			v1 = 95617033;
+			v2 = 95617024;
+			break;
+		case 4:
+			v0 = 95223815;
+			v5 = 95223809;
+			v3 = 95223816;
+			v6 = 95223818;
+			v4 = 95223810;
+			v1 = 95223817;
+			v2 = 95223808;
+	}
+	return new script_8435_struct(v0, v5, v3, v6, v4, v1, v2);
+}

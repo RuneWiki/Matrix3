@@ -1,0 +1,36 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1460(int a0,int a1) {
+	int v3 = (int)idx17mapData('i', 'I', 1614, a0);
+	int v2 = cs2method_10982(v3);
+	int v1 = (int)idx17mapData('i', 'I', 1615, a0);
+	cs2method_10467(0, v2);
+	cs2method_10121(cs2method_10640(95, a1), cs2method_11065(95, a1), v1);
+	cs2method_10832(1, v1);
+	cs2method_10807(3355443, v1);
+	cs2method_10495(v3);
+	cs2method_11127(1, v3, "View tab " + (string)cs2method_10379(a0));
+	cs2method_11127(2, v3, "Collapse tab " + (string)cs2method_10379(a0));
+	cs2method_20390(new function<none>() {
+	}, "", new WidgetPointer(v3));
+	object v0 = "Click here to select tab " + (string)cs2method_10379(a0);
+	cs2method_21121(new function<script_8799>(int a0,int a1,object a2) {
+		script_8800(a0, a1, a2);
+		return;
+	}, (string)v0, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(v3));
+	cs2method_20750(new function<script_8805>() {
+		script_8808();
+		return;
+	}, "", new WidgetPointer(v3));
+	return;
+}

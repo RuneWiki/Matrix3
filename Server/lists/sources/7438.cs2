@@ -1,0 +1,26 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7438(int a0,int a1) {
+	int v0 = 0;
+	while (v0 < a0) {
+		if (cs2method_11038(85918126, v0) == 1) {
+			if (v0 == a1) {
+				cs2method_10811(56544);
+			} else {
+				cs2method_10811(16777215);
+			}
+		}
+		v0 = cs2method_10060(v0, 1);
+	}
+	return;
+}

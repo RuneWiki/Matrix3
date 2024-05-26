@@ -1,0 +1,46 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_8351(int a0) {
+	int v0 = 1;
+	while (a0 > 31) {
+		a0 = cs2method_10461(a0, 32);
+		v0 = cs2method_10060(v0, 1);
+	}
+	switch (v0) {
+		case 1:
+			if (cs2method_10441(cs2_configs['cfg3468'], a0) == 0) {
+				cs2_configs['cfg3468'] = cs2method_10668(cs2_configs['cfg3468'], a0);
+				return 0;
+			}
+			return 1;
+		case 2:
+			if (cs2method_10441(cs2_configs['cfg3469'], a0) == 0) {
+				cs2_configs['cfg3469'] = cs2method_10668(cs2_configs['cfg3469'], a0);
+				return 0;
+			}
+			return 1;
+		case 3:
+			if (cs2method_10441(cs2_configs['cfg3470'], a0) == 0) {
+				cs2_configs['cfg3470'] = cs2method_10668(cs2_configs['cfg3470'], a0);
+				return 0;
+			}
+			return 1;
+		case 4:
+			if (cs2method_10441(cs2_configs['cfg3471'], a0) == 0) {
+				cs2_configs['cfg3471'] = cs2method_10668(cs2_configs['cfg3471'], a0);
+				return 0;
+			}
+			return 1;
+	}
+	return 1;
+}

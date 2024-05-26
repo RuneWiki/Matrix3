@@ -1,0 +1,21 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+string script_2001(int a0) {
+	int v2 = cs2_configs['cfg1878'];
+	int v0 = cs2method_10968(v2, 1000);
+	int v1 = cs2method_10461(v2, cs2method_10051(v0, 1000));
+	if (v1 < 0) {
+		v1 = cs2method_10461(0, v1);
+	}
+	return (string)cs2method_10379(v0) + script_8002() + (string)cs2method_10379(cs2method_10968(v1, 100)) + "kg";
+}

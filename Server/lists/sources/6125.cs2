@@ -1,0 +1,57 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6125(int a0,int a1,int a2,int a3,int a4,int a5,int a6) {
+	cs2_configs['cfg1894'] = a0;
+	cs2_configs['cfg1895'] = a1;
+	cs2_configs['cfg1896'] = a4;
+	cs2_configs['cfg1897'] = a5;
+	cs2_configs['cfg1898'] = a2;
+	cs2_configs['cfg1899'] = a3;
+	script_6138(0);
+	script_6137(a0, a1, a4, a5, a2, a3);
+	script_6130();
+	script_6127(a6);
+	cs2_configs['cfg1893'] = 0;
+	switch (cs2method_10877(6)) {
+		case 0:
+			cs2_configs['cfg1900'] = 4;
+			cs2_configs['cfg1901'] = 8;
+			cs2_configs['cfg1902'] = 12;
+			break;
+		case 1:
+			cs2_configs['cfg1900'] = 4;
+			cs2_configs['cfg1901'] = 12;
+			cs2_configs['cfg1902'] = 8;
+			break;
+		case 2:
+			cs2_configs['cfg1900'] = 8;
+			cs2_configs['cfg1901'] = 4;
+			cs2_configs['cfg1902'] = 12;
+			break;
+		case 3:
+			cs2_configs['cfg1900'] = 8;
+			cs2_configs['cfg1901'] = 12;
+			cs2_configs['cfg1902'] = 4;
+			break;
+		case 4:
+			cs2_configs['cfg1900'] = 12;
+			cs2_configs['cfg1901'] = 4;
+			cs2_configs['cfg1902'] = 8;
+			break;
+		case 5:
+			cs2_configs['cfg1900'] = 12;
+			cs2_configs['cfg1901'] = 8;
+			cs2_configs['cfg1902'] = 4;
+	}
+	return;
+}

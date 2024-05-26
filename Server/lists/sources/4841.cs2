@@ -1,0 +1,93 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_4841_struct(6,0,0) script_4841(int a0) {
+	int v9 = 0;
+	int v1 = 0;
+	int v20 = 0;
+	int v6 = 0;
+	int v10 = 0;
+	int v0 = 0;
+	if (cs2method_10172() == 1) {
+		switch (a0) {
+			case 1:
+				int v11 = client_configs['cfg1983'].bitcfg6993;
+				v9 = client_configs['cfg1982'].bitcfg6985;
+				v1 = client_configs['cfg1982'].bitcfg6986;
+				v6 = client_configs['cfg1983'].bitcfg6990;
+				v10 = client_configs['cfg1983'].bitcfg6991;
+				v0 = client_configs['cfg1983'].bitcfg6992;
+				break;
+			case 2:
+				int v5 = client_configs['cfg1985'].bitcfg7002;
+				v9 = client_configs['cfg1984'].bitcfg6994;
+				v1 = client_configs['cfg1984'].bitcfg6995;
+				v6 = client_configs['cfg1985'].bitcfg6999;
+				v10 = client_configs['cfg1985'].bitcfg7000;
+				v0 = client_configs['cfg1985'].bitcfg7001;
+				break;
+			case 3:
+				int v17 = client_configs['cfg1987'].bitcfg7011;
+				v9 = client_configs['cfg1986'].bitcfg7003;
+				v1 = client_configs['cfg1986'].bitcfg7004;
+				v6 = client_configs['cfg1987'].bitcfg7008;
+				v10 = client_configs['cfg1987'].bitcfg7009;
+				v0 = client_configs['cfg1987'].bitcfg7010;
+		}
+	}
+	int v8 = 1;
+	int v3 = 1;
+	int v21 = -1;
+	int v22 = -1;
+	int v16 = -1;
+	int v15 = -1;
+	int v4 = 0;
+	int v14 = 0;
+	int v12 = 0;
+	int v18 = 0;
+	int v2 = 0;
+	int v19 = 0;
+	int v7 = idx17mapData('i', 'g', 4043, v9);
+	if (v7 == -1) {
+		return new script_4841_struct(0, 0, 0, 0, 0, 0);
+	}
+	int v13 = idx17mapData('i', 'g', v7, v1);
+	if (v13 == -1) {
+		return new script_4841_struct(0, 0, 0, 0, 0, 0);
+	}
+	while (v8 <= 3) {
+		int v24 = idx17mapData('i', 'g', v13, v8);
+		if (v24 != -1) {
+			switch (v8) {
+				case 1:
+					v22 = idx17mapData('i', 'J', v24, v6);
+					break;
+				case 2:
+					v22 = idx17mapData('i', 'J', v24, v10);
+					break;
+				case 3:
+					v22 = idx17mapData('i', 'J', v24, v0);
+			}
+			if (v22 != -1) {
+				v4 = idx22mapAttribute(v22, 1571);
+				v18 = cs2method_10060(v18, idx22mapAttribute(v22, 1573));
+				v14 = idx22mapAttribute(v22, 1575);
+				v2 = cs2method_10060(v2, idx22mapAttribute(v22, 1577));
+				v12 = idx22mapAttribute(v22, 1579);
+				v19 = cs2method_10060(v19, idx22mapAttribute(v22, 1581));
+			}
+		}
+		int v23 = -1;
+		v8 = cs2method_10060(v8, 1);
+	}
+	return new script_4841_struct(v4, v18, v14, v2, v12, v19);
+}

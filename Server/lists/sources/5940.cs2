@@ -1,0 +1,50 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5940() {
+	cs2_configs['cfg1411'] = 1;
+	cs2_configs['cfg2552'] = "";
+	cs2_configs['cfg2553'] = "";
+	cs2_configs['cfg1919'] = 0;
+	cs2method_10467(1, 59376027);
+	cs2method_10467(1, 59376055);
+	cs2method_10467(1, 59376053);
+	cs2method_10467(0, 59375655);
+	cs2method_10467(0, 59375618);
+	if (client_configs['cfg1749'] >= 4163) {
+		if (cs2method_10461(cs2method_10948(), client_configs['cfg1749']) >= 5 && client_configs['cfg3184'].bitcfg16464 == 2) {
+			cs2method_10467(1, 59375902);
+		}
+	} else {
+		cs2method_10467(0, 59375902);
+		cs2method_10467(1, 59375898);
+	}
+	if (client_configs['cfg3185'] == 1 || client_configs['cfg3185'] == 5) {
+		cs2method_10467(1, 59375899);
+	}
+	if (client_configs['cfg3185'] == 3 || client_configs['cfg3185'] == 6) {
+		cs2method_10026(59375898, "To continue your adventure you need to validate your account using the email address you entered at login.");
+		cs2method_10026(59376060, "No email? No worries");
+		cs2method_10026(59376061, "If you can't find the email check your junk or spam folder, or just click the button to resend it.");
+		cs2method_10026(59375906, "Need a change?");
+		cs2method_10026(59375907, "Can't login to your email address or need to use another?" + "<br>" + "Just click the button below.");
+		cs2method_10026(59376093, "change");
+	} else {
+		cs2method_10026(59375898, "To continue your adventure you need to validate your account using the email address you entered at login.");
+		cs2method_10026(59376060, "No email? No worries");
+		cs2method_10026(59376061, "If you can't find the email check your junk or spam folder, or just click the button to resend it.");
+		cs2method_10026(59375906, "Enter your email");
+		cs2method_10026(59375907, "Enter your email here then click the submit button below.");
+		cs2method_10026(59376093, "submit");
+	}
+	return;
+}

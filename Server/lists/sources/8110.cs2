@@ -1,0 +1,38 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8110() {
+	int v3 = 0;
+	int v5 = 0;
+	int v1 = 1003;
+	script_8138_struct(2,0,0) v4 = script_8138(v1);
+	int v6 = v4.intpart_1;
+	int v2 = v4.intpart_0;
+	if (v2 == -1 || v6 == -1) {
+		return;
+	}
+	script_8111(v2, v6);
+	script_9667(v2, v6);
+	script_8115(v2, v6);
+	script_8114(v2, v6);
+	int v0 = 0;
+	if (v6 == 1 || v6 == 3) {
+		v0 = 1;
+	}
+	script_8112(v2, v0);
+	script_8116(v0);
+	script_8122(93716498, 0);
+	script_8123(93716504, 0);
+	script_8124(93716510, 0);
+	script_8125(93716508, 0);
+	return;
+}

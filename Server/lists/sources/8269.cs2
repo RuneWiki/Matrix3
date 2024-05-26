@@ -1,0 +1,21 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8269(int a0,int a1,int a2) {
+	cs2method_20553(new function<none>() {
+	}, "", new WidgetPointer(a2));
+	script_8411(a1, a0);
+	if (a1 == 1001 && script_8292(client_configs['cfg3708'].bitcfg18994, -1) == 1) {
+		script_8288(client_configs['cfg3708'].bitcfg18994);
+	}
+	return;
+}

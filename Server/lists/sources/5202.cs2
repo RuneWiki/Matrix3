@@ -1,0 +1,58 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5202(int a0) {
+	if (a0 == 1) {
+		cs2_configs['cfg1597'] = client_configs['cfg421'].bitcfg1034;
+		cs2_configs['cfg1598'] = client_configs['cfg421'].bitcfg1035;
+		cs2_configs['cfg1599'] = client_configs['cfg422'].bitcfg1036;
+		cs2_configs['cfg1600'] = client_configs['cfg422'].bitcfg1037;
+		cs2_configs['cfg1601'] = client_configs['cfg422'].bitcfg1038;
+	}
+	switch (cs2_configs['cfg1600']) {
+		case 0:
+			cs2method_10336(43803, 73531466);
+			break;
+		case 1:
+			cs2method_10336(43796, 73531466);
+			break;
+		case 2:
+			cs2method_10336(43790, 73531466);
+			break;
+		case 3:
+			cs2method_10336(43779, 73531466);
+			break;
+		case 4:
+			cs2method_10336(43795, 73531466);
+	}
+	switch (client_configs['cfg414'].bitcfg1009) {
+		case 1:
+			cs2method_10078(2, 754, 756, 73531466);
+			break;
+		case 2:
+			cs2method_10078(2, 754, 754, 73531466);
+			break;
+		case 3:
+			cs2method_10078(2, 754, 751, 73531466);
+	}
+	int v0 = idx17mapData('i', 'J', 4850, cs2_configs['cfg1601']);
+	if (v0 == -1) {
+		cs2method_10078(1, 753, 749, 73531466);
+	} else {
+		cs2method_10078(1, 753, idx22mapAttribute(v0, 1884), 73531466);
+	}
+	cs2method_10551(0, 41506, cs2_configs['cfg1597'], 73531466);
+	cs2method_10551(1, 41497, script_5183(cs2_configs['cfg1597'], 0, 0, -9), 73531466);
+	cs2method_10551(2, 13434, cs2_configs['cfg1598'], 73531466);
+	cs2method_10551(3, 7102, cs2_configs['cfg1599'], 73531466);
+	return;
+}

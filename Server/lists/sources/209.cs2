@@ -1,0 +1,34 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_209() {
+	if (client_configs['cfg610'].bitcfg1655 < 8) {
+		cs2method_10758(1785, 38731786);
+	} else if (client_configs['cfg610'].bitcfg1655 < 15) {
+		cs2method_10758(1786, 38731786);
+	} else if (client_configs['cfg610'].bitcfg1655 < 23) {
+		cs2method_10758(1787, 38731786);
+	} else if (client_configs['cfg610'].bitcfg1655 < 30) {
+		cs2method_10758(1788, 38731786);
+	} else if (client_configs['cfg610'].bitcfg1655 < 38) {
+		cs2method_10758(1789, 38731786);
+	} else if (client_configs['cfg610'].bitcfg1655 < 45) {
+		cs2method_10758(1790, 38731786);
+	} else if (client_configs['cfg610'].bitcfg1655 < 53) {
+		cs2method_10758(1791, 38731786);
+	} else if (client_configs['cfg610'].bitcfg1655 < 60) {
+		cs2method_10758(1792, 38731786);
+	} else {
+		cs2method_10758(1793, 38731786);
+	}
+	return;
+}

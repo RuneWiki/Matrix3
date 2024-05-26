@@ -1,0 +1,31 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_8155_struct(1,1,0) script_8155(int a0) {
+	int v0;
+	object v1;
+	int v2 = script_8314(a0);
+	int v5 = idx17mapData('i', 'J', 7716, a0);
+	object v3 = idx22mapAttribute(v5, 3493);
+	int v4 = -1;
+	if (v2 == -1) {
+		v0 = idx22mapAttribute(v5, 3496);
+		v1 = cs2method_10427("Open ", v3);
+	} else if (v2 == a0) {
+		v0 = idx22mapAttribute(v5, 3497);
+		v1 = cs2method_10427("Close ", v3);
+	} else {
+		v0 = idx22mapAttribute(v5, 3496);
+		v1 = "Bring " + (string)v3 + " to front";
+	}
+	return new script_8155_struct(v0, v1);
+}

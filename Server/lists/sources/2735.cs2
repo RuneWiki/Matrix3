@@ -1,0 +1,105 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2735(int a0,int a1,int a2,int a3,int a4,int a5) {
+	if (client_configs['cfg457'] <= 0) {
+		cs2method_10467(0, a1);
+		cs2method_10467(1, a3);
+	} else {
+		cs2method_10467(1, a1);
+		cs2method_10467(0, a3);
+	}
+	cs2method_10520(idx17mapData('i', 'i', 3724, client_configs['cfg458'].bitcfg1188), a2);
+	cs2method_10520(idx17mapData('i', 'i', 3056, client_configs['cfg457']), a0);
+	cs2method_10520(idx17mapData('i', 'i', 3723, client_configs['cfg458'].bitcfg1190), a4);
+	cs2method_10520(idx17mapData('i', 'i', 3726, client_configs['cfg458'].bitcfg1191), a5);
+	cs2method_11101(idx17mapData('i', '1', 3057, client_configs['cfg457']), a0);
+	script_3418(64356386, 0, client_configs['cfg458'].bitcfg1188);
+	script_3418(64356387, 1, client_configs['cfg458'].bitcfg1188);
+	script_3418(64356388, 2, client_configs['cfg458'].bitcfg1188);
+	script_3418(64356389, 3, client_configs['cfg458'].bitcfg1188);
+	script_3418(64356390, 4, client_configs['cfg458'].bitcfg1188);
+	script_3418(64356391, 5, client_configs['cfg458'].bitcfg1188);
+	script_3418(64356392, 6, client_configs['cfg458'].bitcfg1188);
+	script_3418(64356393, 7, client_configs['cfg458'].bitcfg1188);
+	script_3418(64356394, 8, client_configs['cfg458'].bitcfg1188);
+	script_3418(64356395, 9, client_configs['cfg458'].bitcfg1188);
+	script_3418(64356396, 10, client_configs['cfg458'].bitcfg1188);
+	script_3418(64356397, 11, client_configs['cfg458'].bitcfg1188);
+	script_3418(64356398, 12, client_configs['cfg458'].bitcfg1188);
+	script_3418(64356399, 13, client_configs['cfg458'].bitcfg1188);
+	script_3418(64356400, 14, client_configs['cfg458'].bitcfg1188);
+	script_3418(64356401, 15, client_configs['cfg458'].bitcfg1188);
+	script_3418(64356402, 20, client_configs['cfg458'].bitcfg1188);
+	script_3418(64356403, 17, client_configs['cfg458'].bitcfg1188);
+	script_3418(64356404, 18, client_configs['cfg458'].bitcfg1188);
+	script_3418(64356405, 19, client_configs['cfg458'].bitcfg1188);
+	script_3418(64356462, 0, client_configs['cfg458'].bitcfg1191);
+	script_3418(64356463, 1, client_configs['cfg458'].bitcfg1191);
+	script_3418(64356464, 2, client_configs['cfg458'].bitcfg1191);
+	script_3418(64356465, 3, client_configs['cfg458'].bitcfg1191);
+	script_3418(64356466, 4, client_configs['cfg458'].bitcfg1191);
+	script_3418(64356467, 5, client_configs['cfg458'].bitcfg1191);
+	script_3418(64356468, 6, client_configs['cfg458'].bitcfg1191);
+	script_3418(64356469, 7, client_configs['cfg458'].bitcfg1191);
+	script_3418(64356470, 8, client_configs['cfg458'].bitcfg1191);
+	script_3418(64356471, 9, client_configs['cfg458'].bitcfg1191);
+	script_3418(64356472, 10, client_configs['cfg458'].bitcfg1191);
+	script_3418(64356473, 11, client_configs['cfg458'].bitcfg1191);
+	script_3418(64356474, 12, client_configs['cfg458'].bitcfg1191);
+	script_3418(64356475, 13, client_configs['cfg458'].bitcfg1191);
+	script_3418(64356476, 14, client_configs['cfg458'].bitcfg1191);
+	script_3418(64356477, 15, client_configs['cfg458'].bitcfg1191);
+	script_3418(64356478, 20, client_configs['cfg458'].bitcfg1191);
+	script_3418(64356479, 17, client_configs['cfg458'].bitcfg1191);
+	script_3418(64356480, 18, client_configs['cfg458'].bitcfg1191);
+	script_3418(64356481, 19, client_configs['cfg458'].bitcfg1191);
+	script_3418(64356438, 0, client_configs['cfg458'].bitcfg1190);
+	script_3418(64356439, 1, client_configs['cfg458'].bitcfg1190);
+	script_3418(64356440, 2, client_configs['cfg458'].bitcfg1190);
+	script_3418(64356441, 3, client_configs['cfg458'].bitcfg1190);
+	script_3418(64356442, 4, client_configs['cfg458'].bitcfg1190);
+	script_3418(64356443, 5, client_configs['cfg458'].bitcfg1190);
+	script_3418(64356444, 6, client_configs['cfg458'].bitcfg1190);
+	script_3418(64356445, 7, client_configs['cfg458'].bitcfg1190);
+	script_3418(64356446, 8, client_configs['cfg458'].bitcfg1190);
+	script_3418(64356447, 9, client_configs['cfg458'].bitcfg1190);
+	script_3418(64356448, 10, client_configs['cfg458'].bitcfg1190);
+	script_3418(64356449, 11, client_configs['cfg458'].bitcfg1190);
+	script_3418(64356450, 12, client_configs['cfg458'].bitcfg1190);
+	script_3418(64356451, 13, client_configs['cfg458'].bitcfg1190);
+	script_3418(64356452, 14, client_configs['cfg458'].bitcfg1190);
+	script_3418(64356453, 15, client_configs['cfg458'].bitcfg1190);
+	script_3418(64356454, 20, client_configs['cfg458'].bitcfg1190);
+	script_3418(64356455, 17, client_configs['cfg458'].bitcfg1190);
+	script_3418(64356456, 18, client_configs['cfg458'].bitcfg1190);
+	script_3418(64356457, 19, client_configs['cfg458'].bitcfg1190);
+	script_3418(64356415, 1, client_configs['cfg457']);
+	script_3418(64356416, 2, client_configs['cfg457']);
+	script_3418(64356417, 3, client_configs['cfg457']);
+	script_3418(64356418, 4, client_configs['cfg457']);
+	script_3418(64356419, 5, client_configs['cfg457']);
+	script_3418(64356420, 6, client_configs['cfg457']);
+	script_3418(64356421, 7, client_configs['cfg457']);
+	script_3418(64356422, 8, client_configs['cfg457']);
+	script_3418(64356423, 9, client_configs['cfg457']);
+	script_3418(64356424, 10, client_configs['cfg457']);
+	script_3418(64356425, 11, client_configs['cfg457']);
+	script_3418(64356426, 12, client_configs['cfg457']);
+	script_3418(64356427, 13, client_configs['cfg457']);
+	script_3418(64356428, 14, client_configs['cfg457']);
+	script_3418(64356429, 15, client_configs['cfg457']);
+	script_3418(64356430, 16, client_configs['cfg457']);
+	script_3418(64356431, 17, client_configs['cfg457']);
+	script_3418(64356432, 18, client_configs['cfg457']);
+	return;
+}

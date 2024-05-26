@@ -1,0 +1,18 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_8717_struct(4,0,0) script_8717(int a0) {
+	int v2 = 9;
+	int v0 = a0;
+	script_8725_struct(4,0,0) v1 = script_8725(v2, v0);
+	return new script_8717_struct(v1.intpart_0, v1.intpart_1, v1.intpart_2, v1.intpart_3);
+}

@@ -1,0 +1,271 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_973() {
+	int v1 = client_configs['cfg1228'].bitcfg3264;
+	if (client_configs['cfg1228'].bitcfg3264 < 1 || client_configs['cfg1228'].bitcfg3264 > 25) {
+		return;
+	}
+	object v29 = cs2method_10969(1477, v1);
+	int v47 = idx17mapData('i', 'S', 681, v1);
+	int v54 = idx17mapData('i', 'd', 1478, v1);
+	int v30 = 1;
+	int v3 = 1;
+	switch (v1) {
+		case 1:
+			v3 = cs2_configs['cfg1469'];
+			break;
+		case 2:
+			v3 = cs2_configs['cfg1470'];
+			break;
+		case 5:
+			v3 = cs2_configs['cfg1471'];
+			break;
+		case 3:
+			v3 = cs2_configs['cfg1472'];
+			break;
+		case 7:
+			v3 = cs2_configs['cfg1473'];
+			break;
+		case 4:
+			v3 = cs2_configs['cfg1474'];
+			break;
+		case 6:
+			v3 = cs2_configs['cfg1475'];
+			break;
+		case 8:
+			v3 = cs2_configs['cfg1476'];
+			break;
+		case 9:
+			v3 = cs2_configs['cfg1477'];
+			break;
+		case 10:
+			v3 = cs2_configs['cfg1478'];
+			break;
+		case 11:
+			v3 = cs2_configs['cfg1479'];
+			break;
+		case 19:
+			v3 = cs2_configs['cfg1480'];
+			break;
+		case 13:
+			v3 = cs2_configs['cfg1481'];
+			break;
+		case 14:
+			v3 = cs2_configs['cfg1482'];
+			break;
+		case 15:
+			v3 = cs2_configs['cfg1483'];
+			break;
+		case 16:
+			v3 = cs2_configs['cfg1484'];
+			break;
+		case 17:
+			v3 = cs2_configs['cfg1485'];
+			break;
+		case 18:
+			v3 = cs2_configs['cfg1486'];
+			break;
+		case 12:
+			v3 = cs2_configs['cfg1487'];
+			break;
+		case 20:
+			v3 = cs2_configs['cfg1488'];
+			break;
+		case 21:
+			v3 = cs2_configs['cfg1489'];
+			break;
+		case 22:
+			v3 = cs2_configs['cfg1490'];
+			break;
+		case 23:
+			v3 = cs2_configs['cfg1491'];
+			break;
+		case 24:
+			v3 = cs2_configs['cfg1492'];
+			break;
+		case 25:
+			v3 = cs2_configs['cfg1493'];
+			break;
+		case 26:
+			v3 = cs2_configs['cfg3715'];
+	}
+	if (cs2method_10060(v3, 1) != cs2method_10338(v47)) {
+		v29 = (string)cs2method_10969(3644, v1) + (string)cs2method_10379(cs2method_10461(cs2method_10338(v47), v3)) + (string)cs2method_10969(3645, v1);
+	}
+	cs2method_10026(48562179, v29);
+	cs2method_10026(48562181, "You have now reached level " + (string)cs2method_10379(cs2method_10338(v47)) + ".");
+	cs2method_10758(v54, 48562182);
+	int v20 = 0;
+	int v9 = 0;
+	int v39 = 0;
+	object v60 = "";
+	int v72 = 0;
+	int v48 = -1;
+	int v15 = 2287;
+	int v55 = v15;
+	int v27 = 0;
+	cs2method_10273(48562177);
+	cs2method_10273(48562178);
+	if (client_configs['cfg1295'] < 1000 && cs2method_10338(v47) == 3) {
+		object v23 = "<col=000080>" + "You've now reached the highest skill level that you can achieve during the tutorial. Once you finish the tutorial, you can advance this skill even further!";
+		int v50 = script_974(v20, v23, v9, 7620, v15, 0, 0);
+		cs2method_10797(v23);
+		v9 = script_975(v9, v50);
+		v20 = cs2method_10060(2, v20);
+	}
+	if (client_configs['cfg1228'].bitcfg3265 == 1) {
+		object v37 = "<col=800000>" + "Well done! You've reached the total level " + (string)cs2method_10379(idx17mapData('i', 'i', 1475, client_configs['cfg1228'].bitcfg3263)) + " milestone!";
+		int v52 = script_974(v20, v37, v9, 7620, v15, 0, 0);
+		cs2method_10797(v37);
+		v9 = script_975(v9, v52);
+		v20 = cs2method_10060(2, v20);
+	}
+	int v25 = 0;
+	object v38 = "null";
+	int v2 = 7620;
+	if (v1 == 1 || v1 == 2 || v1 == 5 || v1 == 3 || v1 == 7 || v1 == 4 || v1 == 6 || v1 == 24) {
+		if (client_configs['cfg1228'].bitcfg3266 == 1) {
+			object v10 = "<col=800000>" + "Well done! You've reached the Combat level " + (string)cs2method_10379(idx17mapData('i', 'i', 1473, client_configs['cfg1228'].bitcfg3262)) + " milestone!";
+			int v58 = script_974(v20, v10, v9, 7620, v15, 0, 0);
+			cs2method_10797(v10);
+			v9 = script_975(v9, v58);
+			v20 = cs2method_10060(2, v20);
+		}
+		if (client_configs['cfg1228'].bitcfg3294 == 1 && v2 != -1) {
+			while (true) {
+				int v16 = v25;
+				script_976_struct(2,1,0) v64 = script_976(v16);
+				object v6 = v64.objectpart_0;
+				v2 = v64.intpart_1;
+				int v46 = v64.intpart_0;
+				if (v46 == script_1432()) {
+					int v5 = script_974(v20, v6, v9, v2, v15, 0, 0);
+					cs2method_10797(v6);
+					v9 = script_975(v9, v5);
+					v20 = cs2method_10060(2, v20);
+				}
+				v25 = cs2method_10060(v25, 1);
+			}
+		}
+	}
+	object v74 = "";
+	int v69 = 7620;
+	int v66 = 0;
+	int v33 = 0;
+	while (v66 != -1) {
+		int v32 = 0;
+		int v28 = v47;
+		int v26 = v33;
+		script_1023_struct(2,1,0) v40 = script_1023(v28, v26);
+		v66 = v40.intpart_1;
+		int v63 = v40.intpart_0;
+		object v18 = v40.objectpart_0;
+		if (v66 == 1) {
+			int v41 = script_974(v20, v18, v9, v63, v15, 0, 0);
+			cs2method_10797(v18);
+			v9 = script_975(v9, v41);
+			v20 = cs2method_10060(2, v20);
+			v30 = 0;
+		}
+		v33 = cs2method_10060(v33, 1);
+	}
+	int v19 = v15;
+	int v4 = 7620;
+	object v34 = "";
+	int v0 = 0;
+	int v45 = 0;
+	int v77 = 0;
+	int v75 = 0;
+	object v21 = "";
+	int v70 = v1;
+	script_12_struct(1,1,0) v35 = script_12(v70);
+	int v14 = v35.intpart_0;
+	object v17 = v35.objectpart_0;
+	while (v0 < v14) {
+		flow_51:
+			int v57 = v1;
+			int v68 = v0;
+			script_13_struct(1,1,0) v53 = script_13(v57, v68);
+			int v76 = v53.intpart_0;
+			object v62 = v53.objectpart_0;
+			int v49 = 0;
+			int v12 = 7620;
+			int v31 = v15;
+			IF (script_1566(v1, v0) == 1) 
+				GOTO	flow_53
+			GOTO	flow_59
+		flow_53:
+			IF (v31 != -1) 
+				GOTO	flow_54
+			GOTO	flow_58
+		flow_54:
+			int v44 = v1;
+			int v24 = v0;
+			int v56 = v49;
+			script_1567_struct(2,2,0) v11 = script_1567(v44, v24, v56);
+			object v42 = v11.objectpart_1;
+			object v59 = v11.objectpart_0;
+			v31 = v11.intpart_1;
+			int v22 = v11.intpart_0;
+			if (v22 <= cs2method_10338(v47) && v22 > v3) {
+				int v36 = script_974(v20, v42, v9, v12, v31, v1, v0);
+				cs2method_10797(v42);
+				v9 = script_975(v9, v36);
+				v20 = cs2method_10060(2, v20);
+				v30 = 0;
+			}
+			v49 = cs2method_10060(v49, 1);
+			GOTO	flow_53
+		flow_58:
+			v0 = cs2method_10060(v0, 1);
+			GOTO	flow_65
+		flow_59:
+			IF (v12 != -1) 
+				GOTO	flow_60
+			GOTO	flow_64
+		flow_60:
+			int v65 = v1;
+			int v61 = v0;
+			int v71 = v49;
+			script_14_struct(2,2,0) v13 = script_14(v65, v61, v71);
+			object v8 = v13.objectpart_1;
+			object v7 = v13.objectpart_0;
+			v12 = v13.intpart_1;
+			int v73 = v13.intpart_0;
+			if (v73 <= cs2method_10338(v47) && v73 > v3) {
+				int v51 = script_974(v20, v8, v9, v12, v31, v1, v0);
+				cs2method_10797(v8);
+				v9 = script_975(v9, v51);
+				v20 = cs2method_10060(2, v20);
+				v30 = 0;
+			}
+			v49 = cs2method_10060(v49, 1);
+			GOTO	flow_59
+		flow_64:
+			v0 = cs2method_10060(v0, 1);
+		flow_65:
+	}
+	if (v30 == 1) {
+		object v43 = cs2method_10427(script_4242(v1), "Check out the skill advance guide to see what you'll be able to do when you reach even higher levels...");
+		int v67 = script_974(v20, v43, v9, 7620, v15, 0, 0);
+		cs2method_10797(v43);
+		v9 = script_975(v9, v67);
+	}
+	cs2method_10251(0, 0, 48562177);
+	cs2method_11130(296, v9, 48562177);
+	if (v9 > 160) {
+		script_31(48562178, 48562177, 798, 795, 796, 797, 793, 794);
+	}
+	return;
+}

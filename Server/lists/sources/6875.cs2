@@ -1,0 +1,45 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6875() {
+	int v4 = 13777;
+	for (int v3 = 13780, int v1 = 13779, int v0 = 13778, int v8 = -1, int v7 = -1, int v5 = cs2method_10461(cs2method_10924(2345), 1), object v2 = "", object v9 = "", int v6 = -1; v5 >= 0; v5 = cs2method_10461(v5, 1)) {
+		if (cs2method_11038(85917904, cs2method_10060(cs2method_10051(v5, 2), 1)) == 1) {
+			object v12;
+			int v10 = idx17mapData('i', 'i', 2345, v5);
+			object v11 = idx17mapData('i', 's', 2344, v5);
+			if (cs2_configs['cfg2017'] == v10 && cs2_configs['cfg2018'] == v10 && client_configs['cfg265'].bitcfg688 == 1) {
+				cs2method_10310(v3);
+				v12 = "Set colour to " + (string)v11 + ".";
+			} else if (cs2_configs['cfg2017'] == v10) {
+				if (client_configs['cfg265'].bitcfg688 == 1) {
+					cs2method_10310(v1);
+					v12 = "Click again to set secondary colour.";
+				} else {
+					cs2method_10310(v3);
+					v12 = "Set colour to " + (string)v11 + ".";
+				}
+			} else if (client_configs['cfg265'].bitcfg688 == 1 && cs2_configs['cfg2018'] == v10) {
+				cs2method_10310(v0);
+				v12 = "Click again to set primary colour.";
+			} else {
+				cs2method_10310(13777);
+				v12 = "Set colour to " + (string)v11 + ".";
+			}
+			cs2method_20353(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,object a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+				script_7769(a0, a12, a10, a4, a1, a11, a3, a5, a8, a2, a9, a6, a7);
+				return;
+			}, new WidgetPointer(1311,82), new WidgetPointer(-32768,3), -2147483643, (string)v12, 350, 3793, 3793, 11974326, 12, 1, 1, -2147483647, -2147483646, "IIisiffiiiiii");
+		}
+	}
+	return;
+}

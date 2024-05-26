@@ -1,0 +1,29 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1366(int a0,int a1) {
+	if (client_configs['cfg1417'] == 23) {
+		cs2method_10026(a1, "Time until next game starts: 0");
+		cs2method_10467(1, a0);
+	} else if (client_configs['cfg1417'] > 0) {
+		cs2method_10026(a1, "Time until next game starts: " + (string)cs2method_10379(client_configs['cfg1417']));
+		if (client_configs['cfg1417'] <= 13 && client_configs['cfg1417'] >= 4) {
+			cs2method_10467(0, a0);
+		} else {
+			cs2method_10467(1, a0);
+		}
+	} else {
+		cs2method_10026(a1, "Waiting for players to join the other team.");
+		cs2method_10467(1, a0);
+	}
+	return;
+}

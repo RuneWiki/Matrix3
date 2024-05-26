@@ -1,0 +1,64 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7254(int a0) {
+	cs2method_10026(60031353, idx22mapAttribute(a0, 2365));
+	script_7280();
+	if (idx22mapAttribute(a0, 3056) == 0) {
+		cs2method_10467(1, 60031307);
+		cs2method_10467(1, 60031251);
+	} else {
+		cs2method_10467(0, 60031307);
+		cs2method_10467(0, 60031251);
+	}
+	if (idx22mapAttribute(a0, 3057) == 0) {
+		cs2method_10467(1, 60031319);
+		cs2method_10467(1, 60031318);
+	} else {
+		cs2method_10467(0, 60031319);
+		cs2method_10467(0, 60031318);
+	}
+	if (idx22mapAttribute(a0, 3058) == 0) {
+		cs2method_10467(1, 60031331);
+		cs2method_10467(1, 60031330);
+	} else {
+		cs2method_10467(0, 60031331);
+		cs2method_10467(0, 60031330);
+	}
+	if (idx22mapAttribute(a0, 2366) == 7 && script_1121(client_configs['cfg3390']) == 1) {
+		cs2method_10467(0, 60031248);
+		cs2method_10026(60031248, "Your captain already has four traits and cannot gain any more.");
+		cs2method_10467(1, 60031247);
+	}
+	int v0 = 0;
+	int v14 = 0;
+	int v11 = 0;
+	int v4 = idx22mapAttribute(a0, 2367);
+	int v5 = cs2method_11048(100, idx22mapAttribute(a0, 2368));
+	int v3 = cs2method_10122(115, 100, v5);
+	int v12 = cs2method_10122(85, 100, v5);
+	int v10 = cs2method_11048(cs2method_10872(v3, script_1124(client_configs['cfg3390'])), v12);
+	int v13 = cs2method_10122(v5, v10, v4);
+	int v7 = cs2method_11048(1500, v13);
+	int v8 = v7;
+	script_4705_struct(3,0,0) v16 = script_4705(v8);
+	int v9 = v16.intpart_2;
+	int v6 = v16.intpart_1;
+	int v1 = v16.intpart_0;
+	object v15 = cs2method_10379(v6);
+	if (v6 < 10) {
+		v15 = cs2method_10427("0", v15);
+	}
+	object v2 = (string)cs2method_10379(v1) + ":" + (string)v15;
+	cs2method_10026(60031337, v2);
+	return;
+}

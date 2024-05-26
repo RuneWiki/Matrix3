@@ -1,0 +1,33 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4266() {
+	script_4267();
+	script_4274();
+	cs2method_10026(70975573, "");
+	cs2method_10026(70975575, "Select a reward for more information.");
+	cs2method_10026(70975577, "");
+	cs2method_10467(1, 70975578);
+	cs2method_10467(1, 70975652);
+	cs2method_10467(1, 70975647);
+	cs2method_10467(0, 70975645);
+	cs2method_10467(0, 70975646);
+	cs2method_10467(0, 70975653);
+	if (client_configs['cfg3167'].bitcfg16374 < 11) {
+		script_4270();
+		cs2method_10026(70975573, "Spells");
+	} else {
+		script_4272();
+		cs2method_10026(70975573, "Wishes");
+	}
+	return;
+}

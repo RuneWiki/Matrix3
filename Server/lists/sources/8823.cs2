@@ -1,0 +1,346 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_8823_struct(1,1,0) script_8823(int a0,int a1,int a2,int a3) {
+	int v2 = script_8829(a3);
+	int v0 = 1;
+	object v1 = "";
+	switch (a2) {
+		case 4:
+			if (v2 != 0) {
+				v0 = 0;
+				v1 = "Modifier keys cannot be used for camera controls.";
+			} else {
+				switch (a1) {
+					case 0:
+						cs2_configs['cfg2868'].bitcfg18958 = a0;
+						cs2_configs['cfg2871'].bitcfg18988 = v2;
+						break;
+					case 1:
+						cs2_configs['cfg2868'].bitcfg18959 = a0;
+						cs2_configs['cfg2871'].bitcfg18989 = v2;
+						break;
+					case 2:
+						cs2_configs['cfg2868'].bitcfg18960 = a0;
+						cs2_configs['cfg2871'].bitcfg18990 = v2;
+						break;
+					case 3:
+						cs2_configs['cfg2868'].bitcfg18961 = a0;
+						cs2_configs['cfg2871'].bitcfg18991 = v2;
+						break;
+					case 4:
+						cs2_configs['cfg2869'].bitcfg18962 = a0;
+						cs2_configs['cfg2871'].bitcfg18992 = v2;
+						break;
+					case 5:
+						cs2_configs['cfg2869'].bitcfg18963 = a0;
+						cs2_configs['cfg2871'].bitcfg18993 = v2;
+						break;
+					default:
+						v0 = 0;
+				}
+			}
+			break;
+		case 20:
+			switch (a1) {
+				case 0:
+					cs2_configs['cfg2867'].bitcfg18954 = a0;
+					cs2_configs['cfg2871'].bitcfg18984 = v2;
+					break;
+				case 1:
+					cs2_configs['cfg2867'].bitcfg18955 = a0;
+					cs2_configs['cfg2871'].bitcfg18985 = v2;
+					break;
+				case 2:
+					cs2_configs['cfg2867'].bitcfg18956 = a0;
+					cs2_configs['cfg2871'].bitcfg18986 = v2;
+					break;
+				case 3:
+					cs2_configs['cfg2867'].bitcfg18957 = a0;
+					cs2_configs['cfg2871'].bitcfg18987 = v2;
+					break;
+				case 4:
+					cs2_configs['cfg4141'].bitcfg22181 = a0;
+					cs2_configs['cfg3723'].bitcfg22187 = v2;
+					break;
+				default:
+					v0 = 0;
+			}
+			break;
+		case 2:
+			switch (a1) {
+				case 0:
+					cs2_configs['cfg2869'].bitcfg20173 = a0;
+					cs2_configs['cfg2871'].bitcfg20180 = v2;
+					break;
+				case 1:
+					cs2_configs['cfg2869'].bitcfg20174 = a0;
+					cs2_configs['cfg2871'].bitcfg20181 = v2;
+					break;
+				case 3:
+					cs2_configs['cfg3721'].bitcfg20175 = a0;
+					cs2_configs['cfg3723'].bitcfg20182 = v2;
+					break;
+				case 2:
+					cs2_configs['cfg3721'].bitcfg20176 = a0;
+					cs2_configs['cfg3723'].bitcfg20183 = v2;
+					break;
+				case 4:
+					cs2_configs['cfg3721'].bitcfg20177 = a0;
+					cs2_configs['cfg3723'].bitcfg20184 = v2;
+					break;
+				case 7:
+					cs2_configs['cfg3721'].bitcfg20178 = a0;
+					cs2_configs['cfg3723'].bitcfg20185 = v2;
+					break;
+				case 6:
+					cs2_configs['cfg3722'].bitcfg20179 = a0;
+					cs2_configs['cfg3723'].bitcfg20186 = v2;
+					break;
+				default:
+					v0 = 0;
+			}
+			break;
+		case 21:
+			switch (a1) {
+				case 0:
+					cs2_configs['cfg2864'].bitcfg18942 = a0;
+					cs2_configs['cfg2870'].bitcfg18972 = v2;
+					break;
+				case 1:
+					cs2_configs['cfg2863'].bitcfg18940 = a0;
+					cs2_configs['cfg2870'].bitcfg18970 = v2;
+					break;
+				case 2:
+					cs2_configs['cfg2864'].bitcfg18944 = a0;
+					cs2_configs['cfg2870'].bitcfg18974 = v2;
+					break;
+				case 3:
+					cs2_configs['cfg2864'].bitcfg18943 = a0;
+					cs2_configs['cfg2870'].bitcfg18973 = v2;
+					break;
+				case 4:
+					cs2_configs['cfg2863'].bitcfg18941 = a0;
+					cs2_configs['cfg2870'].bitcfg18971 = v2;
+					break;
+				case 5:
+					cs2_configs['cfg2864'].bitcfg18945 = a0;
+					cs2_configs['cfg2870'].bitcfg18975 = v2;
+					break;
+				case 6:
+					cs2_configs['cfg2865'].bitcfg18946 = a0;
+					cs2_configs['cfg2870'].bitcfg18976 = v2;
+					break;
+				case 7:
+					cs2_configs['cfg2865'].bitcfg18947 = a0;
+					cs2_configs['cfg2870'].bitcfg18977 = v2;
+					break;
+				case 8:
+					cs2_configs['cfg2865'].bitcfg18948 = a0;
+					cs2_configs['cfg2870'].bitcfg18978 = v2;
+					break;
+				case 9:
+					cs2_configs['cfg2862'].bitcfg18934 = a0;
+					cs2_configs['cfg2870'].bitcfg18964 = v2;
+					break;
+				case 10:
+					cs2_configs['cfg2866'].bitcfg18953 = a0;
+					cs2_configs['cfg2871'].bitcfg18983 = v2;
+					break;
+				case 11:
+					cs2_configs['cfg2866'].bitcfg18952 = a0;
+					cs2_configs['cfg2871'].bitcfg18982 = v2;
+					break;
+				case 14:
+					cs2_configs['cfg2865'].bitcfg18949 = a0;
+					cs2_configs['cfg2870'].bitcfg18979 = v2;
+					break;
+				case 15:
+					cs2_configs['cfg2866'].bitcfg18950 = a0;
+					cs2_configs['cfg2871'].bitcfg18980 = v2;
+					break;
+				case 16:
+					cs2_configs['cfg2866'].bitcfg18951 = a0;
+					cs2_configs['cfg2871'].bitcfg18981 = v2;
+					break;
+				case 18:
+					cs2_configs['cfg2863'].bitcfg18939 = a0;
+					cs2_configs['cfg2870'].bitcfg18969 = v2;
+					break;
+				case 19:
+					cs2_configs['cfg2863'].bitcfg18938 = a0;
+					cs2_configs['cfg2870'].bitcfg18968 = v2;
+					break;
+				case 20:
+					cs2_configs['cfg2862'].bitcfg18937 = a0;
+					cs2_configs['cfg2870'].bitcfg18967 = v2;
+					break;
+				case 21:
+					cs2_configs['cfg2862'].bitcfg18936 = a0;
+					cs2_configs['cfg2870'].bitcfg18966 = v2;
+					break;
+				case 22:
+					cs2_configs['cfg2862'].bitcfg18935 = a0;
+					cs2_configs['cfg2870'].bitcfg18965 = v2;
+					break;
+				case 23:
+					cs2_configs['cfg3722'].bitcfg21295 = a0;
+					cs2_configs['cfg3723'].bitcfg21296 = v2;
+					break;
+				default:
+					v0 = 0;
+			}
+			break;
+		case 5:
+			switch (a1) {
+				case 1:
+					cs2_configs['cfg2852'].bitcfg18882 = a0;
+					cs2_configs['cfg2859'].bitcfg18908 = v2;
+					break;
+				case 2:
+					cs2_configs['cfg2852'].bitcfg18883 = a0;
+					cs2_configs['cfg2859'].bitcfg18909 = v2;
+					break;
+				case 3:
+					cs2_configs['cfg2852'].bitcfg18884 = a0;
+					cs2_configs['cfg2859'].bitcfg18910 = v2;
+					break;
+				case 4:
+					cs2_configs['cfg2852'].bitcfg18885 = a0;
+					cs2_configs['cfg2859'].bitcfg18911 = v2;
+					break;
+				case 5:
+					cs2_configs['cfg2853'].bitcfg18886 = a0;
+					cs2_configs['cfg2859'].bitcfg18912 = v2;
+					break;
+				case 6:
+					cs2_configs['cfg2853'].bitcfg18887 = a0;
+					cs2_configs['cfg2859'].bitcfg18913 = v2;
+					break;
+				case 7:
+					cs2_configs['cfg2853'].bitcfg18888 = a0;
+					cs2_configs['cfg2859'].bitcfg18914 = v2;
+					break;
+				case 8:
+					cs2_configs['cfg2853'].bitcfg18889 = a0;
+					cs2_configs['cfg2859'].bitcfg18915 = v2;
+					break;
+				case 9:
+					cs2_configs['cfg2854'].bitcfg18890 = a0;
+					cs2_configs['cfg2859'].bitcfg18916 = v2;
+					break;
+				case 10:
+					cs2_configs['cfg2854'].bitcfg18891 = a0;
+					cs2_configs['cfg2859'].bitcfg18917 = v2;
+					break;
+				case 11:
+					cs2_configs['cfg2854'].bitcfg18892 = a0;
+					cs2_configs['cfg2859'].bitcfg18918 = v2;
+					break;
+				case 12:
+					cs2_configs['cfg2854'].bitcfg18893 = a0;
+					cs2_configs['cfg2859'].bitcfg18919 = v2;
+					break;
+				case 13:
+					cs2_configs['cfg2855'].bitcfg22311 = a0;
+					cs2_configs['cfg2859'].bitcfg22313 = v2;
+					break;
+				case 14:
+					cs2_configs['cfg2855'].bitcfg22312 = a0;
+					cs2_configs['cfg2859'].bitcfg22314 = v2;
+					break;
+				case 21:
+					cs2_configs['cfg2856'].bitcfg18898 = a0;
+					cs2_configs['cfg2860'].bitcfg18924 = v2;
+					break;
+				case 22:
+					cs2_configs['cfg2856'].bitcfg18899 = a0;
+					cs2_configs['cfg2860'].bitcfg18925 = v2;
+					break;
+				case 23:
+					cs2_configs['cfg2856'].bitcfg18900 = a0;
+					cs2_configs['cfg2860'].bitcfg18926 = v2;
+					break;
+				case 24:
+					cs2_configs['cfg2856'].bitcfg18901 = a0;
+					cs2_configs['cfg2860'].bitcfg18927 = v2;
+					break;
+				case 25:
+					cs2_configs['cfg2857'].bitcfg18902 = a0;
+					cs2_configs['cfg2860'].bitcfg18928 = v2;
+					break;
+				case 41:
+					cs2_configs['cfg2855'].bitcfg18896 = a0;
+					cs2_configs['cfg2859'].bitcfg18922 = v2;
+					break;
+				case 42:
+					cs2_configs['cfg2855'].bitcfg18897 = a0;
+					cs2_configs['cfg2859'].bitcfg18923 = v2;
+					break;
+				case 43:
+					cs2_configs['cfg2858'].bitcfg18907 = a0;
+					cs2_configs['cfg2860'].bitcfg18933 = v2;
+					break;
+				case 44:
+					cs2_configs['cfg2857'].bitcfg18903 = a0;
+					cs2_configs['cfg2860'].bitcfg18929 = v2;
+					break;
+				case 45:
+					cs2_configs['cfg2857'].bitcfg18904 = a0;
+					cs2_configs['cfg2860'].bitcfg18930 = v2;
+					break;
+				case 46:
+					cs2_configs['cfg2857'].bitcfg18905 = a0;
+					cs2_configs['cfg2860'].bitcfg18931 = v2;
+					break;
+				case 47:
+					cs2_configs['cfg2858'].bitcfg18906 = a0;
+					cs2_configs['cfg2860'].bitcfg18932 = v2;
+					break;
+				default:
+					v0 = 0;
+			}
+			if (a1 <= 14) {
+				script_6995(1430, a1, 0, 0, 0, -1);
+			}
+			break;
+		case 42:
+			switch (a1) {
+				case 0:
+					cs2_configs['cfg3722'].bitcfg22176 = a0;
+					cs2_configs['cfg3723'].bitcfg22182 = v2;
+					break;
+				case 1:
+					cs2_configs['cfg3722'].bitcfg22177 = a0;
+					cs2_configs['cfg3723'].bitcfg22183 = v2;
+					break;
+				case 2:
+					cs2_configs['cfg4141'].bitcfg22178 = a0;
+					cs2_configs['cfg3723'].bitcfg22184 = v2;
+					break;
+				case 3:
+					cs2_configs['cfg4141'].bitcfg22179 = a0;
+					cs2_configs['cfg3723'].bitcfg22185 = v2;
+					break;
+				case 4:
+					cs2_configs['cfg4141'].bitcfg22180 = a0;
+					cs2_configs['cfg3723'].bitcfg22186 = v2;
+					break;
+				default:
+					v0 = 0;
+			}
+			break;
+		default:
+			v0 = 0;
+	}
+	return new script_8823_struct(v0, v1);
+}

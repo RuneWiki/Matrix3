@@ -1,0 +1,24 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_182(int a0) {
+	if (a0 == 1) {
+		cs2method_20380(new function<script_247>(int a0,int a1) {
+			cs2_configs['cfg2578'] = (string)script_74(2, a1, a0, cs2_configs['cfg2578']);
+			return;
+		}, -2147483640, false, "iz", new WidgetPointer(594,29));
+	} else {
+		cs2method_20380(new function<none>() {
+		}, "", new WidgetPointer(594,29));
+	}
+	return;
+}

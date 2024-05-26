@@ -1,0 +1,143 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3379(int a0,int a1) {
+	if (script_8785() == 1) {
+		return;
+	}
+	if (client_configs['cfg3680'].bitcfg22315 == 1 && cs2method_11114(105, 8978, a0) > 0) {
+		return;
+	}
+	int v11 = -1;
+	int v14 = -1;
+	int v0 = -1;
+	int v18 = -1;
+	int v15 = -1;
+	int v5 = -1;
+	int v20 = -1;
+	int v13 = -1;
+	int v1 = cs2method_10924(7718);
+	int v10 = 0;
+	int v16 = 0;
+	int v21 = 0;
+	int v7 = 0;
+	int v9 = 0;
+	int v6 = 0;
+	int v17 = 0;
+	int v12 = 0;
+	script_8306();
+	if (script_8314(a0) == -1) {
+		int v25 = idx17mapData('i', 'J', 7716, a0);
+		if (v25 == -1) {
+			return;
+		}
+		int v27 = idx22mapAttribute(idx22mapAttribute(v25, 3494), 3541);
+		int v24 = idx22mapAttribute(idx22mapAttribute(v25, 3494), 3542);
+		int v23 = idx22mapAttribute(v25, 3503);
+		if (v23 == -1) {
+			return;
+		}
+		cs2method_10467(0, v23);
+		if (client_configs['cfg3680'].bitcfg22315 == 0) {
+			int v37 = cs2_configs['cfg4132'];
+			int v29 = a0;
+			script_8725_struct(4,0,0) v40 = script_8725(v37, v29);
+			int v2 = v40.intpart_3;
+			int v8 = v40.intpart_2;
+			int v3 = v40.intpart_1;
+			int v4 = v40.intpart_0;
+			if (cs2_configs['cfg4132'] == 8) {
+				v4 = script_8711(v4, v8, cs2method_10236(96796679));
+				v3 = script_8711(v3, v2, cs2method_10823(96796679));
+			}
+			if (idx22mapAttribute(v25, 3521) == 1) {
+				cs2method_10112(v4, v3, 0, 0, v23);
+				cs2method_10283(v8, v2, 0, 0, v23);
+				script_8361(a0);
+				while (v10 < v1) {
+					int v22 = idx17mapData('i', 'i', 7718, v10);
+					if (v22 != -1 && v22 != a0) {
+						int v33 = idx17mapData('i', 'J', 7716, v22);
+						if (idx22mapAttribute(v33, 3521) == 1) {
+							int v26 = idx22mapAttribute(v33, 3503);
+							if (v26 != -1 && cs2method_10609(v26) == 0) {
+								int v19 = script_8396(v23, v26);
+								if (v19 > v13 && cs2method_10236(v26) >= v27 && cs2method_10823(v26) >= v24) {
+									v13 = v19;
+									v5 = v22;
+								}
+							}
+						}
+					}
+					v10 = cs2method_10060(v10, 1);
+				}
+			}
+			if (v5 != -1 && v13 >= cs2method_10968(cs2method_10051(v8, v2), 3)) {
+				script_8356(v5, a0, 1000, a1, 1);
+			} else if (v34 == 1 || idx22mapAttribute(v25, 3521) == 0) {
+				script_8387(v4, v3, v8, v2, a0);
+				script_173(a0);
+			} else if (v5 != -1) {
+				script_8356(v5, a0, 1000, 0, 1);
+			} else {
+				int v41 = script_8786(a0, 1);
+				/* 
+					java.lang.RuntimeException: Stack underflow
+						at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+						at tests.Main.main(Main.java:69)
+					
+				 */
+			}
+			int v28 = v4;
+			int v32 = v3;
+			int v35 = v8;
+			int v30 = v2;
+			int v31 = a0;
+			int v39 = 0;
+			int v36 = 1;
+			script_8382_struct(5,0,0) v38 = script_8382(v28, v32, v35, v30, v31, v39, v36);
+			int v34 = v38.intpart_4;
+			v2 = v38.intpart_3;
+			v8 = v38.intpart_2;
+			v3 = v38.intpart_1;
+			v4 = v38.intpart_0;
+		} else {
+			if (idx22mapAttribute(v25, 3534) != -1 || a0 == 9 || a0 == 12 || a0 == 17) {
+				if (cs2_configs['cfg3465'].bitcfg22615 != 0 && cs2_configs['cfg3465'].bitcfg22615 != cs2method_10060(a0, 1)) {
+					script_8323(cs2method_10461(cs2_configs['cfg3465'].bitcfg22615, 1), 1);
+				}
+				cs2_configs['cfg3465'].bitcfg22615 = cs2method_10060(a0, 1);
+			}
+		}
+		script_8705(a0);
+		script_8157();
+	} else {
+		if (a1 == 1) {
+			int v23 = script_8313(a0);
+			/* 
+				java.lang.RuntimeException: Stack underflow
+					at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+					at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+					at tests.Main.main(Main.java:69)
+				
+			 */
+		}
+	}
+	return;
+}

@@ -1,0 +1,91 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8465() {
+	int v11 = cs2method_10122(cs2_configs['cfg2760'], 100, 50);
+	int v2 = cs2method_10122(idx17mapData('i', 'i', 7339, v11), 100, cs2method_10060(100, cs2method_10968(40, 2)));
+	int v3 = cs2method_10060(client_configs['cfg711'], client_configs['cfg3563']);
+	int v10 = 0;
+	int v13 = 0;
+	int v14 = 0;
+	if (v3 > 0) {
+		v10 = cs2method_11048(0, cs2method_10872(10000, cs2method_10461(10000, cs2method_10051(cs2method_10122(v2, v3, 100), client_configs['cfg712']))));
+		v13 = cs2method_11048(0, cs2method_10872(10000, cs2method_10461(10000, cs2method_10051(cs2method_10122(v2, v3, 100), client_configs['cfg713']))));
+		v14 = cs2method_11048(0, cs2method_10872(10000, cs2method_10461(10000, cs2method_10051(cs2method_10122(v2, v3, 100), client_configs['cfg714']))));
+	}
+	int v19 = cs2method_10566(94, 2946);
+	int v17 = cs2method_10051(cs2method_10938(3), 100);
+	int v6 = client_configs['cfg3596'];
+	cs2method_10026(95879353, cs2method_10379(v3));
+	int v1 = cs2method_10461(cs2method_10122(v3, 100, cs2method_10461(100, client_configs['cfg712'])), cs2method_10122(v3, 100, 45));
+	object v5 = cs2method_10379(v1);
+	if (v1 > 0) {
+		v5 = "+" + (string)v5;
+	}
+	cs2method_10026(95879351, v5);
+	int v8 = cs2method_10461(cs2method_10122(v3, 100, cs2method_10461(100, client_configs['cfg713'])), cs2method_10122(v3, 100, 45));
+	object v15 = cs2method_10379(v8);
+	if (v8 > 0) {
+		v15 = "+" + (string)v15;
+	}
+	cs2method_10026(95879355, v15);
+	int v4 = cs2method_10461(cs2method_10122(v3, 100, cs2method_10461(100, client_configs['cfg714'])), cs2method_10122(v3, 100, 45));
+	object v7 = cs2method_10379(v4);
+	if (v4 > 0) {
+		v7 = "+" + (string)v7;
+	}
+	cs2method_10026(95879357, v7);
+	cs2method_10026(95879305, (string)cs2method_10379(cs2method_10122(v10, 1000, 10)) + "%");
+	cs2method_10026(95879309, (string)cs2method_10379(cs2method_10122(v13, 1000, 10)) + "%");
+	cs2method_10026(95879313, (string)cs2method_10379(cs2method_10122(v14, 1000, 10)) + "%");
+	cs2method_10026(95879317, script_1445(cs2method_10051(10, cs2method_10060(cs2method_10060(client_configs['cfg627'].bitcfg21707, client_configs['cfg627'].bitcfg21708), cs2method_10872(99, cs2method_10938(1))))) + "%");
+	object v9 = "Defence level : " + "<col=00ff00>" + script_1445(cs2method_10872(990, cs2method_10051(10, cs2method_10938(1)))) + "%" + "</col>" + "<br>" + "Tank armour : " + "<col=00ff00>" + script_1445(cs2method_10051(10, client_configs['cfg627'].bitcfg21707)) + "%" + "</col>" + "<br>" + "Shield : " + "<col=00ff00>" + script_1445(cs2method_10051(10, client_configs['cfg627'].bitcfg21708)) + "%" + "</col>";
+	cs2method_21121(new function<script_8799>(int a0,int a1,object a2) {
+		script_8800(a1, a0, a2);
+		return;
+	}, (string)v9, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(1463,149));
+	cs2method_20750(new function<script_8805>() {
+		script_8808();
+		return;
+	}, "", new WidgetPointer(1463,149));
+	cs2method_10026(95879319, script_1445(cs2method_10060(client_configs['cfg4379'], cs2method_10872(990, cs2method_10051(10, cs2method_10938(1))))) + "%");
+	object v12 = "Defence level : " + "<col=00ff00>" + script_1445(cs2method_10872(990, cs2method_10051(10, cs2method_10938(1)))) + "%" + "</col>" + "<br>" + "PvP armour : " + "<col=00ff00>" + script_1445(client_configs['cfg4379']) + "%" + "</col>";
+	cs2method_21121(new function<script_8799>(int a0,object a1,int a2) {
+		script_8800(a2, a0, a1);
+		return;
+	}, (string)v12, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(1463,151));
+	cs2method_20750(new function<script_8805>() {
+		script_8808();
+		return;
+	}, "", new WidgetPointer(1463,151));
+	cs2method_10026(95879338, cs2method_10379(v19));
+	int v16 = 200;
+	object v0 = "Armour : " + "<col=00ff00>" + (string)cs2method_10379(client_configs['cfg711']) + "</col>" + "<br>" + "Skill Bonus : " + "<col=00ff00>" + (string)cs2method_10379(client_configs['cfg3563']) + "</col>";
+	cs2method_21121(new function<script_8799>(int a0,int a1,object a2) {
+		script_8800(a0, a1, a2);
+		return;
+	}, (string)v0, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(1463,185));
+	cs2method_20750(new function<script_8805>() {
+		script_8808();
+		return;
+	}, "", new WidgetPointer(1463,185));
+	object v18 = "Base : " + "<col=00ff00>" + (string)cs2method_10379(v17) + "</col>" + "<br>" + "Armour Bonus : " + "<col=00ff00>" + (string)cs2method_10379(v6) + "</col>";
+	cs2method_21121(new function<script_8799>(object a0,int a1,int a2) {
+		script_8800(a1, a2, a0);
+		return;
+	}, (string)v18, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(1463,13));
+	cs2method_20750(new function<script_8805>() {
+		script_8808();
+		return;
+	}, "", new WidgetPointer(1463,13));
+	return;
+}

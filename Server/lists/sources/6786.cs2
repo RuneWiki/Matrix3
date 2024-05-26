@@ -1,0 +1,35 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_6786() {
+	flow_0:
+		IF (cs2method_10609(98304004) == 1) 
+			GOTO	flow_1
+		GOTO	flow_2
+	flow_1:
+		IF (cs2method_10609(98304005) == 1) 
+			GOTO	flow_3
+	flow_2:
+		IF (client_configs['cfg3936'] == 0) 
+			GOTO	flow_3
+		GOTO	flow_4
+	flow_3:
+		cs2method_10467(0, 98304001);
+		cs2method_10467(0, 98304002);
+		GOTO	flow_5
+	flow_4:
+		cs2method_10467(1, 98304001);
+		cs2method_10467(1, 98304002);
+	flow_5:
+		return;
+}

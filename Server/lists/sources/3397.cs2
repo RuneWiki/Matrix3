@@ -1,0 +1,37 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3397() {
+	cs2method_10026(64159762, cs2_configs['cfg2481']);
+	int v0 = 2568;
+	int v1 = 2569;
+	if (cs2method_10846(cs2_configs['cfg2481'], "") != 0) {
+		cs2method_10026(64159784, "Report : Select Player");
+		cs2method_10704(0, 64159754);
+		cs2method_10704(0, 64159755);
+		cs2method_10704(0, 64159756);
+		cs2method_10704(0, 64159757);
+		cs2method_20680(new function<script_3071>(int a0,int a1,int a2,int a3,int a4,int a5) {
+			script_3072(a1, a5, a4, a3, a0, a2);
+			return;
+		}, new WidgetPointer(979,10), v0, new WidgetPointer(979,11), v1, new WidgetPointer(979,12), v0, "IdIdId", new WidgetPointer(979,9));
+	} else {
+		cs2method_10026(64159784, "Report : Select Player");
+		cs2method_10704(100, 64159754);
+		cs2method_10704(100, 64159755);
+		cs2method_10704(100, 64159756);
+		cs2method_10704(100, 64159757);
+		cs2method_20680(new function<none>() {
+		}, "", new WidgetPointer(979,9));
+	}
+	return;
+}

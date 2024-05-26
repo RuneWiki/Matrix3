@@ -1,0 +1,33 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7675() {
+	cs2_configs['cfg6'] = 0;
+	if (cs2method_10271() == 5 || cs2method_10271() == 6) {
+		cs2method_10026(38928433, "Suggest to mute this player for 48 hours");
+		cs2method_10026(38928395, "Suggest to mute this player for 48 hours");
+		cs2method_10026(38928416, "Suggest to mute this player for 48 hours");
+	} else {
+		cs2method_10026(38928433, "Mute this player for 48 hours");
+		cs2method_10026(38928395, "Mute this player for 48 hours");
+		cs2method_10026(38928416, "Mute this player for 48 hours");
+	}
+	cs2_configs['cfg11'] = 1;
+	cs2method_20914(new function<script_218>() {
+		script_220();
+		return;
+	}, 2578, 1, "Y", new WidgetPointer(594,17));
+	cs2_configs['cfg792'] = -1;
+	script_224();
+	script_216();
+	return;
+}

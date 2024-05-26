@@ -1,0 +1,52 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1032(int a0,int a1,int a2) {
+	cs2method_10251(0, 0, 10289157);
+	cs2method_10273(10289158);
+	cs2method_10467(0, 10289154);
+	cs2method_10467(0, 10289161);
+	cs2method_20390(new function<script_1028>() {
+		script_1029(1484, 9);
+		return;
+	}, "", new WidgetPointer(157,21));
+	cs2method_10026(10289177, "Shortcut keys");
+	cs2method_10273(10289156);
+	cs2method_10273(10289157);
+	script_1033(idx17mapData('i', 's', a1, a0));
+	cs2method_10026(10289165, "Page " + (string)cs2method_10379(cs2method_10060(a0, 1)) + " of " + (string)cs2method_10379(a2));
+	int v0 = cs2method_10060(a0, 1);
+	int v1 = cs2method_10461(a0, 1);
+	if (a0 != cs2method_10461(a2, 1)) {
+		cs2method_20390(new function<script_784>(int a0,int a1,int a2) {
+			script_1032(a0, a1, a2);
+			return;
+		}, a1, v0, a2, "gii", new WidgetPointer(157,14));
+		cs2method_10704(0, 10289166);
+	} else {
+		cs2method_20390(new function<none>() {
+		}, "", new WidgetPointer(157,14));
+		cs2method_10704(200, 10289166);
+	}
+	if (a0 != 0) {
+		cs2method_20390(new function<script_784>(int a0,int a1,int a2) {
+			script_1032(a1, a2, a0);
+			return;
+		}, a1, v1, a2, "gii", new WidgetPointer(157,15));
+		cs2method_10704(0, 10289167);
+	} else {
+		cs2method_20390(new function<none>() {
+		}, "", new WidgetPointer(157,15));
+		cs2method_10704(200, 10289167);
+	}
+	return;
+}

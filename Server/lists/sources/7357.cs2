@@ -1,0 +1,83 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7357() {
+	int v0 = 0;
+	int v11 = 0;
+	int v10 = 0;
+	int v6 = 0;
+	int v2 = client_configs['cfg3432'].bitcfg17220;
+	int v12 = client_configs['cfg3432'].bitcfg17224;
+	int v15 = client_configs['cfg3432'].bitcfg17225;
+	int v13 = 2195;
+	object v3 = "";
+	int v9 = client_configs['cfg3432'].bitcfg17218;
+	if (v2 == 1) {
+		v13 = 5767;
+	}
+	object v14 = cs2method_10427(idx17mapData('i', 's', v13, v12), cs2method_10427(" ", idx17mapData('i', 's', 5768, v15)));
+	int v4 = script_2356(v2, client_configs['cfg3432'].bitcfg17218, client_configs['cfg3432'].bitcfg17219, client_configs['cfg3432'].bitcfg17217);
+	script_7334_struct(4,0,0) v5 = script_7334();
+	int v16 = v5.intpart_3;
+	int v7 = v5.intpart_2;
+	int v8 = v5.intpart_1;
+	int v1 = v5.intpart_0;
+	if (v1 > 0) {
+		cs2method_10467(0, 61866077);
+		cs2method_10026(61866131, idx17mapData('i', 's', 1626, v1));
+		cs2method_10336(idx17mapData('i', 'm', 1669, v1), 61866130);
+		cs2method_10067(9806, 61866130);
+		if (v8 == 2) {
+			cs2method_10026(61866132, "In Port");
+		} else {
+			if (v8 == 3) {
+				cs2method_10026(61866132, "Under Way");
+			}
+		}
+	} else {
+		cs2method_10467(1, 61866077);
+	}
+	if (v7 > 0) {
+		cs2method_10467(0, 61866133);
+		cs2method_10026(61866136, idx17mapData('i', 's', 1626, v7));
+		cs2method_10336(idx17mapData('i', 'm', 1669, v7), 61866135);
+		cs2method_10067(9806, 61866135);
+		if (v16 == 2) {
+			cs2method_10026(61866137, "In Port");
+		} else {
+			if (v16 == 3) {
+				cs2method_10026(61866137, "Under Way");
+			}
+		}
+	} else {
+		cs2method_10467(1, 61866133);
+	}
+	if (client_configs['cfg3432'].bitcfg17224 > 0) {
+		cs2method_10467(0, 61866138);
+		cs2method_10702(v4, 61866140);
+		cs2method_10067(9806, 61866140);
+		cs2method_10026(61866142, v14);
+	} else {
+		cs2method_10467(1, 61866138);
+	}
+	if (client_configs['cfg3453'].bitcfg17463 > 0) {
+		cs2method_10467(0, 61866143);
+		cs2method_10336(81333, 61866145);
+		cs2method_10067(9806, 61866145);
+		cs2method_10758(idx17mapData('i', 'd', 7153, client_configs['cfg3453'].bitcfg17462), 61866148);
+		cs2method_10026(61866147, idx17mapData('i', 's', 2164, client_configs['cfg3453'].bitcfg17462));
+		cs2method_10026(61866149, "x " + (string)cs2method_10379(client_configs['cfg3453'].bitcfg17463));
+	} else {
+		cs2method_10467(1, 61866143);
+	}
+	return;
+}

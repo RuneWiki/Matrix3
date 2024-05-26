@@ -1,0 +1,45 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1765(int a0) {
+	if (a0 == 1) {
+		cs2method_20380(new function<script_1382>(int a0,int a1) {
+			switch (a1) {
+				case 96:
+					script_1603(-1, 0);
+					break;
+				case 97:
+					script_1603(1, 0);
+					break;
+				case 98:
+					script_1603(0, 1);
+					break;
+				case 99:
+					script_1603(0, -1);
+					break;
+				case 13:
+					script_1898();
+			}
+			return;
+		}, -2147483640, false, "iz", new WidgetPointer(1422,28));
+		int v1 = 1;
+		int v0 = 20;
+		int v3 = 1;
+		script_8825_struct(2,0,0) v2 = script_8825(v0, v3);
+		script_8844(v1, v2.intpart_0, v2.intpart_1, 93192324, -1);
+	} else {
+		cs2method_20380(new function<none>() {
+		}, "", new WidgetPointer(1422,28));
+		cs2method_10009(1, 0, 0, 93192324);
+	}
+	return;
+}

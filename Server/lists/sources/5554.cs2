@@ -1,0 +1,30 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5554() {
+	object v1 = (string)cs2method_10379(14) + " Days";
+	object v0 = "Redeem bonds for membership.";
+	if (script_3855() == 1) {
+		v1 = "Go to packages";
+		cs2method_10467(1, 15007745);
+		cs2method_10467(0, 15007746);
+		cs2method_10467(0, 15007747);
+		cs2method_21121(new function<script_8799>(int a0,int a1,object a2) {
+			script_8800(a1, a0, a2);
+			return;
+		}, (string)v0, new WidgetPointer(229,39), -1, "sIi", new WidgetPointer(229,39));
+	}
+	cs2method_10026(15007903, v1);
+	cs2method_10026(15007893, (string)cs2method_10379(8) + " Keys");
+	cs2method_10026(15007883, (string)cs2method_10379(160) + " RuneCoins");
+	return;
+}

@@ -1,0 +1,96 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5016(int a0) {
+	int v2 = -1;
+	int v4 = 0;
+	int v0 = script_4969(a0);
+	int v3 = -1;
+	int v1 = -1;
+	if (cs2method_10172() == 1) {
+		int v5 = script_5116(clan_chat_configs['cfg2583'].bitcfg6524, clan_chat_configs['cfg2575'].bitcfg6507);
+		if (v5 == -1) {
+			return;
+		}
+		switch (a0) {
+			case 4:
+				v3 = idx22mapAttribute(v5, 1655);
+				v1 = idx22mapAttribute(v5, 1656);
+				break;
+			case 5:
+				v3 = idx22mapAttribute(v5, 1661);
+				v1 = idx22mapAttribute(v5, 1662);
+				break;
+			case 6:
+				v3 = idx22mapAttribute(v5, 1667);
+				v1 = idx22mapAttribute(v5, 1668);
+				break;
+			case 7:
+				v3 = idx22mapAttribute(v5, 1673);
+				v1 = idx22mapAttribute(v5, 1674);
+				break;
+			case 8:
+				v3 = idx22mapAttribute(v5, 1679);
+				v1 = idx22mapAttribute(v5, 1680);
+				break;
+			case 9:
+				v3 = idx22mapAttribute(v5, 1685);
+				v1 = idx22mapAttribute(v5, 1686);
+				break;
+			case 10:
+				v3 = idx22mapAttribute(v5, 1691);
+				v1 = idx22mapAttribute(v5, 1692);
+				break;
+			case 11:
+				v3 = idx22mapAttribute(v5, 1697);
+				v1 = idx22mapAttribute(v5, 1698);
+				break;
+			case 12:
+				v3 = idx22mapAttribute(v5, 1703);
+				v1 = idx22mapAttribute(v5, 1704);
+				break;
+			case 13:
+				v3 = idx22mapAttribute(v5, 1709);
+				v1 = idx22mapAttribute(v5, 1710);
+				break;
+			case 14:
+				v3 = idx22mapAttribute(v5, 1715);
+				v1 = idx22mapAttribute(v5, 1716);
+				break;
+			case 15:
+				v3 = idx22mapAttribute(v5, 1721);
+				v1 = idx22mapAttribute(v5, 1722);
+				break;
+			case 3:
+				v3 = idx22mapAttribute(v5, 1649);
+				v1 = idx22mapAttribute(v5, 1650);
+				break;
+			case 102:
+				v3 = idx22mapAttribute(v5, 1633);
+				v1 = idx22mapAttribute(v5, 1634);
+				break;
+			case 103:
+				v3 = idx22mapAttribute(v5, 1637);
+				v1 = idx22mapAttribute(v5, 1638);
+				break;
+			case 100:
+				v3 = idx22mapAttribute(v5, 1619);
+				v1 = idx22mapAttribute(v5, 1620);
+				break;
+			case 101:
+				v3 = idx22mapAttribute(v5, 1627);
+				v1 = idx22mapAttribute(v5, 1628);
+		}
+		cs2method_10112(v3, v1, 0, 0, v0);
+	}
+	return;
+}

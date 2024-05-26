@@ -1,0 +1,20 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3442(int a0,int a1,int a2) {
+	if (script_3441() == 1) {
+		script_7788(script_3443(a0), a1, -1, a2, 50, 150);
+	} else {
+		script_7788("A member of the Jury.", a1, -1, a2, 50, 150);
+	}
+	return;
+}

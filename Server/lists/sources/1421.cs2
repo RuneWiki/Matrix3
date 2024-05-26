@@ -1,0 +1,116 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1421(int a0) {
+	object v4 = "";
+	switch (a0) {
+		case 1:
+			object v1 = idx17mapData('i', 's', 1697, client_configs['cfg2720'].bitcfg13531);
+			cs2method_21121(new function<script_7781>(int a0,int a1,object a2,int a3,int a4) {
+				script_7788(a2, a4, -1, a3, a0, a1);
+				return;
+			}, new WidgetPointer(-32768,3), new WidgetPointer(575,2), (string)v1, 25, 130, "IIsii", new WidgetPointer(575,3));
+			break;
+		case 2:
+			object v10 = idx17mapData('i', 's', 1698, client_configs['cfg2720'].bitcfg13532);
+			cs2method_21121(new function<script_7781>(int a0,int a1,int a2,object a3,int a4) {
+				script_7788(a3, a0, -1, a4, a1, a2);
+				return;
+			}, new WidgetPointer(-32768,3), new WidgetPointer(575,2), (string)v10, 25, 160, "IIsii", new WidgetPointer(575,4));
+			break;
+		case 3:
+			object v12 = idx17mapData('i', 's', 1699, client_configs['cfg2720'].bitcfg13533);
+			cs2method_21121(new function<script_7781>(int a0,int a1,object a2,int a3,int a4) {
+				script_7788(a2, a0, -1, a1, a4, a3);
+				return;
+			}, new WidgetPointer(-32768,3), new WidgetPointer(575,2), (string)v12, 25, 200, "IIsii", new WidgetPointer(575,5));
+			break;
+		case 4:
+			object v2 = idx17mapData('i', 's', 1700, client_configs['cfg2720'].bitcfg13534);
+			cs2method_21121(new function<script_7781>(object a0,int a1,int a2,int a3,int a4) {
+				script_7788(a0, a2, -1, a1, a4, a3);
+				return;
+			}, new WidgetPointer(-32768,3), new WidgetPointer(575,2), (string)v2, 25, 200, "IIsii", new WidgetPointer(575,6));
+			break;
+		case 5:
+			object v9 = idx17mapData('i', 's', 1701, client_configs['cfg2720'].bitcfg13535);
+			cs2method_21121(new function<script_7781>(int a0,int a1,object a2,int a3,int a4) {
+				script_7788(a2, a4, -1, a1, a3, a0);
+				return;
+			}, new WidgetPointer(-32768,3), new WidgetPointer(575,2), (string)v9, 25, 200, "IIsii", new WidgetPointer(575,7));
+			break;
+		case 6:
+			object v7 = idx17mapData('i', 's', 1702, client_configs['cfg2720'].bitcfg13536);
+			cs2method_21121(new function<script_7781>(int a0,int a1,int a2,object a3,int a4) {
+				script_7788(a3, a1, -1, a0, a4, a2);
+				return;
+			}, new WidgetPointer(-32768,3), new WidgetPointer(575,2), (string)v7, 25, 200, "IIsii", new WidgetPointer(575,8));
+			break;
+		case 7:
+			object v6 = idx17mapData('i', 's', 1703, client_configs['cfg2720'].bitcfg13537);
+			cs2method_21121(new function<script_7781>(int a0,int a1,object a2,int a3,int a4) {
+				script_7788(a2, a3, -1, a4, a0, a1);
+				return;
+			}, new WidgetPointer(-32768,3), new WidgetPointer(575,2), (string)v6, 25, 200, "IIsii", new WidgetPointer(575,9));
+			break;
+		case 8:
+			object v0 = idx17mapData('i', 's', 1704, client_configs['cfg2720'].bitcfg13538);
+			cs2method_21121(new function<script_7781>(object a0,int a1,int a2,int a3,int a4) {
+				script_7788(a0, a1, -1, a3, a2, a4);
+				return;
+			}, new WidgetPointer(-32768,3), new WidgetPointer(575,2), (string)v0, 25, 200, "IIsii", new WidgetPointer(575,10));
+			break;
+		case 9:
+			object v13 = idx17mapData('i', 's', 1705, client_configs['cfg2720'].bitcfg13539);
+			cs2method_21121(new function<script_7781>(int a0,object a1,int a2,int a3,int a4) {
+				script_7788(a1, a4, -1, a0, a3, a2);
+				return;
+			}, new WidgetPointer(-32768,3), new WidgetPointer(575,2), (string)v13, 25, 200, "IIsii", new WidgetPointer(575,11));
+			break;
+		case 10:
+			object v11 = idx17mapData('i', 's', 1706, client_configs['cfg2725'].bitcfg13540);
+			cs2method_21121(new function<script_7781>(object a0,int a1,int a2,int a3,int a4) {
+				script_7788(a0, a3, -1, a1, a2, a4);
+				return;
+			}, new WidgetPointer(-32768,3), new WidgetPointer(575,2), (string)v11, 25, 200, "IIsii", new WidgetPointer(575,12));
+			break;
+		case 11:
+			object v3 = idx17mapData('i', 's', 1707, client_configs['cfg2725'].bitcfg13541);
+			cs2method_21121(new function<script_7781>(int a0,int a1,object a2,int a3,int a4) {
+				script_7788(a2, a3, -1, a0, a1, a4);
+				return;
+			}, new WidgetPointer(-32768,3), new WidgetPointer(575,2), (string)v3, 25, 200, "IIsii", new WidgetPointer(575,13));
+			break;
+		case 12:
+			object v8 = idx17mapData('i', 's', 1708, client_configs['cfg2725'].bitcfg13542);
+			cs2method_21121(new function<script_7781>(int a0,int a1,int a2,object a3,int a4) {
+				script_7788(a3, a2, -1, a1, a0, a4);
+				return;
+			}, new WidgetPointer(-32768,3), new WidgetPointer(575,2), (string)v8, 25, 200, "IIsii", new WidgetPointer(575,14));
+			break;
+		case 13:
+			object v5 = idx17mapData('i', 's', 1709, client_configs['cfg2725'].bitcfg13543);
+			cs2method_21121(new function<script_7781>(int a0,int a1,object a2,int a3,int a4) {
+				script_7788(a2, a4, -1, a1, a0, a3);
+				return;
+			}, new WidgetPointer(-32768,3), new WidgetPointer(575,2), (string)v5, 25, 200, "IIsii", new WidgetPointer(575,15));
+			break;
+		case 14:
+			object v14 = idx17mapData('i', 's', 1710, client_configs['cfg2725'].bitcfg13544);
+			cs2method_21121(new function<script_7781>(object a0,int a1,int a2,int a3,int a4) {
+				script_7788(a0, a1, -1, a3, a2, a4);
+				return;
+			}, new WidgetPointer(-32768,3), new WidgetPointer(575,2), (string)v14, 25, 200, "IIsii", new WidgetPointer(575,16));
+	}
+	cs2_configs['cfg2'] = 0;
+	return;
+}

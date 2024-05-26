@@ -1,0 +1,99 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_673(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9) {
+	object v3;
+	int v4 = (int)idx17mapData('i', 'I', 1083, a1);
+	cs2method_10273(v4);
+	int v8 = cs2method_10236(v4);
+	int v5 = cs2method_10823(v4);
+	object v0 = "";
+	if (a0 == 1) {
+		v3 = "Empty";
+	} else if (a9 == 0) {
+		v3 = "Buy";
+	} else {
+		v3 = "Sell";
+	}
+	cs2method_10606(v4, 3, 0);
+	cs2method_10013(v8, v5, 0, 0);
+	cs2method_10063(0, 0, 0, 0);
+	cs2method_10238(1);
+	cs2method_10811(16777215);
+	cs2method_10002(255);
+	script_584(v3, v4);
+	int v11 = cs2method_10163(v4);
+	if (a0 == 1) {
+		if (a1 < 2 || cs2method_10210() == 1) {
+			if (a3 == a1 && cs2method_11038(v4, 0) == 1) {
+				cs2method_10002(230);
+			}
+		} else {
+			cs2method_10467(0, (int)idx17mapData('i', 'I', 1085, a1));
+		}
+	}
+	object v2 = script_46(",", a6);
+	object v6 = script_46(",", a4);
+	int v1 = 0;
+	int v7 = 0;
+	int v9 = (int)idx17mapData('i', 'I', 1084, a1);
+	cs2method_10467(1, v9);
+	object v10 = "";
+	if (a0 == 1) {
+		if (a1 < 2 || cs2method_10210() == 1) {
+			if (a1 == a3) {
+				cs2method_10467(0, v9);
+			} else {
+				cs2method_10606(v4, 5, v11);
+				cs2method_10310(1155);
+				cs2method_10013(16, 14, 0, 0);
+				cs2method_10063(5, 29, 0, 0);
+				int v12 = cs2method_10060(v11, 1);
+			}
+		}
+	} else {
+		int v12 = 7;
+		int v17 = cs2method_10461(v5, 30);
+		script_674(v12, v17, cs2method_10461(v8, 14), 15, a1, v4, v11, 1, a0, a7, a6, a5);
+		int v16 = cs2method_10163(v4);
+		cs2method_10606(v4, 5, v16);
+		int v15 = cs2method_10060(v16, 1);
+		cs2method_10063(6, 30, 0, 0);
+		cs2method_10013(40, 36, 0, 0);
+		cs2method_10310(18266);
+		cs2method_10606(v4, 5, v15);
+		cs2method_10063(8, 32, 0, 0);
+		cs2method_10013(36, 32, 0, 0);
+		cs2method_11070(a2, a6);
+		cs2method_10278(0);
+		int v14 = cs2method_10060(v15, 1);
+		cs2method_10606(v4, 4, v14);
+		int v13 = cs2method_10060(v14, 1);
+		cs2method_10063(48, 30, 0, 0);
+		cs2method_10013(cs2method_10461(v8, 53), 22, 0, 0);
+		cs2method_10811(13408512);
+		cs2method_10692(494);
+		cs2method_11105(0, 0, 0);
+		cs2method_10173(1);
+		cs2method_10797(cs2method_10018(a2));
+		cs2method_10606(v4, 4, v13);
+		int v18 = cs2method_10060(v13, 1);
+		cs2method_10063(48, 54, 0, 0);
+		cs2method_10013(cs2method_10461(v8, 53), 15, 0, 0);
+		cs2method_10811(12434267);
+		cs2method_10692(494);
+		cs2method_11105(0, 0, 15);
+		cs2method_10173(1);
+		cs2method_10797((string)v6 + " gp");
+	}
+	return;
+}

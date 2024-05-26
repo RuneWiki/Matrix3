@@ -1,0 +1,29 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_8726_struct(2,0,0) script_8726(int a0,int a1) {
+	int v7 = 0;
+	int v4 = 0;
+	int v0 = 0;
+	int v11 = a0;
+	int v2 = a1;
+	script_8701_struct(8,0,0) v9 = script_8701(v11, v2);
+	int v6 = v9.intpart_7;
+	int v8 = v9.intpart_6;
+	int v12 = v9.intpart_5;
+	int v10 = v9.intpart_4;
+	int v1 = v9.intpart_3;
+	int v13 = v9.intpart_2;
+	int v5 = v9.intpart_1;
+	int v3 = v9.intpart_0;
+	return new script_8726_struct(v10, v12);
+}

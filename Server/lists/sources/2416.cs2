@@ -1,0 +1,24 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2416(int a0) {
+	if (cs2_configs['cfg805'] == 2 || cs2_configs['cfg805'] == 8) {
+		cs2method_11127(1, a0, "Cut wire");
+	} else if (cs2_configs['cfg805'] == 3 || cs2_configs['cfg805'] == 9) {
+		cs2method_11127(1, a0, "Replace wire");
+	} else if (cs2_configs['cfg805'] == 4 || cs2_configs['cfg805'] == 10) {
+		cs2method_11127(1, a0, "Repair wire");
+	} else {
+		cs2method_11127(1, a0, "Inspect");
+	}
+	return;
+}

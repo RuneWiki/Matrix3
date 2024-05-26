@@ -1,0 +1,48 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1074(int a0,int a1,int a2,int a3) {
+	switch (script_8631(a1)) {
+		case 0:
+			script_8634(a1, a0);
+			break;
+		case 1:
+			script_8636(a1, a0);
+			break;
+		case 2:
+			script_8638(a1, a0);
+			break;
+		case 3:
+			script_8640(a1, a0);
+			break;
+		case 4:
+			script_8642(a1, a0);
+			break;
+		case 5:
+			script_8644(a1, a0);
+			break;
+		case 6:
+			script_8646(a1, a0);
+			break;
+		case 7:
+			script_8648(a1, a0);
+			break;
+		case 8:
+			script_8650(a1, a0);
+			break;
+		case 9:
+			script_8652(a1, a0);
+	}
+	script_8632(a1, cs2method_10060(script_8631(a1), 1));
+	script_1072(a3, a2, a1);
+	return;
+}

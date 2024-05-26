@@ -1,0 +1,69 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4917() {
+	if (cs2method_10172() == 1) {
+		cs2method_20901(new function<script_4918>() {
+			if (cs2method_10172() == 1) {
+				script_4919();
+				script_4900();
+				script_4905();
+				script_4907();
+				script_5012();
+				script_5975();
+				script_4864();
+				script_4994();
+				script_4889();
+				script_4853();
+				script_4988(client_configs['cfg1978'].bitcfg6677);
+			} else {
+				script_675();
+			}
+			return;
+		}, "", new WidgetPointer(1259,51));
+		cs2method_20901(new function<script_4918>() {
+			if (cs2method_10172() == 1) {
+				script_4919();
+				script_4900();
+				script_4905();
+				script_4907();
+				script_5012();
+				script_5975();
+				script_4864();
+				script_4994();
+				script_4889();
+				script_4853();
+				script_4988(client_configs['cfg1978'].bitcfg6677);
+			} else {
+				script_675();
+			}
+			return;
+		}, "", new WidgetPointer(1261,145));
+		client_configs['cfg1978'].bitcfg6675 = clan_chat_configs['cfg2071'].bitcfg6661;
+		client_configs['cfg1978'].bitcfg6676 = clan_chat_configs['cfg2071'].bitcfg6662;
+		script_5974();
+		script_4991();
+		script_4900();
+		script_4905();
+		script_4907();
+		script_5012();
+		script_5975();
+		script_4864();
+		script_4994();
+		script_4889();
+		script_4853();
+		script_4913();
+	} else {
+		cs2method_10810("Clan stronghold information not yet available.");
+	}
+	return;
+}

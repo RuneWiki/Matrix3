@@ -1,0 +1,26 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6171(int a0,int a1) {
+	int v0 = 0;
+	cs2_configs['cfg1911'] = a0;
+	while (v0 < cs2method_10924(5838)) {
+		if (cs2method_11038(a1, v0) == 1 && v0 != a0) {
+			cs2method_10310(10734);
+		}
+		v0 = cs2method_10060(v0, 1);
+	}
+	if (cs2method_11038(a1, a0) == 1) {
+		cs2method_10310(10735);
+	}
+	return;
+}

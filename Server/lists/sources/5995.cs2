@@ -1,0 +1,38 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5995(object a0) {
+	int v7 = -1;
+	int v10 = -1;
+	int v11 = -1;
+	int v2 = -1;
+	int v6 = -1;
+	int v12 = -1;
+	script_4590_struct(6,0,0) v3 = script_4590();
+	int v9 = v3.intpart_5;
+	int v0 = v3.intpart_4;
+	int v8 = v3.intpart_3;
+	int v4 = v3.intpart_2;
+	int v5 = v3.intpart_1;
+	int v1 = v3.intpart_0;
+	if (v1 < 0) {
+		cs2method_10810("You aren't in a Clan Chat channel in which you can announce your total wealth.");
+		return;
+	}
+	if (v5 < v4) {
+		cs2method_10810("Your rank is not high enough to talk in your Clan Chat.");
+		return;
+	}
+	cs2method_10190(2);
+	cs2method_10539("My total wealth is " + (string)a0 + ".");
+	return;
+}

@@ -1,0 +1,34 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_408(int a0) {
+	if (cs2_configs['cfg1363'] == a0) {
+		return;
+	}
+	cs2method_20243(load function<408>, cs2_configs['cfg1363'], 1363, 1, "iY", new WidgetPointer(1013,1));
+	cs2_configs['cfg1389'] = 0;
+	if (cs2_configs['cfg1363'] == client_configs['cfg1655'].bitcfg5386) {
+		cs2method_10467(0, 66191389);
+		cs2method_10467(1, 66191388);
+		cs2method_10467(1, 66191385);
+		cs2method_10026(66387994, "Your Turn");
+		cs2method_10670(3439, 1, 0, 255);
+	} else {
+		cs2method_10467(1, 66191389);
+		cs2method_10467(1, 66191385);
+		cs2method_10026(66387994, "Opponent's Turn");
+		if (cs2method_10609(66191367) == 1) {
+			cs2method_10467(0, 66191388);
+		}
+	}
+	return;
+}

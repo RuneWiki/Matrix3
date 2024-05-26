@@ -1,0 +1,239 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4592() {
+	cs2method_10273(1114130);
+	cs2method_10273(1114133);
+	cs2method_10273(1114135);
+	cs2method_10273(1114128);
+	if (client_configs['cfg663'].bitcfg1675 == 1) {
+		script_9554(1114114, "If you die in the Wilderness...", 1114116, 1114115, 21218);
+	} else {
+		script_9554(1114114, "Items kept on death", 1114116, 1114115, 21218);
+	}
+	if (client_configs['cfg663'].bitcfg1675 == 2) {
+		cs2method_10606(1114128, 4, 0);
+		script_4595();
+		cs2method_10797(cs2_configs['cfg2368']);
+		cs2method_20301(new function<script_4596>(int a0,int a1) {
+			if (cs2method_11038(a0, a1) == 1) {
+				cs2method_10797(cs2_configs['cfg2368']);
+			}
+			return;
+		}, new WidgetPointer(-32768,3), -2147483643, 2368, 1, "IiY");
+		return;
+	}
+	if (cs2method_10684(93) >= cs2method_10894(93) && cs2method_10684(94) >= cs2method_10894(94) && (cs2method_10684(530) >= cs2method_10894(530) || cs2method_10771() == 0)) {
+		cs2method_10606(1114128, 4, 0);
+		script_4595();
+		cs2method_10797("You have no items to lose.");
+		return;
+	}
+	int v17 = cs2method_10236(1114128);
+	int v7 = cs2method_11048(cs2method_10968(v17, 36), 1);
+	int v11 = cs2method_11048(cs2method_10968(cs2method_10461(v17, cs2method_10051(36, v7)), cs2method_11048(cs2method_10461(v7, 1), 1)), 2);
+	int v2 = cs2method_11048(cs2method_10968(v11, 2), cs2method_10060(cs2method_10461(36, 32), 1));
+	globalarray_0 = new int[4];
+	globalarray_1 = new int[3];
+	globalarray_2 = new int[3];
+	globalarray_3 = new int[3];
+	if (client_configs['cfg663'].bitcfg1676 > 0) {
+		if (client_configs['cfg663'].bitcfg1675 == 0) {
+			globalarray_0[0] = script_4593("You may choose " + (string)cs2method_10379(client_configs['cfg663'].bitcfg1676) + " of the following items to keep, and all others will be dropped." + "<br>" + "The " + "<col=bebe00>" + "highlighted" + "</col>" + " items will be chosen by default.", 1114129);
+		} else {
+			globalarray_0[0] = script_4593("You will keep the following items:", 1114129);
+		}
+	} else {
+		globalarray_0[0] = script_4593("You will drop the following items:", 1114129);
+	}
+	if (client_configs['cfg663'].bitcfg1675 == 0) {
+		globalarray_0[1] = script_4593("You will keep the following items automatically:", 1114132);
+	} else {
+		globalarray_0[1] = script_4593("You will drop the following items:", 1114132);
+	}
+	globalarray_0[2] = script_4593("The following items are always lost:", 1114134);
+	globalarray_4 = new int[5];
+	globalarray_0[0] = script_750(client_configs['cfg663'].bitcfg1671);
+	globalarray_0[1] = script_750(client_configs['cfg663'].bitcfg1672);
+	globalarray_0[2] = script_750(client_configs['cfg663'].bitcfg1673);
+	globalarray_0[3] = script_750(client_configs['cfg663'].bitcfg1674);
+	globalarray_0[4] = script_750(client_configs['cfg3838'].bitcfg20111);
+	int v6 = cs2method_10060(cs2method_10894(93), cs2method_10894(94));
+	cs2method_10273(1114131);
+	for (int v16 = 0; v16 < client_configs['cfg663'].bitcfg1676 && v16 < 5; v16 = cs2method_10060(v16, 1)) {
+		if (globalarray_4[v16] != -1) {
+			cs2method_10606(1114131, 3, cs2method_10163(1114131));
+			cs2method_10606(1114131, 3, cs2method_10163(1114131));
+			cs2method_10013(36, 36, 0, 0);
+			cs2method_10013(36, 36, 0, 0);
+			cs2method_10063(cs2method_10060(globalarray_1[0], 1), cs2method_10060(globalarray_2[0], 1), 0, 0);
+			cs2method_10063(globalarray_1[0], globalarray_2[0], 0, 0);
+			cs2method_10811(8421376);
+			cs2method_10811(12500480);
+			cs2method_10238(0);
+			cs2method_10238(0);
+			cs2method_10002(150);
+			cs2method_10002(0);
+			script_4594(globalarray_4[v16], -1, globalarray_1[0], globalarray_2[0], 1114131);
+			globalarray_0[0] = cs2method_10060(cs2method_10060(globalarray_1[0], 36), v11);
+			if (cs2method_10060(globalarray_1[0], 36) >= v17) {
+				globalarray_0[0] = 0;
+				globalarray_0[0] = cs2method_10060(cs2method_10060(globalarray_2[0], 32), v2);
+			}
+			globalarray_0[0] = cs2method_10060(globalarray_3[0], 1);
+		} else {
+			cs2method_10606(1114131, 3, cs2method_10163(1114131));
+			cs2method_10269(1);
+			cs2method_10606(1114131, 3, cs2method_10163(1114131));
+			cs2method_10269(1);
+			cs2method_10606(1114131, 3, cs2method_10163(1114131));
+			cs2method_10269(1);
+		}
+	}
+	for (int v9 = 0, int v10 = -1, int v13 = 0, int v1 = 0, int v18 = 0; v9 <= v6; v9 = cs2method_10060(v9, 1)) {
+		int v8 = script_750(v9);
+		if (v8 != -1) {
+			int v14 = script_1393(v9);
+			for (int v3 = 0; v3 < 5 && v14 > 0; v3 = cs2method_10060(v3, 1)) {
+				if (globalarray_4[v3] == v8) {
+					v14 = cs2method_10461(v14, 1);
+					globalarray_0[v3] = -1;
+				}
+			}
+			if (v14 > 0) {
+				int v21 = itemDefsAttribute(cs2method_10480(v8), 1397);
+				if (v21 == -1) {
+					script_4594(-1, -1, -1, -1, 1114130);
+					script_4594(-1, -1, -1, -1, 1114133);
+					script_4594(v8, v14, globalarray_1[2], globalarray_2[2], 1114135);
+					globalarray_0[2] = cs2method_10060(cs2method_10060(globalarray_1[2], 36), v11);
+					if (cs2method_10060(globalarray_1[2], 36) >= v17) {
+						globalarray_0[2] = 0;
+						globalarray_0[2] = cs2method_10060(cs2method_10060(globalarray_2[2], 32), v2);
+					}
+					globalarray_0[2] = cs2method_10060(globalarray_3[2], 1);
+				} else if (v21 == 2) {
+					if (client_configs['cfg663'].bitcfg1675 == 0) {
+						script_4594(-1, -1, -1, -1, 1114130);
+						script_4594(v8, v14, globalarray_1[1], globalarray_2[1], 1114133);
+						script_4594(-1, -1, -1, -1, 1114135);
+						globalarray_0[1] = cs2method_10060(cs2method_10060(globalarray_1[1], 36), v11);
+						if (cs2method_10060(globalarray_1[1], 36) >= v17) {
+							globalarray_0[1] = 0;
+							globalarray_0[1] = cs2method_10060(cs2method_10060(globalarray_2[1], 32), v2);
+						}
+					} else {
+						script_4594(v8, v14, globalarray_1[0], globalarray_2[0], 1114130);
+						script_4594(-1, -1, -1, -1, 1114133);
+						script_4594(-1, -1, -1, -1, 1114135);
+						globalarray_0[0] = cs2method_10060(cs2method_10060(globalarray_1[0], 36), v11);
+						if (cs2method_10060(globalarray_1[0], 36) >= v17) {
+							globalarray_0[0] = 0;
+							globalarray_0[0] = cs2method_10060(cs2method_10060(globalarray_2[0], 32), v2);
+						}
+					}
+					globalarray_0[1] = cs2method_10060(globalarray_3[1], 1);
+				} else if (v21 == 1 || client_configs['cfg663'].bitcfg1675 != 0) {
+					script_4594(-1, -1, -1, -1, 1114130);
+					script_4594(v8, v14, globalarray_1[1], globalarray_2[1], 1114133);
+					script_4594(-1, -1, -1, -1, 1114135);
+					globalarray_0[1] = cs2method_10060(cs2method_10060(globalarray_1[1], 36), v11);
+					if (cs2method_10060(globalarray_1[1], 36) >= v17) {
+						globalarray_0[1] = 0;
+						globalarray_0[1] = cs2method_10060(cs2method_10060(globalarray_2[1], 32), v2);
+					}
+					globalarray_0[1] = cs2method_10060(globalarray_3[1], 1);
+				} else {
+					script_4594(v8, v14, globalarray_1[0], globalarray_2[0], 1114130);
+					script_4594(-1, -1, -1, -1, 1114133);
+					script_4594(-1, -1, -1, -1, 1114135);
+					globalarray_0[0] = cs2method_10060(cs2method_10060(globalarray_1[0], 36), v11);
+					if (cs2method_10060(globalarray_1[0], 36) >= v17) {
+						globalarray_0[0] = 0;
+						globalarray_0[0] = cs2method_10060(cs2method_10060(globalarray_2[0], 32), v2);
+					}
+					globalarray_0[0] = cs2method_10060(globalarray_3[0], 1);
+				}
+			} else {
+				script_4594(-1, -1, -1, -1, 1114130);
+				script_4594(-1, -1, -1, -1, 1114133);
+				script_4594(-1, -1, -1, -1, 1114135);
+			}
+		} else {
+			script_4594(-1, -1, -1, -1, 1114130);
+			script_4594(-1, -1, -1, -1, 1114133);
+			script_4594(-1, -1, -1, -1, 1114135);
+		}
+	}
+	if (globalarray_1[0] > 0) {
+		globalarray_0[0] = cs2method_10060(cs2method_10060(globalarray_2[0], 32), v2);
+	} else {
+		if (globalarray_3[0] <= 0) {
+			globalarray_0[0] = 0;
+			globalarray_0[0] = 0;
+		}
+	}
+	if (globalarray_1[1] > 0) {
+		globalarray_0[1] = cs2method_10060(cs2method_10060(globalarray_2[1], 32), v2);
+	} else {
+		if (globalarray_3[1] <= 0) {
+			globalarray_0[1] = 0;
+			globalarray_0[1] = 0;
+		}
+	}
+	if (globalarray_1[2] > 0) {
+		globalarray_0[2] = cs2method_10060(cs2method_10060(globalarray_2[2], 32), v2);
+	} else {
+		if (globalarray_3[2] <= 0) {
+			globalarray_0[2] = 0;
+			globalarray_0[2] = 0;
+		}
+	}
+	int v4 = 0;
+	cs2method_10283(0, globalarray_0[0], 1, 0, 1114129);
+	cs2method_10112(0, v4, 1, 0, 1114129);
+	int v19 = cs2method_10060(v4, globalarray_0[0]);
+	cs2method_10283(0, globalarray_2[0], 1, 0, 1114130);
+	cs2method_10112(0, v19, 1, 0, 1114130);
+	int v0 = cs2method_10060(cs2method_10060(v19, globalarray_2[0]), 5);
+	cs2method_10283(0, globalarray_0[1], 1, 0, 1114132);
+	cs2method_10112(0, v0, 1, 0, 1114132);
+	cs2method_10283(0, v0, 1, 0, 1114125);
+	cs2method_10283(0, cs2method_10060(v0, 4), 1, 1, 1114126);
+	int v15 = cs2method_10060(v0, globalarray_0[1]);
+	cs2method_10283(0, globalarray_2[1], 1, 0, 1114133);
+	cs2method_10112(0, v15, 1, 0, 1114133);
+	int v20 = cs2method_10060(cs2method_10060(v15, globalarray_2[1]), 5);
+	cs2method_10283(0, globalarray_0[2], 1, 0, 1114134);
+	cs2method_10112(0, v20, 1, 0, 1114134);
+	int v5 = cs2method_10060(v20, globalarray_0[2]);
+	cs2method_10283(0, globalarray_2[2], 1, 0, 1114135);
+	cs2method_10112(0, v5, 1, 0, 1114135);
+	int v12 = cs2method_10060(v5, globalarray_2[2]);
+	if (cs2method_10684(530) < cs2method_10894(530) && cs2method_10771() == 1) {
+		globalarray_0[3] = script_4593("You have items stored on your " + "<col=ffff00>" + "beast of burden" + "</col>" + " that will be dropped if either of you dies.", 1114136);
+	}
+	cs2method_10283(0, globalarray_0[3], 1, 0, 1114136);
+	cs2method_10112(0, v12, 1, 0, 1114136);
+	v12 = cs2method_10060(v12, globalarray_0[3]);
+	cs2method_11130(0, v12, 1114128);
+	if (v12 > cs2method_10823(1114128)) {
+		script_7791(1114137, 1114128);
+		cs2method_10467(0, 1114137);
+		cs2method_10112(0, 0, 0, 1, 1114128);
+	} else {
+		cs2method_10467(1, 1114137);
+		cs2method_10112(0, 0, 1, 1, 1114128);
+		cs2method_10251(0, 0, 1114128);
+	}
+	return;
+}

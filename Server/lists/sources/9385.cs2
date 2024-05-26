@@ -1,0 +1,37 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9385(int a0) {
+	object v1 = "";
+	object v0 = "";
+	switch (a0) {
+		case 0:
+			v1 = idx22mapAttribute(25053, 3981);
+			v0 = "Effect: " + idx22mapAttribute(25053, 3982) + "<br>" + "<br>" + "Max cost to build: " + idx22mapAttribute(25053, 3984) + "<br>" + "<br>" + "Base duration: " + idx22mapAttribute(25053, 3986);
+			break;
+		case 1:
+			v1 = idx22mapAttribute(25047, 3981);
+			v0 = "Effect: " + idx22mapAttribute(25047, 3982) + "<br>" + "<br>" + "Max cost to build: " + idx22mapAttribute(25047, 3984) + "<br>" + "<br>" + "Base duration: " + idx22mapAttribute(25047, 3986);
+			break;
+		case 6:
+			v1 = idx22mapAttribute(25050, 3981);
+			v0 = "Effect: " + idx22mapAttribute(25050, 3982) + "<br>" + "<br>" + "Max cost to build: " + idx22mapAttribute(25050, 3984) + "<br>" + "<br>" + "Base duration: " + idx22mapAttribute(25050, 3986);
+			break;
+		case 5:
+			v1 = idx22mapAttribute(25049, 3981);
+			v0 = "Effect: " + idx22mapAttribute(25049, 3982) + "<br>" + "<br>" + "Max cost to build: " + idx22mapAttribute(25049, 3984) + "<br>" + "<br>" + "Base duration: " + idx22mapAttribute(25049, 3986);
+	}
+	cs2method_10026(46071823, v1);
+	cs2method_10637(0, 0, 0, 46071824);
+	cs2method_10026(46071824, v0);
+	return;
+}

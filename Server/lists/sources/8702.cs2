@@ -1,0 +1,93 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_8702(int a0,int a1) {
+	flow_0:
+		if (a1 == -1 && a0 != 9) {
+			return;
+		}
+		if (a1 == a0) {
+			return;
+		}
+		if (a0 < 6) {
+			return;
+		}
+		int v8 = 0;
+		int v18 = 0;
+		int v23 = 0;
+		int v5 = 0;
+		int v11 = 0;
+		int v12 = 0;
+		int v20 = 0;
+		int v24 = 0;
+		int v25 = 0;
+		int v7 = -1;
+		int v1 = 0;
+		int v4 = cs2method_10924(7717);
+		IF (a1 == -1 && a0 == 9) 
+			GOTO	flow_9
+		GOTO	flow_13
+	flow_9:
+		cs2_configs['cfg2997'] = cs2method_10236(96796679);
+		cs2_configs['cfg2998'] = cs2method_10823(96796679);
+		cs2_configs['cfg2999'] = cs2method_10614();
+		while (v1 < v4) {
+			int v14 = idx17mapData('i', 'i', 7717, v1);
+			script_8707(v14);
+			v1 = cs2method_10060(v1, 1);
+		}
+		GOTO	flow_25
+	flow_13:
+		IF (a1 == 9) 
+			GOTO	flow_14
+		GOTO	flow_18
+	flow_14:
+		script_8703(a1, a0);
+		while (v1 < v4) {
+			int v19 = idx17mapData('i', 'i', 7717, v1);
+			script_8708(v19, a0);
+			v1 = cs2method_10060(v1, 1);
+		}
+		GOTO	flow_25
+	flow_18:
+		IF (a0 == 8) 
+			GOTO	flow_19
+		IF (a0 == 10 && a1 != -1) 
+			GOTO	flow_20
+		GOTO	flow_24
+	flow_19:
+	flow_20:
+		script_8703(a1, a0);
+		while (v1 < v4) {
+			int v17 = idx17mapData('i', 'i', 7717, v1);
+			int v0 = a1;
+			int v9 = v17;
+			script_8701_struct(8,0,0) v3 = script_8701(v0, v9);
+			int v21 = v3.intpart_7;
+			int v13 = v3.intpart_6;
+			int v2 = v3.intpart_5;
+			int v16 = v3.intpart_4;
+			int v15 = v3.intpart_3;
+			int v6 = v3.intpart_2;
+			int v22 = v3.intpart_1;
+			int v10 = v3.intpart_0;
+			script_8709(a0, v17, v10, v22, v6, v15, v16, v2, v13);
+			v1 = cs2method_10060(v1, 1);
+		}
+		GOTO	flow_25
+	flow_24:
+		return;
+	flow_25:
+		script_8700(a0, 1);
+		return;
+}

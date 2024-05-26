@@ -1,0 +1,50 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_385(int a0,int a1,int a2) {
+	object v0 = "";
+	switch (a1) {
+		case 8585225:
+		case 8585222:
+			if (cs2method_10771() == 0 && cs2method_10338(25) >= 5) {
+				v0 = "You need to be on a members' world to gain Divination experience.";
+			} else if (cs2_configs['cfg3710'] == 1) {
+				v0 = "Convert all your memories into Divination experience." + "<br>" + "<br>" + "Keybind: 2";
+			} else {
+				v0 = "To use a crater, you will need some memories. These can be gathered from nearby wisps.";
+			}
+			break;
+		case 8585217:
+		case 8585224:
+			if (cs2_configs['cfg3710'] == 1) {
+				v0 = "Convert all your memories into divine energy. Divine energy can be traded or weaved to create beneficial objects." + "<br>" + "<br>" + "Keybind: 1";
+			} else {
+				v0 = "To use a crater, you will need some memories. These can be gathered from nearby wisps.";
+			}
+			break;
+		case 8585226:
+		case 8585223:
+			if (cs2method_10771() == 0 && cs2method_10338(25) >= 5) {
+				v0 = "You need to be on a members' world to gain Divination experience.";
+			} else if (cs2_configs['cfg3710'] == 1) {
+				if (cs2_configs['cfg3712'] == 1) {
+					v0 = "Convert memories and energy of the same tier into higher Divination experience. This is beneficial if you wish to use up spare energy. You will convert as many memories as you can with the level of energy you are carrying." + "<br>" + "<br>" + "Keybind: 3";
+				} else {
+					v0 = "You do not have enough materials. To convert one memory you need 5 energy of the same tier, and converting one enriched memory requires 10 energy of the same tier.";
+				}
+			} else {
+				v0 = "To use a crater, you will need some memories. These can be gathered from nearby wisps.";
+			}
+	}
+	script_7769(8585219, a1, -1, 200, 17813, 17813, 16777215, 13, 3, 2, a2, v0, a0);
+	return;
+}

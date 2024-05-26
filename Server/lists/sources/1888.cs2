@@ -1,0 +1,31 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1888() {
+	if (cs2_configs['cfg1025'] == 1) {
+		return;
+	}
+	if (script_2728() == 1 && client_configs['cfg195'].bitcfg552 == 0 && client_configs['cfg1295'] >= 1000) {
+		if (cs2_configs['cfg94'] > cs2method_10133()) {
+			return;
+		}
+		cs2_configs['cfg94'] = cs2method_10060(cs2method_10133(), 1500);
+		if (client_configs['cfg2335'] == 1) {
+			cs2method_10810("Your health is low! Run away from your attacker and speak to Xenia.");
+		} else {
+			cs2method_10810("Your health is low! Find a safe place away from your attacker");
+			cs2method_10810("or eat some food to heal yourself.");
+		}
+	}
+	cs2_configs['cfg1025'] = 1;
+	return;
+}

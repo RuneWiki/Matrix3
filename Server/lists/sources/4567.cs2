@@ -1,0 +1,78 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4567(int a0) {
+	if (cs2method_10535(38600727, -1) == 1) {
+		cs2method_20162(new function<script_4566>(int a0) {
+			script_4567(a0);
+			return;
+		}, new WidgetPointer(a0), "I", new WidgetPointer(a0));
+		return;
+	}
+	cs2method_10273(38600727);
+	for (object v3 = "<col=7fa9ff>", object v26 = "<col=ff5256>", int v6 = 0, int v29 = script_1960(), int v2 = v29, int v19 = 0, int v7 = 0, int v12 = 0, int v9 = 0, object v25 = "", object v32 = "", object v14 = "", object v30 = "", int v24 = -1, object v5 = "", int v27 = v29, opc_struct10864(4,5,0) v21 = cs2method_10864(v27), object v18 = v21.objectpart_4, int v0 = v21.intpart_3, object v28 = v21.objectpart_3, object v13 = v21.objectpart_2, object v16 = v21.objectpart_1, object v31 = v21.objectpart_0, int v4 = v21.intpart_2, int v17 = v21.intpart_1, int v11 = v21.intpart_0; v19 < 100 && v11 != -1; v11 = v10.intpart_0) {
+		switch (v11) {
+			case 26:
+			case 11:
+				v6 = script_4568(v18, v6, "", 0, v11, "");
+				break;
+			case 9:
+				v6 = script_4568("[" + (string)v3 + (string)v28 + "</col>" + "] " + (string)v31 + ": " + (string)v26 + (string)v18, v6, v31, 1, v11, v16);
+				break;
+			case 20:
+				v6 = script_4568("[" + (string)v3 + (string)v28 + "</col>" + "] " + (string)v31 + ": " + (string)v26 + (string)v18, v6, v31, 1, v11, v16);
+				break;
+			case 115:
+				v6 = script_4568("<col=ff0000>" + (string)v18 + "</col>", v6, "", 0, v11, "");
+				break;
+			case 127:
+				v6 = script_4568("<col=00ff00>" + (string)v18 + "</col>", v6, "", 0, v11, "");
+		}
+		v19 = cs2method_10060(v19, 1);
+		v29 = cs2method_10461(v29, 1);
+		int v34 = v29;
+		opc_struct10864(4,5,0) v10 = cs2method_10864(v34);
+		v18 = v10.objectpart_4;
+		int v35 = v10.intpart_3;
+		v28 = v10.objectpart_3;
+		object v37 = v10.objectpart_2;
+		v16 = v10.objectpart_1;
+		v31 = v10.objectpart_0;
+		int v36 = v10.intpart_2;
+		int v33 = v10.intpart_1;
+	}
+	cs2_configs['cfg2835'] = v2;
+	int v20 = cs2method_10968(cs2method_10823(38600727), 15);
+	int v23 = 0;
+	int v22 = 0;
+	if (v6 < v20) {
+		int v33 = cs2method_10461(v20, v6);
+		while (v23 < v33) {
+			v6 = script_4568("", v6, "", 0, 0, "");
+			v23 = cs2method_10060(v23, 1);
+		}
+	}
+	int v8 = 0;
+	int v15 = 0;
+	while (v15 <= v6) {
+		if (cs2method_11038(38600727, v15) == 1) {
+			v8 = cs2method_10060(v8, cs2method_10664());
+		}
+		v15 = cs2method_10060(v15, 1);
+	}
+	int v1 = cs2method_11048(v8, cs2method_10051(v20, 15));
+	cs2method_11130(0, v1, 38600727);
+	script_72(38600728, 38600727, cs2method_10461(cs2method_10060(cs2_configs['cfg1508'], cs2method_10970(38600727)), cs2_configs['cfg1509']));
+	cs2_configs['cfg1508'] = cs2method_10718(38600727);
+	cs2_configs['cfg1509'] = cs2method_10970(38600727);
+	return;
+}

@@ -1,0 +1,93 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+int script_10025(int a0,int a1,int a2,int a3) {
+	int v2;
+	int v1 = 2;
+	int v4 = 0;
+	if (a1 == 95) {
+		v2 = script_6970();
+	} else {
+		v2 = cs2method_10684(a1);
+	}
+	int v6 = 0;
+	if (a0 != -1) {
+		flow_4:
+			int v5 = cs2method_10936(a1, a0);
+			if (cs2method_10461(2147483647, v5) < cs2method_10936(94, a0)) {
+				return 0;
+			}
+			IF (a1 == 95) 
+				GOTO	flow_7
+			GOTO	flow_8
+		flow_7:
+			IF (script_9827(a0) == 0) 
+				GOTO	flow_10
+		flow_8:
+			IF (a1 != 95 && cs2method_10991(a0) == 1 && v5 > 0) 
+				GOTO	flow_11
+			GOTO	flow_12
+		flow_10:
+		flow_11:
+			v1 = cs2method_10461(v1, 1);
+		flow_12:
+	} else {
+		v1 = cs2method_10461(v1, 1);
+	}
+	if (a2 != -1) {
+		flow_15:
+			int v3 = cs2method_10936(a1, a2);
+			if (cs2method_10461(2147483647, v3) < cs2method_10936(94, a2)) {
+				return 0;
+			}
+			IF (a1 == 95) 
+				GOTO	flow_18
+			GOTO	flow_19
+		flow_18:
+			IF (script_9827(a2) == 0) 
+				GOTO	flow_21
+		flow_19:
+			IF (a1 != 95 && cs2method_10991(a2) == 1 && v3 > 0) 
+				GOTO	flow_22
+			GOTO	flow_23
+		flow_21:
+		flow_22:
+			v1 = cs2method_10461(v1, 1);
+		flow_23:
+	} else {
+		v1 = cs2method_10461(v1, 1);
+	}
+	if (v1 > 0) {
+		if (a3 != -1) {
+			int v0 = cs2method_10936(a1, a3);
+			if (cs2method_10991(a3) == 1) {
+				if (cs2method_10936(94, a3) > 0) {
+					v1 = cs2method_10461(v1, 1);
+				}
+				if (cs2method_10461(2147483647, v0) >= cs2method_10936(94, a3)) {
+					v2 = cs2method_10060(v2, 1);
+				}
+			} else {
+				if (a1 != 95 || v0 == 1 || script_9827(a3) == 1) {
+					v2 = cs2method_10060(v2, 1);
+				}
+			}
+		} else {
+			v1 = cs2method_10461(v1, 1);
+		}
+		if (v1 > v2) {
+			return 0;
+		}
+	}
+	return 1;
+}

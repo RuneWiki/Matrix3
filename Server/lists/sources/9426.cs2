@@ -1,0 +1,81 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9426(int a0) {
+	if (a0 > 0) {
+		cs2method_10467(1, 46596119);
+	}
+	cs2_configs['cfg3857'] = a0;
+	cs2method_10670(36956, 1, 0, 200);
+	cs2method_10467(1, 46596128);
+	cs2method_10467(1, 46596101);
+	cs2method_10467(1, 46596098);
+	cs2method_10467(1, 46596129);
+	cs2method_10467(1, 46596102);
+	cs2method_10467(1, 46596099);
+	cs2method_10467(1, 46596130);
+	cs2method_10467(1, 46596103);
+	cs2method_10467(1, 46596100);
+	cs2method_10467(1, 46596135);
+	cs2method_10467(1, 46596157);
+	cs2method_10467(1, 46596171);
+	switch (a0) {
+		case 1:
+			if (client_configs['cfg3948'].bitcfg21031 == 1) {
+				cs2method_10467(0, 46596128);
+			} else if (client_configs['cfg3948'].bitcfg21031 == 2) {
+				cs2method_10467(0, 46596101);
+			} else {
+				if (client_configs['cfg3948'].bitcfg21031 == 3) {
+					cs2method_10467(0, 46596098);
+				}
+			}
+			script_9423(1);
+			break;
+		case 2:
+			if (client_configs['cfg3948'].bitcfg21031 == 1) {
+				cs2method_10467(0, 46596129);
+			} else if (client_configs['cfg3948'].bitcfg21031 == 2) {
+				cs2method_10467(0, 46596102);
+			} else {
+				if (client_configs['cfg3948'].bitcfg21031 == 3) {
+					cs2method_10467(0, 46596099);
+				}
+			}
+			script_9423(2);
+			break;
+		case 3:
+			if (client_configs['cfg3948'].bitcfg21031 == 1) {
+				cs2method_10467(0, 46596130);
+			} else if (client_configs['cfg3948'].bitcfg21031 == 2) {
+				cs2method_10467(0, 46596103);
+			} else {
+				if (client_configs['cfg3948'].bitcfg21031 == 3) {
+					cs2method_10467(0, 46596100);
+				}
+			}
+			script_9423(3);
+			break;
+		case 4:
+			if (client_configs['cfg3948'].bitcfg21031 == 1) {
+				cs2method_10467(0, 46596135);
+			} else if (client_configs['cfg3948'].bitcfg21031 == 2) {
+				cs2method_10467(0, 46596157);
+			} else {
+				if (client_configs['cfg3948'].bitcfg21031 == 3) {
+					cs2method_10467(0, 46596171);
+				}
+			}
+			script_9423(4);
+	}
+	return;
+}

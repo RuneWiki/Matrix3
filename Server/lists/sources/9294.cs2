@@ -1,0 +1,84 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9294(int a0,int a1) {
+	if (a0 < 450) {
+		if (a0 == 0) {
+			a1 = 0;
+			cs2method_10150(a1);
+		} else if (a0 == 1) {
+			cs2method_10670(41103, 1, 0, 255);
+			script_9295("Some heroes are born, possessing natural gifts that lift them above the ordinary.", 21240, -1, 0);
+		} else if (a0 < 60) {
+			cs2method_10704(cs2method_11048(0, cs2method_10461(cs2method_10690(35913733), 5)), 35913733);
+		} else if (a0 < 120) {
+			cs2method_10704(cs2method_11048(0, cs2method_10461(cs2method_10690(35913734), 5)), 35913734);
+		} else if (a0 < 390) {
+		} else {
+			cs2method_10704(cs2method_10872(255, cs2method_10060(cs2method_10690(35913733), 5)), 35913733);
+			cs2method_10704(cs2method_10872(255, cs2method_10060(cs2method_10690(35913734), 5)), 35913734);
+		}
+	} else if (a0 < 900) {
+		if (a0 == 450) {
+			cs2method_10670(41105, 1, 0, 255);
+			script_9295("Some heroes are made. Their strength is the result of hardship and toil.", 21241, -1, 0);
+		} else if (a0 < 510) {
+			cs2method_10704(cs2method_11048(0, cs2method_10461(cs2method_10690(35913733), 5)), 35913733);
+		} else if (a0 < 570) {
+			cs2method_10704(cs2method_11048(0, cs2method_10461(cs2method_10690(35913734), 5)), 35913734);
+		} else if (a0 < 840) {
+		} else {
+			cs2method_10704(cs2method_10872(255, cs2method_10060(cs2method_10690(35913733), 5)), 35913733);
+			cs2method_10704(cs2method_10872(255, cs2method_10060(cs2method_10690(35913734), 5)), 35913734);
+		}
+	} else if (a0 < 1350) {
+		if (a0 == 900) {
+			cs2method_10670(41135, 1, 0, 255);
+			script_9295("Some heroes live for adventure, confronting terrible dangers in pursuit of riches and fame.", 21243, -1, 0);
+		} else if (a0 < 960) {
+			cs2method_10704(cs2method_11048(0, cs2method_10461(cs2method_10690(35913733), 5)), 35913733);
+		} else if (a0 < 1020) {
+			cs2method_10704(cs2method_11048(0, cs2method_10461(cs2method_10690(35913734), 5)), 35913734);
+		} else if (a0 < 1290) {
+		} else {
+			cs2method_10704(cs2method_10872(255, cs2method_10060(cs2method_10690(35913733), 5)), 35913733);
+			cs2method_10704(cs2method_10872(255, cs2method_10060(cs2method_10690(35913734), 5)), 35913734);
+		}
+	} else if (a0 < 1800) {
+		if (a0 == 1350) {
+			cs2method_10670(41129, 1, 0, 255);
+			script_9295("While others fight to protect those who cannot defend themselves.", 21242, -1, 1);
+		} else if (a0 < 1410) {
+			cs2method_10704(cs2method_11048(0, cs2method_10461(cs2method_10690(35913733), 5)), 35913733);
+		} else if (a0 < 1470) {
+			cs2method_10704(cs2method_11048(0, cs2method_10461(cs2method_10690(35913734), 5)), 35913734);
+		} else if (a0 < 1740) {
+		} else {
+			cs2method_10704(cs2method_10872(255, cs2method_10060(cs2method_10690(35913733), 5)), 35913733);
+			cs2method_10704(cs2method_10872(255, cs2method_10060(cs2method_10690(35913734), 5)), 35913734);
+		}
+	} else if (a0 == 1800) {
+		script_9295("But some heroes have more...unlikely origins. This is the story of one such hero. This is your story.", -1, 24513, 1);
+	} else if (a0 < 1860) {
+		cs2method_10704(cs2method_11048(0, cs2method_10461(cs2method_10690(35913734), 5)), 35913734);
+	} else if (a0 < 2033) {
+	} else if (a0 < 2160) {
+		a1 = cs2method_10872(cs2method_10060(a1, 1), 96);
+		cs2method_10150(a1);
+	} else if (a0 < 2190) {
+	} else {
+		cs2method_10704(cs2method_10872(255, cs2method_10060(cs2method_10690(35913734), 5)), 35913734);
+		cs2method_10704(cs2method_10872(255, cs2method_10060(cs2method_10690(35913729), 5)), 35913729);
+	}
+	cs2method_20162(load function<9294>, cs2method_10060(a0, 1), a1, "ii", new WidgetPointer(548,3));
+	return;
+}

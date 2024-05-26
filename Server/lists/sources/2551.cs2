@@ -1,0 +1,26 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2551() {
+	if (cs2_configs['cfg921'] == 1) {
+		cs2method_10758(1908, 2555939);
+	} else if (cs2_configs['cfg921'] == 2) {
+		cs2method_10758(1910, 2555939);
+	} else if (cs2_configs['cfg921'] == 3) {
+		cs2method_10758(1911, 2555939);
+	} else {
+		if (cs2_configs['cfg921'] == 4) {
+			cs2method_10758(1909, 2555939);
+		}
+	}
+	return;
+}

@@ -1,0 +1,57 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3812(int a0,int a1,int a2) {
+	if (script_3811() == 1 || cs2method_10614() == 2) {
+		return;
+	}
+	int v22 = idx17mapData('i', 'J', 7716, a2);
+	int v23 = script_8418(v22, 0);
+	int v17 = idx22mapAttribute(v22, 3503);
+	int v13 = script_9947(a2);
+	int v18 = 0;
+	int v7 = 0;
+	int v4 = cs2method_10155(v17);
+	script_8405_struct(2,0,0) v2 = script_8405(v4);
+	int v14 = v2.intpart_1;
+	int v3 = v2.intpart_0;
+	int v12 = cs2method_10823(v17);
+	int v19 = cs2method_10152(v17);
+	int v5 = 0;
+	int v20 = 0;
+	int v21 = 189;
+	int v24 = v13;
+	script_8405_struct(2,0,0) v16 = script_8405(v24);
+	int v11 = v16.intpart_1;
+	int v1 = v16.intpart_0;
+	int v15 = cs2method_10461(v1, v3);
+	int v8 = cs2method_10461(v11, v14);
+	int v0 = cs2method_10461(a1, v14);
+	int v9 = cs2method_10461(cs2method_10060(cs2method_10823(v17), cs2method_10152(v17)), v0);
+	if (v9 < v21) {
+		v0 = cs2method_10461(v0, cs2method_10461(v21, v9));
+		v9 = v21;
+	}
+	int v6 = cs2method_10872(600, cs2method_10461(cs2method_10060(v8, cs2method_10823(v13)), v9));
+	int v25 = cs2method_11048(v8, cs2method_10872(v0, v6));
+	int v10 = cs2method_10872(v9, cs2method_10823(v13));
+	if (a0 == 1) {
+		if (v10 < 189) {
+			v10 = 189;
+			cs2_configs['cfg1037'] = 189;
+		} else {
+			cs2_configs['cfg1037'] = v10;
+		}
+	}
+	script_3813(v10, a0);
+	return;
+}

@@ -1,0 +1,80 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5346() {
+	cs2method_10026(77332564, cs2method_10379(client_configs['cfg1688'].bitcfg5545));
+	cs2method_10026(77332550, cs2method_10379(cs2_configs['cfg1732']));
+	cs2method_10026(77332536, (string)cs2method_10379(client_configs['cfg1690'].bitcfg5557) + "%");
+	if (cs2_configs['cfg1731'] != 1) {
+		cs2method_10026(77332557, (string)cs2method_10379(cs2_configs['cfg1731']) + " sets");
+	} else {
+		cs2method_10026(77332557, "1 set");
+	}
+	switch (cs2_configs['cfg1731']) {
+		case 0:
+			cs2method_10520(12857645, 77332557);
+			break;
+		case 1:
+			cs2method_10520(12857645, 77332557);
+			break;
+		case 2:
+			cs2method_10520(13681696, 77332557);
+			break;
+		case 3:
+			cs2method_10520(13681696, 77332557);
+			break;
+		case 4:
+			cs2method_10520(13681696, 77332557);
+			break;
+		case 5:
+			cs2method_10520(2672721, 77332557);
+			break;
+		case 6:
+			cs2method_10520(2672721, 77332557);
+	}
+	if (cs2_configs['cfg1732'] < 3) {
+		cs2method_10520(12857645, 77332550);
+	} else {
+		cs2method_10520(2672721, 77332550);
+	}
+	switch (cs2_configs['cfg1730']) {
+		case 0:
+			cs2method_10026(77332543, "None");
+			cs2method_10520(12857645, 77332543);
+			break;
+		case 1:
+			cs2method_10026(77332543, "A");
+			cs2method_10520(13681696, 77332543);
+			break;
+		case 2:
+			cs2method_10026(77332543, "B");
+			cs2method_10520(13681696, 77332543);
+			break;
+		case 3:
+			cs2method_10026(77332543, "A & B");
+			cs2method_10520(2672721, 77332543);
+	}
+	cs2method_10026(77332529, (string)cs2method_10379(client_configs['cfg1689'].bitcfg5548) + " mins");
+	if (client_configs['cfg1689'].bitcfg5548 < 4) {
+		cs2method_10520(12857645, 77332529);
+	} else {
+		cs2method_10520(2672721, 77332529);
+	}
+	if (cs2_configs['cfg1733'] == 0) {
+		cs2method_10758(3302, 77332510);
+		cs2method_10467(0, 77332491);
+	} else {
+		cs2method_10758(3303, 77332510);
+		cs2method_10467(1, 77332491);
+	}
+	return;
+}

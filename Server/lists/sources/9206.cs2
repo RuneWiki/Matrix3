@@ -1,0 +1,36 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9206(int a0,int a1,int a2,int a3,int a4) {
+	object v3;
+	script_8841(35, 1);
+	cs2method_20380(new function<none>() {
+	}, "", new WidgetPointer(137,117));
+	cs2_configs['cfg3783'] = a3;
+	cs2_configs['cfg3784'] = a1;
+	object v2 = "";
+	if (a3 == 0) {
+		v3 = cs2method_10889(a1);
+	} else {
+		v3 = cs2method_10850(a1);
+	}
+	cs2method_10026(29556743, v3);
+	cs2_configs['cfg3782'] = cs2method_10265(v3);
+	int v0 = cs2method_10939(cs2method_10643(a0), cs2method_11025(0, cs2_configs['cfg3782'], v3));
+	int v1 = 4;
+	if (cs2method_10060(v0, 4) > cs2method_10236(cs2method_10982(a0))) {
+		v1 = cs2method_10461(-4, cs2method_10461(v0, cs2method_10236(cs2method_10982(a0))));
+	}
+	cs2method_10112(v1, cs2method_10152(a0), 0, 0, a0);
+	cs2method_10112(script_1551(v3, cs2_configs['cfg3782'], cs2method_10643(a0), v1), cs2method_10152(a2), 0, 0, a2);
+	return;
+}

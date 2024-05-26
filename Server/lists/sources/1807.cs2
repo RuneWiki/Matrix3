@@ -1,0 +1,30 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1807(int a0,int a1,int a2) {
+	if (script_42(cs2_configs['cfg266']) == 0) {
+		cs2_configs['cfg2409'] = "";
+		cs2_configs['cfg2410'] = "";
+		cs2_configs['cfg266'] = 1;
+	}
+	script_1809(a0, a2, a1);
+	cs2method_20914(new function<script_1808>(int a0,int a1,int a2) {
+		script_1548(12);
+		script_1809(a2, a1, a0);
+		return;
+	}, new WidgetPointer(a0), new WidgetPointer(a2), new WidgetPointer(a1), 2409, 1, "IIIY", new WidgetPointer(a0));
+	cs2method_20240(new function<script_1810>(int a0,int a1,int a2) {
+		script_1811(a1, a0, a2);
+		return;
+	}, new WidgetPointer(a0), new WidgetPointer(a2), new WidgetPointer(a1), "III", new WidgetPointer(a0));
+	return;
+}

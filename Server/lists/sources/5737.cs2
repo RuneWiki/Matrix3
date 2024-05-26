@@ -1,0 +1,41 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_5737() {
+	int v0 = client_configs['cfg3253'];
+	cs2method_10467(1, 81068067);
+	cs2method_10467(1, 81068068);
+	cs2method_10467(1, 81068069);
+	cs2method_10467(1, 81068070);
+	cs2method_10467(1, 81068071);
+	cs2method_10467(1, 81068072);
+	int v1 = cs2method_10823(81068066);
+	if (cs2method_10846(idx22mapAttribute(v0, 1274), "") != 0) {
+		v1 = script_5739(1, idx22mapAttribute(v0, 1274), v1, 81068067, 81068065);
+	}
+	if (cs2method_10846(idx22mapAttribute(v0, 1275), "") != 0) {
+		v1 = script_5739(2, idx22mapAttribute(v0, 1275), v1, 81068068, 81068065);
+	}
+	if (cs2method_10846(idx22mapAttribute(v0, 1276), "") != 0) {
+		v1 = script_5739(3, idx22mapAttribute(v0, 1276), v1, 81068069, 81068065);
+	}
+	if (cs2method_10846(idx22mapAttribute(v0, 1277), "") != 0) {
+		v1 = script_5739(4, idx22mapAttribute(v0, 1277), v1, 81068070, 81068065);
+	}
+	if (cs2method_10846(idx22mapAttribute(v0, 1278), "") != 0) {
+		v1 = script_5739(5, idx22mapAttribute(v0, 1278), v1, 81068071, 81068065);
+	}
+	if (cs2method_10846(idx22mapAttribute(v0, 1279), "") != 0) {
+		v1 = script_5739(6, idx22mapAttribute(v0, 1279), v1, 81068072, 81068065);
+	}
+	return v1;
+}

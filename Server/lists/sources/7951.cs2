@@ -1,0 +1,32 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7951(int a0,int a1) {
+	if (cs2method_11088() == 0) {
+		return;
+	}
+	if (a0 == cs2_configs['cfg3526'] && a1 == cs2_configs['cfg3527']) {
+		return;
+	}
+	int v1 = cs2_configs['cfg3526'];
+	int v2 = cs2_configs['cfg3527'];
+	int v0 = 0;
+	/* 
+		mgi.tools.jagdecs2.DecompilerException: A call to disabled function: void disabled3();
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:234)
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+			at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+			at tests.Main.main(Main.java:69)
+		
+	 */
+}

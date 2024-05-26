@@ -1,0 +1,180 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_1979_struct(2,0,0) script_1979(int a0) {
+	int v1 = -1;
+	int v10 = -1;
+	int v45 = 0;
+	int v21 = 0;
+	int v50 = 0;
+	int v28 = a0;
+	script_8562_struct(2,0,0) v30 = script_8562(v28);
+	int v17 = v30.intpart_1;
+	int v36 = v30.intpart_0;
+	if (v36 != -1 && v17 != -1) {
+		int v55 = a0;
+		int v60 = 0;
+		int v57 = v36;
+		int v59 = v17;
+		int v58 = v45;
+		object v56 = "Filtered";
+		script_8499_struct(2,0,0) v61 = script_8499(v55, v60, v57, v59, v56, v58);
+		v45 = v61.intpart_1;
+		v21 = v61.intpart_0;
+	}
+	int v25 = cs2method_11048(v50, v21);
+	int v38 = a0;
+	script_8564_struct(2,0,0) v3 = script_8564(v38);
+	int v53 = v3.intpart_1;
+	int v43 = v3.intpart_0;
+	if (v43 != -1 && v53 != -1) {
+		int v57 = a0;
+		int v56 = 1;
+		int v59 = v43;
+		int v60 = v53;
+		int v55 = v45;
+		object v61 = "Friends Only";
+		script_8499_struct(2,0,0) v58 = script_8499(v57, v56, v59, v60, v61, v55);
+		v45 = v58.intpart_1;
+		v21 = v58.intpart_0;
+	}
+	int v19 = cs2method_11048(v25, v21);
+	int v13 = a0;
+	script_8566_struct(2,0,0) v4 = script_8566(v13);
+	int v7 = v4.intpart_1;
+	int v20 = v4.intpart_0;
+	if (v20 != -1 && v7 != -1) {
+		int v61 = a0;
+		int v57 = 2;
+		int v58 = v20;
+		int v59 = v7;
+		int v60 = v45;
+		object v55 = "Friends Only";
+		script_8499_struct(2,0,0) v56 = script_8499(v61, v57, v58, v59, v55, v60);
+		v45 = v56.intpart_1;
+		v21 = v56.intpart_0;
+	}
+	int v35 = cs2method_11048(v19, v21);
+	int v44 = a0;
+	script_8568_struct(2,0,0) v0 = script_8568(v44);
+	int v27 = v0.intpart_1;
+	int v23 = v0.intpart_0;
+	if (v23 != -1 && v27 != -1) {
+		int v60 = a0;
+		int v59 = 3;
+		int v56 = v23;
+		int v55 = v27;
+		int v57 = v45;
+		object v58 = "Friends Only";
+		script_8499_struct(2,0,0) v61 = script_8499(v60, v59, v56, v55, v58, v57);
+		v45 = v61.intpart_1;
+		v21 = v61.intpart_0;
+	}
+	int v16 = cs2method_11048(v35, v21);
+	int v9 = a0;
+	script_8570_struct(2,0,0) v51 = script_8570(v9);
+	int v52 = v51.intpart_1;
+	int v14 = v51.intpart_0;
+	if (v14 != -1 && v52 != -1) {
+		int v59 = a0;
+		int v60 = 4;
+		int v57 = v14;
+		int v61 = v52;
+		int v55 = v45;
+		object v58 = "Friends Only";
+		script_8499_struct(2,0,0) v56 = script_8499(v59, v60, v57, v61, v58, v55);
+		v45 = v56.intpart_1;
+		v21 = v56.intpart_0;
+	}
+	int v49 = cs2method_11048(v16, v21);
+	int v40 = a0;
+	script_8572_struct(2,0,0) v18 = script_8572(v40);
+	int v54 = v18.intpart_1;
+	int v26 = v18.intpart_0;
+	if (v26 != -1 && v54 != -1) {
+		int v58 = a0;
+		int v55 = 5;
+		int v61 = v26;
+		int v56 = v54;
+		int v60 = v45;
+		object v57 = "Friends Only";
+		script_8499_struct(2,0,0) v59 = script_8499(v58, v55, v61, v56, v57, v60);
+		v45 = v59.intpart_1;
+		v21 = v59.intpart_0;
+	}
+	int v39 = cs2method_11048(v49, v21);
+	int v11 = a0;
+	script_8574_struct(2,0,0) v5 = script_8574(v11);
+	int v24 = v5.intpart_1;
+	int v33 = v5.intpart_0;
+	if (v33 != -1 && v24 != -1) {
+		int v61 = a0;
+		int v56 = 6;
+		int v60 = v33;
+		int v59 = v24;
+		int v55 = v45;
+		object v57 = "Friends Only";
+		script_8499_struct(2,0,0) v58 = script_8499(v61, v56, v60, v59, v57, v55);
+		v45 = v58.intpart_1;
+		v21 = v58.intpart_0;
+	}
+	int v34 = cs2method_11048(v39, v21);
+	int v32 = a0;
+	script_8576_struct(2,0,0) v31 = script_8576(v32);
+	int v42 = v31.intpart_1;
+	int v8 = v31.intpart_0;
+	if (v8 != -1 && v42 != -1) {
+		int v56 = a0;
+		int v55 = 7;
+		int v57 = v8;
+		int v60 = v42;
+		int v61 = v45;
+		object v59 = "Friends Only";
+		script_8499_struct(2,0,0) v58 = script_8499(v56, v55, v57, v60, v59, v61);
+		v45 = v58.intpart_1;
+		v21 = v58.intpart_0;
+	}
+	int v22 = cs2method_11048(v34, v21);
+	int v12 = a0;
+	script_8578_struct(2,0,0) v48 = script_8578(v12);
+	int v29 = v48.intpart_1;
+	int v2 = v48.intpart_0;
+	if (v2 != -1 && v29 != -1) {
+		int v55 = a0;
+		int v56 = 8;
+		int v59 = v2;
+		int v57 = v29;
+		int v58 = v45;
+		object v60 = "";
+		script_8499_struct(2,0,0) v61 = script_8499(v55, v56, v59, v57, v60, v58);
+		v45 = v61.intpart_1;
+		v21 = v61.intpart_0;
+	}
+	int v46 = cs2method_11048(v22, v21);
+	int v41 = a0;
+	script_9211_struct(2,0,0) v15 = script_9211(v41);
+	int v6 = v15.intpart_1;
+	int v37 = v15.intpart_0;
+	if (v37 != -1 && v6 != -1) {
+		int v57 = a0;
+		int v55 = 10;
+		int v61 = v37;
+		int v58 = v6;
+		int v60 = v45;
+		object v59 = "";
+		script_8499_struct(2,0,0) v56 = script_8499(v57, v55, v61, v58, v59, v60);
+		v45 = v56.intpart_1;
+		v21 = v56.intpart_0;
+	}
+	int v47 = cs2method_11048(v46, v21);
+	return new script_1979_struct(v47, v45);
+}

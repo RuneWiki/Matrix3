@@ -1,0 +1,34 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9506(int a0,int a1) {
+	if (a0 == 0 || a1 == 0) {
+		cs2method_10467(1, 49086526);
+		return;
+	}
+	cs2method_10467(0, 49086526);
+	if (a0 > a1) {
+		a0 = a1;
+	}
+	int v1 = cs2method_10236(49086535);
+	int v0 = cs2method_10122(a0, a1, v1);
+	if (v0 < 1) {
+		v0 = 1;
+	}
+	cs2method_10283(v0, 0, 0, 1, 49086469);
+	cs2method_21121(new function<script_9508>(int a0,int a1,int a2,int a3) {
+		object v0 = "Your faction has a golem active." + "<br>" + "Time left: " + script_9507(a0);
+		script_7769(49086536, a2, -1, 600, 17813, 17813, 16777215, 13, 4, 3, a3, v0, a1);
+		return;
+	}, new WidgetPointer(-32768,3), -2147483647, -2147483646, a0, "Iiii", new WidgetPointer(749,62));
+	return;
+}

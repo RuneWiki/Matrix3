@@ -1,0 +1,25 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_217() {
+	flow_0:
+		cs2method_10026(38928448, "Reporting: " + cs2_configs['cfg2578']);
+		cs2method_10026(38928428, cs2_configs['cfg2578']);
+		IF (cs2method_10846(cs2_configs['cfg2578'], "") != 0) 
+			GOTO	flow_1
+		GOTO	flow_2
+	flow_1:
+		GOTO	flow_2
+	flow_2:
+		return;
+}

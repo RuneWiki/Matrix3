@@ -1,0 +1,26 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2504() {
+	int v1 = 0;
+	cs2method_10026(19071049, cs2_configs['cfg2457']);
+	cs2method_10026(19071004, cs2_configs['cfg2458']);
+	int v0 = cs2method_10060(cs2method_10051(cs2method_10805(207, 497, cs2_configs['cfg2457']), 17), 5);
+	cs2method_10283(207, v0, 0, 0, 19071049);
+	cs2method_11130(0, v0, 19071048);
+	script_72(19071045, 19071048, 0);
+	int v2 = cs2method_10060(cs2method_10051(cs2method_10805(207, 497, cs2_configs['cfg2458']), 17), 5);
+	cs2method_10283(207, v2, 0, 0, 19071004);
+	cs2method_11130(0, v2, 19071044);
+	script_72(19071046, 19071044, 0);
+	return;
+}

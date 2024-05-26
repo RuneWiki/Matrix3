@@ -1,0 +1,30 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+int script_6378(int a0) {
+	flow_0:
+		if (a0 == -1) {
+			return 1;
+		}
+		int v0 = script_6379(a0);
+		IF (v0 == 59310188) 
+			GOTO	flow_3
+		IF (v0 == 83558414 && script_9570() == 1) 
+			GOTO	flow_4
+		GOTO	flow_5
+	flow_3:
+	flow_4:
+		return 1;
+	flow_5:
+		return 0;
+}

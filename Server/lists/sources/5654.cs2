@@ -1,0 +1,65 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5654() {
+	if (client_configs['cfg91'] == 2147483647) {
+		cs2method_10026(79626244, "Lots!");
+	} else {
+		cs2method_10026(79626244, cs2method_10055(cs2method_10968(client_configs['cfg91'], 10), 1));
+	}
+	if (client_configs['cfg92'] == 2147483647) {
+		cs2method_10026(79626246, "Lots!");
+	} else {
+		cs2method_10026(79626246, cs2method_10055(cs2method_10968(client_configs['cfg92'], 10), 1));
+	}
+	if (client_configs['cfg93'] == 2147483647) {
+		cs2method_10026(79626248, "Lots!");
+	} else {
+		cs2method_10026(79626248, cs2method_10055(cs2method_10968(client_configs['cfg93'], 10), 1));
+	}
+	cs2method_10283(cs2method_10939(cs2method_10643(79626244), cs2method_10744(79626244)), cs2method_10823(79626244), 0, 0, 79626244);
+	cs2method_10283(cs2method_10939(cs2method_10643(79626246), cs2method_10744(79626246)), cs2method_10823(79626246), 0, 0, 79626246);
+	cs2method_10283(cs2method_10939(cs2method_10643(79626248), cs2method_10744(79626248)), cs2method_10823(79626248), 0, 0, 79626248);
+	int v1 = cs2method_11048(cs2method_11048(cs2method_10236(79626244), cs2method_10236(79626246)), cs2method_10236(79626248));
+	int v2 = cs2method_10060(v1, 33);
+	script_5660();
+	cs2method_10467(1, 79626244);
+	cs2method_10467(1, 79626246);
+	cs2method_10467(1, 79626248);
+	cs2method_10467(1, 79626245);
+	cs2method_10467(1, 79626247);
+	cs2method_10467(1, 79626249);
+	int v0 = 0;
+	if (client_configs['cfg94'].bitcfg229 == 1) {
+		cs2method_10467(0, 79626244);
+		cs2method_10467(0, 79626245);
+		cs2method_10112(v2, v0, 2, 0, 79626250);
+		v0 = cs2method_10060(cs2method_10152(79626245), cs2method_10823(79626245));
+	}
+	if (client_configs['cfg94'].bitcfg230 == 1) {
+		cs2method_10467(0, 79626246);
+		cs2method_10467(0, 79626247);
+		cs2method_10112(28, v0, 2, 0, 79626246);
+		cs2method_10112(cs2method_10191(79626247), v0, 0, 0, 79626247);
+		cs2method_10112(v2, v0, 2, 0, 79626251);
+		v0 = cs2method_10060(cs2method_10152(79626247), cs2method_10823(79626247));
+	}
+	if (client_configs['cfg94'].bitcfg231 == 1) {
+		cs2method_10467(0, 79626248);
+		cs2method_10467(0, 79626249);
+		cs2method_10112(28, v0, 2, 0, 79626248);
+		cs2method_10112(cs2method_10191(79626249), v0, 0, 0, 79626249);
+		cs2method_10112(v2, v0, 2, 0, 79626252);
+	}
+	script_5652();
+	return;
+}

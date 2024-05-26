@@ -1,0 +1,41 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6933(int a0) {
+	script_4510(89587770, 1773);
+	script_4510(89587771, 1774);
+	script_4510(89587774, 1776);
+	script_4510(89587772, 1775);
+	script_4510(89587773, 1777);
+	script_4510(89587785, 1736);
+	script_4510(89587786, 1737);
+	script_4510(89587787, 1738);
+	script_3984(89587789, 7253);
+	cs2method_20348(new function<script_6934>() {
+		script_6935();
+		return;
+	}, 1586, 1, "Y", new WidgetPointer(a0));
+	cs2method_20243(new function<script_6934>() {
+		script_6935();
+		return;
+	}, 1332, 9, 2, "Y", new WidgetPointer(a0));
+	cs2method_20914(new function<script_6934>() {
+		script_6935();
+		return;
+	}, 2441, 1, "Y", new WidgetPointer(a0));
+	cs2method_20660(new function<script_6934>() {
+		script_6935();
+		return;
+	}, "", new WidgetPointer(a0));
+	script_6935();
+	return;
+}

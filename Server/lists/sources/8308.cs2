@@ -1,0 +1,32 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8308(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8) {
+	int v1 = idx17mapData('i', 'J', 7716, a0);
+	if (v1 == -1 || idx22mapAttribute(v1, 3519) == 0) {
+		return;
+	}
+	for (int v10 = 0, int v3 = -1, int v4 = 0, int v2 = cs2method_10924(7717), int v11 = cs2method_10461(a3, a4), int v7 = cs2method_10461(a7, a5), int v12 = 0, int v6 = 0, int v9 = cs2method_10461(a2, a1), int v8 = cs2method_10461(a8, a6), int v5 = 0, int v0 = 0; v4 < v2; v4 = cs2method_10060(v4, 1)) {
+		int v13 = idx17mapData('i', 'i', 7717, v4);
+		int v14 = idx17mapData('i', 'J', 7716, v13);
+		if (v14 != -1 && idx22mapAttribute(v14, 3520) == a0) {
+			int v14 = v13;
+			script_8717_struct(4,0,0) v18 = script_8717(v14);
+			int v17 = v18.intpart_3;
+			int v15 = v18.intpart_2;
+			int v16 = v18.intpart_1;
+			int v19 = v18.intpart_0;
+			script_8387(cs2method_10060(v19, v11), cs2method_10060(v16, v7), cs2method_10060(v15, v9), cs2method_10060(v17, v8), v13);
+		}
+	}
+	return;
+}

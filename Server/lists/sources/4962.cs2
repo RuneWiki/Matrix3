@@ -1,0 +1,22 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_4962(int a0) {
+	int v0 = -1;
+	if (cs2method_10172() == 1) {
+		int v1 = script_4971(a0);
+		if (clan_chat_configs['cfg2144'].bitcfg6690 == v1 || clan_chat_configs['cfg2161'].bitcfg6699 == v1 || clan_chat_configs['cfg2178'].bitcfg6708 == v1) {
+			return 1;
+		}
+	}
+	return 0;
+}

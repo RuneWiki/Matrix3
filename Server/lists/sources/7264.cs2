@@ -1,0 +1,103 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7264(int a0,int a1) {
+	switch (a0) {
+		case 0:
+			switch (a1) {
+				case 2:
+					client_configs['cfg3029'].bitcfg15210 = 1;
+					break;
+				case 1:
+					client_configs['cfg3029'].bitcfg15209 = 1;
+					break;
+				case 0:
+					client_configs['cfg3029'].bitcfg15208 = 1;
+			}
+			break;
+		case 1:
+			switch (a1) {
+				case 2:
+					client_configs['cfg3029'].bitcfg15213 = 1;
+					break;
+				case 1:
+					client_configs['cfg3029'].bitcfg15212 = 1;
+					break;
+				case 0:
+					client_configs['cfg3029'].bitcfg15211 = 1;
+			}
+			break;
+		case 2:
+			switch (a1) {
+				case 2:
+					client_configs['cfg3029'].bitcfg15216 = 1;
+					break;
+				case 1:
+					client_configs['cfg3029'].bitcfg15215 = 1;
+					break;
+				case 0:
+					client_configs['cfg3029'].bitcfg15214 = 1;
+			}
+			break;
+		case 3:
+			switch (a1) {
+				case 2:
+					client_configs['cfg3029'].bitcfg15219 = 1;
+					break;
+				case 1:
+					client_configs['cfg3029'].bitcfg15218 = 1;
+					break;
+				case 0:
+					client_configs['cfg3029'].bitcfg15217 = 1;
+			}
+			break;
+		case 4:
+			switch (a1) {
+				case 2:
+					client_configs['cfg3029'].bitcfg15222 = 1;
+					break;
+				case 1:
+					client_configs['cfg3029'].bitcfg15221 = 1;
+					break;
+				case 0:
+					client_configs['cfg3029'].bitcfg15220 = 1;
+			}
+			break;
+		case 5:
+			switch (a1) {
+				case 2:
+					client_configs['cfg3029'].bitcfg15225 = 1;
+					break;
+				case 1:
+					client_configs['cfg3029'].bitcfg15224 = 1;
+					break;
+				case 0:
+					client_configs['cfg3029'].bitcfg15223 = 1;
+			}
+			break;
+		case 6:
+			switch (a1) {
+				default:
+					break;
+				case 2:
+					client_configs['cfg3029'].bitcfg15228 = 1;
+					break;
+				case 1:
+					client_configs['cfg3029'].bitcfg15227 = 1;
+					break;
+				case 0:
+					client_configs['cfg3029'].bitcfg15226 = 1;
+			}
+	}
+	script_7258();
+	return;
+}

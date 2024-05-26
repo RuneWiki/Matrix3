@@ -1,0 +1,121 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_1328(int a0) {
+	flow_0:
+		if (cs2method_10609(59375678) == 0 || cs2method_10609(59375679) == 0 || cs2method_10609(59375680) == 0 || cs2method_10609(59375662) == 0 || cs2method_10609(59375682) == 0 || cs2method_10609(59375692) == 0 || cs2method_10609(59375693) == 0) {
+			return;
+		}
+		int v0 = -1;
+		if (a0 == 80 && cs2method_10378() == 1) {
+			if (cs2method_10609(59375829) == 0) {
+				v0 = 0;
+			}
+			if (cs2method_10609(59375831) == 0) {
+				v0 = 1;
+			}
+			if (cs2method_10609(59375832) == 0) {
+				v0 = 2;
+			}
+			if (cs2method_10609(59375833) == 0) {
+				v0 = 3;
+			}
+			if (cs2method_10609(59375834) == 0) {
+				v0 = 5;
+			}
+			if (cs2method_10609(59375835) == 0) {
+				v0 = 4;
+			}
+			if (cs2method_10862() == 0) {
+				switch (v0) {
+					case 0:
+						script_3060(1);
+						return;
+					case 1:
+						script_3060(2);
+						return;
+					case 2:
+						script_3060(3);
+						return;
+					case 3:
+						script_3060(5);
+						return;
+					case 5:
+						script_3060(4);
+						return;
+					case 4:
+						script_3060(0);
+						return;
+				}
+				script_3060(0);
+				return;
+			}
+			switch (v0) {
+				case 0:
+					script_3060(4);
+					return;
+				case 1:
+					script_3060(0);
+					return;
+				case 2:
+					script_3060(1);
+					return;
+				case 3:
+					script_3060(2);
+					return;
+				case 5:
+					script_3060(3);
+					return;
+				case 4:
+					script_3060(5);
+					return;
+			}
+			script_3060(0);
+			return;
+		}
+		int v6 = 0;
+		object v5 = "";
+		object v8 = "";
+		IF (a0 == 84) 
+			GOTO	flow_37
+		IF (a0 == 80 && cs2method_10609(59375832) == 0) 
+			GOTO	flow_38
+		GOTO	flow_48
+	flow_37:
+	flow_38:
+		if (cs2method_10265(cs2_configs['cfg2505']) > 0) {
+			int v2 = cs2method_10818(cs2_configs['cfg2505']);
+			if (v2 != -1 && cs2method_10870() == 0) {
+				int v3 = v2;
+				opc_struct10599(0,2,0) v1 = cs2method_10599(v3);
+				object v7 = v1.objectpart_1;
+				object v4 = v1.objectpart_0;
+				script_3015(0, "Send message to " + (string)v4, "", cs2_configs['cfg2505'], "");
+				return;
+			}
+			if (cs2_configs['cfg1271'] > cs2method_10461(cs2method_10133(), 100)) {
+				return;
+			}
+			cs2method_10810("That player is not on your Friends list.");
+			cs2_configs['cfg1271'] = cs2method_10133();
+			return;
+		}
+		if (cs2_configs['cfg1271'] > cs2method_10461(cs2method_10133(), 100)) {
+			return;
+		}
+		cs2method_10810("You haven't received any messages to which you can reply.");
+		cs2_configs['cfg1271'] = cs2method_10133();
+		return;
+	flow_48:
+		return;
+}

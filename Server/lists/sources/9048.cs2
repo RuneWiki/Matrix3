@@ -1,0 +1,26 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9048() {
+	if (cs2_configs['cfg2778'] == 1) {
+		cs2method_10026(98172944, "Claim your bonus XP reward for voting this week!");
+		cs2method_10467(1, 98173132);
+	} else {
+		if (cs2_configs['cfg2775'] == 1) {
+			cs2method_10026(98172944, "You have already claimed your bonus XP reward for voting this week.");
+		} else {
+			cs2method_10026(98172944, "You must vote this week to claim a bonus XP reward.");
+		}
+		cs2method_10467(0, 98173132);
+	}
+	return;
+}

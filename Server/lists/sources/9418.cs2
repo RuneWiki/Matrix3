@@ -1,0 +1,33 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9418(int a0,int a1) {
+	object v0 = "";
+	switch (a0) {
+		case 0:
+			v0 = "Bronze token required";
+			break;
+		case 1:
+			v0 = "Silver token required";
+			break;
+		case 2:
+			v0 = "Gold token required";
+			break;
+		case 3:
+			v0 = "Runite token required";
+			break;
+		case 4:
+			v0 = "Dragon token required";
+	}
+	script_8800(a1, -1, v0);
+	return;
+}

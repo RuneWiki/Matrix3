@@ -1,0 +1,519 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1711(int a0,int a1) {
+	int v13;
+	int v39 = 0;
+	int v43 = -1;
+	int v37 = -1;
+	int v45 = -1;
+	int v23 = -1;
+	int v50 = -1;
+	int v33 = -1;
+	int v27 = -1;
+	int v36 = -1;
+	int v54 = -1;
+	int v3 = -1;
+	int v38 = -1;
+	int v28 = -1;
+	int v22 = -1;
+	int v10 = -1;
+	int v12 = -1;
+	int v30 = -1;
+	int v9 = -1;
+	int v0 = -1;
+	int v21 = -1;
+	if (a0 == 1) {
+		cs2method_10467(1, 62259361);
+		cs2method_10467(0, 62259359);
+		if (client_configs['cfg3416'] == 0 && client_configs['cfg3406'].bitcfg17131 == 0) {
+			cs2method_10467(0, 62259576);
+		} else {
+			cs2method_10467(1, 62259576);
+		}
+		switch (a1) {
+			case 1:
+				v39 = client_configs['cfg3401'].bitcfg17118;
+				break;
+			case 2:
+				v39 = client_configs['cfg3402'].bitcfg17119;
+				break;
+			case 3:
+				v39 = client_configs['cfg3402'].bitcfg17120;
+		}
+		cs2method_10467(1, 62259402);
+		cs2method_10467(0, 62259403);
+		cs2method_10467(1, 62259343);
+		cs2method_10467(0, 62259344);
+		cs2method_10467(1, 62259418);
+		cs2method_10467(0, 62259419);
+	} else {
+		cs2method_10467(0, 62259361);
+		cs2method_10467(1, 62259359);
+		switch (a1) {
+			case 1:
+				v39 = client_configs['cfg3400'].bitcfg17115;
+				break;
+			case 2:
+				v39 = client_configs['cfg3400'].bitcfg17116;
+				break;
+			case 3:
+				v39 = client_configs['cfg3401'].bitcfg17117;
+		}
+		cs2method_10467(0, 62259402);
+		cs2method_10467(1, 62259403);
+		cs2method_10467(0, 62259343);
+		cs2method_10467(1, 62259344);
+		cs2method_10467(0, 62259418);
+		cs2method_10467(1, 62259419);
+	}
+	switch (a1) {
+		case 1:
+			v43 = 62259395;
+			v33 = 62259396;
+			v27 = 62259397;
+			v36 = 62259405;
+			v54 = 62259407;
+			v3 = 62259409;
+			v38 = 62259406;
+			v28 = 62259408;
+			v22 = 62259410;
+			v12 = 62259398;
+			v9 = 62259399;
+			v21 = 62259400;
+			break;
+		case 2:
+			v43 = 62259336;
+			v33 = 62259337;
+			v27 = 62259338;
+			v36 = 62259381;
+			v54 = 62259383;
+			v3 = 62259385;
+			v38 = 62259382;
+			v28 = 62259384;
+			v22 = 62259386;
+			v12 = 62259339;
+			v9 = 62259340;
+			v21 = 62259341;
+			break;
+		case 3:
+			v43 = 62259411;
+			v33 = 62259412;
+			v27 = 62259413;
+			v36 = 62259421;
+			v54 = 62259423;
+			v3 = 62259425;
+			v38 = 62259422;
+			v28 = 62259424;
+			v22 = 62259426;
+			v12 = 62259414;
+			v9 = 62259415;
+			v21 = 62259416;
+	}
+	cs2method_10026(v43, "No voyage available");
+	cs2method_10758(-1, v36);
+	cs2method_10758(-1, v54);
+	cs2method_10758(-1, v3);
+	cs2method_21121(new function<none>() {
+	}, "", new WidgetPointer(v36));
+	cs2method_21121(new function<none>() {
+	}, "", new WidgetPointer(v54));
+	cs2method_21121(new function<none>() {
+	}, "", new WidgetPointer(v3));
+	cs2method_10758(-1, v12);
+	cs2method_10758(-1, v9);
+	cs2method_10758(-1, v21);
+	cs2method_21121(new function<none>() {
+	}, "", new WidgetPointer(v12));
+	cs2method_21121(new function<none>() {
+	}, "", new WidgetPointer(v9));
+	cs2method_21121(new function<none>() {
+	}, "", new WidgetPointer(v21));
+	cs2method_10026(v38, "");
+	cs2method_10026(v28, "");
+	cs2method_10026(v22, "");
+	cs2method_10273(v27);
+	if (v39 == 0) {
+		return;
+	}
+	int v29 = idx17mapData('i', 'J', 1022, v39);
+	if (v29 == -1) {
+		return;
+	}
+	object v15 = idx22mapAttribute(v29, 2365);
+	int v24 = 0;
+	int v35 = 0;
+	int v40 = 0;
+	object v6 = "";
+	object v49 = "";
+	object v52 = "";
+	if (v39 == 417) {
+		v13 = client_configs['cfg4034'].bitcfg17498;
+	} else {
+		v13 = idx22mapAttribute(v29, 3066);
+	}
+	int v14 = idx22mapAttribute(v29, 3067);
+	int v51 = idx22mapAttribute(v29, 3068);
+	switch (v13) {
+		case 1:
+			v10 = 15778;
+			v6 = "The Whaler";
+			break;
+		case 2:
+			v10 = 15769;
+			v6 = "The Biologist";
+			break;
+		case 3:
+			v10 = 15760;
+			v6 = "The Occultist";
+			break;
+		case 4:
+			v10 = 15749;
+			v6 = "The Assassin";
+			break;
+		case 5:
+			v10 = 15750;
+			v6 = "The Convict";
+			break;
+		case 6:
+			v10 = 15751;
+			v6 = "The Missionary";
+			break;
+		case 7:
+			v10 = 22046;
+			v6 = "The Trapper";
+			break;
+		case 8:
+			v10 = 22045;
+			v6 = "The Chef";
+			break;
+		case 9:
+			v10 = 22047;
+			v6 = "The Architect";
+	}
+	switch (v14) {
+		case 1:
+			v30 = 15778;
+			v49 = "The Whaler";
+			break;
+		case 2:
+			v30 = 15769;
+			v49 = "The Biologist";
+			break;
+		case 3:
+			v30 = 15760;
+			v49 = "The Occultist";
+			break;
+		case 4:
+			v30 = 15749;
+			v49 = "The Assassin";
+			break;
+		case 5:
+			v30 = 15750;
+			v49 = "The Convict";
+			break;
+		case 6:
+			v30 = 15751;
+			v49 = "The Missionary";
+			break;
+		case 7:
+			v30 = 22046;
+			v49 = "The Trapper";
+			break;
+		case 8:
+			v30 = 22045;
+			v49 = "The Chef";
+			break;
+		case 9:
+			v30 = 22047;
+			v49 = "The Architect";
+	}
+	switch (v51) {
+		case 1:
+			v0 = 15778;
+			v52 = "The Whaler";
+			break;
+		case 2:
+			v0 = 15769;
+			v52 = "The Biologist";
+			break;
+		case 3:
+			v0 = 15760;
+			v52 = "The Occultist";
+			break;
+		case 4:
+			v0 = 15749;
+			v52 = "The Assassin";
+			break;
+		case 5:
+			v0 = 15750;
+			v52 = "The Convict";
+			break;
+		case 6:
+			v0 = 15751;
+			v52 = "The Missionary";
+			break;
+		case 7:
+			v0 = 22046;
+			v52 = "The Trapper";
+			break;
+		case 8:
+			v0 = 22045;
+			v52 = "The Chef";
+			break;
+		case 9:
+			v0 = 22047;
+			v52 = "The Architect";
+	}
+	if (a0 == 1) {
+		if (v51 > 0) {
+			cs2method_10283(30, 30, 0, 0, v12);
+			cs2method_10283(30, 30, 0, 0, v9);
+			cs2method_10283(30, 30, 0, 0, v21);
+			cs2method_10112(177, 42, 0, 0, v12);
+			cs2method_10112(162, 75, 0, 0, v9);
+			cs2method_10112(196, 75, 0, 0, v21);
+		} else if (v14 > 0) {
+			cs2method_10283(35, 35, 0, 0, v12);
+			cs2method_10283(35, 35, 0, 0, v9);
+			cs2method_10112(175, 39, 0, 0, v12);
+			cs2method_10112(175, 76, 0, 0, v9);
+			v0 = -1;
+		} else {
+			if (v13 > 0) {
+				cs2method_10283(35, 35, 0, 0, v12);
+				cs2method_10112(175, 59, 0, 0, v12);
+				v30 = -1;
+				v0 = -1;
+			}
+		}
+		cs2method_10758(v10, v12);
+		if (cs2method_10846(v6, "") != 0 && v10 != -1) {
+			cs2method_21121(new function<script_8799>(int a0,object a1,int a2) {
+				script_8800(a0, a2, a1);
+				return;
+			}, (string)v6, new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(v12));
+		} else {
+			cs2method_21121(new function<none>() {
+			}, "", new WidgetPointer(v12));
+		}
+		cs2method_10758(v30, v9);
+		if (cs2method_10846(v49, "") != 0 && v30 != -1) {
+			cs2method_21121(new function<script_8799>(object a0,int a1,int a2) {
+				script_8800(a1, a2, a0);
+				return;
+			}, (string)v49, new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(v9));
+		} else {
+			cs2method_21121(new function<none>() {
+			}, "", new WidgetPointer(v9));
+		}
+		cs2method_10758(v0, v21);
+		if (cs2method_10846(v52, "") != 0 && v0 != -1) {
+			cs2method_21121(new function<script_8799>(int a0,int a1,object a2) {
+				script_8800(a0, a1, a2);
+				return;
+			}, (string)v52, new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(v21));
+		} else {
+			cs2method_21121(new function<none>() {
+			}, "", new WidgetPointer(v21));
+		}
+	}
+	int v53 = idx22mapAttribute(v29, 3056);
+	int v18 = idx22mapAttribute(v29, 3057);
+	int v25 = idx22mapAttribute(v29, 3058);
+	int v16 = cs2method_10461(v53, cs2_configs['cfg2621']);
+	int v26 = cs2method_10461(v18, cs2_configs['cfg2622']);
+	int v32 = cs2method_10461(v25, cs2_configs['cfg2623']);
+	cs2method_10026(v43, v15);
+	int v4 = cs2method_10968(cs2method_10060(cs2method_10060(v53, v18), v25), 3);
+	int v17 = cs2method_10968(cs2method_10060(cs2method_10060(v16, v26), v32), 3);
+	script_1883(v4, v17, v27, 0);
+	object v42 = "";
+	int v20 = cs2method_10968(cs2method_10060(cs2method_10060(v53, v18), v25), 3);
+	int v7 = cs2method_10968(cs2method_10060(cs2method_10060(v16, v26), v32), 3);
+	cs2method_10026(v33, "Difficulty:");
+	int v41 = idx22mapAttribute(v29, 3060);
+	int v34 = idx22mapAttribute(v29, 3062);
+	int v44 = idx22mapAttribute(v29, 3064);
+	if (v41 == 20) {
+		cs2method_10758(idx17mapData('i', 'd', 7213, client_configs['cfg3457'].bitcfg17497), v36);
+	} else {
+		cs2method_10758(idx17mapData('i', 'd', 1024, v41), v36);
+	}
+	if (v34 == 20) {
+		cs2method_10758(idx17mapData('i', 'd', 7213, client_configs['cfg3457'].bitcfg17497), v54);
+	} else {
+		cs2method_10758(idx17mapData('i', 'd', 1024, v34), v54);
+	}
+	if (v44 == 20) {
+		cs2method_10758(idx17mapData('i', 'd', 7213, client_configs['cfg3457'].bitcfg17497), v54);
+	} else {
+		cs2method_10758(idx17mapData('i', 'd', 1024, v44), v3);
+	}
+	object v11 = "";
+	object v2 = "";
+	int v5 = idx22mapAttribute(v29, 3061);
+	int v47 = -1;
+	int v48 = idx22mapAttribute(v29, 2366);
+	object v8 = cs2method_10379(v5);
+	if (v48 == 2) {
+		v8 = idx17mapData('i', 's', 7164, v5);
+		switch (v5) {
+			case 0:
+				v47 = 26209;
+				break;
+			case 2:
+				v47 = 26217;
+				break;
+			case 3:
+				v47 = 26225;
+				break;
+			case 4:
+				v47 = 26233;
+				break;
+			case 5:
+				v47 = 26241;
+				break;
+			case 6:
+				v47 = 26245;
+				break;
+			case 13:
+				v47 = 30555;
+				break;
+			case 14:
+				v47 = 30561;
+		}
+	} else if (v48 == 6) {
+		switch (v5) {
+			case 1:
+				v8 = "The Whaler";
+				break;
+			case 2:
+				v8 = "The Biologist";
+				break;
+			case 3:
+				v8 = "The Occultist";
+				break;
+			case 4:
+				v8 = "The Assassin";
+				break;
+			case 5:
+				v8 = "The Convict";
+				break;
+			case 6:
+				v8 = "The Missionary";
+				break;
+			case 7:
+				v8 = "The Trapper";
+				break;
+			case 8:
+				v8 = "The Chef";
+				break;
+			case 9:
+				v8 = "The Architect";
+		}
+	} else if (v48 == 7) {
+		v8 = "New Trait: " + idx22mapAttribute(idx17mapData('i', 'J', 2175, v5), 3090);
+	} else {
+		if (v48 == 4) {
+			if (v5 <= 9) {
+				switch (script_4223()) {
+					default:
+						v8 = "10,000";
+						break;
+					case 4:
+						v8 = "15,000";
+						break;
+					case 5:
+						v8 = "20,000";
+						break;
+					case 6:
+						v8 = "25,000";
+						break;
+					case 7:
+						v8 = "30,000";
+						break;
+					case 8:
+						v8 = "35,000";
+				}
+			} else {
+				switch (script_4223()) {
+					default:
+						v8 = "20,000 x2";
+						break;
+					case 4:
+						v8 = "25,000 x2";
+						break;
+					case 5:
+						v8 = "30,000 x2";
+						break;
+					case 6:
+						v8 = "35,000 x2";
+						break;
+					case 7:
+						v8 = "40,000 x2";
+						break;
+					case 8:
+						v8 = "45,000 x2";
+				}
+			}
+		}
+	}
+	if (cs2method_10846(v8, "") != 0 && cs2method_10846(v8, "0") != 0) {
+		cs2method_10026(v38, v8);
+		object v55 = cs2method_10427(idx17mapData('i', 's', 1025, v41), ": " + (string)v8);
+		if (v48 == 2) {
+			v55 = "Unlock island: " + idx17mapData('i', 's', 7164, v5);
+		} else if (v48 == 7) {
+			v55 = "Captain gains a trait: " + idx22mapAttribute(idx17mapData('i', 'J', 2175, v5), 3090);
+		} else {
+			if (v48 == 4) {
+				v55 = "Experience: " + (string)v8;
+			}
+		}
+		cs2method_21121(new function<script_8799>(int a0,int a1,object a2) {
+			script_8800(a0, a1, a2);
+			return;
+		}, (string)v55, new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(v36));
+	}
+	int v46 = idx22mapAttribute(v29, 3063);
+	object v31 = cs2method_10379(v46);
+	if (v48 == 2 && v47 != -1) {
+		cs2method_10758(itemDefsAttribute(v47, 3080), v54);
+		object v55 = "Unlock crewman: " + (string)cs2method_10018(v47);
+		cs2method_21121(new function<script_8799>(int a0,int a1,object a2) {
+			script_8800(a1, a0, a2);
+			return;
+		}, (string)v55, new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(v54));
+		v31 = "";
+	}
+	if (cs2method_10846(v31, "") != 0 && cs2method_10846(v31, "0") != 0) {
+		cs2method_10026(v28, v31);
+		object v55 = cs2method_10427(idx17mapData('i', 's', 1025, v34), ": " + (string)v31);
+		cs2method_21121(new function<script_8799>(object a0,int a1,int a2) {
+			script_8800(a1, a2, a0);
+			return;
+		}, (string)v55, new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(v54));
+	}
+	int v1 = idx22mapAttribute(v29, 3065);
+	object v19 = cs2method_10379(v1);
+	if (cs2method_10846(v19, "") != 0 && cs2method_10846(v19, "0") != 0) {
+		cs2method_10026(v22, v19);
+		object v55 = cs2method_10427(idx17mapData('i', 's', 1025, v44), ": " + (string)v19);
+		cs2method_21121(new function<script_8799>(object a0,int a1,int a2) {
+			script_8800(a1, a2, a0);
+			return;
+		}, (string)v55, new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(v3));
+	}
+	script_1885();
+	return;
+}

@@ -1,0 +1,24 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6460(int a0) {
+	client_configs['cfg256'].bitcfg673 = a0;
+	cs2method_10670(14378, 1, 0, 100);
+	script_6876(a0);
+	script_7488(a0);
+	script_6473();
+	script_7487(a0);
+	script_6443(0, 0, 200, 1, 1);
+	cs2method_10467(1, 85917754);
+	cs2method_10467(1, 85917776);
+	return;
+}

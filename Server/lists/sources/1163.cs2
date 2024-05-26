@@ -1,0 +1,102 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_1163(int a0,int a1,object a2,int a3,int a4,int a5) {
+	flow_0:
+		int v20 = 0;
+		int v17 = 0;
+		int v12 = 0;
+		int v18 = 0;
+		int v15 = 0;
+		int v11 = 0;
+		int v19 = 0;
+		int v14 = 0;
+		int v10 = -1;
+		int v21 = 0;
+		IF (a1 == -1) 
+			GOTO	flow_1
+		GOTO	flow_2
+	flow_1:
+		IF (cs2method_10324(a3) == 1) 
+			GOTO	flow_3
+	flow_2:
+		IF (cs2method_11038(a3, a1) == 1) 
+			GOTO	flow_3
+		GOTO	flow_24
+	flow_3:
+		if (script_4761(a5) == 0) {
+			return;
+		}
+		if (cs2_configs['cfg2'] != 1) {
+			int v3 = cs2method_10060(script_1743(), 5);
+			int v4 = script_1744();
+			int v6 = cs2method_10060(cs2method_10060(v4, cs2method_10664()), 5);
+			int v7 = cs2method_10982(a0);
+			if (v7 != -1 && a4 >= cs2method_10236(v7)) {
+				a4 = cs2method_10236(v7);
+			}
+			int v8 = cs2method_10060(4, cs2method_10509(cs2method_10461(a4, 4), 20452, a2));
+			int v1 = cs2method_10060(cs2method_10060(4, cs2method_10051(13, cs2method_10805(cs2method_10461(a4, 4), 20452, a2))), 3);
+			if (v7 != -1) {
+				int v0 = cs2method_10461(v3, cs2method_10134(v7));
+				int v13 = cs2method_10461(v6, cs2method_10718(v7));
+				if (v0 < 0) {
+					v3 = cs2method_10134(v7);
+					v0 = 0;
+				}
+				if (v13 < 0) {
+					v6 = cs2method_10718(v7);
+					v13 = 0;
+				}
+				if (v0 > 0) {
+					int v5 = cs2method_10060(cs2method_10461(v0, cs2method_10236(v7)), v8);
+					if (v5 > 0) {
+						v3 = cs2method_10461(v3, v5);
+					}
+				}
+				if (v13 > 0) {
+					int v2 = cs2method_10060(cs2method_10461(v13, cs2method_10823(v7)), v1);
+					if (v2 > 0) {
+						if (v4 > v1 && cs2method_10664() < v1) {
+							v6 = cs2method_10461(v4, v1);
+						} else {
+							v6 = cs2method_10461(cs2method_10461(cs2method_10461(v6, v2), cs2method_10664()), 10);
+						}
+					}
+				}
+			}
+			int v9 = cs2method_11048(v3, 0);
+			int v16 = cs2method_11048(v6, 0);
+			cs2method_10283(v8, v1, 0, 0, a0);
+			cs2method_10112(v9, v16, 0, 0, a0);
+			cs2method_10273(a0);
+			cs2method_10606(a0, 3, 0);
+			cs2method_10013(cs2method_10236(a0), cs2method_10823(a0), 0, 0);
+			cs2method_10238(1);
+			cs2method_10811(921102);
+			cs2method_10606(a0, 3, 1);
+			cs2method_10013(cs2method_10236(a0), cs2method_10823(a0), 0, 0);
+			cs2method_10238(0);
+			cs2method_10811(15461606);
+			cs2method_10606(a0, 4, 2);
+			cs2method_10013(cs2method_10461(a4, 4), cs2method_10823(a0), 0, 0);
+			cs2method_10063(2, 0, 0, 0);
+			cs2method_10797(a2);
+			cs2method_11105(0, 1, 13);
+			cs2method_10692(20452);
+			cs2method_10811(16101953);
+			cs2_configs['cfg2'] = 1;
+		}
+	flow_24:
+		return;
+}

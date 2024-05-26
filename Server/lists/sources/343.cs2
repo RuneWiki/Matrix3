@@ -1,0 +1,134 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_343(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10) {
+	if (a0 == -1) {
+		a0 = script_8101();
+	}
+	int v0 = -1;
+	if (cs2_configs['cfg622'] != -1) {
+		v0 = cs2method_10554(cs2_configs['cfg622']);
+		if (v0 == -1) {
+			v0 = 28;
+		}
+	}
+	int v4 = script_2785(v0);
+	if (cs2method_10580() == 0) {
+		cs2method_10565(0, idx22mapAttribute(idx17mapData('i', 'J', 7716, 1000), 3503));
+		if (cs2method_10781(cs2_configs['cfg622'], v4) == 1) {
+			cs2method_10905(v4, cs2_configs['cfg622']);
+		} else {
+			cs2method_11118(v4);
+		}
+	} else {
+		cs2method_10375(0, 17993);
+		cs2method_10375(1, 17994);
+		cs2method_10375(2, 17995);
+		int v6 = v4;
+		/* 
+			mgi.tools.jagdecs2.DecompilerException: No documentation for:CALL_CS2	8102
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:198)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+				at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+				at tests.Main.main(Main.java:69)
+			
+		 */
+	}
+	script_1372(cs2method_10175(v4));
+	script_291(0, a5, a6, a8, a3, a7);
+	if (cs2_configs['cfg3935'].bitcfg21368 == 1) {
+		script_1374(0);
+	} else {
+		script_1374(1);
+	}
+	if (cs2_configs['cfg3935'].bitcfg21369 == 1) {
+		script_1376(0, a7, a0);
+	} else {
+		script_1376(1, a7, a0);
+	}
+	script_9639();
+	if (client_configs['cfg3933'].bitcfg20967 == 12 && client_configs['cfg2449'].bitcfg11870 == 70 && client_configs['cfg2145'].bitcfg11885 == 0 && script_9635(23) == 0) {
+		script_9636(23);
+	}
+	script_285(a10);
+	script_1839(client_configs['cfg2805'].bitcfg14108, a1, a2, a9);
+	cs2method_20243(new function<script_342>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10) {
+		script_343(a9, a4, a0, a6, a10, a3, a5, a2, a7, a8, a1);
+		return;
+	}, new WidgetPointer(a4), new WidgetPointer(a10), new WidgetPointer(a1), new WidgetPointer(a2), new WidgetPointer(a9), new WidgetPointer(a3), new WidgetPointer(a7), new WidgetPointer(a5), new WidgetPointer(a6), new WidgetPointer(a8), new WidgetPointer(a0), 622, 1, "IIIIIIIIIIIY", new WidgetPointer(a4));
+	cs2method_20348(new function<script_1404>(int a0,int a1,int a2,int a3,int a4,int a5,int a6) {
+		script_285(a5);
+		script_1839(client_configs['cfg2805'].bitcfg14108, a0, a2, a6);
+		if (a3 != client_configs['cfg2805'].bitcfg14110) {
+			cs2method_20348(load function<1404>, new WidgetPointer(a5), new WidgetPointer(a0), new WidgetPointer(a2), new WidgetPointer(a6), new WidgetPointer(a4), new WidgetPointer(a1), client_configs['cfg2805'].bitcfg14110, 2805, 2807, 2, "IIIIIIiY", new WidgetPointer(a1));
+			script_2046(a4);
+		}
+		script_307();
+		return;
+	}, new WidgetPointer(a10), new WidgetPointer(a1), new WidgetPointer(a2), new WidgetPointer(a9), new WidgetPointer(a7), new WidgetPointer(a4), client_configs['cfg2805'].bitcfg14110, 2805, 2807, 2, "IIIIIIiY", new WidgetPointer(a4));
+	cs2_configs['cfg3703'] = -1;
+	script_8841(31, 1);
+	cs2_configs['cfg2545'] = "";
+	cs2method_11127(1, a3, "Search");
+	cs2method_20486(new function<script_1766>() {
+		script_8841(32, 1);
+		return;
+	}, "", new WidgetPointer(a3));
+	object v3 = "Search";
+	cs2method_21121(new function<script_8799>(int a0,int a1,object a2) {
+		script_8800(a0, a1, a2);
+		return;
+	}, (string)v3, new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(a3));
+	int v1 = 0;
+	int v5 = 0;
+	int v2 = cs2_configs['cfg622'];
+	if (client_configs['cfg1293'].bitcfg3617 == 1 && v4 == 28 && cs2method_10771() == 1) {
+		v2 = 47664550;
+	}
+	if (v2 != -1) {
+		int v7 = v2;
+		opc_struct11111(2,0,0) v6 = cs2method_11111(v7);
+		int v8 = v6.intpart_1;
+		int v9 = v6.intpart_0;
+		if (v9 < 0 || v8 < 0) {
+			v2 = cs2method_10327(0, cs2method_10635(v2), script_686(cs2method_10461(cs2method_10808(v2), 1), 4), cs2method_10339(v2));
+			int v13 = v2;
+			opc_struct11111(2,0,0) v12 = cs2method_11111(v13);
+			int v10 = v12.intpart_1;
+			int v11 = v12.intpart_0;
+			if (v11 < 0 || v10 < 0) {
+				v2 = cs2method_10327(0, cs2method_10635(v2), script_686(cs2method_10461(cs2method_10808(v2), 1), 4), cs2method_10339(v2));
+				int v13 = v2;
+				opc_struct11111(2,0,0) v11 = cs2method_11111(v13);
+				int v12 = v11.intpart_1;
+				int v10 = v11.intpart_0;
+				if (v10 < 0 || v12 < 0) {
+					return;
+				}
+			}
+		}
+		cs2method_20162(new function<script_2054>(int a0,int a1,int a2) {
+			if (cs2method_10133() >= a1) {
+				if (cs2method_10580() == 1) {
+					script_7954(a0);
+				} else {
+					cs2method_10636(a0);
+				}
+				cs2method_20162(new function<none>() {
+				}, "", new WidgetPointer(a2));
+			}
+			return;
+		}, cs2method_10060(cs2method_10133(), 4), new WidgetPointer(a4), v2, "iIc", new WidgetPointer(a4));
+	}
+	return;
+}

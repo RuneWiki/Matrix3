@@ -1,0 +1,26 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1253(object a0) {
+	object v0 = "There was an error generating the name. Please try again.";
+	if (cs2method_10265(a0) <= 0) {
+		script_1247(0, 0, v0);
+	} else {
+		cs2_configs['cfg2563'] = (string)a0;
+		cs2_configs['cfg1099'] = cs2method_10265(cs2_configs['cfg2563']);
+		script_3218(4194358, cs2_configs['cfg2563'], 4194359, 4194360, 16);
+		cs2method_10026(4194359, cs2_configs['cfg2563']);
+		cs2method_10467(1, 4194339);
+		cs2method_10467(1, 4194311);
+	}
+	return;
+}

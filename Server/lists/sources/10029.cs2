@@ -1,0 +1,66 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_10029_struct(7,16,0) script_10029(int a0,int a1,object a2,object a3,int a4,int a5,object a6,object a7,object a8,object a9,object a10,object a11,object a12,object a13,object a14) {
+	int v3 = 0;
+	int v12 = 0;
+	object v15 = "";
+	int v26 = 0;
+	object v1 = "";
+	object v18 = "";
+	object v27 = "";
+	object v17 = "";
+	if (a4 == 1) {
+		int v32 = a1;
+		int v31 = a0;
+		script_9926_struct(2,0,0) v36 = script_9926(v32, v31);
+		v12 = v36.intpart_1;
+		int v37 = v36.intpart_0;
+		v1 = script_9923(a1, 0, a0);
+		v18 = script_9923(a1, 1, a0);
+		v27 = script_9923(a1, 2, a0);
+		v17 = script_9923(a1, 3, a0);
+		v15 = script_9133(a1);
+		int v35 = a1;
+		int v33 = v37;
+		int v34 = a5;
+		script_10027_struct(2,0,0) v38 = script_10027(v35, v33, v34);
+		a5 = v38.intpart_1;
+		v3 = v38.intpart_0;
+		v26 = script_10026(a1, v3);
+	}
+	int v2 = a4;
+	int v6 = a1;
+	int v8 = v3;
+	int v19 = v12;
+	int v10 = a5;
+	int v13 = v26;
+	int v0 = 18;
+	object v7 = a13;
+	object v24 = a9;
+	object v23 = a2;
+	object v30 = a14;
+	object v14 = a7;
+	object v16 = a8;
+	object v25 = a12;
+	object v29 = a6;
+	object v11 = a10;
+	object v21 = a3;
+	object v5 = a11;
+	object v20 = v15;
+	object v22 = v1;
+	object v9 = v18;
+	object v4 = v27;
+	object v28 = v17;
+	cs2method_10351();
+	return new script_10029_struct(v2, v6, v8, v19, v10, v13, v0, v7, v24, v23, v30, v14, v16, v25, v29, v11, v21, v5, v20, v22, v9, v4, v28);
+}

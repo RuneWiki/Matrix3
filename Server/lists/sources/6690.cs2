@@ -1,0 +1,37 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6690(int a0,int a1) {
+	int v0 = cs2method_10461(cs2_configs['cfg2014'], client_configs['cfg1572'].bitcfg4881);
+	if (v0 > 0) {
+		int v1 = cs2method_11048(cs2method_10968(v0, 3), 1);
+		cs2_configs['cfg2014'] = cs2method_10461(cs2_configs['cfg2014'], v1);
+	}
+	if (cs2_configs['cfg2014'] > client_configs['cfg1572'].bitcfg4881) {
+		cs2method_10026(a1, "Competence Points: " + "<col=ffffff>" + (string)cs2method_10055(cs2_configs['cfg2014'], 1) + "</col>");
+		if (a0 == -1) {
+			cs2method_20162(new function<script_6689>(int a0,int a1) {
+				if (cs2method_10133() >= a0 || cs2_configs['cfg2014'] < client_configs['cfg1572'].bitcfg4881) {
+					cs2_configs['cfg2014'] = client_configs['cfg1572'].bitcfg4881;
+				}
+				script_6690(a1, a0);
+				return;
+			}, new WidgetPointer(a1), cs2method_10060(cs2method_10133(), 10), "Ii", new WidgetPointer(a1));
+		}
+	} else {
+		cs2_configs['cfg2014'] = client_configs['cfg1572'].bitcfg4881;
+		cs2method_10026(a1, "Competence Points: " + (string)cs2method_10055(cs2_configs['cfg2014'], 1));
+		cs2method_20162(new function<none>() {
+		}, "", new WidgetPointer(a1));
+	}
+	return;
+}

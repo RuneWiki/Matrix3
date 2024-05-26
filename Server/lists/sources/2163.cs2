@@ -1,0 +1,49 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2163(int a0,int a1,int a2,int a3) {
+	int v2 = cs2method_10968(cs2method_10060(a0, a2), 2);
+	int v1 = globalarray_0[v2];
+	globalarray_0[v2] = globalarray_0[a2];
+	globalarray_0[a2] = v1;
+	int v8 = a0;
+	int v3 = a0;
+	int v6 = -1;
+	object v0 = "null";
+	object v4 = "null";
+	object v7 = cs2method_10181(idx22mapAttribute(idx17mapData('i', 'J', a1, v1), 846));
+	if (cs2method_10846(v7, "") == 0) {
+		v7 = cs2method_10181(idx22mapAttribute(idx17mapData('i', 'J', a1, v1), 845));
+	}
+	while (v3 < a2) {
+		object v5 = cs2method_10181(idx22mapAttribute(idx17mapData('i', 'J', a1, globalarray_0[v3]), 846));
+		if (cs2method_10846(v5, "") == 0) {
+			v5 = cs2method_10181(idx22mapAttribute(idx17mapData('i', 'J', a1, globalarray_0[v3]), 845));
+		}
+		if (cs2method_10846(v5, v7) < cs2method_10147(v3, 1)) {
+			int v9 = globalarray_0[v3];
+			globalarray_0[v3] = globalarray_0[v8];
+			globalarray_0[v8] = v9;
+			v8 = cs2method_10060(v8, 1);
+		}
+		v3 = cs2method_10060(v3, 1);
+	}
+	globalarray_0[a2] = globalarray_0[v8];
+	globalarray_0[v8] = v1;
+	if (a0 < cs2method_10461(v8, 1)) {
+		script_2163(0, a1, a0, cs2method_10461(v8, 1));
+	}
+	if (cs2method_10060(v8, 1) < a2) {
+		script_2163(0, a1, cs2method_10060(v8, 1), a2);
+	}
+	return;
+}

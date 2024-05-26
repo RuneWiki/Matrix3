@@ -1,0 +1,25 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_3814_struct(2,0,0) script_3814() {
+	int v0 = 0;
+	int v1 = 45;
+	if (cs2method_10614() == 2) {
+		v0 = cs2method_10060(cs2method_10968(30, 2), 4);
+		v1 = cs2method_10060(37, 4);
+	} else {
+		if (cs2method_10236(96796678) <= cs2method_10060(552, 488)) {
+			v1 = 82;
+		}
+	}
+	return new script_3814_struct(v0, v1);
+}

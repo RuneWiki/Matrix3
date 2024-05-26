@@ -1,0 +1,102 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_324(int a0,int a1,int a2) {
+	int v3 = cs2method_10872(client_configs['cfg1616'].bitcfg5126, 500);
+	cs2method_10283(0, cs2method_10122(cs2method_10461(500, v3), 500, 16384), 1, 2, a0);
+	int v4 = cs2method_10060(164, cs2method_10122(v3, 500, 91));
+	int v0 = cs2method_10461(164, cs2method_10122(v3, 500, 164));
+	int v2 = cs2method_10461(41, cs2method_10122(v3, 500, 41));
+	int v1 = script_693(v4, v0, v2);
+	cs2method_10520(v1, a0);
+	cs2method_10520(v1, a2);
+	switch (cs2method_10122(cs2method_10060(v3, 5), 500, 25)) {
+		case 0:
+			cs2method_10336(16353, a1);
+			break;
+		case 1:
+			cs2method_10336(16354, a1);
+			break;
+		case 2:
+			cs2method_10336(16355, a1);
+			break;
+		case 3:
+			cs2method_10336(16356, a1);
+			break;
+		case 4:
+			cs2method_10336(16357, a1);
+			break;
+		case 5:
+			cs2method_10336(16358, a1);
+			break;
+		case 6:
+			cs2method_10336(16359, a1);
+			break;
+		case 7:
+			cs2method_10336(16360, a1);
+			break;
+		case 8:
+			cs2method_10336(16361, a1);
+			break;
+		case 9:
+			cs2method_10336(16362, a1);
+			break;
+		case 10:
+			cs2method_10336(16363, a1);
+			break;
+		case 11:
+			cs2method_10336(16364, a1);
+			break;
+		case 12:
+			cs2method_10336(16365, a1);
+			break;
+		case 13:
+			cs2method_10336(16366, a1);
+			break;
+		case 14:
+			cs2method_10336(16367, a1);
+			break;
+		case 15:
+			cs2method_10336(16368, a1);
+			break;
+		case 16:
+			cs2method_10336(16369, a1);
+			break;
+		case 17:
+			cs2method_10336(16370, a1);
+			break;
+		case 18:
+			cs2method_10336(16371, a1);
+			break;
+		case 19:
+			cs2method_10336(16372, a1);
+			break;
+		case 20:
+			cs2method_10336(16373, a1);
+			break;
+		case 21:
+			cs2method_10336(16374, a1);
+			break;
+		case 22:
+			cs2method_10336(16375, a1);
+			break;
+		case 23:
+			cs2method_10336(16376, a1);
+			break;
+		case 24:
+			cs2method_10336(16377, a1);
+			break;
+		default:
+			cs2method_10336(16378, a1);
+	}
+	return;
+}

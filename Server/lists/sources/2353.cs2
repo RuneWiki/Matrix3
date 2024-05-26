@@ -1,0 +1,21 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_2353(int a0) {
+	if (a0 == -1) {
+		return 0;
+	}
+	if (client_configs['cfg3079'] < 2000 || idx22mapAttribute(a0, 4245) > client_configs['cfg3079']) {
+		return 0;
+	}
+	return 1;
+}

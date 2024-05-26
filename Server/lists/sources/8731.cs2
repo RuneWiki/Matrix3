@@ -1,0 +1,19 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8731() {
+	if (cs2_configs['cfg3477'] == 1 && cs2_configs['cfg3478'] != 9) {
+		cs2_configs['cfg3478'] = 9;
+		script_8732();
+	}
+	return;
+}

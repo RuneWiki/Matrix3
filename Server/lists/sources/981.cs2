@@ -1,0 +1,47 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_981_struct(1,1,0) script_981(int a0) {
+	switch (a0) {
+		case 0:
+			return new script_981_struct(0, "Bronze");
+		case 1:
+			return new script_981_struct(0, "Iron");
+		case 2:
+			return new script_981_struct(0, "Steel");
+		case 3:
+			return new script_981_struct(0, "Black");
+		case 4:
+			return new script_981_struct(1, "White");
+		case 5:
+			return new script_981_struct(0, "Mithril");
+		case 6:
+			return new script_981_struct(0, "Adamant");
+		case 7:
+			return new script_981_struct(0, "Rune");
+		case 8:
+			return new script_981_struct(0, "Dragon");
+		case 9:
+			return new script_981_struct(1, "Barrows");
+		case 10:
+			return new script_981_struct(0, "Special");
+		case 11:
+			return new script_981_struct(1, "Salamanders");
+		case 12:
+			return new script_981_struct(1, "Minigames");
+		case 13:
+			return new script_981_struct(0, "Dungeoneering");
+		case 14:
+			return new script_981_struct(0, "Milestones");
+	}
+	return new script_981_struct(-1, "");
+}

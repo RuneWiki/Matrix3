@@ -1,0 +1,46 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1792(int a0,int a1,int a2,int a3,int a4,int a5) {
+	if (client_configs['cfg1382'].bitcfg4098 == 0) {
+		cs2method_10520(16750623, a4);
+		cs2method_10520(16750623, a2);
+		cs2method_10758(444, a0);
+		cs2method_10026(a2, "ITEMS ARE" + "<br>" + "SAFE");
+	} else {
+		cs2method_10520(16776960, a4);
+		cs2method_10520(16776960, a2);
+		cs2method_10758(445, a0);
+		cs2method_10026(a2, "ITEMS ARE" + "<br>" + "DROPPED");
+	}
+	cs2method_10634(1, a0);
+	int v10 = cs2method_10509(512, 494, cs2method_10744(a4));
+	int v7 = cs2method_11048(cs2method_10509(512, 494, cs2method_10744(a2)), v10);
+	int v6 = cs2method_10060(v7, 6);
+	int v9 = 5;
+	cs2method_10112(0, v9, 0, 0, a4);
+	int v8 = cs2method_10805(v6, 494, cs2method_10744(a4));
+	int v0 = cs2method_10060(cs2method_10051(v8, 10), 3);
+	cs2method_10283(v6, v0, 0, 0, a4);
+	int v5 = cs2method_10461(cs2method_10060(v9, v0), 1);
+	cs2method_10112(cs2method_10968(cs2method_10461(v6, cs2method_10236(a5)), 2), v5, 0, 0, a5);
+	int v3 = cs2method_10461(cs2method_10060(v5, cs2method_10823(a5)), 1);
+	cs2method_10112(0, v3, 0, 0, a2);
+	int v2 = cs2method_10805(v6, 494, cs2method_10744(a2));
+	int v1 = cs2method_10060(cs2method_10051(v2, 10), 3);
+	cs2method_10283(v6, v0, 0, 0, a2);
+	int v4 = cs2method_10060(cs2method_10060(v3, v1), 3);
+	cs2method_10283(v6, v4, 0, 0, a3);
+	cs2method_10283(v6, v4, 0, 0, a0);
+	script_1086(a3, 0, 0, 0);
+	return;
+}

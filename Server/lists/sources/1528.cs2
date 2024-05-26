@@ -1,0 +1,37 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_1528(int a0) {
+	switch (a0) {
+		case 0:
+			return cs2_configs['cfg2033'];
+		case 1:
+			return cs2_configs['cfg2034'];
+		case 2:
+			return cs2_configs['cfg2035'];
+		case 3:
+			return cs2_configs['cfg2036'];
+		case 4:
+			return cs2_configs['cfg2037'];
+		case 5:
+			return cs2_configs['cfg2038'];
+		case 6:
+			return cs2_configs['cfg2039'];
+		case 7:
+			return cs2_configs['cfg2040'];
+		case 8:
+			return cs2_configs['cfg2041'];
+		case 9:
+			return cs2_configs['cfg2042'];
+	}
+	return 0;
+}

@@ -1,0 +1,161 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+string script_6036(int a0,int a1,int a2) {
+	int v21;
+	if (a0 == -1) {
+		return "N/A";
+	}
+	int v20 = 0;
+	int v1 = 0;
+	if (itemDefsAttribute(a2, 2549) > -1) {
+		return idx17mapData('S', 's', 680, a0) + " XP";
+	}
+	switch (a2) {
+		default:
+			v21 = cs2method_10968(a1, 10);
+			break;
+		case 28904:
+		case 28905:
+		case 28906:
+		case 28907:
+		case 24151:
+		case 31320:
+		case 13732:
+		case 31591:
+		case 30640:
+		case 28743:
+		case 28747:
+		case 28746:
+		case 28745:
+		case 28744:
+		case 28751:
+		case 28750:
+		case 28749:
+		case 28748:
+		case 28754:
+		case 28752:
+		case 28753:
+		case 25070:
+		case 30638:
+		case 30639:
+		case 30637:
+		case 30407:
+		case 29933:
+		case 30408:
+		case 29934:
+		case 29935:
+		case 23716:
+		case 23714:
+		case 23715:
+		case 23713:
+		case 20936:
+		case 30324:
+		case 30325:
+		case 30326:
+		case 30327:
+		case 20935:
+			return idx17mapData('S', 's', 680, a0) + " XP";
+		case 28320:
+			return idx17mapData('S', 's', 680, a0) + " boost";
+		case 18767:
+		case 14058:
+		case 2528:
+			v21 = cs2method_10051(cs2method_10338(a0), 10);
+			break;
+		case 11640:
+			v21 = cs2method_10051(cs2method_10338(a0), 15);
+			break;
+		case 13463:
+			int v12 = cs2method_10338(a0);
+			if (v12 <= 18) {
+				v21 = cs2method_10461(idx17mapData('i', 'i', 716, cs2method_10060(v12, 1)), idx17mapData('i', 'i', 716, v12));
+			} else {
+				v21 = cs2method_10051(cs2method_10338(a0), 25);
+			}
+			break;
+		case 18782:
+			int v23 = cs2method_10338(a0);
+			if (v23 < 30) {
+				v21 = cs2method_10461(idx17mapData('i', 'i', 716, cs2method_10060(v23, 1)), idx17mapData('i', 'i', 716, v23));
+			} else {
+				int v26 = cs2method_10060(cs2method_10461(cs2method_10051(v23, v23), cs2method_10051(2, v23)), 100);
+				int v25 = cs2method_10051(v26, cs2method_10968(cs2method_10051(v23, 10000), 20));
+				v21 = cs2method_10968(v25, 10000);
+			}
+			break;
+		case 20708:
+		case 25977:
+			int v19 = cs2method_10338(a0);
+			int v8 = cs2method_10213(v19, 2);
+			v21 = cs2method_10060(cs2method_10461(v8, cs2method_10051(2, v19)), 100);
+			break;
+		case 20960:
+			int v22 = cs2method_10338(a0);
+			int v13 = cs2method_10060(cs2method_10461(cs2method_10213(v22, 2), cs2method_10051(2, v22)), 100);
+			v21 = cs2method_10122(3, 2, v13);
+			break;
+		case 30800:
+			int v18 = cs2method_10338(a0);
+			int v0 = cs2method_10060(cs2method_10461(cs2method_10213(v18, 2), cs2method_10051(2, v18)), 100);
+			v21 = cs2method_10122(4, 2, v0);
+			break;
+		case 30801:
+			int v14 = cs2method_10338(a0);
+			int v9 = cs2method_10060(cs2method_10461(cs2method_10213(v14, 2), cs2method_10051(2, v14)), 100);
+			v21 = cs2method_10122(5, 2, v9);
+			break;
+		case 25454:
+			int v10 = cs2method_10338(a0);
+			int v16 = cs2method_10213(v10, 2);
+			int v4 = cs2method_10060(cs2method_10461(v16, cs2method_10051(2, v10)), 100);
+			v21 = cs2method_10051(v4, 10);
+			break;
+		case 27367:
+		case 27366:
+			return idx17mapData('S', 's', 680, a0) + " XP";
+		case 28567:
+		case 28568:
+		case 28569:
+		case 28570:
+		case 28571:
+			return idx17mapData('S', 's', 680, a0) + " XP";
+		case 28908:
+		case 28909:
+		case 28910:
+			return idx17mapData('S', 's', 680, a0) + " XP";
+		case 25201:
+		case 25200:
+		case 26492:
+			return idx17mapData('S', 's', 680, a0) + " XP";
+		case 30226:
+			v21 = cs2method_10968(cs2method_10051(a1, idx17mapData('S', 'i', 8103, a0)), 10);
+			break;
+		case 31322:
+			return idx17mapData('S', 's', 680, a0) + " XP";
+		case 29293:
+			int v17 = idx17mapData('i', 'i', 7891, cs2method_10338(a0));
+			int v15 = cs2method_10968(v17, 10);
+			int v3 = cs2method_10051(v15, 4);
+			int v2 = cs2method_10051(v3, cs2_configs['cfg4190']);
+			int v7 = cs2method_10122(v2, 100, 75);
+			v21 = cs2method_10968(v7, 10);
+			break;
+		case 31086:
+			int v11 = idx17mapData('i', 'i', 7891, cs2method_10338(a0));
+			int v24 = cs2method_10968(v11, 10);
+			int v6 = cs2method_10051(v24, 4);
+			int v5 = cs2method_10051(v6, cs2_configs['cfg4190']);
+			v21 = cs2method_10968(v5, 10);
+	}
+	return idx17mapData('S', 's', 680, a0) + ": " + (string)cs2method_10055(v21, 1) + " XP";
+}

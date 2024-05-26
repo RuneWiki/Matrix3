@@ -1,0 +1,21 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8842() {
+	int v1 = 0;
+	for (int v0 = script_8855(v1); v0 > 0; v0 = script_8855(v1)) {
+		script_8843(v0, 0);
+		v1 = cs2method_10060(v1, 1);
+	}
+	script_8851();
+	return;
+}

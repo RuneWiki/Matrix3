@@ -1,0 +1,24 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7004(int a0,int a1,int a2,int a3) {
+	if (a0 != -1) {
+		if (cs2method_11038(a3, a0) == 1) {
+			script_7005(a3, a0, a1, a2);
+		}
+	} else {
+		if (cs2method_10324(a3) == 1) {
+			script_7005(a3, a0, a1, a2);
+		}
+	}
+	return;
+}

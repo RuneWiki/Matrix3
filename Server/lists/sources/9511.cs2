@@ -1,0 +1,183 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9511(int a0,int a1,int a2,int a3,int a4) {
+	int v5 = 0;
+	int v4 = -1;
+	int v2 = 21589;
+	int v6 = 53251250;
+	int v0 = -1;
+	int v1 = 0;
+	int v3 = 25648;
+	object v7 = "World event location";
+	while (v5 < 18) {
+		switch (v5) {
+			case 0:
+				v4 = 93192237;
+				v1 = client_configs['cfg3987'].bitcfg21175;
+				break;
+			case 1:
+				v4 = 93192238;
+				v1 = client_configs['cfg3987'].bitcfg21176;
+				break;
+			case 2:
+				v4 = 93192239;
+				v1 = client_configs['cfg3988'].bitcfg21182;
+				break;
+			case 3:
+				v4 = 93192240;
+				v1 = client_configs['cfg3989'].bitcfg21189;
+				break;
+			case 4:
+				v4 = 93192241;
+				v1 = client_configs['cfg3989'].bitcfg21186;
+				break;
+			case 5:
+				v4 = 93192242;
+				v1 = client_configs['cfg3987'].bitcfg21177;
+				break;
+			case 6:
+				v4 = 93192243;
+				v1 = client_configs['cfg3987'].bitcfg21174;
+				break;
+			case 7:
+				v4 = 93192244;
+				v1 = client_configs['cfg3988'].bitcfg21183;
+				break;
+			case 8:
+				v4 = 93192245;
+				v1 = client_configs['cfg3989'].bitcfg21190;
+				break;
+			case 9:
+				v4 = 93192246;
+				v1 = client_configs['cfg3989'].bitcfg21187;
+				break;
+			case 10:
+				v4 = 93192247;
+				v1 = client_configs['cfg3988'].bitcfg21180;
+				break;
+			case 11:
+				v4 = 93192248;
+				v1 = client_configs['cfg3987'].bitcfg21178;
+				break;
+			case 12:
+				v4 = 93192249;
+				v1 = client_configs['cfg3988'].bitcfg21184;
+				break;
+			case 13:
+				v4 = 93192250;
+				v1 = client_configs['cfg3989'].bitcfg21191;
+				break;
+			case 14:
+				v4 = 93192251;
+				v1 = client_configs['cfg3988'].bitcfg21181;
+				break;
+			case 15:
+				v4 = 93192252;
+				v1 = client_configs['cfg3987'].bitcfg21179;
+				break;
+			case 16:
+				v4 = 93192253;
+				v1 = client_configs['cfg3989'].bitcfg21188;
+				break;
+			case 17:
+				v4 = 93192254;
+				v1 = client_configs['cfg3988'].bitcfg21185;
+		}
+		switch (v1) {
+			case 0:
+				v3 = 25648;
+				v7 = "World event building site.";
+				break;
+			case 1:
+				v3 = 25649;
+				v7 = "World event building site." + "<br>" + "Armadyl's forces have constructed a building here.";
+				break;
+			case 2:
+				v3 = 25650;
+				v7 = "World event building site." + "<br>" + "Bandos's forces have constructed a building here.";
+				break;
+			case 3:
+				v3 = 25651;
+				v7 = "Neutral world event site.";
+				break;
+			case 4:
+				v3 = 25652;
+				v7 = "World event building site." + "<br>" + "Armadyl's forces have constructed a building here.";
+				break;
+			case 5:
+				v3 = 25653;
+				v7 = "World event building site." + "<br>" + "Bandos's forces have constructed a building here.";
+				break;
+			case 6:
+				v3 = 25654;
+				v7 = "World event building site." + "<br>" + "There is a Bandosian convoy nearby.";
+				break;
+			case 7:
+				v3 = 25655;
+				v7 = "World event building site." + "<br>" + "Armadyl's forces have constructed a building here." + "<br>" + "There is a Bandosian convoy nearby.";
+				break;
+			case 8:
+				v3 = 25656;
+				v7 = "World event building site." + "<br>" + "There is an Bandosian convoy nearby.";
+				break;
+			case 9:
+				v3 = 25657;
+				v7 = "Neutral world event site." + "<br>" + "There is an Bandosian convoy nearby.";
+				break;
+			case 10:
+				v3 = 25658;
+				v7 = "World event building site." + "<br>" + "Armadyl's forces have constructed a building here." + "<br>" + "There is an Bandosian convoy nearby.";
+				break;
+			case 11:
+				v3 = 25659;
+				v7 = "World event building site." + "<br>" + "Bandos's forces have constructed a building here." + "<br>" + "There is an Bandosian convoy nearby.";
+				break;
+			case 12:
+				v3 = 25660;
+				v7 = "World event building site." + "<br>" + "There is an Armadylean convoy nearby.";
+				break;
+			case 13:
+				v3 = 25661;
+				v7 = "World event building site." + "<br>" + "Armadyl's forces have constructed a building here." + "<br>" + "There is an Armadylean convoy nearby.";
+				break;
+			case 14:
+				v3 = 25662;
+				v7 = "World event building site." + "<br>" + "Bandos's forces have constructed a building here." + "<br>" + "There is an Armadylean convoy nearby.";
+				break;
+			case 15:
+				v3 = 25663;
+				v7 = "Neutral world event site." + "<br>" + "There is an Armadylean convoy nearby.";
+				break;
+			case 16:
+				v3 = 25664;
+				v7 = "World event building site." + "<br>" + "Armadyl's forces have constructed a building here." + "<br>" + "There is an Armadylean convoy nearby.";
+				break;
+			case 17:
+				v3 = 25665;
+				v7 = "World event building site." + "<br>" + "Bandos's forces have constructed a building here." + "<br>" + "There is an Armadylean convoy nearby.";
+		}
+		int v8 = idx17mapData('i', 'J', 8114, v5);
+		script_4(v4, idx22mapAttribute(v8, 3926), v3, a0, a2, a1, "", a4, a3);
+		if (client_configs['cfg2805'].bitcfg14112 == 1) {
+			cs2method_21121(new function<none>() {
+			}, "", new WidgetPointer(v4));
+		} else {
+			cs2method_21121(new function<script_8799>(int a0,object a1,int a2) {
+				script_8800(a2, a0, a1);
+				return;
+			}, (string)v7, new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(v4));
+		}
+		v5 = cs2method_10060(v5, 1);
+	}
+	return;
+}

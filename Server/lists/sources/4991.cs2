@@ -1,0 +1,50 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4991() {
+	script_4993();
+	script_4994();
+	int v1 = -1;
+	int v0 = 0;
+	if (cs2method_10172() == 1) {
+		int v3 = clan_chat_configs['cfg2575'].bitcfg6507;
+		cs2method_10467(0, 82640932);
+		cs2method_10467(0, 82640933);
+		cs2method_10467(0, 82640934);
+		cs2method_10467(0, 82640935);
+		int v2 = 4;
+		if (v3 >= 2) {
+			cs2method_10467(0, 82640936);
+			v2 = cs2method_10060(v2, 1);
+		}
+		if (v3 >= 3) {
+			cs2method_10467(0, 82640937);
+			cs2method_10467(0, 82640938);
+			v2 = cs2method_10060(v2, 2);
+		}
+		if (v3 >= 5) {
+			cs2method_10467(0, 82640940);
+			cs2method_10467(0, 82641149);
+			v2 = cs2method_10060(v2, 2);
+		}
+		if (v3 >= 6) {
+			cs2method_10467(0, 82640939);
+			v2 = cs2method_10060(v2, 1);
+		}
+		if (cs2method_10038(v2, 2) != 0) {
+			v2 = cs2method_10060(v2, 1);
+		}
+		cs2method_11130(cs2method_10236(82640952), cs2method_10060(cs2method_10051(cs2method_10968(v2, 2), 58), 6), 82640952);
+		script_31(82640951, 82640952, 5666, 5663, 5664, 5665, 5686, 5685);
+	}
+	return;
+}

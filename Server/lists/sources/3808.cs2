@@ -1,0 +1,29 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3808() {
+	int v1 = -1;
+	int v0 = idx17mapData('i', 'J', 7716, 18);
+	cs2method_10467(0, idx22mapAttribute(v0, 3503));
+	if (script_3811() == 1) {
+		script_3810();
+	} else {
+		script_3813(189, 1);
+	}
+	if (cs2_configs['cfg3693'] != 1) {
+		int v3 = idx17mapData('i', 'J', 7716, 1004);
+		cs2method_10467(0, idx22mapAttribute(v3, 3503));
+		int v2 = idx17mapData('i', 'J', 7716, 1002);
+		cs2method_10467(0, idx22mapAttribute(v2, 3503));
+	}
+	return;
+}

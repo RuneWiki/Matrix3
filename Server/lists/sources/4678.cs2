@@ -1,0 +1,19 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4678(int a0,int a1) {
+	int v1 = cs2method_10236(a1);
+	int v2 = cs2method_10968(v1, idx17mapData('i', 'i', 3840, client_configs['cfg2124'].bitcfg9216));
+	int v0 = cs2method_10051(client_configs['cfg2125'].bitcfg9219, v2);
+	cs2method_10283(v0, cs2method_10823(a0), 0, 0, a0);
+	return;
+}

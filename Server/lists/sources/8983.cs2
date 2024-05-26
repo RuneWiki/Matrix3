@@ -1,0 +1,35 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_8983() {
+	switch (script_8925()) {
+		default:
+			return 0;
+		case 1:
+			return 1;
+		case 2:
+		case 3:
+			return 2;
+		case 4:
+		case 5:
+			return 3;
+		case 6:
+		case 7:
+			return 4;
+		case 8:
+			return 5;
+		case 9:
+			return 7;
+		case 10:
+			return 8;
+	}
+}

@@ -1,0 +1,59 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6589() {
+	object v6 = "Total number of " + "<col=ba1626>" + "free" + "</col>" + " bank slots used";
+	object v2 = "Total number of " + "<col=ba1626>" + "member" + "</col>" + " bank slots used";
+	object v5 = "Total number of " + "<col=ba1626>" + "demo" + "</col>" + " bank slots used";
+	int v1 = script_1329();
+	int v4 = cs2method_10461(script_1248(), v1);
+	int v8 = cs2_configs['cfg1038'];
+	int v3 = cs2method_10461(cs2_configs['cfg192'], v8);
+	int v7 = cs2method_10051(cs2method_10461(v1, v8), -1);
+	int v0 = cs2method_10461(v3, cs2method_10461(469, 1));
+	cs2method_10467(0, 49938497);
+	cs2method_10467(1, 49938505);
+	if (v0 > 0) {
+		v8 = cs2method_10060(v8, v0);
+		v3 = cs2method_10461(469, 1);
+		if (v0 == 1) {
+			v6 = "Total number of " + "<col=ba1626>" + "free" + "</col>" + " bank slots used" + "<br>" + "<col=ba1626>" + "Note: this includes an overflow of 1 member item" + "</col>";
+		} else {
+			v6 = "Total number of " + "<col=ba1626>" + "free" + "</col>" + " bank slots used" + "<br>" + "<col=ba1626>" + "Note: this includes an overflow of " + (string)cs2method_10379(v0) + " member items" + "</col>";
+		}
+		v2 = "Total number of " + "<col=ba1626>" + "member" + "</col>" + " bank slots used";
+	} else {
+		if (v7 > 0) {
+			v3 = cs2method_10060(v3, v7);
+			v8 = v1;
+			v6 = "Total number of " + "<col=ba1626>" + "free" + "</col>" + " bank slots used";
+			if (v7 == 1) {
+				v2 = "Total number of " + "<col=ba1626>" + "member" + "</col>" + " bank slots used" + "<br>" + "<col=ba1626>" + "Note: this includes an overflow of 1 free item" + "</col>";
+			} else {
+				v2 = "Total number of " + "<col=ba1626>" + "member" + "</col>" + " bank slots used" + "<br>" + "<col=ba1626>" + "Note: this includes an overflow of " + (string)cs2method_10379(v7) + " free items" + "</col>";
+			}
+		}
+	}
+	cs2method_10026(49938500, cs2method_10379(v8));
+	cs2method_10026(49938503, cs2method_10379(v3));
+	cs2method_21121(new function<script_8799>(object a0,int a1,int a2) {
+		script_8800(a2, a1, a0);
+		return;
+	}, (string)v6, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(762,68));
+	cs2method_21121(new function<script_8799>(int a0,int a1,object a2) {
+		script_8800(a0, a1, a2);
+		return;
+	}, (string)v2, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(762,71));
+	cs2method_10026(49938501, cs2method_10379(v1));
+	cs2method_10026(49938504, cs2method_10379(v4));
+	return;
+}

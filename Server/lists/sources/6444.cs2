@@ -1,0 +1,52 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6444(int a0) {
+	if (a0 == 1337) {
+		cs2method_11127(1, 86245376, "Click");
+		return;
+	}
+	object v1 = "View Combat Settings.";
+	object v5 = "";
+	cs2method_10467(1, 86245382);
+	cs2method_10467(1, 86245385);
+	cs2method_10467(0, 86245383);
+	cs2method_10467(1, 86245384);
+	cs2method_10467(1, 86245386);
+	cs2method_10467(1, 86245381);
+	cs2method_10467(1, 86245380);
+	int v2 = -1;
+	int v0 = -1;
+	int v3 = -1;
+	int v4 = -1;
+	if (a0 == 0 || a0 == 1 || a0 == 2) {
+		cs2method_10026(86245388, v1);
+		switch (cs2method_10262()) {
+			case 1:
+				v2 = 9720;
+				break;
+			case 2:
+				v2 = 10070;
+				break;
+			case 3:
+				v2 = 10071;
+				break;
+			case 6:
+				v2 = 10069;
+				break;
+			default:
+				v2 = 9721;
+		}
+	}
+	cs2method_10758(v2, 86245376);
+	return;
+}

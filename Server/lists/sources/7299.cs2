@@ -1,0 +1,59 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7299() {
+	int v6;
+	int v4;
+	int v7;
+	int v0 = 0;
+	int v5 = -1;
+	int v2 = -1;
+	int v3 = -1;
+	int v1 = -1;
+	while (v0 < cs2method_10894(677)) {
+		int v8 = cs2method_10640(677, v0);
+		if (cs2method_10245(111, 2173, v8) == 1) {
+			v7 = 15581;
+			v6 = 15579;
+			v4 = 15580;
+		} else {
+			v7 = 15584;
+			v6 = 15582;
+			v4 = 15583;
+		}
+		if (cs2method_11038(83624024, v0) == 1) {
+			if (client_configs['cfg3419'].bitcfg17147 == v0) {
+				cs2method_10310(v7);
+				cs2method_20674(new function<none>() {
+				}, "");
+				cs2method_20884(new function<none>() {
+				}, "");
+			} else {
+				cs2method_10310(v6);
+				cs2method_20674(new function<script_688>(int a0,int a1,int a2) {
+					if (cs2method_11038(a0, a1) == 1) {
+						cs2method_10310(a2);
+					}
+					return;
+				}, new WidgetPointer(-32768,3), cs2method_11051(), v4, "Iid");
+				cs2method_20884(new function<script_688>(int a0,int a1,int a2) {
+					if (cs2method_11038(a2, a0) == 1) {
+						cs2method_10310(a1);
+					}
+					return;
+				}, new WidgetPointer(-32768,3), cs2method_11051(), v6, "Iid");
+			}
+		}
+		v0 = cs2method_10060(v0, 1);
+	}
+	return;
+}

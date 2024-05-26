@@ -1,0 +1,44 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1670(object a0,int a1,int a2,int a3,object a4,object a5,object a6,object a7,int a8,object a9) {
+	if (cs2method_11038(a8, a1) == 1) {
+		if (a3 != -1) {
+			if (itemDefsAttribute(a2, 599) > 0) {
+				cs2method_10951(a3, itemDefsAttribute(a2, 599));
+			} else {
+				cs2method_10951(a3, 1);
+			}
+			cs2method_10200(cs2method_10018(a2));
+			cs2method_10057(1, a5);
+			cs2method_10057(2, a4);
+			cs2method_10057(3, a9);
+			cs2method_10057(4, a6);
+			cs2method_10057(5, a0);
+			cs2method_10057(6, "Examine" + "<col=ff9040>");
+			cs2method_10057(7, a7);
+			cs2method_10278(3355443);
+			cs2method_10356(1);
+		} else {
+			cs2method_11070(-1, 0);
+			cs2method_10200("");
+			cs2method_10057(1, "");
+			cs2method_10057(2, "");
+			cs2method_10057(3, "");
+			cs2method_10057(4, "");
+			cs2method_10057(5, "");
+			cs2method_10057(6, "");
+			cs2method_10057(7, "");
+		}
+	}
+	return;
+}

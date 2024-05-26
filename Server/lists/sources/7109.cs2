@@ -1,0 +1,106 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_7109_struct(2,0,0) script_7109(int a0,int a1,int a2,int a3) {
+	if (a0 == -1) {
+		return new script_7109_struct(0, 0);
+	}
+	int v8 = idx22mapAttribute(a0, 2655);
+	int v0 = idx22mapAttribute(a0, 2665);
+	int v2 = idx22mapAttribute(a0, 2686);
+	int v7 = 0;
+	int v3 = 0;
+	int v5 = 1;
+	int v10 = script_7110(a0);
+	int v1 = 0;
+	int v9 = 0;
+	int v6 = 0;
+	while (v8 != -1) {
+		if (v0 != 0) {
+			int v4 = script_7115(-1, -1, v8, a3);
+			if (cs2method_10991(v8) == 1 && v4 != 0) {
+				v6 = 1;
+			}
+			if (v4 == -1) {
+				v7 = 2147483647;
+				v5 = 2147483647;
+			} else if (v2 == 0) {
+				v7 = cs2method_10060(v7, cs2method_10968(v4, cs2method_10051(v0, a1)));
+				v1 = cs2method_10060(v1, cs2method_10968(cs2method_10038(v4, cs2method_10051(v0, a1)), v0));
+				v9 = cs2method_10060(v9, cs2method_10968(cs2method_10051(cs2method_10038(cs2method_10038(v4, cs2method_10051(v0, a1)), v0), v10), v0));
+			} else {
+				v7 = cs2method_10060(v7, cs2method_10968(v4, v0));
+			}
+		}
+		v5 = cs2method_10060(v5, 1);
+		switch (v5) {
+			case 2:
+				v8 = idx22mapAttribute(a0, 2656);
+				v0 = idx22mapAttribute(a0, 2666);
+				v2 = idx22mapAttribute(a0, 2687);
+				break;
+			case 3:
+				v8 = idx22mapAttribute(a0, 2657);
+				v0 = idx22mapAttribute(a0, 2667);
+				v2 = idx22mapAttribute(a0, 2688);
+				break;
+			case 4:
+				v8 = idx22mapAttribute(a0, 2658);
+				v0 = idx22mapAttribute(a0, 2668);
+				v2 = idx22mapAttribute(a0, 2689);
+				break;
+			case 5:
+				v8 = idx22mapAttribute(a0, 2659);
+				v0 = idx22mapAttribute(a0, 2669);
+				v2 = idx22mapAttribute(a0, 2690);
+				break;
+			case 6:
+				v8 = idx22mapAttribute(a0, 2660);
+				v0 = idx22mapAttribute(a0, 2670);
+				v2 = idx22mapAttribute(a0, 2691);
+				break;
+			case 7:
+				v8 = idx22mapAttribute(a0, 2661);
+				v0 = idx22mapAttribute(a0, 2671);
+				v2 = idx22mapAttribute(a0, 2692);
+				break;
+			case 8:
+				v8 = idx22mapAttribute(a0, 2662);
+				v0 = idx22mapAttribute(a0, 2672);
+				v2 = idx22mapAttribute(a0, 2693);
+				break;
+			case 9:
+				v8 = idx22mapAttribute(a0, 2663);
+				v0 = idx22mapAttribute(a0, 2673);
+				v2 = idx22mapAttribute(a0, 2694);
+				break;
+			case 10:
+				v8 = idx22mapAttribute(a0, 2664);
+				v0 = idx22mapAttribute(a0, 2674);
+				v2 = idx22mapAttribute(a0, 2695);
+				break;
+			default:
+				v8 = -1;
+		}
+	}
+	if (cs2method_10060(v1, v9) > 0) {
+		v1 = cs2method_10060(v1, cs2method_10968(v9, v10));
+		v7 = cs2method_10060(v7, cs2method_10968(v1, a1));
+		if (cs2method_10060(cs2method_10038(cs2method_10968(v9, v10), a1), cs2method_10038(v1, a1)) > 0) {
+			v7 = cs2method_10060(v7, 1);
+		}
+	}
+	if (client_configs['cfg1171'] > 0) {
+		v7 = cs2method_10872(v7, client_configs['cfg1171']);
+	}
+	return new script_7109_struct(v7, v6);
+}

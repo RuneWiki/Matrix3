@@ -1,0 +1,52 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8289(int a0) {
+	int v5 = 21301;
+	int v3 = script_8418(v5, 0);
+	if (v3 == -1) {
+		return;
+	}
+	int v0 = idx17mapData('i', 'J', 7699, a0);
+	if (v0 == -1) {
+		return;
+	}
+	int v4 = idx22mapAttribute(v5, 3506);
+	if (v4 == -1) {
+		return;
+	}
+	object v1 = idx22mapAttribute(v0, 3493);
+	int v2 = cs2method_10939(17812, v1);
+	int v6 = 34;
+	if (cs2method_11038(v4, 3) == 1) {
+		cs2method_10063(idx22mapAttribute(v3, 3552), 0, 0, 0);
+		cs2method_10013(cs2method_10060(v2, cs2method_10051(v6, 2)), idx22mapAttribute(v3, 3548), 0, 0);
+	}
+	if (cs2method_11038(v4, 5) == 1) {
+		cs2method_10063(cs2method_10060(cs2method_10060(idx22mapAttribute(v3, 3552), v2), cs2method_10051(v6, 2)), 0, 0, 0);
+		cs2method_10013(48, idx22mapAttribute(v3, 3548), 0, 0);
+	}
+	if (cs2method_11038(v4, 4) == 1) {
+		cs2method_10013(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(idx22mapAttribute(v3, 3552), v2), cs2method_10051(v6, 2)), idx22mapAttribute(v3, 3554)), 48), idx22mapAttribute(v3, 3548), 1, 0);
+	}
+	if (cs2method_11038(v4, 14) == 1) {
+		cs2method_10063(cs2method_10060(v6, idx22mapAttribute(v3, 3552)), -3, 0, 0);
+		cs2method_10013(idx22mapAttribute(v3, 3557), idx22mapAttribute(v3, 3548), 0, 0);
+		cs2method_10692(17812);
+		cs2method_10797(v1);
+		cs2method_11105(0, 1, 0);
+	}
+	if (cs2method_11038(v4, 15) == 1) {
+		cs2method_10310(idx22mapAttribute(v0, 3495));
+	}
+	return;
+}

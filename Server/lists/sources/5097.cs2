@@ -1,0 +1,74 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5097() {
+	switch (client_configs['cfg1993'].bitcfg7078) {
+		case 1:
+			cs2method_10026(72941572, "Unable to load your clan data.");
+			cs2method_10026(72941574, "Sorry!");
+			cs2method_10758(7532, 72941575);
+			cs2method_10026(72941576, "Please try again later when the system is less busy.");
+			break;
+		case 2:
+			cs2method_10026(72941572, "And the winner is:");
+			cs2method_10026(72941574, "<col=ff7f7f>" + "Red Team!" + "</col>");
+			cs2method_10758(7531, 72941575);
+			if (client_configs['cfg1994'].bitcfg7079 == 1) {
+				cs2method_10026(72941576, "Congratulations, your team won!");
+			} else if (client_configs['cfg1994'].bitcfg7079 == 2) {
+				cs2method_10026(72941576, "Oh dear, better luck next time.");
+			} else {
+				cs2method_10026(72941576, "Better luck next time to the Blue Team.");
+			}
+			break;
+		case 3:
+			cs2method_10026(72941572, "And the winner is:");
+			cs2method_10026(72941574, "<col=7f7fff>" + "Blue Team!" + "</col>");
+			cs2method_10758(7530, 72941575);
+			if (client_configs['cfg1994'].bitcfg7079 == 2) {
+				cs2method_10026(72941576, "Congratulations, your team won!");
+			} else if (client_configs['cfg1994'].bitcfg7079 == 1) {
+				cs2method_10026(72941576, "Oh dear, better luck next time.");
+			} else {
+				cs2method_10026(72941576, "Better luck next time to the Red Team.");
+			}
+			break;
+		case 5:
+			cs2method_10026(72941572, "And the result is:");
+			cs2method_10026(72941574, "It's a draw!");
+			cs2method_10758(7532, 72941575);
+			cs2method_10026(72941576, "Well done, everyone!");
+			break;
+		case 4:
+			cs2method_10026(72941572, "And the winner is:");
+			if (cs2method_10265(cs2_configs['cfg2537']) > 0) {
+				cs2method_10026(72941574, cs2_configs['cfg2537']);
+			} else {
+				cs2method_10026(72941574, "... missing!");
+			}
+			cs2method_10758(7532, 72941575);
+			cs2method_10026(72941576, "Better luck next time to everyone else.");
+			break;
+		case 6:
+			cs2method_10026(72941572, "And the winner is:");
+			cs2method_10026(72941574, "YOU!");
+			cs2method_10758(7532, 72941575);
+			cs2method_10026(72941576, "Congratulations!");
+			break;
+		default:
+			cs2method_10026(72941572, "");
+			cs2method_10026(72941574, "");
+			cs2method_10758(-1, 72941575);
+			cs2method_10026(72941576, "");
+	}
+	return;
+}

@@ -1,0 +1,231 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9777() {
+	int v8 = 1;
+	int v4 = 0;
+	object v1 = "";
+	int v7 = -1;
+	int v3 = -1;
+	int v6 = 0;
+	int v0 = 0;
+	int v5 = 0;
+	int v2 = 82116893;
+	while (v8 <= 10) {
+		switch (v8) {
+			case 1:
+				v4 = cs2_configs['cfg3987'];
+				v7 = 82116997;
+				break;
+			case 2:
+				v4 = cs2_configs['cfg3988'];
+				v7 = 82117000;
+				break;
+			case 3:
+				v4 = cs2_configs['cfg3989'];
+				v7 = 82117003;
+				break;
+			case 4:
+				v4 = cs2_configs['cfg3990'];
+				v7 = 82117006;
+				break;
+			case 5:
+				v4 = cs2_configs['cfg3991'];
+				v7 = 82117009;
+				break;
+			case 6:
+				v4 = cs2_configs['cfg3992'];
+				v7 = 82117012;
+				break;
+			case 7:
+				v4 = cs2_configs['cfg3993'];
+				v7 = 82117015;
+				break;
+			case 8:
+				v4 = cs2_configs['cfg3994'];
+				v7 = 82117018;
+				break;
+			case 9:
+				v4 = cs2_configs['cfg3995'];
+				v7 = 82117021;
+				break;
+			case 10:
+				v4 = cs2_configs['cfg3996'];
+				v7 = 82117024;
+		}
+		switch (v4) {
+			case 1:
+				v1 = cs2_configs['cfg3950'];
+				v5 = cs2_configs['cfg4041'];
+				break;
+			case 2:
+				v1 = cs2_configs['cfg3951'];
+				v5 = cs2_configs['cfg4042'];
+				break;
+			case 3:
+				v1 = cs2_configs['cfg3952'];
+				v5 = cs2_configs['cfg4043'];
+				break;
+			case 4:
+				v1 = cs2_configs['cfg3953'];
+				v5 = cs2_configs['cfg4044'];
+				break;
+			case 5:
+				v1 = cs2_configs['cfg3954'];
+				v5 = cs2_configs['cfg4045'];
+				break;
+			case 6:
+				v1 = cs2_configs['cfg3955'];
+				v5 = cs2_configs['cfg4046'];
+				break;
+			case 7:
+				v1 = cs2_configs['cfg3956'];
+				v5 = cs2_configs['cfg4047'];
+				break;
+			case 8:
+				v1 = cs2_configs['cfg3957'];
+				v5 = cs2_configs['cfg4048'];
+				break;
+			case 9:
+				v1 = cs2_configs['cfg3958'];
+				v5 = cs2_configs['cfg4049'];
+				break;
+			case 10:
+				v1 = cs2_configs['cfg3959'];
+				v5 = cs2_configs['cfg4050'];
+				break;
+			case 11:
+				v1 = cs2_configs['cfg3960'];
+				v5 = cs2_configs['cfg4051'];
+				break;
+			case 12:
+				v1 = cs2_configs['cfg3961'];
+				v5 = cs2_configs['cfg4052'];
+				break;
+			case 13:
+				v1 = cs2_configs['cfg3962'];
+				v5 = cs2_configs['cfg4053'];
+				break;
+			case 14:
+				v1 = cs2_configs['cfg3963'];
+				v5 = cs2_configs['cfg4054'];
+				break;
+			case 15:
+				v1 = cs2_configs['cfg3964'];
+				v5 = cs2_configs['cfg4055'];
+				break;
+			case 16:
+				v1 = cs2_configs['cfg3965'];
+				v5 = cs2_configs['cfg4056'];
+				break;
+			case 17:
+				v1 = cs2_configs['cfg3966'];
+				v5 = cs2_configs['cfg4057'];
+				break;
+			case 18:
+				v1 = cs2_configs['cfg3967'];
+				v5 = cs2_configs['cfg4058'];
+				break;
+			case 19:
+				v1 = cs2_configs['cfg3968'];
+				v5 = cs2_configs['cfg4059'];
+				break;
+			case 20:
+				v1 = cs2_configs['cfg3969'];
+				v5 = cs2_configs['cfg4060'];
+				break;
+			case 21:
+				v1 = cs2_configs['cfg3970'];
+				v5 = cs2_configs['cfg4061'];
+				break;
+			case 22:
+				v1 = cs2_configs['cfg3971'];
+				v5 = cs2_configs['cfg4062'];
+				break;
+			case 23:
+				v1 = cs2_configs['cfg3972'];
+				v5 = cs2_configs['cfg4063'];
+				break;
+			case 24:
+				v1 = cs2_configs['cfg3973'];
+				v5 = cs2_configs['cfg4064'];
+				break;
+			case 25:
+				v1 = cs2_configs['cfg3974'];
+				v5 = cs2_configs['cfg4065'];
+				break;
+			case 26:
+				v1 = cs2_configs['cfg3975'];
+				v5 = cs2_configs['cfg4066'];
+				break;
+			case 27:
+				v1 = cs2_configs['cfg3976'];
+				v5 = cs2_configs['cfg4067'];
+				break;
+			case 28:
+				v1 = cs2_configs['cfg3977'];
+				v5 = cs2_configs['cfg4068'];
+				break;
+			case 29:
+				v1 = cs2_configs['cfg3978'];
+				v5 = cs2_configs['cfg4069'];
+				break;
+			case 30:
+				v1 = cs2_configs['cfg3979'];
+				v5 = cs2_configs['cfg4070'];
+				break;
+			case 31:
+				v1 = cs2_configs['cfg3980'];
+				v5 = cs2_configs['cfg4071'];
+				break;
+			case 32:
+				v1 = cs2_configs['cfg3981'];
+				v5 = cs2_configs['cfg4072'];
+				break;
+			case 33:
+				v1 = cs2_configs['cfg3982'];
+				v5 = cs2_configs['cfg4073'];
+				break;
+			case 34:
+				v1 = cs2_configs['cfg3983'];
+				v5 = cs2_configs['cfg4074'];
+				break;
+			case 35:
+				v1 = cs2_configs['cfg3984'];
+				v5 = cs2_configs['cfg4075'];
+				break;
+			case 36:
+				v1 = cs2_configs['cfg3985'];
+				v5 = cs2_configs['cfg4076'];
+				break;
+			case 37:
+				v1 = cs2_configs['cfg3986'];
+				v5 = cs2_configs['cfg4077'];
+				break;
+			case 38:
+				v1 = cs2_configs['cfg4159'];
+				v5 = cs2_configs['cfg4161'];
+		}
+		int v9 = v4;
+		script_9775_struct(3,0,0) v12 = script_9775(v9);
+		int v13 = v12.intpart_2;
+		int v11 = v12.intpart_1;
+		int v10 = v12.intpart_0;
+		cs2method_21121(new function<script_6966>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,object a8,int a9,int a10) {
+			script_6967(a0, a7, a8, a2, a5, a9, a3, a10, a6, a1, a4);
+			return;
+		}, new WidgetPointer(v2), new WidgetPointer(-32768,3), -2147483643, v10, v11, v13, (string)v1, v4, v5, -2147483647, -2147483646, "IIioiisiiii", new WidgetPointer(v7));
+		v8 = cs2method_10060(v8, 1);
+	}
+	script_5219(v2);
+	return;
+}

@@ -1,0 +1,89 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7336(int a0) {
+	object v2 = "";
+	int v5 = -1;
+	switch (a0) {
+		case 0:
+			v5 = 7117;
+			cs2method_10026(89981019, "Upgrade Bar");
+			break;
+		case 1:
+			v5 = 7118;
+			cs2method_10026(89981019, "Upgrade Office");
+			break;
+		case 2:
+			v5 = 7119;
+			cs2method_10026(89981019, "Upgrade Workshop");
+			break;
+		case 5:
+			v5 = 7148;
+			cs2method_10026(89981019, "Upgrade Warehouse");
+			break;
+		case 4:
+			v5 = 7146;
+			cs2method_10026(89981019, "Upgrade Shipwright");
+			break;
+		case 3:
+			v5 = 7147;
+			cs2method_10026(89981019, "Upgrade Lodgings");
+			break;
+		case 10:
+			v5 = 7149;
+			cs2method_10026(89981019, "Upgrade Icon Hotspot 1");
+			break;
+		case 11:
+			v5 = 7149;
+			cs2method_10026(89981019, "Upgrade Icon Hotspot 2");
+			break;
+		case 12:
+			v5 = 7149;
+			cs2method_10026(89981019, "Upgrade Icon Hotspot 3");
+			break;
+		case 6:
+			v5 = 7150;
+			cs2method_10026(89981019, "Upgrade Totem Hotspot 1");
+			break;
+		case 7:
+			v5 = 7150;
+			cs2method_10026(89981019, "Upgrade Totem Hotspot 2");
+			break;
+		case 8:
+			v5 = 7150;
+			cs2method_10026(89981019, "Upgrade Totem Hotspot 3");
+			break;
+		case 9:
+			v5 = 7150;
+			cs2method_10026(89981019, "Upgrade Totem Hotspot 4");
+			break;
+		case 13:
+			v5 = 7151;
+			cs2method_10026(89981019, "Upgrade Portal");
+	}
+	int v1 = 0;
+	int v7 = 0;
+	int v12 = 0;
+	int v13 = cs2method_10060(v12, script_7337(0, a0, v5, v12));
+	int v9 = cs2method_10060(v13, script_7337(1, a0, v5, v13));
+	int v11 = cs2method_10060(v9, script_7337(2, a0, v5, v9));
+	int v3 = cs2method_10060(v11, script_7337(3, a0, v5, v11));
+	int v10 = cs2method_10060(v3, script_7337(4, a0, v5, v3));
+	int v0 = cs2method_10060(v10, script_7337(5, a0, v5, v10));
+	int v6 = cs2method_10060(v0, script_7337(6, a0, v5, v0));
+	int v8 = cs2method_10060(v6, script_7337(7, a0, v5, v6));
+	int v4 = cs2method_10060(v8, script_7337(8, a0, v5, v8));
+	int v14 = cs2method_10060(v4, script_7337(9, a0, v5, v4));
+	cs2method_11130(0, cs2method_10051(v14, 90), 89980945);
+	script_31(89980944, 89980945, 5666, 5663, 5664, 5665, 5686, 5685);
+	return;
+}

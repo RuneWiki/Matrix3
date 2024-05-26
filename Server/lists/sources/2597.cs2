@@ -1,0 +1,109 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2597() {
+	int v1 = -1;
+	int v0 = 0;
+	switch (cs2_configs['cfg929']) {
+		case 0:
+			v1 = cs2method_10640(93, cs2_configs['cfg930']);
+			break;
+		case 1:
+			v1 = cs2method_10640(93, cs2_configs['cfg931']);
+			break;
+		case 2:
+			v1 = cs2method_10640(93, cs2_configs['cfg932']);
+			break;
+		case 3:
+			v1 = cs2method_10640(93, cs2_configs['cfg933']);
+			break;
+		case 4:
+			v1 = cs2method_10640(93, cs2_configs['cfg934']);
+			break;
+		case 5:
+			v1 = cs2method_10640(93, cs2_configs['cfg935']);
+			break;
+		case 6:
+			v1 = cs2method_10640(93, cs2_configs['cfg936']);
+			break;
+		case 7:
+			v1 = cs2method_10640(93, cs2_configs['cfg937']);
+			break;
+		case 8:
+			v1 = cs2method_10640(93, cs2_configs['cfg938']);
+			break;
+		case 9:
+			v1 = cs2method_10640(93, cs2_configs['cfg939']);
+	}
+	if (v1 == -1 || itemDefsAttribute(v1, 803) != 1) {
+		return;
+	}
+	switch (cs2_configs['cfg929']) {
+		case 0:
+			if (client_configs['cfg1634'].bitcfg5268 == 1) {
+				v0 = 1;
+			}
+			break;
+		case 1:
+			if (client_configs['cfg1634'].bitcfg5269 == 1) {
+				v0 = 1;
+			}
+			break;
+		case 2:
+			if (client_configs['cfg1634'].bitcfg5270 == 1) {
+				v0 = 1;
+			}
+			break;
+		case 3:
+			if (client_configs['cfg1634'].bitcfg5271 == 1) {
+				v0 = 1;
+			}
+			break;
+		case 4:
+			if (client_configs['cfg1634'].bitcfg5272 == 1) {
+				v0 = 1;
+			}
+			break;
+		case 5:
+			if (client_configs['cfg1634'].bitcfg5273 == 1) {
+				v0 = 1;
+			}
+			break;
+		case 6:
+			if (client_configs['cfg1634'].bitcfg5274 == 1) {
+				v0 = 1;
+			}
+			break;
+		case 7:
+			if (client_configs['cfg1634'].bitcfg5275 == 1) {
+				v0 = 1;
+			}
+			break;
+		case 8:
+			if (client_configs['cfg1634'].bitcfg5276 == 1) {
+				v0 = 1;
+			}
+			break;
+		case 9:
+			if (client_configs['cfg1634'].bitcfg5277 == 1) {
+				v0 = 1;
+			}
+	}
+	switch (v0) {
+		case 0:
+			cs2method_10758(941, 19136625);
+			break;
+		case 1:
+			cs2method_10758(942, 19136625);
+	}
+	return;
+}

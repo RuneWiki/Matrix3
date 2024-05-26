@@ -1,0 +1,71 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2698(int a0,int a1,int a2,int a3,int a4) {
+	int v0;
+	int v2 = cs2method_10614();
+	int v3 = 0;
+	if (a2 == 1) {
+		v0 = 2;
+	} else if (a2 == 2) {
+		v0 = 0;
+	} else {
+		v0 = v2;
+	}
+	if (a2 == cs2method_11055() && v0 == v2) {
+		return;
+	}
+	int v1 = -1;
+	if (a2 != 3) {
+		int v5 = v0;
+		cs2method_11071(2);
+		cs2method_10827(2);
+		if (cs2_configs['cfg4132'] != 5) {
+			script_709(cs2_configs['cfg4132'], v5);
+			script_8885(cs2_configs['cfg4132']);
+		} else {
+			cs2method_10470(v5);
+		}
+		int v4 = cs2method_10614();
+		if (v5 != v4) {
+			script_2694("RuneScape was unable to enter that display mode." + "<br>" + "<br>" + "Please visit our website for more information.", a0, "", 0, "");
+			script_2596(a1, v4, a3, a4, a0);
+			return;
+		}
+		script_2596(a1, v4, a3, a4, a0);
+		if (v4 == 2) {
+			cs2_configs['cfg994'] = 2;
+		}
+		return;
+	}
+	if (cs2method_10210() == 0) {
+		script_2694("Fullscreen mode is only available to RuneScape members." + "<br>" + "<br>" + "Please visit the RuneScape website to learn about other benefits of membership.", a0, "Members' benefits", 0, "members_benefits.ws");
+		return;
+	}
+	if (cs2method_10501() > cs2_configs['cfg178']) {
+		int v5 = cs2_configs['cfg178'];
+		opc_struct10844(2,0,0) v4 = cs2method_10844(v5);
+		if (cs2method_10931(v4.intpart_0, v4.intpart_1) == 1) {
+			if (a0 == 4) {
+				script_7932();
+			}
+			script_2596(a1, a2, a3, a4, a0);
+			script_2700(2, a0, 0, 0);
+			return;
+		}
+	}
+	if (a0 == 1) {
+		cs2method_10810("Unable to enter fullscreen mode at that resolution.");
+	}
+	script_2596(a1, a2, a3, a4, a0);
+	return;
+}

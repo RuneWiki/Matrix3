@@ -1,0 +1,111 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3827() {
+	int v0 = -1;
+	int v7 = -1;
+	int v6 = -1;
+	int v9 = -1;
+	int v3 = -1;
+	int v1 = -1;
+	if (client_configs['cfg4474'] != 0) {
+		int v12 = idx17mapData('i', 'J', 8828, client_configs['cfg4474']);
+		int v13 = idx22mapAttribute(v12, 4324);
+		cs2method_10026(98369656, idx22mapAttribute(v13, 1266));
+		cs2method_10758(idx22mapAttribute(v12, 4326), 98369655);
+	} else {
+		cs2method_10026(98369656, "More Quests...");
+		cs2method_10758(23110, 98369655);
+		cs2method_10467(1, 98369560);
+		cs2method_10467(1, 98369561);
+	}
+	if (client_configs['cfg4475'] != 0) {
+		int v13 = idx17mapData('i', 'J', 8828, client_configs['cfg4475']);
+		int v12 = idx22mapAttribute(v13, 4324);
+		cs2method_10026(98369665, idx22mapAttribute(v12, 1266));
+		cs2method_10758(idx22mapAttribute(v13, 4326), 98369664);
+	} else {
+		cs2method_10026(98369665, "More Quests...");
+		cs2method_10758(23110, 98369664);
+		cs2method_10467(1, 98369561);
+	}
+	if (client_configs['cfg4476'] != 0) {
+		int v13 = idx17mapData('i', 'J', 8828, client_configs['cfg4476']);
+		int v12 = idx22mapAttribute(v13, 4324);
+		cs2method_10026(98369674, idx22mapAttribute(v12, 1266));
+		cs2method_10758(idx22mapAttribute(v13, 4326), 98369673);
+	} else {
+		cs2method_10026(98369674, "More Quests...");
+		cs2method_10758(23110, 98369673);
+	}
+	int v2 = -1;
+	int v10 = -1;
+	int v5 = -1;
+	if (client_configs['cfg4477'] != 0) {
+		int v12 = idx17mapData('i', 'J', 8829, client_configs['cfg4477']);
+		cs2method_10026(98369683, idx22mapAttribute(v12, 4328));
+		cs2method_10758(idx22mapAttribute(v12, 4326), 98369682);
+	} else {
+		cs2method_10026(98369683, "Grand Exchange");
+		cs2method_10758(23105, 98369682);
+		cs2method_10467(1, 98369684);
+		cs2method_10467(1, 98369694);
+	}
+	if (client_configs['cfg4478'] != 0) {
+		int v12 = idx17mapData('i', 'J', 8829, client_configs['cfg4478']);
+		cs2method_10026(98369693, idx22mapAttribute(v12, 4328));
+		cs2method_10758(idx22mapAttribute(v12, 4326), 98369692);
+	} else {
+		cs2method_10026(98369693, "Grand Exchange");
+		cs2method_10758(23105, 98369692);
+		cs2method_10467(1, 98369694);
+	}
+	if (client_configs['cfg4479'] != 0) {
+		int v12 = idx17mapData('i', 'J', 8829, client_configs['cfg4479']);
+		cs2method_10026(98369703, idx22mapAttribute(v12, 4328));
+		cs2method_10758(idx22mapAttribute(v12, 4326), 98369702);
+	} else {
+		cs2method_10026(98369703, "Grand Exchange");
+		cs2method_10758(23105, 98369702);
+	}
+	int v4 = -1;
+	int v8 = -1;
+	int v11 = -1;
+	if (client_configs['cfg4480'] != 0) {
+		int v12 = idx17mapData('i', 'J', 8830, client_configs['cfg4480']);
+		cs2method_10026(98369712, idx22mapAttribute(v12, 4328));
+		cs2method_10758(idx22mapAttribute(v12, 4326), 98369711);
+	} else {
+		cs2method_10026(98369712, "Minigames: Combat");
+		cs2method_10758(23108, 98369711);
+		cs2method_10467(1, 98369713);
+		cs2method_10467(1, 98369723);
+	}
+	if (client_configs['cfg4481'] != 0) {
+		int v12 = idx17mapData('i', 'J', 8830, client_configs['cfg4481']);
+		cs2method_10026(98369722, idx22mapAttribute(v12, 4328));
+		cs2method_10758(idx22mapAttribute(v12, 4326), 98369721);
+	} else {
+		cs2method_10026(98369722, "Minigames: Combat");
+		cs2method_10758(23108, 98369721);
+		cs2method_10467(1, 98369723);
+	}
+	if (client_configs['cfg4482'] != 0) {
+		int v12 = idx17mapData('i', 'J', 8830, client_configs['cfg4482']);
+		cs2method_10026(98369732, idx22mapAttribute(v12, 4328));
+		cs2method_10758(idx22mapAttribute(v12, 4326), 98369731);
+	} else {
+		cs2method_10026(98369732, "Minigames: Combat");
+		cs2method_10758(23108, 98369731);
+	}
+	return;
+}

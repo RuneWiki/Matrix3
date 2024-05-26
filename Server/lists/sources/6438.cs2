@@ -1,0 +1,61 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_6438(int a0,int a1) {
+	if (a0 == -1) {
+		return 0;
+	}
+	int v3 = idx22mapAttribute(a0, 2542);
+	if (v3 == -1) {
+		return 0;
+	}
+	int v4 = 670;
+	if (a1 == 1) {
+		v4 = 671;
+	}
+	int v2 = 0;
+	int v5 = -1;
+	int v1 = -1;
+	if (idx22mapAttribute(a0, 2532) == 16) {
+		while (v2 < 11) {
+			int v6 = idx17mapData('i', 'o', v3, v2);
+			int v7 = cs2method_10640(v4, v2);
+			if (v6 != -1 && v7 != v6) {
+				if (v2 != 3 && v2 != 5) {
+					return 0;
+				}
+				if (script_7606() == v6) {
+					return 1;
+				}
+				if (script_7607() == v6) {
+					return 1;
+				}
+			}
+			v2 = cs2method_10060(v2, 1);
+		}
+	} else {
+		int v0 = idx17mapData('i', 'o', v3, idx22mapAttribute(a0, 2532));
+		int v7 = cs2method_10640(v4, idx22mapAttribute(a0, 2532));
+		if (v0 != -1 && v7 != v0) {
+			if (v2 != 3 && v2 != 5) {
+				return 0;
+			}
+			if (script_7606() == v0) {
+				return 1;
+			}
+			if (script_7607() == v0) {
+				return 1;
+			}
+		}
+	}
+	return 1;
+}

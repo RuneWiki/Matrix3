@@ -1,0 +1,28 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9102(int a0,int a1) {
+	object v0 = "Click here to select which prayers" + "<br>" + "become active when using quick-prayers." + "<br>" + "Quick-prayers can be activated using" + "<br>" + "the Prayer button on the action bar.";
+	if (client_configs['cfg3277'].bitcfg16789 == 1) {
+		v0 = "Click here to select which curses" + "<br>" + "become active when using quick-curses." + "<br>" + "Quick-curses can be activated using" + "<br>" + "the Prayer button on the action bar.";
+	}
+	cs2method_21121(new function<script_8799>(int a0,int a1,object a2) {
+		script_8800(a0, a1, a2);
+		return;
+	}, (string)v0, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(a0));
+	cs2method_20750(new function<script_8805>() {
+		script_8808();
+		return;
+	}, "", new WidgetPointer(a0));
+	script_8808();
+	return;
+}

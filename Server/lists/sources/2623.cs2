@@ -1,0 +1,36 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2623() {
+	int v0 = 1;
+	while ((int)idx17mapData('i', 'I', 2451, v0) != 55705626) {
+		cs2method_10026((int)idx17mapData('i', 'I', 2451, v0), "");
+		v0 = cs2method_10060(v0, 1);
+	}
+	cs2method_10026(55705627, "Welcome to Mobilising Armies.");
+	switch (client_configs['cfg1625'].bitcfg5214) {
+		case 1:
+			cs2method_10758(1906, 55705649);
+			break;
+		case 2:
+			cs2method_10758(1904, 55705649);
+			break;
+		case 3:
+			cs2method_10758(1905, 55705649);
+			break;
+		case 4:
+			cs2method_10758(1907, 55705649);
+	}
+	script_157(55705647, 55705648, cs2method_10970(55705648), 1);
+	script_8836(7694);
+	return;
+}

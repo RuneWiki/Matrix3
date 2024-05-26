@@ -1,0 +1,339 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_378(int a0) {
+	int v4 = -1;
+	int v3 = -1;
+	object v0 = "";
+	switch (a0) {
+		case 6094850:
+			v4 = 7885;
+			if (cs2_configs['cfg3709'] == 0 || cs2_configs['cfg3709'] == 2) {
+				cs2_configs['cfg3709'] = 1;
+			} else {
+				cs2_configs['cfg3709'] = 2;
+			}
+			v3 = 13213;
+			v0 = "Farming";
+			break;
+		case 6094851:
+			v4 = 7886;
+			cs2_configs['cfg3709'] = 3;
+			v3 = 13211;
+			v0 = "Fishing";
+			break;
+		case 6094852:
+			v4 = 7887;
+			cs2_configs['cfg3709'] = 4;
+			v3 = 13202;
+			v0 = "Hunter";
+			break;
+		case 6094854:
+			v4 = 7888;
+			cs2_configs['cfg3709'] = 5;
+			v3 = 13198;
+			v0 = "Mining";
+			break;
+		case 6094853:
+			v4 = 7889;
+			cs2_configs['cfg3709'] = 6;
+			v3 = 13207;
+			v0 = "Woodcutting";
+			break;
+		case 6094855:
+			v4 = 7890;
+			if (cs2_configs['cfg3709'] == 0 || cs2_configs['cfg3709'] == 8) {
+				cs2_configs['cfg3709'] = 7;
+			} else {
+				cs2_configs['cfg3709'] = 8;
+			}
+			v3 = 13607;
+			v0 = "Other";
+	}
+	if (v4 == -1) {
+		return;
+	}
+	int v2 = 0;
+	int v5 = cs2method_10924(v4);
+	if (cs2_configs['cfg3709'] == 2 || cs2_configs['cfg3709'] == 8) {
+		v5 = cs2method_10461(v5, 39);
+	}
+	int v1 = -1;
+	while (v2 < v5 && v2 < 39) {
+		switch (v2) {
+			case 0:
+				v1 = 6094866;
+				break;
+			case 1:
+				v1 = 6094867;
+				break;
+			case 2:
+				v1 = 6094868;
+				break;
+			case 3:
+				v1 = 6094869;
+				break;
+			case 4:
+				v1 = 6094944;
+				break;
+			case 5:
+				v1 = 6094945;
+				break;
+			case 6:
+				v1 = 6094946;
+				break;
+			case 7:
+				v1 = 6094947;
+				break;
+			case 8:
+				v1 = 6094948;
+				break;
+			case 9:
+				v1 = 6094949;
+				break;
+			case 10:
+				v1 = 6094950;
+				break;
+			case 11:
+				v1 = 6094951;
+				break;
+			case 12:
+				v1 = 6094952;
+				break;
+			case 13:
+				v1 = 6094953;
+				break;
+			case 14:
+				v1 = 6094954;
+				break;
+			case 15:
+				v1 = 6094955;
+				break;
+			case 16:
+				v1 = 6094956;
+				break;
+			case 17:
+				v1 = 6094957;
+				break;
+			case 18:
+				v1 = 6094958;
+				break;
+			case 19:
+				v1 = 6094959;
+				break;
+			case 20:
+				v1 = 6094960;
+				break;
+			case 21:
+				v1 = 6094961;
+				break;
+			case 22:
+				v1 = 6094962;
+				break;
+			case 23:
+				v1 = 6094963;
+				break;
+			case 24:
+				v1 = 6094964;
+				break;
+			case 25:
+				v1 = 6094965;
+				break;
+			case 26:
+				v1 = 6094966;
+				break;
+			case 27:
+				v1 = 6094967;
+				break;
+			case 28:
+				v1 = 6094968;
+				break;
+			case 29:
+				v1 = 6094969;
+				break;
+			case 30:
+				v1 = 6094970;
+				break;
+			case 31:
+				v1 = 6094971;
+				break;
+			case 32:
+				v1 = 6094972;
+				break;
+			case 33:
+				v1 = 6094973;
+				break;
+			case 34:
+				v1 = 6094974;
+				break;
+			case 35:
+				v1 = 6094975;
+				break;
+			case 36:
+				v1 = 6094976;
+				break;
+			case 37:
+				v1 = 6094977;
+				break;
+			case 38:
+				v1 = 6094978;
+		}
+		if (cs2_configs['cfg3709'] == 2 || cs2_configs['cfg3709'] == 8) {
+			cs2method_10026(v1, idx17mapData('i', 's', v4, cs2method_10060(v2, 39)));
+		} else {
+			cs2method_10026(v1, idx17mapData('i', 's', v4, v2));
+		}
+		v2 = cs2method_10060(v2, 1);
+	}
+	if (v2 < 39 && v2 < 39) {
+		while (true) {
+			switch (v2) {
+				case 0:
+					v1 = 6094866;
+					break;
+				case 1:
+					v1 = 6094867;
+					break;
+				case 2:
+					v1 = 6094868;
+					break;
+				case 3:
+					v1 = 6094869;
+					break;
+				case 4:
+					v1 = 6094944;
+					break;
+				case 5:
+					v1 = 6094945;
+					break;
+				case 6:
+					v1 = 6094946;
+					break;
+				case 7:
+					v1 = 6094947;
+					break;
+				case 8:
+					v1 = 6094948;
+					break;
+				case 9:
+					v1 = 6094949;
+					break;
+				case 10:
+					v1 = 6094950;
+					break;
+				case 11:
+					v1 = 6094951;
+					break;
+				case 12:
+					v1 = 6094952;
+					break;
+				case 13:
+					v1 = 6094953;
+					break;
+				case 14:
+					v1 = 6094954;
+					break;
+				case 15:
+					v1 = 6094955;
+					break;
+				case 16:
+					v1 = 6094956;
+					break;
+				case 17:
+					v1 = 6094957;
+					break;
+				case 18:
+					v1 = 6094958;
+					break;
+				case 19:
+					v1 = 6094959;
+					break;
+				case 20:
+					v1 = 6094960;
+					break;
+				case 21:
+					v1 = 6094961;
+					break;
+				case 22:
+					v1 = 6094962;
+					break;
+				case 23:
+					v1 = 6094963;
+					break;
+				case 24:
+					v1 = 6094964;
+					break;
+				case 25:
+					v1 = 6094965;
+					break;
+				case 26:
+					v1 = 6094966;
+					break;
+				case 27:
+					v1 = 6094967;
+					break;
+				case 28:
+					v1 = 6094968;
+					break;
+				case 29:
+					v1 = 6094969;
+					break;
+				case 30:
+					v1 = 6094970;
+					break;
+				case 31:
+					v1 = 6094971;
+					break;
+				case 32:
+					v1 = 6094972;
+					break;
+				case 33:
+					v1 = 6094973;
+					break;
+				case 34:
+					v1 = 6094974;
+					break;
+				case 35:
+					v1 = 6094975;
+					break;
+				case 36:
+					v1 = 6094976;
+					break;
+				case 37:
+					v1 = 6094977;
+					break;
+				case 38:
+					v1 = 6094978;
+			}
+			cs2method_10026(v1, "");
+			v2 = cs2method_10060(v2, 1);
+		}
+	}
+	if (cs2_configs['cfg3709'] == 2 || cs2_configs['cfg3709'] == 8) {
+		cs2method_10467(1, 6094942);
+	} else if (v2 < v5) {
+		cs2method_10467(0, 6094942);
+	} else {
+		cs2method_10467(1, 6094942);
+	}
+	cs2method_10467(0, 6094941);
+	if (cs2_configs['cfg3709'] > 6) {
+		cs2method_10467(0, 6094940);
+		cs2method_10467(1, 6094939);
+	} else {
+		cs2method_10467(0, 6094939);
+		cs2method_10758(v3, 6094939);
+		cs2method_10467(1, 6094940);
+	}
+	cs2method_10026(6094938, v0);
+	return;
+}

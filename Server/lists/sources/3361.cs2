@@ -1,0 +1,38 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_3361_struct(2,1,0) script_3361() {
+	switch (client_configs['cfg1831']) {
+		default:
+			return new script_3361_struct(7, 18067, "Second Wind (Tier 1)");
+		case 17975:
+			return new script_3361_struct(7, 18067, "Second Wind (Tier 1)");
+		case 17976:
+			return new script_3361_struct(17, 18068, "Second Wind (Tier 2)");
+		case 17977:
+			return new script_3361_struct(27, 18069, "Second Wind (Tier 3)");
+		case 17978:
+			return new script_3361_struct(37, 18070, "Second Wind (Tier 4)");
+		case 17979:
+			return new script_3361_struct(47, 18071, "Second Wind (Tier 5)");
+		case 17980:
+			return new script_3361_struct(57, 18072, "Second Wind (Tier 6)");
+		case 17981:
+			return new script_3361_struct(67, 18073, "Second Wind (Tier 7)");
+		case 17982:
+			return new script_3361_struct(77, 18074, "Second Wind (Tier 8)");
+		case 17983:
+			return new script_3361_struct(87, 18075, "Second Wind (Tier 9)");
+		case 17984:
+			return new script_3361_struct(97, 18076, "Second Wind (Tier 10)");
+	}
+}

@@ -1,0 +1,26 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6040(int a0,int a1,int a2,int a3) {
+	if (script_6035(a1, cs2_configs['cfg1798'], cs2_configs['cfg1799'], 1) == 0) {
+		return;
+	}
+	cs2_configs['cfg1796'] = a0;
+	for (int v1 = cs2method_10461(cs2method_10924(5727), 1); v1 >= 0; v1 = cs2method_10461(v1, 1)) {
+		int v0 = (int)idx17mapData('i', 'I', 5727, v1);
+		if (v0 != -1) {
+			cs2method_11047(v0);
+		}
+	}
+	cs2method_11047(a2);
+	return;
+}

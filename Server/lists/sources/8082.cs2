@@ -1,0 +1,54 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_8082() {
+	if (client_configs['cfg3680'].bitcfg22315 == 0) {
+		switch (client_configs['cfg1789'].bitcfg6068) {
+			case 0:
+				return 93716528;
+			case 1:
+				return 93716521;
+			case 2:
+				return 93716525;
+			case 3:
+				return 93716532;
+			case 4:
+				return 93716533;
+			case 6:
+				return 93716524;
+			case 7:
+				return 93716526;
+			case 5:
+				return 93716523;
+		}
+		return 93716528;
+	}
+	switch (client_configs['cfg1789'].bitcfg6068) {
+		case 0:
+			return 93585431;
+		case 1:
+			return 93585424;
+		case 2:
+			return 93585428;
+		case 3:
+			return 93585435;
+		case 4:
+			return 93585436;
+		case 6:
+			return 93585427;
+		case 7:
+			return 93585429;
+		case 5:
+			return 93585426;
+	}
+	return 93585431;
+}

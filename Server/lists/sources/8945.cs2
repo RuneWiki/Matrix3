@@ -1,0 +1,48 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8945(int a0) {
+	if (a0 > script_8927()) {
+		switch (a0) {
+			case 2:
+				cs2method_10810("This tier is not available until week 4 of the event.");
+				break;
+			case 3:
+				cs2method_10810("This tier is not available until week 7 of the event.");
+				break;
+			default:
+				cs2method_10810("This tier is not yet available.");
+		}
+		cs2method_10670(10046, 1, 0, 200);
+		return;
+	}
+	script_8946();
+	cs2method_10467(1, 97976350);
+	cs2method_10467(1, 97976468);
+	cs2method_10467(1, 97976478);
+	cs2method_10467(0, 97976347);
+	cs2method_10467(0, 97976466);
+	cs2method_10467(0, 97976476);
+	if (a0 == 1) {
+		cs2method_10467(0, 97976350);
+	}
+	if (a0 == 2) {
+		cs2method_10467(0, 97976468);
+	}
+	if (a0 == 3) {
+		cs2method_10467(0, 97976478);
+	}
+	client_configs['cfg3647'].bitcfg18674 = a0;
+	cs2method_10670(36972, 1, 0, 200);
+	script_8948(cs2_configs['cfg2772']);
+	return;
+}

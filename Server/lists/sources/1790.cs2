@@ -1,0 +1,27 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1790(int a0) {
+	int v0 = cs2method_10122(3, 5, cs2_configs['cfg265']);
+	if (v0 <= 3) {
+		cs2method_10026(a0, "<col=ff0000>" + "GET READY!" + "</col>");
+		return;
+	}
+	int v2 = cs2method_10968(v0, 60);
+	int v1 = cs2method_10038(v0, 60);
+	if (v1 >= 10) {
+		cs2method_10026(a0, (string)cs2method_10379(v2) + "m " + (string)cs2method_10379(v1) + "s");
+	} else {
+		cs2method_10026(a0, (string)cs2method_10379(v2) + "m 0" + (string)cs2method_10379(v1) + "s");
+	}
+	return;
+}

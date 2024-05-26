@@ -1,0 +1,97 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9787(int a0,int a1) {
+	if (cs2_configs['cfg4095'] == -1) {
+		return;
+	}
+	if (cs2_configs['cfg4157'] == -1) {
+		return;
+	}
+	object v1 = "Claim to backpack";
+	int v0 = 0;
+	object v2 = "You do not have a prize to claim.";
+	object v4 = "You do not have a prize to claim.";
+	object v3 = "Backpack";
+	if (client_configs['cfg1451'].bitcfg4345 <= 0) {
+		v2 = "You do not have a prize to claim.";
+		v4 = "You do not have a prize to claim.";
+		v0 = 0;
+	} else {
+		v1 = "Claim to backpack";
+		v3 = "Backpack";
+		switch (cs2_configs['cfg1790']) {
+			case 8:
+			case 9:
+				if (cs2_configs['cfg4157'] == 3 && cs2method_10771() == 0) {
+					v2 = "Claim your prize. This is a members-only prize, so you will need to subscribe to use it.";
+				} else {
+					v2 = "Claim this prize.";
+				}
+				v3 = "Claim";
+				v1 = "Claim";
+				v0 = 1;
+				break;
+			case 12:
+				v3 = "Can't Claim";
+				v4 = "You cannot claim this prize at the moment.";
+				v0 = 0;
+				if (a0 == 30874) {
+					v4 = "You have too many dungeoneering tokens and cannot claim this prize at the moment.";
+				}
+		}
+		switch (cs2_configs['cfg4095']) {
+			case 1:
+				if (cs2_configs['cfg4157'] == 3 && cs2method_10771() == 0) {
+					v2 = "Claim your prize. This is a members-only prize, so you will need to subscribe to use it.";
+				} else {
+					v2 = "Claim your prize to your backpack.";
+				}
+				v0 = 1;
+				break;
+			case 2:
+				v4 = "Your backpack doesn't have room for your prize at the moment.";
+				v3 = "Backpack Full";
+				break;
+			case 13:
+				v3 = "Subscribe";
+				v1 = "Subscribe";
+				v2 = "You must be a member to claim this prize. Click here to subscribe.";
+				v0 = 1;
+				break;
+			case 12:
+				v3 = "Can't Claim";
+				v4 = "You cannot claim this prize at the moment.";
+				v0 = 0;
+				break;
+			case 7:
+				v2 = "Treasure Hunter is not available at the moment. Please try later.";
+				v4 = "Treasure Hunter is not available at the moment. Please try later.";
+				break;
+			case 10:
+				v2 = "Loading...";
+				v4 = "Loading...";
+		}
+	}
+	cs2method_11127(1, 82117063, v1);
+	cs2method_10026(82117066, v3);
+	cs2method_21121(new function<script_10007>(int a0,int a1,object a2) {
+		script_10008(a2, a1, a0);
+		return;
+	}, (string)v2, new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(1253,455));
+	cs2method_21121(new function<script_10007>(int a0,int a1,object a2) {
+		script_10008(a2, a1, a0);
+		return;
+	}, (string)v4, new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(1253,456));
+	cs2method_10467(v0, 82117064);
+	return;
+}

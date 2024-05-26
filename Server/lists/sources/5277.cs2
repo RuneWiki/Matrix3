@@ -1,0 +1,25 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5277(int a0) {
+	script_5279(a0);
+	cs2method_20348(new function<script_5278>(int a0) {
+		script_5279(a0);
+		return;
+	}, new WidgetPointer(a0), 1995, 1, "IY", new WidgetPointer(a0));
+	script_5291();
+	cs2method_20348(new function<script_5290>() {
+		script_5291();
+		return;
+	}, 1867, 1, "Y", new WidgetPointer(cs2method_10982(a0)));
+	return;
+}

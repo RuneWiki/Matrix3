@@ -1,0 +1,47 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7300() {
+	object v0;
+	int v5 = 0;
+	int v4 = 0;
+	script_4187_struct(2,0,0) v6 = script_4187();
+	int v2 = v6.intpart_1;
+	int v1 = v6.intpart_0;
+	object v3 = "";
+	if (v1 == 0) {
+		v0 = (string)cs2method_10379(v2) + "m";
+	} else {
+		v0 = (string)cs2method_10379(v1) + "h";
+	}
+	if (client_configs['cfg3453'].bitcfg17461 > 0) {
+		cs2method_10026(83624044, "Rerolls available: " + (string)cs2method_10379(client_configs['cfg3453'].bitcfg17461));
+	} else {
+		cs2method_10026(83624044, "New crew in " + (string)v0);
+	}
+	cs2method_10026(83624118, "Add 5 Rerolls (" + (string)cs2method_10379(client_configs['cfg3448'].bitcfg17420) + ")");
+	if (client_configs['cfg3448'].bitcfg17420 < 1 || client_configs['cfg3453'].bitcfg17461 > 10) {
+		cs2method_10467(0, 83624116);
+	} else {
+		cs2method_10467(1, 83624116);
+	}
+	if (client_configs['cfg3453'].bitcfg17461 < 1) {
+		cs2method_10758(15460, 83623963);
+		cs2method_10758(15460, 83623964);
+		cs2method_10758(15460, 83623965);
+	} else {
+		cs2method_10758(15458, 83623963);
+		cs2method_10758(15458, 83623964);
+		cs2method_10758(15458, 83623965);
+	}
+	return;
+}

@@ -1,0 +1,57 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2289(int a0,int a1,int a2) {
+	int v0 = 6759;
+	if (client_configs['cfg3277'].bitcfg16789 == 1) {
+		v0 = 6760;
+	}
+	int v1 = idx17mapData('i', 'J', v0, a0);
+	int v2 = 1;
+	if (idx22mapAttribute(v1, 2961) == 1) {
+		if (cs2method_10338(5) >= idx22mapAttribute(v1, 2965)) {
+			v2 = 2;
+		}
+		if (cs2method_10338(5) >= idx22mapAttribute(v1, 2967)) {
+			v2 = 3;
+		}
+		switch (v2) {
+			case 1:
+				v1 = idx22mapAttribute(v1, 2964);
+				break;
+			case 2:
+				v1 = idx22mapAttribute(v1, 2966);
+				break;
+			case 3:
+				v1 = idx22mapAttribute(v1, 2968);
+		}
+	}
+	if (script_7083(v1) == 0) {
+		if (script_2295(a0) == 0) {
+			return;
+		}
+		if (cs2method_11038(a2, a0) == 1) {
+			cs2method_10057(1, "Deactivate");
+		}
+		if (cs2method_11038(a1, a0) == 1) {
+			cs2method_10310(14710);
+		}
+	} else {
+		if (cs2method_11038(a2, a0) == 1) {
+			cs2method_10057(1, "Activate");
+		}
+		if (cs2method_11038(a1, a0) == 1) {
+			cs2method_10310(-1);
+		}
+	}
+	return;
+}

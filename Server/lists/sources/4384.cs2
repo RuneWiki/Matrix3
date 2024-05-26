@@ -1,0 +1,28 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_4384_struct(2,0,0) script_4384(int a0,int a1,int a2) {
+	int v1 = idx17mapData('i', 'd', 3686, a0);
+	int v0 = idx17mapData('i', 'd', 3686, a2);
+	if (a1 == 1 && (clan_configs['cfg3'].bitcfg8809 == 1 || cs2method_10232() < 5)) {
+		v1 = 5723;
+		v0 = 5789;
+	} else {
+		if (v1 == -1) {
+			v1 = 5723;
+		}
+		if (v0 == -1) {
+			v0 = 5789;
+		}
+	}
+	return new script_4384_struct(v1, v0);
+}

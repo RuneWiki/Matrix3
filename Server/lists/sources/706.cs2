@@ -1,0 +1,38 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_706(int a0) {
+	if (a0 < 1 || a0 > 9) {
+		return 0;
+	}
+	switch (a0) {
+		case 1:
+			return cs2method_10461(cs2method_10461(cs2method_10461(cs2method_10461(cs2method_10461(cs2method_10461(cs2method_10461(cs2method_10461(871, client_configs['cfg108'].bitcfg280), client_configs['cfg108'].bitcfg281), client_configs['cfg108'].bitcfg282), client_configs['cfg109'].bitcfg283), client_configs['cfg109'].bitcfg284), client_configs['cfg109'].bitcfg285), client_configs['cfg110'].bitcfg286), client_configs['cfg110'].bitcfg287);
+		case 2:
+			return client_configs['cfg108'].bitcfg280;
+		case 3:
+			return client_configs['cfg108'].bitcfg281;
+		case 4:
+			return client_configs['cfg108'].bitcfg282;
+		case 5:
+			return client_configs['cfg109'].bitcfg283;
+		case 6:
+			return client_configs['cfg109'].bitcfg284;
+		case 7:
+			return client_configs['cfg109'].bitcfg285;
+		case 8:
+			return client_configs['cfg110'].bitcfg286;
+		case 9:
+			return client_configs['cfg110'].bitcfg287;
+	}
+	return 0;
+}

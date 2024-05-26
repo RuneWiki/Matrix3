@@ -1,0 +1,49 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6183() {
+	int v1 = 0;
+	int v3 = cs2_configs['cfg1910'];
+	if (client_configs['cfg3222'].bitcfg16540 == 0) {
+		cs2method_10026(83427396, "0");
+		return;
+	}
+	if (cs2method_10609(83427365) == 0) {
+		return;
+	}
+	if (client_configs['cfg3222'].bitcfg16539 == 1) {
+		while (v3 < client_configs['cfg3222'].bitcfg16540) {
+			v1 = cs2method_10060(v1, idx17mapData('i', 'i', 5842, v3));
+			v3 = cs2method_10060(v3, 1);
+		}
+		cs2method_10026(83427396, "Rank " + (string)cs2method_10379(cs2method_10461(11, client_configs['cfg3222'].bitcfg16540)) + " Esteem = " + (string)cs2method_10379(v1) + " points");
+		return;
+	}
+	if (client_configs['cfg3222'].bitcfg16539 == 2) {
+		cs2method_10026(83427396, "Recolour = " + (string)cs2method_10379(2000) + " points");
+		return;
+	}
+	int v2 = idx17mapData('i', 'J', 5838, cs2method_10461(client_configs['cfg3222'].bitcfg16540, 1));
+	if (v2 == -1) {
+		return;
+	}
+	int v4 = idx22mapAttribute(v2, 2379);
+	int v0 = cs2method_10051(v4, client_configs['cfg3222'].bitcfg16541);
+	if (idx22mapAttribute(v2, 2378) == 0) {
+		cs2method_10026(83427396, (string)cs2method_10379(client_configs['cfg3222'].bitcfg16541) + " x " + idx22mapAttribute(v2, 2376) + " = " + (string)cs2method_10379(v0));
+	} else if (cs2method_10262() == 3 || cs2method_10262() == 2) {
+		cs2method_10026(83427396, (string)cs2method_10379(client_configs['cfg3222'].bitcfg16541) + " x " + idx22mapAttribute(v2, 2377) + " " + idx22mapAttribute(v2, 2376) + " = " + (string)cs2method_10379(v0));
+	} else {
+		cs2method_10026(83427396, (string)cs2method_10379(client_configs['cfg3222'].bitcfg16541) + " x " + idx22mapAttribute(v2, 2376) + " " + idx22mapAttribute(v2, 2377) + " = " + (string)cs2method_10379(v0));
+	}
+	return;
+}

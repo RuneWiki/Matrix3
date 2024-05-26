@@ -1,0 +1,61 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9263(int a0,int a1,int a2) {
+	cs2method_10039(a0, a1, a2);
+	cs2method_10495(a2);
+	if (a0 != -1) {
+		cs2method_21110(new function<script_9268>(int a0,int a1,int a2) {
+			script_9269(a2, a1, a0, 1);
+			return;
+		}, new WidgetPointer(-32768,3), new WidgetPointer(-32768,6), -2147483641, "IIi", new WidgetPointer(a2));
+		cs2method_20486(new function<script_9267>(int a0,int a1) {
+			script_9269(a1, 7012356, script_9249(93), a0);
+			return;
+		}, new WidgetPointer(-32768,3), -2147483644, "Ii", new WidgetPointer(a2));
+		cs2method_20750(new function<script_5495>(int a0) {
+			script_9252(a0);
+			return;
+		}, -1, "o", new WidgetPointer(a2));
+		if (cs2method_10675(a0) != a0) {
+			cs2method_21121(new function<script_5495>(int a0) {
+				script_9252(a0);
+				return;
+			}, a0, "o", new WidgetPointer(a2));
+			if (a1 > 1) {
+				cs2method_11127(1, a2, "Collect-notes");
+				cs2method_11127(2, a2, "Collect-items");
+			} else {
+				cs2method_11127(1, a2, "Collect-items");
+				cs2method_11127(2, a2, "Collect-notes");
+			}
+		} else {
+			cs2method_21121(new function<script_5495>(int a0) {
+				script_9252(a0);
+				return;
+			}, cs2method_10480(a0), "o", new WidgetPointer(a2));
+			cs2method_11127(1, a2, "Collect");
+		}
+		cs2method_10316(a2, cs2method_10018(a0));
+	} else {
+		cs2method_21110(new function<none>() {
+		}, "", new WidgetPointer(a2));
+		cs2method_20486(new function<none>() {
+		}, "", new WidgetPointer(a2));
+		cs2method_21121(new function<none>() {
+		}, "", new WidgetPointer(a2));
+		cs2method_20750(new function<none>() {
+		}, "", new WidgetPointer(a2));
+		cs2method_10316(a2, "");
+	}
+	return;
+}

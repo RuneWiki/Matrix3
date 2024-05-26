@@ -1,0 +1,24 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9565(int a0,int a1,int a2) {
+	if (a0 == -1) {
+		script_8808();
+		return;
+	}
+	int v0 = 1;
+	if (cs2method_10324(97386521) == 1 && a0 == interfaceDefsAttribute(4009)) {
+		v0 = 0;
+	}
+	script_9566(a0, -1, 0, 25, a2, a1, 20452, 16101953, cs2method_10018(a0), v0);
+	return;
+}

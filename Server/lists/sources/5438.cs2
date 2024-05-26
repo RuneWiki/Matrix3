@@ -1,0 +1,278 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5438() {
+	object v20;
+	object v6;
+	object v25;
+	object v26;
+	object v11;
+	object v15;
+	object v14;
+	object v38;
+	object v28;
+	object v22;
+	object v36;
+	object v4;
+	object v10;
+	object v5;
+	object v33;
+	object v2;
+	object v17;
+	object v1;
+	object v32;
+	object v7;
+	object v18;
+	object v31;
+	object v27;
+	object v29;
+	object v23;
+	object v8;
+	object v35;
+	object v16;
+	object v19;
+	object v13;
+	object v34;
+	object v21;
+	object v12;
+	object v9;
+	object v24;
+	object v30;
+	object v0;
+	object v37 = "";
+	int v3 = 0;
+	if (script_2158(client_configs['cfg2638'].bitcfg13080, 2, 63) == 2) {
+		v10 = "<str=f5af44>" + "<col=f5af44>" + "A Void Dance" + "<br>";
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v10 = "A Void Dance" + "<br>";
+	}
+	if (script_2157(client_configs['cfg2107'].bitcfg9136, 110) == 2) {
+		v2 = cs2method_10427(v10, "<str=f5af44>" + "<col=f5af44>" + "Chosen Commander" + "<br>");
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v2 = cs2method_10427(v10, "Chosen Commander" + "<br>");
+	}
+	if (script_2157(client_configs['cfg2598'].bitcfg12797, 110) == 2) {
+		v4 = cs2method_10427(v2, "<str=f5af44>" + "<col=f5af44>" + "Between a Rock" + "<br>");
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v4 = cs2method_10427(v2, "Between a Rock" + "<br>");
+	}
+	if (script_2158(client_configs['cfg2342'].bitcfg10871, 3, 147) == 2) {
+		v31 = cs2method_10427(v4, "<str=f5af44>" + "<col=f5af44>" + "Blood Runs Deep" + "<br>");
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v31 = cs2method_10427(v4, "Blood Runs Deep" + "<br>");
+	}
+	if (script_2157(client_configs['cfg2260'].bitcfg10292, 130) == 2) {
+		v11 = cs2method_10427(v31, "<str=f5af44>" + "<col=f5af44>" + "Contact!" + "<br>");
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v11 = cs2method_10427(v31, "Contact!" + "<br>");
+	}
+	if (script_2157(client_configs['cfg2377'].bitcfg11151, 240) == 2) {
+		v38 = cs2method_10427(v11, "<str=f5af44>" + "<col=f5af44>" + "Curse of Arrav" + "<br>");
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v38 = cs2method_10427(v11, "Curse of Arrav" + "<br>");
+	}
+	if (script_2157(client_configs['cfg2702'].bitcfg13385, 3) == 2) {
+		v25 = cs2method_10427(v38, "<str=f5af44>" + "<col=f5af44>" + "Demon Slayer" + "<br>");
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v25 = cs2method_10427(v38, "Demon Slayer" + "<br>");
+	}
+	if (script_2157(client_configs['cfg2151'].bitcfg9482, 15) == 2) {
+		v12 = cs2method_10427(v25, "<str=f5af44>" + "<col=f5af44>" + "Desert Treasure" + "<br>");
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v12 = cs2method_10427(v25, "Desert Treasure" + "<br>");
+	}
+	if (script_2158(client_configs['cfg2130'].bitcfg9324, 10, 315) == 2) {
+		v1 = cs2method_10427(v12, "<str=f5af44>" + "<col=f5af44>" + "Do No Evil" + "<br>");
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v1 = cs2method_10427(v12, "Do No Evil" + "<br>");
+	}
+	if (script_2157(client_configs['cfg2268'], 10) == 2) {
+		v23 = cs2method_10427(v1, "<str=f5af44>" + "<col=f5af44>" + "Dragon Slayer" + "<br>");
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v23 = cs2method_10427(v1, "Dragon Slayer" + "<br>");
+	}
+	if (script_2157(client_configs['cfg2155'].bitcfg9530, 28) == 2) {
+		v6 = cs2method_10427(v23, "<str=f5af44>" + "<col=f5af44>" + "Dream Mentor" + "<br>");
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v6 = cs2method_10427(v23, "Dream Mentor" + "<br>");
+	}
+	if (script_2157(client_configs['cfg2663'], 11) == 2) {
+		v20 = cs2method_10427(v6, "<str=f5af44>" + "<col=f5af44>" + "Family Crest" + "<br>");
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v20 = cs2method_10427(v6, "Family Crest" + "<br>");
+	}
+	if (script_2157(client_configs['cfg2595'], 14) == 2) {
+		v14 = cs2method_10427(v20, "<str=f5af44>" + "<col=f5af44>" + "Fight Arena" + "<br>");
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v14 = cs2method_10427(v20, "Fight Arena" + "<br>");
+	}
+	if (script_2157(client_configs['cfg2262'], 10) == 2) {
+		v33 = cs2method_10427(v14, "<str=f5af44>" + "<col=f5af44>" + "Fremennik Trials" + "<br>");
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v33 = cs2method_10427(v14, "Fremennik Trials" + "<br>");
+	}
+	if (script_2157(client_configs['cfg2201'], 11) == 2) {
+		v36 = cs2method_10427(v33, "<str=f5af44>" + "<col=f5af44>" + "Haunted Mine" + "<br>");
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v36 = cs2method_10427(v33, "Haunted Mine" + "<br>");
+	}
+	if (script_2157(client_configs['cfg2330'], 10) == 2) {
+		v27 = cs2method_10427(v36, "<str=f5af44>" + "<col=f5af44>" + "Holy Grail" + "<br>");
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v27 = cs2method_10427(v36, "Holy Grail" + "<br>");
+	}
+	if (script_2157(client_configs['cfg2411'].bitcfg11413, 10) == 2) {
+		v19 = cs2method_10427(v27, "<str=f5af44>" + "<col=f5af44>" + "Horror from the Deep" + "<br>");
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v19 = cs2method_10427(v27, "Horror from the Deep" + "<br>");
+	}
+	if (script_2157(client_configs['cfg2265'], 75) == 2) {
+		v29 = cs2method_10427(v19, "<str=f5af44>" + "<col=f5af44>" + "Legend's Quest" + "<br>");
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v29 = cs2method_10427(v19, "Legend's Quest" + "<br>");
+	}
+	if (script_2157(client_configs['cfg2551'], 6) == 2) {
+		v13 = cs2method_10427(v29, "<str=f5af44>" + "<col=f5af44>" + "Lost City" + "<br>");
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v13 = cs2method_10427(v29, "Lost City" + "<br>");
+	}
+	if (script_2157(client_configs['cfg2543'].bitcfg12598, 150) == 2) {
+		v5 = cs2method_10427(v13, "<str=f5af44>" + "<col=f5af44>" + "Love Story" + "<br>");
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v5 = cs2method_10427(v13, "Love Story" + "<br>");
+	}
+	if (script_2157(client_configs['cfg2379'].bitcfg11167, 60) == 2) {
+		v30 = cs2method_10427(v5, "<str=f5af44>" + "<col=f5af44>" + "Missing my Mummy" + "<br>");
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v30 = cs2method_10427(v5, "Missing my Mummy" + "<br>");
+	}
+	if (script_2158(client_configs['cfg2762'], 1, 9) == 2) {
+		v28 = cs2method_10427(v30, "<str=f5af44>" + "<col=f5af44>" + "Monkey Madness" + "<br>");
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v28 = cs2method_10427(v30, "Monkey Madness" + "<br>");
+	}
+	if (script_2157(client_configs['cfg2690'].bitcfg13349, 70) == 2) {
+		v16 = cs2method_10427(v28, "<str=f5af44>" + "<col=f5af44>" + "Mountain Daughter" + "<br>");
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v16 = cs2method_10427(v28, "Mountain Daughter" + "<br>");
+	}
+	if (script_2157(client_configs['cfg2230'].bitcfg9987, 320) == 2) {
+		v21 = cs2method_10427(v16, "<str=f5af44>" + "<col=f5af44>" + "My Arm's Big Adventure" + "<br>");
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v21 = cs2method_10427(v16, "My Arm's Big Adventure" + "<br>");
+	}
+	if (script_2157(client_configs['cfg2243'].bitcfg10095, 12) == 2) {
+		v0 = cs2method_10427(v21, "<str=f5af44>" + "<col=f5af44>" + "Nomad's Requiem" + "<br>");
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v0 = cs2method_10427(v21, "Nomad's Requiem" + "<br>");
+	}
+	if (script_2157(client_configs['cfg2579'].bitcfg12708, 5) == 2) {
+		v22 = cs2method_10427(v0, "<str=f5af44>" + "<col=f5af44>" + "Recipe for Disaster" + "<br>");
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v22 = cs2method_10427(v0, "Recipe for Disaster" + "<br>");
+	}
+	if (script_2157(client_configs['cfg2290'].bitcfg10495, 125) == 2) {
+		v26 = cs2method_10427(v22, "<str=f5af44>" + "<col=f5af44>" + "Shadow of the Storm" + "<br>");
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v26 = cs2method_10427(v22, "Shadow of the Storm" + "<br>");
+	}
+	if (script_2157(client_configs['cfg2548'].bitcfg12609, 60) == 2) {
+		v7 = cs2method_10427(v26, "<str=f5af44>" + "<col=f5af44>" + "Spirits of Elid" + "<br>");
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v7 = cs2method_10427(v26, "Spirits of Elid" + "<br>");
+	}
+	if (script_2157(client_configs['cfg2082'], 130) == 2) {
+		v34 = cs2method_10427(v7, "<str=f5af44>" + "<col=f5af44>" + "The Great Brain Robbery" + "<br>");
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v34 = cs2method_10427(v7, "The Great Brain Robbery" + "<br>");
+	}
+	if (script_2157(client_configs['cfg2372'].bitcfg11105, 90) == 2) {
+		v9 = cs2method_10427(v34, "<str=f5af44>" + "<col=f5af44>" + "The Temple at Senntisten" + "<br>");
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v9 = cs2method_10427(v34, "The Temple at Senntisten" + "<br>");
+	}
+	if (script_2157(client_configs['cfg2657'].bitcfg13118, 40) == 2) {
+		v8 = cs2method_10427(v9, "<str=f5af44>" + "<col=f5af44>" + "The Void Stares Back" + "<br>");
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v8 = cs2method_10427(v9, "The Void Stares Back" + "<br>");
+	}
+	if (script_2157(client_configs['cfg2407'].bitcfg11386, 63) == 2) {
+		v17 = cs2method_10427(v8, "<str=f5af44>" + "<col=f5af44>" + "TokTz-Ket-Dill" + "<br>");
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v17 = cs2method_10427(v8, "TokTz-Ket-Dill" + "<br>");
+	}
+	if (script_2157(client_configs['cfg2135'], 45) == 2) {
+		v35 = cs2method_10427(v17, "<str=f5af44>" + "<col=f5af44>" + "Troll Romance" + "<br>");
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v35 = cs2method_10427(v17, "Troll Romance" + "<br>");
+	}
+	if (script_2157(client_configs['cfg2347'], 50) == 2) {
+		v15 = cs2method_10427(v35, "<str=f5af44>" + "<col=f5af44>" + "Troll Stronghold" + "<br>");
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v15 = cs2method_10427(v35, "Troll Stronghold" + "<br>");
+	}
+	if (script_2157(client_configs['cfg2170'].bitcfg9655, 3) == 2) {
+		v24 = cs2method_10427(v15, "<str=f5af44>" + "<col=f5af44>" + "Vampyre Slayer" + "<br>");
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v24 = cs2method_10427(v15, "Vampyre Slayer" + "<br>");
+	}
+	if (script_2157(client_configs['cfg2628'].bitcfg12923, 11) == 2) {
+		v18 = cs2method_10427(v24, "<str=f5af44>" + "<col=f5af44>" + "Wanted" + "<br>");
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v18 = cs2method_10427(v24, "Wanted" + "<br>");
+	}
+	if (script_2157(client_configs['cfg2441'].bitcfg11858, 910) == 2) {
+		v32 = cs2method_10427(v18, "<str=f5af44>" + "<col=f5af44>" + "While Guthix Sleeps" + "<br>");
+		v3 = cs2method_10060(v3, 1);
+	} else {
+		v32 = cs2method_10427(v18, "While Guthix Sleeps" + "<br>");
+	}
+	cs2method_10026(76414977, v32);
+	cs2method_10026(76414978, "Quests completed: " + (string)cs2method_10379(v3) + ". You need at least: " + (string)cs2method_10379(20));
+	return;
+}

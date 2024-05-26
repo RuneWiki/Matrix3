@@ -1,0 +1,100 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6234() {
+	if (client_configs['cfg1442'] == -1) {
+		return;
+	}
+	for (int v2 = -1, int v3 = 0, int v1 = -1, object v5 = "", int v4 = 0; v3 < cs2method_10924(5868); v3 = cs2method_10060(v3, 1)) {
+		int v0 = (int)idx17mapData('i', 'I', 5868, v3);
+		if (v0 != -1) {
+			if (v3 == 0) {
+				v2 = idx22mapAttribute(client_configs['cfg1442'], 2483);
+			} else if (v3 == 1) {
+				v2 = idx22mapAttribute(client_configs['cfg1442'], 2484);
+			} else if (v3 == 2) {
+				v2 = idx22mapAttribute(client_configs['cfg1442'], 2485);
+			} else if (v3 == 3) {
+				v2 = idx22mapAttribute(client_configs['cfg1442'], 2486);
+			} else if (v3 == 4) {
+				v2 = idx22mapAttribute(client_configs['cfg1442'], 2487);
+			} else if (v3 == 5) {
+				v2 = idx22mapAttribute(client_configs['cfg1442'], 2488);
+			} else if (v3 == 6) {
+				v2 = idx22mapAttribute(client_configs['cfg1442'], 2489);
+			} else if (v3 == 7) {
+				v2 = idx22mapAttribute(client_configs['cfg1442'], 2490);
+			} else if (v3 == 8) {
+				v2 = idx22mapAttribute(client_configs['cfg1442'], 2491);
+			} else if (v3 == 9) {
+				v2 = idx22mapAttribute(client_configs['cfg1442'], 2492);
+			} else if (v3 == 10) {
+				v2 = idx22mapAttribute(client_configs['cfg1442'], 2493);
+			} else if (v3 == 11) {
+				v2 = idx22mapAttribute(client_configs['cfg1442'], 2494);
+			} else if (v3 == 12) {
+				v2 = idx22mapAttribute(client_configs['cfg1442'], 2495);
+			} else if (v3 == 13) {
+				v2 = idx22mapAttribute(client_configs['cfg1442'], 2496);
+			} else if (v3 == 14) {
+				v2 = idx22mapAttribute(client_configs['cfg1442'], 2497);
+			} else {
+				if (v3 == 15) {
+					v2 = idx22mapAttribute(client_configs['cfg1442'], 2498);
+				}
+			}
+			if (v2 != -1) {
+				object v7;
+				cs2method_10606(v0, 3, v4);
+				cs2method_10063(2, 2, 0, 0);
+				cs2method_10013(2, 2, 1, 1);
+				cs2method_10811(idx22mapAttribute(v2, 2502));
+				cs2method_10238(1);
+				v4 = cs2method_10060(v4, 1);
+				if (client_configs['cfg1443'].bitcfg4287 == v3) {
+					cs2method_10606(v0, 3, v4);
+					cs2method_10063(2, 2, 0, 0);
+					cs2method_10013(5, 5, 1, 1);
+					cs2method_10811(3814187);
+					cs2method_10238(0);
+					v4 = cs2method_10060(v4, 1);
+				}
+				cs2method_10606(v0, 5, v4);
+				cs2method_10063(0, 0, 0, 0);
+				cs2method_10013(20, 20, 0, 0);
+				v4 = cs2method_10060(v4, 1);
+				if (client_configs['cfg1443'].bitcfg4286 == v3) {
+					cs2method_10310(2289);
+					v7 = "This is the current colour for the set.";
+				} else {
+					cs2method_10310(2288);
+					v7 = "Recolour the set you currently have equipped to this colour.";
+				}
+				if (client_configs['cfg1443'].bitcfg4287 == v3 && client_configs['cfg1443'].bitcfg4286 != v3) {
+					v7 = "This is your original colour for the set.";
+				}
+				cs2method_20353(new function<script_7786>(int a0,int a1,int a2,int a3,int a4,object a5) {
+					script_5335(a0, a4, a1, a2, a5, a3, 1);
+					return;
+				}, new WidgetPointer(v0), 0, new WidgetPointer(1283,1), (string)v7, 25, 500, "IiIsii");
+				cs2method_20884(new function<script_40>(int a0) {
+					script_41(a0);
+					return;
+				}, new WidgetPointer(1283,1), "I");
+				v2 = -1;
+				v4 = 0;
+			}
+			int v6 = -1;
+		}
+	}
+	return;
+}

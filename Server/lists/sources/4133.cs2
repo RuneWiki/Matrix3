@@ -1,0 +1,47 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_4133(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8) {
+	flow_0:
+		int v0 = 0;
+		int v3 = 0;
+		IF (a4 == -1) 
+			GOTO	flow_1
+		GOTO	flow_2
+	flow_1:
+		IF (cs2method_10324(a6) == 1) 
+			GOTO	flow_3
+	flow_2:
+		IF (cs2method_11038(a6, a4) == 1) 
+			GOTO	flow_3
+		GOTO	flow_13
+	flow_3:
+		if (a7 > 0) {
+			cs2method_20061(load function<4133>, new WidgetPointer(a6), a4, a3, a8, a0, a2, a1, cs2method_10461(a7, 1), a5, "Iiiiiiii\u00ab");
+			return;
+		}
+		int v2 = cs2method_10699();
+		int v1 = cs2method_10872(cs2method_11048(cs2method_10060(v2, a3), a0), a2);
+		if (v1 == a0 || v1 == a2) {
+			if (v1 == a2) {
+				a7 = a1;
+			}
+			if (v1 == a0 && a5 != -1) {
+				cs2method_10670(a5, 1, 50, 255);
+			}
+			cs2method_20061(load function<4133>, new WidgetPointer(a6), a4, a8, a3, a0, a2, a1, a7, a5, "Iiiiiiii\u00ab");
+		}
+		cs2method_10002(v1);
+	flow_13:
+		return;
+}

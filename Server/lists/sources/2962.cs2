@@ -1,0 +1,35 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_2962(int a0) {
+	flow_0:
+		IF (a0 == 0) 
+			GOTO	flow_1
+		GOTO	flow_2
+	flow_1:
+		IF (cs2method_10236(48758808) < 970) 
+			GOTO	flow_4
+	flow_2:
+		IF (a0 == 1 && cs2method_10236(59375625) < 970) 
+			GOTO	flow_4
+		GOTO	flow_5
+	flow_4:
+		cs2method_10112(0, 0, 0, 1, 4653064);
+		cs2method_10112(0, 0, 0, 1, 4653067);
+		GOTO	flow_6
+	flow_5:
+		cs2method_10112(-280, 0, 1, 1, 4653064);
+		cs2method_10112(20, 0, 1, 1, 4653067);
+	flow_6:
+		return;
+}

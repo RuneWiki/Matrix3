@@ -1,0 +1,36 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2255(int a0) {
+	int v0 = 68354065;
+	if (a0 != -1) {
+		cs2method_10112(0, 20, 2, 2, v0);
+		cs2method_10467(0, v0);
+		cs2method_10026(v0, "- " + (string)script_8003(a0));
+		cs2method_10704(0, v0);
+		cs2method_20162(new function<script_2259>(int a0,int a1) {
+			if (a0 < 90) {
+				int v0 = cs2method_10060(a0, 1);
+				cs2method_10112(0, v0, 2, 2, a1);
+				cs2method_10704(cs2method_10060(cs2method_10690(a1), 2), a1);
+				cs2method_20162(load function<2259>, new WidgetPointer(a1), v0, "Ii", new WidgetPointer(a1));
+			} else {
+				cs2method_20162(new function<none>() {
+				}, "", new WidgetPointer(a1));
+				cs2method_10467(1, a1);
+			}
+			return;
+		}, new WidgetPointer(v0), 20, "Ii", new WidgetPointer(v0));
+	}
+	cs2method_10026(68354064, "Renown points: " + (string)cs2method_10379(client_configs['cfg4389'].bitcfg22262));
+	return;
+}

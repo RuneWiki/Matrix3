@@ -1,0 +1,25 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_425() {
+	if (cs2_configs['cfg1366'] == 1) {
+		cs2method_11127(1, 66781224, "Accept Victory");
+		cs2method_10026(66781227, "Accept Victory");
+		cs2method_10026(66781193, "Your opponent has logged out. You may end the Conquest now and be declared the winner.");
+	} else {
+		cs2method_11127(1, 66781224, "Resign");
+		cs2method_10026(66781227, "Resign");
+		cs2method_10026(66781193, "If you resign, the Conquest will end immediately.");
+		cs2method_10569();
+	}
+	return;
+}

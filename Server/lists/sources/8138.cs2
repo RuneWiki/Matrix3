@@ -1,0 +1,35 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_8138_struct(2,0,0) script_8138(int a0) {
+	int v5 = idx17mapData('i', 'J', 7716, a0);
+	if (v5 == -1) {
+		return new script_8138_struct(-1, -1);
+	}
+	int v0 = idx22mapAttribute(v5, 3505);
+	if (v0 == -1) {
+		return new script_8138_struct(-1, -1);
+	}
+	int v3 = 0;
+	int v4 = 0;
+	if (cs2method_11038(v0, 0) == 1) {
+		int v1 = interfaceDefsAttribute(3537);
+	} else {
+		return new script_8138_struct(-1, -1);
+	}
+	if (cs2method_11038(v0, 1) == 1) {
+		int v2 = interfaceDefsAttribute(3537);
+	} else {
+		return new script_8138_struct(-1, -1);
+	}
+	return new script_8138_struct(v1, v2);
+}

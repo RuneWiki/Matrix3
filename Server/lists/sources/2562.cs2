@@ -1,0 +1,20 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2562() {
+	if (cs2_configs['cfg846'] < 10) {
+		cs2_configs['cfg846'] = cs2method_10060(cs2_configs['cfg846'], 1);
+	}
+	cs2method_10026(56557598, cs2method_10379(cs2_configs['cfg846']));
+	script_2565();
+	return;
+}

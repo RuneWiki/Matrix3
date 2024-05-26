@@ -1,0 +1,62 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8868() {
+	int v26 = -1;
+	int v20 = 0;
+	int v19 = 0;
+	int v3 = 0;
+	int v23 = 0;
+	int v5 = 0;
+	script_8361(18);
+	script_8361(19);
+	script_8361(20);
+	script_8361(21);
+	script_8361(22);
+	script_8361(23);
+	script_8356(18, 19, 1, 0, 0);
+	script_8356(18, 20, 2, 0, 0);
+	script_8356(18, 21, 3, 0, 0);
+	script_8356(18, 22, 4, 0, 0);
+	script_8356(18, 23, 5, 0, 0);
+	script_8705(18);
+	script_8705(19);
+	script_8705(20);
+	script_8705(21);
+	script_8705(22);
+	script_8705(23);
+	int v25 = 1;
+	int v2 = 18;
+	script_8725_struct(4,0,0) v0 = script_8725(v25, v2);
+	int v27 = v0.intpart_3;
+	int v7 = v0.intpart_2;
+	int v14 = v0.intpart_1;
+	int v16 = v0.intpart_0;
+	int v9 = idx17mapData('i', 'J', 7716, 18);
+	int v28 = script_8711(v16, v7, cs2method_10236(cs2method_10982(idx22mapAttribute(v9, 3503))));
+	int v17 = script_8711(v14, v27, cs2method_10823(cs2method_10982(idx22mapAttribute(v9, 3503))));
+	int v22 = v28;
+	int v12 = v17;
+	int v15 = v7;
+	int v18 = v27;
+	int v6 = 18;
+	int v21 = 0;
+	int v1 = 0;
+	script_8382_struct(5,0,0) v11 = script_8382(v22, v12, v15, v18, v6, v21, v1);
+	int v8 = v11.intpart_4;
+	int v4 = v11.intpart_3;
+	int v10 = v11.intpart_2;
+	int v13 = v11.intpart_1;
+	int v24 = v11.intpart_0;
+	script_8387(v24, v13, v10, v4, 18);
+	return;
+}

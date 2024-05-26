@@ -1,0 +1,23 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3720(int a0) {
+	if (a0 == 0) {
+		return;
+	}
+	if (a0 < 0) {
+		script_3721(-4, -5);
+	} else {
+		script_3721(4, 5);
+	}
+	return;
+}

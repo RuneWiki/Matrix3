@@ -1,0 +1,58 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8765() {
+	if (client_configs['cfg3892'].bitcfg20711 > 0) {
+		cs2method_10467(0, 16121882);
+		cs2method_10273(16121862);
+		cs2method_10433("DEBUG: " + (string)cs2method_10379(cs2method_10163(16121862)));
+		cs2method_10606(16121862, 5, 0);
+		if (client_configs['cfg3892'].bitcfg20711 > 3) {
+			cs2method_10063(0, 16, 1, 0);
+			cs2method_10013(48, 48, 0, 0);
+		} else {
+			cs2method_10063(0, 24, 1, 0);
+			cs2method_10013(36, 32, 0, 0);
+		}
+		switch (client_configs['cfg3892'].bitcfg20711) {
+			case 1:
+				if (cs2method_10210() == 0) {
+					cs2method_11070(29933, 1);
+				} else {
+					cs2method_11070(29934, 1);
+				}
+				break;
+			case 2:
+				if (cs2method_10210() == 0) {
+					cs2method_11070(29934, 1);
+				} else {
+					cs2method_11070(29935, 1);
+				}
+				break;
+			case 3:
+				cs2method_11070(29929, 1);
+				cs2method_10026(16121905, "Claim");
+				break;
+			case 4:
+				cs2method_10310(20536);
+				cs2method_10026(16121905, "Claim");
+				break;
+			case 5:
+				cs2method_10310(11744);
+				cs2method_10026(16121905, "Claim");
+		}
+	} else {
+		cs2method_10273(16121862);
+		cs2method_10467(1, 16121882);
+	}
+	return;
+}

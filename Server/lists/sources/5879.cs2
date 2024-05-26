@@ -1,0 +1,77 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5879() {
+	cs2_configs['cfg1783'] = 0;
+	int v0 = 82116833;
+	int v1 = 82116832;
+	int v2 = cs2method_11048(0, script_6950());
+	cs2method_10467(0, 82116790);
+	cs2method_10467(0, 82116812);
+	script_10083();
+	if (client_configs['cfg1451'].bitcfg4345 > 0 || cs2_configs['cfg1781'] > 0) {
+		script_6976();
+	} else if (v2 > 0) {
+		script_6974();
+	} else {
+		script_6978();
+	}
+	if (client_configs['cfg1450'].bitcfg4321 == 2 || client_configs['cfg1450'].bitcfg4321 == 4) {
+		cs2method_10758(18526, 82116938);
+		cs2method_10758(18525, 82116941);
+	} else {
+		cs2method_10758(18525, 82116938);
+		cs2method_10758(18526, 82116941);
+	}
+	script_10092();
+	script_1523();
+	cs2_configs['cfg1781'] = -1;
+	cs2method_20243(new function<script_1531>() {
+		client_configs['cfg1451'].bitcfg4345 = cs2_configs['cfg2043'];
+		script_6566();
+		return;
+	}, 2043, 1, "Y", new WidgetPointer(1253,170));
+	cs2method_20348(new function<script_1531>() {
+		client_configs['cfg1451'].bitcfg4345 = cs2_configs['cfg2043'];
+		script_6566();
+		return;
+	}, 1451, 1, "Y", new WidgetPointer(1253,202));
+	cs2method_20243(new function<script_5880>() {
+		script_5881();
+		return;
+	}, 1800, 1, "Y", new WidgetPointer(1253,328));
+	cs2method_20348(new function<script_5880>() {
+		script_5881();
+		return;
+	}, 1448, 1451, 2, "Y", new WidgetPointer(1253,328));
+	cs2method_20243(new function<script_6573>() {
+		script_8841(29, 1);
+		return;
+	}, 1993, 1, "Y", new WidgetPointer(1253,231));
+	cs2method_20243(new function<script_10094>() {
+		script_10092();
+		return;
+	}, 1928, 1, "Y", new WidgetPointer(v1));
+	cs2method_20243(new function<script_5884>() {
+		script_6566();
+		return;
+	}, 1781, 1, "Y", new WidgetPointer(v0));
+	cs2method_20243(new function<script_5905>() {
+		script_5906();
+		return;
+	}, 1790, 4095, 4094, 4157, 4, "Y", new WidgetPointer(1253,151));
+	script_5219(82116894);
+	cs2_configs['cfg1784'] = 0;
+	script_1968();
+	script_5881();
+	return;
+}

@@ -1,0 +1,53 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5977() {
+	int v3;
+	int v4 = 1;
+	int v1 = 0;
+	int v2 = -1;
+	int v0 = -1;
+	switch (client_configs['cfg1978'].bitcfg6679) {
+		case 0:
+			v3 = 82509826;
+			break;
+		case 1:
+		case 3:
+		case 4:
+			v3 = 82640899;
+			break;
+		case 2:
+		case 5:
+			v3 = 82444290;
+			break;
+		default:
+			return;
+	}
+	if (cs2method_10172() == 1) {
+		int v5;
+		if (cs2_configs['cfg1794'] < 0) {
+			cs2_configs['cfg1794'] = 0;
+		}
+		if (cs2_configs['cfg1794'] == 0) {
+			v5 = clan_chat_configs['cfg2583'].bitcfg6524;
+		} else {
+			v5 = clan_chat_configs['cfg2071'].bitcfg6661;
+		}
+		int v7 = clan_chat_configs['cfg2575'].bitcfg6507;
+		int v6 = script_4904(1, v5, v7);
+		if (v6 == -1) {
+			return;
+		}
+		cs2method_10758(v6, v3);
+	}
+	return;
+}

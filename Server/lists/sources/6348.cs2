@@ -1,0 +1,34 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_6348_struct(2,0,0) script_6348(int a0) {
+	int v13 = -1;
+	int v9 = -1;
+	int v6 = 0;
+	int v0 = a0;
+	script_6380_struct(3,0,0) v11 = script_6380(v0);
+	int v8 = v11.intpart_2;
+	int v3 = v11.intpart_1;
+	int v4 = v11.intpart_0;
+	if (v4 == -1 && v8 == -1) {
+		return new script_6348_struct(-1, -1);
+	}
+	int v14 = -1;
+	int v7 = -1;
+	int v12 = v4;
+	int v5 = v3;
+	int v1 = v8;
+	script_6349_struct(2,0,0) v10 = script_6349(v12, v5, v1);
+	int v15 = v10.intpart_1;
+	int v2 = v10.intpart_0;
+	return new script_6348_struct(v2, v15);
+}

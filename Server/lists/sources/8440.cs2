@@ -1,0 +1,91 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8440(object a0,int a1,object a2,object a3,object a4) {
+	if (cs2method_11038(a1, 6) == 1) {
+		if (cs2method_10846("", a4) != 0) {
+			cs2method_10057(1, a4);
+			cs2method_20353(new function<script_8799>(int a0,int a1,object a2) {
+				script_8800(a1, a0, a2);
+				return;
+			}, (string)a4, new WidgetPointer(-32768,3), -2147483643, "sIi");
+			cs2method_20884(new function<script_8805>() {
+				script_8808();
+				return;
+			}, "");
+		} else {
+			cs2method_10620();
+			cs2method_20353(new function<none>() {
+			}, "");
+			cs2method_20884(new function<none>() {
+			}, "");
+		}
+	}
+	if (cs2method_11038(a1, 7) == 1) {
+		if (cs2method_10846("", a3) != 0) {
+			cs2method_10057(1, a3);
+			cs2method_20353(new function<script_8799>(int a0,int a1,object a2) {
+				script_8800(a1, a0, a2);
+				return;
+			}, (string)a3, new WidgetPointer(-32768,3), -2147483643, "sIi");
+			cs2method_20884(new function<script_8805>() {
+				script_8808();
+				return;
+			}, "");
+		} else {
+			cs2method_10620();
+			cs2method_20353(new function<none>() {
+			}, "");
+			cs2method_20884(new function<none>() {
+			}, "");
+		}
+	}
+	if (cs2method_11038(a1, 8) == 1) {
+		if (cs2method_10846("", a0) != 0) {
+			cs2method_10057(1, a0);
+			cs2method_20353(new function<script_8799>(object a0,int a1,int a2) {
+				script_8800(a2, a1, a0);
+				return;
+			}, (string)a0, new WidgetPointer(-32768,3), -2147483643, "sIi");
+			cs2method_20884(new function<script_8805>() {
+				script_8808();
+				return;
+			}, "");
+		} else {
+			cs2method_10620();
+			cs2method_20353(new function<none>() {
+			}, "");
+			cs2method_20884(new function<none>() {
+			}, "");
+		}
+	}
+	if (cs2method_11038(a1, 9) == 1) {
+		if (cs2method_10846("", a2) != 0) {
+			cs2method_10057(1, a2);
+			cs2method_20353(new function<script_8799>(object a0,int a1,int a2) {
+				script_8800(a2, a1, a0);
+				return;
+			}, (string)a2, new WidgetPointer(-32768,3), -2147483643, "sIi");
+			cs2method_20884(new function<script_8805>() {
+				script_8808();
+				return;
+			}, "");
+		} else {
+			cs2method_10620();
+			cs2method_20353(new function<none>() {
+			}, "");
+			cs2method_20884(new function<none>() {
+			}, "");
+		}
+	}
+	return;
+}

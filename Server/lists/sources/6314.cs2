@@ -1,0 +1,28 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6314(int a0) {
+	if (cs2method_10441(cs2_configs['cfg841'], 0) == 1) {
+		cs2method_10495(a0);
+		cs2method_10906(a0);
+		cs2method_10274(a0, "Back");
+	} else {
+		cs2method_11127(1, a0, "Close");
+		cs2method_20486(new function<script_29>() {
+			script_1187();
+			return;
+		}, "", new WidgetPointer(a0));
+		cs2method_10274(a0, "");
+	}
+	cs2method_20243(load function<6314>, new WidgetPointer(a0), 841, 1, "IY", new WidgetPointer(a0));
+	return;
+}

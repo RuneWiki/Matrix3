@@ -1,0 +1,24 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_928(int a0) {
+	if (itemDefsAttribute(a0, 770) != -1) {
+		return 1;
+	}
+	if (itemDefsAttribute(a0, 764) > -1) {
+		return 1;
+	}
+	if (itemDefsAttribute(a0, 762) > 0) {
+		return 1;
+	}
+	return 0;
+}

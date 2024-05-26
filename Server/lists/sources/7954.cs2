@@ -1,0 +1,48 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7954(int a0) {
+	cs2_configs['cfg622'] = a0;
+	int v6 = 0;
+	int v0 = 0;
+	int v3 = a0;
+	opc_struct11111(2,0,0) v8 = cs2method_11111(v3);
+	int v1 = v8.intpart_1;
+	int v4 = v8.intpart_0;
+	if (v4 < 0 || v1 < 0) {
+		int v7 = cs2method_10327(0, cs2method_10635(a0), script_686(cs2method_10461(cs2method_10808(a0), 1), 4), cs2method_10339(a0));
+		int v9 = v7;
+		opc_struct11111(2,0,0) v10 = cs2method_11111(v9);
+		v1 = v10.intpart_1;
+		v4 = v10.intpart_0;
+		if (v4 < 0 || v1 < 0) {
+			int v5 = cs2method_10327(0, cs2method_10635(v7), script_686(cs2method_10461(cs2method_10808(v7), 1), 4), cs2method_10339(v7));
+			int v10 = v5;
+			opc_struct11111(2,0,0) v9 = cs2method_11111(v10);
+			v1 = v9.intpart_1;
+			v4 = v9.intpart_0;
+			if (v4 < 0 || v1 < 0) {
+				int v10 = cs2method_10327(0, cs2method_10635(v5), script_686(cs2method_10461(cs2method_10808(v5), 1), 4), cs2method_10339(v5));
+				int v11 = v10;
+				opc_struct11111(2,0,0) v9 = cs2method_11111(v11);
+				v1 = v9.intpart_1;
+				v4 = v9.intpart_0;
+				if (v4 < 0 || v1 < 0) {
+					return;
+				}
+			}
+		}
+	}
+	int v2 = cs2method_10327(0, v4, 0, v1);
+	script_7955(v2);
+	return;
+}

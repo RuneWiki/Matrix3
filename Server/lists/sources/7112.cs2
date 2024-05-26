@@ -1,0 +1,18 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_7112() {
+	if (client_configs['cfg1784'] != -1 && npcDefsAttribute(client_configs['cfg1784'], 379) > 0 && npcDefsAttribute(client_configs['cfg1784'], 424) > 0) {
+		return 1;
+	}
+	return 0;
+}

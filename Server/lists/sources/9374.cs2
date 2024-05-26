@@ -1,0 +1,68 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9374() {
+	object v0 = "";
+	object v1 = "";
+	object v2 = "";
+	object v3 = "";
+	if (client_configs['cfg3939'].bitcfg20989 == 1) {
+		v0 = (string)cs2method_10744(45940789) + ". ";
+	}
+	if (client_configs['cfg3939'].bitcfg20990 == 1) {
+		v0 = (string)v0 + (string)cs2method_10744(45940824) + "until event starts. ";
+	}
+	if (client_configs['cfg2030'].bitcfg8945 == 0) {
+		if (client_configs['cfg3939'].bitcfg20991 == 1) {
+			v0 = (string)v0 + (string)cs2method_10744(45940887) + " Game Time. ";
+		}
+	} else {
+		if (client_configs['cfg3939'].bitcfg20992 == 1) {
+			v0 = (string)v0 + (string)cs2method_10744(45940831) + " Clan Time. ";
+		}
+	}
+	if (client_configs['cfg3939'].bitcfg20993 == 1) {
+		v1 = (string)v1 + "World " + (string)cs2method_10744(45940838) + " ";
+	}
+	if (client_configs['cfg3939'].bitcfg20994 == 1) {
+		v1 = (string)v1 + "@ " + (string)cs2method_10744(45940845) + ". ";
+	}
+	if (client_configs['cfg3939'].bitcfg20995 == 1) {
+		v2 = (string)v2 + (string)cs2method_10744(45940852) + ". ";
+	}
+	if (client_configs['cfg3939'].bitcfg20996 == 1) {
+		v2 = (string)v2 + (string)cs2method_10744(45940859) + ". ";
+	}
+	if (client_configs['cfg3939'].bitcfg20997 == 1) {
+		v3 = (string)v3 + "Open to " + (string)cs2method_10744(45940866) + ". ";
+	}
+	if (client_configs['cfg3939'].bitcfg20999 == 1) {
+		v3 = (string)v3 + (string)cs2method_10744(45940873) + " ";
+	}
+	if (client_configs['cfg3939'].bitcfg21000 == 1) {
+		v3 = (string)v3 + (string)cs2method_10744(45940894);
+	}
+	cs2method_10026(45940799, (string)v0 + "<br>" + (string)v1 + "<br>" + (string)v2 + "<br>" + (string)v3);
+	cs2method_10026(45940736, (string)v0 + "<br>" + (string)v1 + "<br>" + (string)v2 + "<br>" + (string)v3);
+	if (cs2method_10060(11, cs2method_10051(11, cs2method_10805(cs2method_10461(cs2method_10236(45940897), 20), 20452, (string)v0 + "<br>" + (string)v1 + "<br>" + (string)v2 + "<br>" + (string)v3))) > cs2method_10823(45940897)) {
+		cs2method_10283(20, 10, 1, 1, 45940897);
+		cs2method_11130(0, cs2method_10060(11, cs2method_10051(11, cs2method_10805(cs2method_10461(cs2method_10236(45940897), 20), 20452, (string)v0 + "<br>" + (string)v1 + "<br>" + (string)v2 + "<br>" + (string)v3))), 45940897);
+		cs2method_10467(0, 45940896);
+		cs2method_10273(45940896);
+		script_7791(45940896, 45940897);
+	} else {
+		cs2method_10283(10, 10, 1, 1, 45940897);
+		cs2method_11130(0, 0, 45940897);
+		cs2method_10467(1, 45940896);
+	}
+	return;
+}

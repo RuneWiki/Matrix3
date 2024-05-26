@@ -1,0 +1,113 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4011() {
+	object v6;
+	int v4;
+	if (cs2_configs['cfg699'] == -1) {
+		return;
+	}
+	int v7 = script_2193(idx22mapAttribute(cs2_configs['cfg699'], 847));
+	if (v7 == 2) {
+		cs2method_10026(98304417, "Quest complete!");
+	} else if (v7 == 1) {
+		cs2method_10026(98304417, "Started");
+	} else {
+		cs2method_10026(98304417, "Not started");
+	}
+	object v5 = idx22mapAttribute(cs2_configs['cfg699'], 845);
+	int v0 = cs2method_10939(cs2method_10643(98304332), v5);
+	cs2method_10283(cs2method_10060(v0, 30), cs2method_10823(98304006), 0, 0, 98304006);
+	cs2method_10026(98304332, v5);
+	cs2method_10758(idx22mapAttribute(cs2_configs['cfg699'], 952), 98304394);
+	int v1 = script_4249(98304344, 98304345, 98304346, "<col=ebe076>" + "Start point:" + "</col>", -1, -1, v7, idx22mapAttribute(cs2_configs['cfg699'], 948), 0);
+	if (cs2_configs['cfg699'] == 19266) {
+		if (cs2method_10004() < 100) {
+			v4 = script_4249(98304347, 98304349, 98304350, "<col=ebe076>" + "Requirements:" + "</col>", -1, -1, v7, "A combat level of at least 100.", v1);
+		} else {
+			v4 = script_4249(98304347, 98304349, 98304350, "<col=ebe076>" + "Requirements:" + "</col>", -1, -1, v7, "<str>" + "A combat level of at least 100." + "</str>", v1);
+		}
+	} else {
+		v4 = script_4249(98304347, 98304349, 98304350, "<col=ebe076>" + "Requirements:" + "</col>", -1, -1, v7, cs2_configs['cfg2554'], v1);
+	}
+	switch (cs2_configs['cfg699']) {
+		case 19266:
+			v4 = script_4249(98304348, 98304442, 98304443, "<col=ebe076>" + "Suggested Requirements:" + "</col>", -1, -1, v7, script_7566(), v4);
+			cs2method_10467(0, 98304348);
+			break;
+		case 27824:
+			v4 = script_4249(98304348, 98304442, 98304443, "<col=ebe076>" + "Suggested Requirements:" + "</col>", -1, -1, v7, script_9889(), v4);
+			cs2method_10467(0, 98304348);
+			break;
+		default:
+			cs2method_10467(1, 98304348);
+	}
+	int v8 = script_4249(98304351, 98304352, 98304353, "<col=ebe076>" + "Required items:" + "</col>", 98304354, 98304359, v7, idx22mapAttribute(cs2_configs['cfg699'], 949), v4);
+	int v2 = script_4249(98304360, 98304361, 98304362, "<col=ebe076>" + "Combat:" + "</col>", -1, -1, v7, idx22mapAttribute(cs2_configs['cfg699'], 950), v8);
+	switch (cs2_configs['cfg699']) {
+		case 658:
+			if (client_configs['cfg2163'] >= 21 && client_configs['cfg2164'].bitcfg9584 == 0) {
+				v6 = idx22mapAttribute(cs2_configs['cfg699'], 1212);
+			} else {
+				v6 = idx22mapAttribute(cs2_configs['cfg699'], 951);
+			}
+			break;
+		case 659:
+			if (client_configs['cfg2473'] >= 3 && client_configs['cfg2164'].bitcfg9585 == 0) {
+				v6 = idx22mapAttribute(cs2_configs['cfg699'], 1212);
+			} else {
+				v6 = idx22mapAttribute(cs2_configs['cfg699'], 951);
+			}
+			break;
+		case 1137:
+			if (client_configs['cfg2692'] == 100) {
+				v6 = idx22mapAttribute(cs2_configs['cfg699'], 1212);
+			} else {
+				v6 = idx22mapAttribute(cs2_configs['cfg699'], 951);
+			}
+			break;
+		case 10527:
+			cs2method_10026(98304402, "Offer");
+			cs2method_10495(98304398);
+			cs2method_10274(98304398, "Offer");
+			cs2method_10112(0, cs2method_10152(98304398), 1, 0, 98304398);
+			cs2method_10467(1, 98304403);
+			cs2method_10467(1, 98304408);
+			cs2method_10467(1, 98304409);
+			v6 = cs2_configs['cfg2544'];
+			break;
+		default:
+			v6 = idx22mapAttribute(cs2_configs['cfg699'], 951);
+	}
+	int v3 = script_4249(98304363, 98304364, 98304365, "<col=ebe076>" + "Rewards:" + "</col>", 98304366, 98304371, v7, v6, v2);
+	if (idx22mapAttribute(cs2_configs['cfg699'], 3380) == 1) {
+		v3 = script_7723(v3);
+		cs2method_10467(0, 98304395);
+		cs2method_10467(0, 98304372);
+		cs2method_10467(1, 98304381);
+		cs2method_10467(0, 98304396);
+	} else {
+		cs2method_10467(1, 98304372);
+		cs2method_10467(1, 98304372);
+		cs2method_10467(1, 98304395);
+		cs2method_10520(723723, 98304334);
+		cs2method_10467(1, 98304396);
+	}
+	if (v3 > cs2method_10823(98304343)) {
+		cs2method_11130(0, v3, 98304343);
+		script_31(98304389, 98304343, 5666, 5663, 5664, 5665, 5686, 5685);
+	} else {
+		cs2method_11130(0, 0, 98304343);
+		cs2method_10273(98304389);
+	}
+	return;
+}

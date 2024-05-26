@@ -1,0 +1,569 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3216(int a0,int a1) {
+	if (cs2method_10077() == -3) {
+		return;
+	}
+	if (cs2method_10742() == -3) {
+		return;
+	}
+	if (cs2method_10856() == -3) {
+		return;
+	}
+	if (cs2method_10609(93061329) == 0) {
+		return;
+	}
+	if (a0 == 13) {
+		script_7879();
+		return;
+	}
+	if (cs2method_10609(93061302) == 1 || cs2method_10609(93061578) == 0) {
+		return;
+	}
+	object v3 = "";
+	int v6 = 0;
+	int v11 = 0;
+	int v12 = 0;
+	int v1 = 0;
+	object v9 = "";
+	object v2 = cs2method_10410(a1, v9);
+	switch (cs2_configs['cfg174']) {
+		case 16:
+			switch (a0) {
+				case 84:
+				case 80:
+					if (cs2_configs['cfg175'] >= cs2method_10133()) {
+						return;
+					}
+					if (cs2_configs['cfg3488'] != 0) {
+						return;
+					}
+					cs2method_20162(new function<none>() {
+					}, "", new WidgetPointer(1420,208));
+					script_7836(0, 0);
+					if (a0 == 80 && cs2method_10862() == 1) {
+						script_7836(3, 1);
+						script_2714(7, 1);
+					} else {
+						script_7836(1, 1);
+						script_2714(15, 1);
+					}
+					return;
+				case 102:
+				case 103:
+				case 98:
+				case 99:
+				case 96:
+				case 97:
+					if (cs2method_10761(a1, 0, "124678") == -1) {
+						cs2_configs['cfg1099'] = script_1553(a0, cs2_configs['cfg2563'], cs2_configs['cfg1099']);
+						script_3218(93061379, cs2_configs['cfg2563'], 93061380, 93061381, 16);
+						return;
+					}
+			}
+			if (cs2method_10265(cs2_configs['cfg2563']) >= 12 && a0 != 85 && a0 != 101) {
+				return;
+			}
+			if (cs2method_10761(a1, 0, "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 \u00a0_-") != -1 || a0 == 85 || a0 == 101) {
+				int v18 = cs2_configs['cfg1099'];
+				int v15 = 3;
+				int v17 = a0;
+				int v20 = a1;
+				object v19 = cs2_configs['cfg2563'];
+				script_802_struct(1,1,0) v21 = script_802(v18, v19, v15, v17, v20);
+				object v16 = v21.objectpart_0;
+				cs2_configs['cfg1099'] = v21.intpart_0;
+				cs2_configs['cfg2563'] = (string)v16;
+				cs2method_10026(93061380, cs2_configs['cfg2563']);
+				script_3218(93061379, cs2_configs['cfg2563'], 93061380, 93061381, 16);
+				if (cs2method_10846(cs2_configs['cfg2563'], cs2_configs['cfg3685']) != 0) {
+					script_7922();
+					script_7845(3, "", 93061194);
+					script_7847();
+					script_7858();
+					cs2method_10467(1, 93061411);
+					if (cs2_configs['cfg3488'] == 0) {
+						cs2method_20162(new function<script_7834>(int a0,int a1) {
+							if (cs2method_10461(cs2method_10133(), a1) > 30) {
+								switch (cs2_configs['cfg174']) {
+									case 16:
+										script_7855(0, 1);
+										break;
+									case 6:
+										script_2283(0, 1);
+										break;
+									case 7:
+										int v1 = script_3228(0, 1);
+										/* 
+											java.lang.RuntimeException: Stack underflow
+												at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+												at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+												at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+												at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+												at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+												at mgi.tools.jagdecs2.FlowBlocksGenerator.cast(FlowBlocksGenerator.java:546)
+												at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+												at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+												at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+												at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+												at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+												at tests.Main.main(Main.java:69)
+											
+										 */
+									case 15:
+										int v0 = script_3954(0, 1);
+										/* 
+											java.lang.RuntimeException: Stack underflow
+												at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+												at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+												at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+												at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+												at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+												at mgi.tools.jagdecs2.FlowBlocksGenerator.cast(FlowBlocksGenerator.java:546)
+												at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+												at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+												at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+												at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+												at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+												at tests.Main.main(Main.java:69)
+											
+										 */
+								}
+								cs2method_20162(new function<none>() {
+								}, "", new WidgetPointer(a0));
+								script_7858();
+							}
+							return;
+						}, cs2method_10133(), new WidgetPointer(1420,208), "iI", new WidgetPointer(1420,208));
+					} else {
+						cs2method_10467(1, 93061331);
+						cs2_configs['cfg3685'] = cs2_configs['cfg2563'];
+					}
+				}
+			}
+			return;
+		case 6:
+			switch (a0) {
+				case 84:
+				case 80:
+					if (cs2_configs['cfg175'] >= cs2method_10133()) {
+						return;
+					}
+					if (cs2_configs['cfg3488'] != 0) {
+						return;
+					}
+					cs2method_20162(new function<none>() {
+					}, "", new WidgetPointer(1420,208));
+					script_7836(2, 0);
+					if (a0 == 80 && cs2method_10862() == 1) {
+						script_2714(15, 1);
+						script_7836(1, 1);
+					} else {
+						script_2714(7, 1);
+						script_7836(3, 1);
+					}
+					return;
+				case 102:
+				case 103:
+				case 98:
+				case 99:
+				case 96:
+				case 97:
+					if (cs2method_10761(a1, 0, "124678") == -1) {
+						cs2_configs['cfg1099'] = script_1553(a0, cs2_configs['cfg2555'], cs2_configs['cfg1099']);
+						script_3218(93061359, cs2_configs['cfg2555'], 93061120, 93061360, 6);
+						return;
+					}
+			}
+			if (cs2method_10265(cs2_configs['cfg2555']) >= 320 && a0 != 85 && a0 != 101) {
+				return;
+			}
+			if (cs2method_10761(a1, 0, "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!#$%&'*+-/=?^_.{}~@") != -1 || a0 == 85 || a0 == 101) {
+				if (cs2method_10609(93061329) == 0) {
+					return;
+				}
+				int v19 = cs2_configs['cfg1099'];
+				int v17 = 3;
+				int v21 = a0;
+				int v15 = a1;
+				object v16 = cs2_configs['cfg2555'];
+				script_802_struct(1,1,0) v20 = script_802(v19, v16, v17, v21, v15);
+				object v18 = v20.objectpart_0;
+				cs2_configs['cfg1099'] = v20.intpart_0;
+				cs2_configs['cfg2555'] = (string)v18;
+				cs2method_10026(93061120, cs2_configs['cfg2555']);
+				script_3218(93061359, cs2_configs['cfg2555'], 93061120, 93061360, 6);
+				if (cs2method_10846(cs2_configs['cfg2555'], cs2_configs['cfg2557']) != 0) {
+					script_7845(3, "", 93061190);
+					script_7847();
+					script_7858();
+					cs2method_10467(1, 93061411);
+					cs2method_20162(new function<script_7834>(int a0,int a1) {
+						if (cs2method_10461(cs2method_10133(), a1) > 30) {
+							switch (cs2_configs['cfg174']) {
+								case 16:
+									script_7855(0, 1);
+									break;
+								case 6:
+									script_2283(0, 1);
+									break;
+								case 7:
+									int v1 = script_3228(0, 1);
+									/* 
+										java.lang.RuntimeException: Stack underflow
+											at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+											at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+											at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+											at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+											at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+											at mgi.tools.jagdecs2.FlowBlocksGenerator.cast(FlowBlocksGenerator.java:546)
+											at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+											at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+											at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+											at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+											at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+											at tests.Main.main(Main.java:69)
+										
+									 */
+								case 15:
+									int v0 = script_3954(0, 1);
+									/* 
+										java.lang.RuntimeException: Stack underflow
+											at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+											at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+											at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+											at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+											at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+											at mgi.tools.jagdecs2.FlowBlocksGenerator.cast(FlowBlocksGenerator.java:546)
+											at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+											at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+											at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+											at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+											at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+											at tests.Main.main(Main.java:69)
+										
+									 */
+							}
+							cs2method_20162(new function<none>() {
+							}, "", new WidgetPointer(a0));
+							script_7858();
+						}
+						return;
+					}, cs2method_10133(), new WidgetPointer(1420,208), "iI", new WidgetPointer(1420,208));
+				}
+			}
+			return;
+		case 7:
+			switch (a0) {
+				case 84:
+					if (cs2method_10609(93061573) == 1) {
+						/* 
+							mgi.tools.jagdecs2.DecompilerException: No documentation for:CALL_CS2	7885
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:198)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+								at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+								at tests.Main.main(Main.java:69)
+							
+						 */
+					}
+					break;
+				case 80:
+					if (cs2_configs['cfg175'] >= cs2method_10133()) {
+						return;
+					}
+					if (cs2_configs['cfg3488'] != 0) {
+						return;
+					}
+					cs2method_20162(new function<none>() {
+					}, "", new WidgetPointer(1420,208));
+					script_7836(3, 0);
+					if (a0 == 80 && cs2method_10862() == 1) {
+						script_2714(6, 1);
+						script_7836(2, 1);
+					} else {
+						script_2714(16, 1);
+						script_7836(0, 1);
+					}
+					return;
+				case 102:
+				case 103:
+				case 98:
+				case 99:
+				case 96:
+				case 97:
+					if (cs2method_10761(a1, 0, "124678") == -1) {
+						cs2_configs['cfg1099'] = script_1553(a0, cs2_configs['cfg2559'], cs2_configs['cfg1099']);
+						if (cs2method_10609(93061312) == 1) {
+							script_3218(93061365, script_2949(cs2_configs['cfg2559']), 93061366, 93061367, 7);
+						} else {
+							script_3218(93061365, cs2_configs['cfg2559'], 93061366, 93061367, 7);
+						}
+						return;
+					}
+			}
+			if (cs2method_10265(cs2_configs['cfg2559']) >= 20 && a0 != 85 && a0 != 101) {
+				return;
+			}
+			int v14 = cs2_configs['cfg1099'];
+			int v7 = 0;
+			int v5 = a0;
+			int v13 = a1;
+			object v0 = cs2_configs['cfg2559'];
+			script_802_struct(1,1,0) v10 = script_802(v14, v0, v7, v5, v13);
+			object v8 = v10.objectpart_0;
+			cs2_configs['cfg1099'] = v10.intpart_0;
+			cs2_configs['cfg2559'] = (string)v8;
+			if (cs2method_10609(93061312) == 1) {
+				cs2method_10026(93061366, script_2949(cs2_configs['cfg2559']));
+				script_3218(93061365, script_2949(cs2_configs['cfg2559']), 93061366, 93061367, 7);
+			} else {
+				cs2method_10026(93061366, cs2_configs['cfg2559']);
+				script_3218(93061365, cs2_configs['cfg2559'], 93061366, 93061367, 7);
+			}
+			if (cs2method_10846(cs2_configs['cfg2559'], cs2_configs['cfg2561']) != 0) {
+				script_7845(3, "", 93061188);
+				script_7847();
+				script_7858();
+				cs2method_10467(1, 93061411);
+				cs2method_20162(new function<script_7834>(int a0,int a1) {
+					if (cs2method_10461(cs2method_10133(), a0) > 30) {
+						switch (cs2_configs['cfg174']) {
+							case 16:
+								script_7855(0, 1);
+								break;
+							case 6:
+								script_2283(0, 1);
+								break;
+							case 7:
+								int v1 = script_3228(0, 1);
+								/* 
+									java.lang.RuntimeException: Stack underflow
+										at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+										at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+										at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+										at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+										at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+										at mgi.tools.jagdecs2.FlowBlocksGenerator.cast(FlowBlocksGenerator.java:546)
+										at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+										at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+										at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+										at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+										at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+										at tests.Main.main(Main.java:69)
+									
+								 */
+							case 15:
+								int v0 = script_3954(0, 1);
+								/* 
+									java.lang.RuntimeException: Stack underflow
+										at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+										at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+										at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+										at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+										at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+										at mgi.tools.jagdecs2.FlowBlocksGenerator.cast(FlowBlocksGenerator.java:546)
+										at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+										at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+										at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+										at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+										at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+										at tests.Main.main(Main.java:69)
+									
+								 */
+						}
+						cs2method_20162(new function<none>() {
+						}, "", new WidgetPointer(a1));
+						script_7858();
+					}
+					return;
+				}, cs2method_10133(), new WidgetPointer(1420,208), "iI", new WidgetPointer(1420,208));
+			}
+			return;
+		case 15:
+			switch (a0) {
+				case 84:
+				case 80:
+					if (cs2_configs['cfg175'] >= cs2method_10133()) {
+						return;
+					}
+					if (cs2_configs['cfg3488'] != 0) {
+						return;
+					}
+					cs2method_20162(new function<none>() {
+					}, "", new WidgetPointer(1420,208));
+					script_7836(1, 0);
+					if (a0 == 80 && cs2method_10862() == 1) {
+						script_2714(16, 1);
+						script_7836(0, 1);
+					} else {
+						script_2714(6, 1);
+						script_7836(2, 1);
+					}
+					return;
+				case 102:
+				case 103:
+				case 98:
+				case 99:
+				case 96:
+				case 97:
+					if (cs2method_10761(a1, 0, "124678") == -1) {
+						cs2_configs['cfg1099'] = script_1553(a0, cs2method_10379(cs2_configs['cfg1407']), cs2_configs['cfg1099']);
+						script_3218(93061372, cs2method_10379(cs2_configs['cfg1407']), 93061373, 93061374, 15);
+						return;
+					}
+			}
+			if (cs2method_10265(cs2method_10379(cs2_configs['cfg1407'])) >= 3 && a0 != 85 && a0 != 101) {
+				return;
+			}
+			if (cs2method_10265(cs2method_10379(cs2_configs['cfg1407'])) == 3) {
+				v11 = cs2method_10968(cs2_configs['cfg1407'], 100);
+				v12 = cs2method_10968(cs2method_10461(cs2_configs['cfg1407'], cs2method_10051(v11, 100)), 10);
+				v1 = cs2method_10461(cs2_configs['cfg1407'], cs2method_10060(cs2method_10051(v11, 100), cs2method_10051(v12, 10)));
+			} else {
+				if (cs2method_10265(cs2method_10379(cs2_configs['cfg1407'])) == 2) {
+					v11 = cs2method_10968(cs2_configs['cfg1407'], 10);
+					v12 = cs2method_10461(cs2_configs['cfg1407'], cs2method_10051(v11, 10));
+				}
+			}
+			if (cs2method_10957(a1) == 1) {
+				int v4 = cs2method_10761(a1, 0, "0123456789");
+				if (cs2_configs['cfg1407'] < 1) {
+					cs2_configs['cfg1407'] = v4;
+				} else {
+					cs2_configs['cfg1407'] = cs2method_10060(cs2method_10051(cs2_configs['cfg1407'], 10), v4);
+				}
+				cs2_configs['cfg1099'] = cs2method_10265(cs2method_10379(cs2_configs['cfg1407']));
+			} else if (a0 == 85) {
+				if (cs2_configs['cfg1099'] >= 3) {
+					cs2_configs['cfg1407'] = cs2method_10968(cs2_configs['cfg1407'], 10);
+				} else if (cs2_configs['cfg1099'] == 2) {
+					if (cs2method_10265(cs2method_10379(cs2_configs['cfg1407'])) == 3) {
+						cs2_configs['cfg1407'] = cs2method_10060(cs2method_10051(v11, 10), v1);
+					} else if (cs2method_10265(cs2method_10379(cs2_configs['cfg1407'])) == 2) {
+						cs2_configs['cfg1407'] = cs2method_10968(cs2_configs['cfg1407'], 10);
+					} else {
+						cs2_configs['cfg1407'] = 0;
+						cs2_configs['cfg1099'] = 0;
+					}
+				} else if (cs2_configs['cfg1099'] == 1) {
+					if (cs2method_10265(cs2method_10379(cs2_configs['cfg1407'])) == 3) {
+						cs2_configs['cfg1407'] = cs2method_10461(cs2_configs['cfg1407'], cs2method_10051(v11, 100));
+					} else if (cs2method_10265(cs2method_10379(cs2_configs['cfg1407'])) == 2) {
+						cs2_configs['cfg1407'] = cs2method_10461(cs2_configs['cfg1407'], cs2method_10051(v11, 10));
+					} else {
+						cs2_configs['cfg1407'] = 0;
+						cs2_configs['cfg1099'] = 0;
+					}
+				} else {
+					return;
+				}
+				cs2_configs['cfg1099'] = cs2method_11048(cs2method_10461(cs2_configs['cfg1099'], 1), 0);
+			} else {
+				if (a0 == 101) {
+					if (cs2_configs['cfg1099'] >= 3) {
+						return;
+					}
+					if (cs2_configs['cfg1099'] == 2) {
+						if (cs2method_10265(cs2method_10379(cs2_configs['cfg1407'])) == 3) {
+							cs2_configs['cfg1407'] = cs2method_10968(cs2_configs['cfg1407'], 10);
+						} else {
+							cs2_configs['cfg1099'] = cs2method_10265(cs2method_10379(cs2_configs['cfg1407']));
+						}
+					} else if (cs2_configs['cfg1099'] == 1) {
+						if (cs2method_10265(cs2method_10379(cs2_configs['cfg1407'])) == 3) {
+							cs2_configs['cfg1407'] = cs2method_10060(cs2method_10051(v11, 10), v1);
+						} else if (cs2method_10265(cs2method_10379(cs2_configs['cfg1407'])) == 2) {
+							cs2_configs['cfg1407'] = cs2method_10968(cs2_configs['cfg1407'], 10);
+						} else {
+							return;
+						}
+					} else if (cs2method_10265(cs2method_10379(cs2_configs['cfg1407'])) == 3) {
+						cs2_configs['cfg1407'] = cs2method_10461(cs2_configs['cfg1407'], cs2method_10051(v11, 100));
+					} else if (cs2method_10265(cs2method_10379(cs2_configs['cfg1407'])) == 2) {
+						cs2_configs['cfg1407'] = v12;
+					} else {
+						cs2_configs['cfg1407'] = 0;
+					}
+				}
+			}
+			if (cs2_configs['cfg1407'] < 1) {
+				cs2method_10026(93061373, "");
+				script_3218(93061372, "", 93061373, 93061374, 15);
+			} else {
+				cs2method_10026(93061373, cs2method_10379(cs2_configs['cfg1407']));
+				script_3218(93061372, cs2method_10379(cs2_configs['cfg1407']), 93061373, 93061374, 15);
+			}
+			if (cs2_configs['cfg1407'] != cs2_configs['cfg1408']) {
+				script_7845(3, "", 93061192);
+				script_7847();
+				script_7858();
+				cs2method_10758(19718, 93061192);
+				cs2method_10467(1, 93061411);
+				cs2method_20162(new function<script_7834>(int a0,int a1) {
+					if (cs2method_10461(cs2method_10133(), a0) > 30) {
+						switch (cs2_configs['cfg174']) {
+							case 16:
+								script_7855(0, 1);
+								break;
+							case 6:
+								script_2283(0, 1);
+								break;
+							case 7:
+								int v1 = script_3228(0, 1);
+								/* 
+									java.lang.RuntimeException: Stack underflow
+										at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+										at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+										at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+										at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+										at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+										at mgi.tools.jagdecs2.FlowBlocksGenerator.cast(FlowBlocksGenerator.java:546)
+										at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+										at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+										at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+										at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+										at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+										at tests.Main.main(Main.java:69)
+									
+								 */
+							case 15:
+								int v0 = script_3954(0, 1);
+								/* 
+									java.lang.RuntimeException: Stack underflow
+										at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+										at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+										at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+										at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+										at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+										at mgi.tools.jagdecs2.FlowBlocksGenerator.cast(FlowBlocksGenerator.java:546)
+										at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+										at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+										at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+										at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+										at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+										at tests.Main.main(Main.java:69)
+									
+								 */
+						}
+						cs2method_20162(new function<none>() {
+						}, "", new WidgetPointer(a1));
+						script_7858();
+					}
+					return;
+				}, cs2method_10133(), new WidgetPointer(1420,208), "iI", new WidgetPointer(1420,208));
+			}
+			return;
+	}
+	return;
+}

@@ -1,0 +1,38 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_5459(int a0) {
+	int v1;
+	int v4;
+	int v3 = 0;
+	int v5 = 0;
+	int v2 = 0;
+	int v0 = 0;
+	if (a0 == 1) {
+		int v6 = idx17mapData('i', 'i', 5222, client_configs['cfg1316'].bitcfg3654);
+		int v8 = idx17mapData('i', 'i', 5225, client_configs['cfg1316'].bitcfg3655);
+		int v10 = script_5460();
+		int v9 = cs2method_10060(v10, 150);
+		int v7 = cs2method_10060(cs2method_10060(v6, v8), v9);
+		v1 = cs2method_10060(client_configs['cfg1317'].bitcfg3661, v7);
+	} else {
+		int v7 = idx17mapData('i', 'i', 5223, client_configs['cfg1316'].bitcfg3654);
+		if (client_configs['cfg1316'].bitcfg3656 < 30) {
+			v4 = idx17mapData('i', 'i', 5226, client_configs['cfg1316'].bitcfg3656);
+		} else {
+			v4 = idx17mapData('i', 'i', 5226, 15);
+		}
+		int v6 = cs2method_10060(cs2method_10060(v7, v4), v2);
+		v1 = cs2method_10060(client_configs['cfg1317'].bitcfg3661, v6);
+	}
+	return v1;
+}

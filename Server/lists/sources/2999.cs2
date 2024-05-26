@@ -1,0 +1,495 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2999() {
+	object v27;
+	object v14;
+	object v24;
+	object v11;
+	object v13 = "";
+	object v19 = "";
+	object v3 = "";
+	object v0 = "";
+	object v28 = "www";
+	switch (cs2method_10525()) {
+		case 0:
+			cs2method_10758(2672, 59441188);
+			int v21 = 0;
+			script_3011_struct(7,0,0) v33 = script_3011(v21);
+			script_3010(v33.intpart_0, v33.intpart_1, v33.intpart_2, v33.intpart_3, v33.intpart_4, v33.intpart_5, v33.intpart_6);
+			cs2method_10026(59441193, "Unregistered");
+			v3 = "You do not currently have an email address registered. Click " + "<col=0166ff>" + "<u=0166ff>" + "here" + "</u>" + "</col>" + " to register.";
+			v0 = "You do not currently have an email address registered. Click " + "<col=0296fe>" + "<u=0296fe>" + "here" + "</u>" + "</col>" + " to register.";
+			cs2method_10026(59441194, v3);
+			cs2method_20680(new function<script_68>(int a0,object a1) {
+				cs2method_10026(a0, a1);
+				return;
+			}, new WidgetPointer(-32768,3), (string)v0, "Is", new WidgetPointer(907,42));
+			cs2method_20750(new function<script_68>(object a0,int a1) {
+				cs2method_10026(a1, a0);
+				return;
+			}, new WidgetPointer(-32768,3), (string)v3, "Is", new WidgetPointer(907,42));
+			v19 = "account_settings.ws?mod=emailNew";
+			break;
+		case 1:
+			cs2method_10758(2672, 59441188);
+			int v8 = 0;
+			script_3011_struct(7,0,0) v20 = script_3011(v8);
+			script_3010(v20.intpart_0, v20.intpart_1, v20.intpart_2, v20.intpart_3, v20.intpart_4, v20.intpart_5, v20.intpart_6);
+			cs2method_10026(59441193, "Pending Parental Confirmation");
+			v3 = "You have registered your email address. We are currently waiting for your parent to confirm their email address. Click " + "<col=0166ff>" + "<u=0166ff>" + "here" + "</u>" + "</col>" + " to submit a confirmation code.";
+			v0 = "You have registered your email address. We are currently waiting for your parent to confirm their email address. Click " + "<col=0296fe>" + "<u=0296fe>" + "here" + "</u>" + "</col>" + " to submit a confirmation code.";
+			cs2method_10026(59441194, v3);
+			cs2method_20680(new function<script_68>(object a0,int a1) {
+				cs2method_10026(a1, a0);
+				return;
+			}, new WidgetPointer(-32768,3), (string)v0, "Is", new WidgetPointer(907,42));
+			cs2method_20750(new function<script_68>(object a0,int a1) {
+				cs2method_10026(a1, a0);
+				return;
+			}, new WidgetPointer(-32768,3), (string)v3, "Is", new WidgetPointer(907,42));
+			v19 = "account_settings.ws?mod=emailNew";
+			break;
+		case 2:
+			cs2method_10758(2672, 59441188);
+			int v22 = 0;
+			script_3011_struct(7,0,0) v23 = script_3011(v22);
+			script_3010(v23.intpart_0, v23.intpart_1, v23.intpart_2, v23.intpart_3, v23.intpart_4, v23.intpart_5, v23.intpart_6);
+			cs2method_10026(59441193, "Pending Confirmation");
+			v3 = "Your email address is currently pending confirmation. Click " + "<col=0166ff>" + "<u=0166ff>" + "here" + "</u>" + "</col>" + " to submit a confirmation code.";
+			v0 = "Your email address is currently pending confirmation. Click " + "<col=0296fe>" + "<u=0296fe>" + "here" + "</u>" + "</col>" + " to submit a confirmation code.";
+			cs2method_10026(59441194, v3);
+			cs2method_20680(new function<script_68>(int a0,object a1) {
+				cs2method_10026(a0, a1);
+				return;
+			}, new WidgetPointer(-32768,3), (string)v0, "Is", new WidgetPointer(907,42));
+			cs2method_20750(new function<script_68>(int a0,object a1) {
+				cs2method_10026(a0, a1);
+				return;
+			}, new WidgetPointer(-32768,3), (string)v3, "Is", new WidgetPointer(907,42));
+			v19 = "account_settings.ws?mod=emailNew";
+			break;
+		case 3:
+			cs2method_10758(2669, 59441188);
+			int v18 = 0;
+			script_3011_struct(7,0,0) v34 = script_3011(v18);
+			script_3008(v34.intpart_0, v34.intpart_1, v34.intpart_2, v34.intpart_3, v34.intpart_4, v34.intpart_5, v34.intpart_6);
+			cs2method_10026(59441193, "Registered");
+			v3 = "Your email address is now registered. Click " + "<col=0166ff>" + "<u=0166ff>" + "here" + "</u>" + "</col>" + " to view or change your email preferences.";
+			v0 = "Your email address is now registered. Click " + "<col=0296fe>" + "<u=0296fe>" + "here" + "</u>" + "</col>" + " to view or change your email preferences.";
+			cs2method_10026(59441194, v3);
+			cs2method_20680(new function<script_68>(object a0,int a1) {
+				cs2method_10026(a1, a0);
+				return;
+			}, new WidgetPointer(-32768,3), (string)v0, "Is", new WidgetPointer(907,42));
+			cs2method_20750(new function<script_68>(object a0,int a1) {
+				cs2method_10026(a1, a0);
+				return;
+			}, new WidgetPointer(-32768,3), (string)v3, "Is", new WidgetPointer(907,42));
+			v19 = "account_settings.ws?mod=email";
+			break;
+		case 4:
+			cs2method_10758(2669, 59441188);
+			int v5 = 0;
+			script_3011_struct(7,0,0) v30 = script_3011(v5);
+			script_3008(v30.intpart_0, v30.intpart_1, v30.intpart_2, v30.intpart_3, v30.intpart_4, v30.intpart_5, v30.intpart_6);
+			cs2method_10026(59441193, "No longer registered");
+			v3 = "Your account no longer has a registered email address. Click " + "<col=0166ff>" + "<u=0166ff>" + "here" + "</u>" + "</col>" + " to register again.";
+			v0 = "Your account no longer has a registered email address. Click " + "<col=0296fe>" + "<u=0296fe>" + "here" + "</u>" + "</col>" + " to register again.";
+			cs2method_10026(59441194, v3);
+			cs2method_20680(new function<script_68>(object a0,int a1) {
+				cs2method_10026(a1, a0);
+				return;
+			}, new WidgetPointer(-32768,3), (string)v0, "Is", new WidgetPointer(907,42));
+			cs2method_20750(new function<script_68>(object a0,int a1) {
+				cs2method_10026(a1, a0);
+				return;
+			}, new WidgetPointer(-32768,3), (string)v3, "Is", new WidgetPointer(907,42));
+			v19 = "account_settings.ws?mod=email";
+	}
+	cs2method_20390(new function<script_3088>(object a0,int a1,object a2) {
+		if (cs2method_10846(a2, "dob") == 0 && cs2method_10846(a0, "set_members_dob.ws") == 0) {
+			cs2method_10917(1, "billing_core", "purchasepopup.ws?externalName=rs", "packagegroupredirect.ws?value=rs");
+			cs2_configs['cfg1795'] = cs2method_10133();
+			cs2method_20162(new function<script_6032>() {
+				if (cs2method_10133() < cs2method_10060(cs2_configs['cfg1795'], 200)) {
+					return;
+				}
+				cs2method_20162(new function<none>() {
+				}, "", new WidgetPointer(906,242));
+				cs2method_20348(new function<script_5951>() {
+					script_5952();
+					return;
+				}, 1751, 1, "Y", new WidgetPointer(906,242));
+				script_3097();
+				script_3093(-3, "After you have completed your transaction, click continue to return to the game.", "", "", 0, 0, 10150, "Continue", 0, -1, "Continue", 1);
+				cs2method_20486(new function<script_5953>() {
+					script_3097();
+					script_3093(-3, "Logging In - Please Wait", "", "", 0, 1, -1, "", 0, -1, "", 0);
+					cs2method_11153(cs2_configs['cfg4211'], cs2_configs['cfg4210']);
+					return;
+				}, "", new WidgetPointer(906,546));
+				return;
+			}, "", new WidgetPointer(906,242));
+		} else {
+			if (cs2method_10846(a2, "") != 0 && cs2method_10846(a0, "") != 0) {
+				cs2method_10824(a1, a2, a0);
+			}
+		}
+		return;
+	}, (string)v28, (string)v19, 1, "ss1", new WidgetPointer(907,42));
+	script_3376(59441194);
+	if (client_configs['cfg4053'].bitcfg22763 <= 1) {
+		cs2method_10758(2672, 59441176);
+		int v37 = 1;
+		script_3011_struct(7,0,0) v36 = script_3011(v37);
+		script_3010(v36.intpart_0, v36.intpart_1, v36.intpart_2, v36.intpart_3, v36.intpart_4, v36.intpart_5, v36.intpart_6);
+		cs2method_10026(59441181, "Enhanced security disabled");
+		v3 = "<col=0166ff>" + "<u=0166ff>" + "Enable" + "</u>" + "</col>" + " RuneScape Authenticator to add an extra layer of security to your account.";
+		v0 = "<col=0166ff>" + "<u=0166ff>" + "Enable" + "</u>" + "</col>" + " RuneScape Authenticator to add an extra layer of security to your account.";
+		object v38 = "totp-authenticator";
+		object v35 = "landing";
+		cs2method_20390(new function<script_3088>(object a0,object a1,int a2) {
+			if (cs2method_10846(a0, "dob") == 0 && cs2method_10846(a1, "set_members_dob.ws") == 0) {
+				cs2method_10917(1, "billing_core", "purchasepopup.ws?externalName=rs", "packagegroupredirect.ws?value=rs");
+				cs2_configs['cfg1795'] = cs2method_10133();
+				cs2method_20162(new function<script_6032>() {
+					if (cs2method_10133() < cs2method_10060(cs2_configs['cfg1795'], 200)) {
+						return;
+					}
+					cs2method_20162(new function<none>() {
+					}, "", new WidgetPointer(906,242));
+					cs2method_20348(new function<script_5951>() {
+						script_5952();
+						return;
+					}, 1751, 1, "Y", new WidgetPointer(906,242));
+					script_3097();
+					script_3093(-3, "After you have completed your transaction, click continue to return to the game.", "", "", 0, 0, 10150, "Continue", 0, -1, "Continue", 1);
+					cs2method_20486(new function<script_5953>() {
+						script_3097();
+						script_3093(-3, "Logging In - Please Wait", "", "", 0, 1, -1, "", 0, -1, "", 0);
+						cs2method_11153(cs2_configs['cfg4211'], cs2_configs['cfg4210']);
+						return;
+					}, "", new WidgetPointer(906,546));
+					return;
+				}, "", new WidgetPointer(906,242));
+			} else {
+				if (cs2method_10846(a0, "") != 0 && cs2method_10846(a1, "") != 0) {
+					cs2method_10824(a2, a0, a1);
+				}
+			}
+			return;
+		}, (string)v38, (string)v35, 1, "ss1", new WidgetPointer(907,30));
+	} else {
+		if (client_configs['cfg4053'].bitcfg22763 == 2) {
+			cs2method_10758(2669, 59441176);
+			int v35 = 1;
+			script_3011_struct(7,0,0) v36 = script_3011(v35);
+			script_3008(v36.intpart_0, v36.intpart_1, v36.intpart_2, v36.intpart_3, v36.intpart_4, v36.intpart_5, v36.intpart_6);
+			cs2method_10026(59441181, "Enhanced security enabled");
+			v3 = "Your account is currently protected by RuneScape Authenticator. " + "<col=0296fe>" + "<u=0296fe>" + "Disable" + "</u>" + "</col>" + " (this will make your account less secure).";
+			v0 = "Your account is currently protected by RuneScape Authenticator. " + "<col=0296fe>" + "<u=0296fe>" + "Disable" + "</u>" + "</col>" + " (this will make your account less secure).";
+			object v37 = "totp-authenticator";
+			object v38 = "disableTOTPRequest";
+			cs2method_20390(new function<script_3088>(int a0,object a1,object a2) {
+				if (cs2method_10846(a1, "dob") == 0 && cs2method_10846(a2, "set_members_dob.ws") == 0) {
+					cs2method_10917(1, "billing_core", "purchasepopup.ws?externalName=rs", "packagegroupredirect.ws?value=rs");
+					cs2_configs['cfg1795'] = cs2method_10133();
+					cs2method_20162(new function<script_6032>() {
+						if (cs2method_10133() < cs2method_10060(cs2_configs['cfg1795'], 200)) {
+							return;
+						}
+						cs2method_20162(new function<none>() {
+						}, "", new WidgetPointer(906,242));
+						cs2method_20348(new function<script_5951>() {
+							script_5952();
+							return;
+						}, 1751, 1, "Y", new WidgetPointer(906,242));
+						script_3097();
+						script_3093(-3, "After you have completed your transaction, click continue to return to the game.", "", "", 0, 0, 10150, "Continue", 0, -1, "Continue", 1);
+						cs2method_20486(new function<script_5953>() {
+							script_3097();
+							script_3093(-3, "Logging In - Please Wait", "", "", 0, 1, -1, "", 0, -1, "", 0);
+							cs2method_11153(cs2_configs['cfg4211'], cs2_configs['cfg4210']);
+							return;
+						}, "", new WidgetPointer(906,546));
+						return;
+					}, "", new WidgetPointer(906,242));
+				} else {
+					if (cs2method_10846(a1, "") != 0 && cs2method_10846(a2, "") != 0) {
+						cs2method_10824(a0, a1, a2);
+					}
+				}
+				return;
+			}, (string)v37, (string)v38, 1, "ss1", new WidgetPointer(907,30));
+		}
+	}
+	cs2method_10026(59441182, v3);
+	cs2method_20680(new function<script_68>(object a0,int a1) {
+		cs2method_10026(a1, a0);
+		return;
+	}, new WidgetPointer(-32768,3), (string)v0, "Is", new WidgetPointer(907,30));
+	cs2method_20750(new function<script_68>(object a0,int a1) {
+		cs2method_10026(a1, a0);
+		return;
+	}, new WidgetPointer(-32768,3), (string)v3, "Is", new WidgetPointer(907,30));
+	script_3376(59441182);
+	int v32 = cs2method_11043();
+	if (v32 == 0) {
+		cs2method_10758(2669, 59441164);
+		int v38 = 2;
+		script_3011_struct(7,0,0) v35 = script_3011(v38);
+		script_3008(v35.intpart_0, v35.intpart_1, v35.intpart_2, v35.intpart_3, v35.intpart_4, v35.intpart_5, v35.intpart_6);
+		cs2method_10026(59441169, (string)cs2method_10379(v32) + " Unread");
+		object v36 = "You have no unread messages. Click " + "<col=0166ff>" + "<u=0166ff>" + "here" + "</u>" + "</col>" + " to open your Message Centre.";
+		object v37 = "You have no unread messages. Click " + "<col=0296fe>" + "<u=0296fe>" + "here" + "</u>" + "</col>" + " to open your Message Centre.";
+		cs2method_10026(59441170, v36);
+		cs2method_20680(new function<script_68>(int a0,object a1) {
+			cs2method_10026(a0, a1);
+			return;
+		}, new WidgetPointer(-32768,3), (string)v37, "Is", new WidgetPointer(907,18));
+		cs2method_20750(new function<script_68>(object a0,int a1) {
+			cs2method_10026(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), (string)v36, "Is", new WidgetPointer(907,18));
+	} else {
+		cs2method_10758(2672, 59441164);
+		int v36 = 2;
+		script_3011_struct(7,0,0) v35 = script_3011(v36);
+		script_3010(v35.intpart_0, v35.intpart_1, v35.intpart_2, v35.intpart_3, v35.intpart_4, v35.intpart_5, v35.intpart_6);
+		cs2method_10026(59441169, (string)cs2method_10379(v32) + " Unread");
+		if (v32 == 1) {
+			v11 = "You have 1 unread message. Click " + "<col=0166ff>" + "<u=0166ff>" + "here" + "</u>" + "</col>" + " to open your Message Centre.";
+			v14 = "You have 1 unread message. Click " + "<col=0296fe>" + "<u=0296fe>" + "here" + "</u>" + "</col>" + " to open your Message Centre.";
+		} else {
+			v11 = "You have " + (string)cs2method_10379(v32) + " unread messages. Click " + "<col=0166ff>" + "<u=0166ff>" + "here" + "</u>" + "</col>" + " to open your Message Centre.";
+			v14 = "You have " + (string)cs2method_10379(v32) + " unread messages. Click " + "<col=0296fe>" + "<u=0296fe>" + "here" + "</u>" + "</col>" + " to open your Message Centre.";
+		}
+		cs2method_10026(59441170, v11);
+		cs2method_20680(new function<script_68>(object a0,int a1) {
+			cs2method_10026(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), (string)v14, "Is", new WidgetPointer(907,18));
+		cs2method_20750(new function<script_68>(int a0,object a1) {
+			cs2method_10026(a0, a1);
+			return;
+		}, new WidgetPointer(-32768,3), (string)v11, "Is", new WidgetPointer(907,18));
+	}
+	script_3376(59441170);
+	int v29 = 0;
+	int v26 = 0;
+	int v12 = 0;
+	opc_struct10790(3,0,0) v15 = cs2method_10790();
+	int v16 = v15.intpart_2;
+	int v17 = v15.intpart_1;
+	int v6 = v15.intpart_0;
+	object v4 = cs2method_10708(v6);
+	int v7 = 0;
+	int v31 = 0;
+	int v1 = 0;
+	object v9 = "";
+	if (v16 == 1) {
+		cs2method_10758(2669, 59441201);
+		int v36 = 3;
+		script_3011_struct(7,0,0) v35 = script_3011(v36);
+		script_3008(v35.intpart_0, v35.intpart_1, v35.intpart_2, v35.intpart_3, v35.intpart_4, v35.intpart_5, v35.intpart_6);
+		cs2method_10026(59441206, "Subscription Active");
+		object v37 = "You have an active subscription. Click " + "<col=0166ff>" + "<u=0166ff>" + "here" + "</u>" + "</col>" + " to view your account information. Make sure you play on a members' world to enjoy all of your members' benefits.";
+		object v38 = "You have an active subscription. Click " + "<col=0296fe>" + "<u=0296fe>" + "here" + "</u>" + "</col>" + " to view your account information. Make sure you play on a members' world to enjoy all of your members' benefits.";
+		cs2method_10026(59441207, v37);
+		cs2method_20680(new function<script_68>(object a0,int a1) {
+			cs2method_10026(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), (string)v38, "Is", new WidgetPointer(907,55));
+		cs2method_20750(new function<script_68>(int a0,object a1) {
+			cs2method_10026(a0, a1);
+			return;
+		}, new WidgetPointer(-32768,3), (string)v37, "Is", new WidgetPointer(907,55));
+		v27 = "billing_core";
+		v24 = "userdetails.ws";
+	} else if (cs2method_10210() == 1) {
+		int v25 = cs2method_10968(v17, 1440);
+		int v2 = cs2method_10968(cs2method_10038(v17, 1440), 60);
+		int v10 = cs2method_10038(v17, 60);
+		if (cs2method_10060(cs2method_10060(v25, v2), v10) != 0) {
+			v9 = " (in " + script_4582(v25, v2, v10) + ")";
+		}
+		cs2method_10758(2669, 59441201);
+		int v35 = 3;
+		script_3011_struct(7,0,0) v38 = script_3011(v35);
+		script_3008(v38.intpart_0, v38.intpart_1, v38.intpart_2, v38.intpart_3, v38.intpart_4, v38.intpart_5, v38.intpart_6);
+		cs2method_10026(59441206, "Expires " + (string)v4);
+		object v37 = "Your membership will expire on " + (string)v4 + (string)v9 + ". Renew now to avoid losing member status. Click " + "<col=0166ff>" + "<u=0166ff>" + "here" + "</u>" + "</col>" + " to renew.";
+		object v36 = "Your membership will expire on " + (string)v4 + (string)v9 + ". Renew now to avoid losing member status. Click " + "<col=0296fe>" + "<u=0296fe>" + "here" + "</u>" + "</col>" + " to renew.";
+		cs2method_10026(59441207, v37);
+		cs2method_20680(new function<script_68>(object a0,int a1) {
+			cs2method_10026(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), (string)v36, "Is", new WidgetPointer(907,55));
+		cs2method_20750(new function<script_68>(int a0,object a1) {
+			cs2method_10026(a0, a1);
+			return;
+		}, new WidgetPointer(-32768,3), (string)v37, "Is", new WidgetPointer(907,55));
+		v27 = "dob";
+		v24 = "set_members_dob.ws";
+	} else {
+		cs2method_10758(2672, 59441201);
+		int v38 = 3;
+		script_3011_struct(7,0,0) v37 = script_3011(v38);
+		script_3010(v37.intpart_0, v37.intpart_1, v37.intpart_2, v37.intpart_3, v37.intpart_4, v37.intpart_5, v37.intpart_6);
+		cs2method_10026(59441206, "Not a Member");
+		object v36 = "You are not a member. Members get loads of extra benefits and features. Click " + "<col=0166ff>" + "<u=0166ff>" + "here" + "</u>" + "</col>" + " to become a member.";
+		object v35 = "You are not a member. Members get loads of extra benefits and features. Click " + "<col=0296fe>" + "<u=0296fe>" + "here" + "</u>" + "</col>" + " to become a member.";
+		cs2method_10026(59441207, v36);
+		cs2method_20680(new function<script_68>(object a0,int a1) {
+			cs2method_10026(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), (string)v35, "Is", new WidgetPointer(907,55));
+		cs2method_20750(new function<script_68>(object a0,int a1) {
+			cs2method_10026(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), (string)v36, "Is", new WidgetPointer(907,55));
+		v27 = "dob";
+		v24 = "set_members_dob.ws";
+	}
+	cs2method_20390(new function<script_3088>(object a0,int a1,object a2) {
+		if (cs2method_10846(a0, "dob") == 0 && cs2method_10846(a2, "set_members_dob.ws") == 0) {
+			cs2method_10917(1, "billing_core", "purchasepopup.ws?externalName=rs", "packagegroupredirect.ws?value=rs");
+			cs2_configs['cfg1795'] = cs2method_10133();
+			cs2method_20162(new function<script_6032>() {
+				if (cs2method_10133() < cs2method_10060(cs2_configs['cfg1795'], 200)) {
+					return;
+				}
+				cs2method_20162(new function<none>() {
+				}, "", new WidgetPointer(906,242));
+				cs2method_20348(new function<script_5951>() {
+					script_5952();
+					return;
+				}, 1751, 1, "Y", new WidgetPointer(906,242));
+				script_3097();
+				script_3093(-3, "After you have completed your transaction, click continue to return to the game.", "", "", 0, 0, 10150, "Continue", 0, -1, "Continue", 1);
+				cs2method_20486(new function<script_5953>() {
+					script_3097();
+					script_3093(-3, "Logging In - Please Wait", "", "", 0, 1, -1, "", 0, -1, "", 0);
+					cs2method_11153(cs2_configs['cfg4211'], cs2_configs['cfg4210']);
+					return;
+				}, "", new WidgetPointer(906,546));
+				return;
+			}, "", new WidgetPointer(906,242));
+		} else {
+			if (cs2method_10846(a0, "") != 0 && cs2method_10846(a2, "") != 0) {
+				cs2method_10824(a1, a0, a2);
+			}
+		}
+		return;
+	}, (string)v27, (string)v24, 1, "ss1", new WidgetPointer(907,55));
+	script_3376(59441207);
+	if (client_configs['cfg2897'].bitcfg14738 == 1) {
+		cs2method_10467(1, 59441159);
+	} else {
+		if (client_configs['cfg2897'].bitcfg14738 == 2) {
+			object v35;
+			object v36;
+			if (client_configs['cfg4053'].bitcfg22763 == 2 && cs2method_10525() == 3) {
+				cs2method_10758(2672, 59441213);
+				int v40 = 4;
+				script_3011_struct(7,0,0) v37 = script_3011(v40);
+				script_3010(v37.intpart_0, v37.intpart_1, v37.intpart_2, v37.intpart_3, v37.intpart_4, v37.intpart_5, v37.intpart_6);
+				cs2method_10026(59441218, "Enhanced security enabled");
+				object v38 = "You have enabled Authenticator. You can now " + "<col=0166ff>" + "<u=0166ff>" + "disable JAG" + "</u>" + "</col>" + " and your account will be easier to access and remain secure.";
+				object v39 = "You have enabled Authenticator. You can now " + "<col=0166ff>" + "<u=0166ff>" + "disable JAG" + "</u>" + "</col>" + " and your account will be easier to access and remain secure.";
+				cs2method_10026(59441219, v38);
+				cs2method_20680(new function<script_68>(int a0,object a1) {
+					cs2method_10026(a0, a1);
+					return;
+				}, new WidgetPointer(-32768,3), (string)v39, "Is", new WidgetPointer(907,67));
+				cs2method_20750(new function<script_68>(int a0,object a1) {
+					cs2method_10026(a0, a1);
+					return;
+				}, new WidgetPointer(-32768,3), (string)v38, "Is", new WidgetPointer(907,67));
+				v35 = "www";
+				v36 = "account_settings.ws";
+			} else if (cs2method_10525() == 3) {
+				cs2method_10758(2672, 59441213);
+				int v40 = 4;
+				script_3011_struct(7,0,0) v39 = script_3011(v40);
+				script_3010(v39.intpart_0, v39.intpart_1, v39.intpart_2, v39.intpart_3, v39.intpart_4, v39.intpart_5, v39.intpart_6);
+				cs2method_10026(59441218, "Enhanced security enabled");
+				object v38 = "You are currently protected by JAG. Support for JAG ends soon." + "<br>" + "<col=0166ff>" + "<u=0166ff>" + "Upgrade to Authenticator" + "</u>" + "</col>" + " now to keep your account secure.";
+				object v37 = "You are currently protected by JAG. Support for JAG ends soon." + "<br>" + "<col=0166ff>" + "<u=0166ff>" + "Upgrade to Authenticator" + "</u>" + "</col>" + " now to keep your account secure.";
+				cs2method_10026(59441219, v38);
+				cs2method_20680(new function<script_68>(int a0,object a1) {
+					cs2method_10026(a0, a1);
+					return;
+				}, new WidgetPointer(-32768,3), (string)v37, "Is", new WidgetPointer(907,67));
+				cs2method_20750(new function<script_68>(object a0,int a1) {
+					cs2method_10026(a1, a0);
+					return;
+				}, new WidgetPointer(-32768,3), (string)v38, "Is", new WidgetPointer(907,67));
+				v35 = "www";
+				v36 = "account_settings.ws";
+			} else {
+				cs2method_10758(2669, 59441213);
+				int v39 = 4;
+				script_3011_struct(7,0,0) v37 = script_3011(v39);
+				script_3010(v37.intpart_0, v37.intpart_1, v37.intpart_2, v37.intpart_3, v37.intpart_4, v37.intpart_5, v37.intpart_6);
+				cs2method_10026(59441218, "Enhanced security enabled");
+				object v40 = "You are currently registered to use the Jagex Account Guardian system but your email has been invalidated. Validate your email to change your authorised devices or unregister.";
+				object v38 = "You are currently registered to use the Jagex Account Guardian system but your email has been invalidated. Validate your email to change your authorised devices or unregister.";
+				cs2method_10026(59441219, v40);
+				cs2method_20680(new function<script_68>(int a0,object a1) {
+					cs2method_10026(a0, a1);
+					return;
+				}, new WidgetPointer(-32768,3), (string)v38, "Is", new WidgetPointer(907,67));
+				cs2method_20750(new function<script_68>(object a0,int a1) {
+					cs2method_10026(a1, a0);
+					return;
+				}, new WidgetPointer(-32768,3), (string)v40, "Is", new WidgetPointer(907,67));
+				v35 = "www";
+				v36 = "account_settings.ws?mod=uidPassport";
+			}
+			cs2method_20390(new function<script_3088>(object a0,object a1,int a2) {
+				if (cs2method_10846(a0, "dob") == 0 && cs2method_10846(a1, "set_members_dob.ws") == 0) {
+					cs2method_10917(1, "billing_core", "purchasepopup.ws?externalName=rs", "packagegroupredirect.ws?value=rs");
+					cs2_configs['cfg1795'] = cs2method_10133();
+					cs2method_20162(new function<script_6032>() {
+						if (cs2method_10133() < cs2method_10060(cs2_configs['cfg1795'], 200)) {
+							return;
+						}
+						cs2method_20162(new function<none>() {
+						}, "", new WidgetPointer(906,242));
+						cs2method_20348(new function<script_5951>() {
+							script_5952();
+							return;
+						}, 1751, 1, "Y", new WidgetPointer(906,242));
+						script_3097();
+						script_3093(-3, "After you have completed your transaction, click continue to return to the game.", "", "", 0, 0, 10150, "Continue", 0, -1, "Continue", 1);
+						cs2method_20486(new function<script_5953>() {
+							script_3097();
+							script_3093(-3, "Logging In - Please Wait", "", "", 0, 1, -1, "", 0, -1, "", 0);
+							cs2method_11153(cs2_configs['cfg4211'], cs2_configs['cfg4210']);
+							return;
+						}, "", new WidgetPointer(906,546));
+						return;
+					}, "", new WidgetPointer(906,242));
+				} else {
+					if (cs2method_10846(a0, "") != 0 && cs2method_10846(a1, "") != 0) {
+						cs2method_10824(a2, a0, a1);
+					}
+				}
+				return;
+			}, (string)v35, (string)v36, 1, "ss1", new WidgetPointer(907,67));
+		}
+	}
+	script_3376(59441219);
+	return;
+}

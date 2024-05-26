@@ -1,0 +1,171 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8454() {
+	object v4;
+	if (client_configs['cfg3680'].bitcfg22315 == 1) {
+		cs2method_10467(0, 95879363);
+	} else {
+		cs2method_10467(1, 95879363);
+	}
+	script_8461();
+	script_8463();
+	script_8465();
+	if (cs2_configs['cfg2760'] < 0) {
+		cs2_configs['cfg2760'] = cs2method_10461(cs2method_10004(), 2);
+	}
+	if (cs2_configs['cfg2761'] < 0) {
+		script_8459(0);
+	}
+	if (cs2_configs['cfg2762'] < 0) {
+		script_8467(0);
+	}
+	int v25 = 300;
+	object v12 = "";
+	int v0 = -1;
+	object v11 = "<col=f3b13f>" + "Attack type" + "</col>" + " determines the style of weapon or spell you're using. Some enemies are weak to specific attack styles. Exploit your enemies' weaknesses to hit more often.";
+	int v16 = 95879210;
+	cs2method_21121(new function<script_8799>(int a0,int a1,object a2) {
+		script_8800(a1, a0, a2);
+		return;
+	}, (string)v11, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(v16));
+	cs2method_20750(new function<script_8805>() {
+		script_8808();
+		return;
+	}, "", new WidgetPointer(v16));
+	int v13 = 95879231;
+	cs2method_21121(new function<script_8799>(int a0,object a1,int a2) {
+		script_8800(a0, a2, a1);
+		return;
+	}, (string)v11, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(v13));
+	cs2method_20750(new function<script_8805>() {
+		script_8808();
+		return;
+	}, "", new WidgetPointer(v13));
+	object v7 = "<col=f3b13f>" + "Attack speed" + "</col>" + " determines how quickly you strike with your main-hand/off-hand weapon or spell.";
+	int v10 = 95879215;
+	cs2method_21121(new function<script_8799>(object a0,int a1,int a2) {
+		script_8800(a2, a1, a0);
+		return;
+	}, (string)v7, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(v10));
+	cs2method_20750(new function<script_8805>() {
+		script_8808();
+		return;
+	}, "", new WidgetPointer(v10));
+	int v14 = 95879236;
+	cs2method_21121(new function<script_8799>(object a0,int a1,int a2) {
+		script_8800(a2, a1, a0);
+		return;
+	}, (string)v7, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(v14));
+	cs2method_20750(new function<script_8805>() {
+		script_8808();
+		return;
+	}, "", new WidgetPointer(v14));
+	object v19 = "<col=f3b13f>" + "Damage" + "</col>" + " determines the maximum amount of life points you can remove from an enemy in a single strike with your main-hand/off-hand weapon or spell. Using abilities can modify your damage.";
+	int v6 = 95879200;
+	cs2method_21121(new function<script_8799>(object a0,int a1,int a2) {
+		script_8800(a1, a2, a0);
+		return;
+	}, (string)v19, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(v6));
+	cs2method_20750(new function<script_8805>() {
+		script_8808();
+		return;
+	}, "", new WidgetPointer(v6));
+	int v23 = 95879221;
+	cs2method_21121(new function<script_8799>(int a0,object a1,int a2) {
+		script_8800(a0, a2, a1);
+		return;
+	}, (string)v19, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(v23));
+	cs2method_20750(new function<script_8805>() {
+		script_8808();
+		return;
+	}, "", new WidgetPointer(v23));
+	object v24 = "<col=f3b13f>" + "Accuracy" + "</col>" + " affects how likely you are to damage your opponent with your main-hand/off-hand weapon or spell. The higher the accuracy, the more likely you are to damage an enemy.";
+	int v5 = 95879205;
+	cs2method_21121(new function<script_8799>(int a0,int a1,object a2) {
+		script_8800(a0, a1, a2);
+		return;
+	}, (string)v24, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(v5));
+	cs2method_20750(new function<script_8805>() {
+		script_8808();
+		return;
+	}, "", new WidgetPointer(v5));
+	int v17 = 95879226;
+	cs2method_21121(new function<script_8799>(object a0,int a1,int a2) {
+		script_8800(a2, a1, a0);
+		return;
+	}, (string)v24, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(v17));
+	cs2method_20750(new function<script_8805>() {
+		script_8808();
+		return;
+	}, "", new WidgetPointer(v17));
+	object v3 = "<col=f3b13f>" + "Armour" + "</col>" + " affects how likely an enemy is to hit you. The higher your armour rating, the more likely you are to block an enemy hit. The class of your armour also affects how likely you are to block.";
+	int v22 = 95879340;
+	cs2method_21121(new function<script_8799>(int a0,int a1,object a2) {
+		script_8800(a0, a1, a2);
+		return;
+	}, (string)v3, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(v22));
+	cs2method_20750(new function<script_8805>() {
+		script_8808();
+		return;
+	}, "", new WidgetPointer(v22));
+	object v26 = "<col=f3b13f>" + "Lifepoints" + "</col>" + " determine how many points of damage you can take before you die.";
+	int v20 = 95879187;
+	cs2method_21121(new function<script_8799>(int a0,int a1,object a2) {
+		script_8800(a1, a0, a2);
+		return;
+	}, (string)v26, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(v20));
+	cs2method_20750(new function<script_8805>() {
+		script_8808();
+		return;
+	}, "", new WidgetPointer(v20));
+	object v8 = "<col=f3b13f>" + "Prayer Bonus" + "</col>" + " affects how quickly your prayers drain your prayer points. Having a higher prayer modifier means your prayer points will drain slower.";
+	int v18 = 95879193;
+	cs2method_21121(new function<script_8799>(int a0,object a1,int a2) {
+		script_8800(a0, a2, a1);
+		return;
+	}, (string)v8, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(v18));
+	cs2method_20750(new function<script_8805>() {
+		script_8808();
+		return;
+	}, "", new WidgetPointer(v18));
+	object v2 = "The hit and block chances shown are as a guide. Values will not be accurate for all opponents.";
+	int v9 = 95879241;
+	cs2method_21121(new function<script_8799>(int a0,object a1,int a2) {
+		script_8800(a2, a0, a1);
+		return;
+	}, (string)v2, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(v9));
+	cs2method_20750(new function<script_8805>() {
+		script_8808();
+		return;
+	}, "", new WidgetPointer(v9));
+	cs2method_10026(95879248, cs2method_10379(cs2_configs['cfg2760']));
+	object v1 = "";
+	int v15 = 0;
+	if (client_configs['cfg3680'].bitcfg22315 == 0) {
+		v4 = (string)cs2method_10379(client_configs['cfg659'].bitcfg1668) + "/" + (string)cs2method_10379(script_2915());
+	} else {
+		v4 = (string)cs2method_10379(cs2method_10968(client_configs['cfg659'].bitcfg1668, 10)) + "/" + (string)cs2method_10379(cs2method_10968(script_2915(), 10));
+	}
+	cs2method_10026(95879181, v4);
+	if (cs2method_10324(95879174) == 1 && cs2method_10324(cs2method_10787()) == 1) {
+		int v27 = script_669(client_configs['cfg659'].bitcfg1668, script_2915(), cs2method_10488());
+		cs2method_10013(v27, cs2method_10664(), 0, 0);
+	}
+	object v21 = (string)cs2method_10379(script_5256()) + "/" + (string)cs2method_10379(script_7081());
+	cs2method_10026(95879182, v21);
+	if (cs2method_10324(95879315) == 1 && cs2method_10324(cs2method_10787()) == 1) {
+		int v27 = script_669(script_5256(), script_7081(), cs2method_10488());
+		cs2method_10013(v27, cs2method_10664(), 0, 0);
+	}
+	return;
+}

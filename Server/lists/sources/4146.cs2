@@ -1,0 +1,76 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4146() {
+	int v2 = 0;
+	if (cs2method_10441(cs2_configs['cfg98'], 31) == 1) {
+		cs2method_10467(1, 917504);
+		cs2method_10467(0, 917505);
+	} else {
+		cs2method_10467(0, 917504);
+		cs2method_10467(1, 917505);
+		script_7794(917512, 21361);
+		script_7794(917518, 21361);
+		int v5 = cs2method_10823(917513);
+		switch (cs2method_10147(cs2_configs['cfg98'], 3)) {
+			case 0:
+				cs2method_10026(917520, "No PIN set");
+				int v4 = cs2method_10968(v5, 2);
+				script_4147(917514, cs2method_10461(v4, 4), "Set a PIN", cs2method_10968(cs2method_10461(0, v4), 2));
+				script_4147(917515, cs2method_10461(v4, 4), "Change recovery delay", cs2method_10968(v4, 2));
+				cs2method_10467(1, 917516);
+				break;
+			default:
+				cs2method_10026(917520, "You have a PIN");
+				int v0 = cs2method_10968(v5, 3);
+				script_4147(917514, cs2method_10461(v0, 4), "Change your PIN", cs2method_10461(0, v0));
+				script_4147(917515, cs2method_10461(v0, 4), "Delete your PIN", 0);
+				script_4147(917516, cs2method_10461(v0, 4), "Change recovery delay", v0);
+				break;
+			case 3:
+				cs2method_10026(917520, "PIN coming soon");
+				int v1 = cs2method_10872(v5, 50);
+				script_4147(917514, v1, "Cancel the PIN", 0);
+				cs2method_10467(1, 917515);
+				cs2method_10467(1, 917516);
+		}
+		if (cs2method_10441(cs2_configs['cfg98'], 10) == 1) {
+			cs2method_10026(917522, "7 days");
+		} else {
+			cs2method_10026(917522, "3 days");
+		}
+	}
+	cs2method_10273(917524);
+	cs2method_10606(917524, 4, 0);
+	cs2method_10692(20452);
+	cs2method_10811(16750623);
+	cs2method_10173(1);
+	cs2method_11105(0, 1, 0);
+	cs2method_10797(cs2_configs['cfg2352']);
+	if (cs2method_10060(cs2method_10051(cs2method_10805(cs2method_10461(cs2method_10236(cs2method_10982(917524)), 14), 20452, cs2_configs['cfg2352']), 11), 5) <= cs2method_10823(917524)) {
+		cs2method_10283(14, 40, 1, 1, 917524);
+		cs2method_11130(0, 0, 917524);
+		cs2method_10063(0, 0, 1, 1);
+		cs2method_10013(0, 0, 1, 1);
+		cs2method_10467(1, 917525);
+		return;
+	}
+	cs2method_10283(31, 40, 1, 1, 917524);
+	int v3 = cs2method_10060(cs2method_10051(cs2method_10805(cs2method_10236(917524), 20452, cs2_configs['cfg2352']), 11), 5);
+	cs2method_11130(0, v3, 917524);
+	cs2method_10251(0, 0, 917524);
+	cs2method_10063(0, 0, 1, 0);
+	cs2method_10013(0, v3, 1, 0);
+	cs2method_10467(0, 917525);
+	script_31(917525, 917524, 792, 789, 790, 791, 773, 788);
+	return;
+}

@@ -1,0 +1,17 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_310(int a0,int a1) {
+	object v0 = "Kills: " + (string)cs2method_10379(cs2method_11048(0, client_configs['cfg1337'].bitcfg22232)) + "<br>" + "Deaths: " + (string)cs2method_10379(cs2method_11048(0, client_configs['cfg1337'].bitcfg22233));
+	script_8803(1000, 25, a1, a0, v0, 495, 16101953);
+	return;
+}

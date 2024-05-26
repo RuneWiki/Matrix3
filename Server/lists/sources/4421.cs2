@@ -1,0 +1,51 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4421(int a0,int a1,int a2,int a3,long a4,int a5,int a6,int a7,int a8,int a9,int a10) {
+	object v0;
+	int v1 = idx17mapData('i', 'g', 3689, a10);
+	object v5 = "";
+	if (a8 >= cs2method_10948() && a1 > 0 && a0 > 0 && a10 > 0) {
+		object v4 = (string)cs2method_10922(a8) + "<br>" + idx17mapData('i', 's', 3695, a9);
+		if (clan_configs['cfg3'].bitcfg8804 == 0) {
+			v0 = (string)v4 + " Game time:";
+		} else {
+			v0 = (string)v4 + " Clan time:";
+		}
+		if (a1 > 0) {
+			v0 = (string)v0 + "<br>" + "World " + (string)cs2method_10379(a1);
+		}
+		object v6 = (string)v0 + "<br>" + idx17mapData('i', 's', 3696, a0);
+		cs2method_10026(a6, v6);
+		object v3 = idx17mapData('i', 's', 3687, a10);
+		if (v1 != -1 && a3 > 0) {
+			v3 = (string)v3 + "<br>" + idx17mapData('i', 's', v1, a3);
+		}
+		object v2 = (string)v3 + "<br>" + "Open to: " + idx17mapData('i', 's', 3716, a7);
+		if (a2 == 1) {
+			v2 = (string)v2 + "<br>" + "Attendance is mandatory.";
+		}
+		cs2method_10026(a5, v2);
+		if (a4 != -1L) {
+			cs2method_10467(0, 72548488);
+			cs2method_20486(new function<script_4330>(long a0) {
+				cs2method_10824(0, "clan-forum", "threads.ws?threadid=" + (string)cs2method_10482(a0));
+				return;
+			}, a4, "\u00a7", new WidgetPointer(1107,136));
+		} else {
+			cs2method_20390(new function<none>() {
+			}, "", new WidgetPointer(1107,136));
+			cs2method_10467(1, 72548404);
+		}
+	}
+	return;
+}

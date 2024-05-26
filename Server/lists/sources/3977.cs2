@@ -1,0 +1,38 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3977(int a0) {
+	cs2method_10467(1, 88342551);
+	cs2method_10467(1, 88342555);
+	cs2method_10467(1, 88342559);
+	cs2method_10520(16775936, 88342552);
+	cs2method_10520(16775936, 88342556);
+	cs2method_10520(16775936, 88342560);
+	cs2method_10670(6185, 1, 0, 150);
+	switch (a0) {
+		case 0:
+			cs2method_10467(0, 88342551);
+			cs2method_10520(16777215, 88342552);
+			cs2method_10026(88342548, "The accused is squashed by the Claw of Justice!");
+			break;
+		case 1:
+			cs2method_10467(0, 88342555);
+			cs2method_10520(16777215, 88342556);
+			cs2method_10026(88342548, "The accused is swallowed by an Abyssal Wyrm!");
+			break;
+		case 2:
+			cs2method_10467(0, 88342559);
+			cs2method_10520(16777215, 88342560);
+			cs2method_10026(88342548, "The accused is blasted apart by godly wrath!");
+	}
+	return;
+}

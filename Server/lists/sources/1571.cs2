@@ -1,0 +1,38 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1571(int a0,int a1,int a2) {
+	object v0 = cs2_configs['cfg2519'];
+	int v1 = cs2method_10236(a1);
+	if (cs2method_10509(v1, a0, (string)v0 + " ") > v1) {
+		while (cs2method_10939(a0, (string)v0 + "... ") > v1) {
+			v0 = cs2method_11025(0, cs2method_10461(cs2method_10265(v0), 1), v0);
+		}
+		v0 = (string)v0 + "...";
+		cs2method_21121(new function<script_7781>(int a0,int a1,int a2,object a3,int a4) {
+			script_7788(a3, a0, -1, a2, a1, a4);
+			return;
+		}, new WidgetPointer(-32768,3), new WidgetPointer(a2), cs2_configs['cfg2519'], 25, 5000, "IIsii", new WidgetPointer(a1));
+		cs2method_20750(new function<script_40>(int a0) {
+			script_41(a0);
+			return;
+		}, new WidgetPointer(a2), "I", new WidgetPointer(a1));
+	} else {
+		cs2method_21121(new function<none>() {
+		}, "", new WidgetPointer(a1));
+		cs2method_20750(new function<none>() {
+		}, "", new WidgetPointer(a1));
+	}
+	cs2method_10026(a1, v0);
+	script_9554(21954568, "Trading with: " + cs2_configs['cfg2519'], 21954570, -1, 21218);
+	return;
+}

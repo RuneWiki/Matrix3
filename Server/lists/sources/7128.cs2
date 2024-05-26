@@ -1,0 +1,33 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+string script_7128(int a0,int a1,int a2) {
+	int v1 = -1;
+	object v0 = "null";
+	if (a0 == 0) {
+		return "";
+	}
+	if (a0 < 61) {
+		int v2 = idx17mapData('i', 'S', 681, a0);
+		if (v2 != -1) {
+			return idx17mapData('i', 's', 108, a0) + " Level";
+		}
+	} else {
+		if (a0 == 61) {
+			return "Complete Quest: '" + idx22mapAttribute(idx17mapData('i', 'J', 2252, a1), 845) + "'";
+		}
+		if (a0 == 62) {
+			return script_7164(a1);
+		}
+	}
+	return "";
+}

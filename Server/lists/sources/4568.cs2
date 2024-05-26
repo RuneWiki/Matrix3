@@ -1,0 +1,77 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_4568(int a0,object a1,int a2,object a3,int a4,object a5) {
+	int v2 = cs2method_10236(38600727);
+	int v1 = cs2method_10051(cs2method_11048(cs2method_10805(v2, 494, a5), 1), 15);
+	cs2method_10606(38600727, 4, a2);
+	cs2method_10063(0, cs2method_10051(a2, 15), 0, 2);
+	cs2method_10013(0, v1, 1, 0);
+	cs2method_10811(16777215);
+	cs2method_10692(494);
+	cs2method_10797(a5);
+	cs2method_11105(0, 0, 15);
+	for (int v3 = 0, int v4 = 0, object v0 = cs2method_10765(a3); v4 < a2; v4 = cs2method_10060(v4, 1)) {
+		if (cs2method_11038(38600727, v4) == 1) {
+			v3 = cs2method_10060(v3, cs2method_10664());
+		}
+	}
+	cs2method_10063(0, v3, 0, 2);
+	if (a4 == 1) {
+		cs2method_10200(cs2method_10765(a3));
+		cs2method_20703(new function<script_4569>(int a0,object a1,object a2) {
+			switch (a0) {
+				case 1:
+					if (cs2method_10563(cs2method_10765(a1)) == 0) {
+						cs2method_11133(cs2method_10765(a1));
+					}
+					break;
+				case 2:
+					if (cs2method_10563(cs2method_10765(a1)) == 0) {
+						cs2method_10290(cs2method_10765(a1));
+					}
+					break;
+				case 3:
+					script_3015(0, "Send message to " + (string)a2, "", a1, "");
+					break;
+				case 5:
+					cs2_configs['cfg2481'] = (string)cs2method_10765(a2);
+					script_3190();
+					break;
+				case 10:
+					script_1633(cs2method_10765(a1));
+			}
+			return;
+		}, -2147483644, (string)v0, (string)a1, "iss");
+		switch (a0) {
+			case 9:
+			case 20:
+				if (cs2method_10846(cs2method_10765(cs2method_10954()), cs2method_10765(a1)) != 0) {
+					if (cs2method_10563(cs2method_10765(a1)) == 0 && cs2method_10654(cs2method_10765(a1)) == 0) {
+						cs2method_10057(1, "Add friend");
+						cs2method_10057(2, "Add ignore");
+					} else {
+						if (cs2method_10563(cs2method_10765(a1)) == 1 && cs2method_10870() == 0) {
+							cs2method_10057(3, "Message");
+						}
+					}
+					if (client_configs['cfg1775'].bitcfg16564 == 1) {
+						cs2method_10057(5, "Report");
+					}
+					if (script_1891() == 1) {
+						cs2method_10057(10, "Kick/ban");
+					}
+				}
+		}
+	}
+	return cs2method_10060(a2, 1);
+}

@@ -1,0 +1,53 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2323(int a0) {
+	if (cs2method_10191(a0) < cs2method_10461(cs2method_10236(20054017), 1)) {
+		if (cs2method_10191(a0) == cs2method_10060(140, cs2method_10236(a0))) {
+			cs2method_20162(new function<script_399>(int a0) {
+				if (cs2method_10191(a0) < cs2method_10461(cs2method_10236(20054017), 1) || cs2method_10461(cs2method_10152(a0), cs2method_10823(a0)) > 110) {
+					if (cs2method_10191(a0) == cs2method_10060(140, cs2method_10236(a0))) {
+						cs2method_20162(new function<script_1550>(int a0) {
+							if (cs2method_10191(a0) < cs2method_10461(cs2method_10236(20054017), 1)) {
+								if (cs2method_10191(a0) == cs2method_10060(140, cs2method_10236(a0))) {
+									cs2method_20162(new function<script_2321>(int a0) {
+										if (cs2method_10191(a0) < cs2method_10461(cs2method_10236(20054017), 1)) {
+											if (cs2method_10191(a0) == cs2method_10060(140, cs2method_10236(a0))) {
+												cs2method_20162(load function<2323>, new WidgetPointer(306,9), "I", new WidgetPointer(306,22));
+											}
+											cs2method_10112(cs2method_10060(1, cs2method_10191(a0)), cs2method_10152(a0), 0, 0, a0);
+										} else {
+											script_2322();
+										}
+										return;
+									}, new WidgetPointer(306,8), "I", new WidgetPointer(306,21));
+								}
+								cs2method_10112(cs2method_10060(1, cs2method_10191(a0)), cs2method_10152(a0), 0, 0, a0);
+							} else {
+								script_2056();
+							}
+							return;
+						}, new WidgetPointer(306,7), "I", new WidgetPointer(306,20));
+					}
+					cs2method_10112(cs2method_10060(1, cs2method_10191(a0)), cs2method_10152(a0), 0, 0, a0);
+				} else {
+					script_1411();
+				}
+				return;
+			}, new WidgetPointer(306,6), "I", new WidgetPointer(306,19));
+		}
+		cs2method_10112(cs2method_10060(1, cs2method_10191(a0)), cs2method_10152(a0), 0, 0, a0);
+	} else {
+		script_2324();
+	}
+	return;
+}

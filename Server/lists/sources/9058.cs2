@@ -1,0 +1,213 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9058() {
+	int v12 = 20110;
+	object v5 = "- Locked";
+	if (cs2_configs['cfg2797'] == 1) {
+		v12 = 20087;
+		v5 = "<col=5555ff>" + "Saradomin" + "</col>" + " aligned players deal 10% more damage to " + "<col=ff0000>" + "Zamorak" + "</col>" + "'s units.";
+	} else if (cs2_configs['cfg2797'] == 2) {
+		v12 = 20088;
+		v5 = "<col=5555ff>" + "Saradomin" + "</col>" + " aligned players take 15% less damage from " + "<col=ff0000>" + "Zamorak" + "</col>" + "'s units.";
+	} else {
+		if (script_8983() == 1) {
+			v5 = "- Vote in progress";
+		}
+	}
+	cs2method_10758(v12, 98238514);
+	cs2method_10026(98238515, v5);
+	int v13 = 20110;
+	object v10 = "- Locked";
+	if (cs2_configs['cfg2798'] == 1) {
+		v13 = 20089;
+		v10 = "<col=5555ff>" + "Saradominist" + "</col>" + " forces have a chance to see a second special unit of each available type on the battlefield.";
+	} else if (cs2_configs['cfg2798'] == 2) {
+		v13 = 20090;
+		v10 = "<col=5555ff>" + "Saradomin" + "</col>" + " aligned special units bonuses are 50% more powerful.";
+	} else {
+		if (script_8983() == 3) {
+			v10 = "- Vote in progress";
+		}
+	}
+	cs2method_10758(v13, 98238522);
+	cs2method_10026(98238523, v10);
+	int v2 = 20110;
+	object v9 = "- Locked";
+	if (cs2_configs['cfg2799'] == 1) {
+		v2 = 20091;
+		v9 = "<col=5555ff>" + "Saradomin" + "</col>" + " aligned players gain 5% more resources from the battlefield.";
+	} else if (cs2_configs['cfg2799'] == 5) {
+		v2 = 20091;
+		v9 = "<col=5555ff>" + "Saradomin" + "</col>" + " aligned players gain %5 more resources from outside the battlefield.";
+	} else {
+		if (script_8983() == 5) {
+			v9 = "- Vote in progress";
+		}
+	}
+	cs2method_10758(v2, 98238526);
+	cs2method_10026(98238527, v9);
+	int v0 = 20110;
+	object v7 = "- Locked";
+	if (cs2_configs['cfg2800'] == 1) {
+		v0 = 20093;
+		v7 = "Rewards from the quartermaster are now 5% cheaper for " + "<col=5555ff>" + "Saradomin" + "</col>" + " aligned players.";
+	} else if (cs2_configs['cfg2800'] == 2) {
+		v0 = 20094;
+		v7 = "5% bonus chance to obtain rare drops on the battlefield for " + "<col=5555ff>" + "Saradomin" + "</col>" + " aligned players.";
+	} else {
+		if (script_8983() == 7) {
+			v7 = "- Vote in progress";
+		}
+	}
+	cs2method_10758(v0, 98238530);
+	cs2method_10026(98238531, v7);
+	int v15 = 20111;
+	object v6 = "- Locked";
+	if (cs2_configs['cfg2801'] == 1) {
+		v15 = 20095;
+		v6 = "<col=ff0000>" + "Zamorak" + "</col>" + " aligned players deal 10% more damage to " + "<col=5555ff>" + "Saradomin" + "</col>" + "'s units.";
+	} else if (cs2_configs['cfg2801'] == 2) {
+		v15 = 20096;
+		v6 = "<col=ff0000>" + "Zamorak" + "</col>" + " aligned players take 15% less damage from " + "<col=5555ff>" + "Saradomin" + "</col>" + "'s units.";
+	} else {
+		if (script_8983() == 1) {
+			v6 = "- Vote in progress";
+		}
+	}
+	cs2method_10758(v15, 98238563);
+	cs2method_10026(98238564, v6);
+	int v8 = 20111;
+	object v1 = "- Locked";
+	if (cs2_configs['cfg2802'] == 1) {
+		v8 = 20097;
+		v1 = "<col=ff0000>" + "Zamorakian" + "</col>" + " forces have a chance to see a second special unit of each available type on the battlefield.";
+	} else if (cs2_configs['cfg2802'] == 2) {
+		v8 = 20098;
+		v1 = "<col=ff0000>" + "Zamorak" + "</col>" + " aligned special units bonuses are 50% more powerful.";
+	} else {
+		if (script_8983() == 3) {
+			v1 = "- Vote in progress";
+		}
+	}
+	cs2method_10758(v8, 98238568);
+	cs2method_10026(98238569, v1);
+	int v3 = 20111;
+	object v14 = "- Locked";
+	if (cs2_configs['cfg2803'] == 1) {
+		v3 = 20099;
+		v14 = "<col=ff0000>" + "Zamorak" + "</col>" + " aligned players gain 5% more resources from the battlefield.";
+	} else if (cs2_configs['cfg2803'] == 5) {
+		v3 = 20100;
+		v14 = "<col=ff0000>" + "Zamorak" + "</col>" + " aligned players gain %5 more resources from outside the battlefield.";
+	} else {
+		if (script_8983() == 5) {
+			v14 = "- Vote in progress";
+		}
+	}
+	cs2method_10758(v3, 98238573);
+	cs2method_10026(98238574, v14);
+	int v11 = 20111;
+	object v4 = "- Locked";
+	if (cs2_configs['cfg2804'] == 1) {
+		v11 = 20101;
+		v4 = "Rewards from the quartermaster are now 5% cheaper for " + "<col=ff0000>" + "Zamorak" + "</col>" + " aligned players.";
+	} else if (cs2_configs['cfg2804'] == 2) {
+		v11 = 20102;
+		v4 = "5% bonus chance to obtain rare drops on the battlefield for " + "<col=ff0000>" + "Zamorak" + "</col>" + " aligned players.";
+	} else {
+		if (script_8983() == 7) {
+			v4 = "- Vote in progress";
+		}
+	}
+	cs2method_10758(v11, 98238578);
+	cs2method_10026(98238579, v4);
+	if (cs2_configs['cfg2805'] == 1) {
+		cs2method_10467(1, 98238537);
+		cs2method_10758(20142, 98238536);
+		cs2method_10026(98238540, "Saradomin Champion");
+		cs2method_10026(98238539, "Support unit: Heals allied players.");
+	} else if (cs2_configs['cfg2805'] == 2) {
+		cs2method_10467(1, 98238537);
+		cs2method_10758(20143, 98238536);
+		cs2method_10026(98238540, "Saradomin Colossus");
+		cs2method_10026(98238539, "Artiller unit: Bombards the enemy.");
+	} else {
+		cs2method_10467(0, 98238537);
+		cs2method_10026(98238540, "Unknown Unit");
+		cs2method_10026(98238539, "- Locked");
+	}
+	if (cs2_configs['cfg2806'] == 1) {
+		if (cs2_configs['cfg2805'] == 1) {
+			cs2method_10467(1, 98238544);
+			cs2method_10758(20143, 98238543);
+			cs2method_10026(98238548, "Saradomin Colossus");
+			cs2method_10026(98238547, "Artillery unit: Bombards the enemy.");
+		} else {
+			if (cs2_configs['cfg2805'] == 2) {
+				cs2method_10467(1, 98238544);
+				cs2method_10758(20142, 98238536);
+				cs2method_10026(98238548, "Saradomin Champion");
+				cs2method_10026(98238547, "Support unit: Heals allied players.");
+			}
+		}
+	} else if (cs2_configs['cfg2806'] == 2) {
+		cs2method_10467(1, 98238544);
+		cs2method_10758(20143, 98238543);
+		cs2method_10026(98238548, "Saradomin Prideleader");
+		cs2method_10026(98238547, "Powerful unit: Stuns enemy soldiers.");
+	} else {
+		cs2method_10467(0, 98238544);
+		cs2method_10026(98238548, "Unknown Unit");
+		cs2method_10026(98238547, "- Locked");
+	}
+	if (cs2_configs['cfg2807'] == 1) {
+		cs2method_10467(1, 98238587);
+		cs2method_10758(20139, 98238586);
+		cs2method_10026(98238591, "Zamorak Champion");
+		cs2method_10026(98238590, "Support unit: Heals allied players.");
+	} else if (cs2_configs['cfg2807'] == 2) {
+		cs2method_10467(1, 98238587);
+		cs2method_10758(20140, 98238586);
+		cs2method_10026(98238591, "Zamorakian Siege Beast");
+		cs2method_10026(98238590, "Artillery unit: Bombards the enemy.");
+	} else {
+		cs2method_10467(0, 98238587);
+		cs2method_10026(98238591, "Unknown Unit");
+		cs2method_10026(98238590, "- Locked");
+	}
+	if (cs2_configs['cfg2808'] == 1) {
+		if (cs2_configs['cfg2807'] == 1) {
+			cs2method_10467(1, 98238596);
+			cs2method_10758(20140, 98238595);
+			cs2method_10026(98238600, "Zamorakian Seige Beast");
+			cs2method_10026(98238599, "Artillery unit: Bombards the enemy.");
+		} else {
+			if (cs2_configs['cfg2807'] == 2) {
+				cs2method_10467(1, 98238596);
+				cs2method_10758(20139, 98238595);
+				cs2method_10026(98238600, "Zamorak Champion");
+				cs2method_10026(98238599, "Support unit: Heals allied players.");
+			}
+		}
+	} else if (cs2_configs['cfg2808'] == 2) {
+		cs2method_10467(1, 98238596);
+		cs2method_10758(20141, 98238595);
+		cs2method_10026(98238600, "Zamorak's Butcher Demon");
+		cs2method_10026(98238599, "Powerful unit: Stuns enemy soldiers.");
+	} else {
+		cs2method_10467(0, 98238596);
+		cs2method_10026(98238600, "Unknown Unit");
+		cs2method_10026(98238599, "- Locked");
+	}
+	return;
+}

@@ -1,0 +1,40 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2276(int a0,int a1,int a2) {
+	object v0 = idx17mapData('i', 's', 2857, a2);
+	int v1 = idx17mapData('i', 'i', 2858, a2);
+	object v2 = idx17mapData('i', 's', 2859, a2);
+	if (a0 == 1) {
+		cs2method_10026(a1, v0);
+		if (v1 == 2) {
+			cs2method_10520(40960, a1);
+		} else if (v1 == 1) {
+			cs2method_10520(9474048, a1);
+		} else {
+			if (v1 == 0) {
+				cs2method_10520(10485760, a1);
+			}
+		}
+		cs2method_21121(new function<script_7781>(int a0,int a1,int a2,object a3,int a4) {
+			script_7788(a3, a1, -1, a2, a4, a0);
+			return;
+		}, new WidgetPointer(-32768,3), new WidgetPointer(933,315), (string)v2, 25, 200, "IIsii", new WidgetPointer(a1));
+		cs2method_20750(new function<script_40>(int a0) {
+			script_41(a0);
+			return;
+		}, new WidgetPointer(933,315), "I", new WidgetPointer(a1));
+	} else {
+		cs2method_10026(a1, "");
+	}
+	return;
+}

@@ -1,0 +1,70 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3677(int a0,int a1) {
+	int v1 = 0;
+	switch (a0) {
+		case 65929216:
+			v1 = cs2_configs['cfg1336'];
+			break;
+		case 65929217:
+			v1 = cs2_configs['cfg1337'];
+			break;
+		case 65929218:
+			v1 = cs2_configs['cfg1338'];
+			break;
+		case 65929219:
+			v1 = cs2_configs['cfg1339'];
+			break;
+		case 65929220:
+			v1 = cs2_configs['cfg1340'];
+			break;
+		case 65929221:
+			v1 = cs2_configs['cfg1341'];
+			break;
+		case 65929222:
+			v1 = cs2_configs['cfg1342'];
+			break;
+		case 65929223:
+			v1 = cs2_configs['cfg1343'];
+			break;
+		case 65929224:
+			v1 = cs2_configs['cfg1344'];
+			break;
+		case 65929225:
+			v1 = cs2_configs['cfg1345'];
+			break;
+		case 65929226:
+			v1 = cs2_configs['cfg1346'];
+			break;
+		case 65929227:
+			v1 = cs2_configs['cfg1347'];
+			break;
+		case 65929228:
+			v1 = cs2_configs['cfg1348'];
+			break;
+		case 65929229:
+			v1 = cs2_configs['cfg1349'];
+			break;
+		case 65929230:
+			v1 = cs2_configs['cfg1350'];
+			break;
+		case 65929231:
+			v1 = cs2_configs['cfg1605'];
+			break;
+		case 65929232:
+			v1 = cs2_configs['cfg1351'];
+	}
+	object v0 = "Current price: " + (string)script_940(v1) + " gp";
+	script_8800(a0, a1, v0);
+	return;
+}

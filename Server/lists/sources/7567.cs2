@@ -1,0 +1,46 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7567(int a0,int a1,int a2,int a3) {
+	object v0 = "";
+	switch (a1) {
+		case 91488259:
+		case 91684867:
+			v0 = "<col=ff9040>" + "Inactive destination" + "</col>" + "<br>" + "Inactive destinations are not ready to receive a boulder yet, and will therefore block the path of any that roll across them. This will cause the boulder to crash and be destroyed.";
+			break;
+		case 91488260:
+		case 91684868:
+			v0 = "<col=ff9040>" + "Active destination" + "</col>" + "<br>" + "There is only one active destination at a time. Boulders should be rolled into the current active destination to unlock the next one.";
+			break;
+		case 91488261:
+		case 91684869:
+			v0 = "<col=ff9040>" + "Complete destination" + "</col>" + "<br>" + "Destinations are complete when a boulder has been rolled into them. The boulder within the destination will allow other boulders to roll across the top in any direction.";
+			break;
+		case 91488262:
+		case 91684870:
+			v0 = "<col=ff9040>" + "Pressure pad" + "</col>" + "<br>" + "When a boulder rolls over a pressure pad, the pad will rotate by 90 degrees. If the boulder is then destroyed before reaching an active destination, the pressure pad will return to its original position.";
+			break;
+		case 91488263:
+		case 91684871:
+			v0 = "<col=ff9040>" + "Auto-rotating pad" + "</col>" + "<br>" + "Auto-rotating pads rotate by themselves every few seconds. These pads are surrounded by gates, enabling the boulder to be released only when it can roll across the pad.";
+			break;
+		case 91488264:
+		case 91684872:
+			v0 = "<col=ff9040>" + "Gated pad" + "</col>" + "<br>" + "Gated pads are intelligent; they will stop the boulder if the next track piece is an auto-rotating pad or a conveyor belt. The boulder must be released before it will begin moving again.";
+			break;
+		case 91488265:
+		case 91684873:
+			v0 = "<col=ff9040>" + "Conveyor belt" + "</col>" + "<br>" + "Conveyor belts will move the boulder in the direction the belt is currently moving. Conveyor belts are surrounded by gates, enabling the boulder to be released only when the belt is moving in the correct direction.";
+	}
+	script_8800(a1, -1, v0);
+	return;
+}

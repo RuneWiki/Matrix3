@@ -1,0 +1,28 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_1785_struct(2,0,0) script_1785(int a0,object a1,int a2,int a3,int a4) {
+	cs2method_10606(51904515, 4, a2);
+	cs2method_10063(0, a3, 0, 0);
+	cs2method_10692(495);
+	cs2method_10173(1);
+	cs2method_10013(a0, cs2method_10060(cs2method_10051(cs2method_10805(a0, 495, a1), 12), 5), 0, 0);
+	cs2method_10797(a1);
+	if (a4 == 1) {
+		cs2method_11105(1, 0, 0);
+		cs2method_10811(16750623);
+		return new script_1785_struct(cs2method_10060(cs2method_10060(a3, cs2method_10664()), 12), cs2method_10060(a2, 1));
+	}
+	cs2method_11105(0, 0, 0);
+	cs2method_10811(13150820);
+	return new script_1785_struct(cs2method_10060(cs2method_10060(a3, cs2method_10664()), 5), cs2method_10060(a2, 1));
+}

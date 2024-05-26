@@ -1,0 +1,104 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3067(int a0) {
+	int v0;
+	if (cs2method_10164() == 0) {
+		cs2method_20162(load function<3067>, a0, "i", new WidgetPointer(906,193));
+		return;
+	}
+	cs2method_20162(new function<none>() {
+	}, "", new WidgetPointer(906,193));
+	int v4 = 0;
+	int v11 = 0;
+	object v1 = "";
+	int v3 = 0;
+	object v9 = "";
+	int v15 = 0;
+	int v19 = 0;
+	object v5 = "";
+	int v13 = -1;
+	if (a0 == 1) {
+		v0 = cs2_configs['cfg998'];
+	} else if (a0 == 2) {
+		v0 = cs2_configs['cfg999'];
+	} else {
+		return;
+	}
+	opc_struct11054(5,3,0) v14 = cs2method_11054();
+	object v18 = v14.objectpart_2;
+	int v7 = v14.intpart_4;
+	int v16 = v14.intpart_3;
+	object v17 = v14.objectpart_1;
+	int v8 = v14.intpart_2;
+	object v2 = v14.objectpart_0;
+	int v6 = v14.intpart_1;
+	int v12 = v14.intpart_0;
+	int v10 = 0;
+	while (v12 != -1 && v10 == 0) {
+		if (v12 == v0) {
+			v10 = 1;
+		} else {
+			opc_struct10774(5,3,0) v25 = cs2method_10774();
+			v18 = v25.objectpart_2;
+			int v24 = v25.intpart_4;
+			int v23 = v25.intpart_3;
+			object v22 = v25.objectpart_1;
+			int v20 = v25.intpart_2;
+			object v21 = v25.objectpart_0;
+			int v26 = v25.intpart_1;
+			v12 = v25.intpart_0;
+		}
+	}
+	if (a0 == 1) {
+		script_3382(59375813);
+	} else {
+		if (a0 == 2) {
+			script_3382(59375814);
+		}
+	}
+	if (v12 > 0) {
+		if (cs2method_10966() != v12) {
+			if (cs2method_10883(v12, v18) == 1) {
+				cs2_configs['cfg547'] = 0;
+				int v20 = script_3062(59375808);
+				/* 
+					java.lang.RuntimeException: Stack underflow
+						at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+						at tests.Main.main(Main.java:69)
+					
+				 */
+			}
+			script_3064(1);
+			script_3093(-5, "Could not connect you to the chosen world. Please choose another.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+		} else {
+			int v20 = script_3062(59375808);
+			/* 
+				java.lang.RuntimeException: Stack underflow
+					at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+					at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+					at tests.Main.main(Main.java:69)
+				
+			 */
+		}
+	} else {
+		script_3093(-5, "World " + (string)cs2method_10379(v0) + " is running in a different language or is unavailable.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+	}
+	return;
+}

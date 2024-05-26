@@ -1,0 +1,78 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2724(int a0) {
+	int v1 = 0;
+	int v0 = 0;
+	object v2 = "";
+	switch (a0) {
+		case 6029333:
+			v1 = 1;
+			v0 = 1;
+			break;
+		case 6029334:
+			v1 = 2;
+			v0 = 10;
+			break;
+		case 6029335:
+			v1 = 3;
+			v0 = 20;
+			break;
+		case 6029336:
+			v1 = 4;
+			v0 = 30;
+			break;
+		case 6029337:
+			v1 = 5;
+			v0 = 40;
+			break;
+		case 6029338:
+			v1 = 6;
+			v0 = 50;
+			break;
+		case 6029339:
+			v1 = 7;
+			v0 = 60;
+			break;
+		case 6029340:
+			v1 = 8;
+			v0 = 70;
+			break;
+		case 6029341:
+			v1 = 9;
+			v0 = 80;
+			break;
+		case 6029342:
+			v1 = 10;
+			v0 = 85;
+			break;
+		case 6029343:
+			v1 = 11;
+			v0 = 90;
+			break;
+		case 6029344:
+			v1 = 12;
+			v0 = 95;
+	}
+	script_2722(a0);
+	cs2method_10026(6029317, idx17mapData('i', 's', 7892, v1));
+	if (cs2method_10338(25) < v0) {
+		v2 = "<col=b52912>" + "You cannot yet use this colony." + "</col>" + "<br>";
+	}
+	object v3 = cs2method_10427(v2, idx17mapData('i', 's', 7893, v1));
+	cs2method_10026(6029353, v3);
+	cs2method_10467(0, 6029332);
+	cs2method_10670(36961, 1, 0, 120);
+	cs2method_10467(0, 6029329);
+	script_5219(6029319);
+	return;
+}

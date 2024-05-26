@@ -1,0 +1,58 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_4160(int a0,int a1,int a2) {
+	int v1;
+	flow_0:
+		if (a0 > 0) {
+			cs2method_20162(new function<script_4159>(int a0,int a1,int a2) {
+				script_4160(a1, a2, a0);
+				return;
+			}, new WidgetPointer(-32768,3), a1, cs2method_10461(a0, 1), "Iii", new WidgetPointer(a2));
+			return;
+		}
+		int v4 = 0;
+		int v0 = 0;
+		if (cs2method_11038(a2, 0) == 1) {
+			int v3 = cs2method_10699();
+			if (a1 == 0) {
+				v1 = cs2method_10461(v3, 22);
+			} else {
+				v1 = cs2method_10060(v3, 22);
+			}
+			int v2 = cs2method_11048(v1, 0);
+			v0 = cs2method_10872(v2, 255);
+		}
+		IF (v0 == 0) 
+			GOTO	flow_8
+		GOTO	flow_9
+	flow_8:
+		IF (a1 == 0) 
+			GOTO	flow_11
+	flow_9:
+		IF (v0 == 255 && a1 == 1) 
+			GOTO	flow_11
+		GOTO	flow_12
+	flow_11:
+		cs2method_20162(new function<none>() {
+		}, "", new WidgetPointer(a2));
+		GOTO	flow_13
+	flow_12:
+		cs2method_20162(new function<script_4159>(int a0,int a1,int a2) {
+			script_4160(a2, a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), a1, 0, "Iii", new WidgetPointer(a2));
+	flow_13:
+		script_4161(a2, v0);
+		return;
+}

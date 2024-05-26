@@ -1,0 +1,169 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_291(int a0,int a1,int a2,int a3,int a4,int a5) {
+	cs2method_10026(93192345, cs2method_10047(cs2method_10490()));
+	cs2method_10273(a4);
+	cs2method_10273(a0);
+	if (a1 == 0) {
+		cs2method_10467(1, a3);
+		cs2method_10758(773, 93192346);
+		cs2method_20390(new function<script_290>(int a0,int a1,int a2,int a3,int a4,int a5) {
+			script_291(a5, a2, a3, a4, a1, a0);
+			return;
+		}, 1, new WidgetPointer(a3), new WidgetPointer(a4), new WidgetPointer(a0), new WidgetPointer(a2), new WidgetPointer(a5), "1IIIII", new WidgetPointer(1422,159));
+		return;
+	}
+	cs2method_10467(0, a3);
+	cs2method_10758(788, 93192346);
+	cs2method_20390(new function<script_290>(int a0,int a1,int a2,int a3,int a4,int a5) {
+		script_291(a0, a5, a2, a1, a3, a4);
+		return;
+	}, 0, new WidgetPointer(a3), new WidgetPointer(a4), new WidgetPointer(a0), new WidgetPointer(a2), new WidgetPointer(a5), "1IIIII", new WidgetPointer(1422,159));
+	globalarray_0 = new int[cs2method_10060(37, 1)];
+	globalarray_0[0] = 0;
+	for (int v0 = 1, int v7 = 1, int v1 = -1; v0 <= 37; v0 = cs2method_10060(v0, 1)) {
+		int v9 = idx17mapData('i', '`', 708, v0);
+		if (v9 != -1) {
+			globalarray_0[v7] = v0;
+			v7 = cs2method_10060(v7, 1);
+		}
+	}
+	script_293(0, 1, cs2method_10461(v7, 1));
+	cs2method_10606(a4, 4, cs2method_10163(a4));
+	cs2method_10063(0, 0, 1, 0);
+	cs2method_10013(0, 20, 1, 0);
+	cs2method_10692(17813);
+	cs2method_11105(0, 1, 0);
+	cs2method_10811(7705248);
+	cs2method_20674(new function<script_1356>(int a0,int a1,int a2) {
+		if (cs2method_11038(a0, a1) == 1) {
+			cs2method_10811(a2);
+		}
+		return;
+	}, new WidgetPointer(-32768,3), -2147483643, 16777215, "Iii");
+	cs2method_20884(new function<script_1356>(int a0,int a1,int a2) {
+		if (cs2method_11038(a1, a2) == 1) {
+			cs2method_10811(a0);
+		}
+		return;
+	}, new WidgetPointer(-32768,3), -2147483643, 7705248, "Iii");
+	int v4 = idx17mapData('i', '`', 708, globalarray_0[0]);
+	cs2method_10797(cs2method_10047(v4));
+	cs2method_20672(new function<script_294>(int a0,int a1,int a2,int a3,int a4,int a5) {
+		cs2method_10567(31334, 1, 0);
+		int v0 = script_2785(a5);
+		if (v0 == cs2method_10490()) {
+			script_291(0, a0, a2, a1, a3, a4);
+			return;
+		}
+		cs2_configs['cfg2545'] = "";
+		script_308(a3);
+		script_2046(a4);
+		script_41(93192277);
+		cs2method_11118(v0);
+		if (cs2method_10580() == 1) {
+			script_7953(v0);
+			int v1 = v0;
+			/* 
+				mgi.tools.jagdecs2.DecompilerException: No documentation for:CALL_CS2	8102
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:198)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+					at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.cast(FlowBlocksGenerator.java:546)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+					at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+					at tests.Main.main(Main.java:69)
+				
+			 */
+		}
+		script_1372(cs2method_10175(v0));
+		script_307();
+		script_291(0, a0, a2, a1, a3, a4);
+		return;
+	}, v4, new WidgetPointer(a3), new WidgetPointer(a4), new WidgetPointer(a0), new WidgetPointer(a2), new WidgetPointer(a5), "`IIIII");
+	script_309(v4, a4, 0);
+	for (int v3 = cs2method_10664(), int v8 = 0, int v6 = 1; v6 < v7; v3 = cs2method_10060(v3, cs2method_10664()), v6 = cs2method_10060(v6, 1)) {
+		cs2method_10606(a4, 4, cs2method_10163(a4));
+		cs2method_10063(0, v3, 1, 0);
+		cs2method_10013(0, 20, 1, 0);
+		cs2method_10692(17813);
+		cs2method_11105(0, 1, 0);
+		cs2method_10811(7705248);
+		cs2method_20674(new function<script_1356>(int a0,int a1,int a2) {
+			if (cs2method_11038(a0, a1) == 1) {
+				cs2method_10811(a2);
+			}
+			return;
+		}, new WidgetPointer(-32768,3), -2147483643, 16777215, "Iii");
+		cs2method_20884(new function<script_1356>(int a0,int a1,int a2) {
+			if (cs2method_11038(a0, a2) == 1) {
+				cs2method_10811(a1);
+			}
+			return;
+		}, new WidgetPointer(-32768,3), -2147483643, 7705248, "Iii");
+		int v9 = idx17mapData('i', '`', 708, globalarray_0[v6]);
+		cs2method_10797(cs2method_10047(v9));
+		cs2method_20672(new function<script_294>(int a0,int a1,int a2,int a3,int a4,int a5) {
+			cs2method_10567(31334, 1, 0);
+			int v0 = script_2785(a1);
+			if (v0 == cs2method_10490()) {
+				script_291(0, a2, a3, a5, a4, a0);
+				return;
+			}
+			cs2_configs['cfg2545'] = "";
+			script_308(a4);
+			script_2046(a0);
+			script_41(93192277);
+			cs2method_11118(v0);
+			if (cs2method_10580() == 1) {
+				script_7953(v0);
+				int v1 = v0;
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: No documentation for:CALL_CS2	8102
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:198)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.cast(FlowBlocksGenerator.java:546)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+						at tests.Main.main(Main.java:69)
+					
+				 */
+			}
+			script_1372(cs2method_10175(v0));
+			script_307();
+			script_291(0, a2, a3, a5, a4, a0);
+			return;
+		}, v9, new WidgetPointer(a3), new WidgetPointer(a4), new WidgetPointer(a0), new WidgetPointer(a2), new WidgetPointer(a5), "`IIIII");
+		if (v9 == cs2method_10490()) {
+			v8 = v3;
+		}
+		script_309(v9, a4, v3);
+	}
+	cs2method_11130(0, v3, a4);
+	int v2 = cs2method_11048(v3, 20);
+	int v5 = cs2method_10060(v2, 3);
+	v3 = cs2method_10872(v5, 150);
+	cs2method_10283(cs2method_10236(a3), v3, 0, 0, a3);
+	script_31(a0, a4, 792, 789, 790, 791, 773, 788);
+	script_157(a0, a4, v8, 1);
+	return;
+}

@@ -1,0 +1,44 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2112(int a0,int a1,int a2,int a3,int a4,int a5) {
+	cs2method_10740(0, 0, cs2method_10523(a2), cs2method_10042(a2), cs2method_10632(a2), cs2method_10060(cs2method_10060(395, a3), a3), a2);
+	cs2method_10740(0, 0, cs2method_10523(a4), cs2method_10042(a4), cs2method_10632(a4), cs2method_10060(cs2method_10060(395, a3), a3), a4);
+	cs2method_10740(0, 0, cs2method_10523(a1), cs2method_10042(a1), cs2method_10632(a1), cs2method_10060(cs2method_10060(395, a3), a3), a1);
+	cs2method_10740(0, 0, cs2method_10523(a5), cs2method_10042(a5), cs2method_10632(a5), cs2method_10060(cs2method_10060(395, a3), a3), a5);
+	switch (a0) {
+		case 0:
+			cs2method_10112(0, 43, 1, 0, a2);
+			cs2method_10112(0, 126, 1, 0, a4);
+			cs2method_10112(0, 210, 1, 0, a1);
+			cs2method_10112(0, -70, 1, 0, a5);
+			break;
+		case 1:
+			cs2method_10112(0, 43, 1, 0, a4);
+			cs2method_10112(0, 126, 1, 0, a1);
+			cs2method_10112(0, 210, 1, 0, a5);
+			cs2method_10112(0, -70, 1, 0, a2);
+			break;
+		case 2:
+			cs2method_10112(0, 43, 1, 0, a1);
+			cs2method_10112(0, 126, 1, 0, a5);
+			cs2method_10112(0, 210, 1, 0, a2);
+			cs2method_10112(0, -70, 1, 0, a4);
+			break;
+		default:
+			cs2method_10112(0, 43, 1, 0, a5);
+			cs2method_10112(0, 126, 1, 0, a2);
+			cs2method_10112(0, 210, 1, 0, a4);
+			cs2method_10112(0, -70, 1, 0, a1);
+	}
+	return;
+}

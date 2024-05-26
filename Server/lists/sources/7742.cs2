@@ -1,0 +1,84 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7742(int a0) {
+	int v1 = 0;
+	int v2 = 16;
+	int v5 = 3;
+	int v0 = 0;
+	int v6 = 0;
+	int v4 = 4;
+	int v3 = -1;
+	cs2method_10273(85918126);
+	if (idx22mapAttribute(a0, 2532) == 2 && v1 < v4) {
+		while (true) {
+			cs2method_10606(85918126, 4, v1);
+			v6 = cs2method_10051(v1, cs2method_10060(v2, v5));
+			cs2method_10063(v0, v6, 0, 0);
+			cs2method_10013(5, v2, 1, 0);
+			if (v1 == 0) {
+				cs2method_10797("Actual Growth Stage");
+			}
+			if (v1 == 1) {
+				cs2method_10797("Baby");
+				switch (cs2_configs['cfg2692']) {
+					case 16663:
+					case 16660:
+					case 16666:
+					case 4664:
+						cs2method_10811(56544);
+						break;
+					default:
+						cs2method_10811(16777215);
+				}
+			} else if (v1 == 2) {
+				cs2method_10797("Adolescent");
+				switch (cs2_configs['cfg2692']) {
+					case 16661:
+					case 16667:
+					case 16734:
+					case 16664:
+						cs2method_10811(56544);
+						break;
+					default:
+						cs2method_10811(16777215);
+				}
+			} else {
+				if (v1 == 3) {
+					cs2method_10797("Adult");
+					switch (cs2_configs['cfg2692']) {
+						case 16662:
+						case 16668:
+						case 16735:
+						case 16665:
+							cs2method_10811(56544);
+							break;
+						default:
+							cs2method_10811(16777215);
+					}
+				}
+			}
+			cs2method_11105(0, 1, 0);
+			cs2method_10692(494);
+			cs2method_10057(1, "Select");
+			cs2method_10012(1, 46);
+			cs2method_20672(new function<script_7437>(int a0,int a1) {
+				script_7438(a1, a0);
+				return;
+			}, v1, v4, "ii");
+			v1 = cs2method_10060(v1, 1);
+		}
+	}
+	cs2method_11130(cs2method_10236(85918126), cs2method_10060(v6, v2), 85918126);
+	script_31(85918127, 85918126, 4343, 4340, 4341, 4342, 4337, 4336);
+	return;
+}

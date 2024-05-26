@@ -1,0 +1,62 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4858() {
+	int v0 = 0;
+	if (cs2method_10172() == 1) {
+		cs2method_10467(1, 82640944);
+		cs2method_10467(1, 82640946);
+		cs2method_10467(1, 82640948);
+		int v1 = script_4948(client_configs['cfg1978'].bitcfg6677);
+		if (v1 <= 0) {
+			return;
+		}
+		cs2method_10467(1, script_4968(v1));
+		if (clan_chat_configs['cfg2071'].bitcfg6663 >= 4 && clan_chat_configs['cfg2071'].bitcfg6663 != 4) {
+			cs2method_10467(1, 82640908);
+		}
+		if (clan_chat_configs['cfg2071'].bitcfg6664 >= 4 && clan_chat_configs['cfg2071'].bitcfg6664 != 5) {
+			cs2method_10467(1, 82640910);
+		}
+		if (clan_chat_configs['cfg2071'].bitcfg6665 >= 4 && clan_chat_configs['cfg2071'].bitcfg6665 != 6) {
+			cs2method_10467(1, 82640912);
+		}
+		if (clan_chat_configs['cfg2071'].bitcfg6666 >= 4 && clan_chat_configs['cfg2071'].bitcfg6666 != 7) {
+			cs2method_10467(1, 82640914);
+		}
+		if (clan_chat_configs['cfg2071'].bitcfg6667 >= 4 && clan_chat_configs['cfg2071'].bitcfg6667 != 8) {
+			cs2method_10467(1, 82640916);
+		}
+		if (clan_chat_configs['cfg2072'].bitcfg6668 >= 4 && clan_chat_configs['cfg2072'].bitcfg6668 != 9) {
+			cs2method_10467(1, 82640918);
+		}
+		if (clan_chat_configs['cfg2072'].bitcfg6669 >= 4 && clan_chat_configs['cfg2072'].bitcfg6669 != 10) {
+			cs2method_10467(1, 82640920);
+		}
+		if (clan_chat_configs['cfg2072'].bitcfg6670 >= 4 && clan_chat_configs['cfg2072'].bitcfg6670 != 11) {
+			cs2method_10467(1, 82640922);
+		}
+		if (clan_chat_configs['cfg2072'].bitcfg6671 >= 4 && clan_chat_configs['cfg2072'].bitcfg6671 != 12) {
+			cs2method_10467(1, 82640924);
+		}
+		if (clan_chat_configs['cfg2072'].bitcfg6672 >= 4 && clan_chat_configs['cfg2072'].bitcfg6672 != 13) {
+			cs2method_10467(1, 82640926);
+		}
+		if (clan_chat_configs['cfg2072'].bitcfg6673 >= 4 && clan_chat_configs['cfg2072'].bitcfg6673 != 14) {
+			cs2method_10467(1, 82640928);
+		}
+		if (clan_chat_configs['cfg2073'].bitcfg6674 >= 4 && clan_chat_configs['cfg2073'].bitcfg6674 != 15) {
+			cs2method_10467(1, 82640930);
+		}
+	}
+	return;
+}

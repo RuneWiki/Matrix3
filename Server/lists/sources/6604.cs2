@@ -1,0 +1,23 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6604(int a0) {
+	int v1 = cs2method_10236(a0);
+	int v2 = cs2method_10823(a0);
+	int v0 = cs2method_10122(503, 765, 10000);
+	if (cs2method_10122(v2, v1, 10000) < v0) {
+		cs2method_10283(cs2method_10122(765, 503, v2), 0, 0, 1, a0);
+	} else {
+		cs2method_10283(0, cs2method_10122(503, 765, v1), 1, 0, a0);
+	}
+	return;
+}

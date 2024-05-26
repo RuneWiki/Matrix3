@@ -1,0 +1,107 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2570() {
+	int v1 = 0;
+	int v3 = 0;
+	int v2 = -1;
+	cs2_configs['cfg930'] = -1;
+	cs2_configs['cfg931'] = -1;
+	cs2_configs['cfg932'] = -1;
+	cs2_configs['cfg933'] = -1;
+	cs2_configs['cfg934'] = -1;
+	cs2_configs['cfg935'] = -1;
+	cs2_configs['cfg936'] = -1;
+	cs2_configs['cfg937'] = -1;
+	cs2_configs['cfg938'] = -1;
+	cs2_configs['cfg939'] = -1;
+	if (client_configs['cfg1635'].bitcfg5292 > 0 && client_configs['cfg1635'].bitcfg5292 < 11) {
+		cs2_configs['cfg929'] = cs2method_10461(client_configs['cfg1635'].bitcfg5292, 1);
+	} else {
+		cs2_configs['cfg929'] = 0;
+	}
+	while (v3 < 10 && v1 < 28) {
+		int v0 = cs2method_10640(93, v1);
+		if (itemDefsAttribute(v0, 802) == 1 || itemDefsAttribute(v0, 803) == 1) {
+			cs2method_10026((int)idx17mapData('i', 'I', 2423, v3), "Squad " + (string)cs2method_10379(cs2method_10060(v3, 1)));
+			if (itemDefsAttribute(v0, 806) == 0) {
+				cs2method_10758(2023, (int)idx17mapData('i', 'I', 2427, v3));
+			} else {
+				if (itemDefsAttribute(v0, 806) == 1) {
+					cs2method_10758(2022, (int)idx17mapData('i', 'I', 2427, v3));
+				}
+			}
+			if (itemDefsAttribute(v0, 805) == 1) {
+				cs2method_10758(2016, (int)idx17mapData('i', 'I', 2426, v3));
+			} else if (itemDefsAttribute(v0, 805) == 2) {
+				cs2method_10758(2018, (int)idx17mapData('i', 'I', 2426, v3));
+			} else {
+				if (itemDefsAttribute(v0, 805) == 3) {
+					cs2method_10758(2017, (int)idx17mapData('i', 'I', 2426, v3));
+				}
+			}
+			if (itemDefsAttribute(v0, 803) == 1) {
+				cs2method_10520(13369344, (int)idx17mapData('i', 'I', 2429, v3));
+			} else {
+				cs2method_10520(0, (int)idx17mapData('i', 'I', 2429, v3));
+			}
+			switch (v3) {
+				case 0:
+					cs2_configs['cfg930'] = v1;
+					break;
+				case 1:
+					cs2_configs['cfg931'] = v1;
+					break;
+				case 2:
+					cs2_configs['cfg932'] = v1;
+					break;
+				case 3:
+					cs2_configs['cfg933'] = v1;
+					break;
+				case 4:
+					cs2_configs['cfg934'] = v1;
+					break;
+				case 5:
+					cs2_configs['cfg935'] = v1;
+					break;
+				case 6:
+					cs2_configs['cfg936'] = v1;
+					break;
+				case 7:
+					cs2_configs['cfg937'] = v1;
+					break;
+				case 8:
+					cs2_configs['cfg938'] = v1;
+					break;
+				case 9:
+					cs2_configs['cfg939'] = v1;
+			}
+			v3 = cs2method_10060(v3, 1);
+		}
+		v1 = cs2method_10060(v1, 1);
+	}
+	if (v3 < 10 && v3 < 10) {
+		while (true) {
+			cs2method_10026((int)idx17mapData('i', 'I', 2423, v3), "No squad");
+			cs2method_10026((int)idx17mapData('i', 'I', 2424, v3), "");
+			cs2method_10758(-1, (int)idx17mapData('i', 'I', 2427, v3));
+			cs2method_10758(-1, (int)idx17mapData('i', 'I', 2426, v3));
+			cs2method_20486(new function<none>() {
+			}, "", idx17mapData('i', 'I', 2422, v3));
+			cs2method_10495((int)idx17mapData('i', 'I', 2422, v3));
+			v3 = cs2method_10060(v3, 1);
+		}
+	}
+	script_2599();
+	script_2573();
+	return;
+}

@@ -1,0 +1,40 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1971(int a0,int a1) {
+	switch (a0) {
+		case 0:
+			if (cs2_configs['cfg618'] < 0 || cs2_configs['cfg618'] > 25) {
+				cs2_configs['cfg618'] = 0;
+			}
+			cs2method_10026(a1, idx17mapData('i', 's', 2121, cs2_configs['cfg618']));
+			break;
+		case 1:
+			if (cs2_configs['cfg619'] < 0 || cs2_configs['cfg619'] > 25) {
+				cs2_configs['cfg619'] = 0;
+			}
+			cs2method_10026(a1, idx17mapData('i', 's', 2121, cs2_configs['cfg619']));
+			break;
+		case 2:
+			if (cs2_configs['cfg620'] < 0 || cs2_configs['cfg620'] > 25) {
+				cs2_configs['cfg620'] = 0;
+			}
+			cs2method_10026(a1, idx17mapData('i', 's', 2121, cs2_configs['cfg620']));
+			break;
+		case 3:
+			if (cs2_configs['cfg621'] < 0 || cs2_configs['cfg621'] > 25) {
+				cs2_configs['cfg621'] = 0;
+			}
+			cs2method_10026(a1, idx17mapData('i', 's', 2121, cs2_configs['cfg621']));
+	}
+	return;
+}

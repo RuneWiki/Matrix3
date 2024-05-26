@@ -1,0 +1,28 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3236(int a0,int a1,int a2,int a3,int a4) {
+	object v0 = "";
+	switch (a0) {
+		case 3:
+			v0 = cs2_configs['cfg2576'];
+			break;
+		case 4:
+			v0 = script_2949(cs2_configs['cfg2577']);
+			break;
+		case 19:
+			v0 = cs2_configs['cfg4210'];
+	}
+	cs2_configs['cfg1099'] = script_1401(a2, 17814, 0, v0);
+	script_3237(a4, a3, a1, v0, a0);
+	return;
+}

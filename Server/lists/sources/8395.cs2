@@ -1,0 +1,44 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_8395_struct(4,0,0) script_8395(int a0,int a1) {
+	int v13 = 0;
+	int v17 = 0;
+	int v22 = 0;
+	int v6 = 0;
+	int v12 = 0;
+	int v14 = 0;
+	int v10 = 0;
+	int v15 = 0;
+	int v24 = a1;
+	script_8405_struct(2,0,0) v19 = script_8405(v24);
+	int v1 = v19.intpart_1;
+	int v16 = v19.intpart_0;
+	int v27 = cs2method_10060(v16, cs2method_10236(a1));
+	int v0 = cs2method_10060(v1, cs2method_10823(a1));
+	int v28 = a0;
+	script_8405_struct(2,0,0) v20 = script_8405(v28);
+	int v25 = v20.intpart_1;
+	int v2 = v20.intpart_0;
+	int v18 = cs2method_10060(v2, cs2method_10236(a0));
+	int v9 = cs2method_10060(v25, cs2method_10823(a0));
+	int v5 = v16;
+	int v11 = v1;
+	int v23 = v27;
+	int v7 = v0;
+	int v4 = v2;
+	int v21 = v25;
+	int v26 = v18;
+	int v8 = v9;
+	script_8398_struct(4,0,0) v3 = script_8398(v5, v11, v23, v7, v4, v21, v26, v8);
+	return new script_8395_struct(v3.intpart_0, v3.intpart_1, v3.intpart_2, v3.intpart_3);
+}

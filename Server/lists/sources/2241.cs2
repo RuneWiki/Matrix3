@@ -1,0 +1,69 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2241() {
+	cs2method_10026(60883050, "+ " + (string)cs2method_10379(client_configs['cfg2967']) + " ( " + (string)cs2method_10379(client_configs['cfg2961']) + " )" + "<br>" + "+ " + (string)cs2method_10379(client_configs['cfg2966']) + " ( " + (string)cs2method_10379(client_configs['cfg2960']) + " )" + "<br>" + "+ " + (string)cs2method_10379(client_configs['cfg2968']) + " ( " + (string)cs2method_10379(client_configs['cfg2962']) + " )" + "<br>");
+	cs2method_10026(60883052, "+ " + (string)cs2method_10379(client_configs['cfg2969']) + " ( " + (string)cs2method_10379(client_configs['cfg2963']) + " )" + "<br>" + "+ " + (string)cs2method_10379(client_configs['cfg2971']) + " ( " + (string)cs2method_10379(client_configs['cfg2964']) + " )" + "<br>" + "+ " + (string)cs2method_10379(client_configs['cfg2970']) + " ( " + (string)cs2method_10379(client_configs['cfg2965']) + " )" + "<br>");
+	if (client_configs['cfg2943'].bitcfg14974 == 1) {
+		cs2method_10026(60883057, "WORKING");
+		cs2method_10520(65280, 60883057);
+	} else {
+		cs2method_10567(35284, 10, 0);
+		cs2method_10026(60883057, "NEEDS REPAIR");
+		cs2method_10520(16711680, 60883057);
+	}
+	if (client_configs['cfg2943'].bitcfg14976 == 1) {
+		cs2method_10026(60883056, "WORKING");
+		cs2method_10520(65280, 60883056);
+	} else {
+		cs2method_10567(35284, 10, 1);
+		cs2method_10026(60883056, "NEEDS REPAIR");
+		cs2method_10520(16711680, 60883056);
+	}
+	if (client_configs['cfg2943'].bitcfg14975 == 1) {
+		cs2method_10026(60883058, "WORKING");
+		cs2method_10520(65280, 60883058);
+	} else {
+		cs2method_10567(35284, 10, 2);
+		cs2method_10026(60883058, "NEEDS REPAIR");
+		cs2method_10520(16711680, 60883058);
+	}
+	cs2method_10026(60883046, cs2method_10379(cs2method_10968(cs2_configs['cfg1135'], 5)));
+	switch (client_configs['cfg2972']) {
+		case 5:
+			cs2method_10026(60883048, "Your workers uncover a hidden stash and you receive");
+			cs2method_10026(60883049, "3 extra resources.");
+			cs2method_10567(34614, 1, 0);
+			break;
+		case 6:
+			cs2method_10026(60883048, "An accident at work has taken place. As a result you have");
+			cs2method_10026(60883049, "lost 3 resources.");
+			cs2method_10567(35284, 10, 0);
+			break;
+		case 7:
+			cs2method_10026(60883048, "The paint machine is out of glaze and requires a repair to work at full efficiency.");
+			cs2method_10026(60883049, "Painter needs repair.");
+			break;
+		case 8:
+			cs2method_10026(60883048, "The conveyor team needs re-training in order to work at full efficiency.");
+			cs2method_10026(60883049, "Conveyor needs repair.");
+			break;
+		case 9:
+			cs2method_10026(60883048, "The oven is coated in soot. It requires a repair to work at full efficiency.");
+			cs2method_10026(60883049, "Oven needs repair.");
+			break;
+		default:
+			cs2method_10026(60883048, "");
+			cs2method_10026(60883049, "Nothing unusual happened.");
+	}
+	return;
+}

@@ -1,0 +1,25 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_8341(int a0,int a1) {
+	int v0 = 0;
+	if (cs2method_10324(a0) == 1) {
+		if (a1 == 1) {
+			v0 = interfaceDefsAttribute(3491);
+		} else {
+			if (a1 == 2) {
+				v0 = interfaceDefsAttribute(3492);
+			}
+		}
+	}
+	return v0;
+}

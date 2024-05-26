@@ -1,0 +1,52 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2011(int a0) {
+	if (client_configs['cfg4404'] == 0) {
+		return;
+	}
+	int v0 = client_configs['cfg4405'];
+	client_configs['cfg4405'] = cs2method_11048(1, cs2method_10872(client_configs['cfg4404'], cs2method_10060(client_configs['cfg4405'], a0)));
+	int v1 = -1;
+	if (v0 != client_configs['cfg4405']) {
+		script_2017();
+		script_2019();
+		script_2012(68354053, 10);
+		switch (cs2method_10877(3)) {
+			case 0:
+				v1 = 21248;
+				break;
+			case 1:
+				v1 = 21256;
+				break;
+			case 2:
+				v1 = 21256;
+		}
+		int v4 = v1;
+		int v3 = 1;
+		int v2 = 0;
+		int v5 = 20;
+		special6(5, 10);
+		/* 
+			java.lang.RuntimeException: Stack underflow
+				at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+				at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+				at tests.Main.main(Main.java:69)
+			
+		 */
+	}
+	return;
+}

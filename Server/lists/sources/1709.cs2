@@ -1,0 +1,62 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1709() {
+	object v8;
+	int v2 = client_configs['cfg3403'].bitcfg17121;
+	if (client_configs['cfg3400'].bitcfg17115 > 0) {
+		v2 = cs2method_10060(v2, 1);
+	}
+	if (client_configs['cfg3400'].bitcfg17116 > 0) {
+		v2 = cs2method_10060(v2, 1);
+	}
+	if (client_configs['cfg3401'].bitcfg17117 > 0) {
+		v2 = cs2method_10060(v2, 1);
+	}
+	int v3 = 0;
+	int v5 = 0;
+	script_4187_struct(2,0,0) v6 = script_4187();
+	int v4 = v6.intpart_1;
+	int v1 = v6.intpart_0;
+	object v0 = "";
+	if (v1 == 0) {
+		v8 = (string)cs2method_10379(v4) + "m";
+	} else {
+		v8 = (string)cs2method_10379(v1) + "h";
+	}
+	if (v2 > 0) {
+		cs2method_10026(62259208, "Voyages available: " + (string)cs2method_10379(v2));
+	} else {
+		cs2method_10026(62259208, "New voyages in " + (string)v8);
+	}
+	cs2method_10026(62259568, "Add 5 Rerolls (" + (string)cs2method_10379(client_configs['cfg3448'].bitcfg17421) + ")");
+	if (client_configs['cfg3448'].bitcfg17421 < 1 || client_configs['cfg3403'].bitcfg17121 > 15) {
+		cs2method_10467(0, 62259566);
+	} else {
+		cs2method_10467(1, 62259566);
+	}
+	if (client_configs['cfg3403'].bitcfg17121 < 1) {
+		cs2method_10758(15460, 62259335);
+		cs2method_10758(15460, 62259427);
+		cs2method_10758(15460, 62259428);
+	} else {
+		cs2method_10758(15458, 62259335);
+		cs2method_10758(15458, 62259427);
+		cs2method_10758(15458, 62259428);
+	}
+	int v7 = client_configs['cfg3415'];
+	if (client_configs['cfg3456'].bitcfg17495 >= 38 && client_configs['cfg3456'].bitcfg17495 < 50) {
+		v7 = 1;
+	}
+	cs2method_10026(62259212, "Special Voyages (" + (string)cs2method_10379(v7) + ")");
+	return;
+}

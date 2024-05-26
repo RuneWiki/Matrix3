@@ -1,0 +1,114 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_6150_struct(4,0,0) script_6150(int a0,int a1,int a2) {
+	while (a1 < 0) {
+		a1 = cs2method_10060(a1, 8);
+	}
+	while (a1 > 7) {
+		a1 = cs2method_10461(a1, 8);
+	}
+	int v2 = -1;
+	int v1 = -1;
+	int v3 = -1;
+	int v0 = -1;
+	switch (a1) {
+		case 0:
+			v2 = cs2method_10327(a0, 0, 0, 3);
+			v3 = cs2method_10327(a0, 0, 0, -3);
+			if (a2 > 0) {
+				v1 = cs2method_10327(v2, 1, 0, 0);
+				v0 = cs2method_10327(v3, -1, 0, 0);
+			} else {
+				v1 = cs2method_10327(v2, -1, 0, 0);
+				v0 = cs2method_10327(v3, 1, 0, 0);
+			}
+			break;
+		case 1:
+			v2 = cs2method_10327(a0, 2, 0, 2);
+			v3 = cs2method_10327(a0, -2, 0, -2);
+			if (a2 > 0) {
+				v1 = cs2method_10327(v2, 1, 0, -1);
+				v0 = cs2method_10327(v3, -1, 0, 1);
+			} else {
+				v1 = cs2method_10327(v2, -1, 0, 1);
+				v0 = cs2method_10327(v3, 1, 0, -1);
+			}
+			break;
+		case 2:
+			v2 = cs2method_10327(a0, 3, 0, 0);
+			v3 = cs2method_10327(a0, -3, 0, 0);
+			if (a2 > 0) {
+				v1 = cs2method_10327(v2, 0, 0, -1);
+				v0 = cs2method_10327(v3, 0, 0, 1);
+			} else {
+				v1 = cs2method_10327(v2, 0, 0, 1);
+				v0 = cs2method_10327(v3, 0, 0, -1);
+			}
+			break;
+		case 3:
+			v2 = cs2method_10327(a0, 2, 0, -2);
+			v3 = cs2method_10327(a0, -2, 0, 2);
+			if (a2 > 0) {
+				v1 = cs2method_10327(v2, -1, 0, -1);
+				v0 = cs2method_10327(v3, 1, 0, 1);
+			} else {
+				v1 = cs2method_10327(v2, 1, 0, 1);
+				v0 = cs2method_10327(v3, -1, 0, -1);
+			}
+			break;
+		case 4:
+			v2 = cs2method_10327(a0, 0, 0, -3);
+			v3 = cs2method_10327(a0, 0, 0, 3);
+			if (a2 > 0) {
+				v1 = cs2method_10327(v2, -1, 0, 0);
+				v0 = cs2method_10327(v3, 1, 0, 0);
+			} else {
+				v1 = cs2method_10327(v2, 1, 0, 0);
+				v0 = cs2method_10327(v3, -1, 0, 0);
+			}
+			break;
+		case 5:
+			v2 = cs2method_10327(a0, -2, 0, -2);
+			v3 = cs2method_10327(a0, 2, 0, 2);
+			if (a2 > 0) {
+				v1 = cs2method_10327(v2, -1, 0, 1);
+				v0 = cs2method_10327(v3, 1, 0, -1);
+			} else {
+				v1 = cs2method_10327(v2, 1, 0, -1);
+				v0 = cs2method_10327(v3, -1, 0, 1);
+			}
+			break;
+		case 6:
+			v2 = cs2method_10327(a0, -3, 0, 0);
+			v3 = cs2method_10327(a0, 3, 0, 0);
+			if (a2 > 0) {
+				v1 = cs2method_10327(v2, 0, 0, 1);
+				v0 = cs2method_10327(v3, 0, 0, -1);
+			} else {
+				v1 = cs2method_10327(v2, 0, 0, -1);
+				v0 = cs2method_10327(v3, 0, 0, 1);
+			}
+			break;
+		case 7:
+			v2 = cs2method_10327(a0, -2, 0, 2);
+			v3 = cs2method_10327(a0, 2, 0, -2);
+			if (a2 > 0) {
+				v1 = cs2method_10327(v2, 1, 0, 1);
+				v0 = cs2method_10327(v3, -1, 0, -1);
+			} else {
+				v1 = cs2method_10327(v2, -1, 0, -1);
+				v0 = cs2method_10327(v3, 1, 0, 1);
+			}
+	}
+	return new script_6150_struct(v2, v1, v3, v0);
+}

@@ -1,0 +1,47 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_10074(int a0) {
+	if (a0 == 0) {
+		cs2method_10467(1, 82117171);
+		return;
+	}
+	int v8 = -1;
+	int v9 = 0;
+	int v7 = 0;
+	int v6 = a0;
+	script_9775_struct(3,0,0) v3 = script_9775(v6);
+	int v4 = v3.intpart_2;
+	int v1 = v3.intpart_1;
+	int v5 = v3.intpart_0;
+	int v2 = script_9739(a0);
+	if (v5 == -1) {
+		cs2method_10467(0, 82117171);
+		cs2method_10758(-1, 82117174);
+		cs2method_10758(-1, 82117175);
+		cs2method_10026(82117173, "No current prize.");
+		return;
+	}
+	cs2method_10467(0, 82117171);
+	cs2method_10758(script_9780(v4), 82117175);
+	if (v2 == 1) {
+		cs2method_10758(22223, 82117174);
+	} else {
+		cs2method_10758(22224, 82117174);
+	}
+	object v0 = cs2method_10018(v5);
+	if (v1 > 1) {
+		v0 = (string)v0 + " (" + (string)cs2method_10379(v1) + ")";
+	}
+	cs2method_10026(82117173, v0);
+	return;
+}

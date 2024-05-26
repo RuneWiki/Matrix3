@@ -1,0 +1,76 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9856(int a0) {
+	int v3 = 0;
+	for (int v4 = 0; v4 < 9; v4 = cs2method_10060(v4, 1)) {
+		switch (v4) {
+			case 0:
+				if (cs2_configs['cfg1703'] != -1) {
+					v3 = cs2method_10060(v3, 1);
+				}
+				break;
+			case 1:
+				if (cs2_configs['cfg1704'] != -1) {
+					v3 = cs2method_10060(v3, 1);
+				}
+				break;
+			case 2:
+				if (cs2_configs['cfg1705'] != -1) {
+					v3 = cs2method_10060(v3, 1);
+				}
+				break;
+			case 3:
+				if (cs2_configs['cfg1706'] != -1) {
+					v3 = cs2method_10060(v3, 1);
+				}
+				break;
+			case 4:
+				if (cs2_configs['cfg1707'] != -1) {
+					v3 = cs2method_10060(v3, 1);
+				}
+				break;
+			case 5:
+				if (cs2_configs['cfg1708'] != -1) {
+					v3 = cs2method_10060(v3, 1);
+				}
+				break;
+			case 6:
+				if (cs2_configs['cfg1709'] != -1) {
+					v3 = cs2method_10060(v3, 1);
+				}
+				break;
+			case 7:
+				if (cs2_configs['cfg1710'] != -1) {
+					v3 = cs2method_10060(v3, 1);
+				}
+				break;
+			case 8:
+				if (cs2_configs['cfg1711'] != -1) {
+					v3 = cs2method_10060(v3, 1);
+				}
+		}
+	}
+	if (v3 == 0) {
+		return;
+	}
+	int v2 = cs2method_10461(a0, 15);
+	if (v2 > v3) {
+		return;
+	}
+	int v1 = -1;
+	int v0 = script_9857(v2);
+	if (v0 != -1) {
+		cs2method_10015(v0);
+	}
+	return;
+}

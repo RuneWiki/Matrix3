@@ -1,0 +1,69 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7681(int a0,int a1,int a2,int a3) {
+	int v4;
+	int v6 = idx17mapData('o', 'i', 7432, a3);
+	int v7 = 0;
+	int v3 = 0;
+	int v1 = 0;
+	int v5 = 0;
+	int v2 = -1;
+	switch (a3) {
+		case 19808:
+			if (a2 == 1) {
+				cs2method_20254(load function<7681>, new WidgetPointer(a1), new WidgetPointer(a0), a3, 0, 93, 94, 2, "IIo1Y", new WidgetPointer(a1));
+			}
+			v4 = cs2method_10060(cs2method_10936(94, 28084), cs2method_10936(93, 28084));
+			if (v4 > 0) {
+				a3 = 28084;
+			} else {
+				v4 = cs2method_10060(cs2method_10060(v4, cs2method_10936(94, 19808)), cs2method_10936(93, 19808));
+			}
+			break;
+		default:
+			if (a2 == 1) {
+				cs2method_20254(load function<7681>, new WidgetPointer(a1), new WidgetPointer(a0), a3, 0, 93, 1, "IIo1Y", new WidgetPointer(a1));
+			}
+			v4 = cs2method_10936(93, a3);
+			break;
+		case -1:
+			return;
+	}
+	if (v6 > 1) {
+		cs2method_11116(a3, v4, a1);
+	} else if (v4 > 0) {
+		cs2method_10039(a3, v4, a1);
+	} else {
+		cs2method_10121(a3, v4, a1);
+	}
+	cs2method_10316(a1, "<col=ff9040>" + (string)cs2method_10018(a3));
+	int v0 = 6014;
+	int v8 = 6015;
+	if (v4 > 0) {
+		cs2method_10704(0, a1);
+		cs2method_10758(v0, a0);
+		cs2method_20680(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), v8, "Id", new WidgetPointer(a0));
+		cs2method_20750(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), v0, "Id", new WidgetPointer(a0));
+	} else {
+		cs2method_10704(175, a1);
+		cs2method_10758(6016, a0);
+		cs2method_10906(a0);
+	}
+	return;
+}

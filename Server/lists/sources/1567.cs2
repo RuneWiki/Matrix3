@@ -1,0 +1,27 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_1567_struct(2,2,0) script_1567(int a0,int a1,int a2) {
+	if (a2 == 7) {
+		int v1 = a0;
+		int v2 = a1;
+		script_2788_struct(2,2,0) v0 = script_2788(v1, v2);
+		return new script_1567_struct(v0.intpart_0, v0.intpart_1, v0.objectpart_0, v0.objectpart_1);
+	}
+	if (a2 == 4) {
+		int v2 = a0;
+		int v0 = a1;
+		script_2787_struct(2,2,0) v1 = script_2787(v2, v0);
+		return new script_1567_struct(v1.intpart_0, v1.intpart_1, v1.objectpart_0, v1.objectpart_1);
+	}
+	return new script_1567_struct(0, -1, "", "");
+}

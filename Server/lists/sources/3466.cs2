@@ -1,0 +1,219 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3466(int a0,int a1) {
+	switch (cs2_configs['cfg1007']) {
+		case 101:
+			cs2method_10273(a1);
+			script_2766(0, 50, a1);
+			break;
+		case 102:
+			cs2method_11031(0, 2);
+			cs2method_11031(1, 2);
+			cs2method_10971(0, 0, script_3460(7, 54, a0), 1000, script_3460(8, 54, a0), 1000, 0);
+			cs2method_10971(1, 0, script_3460(13, 50, a0), 450, script_3460(13, 50, a0), 450, 0);
+			cs2method_10971(0, 1, script_3460(13, 51, a0), 800, script_3460(13, 52, a0), 800, 0);
+			cs2method_10971(1, 1, script_3460(14, 44, a0), 550, script_3460(14, 44, a0), 550, 0);
+			cs2method_10382(0, 0, 100, 100, 1, 0);
+			script_2768(75, a1);
+			break;
+		case 103:
+			cs2method_10273(a1);
+			cs2method_20162(new function<script_3467>(int a0,int a1,int a2) {
+				if (cs2method_10461(cs2method_10133(), a2) < a1) {
+					return;
+				}
+				cs2method_20162(new function<none>() {
+				}, "", new WidgetPointer(a0));
+				script_2766(0, 50, a0);
+				return;
+			}, new WidgetPointer(a1), cs2method_10133(), 100, "Iii", new WidgetPointer(a1));
+			break;
+		case 104:
+			cs2method_20162(new function<none>() {
+			}, "", new WidgetPointer(a1));
+			if (cs2method_11038(a1, 0) == 1) {
+				cs2method_10002(0);
+				cs2method_20061(new function<none>() {
+				}, "");
+			} else {
+				script_2766(0, 0, a1);
+			}
+			break;
+		case 105:
+			cs2method_11031(0, 2);
+			cs2method_11031(1, 2);
+			cs2method_10971(0, 0, script_3460(29, 33, a0), 1200, script_3460(29, 34, a0), 1200, 0);
+			cs2method_10971(1, 0, script_3460(31, 25, a0), 500, script_3460(31, 24, a0), 500, 0);
+			cs2method_10971(0, 1, script_3460(25, 19, a0), 1200, script_3460(25, 18, a0), 1200, 0);
+			cs2method_10971(1, 1, script_3460(31, 13, a0), 500, script_3460(30, 13, a0), 500, 0);
+			cs2method_10382(0, 0, 500, 450, 1, 0);
+			script_2768(50, a1);
+			break;
+		case 106:
+			cs2method_10886(script_3460(37, 19, a0), 800, 1000, 100);
+			cs2method_10676(script_3460(31, 13, a0), 100, 1000, 100);
+			break;
+		case 107:
+			cs2method_10886(script_3460(29, 14, a0), 800, 1000, 100);
+			cs2method_10676(script_3460(31, 9, a0), 100, 1000, 100);
+			break;
+		case 108:
+			cs2method_10886(script_3460(25, 19, a0), 800, 1000, 100);
+			cs2method_10676(script_3460(31, 13, a0), 100, 1000, 100);
+			break;
+		case 109:
+			cs2method_10886(script_3460(29, 14, a0), 800, 1000, 100);
+			cs2method_10676(script_3460(31, 9, a0), 100, 1000, 100);
+			break;
+		case 110:
+			cs2method_10886(script_3460(37, 19, a0), 800, 1000, 100);
+			cs2method_10676(script_3460(31, 13, a0), 100, 1000, 100);
+			break;
+		case 111:
+			cs2method_10886(script_3460(25, 19, a0), 800, 1000, 100);
+			cs2method_10676(script_3460(31, 13, a0), 100, 1000, 100);
+			break;
+		case 112:
+			script_2766(0, 50, a1);
+			break;
+		case 113:
+			cs2method_11031(0, 7);
+			cs2method_11031(1, 7);
+			cs2method_10971(0, 0, script_3460(31, 82, a0), 600, script_3460(31, 79, a0), 600, 0);
+			cs2method_10971(1, 0, script_3460(31, 58, a0), 400, script_3460(31, 58, a0), 400, 0);
+			cs2method_10971(0, 1, script_3460(31, 59, a0), 1500, script_3460(29, 55, a0), 1500, 0);
+			cs2method_10971(1, 1, script_3460(30, 46, a0), 600, script_3460(30, 46, a0), 600, 0);
+			cs2method_10971(0, 2, script_3460(8, 57, a0), 1800, script_3460(1, 47, a0), 1800, 0);
+			cs2method_10971(1, 2, script_3460(30, 36, a0), 600, script_3460(31, 36, a0), 600, 0);
+			cs2method_10971(0, 3, script_3460(8, 13, a0), 2100, script_3460(8, 3, a0), 2100, 0);
+			cs2method_10971(1, 3, script_3460(30, 35, a0), 600, script_3460(30, 34, a0), 600, 0);
+			cs2method_10971(0, 4, script_3460(53, 13, a0), 2400, script_3460(63, 23, a0), 2400, 0);
+			cs2method_10971(1, 4, script_3460(31, 35, a0), 500, script_3460(32, 36, a0), 500, 0);
+			cs2method_10971(0, 5, script_3460(53, 58, a0), 1700, script_3460(63, 68, a0), 1700, 0);
+			cs2method_10971(1, 5, script_3460(31, 36, a0), 400, script_3460(31, 35, a0), 400, 0);
+			cs2method_10971(0, 6, script_3460(38, 69, a0), 600, script_3460(35, 70, a0), 600, 0);
+			cs2method_10971(1, 6, script_3460(30, 42, a0), 325, script_3460(30, 43, a0), 325, 0);
+			cs2method_20196(new function<script_3468>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11) {
+				if (a10 < cs2method_10461(cs2method_10723(0), 1)) {
+					cs2method_10382(0, a10, a5, a11, 1, a10);
+					cs2method_20196(load function<3468>, new WidgetPointer(a4), cs2method_10060(a10, 1), a7, a6, a1, a3, a2, a0, a9, a8, 0, 0, "Iiiiiiiiiiii", new WidgetPointer(a4));
+				} else {
+					cs2method_20196(new function<none>() {
+					}, "", new WidgetPointer(a4));
+				}
+				return;
+			}, new WidgetPointer(a1), 1, 900, 1300, 1300, 1600, 1600, 1600, 1600, 1200, 1200, 200, "Iiiiiiiiiiii", new WidgetPointer(a1));
+			cs2method_10382(0, 0, 100, 900, 1, 0);
+			script_2768(50, a1);
+			break;
+		case 114:
+			cs2method_11031(0, 3);
+			cs2method_11031(1, 3);
+			cs2method_10971(0, 0, script_3460(38, 66, a0), 800, script_3460(38, 66, a0), 800, 0);
+			cs2method_10971(1, 0, script_3460(32, 44, a0), 10, script_3460(32, 44, a0), 10, 0);
+			cs2method_10971(0, 1, script_3460(30, 66, a0), 800, script_3460(30, 66, a0), 800, 0);
+			cs2method_10971(1, 1, script_3460(34, 45, a0), 10, script_3460(34, 45, a0), 10, 0);
+			cs2method_10971(0, 2, script_3460(28, 67, a0), 1000, script_3460(28, 67, a0), 1000, 0);
+			cs2method_10971(1, 2, script_3460(34, 45, a0), 10, script_3460(34, 45, a0), 10, 0);
+			cs2method_20196(new function<script_3468>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11) {
+				if (a1 < cs2method_10461(cs2method_10723(0), 1)) {
+					cs2method_10382(0, a1, a4, a11, 1, a1);
+					cs2method_20196(load function<3468>, new WidgetPointer(a7), cs2method_10060(a1, 1), a0, a9, a5, a10, a6, a2, a3, a8, 0, 0, "Iiiiiiiiiiii", new WidgetPointer(a7));
+				} else {
+					cs2method_20196(new function<none>() {
+					}, "", new WidgetPointer(a7));
+				}
+				return;
+			}, new WidgetPointer(a1), 1, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, "Iiiiiiiiiiii", new WidgetPointer(a1));
+			cs2method_10382(0, 0, 150, 100, 1, 0);
+			break;
+		case 115:
+			cs2method_20196(new function<none>() {
+			}, "", new WidgetPointer(a1));
+			cs2method_11031(0, 2);
+			cs2method_11031(1, 2);
+			cs2method_10971(0, 0, script_3460(30, 56, a0), 800, script_3460(31, 55, a0), 800, 0);
+			cs2method_10971(1, 0, script_3460(31, 71, a0), 200, script_3460(31, 71, a0), 200, 0);
+			cs2method_10971(0, 1, script_3460(34, 53, a0), 800, script_3460(34, 53, a0), 800, 0);
+			cs2method_10971(1, 1, script_3460(30, 71, a0), 200, script_3460(30, 71, a0), 200, 0);
+			cs2method_10382(0, 0, 150, 0, 1, 0);
+			break;
+		case 116:
+			cs2method_11031(0, 15);
+			cs2method_11031(1, 15);
+			cs2method_10971(0, 0, script_3460(30, 62, a0), 575, script_3460(30, 62, a0), 575, 0);
+			cs2method_10971(1, 0, script_3460(34, 54, a0), 210, script_3460(34, 54, a0), 210, 0);
+			cs2method_10971(0, 1, script_3460(31, 62, a0), 580, script_3460(31, 62, a0), 580, 250);
+			cs2method_10971(1, 1, script_3460(34, 54, a0), 220, script_3460(34, 54, a0), 220, 0);
+			cs2method_10971(0, 2, script_3460(30, 62, a0), 585, script_3460(30, 62, a0), 585, -500);
+			cs2method_10971(1, 2, script_3460(34, 54, a0), 230, script_3460(34, 54, a0), 230, 0);
+			cs2method_10971(0, 3, script_3460(31, 62, a0), 590, script_3460(31, 62, a0), 590, 500);
+			cs2method_10971(1, 3, script_3460(34, 54, a0), 240, script_3460(34, 54, a0), 240, 0);
+			cs2method_10971(0, 4, script_3460(30, 62, a0), 595, script_3460(30, 62, a0), 595, -500);
+			cs2method_10971(1, 4, script_3460(34, 54, a0), 250, script_3460(34, 54, a0), 250, 0);
+			cs2method_10971(0, 5, script_3460(31, 62, a0), 650, script_3460(31, 62, a0), 650, 750);
+			cs2method_10971(1, 5, script_3460(34, 54, a0), 250, script_3460(34, 54, a0), 250, 0);
+			cs2method_10971(0, 6, script_3460(29, 62, a0), 725, script_3460(29, 62, a0), 725, -750);
+			cs2method_10971(1, 6, script_3460(34, 54, a0), 250, script_3460(34, 54, a0), 250, 0);
+			cs2method_10971(0, 7, script_3460(31, 62, a0), 850, script_3460(31, 62, a0), 850, 750);
+			cs2method_10971(1, 7, script_3460(34, 54, a0), 250, script_3460(34, 54, a0), 250, 0);
+			cs2method_10971(0, 8, script_3460(30, 62, a0), 975, script_3460(30, 62, a0), 975, -750);
+			cs2method_10971(1, 8, script_3460(34, 54, a0), 250, script_3460(34, 54, a0), 250, 0);
+			cs2method_10971(0, 9, script_3460(32, 62, a0), 1150, script_3460(32, 62, a0), 1150, 500);
+			cs2method_10971(1, 9, script_3460(34, 54, a0), 250, script_3460(34, 54, a0), 250, 0);
+			cs2method_10971(0, 10, script_3460(30, 62, a0), 1300, script_3460(30, 62, a0), 1300, -500);
+			cs2method_10971(1, 10, script_3460(34, 54, a0), 250, script_3460(34, 54, a0), 250, 0);
+			cs2method_10971(0, 11, script_3460(31, 62, a0), 1450, script_3460(31, 62, a0), 1450, 250);
+			cs2method_10971(1, 11, script_3460(34, 54, a0), 250, script_3460(34, 54, a0), 250, 0);
+			cs2method_10971(0, 12, script_3460(30, 62, a0), 1600, script_3460(30, 62, a0), 1600, -250);
+			cs2method_10971(1, 12, script_3460(34, 54, a0), 250, script_3460(34, 54, a0), 250, 0);
+			cs2method_10971(0, 13, script_3460(32, 62, a0), 1650, script_3460(31, 62, a0), 1650, 125);
+			cs2method_10971(1, 13, script_3460(34, 54, a0), 250, script_3460(34, 54, a0), 250, 0);
+			cs2method_10971(0, 14, script_3460(30, 62, a0), 1700, script_3460(30, 62, a0), 1700, 0);
+			cs2method_10971(1, 14, script_3460(34, 54, a0), 250, script_3460(34, 54, a0), 250, 0);
+			cs2method_20196(new function<script_3469>(int a0,int a1) {
+				switch (cs2method_11097(2)) {
+					case 0:
+						cs2method_10567(34529, 1, cs2method_10877(15));
+						break;
+					case 1:
+						cs2method_10567(28132, 1, cs2method_10877(15));
+						break;
+					case 2:
+						cs2method_10567(31092, 1, cs2method_10877(15));
+				}
+				if (a1 < cs2method_10461(cs2method_10723(0), 2)) {
+					cs2method_10382(0, a1, 3100, 3300, 1, a1);
+					cs2method_20196(load function<3469>, new WidgetPointer(a0), cs2method_10060(a1, 1), "Ii", new WidgetPointer(a0));
+					return;
+				}
+				cs2method_10382(0, a1, 1000, 0, 1, a1);
+				cs2method_20196(new function<none>() {
+				}, "", new WidgetPointer(a0));
+				return;
+			}, new WidgetPointer(a1), 1, "Ii", new WidgetPointer(a1));
+			cs2method_10382(0, 0, 2500, 3200, 1, 0);
+			break;
+		case 117:
+			cs2method_20196(new function<none>() {
+			}, "", new WidgetPointer(a1));
+			script_2766(0, 50, a1);
+			break;
+		case 118:
+			script_2768(50, a1);
+			break;
+		default:
+			cs2method_10893();
+	}
+	return;
+}

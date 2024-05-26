@@ -1,0 +1,408 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3932(int a0,int a1,int a2,int a3,object a4,int a5,object a6) {
+	cs2method_10273(a2);
+	cs2method_10283(a3, 27, 0, 0, a2);
+	cs2method_10606(a2, 5, cs2method_10163(a2));
+	cs2method_10013(6, 26, 1, 0);
+	cs2method_10063(0, 0, 1, 1);
+	cs2method_10577(1);
+	cs2method_10606(a2, 5, cs2method_10163(a2));
+	cs2method_10013(26, 26, 0, 0);
+	cs2method_10063(0, 0, 0, 1);
+	cs2method_10606(a2, 5, cs2method_10163(a2));
+	cs2method_10013(26, 26, 0, 0);
+	cs2method_10063(3, 0, 2, 1);
+	cs2method_10606(a2, 4, cs2method_10163(a2));
+	cs2method_10013(0, 0, 1, 1);
+	cs2method_10063(0, -3, 1, 1);
+	cs2method_10692(17813);
+	cs2method_10811(15458492);
+	cs2method_11105(1, 1, 0);
+	cs2method_10173(0);
+	cs2method_10797(a4);
+	script_3929(a2, a1, 0);
+	if (a1 == -1) {
+		cs2method_20750(new function<script_3930>(int a0,int a1,int a2) {
+			script_3931(a1, a0, a2);
+			return;
+		}, new WidgetPointer(a2), a1, 0, "Ii1", new WidgetPointer(a2));
+		cs2method_20680(new function<script_3930>(int a0,int a1,int a2) {
+			script_3931(a0, a1, a2);
+			return;
+		}, new WidgetPointer(a2), a1, 1, "Ii1", new WidgetPointer(a2));
+	} else {
+		cs2method_20750(new function<script_3928>(int a0,int a1,int a2) {
+			script_3929(a1, a2, a0);
+			return;
+		}, new WidgetPointer(a2), a1, 0, "Ii1", new WidgetPointer(a2));
+		cs2method_20680(new function<script_3928>(int a0,int a1,int a2) {
+			script_3929(a2, a0, a1);
+			return;
+		}, new WidgetPointer(a2), a1, 1, "Ii1", new WidgetPointer(a2));
+	}
+	if (a5 == 0) {
+		cs2method_20390(new function<script_3388>(int a0,int a1,int a2) {
+			int v1;
+			int v2 = 4;
+			int v3 = -1;
+			switch (a1) {
+				case 1:
+					v1 = -1;
+					break;
+				case 4:
+					v1 = 93061672;
+					break;
+				case 2:
+					v1 = 59375761;
+					break;
+				default:
+					v1 = 48758845;
+			}
+			if (v1 != -1) {
+				cs2method_10026(v1, "Your display has been changed. Do you want to keep this setting?");
+			}
+			if (cs2method_10580() == 1) {
+				switch (a2) {
+					case 2:
+						int v5 = script_2582(19589, 0, a1);
+						/* 
+							java.lang.RuntimeException: Stack underflow
+								at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+								at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.cast(FlowBlocksGenerator.java:546)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+								at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+								at tests.Main.main(Main.java:69)
+							
+						 */
+					case 3:
+						int v6 = script_2582(19589, 0, a1);
+						/* 
+							java.lang.RuntimeException: Stack underflow
+								at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+								at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.cast(FlowBlocksGenerator.java:546)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+								at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+								at tests.Main.main(Main.java:69)
+							
+						 */
+					case 4:
+						if (v1 != -1) {
+							cs2method_10026(v1, "Anti-aliasing have been increased. Do you wish to keep this setting?");
+						}
+						int v4 = script_2582(19589, 1, a1);
+						/* 
+							java.lang.RuntimeException: Stack underflow
+								at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+								at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.cast(FlowBlocksGenerator.java:546)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+								at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+								at tests.Main.main(Main.java:69)
+							
+						 */
+					case 0:
+						if (a0 == 1) {
+							if (cs2method_10440() != 0) {
+								cs2method_10650();
+							} else {
+								return;
+							}
+						}
+						break;
+					case -1:
+						script_3384(a1);
+				}
+			} else {
+				switch (a2) {
+					case 1:
+						if (cs2method_10440() != 1) {
+							cs2method_10052();
+						} else {
+							return;
+						}
+						break;
+					case 2:
+						if (v2 >= 2) {
+							if (cs2method_10440() != 2) {
+								cs2method_10855();
+							} else {
+								return;
+							}
+						} else {
+							script_3413(a1);
+						}
+						break;
+					case 3:
+						if (v2 >= 3) {
+							if (cs2method_10440() != 3) {
+								cs2method_11151();
+							} else {
+								return;
+							}
+						} else {
+							script_3413(a1);
+						}
+						break;
+					case 4:
+						if (v2 >= 4) {
+							if (cs2method_10440() != 4) {
+								cs2method_10581();
+							} else {
+								return;
+							}
+						} else {
+							script_3413(a1);
+						}
+						break;
+					case 0:
+						if (a0 == 1) {
+							if (cs2method_10440() != 0) {
+								cs2method_10650();
+							} else {
+								return;
+							}
+						}
+						break;
+					case -1:
+						script_3384(a1);
+				}
+				if (cs2method_10440() == 1 || cs2method_10440() == 2) {
+					cs2method_11027(0);
+					script_1159(0);
+					cs2method_11093(0);
+					script_1165(0);
+					cs2method_10150(0);
+					script_1162(0);
+					cs2method_10187(0);
+					script_5873(0);
+				}
+			}
+			int v0 = cs2method_10085();
+			if (a2 == 0 || a0 == 1) {
+				int v5 = v0;
+				int v4 = cs2method_11055();
+				int v7 = v0;
+				script_2692_struct(2,0,0) v6 = script_2692(v7);
+				script_3387(v5, v4, v6.intpart_0, v6.intpart_1, a1);
+			} else {
+				int v5 = v0;
+				int v7 = cs2method_11055();
+				int v4 = v0;
+				script_2692_struct(2,0,0) v6 = script_2692(v4);
+				script_2596(v5, v7, v6.intpart_0, v6.intpart_1, a1);
+			}
+			return;
+		}, a1, a5, a0, "ii1", new WidgetPointer(a2));
+		cs2method_11127(1, a2, "null");
+		cs2method_20486(new function<none>() {
+		}, "", new WidgetPointer(a2));
+	} else {
+		cs2method_20390(new function<none>() {
+		}, "", new WidgetPointer(a2));
+		cs2method_11127(1, a2, a4);
+		cs2method_20486(new function<script_3388>(int a0,int a1,int a2) {
+			int v1;
+			int v2 = 4;
+			int v3 = -1;
+			switch (a0) {
+				case 1:
+					v1 = -1;
+					break;
+				case 4:
+					v1 = 93061672;
+					break;
+				case 2:
+					v1 = 59375761;
+					break;
+				default:
+					v1 = 48758845;
+			}
+			if (v1 != -1) {
+				cs2method_10026(v1, "Your display has been changed. Do you want to keep this setting?");
+			}
+			if (cs2method_10580() == 1) {
+				switch (a2) {
+					case 2:
+						int v5 = script_2582(19589, 0, a0);
+						/* 
+							java.lang.RuntimeException: Stack underflow
+								at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+								at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.cast(FlowBlocksGenerator.java:546)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+								at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+								at tests.Main.main(Main.java:69)
+							
+						 */
+					case 3:
+						int v6 = script_2582(19589, 0, a0);
+						/* 
+							java.lang.RuntimeException: Stack underflow
+								at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+								at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.cast(FlowBlocksGenerator.java:546)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+								at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+								at tests.Main.main(Main.java:69)
+							
+						 */
+					case 4:
+						if (v1 != -1) {
+							cs2method_10026(v1, "Anti-aliasing have been increased. Do you wish to keep this setting?");
+						}
+						int v4 = script_2582(19589, 1, a0);
+						/* 
+							java.lang.RuntimeException: Stack underflow
+								at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+								at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.cast(FlowBlocksGenerator.java:546)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+								at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+								at tests.Main.main(Main.java:69)
+							
+						 */
+					case 0:
+						if (a1 == 1) {
+							if (cs2method_10440() != 0) {
+								cs2method_10650();
+							} else {
+								return;
+							}
+						}
+						break;
+					case -1:
+						script_3384(a0);
+				}
+			} else {
+				switch (a2) {
+					case 1:
+						if (cs2method_10440() != 1) {
+							cs2method_10052();
+						} else {
+							return;
+						}
+						break;
+					case 2:
+						if (v2 >= 2) {
+							if (cs2method_10440() != 2) {
+								cs2method_10855();
+							} else {
+								return;
+							}
+						} else {
+							script_3413(a0);
+						}
+						break;
+					case 3:
+						if (v2 >= 3) {
+							if (cs2method_10440() != 3) {
+								cs2method_11151();
+							} else {
+								return;
+							}
+						} else {
+							script_3413(a0);
+						}
+						break;
+					case 4:
+						if (v2 >= 4) {
+							if (cs2method_10440() != 4) {
+								cs2method_10581();
+							} else {
+								return;
+							}
+						} else {
+							script_3413(a0);
+						}
+						break;
+					case 0:
+						if (a1 == 1) {
+							if (cs2method_10440() != 0) {
+								cs2method_10650();
+							} else {
+								return;
+							}
+						}
+						break;
+					case -1:
+						script_3384(a0);
+				}
+				if (cs2method_10440() == 1 || cs2method_10440() == 2) {
+					cs2method_11027(0);
+					script_1159(0);
+					cs2method_11093(0);
+					script_1165(0);
+					cs2method_10150(0);
+					script_1162(0);
+					cs2method_10187(0);
+					script_5873(0);
+				}
+			}
+			int v0 = cs2method_10085();
+			if (a2 == 0 || a1 == 1) {
+				int v5 = v0;
+				int v4 = cs2method_11055();
+				int v6 = v0;
+				script_2692_struct(2,0,0) v7 = script_2692(v6);
+				script_3387(v5, v4, v7.intpart_0, v7.intpart_1, a0);
+			} else {
+				int v6 = v0;
+				int v5 = cs2method_11055();
+				int v7 = v0;
+				script_2692_struct(2,0,0) v4 = script_2692(v7);
+				script_2596(v6, v5, v4.intpart_0, v4.intpart_1, a0);
+			}
+			return;
+		}, a1, a5, a0, "ii1", new WidgetPointer(a2));
+	}
+	return;
+}

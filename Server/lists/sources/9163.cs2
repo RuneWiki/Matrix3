@@ -1,0 +1,29 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+string script_9163() {
+	int v0 = 0;
+	if (client_configs['cfg3500'].bitcfg17687 > 0) {
+		v0 = cs2method_10060(v0, 1);
+	}
+	if (client_configs['cfg3500'].bitcfg17688 > 0) {
+		v0 = cs2method_10060(v0, 1);
+	}
+	if (client_configs['cfg3500'].bitcfg17689 > 0) {
+		v0 = cs2method_10060(v0, 1);
+	}
+	if (client_configs['cfg3500'].bitcfg17690 > 0) {
+		v0 = cs2method_10060(v0, 1);
+	}
+	int v1 = cs2method_10060(cs2method_10060(cs2method_10060(client_configs['cfg3500'].bitcfg17691, client_configs['cfg3500'].bitcfg17692), client_configs['cfg3500'].bitcfg17693), client_configs['cfg3500'].bitcfg17694);
+	return "You have built " + "<col=ffffff>" + (string)cs2method_10379(v0) + " of 4" + "</col>" + " and prayed at " + "<col=ffffff>" + (string)cs2method_10379(v1) + " of 4" + "</col>" + " statues this month";
+}

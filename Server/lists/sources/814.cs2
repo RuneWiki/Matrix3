@@ -1,0 +1,45 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_814_struct(3,0,0) script_814(int a0) {
+	switch (a0) {
+		case 1:
+			return new script_814_struct(client_configs['cfg2720'].bitcfg13531, 37683203, idx17mapData('i', 'm', 1696, client_configs['cfg2720'].bitcfg13531));
+		case 2:
+			return new script_814_struct(client_configs['cfg2720'].bitcfg13532, 37683204, idx17mapData('i', 'm', 1696, client_configs['cfg2720'].bitcfg13532));
+		case 3:
+			return new script_814_struct(client_configs['cfg2720'].bitcfg13533, 37683205, idx17mapData('i', 'm', 1696, client_configs['cfg2720'].bitcfg13533));
+		case 4:
+			return new script_814_struct(client_configs['cfg2720'].bitcfg13534, 37683206, idx17mapData('i', 'm', 1696, client_configs['cfg2720'].bitcfg13534));
+		case 5:
+			return new script_814_struct(client_configs['cfg2720'].bitcfg13535, 37683207, idx17mapData('i', 'm', 1696, client_configs['cfg2720'].bitcfg13535));
+		case 6:
+			return new script_814_struct(client_configs['cfg2720'].bitcfg13536, 37683208, idx17mapData('i', 'm', 1696, client_configs['cfg2720'].bitcfg13536));
+		case 7:
+			return new script_814_struct(client_configs['cfg2720'].bitcfg13537, 37683209, idx17mapData('i', 'm', 1696, client_configs['cfg2720'].bitcfg13537));
+		case 8:
+			return new script_814_struct(client_configs['cfg2720'].bitcfg13538, 37683210, idx17mapData('i', 'm', 1696, client_configs['cfg2720'].bitcfg13538));
+		case 9:
+			return new script_814_struct(client_configs['cfg2720'].bitcfg13539, 37683211, idx17mapData('i', 'm', 1696, client_configs['cfg2720'].bitcfg13539));
+		case 10:
+			return new script_814_struct(client_configs['cfg2725'].bitcfg13540, 37683212, idx17mapData('i', 'm', 1696, client_configs['cfg2725'].bitcfg13540));
+		case 11:
+			return new script_814_struct(client_configs['cfg2725'].bitcfg13541, 37683213, idx17mapData('i', 'm', 1696, client_configs['cfg2725'].bitcfg13541));
+		case 12:
+			return new script_814_struct(client_configs['cfg2725'].bitcfg13542, 37683214, idx17mapData('i', 'm', 1696, client_configs['cfg2725'].bitcfg13542));
+		case 13:
+			return new script_814_struct(client_configs['cfg2725'].bitcfg13543, 37683215, idx17mapData('i', 'm', 1696, client_configs['cfg2725'].bitcfg13543));
+		case 14:
+			return new script_814_struct(client_configs['cfg2725'].bitcfg13544, 37683216, idx17mapData('i', 'm', 1696, client_configs['cfg2725'].bitcfg13544));
+	}
+	return new script_814_struct(-1, -1, -1);
+}

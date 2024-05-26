@@ -1,0 +1,86 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8062(int a0) {
+	int v1 = 0;
+	int v0 = -1;
+	while (v1 < 13) {
+		switch (v1) {
+			case 0:
+				if (a0 == cs2method_10461(client_configs['cfg1756'].bitcfg5932, 1)) {
+					script_8058(-1, -1, -1, -1, v1);
+				}
+				break;
+			case 1:
+				if (a0 == cs2method_10461(client_configs['cfg1756'].bitcfg5933, 1)) {
+					script_8058(-1, -1, -1, -1, v1);
+				}
+				break;
+			case 2:
+				if (a0 == cs2method_10461(client_configs['cfg1757'].bitcfg5934, 1)) {
+					script_8058(-1, -1, -1, -1, v1);
+				}
+				break;
+			case 3:
+				if (a0 == cs2method_10461(client_configs['cfg1757'].bitcfg5935, 1)) {
+					script_8058(-1, -1, -1, -1, v1);
+				}
+				break;
+			case 4:
+				if (a0 == cs2method_10461(client_configs['cfg1758'].bitcfg5936, 1)) {
+					script_8058(-1, -1, -1, -1, v1);
+				}
+				break;
+			case 5:
+				if (a0 == cs2method_10461(client_configs['cfg1758'].bitcfg5937, 1)) {
+					script_8058(-1, -1, -1, -1, v1);
+				}
+				break;
+			case 6:
+				if (a0 == cs2method_10461(client_configs['cfg1759'].bitcfg5938, 1)) {
+					script_8058(-1, -1, -1, -1, v1);
+				}
+				break;
+			case 7:
+				if (a0 == cs2method_10461(client_configs['cfg1759'].bitcfg5939, 1)) {
+					script_8058(-1, -1, -1, -1, v1);
+				}
+				break;
+			case 8:
+				if (a0 == cs2method_10461(client_configs['cfg3692'].bitcfg18767, 1)) {
+					script_8058(-1, -1, -1, -1, v1);
+				}
+				break;
+			case 9:
+				if (a0 == cs2method_10461(client_configs['cfg3692'].bitcfg18768, 1)) {
+					script_8058(-1, -1, -1, -1, v1);
+				}
+				break;
+			case 10:
+				if (a0 == cs2method_10461(client_configs['cfg3693'].bitcfg18769, 1)) {
+					script_8058(-1, -1, -1, -1, v1);
+				}
+				break;
+			case 11:
+				if (a0 == cs2method_10461(client_configs['cfg3693'].bitcfg18770, 1)) {
+					script_8058(-1, -1, -1, -1, v1);
+				}
+				break;
+			case 12:
+				if (a0 == cs2method_10461(client_configs['cfg3694'].bitcfg18771, 1)) {
+					script_8058(-1, -1, -1, -1, v1);
+				}
+		}
+		v1 = cs2method_10060(v1, 1);
+	}
+	return;
+}

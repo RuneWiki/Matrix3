@@ -1,0 +1,28 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2516() {
+	cs2_configs['cfg847'] = client_configs['cfg1631'].bitcfg5227;
+	cs2_configs['cfg848'] = client_configs['cfg1631'].bitcfg5229;
+	cs2_configs['cfg849'] = client_configs['cfg1631'].bitcfg5230;
+	cs2_configs['cfg850'] = client_configs['cfg1631'].bitcfg5226;
+	cs2_configs['cfg851'] = client_configs['cfg1631'].bitcfg5228;
+	cs2_configs['cfg839'] = client_configs['cfg1625'].bitcfg5213;
+	cs2method_10026(42860557, cs2method_10379(cs2_configs['cfg847']));
+	cs2method_10026(42860605, cs2method_10379(cs2_configs['cfg848']));
+	cs2method_10026(42860597, cs2method_10379(cs2_configs['cfg849']));
+	cs2method_10026(42860589, cs2method_10379(cs2_configs['cfg850']));
+	cs2method_10026(42860614, cs2method_10379(cs2_configs['cfg851']));
+	cs2method_10026(42860621, script_46(",", cs2_configs['cfg839']));
+	script_2517();
+	return;
+}

@@ -1,0 +1,21 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4183(int a0) {
+	object v1 = idx17mapData('i', 's', 7158, a0);
+	object v0 = cs2method_10744(90243234);
+	if (cs2method_10846(v1, v0) == 0) {
+		cs2method_10026(90243234, "Island Information");
+		cs2method_10026(90243235, "");
+	}
+	return;
+}

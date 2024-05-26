@@ -1,0 +1,66 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8024(int a0) {
+	int v6;
+	int v0 = 69206021;
+	int v2 = 69206042;
+	int v1 = 69206047;
+	if (a0 == 79953920) {
+		v0 = 79953927;
+		v2 = 79953945;
+		v1 = 79953950;
+	}
+	int v5 = 0;
+	int v3 = idx22mapAttribute(script_6798(client_configs['cfg1269'].bitcfg3561), 2235);
+	if (v3 == 0) {
+		return;
+	}
+	switch (client_configs['cfg1269'].bitcfg3561) {
+		case 3036:
+			v6 = client_configs['cfg3240'].bitcfg16576;
+			break;
+		case 3037:
+			v6 = client_configs['cfg3241'].bitcfg16580;
+			break;
+		case 3038:
+			v6 = client_configs['cfg3242'].bitcfg16584;
+			break;
+		case 3039:
+			v6 = client_configs['cfg3243'].bitcfg16588;
+			break;
+		case 3040:
+			v6 = client_configs['cfg3244'].bitcfg16592;
+			break;
+		case 3041:
+			v6 = client_configs['cfg3245'].bitcfg16596;
+			break;
+		case 3060:
+			v6 = client_configs['cfg4057'].bitcfg21379;
+			break;
+		default:
+			return;
+	}
+	cs2method_10467(0, v0);
+	script_4542(cs2method_10122(v6, v3, 100), v2, v1);
+	script_4212(v1, (string)cs2method_10379(v6) + " / " + (string)cs2method_10379(v3), 494, 15458492, 0);
+	object v4 = "Challenge progress: " + (string)cs2method_10379(v6) + " / " + (string)cs2method_10379(v3);
+	cs2method_21121(new function<script_8799>(int a0,int a1,object a2) {
+		script_8800(a1, a0, a2);
+		return;
+	}, (string)v4, new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(v0));
+	cs2method_20750(new function<script_8805>() {
+		script_8808();
+		return;
+	}, "", new WidgetPointer(v0));
+	return;
+}

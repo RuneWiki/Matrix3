@@ -1,0 +1,120 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8115(int a0,int a1) {
+	int v6;
+	int v2;
+	int v7;
+	int v3;
+	if (a1 == 0) {
+		if (a0 == 0) {
+			cs2method_10112(10, 0, 0, 0, 93716490);
+			cs2method_10283(10, 30, 1, 0, 93716490);
+		} else {
+			cs2method_10112(0, 10, 2, 0, 93716490);
+			cs2method_10283(30, 10, 0, 1, 93716490);
+		}
+	} else if (a0 == 0) {
+		cs2method_10112(5, 0, 1, 0, 93716490);
+		cs2method_10283(5, cs2method_10461(cs2method_10051(2, 30), 10), 1, 0, 93716490);
+	} else {
+		cs2method_10112(0, 5, 2, 1, 93716490);
+		cs2method_10283(cs2method_10461(cs2method_10051(2, 30), 10), 5, 0, 1, 93716490);
+	}
+	int v0 = 0;
+	globalarray_0 = new int[4];
+	globalarray_1 = new int[4];
+	int v1 = 0;
+	int v4 = 0;
+	int v5 = 0;
+	if (a0 == 0) {
+		if (a1 == 0) {
+			int v8 = cs2method_10968(cs2method_10236(93716490), 4);
+			globalarray_0[0] = 0;
+			globalarray_0[1] = v8;
+			globalarray_0[2] = cs2method_10051(v8, 2);
+			globalarray_0[3] = cs2method_10051(v8, 3);
+			globalarray_0[0] = 0;
+			globalarray_0[1] = 0;
+			globalarray_0[2] = 0;
+			globalarray_0[3] = 0;
+			v6 = v8;
+			v2 = 30;
+		} else {
+			int v8 = 16;
+			int v9 = cs2method_10968(cs2method_10461(cs2method_10236(93716490), v8), 2);
+			globalarray_0[0] = 0;
+			globalarray_0[1] = v9;
+			globalarray_0[2] = v8;
+			globalarray_0[3] = cs2method_10060(v8, v9);
+			globalarray_0[0] = 0;
+			globalarray_0[1] = 0;
+			globalarray_0[2] = 22;
+			globalarray_0[3] = 22;
+			v6 = v9;
+			v2 = 30;
+		}
+	} else if (a1 == 0) {
+		int v8 = cs2method_10968(cs2method_10823(93716490), 4);
+		globalarray_0[0] = 0;
+		globalarray_0[1] = 0;
+		globalarray_0[2] = 0;
+		globalarray_0[3] = 0;
+		globalarray_0[0] = 0;
+		globalarray_0[1] = v8;
+		globalarray_0[2] = cs2method_10051(v8, 2);
+		globalarray_0[3] = cs2method_10051(v8, 3);
+		v6 = 30;
+		v2 = v8;
+	} else {
+		int v9 = 16;
+		int v8 = cs2method_10968(cs2method_10461(cs2method_10823(93716490), v9), 2);
+		globalarray_0[0] = 0;
+		globalarray_0[1] = 0;
+		globalarray_0[2] = 22;
+		globalarray_0[3] = 22;
+		globalarray_0[0] = 0;
+		globalarray_0[1] = v8;
+		globalarray_0[2] = v9;
+		globalarray_0[3] = cs2method_10060(v9, v8);
+		v6 = 30;
+		v2 = v8;
+	}
+	cs2method_10112(globalarray_0[0], globalarray_1[0], 0, 0, 93716496);
+	cs2method_10112(globalarray_0[1], globalarray_1[1], 0, 0, 93716506);
+	cs2method_10112(globalarray_0[2], globalarray_1[2], 0, 0, 93716500);
+	cs2method_10112(globalarray_0[3], globalarray_1[3], 0, 0, 93716502);
+	cs2method_10283(v6, v2, 0, 0, 93716496);
+	cs2method_10283(v6, v2, 0, 0, 93716506);
+	cs2method_10283(v6, v2, 0, 0, 93716500);
+	cs2method_10283(v6, v2, 0, 0, 93716502);
+	if (a0 == 0) {
+		v7 = 22;
+		v3 = cs2method_11048(0, cs2method_10461(cs2method_10461(cs2method_10236(93716496), 30), 2));
+		globalarray_0[0] = 30;
+		globalarray_0[0] = cs2method_11048(0, cs2method_10461(cs2method_10461(cs2method_10968(cs2method_10823(93716496), 2), cs2method_10968(v7, 2)), 2));
+	} else {
+		v3 = 22;
+		v7 = cs2method_11048(0, cs2method_10461(cs2method_10461(cs2method_10823(93716496), 30), 2));
+		globalarray_0[0] = 30;
+		globalarray_0[0] = cs2method_11048(0, cs2method_10461(cs2method_10461(cs2method_10968(cs2method_10236(93716496), 2), cs2method_10968(v7, 2)), 2));
+	}
+	cs2method_10112(globalarray_0[0], globalarray_1[0], 0, 0, 93716498);
+	cs2method_10112(globalarray_0[0], globalarray_1[0], 0, 0, 93716504);
+	cs2method_10112(globalarray_0[0], globalarray_1[0], 0, 0, 93716508);
+	cs2method_10112(globalarray_0[0], globalarray_1[0], 0, 0, 93716510);
+	cs2method_10283(v3, v7, 0, 0, 93716498);
+	cs2method_10283(v3, v7, 0, 0, 93716504);
+	cs2method_10283(v3, v7, 0, 0, 93716508);
+	cs2method_10283(v3, v7, 0, 0, 93716510);
+	return;
+}

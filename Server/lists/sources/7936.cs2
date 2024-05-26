@@ -1,0 +1,74 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7936(int a0) {
+	cs2method_10560(10);
+	cs2_configs['cfg3488'] = a0;
+	if (cs2_configs['cfg3488'] == 0) {
+		cs2method_10467(0, 93061615);
+		cs2method_10467(0, 93061304);
+		cs2method_10467(0, 93061306);
+		cs2method_10467(1, 93061302);
+		cs2method_10467(0, 93061164);
+		cs2method_10467(1, 93061165);
+		script_7934(1);
+	} else if (cs2_configs['cfg3488'] == 2) {
+		cs2method_10467(1, 93061615);
+		cs2method_10467(1, 93061304);
+		cs2method_10467(0, 93061306);
+		cs2method_10467(1, 93061302);
+		cs2method_10467(0, 93061164);
+		cs2method_10467(1, 93061165);
+		script_7934(2);
+		cs2method_11127(1, 93061322, "Randomise");
+		cs2method_20390(new function<none>() {
+		}, "", new WidgetPointer(1420,202));
+		cs2method_10467(1, 93061303);
+		cs2method_10026(93061171, "name");
+		cs2method_10467(1, 93061331);
+		cs2method_20390(new function<none>() {
+		}, "", new WidgetPointer(1420,202));
+	} else if (cs2_configs['cfg3488'] == 3) {
+		cs2method_10467(1, 93061615);
+		cs2method_10467(1, 93061304);
+		cs2method_10467(1, 93061306);
+		cs2method_10467(0, 93061302);
+		cs2method_10467(1, 93061164);
+		cs2method_10467(0, 93061165);
+		cs2method_10467(1, 93061308);
+		cs2method_10467(1, 93061352);
+		cs2method_11127(1, 93061322, "Randomise");
+		cs2method_20390(new function<none>() {
+		}, "", new WidgetPointer(1420,202));
+		script_7934(3);
+		cs2method_10467(1, 93061388);
+		cs2method_10467(1, 93061339);
+		cs2method_10112(0, 0, 1, 1, 93061182);
+		cs2method_10467(1, 93061168);
+		cs2method_10467(1, 93061352);
+		cs2method_20390(new function<none>() {
+		}, "", new WidgetPointer(1420,202));
+	} else {
+		if (cs2_configs['cfg3488'] == 1) {
+			cs2method_10467(1, 93061615);
+			cs2method_10467(1, 93061304);
+			cs2method_10467(0, 93061164);
+			cs2method_10467(1, 93061165);
+			cs2method_10467(0, 93061306);
+			cs2method_10467(1, 93061302);
+			script_7934(4);
+			cs2method_10467(1, 93061388);
+			cs2method_10467(1, 93061168);
+		}
+	}
+	return;
+}

@@ -1,0 +1,65 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_776() {
+	int v6 = 0;
+	int v0 = 0;
+	int v3 = 0;
+	int v4 = 0;
+	object v2 = "Hello";
+	object v5 = "00:00";
+	object v1 = "1.2x";
+	if (cs2method_10771() == 1) {
+		object v7 = "2x";
+	}
+	if (client_configs['cfg89'].bitcfg223 == 1) {
+		object v12;
+		int v7 = cs2method_10968(client_configs['cfg89'].bitcfg224, 60);
+		int v8 = cs2method_10038(client_configs['cfg89'].bitcfg224, 60);
+		int v10 = cs2method_10968(1200, 1000);
+		int v9 = cs2method_10968(cs2method_10038(1200, 1000), 100);
+		if (cs2method_10771() == 1) {
+			v10 = cs2method_10968(2000, 1000);
+			v9 = cs2method_10968(cs2method_10038(2000, 1000), 100);
+		}
+		if (v8 < 10) {
+			if (v7 < 10) {
+				v12 = "0" + (string)cs2method_10379(v7) + ":0" + (string)cs2method_10379(v8);
+			} else {
+				v12 = (string)cs2method_10379(v7) + ":0" + (string)cs2method_10379(v8);
+			}
+		} else if (v7 < 10) {
+			v12 = "0" + (string)cs2method_10379(v7) + ":" + (string)cs2method_10379(v8);
+		} else {
+			v12 = (string)cs2method_10379(v7) + ":" + (string)cs2method_10379(v8);
+		}
+		object v11 = (string)cs2method_10379(v10) + script_8002() + (string)cs2method_10379(v9) + "x";
+		object v13 = "Multiplier: " + "<col=ff0000>" + (string)v11 + "</col>" + "<br>" + "Elapsed: " + "<col=ff0000>" + (string)v12 + "</col>" + "<br>" + "Bonus: " + "<col=ff0000>" + (string)cs2method_10379(cs2method_10968(client_configs['cfg87'], 10)) + "xp" + "</col>";
+		cs2method_21121(new function<script_5647>(object a0) {
+			int v1 = 5;
+			int v3 = 13;
+			cs2method_10467(0, 79626253);
+			cs2method_10026(79626256, a0);
+			int v4 = cs2method_10060(cs2method_10051(v1, 2), cs2method_10509(500, cs2method_10643(79626256), a0));
+			int v2 = cs2method_10060(cs2method_10051(v1, 2), cs2method_10051(cs2method_10805(v4, cs2method_10643(79626256), a0), v3));
+			cs2method_10283(v4, v2, 0, 0, 79626253);
+			int v0 = cs2method_10060(cs2method_10060(cs2method_10051(client_configs['cfg94'].bitcfg229, 25), cs2method_10051(client_configs['cfg94'].bitcfg230, 25)), cs2method_10051(client_configs['cfg94'].bitcfg231, 25));
+			cs2method_10112(0, v0, 2, 0, 79626253);
+			return;
+		}, (string)v13, "s", new WidgetPointer(1215,1));
+		cs2method_20750(new function<script_5648>() {
+			cs2method_10467(1, 79626253);
+			return;
+		}, "", new WidgetPointer(1215,1));
+	}
+	return;
+}

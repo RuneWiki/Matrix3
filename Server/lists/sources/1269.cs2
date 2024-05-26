@@ -1,0 +1,36 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1269() {
+	object v0 = "null";
+	if (client_configs['cfg459'] == 0) {
+		cs2method_10758(761, 17104911);
+		object v1 = "Accept aid" + "<br>" + "(currently off)";
+		cs2method_21121(new function<script_7782>(object a0,int a1,int a2,int a3,int a4) {
+			script_5335(a3, -1, a1, a2, a0, a4, 1);
+			return;
+		}, new WidgetPointer(-32768,3), new WidgetPointer(261,31), (string)v1, 25, 180, "IIsii", new WidgetPointer(261,15));
+		cs2_configs['cfg2'] = 0;
+	} else {
+		if (client_configs['cfg459'] == 1) {
+			cs2method_10758(762, 17104911);
+			object v1 = "Accept aid" + "<br>" + "(currently on)";
+			cs2method_21121(new function<script_7782>(int a0,int a1,int a2,object a3,int a4) {
+				script_5335(a2, -1, a0, a4, a3, a1, 1);
+				return;
+			}, new WidgetPointer(-32768,3), new WidgetPointer(261,31), (string)v1, 25, 180, "IIsii", new WidgetPointer(261,15));
+			cs2_configs['cfg2'] = 0;
+		}
+	}
+	script_5641(17104911, client_configs['cfg459']);
+	return;
+}

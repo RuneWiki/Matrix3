@@ -1,0 +1,34 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4053() {
+	switch (client_configs['cfg3068'].bitcfg15397) {
+		case 0:
+			cs2method_10026(69271578, "Using multiple token types");
+			break;
+		case 1:
+			cs2method_10026(69271578, "Using attack tokens");
+			break;
+		case 2:
+			cs2method_10026(69271578, "Using defence tokens");
+			break;
+		case 3:
+			cs2method_10026(69271578, "Using strength tokens");
+			break;
+		case 4:
+			cs2method_10026(69271578, "Using combat tokens");
+			break;
+		case 5:
+			cs2method_10026(69271578, "Using balance tokens");
+	}
+	return;
+}

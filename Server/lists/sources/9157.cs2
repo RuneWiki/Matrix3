@@ -1,0 +1,21 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+string script_9157() {
+	if (client_configs['cfg1523'].bitcfg4651 > 0) {
+		return "You have " + "<col=ffffff>" + (string)cs2method_10379(client_configs['cfg1523'].bitcfg4651) + "</col>" + " Fish Flingers tickets left";
+	}
+	if (client_configs['cfg3913'].bitcfg20740 == 0) {
+		return "You have " + "<col=ffffff>" + "0" + "</col>" + " Fish Flingers tickets left but you can claim more today";
+	}
+	return "You have " + "<col=ffffff>" + "0" + "</col>" + " Fish Flingers tickets left. You can claim more tomorrow.";
+}

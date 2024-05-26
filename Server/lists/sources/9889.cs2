@@ -1,0 +1,42 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+object script_9889() {
+	object v3;
+	object v0;
+	object v6;
+	object v1;
+	object v5 = "To unlock the full rewards for Fate of the Gods, you must have completed the following quests. These are recommended to fully understand the events during Fate of the Gods." + "<br>" + "<br>";
+	object v2 = "<br>" + "Fate of the Gods may be completed without these prerequisites, and the rewards claimed at a later date.";
+	if (client_configs['cfg3527'].bitcfg18021 < 250) {
+		v1 = cs2method_10427(v5, "The World Wakes" + "<br>");
+	} else {
+		v1 = cs2method_10427(v5, "<str>" + "The World Wakes" + "<br>");
+	}
+	if (client_configs['cfg2430'].bitcfg11610 < 400) {
+		v0 = cs2method_10427(v1, "Ritual of the Mahjarrat" + "<br>");
+	} else {
+		v0 = cs2method_10427(v1, "<str>" + "Ritual of the Mahjarrat" + "<br>");
+	}
+	if (client_configs['cfg2372'].bitcfg11105 < 90) {
+		v6 = cs2method_10427(v0, "The Temple at Senntisten" + "<br>");
+	} else {
+		v6 = cs2method_10427(v0, "<str>" + "The Temple at Senntisten" + "<br>");
+	}
+	if (client_configs['cfg2437'].bitcfg11683 < 270) {
+		v3 = cs2method_10427(v6, "The Firemaker's Curse" + "<br>");
+	} else {
+		v3 = cs2method_10427(v6, "<str>" + "The Firemaker's Curse" + "<br>");
+	}
+	object v4 = cs2method_10427(v3, v2);
+	return v4;
+}

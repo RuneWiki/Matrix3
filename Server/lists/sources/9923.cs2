@@ -1,0 +1,100 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+object script_9923(int a0,int a1,int a2) {
+	int v1 = script_6798(a2);
+	int v5 = -1;
+	int v2 = 0;
+	int v4 = 0;
+	int v6 = -1;
+	object v3 = "";
+	int v0 = -1;
+	switch (a1) {
+		case 0:
+			v2 = idx22mapAttribute(v1, 1294);
+			v4 = idx22mapAttribute(v1, 1295);
+			break;
+		case 1:
+			v2 = idx22mapAttribute(v1, 1296);
+			v4 = idx22mapAttribute(v1, 1297);
+			break;
+		case 2:
+			v2 = idx22mapAttribute(v1, 1298);
+			v4 = idx22mapAttribute(v1, 1299);
+			break;
+		case 3:
+			v2 = idx22mapAttribute(v1, 1300);
+			v4 = idx22mapAttribute(v1, 1301);
+			break;
+		case 4:
+			v2 = idx22mapAttribute(v1, 1302);
+			v4 = idx22mapAttribute(v1, 1303);
+			break;
+		case 5:
+			v2 = idx22mapAttribute(v1, 1304);
+			v4 = idx22mapAttribute(v1, 1305);
+			break;
+		case 6:
+			v2 = idx22mapAttribute(v1, 1306);
+			v4 = idx22mapAttribute(v1, 1307);
+			break;
+		case 7:
+			v2 = idx22mapAttribute(v1, 1308);
+			v4 = idx22mapAttribute(v1, 1309);
+			break;
+		case 8:
+			v2 = idx22mapAttribute(v1, 1310);
+			v4 = idx22mapAttribute(v1, 1311);
+			break;
+		case 9:
+			v2 = idx22mapAttribute(v1, 1312);
+			v4 = idx22mapAttribute(v1, 1313);
+			break;
+		case 10:
+			v2 = idx22mapAttribute(v1, 2227);
+			v4 = idx22mapAttribute(v1, 2228);
+			break;
+		case 11:
+			v2 = idx22mapAttribute(v1, 2229);
+			v4 = idx22mapAttribute(v1, 2230);
+	}
+	if (v2 == 0) {
+		return "";
+	}
+	if (v2 < 60) {
+		int v7 = idx17mapData('i', 'S', 681, v2);
+		if (v7 != -1) {
+			v3 = "This Task requires " + (string)cs2method_10379(v4) + " " + idx17mapData('i', 's', 108, v2) + ".";
+			if (cs2method_10938(v7) >= v4) {
+				v3 = cs2method_10427("<str>", v3);
+			}
+		}
+	} else if (v2 == 61) {
+		int v7 = idx17mapData('i', 'J', 2252, v4);
+		v3 = "To complete this Task, you must complete the quest '" + idx22mapAttribute(v7, 845) + "'.";
+		if (script_2193(v4) == 2) {
+			v3 = cs2method_10427("<str>", v3);
+		}
+	} else if (v2 == 60) {
+		int v7 = script_5795(v4);
+		if (v7 == -1) {
+			return "";
+		}
+		v3 = "To complete this Task, you must complete the Task '" + idx22mapAttribute(v7, 1266) + "'.";
+		if (script_3227(v4) == 2) {
+			v3 = cs2method_10427("<str>", v3);
+		}
+	} else {
+		v3 = script_9924(a2, cs2method_10060(a1, 1), a0);
+	}
+	return v3;
+}

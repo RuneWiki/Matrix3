@@ -1,0 +1,64 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_1467_struct(2,0,0) script_1467(int a0) {
+	int v3 = 0;
+	int v4 = 0;
+	int v1 = 0;
+	if (a0 == 0) {
+		int v13 = 9;
+		script_1467_struct(2,0,0) v7 = script_1467(v13);
+		int v11 = v7.intpart_1;
+		int v14 = v7.intpart_0;
+		int v5 = v11;
+		int v12 = 1;
+		script_1467_struct(2,0,0) v9 = script_1467(v12);
+		int v8 = v9.intpart_1;
+		int v6 = v9.intpart_0;
+		int v10 = cs2method_11048(script_6971(), v8);
+		return new script_1467_struct(v5, v10);
+	}
+	if (a0 == 1) {
+		return new script_1467_struct(0, script_1248());
+	}
+	int v2 = 0;
+	int v0 = client_configs['cfg108'].bitcfg280;
+	if (a0 >= 3) {
+		v2 = v0;
+		v0 = cs2method_10060(v2, client_configs['cfg108'].bitcfg281);
+	}
+	if (a0 >= 4) {
+		v2 = v0;
+		v0 = cs2method_10060(v2, client_configs['cfg108'].bitcfg282);
+	}
+	if (a0 >= 5) {
+		v2 = v0;
+		v0 = cs2method_10060(v2, client_configs['cfg109'].bitcfg283);
+	}
+	if (a0 >= 6) {
+		v2 = v0;
+		v0 = cs2method_10060(v2, client_configs['cfg109'].bitcfg284);
+	}
+	if (a0 >= 7) {
+		v2 = v0;
+		v0 = cs2method_10060(v2, client_configs['cfg109'].bitcfg285);
+	}
+	if (a0 >= 8) {
+		v2 = v0;
+		v0 = cs2method_10060(v2, client_configs['cfg110'].bitcfg286);
+	}
+	if (a0 >= 9) {
+		v2 = v0;
+		v0 = cs2method_10060(v2, client_configs['cfg110'].bitcfg287);
+	}
+	return new script_1467_struct(v2, v0);
+}

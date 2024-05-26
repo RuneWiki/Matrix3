@@ -1,0 +1,23 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5802(int a0,int a1,int a2,int a3) {
+	object v0 = cs2method_10708(cs2method_10060(cs2method_10461(a2, a0), cs2method_11115()));
+	if (a1 == 1) {
+		cs2method_10026(74645523, "You have an active subscription.");
+	} else if (a0 < a2) {
+		cs2method_10026(74645523, "Expires:" + "<br>" + (string)v0);
+	} else {
+		cs2method_10026(74645523, "You are currently not a Member.");
+	}
+	return;
+}

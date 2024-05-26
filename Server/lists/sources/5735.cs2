@@ -1,0 +1,119 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_5735() {
+	int v1 = 0;
+	int v6 = client_configs['cfg3253'];
+	int v7 = -1;
+	int v0 = -1;
+	int v4 = -1;
+	int v5 = cs2method_10060(cs2method_10152(81068033), cs2method_10823(81068033));
+	int v8 = v5;
+	int v2 = 0;
+	cs2method_10273(81068050);
+	script_5740(81068053);
+	script_5740(81068054);
+	script_5740(81068055);
+	script_5740(81068056);
+	script_5740(81068057);
+	script_5740(81068058);
+	script_5740(81068059);
+	script_5740(81068060);
+	script_5740(81068061);
+	script_5740(81068062);
+	script_5740(81068063);
+	script_5740(81068064);
+	for (int v3 = 1; v3 < 13; v3 = cs2method_10060(v3, 1)) {
+		int v11 = cs2method_10461(v3, 1);
+		switch (v3) {
+			case 1:
+				v4 = 81068053;
+				v7 = idx22mapAttribute(v6, 1294);
+				int v19 = idx22mapAttribute(v6, 1295);
+				break;
+			case 2:
+				v4 = 81068054;
+				v7 = idx22mapAttribute(v6, 1296);
+				int v20 = idx22mapAttribute(v6, 1297);
+				break;
+			case 3:
+				v4 = 81068055;
+				v7 = idx22mapAttribute(v6, 1298);
+				int v12 = idx22mapAttribute(v6, 1299);
+				break;
+			case 4:
+				v4 = 81068056;
+				v7 = idx22mapAttribute(v6, 1300);
+				int v10 = idx22mapAttribute(v6, 1301);
+				break;
+			case 5:
+				v4 = 81068057;
+				v7 = idx22mapAttribute(v6, 1302);
+				int v22 = idx22mapAttribute(v6, 1303);
+				break;
+			case 6:
+				v4 = 81068058;
+				v7 = idx22mapAttribute(v6, 1304);
+				int v14 = idx22mapAttribute(v6, 1305);
+				break;
+			case 7:
+				v4 = 81068059;
+				v7 = idx22mapAttribute(v6, 1306);
+				int v21 = idx22mapAttribute(v6, 1307);
+				break;
+			case 8:
+				v4 = 81068060;
+				v7 = idx22mapAttribute(v6, 1308);
+				int v16 = idx22mapAttribute(v6, 1309);
+				break;
+			case 9:
+				v4 = 81068061;
+				v7 = idx22mapAttribute(v6, 1310);
+				int v17 = idx22mapAttribute(v6, 1311);
+				break;
+			case 10:
+				v4 = 81068062;
+				v7 = idx22mapAttribute(v6, 1312);
+				int v15 = idx22mapAttribute(v6, 1313);
+				break;
+			case 11:
+				v4 = 81068063;
+				v7 = idx22mapAttribute(v6, 2227);
+				int v18 = idx22mapAttribute(v6, 2228);
+				break;
+			case 12:
+				v4 = 81068064;
+				v7 = idx22mapAttribute(v6, 2229);
+				int v9 = idx22mapAttribute(v6, 2230);
+		}
+		if (v7 == 0) {
+			return v8;
+		}
+		int v13 = script_5741(v6, v3);
+		v8 = script_5736(v5, idx22mapAttribute(v6, 1268), cs2method_10461(v3, 1), v4);
+		cs2method_10606(81068050, 5, v11);
+		cs2method_10013(15, 15, 0, 0);
+		cs2method_10063(cs2method_10060(cs2method_10060(cs2method_10191(v4), cs2method_10509(cs2method_10236(v4), 17813, cs2method_10744(v4))), 5), cs2method_10060(cs2method_10461(cs2method_10968(cs2method_10823(v4), 2), cs2method_10968(cs2method_10664(), 2)), cs2method_10152(v4)), 0, 0);
+		if (v13 == 1) {
+			cs2method_10310(9604);
+		} else {
+			cs2method_10310(9605);
+		}
+		if (v8 == v5) {
+			cs2method_10810("Something went wrong; aborting at requirement " + (string)cs2method_10379(v3));
+			script_5740(v4);
+			return v8;
+		}
+		v5 = v8;
+	}
+	return v8;
+}

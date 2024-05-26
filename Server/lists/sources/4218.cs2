@@ -1,0 +1,30 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_4218() {
+	int v6 = 0;
+	for (int v3 = 0, script_4217_struct(2,0,0) v4 = script_4217(), int v5 = v4.intpart_1, int v0 = v4.intpart_0, int v2 = cs2method_10461(client_configs['cfg1577'], v5), int v1 = cs2method_10461(client_configs['cfg1574'], v0); v2 > 0 && v1 <= 1000000000; v1 = cs2method_10060(v1, 1000000000), v2 = v7) {
+		int v7 = cs2method_10461(v2, 1);
+	}
+	while (v2 < 0 && v1 >= 1000000000) {
+		int v8 = cs2method_10060(v2, 1);
+		v1 = cs2method_10461(v1, 1000000000);
+		v2 = v8;
+	}
+	if (v2 < 0) {
+		return 0;
+	}
+	if (v2 == 0 && v1 <= 100000) {
+		return cs2method_11048(v1, 0);
+	}
+	return 100000;
+}

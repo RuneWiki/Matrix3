@@ -1,0 +1,50 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5804() {
+	cs2method_10670(5262, 1, 0, 100);
+	cs2method_10467(0, 60096654);
+	if (client_configs['cfg1293'].bitcfg3617 == 1) {
+		cs2method_10467(0, 60096677);
+	} else {
+		cs2method_10467(1, 60096677);
+	}
+	if (client_configs['cfg1269'].bitcfg3564 == 1) {
+		cs2method_10467(0, 60096663);
+		cs2method_10467(1, 60096664);
+	} else {
+		cs2method_10467(1, 60096663);
+		cs2method_10467(0, 60096664);
+	}
+	if (client_configs['cfg1269'].bitcfg3565 == 1) {
+		cs2method_10467(0, 60096667);
+		cs2method_10467(1, 60096668);
+	} else {
+		cs2method_10467(1, 60096667);
+		cs2method_10467(0, 60096668);
+	}
+	if (cs2_configs['cfg1429'] == 1) {
+		cs2method_10467(0, 60096671);
+		cs2method_10467(1, 60096672);
+	} else {
+		cs2method_10467(1, 60096671);
+		cs2method_10467(0, 60096672);
+	}
+	if (client_configs['cfg1269'].bitcfg3568 == 1) {
+		cs2method_10467(0, 60096675);
+		cs2method_10467(1, 60096676);
+	} else {
+		cs2method_10467(1, 60096675);
+		cs2method_10467(0, 60096676);
+	}
+	return;
+}

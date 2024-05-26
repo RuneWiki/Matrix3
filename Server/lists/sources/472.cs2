@@ -1,0 +1,24 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_472(int a0,int a1) {
+	if (cs2method_10338(14) < 25) {
+		cs2method_10026(a0, "<col=c80000>" + "A Mining level of " + (string)cs2method_10379(25) + " is required." + "</col>");
+		return;
+	}
+	if (client_configs['cfg1568'].bitcfg4861 < a1) {
+		cs2method_10026(a0, "<col=c80000>" + (string)cs2method_10379(a1) + " Commendations required." + "</col>");
+	} else {
+		cs2method_10026(a0, (string)cs2method_10379(a1) + " Commendations.");
+	}
+	return;
+}

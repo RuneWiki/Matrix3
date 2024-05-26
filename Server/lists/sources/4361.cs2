@@ -1,0 +1,41 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+?? script_4361(int a0) {
+	script_4332(72024081, 72024091);
+	script_4334(72024101, 72024102);
+	script_4336(72024079);
+	cs2method_10467(1, 72024142);
+	cs2method_10467(1, 72024143);
+	int v6 = 1;
+	int v3 = 72024132;
+	int v9 = 72024076;
+	int v4 = 72024077;
+	int v5 = clan_configs['cfg53'].bitcfg8861;
+	int v1 = clan_configs['cfg57'].bitcfg8869;
+	int v0 = clan_configs['cfg45'].bitcfg8837;
+	int v8 = clan_configs['cfg61'].bitcfg8877;
+	int v7 = clan_configs['cfg47'].bitcfg8845;
+	int v10 = clan_configs['cfg51'].bitcfg8853;
+	int v2 = clan_configs['cfg65'];
+	/* 
+		java.lang.RuntimeException: Stack underflow
+			at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:199)
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+			at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+			at tests.Main.main(Main.java:69)
+		
+	 */
+}

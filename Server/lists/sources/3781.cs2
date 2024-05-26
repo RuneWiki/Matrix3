@@ -1,0 +1,43 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3781(int a0) {
+	switch (a0) {
+		case 99:
+			client_configs['cfg1775'].bitcfg4290 = 0;
+			break;
+		case 0:
+			client_configs['cfg1775'].bitcfg4290 = 1;
+			break;
+		case 1:
+			client_configs['cfg1775'].bitcfg4290 = 2;
+			break;
+		case 2:
+			client_configs['cfg1775'].bitcfg4290 = 3;
+			break;
+		case 3:
+			client_configs['cfg1775'].bitcfg4290 = 4;
+			break;
+		case 4:
+			client_configs['cfg1775'].bitcfg4290 = 5;
+			break;
+		case 5:
+			client_configs['cfg1775'].bitcfg4290 = 6;
+			break;
+		case 6:
+			client_configs['cfg1775'].bitcfg4290 = 7;
+			break;
+		case 7:
+			client_configs['cfg1775'].bitcfg4290 = 8;
+	}
+	return;
+}

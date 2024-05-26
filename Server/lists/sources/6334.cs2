@@ -1,0 +1,28 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6334(int a0) {
+	int v3 = cs2method_10894(93);
+	for (int v1 = cs2method_10968(cs2method_10461(cs2method_10236(a0), cs2method_10051(4, 36)), 3), int v2 = cs2method_10968(cs2method_10461(cs2method_10823(a0), cs2method_10051(7, 32)), 6), int v0 = 0; v0 < v3; v0 = cs2method_10060(v0, 1)) {
+		cs2method_10606(a0, 5, v0);
+		cs2method_10013(36, 32, 0, 0);
+		cs2method_10063(cs2method_10051(cs2method_10038(v0, 4), cs2method_10060(36, v1)), cs2method_10051(cs2method_10968(v0, 4), cs2method_10060(32, v2)), 0, 0);
+		cs2method_10278(3153952);
+		cs2method_10356(1);
+	}
+	cs2method_20254(new function<script_6335>(int a0,int a1) {
+		script_6336(a1, a0);
+		return;
+	}, new WidgetPointer(-32768,3), v3, 93, 1, "IiY", new WidgetPointer(a0));
+	script_6336(a0, v3);
+	return;
+}

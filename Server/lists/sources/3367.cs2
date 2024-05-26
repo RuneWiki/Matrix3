@@ -1,0 +1,74 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3367(int a0,object a1,int a2) {
+	int v7 = 0;
+	int v0 = 0;
+	int v6 = -1;
+	cs2method_10606(79691779, 4, cs2method_10163(79691779));
+	cs2method_10063(0, 25, 1, 2);
+	cs2method_10013(0, 33, 1, 0);
+	int v3 = cs2method_10060(cs2method_10939(3795, a1), cs2method_10939(3795, "New"));
+	cs2method_20061(new function<script_3368>(object a0,int a1,int a2) {
+		if (cs2method_11038(79691779, a1) == 1 && cs2method_10265(cs2method_10447()) == 0 && cs2method_10133() > a2) {
+			object v0 = cs2method_10427("New: ", a0);
+			cs2method_10797(v0);
+			cs2method_10692(3795);
+			cs2method_10173(1);
+			cs2method_10811(16101953);
+			cs2method_11105(1, 1, 15);
+		}
+		script_3370(a1, a2);
+		return;
+	}, -2147483643, (string)a1, cs2method_10060(cs2method_10133(), cs2method_10051(a2, a0)), "isi");
+	int v8 = cs2method_10878();
+	cs2method_10606(79691779, 5, cs2method_10163(79691779));
+	cs2method_10063(0, 24, 1, 2);
+	cs2method_10013(v3, 33, 0, 0);
+	cs2method_10577(1);
+	int v9 = 9240;
+	cs2method_20061(new function<script_4226>(int a0,int a1,int a2) {
+		if (cs2method_11038(79691779, a0) == 1 && cs2method_10713() == -1 && cs2method_10133() > a2) {
+			cs2method_10310(a1);
+		}
+		script_3370(a0, a2);
+		return;
+	}, -2147483643, v9, cs2method_10060(cs2method_10133(), cs2method_10051(a2, a0)), "idi");
+	cs2method_10258();
+	int v4 = cs2method_10878();
+	int v2 = cs2method_10488();
+	cs2method_10606(79691779, 5, cs2method_10163(79691779));
+	cs2method_10063(cs2method_10461(v4, 50), 24, 0, 2);
+	cs2method_10013(50, 33, 0, 0);
+	int v1 = 9239;
+	cs2method_20061(new function<script_4226>(int a0,int a1,int a2) {
+		if (cs2method_11038(79691779, a0) == 1 && cs2method_10713() == -1 && cs2method_10133() > a1) {
+			cs2method_10310(a2);
+		}
+		script_3370(a0, a1);
+		return;
+	}, -2147483643, v1, cs2method_10060(cs2method_10133(), cs2method_10051(a2, a0)), "idi");
+	cs2method_10258();
+	cs2method_10606(79691779, 5, cs2method_10163(79691779));
+	cs2method_10063(cs2method_10060(v4, v2), 24, 0, 2);
+	cs2method_10013(50, 33, 0, 0);
+	int v5 = 9241;
+	cs2method_20061(new function<script_4226>(int a0,int a1,int a2) {
+		if (cs2method_11038(79691779, a0) == 1 && cs2method_10713() == -1 && cs2method_10133() > a1) {
+			cs2method_10310(a2);
+		}
+		script_3370(a0, a1);
+		return;
+	}, -2147483643, v5, cs2method_10060(cs2method_10133(), cs2method_10051(a2, a0)), "idi");
+	cs2method_10258();
+	return;
+}

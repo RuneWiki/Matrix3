@@ -1,0 +1,23 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2253() {
+	cs2method_10026(61931534, cs2_configs['cfg2381']);
+	if (cs2_configs['cfg1233'] > 200) {
+		cs2_configs['cfg1233'] = 200;
+	}
+	int v1 = cs2_configs['cfg1233'];
+	int v0 = cs2method_10060(cs2method_10968(cs2method_10051(v1, 37), 40), 14);
+	cs2method_10283(v0, 18, 1, 0, 61931536);
+	cs2method_10112(cs2method_10060(v0, 1), 15, 0, 0, 61931537);
+	return;
+}

@@ -1,0 +1,28 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2731(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7) {
+	script_2732(a2, a1, client_configs['cfg458'].bitcfg1188, 1);
+	cs2method_20486(new function<script_2733>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7) {
+		if (a7 != 1) {
+			return;
+		}
+		if (client_configs['cfg458'].bitcfg1188 == a1) {
+			return;
+		}
+		client_configs['cfg458'].bitcfg1188 = a1;
+		script_6739(26);
+		script_2735(a2, a0, a6, a3, a5, a4);
+		return;
+	}, -2147483644, a1, new WidgetPointer(a4), new WidgetPointer(a0), new WidgetPointer(a3), new WidgetPointer(a7), new WidgetPointer(a5), new WidgetPointer(a6), "iiIIIIII", new WidgetPointer(a2));
+	return;
+}

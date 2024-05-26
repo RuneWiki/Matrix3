@@ -1,0 +1,121 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1044(int a0,int a1) {
+	script_8543(a0);
+	script_8618(a0, -1);
+	object v3 = cs2method_10259(a1);
+	if (script_8613(a0) == 1) {
+		v3 = "To " + script_8605(a0) + ": " + "<col=10f010>" + (string)v3;
+	} else if (script_8613(a0) == 2) {
+		v3 = "[" + "<col=6464a0>" + (string)cs2method_10403() + "<col=ffffff>" + "]: " + "<col=10f010>" + (string)v3;
+	} else if (script_8613(a0) == 8) {
+		if (cs2method_10435() == 1) {
+			v3 = "[" + "<col=6464a0>" + (string)cs2method_10017() + "<col=ffffff>" + "]: " + "<col=10f010>" + (string)v3;
+		}
+	} else if (script_8613(a0) == 10) {
+		if (cs2method_10143() == 1) {
+			v3 = "[" + "<col=6464a0>" + (string)cs2method_10017() + "<col=ffffff>" + "]: " + "<col=10f010>" + (string)v3;
+		}
+	} else {
+		v3 = v3;
+	}
+	cs2method_10467(1, script_8585(a0));
+	cs2method_20380(new function<none>() {
+	}, "", new WidgetPointer(script_8556(a0)));
+	cs2method_10467(0, script_8586(a0));
+	cs2method_10467(1, script_8588(a0));
+	cs2method_10467(0, script_8590(a0));
+	cs2method_10467(1, script_8594(a0));
+	cs2method_10467(1, script_8598(a0));
+	cs2method_10467(1, script_8599(a0));
+	cs2method_10467(0, script_8600(a0));
+	cs2method_10520(16777215, script_8600(a0));
+	cs2method_10170(20452, script_8600(a0));
+	cs2method_10637(0, 1, 0, script_8600(a0));
+	cs2method_10026(script_8600(a0), v3);
+	cs2method_11101(1, script_8600(a0));
+	cs2method_10520(15732752, script_8591(a0));
+	cs2method_11101(1, script_8591(a0));
+	cs2method_10273(script_8592(a0));
+	int v7 = cs2method_10330(a1, script_8631(a0), 0);
+	cs2method_10606(script_8592(a0), 3, 0);
+	int v1 = cs2method_10236(script_8592(a0));
+	int v10 = cs2method_10461(v1, 8);
+	int v6 = 1;
+	int v9 = 0;
+	globalarray_0 = new int[250];
+	int v2 = 0;
+	object v8 = idx17mapData('i', 's', v7, 0);
+	while (cs2method_10846("", v8) != 0 && v6 < 250) {
+		cs2method_10606(script_8592(a0), 4, v6);
+		cs2method_10063(4, cs2method_10051(14, v9), 0, 0);
+		cs2method_10013(v10, 14, 0, 0);
+		cs2method_10811(16777215);
+		cs2method_10797(v8);
+		cs2method_10692(20452);
+		cs2method_10173(1);
+		cs2method_20674(new function<script_1045>(int a0,int a1,int a2,int a3) {
+			if (cs2method_11038(a2, a0) == 1) {
+				script_8618(a3, a1);
+				if (cs2method_11038(a2, 0) == 1) {
+					cs2method_10063(cs2method_10878(), cs2method_10406(), 0, 0);
+					cs2method_10013(cs2method_10488(), cs2method_10664(), 0, 0);
+					cs2method_10811(5733957);
+					cs2method_10238(1);
+				}
+			}
+			return;
+		}, v6, new WidgetPointer(script_8592(a0)), v9, a0, "iIii");
+		cs2method_20672(new function<script_1073>(int a0,int a1,int a2,int a3) {
+			script_1074(a2, a0, a3, a1);
+			return;
+		}, new WidgetPointer(script_8599(a0)), a1, cs2method_10461(v6, 1), a0, "Ieii");
+		globalarray_0[v9] = v9;
+		v8 = idx17mapData('i', 's', v7, v6);
+		v6 = cs2method_10060(v6, 1);
+		v9 = cs2method_10060(v9, 1);
+	}
+	int v4 = cs2method_10461(v9, 1);
+	if (cs2method_10846(idx17mapData('i', 's', v7, 1000), "non-alpha") != 0) {
+		script_520(0, 0, v4, v7);
+		for (int v5 = 0; v5 <= v4; v5 = cs2method_10060(v5, 1)) {
+			if (cs2method_11038(script_8592(a0), cs2method_10060(globalarray_0[v5], 1)) == 1) {
+				cs2method_10063(4, cs2method_10051(14, v5), 0, 0);
+				cs2method_20674(new function<script_1045>(int a0,int a1,int a2,int a3) {
+					if (cs2method_11038(a0, a2) == 1) {
+						script_8618(a3, a1);
+						if (cs2method_11038(a0, 0) == 1) {
+							cs2method_10063(cs2method_10878(), cs2method_10406(), 0, 0);
+							cs2method_10013(cs2method_10488(), cs2method_10664(), 0, 0);
+							cs2method_10811(5733957);
+							cs2method_10238(1);
+						}
+					}
+					return;
+				}, cs2method_10060(globalarray_0[v5], 1), new WidgetPointer(script_8592(a0)), v5, a0, "iIii");
+			}
+		}
+	}
+	for (int v0 = 0; v0 < 250; v0 = cs2method_10060(v0, 1)) {
+		script_1384(v0, globalarray_0[v0]);
+	}
+	cs2method_11130(0, cs2method_10051(14, cs2method_10461(v6, 1)), script_8592(a0));
+	script_8541(script_8592(a0), script_8593(a0));
+	if (cs2method_10324(script_8592(a0)) == 1) {
+		cs2method_10995(3648, a1);
+	}
+	if (cs2method_10324(script_8586(a0)) == 1) {
+		cs2method_10995(3651, 4);
+	}
+	return;
+}

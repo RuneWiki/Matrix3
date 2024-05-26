@@ -1,0 +1,39 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1870(int a0) {
+	int v2 = 0;
+	int v1 = 0;
+	int v0 = cs2method_11134();
+	object v3 = "0";
+	if (v0 > 0) {
+		object v5;
+		int v4 = cs2method_10038(cs2method_10968(v0, 50), 60);
+		int v6 = cs2method_10968(v0, 3000);
+		if (v4 < 10) {
+			v5 = "System update in: " + (string)cs2method_10379(v6) + ":0" + (string)cs2method_10379(v4);
+		} else {
+			v5 = "System update in: " + (string)cs2method_10379(v6) + ":" + (string)cs2method_10379(v4);
+		}
+		cs2method_10026(a0, v5);
+		if (cs2method_10265(v5) > 0) {
+			cs2method_10283(cs2method_10060(cs2method_10939(494, "System update in: "), 40), cs2method_10823(59375666), 0, 0, 59375666);
+			cs2method_10467(0, 59375666);
+		} else {
+			cs2method_10467(1, 59375666);
+		}
+	} else {
+		cs2method_20162(new function<none>() {
+		}, "", new WidgetPointer(a0));
+	}
+	return;
+}

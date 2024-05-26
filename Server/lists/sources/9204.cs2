@@ -1,0 +1,68 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9204(int a0) {
+	if (a0 == 1) {
+		cs2method_20380(new function<script_9205>(int a0,int a1,int a2,int a3,int a4) {
+			object v11 = cs2method_10744(a1);
+			object v7 = v11;
+			object v1 = "";
+			switch (a4) {
+				case 96:
+					if (cs2_configs['cfg3782'] > 0) {
+						cs2_configs['cfg3782'] = cs2method_10461(cs2_configs['cfg3782'], 1);
+					}
+					break;
+				case 97:
+					if (cs2_configs['cfg3782'] < cs2method_10265(v11)) {
+						cs2_configs['cfg3782'] = cs2method_10060(cs2_configs['cfg3782'], 1);
+					}
+					break;
+				case 102:
+					cs2_configs['cfg3782'] = 0;
+					break;
+				case 103:
+					cs2_configs['cfg3782'] = cs2method_10265(v11);
+					break;
+				default:
+					int v6 = cs2_configs['cfg3782'];
+					int v8 = a2;
+					int v10 = a4;
+					int v4 = a0;
+					object v5 = v11;
+					script_802_struct(1,1,0) v2 = script_802(v6, v5, v8, v10, v4);
+					object v0 = v2.objectpart_0;
+					cs2_configs['cfg3782'] = v2.intpart_0;
+					v7 = v0;
+			}
+			cs2method_10026(a1, script_1602(v7));
+			int v9 = cs2method_10939(cs2method_10643(a1), cs2method_11025(0, cs2_configs['cfg3782'], v7));
+			int v3 = 4;
+			if (cs2method_10060(v9, 4) > cs2method_10236(cs2method_10982(a1))) {
+				v3 = cs2method_10461(-4, cs2method_10461(v9, cs2method_10236(cs2method_10982(a1))));
+			}
+			cs2method_10112(v3, cs2method_10152(a1), 0, 0, a1);
+			cs2method_10112(script_1551(v7, cs2_configs['cfg3782'], cs2method_10643(a1), v3), cs2method_10152(a3), 0, 0, a3);
+			return;
+		}, -2147483640, false, new WidgetPointer(451,7), new WidgetPointer(451,6), 7, "izIIi", new WidgetPointer(451,7));
+		script_8844(1, 13, 0, 29556752, -1);
+		script_8844(1, 84, 0, 29556758, -1);
+		cs2_configs['cfg173'] = 1;
+	} else {
+		cs2method_20380(new function<none>() {
+		}, "", new WidgetPointer(451,7));
+		script_8844(1, 255, 0, 29556752, -1);
+		script_8844(1, 255, 0, 29556758, -1);
+		cs2_configs['cfg173'] = 0;
+	}
+	return;
+}

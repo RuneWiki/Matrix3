@@ -1,0 +1,20 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4328(int a0) {
+	if (clan_configs['cfg3'].bitcfg8810 == 0) {
+		cs2method_10758(idx17mapData('i', 'd', 3721, clan_configs['cfg3'].bitcfg8806), a0);
+	} else {
+		cs2method_10758(idx17mapData('i', 'd', 3721, 0), a0);
+	}
+	return;
+}

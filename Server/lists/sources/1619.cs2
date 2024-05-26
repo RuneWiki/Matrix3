@@ -1,0 +1,23 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1619(int a0,int a1,int a2) {
+	if (a0 < 0 || a0 >= 5 || a1 < 0 || a1 >= 5) {
+		cs2method_10810("Nothing happens, as if something has gone wrong.");
+		return;
+	}
+	int v1 = idx17mapData('i', 'g', 800, a1);
+	int v0 = (int)idx17mapData('i', 'I', v1, a0);
+	cs2method_10336(idx17mapData('o', 'm', 797, a2), v0);
+	cs2method_10740(0, 0, 520, 0, 0, 2180, v0);
+	return;
+}

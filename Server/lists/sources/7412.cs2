@@ -1,0 +1,76 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7412() {
+	int v2 = -1;
+	for (int v1 = 0, int v0 = -1; v1 < cs2method_10924(7230); v1 = cs2method_10060(v1, 1)) {
+		int v3 = (int)idx17mapData('i', 'I', 7230, v1);
+		if (v3 != -1) {
+			cs2method_10273(v3);
+			switch (v1) {
+				case 0:
+					v2 = idx22mapAttribute(11063, 2483);
+					break;
+				case 1:
+					v2 = idx22mapAttribute(11063, 2484);
+					break;
+				case 2:
+					v2 = idx22mapAttribute(11063, 2485);
+					break;
+				case 3:
+					v2 = idx22mapAttribute(11063, 2486);
+					break;
+				case 4:
+					v2 = idx22mapAttribute(11063, 2487);
+					break;
+				case 5:
+					v2 = idx22mapAttribute(11063, 2488);
+					break;
+				case 6:
+					v2 = idx22mapAttribute(11063, 2489);
+					break;
+				case 7:
+					v2 = idx22mapAttribute(11063, 2490);
+					break;
+				case 8:
+					v2 = idx22mapAttribute(11063, 2491);
+					break;
+				case 9:
+					v2 = idx22mapAttribute(11063, 2492);
+					break;
+				case 10:
+					v2 = idx22mapAttribute(11063, 2493);
+					break;
+				case 11:
+					v2 = idx22mapAttribute(11063, 2494);
+					break;
+				case 12:
+					v2 = idx22mapAttribute(11063, 2495);
+					break;
+				case 13:
+					v2 = idx22mapAttribute(11063, 2496);
+					break;
+				case 14:
+					v2 = idx22mapAttribute(11063, 2497);
+					break;
+				case 15:
+					v2 = idx22mapAttribute(11063, 2498);
+			}
+			if (v2 != -1) {
+				script_7413(v3, v1, v2);
+				v2 = -1;
+			}
+			int v4 = -1;
+		}
+	}
+	return;
+}

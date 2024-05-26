@@ -1,0 +1,28 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1658() {
+	if (cs2_configs['cfg1734'] == 1) {
+		cs2method_10074(0, 77332523);
+		cs2method_10467(0, 77332521);
+		cs2method_10283(172, 179, 0, 0, 77332486);
+		cs2method_11127(1, 77332523, "Hide");
+		cs2_configs['cfg1734'] = 0;
+	} else {
+		cs2method_10074(32768, 77332523);
+		cs2method_10467(1, 77332521);
+		cs2method_10283(172, 50, 0, 0, 77332486);
+		cs2method_11127(1, 77332523, "Unhide");
+		cs2_configs['cfg1734'] = 1;
+	}
+	return;
+}

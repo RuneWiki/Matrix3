@@ -1,0 +1,84 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1635(int a0,int a1) {
+	int v7 = idx17mapData('S', 'i', 1482, a1);
+	int v3 = script_1636(a1);
+	int v5 = 3495;
+	if (v3 == 1) {
+		v5 = 371;
+	}
+	cs2method_10273(a0);
+	cs2method_10606(a0, 5, 0);
+	cs2method_10013(0, 0, 1, 1);
+	cs2method_10063(0, 0, 1, 1);
+	int v0 = 10203;
+	int v4 = 10205;
+	int v2 = 1908;
+	int v1 = 10204;
+	object v6 = "You haven't reached the maximum level for this skill.";
+	if (v3 == 1) {
+		if (cs2method_10441(client_configs['cfg3238'], v7) == 1) {
+			v6 = "If you select this skill you will receive challenges for it.";
+		} else {
+			v6 = "If you deselect this skill you will not receive challenges for it.";
+		}
+		cs2method_10310(v0);
+		cs2method_10057(1, "Choose");
+		cs2method_10200(idx17mapData('S', 's', 680, a1));
+		cs2method_20703(new function<script_1637>(int a0,int a1) {
+			int v0 = idx17mapData('S', 'i', 1482, a0);
+			if (script_1636(a0) == 1) {
+				if (cs2method_10441(client_configs['cfg3238'], v0) == 0) {
+					client_configs['cfg3238'] = cs2method_10668(client_configs['cfg3238'], v0);
+				} else {
+					client_configs['cfg3238'] = cs2method_10874(client_configs['cfg3238'], v0);
+				}
+				cs2method_11047(a1);
+			}
+			return;
+		}, a1, new WidgetPointer(a0), "SI");
+		cs2method_20674(new function<script_688>(int a0,int a1,int a2) {
+			if (cs2method_11038(a2, a0) == 1) {
+				cs2method_10310(a1);
+			}
+			return;
+		}, new WidgetPointer(-32768,3), -2147483643, v1, "Iid");
+		cs2method_20884(new function<script_688>(int a0,int a1,int a2) {
+			if (cs2method_11038(a0, a2) == 1) {
+				cs2method_10310(a1);
+			}
+			return;
+		}, new WidgetPointer(-32768,3), -2147483643, v0, "Iid");
+	} else {
+		cs2method_10310(v4);
+	}
+	cs2method_10606(a0, 5, 1);
+	cs2method_10013(25, 25, 0, 0);
+	cs2method_10063(0, 0, 1, 1);
+	cs2method_10310(idx17mapData('i', 'd', v5, v7));
+	cs2method_20353(new function<script_7768>(int a0,int a1,int a2,object a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+		script_7769(a4, a8, a9, a10, a11, a5, a1, a0, a2, a6, a12, a3, a7);
+		return;
+	}, new WidgetPointer(631,36), new WidgetPointer(-32768,3), -2147483643, (string)v6, 120, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii");
+	cs2method_20884(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(631,36), "I");
+	if (cs2method_10441(client_configs['cfg3238'], v7) == 1) {
+		cs2method_10606(a0, 5, 2);
+		cs2method_10013(35, 35, 0, 0);
+		cs2method_10063(0, 0, 1, 1);
+		cs2method_10310(1908);
+	}
+	return;
+}

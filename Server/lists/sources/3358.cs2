@@ -1,0 +1,38 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_3358_struct(2,1,0) script_3358() {
+	switch (client_configs['cfg1831']) {
+		default:
+			return new script_3358_struct(2, 18037, "Poisonous Shot (Tier 1)");
+		case 17985:
+			return new script_3358_struct(2, 18037, "Poisonous Shot (Tier 1)");
+		case 17986:
+			return new script_3358_struct(12, 18038, "Poisonous Shot (Tier 2)");
+		case 17987:
+			return new script_3358_struct(22, 18039, "Poisonous Shot (Tier 3)");
+		case 17988:
+			return new script_3358_struct(32, 18040, "Poisonous Shot (Tier 4)");
+		case 17989:
+			return new script_3358_struct(42, 18041, "Poisonous Shot (Tier 5)");
+		case 17990:
+			return new script_3358_struct(52, 18042, "Poisonous Shot (Tier 6)");
+		case 17991:
+			return new script_3358_struct(62, 18043, "Poisonous Shot (Tier 7)");
+		case 17992:
+			return new script_3358_struct(72, 18044, "Poisonous Shot (Tier 8)");
+		case 17993:
+			return new script_3358_struct(82, 18045, "Poisonous Shot (Tier 9)");
+		case 17994:
+			return new script_3358_struct(92, 18046, "Poisonous Shot (Tier 10)");
+	}
+}

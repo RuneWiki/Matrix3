@@ -1,0 +1,123 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7306() {
+	cs2method_10520(16446166, 83624126);
+	cs2method_10520(16446166, 83624138);
+	cs2method_10520(16446166, 83624150);
+	cs2method_10520(16446166, 83623958);
+	cs2method_10520(16446166, 83624124);
+	cs2method_10520(16446166, 83624136);
+	cs2method_10520(16446166, 83624148);
+	cs2method_10520(16446166, 83623956);
+	cs2method_10520(16446166, 83624123);
+	cs2method_10520(16446166, 83624135);
+	cs2method_10520(16446166, 83624147);
+	cs2method_10520(16446166, 83623955);
+	cs2method_10520(16446166, 83624125);
+	cs2method_10520(16446166, 83624137);
+	cs2method_10520(16446166, 83624149);
+	cs2method_10520(16446166, 83623957);
+	cs2method_10520(16446166, 83623980);
+	cs2method_10520(16446166, 83623976);
+	cs2method_10520(16446166, 83623975);
+	cs2method_10520(16446166, 83623979);
+	int v1 = -1;
+	int v3 = -1;
+	int v4 = -1;
+	int v5 = -1;
+	int v0 = cs2method_10640(678, client_configs['cfg3420']);
+	if (cs2_configs['cfg2626'] == -1 || v0 == -1) {
+		return;
+	}
+	int v2 = 0;
+	if (cs2method_10245(111, 2173, cs2_configs['cfg2626']) == 1 && cs2method_10245(111, 2173, v0) == 0) {
+		v2 = 1;
+	}
+	if (cs2method_10245(111, 2173, cs2_configs['cfg2626']) == 0 && cs2method_10245(111, 2173, v0) == 1) {
+		v2 = 1;
+	}
+	switch (client_configs['cfg3420']) {
+		case 0:
+			v1 = 83624126;
+			v3 = 83624123;
+			v4 = 83624124;
+			v5 = 83624125;
+			break;
+		case 1:
+			v1 = 83624138;
+			v3 = 83624135;
+			v4 = 83624136;
+			v5 = 83624137;
+			break;
+		case 2:
+			v1 = 83624150;
+			v3 = 83624147;
+			v4 = 83624148;
+			v5 = 83624149;
+			break;
+		case 3:
+			v1 = 83623958;
+			v3 = 83623955;
+			v4 = 83623956;
+			v5 = 83623957;
+	}
+	if (v2 == 1) {
+		cs2method_10520(6381920, 83623980);
+		cs2method_10520(6381920, v1);
+	} else if (itemDefsAttribute(v0, 3081) > cs2_configs['cfg2632']) {
+		cs2method_10520(16711680, 83623980);
+		cs2method_10520(1936391, v1);
+	} else {
+		if (itemDefsAttribute(v0, 3081) < cs2_configs['cfg2632']) {
+			cs2method_10520(1936391, 83623980);
+			cs2method_10520(16711680, v1);
+		}
+	}
+	if (v2 == 1) {
+		cs2method_10520(6381920, 83623976);
+		cs2method_10520(6381920, v3);
+	} else if (itemDefsAttribute(v0, 3082) > cs2_configs['cfg2638']) {
+		cs2method_10520(16711680, 83623976);
+		cs2method_10520(1936391, v3);
+	} else {
+		if (itemDefsAttribute(v0, 3082) < cs2_configs['cfg2638']) {
+			cs2method_10520(1936391, 83623976);
+			cs2method_10520(16711680, v3);
+		}
+	}
+	if (v2 == 1) {
+		cs2method_10520(6381920, 83623975);
+		cs2method_10520(6381920, v4);
+	} else if (itemDefsAttribute(v0, 3083) > cs2_configs['cfg2634']) {
+		cs2method_10520(16711680, 83623975);
+		cs2method_10520(1936391, v4);
+	} else {
+		if (itemDefsAttribute(v0, 3083) < cs2_configs['cfg2634']) {
+			cs2method_10520(1936391, 83623975);
+			cs2method_10520(16711680, v4);
+		}
+	}
+	if (v2 == 1) {
+		cs2method_10520(6381920, 83623979);
+		cs2method_10520(6381920, v5);
+	} else if (itemDefsAttribute(v0, 3084) > cs2_configs['cfg2640']) {
+		cs2method_10520(16711680, 83623979);
+		cs2method_10520(1936391, v5);
+	} else {
+		if (itemDefsAttribute(v0, 3084) < cs2_configs['cfg2640']) {
+			cs2method_10520(1936391, 83623979);
+			cs2method_10520(16711680, v5);
+		}
+	}
+	return;
+}

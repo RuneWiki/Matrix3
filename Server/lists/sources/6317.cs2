@@ -1,0 +1,49 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6317(int a0,int a1,int a2) {
+	int v0 = -1;
+	int v2 = script_1468(a0);
+	int v3 = 0;
+	if (cs2method_11038(a2, a0) == 1) {
+		int v1 = cs2method_10487();
+		switch (a1) {
+			case 1:
+				v3 = cs2method_10872(1, cs2method_11089());
+				break;
+			case 2:
+				v3 = cs2method_10872(5, cs2method_11089());
+				break;
+			case 3:
+				v3 = cs2method_10872(10, cs2method_11089());
+				break;
+			case 4:
+				v3 = cs2method_10872(client_configs['cfg111'], cs2method_11089());
+				break;
+			case 6:
+				v3 = cs2method_10936(95, v1);
+				break;
+			case 8:
+				if (script_9828(1, v1) == 1) {
+					script_9214(v1, 95, a0, 49938560, a2);
+					script_9838();
+				}
+				return;
+		}
+		if (script_6505(v1, v3, a0, 93, -1, a2, 49938439) == 1) {
+			script_9838();
+		}
+	} else {
+		return;
+	}
+	return;
+}

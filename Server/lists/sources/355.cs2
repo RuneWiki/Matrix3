@@ -1,0 +1,89 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_355_struct(3,0,0) script_355(int a0) {
+	int v2 = -1;
+	int v1 = 0;
+	int v0 = 0;
+	switch (a0) {
+		case 1:
+			v2 = client_configs['cfg811'];
+			v1 = client_configs['cfg727'].bitcfg1723;
+			v0 = client_configs['cfg727'].bitcfg1724;
+			break;
+		case 2:
+			v2 = client_configs['cfg812'];
+			v1 = client_configs['cfg728'].bitcfg1725;
+			v0 = client_configs['cfg728'].bitcfg1726;
+			break;
+		case 3:
+			v2 = client_configs['cfg813'];
+			v1 = client_configs['cfg729'].bitcfg1727;
+			v0 = client_configs['cfg729'].bitcfg1728;
+			break;
+		case 4:
+			v2 = client_configs['cfg814'];
+			v1 = client_configs['cfg730'].bitcfg1729;
+			v0 = client_configs['cfg730'].bitcfg1730;
+			break;
+		case 5:
+			v2 = client_configs['cfg815'];
+			v1 = client_configs['cfg731'].bitcfg1731;
+			v0 = client_configs['cfg731'].bitcfg1732;
+			break;
+		case 6:
+			v2 = client_configs['cfg816'];
+			v1 = client_configs['cfg732'].bitcfg1733;
+			v0 = client_configs['cfg732'].bitcfg1734;
+			break;
+		case 7:
+			v2 = client_configs['cfg817'];
+			v1 = client_configs['cfg733'].bitcfg1735;
+			v0 = client_configs['cfg733'].bitcfg1736;
+			break;
+		case 8:
+			v2 = client_configs['cfg818'];
+			v1 = client_configs['cfg734'].bitcfg1737;
+			v0 = client_configs['cfg734'].bitcfg1738;
+			break;
+		case 9:
+			v2 = client_configs['cfg819'];
+			v1 = client_configs['cfg735'].bitcfg1739;
+			v0 = client_configs['cfg735'].bitcfg1740;
+			break;
+		case 10:
+			v2 = client_configs['cfg820'];
+			v1 = client_configs['cfg736'].bitcfg1741;
+			v0 = client_configs['cfg736'].bitcfg1742;
+			break;
+		case 11:
+			v2 = client_configs['cfg821'];
+			v1 = client_configs['cfg737'].bitcfg1743;
+			v0 = client_configs['cfg737'].bitcfg1744;
+			break;
+		case 12:
+			v2 = client_configs['cfg822'];
+			v1 = client_configs['cfg738'].bitcfg1745;
+			v0 = client_configs['cfg738'].bitcfg1746;
+			break;
+		case 13:
+			v2 = client_configs['cfg4446'];
+			v1 = client_configs['cfg4432'].bitcfg22337;
+			v0 = client_configs['cfg4432'].bitcfg22338;
+			break;
+		case 14:
+			v2 = client_configs['cfg4447'];
+			v1 = client_configs['cfg4433'].bitcfg22339;
+			v0 = client_configs['cfg4433'].bitcfg22340;
+	}
+	return new script_355_struct(v2, v1, v0);
+}

@@ -1,0 +1,22 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8084() {
+	if (client_configs['cfg1831'] == 24906 || client_configs['cfg1831'] == 24907 || client_configs['cfg1831'] == 24908) {
+		return;
+	}
+	cs2method_10467(1, (int)idx17mapData('n', 'I', 1282, client_configs['cfg1784']));
+	cs2method_10467(1, (int)idx17mapData('n', 'I', 1092, client_configs['cfg1784']));
+	cs2method_10467(1, 93716512);
+	cs2method_10467(1, 93585415);
+	return;
+}

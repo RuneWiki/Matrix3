@@ -1,0 +1,146 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3041(int a0,int a1,int a2,int a3,int a4) {
+	int v15;
+	if (cs2method_10535(a2, -1) == 1) {
+		cs2method_20162(new function<script_3040>(int a0,int a1,int a2,int a3,int a4) {
+			script_3041(a2, a0, a4, a3, a1);
+			return;
+		}, new WidgetPointer(a1), new WidgetPointer(a0), new WidgetPointer(a2), new WidgetPointer(a3), new WidgetPointer(a4), "IIIII", new WidgetPointer(a3));
+		return;
+	}
+	cs2method_20162(new function<none>() {
+	}, "", new WidgetPointer(a3));
+	cs2method_10273(a1);
+	cs2method_10273(a0);
+	cs2method_10273(a2);
+	int v7 = cs2method_10260();
+	int v12 = 0;
+	int v17 = 0;
+	object v2 = "";
+	object v0 = "";
+	object v8 = "";
+	int v5 = 0;
+	int v9 = 0;
+	int v18 = 15;
+	int v6 = 0;
+	int v4 = 5;
+	int v16 = 0;
+	int v3 = 0;
+	int v1 = 0;
+	object v13 = "";
+	int v11 = 100;
+	if (cs2method_10210() == 1) {
+		v11 = 400;
+	}
+	if (v7 == -2) {
+		cs2method_10026(59572313, "Name");
+		script_3038(a2, "Loading Ignore List." + "<br>" + "<br>" + "Please wait.");
+	} else if (v7 == -1) {
+		cs2method_10026(59572313, "Name");
+		script_3038(a2, "Connecting to server." + "<br>" + "<br>" + "Please wait.");
+	} else if (v7 > 0) {
+		int v19;
+		cs2method_10026(59572313, "Name (" + (string)cs2method_10379(v7) + "/" + (string)cs2method_10379(v11) + ")");
+		while (v12 < v7) {
+			int v24 = v12;
+			opc_struct10126(0,2,0) v21 = cs2method_10126(v24);
+			object v14 = v21.objectpart_1;
+			object v23 = v21.objectpart_0;
+			script_2996(a2, v12, cs2method_10236(a2), v18, 0, v17, 0, 1, 0);
+			if (cs2method_10038(v12, 2) == 0) {
+				cs2method_10811(2103569);
+			} else {
+				cs2method_10811(2695190);
+			}
+			cs2method_20674(new function<script_3031>(int a0,int a1) {
+				script_3032(a0, a1, 0);
+				return;
+			}, new WidgetPointer(a2), v12, "Ii");
+			cs2method_20884(new function<script_3036>() {
+				script_3037();
+				return;
+			}, "");
+			if (cs2method_10265(v14) > 0) {
+				object v19;
+				int v20 = cs2method_10060(cs2method_10939(494, "Last known as: " + (string)v14), 8);
+				if (v20 > cs2method_10236(59572300)) {
+					v19 = "Last known as:" + "<br>" + (string)v14;
+				} else {
+					v19 = "Last known as: " + (string)v14;
+				}
+				cs2method_20353(new function<script_2467>(int a0,int a1,int a2,object a3,int a4,int a5,int a6,int a7,int a8) {
+					script_2468(a3, a2, a0, a4, a1, a5, a6, a8, a7);
+					return;
+				}, new WidgetPointer(-32768,3), -2147483643, (string)v19, -2147483647, -2147483646, new WidgetPointer(909,78), new WidgetPointer(909,80), new WidgetPointer(909,83), 494, "IisiiIIIf");
+			}
+			cs2method_10200(v23);
+			cs2method_10057(1, "Delete");
+			cs2method_20703(new function<script_3042>(int a0,object a1) {
+				if (a0 == 1) {
+					cs2method_10762(a1);
+					script_3037();
+				}
+				return;
+			}, -2147483644, (string)v23, "is");
+			script_2994(a0, v12, 14, 14, 5, cs2method_10060(v17, 1), -1, 0, 0, 0, 0);
+			if (cs2method_10846(v14, "") != 0) {
+				cs2method_10310(2313);
+				v19 = 20;
+			} else {
+				cs2method_10310(-1);
+				v19 = 5;
+			}
+			object v22 = v23;
+			script_2995(a1, v12, 0, v18, v19, v17, 16777215, 494, 0, v22, 1, 0, 1);
+			cs2method_10013(v19, v18, 1, 0);
+			cs2method_10975(1);
+			v17 = cs2method_10060(v17, v18);
+			v12 = cs2method_10060(v12, 1);
+		}
+		int v20 = cs2method_10060(cs2method_10968(cs2method_10823(a3), v18), 1);
+		if (v20 > v7) {
+			while (v12 < v20) {
+				script_2996(a2, v12, cs2method_10236(a2), v18, 0, v17, 0, 1, 0);
+				if (cs2method_10038(v12, 2) == 0) {
+					cs2method_10811(2103569);
+				} else {
+					cs2method_10811(2695190);
+				}
+				v17 = cs2method_10060(v17, v18);
+				v12 = cs2method_10060(v12, 1);
+			}
+			v15 = cs2method_10823(a3);
+		} else {
+			v15 = v17;
+		}
+		if (v20 <= v7) {
+			int v10 = cs2method_10718(59572302);
+			cs2method_11130(0, v15, 59572302);
+			if (v10 > v15) {
+				v10 = v15;
+			}
+			script_72(59572303, 59572302, v10);
+		} else {
+			cs2method_11130(0, 0, 59572302);
+			cs2method_10251(0, 0, 59572302);
+			script_72(59572303, 59572302, 0);
+		}
+	} else {
+		if (v7 == 0) {
+			cs2method_10026(59572313, "Name");
+			script_3038(a2, "You are not ignoring any players.");
+		}
+	}
+	return;
+}

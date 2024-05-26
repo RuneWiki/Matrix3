@@ -1,0 +1,22 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_467(int a0) {
+	if (cs2method_10338(5) < 25) {
+		cs2method_10026(a0, "<col=c80000>" + "A Prayer level of " + (string)cs2method_10379(25) + " is required." + "</col>");
+	} else if (client_configs['cfg1568'].bitcfg4861 < 1) {
+		cs2method_10026(a0, "<col=c80000>" + "1 Commendation required." + "</col>");
+	} else {
+		cs2method_10026(a0, (string)cs2method_10379(cs2method_10051(cs2method_10968(cs2method_10213(cs2method_10338(5), 2), 600), 18)) + " XP per Commendation.");
+	}
+	return;
+}

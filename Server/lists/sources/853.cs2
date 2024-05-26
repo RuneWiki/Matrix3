@@ -1,0 +1,48 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_853(int a0) {
+	if (a0 == 10) {
+		return 0;
+	}
+	if (a0 == 0) {
+		return 2;
+	}
+	if (a0 == 1) {
+		return 3;
+	}
+	if (a0 == 2) {
+		return 4;
+	}
+	if (a0 == 3) {
+		return 5;
+	}
+	if (a0 == 4) {
+		return 3;
+	}
+	if (a0 == 5) {
+		return 4;
+	}
+	if (a0 == 6) {
+		return 4;
+	}
+	if (a0 == 7) {
+		return 3;
+	}
+	if (a0 == 8) {
+		return 4;
+	}
+	if (a0 == 9) {
+		return 3;
+	}
+	return 0;
+}

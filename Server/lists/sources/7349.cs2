@@ -1,0 +1,29 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7349() {
+	int v3 = cs2method_10968(cs2method_11115(), 1440);
+	int v1 = cs2method_10051(v3, 1440);
+	int v0 = cs2method_10461(cs2method_11115(), v1);
+	int v2 = cs2method_10968(cs2method_10051(v0, 100), 1440);
+	cs2method_10026(61866101, "Captain's Log, Runedate " + (string)cs2method_10379(cs2method_10948()) + "." + (string)cs2method_10379(v2));
+	script_7351();
+	script_7353();
+	script_7355();
+	script_7357();
+	script_7362();
+	script_7359();
+	cs2method_10009(1, 96, 0, 61866058);
+	cs2method_10009(1, 97, 0, 61866057);
+	cs2method_10009(1, 13, 0, 61866103);
+	return;
+}

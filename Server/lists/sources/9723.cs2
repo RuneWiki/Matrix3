@@ -1,0 +1,29 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_9723(int a0,int a1,int a2) {
+	int v0 = 0;
+	switch (a1) {
+		case 569:
+			v0 = script_9725(14780, 0, a2);
+			break;
+		case 571:
+			v0 = script_9725(14771, 0, a2);
+			break;
+		case 573:
+			v0 = script_9725(14783, 0, a2);
+			break;
+		case 575:
+			v0 = script_9725(14775, 0, a2);
+	}
+	return v0;
+}

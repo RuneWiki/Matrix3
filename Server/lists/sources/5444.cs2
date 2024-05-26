@@ -1,0 +1,178 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5444(int a0) {
+	int v0 = -1;
+	int v6 = -1;
+	int v29 = -1;
+	int v40 = -1;
+	int v25 = -1;
+	int v11 = -1;
+	object v13 = "";
+	object v1 = "";
+	object v12 = "";
+	object v36 = "";
+	object v15 = "";
+	object v31 = "";
+	int v26 = 0;
+	int v18 = 0;
+	int v14 = 0;
+	int v30 = 0;
+	int v22 = 0;
+	int v4 = 0;
+	int v39 = -1;
+	int v19 = -1;
+	int v16 = -1;
+	int v27 = -1;
+	int v8 = -1;
+	int v5 = -1;
+	cs2_configs['cfg1681'] = 0;
+	cs2method_10758(8430, 76546076);
+	cs2method_10758(8430, 76546075);
+	cs2method_10758(8430, 76546074);
+	cs2method_10758(8430, 76546073);
+	cs2method_10758(8430, 76546072);
+	cs2method_10758(8430, 76546071);
+	cs2method_10026(76546149, "Please select a monster.");
+	cs2method_10026(76546050, "");
+	cs2method_10520(16101953, 76546125);
+	cs2method_10520(16101953, 76546128);
+	cs2method_10520(16101953, 76546130);
+	cs2method_10520(16101953, 76546129);
+	cs2method_10520(16101953, 76546131);
+	cs2method_10520(16101953, 76546132);
+	cs2method_10520(16101953, 76546133);
+	cs2method_10520(16101953, 76546145);
+	cs2_configs['cfg1680'] = a0;
+	if (a0 == 1) {
+		cs2method_10520(16777215, 76546125);
+		v26 = 1;
+		v18 = 2;
+		v14 = 3;
+		v30 = 4;
+		v22 = 5;
+		v4 = 6;
+	} else if (a0 == 2) {
+		cs2method_10520(16777215, 76546128);
+		v26 = 7;
+		v18 = 8;
+		v14 = 9;
+		v30 = 10;
+		v22 = 11;
+		v4 = 12;
+	} else if (a0 == 3) {
+		cs2method_10520(16777215, 76546130);
+		v26 = 13;
+		v18 = 14;
+		v14 = 15;
+		v30 = 16;
+		v22 = 17;
+		v4 = 18;
+	} else if (a0 == 4) {
+		cs2method_10520(16777215, 76546129);
+		v26 = 19;
+		v18 = 20;
+		v14 = 21;
+		v30 = 22;
+		v22 = 23;
+		v4 = 24;
+	} else if (a0 == 5) {
+		cs2method_10520(16777215, 76546131);
+		v26 = 25;
+		v18 = 26;
+		v14 = 27;
+		v30 = 28;
+		v22 = 29;
+		v4 = 30;
+	} else if (a0 == 6) {
+		cs2method_10520(16777215, 76546132);
+		v26 = 31;
+		v18 = 32;
+		v14 = 33;
+		v30 = 34;
+		v22 = 35;
+		v4 = 36;
+	} else if (a0 == 7) {
+		cs2method_10520(16777215, 76546133);
+		v26 = 37;
+		v18 = 38;
+		v14 = 39;
+		v30 = 40;
+		v22 = 41;
+		v4 = 42;
+	} else {
+		if (a0 == 8) {
+			cs2method_10520(16777215, 76546145);
+			v26 = 43;
+			v18 = 44;
+			v14 = 45;
+			v30 = 46;
+			v22 = 47;
+			v4 = 48;
+		}
+	}
+	int v37 = idx17mapData('i', 'J', 5213, v26);
+	int v41 = idx17mapData('i', 'J', 5213, v18);
+	int v9 = idx17mapData('i', 'J', 5213, v14);
+	int v34 = idx17mapData('i', 'J', 5213, v30);
+	int v10 = idx17mapData('i', 'J', 5213, v22);
+	int v28 = idx17mapData('i', 'J', 5213, v4);
+	object v20 = idx22mapAttribute(v37, 2095);
+	object v35 = idx22mapAttribute(v41, 2095);
+	object v38 = idx22mapAttribute(v9, 2095);
+	object v2 = idx22mapAttribute(v34, 2095);
+	object v7 = idx22mapAttribute(v10, 2095);
+	object v21 = idx22mapAttribute(v28, 2095);
+	int v32 = idx22mapAttribute(v37, 2101);
+	int v17 = idx22mapAttribute(v41, 2101);
+	int v33 = idx22mapAttribute(v9, 2101);
+	int v24 = idx22mapAttribute(v34, 2101);
+	int v3 = idx22mapAttribute(v10, 2101);
+	int v23 = idx22mapAttribute(v28, 2101);
+	cs2method_10758(v32, 76546065);
+	cs2method_10758(v17, 76546066);
+	cs2method_10758(v33, 76546067);
+	cs2method_10758(v24, 76546068);
+	cs2method_10758(v3, 76546069);
+	cs2method_10758(v23, 76546070);
+	if (script_5451(v26) == 1) {
+		script_5445(0, 76546078, 76546079, 1, v20);
+	} else {
+		script_5445(0, 76546078, 76546079, 2, v20);
+	}
+	if (script_5451(v18) == 1) {
+		script_5445(0, 76546080, 76546081, 1, v35);
+	} else {
+		script_5445(0, 76546080, 76546081, 2, v35);
+	}
+	if (script_5451(v14) == 1) {
+		script_5445(0, 76546082, 76546083, 1, v38);
+	} else {
+		script_5445(0, 76546082, 76546083, 2, v38);
+	}
+	if (script_5451(v30) == 1) {
+		script_5445(0, 76546084, 76546085, 1, v2);
+	} else {
+		script_5445(0, 76546084, 76546085, 2, v2);
+	}
+	if (script_5451(v22) == 1) {
+		script_5445(0, 76546086, 76546087, 1, v7);
+	} else {
+		script_5445(0, 76546086, 76546087, 2, v7);
+	}
+	if (script_5451(v4) == 1) {
+		script_5445(0, 76546088, 76546089, 1, v21);
+	} else {
+		script_5445(0, 76546088, 76546089, 2, v21);
+	}
+	return;
+}

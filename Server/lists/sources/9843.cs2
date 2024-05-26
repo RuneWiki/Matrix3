@@ -1,0 +1,58 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9843(int a0,int a1,int a2) {
+	int v3;
+	int v1 = 0;
+	int v0 = 0;
+	int v5 = 0;
+	if (a2 == -1) {
+		return;
+	}
+	int v2 = script_1468(a2);
+	if (a1 > 1) {
+		int v9 = a1;
+		script_1467_struct(2,0,0) v7 = script_1467(v9);
+		v3 = v7.intpart_1;
+		int v8 = v7.intpart_0;
+	} else {
+		v3 = script_6971();
+	}
+	if (cs2method_10461(v3, a2) == 1 && v2 == a1) {
+		return;
+	}
+	if (a2 == v3) {
+		int v7 = v2;
+		int v8 = a1;
+		/* 
+			mgi.tools.jagdecs2.DecompilerException: No documentation for:CALL_CS2	9842
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:198)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+				at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+				at tests.Main.main(Main.java:69)
+			
+		 */
+	}
+	script_9841(a2, v3, a0);
+	int v4 = v2;
+	int v6 = a1;
+	/* 
+		mgi.tools.jagdecs2.DecompilerException: No documentation for:CALL_CS2	9842
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:198)
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+			at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+			at tests.Main.main(Main.java:69)
+		
+	 */
+}

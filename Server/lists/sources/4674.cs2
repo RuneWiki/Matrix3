@@ -1,0 +1,161 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4674() {
+	int v0 = client_configs['cfg1543'].bitcfg4766;
+	if (cs2_configs['cfg1526'] >= 20 && cs2_configs['cfg1527'] >= 30 && cs2_configs['cfg1528'] >= 40 && cs2_configs['cfg1529'] >= 50) {
+		return;
+	}
+	if (cs2_configs['cfg1526'] < 20) {
+		cs2_configs['cfg1526'] = cs2method_10060(cs2_configs['cfg1526'], 1);
+	}
+	if (cs2_configs['cfg1527'] < 30) {
+		cs2_configs['cfg1527'] = cs2method_10060(cs2_configs['cfg1527'], 1);
+	}
+	if (cs2_configs['cfg1528'] < 40) {
+		cs2_configs['cfg1528'] = cs2method_10060(cs2_configs['cfg1528'], 1);
+	}
+	if (cs2_configs['cfg1529'] < 50) {
+		cs2_configs['cfg1529'] = cs2method_10060(cs2_configs['cfg1529'], 1);
+	}
+	switch (v0) {
+		case 1:
+			if (cs2_configs['cfg1526'] >= 20) {
+				if (client_configs['cfg1548'].bitcfg4787 == 1) {
+					cs2method_10758(5917, 6684822);
+				} else {
+					cs2method_10758(5921, 6684822);
+				}
+			}
+			if (cs2_configs['cfg1527'] >= 30) {
+				if (client_configs['cfg1548'].bitcfg4788 == 1) {
+					cs2method_10758(5917, 6684823);
+				} else {
+					cs2method_10758(5921, 6684823);
+				}
+			}
+			if (cs2_configs['cfg1528'] >= 40) {
+				if (client_configs['cfg1548'].bitcfg4789 == 1) {
+					cs2method_10758(5917, 6684824);
+				} else {
+					cs2method_10758(5921, 6684824);
+				}
+			}
+			if (cs2_configs['cfg1529'] >= 50) {
+				if (client_configs['cfg1548'].bitcfg4790 == 1) {
+					cs2method_10758(5917, 6684825);
+				} else {
+					cs2method_10758(5921, 6684825);
+				}
+			}
+			break;
+		case 4:
+			if (cs2_configs['cfg1526'] >= 20) {
+				if (client_configs['cfg1548'].bitcfg4791 == 1) {
+					cs2method_10758(5917, 6684822);
+				} else {
+					cs2method_10758(5921, 6684822);
+				}
+			}
+			if (cs2_configs['cfg1527'] >= 30) {
+				if (client_configs['cfg1548'].bitcfg4792 == 1) {
+					cs2method_10758(5917, 6684823);
+				} else {
+					cs2method_10758(5921, 6684823);
+				}
+			}
+			if (cs2_configs['cfg1528'] >= 40) {
+				if (client_configs['cfg1548'].bitcfg4793 == 1) {
+					cs2method_10758(5917, 6684824);
+				} else {
+					cs2method_10758(5921, 6684824);
+				}
+			}
+			if (cs2_configs['cfg1529'] >= 50) {
+				if (client_configs['cfg1548'].bitcfg4794 == 1) {
+					cs2method_10758(5917, 6684825);
+				} else {
+					cs2method_10758(5921, 6684825);
+				}
+			}
+			break;
+		case 2:
+			if (cs2_configs['cfg1526'] >= 20) {
+				if (client_configs['cfg1548'].bitcfg4798 == 1) {
+					cs2method_10758(5917, 6684736);
+				} else {
+					cs2method_10758(5921, 6684736);
+				}
+			}
+			if (cs2_configs['cfg1527'] >= 30) {
+				if (client_configs['cfg1548'].bitcfg4800 == 1) {
+					cs2method_10758(5917, 6684820);
+				} else {
+					cs2method_10758(5921, 6684820);
+				}
+			}
+			if (cs2_configs['cfg1528'] >= 40) {
+				if (client_configs['cfg1548'].bitcfg4799 == 1) {
+					cs2method_10758(5917, 6684821);
+				} else {
+					cs2method_10758(5921, 6684821);
+				}
+			}
+			break;
+		case 3:
+			if (cs2_configs['cfg1526'] >= 20) {
+				if (client_configs['cfg1548'].bitcfg4802 == 1) {
+					cs2method_10758(5917, 6684736);
+				} else {
+					cs2method_10758(5921, 6684736);
+				}
+			}
+			if (cs2_configs['cfg1527'] >= 30) {
+				if (client_configs['cfg1548'].bitcfg4803 == 1) {
+					cs2method_10758(5917, 6684820);
+				} else {
+					cs2method_10758(5921, 6684820);
+				}
+			}
+			if (cs2_configs['cfg1528'] >= 40) {
+				if (client_configs['cfg1548'].bitcfg4804 == 2 && client_configs['cfg1548'].bitcfg4805 == 2 && client_configs['cfg1548'].bitcfg4806 == 2 && client_configs['cfg1548'].bitcfg4807 == 2 && client_configs['cfg1548'].bitcfg4808 == 2 && client_configs['cfg1548'].bitcfg4809 == 2 && client_configs['cfg1548'].bitcfg4810 == 2 && client_configs['cfg1548'].bitcfg4811 == 2 && client_configs['cfg1548'].bitcfg4812 == 2) {
+					cs2method_10758(5917, 6684821);
+				} else {
+					cs2method_10758(5921, 6684821);
+				}
+			}
+			break;
+		case 6:
+			if (cs2_configs['cfg1526'] >= 20) {
+				if (client_configs['cfg1548'].bitcfg4813 == 1) {
+					cs2method_10758(5917, 6684736);
+				} else {
+					cs2method_10758(5921, 6684736);
+				}
+			}
+			if (cs2_configs['cfg1527'] >= 30) {
+				if (client_configs['cfg1548'].bitcfg4814 == 1) {
+					cs2method_10758(5917, 6684820);
+				} else {
+					cs2method_10758(5921, 6684820);
+				}
+			}
+			if (cs2_configs['cfg1528'] >= 40) {
+				if (client_configs['cfg1548'].bitcfg4815 == 1) {
+					cs2method_10758(5917, 6684821);
+				} else {
+					cs2method_10758(5921, 6684821);
+				}
+			}
+	}
+	return;
+}

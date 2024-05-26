@@ -1,0 +1,86 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5313(int a0,int a1,int a2,int a3,int a4) {
+	int v2 = 0;
+	int v0 = 15;
+	int v1 = cs2method_10924(5177);
+	int v4 = cs2method_10924(5176);
+	int v3 = -1;
+	cs2method_10273(a3);
+	cs2method_10273(a4);
+	cs2method_10273(a2);
+	cs2method_10273(a0);
+	while (v2 < cs2method_10872(v1, v4)) {
+		cs2method_10606(a3, 3, v2);
+		cs2method_10013(0, v0, 1, 0);
+		cs2method_10063(0, cs2method_10051(v2, v0), 0, 0);
+		if (cs2method_10038(v2, 2) == 0) {
+			cs2method_10811(2236962);
+		} else {
+			cs2method_10811(1118481);
+		}
+		cs2method_10238(1);
+		cs2method_10057(1, "Sort");
+		cs2method_10606(a4, 5, v2);
+		cs2method_10310(7712);
+		cs2method_10057(1, "Play");
+		cs2method_10013(12, 13, 0, 0);
+		cs2method_10063(14, cs2method_10060(1, cs2method_10051(v2, v0)), 2, 0);
+		int v8 = 7713;
+		cs2method_20674(new function<script_5336>(int a0,int a1,int a2) {
+			if (cs2method_11038(a2, a0) == 1) {
+				cs2method_10310(a1);
+			}
+			return;
+		}, new WidgetPointer(-32768,3), -2147483643, v8, "Iid");
+		int v7 = 7712;
+		cs2method_20884(new function<script_5336>(int a0,int a1,int a2) {
+			if (cs2method_11038(a0, a1) == 1) {
+				cs2method_10310(a2);
+			}
+			return;
+		}, new WidgetPointer(-32768,3), -2147483643, v7, "Iid");
+		cs2method_10606(a2, 5, v2);
+		cs2method_10310(7715);
+		cs2method_10057(1, "Bookmark");
+		cs2method_10013(12, 13, 0, 0);
+		cs2method_10063(1, cs2method_10051(v2, v0), 2, 0);
+		int v5 = 7716;
+		cs2method_20674(new function<script_5336>(int a0,int a1,int a2) {
+			if (cs2method_11038(a1, a0) == 1) {
+				cs2method_10310(a2);
+			}
+			return;
+		}, new WidgetPointer(-32768,3), -2147483643, v5, "Iid");
+		int v6 = 7715;
+		cs2method_20884(new function<script_5336>(int a0,int a1,int a2) {
+			if (cs2method_11038(a2, a1) == 1) {
+				cs2method_10310(a0);
+			}
+			return;
+		}, new WidgetPointer(-32768,3), -2147483643, v6, "Iid");
+		cs2method_10606(a0, 4, v2);
+		cs2method_10797(idx17mapData('i', 's', 5177, v2));
+		cs2method_10692(494);
+		cs2method_10063(2, cs2method_10051(v2, v0), 0, 0);
+		cs2method_10013(0, 15, 1, 0);
+		cs2method_10811(14540253);
+		cs2method_11105(0, 1, 0);
+		cs2method_10173(0);
+		v2 = cs2method_10060(v2, 1);
+	}
+	cs2method_10251(0, 0, a1);
+	cs2method_11130(0, cs2method_10060(2, cs2method_10051(v2, v0)), a1);
+	script_31(20905986, a1, 6507, 6504, 6505, 6506, 6499, 6498);
+	return;
+}

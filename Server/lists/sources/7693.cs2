@@ -1,0 +1,51 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7693(int a0) {
+	cs2_configs['cfg2761'] = a0;
+	switch (a0) {
+		case 0:
+			cs2method_10467(0, 95879250);
+			cs2method_10467(1, 95879253);
+			cs2method_10467(1, 95879271);
+			cs2method_10467(0, 95879274);
+			cs2method_10467(1, 95879295);
+			cs2method_10467(0, 95879298);
+			cs2method_10467(0, 95879256);
+			cs2method_10467(1, 95879280);
+			cs2method_10467(1, 95879301);
+			break;
+		case 1:
+			cs2method_10467(1, 95879250);
+			cs2method_10467(0, 95879253);
+			cs2method_10467(0, 95879271);
+			cs2method_10467(1, 95879274);
+			cs2method_10467(1, 95879295);
+			cs2method_10467(0, 95879298);
+			cs2method_10467(1, 95879256);
+			cs2method_10467(0, 95879280);
+			cs2method_10467(1, 95879301);
+			break;
+		case 2:
+			cs2method_10467(1, 95879250);
+			cs2method_10467(0, 95879253);
+			cs2method_10467(1, 95879271);
+			cs2method_10467(0, 95879274);
+			cs2method_10467(0, 95879295);
+			cs2method_10467(1, 95879298);
+			cs2method_10467(1, 95879256);
+			cs2method_10467(1, 95879280);
+			cs2method_10467(0, 95879301);
+	}
+	script_8454();
+	return;
+}

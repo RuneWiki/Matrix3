@@ -1,0 +1,31 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8751(int a0) {
+	int v5 = 0;
+	int v0 = 0;
+	int v2 = -1;
+	int v1 = -1;
+	int v3 = 1;
+	if (a0 == 1) {
+		v3 = 0;
+	}
+	while (v5 < cs2method_10924(7717)) {
+		int v4 = idx17mapData('i', 'i', 7717, v5);
+		int v6 = idx17mapData('i', 'J', 7716, v4);
+		if (v6 != -1) {
+			script_8752(v4, v3);
+		}
+		v5 = cs2method_10060(v5, 1);
+	}
+	return;
+}

@@ -1,0 +1,98 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4866(int a0,int a1,int a2,int a3,int a4,int a5) {
+	int v27 = script_4867(a1);
+	int v21 = script_4868(a1);
+	int v12 = script_4869(a1);
+	int v22 = script_4870(a1);
+	int v17 = cs2method_10155(v21);
+	int v9 = cs2method_10155(v17);
+	int v29 = cs2method_10155(v9);
+	int v11 = 1;
+	if (cs2method_10172() == 1) {
+		int v31 = clan_chat_configs['cfg2575'].bitcfg6508;
+	}
+	int v20 = script_5215(a1);
+	int v18 = cs2method_10236(cs2method_10155(v21));
+	int v23 = cs2method_10968(a3, 100);
+	int v0 = cs2method_11048(a4, v20);
+	int v1 = cs2method_10968(cs2method_10051(v23, v18), v0);
+	int v10 = cs2method_10968(cs2method_10051(v20, v18), v0);
+	int v5 = cs2method_10968(cs2method_10051(a2, v18), v0);
+	int v13 = cs2method_10968(cs2method_10051(a0, v18), v0);
+	int v3 = cs2method_10461(v23, cs2method_10060(a2, a0));
+	int v28 = cs2method_10968(cs2method_10051(v3, v18), v0);
+	cs2method_10026(v27, cs2method_10379(v23));
+	int v4 = 0;
+	cs2method_10283(cs2method_10872(cs2method_10461(v5, 2), v1), 9, 0, 0, v21);
+	cs2method_10112(1, 0, 0, 0, v21);
+	cs2method_10283(cs2method_10872(v13, cs2method_10461(v1, v5)), 9, 0, 0, v12);
+	cs2method_10112(v5, 0, 0, 0, v12);
+	cs2method_10283(cs2method_10872(cs2method_10461(v28, 2), cs2method_10461(v1, cs2method_10060(v5, v13))), 9, 0, 0, v22);
+	cs2method_10112(cs2method_10060(cs2method_10060(v5, v13), 1), 0, 0, 0, v22);
+	int v16 = -1;
+	int v24 = -1;
+	int v6 = 7317;
+	int v25 = 7314;
+	int v7 = a1;
+	script_5223_struct(2,0,0) v2 = script_5223(v7);
+	int v26 = v2.intpart_1;
+	int v8 = v2.intpart_0;
+	if (v8 != -1 && v26 != -1) {
+		int v31 = cs2method_10060(v10, 82);
+		int v19 = cs2method_10461(v31, cs2method_10968(cs2method_10236(v26), 2));
+		if (clan_chat_configs['cfg2744'] == a1) {
+			v6 = 7316;
+			v25 = 7315;
+		}
+		cs2method_10467(1, v8);
+		cs2method_10467(1, v26);
+		if (v20 > 0) {
+			cs2method_10758(v6, v8);
+			cs2method_10758(v25, v26);
+			cs2method_10467(0, v8);
+			cs2method_10467(0, v26);
+			cs2method_10112(v19, 0, 0, 1, v26);
+		}
+	}
+	if (script_5956(a1) == 3 || script_5956(a1) == 2) {
+		cs2method_10467(0, script_5967(a1));
+		cs2method_10758(9996, script_5967(a1));
+	} else if (script_5956(a1) == 1) {
+		cs2method_10467(0, script_5967(a1));
+		cs2method_10758(9997, script_5967(a1));
+	} else {
+		cs2method_10467(1, script_5967(a1));
+	}
+	object v30 = idx17mapData('i', 's', 4285, a1);
+	object v15 = (string)v30 + "<br>" + "Total : " + (string)cs2method_10379(v23) + "<br>" + "Upkeep : " + (string)cs2method_10379(a2) + "<br>" + "Upgrades : " + (string)cs2method_10379(a0) + "<br>" + "(Upgrades part-paid : " + (string)cs2method_10379(a5) + ")" + "<br>" + "Surplus : " + (string)cs2method_10379(v3);
+	if (v20 > 0) {
+		v15 = cs2method_10427(v15, "<br>" + "Goal: " + (string)cs2method_10379(v20));
+	}
+	if (clan_chat_configs['cfg2744'] == a1) {
+		v15 = cs2method_10427(v15, " (Primary)");
+	}
+	int v14 = 2;
+	if (cs2method_10152(v29) > cs2method_10461(cs2method_10968(cs2method_10823(cs2method_10155(v29)), 2), 10)) {
+		v14 = 0;
+	}
+	cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,object a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+		script_7769(a2, a3, a7, a12, a5, a1, a10, a9, a8, a0, a11, a4, a6);
+		return;
+	}, new WidgetPointer(1260,326), new WidgetPointer(-32768,3), -1, (string)v15, 120, 17813, 17813, 16777215, 13, 4, v14, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(v29));
+	cs2method_20750(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(1260,326), "I", new WidgetPointer(v29));
+	return;
+}

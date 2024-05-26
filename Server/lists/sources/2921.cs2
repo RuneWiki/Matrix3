@@ -1,0 +1,215 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2921(int a0,int a1,object a2) {
+	cs2method_11007(59375691, 979);
+	cs2_configs['cfg2481'] = (string)a2;
+	script_3397();
+	if (cs2method_10609((int)idx17mapData('i', 'I', 941, 5)) == 0) {
+		script_3161(0);
+	}
+	cs2method_20380(new function<script_3398>(int a0,int a1,int a2) {
+		switch (a1) {
+			case 84:
+				script_3400();
+				return;
+			case 13:
+				if (cs2method_10609(59965541) == 0) {
+					script_3198(64159808, 64159809, 64159795, 64159787, 64159744);
+				} else {
+					script_3391();
+				}
+				return;
+			case 1:
+				script_3196(2, 64159808, 64159809, 64159795, 64159787, 64159744);
+				return;
+		}
+		return;
+	}, -2147483640, false, new WidgetPointer(-32768,3), "izI", new WidgetPointer(979,0));
+	cs2method_20486(new function<script_3399>() {
+		script_3400();
+		return;
+	}, "", new WidgetPointer(979,9));
+	int v3 = script_1960();
+	int v4 = 0;
+	int v14 = 0;
+	int v10 = 0;
+	int v18 = 0;
+	object v11 = "";
+	object v6 = "";
+	object v7 = "";
+	int v19 = -1;
+	object v0 = "";
+	object v12 = "";
+	int v15 = cs2method_11048(0, cs2method_10461(v3, 100));
+	int v17 = 0;
+	int v2 = 1;
+	int v16 = 0;
+	int v9 = 0;
+	cs2method_10273(64159771);
+	cs2method_10273(64159770);
+	cs2method_10273(64159769);
+	cs2method_11130(0, 0, 64159771);
+	cs2method_10251(0, 0, 64159771);
+	while (v15 <= v3) {
+		int v35 = v15;
+		opc_struct10864(4,5,0) v22 = cs2method_10864(v35);
+		object v5 = v22.objectpart_4;
+		int v33 = v22.intpart_3;
+		object v13 = v22.objectpart_3;
+		object v27 = v22.objectpart_2;
+		object v37 = v22.objectpart_1;
+		object v1 = v22.objectpart_0;
+		int v34 = v22.intpart_2;
+		int v20 = v22.intpart_1;
+		int v8 = v22.intpart_0;
+		switch (v8) {
+			case 0:
+			case 103:
+			case 4:
+			case 43:
+			case 104:
+			case 115:
+			case 127:
+			case 27:
+			case 26:
+			case 29:
+			case 28:
+			case 31:
+			case 30:
+				break;
+			default:
+				if (cs2method_10846(v1, "") != 0 && cs2method_10846(v5, "") != 0) {
+					object v21;
+					if (v8 != 6 && v8 != 19) {
+						if (v8 == 41 || v8 == 44 || v8 == 9) {
+							if (cs2method_10846(cs2method_10765(v1), cs2method_10927()) != 0 && v8 != 6 && v8 != 19) {
+								int v22 = 0;
+							} else {
+								int v22 = 14798;
+							}
+							v21 = "<col=$text_colour>" + "[" + "</col>" + "<col=8888ff>" + (string)v13 + "</col>" + "<col=$text_colour>" + "]" + (string)v1 + ": " + (string)v5;
+						} else {
+							v21 = " " + (string)v1 + ": " + (string)v5;
+						}
+					} else {
+						v21 = "To " + (string)v1 + ": " + (string)v5;
+					}
+					int v20 = cs2method_10805(cs2method_10461(cs2method_10236(64159771), 10), 495, v21);
+					if (cs2method_10846(cs2method_10765(v1), cs2method_10927()) != 0 && v8 != 6 && v8 != 19) {
+						v9 = 1;
+						cs2method_10606(64159770, 3, cs2method_10163(64159770));
+						cs2method_10063(2, cs2method_10060(cs2method_10051(v17, 15), 1), 0, 0);
+						cs2method_10013(4, cs2method_10051(v20, 15), 1, 0);
+						cs2method_10811(6316128);
+						cs2method_10002(255);
+						cs2method_10238(1);
+						cs2method_20674(new function<script_3392>(int a0) {
+							if (cs2method_11038(64159770, a0) == 1) {
+								cs2method_10002(0);
+							}
+							return;
+						}, -2147483643, "i");
+						cs2method_20884(new function<script_3393>(int a0) {
+							if (cs2method_11038(64159770, a0) == 1) {
+								cs2method_10002(255);
+							}
+							return;
+						}, -2147483643, "i");
+						cs2method_10606(64159769, 3, cs2method_10163(64159769));
+						cs2method_10063(2, cs2method_10060(cs2method_10051(v17, 15), 1), 0, 0);
+						cs2method_10013(4, cs2method_10051(v20, 15), 1, 0);
+						cs2method_10811(4802889);
+						cs2method_10002(255);
+						cs2method_10238(1);
+						cs2method_20674(new function<script_3394>(int a0) {
+							cs2_configs['cfg791'] = a0;
+							return;
+						}, -2147483643, "i");
+					}
+					cs2method_10606(64159771, 4, cs2method_10163(64159771));
+					cs2method_10063(5, cs2method_10051(v17, 15), 0, 0);
+					cs2method_10013(10, cs2method_10051(v20, 15), 1, 0);
+					cs2method_10797(v21);
+					cs2method_10811(6710904);
+					if (cs2method_10846(cs2method_10765(v1), cs2method_10927()) != 0 && v8 != 6 && v8 != 19) {
+						cs2method_10200(cs2method_10765(v1));
+						cs2method_10057(1, "Report");
+						cs2method_20703(new function<script_3396>(int a0) {
+							object v0 = "";
+							int v1 = -1;
+							if (cs2method_11038(64159771, a0) == 1) {
+								cs2_configs['cfg2481'] = (string)cs2method_10068();
+								cs2_configs['cfg792'] = cs2_configs['cfg791'];
+								script_3395();
+								script_3397();
+							}
+							return;
+						}, -2147483643, "i");
+						cs2method_10811(16777215);
+					}
+					cs2method_10692(495);
+					cs2method_11105(0, 0, 15);
+					v17 = cs2method_10060(v17, v20);
+				}
+		}
+		int v26 = v15;
+		opc_struct10864(4,5,0) v24 = cs2method_10864(v26);
+		object v25 = v24.objectpart_4;
+		int v28 = v24.intpart_3;
+		object v29 = v24.objectpart_3;
+		object v23 = v24.objectpart_2;
+		object v36 = v24.objectpart_1;
+		object v32 = v24.objectpart_0;
+		int v30 = v24.intpart_2;
+		int v31 = v24.intpart_1;
+		int v21 = v24.intpart_0;
+	}
+	if (v9 == 0) {
+		cs2method_10606(64159771, 4, cs2method_10163(64159771));
+		cs2method_10063(5, cs2method_10051(v17, 15), 0, 0);
+		cs2method_10013(16384, 15, 2, 0);
+		cs2method_10797("There is no chat to report at the moment.");
+		cs2method_10811(8224209);
+		cs2method_10692(495);
+		cs2method_11105(0, 0, 15);
+	}
+	if (v17 > cs2method_10968(cs2method_10823(64159749), 15)) {
+		cs2method_10283(38, cs2method_10823(64159749), 1, 0, 64159749);
+		cs2method_11130(0, cs2method_10060(cs2method_10051(v17, 15), 5), 64159768);
+		script_31(64159750, 64159768, 792, 789, 790, 791, 773, 788);
+		if (cs2method_11038(64159750, 1) == 1) {
+			script_37(64159750, 64159768, cs2method_10970(64159768), 1);
+		}
+	} else {
+		cs2method_10283(21, cs2method_10823(64159749), 1, 0, 64159749);
+	}
+	if (a1 == 1) {
+		if (cs2_configs['cfg6'] == 0) {
+			cs2method_10758(1768, 64159764);
+		} else {
+			cs2method_10758(1770, 64159764);
+		}
+		if (a0 == 5 || a0 == 6) {
+			cs2method_10026(64159763, "Suggest to mute this player for 48 hours");
+		} else {
+			cs2method_10026(64159763, "Mute this player for 48 hours");
+		}
+		cs2method_10283(cs2method_10060(cs2method_10939(494, cs2method_10744(64159763)), 18), cs2method_10823(64159751), 0, 0, 64159751);
+		cs2method_10112(18, 273, 0, 0, 64159752);
+		cs2method_10467(0, 64159751);
+	} else {
+		cs2method_10112(18, 266, 0, 0, 64159752);
+	}
+	cs2method_10467(0, 59375683);
+	return;
+}

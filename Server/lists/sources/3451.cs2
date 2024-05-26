@@ -1,0 +1,43 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3451(int a0,int a1) {
+	int v3 = 64094244;
+	int v0 = 64094245;
+	int v2 = 64094246;
+	int v4 = 64094247;
+	int v5 = 64094248;
+	int v1 = 64094209;
+	if (a0 == 1) {
+		v3 = 64028682;
+		v0 = 64028683;
+		v2 = 64028684;
+		v4 = 64028685;
+		v5 = 64028686;
+	}
+	script_3932(a1, a0, "LOW", v0, 2, cs2method_10060(cs2method_10939(17813, "LOW"), 30), "");
+	script_3932(a1, a0, "MID", v2, 3, cs2method_10060(cs2method_10939(17813, "MID"), 30), "");
+	script_3932(a1, a0, "HIGH", v4, 4, cs2method_10060(cs2method_10939(17813, "HIGH"), 30), "");
+	script_3932(a1, a0, "CUSTOM", v5, 0, cs2method_10060(cs2method_10939(17813, "CUSTOM"), 30), "");
+	if (cs2method_10580() == 0) {
+		script_3932(a1, a0, "MIN", v3, 1, cs2method_10060(cs2method_10939(17813, "MIN"), 30), "");
+	} else {
+		cs2method_10112(35, 0, 0, 1, v0);
+		cs2method_10112(105, 0, 0, 1, v2);
+		cs2method_10112(175, 0, 0, 1, v4);
+		cs2method_10112(35, 0, 2, 1, v5);
+	}
+	if (a0 == 0) {
+		script_3932(a1, a0, "RE-RUN AUTO SETUP", v1, -1, cs2method_10060(cs2method_10939(17813, "RE-RUN AUTO SETUP"), 30), "");
+	}
+	return;
+}

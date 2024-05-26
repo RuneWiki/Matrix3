@@ -1,0 +1,27 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7282() {
+	int v2 = cs2method_10461(client_configs['cfg3414'], cs2_configs['cfg2624']);
+	int v1 = cs2method_10968(v2, 60);
+	int v3 = cs2method_10038(v2, 60);
+	object v0 = cs2method_10379(v3);
+	if (v3 < 10) {
+		v0 = cs2method_10427("0", v0);
+	}
+	if (client_configs['cfg3456'].bitcfg17495 < 63 || v2 <= 0) {
+		cs2method_10026(60031237, "Soon...");
+	} else {
+		cs2method_10026(60031237, (string)cs2method_10379(v1) + ":" + (string)v0);
+	}
+	return;
+}

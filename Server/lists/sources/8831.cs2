@@ -1,0 +1,140 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_8831_struct(2,0,0) script_8831(int a0,int a1) {
+	int v1 = 0;
+	int v0 = 0;
+	switch (a1) {
+		case 4:
+			switch (a0) {
+				case 0:
+					return new script_8831_struct(33, 0);
+				case 1:
+					return new script_8831_struct(49, 0);
+				case 2:
+					return new script_8831_struct(48, 0);
+				case 3:
+					return new script_8831_struct(50, 0);
+				case 4:
+					return new script_8831_struct(104, 0);
+				case 5:
+					return new script_8831_struct(105, 0);
+			}
+			break;
+		case 20:
+			switch (a0) {
+				case 0:
+					return new script_8831_struct(56, 0);
+				case 1:
+					return new script_8831_struct(70, 0);
+				case 2:
+					return new script_8831_struct(36, 0);
+				case 3:
+					return new script_8831_struct(35, 0);
+				case 4:
+					return new script_8831_struct(36, 1);
+			}
+			break;
+		case 2:
+			switch (a0) {
+				case 0:
+					return new script_8831_struct(1, 0);
+				case 1:
+					return new script_8831_struct(2, 0);
+				case 3:
+					return new script_8831_struct(3, 0);
+				case 2:
+					return new script_8831_struct(4, 0);
+				case 4:
+					return new script_8831_struct(5, 0);
+				case 7:
+					return new script_8831_struct(6, 0);
+				case 6:
+					return new script_8831_struct(7, 0);
+			}
+			break;
+		case 21:
+			switch (a0) {
+				case 0:
+					return new script_8831_struct(53, 0);
+				case 1:
+					return new script_8831_struct(54, 0);
+				case 2:
+					return new script_8831_struct(68, 0);
+				case 3:
+					return new script_8831_struct(69, 0);
+				case 4:
+					return new script_8831_struct(41, 0);
+				case 5:
+					return new script_8831_struct(38, 0);
+				case 6:
+					return new script_8831_struct(39, 0);
+				case 7:
+					return new script_8831_struct(40, 0);
+				case 8:
+					return new script_8831_struct(55, 0);
+			}
+			break;
+		case 5:
+			switch (a0) {
+				case 1:
+					return new script_8831_struct(16, 0);
+				case 2:
+					return new script_8831_struct(17, 0);
+				case 3:
+					return new script_8831_struct(18, 0);
+				case 4:
+					return new script_8831_struct(19, 0);
+				case 5:
+					return new script_8831_struct(20, 0);
+				case 6:
+					return new script_8831_struct(21, 0);
+				case 7:
+					return new script_8831_struct(22, 0);
+				case 8:
+					return new script_8831_struct(23, 0);
+				case 9:
+					return new script_8831_struct(24, 0);
+				case 10:
+					return new script_8831_struct(25, 0);
+				case 11:
+					return new script_8831_struct(26, 0);
+				case 12:
+					return new script_8831_struct(27, 0);
+				case 21:
+					return new script_8831_struct(16, 3);
+				case 22:
+					return new script_8831_struct(17, 3);
+				case 23:
+					return new script_8831_struct(18, 3);
+				case 24:
+					return new script_8831_struct(19, 3);
+				case 25:
+					return new script_8831_struct(20, 3);
+				case 41:
+					return new script_8831_struct(32, 3);
+				case 42:
+					return new script_8831_struct(34, 3);
+				case 43:
+					return new script_8831_struct(89, 0);
+			}
+			break;
+		case 42:
+			switch (a0) {
+				default:
+					break;
+				case 0:
+					return new script_8831_struct(52, 1);
+			}
+	}
+	return new script_8831_struct(0, 0);
+}

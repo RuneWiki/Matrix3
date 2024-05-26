@@ -1,0 +1,22 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6725() {
+	if (client_configs['cfg3232'] == 0) {
+		script_6726();
+	} else if (client_configs['cfg3232'] == 63) {
+		script_6727();
+	} else {
+		script_6728();
+	}
+	return;
+}

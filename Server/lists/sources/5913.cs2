@@ -1,0 +1,74 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5913(int a0,int a1) {
+	int v0 = 0;
+	int v1 = 18542;
+	int v3 = -1;
+	while (v0 <= cs2method_10924(8559)) {
+		int v5 = idx17mapData('i', 'i', 8559, v0);
+		if (cs2method_11038(a1, v0) == 1) {
+			if (script_5886(v5) == 1) {
+				cs2method_10310(18543);
+				cs2method_20703(new function<script_5336>(int a0,int a1,int a2) {
+					if (cs2method_11038(a2, a0) == 1) {
+						cs2method_10310(a1);
+					}
+					return;
+				}, new WidgetPointer(-32768,3), -2147483643, v1, "Iid");
+			} else {
+				v1 = 18543;
+				cs2method_10310(18542);
+				cs2method_20703(new function<script_5336>(int a0,int a1,int a2) {
+					if (cs2method_11038(a2, a1) == 1) {
+						cs2method_10310(a0);
+					}
+					return;
+				}, new WidgetPointer(-32768,3), -2147483643, v1, "Iid");
+			}
+		}
+		v0 = cs2method_10060(v0, 1);
+	}
+	for (int v4 = 0, object v2 = ""; idx17mapData('i', 'i', 8561, v4) != -1; v4 = cs2method_10060(v4, 1)) {
+		if (cs2method_11038(a0, v4) == 1) {
+			object v5;
+			if (script_5888(v4) == 1) {
+				v5 = "Click here to deselect all messages in this section.";
+				int v6 = 18542;
+				cs2method_10310(18543);
+				cs2method_20703(new function<script_5336>(int a0,int a1,int a2) {
+					if (cs2method_11038(a1, a2) == 1) {
+						cs2method_10310(a0);
+					}
+					return;
+				}, new WidgetPointer(-32768,3), -2147483643, v6, "Iid");
+				cs2method_10057(1, "Deselect All");
+			} else {
+				v5 = "Click here to select all messages in this section.";
+				int v6 = 18543;
+				cs2method_10310(18542);
+				cs2method_20703(new function<script_5336>(int a0,int a1,int a2) {
+					if (cs2method_11038(a0, a2) == 1) {
+						cs2method_10310(a1);
+					}
+					return;
+				}, new WidgetPointer(-32768,3), -2147483643, v6, "Iid");
+				cs2method_10057(1, "Select All");
+			}
+			cs2method_20353(new function<script_8799>(object a0,int a1,int a2) {
+				script_8800(a2, a1, a0);
+				return;
+			}, (string)v5, new WidgetPointer(a0), v4, "sIi");
+		}
+	}
+	return;
+}

@@ -1,0 +1,27 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_7386_struct(3,0,0) script_7386() {
+	switch (cs2method_10262()) {
+		case 0:
+			return new script_7386_struct(1014, 1015, 1018);
+		case 2:
+			return new script_7386_struct(7177, 7178, 7181);
+		case 1:
+			return new script_7386_struct(7172, 7173, 7176);
+		case 3:
+			return new script_7386_struct(7165, 7166, 7169);
+		case 6:
+			return new script_7386_struct(7436, 7437, 7440);
+	}
+	return new script_7386_struct(-1, -1, -1);
+}

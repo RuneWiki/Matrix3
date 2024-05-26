@@ -1,0 +1,85 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4038(int a0) {
+	object v0 = idx17mapData('i', 's', 7158, a0);
+	object v1 = idx17mapData('i', 's', 7159, a0);
+	switch (a0) {
+		case 2:
+			if (client_configs['cfg3365'].bitcfg16994 > 0) {
+				v1 = idx17mapData('i', 's', 7160, a0);
+			}
+			break;
+		case 11:
+			if (client_configs['cfg3368'].bitcfg17007 > 1) {
+				v1 = idx17mapData('i', 's', 7160, a0);
+			}
+			break;
+		case 17:
+			if (client_configs['cfg3365'].bitcfg16994 > 2) {
+				v1 = idx17mapData('i', 's', 7160, a0);
+			}
+			break;
+		case 19:
+			if (client_configs['cfg3370'].bitcfg17015 > 2) {
+				v1 = idx17mapData('i', 's', 7160, a0);
+			}
+			break;
+		case 24:
+			if (client_configs['cfg3370'].bitcfg17015 > 3) {
+				v1 = idx17mapData('i', 's', 7160, a0);
+			}
+			break;
+		case 25:
+			if (client_configs['cfg3369'].bitcfg17011 > 3) {
+				v1 = idx17mapData('i', 's', 7160, a0);
+			}
+			break;
+		case 26:
+			if (client_configs['cfg3368'].bitcfg17007 > 3) {
+				v1 = idx17mapData('i', 's', 7160, a0);
+			}
+			break;
+		case 28:
+			if (client_configs['cfg3365'].bitcfg16994 > 3) {
+				v1 = idx17mapData('i', 's', 7160, a0);
+			}
+			break;
+		case 31:
+			if (client_configs['cfg3367'].bitcfg17002 > 4) {
+				v1 = idx17mapData('i', 's', 7160, a0);
+			}
+			break;
+		case 32:
+			if (client_configs['cfg3369'].bitcfg17011 > 4) {
+				v1 = idx17mapData('i', 's', 7160, a0);
+			}
+			break;
+		case 34:
+			if (client_configs['cfg3370'].bitcfg17019 > 2) {
+				v1 = idx17mapData('i', 's', 7160, a0);
+			}
+			break;
+		case 36:
+			if (client_configs['cfg3370'].bitcfg17019 > 1) {
+				v1 = idx17mapData('i', 's', 7160, a0);
+			}
+			break;
+		case 42:
+			if (client_configs['cfg3367'].bitcfg17002 > 5) {
+				v1 = idx17mapData('i', 's', 7160, a0);
+			}
+	}
+	cs2method_10026(90243234, v0);
+	cs2method_10026(90243235, v1);
+	return;
+}

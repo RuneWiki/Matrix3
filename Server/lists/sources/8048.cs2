@@ -1,0 +1,39 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8048() {
+	object v2;
+	script_3097();
+	object v0 = "";
+	int v1 = cs2method_10461(client_configs['cfg3690'], 1);
+	switch (v1) {
+		case 0:
+			v2 = "Congratulations! Your saved game has been updated. Progress in the beta won't affect your progress in the main game";
+			break;
+		case 1:
+			v2 = "The login server timed out while trying to update your saved game. Please try again later.";
+			break;
+		case 2:
+			v2 = "Source save game file does not exist. Please check that your accounts are synched correctly.";
+			break;
+		case 3:
+			v2 = "There was an error contacting the login server. Please try again later";
+			break;
+		case 4:
+			v2 = "There was an error converting your saved game. Please try again later.";
+			break;
+		default:
+			return;
+	}
+	script_3093(-3, v2, "", "", 1, 0, 2611, "OK", 0, 0, "OK", 1);
+	return;
+}

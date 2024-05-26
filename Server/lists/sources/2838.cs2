@@ -1,0 +1,59 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2838() {
+	int v0 = cs2method_10461(cs2method_10635(cs2method_10472()), cs2method_10038(cs2method_10635(cs2method_10472()), 64));
+	int v1 = cs2method_10461(cs2method_10339(cs2method_10472()), cs2method_10038(cs2method_10339(cs2method_10472()), 64));
+	int v2 = cs2method_10327(0, v0, 0, v1);
+	cs2method_11031(0, 6);
+	cs2method_11031(1, 6);
+	cs2method_10971(0, 0, script_2808(v2, 54662856, 55072469), 1025, script_2808(v2, 54662856, 55072469), 790, 0);
+	cs2method_10971(1, 0, script_2808(v2, 54662856, 55072472), 355, script_2808(v2, 54662856, 55072472), 265, 0);
+	cs2method_10971(0, 1, script_2808(v2, 54662856, 55072482), 506, script_2808(v2, 54662856, 55072482), 506, 0);
+	cs2method_10971(1, 1, script_2808(v2, 54662856, 55072485), 190, script_2808(v2, 54662856, 55072485), 190, 0);
+	cs2method_10971(0, 2, script_2808(v2, 54662856, 55072479), 506, script_2808(v2, 54662856, 55072479), 506, 0);
+	cs2method_10971(1, 2, script_2808(v2, 54662856, 55072484), 195, script_2808(v2, 54662856, 55072484), 210, 0);
+	cs2method_10971(0, 3, script_2808(v2, 54662856, 55072476), 506, script_2808(v2, 54662856, 55072475), 506, 0);
+	cs2method_10971(1, 3, script_2808(v2, 54662856, 55072479), 115, script_2808(v2, 54662856, 55072478), 70, 0);
+	cs2method_10971(0, 4, script_2808(v2, 54662856, 55072474), 506, script_2808(v2, 54662856, 55072473), 506, 0);
+	cs2method_10971(1, 4, script_2808(v2, 54662856, 55072478), 240, script_2808(v2, 54662856, 55072477), 330, 0);
+	cs2method_10971(0, 5, script_2808(v2, 54662856, 55072472), 506, script_2808(v2, 54662856, 55072471), 506, 0);
+	cs2method_10971(1, 5, script_2808(v2, 54662856, 55072485), 350, script_2808(v2, 54662856, 55072487), 350, 0);
+	cs2_configs['cfg1068'] = 0;
+	cs2method_20196(new function<script_2840>() {
+		cs2_configs['cfg1068'] = cs2method_10060(cs2_configs['cfg1068'], 1);
+		switch (cs2_configs['cfg1068']) {
+			default:
+				cs2method_20196(load function<2840>, "", new WidgetPointer(384,0));
+				cs2method_10382(0, cs2_configs['cfg1068'], 400, 400, 1, cs2_configs['cfg1068']);
+				break;
+			case 1:
+				cs2method_20196(load function<2840>, "", new WidgetPointer(384,0));
+				cs2method_10382(0, cs2_configs['cfg1068'], 400, 0, 1, cs2_configs['cfg1068']);
+				break;
+			case 2:
+				cs2method_20196(new function<none>() {
+				}, "", new WidgetPointer(384,0));
+				break;
+			case 3:
+				cs2method_20196(load function<2840>, "", new WidgetPointer(384,0));
+				cs2method_10382(0, cs2_configs['cfg1068'], 650, 700, 1, cs2_configs['cfg1068']);
+				break;
+			case 5:
+				cs2method_20196(new function<none>() {
+				}, "", new WidgetPointer(384,0));
+		}
+		return;
+	}, "", new WidgetPointer(384,0));
+	cs2method_10382(0, cs2_configs['cfg1068'], 100, 100, 1, cs2_configs['cfg1068']);
+	return;
+}

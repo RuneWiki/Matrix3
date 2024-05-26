@@ -1,0 +1,25 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2259(int a0,int a1) {
+	if (a1 < 90) {
+		int v0 = cs2method_10060(a1, 1);
+		cs2method_10112(0, v0, 2, 2, a0);
+		cs2method_10704(cs2method_10060(cs2method_10690(a0), 2), a0);
+		cs2method_20162(load function<2259>, new WidgetPointer(a0), v0, "Ii", new WidgetPointer(a0));
+	} else {
+		cs2method_20162(new function<none>() {
+		}, "", new WidgetPointer(a0));
+		cs2method_10467(1, a0);
+	}
+	return;
+}

@@ -1,0 +1,350 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5527() {
+	switch (cs2method_10262()) {
+		default:
+			cs2method_10758(14189, 77266972);
+			break;
+		case 0:
+			cs2method_10758(14189, 77266972);
+			break;
+		case 1:
+			cs2method_10758(14190, 77266972);
+			break;
+		case 3:
+			cs2method_10758(14191, 77266972);
+			break;
+		case 2:
+			cs2method_10758(14192, 77266972);
+			break;
+		case 6:
+			cs2method_10758(16979, 77266972);
+	}
+	int v3 = 0;
+	int v4 = 0;
+	int v14 = 10;
+	if (cs2_configs['cfg1703'] != -1) {
+		v3 = cs2method_11048(80, cs2method_10509(2147483647, 494, cs2method_10018(cs2_configs['cfg1703'])));
+	}
+	if (cs2_configs['cfg1704'] != -1) {
+		v3 = cs2method_11048(cs2method_10509(2147483647, 494, cs2method_10018(cs2_configs['cfg1704'])), v3);
+	}
+	if (cs2_configs['cfg1705'] != -1) {
+		v3 = cs2method_11048(cs2method_10509(2147483647, 494, cs2method_10018(cs2_configs['cfg1705'])), v3);
+	}
+	if (cs2_configs['cfg1706'] != -1) {
+		v3 = cs2method_11048(cs2method_10509(2147483647, 494, cs2method_10018(cs2_configs['cfg1706'])), v3);
+	}
+	if (cs2_configs['cfg1707'] != -1) {
+		v3 = cs2method_11048(cs2method_10509(2147483647, 494, cs2method_10018(cs2_configs['cfg1707'])), v3);
+	}
+	if (cs2_configs['cfg1708'] != -1) {
+		v3 = cs2method_11048(cs2method_10509(2147483647, 494, cs2method_10018(cs2_configs['cfg1708'])), v3);
+	}
+	if (cs2_configs['cfg1709'] != -1) {
+		v3 = cs2method_11048(cs2method_10509(2147483647, 494, cs2method_10018(cs2_configs['cfg1709'])), v3);
+	}
+	if (cs2_configs['cfg1710'] != -1) {
+		v3 = cs2method_11048(cs2method_10509(2147483647, 494, cs2method_10018(cs2_configs['cfg1710'])), v3);
+	}
+	if (cs2_configs['cfg1711'] != -1) {
+		v3 = cs2method_11048(cs2method_10509(2147483647, 494, cs2method_10018(cs2_configs['cfg1711'])), v3);
+	}
+	if (cs2_configs['cfg1712'] != -1) {
+		v3 = cs2method_11048(cs2method_10509(2147483647, 494, cs2method_10018(cs2_configs['cfg1712'])), v3);
+	}
+	if (cs2_configs['cfg1713'] != -1) {
+		v3 = cs2method_11048(cs2method_10509(2147483647, 494, cs2method_10018(cs2_configs['cfg1713'])), v3);
+	}
+	if (cs2_configs['cfg1714'] != -1) {
+		v3 = cs2method_11048(cs2method_10509(2147483647, 494, cs2method_10018(cs2_configs['cfg1714'])), v3);
+	}
+	if (cs2_configs['cfg1715'] != -1) {
+		v3 = cs2method_11048(cs2method_10509(2147483647, 494, cs2method_10018(cs2_configs['cfg1715'])), v3);
+	}
+	if (cs2_configs['cfg1716'] != -1) {
+		v3 = cs2method_11048(cs2method_10509(2147483647, 494, cs2method_10018(cs2_configs['cfg1716'])), v3);
+	}
+	if (cs2_configs['cfg1717'] != -1) {
+		v3 = cs2method_11048(cs2method_10509(2147483647, 494, cs2method_10018(cs2_configs['cfg1717'])), v3);
+	}
+	int v1 = cs2method_10060(v3, 4);
+	int v15 = cs2method_11048(cs2method_10060(v1, cs2method_10051(4, 2)), 56);
+	int v21 = script_5528(v14, v15, v14, cs2_configs['cfg1703'], 77266945, 77266960, 77266959, 77266961);
+	int v17 = script_5528(v21, v15, v14, cs2_configs['cfg1704'], 77266946, 77266977, 77266976, 77266978);
+	int v11 = script_5528(v17, v15, v14, cs2_configs['cfg1705'], 77266947, 77266980, 77266979, 77266981);
+	int v12 = script_5528(v11, v15, v14, cs2_configs['cfg1706'], 77266948, 77266983, 77266982, 77266984);
+	int v9 = script_5528(v12, v15, v14, cs2_configs['cfg1707'], 77266949, 77266986, 77266985, 77266987);
+	int v13 = script_5528(v9, v15, v14, cs2_configs['cfg1708'], 77266950, 77266989, 77266988, 77266990);
+	int v19 = script_5528(v13, v15, v14, cs2_configs['cfg1709'], 77266951, 77266992, 77266991, 77266993);
+	int v0 = script_5528(v19, v15, v14, cs2_configs['cfg1710'], 77266952, 77266995, 77266994, 77266996);
+	int v23 = script_5528(v0, v15, v14, cs2_configs['cfg1711'], 77266953, 77266998, 77266997, 77266999);
+	int v22 = script_5528(v23, v15, v14, cs2_configs['cfg1712'], 77266954, 77267001, 77267000, 77267002);
+	int v8 = script_5528(v22, v15, v14, cs2_configs['cfg1713'], 77266955, 77267004, 77267003, 77267005);
+	int v10 = script_5528(v8, v15, v14, cs2_configs['cfg1714'], 77266956, 77267007, 77267006, 77267008);
+	int v6 = script_5528(v10, v15, v14, cs2_configs['cfg1715'], 77266957, 77267010, 77267009, 77267011);
+	int v5 = script_5528(v6, v15, v14, cs2_configs['cfg1716'], 77266958, 77267013, 77267012, 77267014);
+	int v20 = script_5528(v5, v15, v14, cs2_configs['cfg1717'], 77266966, 77267016, 77267015, 77267017);
+	if (cs2method_10609(77266945) == 0) {
+		cs2method_10274(77266960, "Select");
+	}
+	if (cs2method_10609(77266946) == 0) {
+		cs2method_10274(77266977, "Select");
+	}
+	if (cs2method_10609(77266947) == 0) {
+		cs2method_10274(77266980, "Select");
+	}
+	if (cs2method_10609(77266948) == 0) {
+		cs2method_10274(77266983, "Select");
+	}
+	if (cs2method_10609(77266949) == 0) {
+		cs2method_10274(77266986, "Select");
+	}
+	if (cs2method_10609(77266950) == 0) {
+		cs2method_10274(77266989, "Select");
+	}
+	if (cs2method_10609(77266951) == 0) {
+		cs2method_10274(77266992, "Select");
+	}
+	if (cs2method_10609(77266952) == 0) {
+		cs2method_10274(77266995, "Select");
+	}
+	if (cs2method_10609(77266953) == 0) {
+		cs2method_10274(77266998, "Select");
+	}
+	if (cs2method_10609(77266954) == 0) {
+		cs2method_10274(77267001, "Select");
+	}
+	if (cs2method_10609(77266955) == 0) {
+		cs2method_10274(77267004, "Select");
+	}
+	if (cs2method_10609(77266956) == 0) {
+		cs2method_10274(77267007, "Select");
+	}
+	if (cs2method_10609(77266957) == 0) {
+		cs2method_10274(77267010, "Select");
+	}
+	if (cs2method_10609(77266958) == 0) {
+		cs2method_10274(77267013, "Select");
+	}
+	if (cs2method_10609(77266966) == 0) {
+		cs2method_10274(77267016, "Select");
+	}
+	int v7 = cs2method_10461(cs2method_10236(77266970), 50);
+	int v16 = 3877;
+	int v2 = 3879;
+	int v18 = 3878;
+	int v24 = 3880;
+	if (v20 > v7) {
+		cs2method_10283(v7, 0, 0, 1, 77266965);
+		cs2method_11130(v20, 0, 77266965);
+		cs2method_10251(cs2_configs['cfg93'], 0, 77266965);
+		cs2method_21121(new function<script_5532>(int a0,int a1,int a2) {
+			int v0 = cs2method_10134(77266965);
+			cs2method_10251(cs2method_10060(cs2method_10134(77266965), a1), 0, 77266965);
+			if (v0 != cs2method_10134(77266965)) {
+				cs2method_10758(a0, a2);
+			}
+			script_5533();
+			int v1 = -1;
+			if (cs2method_10038(cs2method_10133(), 5) == 0) {
+				switch (cs2method_10877(3)) {
+					case 0:
+						v1 = 21248;
+						break;
+					case 1:
+						v1 = 21256;
+						break;
+					case 2:
+						v1 = 21256;
+				}
+				int v4 = v1;
+				int v5 = 1;
+				int v2 = 0;
+				int v3 = 20;
+				special6(5, 10);
+				/* 
+					java.lang.RuntimeException: Stack underflow
+						at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.cast(FlowBlocksGenerator.java:546)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+						at tests.Main.main(Main.java:69)
+					
+				 */
+			}
+			return;
+		}, new WidgetPointer(-32768,3), v18, -4, "Idi", new WidgetPointer(1179,19));
+		cs2method_21121(new function<script_5532>(int a0,int a1,int a2) {
+			int v1 = cs2method_10134(77266965);
+			cs2method_10251(cs2method_10060(cs2method_10134(77266965), a1), 0, 77266965);
+			if (v1 != cs2method_10134(77266965)) {
+				cs2method_10758(a2, a0);
+			}
+			script_5533();
+			int v0 = -1;
+			if (cs2method_10038(cs2method_10133(), 5) == 0) {
+				switch (cs2method_10877(3)) {
+					case 0:
+						v0 = 21248;
+						break;
+					case 1:
+						v0 = 21256;
+						break;
+					case 2:
+						v0 = 21256;
+				}
+				int v2 = v0;
+				int v4 = 1;
+				int v5 = 0;
+				int v3 = 20;
+				special6(5, 10);
+				/* 
+					java.lang.RuntimeException: Stack underflow
+						at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.cast(FlowBlocksGenerator.java:546)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+						at tests.Main.main(Main.java:69)
+					
+				 */
+			}
+			return;
+		}, new WidgetPointer(-32768,3), v24, 4, "Idi", new WidgetPointer(1179,20));
+		cs2method_20069(new function<script_5532>(int a0,int a1,int a2) {
+			int v0 = cs2method_10134(77266965);
+			cs2method_10251(cs2method_10060(cs2method_10134(77266965), a2), 0, 77266965);
+			if (v0 != cs2method_10134(77266965)) {
+				cs2method_10758(a1, a0);
+			}
+			script_5533();
+			int v1 = -1;
+			if (cs2method_10038(cs2method_10133(), 5) == 0) {
+				switch (cs2method_10877(3)) {
+					case 0:
+						v1 = 21248;
+						break;
+					case 1:
+						v1 = 21256;
+						break;
+					case 2:
+						v1 = 21256;
+				}
+				int v2 = v1;
+				int v3 = 1;
+				int v4 = 0;
+				int v5 = 20;
+				special6(5, 10);
+				/* 
+					java.lang.RuntimeException: Stack underflow
+						at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.cast(FlowBlocksGenerator.java:546)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+						at tests.Main.main(Main.java:69)
+					
+				 */
+			}
+			return;
+		}, new WidgetPointer(-32768,3), v18, -6, "Idi", new WidgetPointer(1179,19));
+		cs2method_20069(new function<script_5532>(int a0,int a1,int a2) {
+			int v0 = cs2method_10134(77266965);
+			cs2method_10251(cs2method_10060(cs2method_10134(77266965), a2), 0, 77266965);
+			if (v0 != cs2method_10134(77266965)) {
+				cs2method_10758(a1, a0);
+			}
+			script_5533();
+			int v1 = -1;
+			if (cs2method_10038(cs2method_10133(), 5) == 0) {
+				switch (cs2method_10877(3)) {
+					case 0:
+						v1 = 21248;
+						break;
+					case 1:
+						v1 = 21256;
+						break;
+					case 2:
+						v1 = 21256;
+				}
+				int v4 = v1;
+				int v5 = 1;
+				int v2 = 0;
+				int v3 = 20;
+				special6(5, 10);
+				/* 
+					java.lang.RuntimeException: Stack underflow
+						at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.cast(FlowBlocksGenerator.java:546)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+						at tests.Main.main(Main.java:69)
+					
+				 */
+			}
+			return;
+		}, new WidgetPointer(-32768,3), v24, 6, "Idi", new WidgetPointer(1179,20));
+		cs2method_20750(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), v16, "Id", new WidgetPointer(1179,19));
+		cs2method_20750(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a0, a1);
+			return;
+		}, new WidgetPointer(-32768,3), v2, "Id", new WidgetPointer(1179,20));
+		script_5533();
+	} else {
+		cs2method_10283(v20, 0, 0, 1, 77266965);
+		cs2method_11130(0, 0, 77266965);
+		cs2method_10251(0, 0, 77266965);
+		cs2method_10906(77266963);
+		cs2method_10906(77266964);
+		cs2method_10704(150, 77266963);
+		cs2method_10704(150, 77266964);
+	}
+	cs2method_10758(v16, 77266963);
+	cs2method_10758(v2, 77266964);
+	cs2method_20243(load function<5527>, 1703, 1704, 1705, 1706, 1707, 1708, 1709, 1710, 1711, 1712, 1713, 1714, 1715, 1716, 1717, 15, "Y", new WidgetPointer(1179,18));
+	return;
+}

@@ -1,0 +1,185 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2059() {
+	cs2method_10758(15539, 62259226);
+	cs2method_10758(15539, 62259543);
+	cs2method_10758(15539, 62259549);
+	cs2method_10758(15539, 62259555);
+	int v0 = script_4186();
+	cs2method_10467(0, 62259492);
+	object v4 = "";
+	object v3 = "";
+	object v1 = "";
+	object v2 = "";
+	if (client_configs['cfg3394'].bitcfg17072 > 0) {
+		cs2method_10467(0, 62259227);
+		cs2method_10758(15542, 62259228);
+		cs2method_10520(11573878, 62259274);
+		cs2method_10026(62259274, "Returned");
+		v4 = "This ship needs to be welcomed home.";
+	} else if (client_configs['cfg3405'].bitcfg17081 > 0) {
+		cs2method_10467(0, 62259227);
+		cs2method_10758(15546, 62259228);
+		cs2method_10520(11573878, 62259274);
+		if (client_configs['cfg3394'].bitcfg17071 == 32723 || client_configs['cfg3394'].bitcfg17071 == 32724 || client_configs['cfg3394'].bitcfg17071 == 32722) {
+			cs2method_10026(62259274, "Damaged");
+		} else {
+			cs2method_10026(62259274, "Sailing");
+		}
+		v4 = "This ship is currently on a mission.";
+	} else {
+		cs2method_10467(1, 62259227);
+		cs2method_10520(15245885, 62259274);
+		cs2method_10026(62259274, "Ready");
+		if (client_configs['cfg3406'].bitcfg17132 == 1) {
+			cs2method_10758(15541, 62259226);
+			if (script_7294(1) != -1) {
+				cs2method_10467(1, 62259492);
+			} else {
+				v4 = "This ship currently has no captain assigned.";
+			}
+		}
+	}
+	if (v0 < 2) {
+		cs2method_10467(0, 62259544);
+		cs2method_10758(15550, 62259545);
+		cs2method_10520(6316642, 62259548);
+		cs2method_10026(62259548, "No Ship");
+		v3 = "You do not have a ship in this port bay.";
+	} else if (client_configs['cfg3394'].bitcfg17083 > 0) {
+		cs2method_10467(0, 62259544);
+		cs2method_10758(15542, 62259545);
+		cs2method_10520(11573878, 62259548);
+		cs2method_10026(62259548, "Returned");
+		v3 = "This ship needs to be welcomed home.";
+	} else if (client_configs['cfg3405'].bitcfg17092 > 0) {
+		cs2method_10467(0, 62259544);
+		cs2method_10758(15546, 62259545);
+		cs2method_10520(11573878, 62259548);
+		if (client_configs['cfg3394'].bitcfg17082 == 32723 || client_configs['cfg3394'].bitcfg17082 == 32724 || client_configs['cfg3394'].bitcfg17082 == 32722) {
+			cs2method_10026(62259548, "Damaged");
+		} else {
+			cs2method_10026(62259548, "Sailing");
+		}
+		v3 = "This ship is currently on a mission.";
+	} else {
+		cs2method_10467(1, 62259544);
+		cs2method_10520(15245885, 62259548);
+		cs2method_10026(62259548, "Ready");
+		if (client_configs['cfg3406'].bitcfg17132 == 2) {
+			cs2method_10758(15541, 62259543);
+			if (script_7294(2) != -1) {
+				cs2method_10467(1, 62259492);
+			} else {
+				v3 = "This ship currently has no captain assigned.";
+			}
+		}
+	}
+	if (v0 < 3) {
+		cs2method_10467(0, 62259550);
+		cs2method_10758(15550, 62259551);
+		cs2method_10520(6316642, 62259554);
+		cs2method_10026(62259554, "No Ship");
+		v1 = "You do not have a ship in this port bay.";
+	} else if (client_configs['cfg3397'].bitcfg17094 > 0) {
+		cs2method_10467(0, 62259550);
+		cs2method_10758(15542, 62259551);
+		cs2method_10520(11573878, 62259554);
+		cs2method_10026(62259554, "Returned");
+		v1 = "This ship needs to be welcomed home.";
+	} else if (client_configs['cfg3405'].bitcfg17103 > 0) {
+		cs2method_10467(0, 62259550);
+		cs2method_10758(15546, 62259551);
+		cs2method_10520(11573878, 62259554);
+		if (client_configs['cfg3397'].bitcfg17093 == 32723 || client_configs['cfg3397'].bitcfg17093 == 32724 || client_configs['cfg3397'].bitcfg17093 == 32722) {
+			cs2method_10026(62259554, "Damaged");
+		} else {
+			cs2method_10026(62259554, "Sailing");
+		}
+		v1 = "This ship is currently on a mission.";
+	} else {
+		cs2method_10467(1, 62259550);
+		cs2method_10520(15245885, 62259554);
+		cs2method_10026(62259554, "Ready");
+		if (client_configs['cfg3406'].bitcfg17132 == 3) {
+			cs2method_10758(15541, 62259549);
+			if (script_7294(3) != -1) {
+				cs2method_10467(1, 62259492);
+			} else {
+				v1 = "This ship currently has no captain assigned.";
+			}
+		}
+	}
+	if (v0 < 4) {
+		cs2method_10467(0, 62259556);
+		cs2method_10758(15550, 62259557);
+		cs2method_10520(6316642, 62259560);
+		cs2method_10026(62259560, "No Ship");
+		v2 = "You do not have a ship in this port bay.";
+	} else if (client_configs['cfg3397'].bitcfg17105 > 0) {
+		cs2method_10467(0, 62259556);
+		cs2method_10758(15542, 62259557);
+		cs2method_10520(11573878, 62259560);
+		cs2method_10026(62259560, "Returned");
+		v2 = "This ship needs to be welcomed home.";
+	} else if (client_configs['cfg3405'].bitcfg17114 > 0) {
+		cs2method_10467(0, 62259556);
+		cs2method_10758(15546, 62259557);
+		cs2method_10520(11573878, 62259560);
+		if (client_configs['cfg3397'].bitcfg17104 == 32723 || client_configs['cfg3397'].bitcfg17104 == 32724 || client_configs['cfg3397'].bitcfg17104 == 32722) {
+			cs2method_10026(62259560, "Damaged");
+		} else {
+			cs2method_10026(62259560, "Sailing");
+		}
+		v2 = "This ship is currently on a mission.";
+	} else {
+		cs2method_10467(1, 62259556);
+		cs2method_10520(15245885, 62259560);
+		cs2method_10026(62259560, "Ready");
+		if (client_configs['cfg3406'].bitcfg17132 == 4) {
+			cs2method_10758(15541, 62259555);
+			if (script_7294(4) != -1) {
+				cs2method_10467(1, 62259492);
+			} else {
+				v2 = "This ship currently has no captain assigned.";
+			}
+		}
+	}
+	switch (client_configs['cfg3406'].bitcfg17132) {
+		case 1:
+			cs2method_21121(new function<script_8799>(int a0,object a1,int a2) {
+				script_8800(a2, a0, a1);
+				return;
+			}, (string)v4, new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(950,292));
+			break;
+		case 2:
+			cs2method_21121(new function<script_8799>(object a0,int a1,int a2) {
+				script_8800(a2, a1, a0);
+				return;
+			}, (string)v3, new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(950,292));
+			break;
+		case 3:
+			cs2method_21121(new function<script_8799>(int a0,int a1,object a2) {
+				script_8800(a0, a1, a2);
+				return;
+			}, (string)v1, new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(950,292));
+			break;
+		case 4:
+			cs2method_21121(new function<script_8799>(int a0,object a1,int a2) {
+				script_8800(a2, a0, a1);
+				return;
+			}, (string)v2, new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(950,292));
+	}
+	script_2022();
+	return;
+}

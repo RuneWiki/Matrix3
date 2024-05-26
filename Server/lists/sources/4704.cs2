@@ -1,0 +1,250 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4704() {
+	int v4 = 0;
+	int v5 = 0;
+	int v6 = -1;
+	opc_struct10985(3,0,0) v1 = cs2method_10985();
+	int v3 = v1.intpart_2;
+	int v0 = v1.intpart_1;
+	int v2 = v1.intpart_0;
+	switch (v2) {
+		case 0:
+			break;
+		case 1:
+			break;
+		case 2:
+			break;
+		case 3:
+			cs2method_10810("Your password has been updated. Please leave the world and log in again.");
+			break;
+		case 4:
+			cs2method_10810("Your account has been disabled. Check your Message Centre for details.");
+			break;
+		case 5:
+			cs2method_10810("Your account has not logged out from its last session or the server is too busy to handle your request. Please try again in a few minutes or try a different server.");
+			break;
+		case 6:
+			cs2method_10810("RuneScape has been updated! Please try again in a few minutes.");
+			break;
+		case 7:
+			cs2method_10810("This world is full. Please try back later.");
+			break;
+		case 8:
+			cs2method_10810("Unable to connect: login server offline.");
+			break;
+		case 9:
+			cs2method_10810("Login limit exceeded: too many connections from your address.");
+			break;
+		case 10:
+			cs2method_10810("Unable to connect: bad session id.");
+			break;
+		case 11:
+			cs2method_10810("Your password is an extremely common choice, and is not secure. You must change it.");
+			break;
+		case 12:
+			cs2method_10810("You need a member's account to log in to this world.");
+			break;
+		case 13:
+			cs2method_10810("Could not complete login. Please try back later.");
+			break;
+		case 14:
+			cs2method_10810("The server is being updated. Please wait a few minutes and try again.");
+			break;
+		case 15:
+			break;
+		case 16:
+			cs2method_10810("Too many incorrect logins from your address. Please wait 5 minutes before trying again.");
+			break;
+		case 17:
+			cs2method_10810("You are standing in a members-only area. To play on this world, move to a free area first.");
+			break;
+		case 18:
+			cs2method_10810("Your account has been locked. If you have not received an account recovery email, please select 'Recover Account'.");
+			break;
+		case 19:
+			cs2method_10810("Fullscreen is currently a members-only feature. To log in, either exit fullscreen via the options menu or use a member's account.");
+			break;
+		case 20:
+			cs2method_10810("Invalid loginserver requested. Please try back later.");
+			break;
+		case 21:
+			break;
+		case 22:
+			cs2method_10810("Malformed login packet. Please try again.");
+			break;
+		case 23:
+			cs2method_10810("No reply from login server. Please wait a minute and try again.");
+			break;
+		case 24:
+			cs2method_10810("Error loading your profile. Please contact customer support.");
+			break;
+		case 25:
+			cs2method_10810("Unexpected loginserver response. Please try back later.");
+			break;
+		case 26:
+			cs2method_10810("This computer's address has been blocked, as it was used to break our rules.");
+			break;
+		case 27:
+			cs2method_10810("Service unavailable.");
+			break;
+		case 28:
+			break;
+		case 29:
+			switch (v0) {
+				case 0:
+					cs2method_10810("You must have a Combat Level of at least 20 (not including Summoning) to enter a PvP world.");
+					break;
+				case 1:
+					cs2method_10810("You are currently carrying lent items and cannot enter a PvP world.");
+					break;
+				case 2:
+					cs2method_10810("You must be standing in the Wilderness or Edgeville to enter this bounty world.");
+					break;
+				case 3:
+					cs2method_10810("You must have a total skill level of 1,000 or greater to enter this world.");
+					break;
+				case 5:
+					cs2method_10810("You must have a total skill level of 1,500 or greater to enter this world.");
+					break;
+				case 6:
+					cs2method_10810("You must have a total skill level of 2,000 or greater to enter this world.");
+					break;
+				case 7:
+					cs2method_10810("You must have a total skill level of 2,400 or greater to enter this world.");
+					break;
+				case 4:
+					cs2method_10810("You must move to a safe area before you can log in to a PvP or bounty world.");
+					break;
+				case 8:
+					cs2method_10810("VIP server access is only available to Gold Premier Club members." + "<br>" + "Become a VIP today. On sale for a limited time only.");
+					break;
+				case 9:
+					cs2method_10810("This server is for staff only.");
+					break;
+				case 10:
+					cs2method_10810("You cannot enter a legacy world while in the tutorial.");
+					break;
+				default:
+					cs2method_10810("Unexpected server response. Please try back later.");
+			}
+			break;
+		case 30:
+			cs2method_10810("This is not a member's account. Please choose a 'free' world from the website to play on this account.");
+			break;
+		case 31:
+			break;
+		case 32:
+			cs2method_10810("Your account has negative membership credit. Please log into the billing system to add credit to your account.");
+			break;
+		case 33:
+			break;
+		case 34:
+			break;
+		case 35:
+			break;
+		case 36:
+			break;
+		case 37:
+			cs2method_10810("Your account is currently inaccessible. Please try again in a few minutes.");
+			break;
+		case 38:
+			break;
+		case 39:
+			cs2method_10810("The instance you tried to join no longer exists. Please try back later.");
+			break;
+		case 40:
+			cs2method_10810("You need a member's account to log in to this instance.");
+			break;
+		case 41:
+			cs2method_10810("The instance you tried to join is full. Please try back later.");
+			break;
+		case 42:
+			break;
+		case 43:
+			break;
+		case 44:
+			cs2method_10810("Our systems are currently unavailable. Please try again in a few minutes.");
+			break;
+		case 48:
+			cs2method_10810("Client token failure - please reload this page.");
+			break;
+		case 45:
+			switch (v3) {
+				case 0:
+					switch (v0) {
+						case 0:
+							cs2method_10810("You must be near the TzHaar Fight Pits entrance to enter a global match.");
+							break;
+						default:
+							cs2method_10810("Unable to log in. Please try back later.");
+					}
+					break;
+				case 1:
+					switch (v0) {
+						case 1:
+							cs2method_10810("There was an error connecting to your meeting room. Please try again.");
+							break;
+						case 2:
+							cs2method_10810("You need a higher rank to enter that private tent.");
+							break;
+						case 3:
+							cs2method_10810("You need an invitation to enter that private room.");
+							break;
+						default:
+							cs2method_10810("Unable to log in. Please try back later.");
+					}
+					break;
+				case 5:
+					switch (v0) {
+						case 1:
+							cs2method_10810("You need to clear some inventory space to enter a Flash Factory game.");
+							break;
+						case 2:
+							cs2method_10810("You must dismiss your follower before entering a Flash Factory game.");
+					}
+					break;
+				case 6:
+					switch (v0) {
+						case 0:
+							cs2method_10810("The instance you attempted to join is full.");
+							break;
+						case 1:
+							cs2method_10810("You can't join that instance as you or your follower are carrying items.");
+							break;
+						default:
+							cs2method_10810("Unable to log in. Please try using a different world.");
+					}
+					break;
+				default:
+					cs2method_10810("Unable to log in. Please try back later.");
+			}
+			break;
+		case 46:
+			cs2method_10810("This instance is marked for deletion/rebuild. Please try again in a few minutes.");
+			break;
+		case 47:
+		case 51:
+			cs2method_10810("You need to validate your email address to log in.");
+			break;
+		case 50:
+			cs2method_10810("The Jagex Account Guardian is protecting this account." + "<br>" + "<br>" + "This device is not recognised." + "<br>" + "<br>" + "No new devices can be added for up to 24 hours as too many failed attempts to answer the security questions have been made." + "<br>" + "<br>" + "During this time access will still be granted to any devices already trusted.");
+			break;
+		case 52:
+			cs2method_10810("You need to validate this device to use with your account. Please follow the instructions in the window that will open shortly.");
+			break;
+		case 55:
+			cs2method_10810("Could not complete login. Access to this account is not authorised.");
+	}
+	return;
+}

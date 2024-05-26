@@ -1,0 +1,79 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9742(int a0) {
+	object v0;
+	object v3;
+	object v2 = "";
+	object v1 = "";
+	switch (a0) {
+		case 27:
+		case 29:
+		case 28:
+		case 31:
+		case 30:
+		case 34:
+		case 35:
+		case 32:
+		case 33:
+		case 38:
+		case 36:
+		case 37:
+			v3 = idx17mapData('i', 's', 8530, a0);
+			v0 = "This category cannot be frozen.";
+			break;
+		case 1:
+		case 2:
+		case 3:
+		case 4:
+		case 5:
+		case 6:
+		case 7:
+		case 8:
+		case 9:
+		case 10:
+		case 11:
+		case 12:
+		case 13:
+		case 14:
+		case 15:
+		case 17:
+		case 16:
+		case 19:
+		case 18:
+		case 21:
+		case 20:
+		case 23:
+		case 22:
+		case 25:
+		case 24:
+		case 26:
+			v3 = idx17mapData('i', 's', 8530, a0);
+			if (script_9740(a0) == 1) {
+				v0 = "This category is " + "<col=ffffff>" + "frozen" + "</col>" + "." + "<br>" + "<br>" + "You will not receive prizes in this category.";
+			} else {
+				v0 = "This category is " + "<col=ffffff>" + "active" + "</col>" + "." + "<br>" + "<br>" + "You can get prizes in this category.";
+			}
+			break;
+		default:
+			v3 = "Select a category";
+			v0 = "Click on a category to freeze or unfreeze it.";
+	}
+	script_10074(a0);
+	cs2method_10026(82117169, v3);
+	cs2method_10026(82117170, v0);
+	if (cs2_configs['cfg4098'] == 1 && client_configs['cfg1451'].bitcfg4345 == 0) {
+		cs2_configs['cfg4096'] = 1;
+		script_6974();
+	}
+	return;
+}

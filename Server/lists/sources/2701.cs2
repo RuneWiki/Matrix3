@@ -1,0 +1,74 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2701(int a0,int a1,int a2) {
+	cs2method_11007(48627718, 883);
+	if (cs2method_10441(a0, 2) == 1) {
+		cs2method_10026(57868303, "Accept changes to anti-aliasing?");
+	} else if (cs2method_10441(a0, 3) == 1) {
+		cs2method_10026(57868303, "Accept changes to bloom?");
+	} else {
+		cs2method_10026(57868303, "Accept this setting?");
+	}
+	cs2method_10467(0, 48627718);
+	script_1151(57868306);
+	script_1151(57868309);
+	cs2method_20680(new function<script_2702>(int a0,int a1,int a2) {
+		if (a2 == 1) {
+			script_1166(a1);
+			cs2method_10520(16777215, a0);
+		} else {
+			script_1151(a1);
+			cs2method_10520(16750623, a0);
+		}
+		return;
+	}, 1, new WidgetPointer(883,18), new WidgetPointer(883,19), "1II", new WidgetPointer(883,17));
+	cs2method_20750(new function<script_2702>(int a0,int a1,int a2) {
+		if (a2 == 1) {
+			script_1166(a1);
+			cs2method_10520(16777215, a0);
+		} else {
+			script_1151(a1);
+			cs2method_10520(16750623, a0);
+		}
+		return;
+	}, 0, new WidgetPointer(883,18), new WidgetPointer(883,19), "1II", new WidgetPointer(883,17));
+	cs2method_20680(new function<script_2702>(int a0,int a1,int a2) {
+		if (a2 == 1) {
+			script_1166(a1);
+			cs2method_10520(16777215, a0);
+		} else {
+			script_1151(a1);
+			cs2method_10520(16750623, a0);
+		}
+		return;
+	}, 1, new WidgetPointer(883,21), new WidgetPointer(883,22), "1II", new WidgetPointer(883,20));
+	cs2method_20750(new function<script_2702>(int a0,int a1,int a2) {
+		if (a2 == 1) {
+			script_1166(a1);
+			cs2method_10520(16777215, a0);
+		} else {
+			script_1151(a1);
+			cs2method_10520(16750623, a0);
+		}
+		return;
+	}, 0, new WidgetPointer(883,21), new WidgetPointer(883,22), "1II", new WidgetPointer(883,20));
+	cs2method_20390(new function<script_2704>(int a0,int a1,int a2,int a3,int a4) {
+		script_2705(a0, a2, a4, 0, a1, a3);
+		return;
+	}, 1, a0, 1, a1, a2, "1ii11", new WidgetPointer(883,17));
+	cs2method_20390(new function<script_2704>(int a0,int a1,int a2,int a3,int a4) {
+		script_2705(a1, a0, a2, 0, a3, a4);
+		return;
+	}, 0, a0, 1, a1, a2, "1ii11", new WidgetPointer(883,20));
+	return;
+}

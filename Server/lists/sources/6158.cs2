@@ -1,0 +1,56 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6158() {
+	cs2method_10026(83492869, cs2method_10379(cs2_configs['cfg1909']));
+	cs2method_10026(83492866, cs2method_10379(cs2_configs['cfg1916']));
+	switch (cs2_configs['cfg1917']) {
+		case 1:
+			cs2method_10758(10708, 83492872);
+			break;
+		case 2:
+			cs2method_10758(10709, 83492872);
+			break;
+		case 3:
+			cs2method_10758(10710, 83492872);
+			break;
+		default:
+			cs2method_10758(1726, 83492872);
+	}
+	object v2 = "Runesphere Active!";
+	switch (cs2_configs['cfg1918']) {
+		case 1:
+			cs2method_10467(0, 83492873);
+			object v1 = "Runesphere Active on the Bottom Floor!";
+			cs2method_21121(new function<script_7779>(object a0,int a1,int a2) {
+				script_7788(a0, a1, -1, a2, 25, 190);
+				return;
+			}, new WidgetPointer(1274,9), new WidgetPointer(1274,10), (string)v1, "IIs", new WidgetPointer(1274,9));
+			break;
+		case 2:
+			cs2method_10467(0, 83492873);
+			object v0 = "Runesphere Active on the Middle Floor!";
+			cs2method_21121(new function<script_7779>(int a0,int a1,object a2) {
+				script_7788(a2, a0, -1, a1, 25, 190);
+				return;
+			}, new WidgetPointer(1274,9), new WidgetPointer(1274,10), (string)v0, "IIs", new WidgetPointer(1274,9));
+			break;
+		default:
+			cs2method_10467(1, 83492873);
+	}
+	if (cs2_configs['cfg1918'] != 0) {
+		cs2method_10467(0, 83492873);
+	} else {
+		cs2method_10467(1, 83492873);
+	}
+	return;
+}

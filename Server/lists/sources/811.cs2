@@ -1,0 +1,106 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_811(int a0) {
+	int v0 = -1;
+	int v6 = -1;
+	int v12 = -1;
+	int v9 = -1;
+	int v4 = -1;
+	int v1 = -1;
+	int v5 = a0;
+	script_181_struct(5,0,0) v8 = script_181(v5);
+	int v3 = v8.intpart_4;
+	int v13 = v8.intpart_3;
+	int v7 = v8.intpart_2;
+	int v2 = v8.intpart_1;
+	int v10 = v8.intpart_0;
+	int v11 = idx17mapData('i', 'J', 7751, a0);
+	cs2method_10026(v10, idx22mapAttribute(v11, 3656));
+	if (idx22mapAttribute(v11, 3658) != -1) {
+		cs2method_10039(idx22mapAttribute(v11, 3658), -1, v7);
+	} else {
+		cs2method_10758(idx22mapAttribute(v11, 3659), v7);
+		int v14 = v7;
+		opc_struct10411(2,0,0) v15 = cs2method_10411(v14);
+		cs2method_10283(v15.intpart_0, v15.intpart_1, 0, 0, v7);
+	}
+	if (script_1038(v11) == 1) {
+		cs2method_10026(v2, "Claimed");
+		cs2method_10758(10260, v13);
+		int v14 = 7893;
+		cs2method_10758(v14, v3);
+		cs2method_20069(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a0, a1);
+			return;
+		}, new WidgetPointer(-32768,3), v14, "Id", new WidgetPointer(v3));
+		cs2method_21103(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), v14, "Id", new WidgetPointer(v3));
+		cs2method_20680(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), v14, "Id", new WidgetPointer(v3));
+		cs2method_20750(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), v14, "Id", new WidgetPointer(v3));
+		script_710();
+	} else if (idx22mapAttribute(v11, 3657) > 0) {
+		cs2method_10026(v2, (string)script_8003(idx22mapAttribute(v11, 3657)) + " GP");
+		cs2method_10758(10257, v13);
+		int v15 = 7891;
+		cs2method_10758(v15, v3);
+		cs2method_21103(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a0, a1);
+			return;
+		}, new WidgetPointer(-32768,3), v15, "Id", new WidgetPointer(v3));
+		cs2method_20750(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), v15, "Id", new WidgetPointer(v3));
+		int v16 = 13984;
+		cs2method_20069(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), v16, "Id", new WidgetPointer(v3));
+		int v14 = 7894;
+		cs2method_20680(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a0, a1);
+			return;
+		}, new WidgetPointer(-32768,3), v14, "Id", new WidgetPointer(v3));
+	} else {
+		cs2method_10758(10257, v13);
+		int v15 = 7891;
+		cs2method_10758(v15, v3);
+		cs2method_21103(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a0, a1);
+			return;
+		}, new WidgetPointer(-32768,3), v15, "Id", new WidgetPointer(v3));
+		cs2method_20750(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), v15, "Id", new WidgetPointer(v3));
+		int v14 = 13984;
+		cs2method_20069(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a0, a1);
+			return;
+		}, new WidgetPointer(-32768,3), v14, "Id", new WidgetPointer(v3));
+		int v16 = 7894;
+		cs2method_20680(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a0, a1);
+			return;
+		}, new WidgetPointer(-32768,3), v16, "Id", new WidgetPointer(v3));
+	}
+	return;
+}

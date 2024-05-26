@@ -1,0 +1,63 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9495(int a0) {
+	if (cs2_configs['cfg3891'] < 0) {
+		script_9494();
+		return;
+	}
+	cs2method_10467(0, 49086527);
+	if (cs2_configs['cfg3891'] == 0) {
+		if (cs2_configs['cfg3892'] == 1) {
+		} else {
+			cs2method_10026(49086534, "PvP enabled");
+			cs2method_20162(new function<script_9496>() {
+				int v2 = cs2method_10823(49086527);
+				int v0 = cs2method_10236(49086527);
+				int v5 = 26;
+				int v4 = cs2method_10060(24, cs2method_10939(cs2method_10643(49086534), cs2method_10744(49086534)));
+				if (v2 <= v5 && v0 <= v4) {
+					cs2method_20162(new function<none>() {
+					}, "", new WidgetPointer(749,63));
+					cs2method_10283(v4, v5, 0, 0, 49086527);
+				} else {
+					int v3 = cs2method_10461(v2, 5);
+					int v1 = cs2method_10461(v0, 5);
+					if (v3 < v5) {
+						v3 = v5;
+					}
+					if (v1 < v4) {
+						v1 = v4;
+					}
+					cs2method_10283(v1, v3, 0, 0, 49086527);
+				}
+				return;
+			}, "", new WidgetPointer(749,63));
+		}
+	} else if (client_configs['cfg3975'].bitcfg21127 == 1 || cs2_configs['cfg3892'] == 1) {
+		cs2method_10283(cs2method_10060(24, cs2method_10939(cs2method_10643(49086534), cs2method_10744(49086534))), 26, 0, 0, 49086527);
+	} else {
+		cs2method_10283(300, 100, 0, 0, a0);
+	}
+	script_9498();
+	cs2method_20162(new function<script_9497>() {
+		if (cs2_configs['cfg3891'] <= 0) {
+			cs2method_20162(new function<none>() {
+			}, "", new WidgetPointer(749,63));
+		} else {
+			script_9498();
+			cs2_configs['cfg3891'] = cs2method_10461(cs2_configs['cfg3891'], 1);
+		}
+		return;
+	}, "", new WidgetPointer(749,63));
+	return;
+}

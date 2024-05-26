@@ -1,0 +1,48 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_852(int a0) {
+	if (a0 == 10) {
+		return 0;
+	}
+	if (a0 == 0) {
+		return client_configs['cfg2494'].bitcfg12215;
+	}
+	if (a0 == 1) {
+		return client_configs['cfg2494'].bitcfg12219;
+	}
+	if (a0 == 2) {
+		return client_configs['cfg2495'].bitcfg12223;
+	}
+	if (a0 == 3) {
+		return client_configs['cfg2495'].bitcfg12227;
+	}
+	if (a0 == 4) {
+		return client_configs['cfg2495'].bitcfg12231;
+	}
+	if (a0 == 5) {
+		return client_configs['cfg2496'].bitcfg12235;
+	}
+	if (a0 == 6) {
+		return client_configs['cfg2496'].bitcfg12239;
+	}
+	if (a0 == 7) {
+		return client_configs['cfg2497'].bitcfg12245;
+	}
+	if (a0 == 8) {
+		return client_configs['cfg2497'].bitcfg12247;
+	}
+	if (a0 == 9) {
+		return client_configs['cfg2497'].bitcfg12251;
+	}
+	return 0;
+}

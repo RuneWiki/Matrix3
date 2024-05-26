@@ -1,0 +1,138 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_7022(int a0,int a1) {
+	object v0 = idx17mapData('i', 's', 6747, a0);
+	if (cs2method_10265(v0) > 0 || a0 == 1337) {
+		return a0;
+	}
+	int v1 = script_7980(a1);
+	if (cs2method_10262() == 2) {
+		switch (v1) {
+			case 1:
+				cs2_configs['cfg2066'] = 48;
+				return 48;
+			case 2:
+				cs2_configs['cfg2067'] = 64;
+				return 64;
+			case 3:
+				cs2_configs['cfg2068'] = 34;
+				return 34;
+			case 4:
+				cs2_configs['cfg2069'] = 35;
+				return 35;
+			case 5:
+				cs2_configs['cfg2070'] = 36;
+				return 36;
+			case 6:
+				cs2_configs['cfg2071'] = 37;
+				return 37;
+			case 7:
+				cs2_configs['cfg2072'] = 38;
+				return 38;
+			case 8:
+				cs2_configs['cfg2073'] = 39;
+				return 39;
+			case 9:
+				cs2_configs['cfg2074'] = 40;
+				return 40;
+			case 10:
+				cs2_configs['cfg2075'] = 41;
+				return 41;
+			case 11:
+				cs2_configs['cfg2076'] = 32;
+				return 32;
+			case 12:
+				cs2_configs['cfg2077'] = 49;
+				return 49;
+		}
+	} else if (cs2method_10262() == 1) {
+		switch (v1) {
+			case 1:
+				cs2_configs['cfg2066'] = 16;
+				return 16;
+			case 2:
+				cs2_configs['cfg2067'] = 17;
+				return 17;
+			case 3:
+				cs2_configs['cfg2068'] = 18;
+				return 18;
+			case 4:
+				cs2_configs['cfg2069'] = 19;
+				return 19;
+			case 5:
+				cs2_configs['cfg2070'] = 20;
+				return 20;
+			case 6:
+				cs2_configs['cfg2071'] = 21;
+				return 21;
+			case 7:
+				cs2_configs['cfg2072'] = 22;
+				return 22;
+			case 8:
+				cs2_configs['cfg2073'] = 23;
+				return 23;
+			case 9:
+				cs2_configs['cfg2074'] = 24;
+				return 24;
+			case 10:
+				cs2_configs['cfg2075'] = 25;
+				return 25;
+			case 11:
+				cs2_configs['cfg2076'] = 1001;
+				return 1001;
+			case 12:
+				cs2_configs['cfg2077'] = 1002;
+				return 1002;
+		}
+	} else {
+		switch (v1) {
+			case 1:
+				cs2_configs['cfg2066'] = 16;
+				return 16;
+			case 2:
+				cs2_configs['cfg2067'] = 17;
+				return 17;
+			case 3:
+				cs2_configs['cfg2068'] = 18;
+				return 18;
+			case 4:
+				cs2_configs['cfg2069'] = 19;
+				return 19;
+			case 5:
+				cs2_configs['cfg2070'] = 20;
+				return 20;
+			case 6:
+				cs2_configs['cfg2071'] = 21;
+				return 21;
+			case 7:
+				cs2_configs['cfg2072'] = 22;
+				return 22;
+			case 8:
+				cs2_configs['cfg2073'] = 23;
+				return 23;
+			case 9:
+				cs2_configs['cfg2074'] = 24;
+				return 24;
+			case 10:
+				cs2_configs['cfg2075'] = 25;
+				return 25;
+			case 11:
+				cs2_configs['cfg2076'] = 26;
+				return 26;
+			case 12:
+				cs2_configs['cfg2077'] = 27;
+				return 27;
+		}
+	}
+	return 0;
+}

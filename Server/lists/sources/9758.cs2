@@ -1,0 +1,33 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9758() {
+	object v0;
+	cs2method_10026(82116934, cs2method_10379(cs2_configs['cfg4097']));
+	int v1 = script_9744();
+	object v2 = "null";
+	if (v1 == 0) {
+		v0 = "The number of Hearts of Ice you have. Click on the categories button for more information.";
+		cs2method_10026(82116820, "");
+	} else if (cs2_configs['cfg4097'] > v1) {
+		v0 = "The number of Hearts of Ice you have. Click on the categories button for more information." + "<br>" + "Currently, you will use " + (string)cs2method_10379(v1) + " per game.";
+		cs2method_10026(82116820, "Categories frozen: " + (string)cs2method_10379(v1));
+	} else {
+		v0 = "The number of Hearts of Ice you have. Click on the categories button for more information." + "<br>" + "You do not have enough left to freeze your chosen categories.";
+		cs2method_10026(82116820, "Categories frozen: " + "<col=ff0000>" + (string)cs2method_10379(v1) + "</col>");
+	}
+	cs2method_21121(new function<script_10007>(int a0,object a1,int a2) {
+		script_10008(a1, a2, a0);
+		return;
+	}, (string)v0, new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(1253,197));
+	return;
+}

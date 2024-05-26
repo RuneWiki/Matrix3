@@ -1,0 +1,103 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4462(int a0) {
+	int v0 = 72745040;
+	int v15 = 72745070;
+	int v7 = 72745069;
+	int v11 = 72745039;
+	int v3 = 72745098;
+	int v18 = 72745071;
+	int v23 = a0;
+	script_7816_struct(6,0,0) v8 = script_7816(v23);
+	int v4 = v8.intpart_5;
+	int v10 = v8.intpart_4;
+	int v14 = v8.intpart_3;
+	int v12 = v8.intpart_2;
+	int v9 = v8.intpart_1;
+	int v1 = v8.intpart_0;
+	int v19 = 0;
+	int v13 = 0;
+	int v21 = 19;
+	object v20 = "";
+	int v22 = cs2method_10968(cs2method_10823(v9), 19);
+	int v17 = 0;
+	cs2method_10273(v1);
+	cs2method_10273(v14);
+	if (cs2method_10570() == 1) {
+		cs2method_10026(v10, "");
+		cs2method_10467(1, v4);
+		v13 = cs2method_10158();
+		while (v19 < v13) {
+			int v25 = cs2method_10051(v19, 19);
+			object v24 = cs2method_10514(v19);
+			cs2method_10606(v1, 4, cs2method_10163(v1));
+			cs2method_10797(v24);
+			cs2method_10063(0, cs2method_10051(v19, v21), 0, 0);
+			cs2method_10013(16384, v21, 2, 0);
+			cs2method_10811(10787197);
+			cs2method_10692(17813);
+			cs2method_10173(1);
+			cs2method_10200("<col=ffffff>" + (string)v24);
+			cs2method_10057(1, "Remove ban");
+			cs2method_20703(new function<script_4580>() {
+				return;
+			}, "");
+			cs2method_11105(0, 0, 0);
+			if (cs2method_10038(v19, 2) != 0) {
+				cs2method_10606(v14, 3, cs2method_10163(v14));
+				cs2method_10013(16384, v21, 2, 0);
+				cs2method_10063(0, cs2method_10051(v19, v21), 0, 0);
+				cs2method_10811(2302496);
+				cs2method_10238(1);
+				cs2method_10002(128);
+			}
+			v19 = cs2method_10060(v19, 1);
+		}
+		while (v19 < v22) {
+			int v2 = cs2method_10051(v19, v21);
+			if (cs2method_10038(v19, 2) != 0) {
+				cs2method_10606(v14, 3, cs2method_10163(v14));
+				cs2method_10013(16384, v21, 2, 0);
+				cs2method_10063(0, v2, 0, 0);
+				cs2method_10811(2302496);
+				cs2method_10238(1);
+				cs2method_10002(128);
+			}
+			v19 = cs2method_10060(v19, 1);
+		}
+	} else {
+		cs2method_10467(0, v4);
+		cs2method_10026(v10, "You must be part of a clan to" + "<br>" + "view the ban list.");
+		cs2method_10273(v1);
+		cs2method_10273(v14);
+	}
+	cs2method_10467(0, v12);
+	int v16 = cs2method_10051(v21, cs2method_11048(v22, v13));
+	int v5 = cs2method_10718(v9);
+	cs2method_11130(cs2method_10461(cs2method_10236(cs2method_10155(v9)), 16), v16, v9);
+	int v6 = cs2method_10872(v5, cs2method_10970(v9));
+	cs2method_10251(0, v6, v9);
+	script_31(v12, v9, 5666, 5663, 5664, 5665, 5686, 5685);
+	if (v16 > cs2method_10823(v9)) {
+		cs2method_10467(0, v12);
+		cs2method_10283(16, 53, 1, 1, v9);
+		script_72(v12, v9, v6);
+	} else {
+		cs2method_10467(1, v12);
+		cs2method_10283(0, 53, 1, 1, v9);
+		cs2method_11130(0, 0, v9);
+		cs2method_10251(0, 0, v9);
+		script_72(v12, v9, 0);
+	}
+	return;
+}

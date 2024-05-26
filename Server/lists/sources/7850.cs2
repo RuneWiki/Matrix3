@@ -1,0 +1,24 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_7850(object a0) {
+	int v1 = cs2method_10265(a0);
+	if (v1 > 12) {
+		return 0;
+	}
+	for (int v0 = 0; v0 < v1; v0 = cs2method_10060(v0, 1)) {
+		if (cs2method_10368(0, "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 \u00a0_-", cs2method_11025(v0, cs2method_10060(v0, 1), a0)) == -1) {
+			return 0;
+		}
+	}
+	return 1;
+}

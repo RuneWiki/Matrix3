@@ -1,0 +1,26 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2625(int a0,int a1) {
+	if (a0 == 84) {
+		script_2621();
+	} else {
+		if (cs2method_10609(55705600) == 0) {
+			if (cs2method_10761(cs2method_10235(a1), 0, "abcdefghijklmnopqrst") != -1) {
+				script_2621();
+			} else {
+				return;
+			}
+		}
+	}
+	return;
+}

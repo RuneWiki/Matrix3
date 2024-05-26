@@ -1,0 +1,69 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7242() {
+	int v1 = 0;
+	int v0 = -1;
+	switch (client_configs['cfg3392']) {
+		case 1:
+			v0 = 1010;
+			break;
+		case 2:
+			v0 = 1011;
+			break;
+		case 3:
+			v0 = 1011;
+			break;
+		case 4:
+			v0 = 1012;
+			break;
+		case 5:
+			v0 = 1013;
+	}
+	if (v0 == -1) {
+		return;
+	}
+	while (v1 < cs2method_10924(v0)) {
+		if (cs2method_11038(60031273, v1) == 1) {
+			if (v1 == client_configs['cfg3391']) {
+				cs2method_10310(15596);
+				cs2method_20674(new function<script_7284>(int a0,int a1,int a2,int a3) {
+					script_7285(a2, a3, a1, a0);
+					return;
+				}, 1, 1, new WidgetPointer(-32768,3), -2147483643, "iiIi");
+				cs2method_20884(new function<script_7284>(int a0,int a1,int a2,int a3) {
+					script_7285(a2, a1, a0, a3);
+					return;
+				}, 1, 0, new WidgetPointer(-32768,3), -2147483643, "iiIi");
+			} else {
+				cs2method_10310(15594);
+				cs2method_20674(new function<script_7284>(int a0,int a1,int a2,int a3) {
+					script_7285(a3, a1, a2, a0);
+					return;
+				}, 0, 1, new WidgetPointer(-32768,3), -2147483643, "iiIi");
+				cs2method_20884(new function<script_7284>(int a0,int a1,int a2,int a3) {
+					script_7285(a3, a1, a2, a0);
+					return;
+				}, 0, 0, new WidgetPointer(-32768,3), -2147483643, "iiIi");
+			}
+		}
+		if (cs2method_11038(60031274, v1) == 1) {
+			if (v1 == client_configs['cfg3391']) {
+				cs2method_10811(16368752);
+			} else {
+				cs2method_10811(16379093);
+			}
+		}
+		v1 = cs2method_10060(v1, 1);
+	}
+	return;
+}

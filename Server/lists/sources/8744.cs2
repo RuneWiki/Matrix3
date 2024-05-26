@@ -1,0 +1,28 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8744(int a0) {
+	if (client_configs['cfg3680'].bitcfg22315 == 1) {
+		return;
+	}
+	if (a0 == 6 || a0 == 7) {
+		script_8702(9, a0);
+		if (cs2_configs['cfg3477'] == 1) {
+			cs2_configs['cfg3478'] = a0;
+			script_8732();
+		}
+		script_9960("Layout Saved", "Layout successfully saved as '" + (string)script_9934(a0) + "'", "OK");
+	} else {
+		return;
+	}
+	return;
+}

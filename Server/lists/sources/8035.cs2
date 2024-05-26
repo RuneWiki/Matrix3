@@ -1,0 +1,61 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8035() {
+	switch (cs2_configs['cfg3680']) {
+		case 1:
+			if (cs2method_10823(93323264) < 261) {
+				cs2method_10467(1, 55902211);
+				cs2method_10467(0, 93323272);
+			} else {
+				cs2method_10467(0, 55902211);
+				cs2method_10467(1, 93323272);
+			}
+			break;
+		case 2:
+			if (cs2method_10823(93323265) < 261) {
+				cs2method_10467(1, 56295439);
+				cs2method_10467(0, 93323272);
+			} else {
+				cs2method_10467(0, 56295439);
+				cs2method_10467(1, 93323272);
+			}
+			break;
+		case 3:
+			if (cs2method_10823(93323266) < 261) {
+				cs2method_10467(1, 56033290);
+				cs2method_10467(0, 93323272);
+			} else {
+				cs2method_10467(0, 56033290);
+				cs2method_10467(1, 93323272);
+			}
+			break;
+		case 4:
+			if (cs2method_10823(93323267) < 261) {
+				cs2method_10467(1, 2555906);
+				cs2method_10467(0, 93323272);
+			} else {
+				cs2method_10467(0, 2555906);
+				cs2method_10467(1, 93323272);
+			}
+			break;
+		case 5:
+			if (cs2method_10823(93323268) < 261) {
+				cs2method_10467(1, 55050243);
+				cs2method_10467(0, 93323272);
+			} else {
+				cs2method_10467(0, 55050243);
+				cs2method_10467(1, 93323272);
+			}
+	}
+	return;
+}

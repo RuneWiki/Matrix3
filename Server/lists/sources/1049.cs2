@@ -1,0 +1,198 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1049(int a0,int a1) {
+	int v3;
+	int v16;
+	int v13;
+	int v9 = -1;
+	int v7 = -1;
+	int v12 = -1;
+	int v10 = -1;
+	int v1 = -1;
+	int v11 = -1;
+	int v2 = 0;
+	script_4590_struct(6,0,0) v6 = script_4590();
+	int v15 = v6.intpart_5;
+	int v0 = v6.intpart_4;
+	int v14 = v6.intpart_3;
+	int v8 = v6.intpart_2;
+	int v17 = v6.intpart_1;
+	int v4 = v6.intpart_0;
+	int v5 = a1;
+	if (client_configs['cfg3680'].bitcfg22315 == 1) {
+		switch (a0) {
+			case 1:
+				v2 = 1;
+				break;
+			case 2:
+				v2 = 1;
+				int v20 = 18;
+				script_1050(0, v20, "");
+				break;
+			case 3:
+				v2 = 3;
+				break;
+			case 4:
+				v2 = 3;
+				int v21 = 18;
+				if (cs2method_10588() > 0) {
+					script_1050(2, v21, "");
+				} else {
+					script_7171(18, "You aren't in a Friends Chat channel.");
+					return;
+				}
+				break;
+			case 5:
+				v2 = 4;
+				break;
+			case 6:
+				v2 = 4;
+				int v18 = 18;
+				if (v4 >= 0) {
+					if (v17 >= v8) {
+						script_1050(8, v18, "");
+					} else {
+						cs2method_11102(43, 0, "Your rank is not high enough to chat in the Clan Chat.");
+						return;
+					}
+				} else {
+					script_7171(18, "You aren't in a Clan Chat channel.");
+					return;
+				}
+				break;
+			case 7:
+				v2 = 5;
+				break;
+			case 8:
+				v2 = 5;
+				int v19 = 18;
+				if (v14 >= 0) {
+					if (v0 >= v15) {
+						script_1050(10, v19, "");
+					} else {
+						cs2method_11102(43, 0, "Guests cannot chat in this visited Clan channel.");
+						return;
+					}
+				} else {
+					script_7171(18, "You aren't a guest in a Clan Chat channel.");
+					return;
+				}
+		}
+		cs2_configs['cfg41'] = v2;
+		script_3781(v2);
+		script_1558(18, 0);
+		script_8491(18);
+		return;
+	}
+	if (a0 == 1) {
+		int v18 = 18;
+		/* 
+			mgi.tools.jagdecs2.DecompilerException: No documentation for:CALL_CS2	8515
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:198)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+				at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+				at tests.Main.main(Main.java:69)
+			
+		 */
+	}
+	if (a0 == 2) {
+		int v18 = 18;
+		script_1050(0, v18, "");
+	} else if (a0 == 4) {
+		if (a1 == 18) {
+			v16 = 18;
+		} else {
+			v16 = 20;
+		}
+		if (cs2method_10588() > 0) {
+			script_1050(2, v16, "");
+		} else {
+			script_7171(18, "You aren't in a Friends Chat channel.");
+			return;
+		}
+	} else if (a0 == 6) {
+		if (a1 == 18) {
+			v13 = 18;
+		} else {
+			v13 = 21;
+		}
+		if (v4 >= 0) {
+			if (v17 >= v8) {
+				script_1050(8, v13, "");
+			} else {
+				cs2method_11102(43, 0, "Your rank is not high enough to chat in the Clan Chat.");
+				return;
+			}
+		} else {
+			script_7171(18, "You aren't in a Clan Chat channel.");
+			return;
+		}
+	} else {
+		if (a0 == 7) {
+			int v18 = 22;
+			/* 
+				mgi.tools.jagdecs2.DecompilerException: No documentation for:CALL_CS2	8515
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:198)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+					at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+					at tests.Main.main(Main.java:69)
+				
+			 */
+		}
+		if (a0 == 8) {
+			if (a1 == 18) {
+				v3 = 18;
+			} else {
+				v3 = 22;
+			}
+			if (v14 >= 0) {
+				if (v0 >= v15) {
+					script_1050(10, v3, "");
+				} else {
+					cs2method_11102(43, 0, "Guests cannot chat in this visited Clan channel.");
+					return;
+				}
+			} else {
+				script_7171(18, "You aren't a guest in a Clan Chat channel.");
+				return;
+			}
+		}
+	}
+	if (a0 == 3) {
+		int v18 = 20;
+		/* 
+			mgi.tools.jagdecs2.DecompilerException: No documentation for:CALL_CS2	8515
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:198)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+				at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+				at tests.Main.main(Main.java:69)
+			
+		 */
+	}
+	if (a0 == 5) {
+		int v18 = 21;
+		/* 
+			mgi.tools.jagdecs2.DecompilerException: No documentation for:CALL_CS2	8515
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:198)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+				at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+				at tests.Main.main(Main.java:69)
+			
+		 */
+	}
+	return;
+}

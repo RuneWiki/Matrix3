@@ -1,0 +1,71 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1234(int a0) {
+	int v9 = 0;
+	int v4 = 0;
+	int v2 = cs2method_10924(7717);
+	int v7 = 0;
+	int v5 = 0;
+	int v13 = 0;
+	int v6 = 0;
+	int v12 = 0;
+	int v1 = 0;
+	int v11 = 0;
+	int v10 = 0;
+	int v3 = -1;
+	switch (a0) {
+		case 8:
+			cs2method_10433("Active Layout");
+			break;
+		case 9:
+			cs2method_10433("Visible Layout");
+			break;
+		case 6:
+			cs2method_10433("Cutom1 Layout");
+			break;
+		case 7:
+			cs2method_10433("Custom2 Layout");
+			break;
+		default:
+			cs2method_10433("Invalid Layout");
+			return;
+	}
+	while (v4 < v2) {
+		int v0 = idx17mapData('i', 'i', 7717, v4);
+		int v8 = idx17mapData('i', 'J', 7716, v0);
+		if (v8 != -1) {
+			cs2method_10433(idx22mapAttribute(v8, 3493) + ":");
+			int v15 = a0;
+			int v17 = v0;
+			script_8701_struct(8,0,0) v16 = script_8701(v15, v17);
+			int v23 = v16.intpart_7;
+			int v14 = v16.intpart_6;
+			int v20 = v16.intpart_5;
+			int v24 = v16.intpart_4;
+			int v19 = v16.intpart_3;
+			int v21 = v16.intpart_2;
+			int v22 = v16.intpart_1;
+			int v18 = v16.intpart_0;
+			cs2method_10433("    $x- " + (string)cs2method_10379(v18));
+			cs2method_10433("    $y- " + (string)cs2method_10379(v22));
+			cs2method_10433("    $width- " + (string)cs2method_10379(v21));
+			cs2method_10433("    $height- " + (string)cs2method_10379(v19));
+			cs2method_10433("    $prev_tab- " + (string)cs2method_10379(v24));
+			cs2method_10433("    $next_tab- " + (string)cs2method_10379(v20));
+			cs2method_10433("    $vis- " + (string)cs2method_10379(v14));
+			cs2method_10433("");
+		}
+		v4 = cs2method_10060(v4, 1);
+	}
+	return;
+}

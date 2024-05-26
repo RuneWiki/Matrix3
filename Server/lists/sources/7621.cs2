@@ -1,0 +1,56 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_7621_struct(5,0,0) script_7621(int a0) {
+	int v3 = -1;
+	int v4 = -1;
+	int v2 = -1;
+	int v1 = -1;
+	int v0 = -1;
+	switch (a0) {
+		case 1:
+			v3 = 21364753;
+			v4 = 21364754;
+			v2 = 21364739;
+			v1 = 21364751;
+			v0 = 21364752;
+			break;
+		case 2:
+			v3 = 21364758;
+			v4 = 21364759;
+			v2 = 21364741;
+			v1 = 21364756;
+			v0 = 21364757;
+			break;
+		case 3:
+			v3 = 21364763;
+			v4 = 21364764;
+			v2 = 21364742;
+			v1 = 21364761;
+			v0 = 21364762;
+			break;
+		case 4:
+			v3 = 21364776;
+			v4 = 21364777;
+			v2 = 21364740;
+			v1 = 21364774;
+			v0 = 21364775;
+			break;
+		case 5:
+			v3 = 21364768;
+			v4 = 21364769;
+			v2 = 21364779;
+			v1 = 21364766;
+			v0 = 21364767;
+	}
+	return new script_7621_struct(v3, v4, v2, v1, v0);
+}

@@ -1,0 +1,322 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5918(object a0,int a1) {
+	script_8841(43, 1);
+	cs2method_20162(new function<script_5922>(int a0,int a1) {
+		if (cs2method_10133() > a0) {
+			cs2method_10467(1, 36896768);
+		}
+		return;
+	}, cs2method_10060(cs2method_10133(), 216), cs2method_10133(), "ii", new WidgetPointer(563,0));
+	cs2method_10467(0, 36896768);
+	if (cs2method_10846(a0, "rs:preset:rent6:02w") == 0 || cs2method_10846(a0, "rs:preset:rent7:02w") == 0 || cs2method_10846(a0, "rs:preset:rent8:02w") == 0 || cs2method_10846(a0, "rs:preset:rent9:02w") == 0 || cs2method_10846(a0, "rs:preset:rent10:02w") == 0) {
+		cs2method_10467(1, 36896773);
+		cs2method_10467(0, 36896771);
+		switch (a1) {
+			case 1:
+				cs2method_10467(1, 36896768);
+				cs2method_10026(36896794, "Sorry, we were unable to process your request. Please try again later.");
+				cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+				return;
+			case 2:
+				cs2method_10026(36896794, "You've purchased 2 weeks of rental time for a preset slot.");
+				cs2method_10810("You've purchased 2 weeks of rental time for a preset slot.");
+				break;
+			case 3:
+				cs2method_10026(36896794, "You've purchased 2 weeks of rental time for a preset slot. It will be added to your account shortly.");
+				cs2method_10810("Your 2 weeks of rental time for your preset slot will be added to your account shortly.");
+				break;
+			case 4:
+				cs2method_10467(1, 36896768);
+				script_9554(36896769, "Sorry", 36896774, 36896770, 21218);
+				cs2method_10026(36896794, "We were unable to process your request. Please try again later.");
+				cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+				return;
+			case 5:
+				cs2method_10467(1, 36896768);
+				script_9554(36896769, "Sorry", 36896774, 36896770, 21218);
+				cs2method_10026(36896794, "We were unable to process your request. Please try again later.");
+				cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+				return;
+			case 6:
+				cs2method_10467(1, 36896768);
+				script_9554(36896769, "Sorry", 36896774, 36896770, 21218);
+				cs2method_10026(36896794, "You can't purchase any more of this item.");
+				cs2method_10810("Sorry, you can't purchase any more of this item.");
+				return;
+			case 7:
+				cs2method_10467(1, 36896768);
+				script_9554(36896769, "Sorry", 36896774, 36896770, 21218);
+				cs2method_10026(36896794, "We were unable to process your request. Please try again later.");
+				cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+				return;
+		}
+	} else if (cs2method_10846(a0, "rs:preset:rent6:04w") == 0 || cs2method_10846(a0, "rs:preset:rent7:04w") == 0 || cs2method_10846(a0, "rs:preset:rent8:04w") == 0 || cs2method_10846(a0, "rs:preset:rent9:04w") == 0 || cs2method_10846(a0, "rs:preset:rent10:04w") == 0) {
+		cs2method_10467(1, 36896773);
+		cs2method_10467(0, 36896771);
+		switch (a1) {
+			case 1:
+				cs2method_10467(1, 36896768);
+				cs2method_10026(36896794, "Sorry, we were unable to process your request. Please try again later.");
+				cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+				return;
+			case 2:
+				cs2method_10026(36896794, "You've purchased 4 weeks of rental time for a preset slot.");
+				cs2method_10810("You've purchased 4 weeks of rental time for a preset slot.");
+				break;
+			case 3:
+				cs2method_10026(36896794, "You've purchased 4 weeks of rental time for a preset slot. It will be added to your account shortly.");
+				cs2method_10810("Your 4 weeks of rental time for your preset slot will be added to your account shortly.");
+				break;
+			case 4:
+				cs2method_10467(1, 36896768);
+				script_9554(36896769, "Sorry", 36896774, 36896770, 21218);
+				cs2method_10026(36896794, "We were unable to process your request. Please try again later.");
+				cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+				return;
+			case 5:
+				cs2method_10467(1, 36896768);
+				script_9554(36896769, "Sorry", 36896774, 36896770, 21218);
+				cs2method_10026(36896794, "We were unable to process your request. Please try again later.");
+				cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+				return;
+			case 6:
+				cs2method_10467(1, 36896768);
+				script_9554(36896769, "Sorry", 36896774, 36896770, 21218);
+				cs2method_10026(36896794, "You can't purchase any more of this item.");
+				cs2method_10810("Sorry, you can't purchase any more of this item.");
+				return;
+			case 7:
+				cs2method_10467(1, 36896768);
+				script_9554(36896769, "Sorry", 36896774, 36896770, 21218);
+				cs2method_10026(36896794, "We were unable to process your request. Please try again later.");
+				cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+				return;
+		}
+	} else if (cs2method_10846(a0, "rs:preset:rent6:08w") == 0 || cs2method_10846(a0, "rs:preset:rent7:08w") == 0 || cs2method_10846(a0, "rs:preset:rent8:08w") == 0 || cs2method_10846(a0, "rs:preset:rent9:08w") == 0 || cs2method_10846(a0, "rs:preset:rent10:08w") == 0) {
+		cs2method_10467(1, 36896773);
+		cs2method_10467(0, 36896771);
+		switch (a1) {
+			case 1:
+				cs2method_10467(1, 36896768);
+				cs2method_10026(36896794, "Sorry, we were unable to process your request. Please try again later.");
+				cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+				return;
+			case 2:
+				cs2method_10026(36896794, "You've purchased 8 weeks of rental time for a preset slot.");
+				cs2method_10810("You've purchased 8 weeks of rental time for a preset slot.");
+				break;
+			case 3:
+				cs2method_10026(36896794, "You've purchased 8 weeks of rental time for a preset slot. It will be added to your account shortly.");
+				cs2method_10810("Your 8 weeks of rental time for your preset slot will be added to your account shortly.");
+				break;
+			case 4:
+				cs2method_10467(1, 36896768);
+				script_9554(36896769, "Sorry", 36896774, 36896770, 21218);
+				cs2method_10026(36896794, "We were unable to process your request. Please try again later.");
+				cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+				return;
+			case 5:
+				cs2method_10467(1, 36896768);
+				script_9554(36896769, "Sorry", 36896774, 36896770, 21218);
+				cs2method_10026(36896794, "We were unable to process your request. Please try again later.");
+				cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+				return;
+			case 6:
+				cs2method_10467(1, 36896768);
+				script_9554(36896769, "Sorry", 36896774, 36896770, 21218);
+				cs2method_10026(36896794, "You can't purchase any more of this item.");
+				cs2method_10810("Sorry, you can't purchase any more of this item.");
+				return;
+			case 7:
+				cs2method_10467(1, 36896768);
+				script_9554(36896769, "Sorry", 36896774, 36896770, 21218);
+				cs2method_10026(36896794, "We were unable to process your request. Please try again later.");
+				cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+				return;
+		}
+	} else if (cs2method_10846(a0, "rs:preset:rent6:16w") == 0 || cs2method_10846(a0, "rs:preset:rent7:16w") == 0 || cs2method_10846(a0, "rs:preset:rent8:16w") == 0 || cs2method_10846(a0, "rs:preset:rent9:16w") == 0 || cs2method_10846(a0, "rs:preset:rent10:16w") == 0) {
+		cs2method_10467(1, 36896773);
+		cs2method_10467(0, 36896771);
+		switch (a1) {
+			case 1:
+				cs2method_10467(1, 36896768);
+				cs2method_10026(36896794, "Sorry, we were unable to process your request. Please try again later.");
+				cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+				return;
+			case 2:
+				cs2method_10026(36896794, "You've purchased 16 weeks of rental time for a preset slot.");
+				cs2method_10810("You've purchased 16 weeks of rental time for a preset slot.");
+				break;
+			case 3:
+				cs2method_10026(36896794, "You've purchased 16 weeks of rental time for a preset slot. It will be added to your account shortly.");
+				cs2method_10810("Your 16 weeks of rental time for your preset slot will be added to your account shortly.");
+				break;
+			case 4:
+				cs2method_10467(1, 36896768);
+				script_9554(36896769, "Sorry", 36896774, 36896770, 21218);
+				cs2method_10026(36896794, "We were unable to process your request. Please try again later.");
+				cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+				return;
+			case 5:
+				cs2method_10467(1, 36896768);
+				script_9554(36896769, "Sorry", 36896774, 36896770, 21218);
+				cs2method_10026(36896794, "We were unable to process your request. Please try again later.");
+				cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+				return;
+			case 6:
+				cs2method_10467(1, 36896768);
+				script_9554(36896769, "Sorry", 36896774, 36896770, 21218);
+				cs2method_10026(36896794, "You can't purchase any more of this item.");
+				cs2method_10810("Sorry, you can't purchase any more of this item.");
+				return;
+			case 7:
+				cs2method_10467(1, 36896768);
+				script_9554(36896769, "Sorry", 36896774, 36896770, 21218);
+				cs2method_10026(36896794, "We were unable to process your request. Please try again later.");
+				cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+				return;
+		}
+	} else if (cs2method_10846(a0, "rs:preset:rent6:24w") == 0 || cs2method_10846(a0, "rs:preset:rent7:24w") == 0 || cs2method_10846(a0, "rs:preset:rent8:24w") == 0 || cs2method_10846(a0, "rs:preset:rent9:24w") == 0 || cs2method_10846(a0, "rs:preset:rent10:24w") == 0) {
+		cs2method_10467(1, 36896773);
+		cs2method_10467(0, 36896771);
+		switch (a1) {
+			case 1:
+				cs2method_10467(1, 36896768);
+				cs2method_10026(36896794, "Sorry, we were unable to process your request. Please try again later.");
+				cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+				return;
+			case 2:
+				cs2method_10026(36896794, "You've purchased 24 weeks of rental time for a preset slot.");
+				cs2method_10810("You've purchased 24 weeks of rental time for a preset slot.");
+				break;
+			case 3:
+				cs2method_10026(36896794, "You've purchased 24 weeks of rental time for a preset slot. It will be added to your account shortly.");
+				cs2method_10810("Your 24 weeks of rental time for your preset slot will be added to your account shortly.");
+				break;
+			case 4:
+				cs2method_10467(1, 36896768);
+				script_9554(36896769, "Sorry", 36896774, 36896770, 21218);
+				cs2method_10026(36896794, "We were unable to process your request. Please try again later.");
+				cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+				return;
+			case 5:
+				cs2method_10467(1, 36896768);
+				script_9554(36896769, "Sorry", 36896774, 36896770, 21218);
+				cs2method_10026(36896794, "We were unable to process your request. Please try again later.");
+				cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+				return;
+			case 6:
+				cs2method_10467(1, 36896768);
+				script_9554(36896769, "Sorry", 36896774, 36896770, 21218);
+				cs2method_10026(36896794, "You can't purchase any more of this item.");
+				cs2method_10810("Sorry, you can't purchase any more of this item.");
+				return;
+			case 7:
+				cs2method_10467(1, 36896768);
+				script_9554(36896769, "Sorry", 36896774, 36896770, 21218);
+				cs2method_10026(36896794, "We were unable to process your request. Please try again later.");
+				cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+				return;
+		}
+	} else if (cs2method_10846(a0, "rs:preset:rent6:32w") == 0 || cs2method_10846(a0, "rs:preset:rent7:32w") == 0 || cs2method_10846(a0, "rs:preset:rent8:32w") == 0 || cs2method_10846(a0, "rs:preset:rent9:32w") == 0 || cs2method_10846(a0, "rs:preset:rent10:32w") == 0) {
+		cs2method_10467(1, 36896773);
+		cs2method_10467(0, 36896771);
+		switch (a1) {
+			case 1:
+				cs2method_10467(1, 36896768);
+				cs2method_10026(36896794, "Sorry, we were unable to process your request. Please try again later.");
+				cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+				return;
+			case 2:
+				cs2method_10026(36896794, "You've purchased 32 weeks of rental time for a preset slot.");
+				cs2method_10810("You've purchased 32 weeks of rental time for a preset slot.");
+				break;
+			case 3:
+				cs2method_10026(36896794, "You've purchased 32 weeks of rental time for a preset slot. It will be added to your account shortly.");
+				cs2method_10810("Your 32 weeks of rental time for your preset slot will be added to your account shortly.");
+				break;
+			case 4:
+				cs2method_10467(1, 36896768);
+				script_9554(36896769, "Sorry", 36896774, 36896770, 21218);
+				cs2method_10026(36896794, "We were unable to process your request. Please try again later.");
+				cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+				return;
+			case 5:
+				cs2method_10467(1, 36896768);
+				script_9554(36896769, "Sorry", 36896774, 36896770, 21218);
+				cs2method_10026(36896794, "We were unable to process your request. Please try again later.");
+				cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+				return;
+			case 6:
+				cs2method_10467(1, 36896768);
+				script_9554(36896769, "Sorry", 36896774, 36896770, 21218);
+				cs2method_10026(36896794, "You can't purchase any more of this item.");
+				cs2method_10810("Sorry, you can't purchase any more of this item.");
+				return;
+			case 7:
+				cs2method_10467(1, 36896768);
+				script_9554(36896769, "Sorry", 36896774, 36896770, 21218);
+				cs2method_10026(36896794, "We were unable to process your request. Please try again later.");
+				cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+				return;
+		}
+	} else if (cs2method_10846(a0, "rs:preset:perm6") == 0 || cs2method_10846(a0, "rs:preset:perm7") == 0 || cs2method_10846(a0, "rs:preset:perm8") == 0 || cs2method_10846(a0, "rs:preset:perm9") == 0 || cs2method_10846(a0, "rs:preset:perm10") == 0) {
+		cs2method_10467(1, 36896773);
+		cs2method_10467(0, 36896772);
+		switch (a1) {
+			case 1:
+				cs2method_10467(1, 36896768);
+				cs2method_10026(36896806, "Sorry, we were unable to process your request. Please try again later.");
+				cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+				return;
+			case 2:
+				cs2method_10026(36896806, "You've purchased a permanent unlock for a preset slot.");
+				cs2method_10810("You've purchased a permanent unlock for a preset slot.");
+				break;
+			case 3:
+				cs2method_10026(36896806, "You've purchased a permanent unlock for a preset slot. It will be added to your account shortly.");
+				cs2method_10810("Your permanent unlock for your preset slot will be added to your account shortly.");
+				break;
+			case 4:
+				cs2method_10467(1, 36896768);
+				script_9554(36896769, "Sorry", 36896774, 36896770, 21218);
+				cs2method_10026(36896806, "We were unable to process your request. Please try again later.");
+				cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+				return;
+			case 5:
+				cs2method_10467(1, 36896768);
+				script_9554(36896769, "Sorry", 36896774, 36896770, 21218);
+				cs2method_10026(36896806, "We were unable to process your request. Please try again later.");
+				cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+				return;
+			case 6:
+				cs2method_10467(1, 36896768);
+				script_9554(36896769, "Sorry", 36896774, 36896770, 21218);
+				cs2method_10026(36896806, "You can't purchase any more of this item.");
+				cs2method_10810("Sorry, you can't purchase any more of this item.");
+				return;
+			case 7:
+				cs2method_10467(1, 36896768);
+				script_9554(36896769, "Sorry", 36896774, 36896770, 21218);
+				cs2method_10026(36896806, "We were unable to process your request. Please try again later.");
+				cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+				return;
+		}
+	} else {
+		cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+		cs2method_10569();
+		return;
+	}
+	return;
+}

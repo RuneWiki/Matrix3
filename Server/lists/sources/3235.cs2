@@ -1,0 +1,29 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3235() {
+	int v0 = 39059523;
+	if (cs2method_10135() == 1) {
+		v0 = 63897621;
+	}
+	if (cs2_configs['cfg200'] > 0) {
+		cs2method_20390(new function<script_2944>() {
+			script_2945(0);
+			return;
+		}, "", new WidgetPointer(v0));
+		cs2method_20162(new function<none>() {
+		}, "", new WidgetPointer(v0));
+		cs2method_10345();
+		script_2954();
+	}
+	return;
+}

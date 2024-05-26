@@ -1,0 +1,34 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_9979(int a0,int a1) {
+	int v1 = 8634;
+	if (script_9976(a0) == 1) {
+		v1 = 8633;
+		a0 = script_9978(a0);
+	}
+	int v0 = idx17mapData('i', 'J', v1, a0);
+	if (v0 == -1) {
+		return -1;
+	}
+	switch (a1) {
+		case 37814278:
+			return idx22mapAttribute(v0, 4199);
+		case 37814308:
+			return idx22mapAttribute(v0, 4200);
+		case 93782049:
+			return idx22mapAttribute(v0, 4197);
+		case 37879830:
+			return idx22mapAttribute(v0, 4198);
+	}
+	return -1;
+}

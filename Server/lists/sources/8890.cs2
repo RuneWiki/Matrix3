@@ -1,0 +1,56 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8890() {
+	int v10 = 1;
+	script_8891_struct(4,0,0) v2 = script_8891(v10);
+	cs2method_10026(97910832, script_8893(v2.intpart_0, v2.intpart_1, v2.intpart_2, v2.intpart_3));
+	int v4 = 2;
+	script_8891_struct(4,0,0) v1 = script_8891(v4);
+	cs2method_10026(97910833, script_8893(v1.intpart_0, v1.intpart_1, v1.intpart_2, v1.intpart_3));
+	cs2method_10026(97910834, cs2method_10379(client_configs['cfg3672']));
+	int v6 = 0;
+	object v9 = "0";
+	script_8892_struct(1,1,0) v5 = script_8892();
+	object v7 = v5.objectpart_0;
+	int v0 = v5.intpart_0;
+	object v8 = "Saradomin leads by ";
+	if (v0 == 2) {
+		v8 = "Zamorak leads by ";
+	} else {
+		if (v0 == 0) {
+			v8 = "";
+		}
+	}
+	cs2method_10026(97910801, (string)v8 + (string)v7);
+	if (v0 == 1) {
+		cs2method_10520(38911, 97910801);
+	} else if (v0 == 2) {
+		cs2method_10520(13303808, 97910801);
+	} else {
+		cs2method_10520(16777215, 97910801);
+	}
+	if (client_configs['cfg3673'] == 0 && client_configs['cfg3674'] == 0) {
+		return;
+	}
+	int v3 = script_8894();
+	if (v3 > 0) {
+		v3 = cs2method_10060(v3, 1);
+	}
+	cs2method_10283(cs2method_10122(v3, 100, 352), 32, 0, 0, 97910841);
+	cs2method_10283(cs2method_10122(v3, 100, 352), 32, 0, 0, 97910840);
+	cs2method_10283(cs2method_10122(v3, 100, 352), 32, 0, 0, 97910842);
+	cs2method_10283(cs2method_10461(352, cs2method_10122(v3, 100, 352)), 32, 0, 0, 97910838);
+	cs2method_10283(cs2method_10461(352, cs2method_10122(v3, 100, 352)), 32, 0, 0, 97910837);
+	cs2method_10283(cs2method_10461(352, cs2method_10122(v3, 100, 352)), 32, 0, 0, 97910839);
+	return;
+}

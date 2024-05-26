@@ -1,0 +1,59 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_352(int a0) {
+	int v0 = -1;
+	switch (a0) {
+		case 1:
+			v0 = client_configs['cfg811'];
+			break;
+		case 2:
+			v0 = client_configs['cfg812'];
+			break;
+		case 3:
+			v0 = client_configs['cfg813'];
+			break;
+		case 4:
+			v0 = client_configs['cfg814'];
+			break;
+		case 5:
+			v0 = client_configs['cfg815'];
+			break;
+		case 6:
+			v0 = client_configs['cfg816'];
+			break;
+		case 7:
+			v0 = client_configs['cfg817'];
+			break;
+		case 8:
+			v0 = client_configs['cfg818'];
+			break;
+		case 9:
+			v0 = client_configs['cfg819'];
+			break;
+		case 10:
+			v0 = client_configs['cfg820'];
+			break;
+		case 11:
+			v0 = client_configs['cfg821'];
+			break;
+		case 12:
+			v0 = client_configs['cfg822'];
+			break;
+		case 13:
+			v0 = client_configs['cfg4446'];
+			break;
+		case 14:
+			v0 = client_configs['cfg4447'];
+	}
+	return v0;
+}

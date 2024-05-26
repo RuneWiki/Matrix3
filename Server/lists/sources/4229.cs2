@@ -1,0 +1,28 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_4229(object a0,int a1) {
+	flow_0:
+		IF (cs2method_10936(93, 2883) > 0 || cs2method_10640(94, 3) == 2883 || cs2method_10936(93, 4827) > 0) 
+			GOTO	flow_1
+		IF (cs2method_10640(94, 3) == 4827 && client_configs['cfg2773'] >= a1) 
+			GOTO	flow_2
+		GOTO	flow_3
+	flow_1:
+	flow_2:
+		cs2method_10797((string)a0 + "<br>" + "Kills: " + (string)cs2method_10379(a1));
+		return;
+	flow_3:
+		cs2method_10797((string)a0 + "<br>" + "<col=ff0000>" + "Kills: " + (string)cs2method_10379(a1));
+		return;
+}

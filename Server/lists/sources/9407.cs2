@@ -1,0 +1,22 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9407() {
+	if (client_configs['cfg3975'].bitcfg21122 == 1) {
+		cs2method_10026(46268688, "Disable PvP");
+		cs2method_10026(46268505, "PvP Enabled");
+	} else {
+		cs2method_10026(46268688, "Enable PvP");
+		cs2method_10026(46268505, "PvP Disabled");
+	}
+	return;
+}

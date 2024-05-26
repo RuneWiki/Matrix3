@@ -1,0 +1,86 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6175(int a0,int a1) {
+	cs2_configs['cfg1911'] = a0;
+	if (cs2_configs['cfg1910'] < 1 && cs2method_11038(a1, 0) == 1) {
+		if (a0 == 0) {
+			cs2method_10310(10685);
+		} else {
+			cs2method_10310(10695);
+		}
+	}
+	if (cs2_configs['cfg1910'] < 2 && cs2method_11038(a1, 1) == 1) {
+		if (a0 == 1) {
+			cs2method_10310(10686);
+		} else {
+			cs2method_10310(10696);
+		}
+	}
+	if (cs2_configs['cfg1910'] < 3 && cs2method_11038(a1, 2) == 1) {
+		if (a0 == 2) {
+			cs2method_10310(10687);
+		} else {
+			cs2method_10310(10697);
+		}
+	}
+	if (cs2_configs['cfg1910'] < 4 && cs2method_11038(a1, 3) == 1) {
+		if (a0 == 3) {
+			cs2method_10310(10688);
+		} else {
+			cs2method_10310(10698);
+		}
+	}
+	if (cs2_configs['cfg1910'] < 5 && cs2method_11038(a1, 4) == 1) {
+		if (a0 == 4) {
+			cs2method_10310(10689);
+		} else {
+			cs2method_10310(10699);
+		}
+	}
+	if (cs2_configs['cfg1910'] < 6 && cs2method_11038(a1, 5) == 1) {
+		if (a0 == 5) {
+			cs2method_10310(10690);
+		} else {
+			cs2method_10310(10700);
+		}
+	}
+	if (cs2_configs['cfg1910'] < 7 && cs2method_11038(a1, 6) == 1) {
+		if (a0 == 6) {
+			cs2method_10310(10691);
+		} else {
+			cs2method_10310(10701);
+		}
+	}
+	if (cs2_configs['cfg1910'] < 8 && cs2method_11038(a1, 7) == 1) {
+		if (a0 == 7) {
+			cs2method_10310(10692);
+		} else {
+			cs2method_10310(10702);
+		}
+	}
+	if (cs2_configs['cfg1910'] < 9 && cs2method_11038(a1, 8) == 1) {
+		if (a0 == 8) {
+			cs2method_10310(10693);
+		} else {
+			cs2method_10310(10703);
+		}
+	}
+	if (cs2_configs['cfg1910'] < 10 && cs2method_11038(a1, 9) == 1) {
+		if (a0 == 9) {
+			cs2method_10310(10694);
+		} else {
+			cs2method_10310(10704);
+		}
+	}
+	return;
+}

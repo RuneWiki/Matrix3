@@ -1,0 +1,36 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_7672(int a0,int a1) {
+	if (cs2method_10038(cs2method_10461(cs2method_10133(), a1), 40) < 20 && cs2method_10180() == 1) {
+		flow_2:
+			IF (cs2_configs['cfg2753'] == 1) 
+				GOTO	flow_3
+			GOTO	flow_4
+		flow_3:
+			IF (a0 != 92078115) 
+				GOTO	flow_6
+		flow_4:
+			IF (cs2_configs['cfg2753'] == 2 && a0 != 92078146) 
+				GOTO	flow_6
+			GOTO	flow_7
+		flow_6:
+			cs2method_10467(1, a0);
+			return;
+		flow_7:
+			cs2method_10467(0, a0);
+	} else {
+		cs2method_10467(1, a0);
+	}
+	return;
+}

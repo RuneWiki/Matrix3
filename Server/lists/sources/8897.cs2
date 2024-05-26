@@ -1,0 +1,35 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8897() {
+	cs2method_10026(97910834, cs2method_10379(client_configs['cfg3672']));
+	switch (cs2_configs['cfg2795']) {
+		default:
+			cs2_configs['cfg2795'] = cs2method_10060(cs2_configs['cfg2795'], 1);
+			break;
+		case 100:
+			script_8898();
+			break;
+		case 200:
+			script_8901();
+			break;
+		case 300:
+			script_8902();
+			break;
+		case 400:
+			script_8903();
+			break;
+		case 500:
+			script_8899();
+	}
+	return;
+}

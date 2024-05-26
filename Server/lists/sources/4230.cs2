@@ -1,0 +1,72 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4230(int a0,int a1,int a2,int a3,int a4) {
+	if (a0 < 1) {
+		cs2method_10336(20542, 32440322);
+		cs2method_10336(20542, 32440335);
+		cs2method_10336(20542, 32440348);
+		cs2method_10336(20542, 32440361);
+	} else {
+		cs2method_10336(20544, 32440322);
+		cs2method_10336(20544, 32440335);
+		cs2method_10336(20544, 32440348);
+		cs2method_10336(20544, 32440361);
+	}
+	if (a2 < 1) {
+		cs2method_10336(20542, 32440323);
+		cs2method_10336(20542, 32440336);
+		cs2method_10336(20542, 32440349);
+		cs2method_10336(20542, 32440362);
+	} else {
+		cs2method_10336(20545, 32440323);
+		cs2method_10336(20545, 32440336);
+		cs2method_10336(20545, 32440349);
+		cs2method_10336(20545, 32440362);
+	}
+	if (a3 < 1) {
+		cs2method_10336(20542, 32440324);
+		cs2method_10336(20542, 32440337);
+		cs2method_10336(20542, 32440350);
+		cs2method_10336(20542, 32440363);
+	} else {
+		cs2method_10336(20543, 32440324);
+		cs2method_10336(20543, 32440337);
+		cs2method_10336(20543, 32440350);
+		cs2method_10336(20543, 32440363);
+	}
+	if (a4 != 10) {
+		cs2method_10336(20542, 32440373);
+	} else {
+		if (a1 < 1) {
+			cs2method_10336(20542, 32440373);
+		}
+	}
+	cs2method_10026(32440377, cs2method_10379(a0));
+	cs2method_10026(32440380, cs2method_10379(a0));
+	cs2method_10026(32440383, cs2method_10379(a0));
+	cs2method_10026(32440386, cs2method_10379(a0));
+	cs2method_10026(32440378, cs2method_10379(a2));
+	cs2method_10026(32440381, cs2method_10379(a2));
+	cs2method_10026(32440384, cs2method_10379(a2));
+	cs2method_10026(32440387, cs2method_10379(a2));
+	cs2method_10026(32440379, cs2method_10379(a3));
+	cs2method_10026(32440382, cs2method_10379(a3));
+	cs2method_10026(32440385, cs2method_10379(a3));
+	cs2method_10026(32440388, cs2method_10379(a3));
+	if (a4 != 10) {
+		cs2method_10026(32440389, "0");
+	} else {
+		cs2method_10026(32440389, cs2method_10379(a1));
+	}
+	return;
+}

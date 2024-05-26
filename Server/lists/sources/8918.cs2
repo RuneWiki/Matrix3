@@ -1,0 +1,114 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8918(int a0,int a1,int a2,int a3) {
+	cs2_configs['cfg2818'] = cs2method_10060(cs2_configs['cfg2818'], 1);
+	if (client_configs['cfg3667'].bitcfg18730 == 1) {
+		script_8920(a3);
+	} else {
+		if (client_configs['cfg3667'].bitcfg18730 == 2) {
+			script_8922(a3);
+		}
+	}
+	switch (cs2_configs['cfg2818']) {
+		default:
+			return;
+		case 0:
+		case 285:
+		case 135:
+		case 15:
+		case 270:
+		case 150:
+		case 30:
+		case 315:
+		case 165:
+		case 45:
+		case 300:
+		case 180:
+		case 60:
+		case 345:
+		case 195:
+		case 75:
+		case 330:
+		case 210:
+		case 90:
+		case 225:
+		case 105:
+		case 255:
+		case 240:
+		case 120:
+			cs2method_10704(0, a2);
+			cs2method_10704(150, a1);
+			cs2method_10704(150, a0);
+			break;
+		case 275:
+		case 140:
+		case 5:
+		case 155:
+		case 20:
+		case 260:
+		case 305:
+		case 170:
+		case 35:
+		case 50:
+		case 290:
+		case 185:
+		case 200:
+		case 65:
+		case 350:
+		case 80:
+		case 320:
+		case 335:
+		case 95:
+		case 215:
+		case 110:
+		case 230:
+		case 125:
+		case 245:
+			cs2method_10704(150, a2);
+			cs2method_10704(0, a1);
+			cs2method_10704(150, a0);
+			break;
+		case 10:
+		case 280:
+		case 130:
+		case 25:
+		case 145:
+		case 265:
+		case 175:
+		case 310:
+		case 40:
+		case 160:
+		case 190:
+		case 55:
+		case 295:
+		case 205:
+		case 70:
+		case 340:
+		case 220:
+		case 85:
+		case 325:
+		case 100:
+		case 235:
+		case 250:
+		case 115:
+		case 355:
+			cs2method_10704(150, a2);
+			cs2method_10704(150, a1);
+			cs2method_10704(0, a0);
+			break;
+		case 360:
+			cs2method_10467(1, a3);
+			cs2_configs['cfg2818'] = 0;
+	}
+	return;
+}

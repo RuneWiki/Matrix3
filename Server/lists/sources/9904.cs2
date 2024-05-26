@@ -1,0 +1,57 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9904(int a0,int a1,int a2) {
+	int v2 = 0;
+	int v1 = 0;
+	int v3 = 0;
+	int v4 = 0;
+	int v5 = 0;
+	switch (a2) {
+		case 6:
+			v1 = client_configs['cfg4298'];
+			break;
+		case 7:
+			v1 = client_configs['cfg4299'];
+			break;
+		case 8:
+			v1 = client_configs['cfg4300'];
+			break;
+		case 9:
+			v1 = client_configs['cfg4301'];
+			break;
+		case 10:
+			v1 = client_configs['cfg4302'];
+	}
+	int v0 = cs2method_10461(v1, cs2method_11115());
+	if (v0 <= 0) {
+		script_8800(a0, a1, "Rent or permanently unlock this preset slot.");
+	} else if (v0 > 1440) {
+		int v6 = cs2method_10968(v0, 1440);
+		if (v6 > 7) {
+			if (v6 > 365) {
+				script_8800(a0, a1, "Rental time remaining: " + "<col=7ec100>" + "> 1 year." + "</col>");
+			} else {
+				script_8800(a0, a1, "Rental time remaining: " + "<col=7ec100>" + (string)cs2method_10379(v6) + " days." + "</col>");
+			}
+		} else if (v6 > 1) {
+			script_8800(a0, a1, "Rental time remaining: " + "<col=fecf28>" + (string)cs2method_10379(v6) + " days." + "</col>");
+		} else {
+			script_8800(a0, a1, "Rental time remaining: " + "<col=fecf28>" + "1 day." + "</col>");
+		}
+	} else {
+		int v7 = cs2method_10968(v0, 60);
+		int v6 = cs2method_10038(v0, 60);
+		script_8800(a0, a1, "Rental time remaining: " + "<col=d20000>" + (string)cs2method_10379(v7) + "h " + (string)cs2method_10379(v6) + "m." + "</col>");
+	}
+	return;
+}

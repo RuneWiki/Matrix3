@@ -1,0 +1,42 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+?? script_4415() {
+	cs2method_10026(72548507, cs2method_10504());
+	cs2method_10026(72548371, "Game time:" + "<br>" + script_4337(clan_configs['cfg0']));
+	cs2method_10026(72548387, cs2method_10910(cs2method_11049()));
+	if (clan_configs['cfg3'].bitcfg8805 > 0) {
+		cs2method_10026(72548388, cs2method_10379(clan_configs['cfg3'].bitcfg8805));
+	}
+	cs2method_10026(72548389, cs2method_10379(cs2method_10232()));
+	if (clan_configs['cfg3'].bitcfg8803 == 0) {
+		cs2method_10026(72548357, "This clan is not recruiting.");
+	} else {
+		if (clan_configs['cfg3'].bitcfg8803 == 1) {
+			cs2method_10026(72548357, "This clan is recruiting.");
+		}
+	}
+	script_4332(72548448, 72548458);
+	script_4334(72548359, 72548360);
+	script_4336(72548440);
+	script_4343(72548441);
+	int v0 = 72548390;
+	/* 
+		mgi.tools.jagdecs2.DecompilerException: No documentation for:CALL_CS2	4329
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:198)
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+			at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+			at tests.Main.main(Main.java:69)
+		
+	 */
+}

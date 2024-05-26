@@ -1,0 +1,24 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8171(int a0,int a1) {
+	if (cs2method_11038(a1, a0) == 1) {
+		if (client_configs['cfg3814'].bitcfg19925 == 1) {
+			cs2method_10310(18842);
+			script_8800(a1, a0, "Customisation is disabled. Click here" + "<br>" + "to enable customisation.");
+		} else {
+			cs2method_10310(18840);
+			script_8800(a1, a0, "Customisation is enabled.  Click here" + "<br>" + "to disable customisation.");
+		}
+	}
+	return;
+}

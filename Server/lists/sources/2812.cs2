@@ -1,0 +1,21 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2812(int a0,int a1) {
+	int v1 = cs2method_10690(a0);
+	int v0 = cs2method_10872(cs2method_11048(cs2method_10060(v1, cs2method_10051(a1, 1)), 225), 255);
+	if (v0 == 225 || v0 == 255) {
+		cs2method_20162(load function<2812>, cs2method_10461(0, a1), new WidgetPointer(a0), "iI", new WidgetPointer(a0));
+	}
+	cs2method_10704(v0, a0);
+	return;
+}

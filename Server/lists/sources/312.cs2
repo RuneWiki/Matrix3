@@ -1,0 +1,46 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_312(int a0,object a1,int a2) {
+	int v0 = -1;
+	int v1 = -1;
+	switch (a0) {
+		case 1:
+			v0 = 44433435;
+			v1 = 44433436;
+			break;
+		case 2:
+			v0 = 44433437;
+			v1 = 44433438;
+			break;
+		case 3:
+			v0 = 44433439;
+			v1 = 44433440;
+			break;
+		case 4:
+			v0 = 44433441;
+			v1 = 44433442;
+			break;
+		case 5:
+			v0 = 44433443;
+			v1 = 44433444;
+	}
+	if (v0 != -1) {
+		if (a2 == 0) {
+			cs2method_10026(v1, "-");
+		} else {
+			cs2method_10026(v1, cs2method_10379(a2));
+		}
+		cs2method_10026(v0, a1);
+	}
+	return;
+}

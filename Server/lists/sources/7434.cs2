@@ -1,0 +1,21 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_7434_struct(6,1,0) script_7434(int a0) {
+	if (a0 == 31129616) {
+		return new script_7434_struct(31129629, 31129630, -20, 20, 31129615, cs2_configs['cfg171'], "Drag response:");
+	}
+	if (a0 == 31129633) {
+		return new script_7434_struct(31129645, 31129646, 1, 50, 31129632, cs2_configs['cfg1272'], "Speed:");
+	}
+	return new script_7434_struct(-1, -1, 0, 1, -1, 0, "");
+}

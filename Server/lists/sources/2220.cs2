@@ -1,0 +1,60 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2220() {
+	if (client_configs['cfg2943'].bitcfg14974 == 1) {
+		cs2method_10467(1, 61014137);
+	} else {
+		cs2method_10467(0, 61014137);
+	}
+	if (client_configs['cfg2943'].bitcfg14975 == 1) {
+		cs2method_10467(1, 61014138);
+	} else {
+		cs2method_10467(0, 61014138);
+	}
+	if (client_configs['cfg2943'].bitcfg14976 == 1) {
+		cs2method_10467(1, 61014139);
+	} else {
+		cs2method_10467(0, 61014139);
+	}
+	cs2method_10026(61014170, cs2method_10379(cs2_configs['cfg1126']));
+	cs2method_10026(61014164, cs2method_10379(cs2_configs['cfg1127']));
+	cs2method_10026(61014158, cs2method_10379(cs2_configs['cfg1128']));
+	cs2method_10026(61014128, cs2method_10379(cs2_configs['cfg1129']));
+	cs2method_10026(61014152, cs2method_10379(cs2_configs['cfg1131']));
+	cs2method_10026(61014146, cs2method_10379(cs2_configs['cfg1130']));
+	cs2method_10026(61014171, "Total Workers: " + (string)cs2method_10379(cs2_configs['cfg1135']));
+	cs2method_10026(61014131, (string)cs2method_10379(client_configs['cfg2961']) + "/15");
+	cs2method_10026(61014133, (string)cs2method_10379(client_configs['cfg2962']) + "/15");
+	cs2method_10026(61014132, (string)cs2method_10379(client_configs['cfg2960']) + "/15");
+	cs2method_10026(61014136, (string)cs2method_10379(client_configs['cfg2963']) + "/7");
+	cs2method_10026(61014134, (string)cs2method_10379(client_configs['cfg2964']) + "/7");
+	cs2method_10026(61014135, (string)cs2method_10379(client_configs['cfg2965']) + "/7");
+	script_2221();
+	cs2method_10026(61014036, "Turn " + (string)cs2method_10379(client_configs['cfg2948']) + "/15");
+	if (cs2_configs['cfg1132'] == 0) {
+		cs2method_10758(941, 61014137);
+	} else {
+		cs2method_10758(942, 61014137);
+	}
+	if (cs2_configs['cfg1134'] == 0) {
+		cs2method_10758(941, 61014138);
+	} else {
+		cs2method_10758(942, 61014138);
+	}
+	if (cs2_configs['cfg1133'] == 0) {
+		cs2method_10758(941, 61014139);
+	} else {
+		cs2method_10758(942, 61014139);
+	}
+	return;
+}

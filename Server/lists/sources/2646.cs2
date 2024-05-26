@@ -1,0 +1,85 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2646(int a0) {
+	if (cs2_configs['cfg842'] == 3) {
+		cs2_configs['cfg842'] = 1;
+		cs2method_10026(a0, "Check bank & inventory");
+		cs2method_10026(56360978, "Commodities");
+		cs2method_10467(0, 56360980);
+		script_2645(56360980);
+		script_2642();
+		return;
+	}
+	cs2_configs['cfg842'] = 3;
+	int v11 = 0;
+	int v5 = 0;
+	int v0 = 0;
+	int v9 = 0;
+	int v4 = 0;
+	cs2_configs['cfg842'] = 3;
+	int v10 = -1;
+	cs2method_10467(1, 56360980);
+	cs2method_10026(a0, "View all commodities");
+	cs2method_10026(56360978, "Commodities in your bank & inventory");
+	cs2method_10273(56360983);
+	cs2method_10026(56360979, "A list of items already in your inventory or bank that you can trade with Mal for investment credit.");
+	int v2 = cs2method_10968(cs2method_10461(cs2method_10236(56360983), cs2method_10051(36, 10)), cs2method_10461(10, 1));
+	int v6 = cs2method_10968(cs2method_10461(cs2method_10823(56360983), 128), 3);
+	int v3 = 0;
+	while (v11 <= cs2method_10894(95)) {
+		int v1 = cs2method_10640(95, v11);
+		if (v1 != -1 && cs2method_10245(111, 1939, v1) == 1) {
+			cs2method_10606(56360983, 5, v5);
+			cs2method_10013(36, 32, 0, 0);
+			cs2method_10063(cs2method_10051(cs2method_10060(36, v2), cs2method_10038(v5, 10)), cs2method_10051(cs2method_10968(v5, 10), cs2method_10060(32, v6)), 0, 0);
+			cs2method_11070(v1, -1);
+			cs2method_10200("<col=ff981f>" + (string)cs2method_10018(v1));
+			cs2method_10057(1, "Examine");
+			cs2method_10278(3355443);
+			cs2method_10356(1);
+			v5 = cs2method_10060(v5, 1);
+			v3 = cs2method_10406();
+		}
+		v11 = cs2method_10060(v11, 1);
+	}
+	for (int v7 = 0; v7 <= cs2method_10894(93); v7 = cs2method_10060(v7, 1)) {
+		int v8 = cs2method_10640(93, v7);
+		if (v8 != -1 && cs2method_10245(111, 1939, v8) == 1) {
+			cs2method_10606(56360983, 5, v5);
+			cs2method_10013(36, 32, 0, 0);
+			cs2method_10063(cs2method_10051(cs2method_10060(36, v2), cs2method_10038(v5, 10)), cs2method_10051(cs2method_10968(v5, 10), cs2method_10060(32, v6)), 0, 0);
+			cs2method_11070(v8, -1);
+			cs2method_10200("<col=ff981f>" + (string)cs2method_10018(v8));
+			cs2method_10057(1, "Examine");
+			cs2method_10278(3355443);
+			cs2method_10356(1);
+			v5 = cs2method_10060(v5, 1);
+			v3 = cs2method_10406();
+		}
+	}
+	if (v5 == 0) {
+		cs2method_10606(56360983, 4, v5);
+		cs2method_10013(200, 32, 0, 0);
+		cs2method_10063(0, 0, 1, 4);
+		cs2method_10797("No valid commodities were found in your bank or inventory.");
+		cs2method_10692(496);
+		cs2method_11105(1, 1, 0);
+		cs2method_10173(0);
+		cs2method_10811(16750623);
+		v5 = 1;
+	}
+	cs2method_11130(cs2method_10236(56360983), cs2method_10060(v3, 32), 56360983);
+	cs2method_10251(0, 0, 56360983);
+	script_31(56360982, 56360983, 792, 789, 790, 791, 773, 788);
+	return;
+}

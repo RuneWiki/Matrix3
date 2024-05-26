@@ -1,0 +1,35 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6392(int a0) {
+	int v2 = 1;
+	int v1 = 1;
+	int v0 = 1;
+	switch (a0) {
+		case 1:
+			v2 = 0;
+			cs2method_10026(85655625, "Bronze rewards");
+			break;
+		case 2:
+			v1 = 0;
+			cs2method_10026(85655625, "Silver rewards");
+			break;
+		case 3:
+			v0 = 0;
+			cs2method_10026(85655625, "Gold rewards");
+	}
+	cs2method_10467(v2, 85655588);
+	cs2method_10467(v1, 85655590);
+	cs2method_10467(v0, 85655592);
+	cs2method_10670(6185, 1, 0, 200);
+	return;
+}

@@ -1,0 +1,25 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_7294(int a0) {
+	int v1 = -1;
+	for (int v10 = 0, int v5 = 0, int v3 = 0, int v2 = a0, script_7295_struct(3,0,0) v8 = script_7295(v2), int v4 = v8.intpart_2, int v0 = v8.intpart_1, int v7 = v8.intpart_0, int v6 = v7, int v9 = -1; v6 <= v0; v6 = cs2method_10060(v6, 1)) {
+		int v11 = cs2method_10640(677, v6);
+		if (v11 != -1 && cs2method_10245(111, 2173, v11) == 1 && cs2method_10441(client_configs['cfg3404'], v6) == 1) {
+			if (v1 != -1) {
+				return -1;
+			}
+			v1 = v6;
+		}
+	}
+	return v1;
+}

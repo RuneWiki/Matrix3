@@ -1,0 +1,142 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_14_struct(2,2,0) script_14(int a0,int a1,int a2) {
+	switch (a2) {
+		case 1:
+			int v64 = a0;
+			int v27 = a1;
+			script_982_struct(2,2,0) v55 = script_982(v64, v27);
+			return new script_14_struct(v55.intpart_0, v55.intpart_1, v55.objectpart_0, v55.objectpart_1);
+		case 2:
+			int v21 = a0;
+			int v69 = a1;
+			script_984_struct(2,2,0) v8 = script_984(v21, v69);
+			return new script_14_struct(v8.intpart_0, v8.intpart_1, v8.objectpart_0, v8.objectpart_1);
+		case 5:
+			int v19 = a0;
+			int v9 = a1;
+			script_978_struct(2,2,0) v44 = script_978(v19, v9);
+			return new script_14_struct(v44.intpart_0, v44.intpart_1, v44.objectpart_0, v44.objectpart_1);
+		case 3:
+			int v65 = a0;
+			int v34 = a1;
+			script_1010_struct(2,2,0) v59 = script_1010(v65, v34);
+			return new script_14_struct(v59.intpart_0, v59.intpart_1, v59.objectpart_0, v59.objectpart_1);
+		case 7:
+			int v66 = a0;
+			int v32 = a1;
+			script_1004_struct(2,2,0) v52 = script_1004(v66, v32);
+			return new script_14_struct(v52.intpart_0, v52.intpart_1, v52.objectpart_0, v52.objectpart_1);
+		case 4:
+			int v58 = a0;
+			int v50 = a1;
+			script_996_struct(2,2,0) v30 = script_996(v58, v50);
+			return new script_14_struct(v30.intpart_0, v30.intpart_1, v30.objectpart_0, v30.objectpart_1);
+		case 6:
+			int v7 = a0;
+			int v74 = a1;
+			script_994_struct(2,2,0) v29 = script_994(v7, v74);
+			return new script_14_struct(v29.intpart_0, v29.intpart_1, v29.objectpart_0, v29.objectpart_1);
+		case 8:
+			int v17 = a0;
+			int v53 = a1;
+			script_1008_struct(2,2,0) v23 = script_1008(v17, v53);
+			return new script_14_struct(v23.intpart_0, v23.intpart_1, v23.objectpart_0, v23.objectpart_1);
+		case 9:
+			int v18 = a0;
+			int v47 = a1;
+			script_1002_struct(2,2,0) v3 = script_1002(v18, v47);
+			return new script_14_struct(v3.intpart_0, v3.intpart_1, v3.objectpart_0, v3.objectpart_1);
+		case 10:
+			int v25 = a0;
+			int v4 = a1;
+			script_992_struct(2,2,0) v22 = script_992(v25, v4);
+			return new script_14_struct(v22.intpart_0, v22.intpart_1, v22.objectpart_0, v22.objectpart_1);
+		case 11:
+			int v16 = a0;
+			int v56 = a1;
+			script_1000_struct(2,2,0) v5 = script_1000(v16, v56);
+			return new script_14_struct(v5.intpart_0, v5.intpart_1, v5.objectpart_0, v5.objectpart_1);
+		case 19:
+			int v54 = a0;
+			int v6 = a1;
+			script_980_struct(2,2,0) v49 = script_980(v54, v6);
+			return new script_14_struct(v49.intpart_0, v49.intpart_1, v49.objectpart_0, v49.objectpart_1);
+		case 13:
+			int v42 = a0;
+			int v0 = a1;
+			script_1016_struct(2,2,0) v14 = script_1016(v42, v0);
+			return new script_14_struct(v14.intpart_0, v14.intpart_1, v14.objectpart_0, v14.objectpart_1);
+		case 14:
+			int v26 = a0;
+			int v71 = a1;
+			script_1022_struct(2,2,0) v41 = script_1022(v26, v71);
+			return new script_14_struct(v41.intpart_0, v41.intpart_1, v41.objectpart_0, v41.objectpart_1);
+		case 15:
+			int v67 = a0;
+			int v72 = a1;
+			script_998_struct(2,2,0) v13 = script_998(v67, v72);
+			return new script_14_struct(v13.intpart_0, v13.intpart_1, v13.objectpart_0, v13.objectpart_1);
+		case 16:
+			int v38 = a0;
+			int v70 = a1;
+			script_1018_struct(2,2,0) v20 = script_1018(v38, v70);
+			return new script_14_struct(v20.intpart_0, v20.intpart_1, v20.objectpart_0, v20.objectpart_1);
+		case 17:
+			int v1 = a0;
+			int v24 = a1;
+			script_986_struct(2,2,0) v15 = script_986(v1, v24);
+			return new script_14_struct(v15.intpart_0, v15.intpart_1, v15.objectpart_0, v15.objectpart_1);
+		case 18:
+			int v51 = a0;
+			int v11 = a1;
+			script_990_struct(2,2,0) v61 = script_990(v51, v11);
+			return new script_14_struct(v61.intpart_0, v61.intpart_1, v61.objectpart_0, v61.objectpart_1);
+		case 12:
+			int v36 = a0;
+			int v43 = a1;
+			script_1012_struct(2,2,0) v12 = script_1012(v36, v43);
+			return new script_14_struct(v12.intpart_0, v12.intpart_1, v12.objectpart_0, v12.objectpart_1);
+		case 20:
+			int v68 = a0;
+			int v45 = a1;
+			script_988_struct(2,2,0) v33 = script_988(v68, v45);
+			return new script_14_struct(v33.intpart_0, v33.intpart_1, v33.objectpart_0, v33.objectpart_1);
+		case 21:
+			int v2 = a0;
+			int v60 = a1;
+			script_1014_struct(2,2,0) v48 = script_1014(v2, v60);
+			return new script_14_struct(v48.intpart_0, v48.intpart_1, v48.objectpart_0, v48.objectpart_1);
+		case 22:
+			int v73 = a0;
+			int v39 = a1;
+			script_3_struct(2,2,0) v63 = script_3(v73, v39);
+			return new script_14_struct(v63.intpart_0, v63.intpart_1, v63.objectpart_0, v63.objectpart_1);
+		case 23:
+			int v62 = a0;
+			int v28 = a1;
+			script_1006_struct(2,2,0) v35 = script_1006(v62, v28);
+			return new script_14_struct(v35.intpart_0, v35.intpart_1, v35.objectpart_0, v35.objectpart_1);
+		case 24:
+			int v31 = a0;
+			int v46 = a1;
+			script_1020_struct(2,2,0) v57 = script_1020(v31, v46);
+			return new script_14_struct(v57.intpart_0, v57.intpart_1, v57.objectpart_0, v57.objectpart_1);
+		case 25:
+			int v37 = a0;
+			int v40 = a1;
+			script_3355_struct(2,2,0) v10 = script_3355(v37, v40);
+			return new script_14_struct(v10.intpart_0, v10.intpart_1, v10.objectpart_0, v10.objectpart_1);
+	}
+	return new script_14_struct(0, -1, "", "");
+}

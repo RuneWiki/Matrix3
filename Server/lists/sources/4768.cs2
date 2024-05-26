@@ -1,0 +1,89 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4768() {
+	int v1 = 1;
+	int v7 = 0;
+	int v0 = 0;
+	int v6 = 0;
+	int v4 = 0;
+	int v5 = 0;
+	int v3 = 0;
+	int v2 = 0;
+	if (cs2method_10172() == 1) {
+		int v35 = cs2method_10968(clan_chat_configs['cfg2724'], 100);
+		int v55 = cs2method_10968(clan_chat_configs['cfg2725'], 100);
+		int v21 = cs2method_10968(clan_chat_configs['cfg2728'], 100);
+		int v62 = cs2method_10968(clan_chat_configs['cfg2732'], 100);
+		int v10 = cs2method_10968(clan_chat_configs['cfg2731'], 100);
+		int v19 = cs2method_10968(clan_chat_configs['cfg2730'], 100);
+		int v42 = cs2method_10968(clan_chat_configs['cfg2733'], 100);
+		cs2method_10273(73072707);
+		cs2method_10273(73072705);
+		cs2method_10273(73072703);
+		int v12 = 1;
+		int v45 = v1;
+		int v41 = v35;
+		int v46 = v55;
+		int v49 = v21;
+		int v57 = v62;
+		int v34 = v10;
+		int v17 = v19;
+		int v61 = v42;
+		script_4769_struct(8,0,0) v14 = script_4769(v12, v45, v41, v46, v49, v57, v34, v17, v61);
+		int v64 = v14.intpart_7;
+		int v37 = v14.intpart_6;
+		int v27 = v14.intpart_5;
+		int v65 = v14.intpart_4;
+		int v11 = v14.intpart_3;
+		int v16 = v14.intpart_2;
+		int v66 = v14.intpart_1;
+		int v22 = v14.intpart_0;
+		int v20 = 2;
+		int v33 = v22;
+		int v50 = v66;
+		int v51 = v16;
+		int v24 = v11;
+		int v58 = v65;
+		int v28 = v27;
+		int v31 = v37;
+		int v47 = v64;
+		script_4769_struct(8,0,0) v63 = script_4769(v20, v33, v50, v51, v24, v58, v28, v31, v47);
+		int v26 = v63.intpart_7;
+		int v25 = v63.intpart_6;
+		int v54 = v63.intpart_5;
+		int v40 = v63.intpart_4;
+		int v32 = v63.intpart_3;
+		int v53 = v63.intpart_2;
+		int v38 = v63.intpart_1;
+		int v68 = v63.intpart_0;
+		int v48 = 3;
+		int v60 = v68;
+		int v15 = v38;
+		int v9 = v53;
+		int v8 = v32;
+		int v44 = v40;
+		int v59 = v54;
+		int v56 = v25;
+		int v13 = v26;
+		script_4769_struct(8,0,0) v43 = script_4769(v48, v60, v15, v9, v8, v44, v59, v56, v13);
+		int v52 = v43.intpart_7;
+		int v36 = v43.intpart_6;
+		int v39 = v43.intpart_5;
+		int v23 = v43.intpart_4;
+		int v29 = v43.intpart_3;
+		int v30 = v43.intpart_2;
+		int v67 = v43.intpart_1;
+		int v18 = v43.intpart_0;
+	}
+	return;
+}

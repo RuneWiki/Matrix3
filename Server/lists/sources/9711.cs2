@@ -1,0 +1,36 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9711(int a0,int a1) {
+	int v3 = -1;
+	int v2 = -1;
+	int v12 = -1;
+	int v6 = -1;
+	object v0 = "";
+	int v11 = a0;
+	script_9693_struct(2,1,0) v5 = script_9693(v11);
+	object v1 = v5.objectpart_0;
+	int v10 = v5.intpart_1;
+	int v9 = v5.intpart_0;
+	int v13 = a0;
+	script_9713_struct(2,0,0) v4 = script_9713(v13);
+	int v7 = v4.intpart_1;
+	int v8 = v4.intpart_0;
+	if (a1 == 1) {
+		cs2method_10520(16777215, v7);
+		cs2method_10758(v10, v8);
+	} else {
+		cs2method_10520(7705248, v7);
+		cs2method_10758(v9, v8);
+	}
+	return;
+}

@@ -1,0 +1,26 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9082() {
+	if (cs2method_10823(48758803) < 802) {
+		if (cs2method_10609(48758806) == 0) {
+			cs2method_10467(1, 48758806);
+			cs2method_10467(0, 48758807);
+		}
+	} else {
+		if (cs2method_10609(48758806) == 1) {
+			cs2method_10467(0, 48758806);
+			cs2method_10467(1, 48758807);
+		}
+	}
+	return;
+}

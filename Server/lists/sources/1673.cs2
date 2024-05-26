@@ -1,0 +1,48 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1673() {
+	cs2method_10273(5505044);
+	cs2method_10273(5505046);
+	cs2method_10273(5505045);
+	int v6 = 0;
+	int v7 = 0;
+	int v5 = 264;
+	int v3 = 0;
+	cs2method_10112(cs2method_10191(5505044), v6, 0, 0, 5505044);
+	int v2 = client_configs['cfg1686'].bitcfg5534;
+	script_1674_struct(2,0,0) v0 = script_1674(v2);
+	int v4 = v0.intpart_1;
+	int v1 = v0.intpart_0;
+	cs2method_11130(0, v1, 5505046);
+	cs2method_10251(0, v4, 5505046);
+	int v8 = cs2method_10060(v1, 4);
+	if (v8 > v5) {
+		cs2method_10283(16, 4, 0, 1, 5505045);
+		cs2method_10283(20, 4, 1, 1, 5505046);
+		if (cs2method_11038(5505045, 0) == 0) {
+			script_31(5505045, 5505046, 792, 789, 790, 791, 773, 788);
+		}
+		script_72(5505045, 5505046, cs2method_10718(5505046));
+	} else {
+		cs2method_10283(0, 4, 0, 1, 5505045);
+		cs2method_10283(4, 4, 1, 1, 5505046);
+	}
+	if (v8 < 111) {
+		cs2method_10283(350, cs2method_10060(111, 68), 0, 0, 5505024);
+	} else if (v8 < v5) {
+		cs2method_10283(350, cs2method_10060(v8, 70), 0, 0, 5505024);
+	} else {
+		cs2method_10283(350, cs2method_10060(v5, 70), 0, 0, 5505024);
+	}
+	return;
+}

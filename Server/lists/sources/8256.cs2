@@ -1,0 +1,59 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_8256() {
+	int v10 = -1;
+	int v4 = -1;
+	int v7 = -1;
+	int v16 = -1;
+	int v8 = -1;
+	int v12 = -1;
+	int v3 = -1;
+	int v2 = 0;
+	int v14 = cs2method_10924(7717);
+	int v1 = 0;
+	int v13 = 0;
+	while (v2 < v14) {
+		flow_1:
+			int v5 = idx17mapData('i', 'i', 7717, v2);
+			int v0 = idx17mapData('i', 'J', 7716, v5);
+			IF (v0 != -1) 
+				GOTO	flow_3
+			GOTO	flow_8
+		flow_3:
+			IF (idx22mapAttribute(v0, 3539) == 1) 
+				GOTO	flow_4
+			GOTO	flow_5
+		flow_4:
+			IF (client_configs['cfg3680'].bitcfg22315 == 0) 
+				GOTO	flow_7
+		flow_5:
+			IF (client_configs['cfg3680'].bitcfg22315 == 1 && v0 == 21279) 
+				GOTO	flow_7
+			GOTO	flow_8
+		flow_7:
+			int v9 = idx22mapAttribute(v0, 3504);
+			script_8257(v9);
+			int v6 = idx22mapAttribute(v0, 3506);
+			script_8257(v6);
+			int v15 = idx22mapAttribute(v0, 3508);
+			script_8257(v15);
+			int v17 = idx22mapAttribute(v0, 3509);
+			script_8257(v17);
+			int v11 = idx22mapAttribute(v0, 3510);
+			script_8257(v11);
+		flow_8:
+			v2 = cs2method_10060(v2, 1);
+	}
+	return;
+}

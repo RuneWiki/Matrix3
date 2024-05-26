@@ -1,0 +1,217 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9021(int a0) {
+	int v6 = script_8925();
+	if (a0 >= v6 || a0 < 1) {
+		return;
+	}
+	cs2_configs['cfg2787'] = a0;
+	int v7 = idx17mapData('i', 'J', 7569, a0);
+	object v10 = idx22mapAttribute(v7, 3418);
+	object v4 = idx22mapAttribute(v7, 3419);
+	object v2 = "Cost: " + (string)cs2method_10055(idx22mapAttribute(v7, 3423), 1);
+	object v5 = idx22mapAttribute(v7, 3420);
+	object v3 = "Cost: " + (string)cs2method_10055(idx22mapAttribute(v7, 3424), 1);
+	object v1 = idx22mapAttribute(v7, 3421);
+	object v0 = "Cost: " + (string)cs2method_10055(idx22mapAttribute(v7, 3425), 1);
+	object v8 = idx22mapAttribute(v7, 3422);
+	object v9 = "Cost: " + (string)cs2method_10055(idx22mapAttribute(v7, 3426), 1);
+	if (a0 == 8) {
+		v2 = "Cost: remainder";
+		v3 = "Cost: remainder";
+		v0 = "Cost: remainder";
+		v9 = "Cost: remainder";
+	}
+	cs2method_10026(98172975, v10);
+	cs2method_10026(98172974, "Treasury left: " + (string)cs2method_10055(script_9014(a0), 1));
+	cs2method_10026(98173226, v4);
+	cs2method_10026(98173218, v2);
+	cs2method_10026(98173196, v5);
+	cs2method_10026(98173207, v3);
+	cs2method_10026(98173175, v1);
+	cs2method_10026(98173186, v0);
+	cs2method_10026(98173154, v8);
+	cs2method_10026(98173165, v9);
+	switch (a0) {
+		case 1:
+			switch (client_configs['cfg3651'].bitcfg18682) {
+				case 1:
+					script_9037();
+					break;
+				case 2:
+					script_9038();
+					break;
+				case 3:
+					script_9039();
+					break;
+				case 4:
+					script_9040();
+					break;
+				default:
+					script_9041();
+			}
+			break;
+		case 2:
+			switch (client_configs['cfg3651'].bitcfg18683) {
+				case 1:
+					script_9037();
+					break;
+				case 2:
+					script_9038();
+					break;
+				case 3:
+					script_9039();
+					break;
+				case 4:
+					script_9040();
+					break;
+				default:
+					script_9041();
+			}
+			break;
+		case 3:
+			switch (client_configs['cfg3651'].bitcfg18684) {
+				case 1:
+					script_9037();
+					break;
+				case 2:
+					script_9038();
+					break;
+				case 3:
+					script_9039();
+					break;
+				case 4:
+					script_9040();
+					break;
+				default:
+					script_9041();
+			}
+			break;
+		case 4:
+			switch (client_configs['cfg3651'].bitcfg18685) {
+				case 1:
+					script_9037();
+					break;
+				case 2:
+					script_9038();
+					break;
+				case 3:
+					script_9039();
+					break;
+				case 4:
+					script_9040();
+					break;
+				default:
+					script_9041();
+			}
+			break;
+		case 5:
+			switch (client_configs['cfg3651'].bitcfg18686) {
+				case 1:
+					script_9037();
+					break;
+				case 2:
+					script_9038();
+					break;
+				case 3:
+					script_9039();
+					break;
+				case 4:
+					script_9040();
+					break;
+				default:
+					script_9041();
+			}
+			break;
+		case 6:
+			switch (client_configs['cfg3651'].bitcfg18687) {
+				case 1:
+					script_9037();
+					break;
+				case 2:
+					script_9038();
+					break;
+				case 3:
+					script_9039();
+					break;
+				case 4:
+					script_9040();
+					break;
+				default:
+					script_9041();
+			}
+			break;
+		case 7:
+			switch (client_configs['cfg3651'].bitcfg18688) {
+				case 1:
+					script_9037();
+					break;
+				case 2:
+					script_9038();
+					break;
+				case 3:
+					script_9039();
+					break;
+				case 4:
+					script_9040();
+					break;
+				default:
+					script_9041();
+			}
+			break;
+		case 8:
+			switch (client_configs['cfg3651'].bitcfg18689) {
+				case 1:
+					script_9037();
+					break;
+				case 2:
+					script_9038();
+					break;
+				case 3:
+					script_9039();
+					break;
+				case 4:
+					script_9040();
+					break;
+			}
+			script_9041();
+	}
+	switch (script_9017(a0)) {
+		case 0:
+			script_9042();
+			break;
+		case 1:
+			script_9043();
+			break;
+		case 2:
+			script_9044();
+			break;
+		case 3:
+			script_9045();
+			break;
+		default:
+			script_9046();
+	}
+	cs2method_10026(98173243, "Issue " + (string)cs2method_10379(a0));
+	if (a0 == 1) {
+		cs2method_10467(0, 98173251);
+	} else {
+		cs2method_10467(1, 98173251);
+	}
+	if (a0 == cs2method_10461(v6, 1) || a0 == 8) {
+		cs2method_10467(0, 98173260);
+	} else {
+		cs2method_10467(1, 98173260);
+	}
+	return;
+}

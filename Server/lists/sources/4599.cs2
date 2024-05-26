@@ -1,0 +1,46 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4599(int a0,int a1,object a2,int a3) {
+	if (a0 > 1) {
+		cs2method_11116(a1, a0, a3);
+	} else {
+		cs2method_10121(a1, 1, a3);
+	}
+	cs2method_20486(new function<script_1620>(int a0,int a1,int a2,int a3,int a4) {
+		int v0 = cs2method_10060(a4, cs2method_10133());
+		if (cs2method_11038(a1, a0) == 1 || a0 == -1 && cs2method_10324(a1) == 1) {
+			cs2method_10002(a3);
+			cs2method_20061(new function<script_1621>(int a0,int a1,int a2,int a3) {
+				if (cs2method_10133() < a1) {
+					return;
+				}
+				if (cs2method_11038(a3, a0) == 1 || a0 == -1 && cs2method_10324(a3) == 1) {
+					cs2method_10002(a2);
+					cs2method_20061(new function<none>() {
+					}, "");
+				}
+				return;
+			}, new WidgetPointer(a1), a0, a2, v0, "Iiii");
+		}
+		return;
+	}, new WidgetPointer(-32768,3), -2147483643, 100, 0, 8, "Iiiii", new WidgetPointer(a3));
+	cs2method_11127(10, a3, "Examine");
+	cs2method_10316(a3, "<col=ff9040>" + (string)cs2method_10018(a1) + "</col>");
+	cs2method_20486(new function<script_4600>(int a0,object a1) {
+		if (a0 == 10) {
+			cs2method_11102(27, 0, a1);
+		}
+		return;
+	}, -2147483644, (string)a2, "is", new WidgetPointer(a3));
+	return;
+}

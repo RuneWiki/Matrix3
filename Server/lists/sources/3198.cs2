@@ -1,0 +1,42 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3198(int a0,int a1,int a2,int a3,int a4) {
+	int v1 = -1;
+	int v0 = 0;
+	cs2method_10467(1, a0);
+	cs2method_10026(a2, "");
+	cs2method_10026(a3, "");
+	cs2method_10283(cs2method_10236(a4), 300, 0, 0, a4);
+	switch (a1) {
+		case 59834368:
+			v1 = 59375701;
+			v0 = 300;
+			break;
+		case 59899904:
+			v1 = 59375717;
+			v0 = 122;
+			break;
+		case 64159744:
+			v1 = 59375691;
+			v0 = 303;
+			break;
+		case 59965458:
+			v1 = 59375709;
+			v0 = 312;
+	}
+	if (v1 != -1) {
+		cs2method_10283(cs2method_10236(v1), v0, 0, 0, v1);
+		cs2method_10283(cs2method_10236(a1), v0, 0, 0, a1);
+	}
+	return;
+}

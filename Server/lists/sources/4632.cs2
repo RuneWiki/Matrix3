@@ -1,0 +1,112 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4632(int a0) {
+	object v3;
+	object v7;
+	int v2 = -1;
+	int v14 = -1;
+	object v12 = "";
+	object v6 = "";
+	object v5 = "";
+	object v10 = "";
+	object v0 = "";
+	object v1 = "";
+	if (cs2_configs['cfg1520'] > 2000000) {
+		v7 = "over " + (string)cs2method_10055(2000000, 1);
+	} else {
+		v7 = cs2method_10055(cs2_configs['cfg1520'], 1);
+	}
+	int v13 = cs2method_10872(2147483647, cs2method_10968(cs2method_10968(cs2method_10051(1000, cs2_configs['cfg1520']), cs2method_11048(1, cs2_configs['cfg1521'])), 1000));
+	int v9 = cs2method_10038(cs2method_10968(cs2method_10051(1000, cs2_configs['cfg1520']), cs2method_11048(1, cs2_configs['cfg1521'])), 1000);
+	if (v9 == 0) {
+		v3 = cs2method_10379(v13);
+	} else {
+		object v8 = cs2method_10427(cs2method_10379(v13), ".");
+		if (v9 < 100) {
+			v8 = cs2method_10427(v8, "0");
+		}
+		if (v9 < 10) {
+			v8 = cs2method_10427(v8, "0");
+		}
+		v3 = cs2method_10427(v8, cs2method_10379(v9));
+		if (cs2method_10038(v9, 10) == 0) {
+			v3 = cs2method_11025(0, cs2method_10461(cs2method_10265(v3), 2), v3);
+		}
+		if (cs2method_10038(v9, 100) == 0) {
+			v3 = cs2method_11025(0, cs2method_10461(cs2method_10265(v3), 2), v3);
+		}
+	}
+	object v11 = cs2method_10055(cs2_configs['cfg1522'], 1);
+	if (a0 == 0) {
+		if (cs2_configs['cfg1520'] > 2000) {
+			v1 = "Behold " + cs2_configs['cfg2362'] + ", champion of " + (string)v7 + " bouts in the Duel Arena!";
+		} else if (cs2_configs['cfg1520'] == 1) {
+			v1 = "Here stands " + cs2_configs['cfg2362'] + ", once victor of a duel.";
+		} else {
+			v1 = "Here stands " + cs2_configs['cfg2362'] + ", victor of " + (string)v7 + " duels.";
+		}
+		v5 = cs2_configs['cfg2362'] + " defeats " + (string)v3 + " opponents for every loss!";
+		if (cs2_configs['cfg1522'] > 250) {
+			object v15 = "over " + (string)cs2method_10055(250, 1);
+		}
+		v0 = cs2_configs['cfg2362'] + " has vanquished " + (string)cs2method_10055(cs2_configs['cfg1522'], 1) + " opponents in a row.";
+	} else {
+		if (a0 == 1) {
+			if (cs2_configs['cfg1520'] > 2000) {
+				v1 = "Behold " + cs2_configs['cfg2362'] + ", taker of " + (string)v7 + " heads in the Wilderness!";
+			} else {
+				v1 = "Here stands " + cs2_configs['cfg2362'] + ", who has killed " + (string)v7 + " opponents in the Wilderness.";
+			}
+			v5 = "Vanquisher of " + (string)v3 + " foes for every fall!";
+			if (cs2_configs['cfg1522'] > 250) {
+				v11 = "Over " + (string)cs2method_10055(250, 1);
+			}
+			v0 = (string)v11 + " victims in succession have rendered their souls to " + cs2_configs['cfg2362'] + ".";
+		}
+	}
+	cs2method_10026(1376257, v1);
+	cs2method_10026(1376259, v0);
+	cs2method_10026(1376258, v5);
+	cs2method_10026(1376260, "Highest value Wilderness kill:" + "<br>" + (string)cs2method_10055(client_configs['cfg443'], 1) + " coins.");
+	cs2method_10467(0, 1376274);
+	cs2method_10467(0, 1376305);
+	cs2method_10467(1, 1376258);
+	cs2method_10467(1, 1376259);
+	if (cs2_configs['cfg1524'] == 1) {
+		cs2method_10467(0, 1376258);
+		if (cs2_configs['cfg1522'] > 1) {
+			cs2method_10467(0, 1376259);
+		}
+	}
+	cs2method_10467(1, 1376260);
+	if (a0 == 1 && client_configs['cfg443'] > 0) {
+		cs2method_10467(0, 1376260);
+	}
+	int v4 = cs2method_10823(1376273);
+	cs2method_10112(cs2method_10191(1376274), cs2method_10152(1376260), 0, 0, 1376274);
+	if (cs2method_10609(1376260) == 1) {
+		cs2method_10467(1, 1376274);
+		cs2method_10112(cs2method_10191(1376259), 0, 0, 2, 1376259);
+		cs2method_10112(cs2method_10191(1376258), cs2method_10823(1376259), 0, 2, 1376258);
+	} else {
+		v4 = cs2method_10461(v4, cs2method_10823(1376260));
+	}
+	cs2method_10112(cs2method_10191(1376274), cs2method_10152(1376258), 0, 0, 1376305);
+	if (cs2method_10609(1376259) == 0) {
+		v4 = cs2method_10461(v4, cs2method_10060(cs2method_10823(1376259), cs2method_10823(1376258)));
+	} else {
+		cs2method_10467(1, 1376305);
+	}
+	cs2method_10283(cs2method_10236(1376257), v4, 0, 0, 1376257);
+	return;
+}

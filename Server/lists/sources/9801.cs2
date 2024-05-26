@@ -1,0 +1,33 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9801(int a0) {
+	int v0 = cs2method_11048(0, cs2method_10872(a0, 1));
+	cs2method_10670(14378, 1, 0, 255);
+	cs2_configs['cfg1184'] = v0;
+	if (v0 == 0) {
+		cs2method_10467(1, 68157669);
+		cs2method_10467(1, 68157442);
+		cs2method_10467(0, 68157662);
+		cs2method_10467(0, 68157441);
+		cs2method_10026(68157445, "Wins: " + (string)cs2method_10379(client_configs['cfg4166'].bitcfg21704) + "    Reward points: " + (string)cs2method_10379(client_configs['cfg4166'].bitcfg21703));
+		cs2method_10026(68157491, "Level: " + (string)cs2method_10379(client_configs['cfg4167']));
+	} else {
+		cs2method_10467(1, 68157662);
+		cs2method_10467(1, 68157441);
+		cs2method_10467(0, 68157669);
+		cs2method_10467(0, 68157442);
+		cs2method_10026(68157445, "Wins: " + (string)cs2method_10379(client_configs['cfg4166'].bitcfg21704) + "    Reward points: " + (string)cs2method_10379(client_configs['cfg4166'].bitcfg21703));
+		cs2method_10026(68157536, "Level: " + (string)cs2method_10379(client_configs['cfg4168']));
+	}
+	return;
+}

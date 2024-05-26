@@ -1,0 +1,43 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_6362(int a0) {
+	switch (a0) {
+		case 0:
+			return cs2_configs['cfg1939'];
+		case 1:
+			return cs2_configs['cfg1940'];
+		case 2:
+			return cs2_configs['cfg1941'];
+		case 3:
+			return cs2_configs['cfg1942'];
+		case 4:
+			return cs2_configs['cfg1943'];
+		case 5:
+			return cs2_configs['cfg1944'];
+		case 6:
+			return cs2_configs['cfg1945'];
+		case 7:
+			return cs2_configs['cfg1946'];
+		case 8:
+			return cs2_configs['cfg3498'];
+		case 9:
+			return cs2_configs['cfg3499'];
+		case 10:
+			return cs2_configs['cfg3500'];
+		case 11:
+			return cs2_configs['cfg3501'];
+		case 12:
+			return cs2_configs['cfg3502'];
+	}
+	return -1;
+}

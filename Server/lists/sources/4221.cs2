@@ -1,0 +1,25 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_4221_struct(7,2,0) script_4221(int a0,int a1,int a2,object a3,int a4,object a5,int a6,int a7) {
+	int v3 = a1;
+	int v2 = a7;
+	int v7 = a6;
+	int v5 = a2;
+	int v6 = a4;
+	int v1 = a0;
+	int v4 = 23;
+	object v8 = a3;
+	object v0 = a5;
+	cs2method_10351();
+	return new script_4221_struct(v3, v2, v7, v5, v6, v1, v4, v8, v0);
+}

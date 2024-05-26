@@ -1,0 +1,163 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_8497(int a0,int a1) {
+	if (client_configs['cfg3680'].bitcfg22315 == 0) {
+		switch (a1) {
+			case 0:
+				if (a0 == 0) {
+					return 18644;
+				}
+				if (a0 == 1) {
+					return 18646;
+				}
+				if (a0 == 2) {
+					return 18647;
+				}
+				break;
+			case 1:
+				if (a0 == 0) {
+					return 18648;
+				}
+				if (a0 == 1) {
+					return 18650;
+				}
+				if (a0 == 2) {
+					return 18651;
+				}
+				break;
+			case 2:
+				if (a0 == 0) {
+					return 18652;
+				}
+				if (a0 == 1) {
+					return 18654;
+				}
+				if (a0 == 2) {
+					return 18655;
+				}
+				break;
+			case 3:
+				if (a0 == 0) {
+					return 18656;
+				}
+				if (a0 == 1) {
+					return 18658;
+				}
+				if (a0 == 2) {
+					return 18659;
+				}
+				break;
+			case 4:
+				if (a0 == 0) {
+					return 18660;
+				}
+				if (a0 == 1) {
+					return 18662;
+				}
+				if (a0 == 2) {
+					return 18663;
+				}
+				break;
+			case 5:
+				if (a0 == 0) {
+					return 18664;
+				}
+				if (a0 == 1) {
+					return 18666;
+				}
+				if (a0 == 2) {
+					return 18667;
+				}
+				break;
+			case 6:
+				if (a0 == 0) {
+					return 18668;
+				}
+				if (a0 == 1) {
+					return 18670;
+				}
+				if (a0 == 2) {
+					return 18671;
+				}
+				break;
+			case 7:
+				if (a0 == 0) {
+					return 18672;
+				}
+				if (a0 == 1) {
+					return 18674;
+				}
+				if (a0 == 2) {
+					return 18675;
+				}
+				break;
+			case 8:
+				if (a0 == 0) {
+					return 18676;
+				}
+				if (a0 == 1) {
+					return 18678;
+				}
+				if (a0 == 2) {
+					return 18679;
+				}
+				break;
+			case 9:
+				if (a0 == 0) {
+					return 18680;
+				}
+				if (a0 == 1) {
+					return 18683;
+				}
+				if (a0 == 2) {
+					return 18682;
+				}
+				break;
+			case 10:
+				if (a0 == 0) {
+					return 21175;
+				}
+				if (a0 == 1) {
+					return 21177;
+				}
+				if (a0 == 2) {
+					return 21178;
+				}
+				break;
+			case 11:
+				if (a0 == 0) {
+					return 18940;
+				}
+				if (a0 == 2) {
+					return 18938;
+				}
+				break;
+			case 13:
+				if (a0 == 0) {
+					return 23050;
+				}
+				if (a0 == 2) {
+					return 23052;
+				}
+		}
+	} else {
+		if (cs2_configs['cfg41'] != -1 && script_3782(a1) == 1) {
+			return 1022;
+		}
+		if (cs2method_10038(cs2method_10968(script_3790(a1), 25), 2) == 1) {
+			return 1021;
+		}
+		return 1019;
+	}
+	return -1;
+}

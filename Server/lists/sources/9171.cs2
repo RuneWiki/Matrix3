@@ -1,0 +1,35 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+string script_9171(int a0) {
+	object v0;
+	object v1;
+	if (a0 > 1440) {
+		if (cs2method_10968(a0, 1440) == 1) {
+			return "1 day";
+		}
+		return (string)cs2method_10379(cs2method_10968(a0, 1440)) + " days";
+	}
+	object v3 = "";
+	object v2 = "";
+	if (cs2method_10968(a0, 60) < 10) {
+		v1 = "0" + (string)cs2method_10379(cs2method_10968(a0, 60));
+	} else {
+		v1 = cs2method_10379(cs2method_10968(a0, 60));
+	}
+	if (cs2method_10038(a0, 60) < 10) {
+		v0 = "0" + (string)cs2method_10379(cs2method_10038(a0, 60));
+	} else {
+		v0 = cs2method_10379(cs2method_10038(a0, 60));
+	}
+	return (string)v1 + ":" + (string)v0;
+}

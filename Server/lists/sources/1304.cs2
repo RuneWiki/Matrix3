@@ -1,0 +1,17 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1304(int a0,int a1,int a2) {
+	object v0 = "Current contribution:" + (string)cs2method_10379(client_configs['cfg3672']) + "<br>" + "Current renown: " + (string)cs2method_10379(client_configs['cfg3669']);
+	script_7769(97910853, a1, -1, 600, 17813, 17813, 16777215, 13, 4, 3, a0, v0, a2);
+	return;
+}

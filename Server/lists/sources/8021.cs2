@@ -1,0 +1,43 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8021(int a0) {
+	int v4 = 69206029;
+	int v3 = 69206030;
+	int v0 = 69206031;
+	int v2 = 69206034;
+	if (a0 == 79953920) {
+		v3 = 79953922;
+		v0 = 79953923;
+		v2 = 79953924;
+		v4 = 79953935;
+		if (client_configs['cfg1293'].bitcfg3617 == 1) {
+			cs2method_10026(79953977, "Get directions");
+		} else {
+			cs2method_10026(79953977, "More info");
+		}
+	}
+	if (client_configs['cfg1269'].bitcfg3561 == 4095 || client_configs['cfg1293'].bitcfg3617 == 1) {
+		cs2method_10467(1, v4);
+	} else {
+		cs2method_10467(0, v4);
+	}
+	int v1 = script_5795(client_configs['cfg1269'].bitcfg3561);
+	if (v1 == -1) {
+		return;
+	}
+	script_5796(client_configs['cfg1269'].bitcfg3561, 0, v3, v0, v2, -1, -1, -1);
+	script_5791();
+	script_6793(client_configs['cfg1269'].bitcfg3561, client_configs['cfg1269'].bitcfg3563);
+	script_6794(client_configs['cfg1269'].bitcfg3561, client_configs['cfg1269'].bitcfg3563);
+	return;
+}

@@ -1,0 +1,236 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4851(int a0,int a1,int a2,int a3,int a4,int a5) {
+	cs2method_10467(1, 82444491);
+	cs2method_10273(a1);
+	cs2method_10273(a3);
+	cs2method_10273(a4);
+	int v7 = 0;
+	int v9 = 0;
+	int v10 = 1;
+	int v8 = 0;
+	int v3 = 28;
+	int v11 = -1;
+	int v2 = -1;
+	int v12 = -1;
+	int v0 = 0;
+	int v6 = 0;
+	switch (client_configs['cfg1981'].bitcfg6981) {
+		case 1:
+			v0 = client_configs['cfg1982'].bitcfg6985;
+			v6 = client_configs['cfg1982'].bitcfg6989;
+			break;
+		case 2:
+			v0 = client_configs['cfg1984'].bitcfg6994;
+			v6 = client_configs['cfg1984'].bitcfg6998;
+			break;
+		case 3:
+			v0 = client_configs['cfg1986'].bitcfg7003;
+			v6 = client_configs['cfg1986'].bitcfg7007;
+	}
+	cs2method_10606(a4, 3, 0);
+	cs2method_10269(1);
+	cs2method_10606(a1, 4, 0);
+	cs2method_10269(1);
+	cs2method_10606(a3, 5, 0);
+	cs2method_10269(1);
+	if (v6 == 0) {
+		int v1 = script_4819(client_configs['cfg1981'].bitcfg6981);
+		int v5 = script_4822(client_configs['cfg1981'].bitcfg6981);
+		int v4 = script_4825(client_configs['cfg1981'].bitcfg6981);
+		if (v1 == -1 || v5 == -1 || v4 == -1) {
+			return;
+		}
+		int v13 = cs2method_10872(cs2method_10872(cs2method_10924(v1), cs2method_10924(v4)), cs2method_10924(v5));
+		while (v10 <= v13) {
+			int v13 = idx17mapData('i', 'i', v1, v10);
+			cs2method_10606(a4, 3, v10);
+			cs2method_10013(0, v3, 1, 0);
+			cs2method_10238(1);
+			if (cs2method_10038(v10, 2) == 0) {
+				cs2method_10811(2105114);
+				cs2method_20884(new function<script_1356>(int a0,int a1,int a2) {
+					if (cs2method_11038(a1, a2) == 1) {
+						cs2method_10811(a0);
+					}
+					return;
+				}, new WidgetPointer(-32768,3), -2147483643, 2105114, "Iii");
+			} else {
+				cs2method_10811(1709842);
+				cs2method_20884(new function<script_1356>(int a0,int a1,int a2) {
+					if (cs2method_11038(a0, a1) == 1) {
+						cs2method_10811(a2);
+					}
+					return;
+				}, new WidgetPointer(-32768,3), -2147483643, 1709842, "Iii");
+			}
+			cs2method_10063(0, v8, 0, 0);
+			if (script_4828(client_configs['cfg1981'].bitcfg6981) == 0) {
+				cs2method_20703(new function<script_4803>(int a0) {
+					int v0 = script_4819(client_configs['cfg1981'].bitcfg6981);
+					int v1 = idx17mapData('i', 'i', v0, a0);
+					switch (client_configs['cfg1981'].bitcfg6981) {
+						case 1:
+							if (v1 != client_configs['cfg1982'].bitcfg6985) {
+								client_configs['cfg1982'].bitcfg6985 = v1;
+								client_configs['cfg1982'].bitcfg6986 = 1;
+								client_configs['cfg1983'].bitcfg6990 = 0;
+								client_configs['cfg1983'].bitcfg6991 = 0;
+								client_configs['cfg1983'].bitcfg6992 = 0;
+							}
+							break;
+						case 2:
+							if (v1 != client_configs['cfg1984'].bitcfg6994) {
+								client_configs['cfg1984'].bitcfg6994 = v1;
+								client_configs['cfg1984'].bitcfg6995 = 1;
+								client_configs['cfg1985'].bitcfg6999 = 0;
+								client_configs['cfg1985'].bitcfg7000 = 0;
+								client_configs['cfg1985'].bitcfg7001 = 0;
+							}
+							break;
+						case 3:
+							if (v1 != client_configs['cfg1986'].bitcfg7003) {
+								client_configs['cfg1986'].bitcfg7003 = v1;
+								client_configs['cfg1986'].bitcfg7004 = 1;
+								client_configs['cfg1987'].bitcfg7008 = 0;
+								client_configs['cfg1987'].bitcfg7009 = 0;
+								client_configs['cfg1987'].bitcfg7010 = 0;
+							}
+					}
+					int v2 = 0;
+					if (script_4828(client_configs['cfg1981'].bitcfg6981) == 0) {
+						int v3 = cs2method_10051(28, cs2method_10461(a0, 1));
+						cs2method_10467(0, 82444491);
+						cs2method_10112(0, v3, 0, 0, 82444491);
+					}
+					script_4846(1);
+					script_4804();
+					return;
+				}, v10, "i");
+				cs2method_10057(1, "Select");
+				cs2method_20674(new function<script_1356>(int a0,int a1,int a2) {
+					if (cs2method_11038(a2, a1) == 1) {
+						cs2method_10811(a0);
+					}
+					return;
+				}, new WidgetPointer(-32768,3), -2147483643, 4537648, "Iii");
+			}
+			if (v0 == v13) {
+				cs2method_10467(0, 82444491);
+				cs2method_10112(0, v8, 0, 0, 82444491);
+			}
+			cs2method_10606(a1, 4, v10);
+			cs2method_10013(30, v3, 1, 0);
+			cs2method_10063(30, v8, 0, 0);
+			cs2method_10797(idx17mapData('i', 's', v5, v13));
+			cs2method_10811(15065531);
+			cs2method_10692(494);
+			cs2method_11105(0, 1, 0);
+			cs2method_10606(a3, 5, v10);
+			cs2method_10013(22, 22, 0, 0);
+			cs2method_10063(5, cs2method_10060(4, v8), 0, 0);
+			cs2method_10310(idx17mapData('i', 'd', v4, v13));
+			v8 = cs2method_10051(v3, v10);
+			v10 = cs2method_10060(v10, 1);
+		}
+	} else {
+		cs2method_10606(a4, 3, v10);
+		cs2method_10013(0, v3, 1, 0);
+		cs2method_10238(1);
+		if (cs2method_10038(v10, 2) == 0) {
+			cs2method_10811(2105114);
+			cs2method_20884(new function<script_1356>(int a0,int a1,int a2) {
+				if (cs2method_11038(a1, a2) == 1) {
+					cs2method_10811(a0);
+				}
+				return;
+			}, new WidgetPointer(-32768,3), -2147483643, 2105114, "Iii");
+		} else {
+			cs2method_10811(1709842);
+			cs2method_20884(new function<script_1356>(int a0,int a1,int a2) {
+				if (cs2method_11038(a1, a0) == 1) {
+					cs2method_10811(a2);
+				}
+				return;
+			}, new WidgetPointer(-32768,3), -2147483643, 1709842, "Iii");
+		}
+		cs2method_10063(0, v8, 0, 0);
+		cs2method_20703(new function<script_4803>(int a0) {
+			int v2 = script_4819(client_configs['cfg1981'].bitcfg6981);
+			int v1 = idx17mapData('i', 'i', v2, a0);
+			switch (client_configs['cfg1981'].bitcfg6981) {
+				case 1:
+					if (v1 != client_configs['cfg1982'].bitcfg6985) {
+						client_configs['cfg1982'].bitcfg6985 = v1;
+						client_configs['cfg1982'].bitcfg6986 = 1;
+						client_configs['cfg1983'].bitcfg6990 = 0;
+						client_configs['cfg1983'].bitcfg6991 = 0;
+						client_configs['cfg1983'].bitcfg6992 = 0;
+					}
+					break;
+				case 2:
+					if (v1 != client_configs['cfg1984'].bitcfg6994) {
+						client_configs['cfg1984'].bitcfg6994 = v1;
+						client_configs['cfg1984'].bitcfg6995 = 1;
+						client_configs['cfg1985'].bitcfg6999 = 0;
+						client_configs['cfg1985'].bitcfg7000 = 0;
+						client_configs['cfg1985'].bitcfg7001 = 0;
+					}
+					break;
+				case 3:
+					if (v1 != client_configs['cfg1986'].bitcfg7003) {
+						client_configs['cfg1986'].bitcfg7003 = v1;
+						client_configs['cfg1986'].bitcfg7004 = 1;
+						client_configs['cfg1987'].bitcfg7008 = 0;
+						client_configs['cfg1987'].bitcfg7009 = 0;
+						client_configs['cfg1987'].bitcfg7010 = 0;
+					}
+			}
+			int v0 = 0;
+			if (script_4828(client_configs['cfg1981'].bitcfg6981) == 0) {
+				int v3 = cs2method_10051(28, cs2method_10461(a0, 1));
+				cs2method_10467(0, 82444491);
+				cs2method_10112(0, v3, 0, 0, 82444491);
+			}
+			script_4846(1);
+			script_4804();
+			return;
+		}, v10, "i");
+		cs2method_10057(1, "Select");
+		cs2method_20674(new function<script_1356>(int a0,int a1,int a2) {
+			if (cs2method_11038(a1, a0) == 1) {
+				cs2method_10811(a2);
+			}
+			return;
+		}, new WidgetPointer(-32768,3), -2147483643, 4537648, "Iii");
+		cs2method_10467(0, 82444491);
+		cs2method_10112(0, v8, 0, 0, 82444491);
+		cs2method_10606(a1, 4, v10);
+		cs2method_10013(30, v3, 1, 0);
+		cs2method_10063(30, v8, 0, 0);
+		cs2method_10797("Reset hotspot");
+		cs2method_10811(15065531);
+		cs2method_10692(494);
+		cs2method_11105(0, 1, 0);
+		cs2method_10606(a3, 5, v10);
+		cs2method_10013(22, 22, 0, 0);
+		cs2method_10063(5, cs2method_10060(4, v8), 0, 0);
+		cs2method_10310(6496);
+		cs2method_11142(49149);
+		v8 = cs2method_10051(v3, v10);
+	}
+	cs2method_10251(0, 0, a0);
+	cs2method_11130(0, v8, a0);
+	script_31(a2, a0, 5666, 5663, 5664, 5665, 5686, 5685);
+	return;
+}

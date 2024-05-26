@@ -1,0 +1,49 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3935() {
+	int v10 = 0;
+	int v6 = 0;
+	int v9 = 0;
+	int v5 = 0;
+	script_7_struct(4,0,0) v13 = script_7();
+	int v3 = v13.intpart_3;
+	int v11 = v13.intpart_2;
+	int v12 = v13.intpart_1;
+	int v2 = v13.intpart_0;
+	if (v2 == -1) {
+		return;
+	}
+	int v7 = 0;
+	int v16 = 1;
+	int v0 = 0;
+	int v1 = 0;
+	int v4 = 3;
+	opc_struct10366(2,0,0) v14 = cs2method_10366(v4);
+	int v15 = v14.intpart_1;
+	int v8 = v14.intpart_0;
+	if (cs2method_10846(cs2method_10379(v8), cs2method_10744(97648670)) != 0) {
+		cs2method_10026(97648670, cs2method_10379(v8));
+		int v17 = cs2method_11048(cs2method_10872(cs2method_10122(v8, v15, 100), 100), 0);
+		int v18 = cs2method_10968(cs2method_10051(v17, 16384), 100);
+		cs2method_10283(v18, cs2method_10823(97648669), 2, 0, 97648645);
+	}
+	if (cs2_configs['cfg4115'] != npcConfigs['cfg87']) {
+		cs2_configs['cfg4115'] = npcConfigs['cfg87'];
+		script_90();
+	}
+	if (v3 > 0) {
+		v3 = cs2method_10060(v3, 6);
+	}
+	script_5(v2, v12, v11, v3);
+	return;
+}

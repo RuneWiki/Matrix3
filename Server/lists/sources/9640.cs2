@@ -1,0 +1,22 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_9640(int a0) {
+	int v2 = 0;
+	int v1 = cs2method_10968(a0, 32);
+	int v0 = cs2method_10038(a0, 32);
+	switch (v1) {
+		case 0:
+			v2 = cs2method_10441(cs2_configs['cfg3934'], v0);
+	}
+	return v2;
+}

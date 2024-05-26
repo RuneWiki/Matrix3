@@ -1,0 +1,25 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8993() {
+	if (client_configs['cfg3660'].bitcfg18708 == 0) {
+		cs2method_10467(0, 98107557);
+		cs2method_10810("You have no votes to spend.");
+		return;
+	}
+	cs2method_10467(0, 98107468);
+	cs2method_10467(1, 98107397);
+	cs2method_10467(1, 98107461);
+	cs2method_10026(98107474, cs2method_10379(cs2_configs['cfg2790']));
+	script_7229(98107469, 0, 98107469, cs2method_10872(client_configs['cfg3660'].bitcfg18708, 100), 98107550, 98107552, 98107555);
+	return;
+}

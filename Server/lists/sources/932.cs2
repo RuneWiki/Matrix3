@@ -1,0 +1,57 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_932(int a0) {
+	int v3 = itemDefsAttribute(a0, 764);
+	if (v3 == -1) {
+		return 1;
+	}
+	if (script_2156(v3) == 0) {
+		return 0;
+	}
+	int v1 = itemDefsAttribute(a0, 765);
+	if (v1 == -1) {
+		return 1;
+	}
+	if (script_2156(v1) == 0) {
+		return 0;
+	}
+	int v0 = itemDefsAttribute(a0, 766);
+	if (v0 == -1) {
+		return 1;
+	}
+	if (script_2156(v0) == 0) {
+		return 0;
+	}
+	int v2 = itemDefsAttribute(a0, 767);
+	if (v2 == -1) {
+		return 1;
+	}
+	if (script_2156(v2) == 0) {
+		return 0;
+	}
+	int v5 = itemDefsAttribute(a0, 768);
+	if (v5 == -1) {
+		return 1;
+	}
+	if (script_2156(v5) == 0) {
+		return 0;
+	}
+	int v4 = itemDefsAttribute(a0, 769);
+	if (v4 == -1) {
+		return 1;
+	}
+	if (script_2156(v4) == 0) {
+		return 0;
+	}
+	return 1;
+}

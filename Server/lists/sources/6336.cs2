@@ -1,0 +1,44 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6336(int a0,int a1) {
+	int v0 = 0;
+	int v1 = -1;
+	int v3 = 0;
+	while (v0 < a0) {
+		if (cs2method_11038(a1, v0) == 1) {
+			int v2 = cs2method_10640(93, v0);
+			if (v2 != -1) {
+				cs2method_10269(0);
+				int v4 = cs2method_11065(93, v0);
+				cs2method_11070(v2, v4);
+				cs2method_10200((string)script_4033(v2) + (string)cs2method_10018(v2));
+				cs2method_10620();
+				if (v4 > 2) {
+					cs2method_10057(1, "Add-1");
+					cs2method_10057(2, "Add-All");
+					cs2method_10057(3, "Add-X");
+				} else if (v4 == 2) {
+					cs2method_10057(1, "Add-1");
+					cs2method_10057(2, "Add-All");
+				} else {
+					cs2method_10057(1, "Add");
+				}
+				cs2method_10057(10, "Examine");
+			} else {
+				cs2method_10269(1);
+			}
+		}
+		v0 = cs2method_10060(v0, 1);
+	}
+	return;
+}

@@ -1,0 +1,105 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_154(int a0,int a1,object a2,object a3,object a4,object a5,int a6,int a7,object a8,object a9,object a10,int a11,int a12,object a13,object a14) {
+	object v0 = "";
+	if (cs2method_11038(a6, a12) == 1) {
+		if (cs2method_10640(a7, a11) != -1) {
+			object v1 = "<col=ff981f>" + (string)cs2method_10018(cs2method_10640(a7, a11));
+			cs2method_11070(cs2method_10640(a7, a11), cs2method_11065(a7, a11));
+			cs2method_10200(v1);
+			cs2method_10057(1, a13);
+			cs2method_10057(2, a8);
+			cs2method_10057(3, a9);
+			cs2method_10057(4, a3);
+			cs2method_10057(5, a4);
+			cs2method_10057(6, a14);
+			cs2method_10057(7, a10);
+			cs2method_10057(8, a2);
+			cs2method_10057(9, a5);
+			cs2method_10057(10, "Examine" + "<col=ff9040>");
+			if (a1 > 0) {
+				cs2method_10065(5);
+				cs2method_11009(10);
+			}
+			if (a1 == 1) {
+				cs2method_20902(new function<script_155>(object a0,object a1,object a2,object a3,int a4,object a5,int a6,int a7,int a8,object a9,int a10,object a11,object a12,object a13,int a14) {
+					if (a10 == -1) {
+						script_154(a14, a2, a0, a12, a6, a11, a13, a7, a6, a8, a1, a3, a4, a5, a9);
+						return;
+					}
+					script_154(a14, a2, a0, a12, a6, a11, a13, a7, a10, a8, a1, a3, a4, a5, a9);
+					script_154(a14, a2, a0, a12, a10, a11, a13, a7, a6, a8, a1, a3, a4, a5, a9);
+					return;
+				}, a7, -2147483643, -2147483641, new WidgetPointer(-32768,3), a1, new WidgetPointer(a0), (string)a13, (string)a8, (string)a9, (string)a3, (string)a4, (string)a14, (string)a10, (string)a2, (string)a5, "viiIiIsssssssss");
+			} else {
+				if (a1 == 2) {
+					cs2method_20902(new function<script_156>(int a0,object a1,object a2,object a3,object a4,object a5,int a6,object a7,int a8,object a9,int a10,int a11,object a12,int a13,object a14) {
+						if (a6 == -1) {
+							script_154(a10, a3, a9, a4, a8, a5, a2, a11, a8, a0, a7, a14, a13, a1, a12);
+							return;
+						}
+						int v0 = a8;
+						while (v0 != a6) {
+							if (v0 > a6) {
+								script_154(a10, a3, a9, a4, cs2method_10461(v0, 1), a5, a2, a11, v0, a0, a7, a14, a13, a1, a12);
+								v0 = cs2method_10461(v0, 1);
+							} else {
+								if (v0 < a6) {
+									script_154(a10, a3, a9, a4, cs2method_10060(v0, 1), a5, a2, a11, v0, a0, a7, a14, a13, a1, a12);
+									v0 = cs2method_10060(v0, 1);
+								}
+							}
+						}
+						script_154(a10, a3, a9, a4, a8, a5, a2, a11, a6, a0, a7, a14, a13, a1, a12);
+						return;
+					}, a7, -2147483643, -2147483641, new WidgetPointer(-32768,3), a1, new WidgetPointer(a0), (string)a13, (string)a8, (string)a9, (string)a3, (string)a4, (string)a14, (string)a10, (string)a2, (string)a5, "viiIiIsssssssss");
+				}
+			}
+			if (a1 != 0 && a0 != -1) {
+				cs2method_21150(new function<script_162>(int a0,int a1,int a2,int a3) {
+					if (cs2method_11038(a1, a3) == 1) {
+						int v0 = cs2method_10461(a0, cs2method_10718(a1));
+						if (v0 < 10) {
+							script_157(a2, a1, cs2method_10461(cs2method_10718(a1), 4), 1);
+						}
+						if (cs2method_10060(v0, cs2method_10664()) > cs2method_10461(cs2method_10823(a1), 10)) {
+							script_157(a2, a1, cs2method_10060(cs2method_10718(a1), 4), 1);
+						}
+					}
+					return;
+				}, a11, new WidgetPointer(a6), new WidgetPointer(a0), -2147483646, "iIIi");
+			}
+			cs2method_10278(3153952);
+			cs2method_10356(1);
+			cs2method_20353(new function<script_5495>(int a0) {
+				script_9252(a0);
+				return;
+			}, cs2method_10640(a7, a11), "o");
+			cs2method_20884(new function<script_5495>(int a0) {
+				script_9252(a0);
+				return;
+			}, -1, "o");
+			cs2method_10337(1);
+		} else {
+			cs2method_10903(-1, 0);
+			cs2method_10620();
+			if (a1 > 0) {
+				cs2method_10065(0);
+				cs2method_11009(0);
+			}
+			cs2method_20902(new function<none>() {
+			}, "");
+		}
+	}
+	return;
+}

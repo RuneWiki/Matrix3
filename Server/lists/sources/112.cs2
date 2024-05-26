@@ -1,0 +1,213 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_112(int a0,int a1) {
+	if (cs2_configs['cfg2873'] != 10) {
+		return;
+	}
+	switch (a1) {
+		case 84:
+			script_8841(10, 0);
+			if (cs2_configs['cfg5'] == 7 && cs2method_10265(cs2_configs['cfg2506']) <= 0) {
+				return;
+			}
+			if (cs2_configs['cfg5'] == 12) {
+				script_1806(cs2_configs['cfg2506']);
+				return;
+			}
+			if (cs2_configs['cfg5'] == 13) {
+				cs2method_11148(cs2_configs['cfg2506']);
+				script_1548(13);
+				return;
+			}
+			if (cs2method_10265(cs2_configs['cfg2506']) > 0) {
+				if (cs2_configs['cfg5'] == 4 || cs2_configs['cfg5'] == 5) {
+					if (cs2method_10260() < 0) {
+						cs2method_10810("Unable to update Ignore List: system busy");
+					} else if (cs2_configs['cfg5'] == 4) {
+						cs2method_10290(cs2_configs['cfg2506']);
+					} else {
+						if (cs2_configs['cfg5'] == 5) {
+							if (cs2method_10654(script_4591(cs2_configs['cfg2506'])) == 1) {
+								cs2method_10762(script_4591(cs2_configs['cfg2506']));
+							} else {
+								cs2method_10810("That player is not on your ignore list.");
+							}
+						}
+					}
+					script_1548(cs2_configs['cfg5']);
+				} else if (cs2_configs['cfg5'] < 7) {
+					if (cs2method_10193() < 0) {
+						cs2method_10810("Unable to complete action - system busy");
+						script_1548(cs2_configs['cfg5']);
+					} else if (cs2_configs['cfg5'] == 2) {
+						script_1548(2);
+						cs2method_11133(cs2_configs['cfg2506']);
+					} else if (cs2_configs['cfg5'] == 3) {
+						if (cs2method_10563(script_4591(cs2_configs['cfg2506'])) == 1) {
+							cs2_configs['cfg3936'] = (string)script_4591(cs2_configs['cfg2506']);
+							script_9961(8);
+						} else {
+							cs2method_10810("That player is not on your friends list.");
+						}
+						script_1548(3);
+					} else {
+						if (cs2_configs['cfg5'] == 6) {
+							if (cs2method_10149() == 2) {
+								cs2method_10841(0, 1, cs2method_10610());
+							}
+							cs2method_10365(cs2_configs['cfg2367'], cs2_configs['cfg2506']);
+							script_1548(6);
+						}
+					}
+				} else if (cs2_configs['cfg5'] == 11) {
+					script_1478();
+				} else if (cs2_configs['cfg5'] == 7) {
+					cs2_configs['cfg2506'] = (string)script_2332(cs2_configs['cfg2506'], "K", "000");
+					cs2_configs['cfg2506'] = (string)script_2332(cs2_configs['cfg2506'], "k", "000");
+					cs2_configs['cfg2506'] = (string)script_2332(cs2_configs['cfg2506'], "M", "000000");
+					cs2_configs['cfg2506'] = (string)script_2332(cs2_configs['cfg2506'], "m", "000000");
+					if (cs2method_10262() == 1) {
+						cs2_configs['cfg2506'] = (string)script_2332(cs2_configs['cfg2506'], "T", "000");
+						cs2_configs['cfg2506'] = (string)script_2332(cs2_configs['cfg2506'], "t", "000");
+					}
+					cs2method_11068(script_5390(cs2_configs['cfg2506']));
+				} else if (cs2_configs['cfg5'] == 8) {
+					cs2_configs['cfg2507'] = (string)cs2method_11053(cs2_configs['cfg2506']);
+					cs2_configs['cfg1026'] = 1;
+					cs2method_10207(cs2_configs['cfg2506']);
+				} else if (cs2_configs['cfg5'] == 9) {
+					if (cs2method_10846(cs2method_10181(cs2_configs['cfg2506']), cs2method_10181(cs2_configs['cfg2577'])) != 0) {
+						cs2method_11148(cs2_configs['cfg2506']);
+					} else {
+						cs2method_10810("Please do not enter your password here!");
+					}
+				} else if (cs2_configs['cfg5'] == 10) {
+					cs2_configs['cfg2508'] = (string)cs2method_11053(cs2_configs['cfg2506']);
+					cs2_configs['cfg1027'] = 1;
+					cs2method_10160(cs2_configs['cfg2506']);
+				} else if (cs2_configs['cfg5'] == 15) {
+					script_1633(cs2_configs['cfg2506']);
+				} else {
+					if (cs2_configs['cfg5'] == 16) {
+						script_4465(cs2_configs['cfg2506']);
+					}
+				}
+			} else {
+				if (cs2_configs['cfg5'] == 14) {
+					script_7751();
+					return;
+				}
+			}
+			script_1548(0);
+			return;
+		case 13:
+			if (script_9666() == 1) {
+				return;
+			}
+			if (cs2_configs['cfg5'] == 12) {
+				script_1806(cs2_configs['cfg2409']);
+				script_9726(0);
+			} else if (cs2_configs['cfg5'] == 14) {
+				script_7751();
+			} else {
+				script_9726(cs2_configs['cfg5']);
+			}
+			return;
+		case 102:
+		case 103:
+		case 98:
+		case 99:
+		case 96:
+		case 97:
+			if (cs2method_10862() == 0) {
+				return;
+			}
+			cs2_configs['cfg1029'] = script_1553(a1, cs2_configs['cfg2506'], cs2_configs['cfg1029']);
+			break;
+		default:
+			switch (cs2_configs['cfg5']) {
+				case 1:
+					if (a1 == 83) {
+						script_1548(1);
+					}
+					return;
+				case 6:
+				case 9:
+				case 11:
+					int v25 = cs2_configs['cfg1029'];
+					int v11 = 0;
+					int v12 = a1;
+					int v22 = a0;
+					object v16 = cs2_configs['cfg2506'];
+					script_802_struct(1,1,0) v13 = script_802(v25, v16, v11, v12, v22);
+					object v23 = v13.objectpart_0;
+					cs2_configs['cfg1029'] = v13.intpart_0;
+					cs2_configs['cfg2506'] = (string)v23;
+					break;
+				case 7:
+					int v1 = cs2_configs['cfg1029'];
+					int v20 = 6;
+					int v30 = a1;
+					int v27 = a0;
+					object v29 = cs2_configs['cfg2506'];
+					script_802_struct(1,1,0) v10 = script_802(v1, v29, v20, v30, v27);
+					object v19 = v10.objectpart_0;
+					cs2_configs['cfg1029'] = v10.intpart_0;
+					cs2_configs['cfg2506'] = (string)v19;
+					break;
+				case 13:
+					int v2 = cs2_configs['cfg1029'];
+					int v31 = 5;
+					int v24 = a1;
+					int v28 = a0;
+					object v6 = cs2_configs['cfg2506'];
+					script_802_struct(1,1,0) v17 = script_802(v2, v6, v31, v24, v28);
+					object v15 = v17.objectpart_0;
+					cs2_configs['cfg1029'] = v17.intpart_0;
+					cs2_configs['cfg2506'] = (string)v15;
+					break;
+				case 14:
+					int v21 = cs2_configs['cfg1029'];
+					int v34 = 4;
+					int v14 = a1;
+					int v32 = a0;
+					object v26 = cs2_configs['cfg2506'];
+					script_802_struct(1,1,0) v33 = script_802(v21, v26, v34, v14, v32);
+					object v8 = v33.objectpart_0;
+					cs2_configs['cfg1029'] = v33.intpart_0;
+					cs2_configs['cfg2506'] = (string)v8;
+					break;
+			}
+			int v18 = cs2_configs['cfg1029'];
+			int v5 = 2;
+			int v7 = a1;
+			int v4 = a0;
+			object v3 = cs2_configs['cfg2506'];
+			script_802_struct(1,1,0) v0 = script_802(v18, v3, v5, v7, v4);
+			object v9 = v0.objectpart_0;
+			cs2_configs['cfg1029'] = v0.intpart_0;
+			cs2_configs['cfg2506'] = (string)v9;
+	}
+	cs2method_10026(96272387, cs2method_11053(cs2_configs['cfg2506']));
+	script_1557();
+	if (cs2_configs['cfg5'] == 11) {
+		script_1475();
+	} else {
+		if (cs2_configs['cfg5'] == 14) {
+			cs2_configs['cfg2249'] = (string)cs2method_10181(cs2_configs['cfg2506']);
+			cs2_configs['cfg89'] = 1;
+			script_7746();
+		}
+	}
+	return;
+}

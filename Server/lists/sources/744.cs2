@@ -1,0 +1,40 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_744(int a0,int a1,int a2,int a3,int a4) {
+	int v1 = -1;
+	int v0 = -1;
+	if (a1 == 1179657) {
+		if (a0 == 1179657) {
+			if (cs2method_11038(a1, a3) == 1 && cs2method_11038(a0, a2) == 1) {
+				int v4 = cs2method_10487();
+				int v3 = cs2method_10487();
+				int v2 = v4;
+				cs2method_10903(v3, 1);
+				cs2method_10903(v2, 1);
+				cs2method_10200("<col=ff9040>" + (string)cs2method_10018(v3) + "</col>");
+				cs2method_10200("<col=ff9040>" + (string)cs2method_10018(v2) + "</col>");
+			}
+			return;
+		}
+		if (a0 == 1179665) {
+			script_1535(a3, 0);
+			script_59(a4);
+		}
+		return;
+	}
+	if (a1 == 1179665 && a0 == 1179657) {
+		script_1535(a2, a3);
+		script_59(a4);
+	}
+	return;
+}

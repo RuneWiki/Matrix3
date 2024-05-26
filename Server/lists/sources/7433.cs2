@@ -1,0 +1,37 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7433(int a0,int a1,int a2) {
+	int v4 = script_7435(a2, a0);
+	int v11 = -1;
+	int v12 = -1;
+	int v8 = 0;
+	int v17 = 0;
+	int v3 = -1;
+	object v19 = "";
+	int v7 = 0;
+	int v14 = a2;
+	script_7434_struct(6,1,0) v2 = script_7434(v14);
+	int v6 = v2.intpart_5;
+	object v13 = v2.objectpart_0;
+	int v16 = v2.intpart_4;
+	int v5 = v2.intpart_3;
+	int v1 = v2.intpart_2;
+	int v18 = v2.intpart_1;
+	int v0 = v2.intpart_0;
+	cs2method_10026(v16, (string)v13 + " " + "<col=ffffff>" + (string)cs2method_10055(v4, 1) + "</col>");
+	int v15 = cs2method_10461(v4, v1);
+	int v9 = cs2method_10461(v5, v1);
+	int v10 = cs2method_10461(cs2method_10236(v0), cs2method_10236(v18));
+	cs2method_10112(cs2method_10122(v15, v9, v10), 0, 0, 1, v18);
+	return;
+}

@@ -1,0 +1,29 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_4217_struct(2,0,0) script_4217() {
+	int v2 = 0;
+	int v0 = 0;
+	int v1 = 1;
+	while (v1 <= cs2method_10924(681)) {
+		if (idx17mapData('i', 'S', 681, v1) != -1) {
+			v2 = cs2method_10060(v2, cs2method_10512(idx17mapData('i', 'S', 681, v1)));
+			if (v2 > 1000000000) {
+				int v3 = cs2method_10060(v0, 1);
+				v2 = cs2method_10461(v2, 1000000000);
+				v0 = v3;
+			}
+			v1 = cs2method_10060(v1, 1);
+		}
+	}
+	return new script_4217_struct(v2, v0);
+}

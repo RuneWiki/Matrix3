@@ -1,0 +1,457 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_4724_struct(6,0,0) script_4724(int a0) {
+	int v6 = 0;
+	int v16 = 0;
+	int v28 = 0;
+	int v12 = 0;
+	int v1 = 0;
+	int v20 = 0;
+	int v5 = 0;
+	int v29 = 0;
+	int v3 = 0;
+	int v23 = 0;
+	int v19 = 0;
+	int v25 = 0;
+	if (cs2method_10172() == 1) {
+		switch (a0) {
+			case 1:
+				v28 = clan_chat_configs['cfg2144'].bitcfg6690;
+				v6 = clan_chat_configs['cfg2138'].bitcfg6682;
+				v16 = clan_chat_configs['cfg2138'].bitcfg6683;
+				v12 = clan_chat_configs['cfg2144'].bitcfg6687;
+				v1 = clan_chat_configs['cfg2144'].bitcfg6688;
+				v20 = clan_chat_configs['cfg2144'].bitcfg6689;
+				break;
+			case 2:
+				v28 = clan_chat_configs['cfg2161'].bitcfg6699;
+				v6 = clan_chat_configs['cfg2155'].bitcfg6691;
+				v16 = clan_chat_configs['cfg2155'].bitcfg6692;
+				v12 = clan_chat_configs['cfg2161'].bitcfg6696;
+				v1 = clan_chat_configs['cfg2161'].bitcfg6697;
+				v20 = clan_chat_configs['cfg2161'].bitcfg6698;
+				break;
+			case 3:
+				v28 = clan_chat_configs['cfg2178'].bitcfg6708;
+				v6 = clan_chat_configs['cfg2172'].bitcfg6700;
+				v16 = clan_chat_configs['cfg2172'].bitcfg6701;
+				v12 = clan_chat_configs['cfg2178'].bitcfg6705;
+				v1 = clan_chat_configs['cfg2178'].bitcfg6706;
+				v20 = clan_chat_configs['cfg2178'].bitcfg6707;
+		}
+		switch (v28) {
+			case 21:
+				v5 = clan_chat_configs['cfg2329'].bitcfg6709;
+				v29 = clan_chat_configs['cfg2329'].bitcfg6710;
+				v23 = clan_chat_configs['cfg2335'].bitcfg6714;
+				v19 = clan_chat_configs['cfg2335'].bitcfg6715;
+				v25 = clan_chat_configs['cfg2335'].bitcfg6716;
+				break;
+			case 22:
+				v5 = clan_chat_configs['cfg2339'].bitcfg6717;
+				v29 = clan_chat_configs['cfg2339'].bitcfg6718;
+				v23 = clan_chat_configs['cfg2345'].bitcfg6722;
+				v19 = clan_chat_configs['cfg2345'].bitcfg6723;
+				v25 = clan_chat_configs['cfg2345'].bitcfg6724;
+				break;
+			case 23:
+				v5 = clan_chat_configs['cfg2349'].bitcfg6725;
+				v29 = clan_chat_configs['cfg2349'].bitcfg6726;
+				v23 = clan_chat_configs['cfg2355'].bitcfg6730;
+				v19 = clan_chat_configs['cfg2355'].bitcfg6731;
+				v25 = clan_chat_configs['cfg2355'].bitcfg6732;
+				break;
+			case 24:
+				v5 = clan_chat_configs['cfg2359'].bitcfg6733;
+				v29 = clan_chat_configs['cfg2359'].bitcfg6734;
+				v23 = clan_chat_configs['cfg2365'].bitcfg6738;
+				v19 = clan_chat_configs['cfg2365'].bitcfg6739;
+				v25 = clan_chat_configs['cfg2365'].bitcfg6740;
+				break;
+			case 25:
+				v5 = clan_chat_configs['cfg2369'].bitcfg6741;
+				v29 = clan_chat_configs['cfg2369'].bitcfg6742;
+				v23 = clan_chat_configs['cfg2375'].bitcfg6746;
+				v19 = clan_chat_configs['cfg2375'].bitcfg6747;
+				v25 = clan_chat_configs['cfg2375'].bitcfg6748;
+				break;
+			case 26:
+				v5 = clan_chat_configs['cfg2379'].bitcfg6749;
+				v29 = clan_chat_configs['cfg2379'].bitcfg6750;
+				v23 = clan_chat_configs['cfg2385'].bitcfg6754;
+				v19 = clan_chat_configs['cfg2385'].bitcfg6755;
+				v25 = clan_chat_configs['cfg2385'].bitcfg6756;
+				break;
+			case 27:
+				v5 = clan_chat_configs['cfg2389'].bitcfg6757;
+				v29 = clan_chat_configs['cfg2389'].bitcfg6758;
+				v23 = clan_chat_configs['cfg2395'].bitcfg6762;
+				v19 = clan_chat_configs['cfg2395'].bitcfg6763;
+				v25 = clan_chat_configs['cfg2395'].bitcfg6764;
+				break;
+			case 28:
+				v5 = clan_chat_configs['cfg2399'].bitcfg6765;
+				v29 = clan_chat_configs['cfg2399'].bitcfg6766;
+				v23 = clan_chat_configs['cfg2405'].bitcfg6770;
+				v19 = clan_chat_configs['cfg2405'].bitcfg6771;
+				v25 = clan_chat_configs['cfg2405'].bitcfg6772;
+				break;
+			case 31:
+				v5 = clan_chat_configs['cfg2459'].bitcfg6813;
+				v29 = clan_chat_configs['cfg2459'].bitcfg6814;
+				v23 = clan_chat_configs['cfg2465'].bitcfg6818;
+				v19 = clan_chat_configs['cfg2465'].bitcfg6819;
+				v25 = clan_chat_configs['cfg2465'].bitcfg6820;
+				break;
+			case 32:
+				v5 = clan_chat_configs['cfg2469'].bitcfg6821;
+				v29 = clan_chat_configs['cfg2469'].bitcfg6822;
+				v23 = clan_chat_configs['cfg2475'].bitcfg6826;
+				v19 = clan_chat_configs['cfg2475'].bitcfg6827;
+				v25 = clan_chat_configs['cfg2475'].bitcfg6828;
+				break;
+			case 33:
+				v5 = clan_chat_configs['cfg2479'].bitcfg6829;
+				v29 = clan_chat_configs['cfg2479'].bitcfg6830;
+				v23 = clan_chat_configs['cfg2485'].bitcfg6834;
+				v19 = clan_chat_configs['cfg2485'].bitcfg6835;
+				v25 = clan_chat_configs['cfg2485'].bitcfg6836;
+				break;
+			case 34:
+				v5 = clan_chat_configs['cfg2489'].bitcfg6837;
+				v29 = clan_chat_configs['cfg2489'].bitcfg6838;
+				v23 = clan_chat_configs['cfg2495'].bitcfg6842;
+				v19 = clan_chat_configs['cfg2495'].bitcfg6843;
+				v25 = clan_chat_configs['cfg2495'].bitcfg6844;
+				break;
+			case 35:
+				v5 = clan_chat_configs['cfg2499'].bitcfg6845;
+				v29 = clan_chat_configs['cfg2499'].bitcfg6846;
+				v23 = clan_chat_configs['cfg2505'].bitcfg6850;
+				v19 = clan_chat_configs['cfg2505'].bitcfg6851;
+				v25 = clan_chat_configs['cfg2505'].bitcfg6852;
+				break;
+			case 41:
+				v5 = clan_chat_configs['cfg2409'].bitcfg6773;
+				v29 = clan_chat_configs['cfg2409'].bitcfg6774;
+				v23 = clan_chat_configs['cfg2415'].bitcfg6778;
+				v19 = clan_chat_configs['cfg2415'].bitcfg6779;
+				v25 = clan_chat_configs['cfg2415'].bitcfg6780;
+				break;
+			case 42:
+				v5 = clan_chat_configs['cfg2419'].bitcfg6781;
+				v29 = clan_chat_configs['cfg2419'].bitcfg6782;
+				v23 = clan_chat_configs['cfg2425'].bitcfg6786;
+				v19 = clan_chat_configs['cfg2425'].bitcfg6787;
+				v25 = clan_chat_configs['cfg2425'].bitcfg6788;
+				break;
+			case 43:
+				v5 = clan_chat_configs['cfg2429'].bitcfg6789;
+				v29 = clan_chat_configs['cfg2429'].bitcfg6790;
+				v23 = clan_chat_configs['cfg2435'].bitcfg6794;
+				v19 = clan_chat_configs['cfg2435'].bitcfg6795;
+				v25 = clan_chat_configs['cfg2435'].bitcfg6796;
+				break;
+			case 44:
+				v5 = clan_chat_configs['cfg2439'].bitcfg6797;
+				v29 = clan_chat_configs['cfg2439'].bitcfg6798;
+				v23 = clan_chat_configs['cfg2445'].bitcfg6802;
+				v19 = clan_chat_configs['cfg2445'].bitcfg6803;
+				v25 = clan_chat_configs['cfg2445'].bitcfg6804;
+				break;
+			case 45:
+				v5 = clan_chat_configs['cfg2449'].bitcfg6805;
+				v29 = clan_chat_configs['cfg2449'].bitcfg6806;
+				v23 = clan_chat_configs['cfg2455'].bitcfg6810;
+				v19 = clan_chat_configs['cfg2455'].bitcfg6811;
+				v25 = clan_chat_configs['cfg2455'].bitcfg6812;
+				break;
+			case 51:
+				v5 = clan_chat_configs['cfg2509'].bitcfg6853;
+				v29 = clan_chat_configs['cfg2509'].bitcfg6854;
+				v23 = clan_chat_configs['cfg2515'].bitcfg6858;
+				v19 = clan_chat_configs['cfg2515'].bitcfg6859;
+				v25 = clan_chat_configs['cfg2515'].bitcfg6860;
+				break;
+			case 61:
+				v5 = clan_chat_configs['cfg2845'].bitcfg6861;
+				v29 = clan_chat_configs['cfg2845'].bitcfg6862;
+				v23 = clan_chat_configs['cfg2851'].bitcfg6866;
+				v19 = clan_chat_configs['cfg2851'].bitcfg6867;
+				v25 = clan_chat_configs['cfg2851'].bitcfg6868;
+				break;
+			case 100:
+				v5 = clan_chat_configs['cfg2209'].bitcfg6885;
+				v29 = clan_chat_configs['cfg2209'].bitcfg6886;
+				v23 = clan_chat_configs['cfg2215'].bitcfg6890;
+				v19 = clan_chat_configs['cfg2215'].bitcfg6891;
+				v25 = clan_chat_configs['cfg2215'].bitcfg6892;
+				break;
+			case 101:
+				v5 = clan_chat_configs['cfg2219'].bitcfg6893;
+				v29 = clan_chat_configs['cfg2219'].bitcfg6894;
+				v23 = clan_chat_configs['cfg2225'].bitcfg6898;
+				v19 = clan_chat_configs['cfg2225'].bitcfg6899;
+				v25 = clan_chat_configs['cfg2225'].bitcfg6900;
+				break;
+			case 102:
+				v5 = clan_chat_configs['cfg2239'].bitcfg6909;
+				v29 = clan_chat_configs['cfg2239'].bitcfg6910;
+				v23 = clan_chat_configs['cfg2245'].bitcfg6914;
+				v19 = clan_chat_configs['cfg2245'].bitcfg6915;
+				v25 = clan_chat_configs['cfg2245'].bitcfg6916;
+				break;
+			case 103:
+				v5 = clan_chat_configs['cfg2189'].bitcfg6869;
+				v29 = clan_chat_configs['cfg2189'].bitcfg6870;
+				v23 = clan_chat_configs['cfg2195'].bitcfg6874;
+				v19 = clan_chat_configs['cfg2195'].bitcfg6875;
+				v25 = clan_chat_configs['cfg2195'].bitcfg6876;
+				break;
+			case 104:
+				v5 = clan_chat_configs['cfg2229'].bitcfg6901;
+				v29 = clan_chat_configs['cfg2229'].bitcfg6902;
+				v23 = clan_chat_configs['cfg2235'].bitcfg6906;
+				v19 = clan_chat_configs['cfg2235'].bitcfg6907;
+				v25 = clan_chat_configs['cfg2235'].bitcfg6908;
+				break;
+			case 105:
+				v5 = clan_chat_configs['cfg2199'].bitcfg6877;
+				v29 = clan_chat_configs['cfg2199'].bitcfg6878;
+				v23 = clan_chat_configs['cfg2205'].bitcfg6882;
+				v19 = clan_chat_configs['cfg2205'].bitcfg6883;
+				v25 = clan_chat_configs['cfg2205'].bitcfg6884;
+				break;
+			case 106:
+				v5 = clan_chat_configs['cfg2259'].bitcfg6925;
+				v29 = clan_chat_configs['cfg2259'].bitcfg6926;
+				v23 = clan_chat_configs['cfg2265'].bitcfg6930;
+				v19 = clan_chat_configs['cfg2265'].bitcfg6931;
+				v25 = clan_chat_configs['cfg2265'].bitcfg6932;
+				break;
+			case 107:
+				v5 = clan_chat_configs['cfg2269'].bitcfg6933;
+				v29 = clan_chat_configs['cfg2269'].bitcfg6934;
+				v23 = clan_chat_configs['cfg2275'].bitcfg6938;
+				v19 = clan_chat_configs['cfg2275'].bitcfg6939;
+				v25 = clan_chat_configs['cfg2275'].bitcfg6940;
+				break;
+			case 108:
+				v5 = clan_chat_configs['cfg2279'].bitcfg6941;
+				v29 = clan_chat_configs['cfg2279'].bitcfg6942;
+				v23 = clan_chat_configs['cfg2285'].bitcfg6946;
+				v19 = clan_chat_configs['cfg2285'].bitcfg6947;
+				v25 = clan_chat_configs['cfg2285'].bitcfg6948;
+				break;
+			case 109:
+				v5 = clan_chat_configs['cfg2249'].bitcfg6917;
+				v29 = clan_chat_configs['cfg2249'].bitcfg6918;
+				v23 = clan_chat_configs['cfg2255'].bitcfg6922;
+				v19 = clan_chat_configs['cfg2255'].bitcfg6923;
+				v25 = clan_chat_configs['cfg2255'].bitcfg6924;
+				break;
+			case 110:
+				v5 = clan_chat_configs['cfg2289'].bitcfg6949;
+				v29 = clan_chat_configs['cfg2289'].bitcfg6950;
+				v23 = clan_chat_configs['cfg2295'].bitcfg6954;
+				v19 = clan_chat_configs['cfg2295'].bitcfg6955;
+				v25 = clan_chat_configs['cfg2295'].bitcfg6956;
+				break;
+			case 111:
+				v5 = clan_chat_configs['cfg2299'].bitcfg6957;
+				v29 = clan_chat_configs['cfg2299'].bitcfg6958;
+				v23 = clan_chat_configs['cfg2305'].bitcfg6962;
+				v19 = clan_chat_configs['cfg2305'].bitcfg6963;
+				v25 = clan_chat_configs['cfg2305'].bitcfg6964;
+				break;
+			case 112:
+				v5 = clan_chat_configs['cfg2309'].bitcfg6965;
+				v29 = clan_chat_configs['cfg2309'].bitcfg6966;
+				v23 = clan_chat_configs['cfg2315'].bitcfg6970;
+				v19 = clan_chat_configs['cfg2315'].bitcfg6971;
+				v25 = clan_chat_configs['cfg2315'].bitcfg6972;
+				break;
+			case 113:
+				v5 = clan_chat_configs['cfg2319'].bitcfg6973;
+				v29 = clan_chat_configs['cfg2319'].bitcfg6974;
+				v23 = clan_chat_configs['cfg2325'].bitcfg6978;
+				v19 = clan_chat_configs['cfg2325'].bitcfg6979;
+				v25 = clan_chat_configs['cfg2325'].bitcfg6980;
+		}
+	}
+	int v17 = 1;
+	int v22 = 0;
+	int v27 = 0;
+	int v30 = 0;
+	int v10 = 0;
+	int v14 = 0;
+	int v9 = 0;
+	int v13 = 0;
+	int v15 = 0;
+	int v18 = 0;
+	int v31 = 0;
+	int v4 = 0;
+	int v7 = 0;
+	int v0 = -1;
+	int v24 = -1;
+	int v26 = -1;
+	int v8 = -1;
+	int v2 = idx17mapData('i', 'g', 4043, v6);
+	if (v2 == -1) {
+		return new script_4724_struct(0, 0, 0, 0, 0, 0);
+	}
+	int v11 = idx17mapData('i', 'g', v2, v16);
+	if (v11 == -1) {
+		return new script_4724_struct(0, 0, 0, 0, 0, 0);
+	}
+	while (v17 <= 3) {
+		int v33 = idx17mapData('i', 'g', v11, v17);
+		if (v33 != -1) {
+			switch (v17) {
+				case 1:
+					v24 = idx17mapData('i', 'J', v33, v12);
+					break;
+				case 2:
+					v24 = idx17mapData('i', 'J', v33, v1);
+					break;
+				case 3:
+					v24 = idx17mapData('i', 'J', v33, v20);
+			}
+			if (v24 != -1) {
+				if (idx22mapAttribute(v24, 1571) == 1) {
+					v22 = cs2method_10060(v22, idx22mapAttribute(v24, 1573));
+				} else if (idx22mapAttribute(v24, 1571) == 2) {
+					v27 = cs2method_10060(v27, idx22mapAttribute(v24, 1573));
+				} else if (idx22mapAttribute(v24, 1571) == 5) {
+					v30 = cs2method_10060(v30, idx22mapAttribute(v24, 1573));
+				} else if (idx22mapAttribute(v24, 1571) == 9) {
+					v10 = cs2method_10060(v10, idx22mapAttribute(v24, 1573));
+				} else if (idx22mapAttribute(v24, 1571) == 8) {
+					v14 = cs2method_10060(v14, idx22mapAttribute(v24, 1573));
+				} else {
+					if (idx22mapAttribute(v24, 1571) == 7) {
+						v9 = cs2method_10060(v9, idx22mapAttribute(v24, 1573));
+					}
+				}
+				if (idx22mapAttribute(v24, 1575) == 1) {
+					v22 = cs2method_10060(v22, idx22mapAttribute(v24, 1577));
+				} else if (idx22mapAttribute(v24, 1575) == 2) {
+					v27 = cs2method_10060(v27, idx22mapAttribute(v24, 1577));
+				} else if (idx22mapAttribute(v24, 1575) == 5) {
+					v30 = cs2method_10060(v30, idx22mapAttribute(v24, 1577));
+				} else if (idx22mapAttribute(v24, 1575) == 9) {
+					v10 = cs2method_10060(v10, idx22mapAttribute(v24, 1577));
+				} else if (idx22mapAttribute(v24, 1575) == 8) {
+					v14 = cs2method_10060(v14, idx22mapAttribute(v24, 1577));
+				} else {
+					if (idx22mapAttribute(v24, 1575) == 7) {
+						v9 = cs2method_10060(v9, idx22mapAttribute(v24, 1577));
+					}
+				}
+				if (idx22mapAttribute(v24, 1579) == 1) {
+					v22 = cs2method_10060(v22, idx22mapAttribute(v24, 1581));
+				} else if (idx22mapAttribute(v24, 1579) == 2) {
+					v27 = cs2method_10060(v27, idx22mapAttribute(v24, 1581));
+				} else if (idx22mapAttribute(v24, 1579) == 5) {
+					v30 = cs2method_10060(v30, idx22mapAttribute(v24, 1581));
+				} else if (idx22mapAttribute(v24, 1579) == 9) {
+					v10 = cs2method_10060(v10, idx22mapAttribute(v24, 1581));
+				} else if (idx22mapAttribute(v24, 1579) == 8) {
+					v14 = cs2method_10060(v14, idx22mapAttribute(v24, 1581));
+				} else {
+					if (idx22mapAttribute(v24, 1579) == 7) {
+						v9 = cs2method_10060(v9, idx22mapAttribute(v24, 1581));
+					}
+				}
+			}
+		}
+		int v34 = -1;
+		v17 = cs2method_10060(v17, 1);
+	}
+	int v32 = 1;
+	if (v5 == v6 && v29 == v16) {
+		int v33 = idx17mapData('i', 'g', 4043, v5);
+		int v21 = idx17mapData('i', 'g', v33, v29);
+		while (v32 <= 3) {
+			int v33 = idx17mapData('i', 'g', v21, v32);
+			if (v33 != -1) {
+				switch (v32) {
+					case 1:
+						v24 = idx17mapData('i', 'J', v33, v23);
+						break;
+					case 2:
+						v24 = idx17mapData('i', 'J', v33, v19);
+						break;
+					case 3:
+						v24 = idx17mapData('i', 'J', v33, v25);
+				}
+				if (v24 != -1) {
+					if (idx22mapAttribute(v24, 1571) == 1) {
+						v13 = cs2method_10060(v13, idx22mapAttribute(v24, 1573));
+					} else if (idx22mapAttribute(v24, 1571) == 2) {
+						v15 = cs2method_10060(v15, idx22mapAttribute(v24, 1573));
+					} else if (idx22mapAttribute(v24, 1571) == 5) {
+						v18 = cs2method_10060(v18, idx22mapAttribute(v24, 1573));
+					} else if (idx22mapAttribute(v24, 1571) == 9) {
+						v31 = cs2method_10060(v31, idx22mapAttribute(v24, 1573));
+					} else if (idx22mapAttribute(v24, 1571) == 8) {
+						v4 = cs2method_10060(v4, idx22mapAttribute(v24, 1573));
+					} else {
+						if (idx22mapAttribute(v24, 1571) == 7) {
+							v7 = cs2method_10060(v7, idx22mapAttribute(v24, 1573));
+						}
+					}
+					if (idx22mapAttribute(v24, 1575) == 1) {
+						v13 = cs2method_10060(v13, idx22mapAttribute(v24, 1577));
+					} else if (idx22mapAttribute(v24, 1575) == 2) {
+						v15 = cs2method_10060(v15, idx22mapAttribute(v24, 1577));
+					} else if (idx22mapAttribute(v24, 1575) == 5) {
+						v18 = cs2method_10060(v18, idx22mapAttribute(v24, 1577));
+					} else if (idx22mapAttribute(v24, 1575) == 9) {
+						v31 = cs2method_10060(v31, idx22mapAttribute(v24, 1577));
+					} else if (idx22mapAttribute(v24, 1575) == 8) {
+						v4 = cs2method_10060(v4, idx22mapAttribute(v24, 1577));
+					} else {
+						if (idx22mapAttribute(v24, 1575) == 7) {
+							v7 = cs2method_10060(v7, idx22mapAttribute(v24, 1577));
+						}
+					}
+					if (idx22mapAttribute(v24, 1579) == 1) {
+						v13 = cs2method_10060(v13, idx22mapAttribute(v24, 1581));
+					} else if (idx22mapAttribute(v24, 1579) == 2) {
+						v15 = cs2method_10060(v15, idx22mapAttribute(v24, 1581));
+					} else if (idx22mapAttribute(v24, 1579) == 5) {
+						v18 = cs2method_10060(v18, idx22mapAttribute(v24, 1581));
+					} else if (idx22mapAttribute(v24, 1579) == 9) {
+						v31 = cs2method_10060(v31, idx22mapAttribute(v24, 1581));
+					} else if (idx22mapAttribute(v24, 1579) == 8) {
+						v4 = cs2method_10060(v4, idx22mapAttribute(v24, 1581));
+					} else {
+						if (idx22mapAttribute(v24, 1579) == 7) {
+							v7 = cs2method_10060(v7, idx22mapAttribute(v24, 1581));
+						}
+					}
+				}
+			}
+			int v34 = -1;
+			v32 = cs2method_10060(v32, 1);
+		}
+	}
+	v22 = cs2method_11048(0, cs2method_10461(v22, v13));
+	v27 = cs2method_11048(0, cs2method_10461(v27, v15));
+	v30 = cs2method_11048(0, cs2method_10461(v30, v18));
+	v10 = cs2method_11048(0, cs2method_10461(v10, v31));
+	v14 = cs2method_11048(0, cs2method_10461(v14, v4));
+	v9 = cs2method_11048(0, cs2method_10461(v9, v7));
+	return new script_4724_struct(v22, v27, v30, v10, v14, v9);
+}

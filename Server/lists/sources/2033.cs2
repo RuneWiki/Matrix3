@@ -1,0 +1,85 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2033() {
+	int v4 = cs2method_10936(93, 2169);
+	int v2 = cs2method_10936(93, 2162);
+	int v1 = cs2method_10936(93, 2128);
+	int v0 = cs2method_10936(93, 2152);
+	int v3 = cs2method_10936(93, 1973);
+	if (v0 >= 2 && v4 >= 1) {
+		cs2method_10520(65280, 28639269);
+	} else {
+		cs2method_10520(16711680, 28639269);
+	}
+	if (v1 >= 2 && v4 >= 1) {
+		cs2method_10520(65280, 28639270);
+	} else {
+		cs2method_10520(16711680, 28639270);
+	}
+	if (v1 >= 1 && v4 >= 1 && v2 >= 2) {
+		cs2method_10520(65280, 28639271);
+	} else {
+		cs2method_10520(16711680, 28639271);
+	}
+	if (v3 >= 2 && v4 >= 1) {
+		cs2method_10520(65280, 28639272);
+	} else {
+		cs2method_10520(16711680, 28639272);
+	}
+	if (cs2method_10936(93, 2152) > 1) {
+		cs2method_10039(2152, 100, 28639236);
+	} else {
+		cs2method_10039(9499, 100, 28639236);
+	}
+	if (cs2method_10936(93, 2169) > 0) {
+		cs2method_10039(2169, 90, 28639237);
+	} else {
+		cs2method_10039(9500, 90, 28639237);
+	}
+	if (cs2method_10936(93, 2128) > 1) {
+		cs2method_10039(2128, 120, 28639244);
+	} else {
+		cs2method_10039(9494, 120, 28639244);
+	}
+	if (cs2method_10936(93, 2169) > 0) {
+		cs2method_10039(2169, 90, 28639243);
+	} else {
+		cs2method_10039(9500, 90, 28639243);
+	}
+	if (cs2method_10936(93, 1973) > 1) {
+		cs2method_10039(1973, 140, 28639259);
+	} else {
+		cs2method_10039(9507, 140, 28639259);
+	}
+	if (cs2method_10936(93, 2169) > 0) {
+		cs2method_10039(2169, 90, 28639260);
+	} else {
+		cs2method_10039(9500, 90, 28639260);
+	}
+	if (cs2method_10936(93, 2162) > 1) {
+		cs2method_10039(2162, 100, 28639251);
+	} else {
+		cs2method_10039(9501, 100, 28639251);
+	}
+	if (cs2method_10936(93, 2128) > 0) {
+		cs2method_10039(2128, 120, 28639252);
+	} else {
+		cs2method_10039(9494, 120, 28639252);
+	}
+	if (cs2method_10936(93, 2169) > 0) {
+		cs2method_10039(2169, 90, 28639250);
+	} else {
+		cs2method_10039(9500, 90, 28639250);
+	}
+	return;
+}

@@ -1,0 +1,28 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_5765(int a0) {
+	if (a0 == -1) {
+		return script_5766(10);
+	}
+	if (cs2method_10338(a0) >= 10) {
+		return 1;
+	}
+	if (a0 == 0) {
+		if (cs2method_10338(0) > 10 || cs2method_10338(2) > 10 || cs2method_10338(1) > 10 || cs2method_10338(6) > 10 || cs2method_10338(4) > 10 || script_1432() > 10) {
+			return 1;
+		}
+	} else {
+		return 0;
+	}
+	return 0;
+}

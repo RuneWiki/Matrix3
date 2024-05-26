@@ -1,0 +1,20 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2441() {
+	if (cs2_configs['cfg820'] < 2) {
+		cs2method_10026(983058, "Time Left: ~1 Min");
+	} else {
+		cs2method_10026(983058, "Time Left: " + (string)cs2method_10379(cs2_configs['cfg820']) + " Mins");
+	}
+	return;
+}

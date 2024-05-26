@@ -1,0 +1,18 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+string script_9143() {
+	if (client_configs['cfg1579'].bitcfg4917 < 1) {
+		return "If you have " + "<col=ffffff>" + "Level 80 in Mining and Crafting" + "</col>" + " you can carve an " + "<col=ffffff>" + "Ornate Bowl" + "</col>" + " to gain greater rewards.";
+	}
+	return "";
+}

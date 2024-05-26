@@ -1,0 +1,95 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7680(int a0,int a1,int a2,int a3) {
+	int v2;
+	int v1 = idx17mapData('o', 'i', 7432, a0);
+	int v0 = 0;
+	switch (a0) {
+		case 19805:
+			if (a3 == 1) {
+				cs2method_20348(load function<7680>, new WidgetPointer(-32768,3), new WidgetPointer(a1), a0, 0, 3594, 1, "IIo1Y", new WidgetPointer(a2));
+			}
+			v2 = client_configs['cfg3594'].bitcfg18339;
+			break;
+		case 28084:
+		case 19808:
+			if (a3 == 1) {
+				cs2method_20348(load function<7680>, new WidgetPointer(-32768,3), new WidgetPointer(a1), a0, 0, 1199, 1, "IIo1Y", new WidgetPointer(a2));
+			}
+			v2 = client_configs['cfg1199'].bitcfg18340;
+			if (v2 > 1 && client_configs['cfg3594'].bitcfg18338 >= 1000) {
+				a0 = 28084;
+			}
+			break;
+		case 19809:
+			if (a3 == 1) {
+				cs2method_20348(load function<7680>, new WidgetPointer(-32768,3), new WidgetPointer(a1), a0, 0, 3594, 1, "IIo1Y", new WidgetPointer(a2));
+			}
+			v2 = client_configs['cfg3594'].bitcfg18341;
+			break;
+		case 19819:
+			if (a3 == 1) {
+				cs2method_20348(load function<7680>, new WidgetPointer(-32768,3), new WidgetPointer(a1), a0, 0, 3594, 1, "IIo1Y", new WidgetPointer(a2));
+			}
+			v2 = client_configs['cfg3594'].bitcfg18342;
+			break;
+		case 19814:
+			if (a3 == 1) {
+				cs2method_20348(load function<7680>, new WidgetPointer(-32768,3), new WidgetPointer(a1), a0, 0, 3594, 1, "IIo1Y", new WidgetPointer(a2));
+			}
+			v2 = client_configs['cfg3594'].bitcfg18343;
+			break;
+		case 28085:
+			if (a3 == 1) {
+				cs2method_20348(load function<7680>, new WidgetPointer(-32768,3), new WidgetPointer(a1), a0, 0, 1199, 1, "IIo1Y", new WidgetPointer(a2));
+			}
+			v2 = client_configs['cfg1199'].bitcfg18345;
+			break;
+		case 19824:
+			if (a3 == 1) {
+				cs2method_20348(load function<7680>, new WidgetPointer(-32768,3), new WidgetPointer(a1), a0, 0, 1200, 1, "IIo1Y", new WidgetPointer(a2));
+			}
+			v2 = client_configs['cfg1200'].bitcfg18344;
+			break;
+		default:
+			return;
+	}
+	int v3 = 6014;
+	if (v1 > 1) {
+		cs2method_11116(a0, v2, a2);
+		if (v2 >= v1) {
+			v3 = 6017;
+		}
+	} else {
+		cs2method_10121(a0, v2, a2);
+	}
+	cs2method_10316(a2, "<col=ff9040>" + (string)cs2method_10018(a0));
+	int v4 = 6015;
+	if (v2 > 0) {
+		cs2method_10704(0, a2);
+		cs2method_10758(v3, a1);
+		cs2method_20680(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a0, a1);
+			return;
+		}, new WidgetPointer(-32768,3), v4, "Id", new WidgetPointer(a1));
+		cs2method_20750(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a0, a1);
+			return;
+		}, new WidgetPointer(-32768,3), v3, "Id", new WidgetPointer(a1));
+	} else {
+		cs2method_10704(175, a2);
+		cs2method_10758(6016, a1);
+		cs2method_10906(a1);
+	}
+	return;
+}

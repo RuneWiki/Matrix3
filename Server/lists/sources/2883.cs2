@@ -1,0 +1,22 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2883(int a0) {
+	if (client_configs['cfg35'].bitcfg207 == 1 || client_configs['cfg1113'].bitcfg3028 == 1) {
+		return;
+	}
+	if (cs2method_10769(a0) != 16947 && cs2method_10769(a0) != 16946) {
+		cs2method_10758(16947, a0);
+	}
+	script_8800(a0, -1, "Clear playlist");
+	return;
+}

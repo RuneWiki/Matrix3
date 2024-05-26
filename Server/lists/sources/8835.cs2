@@ -1,0 +1,26 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_8835_struct(2,0,0) script_8835(int a0,int a1) {
+	switch (a1) {
+		case 5:
+			switch (a0) {
+				default:
+					break;
+				case 11:
+					return new script_8835_struct(255, 0);
+				case 12:
+					return new script_8835_struct(255, 0);
+			}
+	}
+	return new script_8835_struct(0, 0);
+}

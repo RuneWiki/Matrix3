@@ -1,0 +1,34 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+?? script_10001(int a0,int a1) {
+	int v0;
+	int v4 = script_9978(a1);
+	int v1 = -1;
+	if (script_9976(a1) == 1) {
+		v0 = idx17mapData('i', 'J', 7699, v4);
+	} else {
+		v0 = idx17mapData('i', 'J', 7716, a1);
+	}
+	object v3 = idx22mapAttribute(v0, 3493);
+	int v2 = script_10004(a1, v4, a0, -1);
+	/* 
+		java.lang.RuntimeException: Stack underflow
+			at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+			at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+			at tests.Main.main(Main.java:69)
+		
+	 */
+}

@@ -1,0 +1,27 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8501() {
+	int v0 = cs2method_10038(cs2method_10968(cs2method_11134(), 50), 60);
+	int v1 = cs2method_10968(cs2method_11134(), 3000);
+	if (v0 < 10) {
+		cs2method_10026(96797405, "System update in:" + "<br>" + (string)cs2method_10379(v1) + ":0" + (string)cs2method_10379(v0));
+	} else {
+		cs2method_10026(96797405, "System update in:" + "<br>" + (string)cs2method_10379(v1) + ":" + (string)cs2method_10379(v0));
+	}
+	if (cs2method_11134() > 0) {
+		cs2method_10467(0, 96797402);
+	} else {
+		cs2method_10467(1, 96797402);
+	}
+	return;
+}

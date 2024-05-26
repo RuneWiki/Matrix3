@@ -1,0 +1,58 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2792() {
+	switch (cs2method_10136()) {
+		case 31:
+			cs2method_10467(1, 39059538);
+			cs2method_10467(0, 39059535);
+			cs2method_10467(1, 39059532);
+			cs2method_10467(0, 39059529);
+			cs2method_10112(-25, 8, 1, 1, 39059535);
+			cs2method_10112(0, 1, 1, 0, 39059541);
+			break;
+		case 169:
+		case 168:
+		case 96:
+		case 203:
+		case 230:
+		case 160:
+		case 46:
+		case 226:
+		case 13:
+		case 152:
+		case 50:
+		case 49:
+		case 177:
+		case 62:
+		case 181:
+		case 90:
+		case 60:
+		case 30:
+			cs2method_10467(0, 39059538);
+			cs2method_10467(1, 39059535);
+			cs2method_10467(1, 39059532);
+			cs2method_10467(1, 39059529);
+			cs2method_10112(0, -9, 1, 0, 39059541);
+			break;
+		default:
+			cs2method_10467(0, 48758893);
+			cs2method_10467(0, 39059476);
+			script_2757();
+			cs2method_10112(0, 1, 1, 0, 39059541);
+			cs2method_10112(-25, 7, 1, 1, 39059535);
+			cs2method_10112(25, 7, 1, 1, 39059532);
+			cs2method_10467(0, 39059535);
+			cs2method_10467(0, 39059532);
+	}
+	return;
+}

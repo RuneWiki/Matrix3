@@ -1,0 +1,30 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6931(int a0,int a1) {
+	int v0 = cs2method_10461(cs2method_10133(), script_6932(a1));
+	if (v0 >= 255 || v0 < 0) {
+		if (cs2method_11038(a1, a0) == 1) {
+			cs2method_10269(1);
+		}
+		return;
+	}
+	if (cs2method_11038(a1, a0) == 1) {
+		cs2method_10269(0);
+		if (cs2method_10038(v0, 40) > 20) {
+			cs2method_10002(255);
+		} else {
+			cs2method_10002(v0);
+		}
+	}
+	return;
+}

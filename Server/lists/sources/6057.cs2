@@ -1,0 +1,51 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6057() {
+	cs2method_20243(new function<script_6188>() {
+		object v0 = "";
+		object v1 = "";
+		switch (cs2_configs['cfg4124']) {
+			case 1:
+				v0 = "Inappropriate Behaviour";
+				v1 = "We've noticed activity on your account that is inappropriate for our game, and is offensive to others." + "<br>" + "<br>" + "Any activity of this type may result in a mute, or even a permanent ban." + "<br>" + "<br>" + "To find out more, please click on the read button below.";
+				break;
+			case 2:
+				v0 = "Inbox message";
+				v1 = "Considering becoming a member? We've dropped you an inbox message you might want to check out." + "<br>" + "<br>" + "If you would like to chat to a J-Mod personally about your options, just hit reply to the message and we will be on hand to help.";
+				break;
+			case 3:
+				v0 = "Inbox message";
+				v1 = "We've dropped you an inbox message as we have noticed your membership has lapsed recently." + "<br>" + "<br>" + "If you would like to chat to a J-Mod personally, just hit reply to the inbox message and we will be on hand to help.";
+				break;
+			case 4:
+				v0 = "Inbox message";
+				v1 = "Was there a problem with your order? We've dropped you an inbox message you might want to check out." + "<br>" + "<br>" + "If you would like to chat to a J-Mod personally, just hit reply to the message and we will be on hand to help.";
+				break;
+			case 5:
+				v0 = "Inbox message";
+				v1 = "We've dropped you an inbox message you might want to check out. If you would like to chat to a J-Mod personally, just hit reply to the message and we will be on hand to help.";
+				break;
+			case 6:
+				v0 = "Inbox message";
+				v1 = "We've dropped you an inbox message about your recent payment attempt as it looks like you recently had some problems!" + "<br>" + "<br>" + "If you would like to chat to a J-Mod personally, just hit reply to the inbox message and we will be on hand to help.";
+				break;
+			case 7:
+				v0 = "Inbox message";
+				v1 = "We've dropped you an inbox message as we have noticed your subscription was cancelled recently." + "<br>" + "<br>" + "If you would like to chat to a J-Mod personally, just hit reply to the inbox message and we will be on hand to help.";
+		}
+		script_9554(37158934, v0, 37158936, 37158935, 21217);
+		cs2method_10026(37158917, v1);
+		return;
+	}, 4124, 1, "Y", new WidgetPointer(567,23));
+	return;
+}

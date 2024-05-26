@@ -1,0 +1,88 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2458() {
+	int v2 = 17;
+	int v1 = idx17mapData('i', 'J', 7716, v2);
+	if (v1 == -1) {
+		return;
+	}
+	int v0 = script_8418(v1, 0);
+	if (v0 == -1) {
+		return;
+	}
+	int v4 = 96796875;
+	object v3 = "Close";
+	if (cs2method_11038(v4, 1) == 1) {
+		cs2method_10310(idx22mapAttribute(v0, 3602));
+		cs2method_20674(new function<script_5336>(int a0,int a1,int a2) {
+			if (cs2method_11038(a1, a0) == 1) {
+				cs2method_10310(a2);
+			}
+			return;
+		}, new WidgetPointer(v4), 1, idx22mapAttribute(v0, 3603), "Iid");
+		cs2method_10057(1, "Close Window");
+		cs2method_20703(new function<script_2459>(int a0) {
+			if (a0 != 17) {
+				return;
+			}
+			int v0 = idx17mapData('i', 'J', 7716, 17);
+			if (v0 == -1) {
+				return;
+			}
+			int v1 = idx22mapAttribute(v0, 3505);
+			if (v1 == -1) {
+				return;
+			}
+			if (cs2method_10397(v1, 1247) == 1 || cs2method_10397(v1, 223) == 1 || cs2method_10397(v1, 1132) == 1 || cs2method_10397(v1, 302) == 1 || cs2method_10397(v1, 1078) == 1 || cs2method_10397(v1, 1275) == 1 || cs2method_10397(v1, 865) == 1 || cs2method_10397(v1, 764) == 1 || cs2method_10397(v1, 551) == 1 || cs2method_10397(v1, 4) == 1 || cs2method_10397(v1, 1424) == 1 || cs2method_10397(v1, 923) == 1 || cs2method_10397(v1, 1425) == 1 || cs2method_10397(v1, 1330) == 1 || cs2method_10397(v1, 1212) == 1 || cs2method_10397(v1, 783) == 1 || cs2method_10397(v1, 838) == 1 || cs2method_10397(v1, 1117) == 1 || cs2method_10397(v1, 1429) == 1 || cs2method_10397(v1, 411) == 1) {
+				cs2method_10810("You can't close this window.");
+				return;
+			}
+			script_8323(a0, 0);
+			return;
+		}, v2, "i");
+		cs2method_20353(new function<script_8799>(object a0,int a1,int a2) {
+			script_8800(a2, a1, a0);
+			return;
+		}, (string)v3, new WidgetPointer(-32768,3), -2147483643, "sIi");
+		cs2method_20884(new function<script_8806>(int a0,int a1,int a2) {
+			if (a0 == -1) {
+				cs2method_10758(a2, a1);
+			} else {
+				if (cs2method_11038(a1, a0) == 1) {
+					cs2method_10310(a2);
+				}
+			}
+			script_8808();
+			return;
+		}, new WidgetPointer(-32768,3), -2147483643, idx22mapAttribute(v0, 3602), "Iid");
+	}
+	if (cs2method_11038(v4, 0) == 1) {
+		cs2method_10063(idx22mapAttribute(v0, 3575), idx22mapAttribute(v0, 3576), 2, 0);
+		cs2method_10013(idx22mapAttribute(v0, 3563), idx22mapAttribute(v0, 3564), 0, 0);
+		cs2method_10310(idx22mapAttribute(v0, 3601));
+		cs2method_20353(new function<script_8799>(object a0,int a1,int a2) {
+			script_8800(a2, a1, a0);
+			return;
+		}, (string)v3, new WidgetPointer(-32768,3), -1, "sIi");
+		cs2method_20884(new function<script_8805>() {
+			script_8808();
+			return;
+		}, "");
+	}
+	if (client_configs['cfg3871'] == 1) {
+		cs2method_10467(0, v4);
+	} else {
+		cs2method_10467(1, v4);
+	}
+	return;
+}

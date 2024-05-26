@@ -1,0 +1,24 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9895(int a0,object a1,int a2) {
+	if (a2 == 1) {
+		cs2method_10283(512, 332, 0, 0, 37617671);
+		cs2method_10026(37617667, (string)a1 + " would like to share a bank preset with you. Would you like to overwrite your existing temporary bank preset?");
+		cs2method_10670(7653, 1, 0, 120);
+	} else {
+		cs2method_10283(394, 274, 0, 0, 37617671);
+		cs2method_10026(37617667, (string)a1 + " would like to share an action bar setup with you. Which action bar would you like to overwrite?");
+		cs2method_10670(7653, 1, 0, 120);
+	}
+	return;
+}

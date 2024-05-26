@@ -1,0 +1,42 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_530_struct(1,1,0) script_530(int a0) {
+	if (a0 == 19726410) {
+		return new script_530_struct(client_configs['cfg1180'].bitcfg3044, "Runecrafting");
+	}
+	if (a0 == 19726411) {
+		return new script_530_struct(client_configs['cfg1180'].bitcfg3045, "Crafting");
+	}
+	if (a0 == 19726412) {
+		return new script_530_struct(client_configs['cfg1180'].bitcfg3047, "Fletching");
+	}
+	if (a0 == 19726413) {
+		return new script_530_struct(client_configs['cfg1180'].bitcfg3049, "Construction");
+	}
+	if (a0 == 19726414) {
+		return new script_530_struct(client_configs['cfg1180'].bitcfg3050, "Farming");
+	}
+	if (a0 == 19726415) {
+		return new script_530_struct(client_configs['cfg1180'].bitcfg3052, "Magic");
+	}
+	if (a0 == 19726416) {
+		return new script_530_struct(client_configs['cfg1180'].bitcfg3054, "Smithing");
+	}
+	if (a0 == 19726417) {
+		return new script_530_struct(client_configs['cfg1180'].bitcfg3055, "Cooking");
+	}
+	if (a0 == 19726418) {
+		return new script_530_struct(client_configs['cfg1180'].bitcfg3056, "Herblore");
+	}
+	return new script_530_struct(0, "");
+}

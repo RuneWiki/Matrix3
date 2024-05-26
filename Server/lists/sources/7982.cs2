@@ -1,0 +1,244 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_7982(int a0,int a1) {
+	int v0 = -1;
+	switch (a1) {
+		case 1:
+			switch (a0) {
+				case 1:
+					v0 = client_configs['cfg739'].bitcfg1747;
+					break;
+				case 2:
+					v0 = client_configs['cfg740'].bitcfg1749;
+					break;
+				case 3:
+					v0 = client_configs['cfg741'].bitcfg1751;
+					break;
+				case 4:
+					v0 = client_configs['cfg742'].bitcfg1753;
+					break;
+				case 5:
+					v0 = client_configs['cfg743'].bitcfg1755;
+					break;
+				case 6:
+					v0 = client_configs['cfg744'].bitcfg1757;
+					break;
+				case 7:
+					v0 = client_configs['cfg745'].bitcfg1759;
+					break;
+				case 8:
+					v0 = client_configs['cfg746'].bitcfg1761;
+					break;
+				case 9:
+					v0 = client_configs['cfg747'].bitcfg1763;
+					break;
+				case 10:
+					v0 = client_configs['cfg748'].bitcfg1765;
+					break;
+				case 11:
+					v0 = client_configs['cfg749'].bitcfg1767;
+					break;
+				case 12:
+					v0 = client_configs['cfg750'].bitcfg1769;
+					break;
+				case 13:
+					v0 = client_configs['cfg4434'].bitcfg22341;
+					break;
+				case 14:
+					v0 = client_configs['cfg4435'].bitcfg22343;
+			}
+			break;
+		case 2:
+			switch (a0) {
+				case 1:
+					v0 = client_configs['cfg751'].bitcfg1771;
+					break;
+				case 2:
+					v0 = client_configs['cfg752'].bitcfg1773;
+					break;
+				case 3:
+					v0 = client_configs['cfg753'].bitcfg1775;
+					break;
+				case 4:
+					v0 = client_configs['cfg754'].bitcfg1777;
+					break;
+				case 5:
+					v0 = client_configs['cfg755'].bitcfg1779;
+					break;
+				case 6:
+					v0 = client_configs['cfg756'].bitcfg1781;
+					break;
+				case 7:
+					v0 = client_configs['cfg757'].bitcfg1783;
+					break;
+				case 8:
+					v0 = client_configs['cfg758'].bitcfg1785;
+					break;
+				case 9:
+					v0 = client_configs['cfg759'].bitcfg1787;
+					break;
+				case 10:
+					v0 = client_configs['cfg760'].bitcfg1789;
+					break;
+				case 11:
+					v0 = client_configs['cfg761'].bitcfg1791;
+					break;
+				case 12:
+					v0 = client_configs['cfg762'].bitcfg1793;
+					break;
+				case 13:
+					v0 = client_configs['cfg4436'].bitcfg22345;
+					break;
+				case 14:
+					v0 = client_configs['cfg4437'].bitcfg22347;
+			}
+			break;
+		case 3:
+			switch (a0) {
+				case 1:
+					v0 = client_configs['cfg763'].bitcfg1795;
+					break;
+				case 2:
+					v0 = client_configs['cfg764'].bitcfg1797;
+					break;
+				case 3:
+					v0 = client_configs['cfg765'].bitcfg1799;
+					break;
+				case 4:
+					v0 = client_configs['cfg766'].bitcfg1801;
+					break;
+				case 5:
+					v0 = client_configs['cfg767'].bitcfg1803;
+					break;
+				case 6:
+					v0 = client_configs['cfg768'].bitcfg1805;
+					break;
+				case 7:
+					v0 = client_configs['cfg769'].bitcfg1807;
+					break;
+				case 8:
+					v0 = client_configs['cfg770'].bitcfg1809;
+					break;
+				case 9:
+					v0 = client_configs['cfg771'].bitcfg1811;
+					break;
+				case 10:
+					v0 = client_configs['cfg772'].bitcfg1813;
+					break;
+				case 11:
+					v0 = client_configs['cfg773'].bitcfg1815;
+					break;
+				case 12:
+					v0 = client_configs['cfg774'].bitcfg1817;
+					break;
+				case 13:
+					v0 = client_configs['cfg4438'].bitcfg22349;
+					break;
+				case 14:
+					v0 = client_configs['cfg4439'].bitcfg22351;
+			}
+			break;
+		case 4:
+			switch (a0) {
+				case 1:
+					v0 = client_configs['cfg775'].bitcfg1819;
+					break;
+				case 2:
+					v0 = client_configs['cfg776'].bitcfg1821;
+					break;
+				case 3:
+					v0 = client_configs['cfg777'].bitcfg1823;
+					break;
+				case 4:
+					v0 = client_configs['cfg778'].bitcfg1825;
+					break;
+				case 5:
+					v0 = client_configs['cfg779'].bitcfg1827;
+					break;
+				case 6:
+					v0 = client_configs['cfg780'].bitcfg1829;
+					break;
+				case 7:
+					v0 = client_configs['cfg781'].bitcfg1831;
+					break;
+				case 8:
+					v0 = client_configs['cfg782'].bitcfg1833;
+					break;
+				case 9:
+					v0 = client_configs['cfg783'].bitcfg1835;
+					break;
+				case 10:
+					v0 = client_configs['cfg784'].bitcfg1837;
+					break;
+				case 11:
+					v0 = client_configs['cfg785'].bitcfg1839;
+					break;
+				case 12:
+					v0 = client_configs['cfg786'].bitcfg1841;
+					break;
+				case 13:
+					v0 = client_configs['cfg4440'].bitcfg22353;
+					break;
+				case 14:
+					v0 = client_configs['cfg4441'].bitcfg22355;
+			}
+			break;
+		case 5:
+			switch (a0) {
+				default:
+					break;
+				case 1:
+					v0 = client_configs['cfg787'].bitcfg1843;
+					break;
+				case 2:
+					v0 = client_configs['cfg788'].bitcfg1845;
+					break;
+				case 3:
+					v0 = client_configs['cfg789'].bitcfg1847;
+					break;
+				case 4:
+					v0 = client_configs['cfg790'].bitcfg1849;
+					break;
+				case 5:
+					v0 = client_configs['cfg791'].bitcfg1851;
+					break;
+				case 6:
+					v0 = client_configs['cfg792'].bitcfg1853;
+					break;
+				case 7:
+					v0 = client_configs['cfg793'].bitcfg1855;
+					break;
+				case 8:
+					v0 = client_configs['cfg794'].bitcfg1857;
+					break;
+				case 9:
+					v0 = client_configs['cfg795'].bitcfg1859;
+					break;
+				case 10:
+					v0 = client_configs['cfg796'].bitcfg1861;
+					break;
+				case 11:
+					v0 = client_configs['cfg797'].bitcfg1863;
+					break;
+				case 12:
+					v0 = client_configs['cfg798'].bitcfg1865;
+					break;
+				case 13:
+					v0 = client_configs['cfg4442'].bitcfg22357;
+					break;
+				case 14:
+					v0 = client_configs['cfg4443'].bitcfg22359;
+			}
+	}
+	return v0;
+}

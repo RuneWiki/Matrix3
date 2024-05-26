@@ -1,0 +1,37 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9381(int a0,int a1) {
+	cs2method_10112(cs2method_10060(4, cs2method_10051(a0, 120)), 0, 0, 0, 46006364);
+	cs2method_10670(36972, 1, 0, 120);
+	switch (a0) {
+		case 0:
+		case 1:
+			cs2method_10467(0, 46006355);
+			break;
+		case 2:
+			cs2method_10467(1, 46006351);
+			cs2method_10467(0, 46006337);
+			cs2method_10467(1, 46006326);
+			break;
+		case 3:
+			cs2method_10467(1, 46006351);
+			cs2method_10467(1, 46006337);
+			cs2method_10467(0, 46006326);
+			if (client_configs['cfg3975'].bitcfg21122 == 0) {
+				cs2method_10026(46006282, "Enable PvP");
+			} else {
+				cs2method_10026(46006282, "Disable PvP");
+			}
+	}
+	return;
+}

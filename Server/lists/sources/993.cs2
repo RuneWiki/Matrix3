@@ -1,0 +1,24 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_993_struct(1,1,0) script_993(int a0) {
+	if (a0 == 0) {
+		return new script_993_struct(0, "Constitution");
+	}
+	if (a0 == 1) {
+		return new script_993_struct(0, "Armour");
+	}
+	if (a0 == 2) {
+		return new script_993_struct(0, "Milestones");
+	}
+	return new script_993_struct(-1, "");
+}

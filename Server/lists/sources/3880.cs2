@@ -1,0 +1,50 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3880(int a0) {
+	int v1 = 0;
+	int v0 = 100;
+	switch (a0) {
+		case 59179028:
+			v1 = client_configs['cfg169'].bitcfg459;
+			v0 = client_configs['cfg168'].bitcfg451;
+			break;
+		case 59179038:
+			v1 = client_configs['cfg169'].bitcfg460;
+			v0 = client_configs['cfg168'].bitcfg452;
+			break;
+		case 59179048:
+			v1 = client_configs['cfg169'].bitcfg461;
+			v0 = client_configs['cfg168'].bitcfg453;
+			break;
+		case 59179058:
+			v1 = client_configs['cfg169'].bitcfg462;
+			v0 = client_configs['cfg168'].bitcfg454;
+			break;
+		case 59179068:
+			v1 = client_configs['cfg169'].bitcfg463;
+			v0 = client_configs['cfg168'].bitcfg455;
+			break;
+		case 59179078:
+			v1 = client_configs['cfg170'].bitcfg465;
+			v0 = client_configs['cfg168'].bitcfg456;
+	}
+	cs2method_10026(a0, "x " + (string)cs2method_10379(v1));
+	if (v1 < cs2method_10051(cs2method_10060(v0, 1), 5)) {
+		cs2method_10520(16724736, a0);
+	} else if (v1 == cs2method_10051(cs2method_10060(v0, 1), 5)) {
+		cs2method_10520(16764160, a0);
+	} else {
+		cs2method_10520(52224, a0);
+	}
+	return;
+}

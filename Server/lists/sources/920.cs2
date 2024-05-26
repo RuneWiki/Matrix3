@@ -1,0 +1,63 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_920(int a0) {
+	cs2_configs['cfg742'] = 0;
+	object v0 = "";
+	int v1 = 0;
+	if (cs2_configs['cfg741'] != -1) {
+		if (cs2method_10846(cs2method_10940(cs2_configs['cfg741'], 2), "Wear") == 0 || cs2method_10846(cs2method_10940(cs2_configs['cfg741'], 2), "Wield") == 0) {
+			v1 = 1;
+		}
+		cs2method_10121(cs2_configs['cfg741'], -1, 29425677);
+		cs2method_10026(29425678, cs2method_10018(cs2_configs['cfg741']));
+		if (cs2method_10771() == 0 && cs2method_10416(cs2_configs['cfg741']) == 1) {
+			script_922(1, "This is a members item. Additional information is not available on this world.", a0);
+		} else {
+			object v2 = script_914();
+			if (cs2method_10846(v2, "") != 0) {
+				script_922(1, v2, a0);
+				cs2_configs['cfg742'] = cs2method_10060(cs2_configs['cfg742'], 1);
+			}
+			script_921(1, cs2_configs['cfg2354'], a0);
+			if (cs2method_10846(itemDefsAttribute(cs2_configs['cfg741'], 690), "") != 0) {
+				script_921(1, " ", a0);
+				script_921(1, itemDefsAttribute(cs2_configs['cfg741'], 690), a0);
+			}
+			if (cs2method_10038(itemDefsAttribute(cs2_configs['cfg741'], 740), 2) == 1) {
+				if (cs2method_10846(cs2_configs['cfg2355'], "") != 0 && v1 == 1) {
+					script_921(0, cs2_configs['cfg2355'], a0);
+				}
+				if (cs2method_10846(cs2_configs['cfg2356'], "") != 0) {
+					script_921(0, cs2_configs['cfg2356'], a0);
+				}
+			} else {
+				if (cs2method_10846(cs2_configs['cfg2356'], "") != 0) {
+					script_921(0, cs2_configs['cfg2356'], a0);
+				}
+				if (cs2method_10846(cs2_configs['cfg2355'], "") != 0 && v1 == 1) {
+					script_921(0, cs2_configs['cfg2355'], a0);
+				}
+			}
+			object v3 = script_912(cs2_configs['cfg741']);
+			if (cs2method_10846(v3, "") != 0) {
+				script_921(0, v3, a0);
+			}
+			if (cs2method_10846(cs2_configs['cfg2357'], "") != 0 && v1 == 1) {
+				script_923(a0, cs2_configs['cfg2357'], cs2_configs['cfg2358'], cs2_configs['cfg2359']);
+			}
+		}
+	} else {
+		script_921(1, "Select an item to see its information.", a0);
+	}
+	return cs2method_10060(cs2method_10051(6, 2), cs2method_10051(cs2_configs['cfg742'], 11));
+}

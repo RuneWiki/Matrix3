@@ -1,0 +1,31 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4990(int a0) {
+	int v4 = -1;
+	int v7 = -1;
+	int v1 = -1;
+	int v0 = -1;
+	int v10 = -1;
+	int v8 = a0;
+	script_4958_struct(5,0,0) v2 = script_4958(v8);
+	int v11 = v2.intpart_4;
+	int v5 = v2.intpart_3;
+	int v9 = v2.intpart_2;
+	int v3 = v2.intpart_1;
+	int v6 = v2.intpart_0;
+	script_4988(client_configs['cfg1978'].bitcfg6677);
+	script_4937();
+	client_configs['cfg1978'].bitcfg6677 = v6;
+	client_configs['cfg1978'].bitcfg6678 = v3;
+	return;
+}

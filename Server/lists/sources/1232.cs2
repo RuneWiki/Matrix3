@@ -1,0 +1,58 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1232(int a0,int a1,int a2) {
+	cs2method_10283(cs2method_10236(a0), cs2method_10060(cs2method_10051(cs2method_10805(cs2method_10236(a0), 494, cs2method_10744(a0)), 12), 3), 0, 0, a0);
+	cs2method_10273(a1);
+	for (int v2 = cs2method_10968(cs2method_10461(cs2method_10236(a1), cs2method_10051(36, 8)), 7), int v0 = cs2method_10968(cs2method_10461(cs2method_10823(a1), cs2method_10051(32, 5)), 4), int v1 = 0; v1 < cs2method_10894(0); v1 = cs2method_10060(v1, 1)) {
+		cs2method_10606(a1, 5, v1);
+		cs2method_10013(36, 32, 0, 0);
+		cs2method_10063(cs2method_10051(cs2method_10060(36, v2), cs2method_10038(v1, 8)), cs2method_10051(cs2method_10968(v1, 8), cs2method_10060(32, v0)), 0, 0);
+		cs2method_10269(0);
+		if (cs2method_10640(0, v1) != -1) {
+			cs2method_11070(cs2method_10640(0, v1), cs2method_11065(0, v1));
+			cs2method_10200("<col=ff981f>" + (string)cs2method_10018(cs2method_10640(0, v1)));
+			cs2method_10057(1, "Withdraw" + "<col=ff9040>");
+			cs2method_10057(2, "Withdraw-All" + "<col=ff9040>");
+			cs2method_10057(10, "Examine" + "<col=ff9040>");
+			cs2method_10065(5);
+			cs2method_11009(10);
+			cs2method_10278(3355443);
+			cs2method_10356(1);
+			cs2method_20902(new function<script_1233>(int a0,int a1,int a2,int a3,int a4,int a5) {
+				int v0 = 0;
+				int v1 = 0;
+				if (cs2method_11038(a2, a4) == 1) {
+					if (a5 == a2) {
+						if (cs2method_11038(a5, a0) == 1) {
+							int v4 = cs2method_10878();
+							int v3 = cs2method_10406();
+							int v2 = v4;
+							cs2method_10063(cs2method_10878(), cs2method_10406(), 0, 0);
+							cs2method_10063(v2, v3, 0, 0);
+						}
+						return;
+					}
+					if (a5 == a1 || a5 == a3) {
+						cs2method_10269(1);
+						return;
+					}
+					cs2method_10063(cs2method_10878(), cs2method_10406(), 0, 0);
+				}
+				return;
+			}, new WidgetPointer(a1), -2147483643, new WidgetPointer(-32768,6), -2147483641, new WidgetPointer(a2), new WidgetPointer(a0), "IiIiII");
+		} else {
+			cs2method_10903(-1, 0);
+		}
+	}
+	return;
+}

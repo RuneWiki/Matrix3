@@ -1,0 +1,115 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2022() {
+	object v9 = "";
+	object v8 = "";
+	object v11 = "";
+	object v1 = "";
+	object v3 = "";
+	object v2 = "";
+	int v10 = 0;
+	if (script_7293(client_configs['cfg3406'].bitcfg17132) == 0) {
+		script_4542(0, 62259433, 62259438);
+		script_4542(0, 62259443, 62259448);
+		script_4542(0, 62259453, 62259458);
+	} else {
+		script_4542(client_configs['cfg3407'].bitcfg17126, 62259433, 62259438);
+		script_4542(client_configs['cfg3407'].bitcfg17127, 62259443, 62259448);
+		script_4542(client_configs['cfg3407'].bitcfg17128, 62259453, 62259458);
+		v9 = cs2method_10379(client_configs['cfg3408']);
+		v11 = cs2method_10379(client_configs['cfg3409']);
+		v3 = cs2method_10379(client_configs['cfg3410']);
+		v10 = cs2method_10872(cs2method_10872(client_configs['cfg3407'].bitcfg17126, client_configs['cfg3407'].bitcfg17127), client_configs['cfg3407'].bitcfg17128);
+	}
+	if (client_configs['cfg3411'] > 0) {
+		v8 = cs2method_10379(client_configs['cfg3411']);
+	}
+	if (client_configs['cfg3412'] > 0) {
+		v1 = cs2method_10379(client_configs['cfg3412']);
+	}
+	if (client_configs['cfg3413'] > 0) {
+		v2 = cs2method_10379(client_configs['cfg3413']);
+	}
+	cs2method_10026(62259276, v9);
+	cs2method_10026(62259278, v8);
+	cs2method_10026(62259280, v11);
+	cs2method_10026(62259282, v1);
+	cs2method_10026(62259284, v3);
+	cs2method_10026(62259286, v2);
+	int v5 = cs2method_10122(10, 6, cs2method_10461(v10, 5));
+	int v4 = cs2method_10122(200, 100, v5);
+	int v6 = cs2method_10461(200, v4);
+	int v12 = 20;
+	cs2method_10026(62259288, (string)cs2method_10379(v10) + "%");
+	cs2method_10520(script_693(v6, v4, v12), 62259288);
+	int v0 = 0;
+	if (client_configs['cfg3406'].bitcfg17129 == 1) {
+		switch (client_configs['cfg3406'].bitcfg17130) {
+			case 1:
+				v0 = client_configs['cfg3401'].bitcfg17118;
+				break;
+			case 2:
+				v0 = client_configs['cfg3402'].bitcfg17119;
+				break;
+			case 3:
+				v0 = client_configs['cfg3402'].bitcfg17120;
+		}
+	} else {
+		switch (client_configs['cfg3406'].bitcfg17130) {
+			case 1:
+				v0 = client_configs['cfg3400'].bitcfg17115;
+				break;
+			case 2:
+				v0 = client_configs['cfg3400'].bitcfg17116;
+				break;
+			case 3:
+				v0 = client_configs['cfg3401'].bitcfg17117;
+		}
+	}
+	int v7 = idx17mapData('i', 'J', 1022, v0);
+	if (v7 != -1 && idx22mapAttribute(v7, 2366) == 7) {
+		if (script_1121(client_configs['cfg3406'].bitcfg17132) == 1) {
+			cs2method_10467(0, 62259468);
+			cs2method_10026(62259468, "Your captain already has four traits and cannot gain any more.");
+			cs2method_10467(1, 62259469);
+		} else if (v10 < 35) {
+			cs2method_10467(0, 62259468);
+			cs2method_10026(62259468, "Warning: Your chances of success are low. You risk harsher penalties if the voyage fails.");
+			cs2method_10467(1, 62259469);
+		} else {
+			cs2method_10467(1, 62259468);
+			cs2method_10467(0, 62259469);
+		}
+	} else if (v7 != -1 && idx22mapAttribute(v7, 2366) == 5) {
+		if (script_9852() == 0) {
+			cs2method_10467(0, 62259468);
+			cs2method_10026(62259468, "Warning: The Scroll you have focused on is complete. Please view your Port Management page to change the scroll.");
+			cs2method_10467(1, 62259469);
+		} else if (v10 < 35) {
+			cs2method_10467(0, 62259468);
+			cs2method_10026(62259468, "Warning: Your chances of success are low. You risk harsher penalties if the voyage fails.");
+			cs2method_10467(1, 62259469);
+		} else {
+			cs2method_10467(1, 62259468);
+			cs2method_10467(0, 62259469);
+		}
+	} else if (v10 < 35) {
+		cs2method_10467(0, 62259468);
+		cs2method_10026(62259468, "Warning: Your chances of success are low. You risk harsher penalties if the voyage fails.");
+		cs2method_10467(1, 62259469);
+	} else {
+		cs2method_10467(1, 62259468);
+		cs2method_10467(0, 62259469);
+	}
+	return;
+}

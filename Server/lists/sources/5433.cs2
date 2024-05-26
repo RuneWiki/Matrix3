@@ -1,0 +1,96 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5433(int a0,int a1) {
+	int v1;
+	int v0 = 8154;
+	switch (cs2_configs['cfg1664']) {
+		case 1:
+			v1 = 8154;
+			break;
+		case 2:
+			v1 = 8160;
+			break;
+		case 3:
+			v1 = 8161;
+			break;
+		case 4:
+			v1 = 8157;
+			break;
+		case 5:
+			v1 = 8163;
+			break;
+		case 6:
+			v1 = 8164;
+			break;
+		case 7:
+			v1 = 8162;
+			break;
+		case 8:
+			v1 = 8155;
+			break;
+		case 9:
+			v1 = 8167;
+			break;
+		case 10:
+			v1 = 8175;
+			break;
+		case 11:
+			v1 = 8169;
+			break;
+		case 12:
+			v1 = 8166;
+			break;
+		case 13:
+			v1 = 8156;
+			break;
+		case 14:
+			v1 = 8168;
+			break;
+		case 15:
+			v1 = 8171;
+			break;
+		case 16:
+			v1 = 8159;
+			break;
+		case 17:
+			v1 = 8172;
+			break;
+		case 18:
+			v1 = 8165;
+			break;
+		case 19:
+			v1 = 8158;
+			break;
+		case 20:
+			v1 = 8173;
+			break;
+		case 21:
+			v1 = 8170;
+			break;
+		case 22:
+			v1 = 8174;
+			break;
+		default:
+			v1 = 8154;
+	}
+	cs2method_10606(76480513, 5, a0);
+	cs2method_10310(v1);
+	cs2method_10013(80, 80, 0, 0);
+	cs2method_10063(0, a1, 1, 0);
+	if (cs2_configs['cfg1664'] < 22) {
+		cs2_configs['cfg1664'] = cs2method_10060(cs2_configs['cfg1664'], 1);
+	} else {
+		cs2_configs['cfg1664'] = 1;
+	}
+	return;
+}

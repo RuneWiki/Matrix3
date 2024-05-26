@@ -1,0 +1,45 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_304(int a0) {
+	if (a0 == -1) {
+		return;
+	}
+	cs2method_10567(31334, 1, 0);
+	int v0 = cs2method_10554(a0);
+	int v1 = script_2785(v0);
+	if (v1 == -1) {
+		return;
+	}
+	script_2046(93192224);
+	cs2_configs['cfg2545'] = "";
+	script_308(93192301);
+	cs2method_10026(93192345, cs2method_10047(v1));
+	script_41(93192277);
+	cs2method_10905(v1, a0);
+	if (cs2method_10580() == 1) {
+		int v2 = v1;
+		/* 
+			mgi.tools.jagdecs2.DecompilerException: No documentation for:CALL_CS2	8102
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:198)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+				at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+				at tests.Main.main(Main.java:69)
+			
+		 */
+	}
+	cs2method_10636(a0);
+	script_1372(cs2method_10175(v1));
+	script_307();
+	return;
+}

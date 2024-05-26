@@ -1,0 +1,114 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6940(int a0,int a1) {
+	cs2method_10273(a0);
+	cs2method_10606(a0, 5, 0);
+	cs2method_10013(50, 50, 0, 0);
+	int v0 = cs2method_10968(cs2method_10461(cs2method_10823(a0), cs2method_10664()), 2);
+	cs2method_10063(v0, 0, 0, 1);
+	cs2method_10606(a0, 4, 1);
+	cs2method_10013(cs2method_10060(v0, cs2method_10488()), 0, 1, 1);
+	cs2method_10063(0, 0, 2, 1);
+	cs2method_10692(495);
+	cs2method_11105(1, 1, 0);
+	cs2method_10173(1);
+	cs2method_20680(new function<script_1356>(int a0,int a1,int a2) {
+		if (cs2method_11038(a1, a2) == 1) {
+			cs2method_10811(a0);
+		}
+		return;
+	}, new WidgetPointer(a0), cs2method_11051(), 16777215, "Iii", new WidgetPointer(a0));
+	script_6942(a0, a1);
+	switch (a1) {
+		case 7500:
+			cs2method_10797("Dwarf");
+			cs2method_10310(17181);
+			cs2method_20348(new function<script_6941>(int a0,int a1,int a2) {
+				if (cs2method_11038(a1, a2) == 1) {
+					script_6942(a1, a0);
+				}
+				return;
+			}, new WidgetPointer(a0), a1, cs2method_11051(), 2582, 1, "IoiY", new WidgetPointer(a0));
+			break;
+		case 7501:
+			cs2method_10797("Wartface & Bentnoze");
+			cs2method_10310(17190);
+			cs2method_20348(new function<script_6941>(int a0,int a1,int a2) {
+				if (cs2method_11038(a1, a0) == 1) {
+					script_6942(a1, a2);
+				}
+				return;
+			}, new WidgetPointer(a0), a1, cs2method_11051(), 2580, 1, "IoiY", new WidgetPointer(a0));
+			break;
+		case 7505:
+			cs2method_10797("Pirate Pete");
+			cs2method_10310(17189);
+			cs2method_20348(new function<script_6941>(int a0,int a1,int a2) {
+				if (cs2method_11038(a2, a0) == 1) {
+					script_6942(a2, a1);
+				}
+				return;
+			}, new WidgetPointer(a0), a1, cs2method_11051(), 2584, 1, "IoiY", new WidgetPointer(a0));
+			break;
+		case 7502:
+			cs2method_10797("Lumbridge Sage");
+			cs2method_10310(17184);
+			cs2method_20348(new function<script_6941>(int a0,int a1,int a2) {
+				if (cs2method_11038(a0, a2) == 1) {
+					script_6942(a0, a1);
+				}
+				return;
+			}, new WidgetPointer(a0), a1, cs2method_11051(), 2584, 1, "IoiY", new WidgetPointer(a0));
+			break;
+		case 7499:
+			cs2method_10797("Evil Dave");
+			cs2method_10310(17185);
+			cs2method_20348(new function<script_6941>(int a0,int a1,int a2) {
+				if (cs2method_11038(a0, a2) == 1) {
+					script_6942(a0, a1);
+				}
+				return;
+			}, new WidgetPointer(a0), a1, cs2method_11051(), 2581, 1, "IoiY", new WidgetPointer(a0));
+			break;
+		case 7503:
+			cs2method_10797("Monkey Ambassador");
+			cs2method_10310(17187);
+			cs2method_20348(new function<script_6941>(int a0,int a1,int a2) {
+				if (cs2method_11038(a1, a2) == 1) {
+					script_6942(a1, a0);
+				}
+				return;
+			}, new WidgetPointer(a0), a1, cs2method_11051(), 2586, 1, "IoiY", new WidgetPointer(a0));
+			break;
+		case 7506:
+			cs2method_10797("Sir Amik Varze");
+			cs2method_10310(17186);
+			cs2method_20348(new function<script_6941>(int a0,int a1,int a2) {
+				if (cs2method_11038(a1, a2) == 1) {
+					script_6942(a1, a0);
+				}
+				return;
+			}, new WidgetPointer(a0), a1, cs2method_11051(), 2585, 1, "IoiY", new WidgetPointer(a0));
+			break;
+		case 7507:
+			cs2method_10797("Skrach Uglogwee");
+			cs2method_10310(17188);
+			cs2method_20348(new function<script_6941>(int a0,int a1,int a2) {
+				if (cs2method_11038(a2, a0) == 1) {
+					script_6942(a2, a1);
+				}
+				return;
+			}, new WidgetPointer(a0), a1, cs2method_11051(), 2585, 1, "IoiY", new WidgetPointer(a0));
+	}
+	return;
+}

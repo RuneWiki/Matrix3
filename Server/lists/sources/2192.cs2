@@ -1,0 +1,32 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2192() {
+	cs2method_10758(13145, 62259362);
+	cs2method_10758(13146, 62259569);
+	cs2method_10758(13147, 62259570);
+	cs2method_10758(13145, 62259214);
+	cs2method_10758(13146, 62259215);
+	cs2method_10758(13147, 62259216);
+	switch (client_configs['cfg3406'].bitcfg17129) {
+		case 0:
+			cs2method_10758(13142, 62259214);
+			cs2method_10758(13143, 62259215);
+			cs2method_10758(13144, 62259216);
+			break;
+		case 1:
+			cs2method_10758(13142, 62259362);
+			cs2method_10758(13143, 62259569);
+			cs2method_10758(13144, 62259570);
+	}
+	return;
+}

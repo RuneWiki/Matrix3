@@ -1,0 +1,122 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7192(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7) {
+	int v6 = cs2method_11048(cs2method_10872(a1, 15000), -15000);
+	int v4 = cs2method_11048(cs2method_10872(a0, 15000), -15000);
+	int v3 = cs2method_11048(cs2method_10872(a5, 10000), 50);
+	int v2 = script_686(cs2method_10038(a3, 16284), 16284);
+	int v11 = cs2method_11048(cs2method_10872(a6, cs2method_10968(3500, 8)), cs2method_10461(0, 3500));
+	cs2method_10289(v6, v3, v4, 0, 0, 0, 0);
+	int v0 = 2500;
+	int v7 = v6;
+	int v10 = v3;
+	int v9 = v4;
+	int v5 = v2;
+	int v1 = v11;
+	script_7193_struct(3,0,0) v8 = script_7193(v0, v7, v10, v9, v5, v1);
+	cs2method_10250(v8.intpart_0, v8.intpart_1, v8.intpart_2, 0);
+	cs2method_10074(cs2method_10122(v2, 16284, 65535), 31129608);
+	cs2method_20486(new function<script_7194>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8) {
+		int v5;
+		if (cs2method_10862() == 1 || cs2method_10473() != 1) {
+			return;
+		}
+		int v1 = cs2method_11048(cs2method_10872(cs2_configs['cfg1272'], 50), 1);
+		switch (a5) {
+			case 1:
+				int v28 = v1;
+				int v8 = a7;
+				int v21 = a2;
+				int v6 = a1;
+				int v12 = cs2method_10461(a3, cs2method_10968(16284, 4));
+				int v17 = 0;
+				script_7193_struct(3,0,0) v10 = script_7193(v28, v8, v21, v6, v12, v17);
+				a1 = v10.intpart_2;
+				v5 = v10.intpart_1;
+				a7 = v10.intpart_0;
+				break;
+			case 2:
+				int v13 = v1;
+				int v7 = a7;
+				int v25 = a2;
+				int v16 = a1;
+				int v22 = cs2method_10060(a3, cs2method_10968(16284, 4));
+				int v19 = 0;
+				script_7193_struct(3,0,0) v23 = script_7193(v13, v7, v25, v16, v22, v19);
+				a1 = v23.intpart_2;
+				v5 = v23.intpart_1;
+				a7 = v23.intpart_0;
+				break;
+			case 3:
+				v5 = cs2method_10060(a2, v1);
+				break;
+			case 4:
+				v5 = cs2method_10461(a2, v1);
+				break;
+			case 5:
+				int v15 = v1;
+				int v11 = a7;
+				int v24 = a2;
+				int v9 = a1;
+				int v4 = a3;
+				int v14 = a0;
+				script_7193_struct(3,0,0) v18 = script_7193(v15, v11, v24, v9, v4, v14);
+				a1 = v18.intpart_2;
+				v5 = v18.intpart_1;
+				a7 = v18.intpart_0;
+				break;
+			case 6:
+				int v29 = cs2method_10461(0, v1);
+				int v2 = a7;
+				int v20 = a2;
+				int v26 = a1;
+				int v3 = a3;
+				int v27 = a0;
+				script_7193_struct(3,0,0) v0 = script_7193(v29, v2, v20, v26, v3, v27);
+				a1 = v0.intpart_2;
+				v5 = v0.intpart_1;
+				a7 = v0.intpart_0;
+				break;
+			default:
+				return;
+		}
+		script_7192(a7, v5, a1, a3, a0, a6, a4, a8);
+		return;
+	}, -2147483644, v6, v3, v4, v2, v11, a2, a7, a4, "iiiiiiiii", new WidgetPointer(475,2));
+	cs2method_21121(new function<script_7195>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9) {
+		if (cs2method_10473() != 1) {
+			return;
+		}
+		int v3 = 0;
+		int v9 = 0;
+		int v6 = 0;
+		opc_struct10417(3,0,0) v1 = cs2method_10417();
+		int v4 = v1.intpart_2;
+		int v5 = v1.intpart_1;
+		int v8 = v1.intpart_0;
+		if (v8 == 0 && v5 == 0 && v4 == 0) {
+			return;
+		}
+		if (cs2method_10461(cs2method_10133(), a9) > 5) {
+			int v10 = a5;
+			a6 = a3;
+			a4 = v10;
+		}
+		int v0 = cs2method_11048(cs2method_10872(cs2_configs['cfg171'], 20), -20);
+		int v7 = cs2method_10060(a1, cs2method_10051(cs2method_10461(a5, a4), v0));
+		int v2 = cs2method_10461(a7, cs2method_10051(cs2method_10461(a3, a6), v0));
+		script_7192(a8, a0, a2, v7, v2, a5, a3, cs2method_10133());
+		return;
+	}, -2147483647, -2147483646, v6, v3, v4, v2, v11, a2, a7, a4, "iiiiiiiiii", new WidgetPointer(475,3));
+	return;
+}

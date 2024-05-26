@@ -1,0 +1,35 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_529(int a0) {
+	object v0;
+	object v2 = "null";
+	int v4 = 0;
+	object v3 = "null";
+	if (a0 == 19726347) {
+		object v8 = "This is the total XP you have gained through the Assist System in the past 24 hours. There is a limit to the XP you can gain within 24 hours, but this amount gets reset once the day has passed.";
+		script_7787(a0, 19726421, 25, v8, 180);
+		return;
+	}
+	int v5 = a0;
+	script_530_struct(1,1,0) v6 = script_530(v5);
+	object v1 = v6.objectpart_0;
+	int v7 = v6.intpart_0;
+	if (v7 == 1) {
+		v0 = "Assist with " + (string)v1 + " while using the Assist System (ON).";
+	} else {
+		v0 = "Assist with " + (string)v1 + " while using the Assist System (OFF).";
+	}
+	script_7787(a0, 19726421, 25, v0, 180);
+	cs2_configs['cfg2'] = 0;
+	return;
+}

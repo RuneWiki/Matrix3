@@ -1,0 +1,18 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4124(int a0,int a1,int a2) {
+	if (client_configs['cfg2609'] != -1) {
+		script_1163(a1, cs2method_10018(client_configs['cfg2609']), a2, a0, 0, 180);
+	}
+	return;
+}

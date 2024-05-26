@@ -1,0 +1,168 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8505(object a0,object a1,int a2,object a3,int a4,int a5,int a6) {
+	cs2method_10811(16777215);
+	cs2method_10692(20452);
+	cs2method_11105(0, 0, 14);
+	cs2method_10173(1);
+	cs2method_10063(0, a2, 0, 2);
+	int v2 = idx17mapData('i', 'i', 3723, client_configs['cfg458'].bitcfg1190);
+	int v0 = idx17mapData('i', 'i', 3724, client_configs['cfg458'].bitcfg1188);
+	int v1 = idx17mapData('i', 'i', 3726, client_configs['cfg458'].bitcfg1191);
+	int v3 = idx17mapData('i', 'i', 3056, client_configs['cfg457']);
+	switch (a6) {
+		case 0:
+		case 4:
+		case 11:
+		case 27:
+		case 26:
+		case 29:
+		case 28:
+		case 31:
+		case 30:
+		case 43:
+		case 46:
+		case 103:
+		case 110:
+		case 109:
+		case 104:
+		case 119:
+		case 126:
+		case 124:
+		case 123:
+		case 122:
+		case 121:
+		case 120:
+			cs2method_10797(a0);
+			break;
+		case 1:
+		case 2:
+			cs2method_10797((string)a1 + ": " + "<col=7fa9ff>" + (string)a0);
+			break;
+		case 3:
+			cs2method_10811(v3);
+			cs2method_10797("<col=ffffff>" + "From " + (string)a1 + ":" + "</col>" + " " + (string)a0);
+			break;
+		case 100:
+			cs2method_10797("<col=ff78d9>" + (string)a1 + " " + (string)a0);
+			break;
+		case 5:
+			cs2method_10797("<col=ff5256>" + (string)a0);
+			break;
+		case 6:
+			cs2method_10811(v3);
+			cs2method_10797("<col=ffffff>" + "To " + (string)a1 + ":" + "</col>" + " " + (string)a0);
+			break;
+		case 7:
+			cs2method_10811(v3);
+			cs2method_10797("<col=ffffff>" + "From " + (string)a1 + ":" + "</col>" + " " + (string)a0);
+			break;
+		case 101:
+			cs2method_10797("<col=7e3200>" + (string)a1 + " " + (string)a0);
+			break;
+		case 41:
+			cs2method_10811(v0);
+			cs2method_10797("<col=ffffff>" + "[" + "</col>" + "<col=7fa9ff>" + (string)a3 + "</col>" + "<col=ffffff>" + "] " + (string)a1 + ": " + "</col>" + (string)a0);
+			break;
+		case 9:
+			cs2method_10811(v2);
+			cs2method_10797("<col=ffffff>" + "[" + "</col>" + "<col=7fa9ff>" + (string)a3 + "</col>" + "<col=ffffff>" + "] " + (string)a1 + ": " + "</col>" + (string)a0);
+			break;
+		case 44:
+			cs2method_10811(v1);
+			cs2method_10797("<col=ffffff>" + "[" + "</col>" + "<col=7fa9ff>" + (string)a3 + "</col>" + "<col=ffffff>" + "] " + (string)a1 + ": " + "</col>" + (string)a0);
+			break;
+		case 117:
+			cs2method_10797("<col=7e3200>" + (string)a0);
+			break;
+		case 102:
+			cs2method_10797("<col=8a2be2>" + (string)a1 + " " + (string)a0);
+			break;
+		case 105:
+			cs2method_10797("<col=7e3200>" + (string)a1 + " " + (string)a0);
+			break;
+		case 106:
+			cs2method_10797("<col=7e3200>" + (string)a1 + " " + (string)a0);
+			break;
+		case 107:
+			cs2method_10797("<col=7e3200>" + (string)a1 + " " + (string)a0);
+			break;
+		case 118:
+			cs2method_10797("<col=7e3200>" + (string)a1 + " " + (string)a0);
+			break;
+		case 17:
+			if (cs2method_10846(cs2method_10765(cs2method_10927()), cs2method_10765(a1)) != 0 && cs2method_10171(a4) > 0) {
+				cs2method_10797((string)a1 + "<img=3>" + ": " + "<col=7fa9ff>" + (string)a0);
+			} else {
+				cs2method_10797((string)a1 + ": " + "<col=7fa9ff>" + (string)a0);
+			}
+			break;
+		case 18:
+			cs2method_10811(v3);
+			if (cs2method_10846(cs2method_10765(cs2method_10927()), cs2method_10765(a1)) != 0 && cs2method_10171(a4) > 0) {
+				cs2method_10797("<col=ffffff>" + "From " + (string)a1 + "<img=3>" + ":" + "</col>" + " " + (string)a0);
+			} else {
+				cs2method_10797("<col=ffffff>" + "From " + (string)a1 + ": " + "<col=ff5256>" + (string)a0);
+			}
+			break;
+		case 19:
+			cs2method_10811(v3);
+			cs2method_10797("<col=ffffff>" + "To " + (string)a1 + ":" + "</col>" + " " + (string)a0);
+			break;
+		case 42:
+			cs2method_10811(v0);
+			if (cs2method_10846(cs2method_10765(cs2method_10927()), cs2method_10765(a1)) != 0 && cs2method_10171(a4) > 0) {
+				cs2method_10797("<col=ffffff>" + "[" + "</col>" + "<col=7fa9ff>" + (string)a3 + "</col>" + "<col=ffffff>" + "] " + (string)a1 + "<img=3>" + ": " + "</col>" + (string)a0);
+			} else {
+				cs2method_10797("<col=ffffff>" + "[" + "</col>" + "<col=7fa9ff>" + (string)a3 + "</col>" + "<col=ffffff>" + "] " + (string)a1 + ": " + "</col>" + (string)a0);
+			}
+			break;
+		case 45:
+			cs2method_10811(v1);
+			if (cs2method_10846(cs2method_10765(cs2method_10927()), cs2method_10765(a1)) != 0 && cs2method_10171(a4) > 0) {
+				cs2method_10797("<col=ffffff>" + "[" + "</col>" + "<col=7fa9ff>" + (string)a3 + "</col>" + "<col=ffffff>" + "] " + (string)a1 + "<img=3>" + ": " + "</col>" + (string)a0);
+			} else {
+				cs2method_10797("<col=ffffff>" + "[" + "</col>" + "<col=7fa9ff>" + (string)a3 + "</col>" + "<col=ffffff>" + "] " + (string)a1 + ": " + "</col>" + (string)a0);
+			}
+			break;
+		case 20:
+			cs2method_10811(v2);
+			if (cs2method_10846(cs2method_10765(cs2method_10927()), cs2method_10765(a1)) != 0 && cs2method_10171(a4) > 0) {
+				cs2method_10797("<col=ffffff>" + "[" + "</col>" + "<col=7fa9ff>" + (string)a3 + "</col>" + "<col=ffffff>" + "] " + (string)a1 + "<img=3>" + ": " + "</col>" + (string)a0);
+			} else {
+				cs2method_10797("<col=ffffff>" + "[" + "</col>" + "<col=7fa9ff>" + (string)a3 + "</col>" + "<col=ffffff>" + "] " + (string)a1 + ": " + "</col>" + (string)a0);
+			}
+			break;
+		case 108:
+			cs2method_10797("<col=7e3200>" + (string)a1 + " " + (string)a0);
+			break;
+		case 111:
+		case 112:
+			cs2method_10797("<col=7e3200>" + (string)a1 + " " + (string)a0);
+			break;
+		case 114:
+		case 113:
+			cs2method_10797("<col=7e3200>" + (string)a1 + " " + (string)a0);
+			break;
+		case 115:
+		case 125:
+			cs2method_10797("<col=ff0000>" + (string)a1 + " " + (string)a0);
+			break;
+		case 127:
+			cs2method_10797("<col=00ff00>" + (string)a0);
+			break;
+		case 116:
+			cs2method_10797(a0);
+	}
+	return;
+}

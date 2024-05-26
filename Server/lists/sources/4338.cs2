@@ -1,0 +1,26 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+object script_4338(int a0) {
+	object v0;
+	object v1 = "";
+	if (a0 < 10) {
+		v0 = cs2method_11018(a0, "00:0");
+	} else if (a0 < 60) {
+		v0 = cs2method_11018(a0, "00:");
+	} else if (a0 < 959) {
+		v0 = "0" + (string)cs2method_10379(cs2method_10968(a0, 100)) + ":" + (string)cs2method_10379(cs2method_10038(a0, 100));
+	} else {
+		v0 = (string)cs2method_10379(cs2method_10968(a0, 100)) + ":" + (string)cs2method_10379(cs2method_10038(a0, 100));
+	}
+	return v0;
+}

@@ -1,0 +1,26 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_806() {
+	int v0;
+	int v1 = 5592405;
+	if (cs2method_10871() > 75) {
+		v0 = 65280;
+	} else if (cs2method_10871() > 40) {
+		v0 = 16776960;
+	} else if (cs2method_10871() > 25) {
+		v0 = 16750623;
+	} else {
+		v0 = 16711680;
+	}
+	return v0;
+}

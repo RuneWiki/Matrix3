@@ -1,0 +1,44 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1975(int a0,int a1) {
+	int v0 = -1;
+	object v1 = "This slot is only available when a loadout includes a one-handed weapon.";
+	if (a1 == 17) {
+		v0 = 7602248;
+	} else if (a1 == 23) {
+		v0 = 7602261;
+	} else {
+		if (a1 == 29) {
+			v0 = 7602274;
+		}
+	}
+	if (v0 != -1) {
+		cs2method_10467(a0, v0);
+		if (a0 == 0) {
+			cs2method_21121(new function<script_8799>(object a0,int a1,int a2) {
+				script_8800(a1, a2, a0);
+				return;
+			}, (string)v1, new WidgetPointer(v0), -1, "sIi", new WidgetPointer(v0));
+			cs2method_20750(new function<script_8805>() {
+				script_8808();
+				return;
+			}, "", new WidgetPointer(v0));
+		} else {
+			cs2method_21121(new function<none>() {
+			}, "", new WidgetPointer(v0));
+			cs2method_20750(new function<none>() {
+			}, "", new WidgetPointer(v0));
+		}
+	}
+	return;
+}

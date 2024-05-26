@@ -1,0 +1,98 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2045(int a0,int a1,int a2,int a3,int a4) {
+	if (cs2method_10580() == 1) {
+		script_7958(a0, a4, a3, a2, a1);
+		return;
+	}
+	if (a4 == -1) {
+		a4 = script_8101();
+	}
+	if (cs2method_11088() == 0) {
+		script_2046(a0);
+		return;
+	}
+	int v11 = cs2method_10236(a4);
+	if (v11 <= 0) {
+		return;
+	}
+	if (cs2method_10236(a0) <= 0) {
+		return;
+	}
+	int v7 = 0;
+	int v10 = 0;
+	opc_struct10574(2,0,0) v2 = cs2method_10574();
+	int v6 = v2.intpart_1;
+	int v5 = v2.intpart_0;
+	if (v5 <= 0) {
+		return;
+	}
+	int v9 = 0;
+	int v16 = 0;
+	int v15 = 0;
+	int v0 = 0;
+	int v19 = 0;
+	int v17 = 0;
+	opc_struct10071(2,0,0) v3 = cs2method_10071();
+	int v18 = v3.intpart_1;
+	int v8 = v3.intpart_0;
+	int v4 = cs2method_10060(v18, cs2method_10968(v6, 2));
+	int v14 = cs2method_10461(v18, cs2method_10968(v6, 2));
+	int v12 = cs2method_10060(v8, cs2method_10968(v5, 2));
+	int v1 = cs2method_10461(v8, cs2method_10968(v5, 2));
+	int v13 = cs2method_10060(v1, cs2method_10122(v5, v11, cs2method_10461(v11, cs2method_10236(a0))));
+	if (v8 != a3 || v18 != a2 || v6 != a1) {
+		cs2method_20162(load function<2045>, new WidgetPointer(a0), new WidgetPointer(a4), v8, v18, v6, "IIiii", new WidgetPointer(a0));
+		script_295(a0, v4, v14, v12, v13);
+	}
+	if (client_configs['cfg2805'].bitcfg14109 == 0) {
+		script_4(93192227, cs2_configs['cfg674'], 280, a0, v4, v14, "You are here", v12, v13);
+	} else {
+		cs2method_10273(93192227);
+	}
+	script_4(93192228, cs2_configs['cfg623'], cs2_configs['cfg624'], a0, v4, v14, cs2_configs['cfg2546'], v12, v13);
+	script_4(93192229, cs2_configs['cfg625'], cs2_configs['cfg626'], a0, v4, v14, cs2_configs['cfg2547'], v12, v13);
+	script_4(93192230, cs2_configs['cfg627'], cs2_configs['cfg628'], a0, v4, v14, cs2_configs['cfg2548'], v12, v13);
+	script_4(93192231, cs2_configs['cfg629'], cs2_configs['cfg630'], a0, v4, v14, cs2_configs['cfg2549'], v12, v13);
+	script_4(93192232, cs2_configs['cfg940'], cs2_configs['cfg941'], a0, v4, v14, cs2_configs['cfg2550'], v12, v13);
+	script_4(93192233, client_configs['cfg2807'], 972, a0, v4, v14, "Your marker", v12, v13);
+	script_4(93192234, cs2_configs['cfg2020'], 14290, a0, v4, v14, "", v12, v13);
+	script_4(93192235, cs2_configs['cfg2021'], 14291, a0, v4, v14, "", v12, v13);
+	script_4(93192236, cs2_configs['cfg2701'], 19146, a0, v4, v14, "", v12, v13);
+	if (cs2method_10210() == 0) {
+		if (cs2method_10490() == 28) {
+			script_9331(93192258, 24961, a0, v4, v14, v12, v13);
+			script_9331(93192259, 24962, a0, v4, v14, v12, v13);
+			script_9331(93192260, 24963, a0, v4, v14, v12, v13);
+			script_9331(93192261, 24964, a0, v4, v14, v12, v13);
+			script_9331(93192262, 24965, a0, v4, v14, v12, v13);
+			script_9331(93192263, 24966, a0, v4, v14, v12, v13);
+			script_9331(93192264, 24967, a0, v4, v14, v12, v13);
+			script_9331(93192265, 24968, a0, v4, v14, v12, v13);
+			script_9331(93192266, 24969, a0, v4, v14, v12, v13);
+			script_9331(93192267, 24970, a0, v4, v14, v12, v13);
+		} else {
+			cs2method_10273(93192258);
+			cs2method_10273(93192259);
+			cs2method_10273(93192260);
+			cs2method_10273(93192261);
+			cs2method_10273(93192262);
+			cs2method_10273(93192263);
+			cs2method_10273(93192264);
+			cs2method_10273(93192265);
+			cs2method_10273(93192266);
+			cs2method_10273(93192267);
+		}
+	}
+	return;
+}

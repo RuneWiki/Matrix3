@@ -1,0 +1,100 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+object script_8019() {
+	int v18 = 0;
+	for (int v24 = 0, int v2 = 0, int v16 = 0, int v17 = 0, int v20 = 0, int v12 = 0, int v11 = 0, int v22 = 0, int v13 = 0, int v8 = 1; v8 <= cs2method_10924(681); v8 = cs2method_10060(v8, 1)) {
+		int v33 = cs2method_10602(idx17mapData('i', 'S', 681, v8));
+		int v36 = v18;
+		int v26 = v24;
+		int v34 = v2;
+		int v31 = v16;
+		int v29 = v17;
+		int v37 = v20;
+		int v28 = v12;
+		int v32 = v11;
+		int v35 = v22;
+		int v27 = v13;
+		script_5865_struct(10,0,0) v30 = script_5865(v33, v36, v26, v34, v31, v29, v37, v28, v32, v35, v27);
+		v13 = v30.intpart_9;
+		v22 = v30.intpart_8;
+		v11 = v30.intpart_7;
+		v12 = v30.intpart_6;
+		v20 = v30.intpart_5;
+		v17 = v30.intpart_4;
+		v16 = v30.intpart_3;
+		v2 = v30.intpart_2;
+		v24 = v30.intpart_1;
+		v18 = v30.intpart_0;
+	}
+	object v25 = cs2method_10379(v18);
+	object v5 = cs2method_11025(0, 1, cs2method_10379(v24));
+	object v19 = cs2method_11025(0, 1, cs2method_10379(v2));
+	object v15 = cs2method_11025(0, 1, cs2method_10379(v16));
+	object v9 = cs2method_11025(0, 1, cs2method_10379(v17));
+	object v23 = cs2method_11025(0, 1, cs2method_10379(v20));
+	object v3 = cs2method_11025(0, 1, cs2method_10379(v12));
+	object v21 = cs2method_11025(0, 1, cs2method_10379(v11));
+	object v10 = cs2method_11025(0, 1, cs2method_10379(v22));
+	object v7 = cs2method_11025(0, 1, cs2method_10379(v13));
+	int v0 = 10;
+	if (v13 == 0) {
+		v7 = "";
+		v0 = cs2method_10461(v0, 1);
+		if (v22 == 0) {
+			v10 = "";
+			v0 = cs2method_10461(v0, 1);
+			if (v11 == 0) {
+				v21 = "";
+				v0 = cs2method_10461(v0, 1);
+				if (v12 == 0) {
+					v3 = "";
+					v0 = cs2method_10461(v0, 1);
+					if (v20 == 0) {
+						v23 = "";
+						v0 = cs2method_10461(v0, 1);
+						if (v17 == 0) {
+							v9 = "";
+							v0 = cs2method_10461(v0, 1);
+							if (v16 == 0) {
+								v15 = "";
+								v0 = cs2method_10461(v0, 1);
+								if (v2 == 0) {
+									v19 = "";
+									v0 = cs2method_10461(v0, 1);
+									if (v24 == 0) {
+										v5 = "";
+										v0 = cs2method_10461(v0, 1);
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	object v14 = "";
+	if (v0 > 3) {
+		v14 = script_8001();
+	}
+	object v6 = "";
+	if (v0 > 6) {
+		v6 = script_8001();
+	}
+	object v4 = "";
+	if (v0 > 9) {
+		v4 = script_8001();
+	}
+	object v1 = (string)v7 + (string)v4 + (string)v10 + (string)v21 + (string)v3 + (string)v6 + (string)v23 + (string)v9 + (string)v15 + (string)v14 + (string)v19 + (string)v5 + (string)v25;
+	return v1;
+}

@@ -1,0 +1,43 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2697(int a0,int a1) {
+	if (a0 == cs2method_10085()) {
+		return;
+	}
+	if (a0 == 2) {
+		return;
+	}
+	cs2method_11075(a0);
+	int v0 = cs2method_10085();
+	script_2593(v0, -1);
+	if (a0 != v0) {
+		cs2method_10828(v0, 1);
+		script_2694("RuneScape was unable to enter that display mode." + "<br>" + "<br>" + "Please visit our website for more information.", a1, "", 1, "");
+		int v7 = v0;
+		int v5 = cs2method_11055();
+		int v8 = v0;
+		script_2692_struct(2,0,0) v6 = script_2692(v8);
+		script_3387(v7, v5, v6.intpart_0, v6.intpart_1, a1);
+	}
+	int v1 = v0;
+	int v2 = cs2method_11055();
+	int v3 = v0;
+	script_2692_struct(2,0,0) v4 = script_2692(v3);
+	script_3387(v1, v2, v4.intpart_0, v4.intpart_1, a1);
+	if (v0 == 1 || v0 == 3 || v0 == 5) {
+		script_2700(1, a1, 0, 1);
+	} else {
+		cs2method_10828(v0, 0);
+	}
+	return;
+}

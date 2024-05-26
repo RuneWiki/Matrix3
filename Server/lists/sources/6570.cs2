@@ -1,0 +1,731 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6570(int a0,int a1,int a2,int a3,int a4) {
+	if (idx22mapAttribute(a0, 2976) == 1) {
+		if (a1 == 1) {
+			cs2_configs['cfg2215'] = cs2method_10133();
+		}
+		if (a2 == 1) {
+			cs2_configs['cfg2216'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+		}
+	} else {
+		switch (a0) {
+			default:
+				return;
+			case 14881:
+				if (a1 == 1) {
+					cs2_configs['cfg2091'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2092'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14677:
+				if (a1 == 1) {
+					cs2_configs['cfg2093'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2094'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14678:
+				if (a1 == 1) {
+					cs2_configs['cfg2095'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2096'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14679:
+				if (a1 == 1) {
+					cs2_configs['cfg2097'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2098'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14680:
+				if (a1 == 1) {
+					cs2_configs['cfg2099'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2100'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14681:
+				if (a1 == 1) {
+					cs2_configs['cfg2101'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2102'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14682:
+				if (a1 == 1) {
+					cs2_configs['cfg2103'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2104'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 5670:
+				if (a1 == 1) {
+					cs2_configs['cfg4116'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg4117'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14683:
+				if (a1 == 1) {
+					cs2_configs['cfg2105'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2106'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14684:
+				if (a1 == 1) {
+					cs2_configs['cfg2107'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2108'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+					cs2_configs['cfg3746'] = cs2method_10060(cs2method_10133(), cs2method_10051(cs2method_10461(idx22mapAttribute(a0, 3740), 1), 30));
+				}
+				break;
+			case 14685:
+				if (a1 == 1) {
+					cs2_configs['cfg2109'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2110'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14686:
+				if (a1 == 1) {
+					cs2_configs['cfg2111'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2112'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14687:
+				if (a1 == 1) {
+					cs2_configs['cfg2113'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2114'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14688:
+				if (a1 == 1) {
+					cs2_configs['cfg2115'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2116'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+					cs2_configs['cfg3760'] = cs2method_10060(cs2method_10133(), cs2method_10051(cs2method_10461(idx22mapAttribute(a0, 3740), 1), 30));
+				}
+				break;
+			case 19255:
+				if (a1 == 1) {
+					cs2_configs['cfg2713'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2714'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 28290:
+				if (a1 == 1) {
+					cs2_configs['cfg4196'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg4197'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+					cs2_configs['cfg3746'] = cs2method_10060(cs2method_10133(), cs2method_10051(cs2method_10461(idx22mapAttribute(a0, 3740), 1), 30));
+				}
+				break;
+			case 14698:
+				if (a1 == 1) {
+					cs2_configs['cfg2117'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2118'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14699:
+				if (a1 == 1) {
+					cs2_configs['cfg2119'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2120'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 3107:
+				if (a1 == 1) {
+					cs2_configs['cfg4118'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg4119'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14700:
+				if (a1 == 1) {
+					cs2_configs['cfg2121'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2122'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14701:
+				if (a1 == 1) {
+					cs2_configs['cfg2123'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2124'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+					cs2_configs['cfg3746'] = cs2method_10060(cs2method_10133(), cs2method_10051(cs2method_10461(idx22mapAttribute(a0, 3740), 1), 30));
+				}
+				break;
+			case 14702:
+				if (a1 == 1) {
+					cs2_configs['cfg2125'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2126'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14703:
+				if (a1 == 1) {
+					cs2_configs['cfg2127'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2128'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14704:
+				if (a1 == 1) {
+					cs2_configs['cfg2129'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2130'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+					cs2_configs['cfg3746'] = cs2method_10060(cs2method_10133(), cs2method_10051(cs2method_10461(idx22mapAttribute(a0, 3740), 1), 30));
+				}
+				break;
+			case 14705:
+				if (a1 == 1) {
+					cs2_configs['cfg2131'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2132'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14706:
+				if (a1 == 1) {
+					cs2_configs['cfg2133'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2134'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+					cs2_configs['cfg3746'] = cs2method_10060(cs2method_10133(), cs2method_10051(cs2method_10461(idx22mapAttribute(a0, 3740), 1), 30));
+				}
+				break;
+			case 14707:
+				if (a1 == 1) {
+					cs2_configs['cfg2135'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2136'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+					cs2_configs['cfg3731'] = cs2method_10060(cs2method_10133(), cs2method_10051(cs2method_10461(idx22mapAttribute(a0, 3740), 1), 30));
+				}
+				break;
+			case 14708:
+				if (a1 == 1) {
+					cs2_configs['cfg2137'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2138'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+					cs2_configs['cfg3746'] = cs2method_10060(cs2method_10133(), cs2method_10051(cs2method_10461(idx22mapAttribute(a0, 3740), 1), 30));
+				}
+				break;
+			case 14709:
+				if (a1 == 1) {
+					cs2_configs['cfg2139'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2140'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14710:
+				if (a1 == 1) {
+					cs2_configs['cfg2141'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2142'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+					cs2_configs['cfg3736'] = cs2method_10060(cs2method_10133(), cs2method_10051(idx22mapAttribute(a0, 3740), 30));
+				}
+				break;
+			case 14711:
+				if (a1 == 1) {
+					cs2_configs['cfg2143'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2144'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+					cs2_configs['cfg3733'] = cs2method_10060(cs2method_10133(), cs2method_10051(idx22mapAttribute(a0, 3740), 30));
+				}
+				break;
+			case 14712:
+				if (a1 == 1) {
+					cs2_configs['cfg2145'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2146'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14713:
+				if (a1 == 1) {
+					cs2_configs['cfg2147'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2148'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+					cs2_configs['cfg3741'] = cs2method_10060(cs2method_10133(), cs2method_10051(idx22mapAttribute(a0, 3740), 30));
+				}
+				break;
+			case 14714:
+				if (a1 == 1) {
+					cs2_configs['cfg2149'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2150'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+					cs2_configs['cfg3740'] = cs2method_10060(cs2method_10133(), cs2method_10051(idx22mapAttribute(a0, 3740), 30));
+				}
+				break;
+			case 14715:
+				if (a1 == 1) {
+					cs2_configs['cfg2151'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2152'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14716:
+				if (a1 == 1) {
+					cs2_configs['cfg2153'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2154'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+					cs2_configs['cfg3742'] = cs2method_10060(cs2method_10133(), cs2method_10051(idx22mapAttribute(a0, 3740), 30));
+				}
+				break;
+			case 14717:
+				if (a1 == 1) {
+					cs2_configs['cfg2155'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2156'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14718:
+				if (a1 == 1) {
+					cs2_configs['cfg2157'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2158'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14719:
+				if (a1 == 1) {
+					cs2_configs['cfg2159'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2160'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+					cs2_configs['cfg3735'] = cs2method_10060(cs2method_10133(), cs2method_10051(idx22mapAttribute(a0, 3740), 30));
+				}
+				break;
+			case 14720:
+				if (a1 == 1) {
+					cs2_configs['cfg2161'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2162'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+					cs2_configs['cfg3737'] = cs2method_10060(cs2method_10133(), cs2method_10051(idx22mapAttribute(a0, 3740), 30));
+				}
+				break;
+			case 14721:
+				if (a1 == 1) {
+					cs2_configs['cfg2163'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2164'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+					cs2_configs['cfg3734'] = cs2method_10060(cs2method_10133(), cs2method_10051(idx22mapAttribute(a0, 3740), 30));
+				}
+				break;
+			case 19252:
+				if (a1 == 1) {
+					cs2_configs['cfg2715'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2716'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+					cs2_configs['cfg3738'] = cs2method_10060(cs2method_10133(), cs2method_10051(idx22mapAttribute(a0, 3740), 30));
+				}
+				break;
+			case 25028:
+				if (a1 == 1) {
+					cs2_configs['cfg3893'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg3894'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14690:
+				if (a1 == 1) {
+					cs2_configs['cfg2165'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2166'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 19253:
+				if (a1 == 1) {
+					cs2_configs['cfg2717'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2718'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+					cs2_configs['cfg3739'] = cs2method_10060(cs2method_10133(), cs2method_10051(idx22mapAttribute(a0, 3740), 30));
+				}
+				break;
+			case 24188:
+				if (a1 == 1) {
+					cs2_configs['cfg3895'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg3896'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+					cs2_configs['cfg3902'] = cs2method_10060(cs2method_10133(), cs2method_10051(idx22mapAttribute(a0, 3740), 30));
+				}
+				break;
+			case 24189:
+				if (a1 == 1) {
+					cs2_configs['cfg3897'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg3898'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+					cs2_configs['cfg3903'] = cs2method_10060(cs2method_10133(), cs2method_10051(idx22mapAttribute(a0, 3740), 30));
+				}
+				break;
+			case 24190:
+				if (a1 == 1) {
+					cs2_configs['cfg3899'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg3900'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+					cs2_configs['cfg3904'] = cs2method_10060(cs2method_10133(), cs2method_10051(idx22mapAttribute(a0, 3740), 30));
+				}
+				break;
+			case 28287:
+				if (a1 == 1) {
+					cs2_configs['cfg4198'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg4199'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+					cs2_configs['cfg4205'] = cs2method_10060(cs2method_10133(), cs2method_10051(idx22mapAttribute(a0, 3740), 30));
+				}
+				break;
+			case 7260:
+				if (a1 == 1) {
+					cs2_configs['cfg4173'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg4174'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14663:
+				if (a1 == 1) {
+					cs2_configs['cfg2167'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2168'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14664:
+				if (a1 == 1) {
+					cs2_configs['cfg2169'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2170'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 6336:
+				if (a1 == 1) {
+					cs2_configs['cfg4120'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg4121'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14665:
+				if (a1 == 1) {
+					cs2_configs['cfg2171'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2172'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14666:
+				if (a1 == 1) {
+					cs2_configs['cfg2173'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2174'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+					cs2_configs['cfg3746'] = cs2method_10060(cs2method_10133(), cs2method_10051(cs2method_10461(idx22mapAttribute(a0, 3740), 1), 30));
+				}
+				break;
+			case 14667:
+				if (a1 == 1) {
+					cs2_configs['cfg2175'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2176'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14668:
+				if (a1 == 1) {
+					cs2_configs['cfg2177'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2178'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14669:
+				if (a1 == 1) {
+					cs2_configs['cfg2179'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2180'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14670:
+				if (a1 == 1) {
+					cs2_configs['cfg2181'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2182'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+					cs2_configs['cfg3746'] = cs2method_10060(cs2method_10133(), cs2method_10051(cs2method_10461(idx22mapAttribute(a0, 3740), 1), 30));
+				}
+				break;
+			case 14671:
+				if (a1 == 1) {
+					cs2_configs['cfg2183'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2184'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14672:
+				if (a1 == 1) {
+					cs2_configs['cfg2185'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2186'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14673:
+				if (a1 == 1) {
+					cs2_configs['cfg2187'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2188'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+					cs2_configs['cfg3746'] = cs2method_10060(cs2method_10133(), cs2method_10051(cs2method_10461(idx22mapAttribute(a0, 3740), 1), 30));
+				}
+				break;
+			case 14674:
+				if (a1 == 1) {
+					cs2_configs['cfg2189'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2190'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 19340:
+				if (a1 == 1) {
+					cs2_configs['cfg2723'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2724'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 19341:
+				if (a1 == 1) {
+					cs2_configs['cfg2725'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2726'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 19251:
+				if (a1 == 1) {
+					cs2_configs['cfg2719'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2720'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+					cs2_configs['cfg3745'] = cs2method_10060(cs2method_10133(), cs2method_10051(cs2method_10461(idx22mapAttribute(a0, 3740), 1), 30));
+				}
+				break;
+			case 28289:
+				if (a1 == 1) {
+					cs2_configs['cfg4200'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg4201'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14725:
+				if (a1 == 1) {
+					cs2_configs['cfg2191'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2192'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14726:
+				if (a1 == 1) {
+					cs2_configs['cfg2193'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2194'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14727:
+				if (a1 == 1) {
+					cs2_configs['cfg2195'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2196'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 19272:
+				if (a1 == 1) {
+					cs2_configs['cfg4122'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg4123'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14728:
+				if (a1 == 1) {
+					cs2_configs['cfg2197'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2198'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14729:
+				if (a1 == 1) {
+					cs2_configs['cfg2199'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2200'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14730:
+				if (a1 == 1) {
+					cs2_configs['cfg2201'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2202'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14731:
+				if (a1 == 1) {
+					cs2_configs['cfg2203'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2204'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+					cs2_configs['cfg3746'] = cs2method_10060(cs2method_10133(), cs2method_10051(cs2method_10461(idx22mapAttribute(a0, 3740), 1), 30));
+				}
+				break;
+			case 14732:
+				if (a1 == 1) {
+					cs2_configs['cfg2205'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2206'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14733:
+				if (a1 == 1) {
+					cs2_configs['cfg2207'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2208'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 14734:
+				if (a1 == 1) {
+					cs2_configs['cfg2209'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2210'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+					cs2_configs['cfg3743'] = cs2method_10060(cs2method_10133(), cs2method_10051(cs2method_10461(idx22mapAttribute(a0, 3740), 1), 30));
+				}
+				break;
+			case 14735:
+				if (a1 == 1) {
+					cs2_configs['cfg2211'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2212'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+					cs2_configs['cfg3760'] = cs2method_10060(cs2method_10133(), cs2method_10051(cs2method_10461(idx22mapAttribute(a0, 3740), 1), 30));
+				}
+				break;
+			case 14736:
+				if (a1 == 1) {
+					cs2_configs['cfg2213'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2214'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 19342:
+				if (a1 == 1) {
+					cs2_configs['cfg2727'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2728'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 19343:
+				if (a1 == 1) {
+					cs2_configs['cfg2729'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2730'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+				}
+				break;
+			case 19254:
+				if (a1 == 1) {
+					cs2_configs['cfg2721'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg2722'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+					cs2_configs['cfg3744'] = cs2method_10060(cs2method_10133(), cs2method_10051(cs2method_10461(idx22mapAttribute(a0, 3740), 1), 30));
+				}
+				break;
+			case 28288:
+				if (a1 == 1) {
+					cs2_configs['cfg4202'] = cs2method_10133();
+				}
+				if (a2 == 1) {
+					cs2_configs['cfg4203'] = cs2method_10060(cs2method_10051(cs2method_10461(a3, a4), 30), cs2method_10133());
+					cs2_configs['cfg3746'] = cs2method_10060(cs2method_10133(), cs2method_10051(cs2method_10461(idx22mapAttribute(a0, 3740), 1), 30));
+				}
+		}
+	}
+	script_6297(a0);
+	return;
+}

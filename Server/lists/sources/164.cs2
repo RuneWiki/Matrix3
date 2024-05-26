@@ -1,0 +1,21 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_164(int a0) {
+	int v0 = cs2method_10640(94, 3);
+	if (v0 != -1 && (cs2method_10416(v0) == 0 || cs2method_10771() == 1)) {
+		cs2method_10026(a0, cs2method_10018(v0));
+	} else {
+		cs2method_10026(a0, "Unarmed");
+	}
+	return;
+}

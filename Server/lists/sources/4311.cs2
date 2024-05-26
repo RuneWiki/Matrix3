@@ -1,0 +1,132 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4311() {
+	int v0 = 0;
+	int v2 = script_4293();
+	int v3 = -1;
+	if (script_4309() == 1) {
+		v3 = cs2_configs['cfg1500'];
+	}
+	cs2method_10026(71827518, "Settings for: " + cs2_configs['cfg2521']);
+	cs2method_10467(1, 71828175);
+	cs2method_10467(1, 71828176);
+	cs2method_10467(1, 71828178);
+	cs2method_10467(1, 71828177);
+	cs2method_10467(1, 71827614);
+	cs2method_10467(1, 71827615);
+	cs2method_10467(1, 71827617);
+	cs2method_10467(1, 71827616);
+	cs2method_10467(1, 71827813);
+	cs2method_10467(1, 71827814);
+	cs2method_10467(1, 71827816);
+	cs2method_10467(1, 71827815);
+	cs2method_10467(1, 71828205);
+	cs2method_10467(1, 71828206);
+	cs2method_10467(1, 71828208);
+	cs2method_10467(1, 71828207);
+	cs2method_10467(1, 71827532);
+	cs2method_10467(0, 71827772);
+	cs2method_10467(0, 71827781);
+	cs2method_10467(0, 71827733);
+	cs2method_10467(0, 71827719);
+	int v1 = 3720;
+	if (cs2method_10262() == 1) {
+		v1 = 3727;
+	} else if (cs2method_10262() == 2) {
+		v1 = 3728;
+	} else if (cs2method_10262() == 3) {
+		v1 = 3729;
+	} else {
+		if (cs2method_10262() == 6) {
+			v1 = 7498;
+		}
+	}
+	if (script_4309() == 1) {
+		if (cs2_configs['cfg1568'] == 1) {
+			cs2method_10467(0, 71827532);
+		}
+		if (script_4292() == 1) {
+			if (v2 > v3 || v2 == 126) {
+				cs2method_10467(1, 71827772);
+				cs2method_10467(1, 71827781);
+				cs2method_10467(1, 71827733);
+				cs2method_10467(1, 71827719);
+				if (v3 != 126) {
+					if (cs2_configs['cfg1565'] == 1) {
+						cs2method_10467(0, 71827614);
+					} else {
+						cs2method_10467(0, 71827616);
+					}
+					if (cs2_configs['cfg1566'] == 1) {
+						cs2method_10467(0, 71827813);
+					} else {
+						cs2method_10467(0, 71827815);
+					}
+					if (cs2_configs['cfg1567'] == 1) {
+						cs2method_10467(0, 71828205);
+					} else {
+						cs2method_10467(0, 71828207);
+					}
+				} else {
+					cs2method_10467(0, 71827617);
+					cs2method_10467(0, 71827816);
+					cs2method_10467(0, 71828208);
+				}
+			} else {
+				if (cs2_configs['cfg1565'] == 1) {
+					cs2method_10467(0, 71827615);
+				} else {
+					cs2method_10467(0, 71827617);
+				}
+				if (cs2_configs['cfg1566'] == 1) {
+					cs2method_10467(0, 71827814);
+				} else {
+					cs2method_10467(0, 71827816);
+				}
+				if (cs2_configs['cfg1567'] == 1) {
+					cs2method_10467(0, 71828206);
+				} else {
+					cs2method_10467(0, 71828208);
+				}
+			}
+		} else {
+			if (cs2_configs['cfg1564'] == 1) {
+				cs2method_10467(0, 71828176);
+			} else {
+				cs2method_10467(0, 71828178);
+			}
+			if (cs2_configs['cfg1565'] == 1) {
+				cs2method_10467(0, 71827615);
+			} else {
+				cs2method_10467(0, 71827617);
+			}
+			if (cs2_configs['cfg1566'] == 1) {
+				cs2method_10467(0, 71827814);
+			} else {
+				cs2method_10467(0, 71827816);
+			}
+			if (cs2_configs['cfg1567'] == 1) {
+				cs2method_10467(0, 71828206);
+			} else {
+				cs2method_10467(0, 71828208);
+			}
+		}
+		script_4501(idx17mapData('i', 's', 3715, cs2_configs['cfg1500']), 71827727);
+		if (cs2method_10846("", idx17mapData('i', 's', v1, cs2_configs['cfg1501'])) == 0) {
+			script_4501(idx17mapData('i', 's', v1, cs2method_10461(cs2_configs['cfg1501'], 1)), 71827713);
+		} else {
+			script_4501(idx17mapData('i', 's', v1, cs2_configs['cfg1501']), 71827713);
+		}
+	}
+	return;
+}

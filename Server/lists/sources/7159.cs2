@@ -1,0 +1,119 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_7159_struct(1,1,0) script_7159(int a0,int a1,int a2,int a3) {
+	object v12;
+	object v1;
+	object v6;
+	int v13;
+	object v4;
+	object v10;
+	object v7 = "";
+	int v0 = 13083202;
+	switch (a3) {
+		case 101:
+			if (a0 < 0 || a1 < 0) {
+				v12 = "Decrease skill: ";
+				v13 = 16711680;
+			} else {
+				v12 = "Boost skill: ";
+				v13 = 65280;
+			}
+			object v14 = cs2method_10427(v12, script_7160(a2) + ", by ");
+			if (a0 != 0) {
+				if (a1 != 0) {
+					v1 = cs2method_10427(v14, (string)cs2method_10379(a1) + "% + " + (string)cs2method_10379(a0));
+				} else {
+					v1 = cs2method_10427(v14, cs2method_10379(a0));
+				}
+			} else if (a1 != 0) {
+				v1 = cs2method_10427(v14, (string)cs2method_10379(a1) + "%");
+			} else {
+				return new script_7159_struct(13083202, "No bonus on use");
+			}
+			break;
+		case 102:
+			if (a0 < 0 || a1 < 0) {
+				v10 = "Damage skill: ";
+				v13 = 16711680;
+			} else {
+				v10 = "Restore skill: ";
+				v13 = 65280;
+			}
+			object v11 = cs2method_10427(v10, script_7160(a2) + ", by ");
+			if (a0 != 0) {
+				if (a1 != 0) {
+					v1 = cs2method_10427(v11, (string)cs2method_10379(a1) + "% + " + (string)cs2method_10379(a0));
+				} else {
+					v1 = cs2method_10427(v11, cs2method_10379(a0));
+				}
+			} else if (a1 != 0) {
+				v1 = cs2method_10427(v11, (string)cs2method_10379(a1) + "%");
+			} else {
+				return new script_7159_struct(13083202, "No bonus on use");
+			}
+			break;
+		case 103:
+			if (a0 < 0 || a1 < 0) {
+				v4 = "Decrease ";
+				v13 = 16711680;
+			} else {
+				v4 = "Boost ";
+				v13 = 65280;
+			}
+			object v5 = cs2method_10427(v4, script_7161(a2) + ", by ");
+			if (a0 != 0) {
+				if (a1 != 0) {
+					v1 = cs2method_10427(v5, (string)cs2method_10379(a1) + "% + " + (string)cs2method_10379(a0));
+				} else {
+					v1 = cs2method_10427(v5, cs2method_10379(a0));
+				}
+			} else if (a1 != 0) {
+				v1 = cs2method_10427(v5, (string)cs2method_10379(a1) + "%");
+			} else {
+				return new script_7159_struct(13083202, "No bonus on use");
+			}
+			break;
+		case 104:
+			if (a0 < 0 || a1 < 0) {
+				v6 = "Damage ";
+				v13 = 16711680;
+			} else {
+				v6 = "Restore ";
+				v13 = 65280;
+			}
+			object v2 = cs2method_10427(v6, script_7161(a2) + ", by ");
+			if (a0 != 0) {
+				if (a1 != 0) {
+					v1 = cs2method_10427(v2, (string)cs2method_10379(a1) + "% + " + (string)cs2method_10379(a0));
+				} else {
+					v1 = cs2method_10427(v2, cs2method_10379(a0));
+				}
+			} else if (a1 != 0) {
+				v1 = cs2method_10427(v2, (string)cs2method_10379(a1) + "%");
+			} else {
+				return new script_7159_struct(13083202, "No bonus on use");
+			}
+			break;
+		case 100:
+			int v8 = a2;
+			int v15 = a0;
+			int v9 = a1;
+			script_7162_struct(1,1,0) v3 = script_7162(v8, v15, v9);
+			v13 = v3.intpart_0;
+			v1 = v3.objectpart_0;
+			break;
+		default:
+			return new script_7159_struct(13083202, "No bonus on use");
+	}
+	return new script_7159_struct(v13, v1);
+}

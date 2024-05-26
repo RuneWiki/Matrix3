@@ -1,0 +1,25 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1625(int a0,int a1) {
+	object v1 = "Special Attack (" + (string)cs2method_10379(cs2method_10968(client_configs['cfg679'], 10)) + "%)";
+	if (client_configs['cfg1543'].bitcfg4766 == 3 && client_configs['cfg1551'].bitcfg4846 == 1) {
+		v1 = "Portal Energy (" + (string)cs2method_10379(cs2method_10968(client_configs['cfg679'], 10)) + "%)";
+	}
+	script_4542(cs2method_10122(client_configs['cfg679'], 1000, 100), a1, a0);
+	int v0 = 14014931;
+	if (client_configs['cfg680'] > 0) {
+		v0 = 16750623;
+	}
+	script_4212(a0, v1, 3793, v0, 0);
+	return;
+}

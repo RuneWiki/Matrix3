@@ -1,0 +1,34 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2517() {
+	int v3 = 0;
+	int v4 = 0;
+	int v7 = cs2method_10051(cs2_configs['cfg847'], idx17mapData('i', 'i', 2454, 1));
+	int v11 = cs2method_10051(cs2_configs['cfg848'], idx17mapData('i', 'i', 2454, 2));
+	int v9 = cs2method_10051(cs2_configs['cfg849'], idx17mapData('i', 'i', 2454, 3));
+	int v1 = cs2method_10051(cs2_configs['cfg850'], idx17mapData('i', 'i', 2454, 4));
+	int v0 = cs2method_10051(cs2_configs['cfg851'], idx17mapData('i', 'i', 2454, 5));
+	cs2method_10026(42860555, script_46(",", v7));
+	cs2method_10026(42860604, script_46(",", v11));
+	cs2method_10026(42860596, script_46(",", v9));
+	cs2method_10026(42860588, script_46(",", v1));
+	cs2method_10026(42860613, script_46(",", v0));
+	int v6 = cs2method_10060(v7, v11);
+	int v2 = cs2method_10060(v6, v9);
+	int v10 = cs2method_10060(v2, v1);
+	int v5 = cs2method_10060(v10, v0);
+	cs2method_10026(42860618, script_46(",", v5));
+	int v8 = cs2method_10461(cs2_configs['cfg839'], v5);
+	cs2method_10026(42860621, script_46(",", v8));
+	return;
+}

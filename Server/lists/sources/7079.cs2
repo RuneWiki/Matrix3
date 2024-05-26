@@ -1,0 +1,61 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7079() {
+	int v1 = 0;
+	int v4 = -1;
+	int v5 = -1;
+	int v2 = -1;
+	int v3 = -1;
+	int v0 = -1;
+	while (v1 <= 14) {
+		int v8;
+		int v6 = v1;
+		script_355_struct(3,0,0) v10 = script_355(v6);
+		int v7 = v10.intpart_2;
+		int v9 = v10.intpart_1;
+		int v11 = v10.intpart_0;
+		if (v11 == -1) {
+			switch (v9) {
+				case 1:
+					v8 = 6734;
+					break;
+				case 2:
+					v8 = 6735;
+					break;
+				case 3:
+					v8 = 6736;
+					break;
+				case 5:
+					v8 = 6738;
+					break;
+				case 4:
+					v8 = 6737;
+					break;
+				case 6:
+					v8 = 6740;
+					break;
+				default:
+					v8 = -1;
+			}
+			if (v8 != -1) {
+				int v12 = idx17mapData('i', 'J', v8, v7);
+				if (v12 == cs2_configs['cfg3944']) {
+					script_7080(script_9676(1430, v1), cs2_configs['cfg3944']);
+					return;
+				}
+			}
+		}
+		v1 = cs2method_10060(v1, 1);
+	}
+	return;
+}

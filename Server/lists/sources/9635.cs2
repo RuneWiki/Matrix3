@@ -1,0 +1,34 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_9635(int a0) {
+	int v1 = -1;
+	int v0 = cs2method_10968(a0, 32);
+	int v2 = cs2method_10038(a0, 32);
+	switch (v0) {
+		case 0:
+			v1 = cs2method_10441(cs2_configs['cfg3928'], v2);
+			break;
+		case 1:
+			v1 = cs2method_10441(cs2_configs['cfg3929'], v2);
+			break;
+		case 2:
+			v1 = cs2method_10441(cs2_configs['cfg3930'], v2);
+			break;
+		case 3:
+			v1 = cs2method_10441(cs2_configs['cfg3931'], v2);
+			break;
+		case 4:
+			v1 = cs2method_10441(cs2_configs['cfg3932'], v2);
+	}
+	return v1;
+}

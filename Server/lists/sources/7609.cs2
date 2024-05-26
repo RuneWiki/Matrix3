@@ -1,0 +1,23 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_7609(int a0) {
+	if (idx22mapAttribute(a0, 2531) != 2 || idx22mapAttribute(a0, 2532) != 3) {
+		return 0;
+	}
+	int v1 = idx22mapAttribute(a0, 2542);
+	int v0 = idx17mapData('i', 'o', v1, 3);
+	if (v0 == script_7602(itemDefsAttribute(v0, 686))) {
+		return 1;
+	}
+	return 0;
+}

@@ -1,0 +1,42 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5952() {
+	int v0 = client_configs['cfg1751'];
+	int v2 = client_configs['cfg1752'];
+	int v1 = 0;
+	if (v1 == 0 && v0 != 0 && v2 != 0) {
+		v1 = 1;
+	}
+	if (v1 == 1) {
+		cs2_configs['cfg1795'] = 0;
+		script_3097();
+		if (v0 > v2) {
+			script_3093(-3, "Click continue to log into a members world.", "", "", 0, 0, 10150, "Continue", 0, -1, "Continue", 1);
+			cs2method_20486(new function<script_5953>() {
+				script_3097();
+				script_3093(-3, "Logging In - Please Wait", "", "", 0, 1, -1, "", 0, -1, "", 0);
+				cs2method_11153(cs2_configs['cfg4211'], cs2_configs['cfg4210']);
+				return;
+			}, "", new WidgetPointer(906,546));
+		} else {
+			script_3093(-3, "We can't find your subscription. Click continue to log into a free to play world.", "", "", 0, 0, 10151, "Continue", 0, -1, "Continue", 1);
+			cs2method_20486(new function<script_5953>() {
+				script_3097();
+				script_3093(-3, "Logging In - Please Wait", "", "", 0, 1, -1, "", 0, -1, "", 0);
+				cs2method_11153(cs2_configs['cfg4211'], cs2_configs['cfg4210']);
+				return;
+			}, "", new WidgetPointer(906,546));
+		}
+	}
+	return;
+}

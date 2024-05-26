@@ -1,0 +1,52 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7049(int a0,int a1) {
+	int v1 = -1;
+	switch (a0) {
+		case 95027203:
+		case 95682561:
+			if (client_configs['cfg3705'].bitcfg18787 == 0) {
+				v1 = 6734;
+			} else {
+				v1 = 6735;
+			}
+			break;
+		case 95158273:
+		case 95420417:
+			v1 = 6738;
+			break;
+		case 95617025:
+		case 95748097:
+			v1 = 6740;
+			break;
+		case 94961665:
+		case 95223809:
+			if (client_configs['cfg3705'].bitcfg18793 == 0) {
+				v1 = 6736;
+			} else {
+				v1 = 6737;
+			}
+	}
+	int v0 = idx17mapData('i', 'J', v1, a1);
+	if (v0 == -1) {
+		return;
+	}
+	if (cs2method_11038(a0, a1) == 1) {
+		cs2method_10356(2);
+	}
+	if (idx22mapAttribute(v0, 2876) == 1 || v0 == 14874 && client_configs['cfg3170'] == 14770) {
+		script_8311(2);
+	}
+	script_8808();
+	return;
+}

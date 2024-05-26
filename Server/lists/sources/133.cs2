@@ -1,0 +1,18 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_133(int a0,int a1,int a2) {
+	if (cs2method_10635(a2) >= cs2method_10872(cs2method_10635(a1), cs2method_10635(a0)) && cs2method_10339(a2) >= cs2method_10872(cs2method_10339(a1), cs2method_10339(a0)) && cs2method_10808(a2) >= cs2method_10872(cs2method_10808(a1), cs2method_10808(a0)) && cs2method_10635(a2) <= cs2method_11048(cs2method_10635(a1), cs2method_10635(a0)) && cs2method_10339(a2) <= cs2method_11048(cs2method_10339(a1), cs2method_10339(a0)) && cs2method_10808(a2) <= cs2method_11048(cs2method_10808(a1), cs2method_10808(a0))) {
+		return 1;
+	}
+	return 0;
+}

@@ -1,0 +1,51 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6360(int a0) {
+	script_6361(0);
+	if (script_6352(a0) == 0) {
+		return;
+	}
+	if (script_6365(a0) == 1) {
+		return;
+	}
+	if (script_6352((int)cs2_configs['cfg1939']) == 0) {
+		cs2_configs['cfg1939'] = new WidgetPointer(a0);
+	} else if (script_6352((int)cs2_configs['cfg1940']) == 0) {
+		cs2_configs['cfg1940'] = new WidgetPointer(a0);
+	} else if (script_6352((int)cs2_configs['cfg1941']) == 0) {
+		cs2_configs['cfg1941'] = new WidgetPointer(a0);
+	} else if (script_6352((int)cs2_configs['cfg1942']) == 0) {
+		cs2_configs['cfg1942'] = new WidgetPointer(a0);
+	} else if (script_6352((int)cs2_configs['cfg1943']) == 0) {
+		cs2_configs['cfg1943'] = new WidgetPointer(a0);
+	} else if (script_6352((int)cs2_configs['cfg1944']) == 0) {
+		cs2_configs['cfg1944'] = new WidgetPointer(a0);
+	} else if (script_6352((int)cs2_configs['cfg1945']) == 0) {
+		cs2_configs['cfg1945'] = new WidgetPointer(a0);
+	} else if (script_6352((int)cs2_configs['cfg1946']) == 0) {
+		cs2_configs['cfg1946'] = new WidgetPointer(a0);
+	} else if (script_6352((int)cs2_configs['cfg3498']) == 0) {
+		cs2_configs['cfg3498'] = new WidgetPointer(a0);
+	} else if (script_6352((int)cs2_configs['cfg3499']) == 0) {
+		cs2_configs['cfg3499'] = new WidgetPointer(a0);
+	} else if (script_6352((int)cs2_configs['cfg3500']) == 0) {
+		cs2_configs['cfg3500'] = new WidgetPointer(a0);
+	} else if (script_6352((int)cs2_configs['cfg3501']) == 0) {
+		cs2_configs['cfg3501'] = new WidgetPointer(a0);
+	} else {
+		if (script_6352((int)cs2_configs['cfg3502']) == 0) {
+			cs2_configs['cfg3502'] = new WidgetPointer(a0);
+		}
+	}
+	return;
+}

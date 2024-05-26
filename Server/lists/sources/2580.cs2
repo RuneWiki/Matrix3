@@ -1,0 +1,172 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2580() {
+	cs2method_10520(6710886, 19136628);
+	cs2method_10495(19136622);
+	cs2method_10495(19136623);
+	cs2method_20390(new function<script_2606>(int a0) {
+		cs2method_10670(10046, 1, 0, 255);
+		int v0 = -1;
+		switch (cs2_configs['cfg929']) {
+			case 0:
+				if (cs2_configs['cfg930'] != -1) {
+					int v1 = cs2method_10640(93, cs2_configs['cfg930']);
+				}
+				break;
+			case 1:
+				if (cs2_configs['cfg931'] != -1) {
+					int v1 = cs2method_10640(93, cs2_configs['cfg931']);
+				}
+				break;
+			case 2:
+				if (cs2_configs['cfg932'] != -1) {
+					int v1 = cs2method_10640(93, cs2_configs['cfg932']);
+				}
+				break;
+			case 3:
+				if (cs2_configs['cfg933'] != -1) {
+					int v1 = cs2method_10640(93, cs2_configs['cfg933']);
+				}
+				break;
+			case 4:
+				if (cs2_configs['cfg934'] != -1) {
+					int v1 = cs2method_10640(93, cs2_configs['cfg934']);
+				}
+				break;
+			case 5:
+				if (cs2_configs['cfg935'] != -1) {
+					int v1 = cs2method_10640(93, cs2_configs['cfg935']);
+				}
+				break;
+			case 6:
+				if (cs2_configs['cfg936'] != -1) {
+					int v1 = cs2method_10640(93, cs2_configs['cfg936']);
+				}
+				break;
+			case 7:
+				if (cs2_configs['cfg937'] != -1) {
+					int v1 = cs2method_10640(93, cs2_configs['cfg937']);
+				}
+				break;
+			case 8:
+				if (cs2_configs['cfg938'] != -1) {
+					int v1 = cs2method_10640(93, cs2_configs['cfg938']);
+				}
+				break;
+			case 9:
+				if (cs2_configs['cfg939'] != -1) {
+					int v1 = cs2method_10640(93, cs2_configs['cfg939']);
+				}
+		}
+		switch (a0) {
+			case 19136631:
+				if (cs2method_10566(93, 803) == 0) {
+					cs2method_10810("You have no squads that need resupplying.");
+				} else {
+					cs2method_10810("You do not have sufficient investment credits to resupply all your squads.");
+				}
+				break;
+			case 19136634:
+				cs2method_10810("You do not have sufficient investment credits to apply the selected changes.");
+				break;
+			case 19136615:
+			case 19136614:
+			case 19136623:
+			case 19136622:
+			case 19136616:
+				cs2method_10810("You must resupply this squad first.");
+				break;
+			case 19136625:
+				cs2method_10810("This squad does not need resupplying.");
+		}
+		return;
+	}, new WidgetPointer(-32768,3), "I", new WidgetPointer(292,110));
+	cs2method_20390(new function<script_2606>(int a0) {
+		cs2method_10670(10046, 1, 0, 255);
+		int v0 = -1;
+		switch (cs2_configs['cfg929']) {
+			case 0:
+				if (cs2_configs['cfg930'] != -1) {
+					int v1 = cs2method_10640(93, cs2_configs['cfg930']);
+				}
+				break;
+			case 1:
+				if (cs2_configs['cfg931'] != -1) {
+					int v1 = cs2method_10640(93, cs2_configs['cfg931']);
+				}
+				break;
+			case 2:
+				if (cs2_configs['cfg932'] != -1) {
+					int v1 = cs2method_10640(93, cs2_configs['cfg932']);
+				}
+				break;
+			case 3:
+				if (cs2_configs['cfg933'] != -1) {
+					int v1 = cs2method_10640(93, cs2_configs['cfg933']);
+				}
+				break;
+			case 4:
+				if (cs2_configs['cfg934'] != -1) {
+					int v1 = cs2method_10640(93, cs2_configs['cfg934']);
+				}
+				break;
+			case 5:
+				if (cs2_configs['cfg935'] != -1) {
+					int v1 = cs2method_10640(93, cs2_configs['cfg935']);
+				}
+				break;
+			case 6:
+				if (cs2_configs['cfg936'] != -1) {
+					int v1 = cs2method_10640(93, cs2_configs['cfg936']);
+				}
+				break;
+			case 7:
+				if (cs2_configs['cfg937'] != -1) {
+					int v1 = cs2method_10640(93, cs2_configs['cfg937']);
+				}
+				break;
+			case 8:
+				if (cs2_configs['cfg938'] != -1) {
+					int v1 = cs2method_10640(93, cs2_configs['cfg938']);
+				}
+				break;
+			case 9:
+				if (cs2_configs['cfg939'] != -1) {
+					int v1 = cs2method_10640(93, cs2_configs['cfg939']);
+				}
+		}
+		switch (a0) {
+			case 19136631:
+				if (cs2method_10566(93, 803) == 0) {
+					cs2method_10810("You have no squads that need resupplying.");
+				} else {
+					cs2method_10810("You do not have sufficient investment credits to resupply all your squads.");
+				}
+				break;
+			case 19136634:
+				cs2method_10810("You do not have sufficient investment credits to apply the selected changes.");
+				break;
+			case 19136615:
+			case 19136614:
+			case 19136623:
+			case 19136622:
+			case 19136616:
+				cs2method_10810("You must resupply this squad first.");
+				break;
+			case 19136625:
+				cs2method_10810("This squad does not need resupplying.");
+		}
+		return;
+	}, new WidgetPointer(-32768,3), "I", new WidgetPointer(292,111));
+	return;
+}

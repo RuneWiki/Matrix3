@@ -1,0 +1,51 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_8285(int a0) {
+	switch (a0) {
+		case 0:
+			if (client_configs['cfg3711'].bitcfg19005 == 1 && client_configs['cfg3711'].bitcfg19006 == 1 && client_configs['cfg3711'].bitcfg19007 == 1 && client_configs['cfg3711'].bitcfg19008 == 1) {
+				return 0;
+			}
+			break;
+		case 1:
+			if (client_configs['cfg3711'].bitcfg19009 == 1 && client_configs['cfg3711'].bitcfg19010 == 1 && client_configs['cfg3711'].bitcfg19011 == 1 && client_configs['cfg3711'].bitcfg19012 == 1 && client_configs['cfg3711'].bitcfg19013 == 1) {
+				return 0;
+			}
+			break;
+		case 2:
+			if (client_configs['cfg3711'].bitcfg19014 == 1 && client_configs['cfg3711'].bitcfg19015 == 1 && client_configs['cfg3711'].bitcfg19016 == 1 && client_configs['cfg3711'].bitcfg19017 == 1 && client_configs['cfg3711'].bitcfg19018 == 1 && client_configs['cfg3711'].bitcfg21414 == 1) {
+				return 0;
+			}
+			break;
+		case 3:
+			if (client_configs['cfg3711'].bitcfg19019 == 1 && client_configs['cfg3711'].bitcfg19020 == 1 && client_configs['cfg3711'].bitcfg19021 == 1 && client_configs['cfg3711'].bitcfg19022 == 1 && client_configs['cfg3711'].bitcfg19023 == 1) {
+				return 0;
+			}
+			break;
+		case 4:
+			if (client_configs['cfg3711'].bitcfg19024 == 1 && client_configs['cfg3711'].bitcfg19025 == 1 && client_configs['cfg3711'].bitcfg19026 == 1 && client_configs['cfg3711'].bitcfg19027 == 1 && client_configs['cfg3711'].bitcfg19028 == 1) {
+				return 0;
+			}
+			break;
+		case 7:
+			if (client_configs['cfg3711'].bitcfg19034 == 1) {
+				return 0;
+			}
+			break;
+		case 8:
+			if (client_configs['cfg3711'].bitcfg19029 == 1 && client_configs['cfg3711'].bitcfg19030 == 1 && client_configs['cfg3711'].bitcfg19031 == 1 && client_configs['cfg3711'].bitcfg19032 == 1 && client_configs['cfg3711'].bitcfg19033 == 1) {
+				return 0;
+			}
+	}
+	return 1;
+}

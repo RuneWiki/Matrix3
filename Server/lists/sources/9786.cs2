@@ -1,0 +1,71 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9786(int a0,int a1) {
+	if (cs2_configs['cfg4094'] == -1) {
+		return;
+	}
+	if (cs2_configs['cfg4157'] == -1) {
+		return;
+	}
+	object v3 = "Bank";
+	object v4 = "Claim to bank";
+	int v2 = 0;
+	object v0 = "You do not have a prize to claim.";
+	object v1 = "You do not have a prize to claim.";
+	if (client_configs['cfg1451'].bitcfg4345 <= 0) {
+		v0 = "You do not have a prize to claim.";
+		v1 = "You do not have a prize to claim.";
+		v2 = 0;
+	} else {
+		v4 = "Claim to bank";
+		switch (cs2_configs['cfg4094']) {
+			case 3:
+				if (cs2_configs['cfg4157'] == 3 && cs2method_10771() == 0) {
+					v0 = "Claim your prize to your bank. This is a members-only prize, so you will need to subscribe to use it.";
+				} else {
+					v0 = "Claim your prize to your bank.";
+				}
+				v2 = 1;
+				break;
+			case 4:
+				v1 = "Your bank doesn't have room for your prize at the moment.";
+				v3 = "Bank Full";
+				v2 = 0;
+				break;
+			case 11:
+				v0 = "Claim your prize to your bank.";
+				v1 = "This prize cannot be banked.";
+				v3 = "Can't Bank";
+				break;
+			case 7:
+				v0 = "Treasure Hunter is not available at the moment. Please try later.";
+				v1 = "Treasure Hunter is not available at the moment. Please try later.";
+				break;
+			case 10:
+				v0 = "Loading...";
+				v1 = "Loading...";
+		}
+	}
+	cs2method_11127(1, 82117071, v4);
+	cs2method_21121(new function<script_10007>(int a0,object a1,int a2) {
+		script_10008(a1, a2, a0);
+		return;
+	}, (string)v0, new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(1253,463));
+	cs2method_21121(new function<script_10007>(int a0,int a1,object a2) {
+		script_10008(a2, a1, a0);
+		return;
+	}, (string)v1, new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(1253,464));
+	cs2method_10467(v2, 82117072);
+	cs2method_10026(82117074, v3);
+	return;
+}

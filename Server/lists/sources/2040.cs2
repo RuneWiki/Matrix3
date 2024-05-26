@@ -1,0 +1,20 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2040(int a0) {
+	if (client_configs['cfg1312'].bitcfg3635 == 0) {
+		cs2method_10026(a0, "Coal to add: " + (string)cs2method_10379(client_configs['cfg1308'].bitcfg3626));
+	} else {
+		cs2method_10026(a0, "Coal in furnace: " + (string)cs2method_10379(client_configs['cfg1312'].bitcfg3635));
+	}
+	return;
+}

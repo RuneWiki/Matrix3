@@ -1,0 +1,40 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7516() {
+	object v2;
+	cs2method_10026(91160588, "0");
+	cs2method_10026(91160587, "-");
+	object v0 = "";
+	object v1 = "";
+	if (cs2method_10846(cs2_configs['cfg2704'], "") == 0) {
+		v2 = "Resource";
+	} else {
+		v2 = cs2_configs['cfg2704'];
+	}
+	object v3 = (string)v2 + " - Collect " + (string)cs2method_10181(v2) + " you find within the sinkhole.";
+	cs2method_10026(91160594, v2);
+	cs2method_21121(new function<script_8799>(int a0,int a1,object a2) {
+		script_8800(a0, a1, a2);
+		return;
+	}, (string)v3, new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(1391,26));
+	cs2method_20750(new function<script_8805>() {
+		script_8808();
+		return;
+	}, "", new WidgetPointer(1391,26));
+	cs2method_10039(27318, -1, 91160603);
+	cs2method_10039(27317, -1, 91160604);
+	cs2method_10467(1, 91160591);
+	cs2method_10467(1, 91160592);
+	cs2method_10467(1, 91160593);
+	return;
+}

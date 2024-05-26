@@ -1,0 +1,40 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_1468(int a0) {
+	int v0 = cs2method_10060(a0, 1);
+	if (v0 <= client_configs['cfg108'].bitcfg280) {
+		return 2;
+	}
+	if (v0 <= cs2method_10060(client_configs['cfg108'].bitcfg280, client_configs['cfg108'].bitcfg281)) {
+		return 3;
+	}
+	if (v0 <= cs2method_10060(cs2method_10060(client_configs['cfg108'].bitcfg280, client_configs['cfg108'].bitcfg281), client_configs['cfg108'].bitcfg282)) {
+		return 4;
+	}
+	if (v0 <= cs2method_10060(cs2method_10060(cs2method_10060(client_configs['cfg108'].bitcfg280, client_configs['cfg108'].bitcfg281), client_configs['cfg108'].bitcfg282), client_configs['cfg109'].bitcfg283)) {
+		return 5;
+	}
+	if (v0 <= cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(client_configs['cfg108'].bitcfg280, client_configs['cfg108'].bitcfg281), client_configs['cfg108'].bitcfg282), client_configs['cfg109'].bitcfg283), client_configs['cfg109'].bitcfg284)) {
+		return 6;
+	}
+	if (v0 <= cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(client_configs['cfg108'].bitcfg280, client_configs['cfg108'].bitcfg281), client_configs['cfg108'].bitcfg282), client_configs['cfg109'].bitcfg283), client_configs['cfg109'].bitcfg284), client_configs['cfg109'].bitcfg285)) {
+		return 7;
+	}
+	if (v0 <= cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(client_configs['cfg108'].bitcfg280, client_configs['cfg108'].bitcfg281), client_configs['cfg108'].bitcfg282), client_configs['cfg109'].bitcfg283), client_configs['cfg109'].bitcfg284), client_configs['cfg109'].bitcfg285), client_configs['cfg110'].bitcfg286)) {
+		return 8;
+	}
+	if (v0 <= cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(client_configs['cfg108'].bitcfg280, client_configs['cfg108'].bitcfg281), client_configs['cfg108'].bitcfg282), client_configs['cfg109'].bitcfg283), client_configs['cfg109'].bitcfg284), client_configs['cfg109'].bitcfg285), client_configs['cfg110'].bitcfg286), client_configs['cfg110'].bitcfg287)) {
+		return 9;
+	}
+	return 1;
+}

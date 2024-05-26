@@ -1,0 +1,62 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_564(int a0) {
+	switch (a0) {
+		case 95027200:
+			if (script_8292(2, 1) == 1) {
+				script_8426(95027200, 95027201, 95027206, 95027203, 95027204, 95027205, 95027202, 1, client_configs['cfg3705'].bitcfg18786);
+			}
+			break;
+		case 95420423:
+			if (script_8292(2, 2) == 1) {
+				script_8426(95420423, 95420424, 95420426, 95420417, 95420418, 95420425, 95420416, 2, client_configs['cfg3705'].bitcfg18788);
+			}
+			break;
+		case 95617031:
+			if (client_configs['cfg3680'].bitcfg22315 == 1) {
+				client_configs['cfg3705'].bitcfg18790 = cs2method_10872(2, client_configs['cfg3705'].bitcfg18790);
+			}
+			if (script_8292(2, 3) == 1) {
+				script_8426(95617031, 95617032, 95617034, 95617025, 95617026, 95617033, 95617024, 3, client_configs['cfg3705'].bitcfg18790);
+			}
+			break;
+		case 95223815:
+			if (script_8292(2, 4) == 1) {
+				script_8426(95223815, 95223816, 95223818, 95223809, 95223810, 95223817, 95223808, 4, client_configs['cfg3705'].bitcfg18792);
+			}
+			break;
+		case 95682564:
+			if (script_8314(6) != -1) {
+				script_8426(95682564, 95682565, 95682566, 95682561, 95682562, 95682563, 95682560, 1, client_configs['cfg3705'].bitcfg18787);
+			}
+			break;
+		case 95158279:
+			if (script_8314(7) != -1) {
+				script_8426(95158279, 95158280, 95158282, 95158273, 95158274, 95158281, 95158272, 2, client_configs['cfg3705'].bitcfg18789);
+			}
+			break;
+		case 95748103:
+			if (client_configs['cfg3680'].bitcfg22315 == 1) {
+				client_configs['cfg3705'].bitcfg18791 = cs2method_10872(2, client_configs['cfg3705'].bitcfg18791);
+			}
+			if (script_8314(5) != -1) {
+				script_8426(95748103, 95748104, 95748106, 95748097, 95748098, 95748105, 95748096, 3, client_configs['cfg3705'].bitcfg18791);
+			}
+			break;
+		case 94961671:
+			if (script_8314(8) != -1) {
+				script_8426(94961671, 94961672, 94961674, 94961665, 94961666, 94961673, 94961664, 4, client_configs['cfg3705'].bitcfg18793);
+			}
+	}
+	return;
+}

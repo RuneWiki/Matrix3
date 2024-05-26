@@ -1,0 +1,22 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_1036() {
+	int v1 = -1;
+	if (idx17mapData('i', 'i', 1548, client_configs['cfg1776'].bitcfg5994) > 0) {
+		int v0 = idx17mapData('i', 'k', 1549, client_configs['cfg1776'].bitcfg5994);
+		if (v0 != -1) {
+			return v0;
+		}
+	}
+	return idx17mapData('i', 'k', 1483, client_configs['cfg1776'].bitcfg5995);
+}

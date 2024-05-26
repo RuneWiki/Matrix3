@@ -1,0 +1,23 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+string script_936(int a0) {
+	object v1 = "";
+	int v0 = itemDefsAttribute(a0, 763);
+	switch (itemDefsAttribute(a0, 762)) {
+		case 1:
+			return script_913("Part of quest: Tai Bwo Wannai Trio", client_configs['cfg2525'], 10);
+		case 2:
+			return script_913("Complete: Chaos Tunnels", client_configs['cfg3043'].bitcfg15344, 10);
+	}
+	return "";
+}

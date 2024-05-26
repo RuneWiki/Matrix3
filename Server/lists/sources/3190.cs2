@@ -1,0 +1,60 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3190() {
+	cs2method_11007(59375709, 915);
+	cs2method_10467(0, 59375692);
+	if (cs2method_10609((int)idx17mapData('i', 'I', 941, 5)) == 0) {
+		script_3161(0);
+	}
+	if (cs2method_10265(cs2_configs['cfg2481']) > 0) {
+		cs2method_10026(59965487, "Reporting: " + cs2_configs['cfg2481']);
+	} else {
+		cs2method_10026(59965487, "Report");
+	}
+	if (cs2method_10578() == 1 || cs2_configs['cfg733'] == 1 || cs2method_10725() > 0) {
+		if (cs2_configs['cfg6'] == 0) {
+			cs2method_10758(4084, 59965484);
+		} else {
+			cs2method_10758(4086, 59965484);
+		}
+		if (cs2method_10271() == 5 || cs2method_10271() == 6) {
+			cs2method_10026(59965485, "Suggest to mute this player for 48 hours");
+		} else {
+			cs2method_10026(59965485, "Mute this player for 48 hours");
+		}
+		cs2method_10283(cs2method_10060(cs2method_10939(17813, cs2method_10744(59965485)), 18), cs2method_10823(59965483), 0, 0, 59965483);
+		cs2method_10467(0, 59965483);
+	} else {
+		cs2method_10467(1, 59965483);
+	}
+	cs2method_20380(new function<script_3201>(int a0) {
+		switch (a0) {
+			case 85:
+				if (cs2method_10609(59965541) == 1) {
+					script_3192();
+				}
+				break;
+			case 1:
+				script_3196(1, 59965551, 59965552, 59965549, 59965541, 59965458);
+				break;
+			case 13:
+				if (cs2method_10609(59965541) == 0) {
+					script_3198(59965551, 59965552, 59965549, 59965541, 59965458);
+				} else {
+					script_3194();
+				}
+		}
+		return;
+	}, -2147483640, "i", new WidgetPointer(915,18));
+	return;
+}

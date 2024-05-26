@@ -1,0 +1,33 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1179(int a0) {
+	if (client_configs['cfg89'].bitcfg223 == 1) {
+		if (client_configs['cfg3680'].bitcfg22315 == 1) {
+			if (cs2method_10262() == 1) {
+				cs2method_10758(5571, a0);
+			} else {
+				cs2method_10758(5569, a0);
+			}
+		}
+		script_8800(a0, -1, "Bonus XP is active!");
+	} else {
+		if (client_configs['cfg3680'].bitcfg22315 == 1) {
+			if (cs2method_10262() == 1) {
+				cs2method_10758(2715, a0);
+			} else {
+				cs2method_10758(2731, a0);
+			}
+		}
+	}
+	return;
+}

@@ -1,0 +1,82 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1331(int a0) {
+	object v0 = "World Map";
+	int v1 = 18813;
+	if (client_configs['cfg2391'].bitcfg11297 == 2) {
+		cs2method_10758(7435, a0);
+		cs2method_20680(new function<script_5115>(int a0,int a1) {
+			if (a0 == 1) {
+				cs2method_10758(18823, a1);
+			} else {
+				cs2method_10758(18822, a1);
+			}
+			return;
+		}, new WidgetPointer(-32768,3), 1, "Ii", new WidgetPointer(a0));
+		cs2method_20750(new function<script_5115>(int a0,int a1) {
+			if (a1 == 1) {
+				cs2method_10758(18823, a0);
+			} else {
+				cs2method_10758(18822, a0);
+			}
+			return;
+		}, new WidgetPointer(-32768,3), 0, "Ii", new WidgetPointer(a0));
+		cs2method_10495(a0);
+		cs2method_11127(1, a0, "Citadel Information");
+		v0 = "Citadel Information";
+	} else if (client_configs['cfg2391'].bitcfg11297 == 1) {
+		int v3 = 8663;
+		cs2method_20680(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a0, a1);
+			return;
+		}, new WidgetPointer(-32768,3), v3, "Id", new WidgetPointer(a0));
+		int v2 = 8662;
+		cs2method_10758(v2, a0);
+		cs2method_20750(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a0, a1);
+			return;
+		}, new WidgetPointer(-32768,3), v2, "Id", new WidgetPointer(a0));
+		cs2method_10495(a0);
+		if (client_configs['cfg1689'].bitcfg5548 > 0) {
+			cs2method_11127(1, a0, "Factory Layout");
+		}
+		if (client_configs['cfg3523'].bitcfg17945 == 1) {
+			cs2method_11127(1, a0, "Sinkhole Map");
+		} else {
+			cs2method_11127(1, a0, "Daemonheim Map");
+		}
+		v0 = "Daemonheim Map";
+	} else {
+		int v3 = 18813;
+		cs2method_10758(v3, a0);
+		cs2method_20750(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), v3, "Id", new WidgetPointer(a0));
+		int v2 = 18814;
+		cs2method_20680(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a0, a1);
+			return;
+		}, new WidgetPointer(-32768,3), v2, "Id", new WidgetPointer(a0));
+		cs2method_10495(a0);
+		cs2method_11127(1, a0, "World Map");
+		if (client_configs['cfg2807'] != -1 && client_configs['cfg2807'] != 0) {
+			cs2method_11127(2, a0, "Clear your marker");
+		}
+	}
+	cs2method_21121(new function<script_8799>(int a0,object a1,int a2) {
+		script_8800(a2, a0, a1);
+		return;
+	}, (string)v0, new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(a0));
+	return;
+}

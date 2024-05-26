@@ -1,0 +1,241 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1907() {
+	cs2method_20243(new function<script_1908>() {
+		object v9;
+		object v10;
+		object v7;
+		object v1;
+		object v5;
+		object v16;
+		object v6;
+		object v2;
+		object v3;
+		object v14;
+		object v12;
+		object v13;
+		object v0;
+		object v15;
+		object v11;
+		object v18;
+		object v4;
+		int v17 = 12;
+		object v8 = "";
+		cs2method_10283(16, cs2method_10968(cs2method_10051(cs2method_10968(cs2method_10051(cs2_configs['cfg564'], 100), v17), 16384), 100), 0, 2, 52822154);
+		cs2method_10283(16, cs2method_10968(cs2method_10051(cs2method_10968(cs2method_10051(cs2_configs['cfg565'], 100), v17), 16384), 100), 0, 2, 52822155);
+		cs2method_10283(16, cs2method_10968(cs2method_10051(cs2method_10968(cs2method_10051(cs2_configs['cfg566'], 100), v17), 16384), 100), 0, 2, 52822156);
+		cs2method_10283(16, cs2method_10968(cs2method_10051(cs2method_10968(cs2method_10051(cs2_configs['cfg567'], 100), v17), 16384), 100), 0, 2, 52822160);
+		cs2method_10283(16, cs2method_10968(cs2method_10051(cs2method_10968(cs2method_10051(cs2_configs['cfg568'], 100), v17), 16384), 100), 0, 2, 52822164);
+		cs2method_10283(16, cs2method_10968(cs2method_10051(cs2method_10968(cs2method_10051(cs2_configs['cfg569'], 100), v17), 16384), 100), 0, 2, 52822098);
+		cs2method_10283(16, cs2method_10968(cs2method_10051(cs2method_10968(cs2method_10051(cs2_configs['cfg570'], 100), v17), 16384), 100), 0, 2, 52822102);
+		cs2method_10283(16, cs2method_10968(cs2method_10051(cs2method_10968(cs2method_10051(cs2_configs['cfg571'], 100), v17), 16384), 100), 0, 2, 52822106);
+		cs2method_10283(16, cs2method_10968(cs2method_10051(cs2method_10968(cs2method_10051(cs2_configs['cfg572'], 100), v17), 16384), 100), 0, 2, 52822110);
+		cs2method_10283(16, cs2method_10968(cs2method_10051(cs2method_10968(cs2method_10051(cs2_configs['cfg573'], 100), v17), 16384), 100), 0, 2, 52822077);
+		cs2method_10283(16, cs2method_10968(cs2method_10051(cs2method_10968(cs2method_10051(cs2_configs['cfg574'], 100), v17), 16384), 100), 0, 2, 52822081);
+		cs2method_10283(16, cs2method_10968(cs2method_10051(cs2method_10968(cs2method_10051(cs2_configs['cfg575'], 100), v17), 16384), 100), 0, 2, 52822085);
+		cs2method_10283(16, cs2method_10968(cs2method_10051(cs2method_10968(cs2method_10051(cs2_configs['cfg576'], 100), v17), 16384), 100), 0, 2, 52822089);
+		cs2method_10283(16, cs2method_10968(cs2method_10051(cs2method_10968(cs2method_10051(cs2_configs['cfg577'], 100), v17), 16384), 100), 0, 2, 52822119);
+		cs2method_10283(16, cs2method_10968(cs2method_10051(cs2method_10968(cs2method_10051(cs2_configs['cfg578'], 100), v17), 16384), 100), 0, 2, 52822123);
+		cs2method_10283(16, cs2method_10968(cs2method_10051(cs2method_10968(cs2method_10051(cs2_configs['cfg579'], 100), v17), 16384), 100), 0, 2, 52822127);
+		cs2method_10283(16, cs2method_10968(cs2method_10051(cs2method_10968(cs2method_10051(cs2_configs['cfg580'], 100), v17), 16384), 100), 0, 2, 52822131);
+		if (cs2_configs['cfg564'] == 0) {
+			v15 = "There are no class 1 clay locations in the area.";
+		} else if (cs2_configs['cfg564'] == 1) {
+			v15 = "There is 1 class 1 clay location in the area.";
+		} else {
+			v15 = "There are " + (string)cs2method_10379(cs2_configs['cfg564']) + " class 1 clay locations in the area.";
+		}
+		cs2method_21121(new function<script_7781>(int a0,int a1,int a2,object a3,int a4) {
+			script_7788(a3, a1, -1, a2, a0, a4);
+			return;
+		}, new WidgetPointer(-32768,3), new WidgetPointer(806,49), (string)v15, 25, 100, "IIsii", new WidgetPointer(806,138));
+		if (cs2_configs['cfg565'] == 0) {
+			v0 = "There are no class 2 fishing locations in the area.";
+		} else if (cs2_configs['cfg565'] == 1) {
+			v0 = "There is 1 class 2 fishing location in the area.";
+		} else {
+			v0 = "There are " + (string)cs2method_10379(cs2_configs['cfg565']) + " class 2 fishing locations in the area.";
+		}
+		cs2method_21121(new function<script_7781>(int a0,int a1,object a2,int a3,int a4) {
+			script_7788(a2, a4, -1, a0, a3, a1);
+			return;
+		}, new WidgetPointer(-32768,3), new WidgetPointer(806,49), (string)v0, 25, 100, "IIsii", new WidgetPointer(806,139));
+		if (cs2_configs['cfg566'] == 0) {
+			v7 = "There are no class 3 fishing locations in the area.";
+		} else if (cs2_configs['cfg566'] == 1) {
+			v7 = "There is 1 class 3 fishing location in the area.";
+		} else {
+			v7 = "There are " + (string)cs2method_10379(cs2_configs['cfg566']) + " class 3 fishing locations in the area.";
+		}
+		cs2method_21121(new function<script_7781>(int a0,int a1,object a2,int a3,int a4) {
+			script_7788(a2, a1, -1, a3, a4, a0);
+			return;
+		}, new WidgetPointer(-32768,3), new WidgetPointer(806,49), (string)v7, 25, 100, "IIsii", new WidgetPointer(806,140));
+		if (cs2_configs['cfg567'] == 0) {
+			v13 = "There are no class 4 fishing locations in the area.";
+		} else if (cs2_configs['cfg567'] == 1) {
+			v13 = "There is 1 class 4 fishing location in the area.";
+		} else {
+			v13 = "There are " + (string)cs2method_10379(cs2_configs['cfg567']) + " class 4 fishing locations in the area.";
+		}
+		cs2method_21121(new function<script_7781>(int a0,object a1,int a2,int a3,int a4) {
+			script_7788(a1, a4, -1, a0, a3, a2);
+			return;
+		}, new WidgetPointer(-32768,3), new WidgetPointer(806,49), (string)v13, 25, 100, "IIsii", new WidgetPointer(806,144));
+		if (cs2_configs['cfg568'] == 0) {
+			v12 = "There are no class 5 fishing locations in the area.";
+		} else if (cs2_configs['cfg568'] == 1) {
+			v12 = "There is 1 class 5 fishing location in the area.";
+		} else {
+			v12 = "There are " + (string)cs2method_10379(cs2_configs['cfg568']) + " class 5 fishing locations in the area.";
+		}
+		cs2method_21121(new function<script_7781>(int a0,object a1,int a2,int a3,int a4) {
+			script_7788(a1, a2, -1, a3, a4, a0);
+			return;
+		}, new WidgetPointer(-32768,3), new WidgetPointer(806,49), (string)v12, 25, 100, "IIsii", new WidgetPointer(806,148));
+		if (cs2_configs['cfg569'] == 0) {
+			v1 = "There are no class 2 mining locations in the area.";
+		} else if (cs2_configs['cfg569'] == 1) {
+			v1 = "There is 1 class 2 mining location in the area.";
+		} else {
+			v1 = "There are " + (string)cs2method_10379(cs2_configs['cfg569']) + " class 2 mining locations in the area.";
+		}
+		cs2method_21121(new function<script_7781>(int a0,int a1,int a2,object a3,int a4) {
+			script_7788(a3, a2, -1, a0, a1, a4);
+			return;
+		}, new WidgetPointer(-32768,3), new WidgetPointer(806,49), (string)v1, 25, 100, "IIsii", new WidgetPointer(806,82));
+		if (cs2_configs['cfg570'] == 0) {
+			v18 = "There are no class 3 mining locations in the area.";
+		} else if (cs2_configs['cfg570'] == 1) {
+			v18 = "There is 1 class 3 mining location in the area.";
+		} else {
+			v18 = "There are " + (string)cs2method_10379(cs2_configs['cfg570']) + " class 3 mining locations in the area.";
+		}
+		cs2method_21121(new function<script_7781>(int a0,int a1,int a2,object a3,int a4) {
+			script_7788(a3, a0, -1, a2, a1, a4);
+			return;
+		}, new WidgetPointer(-32768,3), new WidgetPointer(806,49), (string)v18, 25, 100, "IIsii", new WidgetPointer(806,86));
+		if (cs2_configs['cfg571'] == 0) {
+			v4 = "There are no class 4 mining locations in the area.";
+		} else if (cs2_configs['cfg571'] == 1) {
+			v4 = "There is 1 class 4 mining location in the area.";
+		} else {
+			v4 = "There are " + (string)cs2method_10379(cs2_configs['cfg571']) + " class 4 mining locations in the area.";
+		}
+		cs2method_21121(new function<script_7781>(object a0,int a1,int a2,int a3,int a4) {
+			script_7788(a0, a2, -1, a3, a1, a4);
+			return;
+		}, new WidgetPointer(-32768,3), new WidgetPointer(806,49), (string)v4, 25, 100, "IIsii", new WidgetPointer(806,90));
+		if (cs2_configs['cfg572'] == 0) {
+			v11 = "There are no class 5 mining locations in the area.";
+		} else if (cs2_configs['cfg572'] == 1) {
+			v11 = "There is 1 class 5 mining location in the area.";
+		} else {
+			v11 = "There are " + (string)cs2method_10379(cs2_configs['cfg572']) + " class 5 mining locations in the area.";
+		}
+		cs2method_21121(new function<script_7781>(int a0,object a1,int a2,int a3,int a4) {
+			script_7788(a1, a0, -1, a3, a4, a2);
+			return;
+		}, new WidgetPointer(-32768,3), new WidgetPointer(806,49), (string)v11, 25, 100, "IIsii", new WidgetPointer(806,94));
+		if (cs2_configs['cfg573'] == 0) {
+			v5 = "There are no class 2 woodcutting locations in the area.";
+		} else if (cs2_configs['cfg573'] == 1) {
+			v5 = "There is 1 class 2 woodcutting location in the area.";
+		} else {
+			v5 = "There are " + (string)cs2method_10379(cs2_configs['cfg573']) + " class 2 woodcutting locations in the area.";
+		}
+		cs2method_21121(new function<script_7781>(int a0,int a1,int a2,int a3,object a4) {
+			script_7788(a4, a0, -1, a3, a2, a1);
+			return;
+		}, new WidgetPointer(-32768,3), new WidgetPointer(806,49), (string)v5, 25, 100, "IIsii", new WidgetPointer(806,61));
+		if (cs2_configs['cfg574'] == 0) {
+			v2 = "There are no class 3 woodcutting locations in the area.";
+		} else if (cs2_configs['cfg574'] == 1) {
+			v2 = "There is 1 class 3 woodcutting location in the area.";
+		} else {
+			v2 = "There are " + (string)cs2method_10379(cs2_configs['cfg574']) + " class 3 woodcutting locations in the area.";
+		}
+		cs2method_21121(new function<script_7781>(int a0,int a1,object a2,int a3,int a4) {
+			script_7788(a2, a1, -1, a0, a4, a3);
+			return;
+		}, new WidgetPointer(-32768,3), new WidgetPointer(806,49), (string)v2, 25, 100, "IIsii", new WidgetPointer(806,65));
+		if (cs2_configs['cfg575'] == 0) {
+			v3 = "There are no class 4 woodcutting locations in the area.";
+		} else if (cs2_configs['cfg575'] == 1) {
+			v3 = "There is 1 class 4 woodcutting location in the area.";
+		} else {
+			v3 = "There are " + (string)cs2method_10379(cs2_configs['cfg575']) + " class 4 woodcutting locations in the area.";
+		}
+		cs2method_21121(new function<script_7781>(object a0,int a1,int a2,int a3,int a4) {
+			script_7788(a0, a1, -1, a2, a3, a4);
+			return;
+		}, new WidgetPointer(-32768,3), new WidgetPointer(806,49), (string)v3, 25, 100, "IIsii", new WidgetPointer(806,69));
+		if (cs2_configs['cfg576'] == 0) {
+			v10 = "There are no class 5 woodcutting locations in the area.";
+		} else if (cs2_configs['cfg576'] == 1) {
+			v10 = "There is 1 class 5 woodcutting location in the area.";
+		} else {
+			v10 = "There are " + (string)cs2method_10379(cs2_configs['cfg576']) + " class 5 woodcutting locations in the area.";
+		}
+		cs2method_21121(new function<script_7781>(int a0,int a1,object a2,int a3,int a4) {
+			script_7788(a2, a3, -1, a4, a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), new WidgetPointer(806,49), (string)v10, 25, 100, "IIsii", new WidgetPointer(806,73));
+		if (cs2_configs['cfg577'] == 0) {
+			v16 = "There are no class 2 hunting locations in the area.";
+		} else if (cs2_configs['cfg577'] == 1) {
+			v16 = "There is 1 class 2 hunting location in the area.";
+		} else {
+			v16 = "There are " + (string)cs2method_10379(cs2_configs['cfg577']) + " class 2 hunting locations in the area.";
+		}
+		cs2method_21121(new function<script_7781>(int a0,int a1,int a2,int a3,object a4) {
+			script_7788(a4, a0, -1, a2, a3, a1);
+			return;
+		}, new WidgetPointer(-32768,3), new WidgetPointer(806,49), (string)v16, 25, 100, "IIsii", new WidgetPointer(806,103));
+		if (cs2_configs['cfg578'] == 0) {
+			v14 = "There are no class 3 hunting locations in the area.";
+		} else if (cs2_configs['cfg578'] == 1) {
+			v14 = "There is 1 class 3 hunting location in the area.";
+		} else {
+			v14 = "There are " + (string)cs2method_10379(cs2_configs['cfg578']) + " class 3 hunting locations in the area.";
+		}
+		cs2method_21121(new function<script_7781>(int a0,object a1,int a2,int a3,int a4) {
+			script_7788(a1, a0, -1, a3, a2, a4);
+			return;
+		}, new WidgetPointer(-32768,3), new WidgetPointer(806,49), (string)v14, 25, 100, "IIsii", new WidgetPointer(806,107));
+		if (cs2_configs['cfg579'] == 0) {
+			v9 = "There are no class 4 hunting locations in the area.";
+		} else if (cs2_configs['cfg579'] == 1) {
+			v9 = "There is 1 class 4 hunting location in the area.";
+		} else {
+			v9 = "There are " + (string)cs2method_10379(cs2_configs['cfg579']) + " class 4 hunting locations in the area.";
+		}
+		cs2method_21121(new function<script_7781>(object a0,int a1,int a2,int a3,int a4) {
+			script_7788(a0, a4, -1, a2, a1, a3);
+			return;
+		}, new WidgetPointer(-32768,3), new WidgetPointer(806,49), (string)v9, 25, 100, "IIsii", new WidgetPointer(806,111));
+		if (cs2_configs['cfg580'] == 0) {
+			v6 = "There are no class 5 hunting locations in the area.";
+		} else if (cs2_configs['cfg580'] == 1) {
+			v6 = "There is 1 class 5 hunting location in the area.";
+		} else {
+			v6 = "There are " + (string)cs2method_10379(cs2_configs['cfg580']) + " class 5 hunting locations in the area.";
+		}
+		cs2method_21121(new function<script_7781>(object a0,int a1,int a2,int a3,int a4) {
+			script_7788(a0, a4, -1, a3, a1, a2);
+			return;
+		}, new WidgetPointer(-32768,3), new WidgetPointer(806,49), (string)v6, 25, 100, "IIsii", new WidgetPointer(806,115));
+		return;
+	}, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 17, "Y", new WidgetPointer(806,138));
+	return;
+}

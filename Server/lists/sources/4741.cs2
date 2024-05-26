@@ -1,0 +1,39 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4741() {
+	int v3 = 0;
+	int v4 = -1;
+	int v2 = -1;
+	if (client_configs['cfg1190'].bitcfg3080 < 99999 && client_configs['cfg1190'].bitcfg3079 != 0) {
+		int v1 = idx17mapData('i', 'v', 3879, client_configs['cfg1190'].bitcfg3079);
+		if (cs2method_11038(74973184, client_configs['cfg1190'].bitcfg3080) == 1) {
+			int v0 = cs2method_11065(v1, client_configs['cfg1190'].bitcfg3080);
+			if (v0 > 0) {
+				int v5 = cs2method_10640(v1, client_configs['cfg1190'].bitcfg3080);
+				if (v5 != -1) {
+					cs2method_10467(1, 74973207);
+					cs2method_10467(0, 74973206);
+					cs2method_10467(0, 74973193);
+					cs2method_10467(0, 74973223);
+					if (v0 == 1) {
+						cs2method_10026(74973233, "Are you sure you want to delete " + "<col=ffff80>" + (string)cs2method_10018(v5) + "</col>" + "?");
+					} else {
+						cs2method_10026(74973233, "Are you sure you want to delete " + "<col=ffff80>" + (string)cs2method_10018(v5) + "</col>" + " (" + "<col=ffffff>" + (string)cs2method_10379(v0) + "</col>" + " items)?");
+					}
+					cs2method_10039(v5, v0, 74973234);
+				}
+			}
+		}
+	}
+	return;
+}

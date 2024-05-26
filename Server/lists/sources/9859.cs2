@@ -1,0 +1,36 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9859(int a0) {
+	int v0 = 0;
+	if (cs2method_11038(script_7799(a0, 2228240), cs2method_10461(cs2method_10163(script_7799(a0, 2228240)), 1)) == 1) {
+		v0 = cs2method_10060(cs2method_10664(), cs2method_10406());
+	}
+	if (cs2method_10609(script_7799(a0, 2228237)) == 0) {
+		if (v0 < cs2method_10823(script_7799(a0, 2228240))) {
+			cs2method_11130(0, 0, script_7799(a0, 2228240));
+			cs2method_10251(0, 0, script_7799(a0, 2228240));
+			cs2method_10467(1, script_7799(a0, 2228237));
+		} else {
+			cs2method_11130(0, cs2method_10060(v0, 10), script_7799(a0, 2228240));
+			cs2method_10467(0, script_7799(a0, 2228237));
+			script_72(script_7799(a0, 2228237), script_7799(a0, 2228240), cs2method_10718(script_7799(a0, 2228240)));
+		}
+	} else {
+		if (v0 >= cs2method_10823(script_7799(a0, 2228240))) {
+			cs2method_11130(0, cs2method_10060(v0, 10), script_7799(a0, 2228240));
+			cs2method_10467(0, script_7799(a0, 2228237));
+			script_31(script_7799(a0, 2228237), script_7799(a0, 2228240), 792, 789, 790, 791, 773, 788);
+		}
+	}
+	return;
+}

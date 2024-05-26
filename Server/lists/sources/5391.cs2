@@ -1,0 +1,231 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5391(int a0,int a1,int a2,int a3) {
+	int v1 = idx17mapData('o', 'i', 5331, a0);
+	int v3 = 0;
+	object v2 = "";
+	switch (a0) {
+		case 5341:
+			if (a3 == 1) {
+				cs2method_20348(load function<5391>, new WidgetPointer(-32768,3), new WidgetPointer(a1), a0, 0, 29, 1, "IIo1Y", new WidgetPointer(a2));
+			}
+			v3 = client_configs['cfg29'].bitcfg176;
+			break;
+		case 5343:
+			if (a3 == 1) {
+				cs2method_20348(load function<5391>, new WidgetPointer(-32768,3), new WidgetPointer(a1), a0, 0, 29, 1, "IIo1Y", new WidgetPointer(a2));
+			}
+			v3 = client_configs['cfg29'].bitcfg177;
+			break;
+		case 952:
+			if (a3 == 1) {
+				cs2method_20348(load function<5391>, new WidgetPointer(-32768,3), new WidgetPointer(a1), a0, 0, 29, 1, "IIo1Y", new WidgetPointer(a2));
+			}
+			v3 = client_configs['cfg29'].bitcfg178;
+			break;
+		case 5325:
+			if (a3 == 1) {
+				cs2method_20348(load function<5391>, new WidgetPointer(-32768,3), new WidgetPointer(a1), a0, 0, 29, 1, "IIo1Y", new WidgetPointer(a2));
+			}
+			v3 = client_configs['cfg29'].bitcfg181;
+			break;
+		case 7409:
+		case 5329:
+			if (a3 == 1) {
+				cs2method_20348(load function<5391>, new WidgetPointer(-32768,3), new WidgetPointer(a1), a0, 0, 29, 1, "IIo1Y", new WidgetPointer(a2));
+			}
+			v3 = client_configs['cfg29'].bitcfg179;
+			if (v3 > 0 && client_configs['cfg29'].bitcfg185 == 1) {
+				a0 = 7409;
+			}
+			break;
+		case 6797:
+			if (a3 == 1) {
+				cs2method_20348(load function<5391>, new WidgetPointer(-32768,3), new WidgetPointer(a1), a0, 0, 29, 1, "IIo1Y", new WidgetPointer(a2));
+			}
+			a0 = idx17mapData('i', 'o', 136, client_configs['cfg29'].bitcfg180);
+			if (a0 != 6797) {
+				v3 = 1;
+			}
+			break;
+		case 1925:
+			if (a3 == 1) {
+				cs2method_20348(load function<5391>, new WidgetPointer(-32768,3), new WidgetPointer(a1), a0, 0, 29, 1611, 2, "IIo1Y", new WidgetPointer(a2));
+			}
+			v3 = cs2method_10060(cs2method_10051(client_configs['cfg1611'].bitcfg5061, 32), client_configs['cfg29'].bitcfg182);
+			break;
+		case 6032:
+			if (a3 == 1) {
+				cs2method_20348(load function<5391>, new WidgetPointer(-32768,3), new WidgetPointer(a1), a0, 0, 29, 1, "IIo1Y", new WidgetPointer(a2));
+			}
+			v3 = client_configs['cfg29'].bitcfg183;
+			break;
+		case 6034:
+			if (a3 == 1) {
+				cs2method_20348(load function<5391>, new WidgetPointer(-32768,3), new WidgetPointer(a1), a0, 0, 29, 1, "IIo1Y", new WidgetPointer(a2));
+			}
+			v3 = client_configs['cfg29'].bitcfg184;
+			break;
+		case 6059:
+			if (a3 == 1) {
+				cs2method_20348(load function<5391>, new WidgetPointer(-32768,3), new WidgetPointer(a1), a0, 0, 1611, 1, "IIo1Y", new WidgetPointer(a2));
+			}
+			v3 = client_configs['cfg1611'].bitcfg5054;
+			break;
+		case 6036:
+			if (a3 == 1) {
+				cs2method_20348(load function<5391>, new WidgetPointer(-32768,3), new WidgetPointer(a1), a0, 0, 1611, 1, "IIo1Y", new WidgetPointer(a2));
+			}
+			v3 = client_configs['cfg1611'].bitcfg5062;
+			break;
+		case 20024:
+			if (a3 == 1) {
+				cs2method_20348(load function<5391>, new WidgetPointer(-32768,3), new WidgetPointer(a1), a0, 0, 3122, 1, "IIo1Y", new WidgetPointer(a2));
+			}
+			v3 = client_configs['cfg3122'].bitcfg16128;
+			break;
+		case 20012:
+			if (a3 == 1) {
+				cs2method_20348(load function<5391>, new WidgetPointer(-32768,3), new WidgetPointer(a1), a0, 0, 3122, 1, "IIo1Y", new WidgetPointer(a2));
+			}
+			v3 = client_configs['cfg3122'].bitcfg16129;
+			break;
+		case 20028:
+			if (a3 == 1) {
+				cs2method_20348(load function<5391>, new WidgetPointer(-32768,3), new WidgetPointer(a1), a0, 0, 3122, 1, "IIo1Y", new WidgetPointer(a2));
+			}
+			v3 = client_configs['cfg3122'].bitcfg16130;
+			break;
+		case 20032:
+			if (a3 == 1) {
+				cs2method_20348(load function<5391>, new WidgetPointer(-32768,3), new WidgetPointer(a1), a0, 0, 3122, 1, "IIo1Y", new WidgetPointer(a2));
+			}
+			v3 = client_configs['cfg3122'].bitcfg16132;
+			break;
+		case 20040:
+			if (a3 == 1) {
+				cs2method_20348(load function<5391>, new WidgetPointer(-32768,3), new WidgetPointer(a1), a0, 0, 3122, 1, "IIo1Y", new WidgetPointer(a2));
+			}
+			v3 = client_configs['cfg3122'].bitcfg16133;
+			break;
+		case 20036:
+			if (a3 == 1) {
+				cs2method_20348(load function<5391>, new WidgetPointer(-32768,3), new WidgetPointer(a1), a0, 0, 3122, 1, "IIo1Y", new WidgetPointer(a2));
+			}
+			v3 = client_configs['cfg3122'].bitcfg16131;
+			break;
+		case 19979:
+			if (a3 == 1) {
+				cs2method_20348(load function<5391>, new WidgetPointer(-32768,3), new WidgetPointer(a1), a0, 0, 3123, 1, "IIo1Y", new WidgetPointer(a2));
+			}
+			v3 = client_configs['cfg3123'].bitcfg16134;
+			break;
+		case 19980:
+			if (a3 == 1) {
+				cs2method_20348(load function<5391>, new WidgetPointer(-32768,3), new WidgetPointer(a1), a0, 0, 3123, 1, "IIo1Y", new WidgetPointer(a2));
+			}
+			v3 = client_configs['cfg3123'].bitcfg16135;
+			break;
+		case 19977:
+			if (a3 == 1) {
+				cs2method_20348(load function<5391>, new WidgetPointer(-32768,3), new WidgetPointer(a1), a0, 0, 3123, 1, "IIo1Y", new WidgetPointer(a2));
+			}
+			v3 = client_configs['cfg3123'].bitcfg16136;
+			break;
+		case 19981:
+			if (a3 == 1) {
+				cs2method_20348(load function<5391>, new WidgetPointer(-32768,3), new WidgetPointer(a1), a0, 0, 3123, 1, "IIo1Y", new WidgetPointer(a2));
+			}
+			v3 = client_configs['cfg3123'].bitcfg16137;
+			break;
+		case 19983:
+			if (a3 == 1) {
+				cs2method_20348(load function<5391>, new WidgetPointer(-32768,3), new WidgetPointer(a1), a0, 0, 3123, 1, "IIo1Y", new WidgetPointer(a2));
+			}
+			v3 = client_configs['cfg3123'].bitcfg16138;
+			break;
+		case 19982:
+			if (a3 == 1) {
+				cs2method_20348(load function<5391>, new WidgetPointer(-32768,3), new WidgetPointer(a1), a0, 0, 3122, 3123, 2, "IIo1Y", new WidgetPointer(a2));
+			}
+			v3 = cs2method_10060(cs2method_10051(client_configs['cfg3122'].bitcfg16140, 8), client_configs['cfg3123'].bitcfg16139);
+			break;
+		case 22449:
+			if (a3 == 1) {
+				cs2method_20348(load function<5391>, new WidgetPointer(-32768,3), new WidgetPointer(a1), a0, 0, 180, 1, "IIo1Y", new WidgetPointer(a2));
+			}
+			v3 = client_configs['cfg180'].bitcfg510;
+			break;
+		case 22450:
+			if (a3 == 1) {
+				cs2method_20348(load function<5391>, new WidgetPointer(-32768,3), new WidgetPointer(a1), a0, 0, 181, 1, "IIo1Y", new WidgetPointer(a2));
+			}
+			v3 = client_configs['cfg181'].bitcfg511;
+			break;
+		case 22451:
+			if (a3 == 1) {
+				cs2method_20348(load function<5391>, new WidgetPointer(-32768,3), new WidgetPointer(a1), a0, 0, 181, 1, "IIo1Y", new WidgetPointer(a2));
+			}
+			v3 = client_configs['cfg181'].bitcfg512;
+			break;
+		case 22448:
+			if (a3 == 1) {
+				cs2method_20348(load function<5391>, new WidgetPointer(-32768,3), new WidgetPointer(a1), a0, 0, 180, 1, "IIo1Y", new WidgetPointer(a2));
+			}
+			v3 = client_configs['cfg180'].bitcfg509;
+			break;
+		case 22444:
+			if (a3 == 1) {
+				cs2method_20348(load function<5391>, new WidgetPointer(-32768,3), new WidgetPointer(a1), a0, 0, 180, 181, 2, "IIo1Y", new WidgetPointer(a2));
+			}
+			v3 = cs2method_10060(cs2method_10051(client_configs['cfg181'].bitcfg514, 32), client_configs['cfg180'].bitcfg513);
+			break;
+		default:
+			return;
+	}
+	int v4 = 6014;
+	if (v1 > 1) {
+		cs2method_11116(a0, v3, a2);
+		if (v3 >= v1) {
+			v4 = 6017;
+		}
+	} else {
+		cs2method_10121(a0, v3, a2);
+	}
+	cs2method_10316(a2, "<col=ff9040>" + (string)cs2method_10018(a0));
+	int v0 = 6015;
+	if (v3 > 0) {
+		if (a0 != -1) {
+			object v5 = cs2method_10018(a0);
+			cs2method_21121(new function<script_8799>(int a0,int a1,object a2) {
+				script_8800(a1, a0, a2);
+				return;
+			}, (string)v5, new WidgetPointer(a1), -1, "sIi", new WidgetPointer(a1));
+		}
+		cs2method_10704(0, a2);
+		cs2method_10758(v4, a1);
+		cs2method_20680(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a0, a1);
+			return;
+		}, new WidgetPointer(-32768,3), v0, "Id", new WidgetPointer(a1));
+		cs2method_20750(new function<script_44>(int a0,int a1) {
+			cs2method_10758(a0, a1);
+			return;
+		}, new WidgetPointer(-32768,3), v4, "Id", new WidgetPointer(a1));
+	} else {
+		cs2method_10704(175, a2);
+		cs2method_10758(6016, a1);
+		cs2method_10906(a1);
+	}
+	return;
+}

@@ -1,0 +1,39 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3802(int a0,int a1) {
+	int v1 = 0;
+	int v0 = 0;
+	if (cs2method_11038(a1, 0) == 1) {
+		cs2method_10002(50);
+		cs2method_10606(a0, 4, 0);
+		cs2method_10063(2, 2, 0, 0);
+		cs2method_10797("Unavailable in Legacy Mode");
+		cs2method_11105(1, 1, 0);
+		cs2method_10811(16777215);
+		cs2method_10692(20452);
+		int v3 = cs2method_10509(cs2method_10461(cs2method_10236(a0), 4), cs2method_10334(), cs2method_10447());
+		int v2 = cs2method_10051(13, cs2method_10805(cs2method_10461(cs2method_10236(a0), 4), cs2method_10334(), cs2method_10447()));
+		cs2method_10013(2, v2, 1, 0);
+		cs2method_10606(a0, 5, 1);
+		cs2method_10013(64, 64, 0, 0);
+		cs2method_10310(18690);
+		if (cs2method_10236(a0) < 64 || cs2method_10823(a0) < cs2method_10060(cs2method_10060(66, v2), cs2method_10406())) {
+			cs2method_10269(1);
+		} else {
+			cs2method_10063(0, cs2method_10060(v2, 2), 1, 0);
+		}
+	} else {
+		cs2method_20162(load function<3802>, new WidgetPointer(a0), new WidgetPointer(a1), "II", new WidgetPointer(a0));
+	}
+	return;
+}

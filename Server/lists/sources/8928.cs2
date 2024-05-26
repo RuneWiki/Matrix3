@@ -1,0 +1,280 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_8928_struct(6,0,0) script_8928(int a0) {
+	int v4 = -1;
+	int v5 = -1;
+	int v0 = -1;
+	int v3 = -1;
+	int v1 = -1;
+	int v2 = 0;
+	switch (a0) {
+		case 1:
+			v4 = 97976353;
+			v5 = 97976354;
+			v0 = 97976355;
+			v3 = 97976344;
+			v2 = client_configs['cfg3646'].bitcfg18646;
+			v1 = 97976352;
+			break;
+		case 2:
+			v4 = 97976358;
+			v5 = 97976359;
+			v0 = 97976360;
+			v3 = 97976343;
+			v1 = 97976357;
+			v2 = client_configs['cfg3646'].bitcfg18647;
+			break;
+		case 4:
+			v4 = 97976499;
+			v5 = 97976500;
+			v0 = 97976501;
+			v3 = 97976496;
+			v1 = 97976498;
+			v2 = client_configs['cfg3646'].bitcfg18648;
+			break;
+		case 3:
+			v4 = 97976493;
+			v5 = 97976494;
+			v0 = 97976495;
+			v3 = 97976490;
+			v1 = 97976492;
+			v2 = client_configs['cfg3646'].bitcfg18649;
+			break;
+		case 5:
+			v4 = 97976578;
+			v5 = 97976579;
+			v0 = 97976580;
+			v3 = 97976575;
+			v1 = 97976577;
+			v2 = client_configs['cfg3646'].bitcfg18650;
+			break;
+		case 6:
+			v4 = 97976584;
+			v5 = 97976585;
+			v0 = 97976586;
+			v3 = 97976581;
+			v1 = 97976583;
+			v2 = client_configs['cfg3646'].bitcfg18651;
+			break;
+		case 7:
+			v4 = 97976366;
+			v5 = 97976367;
+			v0 = 97976368;
+			v3 = 97976363;
+			if (client_configs['cfg3667'].bitcfg18730 == 1) {
+				v2 = client_configs['cfg3646'].bitcfg18662;
+			} else {
+				v2 = client_configs['cfg3646'].bitcfg18665;
+			}
+			break;
+		case 17:
+			v4 = 97976568;
+			v5 = 97976569;
+			v0 = 97976570;
+			v3 = 97976565;
+			if (client_configs['cfg3667'].bitcfg18730 == 1) {
+				v2 = client_configs['cfg3646'].bitcfg18663;
+			} else {
+				v2 = client_configs['cfg3646'].bitcfg18666;
+			}
+			break;
+		case 27:
+			v4 = 97976653;
+			v5 = 97976654;
+			v0 = 97976655;
+			v3 = 97976650;
+			if (client_configs['cfg3667'].bitcfg18730 == 1) {
+				v2 = client_configs['cfg3646'].bitcfg18664;
+			} else {
+				v2 = client_configs['cfg3646'].bitcfg18667;
+			}
+			break;
+		case 8:
+			v4 = 97976371;
+			v5 = 97976372;
+			v0 = 97976373;
+			v3 = 97976362;
+			if (client_configs['cfg3667'].bitcfg18730 == 1) {
+				v2 = client_configs['cfg3646'].bitcfg18652;
+			} else {
+				v2 = client_configs['cfg3646'].bitcfg18655;
+			}
+			break;
+		case 18:
+			v4 = 97976562;
+			v5 = 97976563;
+			v0 = 97976564;
+			v3 = 97976559;
+			if (client_configs['cfg3667'].bitcfg18730 == 1) {
+				v2 = client_configs['cfg3646'].bitcfg18653;
+			} else {
+				v2 = client_configs['cfg3646'].bitcfg18656;
+			}
+			break;
+		case 28:
+			v4 = 97976647;
+			v5 = 97976648;
+			v0 = 97976649;
+			v3 = 97976644;
+			if (client_configs['cfg3667'].bitcfg18730 == 1) {
+				v2 = client_configs['cfg3646'].bitcfg18654;
+			} else {
+				v2 = client_configs['cfg3646'].bitcfg18657;
+			}
+			break;
+		case 9:
+			v4 = 97976406;
+			v5 = 97976407;
+			v0 = 97976408;
+			v3 = 97976395;
+			break;
+		case 10:
+			v4 = 97976411;
+			v5 = 97976412;
+			v0 = 97976413;
+			v3 = 97976396;
+			break;
+		case 11:
+			v4 = 97976416;
+			v5 = 97976417;
+			v0 = 97976418;
+			v3 = 97976397;
+			break;
+		case 12:
+			v4 = 97976421;
+			v5 = 97976422;
+			v0 = 97976423;
+			v3 = 97976398;
+			break;
+		case 19:
+			v4 = 97976508;
+			v5 = 97976509;
+			v0 = 97976510;
+			v3 = 97976505;
+			break;
+		case 20:
+			v4 = 97976514;
+			v5 = 97976515;
+			v0 = 97976516;
+			v3 = 97976511;
+			break;
+		case 21:
+			v4 = 97976520;
+			v5 = 97976521;
+			v0 = 97976522;
+			v3 = 97976517;
+			break;
+		case 22:
+			v4 = 97976526;
+			v5 = 97976527;
+			v0 = 97976528;
+			v3 = 97976523;
+			break;
+		case 29:
+			v4 = 97976593;
+			v5 = 97976594;
+			v0 = 97976595;
+			v3 = 97976590;
+			break;
+		case 30:
+			v4 = 97976599;
+			v5 = 97976600;
+			v0 = 97976601;
+			v3 = 97976596;
+			break;
+		case 31:
+			v4 = 97976605;
+			v5 = 97976606;
+			v0 = 97976607;
+			v3 = 97976602;
+			break;
+		case 32:
+			v4 = 97976611;
+			v5 = 97976612;
+			v0 = 97976613;
+			v3 = 97976608;
+			break;
+		case 13:
+			v4 = 97976381;
+			v5 = 97976382;
+			v0 = 97976383;
+			v3 = 97976375;
+			break;
+		case 14:
+			v4 = 97976386;
+			v5 = 97976387;
+			v0 = 97976388;
+			v3 = 97976376;
+			break;
+		case 15:
+			v4 = 97976391;
+			v5 = 97976392;
+			v0 = 97976393;
+			v3 = 97976377;
+			break;
+		case 16:
+			v4 = 97976401;
+			v5 = 97976402;
+			v0 = 97976403;
+			v3 = 97976378;
+			break;
+		case 23:
+			v4 = 97976535;
+			v5 = 97976536;
+			v0 = 97976537;
+			v3 = 97976532;
+			break;
+		case 24:
+			v4 = 97976541;
+			v5 = 97976542;
+			v0 = 97976543;
+			v3 = 97976538;
+			break;
+		case 25:
+			v4 = 97976547;
+			v5 = 97976548;
+			v0 = 97976549;
+			v3 = 97976544;
+			break;
+		case 26:
+			v4 = 97976553;
+			v5 = 97976554;
+			v0 = 97976555;
+			v3 = 97976550;
+			break;
+		case 33:
+			v4 = 97976620;
+			v5 = 97976621;
+			v0 = 97976622;
+			v3 = 97976617;
+			break;
+		case 34:
+			v4 = 97976626;
+			v5 = 97976627;
+			v0 = 97976628;
+			v3 = 97976623;
+			break;
+		case 35:
+			v4 = 97976632;
+			v5 = 97976633;
+			v0 = 97976634;
+			v3 = 97976629;
+			break;
+		case 36:
+			v4 = 97976638;
+			v5 = 97976639;
+			v0 = 97976640;
+			v3 = 97976635;
+	}
+	return new script_8928_struct(v4, v5, v0, v3, v2, v1);
+}

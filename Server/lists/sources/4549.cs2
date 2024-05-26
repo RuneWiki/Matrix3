@@ -1,0 +1,46 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4549() {
+	int v0 = -1;
+	int v1 = -1;
+	int v2 = -1;
+	if (cs2method_10435() == 1) {
+		int v3 = cs2method_10890(cs2method_10927());
+		if (v3 == -1) {
+			return;
+		}
+		v1 = cs2method_10101(v3);
+		v2 = cs2method_10736();
+	} else {
+		cs2method_10810("You must be in a clan to do that.");
+	}
+	if (v1 >= 0) {
+		if (v1 < v2) {
+			return;
+		}
+		if (cs2_configs['cfg1413'] == 0) {
+			return;
+		}
+		cs2method_10467(0, 96272384);
+		if (cs2_configs['cfg11'] == 1) {
+			script_675();
+		}
+		cs2method_10026(96272386, "Enter the player to ban from the channel:");
+		cs2_configs['cfg5'] = 16;
+		script_1564("");
+		cs2method_20390(new function<none>() {
+		}, "", new WidgetPointer(1469,1));
+		script_2026();
+	}
+	return;
+}

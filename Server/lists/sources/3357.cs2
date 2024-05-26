@@ -1,0 +1,38 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_3357_struct(2,1,0) script_3357() {
+	switch (client_configs['cfg1831']) {
+		default:
+			return new script_3357_struct(1, 18027, "Sundering Strike (Tier 1)");
+		case 17935:
+			return new script_3357_struct(1, 18027, "Sundering Strike (Tier 1)");
+		case 17936:
+			return new script_3357_struct(11, 18028, "Sundering Strike (Tier 2)");
+		case 17937:
+			return new script_3357_struct(21, 18029, "Sundering Strike (Tier 3)");
+		case 17938:
+			return new script_3357_struct(31, 18030, "Sundering Strike (Tier 4)");
+		case 17939:
+			return new script_3357_struct(41, 18031, "Sundering Strike (Tier 5)");
+		case 17940:
+			return new script_3357_struct(51, 18032, "Sundering Strike (Tier 6)");
+		case 17941:
+			return new script_3357_struct(61, 18033, "Sundering Strike (Tier 7)");
+		case 17942:
+			return new script_3357_struct(71, 18034, "Sundering Strike (Tier 8)");
+		case 17943:
+			return new script_3357_struct(81, 18035, "Sundering Strike (Tier 9)");
+		case 17944:
+			return new script_3357_struct(91, 18036, "Sundering Strike (Tier 10)");
+	}
+}

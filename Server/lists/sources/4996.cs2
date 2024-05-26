@@ -1,0 +1,45 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4996(int a0) {
+	int v3 = -1;
+	int v5 = -1;
+	int v4 = 0;
+	int v0 = -1;
+	int v2 = -1;
+	int v1 = -1;
+	cs2method_10467(0, 82641011);
+	if (cs2method_10172() == 1) {
+		script_4899(1);
+		int v7 = script_4963(a0);
+		client_configs['cfg1978'].bitcfg6677 = v7;
+		if (v7 <= 0) {
+			cs2method_10810("You must first select a building.");
+			return;
+		}
+		int v8 = script_4948(v7);
+		int v9 = script_4954(v7);
+		if (v9 == -1) {
+			return;
+		}
+		int v6 = script_4955(v7);
+		if (v6 == -1) {
+			return;
+		}
+		if (v8 > 0) {
+			int v10 = script_4959(v8);
+		}
+		script_4988(client_configs['cfg1978'].bitcfg6677);
+		script_4937();
+	}
+	return;
+}

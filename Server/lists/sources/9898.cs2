@@ -1,0 +1,43 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9898(int a0,int a1) {
+	object v0 = "";
+	switch (a0) {
+		case 1:
+			v0 = "You can only share this on a members' world.";
+			break;
+		case 2:
+			v0 = "You must have completed the quest" + "<br>" + "'The Temple at Senntisten' to use curses.";
+			break;
+		case 3:
+			v0 = "You must have completed the quest" + "<br>" + "'Lunar Diplomacy' to use Lunar Magic.";
+			break;
+		case 4:
+			v0 = "You must have completed the quest" + "<br>" + "'Desert Treasure' to use Ancient Magic.";
+			break;
+		case 5:
+			v0 = "You must have completed the quest" + "<br>" + "'The World Wakes' to use this ability.";
+			break;
+		case 6:
+			v0 = "You can get this ability by defeating General" + "<br>" + "Graardor or Kree'arra in the God Wars Dungeon.";
+			break;
+		case 7:
+			v0 = "You must have read the Codex Ultimatus" + "<br>" + "before you can use this ability.";
+	}
+	cs2method_21121(new function<script_8799>(int a0,int a1,object a2) {
+		script_8800(a0, a1, a2);
+		return;
+	}, (string)v0, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(a1));
+	cs2method_10283(167, 300, 1, 0, 37748740);
+	return;
+}

@@ -1,0 +1,194 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3848(int a0) {
+	int v6 = idx22mapAttribute(script_3898(28456, 1), 3909);
+	int v5 = idx22mapAttribute(script_3898(28456, 2), 3909);
+	int v4 = idx22mapAttribute(script_3898(28456, 3), 3909);
+	int v7 = idx22mapAttribute(script_3898(28456, 5), 3909);
+	cs2method_10273(a0);
+	script_8473(a0, 0, 0, 0, 18, 18, 649);
+	cs2method_10063(22, 0, 1, 1);
+	object v8 = "The weight of the items you are wearing or " + "<br>" + "carrying in your inventory. Coins in your coin" + "<br>" + "pouch and tools in your tool belt do not contribute" + "<br>" + "to your weight. Carrying more weight causes" + "<br>" + "your energy to drain faster when running.";
+	cs2method_20353(new function<script_8801>(int a0,int a1,object a2,int a3,int a4,int a5) {
+		script_8803(1000, 25, a4, a3, a2, 20452, 16777215);
+		cs2method_10637(a0, a1, a5, 97386522);
+		return;
+	}, (string)v8, new WidgetPointer(-32768,3), -2147483643, 0, 1, 12, "sIiiii");
+	cs2method_20884(new function<script_8805>() {
+		script_8808();
+		return;
+	}, "");
+	cs2method_10606(a0, 4, 1);
+	cs2method_10013(38, 24, 0, 0);
+	cs2method_10063(52, 0, 1, 1);
+	cs2method_10692(17813);
+	cs2method_10811(16777215);
+	cs2method_10797("0kg");
+	cs2method_11105(0, 1, 0);
+	cs2method_20622(new function<script_8476>(int a0,int a1) {
+		if (cs2method_11038(a1, a0) == 1) {
+			cs2method_10797((string)cs2method_10055(cs2method_11091(), 1) + "kg");
+		}
+		return;
+	}, new WidgetPointer(-32768,3), -2147483643, "Ii");
+	object v3 = "The weight of the items you are wearing or " + "<br>" + "carrying in your inventory. Coins in your coin" + "<br>" + "pouch and tools in your tool belt do not contribute" + "<br>" + "to your weight. Carrying more weight causes" + "<br>" + "your energy to drain faster when running.";
+	cs2method_20353(new function<script_8801>(int a0,int a1,int a2,object a3,int a4,int a5) {
+		script_8803(1000, 25, a0, a4, a3, 20452, 16777215);
+		cs2method_10637(a2, a1, a5, 97386522);
+		return;
+	}, (string)v3, new WidgetPointer(-32768,3), -2147483643, 0, 1, 12, "sIiiii");
+	cs2method_20884(new function<script_8805>() {
+		script_8808();
+		return;
+	}, "");
+	script_8473(a0, 2, 0, 0, 24, 24, v6);
+	object v2 = "Open the tool belt to view the tools you have stored there." + "<br>" + "Items in the tool belt do not take up an inventory slot or contribute to your weight." + "<br>" + "Tools which can be added to the tool belt have an 'Add to tool belt' option when right-clicked" + "<br>" + "in the inventory, though some tools are added automatically.";
+	cs2method_20353(new function<script_8801>(object a0,int a1,int a2,int a3,int a4,int a5) {
+		script_8803(1000, 25, a1, a4, a0, 20452, 16777215);
+		cs2method_10637(a5, a3, a2, 97386522);
+		return;
+	}, (string)v2, new WidgetPointer(-32768,3), -2147483643, 0, 1, 12, "sIiiii");
+	cs2method_20884(new function<script_8805>() {
+		script_8808();
+		return;
+	}, "");
+	cs2method_10057(1, "Open tool belt");
+	script_8473(a0, 3, 0, 0, 24, 24, v5);
+	cs2method_10002(255);
+	cs2method_20674(new function<script_2140>(int a0,int a1,int a2) {
+		if (cs2method_11038(a2, a1) == 1) {
+			cs2method_10002(a0);
+		}
+		return;
+	}, new WidgetPointer(-32768,3), -2147483643, 0, "Iii");
+	cs2method_20884(new function<script_2140>(int a0,int a1,int a2) {
+		if (cs2method_11038(a1, a2) == 1) {
+			cs2method_10002(a0);
+		}
+		return;
+	}, new WidgetPointer(-32768,3), -2147483643, 255, "Iii");
+	script_8473(a0, 4, 0, 0, 24, 24, v4);
+	cs2method_10002(255);
+	cs2method_20672(new function<script_2140>(int a0,int a1,int a2) {
+		if (cs2method_11038(a1, a2) == 1) {
+			cs2method_10002(a0);
+		}
+		return;
+	}, new WidgetPointer(-32768,3), -2147483643, 0, "Iii");
+	cs2method_20502(new function<script_2140>(int a0,int a1,int a2) {
+		if (cs2method_11038(a2, a0) == 1) {
+			cs2method_10002(a1);
+		}
+		return;
+	}, new WidgetPointer(-32768,3), -2147483643, 255, "Iii");
+	script_8473(a0, 5, 0, 0, 24, 24, v7);
+	cs2method_10269(1);
+	script_8473(a0, 6, 0, 0, 18, 18, 8938);
+	cs2method_10577(0);
+	script_8473(a0, 7, 0, 0, 24, 24, v6);
+	object v1 = "View the items you are carrying and wearing " + "<br>" + "which will be kept on death.";
+	cs2method_20353(new function<script_8801>(int a0,int a1,int a2,int a3,int a4,object a5) {
+		script_8803(1000, 25, a1, a3, a5, 20452, 16777215);
+		cs2method_10637(a0, a4, a2, 97386522);
+		return;
+	}, (string)v1, new WidgetPointer(-32768,3), -2147483643, 0, 1, 12, "sIiiii");
+	cs2method_20884(new function<script_8805>() {
+		script_8808();
+		return;
+	}, "");
+	cs2method_10057(1, "Items kept on death");
+	script_8473(a0, 8, 0, 0, 24, 24, v5);
+	cs2method_10002(255);
+	cs2method_20674(new function<script_2140>(int a0,int a1,int a2) {
+		if (cs2method_11038(a2, a1) == 1) {
+			cs2method_10002(a0);
+		}
+		return;
+	}, new WidgetPointer(-32768,3), -2147483643, 0, "Iii");
+	cs2method_20884(new function<script_2140>(int a0,int a1,int a2) {
+		if (cs2method_11038(a0, a1) == 1) {
+			cs2method_10002(a2);
+		}
+		return;
+	}, new WidgetPointer(-32768,3), -2147483643, 255, "Iii");
+	script_8473(a0, 9, 0, 0, 24, 24, v4);
+	cs2method_10002(255);
+	cs2method_20672(new function<script_2140>(int a0,int a1,int a2) {
+		if (cs2method_11038(a1, a0) == 1) {
+			cs2method_10002(a2);
+		}
+		return;
+	}, new WidgetPointer(-32768,3), -2147483643, 0, "Iii");
+	cs2method_20502(new function<script_2140>(int a0,int a1,int a2) {
+		if (cs2method_11038(a0, a1) == 1) {
+			cs2method_10002(a2);
+		}
+		return;
+	}, new WidgetPointer(-32768,3), -2147483643, 255, "Iii");
+	script_8473(a0, 10, 0, 0, 24, 24, v7);
+	cs2method_10269(1);
+	script_8473(a0, 11, 0, 0, 18, 18, 912);
+	script_8473(a0, 12, 0, 0, 24, 24, v6);
+	object v0 = "View your combat stats based on your equipped items.";
+	cs2method_20353(new function<script_8801>(int a0,object a1,int a2,int a3,int a4,int a5) {
+		script_8803(1000, 25, a5, a2, a1, 20452, 16777215);
+		cs2method_10637(a3, a4, a0, 97386522);
+		return;
+	}, (string)v0, new WidgetPointer(-32768,3), -2147483643, 0, 1, 12, "sIiiii");
+	cs2method_20884(new function<script_8805>() {
+		script_8808();
+		return;
+	}, "");
+	cs2method_10057(1, "Worn equipment stats");
+	script_8473(a0, 13, 0, 0, 24, 24, v5);
+	cs2method_10002(255);
+	cs2method_20674(new function<script_2140>(int a0,int a1,int a2) {
+		if (cs2method_11038(a2, a0) == 1) {
+			cs2method_10002(a1);
+		}
+		return;
+	}, new WidgetPointer(-32768,3), -2147483643, 0, "Iii");
+	cs2method_20884(new function<script_2140>(int a0,int a1,int a2) {
+		if (cs2method_11038(a2, a1) == 1) {
+			cs2method_10002(a0);
+		}
+		return;
+	}, new WidgetPointer(-32768,3), -2147483643, 255, "Iii");
+	script_8473(a0, 14, 0, 0, 24, 24, v4);
+	cs2method_10002(255);
+	cs2method_20672(new function<script_2140>(int a0,int a1,int a2) {
+		if (cs2method_11038(a2, a0) == 1) {
+			cs2method_10002(a1);
+		}
+		return;
+	}, new WidgetPointer(-32768,3), -2147483643, 0, "Iii");
+	cs2method_20502(new function<script_2140>(int a0,int a1,int a2) {
+		if (cs2method_11038(a1, a0) == 1) {
+			cs2method_10002(a2);
+		}
+		return;
+	}, new WidgetPointer(-32768,3), -2147483643, 255, "Iii");
+	script_8473(a0, 15, 0, 0, 24, 24, v7);
+	cs2method_10269(1);
+	script_8473(a0, 16, 0, 0, 18, 18, 675);
+	cs2method_10606(a0, 9, 17);
+	cs2method_10063(0, 0, 1, 0);
+	cs2method_10013(0, 0, 1, 0);
+	cs2method_10811(4281695);
+	cs2method_10606(a0, 9, 18);
+	cs2method_10063(0, 1, 1, 0);
+	cs2method_10013(0, 0, 1, 0);
+	cs2method_10811(0);
+	script_3849(a0);
+	return;
+}

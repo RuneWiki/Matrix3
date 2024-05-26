@@ -1,0 +1,66 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5796(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7) {
+	object v0;
+	int v1 = script_5795(a5);
+	if (v1 == -1) {
+		return;
+	}
+	if (a7 != -1) {
+		if (idx22mapAttribute(v1, 1270) != 4094) {
+			cs2method_10758(idx22mapAttribute(idx17mapData('i', 'J', 2252, idx22mapAttribute(v1, 1270)), 952), a7);
+		} else {
+			cs2method_10758(idx22mapAttribute(v1, 1271), a7);
+		}
+	}
+	if (a3 != -1) {
+		cs2method_10026(a3, idx22mapAttribute(v1, 1266));
+	}
+	object v2 = "";
+	if (a0 != -1) {
+		if (a5 == 3060 && client_configs['cfg4056'].bitcfg21373 == 1 && idx22mapAttribute(v1, 4059) == 1) {
+			v0 = idx22mapAttribute(v1, 4060);
+		} else {
+			v0 = idx22mapAttribute(v1, 1273);
+		}
+		if (idx22mapAttribute(v1, 1322) == 1 && a0 != 80019464 && a0 != 79953924 && a0 != 69206034 && a0 != 80150529 && a4 == 1 && client_configs['cfg1293'].bitcfg3617 == 0) {
+			v0 = cs2method_10427(v0, "<br>" + "<br>" + "(This Task is not a requirement for the Taskmaster emote.)");
+		}
+		if (client_configs['cfg1269'].bitcfg3561 == 3531) {
+			cs2method_10026(a0, "");
+		} else {
+			cs2method_10026(a0, v0);
+		}
+	}
+	int v5 = -1;
+	if (a2 != -1) {
+		int v6 = idx17mapData('i', 'd', 3492, idx22mapAttribute(v1, 1272));
+		if (script_3996(a5) == 0 && script_3999(a5) == 0) {
+			v6 = 4346;
+		}
+		cs2method_10758(v6, a2);
+	}
+	int v3 = -1;
+	if (a1 != -1) {
+		int v6 = idx17mapData('i', 'd', 3491, idx22mapAttribute(v1, 1267));
+		cs2method_10758(v6, a1);
+	}
+	int v4 = -1;
+	if (a6 != -1) {
+		if (idx22mapAttribute(v1, 1293) != 0 && idx22mapAttribute(v1, 1293) != 63) {
+			v4 = 4272;
+		}
+		cs2method_10758(v4, a6);
+	}
+	return;
+}

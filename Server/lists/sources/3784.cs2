@@ -1,0 +1,79 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3784(int a0,int a1,int a2,object a3,int a4,object a5,int a6,int a7) {
+	if (client_configs['cfg1295'] < 1000) {
+		cs2method_10810("You can't do this while in the tutorial.");
+		return;
+	}
+	if (client_configs['cfg1293'].bitcfg3617 == 1) {
+		cs2method_10810("You cannot change your chat filters while you are in the tutorial as you might miss important messages that will help with your progress.");
+		return;
+	}
+	switch (a1) {
+		case 1:
+			if (cs2method_10614() != 2) {
+				if (cs2_configs['cfg41'] == a0) {
+					cs2_configs['cfg41'] = -1;
+					script_3810();
+				} else if (cs2_configs['cfg41'] == -1) {
+					cs2_configs['cfg41'] = a0;
+					script_3810();
+				} else {
+					cs2_configs['cfg41'] = a0;
+				}
+			}
+			script_3781(a0);
+			break;
+		case 2:
+			script_3783(a0, 1, 0);
+			break;
+		case 3:
+			script_3783(a0, 1, 1);
+			break;
+		case 4:
+			switch (a0) {
+				default:
+					break;
+				case 99:
+					client_configs['cfg1775'].bitcfg21712 = cs2method_10461(1, client_configs['cfg1775'].bitcfg21712);
+					script_1985(client_configs['cfg1775'].bitcfg21712);
+					break;
+				case 0:
+					client_configs['cfg1772'].bitcfg18797 = 0;
+					break;
+				case 1:
+					client_configs['cfg1772'].bitcfg18800 = 0;
+					break;
+				case 2:
+					client_configs['cfg1772'].bitcfg18801 = 0;
+					cs2method_10841(0, 2, cs2method_10610());
+					break;
+				case 3:
+					client_configs['cfg1772'].bitcfg18802 = 0;
+					break;
+				case 4:
+					client_configs['cfg1772'].bitcfg18803 = 0;
+					break;
+				case 5:
+					client_configs['cfg1772'].bitcfg18804 = 0;
+					break;
+				case 6:
+					client_configs['cfg1772'].bitcfg18798 = 0;
+					break;
+				case 7:
+					client_configs['cfg1772'].bitcfg18799 = 0;
+			}
+	}
+	script_8491(a2);
+	return;
+}

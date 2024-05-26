@@ -1,0 +1,37 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5563() {
+	int v5;
+	int v2 = cs2method_10051(client_configs['cfg3870'], client_configs['cfg3869']);
+	int v4 = cs2method_10936(93, 29494);
+	int v1 = 0;
+	int v3 = cs2method_10936(93, 995);
+	int v0 = cs2method_10936(623, 995);
+	if (v3 > cs2method_10461(2147483647, v0)) {
+		v5 = 2147483647;
+		cs2method_10026(15073283, "<col=00ff00>" + "Over 2bn." + "</col>");
+	} else {
+		v5 = cs2method_10060(cs2method_10936(93, 995), cs2method_10936(623, 995));
+		cs2method_10026(15073283, script_8003(v5));
+	}
+	cs2method_10026(15073285, cs2method_10379(v4));
+	cs2method_10026(15073280, script_8003(client_configs['cfg3869']));
+	cs2method_10026(15073311, cs2method_10379(client_configs['cfg3870']));
+	cs2method_10026(15073299, script_8003(v2));
+	if (v2 > v5) {
+		cs2method_10520(16711680, 15073299);
+	} else {
+		cs2method_10520(16777215, 15073299);
+	}
+	return;
+}

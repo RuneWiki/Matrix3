@@ -1,0 +1,21 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3467(int a0,int a1,int a2) {
+	if (cs2method_10461(cs2method_10133(), a0) < a2) {
+		return;
+	}
+	cs2method_20162(new function<none>() {
+	}, "", new WidgetPointer(a1));
+	script_2766(0, 50, a1);
+	return;
+}

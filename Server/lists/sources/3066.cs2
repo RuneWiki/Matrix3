@@ -1,0 +1,149 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3066(int a0,int a1,int a2,int a3,int a4) {
+	if (a4 > 0) {
+		cs2method_10758(4661, a0);
+		cs2method_10026(a2, cs2method_10379(a4));
+		if (a3 == 1) {
+			cs2method_11127(1, a0, "Click Here To Play");
+			cs2method_20486(new function<script_3067>(int a0) {
+				int v3;
+				if (cs2method_10164() == 0) {
+					cs2method_20162(load function<3067>, a0, "i", new WidgetPointer(906,193));
+					return;
+				}
+				cs2method_20162(new function<none>() {
+				}, "", new WidgetPointer(906,193));
+				int v4 = 0;
+				int v8 = 0;
+				object v18 = "";
+				int v19 = 0;
+				object v13 = "";
+				int v9 = 0;
+				int v2 = 0;
+				object v7 = "";
+				int v1 = -1;
+				if (a0 == 1) {
+					v3 = cs2_configs['cfg998'];
+				} else if (a0 == 2) {
+					v3 = cs2_configs['cfg999'];
+				} else {
+					return;
+				}
+				opc_struct11054(5,3,0) v14 = cs2method_11054();
+				object v11 = v14.objectpart_2;
+				int v10 = v14.intpart_4;
+				int v15 = v14.intpart_3;
+				object v5 = v14.objectpart_1;
+				int v0 = v14.intpart_2;
+				object v6 = v14.objectpart_0;
+				int v16 = v14.intpart_1;
+				int v17 = v14.intpart_0;
+				int v12 = 0;
+				while (v17 != -1 && v12 == 0) {
+					if (v17 == v3) {
+						v12 = 1;
+					} else {
+						opc_struct10774(5,3,0) v20 = cs2method_10774();
+						v11 = v20.objectpart_2;
+						int v23 = v20.intpart_4;
+						int v22 = v20.intpart_3;
+						object v26 = v20.objectpart_1;
+						int v21 = v20.intpart_2;
+						object v25 = v20.objectpart_0;
+						int v24 = v20.intpart_1;
+						v17 = v20.intpart_0;
+					}
+				}
+				if (a0 == 1) {
+					script_3382(59375813);
+				} else {
+					if (a0 == 2) {
+						script_3382(59375814);
+					}
+				}
+				if (v17 > 0) {
+					if (cs2method_10966() != v17) {
+						if (cs2method_10883(v17, v11) == 1) {
+							cs2_configs['cfg547'] = 0;
+							int v20 = script_3062(59375808);
+							/* 
+								java.lang.RuntimeException: Stack underflow
+									at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+									at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+									at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+									at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+									at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+									at mgi.tools.jagdecs2.FlowBlocksGenerator.cast(FlowBlocksGenerator.java:546)
+									at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+									at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+									at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+									at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+									at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+									at tests.Main.main(Main.java:69)
+								
+							 */
+						}
+						script_3064(1);
+						script_3093(-5, "Could not connect you to the chosen world. Please choose another.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+					} else {
+						int v20 = script_3062(59375808);
+						/* 
+							java.lang.RuntimeException: Stack underflow
+								at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+								at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.cast(FlowBlocksGenerator.java:546)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+								at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+								at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+								at tests.Main.main(Main.java:69)
+							
+						 */
+					}
+				} else {
+					script_3093(-5, "World " + (string)cs2method_10379(v3) + " is running in a different language or is unavailable.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+				}
+				return;
+			}, a1, "i", new WidgetPointer(a0));
+		} else {
+			cs2method_10495(a0);
+			cs2method_20486(new function<none>() {
+			}, "", new WidgetPointer(a0));
+		}
+		cs2method_20680(new function<script_3068>(int a0) {
+			cs2method_10758(4662, a0);
+			script_3083(a0, -1, "Click here to login to your favourite world");
+			return;
+		}, new WidgetPointer(a0), "I", new WidgetPointer(a0));
+		cs2method_20750(new function<script_3069>(int a0) {
+			script_3382(a0);
+			return;
+		}, new WidgetPointer(a0), "I", new WidgetPointer(a0));
+	} else {
+		cs2method_10758(4660, a0);
+		cs2method_10026(a2, "");
+		cs2method_20680(new function<none>() {
+		}, "", new WidgetPointer(a0));
+		cs2method_20750(new function<none>() {
+		}, "", new WidgetPointer(a0));
+		cs2method_20486(new function<none>() {
+		}, "", new WidgetPointer(a0));
+		cs2method_10495(a0);
+	}
+	return;
+}

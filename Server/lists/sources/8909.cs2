@@ -1,0 +1,70 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_8909(int a0,int a1,int a2) {
+	flow_0:
+		IF (a1 == 1) 
+			GOTO	flow_1
+		GOTO	flow_2
+	flow_1:
+		IF (cs2_configs['cfg2809'] == 1) 
+			GOTO	flow_4
+	flow_2:
+		IF (a1 == 2 && cs2_configs['cfg2810'] == 1) 
+			GOTO	flow_4
+		GOTO	flow_13
+	flow_4:
+		if (cs2method_10690(a0) > 0) {
+			cs2method_10704(cs2method_11048(0, cs2method_10461(cs2method_10690(a0), 5)), a0);
+		} else if (cs2method_10690(a2) > 0) {
+			cs2method_10704(cs2method_11048(0, cs2method_10461(cs2method_10690(a2), 15)), a2);
+		} else {
+			if (cs2method_10769(a0) == 20116) {
+				cs2method_10758(20112, a2);
+			}
+			if (cs2method_10769(a0) == 20117) {
+				cs2method_10758(20113, a2);
+			}
+		}
+		GOTO	flow_28
+	flow_13:
+		IF (a1 == 1) 
+			GOTO	flow_14
+		GOTO	flow_15
+	flow_14:
+		IF (cs2_configs['cfg2809'] == 0) 
+			GOTO	flow_17
+	flow_15:
+		IF (a1 == 2 && cs2_configs['cfg2810'] == 0) 
+			GOTO	flow_17
+		GOTO	flow_28
+	flow_17:
+		if (cs2method_10690(a2) == 0) {
+			if (cs2method_10769(a0) == 20112) {
+				cs2method_10758(20116, a2);
+			}
+			if (cs2method_10769(a2) == 20113) {
+				cs2method_10758(20117, a2);
+			}
+			cs2method_10704(cs2method_10872(255, cs2method_10060(cs2method_10690(a2), 15)), a2);
+		} else if (cs2method_10690(a2) < 255) {
+			cs2method_10704(cs2method_10872(255, cs2method_10060(cs2method_10690(a2), 15)), a2);
+		} else if (cs2method_10690(a0) < 255) {
+			cs2method_10704(cs2method_10872(255, cs2method_10060(cs2method_10690(a0), 5)), a0);
+		} else {
+			cs2method_10467(1, a2);
+			cs2method_10467(1, a0);
+		}
+	flow_28:
+		return;
+}

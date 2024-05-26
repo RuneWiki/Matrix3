@@ -1,0 +1,48 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4496(int a0,int a1) {
+	if (a0 == -1 || a1 == -1) {
+		return;
+	}
+	cs2method_20348(new function<script_4116>(int a0,int a1) {
+		script_4496(a1, a0);
+		return;
+	}, new WidgetPointer(a0), a1, 3814, 1, "IJY", new WidgetPointer(a0));
+	int v4 = idx22mapAttribute(a1, 3797);
+	int v3 = idx22mapAttribute(a1, 4358);
+	if (v3 != -1) {
+		a1 = v3;
+	}
+	int v5 = script_3898(a1, v4);
+	int v1 = idx22mapAttribute(v5, 1379);
+	int v6 = idx22mapAttribute(v5, 1380);
+	int v2 = idx22mapAttribute(v5, 1381);
+	int v0 = idx22mapAttribute(v5, 1358);
+	cs2method_10273(a0);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10063(0, 0, 0, 1);
+	cs2method_10013(20, 20, 0, 0);
+	cs2method_10310(v1);
+	cs2method_10002(v0);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10063(0, 0, 1, 1);
+	cs2method_10013(cs2method_10051(20, 2), 20, 1, 0);
+	cs2method_10310(v6);
+	cs2method_10002(v0);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10063(0, 0, 2, 1);
+	cs2method_10013(20, 20, 0, 0);
+	cs2method_10310(v2);
+	cs2method_10002(v0);
+	return;
+}

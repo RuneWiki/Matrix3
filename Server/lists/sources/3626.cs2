@@ -1,0 +1,55 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3626(int a0,int a1,int a2,int a3,int a4,int a5,int a6) {
+	int v9 = 0;
+	int v7 = cs2method_10924(a3);
+	int v2 = -1;
+	int v8 = 0;
+	int v3 = 0;
+	int v4 = 0;
+	int v6 = 0;
+	cs2method_10567(34189, 1, 0);
+	while (v9 < v7) {
+		int v1 = (int)idx17mapData('i', 'I', a3, v9);
+		int v5 = idx17mapData('i', 'i', a1, cs2method_10038(cs2method_10060(v9, a5), v7));
+		int v0 = cs2method_10038(cs2method_10060(v5, a6), cs2method_10924(3170));
+		if (cs2method_10324(v1) == 1) {
+			if (interfaceDefsAttribute(1103) != interfaceDefsAttribute(1104)) {
+				cs2method_10039(idx17mapData('i', 'o', 3170, interfaceDefsAttribute(1104)), -1, v1);
+			}
+			cs2method_10097(1103, v5);
+			cs2method_10097(1104, v0);
+			v3 = interfaceDefsAttribute(1101);
+			v4 = interfaceDefsAttribute(1102);
+			cs2method_10063(v3, v4, 0, 0);
+		}
+		cs2method_20162(new function<script_3628>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8) {
+			int v0 = cs2method_10060(a7, 1);
+			if (v0 == 1) {
+				cs2method_10112(cs2method_10060(a3, a1), cs2method_10060(a2, a5), 0, 0, a4);
+				cs2method_10039(a6, -1, a4);
+			} else {
+				cs2method_10112(cs2method_10060(a3, cs2method_10968(cs2method_10051(a1, cs2method_10461(a0, v0)), a0)), cs2method_10060(a2, cs2method_10968(cs2method_10051(a5, cs2method_10461(a0, v0)), a0)), 0, 0, a4);
+			}
+			if (v0 == a0) {
+				cs2method_20162(new function<none>() {
+				}, "", new WidgetPointer(a4));
+			} else {
+				cs2method_20162(load function<3628>, new WidgetPointer(a4), a3, a2, a1, a5, a6, a8, v0, a0, "Iiiiioiii", new WidgetPointer(a4));
+			}
+			return;
+		}, new WidgetPointer(v1), v3, v4, cs2method_10051(25, idx17mapData('i', 'i', a4, v9)), cs2method_10051(25, idx17mapData('i', 'i', a0, v9)), idx17mapData('i', 'o', 3170, v0), v0, 0, a2, "Iiiiioiii", new WidgetPointer(v1));
+		v9 = cs2method_10060(v9, 1);
+	}
+	return;
+}

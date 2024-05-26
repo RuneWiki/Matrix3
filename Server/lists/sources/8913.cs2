@@ -1,0 +1,48 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_8913() {
+	flow_0:
+		int v1 = script_8910();
+		if (cs2method_10771() == 0) {
+			v1 = cs2method_10872(100, cs2method_10060(56, v1));
+		}
+		int v3 = idx17mapData('i', 'i', 7608, v1);
+		int v0 = 0;
+		object v2 = "";
+		IF (v3 <= 0) 
+			GOTO	flow_3
+		GOTO	flow_4
+	flow_3:
+		v0 = 0;
+		GOTO	flow_8
+	flow_4:
+		IF (v3 >= 100) 
+			GOTO	flow_5
+		GOTO	flow_6
+	flow_5:
+		v0 = cs2method_10060(v0, 1);
+		v3 = cs2method_10461(v3, 100);
+		GOTO	flow_4
+	flow_6:
+		if (v3 > 60) {
+			v0 = cs2method_10060(v0, 1);
+		}
+	flow_8:
+		if (v1 < 100) {
+			v0 = cs2method_11048(v0, 1);
+		}
+		object v4 = "x" + (string)cs2method_10379(v0);
+		cs2method_10026(97910819, v4);
+		return;
+}

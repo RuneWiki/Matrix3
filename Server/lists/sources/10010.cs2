@@ -1,0 +1,48 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_10010(int a0) {
+	flow_0:
+		int v3 = 0;
+		int v0 = 2;
+		int v2 = 96796674;
+		IF (a0 == 1) 
+			GOTO	flow_1
+		GOTO	flow_4
+	flow_1:
+		IF (v3 <= 4) 
+			GOTO	flow_2
+		GOTO	flow_3
+	flow_2:
+		int v6 = v0;
+		int v5 = 42;
+		int v4 = v3;
+		script_8825_struct(2,0,0) v1 = script_8825(v5, v4);
+		script_8844(v6, v1.intpart_0, v1.intpart_1, v2, -1);
+		v0 = cs2method_10060(v0, 1);
+		v3 = cs2method_10060(v3, 1);
+		GOTO	flow_1
+	flow_3:
+		GOTO	flow_6
+	flow_4:
+		IF (v3 <= 4) 
+			GOTO	flow_5
+		GOTO	flow_6
+	flow_5:
+		cs2method_10009(v0, 0, 0, v2);
+		v0 = cs2method_10060(v0, 1);
+		v3 = cs2method_10060(v3, 1);
+		GOTO	flow_4
+	flow_6:
+		return;
+}

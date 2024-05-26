@@ -1,0 +1,68 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_1981_struct(2,0,0) script_1981(int a0,int a1,int a2,int a3) {
+	int v11;
+	int v18 = -1;
+	int v3 = -1;
+	switch (a2) {
+		case 0:
+			script_1991_struct(2,0,0) v0 = script_1991();
+			int v15 = v0.intpart_1;
+			v11 = v0.intpart_0;
+			break;
+		case 1:
+			script_1992_struct(2,0,0) v24 = script_1992();
+			int v1 = v24.intpart_1;
+			v11 = v24.intpart_0;
+			break;
+		case 2:
+			script_1993_struct(2,0,0) v13 = script_1993();
+			int v5 = v13.intpart_1;
+			v11 = v13.intpart_0;
+			break;
+		case 3:
+			script_1994_struct(2,0,0) v23 = script_1994();
+			int v4 = v23.intpart_1;
+			v11 = v23.intpart_0;
+			break;
+		case 4:
+			script_1995_struct(2,0,0) v6 = script_1995();
+			int v10 = v6.intpart_1;
+			v11 = v6.intpart_0;
+			break;
+		case 12:
+			script_1996_struct(2,0,0) v20 = script_1996();
+			int v16 = v20.intpart_1;
+			v11 = v20.intpart_0;
+			break;
+		default:
+			return new script_1981_struct(0, a0);
+	}
+	if (cs2method_10609(a1) == 1) {
+		cs2method_10467(1, v11);
+		return new script_1981_struct(0, a0);
+	}
+	cs2method_10467(0, v11);
+	object v22 = cs2method_10427(cs2method_10331(a1), cs2method_11067(1, a1));
+	int v21 = 0;
+	int v25 = a1;
+	int v19 = v11;
+	int v2 = a0;
+	object v12 = v22;
+	object v9 = "";
+	script_1982_struct(2,0,0) v7 = script_1982(v25, v19, v2, v12, v9);
+	int v8 = v7.intpart_1;
+	int v17 = v7.intpart_0;
+	int v14 = cs2method_10060(20, v17);
+	return new script_1981_struct(v14, v8);
+}

@@ -1,0 +1,45 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1885() {
+	int v0 = -1;
+	cs2method_10758(15529, 62259374);
+	cs2method_10758(15529, 62259217);
+	cs2method_10758(15529, 62259379);
+	switch (client_configs['cfg3406'].bitcfg17130) {
+		case 1:
+			if (client_configs['cfg3406'].bitcfg17129 == 0) {
+				v0 = idx17mapData('i', 'J', 1022, client_configs['cfg3400'].bitcfg17115);
+			} else {
+				v0 = idx17mapData('i', 'J', 1022, client_configs['cfg3401'].bitcfg17118);
+			}
+			cs2method_10758(15528, 62259374);
+			break;
+		case 2:
+			if (client_configs['cfg3406'].bitcfg17129 == 0) {
+				v0 = idx17mapData('i', 'J', 1022, client_configs['cfg3400'].bitcfg17116);
+			} else {
+				v0 = idx17mapData('i', 'J', 1022, client_configs['cfg3402'].bitcfg17119);
+			}
+			cs2method_10758(15528, 62259217);
+			break;
+		case 3:
+			if (client_configs['cfg3406'].bitcfg17129 == 0) {
+				v0 = idx17mapData('i', 'J', 1022, client_configs['cfg3401'].bitcfg17117);
+			} else {
+				v0 = idx17mapData('i', 'J', 1022, client_configs['cfg3402'].bitcfg17120);
+			}
+			cs2method_10758(15528, 62259379);
+	}
+	script_1951(v0);
+	return;
+}

@@ -1,0 +1,81 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+int script_8978(int a0) {
+	globalarray_0 = new int[7];
+	int v4 = 0;
+	int v2 = 0;
+	int v5 = 0;
+	int v0 = 0;
+	while (v4 < 7) {
+		flow_1:
+			switch (v4) {
+				case 0:
+					v0 = 2;
+					break;
+				case 1:
+					v0 = 3;
+					break;
+				case 2:
+					v0 = 4;
+					break;
+				case 3:
+					v0 = 5;
+					break;
+				case 4:
+					v0 = 7;
+					break;
+				case 5:
+					v0 = 8;
+					break;
+				case 6:
+					v0 = 9;
+			}
+			int v3 = 0;
+			int v1 = 0;
+			IF (cs2method_10441(client_configs['cfg3643'], v0) == 1 && v3 < 7) 
+				GOTO	flow_13
+			GOTO	flow_17
+		flow_12:
+		flow_13:
+			IF (v1 == 0) 
+				GOTO	flow_14
+			GOTO	flow_17
+		flow_14:
+			if (globalarray_0[v3] == 0) {
+				globalarray_0[v3] = v0;
+				v1 = 1;
+			}
+			v3 = cs2method_10060(v3, 1);
+			GOTO	flow_12
+		flow_17:
+			v4 = cs2method_10060(v4, 1);
+	}
+	switch (globalarray_0[a0]) {
+		case 2:
+			return 98042069;
+		case 3:
+			return 98042064;
+		case 4:
+			return 98042054;
+		case 5:
+			return 98042046;
+		case 7:
+			return 98042016;
+		case 8:
+			return 98042009;
+		case 9:
+			return 98042003;
+	}
+	return -1;
+}

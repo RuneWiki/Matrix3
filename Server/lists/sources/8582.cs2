@@ -1,0 +1,29 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_8582_struct(2,0,0) script_8582(int a0) {
+	switch (a0) {
+		case 18:
+			return new script_8582_struct(8978531, 8978532);
+		case 19:
+			return new script_8582_struct(96141539, 96141542);
+		case 20:
+			return new script_8582_struct(96469220, 96469223);
+		case 21:
+			return new script_8582_struct(96403684, 96403687);
+		case 22:
+			return new script_8582_struct(96338148, 96338151);
+		case 23:
+			return new script_8582_struct(30408932, 30408935);
+	}
+	return new script_8582_struct(-1, -1);
+}

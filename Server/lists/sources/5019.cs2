@@ -1,0 +1,419 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_5019_struct(4,0,0) script_5019(int a0) {
+	switch (a0) {
+		case 0:
+			return new script_5019_struct(clan_chat_configs['cfg821'].bitcfg7696, clan_chat_configs['cfg21'].bitcfg7096, clan_chat_configs['cfg21'].bitcfg7097, clan_chat_configs['cfg21'].bitcfg7098);
+		case 1:
+			return new script_5019_struct(clan_chat_configs['cfg821'].bitcfg7697, clan_chat_configs['cfg25'].bitcfg7099, clan_chat_configs['cfg25'].bitcfg7100, clan_chat_configs['cfg25'].bitcfg7101);
+		case 2:
+			return new script_5019_struct(clan_chat_configs['cfg821'].bitcfg7698, clan_chat_configs['cfg29'].bitcfg7102, clan_chat_configs['cfg29'].bitcfg7103, clan_chat_configs['cfg29'].bitcfg7104);
+		case 3:
+			return new script_5019_struct(clan_chat_configs['cfg821'].bitcfg7699, clan_chat_configs['cfg33'].bitcfg7105, clan_chat_configs['cfg33'].bitcfg7106, clan_chat_configs['cfg33'].bitcfg7107);
+		case 4:
+			return new script_5019_struct(clan_chat_configs['cfg822'].bitcfg7700, clan_chat_configs['cfg37'].bitcfg7108, clan_chat_configs['cfg37'].bitcfg7109, clan_chat_configs['cfg37'].bitcfg7110);
+		case 5:
+			return new script_5019_struct(clan_chat_configs['cfg822'].bitcfg7701, clan_chat_configs['cfg41'].bitcfg7111, clan_chat_configs['cfg41'].bitcfg7112, clan_chat_configs['cfg41'].bitcfg7113);
+		case 6:
+			return new script_5019_struct(clan_chat_configs['cfg822'].bitcfg7702, clan_chat_configs['cfg45'].bitcfg7114, clan_chat_configs['cfg45'].bitcfg7115, clan_chat_configs['cfg45'].bitcfg7116);
+		case 7:
+			return new script_5019_struct(clan_chat_configs['cfg822'].bitcfg7703, clan_chat_configs['cfg49'].bitcfg7117, clan_chat_configs['cfg49'].bitcfg7118, clan_chat_configs['cfg49'].bitcfg7119);
+		case 8:
+			return new script_5019_struct(clan_chat_configs['cfg823'].bitcfg7704, clan_chat_configs['cfg53'].bitcfg7120, clan_chat_configs['cfg53'].bitcfg7121, clan_chat_configs['cfg53'].bitcfg7122);
+		case 9:
+			return new script_5019_struct(clan_chat_configs['cfg823'].bitcfg7705, clan_chat_configs['cfg57'].bitcfg7123, clan_chat_configs['cfg57'].bitcfg7124, clan_chat_configs['cfg57'].bitcfg7125);
+		case 10:
+			return new script_5019_struct(clan_chat_configs['cfg823'].bitcfg7706, clan_chat_configs['cfg61'].bitcfg7126, clan_chat_configs['cfg61'].bitcfg7127, clan_chat_configs['cfg61'].bitcfg7128);
+		case 11:
+			return new script_5019_struct(clan_chat_configs['cfg823'].bitcfg7707, clan_chat_configs['cfg65'].bitcfg7129, clan_chat_configs['cfg65'].bitcfg7130, clan_chat_configs['cfg65'].bitcfg7131);
+		case 12:
+			return new script_5019_struct(clan_chat_configs['cfg824'].bitcfg7708, clan_chat_configs['cfg69'].bitcfg7132, clan_chat_configs['cfg69'].bitcfg7133, clan_chat_configs['cfg69'].bitcfg7134);
+		case 13:
+			return new script_5019_struct(clan_chat_configs['cfg824'].bitcfg7709, clan_chat_configs['cfg73'].bitcfg7135, clan_chat_configs['cfg73'].bitcfg7136, clan_chat_configs['cfg73'].bitcfg7137);
+		case 14:
+			return new script_5019_struct(clan_chat_configs['cfg824'].bitcfg7710, clan_chat_configs['cfg77'].bitcfg7138, clan_chat_configs['cfg77'].bitcfg7139, clan_chat_configs['cfg77'].bitcfg7140);
+		case 15:
+			return new script_5019_struct(clan_chat_configs['cfg824'].bitcfg7711, clan_chat_configs['cfg81'].bitcfg7141, clan_chat_configs['cfg81'].bitcfg7142, clan_chat_configs['cfg81'].bitcfg7143);
+		case 16:
+			return new script_5019_struct(clan_chat_configs['cfg825'].bitcfg7712, clan_chat_configs['cfg85'].bitcfg7144, clan_chat_configs['cfg85'].bitcfg7145, clan_chat_configs['cfg85'].bitcfg7146);
+		case 17:
+			return new script_5019_struct(clan_chat_configs['cfg825'].bitcfg7713, clan_chat_configs['cfg89'].bitcfg7147, clan_chat_configs['cfg89'].bitcfg7148, clan_chat_configs['cfg89'].bitcfg7149);
+		case 18:
+			return new script_5019_struct(clan_chat_configs['cfg825'].bitcfg7714, clan_chat_configs['cfg93'].bitcfg7150, clan_chat_configs['cfg93'].bitcfg7151, clan_chat_configs['cfg93'].bitcfg7152);
+		case 19:
+			return new script_5019_struct(clan_chat_configs['cfg825'].bitcfg7715, clan_chat_configs['cfg97'].bitcfg7153, clan_chat_configs['cfg97'].bitcfg7154, clan_chat_configs['cfg97'].bitcfg7155);
+		case 20:
+			return new script_5019_struct(clan_chat_configs['cfg826'].bitcfg7716, clan_chat_configs['cfg101'].bitcfg7156, clan_chat_configs['cfg101'].bitcfg7157, clan_chat_configs['cfg101'].bitcfg7158);
+		case 21:
+			return new script_5019_struct(clan_chat_configs['cfg826'].bitcfg7717, clan_chat_configs['cfg105'].bitcfg7159, clan_chat_configs['cfg105'].bitcfg7160, clan_chat_configs['cfg105'].bitcfg7161);
+		case 22:
+			return new script_5019_struct(clan_chat_configs['cfg826'].bitcfg7718, clan_chat_configs['cfg109'].bitcfg7162, clan_chat_configs['cfg109'].bitcfg7163, clan_chat_configs['cfg109'].bitcfg7164);
+		case 23:
+			return new script_5019_struct(clan_chat_configs['cfg826'].bitcfg7719, clan_chat_configs['cfg113'].bitcfg7165, clan_chat_configs['cfg113'].bitcfg7166, clan_chat_configs['cfg113'].bitcfg7167);
+		case 24:
+			return new script_5019_struct(clan_chat_configs['cfg827'].bitcfg7720, clan_chat_configs['cfg117'].bitcfg7168, clan_chat_configs['cfg117'].bitcfg7169, clan_chat_configs['cfg117'].bitcfg7170);
+		case 25:
+			return new script_5019_struct(clan_chat_configs['cfg827'].bitcfg7721, clan_chat_configs['cfg121'].bitcfg7171, clan_chat_configs['cfg121'].bitcfg7172, clan_chat_configs['cfg121'].bitcfg7173);
+		case 26:
+			return new script_5019_struct(clan_chat_configs['cfg827'].bitcfg7722, clan_chat_configs['cfg125'].bitcfg7174, clan_chat_configs['cfg125'].bitcfg7175, clan_chat_configs['cfg125'].bitcfg7176);
+		case 27:
+			return new script_5019_struct(clan_chat_configs['cfg827'].bitcfg7723, clan_chat_configs['cfg129'].bitcfg7177, clan_chat_configs['cfg129'].bitcfg7178, clan_chat_configs['cfg129'].bitcfg7179);
+		case 28:
+			return new script_5019_struct(clan_chat_configs['cfg828'].bitcfg7724, clan_chat_configs['cfg133'].bitcfg7180, clan_chat_configs['cfg133'].bitcfg7181, clan_chat_configs['cfg133'].bitcfg7182);
+		case 29:
+			return new script_5019_struct(clan_chat_configs['cfg828'].bitcfg7725, clan_chat_configs['cfg137'].bitcfg7183, clan_chat_configs['cfg137'].bitcfg7184, clan_chat_configs['cfg137'].bitcfg7185);
+		case 30:
+			return new script_5019_struct(clan_chat_configs['cfg828'].bitcfg7726, clan_chat_configs['cfg141'].bitcfg7186, clan_chat_configs['cfg141'].bitcfg7187, clan_chat_configs['cfg141'].bitcfg7188);
+		case 31:
+			return new script_5019_struct(clan_chat_configs['cfg828'].bitcfg7727, clan_chat_configs['cfg145'].bitcfg7189, clan_chat_configs['cfg145'].bitcfg7190, clan_chat_configs['cfg145'].bitcfg7191);
+		case 32:
+			return new script_5019_struct(clan_chat_configs['cfg829'].bitcfg7728, clan_chat_configs['cfg149'].bitcfg7192, clan_chat_configs['cfg149'].bitcfg7193, clan_chat_configs['cfg149'].bitcfg7194);
+		case 33:
+			return new script_5019_struct(clan_chat_configs['cfg829'].bitcfg7729, clan_chat_configs['cfg153'].bitcfg7195, clan_chat_configs['cfg153'].bitcfg7196, clan_chat_configs['cfg153'].bitcfg7197);
+		case 34:
+			return new script_5019_struct(clan_chat_configs['cfg829'].bitcfg7730, clan_chat_configs['cfg157'].bitcfg7198, clan_chat_configs['cfg157'].bitcfg7199, clan_chat_configs['cfg157'].bitcfg7200);
+		case 35:
+			return new script_5019_struct(clan_chat_configs['cfg829'].bitcfg7731, clan_chat_configs['cfg161'].bitcfg7201, clan_chat_configs['cfg161'].bitcfg7202, clan_chat_configs['cfg161'].bitcfg7203);
+		case 36:
+			return new script_5019_struct(clan_chat_configs['cfg830'].bitcfg7732, clan_chat_configs['cfg165'].bitcfg7204, clan_chat_configs['cfg165'].bitcfg7205, clan_chat_configs['cfg165'].bitcfg7206);
+		case 37:
+			return new script_5019_struct(clan_chat_configs['cfg830'].bitcfg7733, clan_chat_configs['cfg169'].bitcfg7207, clan_chat_configs['cfg169'].bitcfg7208, clan_chat_configs['cfg169'].bitcfg7209);
+		case 38:
+			return new script_5019_struct(clan_chat_configs['cfg830'].bitcfg7734, clan_chat_configs['cfg173'].bitcfg7210, clan_chat_configs['cfg173'].bitcfg7211, clan_chat_configs['cfg173'].bitcfg7212);
+		case 39:
+			return new script_5019_struct(clan_chat_configs['cfg830'].bitcfg7735, clan_chat_configs['cfg177'].bitcfg7213, clan_chat_configs['cfg177'].bitcfg7214, clan_chat_configs['cfg177'].bitcfg7215);
+		case 40:
+			return new script_5019_struct(clan_chat_configs['cfg831'].bitcfg7736, clan_chat_configs['cfg181'].bitcfg7216, clan_chat_configs['cfg181'].bitcfg7217, clan_chat_configs['cfg181'].bitcfg7218);
+		case 41:
+			return new script_5019_struct(clan_chat_configs['cfg831'].bitcfg7737, clan_chat_configs['cfg185'].bitcfg7219, clan_chat_configs['cfg185'].bitcfg7220, clan_chat_configs['cfg185'].bitcfg7221);
+		case 42:
+			return new script_5019_struct(clan_chat_configs['cfg831'].bitcfg7738, clan_chat_configs['cfg189'].bitcfg7222, clan_chat_configs['cfg189'].bitcfg7223, clan_chat_configs['cfg189'].bitcfg7224);
+		case 43:
+			return new script_5019_struct(clan_chat_configs['cfg831'].bitcfg7739, clan_chat_configs['cfg193'].bitcfg7225, clan_chat_configs['cfg193'].bitcfg7226, clan_chat_configs['cfg193'].bitcfg7227);
+		case 44:
+			return new script_5019_struct(clan_chat_configs['cfg832'].bitcfg7740, clan_chat_configs['cfg197'].bitcfg7228, clan_chat_configs['cfg197'].bitcfg7229, clan_chat_configs['cfg197'].bitcfg7230);
+		case 45:
+			return new script_5019_struct(clan_chat_configs['cfg832'].bitcfg7741, clan_chat_configs['cfg201'].bitcfg7231, clan_chat_configs['cfg201'].bitcfg7232, clan_chat_configs['cfg201'].bitcfg7233);
+		case 46:
+			return new script_5019_struct(clan_chat_configs['cfg832'].bitcfg7742, clan_chat_configs['cfg205'].bitcfg7234, clan_chat_configs['cfg205'].bitcfg7235, clan_chat_configs['cfg205'].bitcfg7236);
+		case 47:
+			return new script_5019_struct(clan_chat_configs['cfg832'].bitcfg7743, clan_chat_configs['cfg209'].bitcfg7237, clan_chat_configs['cfg209'].bitcfg7238, clan_chat_configs['cfg209'].bitcfg7239);
+		case 48:
+			return new script_5019_struct(clan_chat_configs['cfg833'].bitcfg7744, clan_chat_configs['cfg213'].bitcfg7240, clan_chat_configs['cfg213'].bitcfg7241, clan_chat_configs['cfg213'].bitcfg7242);
+		case 49:
+			return new script_5019_struct(clan_chat_configs['cfg833'].bitcfg7745, clan_chat_configs['cfg217'].bitcfg7243, clan_chat_configs['cfg217'].bitcfg7244, clan_chat_configs['cfg217'].bitcfg7245);
+		case 50:
+			return new script_5019_struct(clan_chat_configs['cfg833'].bitcfg7746, clan_chat_configs['cfg221'].bitcfg7246, clan_chat_configs['cfg221'].bitcfg7247, clan_chat_configs['cfg221'].bitcfg7248);
+		case 51:
+			return new script_5019_struct(clan_chat_configs['cfg833'].bitcfg7747, clan_chat_configs['cfg225'].bitcfg7249, clan_chat_configs['cfg225'].bitcfg7250, clan_chat_configs['cfg225'].bitcfg7251);
+		case 52:
+			return new script_5019_struct(clan_chat_configs['cfg834'].bitcfg7748, clan_chat_configs['cfg229'].bitcfg7252, clan_chat_configs['cfg229'].bitcfg7253, clan_chat_configs['cfg229'].bitcfg7254);
+		case 53:
+			return new script_5019_struct(clan_chat_configs['cfg834'].bitcfg7749, clan_chat_configs['cfg233'].bitcfg7255, clan_chat_configs['cfg233'].bitcfg7256, clan_chat_configs['cfg233'].bitcfg7257);
+		case 54:
+			return new script_5019_struct(clan_chat_configs['cfg834'].bitcfg7750, clan_chat_configs['cfg237'].bitcfg7258, clan_chat_configs['cfg237'].bitcfg7259, clan_chat_configs['cfg237'].bitcfg7260);
+		case 55:
+			return new script_5019_struct(clan_chat_configs['cfg834'].bitcfg7751, clan_chat_configs['cfg241'].bitcfg7261, clan_chat_configs['cfg241'].bitcfg7262, clan_chat_configs['cfg241'].bitcfg7263);
+		case 56:
+			return new script_5019_struct(clan_chat_configs['cfg835'].bitcfg7752, clan_chat_configs['cfg245'].bitcfg7264, clan_chat_configs['cfg245'].bitcfg7265, clan_chat_configs['cfg245'].bitcfg7266);
+		case 57:
+			return new script_5019_struct(clan_chat_configs['cfg835'].bitcfg7753, clan_chat_configs['cfg249'].bitcfg7267, clan_chat_configs['cfg249'].bitcfg7268, clan_chat_configs['cfg249'].bitcfg7269);
+		case 58:
+			return new script_5019_struct(clan_chat_configs['cfg835'].bitcfg7754, clan_chat_configs['cfg253'].bitcfg7270, clan_chat_configs['cfg253'].bitcfg7271, clan_chat_configs['cfg253'].bitcfg7272);
+		case 59:
+			return new script_5019_struct(clan_chat_configs['cfg835'].bitcfg7755, clan_chat_configs['cfg257'].bitcfg7273, clan_chat_configs['cfg257'].bitcfg7274, clan_chat_configs['cfg257'].bitcfg7275);
+		case 60:
+			return new script_5019_struct(clan_chat_configs['cfg836'].bitcfg7756, clan_chat_configs['cfg261'].bitcfg7276, clan_chat_configs['cfg261'].bitcfg7277, clan_chat_configs['cfg261'].bitcfg7278);
+		case 61:
+			return new script_5019_struct(clan_chat_configs['cfg836'].bitcfg7757, clan_chat_configs['cfg265'].bitcfg7279, clan_chat_configs['cfg265'].bitcfg7280, clan_chat_configs['cfg265'].bitcfg7281);
+		case 62:
+			return new script_5019_struct(clan_chat_configs['cfg836'].bitcfg7758, clan_chat_configs['cfg269'].bitcfg7282, clan_chat_configs['cfg269'].bitcfg7283, clan_chat_configs['cfg269'].bitcfg7284);
+		case 63:
+			return new script_5019_struct(clan_chat_configs['cfg836'].bitcfg7759, clan_chat_configs['cfg273'].bitcfg7285, clan_chat_configs['cfg273'].bitcfg7286, clan_chat_configs['cfg273'].bitcfg7287);
+		case 64:
+			return new script_5019_struct(clan_chat_configs['cfg837'].bitcfg7760, clan_chat_configs['cfg277'].bitcfg7288, clan_chat_configs['cfg277'].bitcfg7289, clan_chat_configs['cfg277'].bitcfg7290);
+		case 65:
+			return new script_5019_struct(clan_chat_configs['cfg837'].bitcfg7761, clan_chat_configs['cfg281'].bitcfg7291, clan_chat_configs['cfg281'].bitcfg7292, clan_chat_configs['cfg281'].bitcfg7293);
+		case 66:
+			return new script_5019_struct(clan_chat_configs['cfg837'].bitcfg7762, clan_chat_configs['cfg285'].bitcfg7294, clan_chat_configs['cfg285'].bitcfg7295, clan_chat_configs['cfg285'].bitcfg7296);
+		case 67:
+			return new script_5019_struct(clan_chat_configs['cfg837'].bitcfg7763, clan_chat_configs['cfg289'].bitcfg7297, clan_chat_configs['cfg289'].bitcfg7298, clan_chat_configs['cfg289'].bitcfg7299);
+		case 68:
+			return new script_5019_struct(clan_chat_configs['cfg838'].bitcfg7764, clan_chat_configs['cfg293'].bitcfg7300, clan_chat_configs['cfg293'].bitcfg7301, clan_chat_configs['cfg293'].bitcfg7302);
+		case 69:
+			return new script_5019_struct(clan_chat_configs['cfg838'].bitcfg7765, clan_chat_configs['cfg297'].bitcfg7303, clan_chat_configs['cfg297'].bitcfg7304, clan_chat_configs['cfg297'].bitcfg7305);
+		case 70:
+			return new script_5019_struct(clan_chat_configs['cfg838'].bitcfg7766, clan_chat_configs['cfg301'].bitcfg7306, clan_chat_configs['cfg301'].bitcfg7307, clan_chat_configs['cfg301'].bitcfg7308);
+		case 71:
+			return new script_5019_struct(clan_chat_configs['cfg838'].bitcfg7767, clan_chat_configs['cfg305'].bitcfg7309, clan_chat_configs['cfg305'].bitcfg7310, clan_chat_configs['cfg305'].bitcfg7311);
+		case 72:
+			return new script_5019_struct(clan_chat_configs['cfg839'].bitcfg7768, clan_chat_configs['cfg309'].bitcfg7312, clan_chat_configs['cfg309'].bitcfg7313, clan_chat_configs['cfg309'].bitcfg7314);
+		case 73:
+			return new script_5019_struct(clan_chat_configs['cfg839'].bitcfg7769, clan_chat_configs['cfg313'].bitcfg7315, clan_chat_configs['cfg313'].bitcfg7316, clan_chat_configs['cfg313'].bitcfg7317);
+		case 74:
+			return new script_5019_struct(clan_chat_configs['cfg839'].bitcfg7770, clan_chat_configs['cfg317'].bitcfg7318, clan_chat_configs['cfg317'].bitcfg7319, clan_chat_configs['cfg317'].bitcfg7320);
+		case 75:
+			return new script_5019_struct(clan_chat_configs['cfg839'].bitcfg7771, clan_chat_configs['cfg321'].bitcfg7321, clan_chat_configs['cfg321'].bitcfg7322, clan_chat_configs['cfg321'].bitcfg7323);
+		case 76:
+			return new script_5019_struct(clan_chat_configs['cfg840'].bitcfg7772, clan_chat_configs['cfg325'].bitcfg7324, clan_chat_configs['cfg325'].bitcfg7325, clan_chat_configs['cfg325'].bitcfg7326);
+		case 77:
+			return new script_5019_struct(clan_chat_configs['cfg840'].bitcfg7773, clan_chat_configs['cfg329'].bitcfg7327, clan_chat_configs['cfg329'].bitcfg7328, clan_chat_configs['cfg329'].bitcfg7329);
+		case 78:
+			return new script_5019_struct(clan_chat_configs['cfg840'].bitcfg7774, clan_chat_configs['cfg333'].bitcfg7330, clan_chat_configs['cfg333'].bitcfg7331, clan_chat_configs['cfg333'].bitcfg7332);
+		case 79:
+			return new script_5019_struct(clan_chat_configs['cfg840'].bitcfg7775, clan_chat_configs['cfg337'].bitcfg7333, clan_chat_configs['cfg337'].bitcfg7334, clan_chat_configs['cfg337'].bitcfg7335);
+		case 80:
+			return new script_5019_struct(clan_chat_configs['cfg841'].bitcfg7776, clan_chat_configs['cfg341'].bitcfg7336, clan_chat_configs['cfg341'].bitcfg7337, clan_chat_configs['cfg341'].bitcfg7338);
+		case 81:
+			return new script_5019_struct(clan_chat_configs['cfg841'].bitcfg7777, clan_chat_configs['cfg345'].bitcfg7339, clan_chat_configs['cfg345'].bitcfg7340, clan_chat_configs['cfg345'].bitcfg7341);
+		case 82:
+			return new script_5019_struct(clan_chat_configs['cfg841'].bitcfg7778, clan_chat_configs['cfg349'].bitcfg7342, clan_chat_configs['cfg349'].bitcfg7343, clan_chat_configs['cfg349'].bitcfg7344);
+		case 83:
+			return new script_5019_struct(clan_chat_configs['cfg841'].bitcfg7779, clan_chat_configs['cfg353'].bitcfg7345, clan_chat_configs['cfg353'].bitcfg7346, clan_chat_configs['cfg353'].bitcfg7347);
+		case 84:
+			return new script_5019_struct(clan_chat_configs['cfg842'].bitcfg7780, clan_chat_configs['cfg357'].bitcfg7348, clan_chat_configs['cfg357'].bitcfg7349, clan_chat_configs['cfg357'].bitcfg7350);
+		case 85:
+			return new script_5019_struct(clan_chat_configs['cfg842'].bitcfg7781, clan_chat_configs['cfg361'].bitcfg7351, clan_chat_configs['cfg361'].bitcfg7352, clan_chat_configs['cfg361'].bitcfg7353);
+		case 86:
+			return new script_5019_struct(clan_chat_configs['cfg842'].bitcfg7782, clan_chat_configs['cfg365'].bitcfg7354, clan_chat_configs['cfg365'].bitcfg7355, clan_chat_configs['cfg365'].bitcfg7356);
+		case 87:
+			return new script_5019_struct(clan_chat_configs['cfg842'].bitcfg7783, clan_chat_configs['cfg369'].bitcfg7357, clan_chat_configs['cfg369'].bitcfg7358, clan_chat_configs['cfg369'].bitcfg7359);
+		case 88:
+			return new script_5019_struct(clan_chat_configs['cfg843'].bitcfg7784, clan_chat_configs['cfg373'].bitcfg7360, clan_chat_configs['cfg373'].bitcfg7361, clan_chat_configs['cfg373'].bitcfg7362);
+		case 89:
+			return new script_5019_struct(clan_chat_configs['cfg843'].bitcfg7785, clan_chat_configs['cfg377'].bitcfg7363, clan_chat_configs['cfg377'].bitcfg7364, clan_chat_configs['cfg377'].bitcfg7365);
+		case 90:
+			return new script_5019_struct(clan_chat_configs['cfg843'].bitcfg7786, clan_chat_configs['cfg381'].bitcfg7366, clan_chat_configs['cfg381'].bitcfg7367, clan_chat_configs['cfg381'].bitcfg7368);
+		case 91:
+			return new script_5019_struct(clan_chat_configs['cfg843'].bitcfg7787, clan_chat_configs['cfg385'].bitcfg7369, clan_chat_configs['cfg385'].bitcfg7370, clan_chat_configs['cfg385'].bitcfg7371);
+		case 92:
+			return new script_5019_struct(clan_chat_configs['cfg844'].bitcfg7788, clan_chat_configs['cfg389'].bitcfg7372, clan_chat_configs['cfg389'].bitcfg7373, clan_chat_configs['cfg389'].bitcfg7374);
+		case 93:
+			return new script_5019_struct(clan_chat_configs['cfg844'].bitcfg7789, clan_chat_configs['cfg393'].bitcfg7375, clan_chat_configs['cfg393'].bitcfg7376, clan_chat_configs['cfg393'].bitcfg7377);
+		case 94:
+			return new script_5019_struct(clan_chat_configs['cfg844'].bitcfg7790, clan_chat_configs['cfg397'].bitcfg7378, clan_chat_configs['cfg397'].bitcfg7379, clan_chat_configs['cfg397'].bitcfg7380);
+		case 95:
+			return new script_5019_struct(clan_chat_configs['cfg844'].bitcfg7791, clan_chat_configs['cfg401'].bitcfg7381, clan_chat_configs['cfg401'].bitcfg7382, clan_chat_configs['cfg401'].bitcfg7383);
+		case 96:
+			return new script_5019_struct(clan_chat_configs['cfg845'].bitcfg7792, clan_chat_configs['cfg405'].bitcfg7384, clan_chat_configs['cfg405'].bitcfg7385, clan_chat_configs['cfg405'].bitcfg7386);
+		case 97:
+			return new script_5019_struct(clan_chat_configs['cfg845'].bitcfg7793, clan_chat_configs['cfg409'].bitcfg7387, clan_chat_configs['cfg409'].bitcfg7388, clan_chat_configs['cfg409'].bitcfg7389);
+		case 98:
+			return new script_5019_struct(clan_chat_configs['cfg845'].bitcfg7794, clan_chat_configs['cfg413'].bitcfg7390, clan_chat_configs['cfg413'].bitcfg7391, clan_chat_configs['cfg413'].bitcfg7392);
+		case 99:
+			return new script_5019_struct(clan_chat_configs['cfg845'].bitcfg7795, clan_chat_configs['cfg417'].bitcfg7393, clan_chat_configs['cfg417'].bitcfg7394, clan_chat_configs['cfg417'].bitcfg7395);
+		case 100:
+			return new script_5019_struct(clan_chat_configs['cfg846'].bitcfg7796, clan_chat_configs['cfg421'].bitcfg7396, clan_chat_configs['cfg421'].bitcfg7397, clan_chat_configs['cfg421'].bitcfg7398);
+		case 101:
+			return new script_5019_struct(clan_chat_configs['cfg846'].bitcfg7797, clan_chat_configs['cfg425'].bitcfg7399, clan_chat_configs['cfg425'].bitcfg7400, clan_chat_configs['cfg425'].bitcfg7401);
+		case 102:
+			return new script_5019_struct(clan_chat_configs['cfg846'].bitcfg7798, clan_chat_configs['cfg429'].bitcfg7402, clan_chat_configs['cfg429'].bitcfg7403, clan_chat_configs['cfg429'].bitcfg7404);
+		case 103:
+			return new script_5019_struct(clan_chat_configs['cfg846'].bitcfg7799, clan_chat_configs['cfg433'].bitcfg7405, clan_chat_configs['cfg433'].bitcfg7406, clan_chat_configs['cfg433'].bitcfg7407);
+		case 104:
+			return new script_5019_struct(clan_chat_configs['cfg847'].bitcfg7800, clan_chat_configs['cfg437'].bitcfg7408, clan_chat_configs['cfg437'].bitcfg7409, clan_chat_configs['cfg437'].bitcfg7410);
+		case 105:
+			return new script_5019_struct(clan_chat_configs['cfg847'].bitcfg7801, clan_chat_configs['cfg441'].bitcfg7411, clan_chat_configs['cfg441'].bitcfg7412, clan_chat_configs['cfg441'].bitcfg7413);
+		case 106:
+			return new script_5019_struct(clan_chat_configs['cfg847'].bitcfg7802, clan_chat_configs['cfg445'].bitcfg7414, clan_chat_configs['cfg445'].bitcfg7415, clan_chat_configs['cfg445'].bitcfg7416);
+		case 107:
+			return new script_5019_struct(clan_chat_configs['cfg847'].bitcfg7803, clan_chat_configs['cfg449'].bitcfg7417, clan_chat_configs['cfg449'].bitcfg7418, clan_chat_configs['cfg449'].bitcfg7419);
+		case 108:
+			return new script_5019_struct(clan_chat_configs['cfg848'].bitcfg7804, clan_chat_configs['cfg453'].bitcfg7420, clan_chat_configs['cfg453'].bitcfg7421, clan_chat_configs['cfg453'].bitcfg7422);
+		case 109:
+			return new script_5019_struct(clan_chat_configs['cfg848'].bitcfg7805, clan_chat_configs['cfg457'].bitcfg7423, clan_chat_configs['cfg457'].bitcfg7424, clan_chat_configs['cfg457'].bitcfg7425);
+		case 110:
+			return new script_5019_struct(clan_chat_configs['cfg848'].bitcfg7806, clan_chat_configs['cfg461'].bitcfg7426, clan_chat_configs['cfg461'].bitcfg7427, clan_chat_configs['cfg461'].bitcfg7428);
+		case 111:
+			return new script_5019_struct(clan_chat_configs['cfg848'].bitcfg7807, clan_chat_configs['cfg465'].bitcfg7429, clan_chat_configs['cfg465'].bitcfg7430, clan_chat_configs['cfg465'].bitcfg7431);
+		case 112:
+			return new script_5019_struct(clan_chat_configs['cfg849'].bitcfg7808, clan_chat_configs['cfg469'].bitcfg7432, clan_chat_configs['cfg469'].bitcfg7433, clan_chat_configs['cfg469'].bitcfg7434);
+		case 113:
+			return new script_5019_struct(clan_chat_configs['cfg849'].bitcfg7809, clan_chat_configs['cfg473'].bitcfg7435, clan_chat_configs['cfg473'].bitcfg7436, clan_chat_configs['cfg473'].bitcfg7437);
+		case 114:
+			return new script_5019_struct(clan_chat_configs['cfg849'].bitcfg7810, clan_chat_configs['cfg477'].bitcfg7438, clan_chat_configs['cfg477'].bitcfg7439, clan_chat_configs['cfg477'].bitcfg7440);
+		case 115:
+			return new script_5019_struct(clan_chat_configs['cfg849'].bitcfg7811, clan_chat_configs['cfg481'].bitcfg7441, clan_chat_configs['cfg481'].bitcfg7442, clan_chat_configs['cfg481'].bitcfg7443);
+		case 116:
+			return new script_5019_struct(clan_chat_configs['cfg850'].bitcfg7812, clan_chat_configs['cfg485'].bitcfg7444, clan_chat_configs['cfg485'].bitcfg7445, clan_chat_configs['cfg485'].bitcfg7446);
+		case 117:
+			return new script_5019_struct(clan_chat_configs['cfg850'].bitcfg7813, clan_chat_configs['cfg489'].bitcfg7447, clan_chat_configs['cfg489'].bitcfg7448, clan_chat_configs['cfg489'].bitcfg7449);
+		case 118:
+			return new script_5019_struct(clan_chat_configs['cfg850'].bitcfg7814, clan_chat_configs['cfg493'].bitcfg7450, clan_chat_configs['cfg493'].bitcfg7451, clan_chat_configs['cfg493'].bitcfg7452);
+		case 119:
+			return new script_5019_struct(clan_chat_configs['cfg850'].bitcfg7815, clan_chat_configs['cfg497'].bitcfg7453, clan_chat_configs['cfg497'].bitcfg7454, clan_chat_configs['cfg497'].bitcfg7455);
+		case 120:
+			return new script_5019_struct(clan_chat_configs['cfg851'].bitcfg7816, clan_chat_configs['cfg501'].bitcfg7456, clan_chat_configs['cfg501'].bitcfg7457, clan_chat_configs['cfg501'].bitcfg7458);
+		case 121:
+			return new script_5019_struct(clan_chat_configs['cfg851'].bitcfg7817, clan_chat_configs['cfg505'].bitcfg7459, clan_chat_configs['cfg505'].bitcfg7460, clan_chat_configs['cfg505'].bitcfg7461);
+		case 122:
+			return new script_5019_struct(clan_chat_configs['cfg851'].bitcfg7818, clan_chat_configs['cfg509'].bitcfg7462, clan_chat_configs['cfg509'].bitcfg7463, clan_chat_configs['cfg509'].bitcfg7464);
+		case 123:
+			return new script_5019_struct(clan_chat_configs['cfg851'].bitcfg7819, clan_chat_configs['cfg513'].bitcfg7465, clan_chat_configs['cfg513'].bitcfg7466, clan_chat_configs['cfg513'].bitcfg7467);
+		case 124:
+			return new script_5019_struct(clan_chat_configs['cfg852'].bitcfg7820, clan_chat_configs['cfg517'].bitcfg7468, clan_chat_configs['cfg517'].bitcfg7469, clan_chat_configs['cfg517'].bitcfg7470);
+		case 125:
+			return new script_5019_struct(clan_chat_configs['cfg852'].bitcfg7821, clan_chat_configs['cfg521'].bitcfg7471, clan_chat_configs['cfg521'].bitcfg7472, clan_chat_configs['cfg521'].bitcfg7473);
+		case 126:
+			return new script_5019_struct(clan_chat_configs['cfg852'].bitcfg7822, clan_chat_configs['cfg525'].bitcfg7474, clan_chat_configs['cfg525'].bitcfg7475, clan_chat_configs['cfg525'].bitcfg7476);
+		case 127:
+			return new script_5019_struct(clan_chat_configs['cfg852'].bitcfg7823, clan_chat_configs['cfg529'].bitcfg7477, clan_chat_configs['cfg529'].bitcfg7478, clan_chat_configs['cfg529'].bitcfg7479);
+		case 128:
+			return new script_5019_struct(clan_chat_configs['cfg853'].bitcfg7824, clan_chat_configs['cfg533'].bitcfg7480, clan_chat_configs['cfg533'].bitcfg7481, clan_chat_configs['cfg533'].bitcfg7482);
+		case 129:
+			return new script_5019_struct(clan_chat_configs['cfg853'].bitcfg7825, clan_chat_configs['cfg537'].bitcfg7483, clan_chat_configs['cfg537'].bitcfg7484, clan_chat_configs['cfg537'].bitcfg7485);
+		case 130:
+			return new script_5019_struct(clan_chat_configs['cfg853'].bitcfg7826, clan_chat_configs['cfg541'].bitcfg7486, clan_chat_configs['cfg541'].bitcfg7487, clan_chat_configs['cfg541'].bitcfg7488);
+		case 131:
+			return new script_5019_struct(clan_chat_configs['cfg853'].bitcfg7827, clan_chat_configs['cfg545'].bitcfg7489, clan_chat_configs['cfg545'].bitcfg7490, clan_chat_configs['cfg545'].bitcfg7491);
+		case 132:
+			return new script_5019_struct(clan_chat_configs['cfg854'].bitcfg7828, clan_chat_configs['cfg549'].bitcfg7492, clan_chat_configs['cfg549'].bitcfg7493, clan_chat_configs['cfg549'].bitcfg7494);
+		case 133:
+			return new script_5019_struct(clan_chat_configs['cfg854'].bitcfg7829, clan_chat_configs['cfg553'].bitcfg7495, clan_chat_configs['cfg553'].bitcfg7496, clan_chat_configs['cfg553'].bitcfg7497);
+		case 134:
+			return new script_5019_struct(clan_chat_configs['cfg854'].bitcfg7830, clan_chat_configs['cfg557'].bitcfg7498, clan_chat_configs['cfg557'].bitcfg7499, clan_chat_configs['cfg557'].bitcfg7500);
+		case 135:
+			return new script_5019_struct(clan_chat_configs['cfg854'].bitcfg7831, clan_chat_configs['cfg561'].bitcfg7501, clan_chat_configs['cfg561'].bitcfg7502, clan_chat_configs['cfg561'].bitcfg7503);
+		case 136:
+			return new script_5019_struct(clan_chat_configs['cfg855'].bitcfg7832, clan_chat_configs['cfg565'].bitcfg7504, clan_chat_configs['cfg565'].bitcfg7505, clan_chat_configs['cfg565'].bitcfg7506);
+		case 137:
+			return new script_5019_struct(clan_chat_configs['cfg855'].bitcfg7833, clan_chat_configs['cfg569'].bitcfg7507, clan_chat_configs['cfg569'].bitcfg7508, clan_chat_configs['cfg569'].bitcfg7509);
+		case 138:
+			return new script_5019_struct(clan_chat_configs['cfg855'].bitcfg7834, clan_chat_configs['cfg573'].bitcfg7510, clan_chat_configs['cfg573'].bitcfg7511, clan_chat_configs['cfg573'].bitcfg7512);
+		case 139:
+			return new script_5019_struct(clan_chat_configs['cfg855'].bitcfg7835, clan_chat_configs['cfg577'].bitcfg7513, clan_chat_configs['cfg577'].bitcfg7514, clan_chat_configs['cfg577'].bitcfg7515);
+		case 140:
+			return new script_5019_struct(clan_chat_configs['cfg856'].bitcfg7836, clan_chat_configs['cfg581'].bitcfg7516, clan_chat_configs['cfg581'].bitcfg7517, clan_chat_configs['cfg581'].bitcfg7518);
+		case 141:
+			return new script_5019_struct(clan_chat_configs['cfg856'].bitcfg7837, clan_chat_configs['cfg585'].bitcfg7519, clan_chat_configs['cfg585'].bitcfg7520, clan_chat_configs['cfg585'].bitcfg7521);
+		case 142:
+			return new script_5019_struct(clan_chat_configs['cfg856'].bitcfg7838, clan_chat_configs['cfg589'].bitcfg7522, clan_chat_configs['cfg589'].bitcfg7523, clan_chat_configs['cfg589'].bitcfg7524);
+		case 143:
+			return new script_5019_struct(clan_chat_configs['cfg856'].bitcfg7839, clan_chat_configs['cfg593'].bitcfg7525, clan_chat_configs['cfg593'].bitcfg7526, clan_chat_configs['cfg593'].bitcfg7527);
+		case 144:
+			return new script_5019_struct(clan_chat_configs['cfg857'].bitcfg7840, clan_chat_configs['cfg597'].bitcfg7528, clan_chat_configs['cfg597'].bitcfg7529, clan_chat_configs['cfg597'].bitcfg7530);
+		case 145:
+			return new script_5019_struct(clan_chat_configs['cfg857'].bitcfg7841, clan_chat_configs['cfg601'].bitcfg7531, clan_chat_configs['cfg601'].bitcfg7532, clan_chat_configs['cfg601'].bitcfg7533);
+		case 146:
+			return new script_5019_struct(clan_chat_configs['cfg857'].bitcfg7842, clan_chat_configs['cfg605'].bitcfg7534, clan_chat_configs['cfg605'].bitcfg7535, clan_chat_configs['cfg605'].bitcfg7536);
+		case 147:
+			return new script_5019_struct(clan_chat_configs['cfg857'].bitcfg7843, clan_chat_configs['cfg609'].bitcfg7537, clan_chat_configs['cfg609'].bitcfg7538, clan_chat_configs['cfg609'].bitcfg7539);
+		case 148:
+			return new script_5019_struct(clan_chat_configs['cfg858'].bitcfg7844, clan_chat_configs['cfg613'].bitcfg7540, clan_chat_configs['cfg613'].bitcfg7541, clan_chat_configs['cfg613'].bitcfg7542);
+		case 149:
+			return new script_5019_struct(clan_chat_configs['cfg858'].bitcfg7845, clan_chat_configs['cfg617'].bitcfg7543, clan_chat_configs['cfg617'].bitcfg7544, clan_chat_configs['cfg617'].bitcfg7545);
+		case 150:
+			return new script_5019_struct(clan_chat_configs['cfg858'].bitcfg7846, clan_chat_configs['cfg621'].bitcfg7546, clan_chat_configs['cfg621'].bitcfg7547, clan_chat_configs['cfg621'].bitcfg7548);
+		case 151:
+			return new script_5019_struct(clan_chat_configs['cfg858'].bitcfg7847, clan_chat_configs['cfg625'].bitcfg7549, clan_chat_configs['cfg625'].bitcfg7550, clan_chat_configs['cfg625'].bitcfg7551);
+		case 152:
+			return new script_5019_struct(clan_chat_configs['cfg859'].bitcfg7848, clan_chat_configs['cfg629'].bitcfg7552, clan_chat_configs['cfg629'].bitcfg7553, clan_chat_configs['cfg629'].bitcfg7554);
+		case 153:
+			return new script_5019_struct(clan_chat_configs['cfg859'].bitcfg7849, clan_chat_configs['cfg633'].bitcfg7555, clan_chat_configs['cfg633'].bitcfg7556, clan_chat_configs['cfg633'].bitcfg7557);
+		case 154:
+			return new script_5019_struct(clan_chat_configs['cfg859'].bitcfg7850, clan_chat_configs['cfg637'].bitcfg7558, clan_chat_configs['cfg637'].bitcfg7559, clan_chat_configs['cfg637'].bitcfg7560);
+		case 155:
+			return new script_5019_struct(clan_chat_configs['cfg859'].bitcfg7851, clan_chat_configs['cfg641'].bitcfg7561, clan_chat_configs['cfg641'].bitcfg7562, clan_chat_configs['cfg641'].bitcfg7563);
+		case 156:
+			return new script_5019_struct(clan_chat_configs['cfg860'].bitcfg7852, clan_chat_configs['cfg645'].bitcfg7564, clan_chat_configs['cfg645'].bitcfg7565, clan_chat_configs['cfg645'].bitcfg7566);
+		case 157:
+			return new script_5019_struct(clan_chat_configs['cfg860'].bitcfg7853, clan_chat_configs['cfg649'].bitcfg7567, clan_chat_configs['cfg649'].bitcfg7568, clan_chat_configs['cfg649'].bitcfg7569);
+		case 158:
+			return new script_5019_struct(clan_chat_configs['cfg860'].bitcfg7854, clan_chat_configs['cfg653'].bitcfg7570, clan_chat_configs['cfg653'].bitcfg7571, clan_chat_configs['cfg653'].bitcfg7572);
+		case 159:
+			return new script_5019_struct(clan_chat_configs['cfg860'].bitcfg7855, clan_chat_configs['cfg657'].bitcfg7573, clan_chat_configs['cfg657'].bitcfg7574, clan_chat_configs['cfg657'].bitcfg7575);
+		case 160:
+			return new script_5019_struct(clan_chat_configs['cfg861'].bitcfg7856, clan_chat_configs['cfg661'].bitcfg7576, clan_chat_configs['cfg661'].bitcfg7577, clan_chat_configs['cfg661'].bitcfg7578);
+		case 161:
+			return new script_5019_struct(clan_chat_configs['cfg861'].bitcfg7857, clan_chat_configs['cfg665'].bitcfg7579, clan_chat_configs['cfg665'].bitcfg7580, clan_chat_configs['cfg665'].bitcfg7581);
+		case 162:
+			return new script_5019_struct(clan_chat_configs['cfg861'].bitcfg7858, clan_chat_configs['cfg669'].bitcfg7582, clan_chat_configs['cfg669'].bitcfg7583, clan_chat_configs['cfg669'].bitcfg7584);
+		case 163:
+			return new script_5019_struct(clan_chat_configs['cfg861'].bitcfg7859, clan_chat_configs['cfg673'].bitcfg7585, clan_chat_configs['cfg673'].bitcfg7586, clan_chat_configs['cfg673'].bitcfg7587);
+		case 164:
+			return new script_5019_struct(clan_chat_configs['cfg862'].bitcfg7860, clan_chat_configs['cfg677'].bitcfg7588, clan_chat_configs['cfg677'].bitcfg7589, clan_chat_configs['cfg677'].bitcfg7590);
+		case 165:
+			return new script_5019_struct(clan_chat_configs['cfg862'].bitcfg7861, clan_chat_configs['cfg681'].bitcfg7591, clan_chat_configs['cfg681'].bitcfg7592, clan_chat_configs['cfg681'].bitcfg7593);
+		case 166:
+			return new script_5019_struct(clan_chat_configs['cfg862'].bitcfg7862, clan_chat_configs['cfg685'].bitcfg7594, clan_chat_configs['cfg685'].bitcfg7595, clan_chat_configs['cfg685'].bitcfg7596);
+		case 167:
+			return new script_5019_struct(clan_chat_configs['cfg862'].bitcfg7863, clan_chat_configs['cfg689'].bitcfg7597, clan_chat_configs['cfg689'].bitcfg7598, clan_chat_configs['cfg689'].bitcfg7599);
+		case 168:
+			return new script_5019_struct(clan_chat_configs['cfg863'].bitcfg7864, clan_chat_configs['cfg693'].bitcfg7600, clan_chat_configs['cfg693'].bitcfg7601, clan_chat_configs['cfg693'].bitcfg7602);
+		case 169:
+			return new script_5019_struct(clan_chat_configs['cfg863'].bitcfg7865, clan_chat_configs['cfg697'].bitcfg7603, clan_chat_configs['cfg697'].bitcfg7604, clan_chat_configs['cfg697'].bitcfg7605);
+		case 170:
+			return new script_5019_struct(clan_chat_configs['cfg863'].bitcfg7866, clan_chat_configs['cfg701'].bitcfg7606, clan_chat_configs['cfg701'].bitcfg7607, clan_chat_configs['cfg701'].bitcfg7608);
+		case 171:
+			return new script_5019_struct(clan_chat_configs['cfg863'].bitcfg7867, clan_chat_configs['cfg705'].bitcfg7609, clan_chat_configs['cfg705'].bitcfg7610, clan_chat_configs['cfg705'].bitcfg7611);
+		case 172:
+			return new script_5019_struct(clan_chat_configs['cfg864'].bitcfg7868, clan_chat_configs['cfg709'].bitcfg7612, clan_chat_configs['cfg709'].bitcfg7613, clan_chat_configs['cfg709'].bitcfg7614);
+		case 173:
+			return new script_5019_struct(clan_chat_configs['cfg864'].bitcfg7869, clan_chat_configs['cfg713'].bitcfg7615, clan_chat_configs['cfg713'].bitcfg7616, clan_chat_configs['cfg713'].bitcfg7617);
+		case 174:
+			return new script_5019_struct(clan_chat_configs['cfg864'].bitcfg7870, clan_chat_configs['cfg717'].bitcfg7618, clan_chat_configs['cfg717'].bitcfg7619, clan_chat_configs['cfg717'].bitcfg7620);
+		case 175:
+			return new script_5019_struct(clan_chat_configs['cfg864'].bitcfg7871, clan_chat_configs['cfg721'].bitcfg7621, clan_chat_configs['cfg721'].bitcfg7622, clan_chat_configs['cfg721'].bitcfg7623);
+		case 176:
+			return new script_5019_struct(clan_chat_configs['cfg865'].bitcfg7872, clan_chat_configs['cfg725'].bitcfg7624, clan_chat_configs['cfg725'].bitcfg7625, clan_chat_configs['cfg725'].bitcfg7626);
+		case 177:
+			return new script_5019_struct(clan_chat_configs['cfg865'].bitcfg7873, clan_chat_configs['cfg729'].bitcfg7627, clan_chat_configs['cfg729'].bitcfg7628, clan_chat_configs['cfg729'].bitcfg7629);
+		case 178:
+			return new script_5019_struct(clan_chat_configs['cfg865'].bitcfg7874, clan_chat_configs['cfg733'].bitcfg7630, clan_chat_configs['cfg733'].bitcfg7631, clan_chat_configs['cfg733'].bitcfg7632);
+		case 179:
+			return new script_5019_struct(clan_chat_configs['cfg865'].bitcfg7875, clan_chat_configs['cfg737'].bitcfg7633, clan_chat_configs['cfg737'].bitcfg7634, clan_chat_configs['cfg737'].bitcfg7635);
+		case 180:
+			return new script_5019_struct(clan_chat_configs['cfg866'].bitcfg7876, clan_chat_configs['cfg741'].bitcfg7636, clan_chat_configs['cfg741'].bitcfg7637, clan_chat_configs['cfg741'].bitcfg7638);
+		case 181:
+			return new script_5019_struct(clan_chat_configs['cfg866'].bitcfg7877, clan_chat_configs['cfg745'].bitcfg7639, clan_chat_configs['cfg745'].bitcfg7640, clan_chat_configs['cfg745'].bitcfg7641);
+		case 182:
+			return new script_5019_struct(clan_chat_configs['cfg866'].bitcfg7878, clan_chat_configs['cfg749'].bitcfg7642, clan_chat_configs['cfg749'].bitcfg7643, clan_chat_configs['cfg749'].bitcfg7644);
+		case 183:
+			return new script_5019_struct(clan_chat_configs['cfg866'].bitcfg7879, clan_chat_configs['cfg753'].bitcfg7645, clan_chat_configs['cfg753'].bitcfg7646, clan_chat_configs['cfg753'].bitcfg7647);
+		case 184:
+			return new script_5019_struct(clan_chat_configs['cfg867'].bitcfg7880, clan_chat_configs['cfg757'].bitcfg7648, clan_chat_configs['cfg757'].bitcfg7649, clan_chat_configs['cfg757'].bitcfg7650);
+		case 185:
+			return new script_5019_struct(clan_chat_configs['cfg867'].bitcfg7881, clan_chat_configs['cfg761'].bitcfg7651, clan_chat_configs['cfg761'].bitcfg7652, clan_chat_configs['cfg761'].bitcfg7653);
+		case 186:
+			return new script_5019_struct(clan_chat_configs['cfg867'].bitcfg7882, clan_chat_configs['cfg765'].bitcfg7654, clan_chat_configs['cfg765'].bitcfg7655, clan_chat_configs['cfg765'].bitcfg7656);
+		case 187:
+			return new script_5019_struct(clan_chat_configs['cfg867'].bitcfg7883, clan_chat_configs['cfg769'].bitcfg7657, clan_chat_configs['cfg769'].bitcfg7658, clan_chat_configs['cfg769'].bitcfg7659);
+		case 188:
+			return new script_5019_struct(clan_chat_configs['cfg868'].bitcfg7884, clan_chat_configs['cfg773'].bitcfg7660, clan_chat_configs['cfg773'].bitcfg7661, clan_chat_configs['cfg773'].bitcfg7662);
+		case 189:
+			return new script_5019_struct(clan_chat_configs['cfg868'].bitcfg7885, clan_chat_configs['cfg777'].bitcfg7663, clan_chat_configs['cfg777'].bitcfg7664, clan_chat_configs['cfg777'].bitcfg7665);
+		case 190:
+			return new script_5019_struct(clan_chat_configs['cfg868'].bitcfg7886, clan_chat_configs['cfg781'].bitcfg7666, clan_chat_configs['cfg781'].bitcfg7667, clan_chat_configs['cfg781'].bitcfg7668);
+		case 191:
+			return new script_5019_struct(clan_chat_configs['cfg868'].bitcfg7887, clan_chat_configs['cfg785'].bitcfg7669, clan_chat_configs['cfg785'].bitcfg7670, clan_chat_configs['cfg785'].bitcfg7671);
+		case 192:
+			return new script_5019_struct(clan_chat_configs['cfg869'].bitcfg7888, clan_chat_configs['cfg789'].bitcfg7672, clan_chat_configs['cfg789'].bitcfg7673, clan_chat_configs['cfg789'].bitcfg7674);
+		case 193:
+			return new script_5019_struct(clan_chat_configs['cfg869'].bitcfg7889, clan_chat_configs['cfg793'].bitcfg7675, clan_chat_configs['cfg793'].bitcfg7676, clan_chat_configs['cfg793'].bitcfg7677);
+		case 194:
+			return new script_5019_struct(clan_chat_configs['cfg869'].bitcfg7890, clan_chat_configs['cfg797'].bitcfg7678, clan_chat_configs['cfg797'].bitcfg7679, clan_chat_configs['cfg797'].bitcfg7680);
+		case 195:
+			return new script_5019_struct(clan_chat_configs['cfg869'].bitcfg7891, clan_chat_configs['cfg801'].bitcfg7681, clan_chat_configs['cfg801'].bitcfg7682, clan_chat_configs['cfg801'].bitcfg7683);
+		case 196:
+			return new script_5019_struct(clan_chat_configs['cfg870'].bitcfg7892, clan_chat_configs['cfg805'].bitcfg7684, clan_chat_configs['cfg805'].bitcfg7685, clan_chat_configs['cfg805'].bitcfg7686);
+		case 197:
+			return new script_5019_struct(clan_chat_configs['cfg870'].bitcfg7893, clan_chat_configs['cfg809'].bitcfg7687, clan_chat_configs['cfg809'].bitcfg7688, clan_chat_configs['cfg809'].bitcfg7689);
+		case 198:
+			return new script_5019_struct(clan_chat_configs['cfg870'].bitcfg7894, clan_chat_configs['cfg813'].bitcfg7690, clan_chat_configs['cfg813'].bitcfg7691, clan_chat_configs['cfg813'].bitcfg7692);
+		case 199:
+			return new script_5019_struct(clan_chat_configs['cfg870'].bitcfg7895, clan_chat_configs['cfg817'].bitcfg7693, clan_chat_configs['cfg817'].bitcfg7694, clan_chat_configs['cfg817'].bitcfg7695);
+		case 200:
+			return new script_5019_struct(0, -1, -1, -1);
+	}
+	return new script_5019_struct(0, -1, -1, -1);
+}

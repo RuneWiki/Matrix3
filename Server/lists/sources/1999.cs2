@@ -1,0 +1,102 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_1999(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7) {
+	flow_0:
+		int v3 = client_configs['cfg1749'];
+		int v2 = client_configs['cfg1750'];
+		int v1 = client_configs['cfg1751'];
+		int v0 = client_configs['cfg1752'];
+		if (a2 == 0 && (v2 != 0 || v1 != 0 || v0 != 0 || client_configs['cfg1749'] != 0)) {
+			a2 = 1;
+		}
+		IF (a2 == 1) 
+			GOTO	flow_4
+		GOTO	flow_25
+	flow_4:
+		IF (cs2_configs['cfg1745'] == 1) 
+			GOTO	flow_5
+		GOTO	flow_9
+	flow_5:
+		IF (cs2method_10343() == 0) 
+			GOTO	flow_6
+		GOTO	flow_6
+	flow_6:
+		if (cs2method_10343() == 1) {
+			script_1299(a1);
+			cs2method_20162(new function<none>() {
+			}, "", new WidgetPointer(a5));
+			cs2method_11093(a7);
+			cs2method_10150(a3);
+			cs2method_10187(a0);
+			cs2method_10656(a6);
+			cs2_configs['cfg1745'] = 0;
+			return;
+		}
+		GOTO	flow_25
+	flow_9:
+		if (cs2method_10210() == 0 && v1 > 0 && v1 < v0) {
+			flow_12:
+				IF ((int)/*dang!*/special5(5) == 1) 
+					GOTO	flow_13
+				GOTO	flow_13
+			flow_13:
+				cs2_configs['cfg1745'] = 1;
+				script_5874();
+				return;
+		}
+		IF (cs2method_10948() <= cs2method_10060(v3, 30)) 
+			GOTO	flow_15
+		GOTO	flow_17
+	flow_15:
+		IF ((int)/*dang!*/special5(1) == 1) 
+			GOTO	flow_16
+		GOTO	flow_16
+	flow_16:
+		cs2_configs['cfg1745'] = 1;
+		script_5874();
+		GOTO	flow_25
+	flow_17:
+		IF (cs2method_10948() <= cs2method_10060(v3, 182)) 
+			GOTO	flow_18
+		GOTO	flow_20
+	flow_18:
+		IF ((int)/*dang!*/special5(2) == 1) 
+			GOTO	flow_19
+		GOTO	flow_19
+	flow_19:
+		cs2_configs['cfg1745'] = 1;
+		script_5874();
+		GOTO	flow_25
+	flow_20:
+		IF (cs2method_10948() <= cs2method_10060(v3, 365)) 
+			GOTO	flow_21
+		GOTO	flow_23
+	flow_21:
+		IF ((int)/*dang!*/special5(3) == 1) 
+			GOTO	flow_22
+		GOTO	flow_22
+	flow_22:
+		cs2_configs['cfg1745'] = 1;
+		script_5874();
+		GOTO	flow_25
+	flow_23:
+		IF ((int)/*dang!*/special5(4) == 1) 
+			GOTO	flow_24
+		GOTO	flow_24
+	flow_24:
+		cs2_configs['cfg1745'] = 1;
+		script_5874();
+	flow_25:
+		return;
+}

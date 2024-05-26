@@ -1,0 +1,178 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_83(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12,int a13,int a14,int a15,int a16,int a17,int a18,int a19) {
+	script_7752(a9);
+	script_7752(a13);
+	script_7752(a0);
+	script_7752(a7);
+	script_7752(a12);
+	script_2670(a18, a8, a16, a19, a14, a11, a17, a1, cs2_configs['cfg91']);
+	cs2method_10520(idx17mapData('i', 'i', 3724, client_configs['cfg458'].bitcfg1188), a2);
+	int v0 = cs2method_11055();
+	script_2730(a2, v0);
+	cs2method_20162(new function<script_2729>(int a0,int a1,int a2) {
+		int v0 = cs2method_11055();
+		if (v0 != 1) {
+			if (a1 != 1) {
+				return;
+			}
+		} else {
+			if (a1 == 1) {
+				return;
+			}
+		}
+		script_2730(a0, v0);
+		cs2method_20162(load function<2729>, new WidgetPointer(-32768,3), new WidgetPointer(a0), v0, "IIi", new WidgetPointer(a2));
+		return;
+	}, new WidgetPointer(-32768,3), new WidgetPointer(a2), v0, "IIi", new WidgetPointer(a10));
+	script_2731(64356386, 0, a6, a2, a0, a5, a4, a3);
+	script_2731(64356387, 1, a6, a2, a0, a5, a4, a3);
+	script_2731(64356388, 2, a6, a2, a0, a5, a4, a3);
+	script_2731(64356389, 3, a6, a2, a0, a5, a4, a3);
+	script_2731(64356390, 4, a6, a2, a0, a5, a4, a3);
+	script_2731(64356391, 5, a6, a2, a0, a5, a4, a3);
+	script_2731(64356392, 6, a6, a2, a0, a5, a4, a3);
+	script_2731(64356393, 7, a6, a2, a0, a5, a4, a3);
+	script_2731(64356394, 8, a6, a2, a0, a5, a4, a3);
+	script_2731(64356395, 9, a6, a2, a0, a5, a4, a3);
+	script_2731(64356396, 10, a6, a2, a0, a5, a4, a3);
+	script_2731(64356397, 11, a6, a2, a0, a5, a4, a3);
+	script_2731(64356398, 12, a6, a2, a0, a5, a4, a3);
+	script_2731(64356399, 13, a6, a2, a0, a5, a4, a3);
+	script_2731(64356400, 14, a6, a2, a0, a5, a4, a3);
+	script_2731(64356401, 15, a6, a2, a0, a5, a4, a3);
+	script_2731(64356402, 20, a6, a2, a0, a5, a4, a3);
+	script_2731(64356403, 17, a6, a2, a0, a5, a4, a3);
+	script_2731(64356404, 18, a6, a2, a0, a5, a4, a3);
+	script_2731(64356405, 19, a6, a2, a0, a5, a4, a3);
+	cs2method_10520(idx17mapData('i', 'i', 3723, client_configs['cfg458'].bitcfg1190), a4);
+	script_2730(a4, v0);
+	cs2method_20162(new function<script_2729>(int a0,int a1,int a2) {
+		int v0 = cs2method_11055();
+		if (v0 != 1) {
+			if (a1 != 1) {
+				return;
+			}
+		} else {
+			if (a1 == 1) {
+				return;
+			}
+		}
+		script_2730(a0, v0);
+		cs2method_20162(load function<2729>, new WidgetPointer(-32768,3), new WidgetPointer(a0), v0, "IIi", new WidgetPointer(a2));
+		return;
+	}, new WidgetPointer(-32768,3), new WidgetPointer(a4), v0, "IIi", new WidgetPointer(a10));
+	script_4426(64356438, 0, a6, a2, a0, a5, a4, a3);
+	script_4426(64356439, 1, a6, a2, a0, a5, a4, a3);
+	script_4426(64356440, 2, a6, a2, a0, a5, a4, a3);
+	script_4426(64356441, 3, a6, a2, a0, a5, a4, a3);
+	script_4426(64356442, 4, a6, a2, a0, a5, a4, a3);
+	script_4426(64356443, 5, a6, a2, a0, a5, a4, a3);
+	script_4426(64356444, 6, a6, a2, a0, a5, a4, a3);
+	script_4426(64356445, 7, a6, a2, a0, a5, a4, a3);
+	script_4426(64356446, 8, a6, a2, a0, a5, a4, a3);
+	script_4426(64356447, 9, a6, a2, a0, a5, a4, a3);
+	script_4426(64356448, 10, a6, a2, a0, a5, a4, a3);
+	script_4426(64356449, 11, a6, a2, a0, a5, a4, a3);
+	script_4426(64356450, 12, a6, a2, a0, a5, a4, a3);
+	script_4426(64356451, 13, a6, a2, a0, a5, a4, a3);
+	script_4426(64356452, 14, a6, a2, a0, a5, a4, a3);
+	script_4426(64356453, 15, a6, a2, a0, a5, a4, a3);
+	script_4426(64356454, 20, a6, a2, a0, a5, a4, a3);
+	script_4426(64356455, 17, a6, a2, a0, a5, a4, a3);
+	script_4426(64356456, 18, a6, a2, a0, a5, a4, a3);
+	script_4426(64356457, 19, a6, a2, a0, a5, a4, a3);
+	cs2method_10520(idx17mapData('i', 'i', 3726, client_configs['cfg458'].bitcfg1191), a3);
+	script_2730(a3, v0);
+	cs2method_20162(new function<script_2729>(int a0,int a1,int a2) {
+		int v0 = cs2method_11055();
+		if (v0 != 1) {
+			if (a0 != 1) {
+				return;
+			}
+		} else {
+			if (a0 == 1) {
+				return;
+			}
+		}
+		script_2730(a1, v0);
+		cs2method_20162(load function<2729>, new WidgetPointer(-32768,3), new WidgetPointer(a1), v0, "IIi", new WidgetPointer(a2));
+		return;
+	}, new WidgetPointer(-32768,3), new WidgetPointer(a3), v0, "IIi", new WidgetPointer(a10));
+	script_4584(64356462, 0, a6, a2, a0, a5, a4, a3);
+	script_4584(64356463, 1, a6, a2, a0, a5, a4, a3);
+	script_4584(64356464, 2, a6, a2, a0, a5, a4, a3);
+	script_4584(64356465, 3, a6, a2, a0, a5, a4, a3);
+	script_4584(64356466, 4, a6, a2, a0, a5, a4, a3);
+	script_4584(64356467, 5, a6, a2, a0, a5, a4, a3);
+	script_4584(64356468, 6, a6, a2, a0, a5, a4, a3);
+	script_4584(64356469, 7, a6, a2, a0, a5, a4, a3);
+	script_4584(64356470, 8, a6, a2, a0, a5, a4, a3);
+	script_4584(64356471, 9, a6, a2, a0, a5, a4, a3);
+	script_4584(64356472, 10, a6, a2, a0, a5, a4, a3);
+	script_4584(64356473, 11, a6, a2, a0, a5, a4, a3);
+	script_4584(64356474, 12, a6, a2, a0, a5, a4, a3);
+	script_4584(64356475, 13, a6, a2, a0, a5, a4, a3);
+	script_4584(64356476, 14, a6, a2, a0, a5, a4, a3);
+	script_4584(64356477, 15, a6, a2, a0, a5, a4, a3);
+	script_4584(64356478, 20, a6, a2, a0, a5, a4, a3);
+	script_4584(64356479, 17, a6, a2, a0, a5, a4, a3);
+	script_4584(64356480, 18, a6, a2, a0, a5, a4, a3);
+	script_4584(64356481, 19, a6, a2, a0, a5, a4, a3);
+	if (client_configs['cfg457'] <= 0) {
+		cs2method_10467(1, a0);
+	} else {
+		cs2method_10467(0, a0);
+	}
+	cs2method_10520(idx17mapData('i', 'i', 3056, client_configs['cfg457']), a5);
+	cs2method_11101(idx17mapData('i', '1', 3057, client_configs['cfg457']), a5);
+	script_176(64356415, 1, a6, a2, a0, a5, a4, a3);
+	script_176(64356416, 2, a6, a2, a0, a5, a4, a3);
+	script_176(64356417, 3, a6, a2, a0, a5, a4, a3);
+	script_176(64356418, 4, a6, a2, a0, a5, a4, a3);
+	script_176(64356419, 5, a6, a2, a0, a5, a4, a3);
+	script_176(64356420, 6, a6, a2, a0, a5, a4, a3);
+	script_176(64356421, 7, a6, a2, a0, a5, a4, a3);
+	script_176(64356422, 8, a6, a2, a0, a5, a4, a3);
+	script_176(64356423, 9, a6, a2, a0, a5, a4, a3);
+	script_176(64356424, 10, a6, a2, a0, a5, a4, a3);
+	script_176(64356425, 11, a6, a2, a0, a5, a4, a3);
+	script_176(64356426, 12, a6, a2, a0, a5, a4, a3);
+	script_176(64356427, 13, a6, a2, a0, a5, a4, a3);
+	script_176(64356428, 14, a6, a2, a0, a5, a4, a3);
+	script_176(64356429, 15, a6, a2, a0, a5, a4, a3);
+	script_176(64356430, 16, a6, a2, a0, a5, a4, a3);
+	script_176(64356431, 17, a6, a2, a0, a5, a4, a3);
+	script_176(64356432, 18, a6, a2, a0, a5, a4, a3);
+	cs2method_20486(new function<script_3417>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7) {
+		if (a0 != 1) {
+			return;
+		}
+		if (client_configs['cfg457'] == a2) {
+			if (a2 == 0) {
+				a2 = 1;
+			} else {
+				return;
+			}
+		}
+		client_configs['cfg457'] = a2;
+		script_6739(26);
+		script_2735(a7, a6, a3, a5, a1, a4);
+		return;
+	}, -2147483644, 0, new WidgetPointer(a6), new WidgetPointer(a2), new WidgetPointer(a0), new WidgetPointer(a5), new WidgetPointer(a4), new WidgetPointer(a3), "iiIIIIII", new WidgetPointer(a15));
+	cs2method_20348(new function<script_2734>(int a0,int a1,int a2,int a3,int a4,int a5) {
+		script_2735(a2, a0, a1, a3, a5, a4);
+		return;
+	}, new WidgetPointer(a6), new WidgetPointer(a2), new WidgetPointer(a0), new WidgetPointer(a5), new WidgetPointer(a4), new WidgetPointer(a3), 457, 458, 2, "IIIIIIY", new WidgetPointer(a10));
+	return;
+}

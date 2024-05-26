@@ -1,0 +1,170 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2717() {
+	int v4;
+	int v5;
+	int v3 = 0;
+	int v2 = cs2method_10338(25);
+	if (v2 >= 95) {
+		v4 = 12;
+	} else if (v2 >= 90) {
+		v4 = 11;
+	} else if (v2 >= 85) {
+		v4 = 10;
+	} else if (v2 >= 80) {
+		v4 = 9;
+	} else if (v2 >= 70) {
+		v4 = 8;
+	} else if (v2 >= 60) {
+		v4 = 7;
+	} else if (v2 >= 50) {
+		v4 = 6;
+	} else if (v2 >= 40) {
+		v4 = 5;
+	} else if (v2 >= 30) {
+		v4 = 4;
+	} else if (v2 >= 20) {
+		v4 = 3;
+	} else if (v2 >= 10) {
+		v4 = 2;
+	} else {
+		v4 = 1;
+	}
+	int v6 = 1;
+	int v1 = -1;
+	switch (v4) {
+		case 1:
+			v5 = 6029333;
+			break;
+		case 2:
+			v5 = 6029334;
+			break;
+		case 3:
+			v5 = 6029335;
+			break;
+		case 4:
+			v5 = 6029336;
+			break;
+		case 5:
+			v5 = 6029337;
+			break;
+		case 6:
+			v5 = 6029338;
+			break;
+		case 7:
+			v5 = 6029339;
+			break;
+		case 8:
+			v5 = 6029340;
+			break;
+		case 9:
+			v5 = 6029341;
+			break;
+		case 10:
+			v5 = 6029342;
+			break;
+		case 11:
+			v5 = 6029343;
+			break;
+		case 12:
+			v5 = 6029344;
+			break;
+		default:
+			return;
+	}
+	cs2method_10758(20361, v5);
+	while (v6 < v4) {
+		int v7;
+		switch (v6) {
+			case 1:
+				v7 = 6029333;
+				break;
+			case 2:
+				v7 = 6029334;
+				break;
+			case 3:
+				v7 = 6029335;
+				break;
+			case 4:
+				v7 = 6029336;
+				break;
+			case 5:
+				v7 = 6029337;
+				break;
+			case 6:
+				v7 = 6029338;
+				break;
+			case 7:
+				v7 = 6029339;
+				break;
+			case 8:
+				v7 = 6029340;
+				break;
+			case 9:
+				v7 = 6029341;
+				break;
+			case 10:
+				v7 = 6029342;
+				break;
+			case 11:
+				v7 = 6029343;
+				break;
+			default:
+				return;
+		}
+		cs2method_10758(20360, v7);
+		v6 = cs2method_10060(v6, 1);
+	}
+	for (int v0 = 12; v0 > v4; v0 = cs2method_10461(v0, 1)) {
+		int v7;
+		switch (v0) {
+			case 2:
+				v7 = 6029334;
+				break;
+			case 3:
+				v7 = 6029335;
+				break;
+			case 4:
+				v7 = 6029336;
+				break;
+			case 5:
+				v7 = 6029337;
+				break;
+			case 6:
+				v7 = 6029338;
+				break;
+			case 7:
+				v7 = 6029339;
+				break;
+			case 8:
+				v7 = 6029340;
+				break;
+			case 9:
+				v7 = 6029341;
+				break;
+			case 10:
+				v7 = 6029342;
+				break;
+			case 11:
+				v7 = 6029343;
+				break;
+			case 12:
+				v7 = 6029344;
+				break;
+			default:
+				return;
+		}
+		cs2method_10758(20362, v7);
+	}
+	return;
+}

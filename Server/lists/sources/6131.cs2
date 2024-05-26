@@ -1,0 +1,38 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6131(int a0,int a1) {
+	cs2_configs['cfg1889'] = a1;
+	cs2_configs['cfg1890'] = a0;
+	cs2_configs['cfg1892'] = 50;
+	cs2method_20162(new function<none>() {
+	}, "", new WidgetPointer(1270,34));
+	cs2method_20162(new function<script_6140>(int a0,int a1) {
+		int v1 = 10;
+		int v2 = cs2method_10461(cs2method_10051(a0, 100), cs2_configs['cfg1886']);
+		int v3 = cs2method_10461(cs2method_10051(a1, 100), cs2_configs['cfg1887']);
+		int v0 = 100;
+		if (v2 <= v0 && v2 >= cs2method_10461(0, v0) && v3 <= v0 && v3 >= cs2method_10461(0, v0)) {
+			script_6142(a0, a1);
+			cs2_configs['cfg1886'] = cs2method_10051(a0, 100);
+			cs2_configs['cfg1887'] = cs2method_10051(a1, 100);
+		} else {
+			int v4 = cs2method_10122(v1, 100, v2);
+			int v5 = cs2method_10122(v1, 100, v3);
+			cs2_configs['cfg1886'] = cs2method_10060(cs2_configs['cfg1886'], v4);
+			cs2_configs['cfg1887'] = cs2method_10060(cs2_configs['cfg1887'], v5);
+			script_6142(cs2method_10968(cs2_configs['cfg1886'], 100), cs2method_10968(cs2_configs['cfg1887'], 100));
+		}
+		return;
+	}, a1, a0, "ii", new WidgetPointer(1270,34));
+	return;
+}

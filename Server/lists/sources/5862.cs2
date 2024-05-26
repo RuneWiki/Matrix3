@@ -1,0 +1,68 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_5862(int a0,int a1) {
+	flow_0:
+		IF (a0 == 5509) 
+			GOTO	flow_1
+		GOTO	flow_2
+	flow_1:
+		IF (client_configs['cfg3214'].bitcfg16497 > 0) 
+			GOTO	flow_8
+	flow_2:
+		IF (a0 == 5510) 
+			GOTO	flow_3
+		GOTO	flow_4
+	flow_3:
+		IF (client_configs['cfg3214'].bitcfg16498 > 0) 
+			GOTO	flow_8
+	flow_4:
+		IF (a0 == 5512) 
+			GOTO	flow_5
+		GOTO	flow_6
+	flow_5:
+		IF (client_configs['cfg3214'].bitcfg16499 > 0) 
+			GOTO	flow_8
+	flow_6:
+		IF (a0 == 5514 && client_configs['cfg3214'].bitcfg16500 > 0) 
+			GOTO	flow_8
+		GOTO	flow_9
+	flow_8:
+		script_2410(cs2method_10940(a0, 2), cs2method_10940(a0, 1), cs2method_10940(a0, 3), cs2method_10291(a0, 2), cs2method_10291(a0, 1), cs2method_10940(a0, 4), cs2method_10940(a0, 5), cs2method_10291(a0, 3), cs2method_10291(a0, 4), cs2method_10291(a0, 5), cs2method_10018(a0), a1);
+		GOTO	flow_10
+	flow_9:
+		script_2410(cs2method_10940(a0, 1), cs2method_10940(a0, 2), cs2method_10940(a0, 3), cs2method_10291(a0, 1), cs2method_10291(a0, 2), cs2method_10940(a0, 4), cs2method_10940(a0, 5), cs2method_10291(a0, 3), cs2method_10291(a0, 4), cs2method_10291(a0, 5), cs2method_10018(a0), a1);
+	flow_10:
+		cs2method_20835(new function<script_6469>(int a0,int a1,int a2,int a3) {
+			flow_0:
+				IF (a0 == -1) 
+					GOTO	flow_1
+				GOTO	flow_2
+			flow_1:
+				IF (cs2method_10324(a2) == 1) 
+					GOTO	flow_3
+			flow_2:
+				IF (cs2method_11038(a2, a0) == 1) 
+					GOTO	flow_3
+				GOTO	flow_6
+			flow_3:
+				if (cs2method_10487() != a3) {
+					return;
+				}
+				cs2method_10620();
+				script_2833(a3, a1);
+			flow_6:
+				return;
+		}, new WidgetPointer(-32768,3), -2147483643, a0, a1, 3214, 1, "Iio1Y");
+		return;
+}

@@ -1,0 +1,394 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_8499_struct(2,0,0) script_8499(int a0,int a1,int a2,int a3,object a4,int a5) {
+	int v28;
+	int v27;
+	int v25 = -1;
+	int v20 = -1;
+	switch (a0) {
+		case 0:
+			script_8563_struct(2,0,0) v8 = script_8563();
+			v28 = v8.intpart_1;
+			v27 = v8.intpart_0;
+			break;
+		case 1:
+			script_8565_struct(2,0,0) v14 = script_8565();
+			v28 = v14.intpart_1;
+			v27 = v14.intpart_0;
+			break;
+		case 2:
+			script_8567_struct(2,0,0) v1 = script_8567();
+			v28 = v1.intpart_1;
+			v27 = v1.intpart_0;
+			break;
+		case 3:
+			script_8569_struct(2,0,0) v15 = script_8569();
+			v28 = v15.intpart_1;
+			v27 = v15.intpart_0;
+			break;
+		case 4:
+			script_8571_struct(2,0,0) v17 = script_8571();
+			v28 = v17.intpart_1;
+			v27 = v17.intpart_0;
+			break;
+		case 5:
+			script_8573_struct(2,0,0) v2 = script_8573();
+			v28 = v2.intpart_1;
+			v27 = v2.intpart_0;
+			break;
+		case 6:
+			script_8575_struct(2,0,0) v4 = script_8575();
+			v28 = v4.intpart_1;
+			v27 = v4.intpart_0;
+			break;
+		case 7:
+			script_8577_struct(2,0,0) v0 = script_8577();
+			v28 = v0.intpart_1;
+			v27 = v0.intpart_0;
+			break;
+		case 8:
+			script_8579_struct(2,0,0) v7 = script_8579();
+			v28 = v7.intpart_1;
+			v27 = v7.intpart_0;
+			break;
+		case 10:
+			script_9212_struct(2,0,0) v29 = script_9212();
+			v28 = v29.intpart_1;
+			v27 = v29.intpart_0;
+			break;
+		case 9:
+			script_1987_struct(2,0,0) v19 = script_1987();
+			v28 = v19.intpart_1;
+			v27 = v19.intpart_0;
+			break;
+		case 13:
+			script_1989_struct(2,0,0) v21 = script_1989();
+			v28 = v21.intpart_1;
+			v27 = v21.intpart_0;
+			break;
+		case 11:
+			script_1990_struct(2,0,0) v13 = script_1990();
+			v28 = v13.intpart_1;
+			v27 = v13.intpart_0;
+			break;
+		default:
+			return new script_8499_struct(0, a5);
+	}
+	if (cs2method_10609(a1) == 1) {
+		cs2method_10467(1, v27);
+		return new script_8499_struct(0, a5);
+	}
+	cs2method_10467(0, v27);
+	cs2method_10758(cs2method_10769(a3), v28);
+	object v22 = "";
+	object v30 = "";
+	object v5 = "";
+	object v3 = "ffffff";
+	int v18 = 0;
+	if (cs2method_10769(a3) == script_8497(a0, 2)) {
+		v22 = "On";
+		v3 = "<col=ffcb05>";
+	} else if (cs2method_10769(a3) == script_8497(a0, 1)) {
+		v22 = a4;
+		v3 = "<col=aed0e0>";
+	} else {
+		if (cs2method_10769(a3) == script_8497(a0, 0)) {
+			v22 = "Off";
+			v3 = "<col=7592a0>";
+		}
+	}
+	object v31 = (string)cs2method_10331(a1) + ": ";
+	object v6 = (string)v3 + (string)v22 + "</col>";
+	cs2method_20486(new function<script_8494>(int a0,int a1,int a2,int a3,object a4,object a5,int a6) {
+		int v12;
+		if (client_configs['cfg1295'] < 1000) {
+			cs2method_10810("You can't do this while in the tutorial.");
+			return;
+		}
+		if (client_configs['cfg1293'].bitcfg3617 == 1) {
+			cs2method_10810("You cannot change your chat filters while you are in the tutorial as you might miss important messages that will help with your progress.");
+			return;
+		}
+		int v3 = 0;
+		int v40 = 0;
+		int v10 = 0;
+		int v6 = 0;
+		int v43 = 0;
+		int v17 = 0;
+		int v28 = 0;
+		int v2 = 0;
+		int v19 = 0;
+		int v54 = 0;
+		int v33 = 0;
+		int v9 = 0;
+		int v32 = 0;
+		int v50 = 0;
+		int v36 = 0;
+		int v8 = 0;
+		int v26 = 0;
+		int v48 = 0;
+		int v21 = 0;
+		int v49 = 0;
+		int v46 = a0;
+		script_8546_struct(9,0,0) v15 = script_8546(v46);
+		int v27 = v15.intpart_8;
+		int v42 = v15.intpart_7;
+		int v23 = v15.intpart_6;
+		int v30 = v15.intpart_5;
+		int v51 = v15.intpart_4;
+		int v5 = v15.intpart_3;
+		int v37 = v15.intpart_2;
+		int v14 = v15.intpart_1;
+		int v53 = v15.intpart_0;
+		int v0 = script_3778();
+		int v16 = a0;
+		script_8547_struct(8,0,0) v11 = script_8547(v16);
+		int v4 = v11.intpart_7;
+		int v45 = v11.intpart_6;
+		int v29 = v11.intpart_5;
+		int v22 = v11.intpart_4;
+		int v38 = v11.intpart_3;
+		int v31 = v11.intpart_2;
+		int v7 = v11.intpart_1;
+		int v44 = v11.intpart_0;
+		switch (a3) {
+			case 0:
+				v21 = v53;
+				v49 = v44;
+				break;
+			case 1:
+				v21 = v5;
+				v49 = v38;
+				break;
+			case 2:
+				v21 = v51;
+				v49 = v22;
+				break;
+			case 3:
+				v21 = v30;
+				v49 = v29;
+				break;
+			case 4:
+				v21 = v23;
+				v49 = v45;
+				break;
+			case 5:
+				v21 = v42;
+				v49 = v45;
+				break;
+			case 6:
+				v21 = v14;
+				v49 = v7;
+				break;
+			case 7:
+				v21 = v37;
+				v49 = v31;
+		}
+		if (v21 == 0) {
+			v21 = 1;
+		} else if (v49 == 1) {
+			v21 = 0;
+			v49 = 0;
+		} else {
+			v49 = 1;
+		}
+		switch (a3) {
+			case 0:
+				script_8528(a0, v21, v49);
+				break;
+			case 1:
+				script_8529(a0, v21, v49);
+				break;
+			case 2:
+				if (a0 == 19 && v21 == 0) {
+					v21 = 1;
+				}
+				script_8530(a0, v21, v49);
+				break;
+			case 3:
+				if (a0 == 20 && v21 == 0) {
+					v21 = 1;
+				}
+				script_8531(a0, v21, v49);
+				break;
+			case 4:
+				if (a0 == 21 && v21 == 0) {
+					v21 = 1;
+				}
+				script_8532(a0, v21, v49);
+				break;
+			case 5:
+				if (a0 == 22 && v21 == 0) {
+					v21 = 1;
+				}
+				script_8533(a0, v21, v49);
+				break;
+			case 6:
+				script_8534(a0, v21, v49);
+				break;
+			case 7:
+				script_8535(a0, v21, v49);
+				break;
+			case 8:
+				cs2_configs['cfg2834'] = cs2method_10461(1, cs2method_11048(0, cs2_configs['cfg2834']));
+				v21 = cs2_configs['cfg2834'];
+				v49 = 0;
+				break;
+			case 10:
+				script_9213(a0, cs2method_10461(1, v27));
+				v21 = client_configs['cfg1774'].bitcfg20828;
+				v49 = 0;
+				break;
+			case 9:
+				int v25 = cs2method_10149();
+				if (v25 == 2) {
+					v12 = 0;
+					cs2method_10841(0, v12, cs2method_10610());
+				} else {
+					v12 = cs2method_10060(v25, 1);
+					cs2method_10841(0, v12, cs2method_10610());
+				}
+				if (v12 == 2) {
+					v21 = 0;
+					v49 = 0;
+				} else if (v12 == 1) {
+					v21 = 1;
+					v49 = 1;
+				} else {
+					v21 = 1;
+					v49 = 0;
+				}
+				break;
+			case 11:
+				if (client_configs['cfg1775'].bitcfg21020 == 1) {
+					v21 = 1;
+					v49 = 0;
+				} else {
+					v21 = 0;
+					v49 = 0;
+				}
+				break;
+			case 13:
+				client_configs['cfg1775'].bitcfg21712 = cs2method_10461(1, client_configs['cfg1775'].bitcfg21712);
+				v21 = client_configs['cfg1775'].bitcfg21712;
+				v49 = 0;
+				script_1985(client_configs['cfg1775'].bitcfg21712);
+		}
+		script_8808();
+		int v1 = a1;
+		int v41 = 18;
+		if (a3 == 8 || a3 == 9 || a3 == 11 || a3 == 13) {
+			if (v41 <= 23) {
+				switch (a3) {
+					case 8:
+						int v61 = v41;
+						script_8578_struct(2,0,0) v62 = script_8578(v61);
+						a2 = v62.intpart_1;
+						a1 = v62.intpart_0;
+						break;
+					case 9:
+						int v59 = v41;
+						script_8580_struct(2,0,0) v60 = script_8580(v59);
+						a2 = v60.intpart_1;
+						a1 = v60.intpart_0;
+						break;
+					case 11:
+						int v63 = v41;
+						script_9378_struct(2,0,0) v58 = script_9378(v63);
+						a2 = v58.intpart_1;
+						a1 = v58.intpart_0;
+						break;
+					case 13:
+						int v55 = v41;
+						script_1988_struct(2,0,0) v56 = script_1988(v55);
+						a2 = v56.intpart_1;
+						a1 = v56.intpart_0;
+				}
+				int v57 = script_8495(v41, a3, a1, a2, a5, cs2method_10191(a1), v21, v49, a4);
+				/* 
+					java.lang.RuntimeException: Stack underflow
+						at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.cast(FlowBlocksGenerator.java:546)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+						at tests.Main.main(Main.java:69)
+					
+				 */
+			}
+		} else {
+			int v55 = script_8495(a0, a3, a1, a2, a5, cs2method_10191(a1), v21, v49, a4);
+			/* 
+				java.lang.RuntimeException: Stack underflow
+					at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+					at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.cast(FlowBlocksGenerator.java:546)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+					at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+					at tests.Main.main(Main.java:69)
+				
+			 */
+		}
+		if (v1 != a1) {
+			a1 = v1;
+		}
+		int v13 = a0;
+		int v34 = a3;
+		int v20 = a1;
+		int v35 = a2;
+		int v24 = cs2method_10191(a1);
+		object v39 = a4;
+		script_8499_struct(2,0,0) v47 = script_8499(v13, v34, v20, v35, v39, v24);
+		int v52 = v47.intpart_0;
+		int v18 = v47.intpart_1;
+		/* 
+			java.lang.RuntimeException: Stack underflow
+				at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+				at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.cast(FlowBlocksGenerator.java:546)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+				at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+				at tests.Main.main(Main.java:69)
+			
+		 */
+	}, a2, a0, new WidgetPointer(a1), new WidgetPointer(a3), cs2method_10191(a1), (string)cs2method_10331(a1), (string)a4, "iiIIiss", new WidgetPointer(v27));
+	int v16 = a1;
+	int v10 = v27;
+	int v32 = a5;
+	object v11 = v31;
+	object v23 = v6;
+	script_1982_struct(2,0,0) v24 = script_1982(v16, v10, v32, v11, v23);
+	int v33 = v24.intpart_1;
+	int v12 = v24.intpart_0;
+	int v9 = cs2method_11048(v12, cs2method_10939(20452, cs2method_10427(v31, a4)));
+	int v26 = cs2method_10060(20, v9);
+	return new script_8499_struct(v26, v33);
+}

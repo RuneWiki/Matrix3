@@ -1,0 +1,76 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_10097(int a0) {
+	cs2method_10567(28238, 1, 0);
+	cs2method_10112(cs2method_10191(65077261), 20, 0, 0, 65077261);
+	cs2method_10112(cs2method_10191(65077260), 20, 0, 0, 65077260);
+	cs2method_10112(cs2method_10191(65077259), 20, 0, 0, 65077259);
+	cs2method_10283(0, 16384, 2, 2, 65077398);
+	cs2method_10283(0, 16384, 2, 2, 65077314);
+	cs2method_10283(0, 16384, 2, 2, 65077356);
+	cs2method_10467(1, 65077457);
+	cs2method_10467(1, 65077442);
+	cs2method_10467(1, 65077427);
+	cs2method_10467(1, 65077412);
+	cs2method_10704(255, 65077460);
+	cs2method_10704(255, 65077445);
+	cs2method_10704(255, 65077430);
+	cs2method_10704(255, 65077415);
+	cs2method_10467(1, 65077270);
+	cs2method_10467(1, 65077271);
+	cs2method_10467(1, 65077272);
+	cs2method_10467(1, 65077273);
+	cs2method_10467(1, 65077467);
+	switch (a0) {
+		case 65077460:
+			cs2method_10467(0, 65077457);
+			cs2method_10467(0, 65077270);
+			cs2_configs['cfg1184'] = 1;
+			cs2method_10520(16724580, 65077372);
+			cs2method_10520(16724580, 65077288);
+			cs2method_10520(16724580, 65077330);
+			break;
+		case 65077445:
+			cs2method_10467(0, 65077442);
+			cs2method_10467(0, 65077271);
+			cs2_configs['cfg1184'] = 2;
+			cs2method_10520(9895830, 65077372);
+			cs2method_10520(9895830, 65077288);
+			cs2method_10520(9895830, 65077330);
+			break;
+		case 65077430:
+			cs2method_10467(0, 65077427);
+			cs2method_10467(0, 65077272);
+			cs2_configs['cfg1184'] = 3;
+			cs2method_10520(51455, 65077372);
+			cs2method_10520(51455, 65077288);
+			cs2method_10520(51455, 65077330);
+			break;
+		case 65077415:
+			cs2method_10467(0, 65077412);
+			cs2method_10467(0, 65077273);
+			cs2_configs['cfg1184'] = 4;
+			cs2method_10520(16777215, 65077372);
+			cs2method_10520(16777215, 65077288);
+			cs2method_10520(16777215, 65077330);
+	}
+	int v0 = idx17mapData('i', 'g', 3088, cs2_configs['cfg1184']);
+	cs2method_10026(65077370, idx22mapAttribute(idx17mapData('i', 'J', v0, 1), 1089));
+	cs2method_10026(65077371, idx22mapAttribute(idx17mapData('i', 'J', v0, 1), 1090));
+	cs2method_10026(65077286, idx22mapAttribute(idx17mapData('i', 'J', v0, 2), 1089));
+	cs2method_10026(65077287, idx22mapAttribute(idx17mapData('i', 'J', v0, 2), 1090));
+	cs2method_10026(65077328, idx22mapAttribute(idx17mapData('i', 'J', v0, 3), 1089));
+	cs2method_10026(65077329, idx22mapAttribute(idx17mapData('i', 'J', v0, 3), 1090));
+	cs2_configs['cfg1186'] = 0;
+	return;
+}

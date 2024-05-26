@@ -1,0 +1,26 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8129(int a0) {
+	if (script_5767() == 1) {
+		return;
+	}
+	if (client_configs['cfg462'] == 1) {
+		client_configs['cfg462'] = 0;
+	} else {
+		client_configs['cfg462'] = 1;
+	}
+	cs2method_10670(36961, 1, 0, 100);
+	script_8131(a0);
+	script_1644();
+	return;
+}

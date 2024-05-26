@@ -1,0 +1,62 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1394() {
+	object v1 = "";
+	int v0 = 0;
+	int v3 = 0;
+	if (client_configs['cfg1513'].bitcfg4554 == 1) {
+		v1 = cs2method_10427(v1, "Ahrim" + "<br>");
+		v0 = cs2method_10060(v0, 1);
+		v3 = cs2method_10060(v3, 1);
+	}
+	if (client_configs['cfg1513'].bitcfg4555 == 1) {
+		v1 = cs2method_10427(v1, "Dharok" + "<br>");
+		v0 = cs2method_10060(v0, 1);
+		v3 = cs2method_10060(v3, 1);
+	}
+	if (client_configs['cfg1513'].bitcfg4556 == 1) {
+		v1 = cs2method_10427(v1, "Guthan" + "<br>");
+		v0 = cs2method_10060(v0, 1);
+		v3 = cs2method_10060(v3, 1);
+	}
+	if (client_configs['cfg1513'].bitcfg4557 == 1) {
+		v1 = cs2method_10427(v1, "Karil" + "<br>");
+		v0 = cs2method_10060(v0, 1);
+		v3 = cs2method_10060(v3, 1);
+	}
+	if (client_configs['cfg1513'].bitcfg4558 == 1) {
+		v1 = cs2method_10427(v1, "Torag" + "<br>");
+		v0 = cs2method_10060(v0, 1);
+		v3 = cs2method_10060(v3, 1);
+	}
+	if (client_configs['cfg1513'].bitcfg4559 == 1) {
+		v1 = cs2method_10427(v1, "Verac" + "<br>");
+		v0 = cs2method_10060(v0, 1);
+		v3 = cs2method_10060(v3, 1);
+	}
+	if (client_configs['cfg2434'].bitcfg11655 == 1) {
+		v1 = cs2method_10427(v1, "Akrisae" + "<br>");
+		v0 = cs2method_10060(v0, 1);
+		v3 = cs2method_10060(v3, 1);
+	}
+	if (cs2method_10846(v1, "") == 0) {
+		v1 = "None";
+		v0 = 1;
+	}
+	int v2 = cs2method_10060(52, cs2method_10051(v0, 12));
+	cs2method_10283(cs2method_10236(1572865), v2, 0, 0, 1572865);
+	cs2method_10026(1572867, v1);
+	cs2method_10026(1572870, cs2method_10379(cs2method_11048(0, cs2method_10461(client_configs['cfg1513'].bitcfg4562, v3))));
+	cs2method_10112(5, 80, 2, 2, 1572865);
+	return;
+}

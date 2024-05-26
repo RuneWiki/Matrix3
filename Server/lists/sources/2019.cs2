@@ -1,0 +1,177 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2019() {
+	client_configs['cfg4405'] = cs2method_10872(client_configs['cfg4405'], client_configs['cfg4404']);
+	object v0 = cs2method_10379(client_configs['cfg4405']);
+	int v4 = -1;
+	int v3 = -1;
+	int v1 = 0;
+	int v2 = 68354054;
+	cs2method_10026(68354201, v0);
+	switch (client_configs['cfg4406']) {
+		case 0:
+			if (cs2_configs['cfg4181'] == -1) {
+				return;
+			}
+			switch (client_configs['cfg4407']) {
+				case 0:
+					cs2method_10026(v2, "Exchanging " + (string)script_8003(cs2method_10051(client_configs['cfg4408'], client_configs['cfg4405'])) + " renown for " + (string)script_8003(cs2method_10968(cs2method_10051(client_configs['cfg4405'], cs2_configs['cfg4181']), 10)) + " x Bonus Farming XP");
+					break;
+				case 1:
+					cs2method_10026(v2, "Exchanging " + (string)script_8003(cs2method_10051(client_configs['cfg4408'], client_configs['cfg4405'])) + " renown for " + (string)script_8003(cs2method_10968(cs2method_10051(client_configs['cfg4405'], cs2_configs['cfg4181']), 10)) + " x Bonus Mining XP");
+					break;
+				case 2:
+					cs2method_10026(v2, "Exchanging " + (string)script_8003(cs2method_10051(client_configs['cfg4408'], client_configs['cfg4405'])) + " renown for " + (string)script_8003(cs2method_10968(cs2method_10051(client_configs['cfg4405'], cs2_configs['cfg4181']), 10)) + " x Bonus Slayer XP");
+					break;
+				default:
+					cs2method_10026(v2, "Exchanging " + (string)script_8003(cs2method_10051(client_configs['cfg4408'], client_configs['cfg4405'])) + " renown for an unknown reward.");
+			}
+			break;
+		case 1:
+			switch (client_configs['cfg4407']) {
+				case 0:
+					cs2method_10026(v2, "Exchanging " + (string)script_8003(cs2method_10051(client_configs['cfg4408'], client_configs['cfg4405'])) + " renown for " + (string)script_8003(client_configs['cfg4405']) + " x Seedicide");
+					break;
+				case 1:
+					cs2method_10026(v2, "Exchanging " + (string)script_8003(cs2method_10051(client_configs['cfg4408'], client_configs['cfg4405'])) + " renown for " + (string)script_8003(client_configs['cfg4405']) + " x Slayer token");
+					break;
+				case 2:
+					cs2method_10026(v2, "Exchanging " + (string)script_8003(cs2method_10051(client_configs['cfg4408'], client_configs['cfg4405'])) + " renown for " + (string)script_8003(client_configs['cfg4405']) + " x Farming token");
+					break;
+				default:
+					cs2method_10026(v2, "Exchanging " + (string)script_8003(cs2method_10051(client_configs['cfg4408'], client_configs['cfg4405'])) + " renown for an unknown reward.");
+			}
+			break;
+		case 2:
+			int v5 = idx17mapData('i', 'J', 8712, client_configs['cfg4407']);
+			if (v5 == -1) {
+				cs2method_10026(v2, "Exchanging " + (string)script_8003(cs2method_10051(client_configs['cfg4408'], client_configs['cfg4405'])) + " renown for an unknown reward.");
+			} else {
+				cs2method_10026(v2, "Exchanging " + (string)script_8003(cs2method_10051(client_configs['cfg4408'], client_configs['cfg4405'])) + " renown for the ability: " + idx22mapAttribute(v5, 4240));
+			}
+			break;
+		default:
+			cs2method_10026(v2, "Exchanging " + (string)script_8003(cs2method_10051(client_configs['cfg4408'], client_configs['cfg4405'])) + " renown for an unknown reward.");
+	}
+	cs2method_20243(new function<script_7202>(int a0,int a1,int a2,int a3,int a4) {
+		if (a3 == -1 || (int)cs2_configs['cfg2235'] == -1) {
+			return;
+		}
+		if (a3 != (int)cs2_configs['cfg2235']) {
+			script_7207(a0, a4, a2, cs2method_10744(a2), a1);
+			return;
+		}
+		script_8841(11, 1);
+		cs2_configs['cfg2250'] = "";
+		cs2method_10467(1, a2);
+		cs2method_10467(0, a0);
+		cs2method_20380(new function<script_7211>(int a0,int a1,int a2,int a3,int a4,int a5,int a6) {
+			if (cs2_configs['cfg2873'] != 11) {
+				return;
+			}
+			if (cs2method_10609(a3) == 1) {
+				return;
+			}
+			switch (a2) {
+				case 84:
+					if (cs2method_10265(cs2_configs['cfg2250']) > 0) {
+						if (cs2_configs['cfg2236'] == 7) {
+							cs2_configs['cfg2250'] = (string)script_2332(cs2_configs['cfg2250'], "K", "000");
+							cs2_configs['cfg2250'] = (string)script_2332(cs2_configs['cfg2250'], "k", "000");
+							cs2_configs['cfg2250'] = (string)script_2332(cs2_configs['cfg2250'], "M", "000000");
+							cs2_configs['cfg2250'] = (string)script_2332(cs2_configs['cfg2250'], "m", "000000");
+							if (cs2method_10262() == 1) {
+								cs2_configs['cfg2250'] = (string)script_2332(cs2_configs['cfg2250'], "T", "000");
+								cs2_configs['cfg2250'] = (string)script_2332(cs2_configs['cfg2250'], "t", "000");
+							}
+						}
+						script_7207(a3, a5, a6, cs2_configs['cfg2250'], a1);
+						script_7208(cs2_configs['cfg2250']);
+						return;
+					}
+					if (cs2_configs['cfg2236'] == 7) {
+						script_7206(a4, a3, a5, a6, a1);
+						return;
+					}
+					break;
+				case 13:
+					if (script_9666() == 1) {
+						return;
+					}
+					if (cs2_configs['cfg2236'] == 7) {
+						script_7206(a4, a3, a5, a6, a1);
+					}
+					return;
+				case 102:
+				case 103:
+				case 98:
+				case 99:
+				case 96:
+				case 97:
+					if (cs2method_10862() == 0) {
+						return;
+					}
+					cs2_configs['cfg1029'] = script_1553(a2, cs2_configs['cfg2250'], cs2_configs['cfg1029']);
+					break;
+				default:
+					if (cs2_configs['cfg2236'] == 7) {
+						int v5 = cs2_configs['cfg1029'];
+						int v6 = 6;
+						int v4 = a2;
+						int v7 = a0;
+						int v3 = cs2_configs['cfg2237'];
+						object v2 = cs2_configs['cfg2250'];
+						script_7170_struct(1,1,0) v1 = script_7170(v5, v6, v2, v4, v7, v3);
+						object v0 = v1.objectpart_0;
+						cs2_configs['cfg1029'] = v1.intpart_0;
+						cs2_configs['cfg2250'] = (string)v0;
+					}
+			}
+			cs2method_10026(a3, cs2method_11053(cs2_configs['cfg2250']));
+			script_7213(a3, a5);
+			return;
+		}, -2147483640, false, new WidgetPointer(a3), new WidgetPointer(a0), new WidgetPointer(a4), new WidgetPointer(a2), new WidgetPointer(a1), "izIIIII", new WidgetPointer(a0));
+		cs2method_20390(new function<script_7212>(int a0,int a1,int a2) {
+			script_8841(11, 1);
+			cs2_configs['cfg1029'] = script_1504(a0, cs2_configs['cfg2250'], 4040, a2, -1);
+			script_7213(a2, a1);
+			return;
+		}, -2147483647, new WidgetPointer(a0), new WidgetPointer(a4), "iII", new WidgetPointer(a0));
+		script_7213(a0, a4);
+		cs2method_20638(new function<script_7205>(int a0,int a1,int a2,int a3,int a4) {
+			script_7206(a2, a3, a1, a0, a4);
+			return;
+		}, new WidgetPointer(a3), new WidgetPointer(a0), new WidgetPointer(a4), new WidgetPointer(a2), new WidgetPointer(a1), "IIIII", new WidgetPointer(a0));
+		cs2method_10467(0, a1);
+		cs2method_20390(new function<script_7205>(int a0,int a1,int a2,int a3,int a4) {
+			script_7206(a2, a3, a4, a1, a0);
+			return;
+		}, new WidgetPointer(a3), new WidgetPointer(a0), new WidgetPointer(a4), new WidgetPointer(a2), new WidgetPointer(a1), "IIIII", new WidgetPointer(a1));
+		return;
+	}, new WidgetPointer(-32768,3), new WidgetPointer(1043,151), new WidgetPointer(1043,152), new WidgetPointer(1043,153), new WidgetPointer(1043,29), 2235, 2236, 2, "IIIIIY", new WidgetPointer(1043,150));
+	cs2method_20390(new function<script_7203>(int a0,int a1) {
+		int v0 = 0;
+		if (cs2method_10609(a1) == 1) {
+			cs2method_10467(0, a0);
+			int v1 = cs2method_10060(cs2method_10133(), 30);
+			cs2method_20162(new function<script_7204>(int a0,int a1,int a2) {
+				if (a2 <= cs2method_10133() || cs2method_10609(a0) == 0) {
+					cs2method_10467(1, a1);
+				}
+				return;
+			}, new WidgetPointer(a0), new WidgetPointer(a1), v1, "IIi", new WidgetPointer(a0));
+		}
+		return;
+	}, new WidgetPointer(1043,154), new WidgetPointer(1043,29), "II", new WidgetPointer(1043,153));
+	return;
+}

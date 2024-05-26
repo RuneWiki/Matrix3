@@ -1,0 +1,160 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_9371(int a0) {
+	int v98 = 0;
+	int v47 = 0;
+	int v84 = 0;
+	int v45 = 0;
+	int v64 = 0;
+	switch (a0) {
+		case 1:
+			int v5 = client_configs['cfg2026'].bitcfg8920;
+			int v9 = client_configs['cfg2031'].bitcfg8928;
+			int v82 = client_configs['cfg2018'].bitcfg8896;
+			int v85 = client_configs['cfg2020'].bitcfg8904;
+			v64 = client_configs['cfg2024'].bitcfg8912;
+			int v94 = v5;
+			int v25 = v9;
+			int v23 = v82;
+			v45 = v85;
+			int v35 = v94;
+			int v43 = v25;
+			v84 = v23;
+			int v3 = v35;
+			int v11 = v43;
+			int v73 = v3;
+			break;
+		case 2:
+			int v34 = client_configs['cfg2026'].bitcfg8921;
+			int v72 = client_configs['cfg2031'].bitcfg8929;
+			int v7 = client_configs['cfg2018'].bitcfg8897;
+			int v14 = client_configs['cfg2020'].bitcfg8905;
+			v64 = client_configs['cfg2024'].bitcfg8913;
+			int v33 = v34;
+			int v57 = v72;
+			int v79 = v7;
+			v45 = v14;
+			int v49 = v33;
+			int v40 = v57;
+			v84 = v79;
+			int v29 = v49;
+			int v50 = v40;
+			int v77 = v29;
+			break;
+		case 3:
+			int v80 = client_configs['cfg2027'].bitcfg8922;
+			int v18 = client_configs['cfg2032'].bitcfg8930;
+			int v39 = client_configs['cfg2018'].bitcfg8898;
+			int v44 = client_configs['cfg2021'].bitcfg8906;
+			v64 = client_configs['cfg2024'].bitcfg8914;
+			int v66 = v80;
+			int v87 = v18;
+			int v26 = v39;
+			v45 = v44;
+			int v27 = v66;
+			int v8 = v87;
+			v84 = v26;
+			int v83 = v27;
+			int v93 = v8;
+			int v78 = v83;
+			break;
+		case 4:
+			int v6 = client_configs['cfg2027'].bitcfg8923;
+			int v76 = client_configs['cfg2032'].bitcfg8931;
+			int v71 = client_configs['cfg2018'].bitcfg8899;
+			int v96 = client_configs['cfg2021'].bitcfg8907;
+			v64 = client_configs['cfg2024'].bitcfg8915;
+			int v99 = v6;
+			int v92 = v76;
+			int v95 = v71;
+			v45 = v96;
+			int v20 = v99;
+			int v0 = v92;
+			v84 = v95;
+			int v21 = v20;
+			int v15 = v0;
+			int v59 = v21;
+			break;
+		case 5:
+			int v36 = client_configs['cfg2028'].bitcfg8924;
+			int v4 = client_configs['cfg2033'].bitcfg8932;
+			int v86 = client_configs['cfg2019'].bitcfg8900;
+			int v67 = client_configs['cfg2022'].bitcfg8908;
+			v64 = client_configs['cfg2025'].bitcfg8916;
+			int v91 = v36;
+			int v54 = v4;
+			int v63 = v86;
+			v45 = v67;
+			int v16 = v91;
+			int v56 = v54;
+			v84 = v63;
+			int v41 = v16;
+			int v51 = v56;
+			int v22 = v41;
+			break;
+		case 6:
+			int v32 = client_configs['cfg2028'].bitcfg8925;
+			int v13 = client_configs['cfg2033'].bitcfg8933;
+			int v1 = client_configs['cfg2019'].bitcfg8901;
+			int v12 = client_configs['cfg2022'].bitcfg8909;
+			v64 = client_configs['cfg2025'].bitcfg8917;
+			int v97 = v32;
+			int v60 = v13;
+			int v74 = v1;
+			v45 = v12;
+			int v88 = v97;
+			int v81 = v60;
+			v84 = v74;
+			int v61 = v88;
+			int v28 = v81;
+			int v65 = v61;
+			break;
+		case 7:
+			int v31 = client_configs['cfg2029'].bitcfg8926;
+			int v58 = client_configs['cfg2034'].bitcfg8934;
+			int v19 = client_configs['cfg2019'].bitcfg8902;
+			int v75 = client_configs['cfg2023'].bitcfg8910;
+			v64 = client_configs['cfg2025'].bitcfg8918;
+			int v10 = v31;
+			int v70 = v58;
+			int v90 = v19;
+			v45 = v75;
+			int v24 = v10;
+			int v52 = v70;
+			v84 = v90;
+			int v100 = v24;
+			int v89 = v52;
+			int v17 = v100;
+			break;
+		case 8:
+			int v30 = client_configs['cfg2029'].bitcfg8927;
+			int v69 = client_configs['cfg2034'].bitcfg8935;
+			int v38 = client_configs['cfg2019'].bitcfg8903;
+			int v68 = client_configs['cfg2023'].bitcfg8911;
+			v64 = client_configs['cfg2025'].bitcfg8919;
+			int v48 = v30;
+			int v2 = v69;
+			int v37 = v38;
+			v45 = v68;
+			int v53 = v48;
+			int v42 = v2;
+			v84 = v37;
+			int v46 = v53;
+			int v55 = v42;
+			int v62 = v46;
+	}
+	if (v64 == 0 || v45 == 0 || v84 == 0 || cs2method_10846(script_9365(), "") == 0) {
+		return 0;
+	}
+	return 1;
+}

@@ -1,0 +1,27 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1512(int a0,int a1) {
+	if (a1 != 1) {
+		return;
+	}
+	switch (a0) {
+		case 1:
+		case 2:
+			if (script_2793(cs2_configs['cfg1010'], 3) != -1) {
+				return;
+			}
+	}
+	cs2_configs['cfg778'] = a0;
+	script_1513();
+	return;
+}

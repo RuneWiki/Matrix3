@@ -1,0 +1,54 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6673(int a0,int a1) {
+	int v2;
+	object v1 = "Play again";
+	int v4 = 0;
+	object v0 = "You must claim or discard your prize before opening another chest.";
+	object v3 = "Click to play again.";
+	if (cs2method_10210() == 1) {
+		if (client_configs['cfg1448'].bitcfg4324 > 0 || client_configs['cfg1448'].bitcfg4325 > 0 || cs2_configs['cfg1800'] > 0) {
+			if (client_configs['cfg1451'].bitcfg4345 > 0) {
+				v2 = 0;
+				v0 = "You must claim or discard your prize before opening another chest.";
+			} else {
+				v2 = 1;
+				object v6 = "Click to play again.";
+			}
+		} else {
+			v2 = 0;
+			v0 = "You do not have any keys remaining.";
+		}
+	} else if (client_configs['cfg1448'].bitcfg4324 > 0 || client_configs['cfg1448'].bitcfg4325 > 0 || cs2_configs['cfg1800'] > 0) {
+		if (client_configs['cfg1451'].bitcfg4345 > 0) {
+			v2 = 0;
+			v0 = "You must claim or discard your prize before opening another chest.";
+		} else {
+			v2 = 1;
+			object v6 = "Click to play again.";
+		}
+	} else {
+		v2 = 1;
+		v1 = "Subscribe";
+		v0 = "Click to subscribe";
+		object v6 = "Click to subscribe";
+	}
+	cs2method_11127(1, 82117304, v1);
+	cs2method_10467(v2, 82117305);
+	object v5 = "Purchase additional keys.";
+	cs2method_21121(new function<script_10007>(int a0,object a1,int a2) {
+		script_10008(a1, a0, a2);
+		return;
+	}, (string)v0, new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(1253,697));
+	return;
+}

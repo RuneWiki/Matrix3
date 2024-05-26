@@ -1,0 +1,51 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2020() {
+	int v6 = -1;
+	int v3 = -1;
+	int v4 = -1;
+	script_7386_struct(3,0,0) v2 = script_7386();
+	int v1 = v2.intpart_2;
+	int v8 = v2.intpart_1;
+	int v0 = v2.intpart_0;
+	object v7 = "";
+	object v9 = "";
+	object v5 = "Select A Ship";
+	switch (client_configs['cfg3406'].bitcfg17132) {
+		case 1:
+			v7 = idx17mapData('i', 's', v0, client_configs['cfg3382'].bitcfg17040);
+			v9 = idx17mapData('i', 's', v8, client_configs['cfg3382'].bitcfg17041);
+			v5 = idx17mapData('i', 's', v1, client_configs['cfg3382'].bitcfg17042);
+			break;
+		case 2:
+			v7 = idx17mapData('i', 's', v0, client_configs['cfg3384'].bitcfg17048);
+			v9 = idx17mapData('i', 's', v8, client_configs['cfg3384'].bitcfg17049);
+			v5 = idx17mapData('i', 's', v1, client_configs['cfg3384'].bitcfg17050);
+			break;
+		case 3:
+			v7 = idx17mapData('i', 's', v0, client_configs['cfg3386'].bitcfg17056);
+			v9 = idx17mapData('i', 's', v8, client_configs['cfg3386'].bitcfg17057);
+			v5 = idx17mapData('i', 's', v1, client_configs['cfg3386'].bitcfg17058);
+			break;
+		case 4:
+			v7 = idx17mapData('i', 's', v0, client_configs['cfg3388'].bitcfg17064);
+			v9 = idx17mapData('i', 's', v8, client_configs['cfg3388'].bitcfg17065);
+			v5 = idx17mapData('i', 's', v1, client_configs['cfg3388'].bitcfg17066);
+	}
+	cs2method_10170(3795, 62259509);
+	cs2method_10026(62259509, (string)v7 + (string)v9 + (string)v5);
+	if (cs2method_10509(700, 3795, (string)v7 + (string)v9 + (string)v5) > 220) {
+		cs2method_10170(17814, 62259509);
+	}
+	return;
+}

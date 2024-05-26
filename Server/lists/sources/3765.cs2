@@ -1,0 +1,44 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_3765() {
+	int v1 = 0;
+	int v3 = -1;
+	int v4 = -1;
+	while (v1 < 60) {
+		flow_1:
+			int v2 = (int)idx17mapData('i', 'I', 8818, v1);
+			if (v2 != -1) {
+				cs2method_10026(v2, cs2method_10379(cs2method_11048(500, cs2method_10051(cs2method_10060(v1, 1), cs2method_10051(cs2method_10338(24), cs2method_10968(cs2method_10338(24), 20))))));
+			}
+			IF (cs2method_10771() == 0) 
+				GOTO	flow_5
+			GOTO	flow_6
+		flow_5:
+			IF (v1 > 34) 
+				GOTO	flow_7
+		flow_6:
+			IF (client_configs['cfg1092'].bitcfg2363 < cs2method_10060(v1, 1) || script_3770(cs2method_10060(v1, 1)) == 1 || cs2method_10968(cs2method_10060(cs2method_10338(24), 1), 2) < cs2method_10060(v1, 1)) 
+				GOTO	flow_7
+			GOTO	flow_9
+		flow_7:
+			int v0 = (int)idx17mapData('i', 'I', 8819, v1);
+			if (v0 != -1) {
+				cs2method_10467(0, v0);
+			}
+		flow_9:
+			v1 = cs2method_10060(v1, 1);
+	}
+	script_7791(61603923, 61603852);
+	return;
+}

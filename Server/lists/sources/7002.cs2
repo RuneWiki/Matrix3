@@ -1,0 +1,85 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_7002(int a0,int a1,int a2) {
+	flow_0:
+		if (cs2method_11038(a2, a1) == 1) {
+			cs2method_21150(new function<script_7969>(int a0,int a1) {
+				if (cs2method_11038(a0, a1) == 1 || a1 == -1 && cs2method_10324(a0) == 1) {
+					script_6739(15);
+					cs2method_21150(new function<none>() {
+					}, "");
+				}
+				return;
+			}, new WidgetPointer(-32768,3), -2147483643, "Ii");
+		}
+		script_8442(a2, a1, a0);
+		int v3 = script_7980(a0);
+		int v1 = script_7980(a2);
+		IF (a2 == a0) 
+			GOTO	flow_3
+		GOTO	flow_4
+	flow_3:
+		IF (v1 != -1) 
+			GOTO	flow_5
+	flow_4:
+		IF (a2 == -1 || a0 == -1) 
+			GOTO	flow_5
+		GOTO	flow_6
+	flow_5:
+		return;
+	flow_6:
+		int v4 = 0;
+		switch (a0) {
+			case 96796678:
+			case 96796679:
+			case 96796681:
+				if (v1 != -1) {
+					script_6739(16);
+					script_7970(1430, v1);
+					if (script_8292(2, -1) == 1) {
+						script_7970(1436, v4);
+					}
+				}
+				return;
+			case 95289349:
+				script_6739(17);
+				script_8442(a2, a1, a0);
+				return;
+		}
+		if (v3 == -1) {
+			return;
+		}
+		script_6739(17);
+		script_7972(v3, v1);
+		int v5 = script_7974(1430, v3);
+		script_6995(1430, v3, 0, 0, 0, -1);
+		if (v1 != -1) {
+			a2 = script_7974(1430, v1);
+			script_6995(1430, v1, 0, 0, 0, -1);
+		} else {
+			script_7971(a2, a1, v5, 1430, v3);
+		}
+		if (script_8292(2, -1) == 1) {
+			int v2 = script_7974(1436, v3);
+			script_6995(1436, v3, 0, 0, 0, -1);
+			if (v1 != -1) {
+				int v0 = script_7974(1436, v1);
+				script_6995(1436, v1, 0, 0, 0, -1);
+			} else {
+				script_7971(a2, a1, v2, 1436, v3);
+			}
+		}
+		script_8808();
+		return;
+}

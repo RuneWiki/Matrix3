@@ -1,0 +1,22 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_6883(int a0) {
+	if (a0 == -1) {
+		return 0;
+	}
+	int v0 = idx22mapAttribute(a0, 2772);
+	if (v0 == idx17mapData('K', 'i', 6571, client_configs['cfg262'])) {
+		return 1;
+	}
+	return 0;
+}

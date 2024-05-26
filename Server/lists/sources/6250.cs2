@@ -1,0 +1,106 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6250(int a0) {
+	if (a0 == -1) {
+		return;
+	}
+	int v1 = 4;
+	int v12 = 4;
+	int v7 = 4;
+	int v14 = 4;
+	int v5 = 6;
+	int v13 = 64;
+	int v3 = 53;
+	int v6 = 56;
+	int v0 = 7;
+	int v8 = 120;
+	int v4 = 64;
+	int v9 = 53;
+	int v11 = 8;
+	int v2 = 68;
+	int v10 = 43;
+	if (cs2method_10324(a0) == 1) {
+		cs2method_10063(0, 0, 1, 1);
+		cs2method_10013(cs2method_10051(v1, 2), cs2method_10051(v12, 2), 1, 1);
+	}
+	cs2method_10273(a0);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10013(cs2method_10051(v11, 2), v14, 1, 0);
+	cs2method_10063(0, v5, 1, 0);
+	cs2method_10310(5472);
+	cs2method_10577(1);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10013(cs2method_10051(v11, 2), v14, 1, 0);
+	cs2method_10063(0, v0, 1, 2);
+	cs2method_10310(5472);
+	cs2method_10577(1);
+	cs2method_10230(1);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10013(v7, cs2method_10060(v5, v0), 0, 1);
+	cs2method_10063(v11, v5, 0, 0);
+	cs2method_10310(5473);
+	cs2method_10577(1);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10013(v7, cs2method_10060(v5, v0), 0, 1);
+	cs2method_10063(v11, v5, 2, 0);
+	cs2method_10310(5473);
+	cs2method_10577(1);
+	cs2method_10434(1);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10013(cs2method_10051(cs2method_10060(v4, v8), 2), v0, 1, 0);
+	cs2method_10063(0, 0, 1, 2);
+	cs2method_10310(5632);
+	cs2method_10577(1);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10013(v8, v0, 0, 0);
+	cs2method_10063(v4, 0, 0, 2);
+	cs2method_10310(5460);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10013(v8, v0, 0, 0);
+	cs2method_10063(v4, 0, 2, 2);
+	cs2method_10310(5634);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10013(v11, cs2method_10060(cs2method_10060(cs2method_10060(v5, v9), v2), v10), 0, 1);
+	cs2method_10063(0, cs2method_10060(v5, v2), 0, 0);
+	cs2method_10310(5468);
+	cs2method_10577(1);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10013(v11, v10, 0, 0);
+	cs2method_10063(0, v9, 0, 2);
+	cs2method_10310(5469);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10013(v11, cs2method_10060(cs2method_10060(cs2method_10060(v5, v9), v2), v10), 0, 1);
+	cs2method_10063(0, cs2method_10060(v5, v2), 2, 0);
+	cs2method_10310(5468);
+	cs2method_10577(1);
+	cs2method_10434(1);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10013(v11, v2, 0, 0);
+	cs2method_10063(0, v5, 2, 0);
+	cs2method_10310(5464);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10013(v11, v10, 0, 0);
+	cs2method_10063(0, v9, 2, 2);
+	cs2method_10310(5469);
+	cs2method_10434(1);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10013(v4, v9, 0, 0);
+	cs2method_10063(0, 0, 0, 2);
+	cs2method_10310(5461);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10013(v4, v9, 0, 0);
+	cs2method_10063(0, 0, 2, 2);
+	cs2method_10310(5461);
+	cs2method_10434(1);
+	return;
+}

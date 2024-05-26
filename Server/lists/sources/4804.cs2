@@ -1,0 +1,121 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4804() {
+	int v1 = script_4828(client_configs['cfg1981'].bitcfg6981);
+	if (v1 == 1) {
+		script_4842(1);
+		script_4842(2);
+		script_4842(3);
+		switch (client_configs['cfg1981'].bitcfg6981) {
+			case 1:
+				script_4846(client_configs['cfg1982'].bitcfg6986);
+				break;
+			case 2:
+				script_4846(client_configs['cfg1984'].bitcfg6995);
+				break;
+			case 3:
+				script_4846(client_configs['cfg1986'].bitcfg7004);
+		}
+	} else {
+		script_4843(1);
+		script_4843(2);
+		script_4843(3);
+	}
+	script_4807();
+	int v6 = -1;
+	int v3 = -1;
+	int v10 = -1;
+	int v4 = -1;
+	int v7 = 0;
+	int v2 = 1;
+	int v9 = 1;
+	int v8 = 0;
+	switch (client_configs['cfg1981'].bitcfg6981) {
+		case 1:
+			v7 = client_configs['cfg1982'].bitcfg6985;
+			v8 = client_configs['cfg1982'].bitcfg6989;
+			break;
+		case 2:
+			v7 = client_configs['cfg1984'].bitcfg6994;
+			v8 = client_configs['cfg1984'].bitcfg6998;
+			break;
+		case 3:
+			v7 = client_configs['cfg1986'].bitcfg7003;
+			v8 = client_configs['cfg1986'].bitcfg7007;
+	}
+	if (v7 == 0 && v8 == 0) {
+		script_4940();
+		return;
+	}
+	script_4942();
+	int v5 = script_4825(client_configs['cfg1981'].bitcfg6981);
+	int v0 = script_4822(client_configs['cfg1981'].bitcfg6981);
+	if (v8 == 1) {
+		script_4846(1);
+		cs2method_10758(-1, 82444524);
+		cs2method_10026(82444525, "Reset Hotspot to its default state");
+		cs2method_10026(82444681, "");
+		cs2method_10026(82444682, "");
+		cs2method_10026(82444683, "");
+		cs2method_10026(82444609, "");
+		cs2method_10026(82444610, "");
+		cs2method_10026(82444611, "");
+		cs2method_10026(82444531, "");
+		cs2method_10026(82444532, "");
+		cs2method_10026(82444533, "");
+		script_4805(1, 1);
+		script_4805(2, 1);
+		script_4805(3, 1);
+		script_4805(1, 2);
+		script_4805(2, 2);
+		script_4805(3, 2);
+		script_4805(1, 3);
+		script_4805(2, 3);
+		script_4805(3, 3);
+	} else {
+		if (v5 != -1) {
+			cs2method_10758(idx17mapData('i', 'd', v5, v7), 82444524);
+		}
+		if (v0 != -1) {
+			cs2method_10026(82444525, idx17mapData('i', 's', v0, v7));
+		}
+		int v12 = idx17mapData('i', 'g', 4043, v7);
+		if (v12 == -1 && v8 == 0) {
+			return;
+		}
+		while (v2 <= 3) {
+			int v11 = idx17mapData('i', 'g', v12, v2);
+			if (v11 != -1) {
+				while (v9 <= 3) {
+					int v13 = idx17mapData('i', 'g', v11, v9);
+					if (v13 != -1) {
+						script_4806(v13, v2, v9, v1, v7);
+					} else {
+						script_4805(v2, v9);
+					}
+					int v14 = -1;
+					v9 = cs2method_10060(v9, 1);
+				}
+			} else {
+				script_4842(v2);
+			}
+			v9 = 1;
+			v2 = cs2method_10060(v2, 1);
+		}
+		script_4838();
+		script_4810();
+	}
+	script_4809();
+	script_4814();
+	return;
+}

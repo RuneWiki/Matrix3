@@ -1,0 +1,29 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8857() {
+	if (client_configs['cfg3902'] == 0) {
+		if (client_configs['cfg3900'] == 1) {
+			cs2method_10026(16252950, (string)cs2method_10055(client_configs['cfg3900'], 1) + " coin");
+		} else {
+			cs2method_10026(16252950, (string)cs2method_10055(client_configs['cfg3900'], 1) + " coins");
+		}
+	} else if (client_configs['cfg3900'] > 0) {
+		if (client_configs['cfg3902'] == 1) {
+			cs2method_10026(16252950, (string)cs2method_10055(client_configs['cfg3902'], 1) + " Million" + "<br>" + (string)cs2method_10055(client_configs['cfg3900'], 1) + " Coins");
+		}
+		cs2method_10026(16252950, (string)cs2method_10055(client_configs['cfg3902'], 1) + " Million" + "<br>" + (string)cs2method_10055(client_configs['cfg3900'], 1) + " Coins");
+	} else {
+		cs2method_10026(16252950, (string)cs2method_10055(client_configs['cfg3902'], 1) + " Million");
+	}
+	return;
+}

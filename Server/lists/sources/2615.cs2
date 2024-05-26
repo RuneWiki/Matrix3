@@ -1,0 +1,50 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2615() {
+	int v4 = 0;
+	int v0 = 0;
+	int v3 = 0;
+	switch (script_2617()) {
+		case 0:
+			v3 = cs2method_10327(cs2_configs['cfg834'], -5, 0, 0);
+			break;
+		case 7:
+			v3 = cs2method_10327(cs2_configs['cfg834'], -4, 0, -4);
+			break;
+		case 6:
+			v3 = cs2method_10327(cs2_configs['cfg834'], 0, 0, -5);
+			break;
+		case 5:
+			v3 = cs2method_10327(cs2_configs['cfg834'], 4, 0, -4);
+			break;
+		case 4:
+			v3 = cs2method_10327(cs2_configs['cfg834'], 5, 0, 0);
+			break;
+		case 3:
+			v3 = cs2method_10327(cs2_configs['cfg834'], 4, 0, 4);
+			break;
+		case 2:
+			v3 = cs2method_10327(cs2_configs['cfg834'], 0, 0, 5);
+			break;
+		case 1:
+			v3 = cs2method_10327(cs2_configs['cfg834'], -4, 0, 4);
+	}
+	int v1 = cs2method_10968(cs2method_10635(v3), 64);
+	int v2 = cs2method_10968(cs2method_10339(v3), 64);
+	if (cs2_configs['cfg835'] != v1 || cs2_configs['cfg836'] != v2) {
+		return;
+	}
+	cs2_configs['cfg834'] = v3;
+	script_2612(cs2_configs['cfg834'], cs2_configs['cfg833']);
+	return;
+}

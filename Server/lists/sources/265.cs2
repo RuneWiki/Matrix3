@@ -1,0 +1,70 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_265() {
+	cs2method_10467(1, 60489733);
+	cs2method_10467(1, 60489728);
+	cs2method_10467(1, 60489735);
+	cs2method_10467(1, 60489737);
+	cs2method_10467(1, 60489739);
+	cs2method_10467(1, 60489741);
+	cs2method_10467(1, 60489734);
+	cs2method_10467(1, 60489729);
+	cs2method_10467(1, 60489736);
+	cs2method_10467(1, 60489738);
+	cs2method_10467(1, 60489740);
+	cs2method_10467(1, 60489742);
+	object v0 = "Hook: None";
+	switch (cs2_configs['cfg1110']) {
+		case 2:
+			v0 = "Hook: slim";
+			cs2method_10467(0, 60489734);
+			break;
+		case 1:
+			v0 = "Hook: standard";
+			cs2method_10467(0, 60489729);
+			break;
+		case 3:
+			v0 = "Hook: large";
+			cs2method_10467(0, 60489736);
+			break;
+		case 6:
+			v0 = "Hook: double";
+			cs2method_10467(0, 60489738);
+			break;
+		case 4:
+			v0 = "Hook: bone";
+			cs2method_10467(0, 60489740);
+			break;
+		case 5:
+			v0 = "Hook: wooden";
+			cs2method_10467(0, 60489742);
+	}
+	cs2method_10026(60489831, v0);
+	if (cs2_configs['cfg1110'] == 0) {
+		cs2method_20162(new function<script_6255>() {
+			if (cs2method_10038(cs2method_10133(), 20) == 0) {
+				if (cs2method_10609(60489834) == 0) {
+					cs2method_10467(1, 60489834);
+				} else {
+					cs2method_10467(0, 60489834);
+				}
+			}
+			return;
+		}, "", new WidgetPointer(923,107));
+	} else {
+		cs2method_20162(new function<none>() {
+		}, "", new WidgetPointer(923,107));
+		cs2method_10467(0, 60489834);
+	}
+	return;
+}

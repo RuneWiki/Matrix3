@@ -1,0 +1,64 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7064(int a0) {
+	object v1;
+	object v0 = "0";
+	switch (cs2method_10769(a0)) {
+		default:
+			script_8808();
+			return;
+		case 197:
+			v1 = "Weakness: Melee";
+			break;
+		case 202:
+			v1 = "Weakness: Magic";
+			break;
+		case 200:
+			v1 = "Weakness: Ranged";
+			break;
+		case 9286:
+			v1 = "Weakness: None";
+			break;
+		case 14364:
+			v1 = "Weakness: Air Spells";
+			break;
+		case 14365:
+			v1 = "Weakness: Water Spells";
+			break;
+		case 14366:
+			v1 = "Weakness: Earth Spells";
+			break;
+		case 14367:
+			v1 = "Weakness: Fire Spells";
+			break;
+		case 240:
+			v1 = "Weakness: Stab";
+			break;
+		case 234:
+			v1 = "Weakness: Slash";
+			break;
+		case 256:
+			v1 = "Weakness: Crush";
+			break;
+		case 14405:
+			v1 = "Weakness: Arrows";
+			break;
+		case 14370:
+			v1 = "Weakness: Bolts";
+			break;
+		case 251:
+			v1 = "Weakness: Thrown";
+	}
+	script_8800(a0, -1, v1);
+	return;
+}

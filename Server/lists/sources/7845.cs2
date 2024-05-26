@@ -1,0 +1,65 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7845(int a0,object a1,int a2) {
+	int v0;
+	object v3;
+	int v1 = -1;
+	object v2 = "";
+	switch (a2) {
+		default:
+			return;
+		case 93061194:
+			cs2_configs['cfg3688'] = a0;
+			v0 = 93061429;
+			v3 = "Character names can be up to 12 characters long and may contain letters, numbers, spaces, underscores and dashes only.";
+			if (cs2method_10265(a1) != 0) {
+				v3 = a1;
+			}
+			break;
+		case 93061192:
+			cs2_configs['cfg3689'] = a0;
+			v0 = 93061428;
+			v3 = "Please enter your age, in years, here.";
+			break;
+		case 93061190:
+			cs2_configs['cfg3690'] = a0;
+			v0 = 93061424;
+			if (cs2method_10265(a1) != 0) {
+				v3 = a1;
+			} else {
+				v3 = "Please enter your email address here.";
+			}
+			break;
+		case 93061188:
+			cs2_configs['cfg3691'] = a0;
+			v0 = 93061426;
+			v3 = "Please enter your desired password here.";
+	}
+	switch (a0) {
+		default:
+			return;
+		case 0:
+			cs2method_10026(v0, a1);
+			break;
+		case 1:
+			cs2method_10026(v0, "You have entered a valid input.");
+			break;
+		case 2:
+			cs2method_10026(v0, "Input is locked while attempting to create an account.");
+			break;
+		case 3:
+			cs2method_10026(v0, v3);
+	}
+	script_7847();
+	return;
+}

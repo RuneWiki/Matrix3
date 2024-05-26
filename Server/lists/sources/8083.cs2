@@ -1,0 +1,43 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_8083_struct(8,0,0) script_8083(int a0) {
+	if (a0 == -1) {
+		return new script_8083_struct(0, 0, 0, 0, 0, 0, 0, 0);
+	}
+	globalarray_0 = new int[8];
+	globalarray_0[0] = 1;
+	globalarray_0[3] = 1;
+	globalarray_0[7] = 1;
+	if (script_8085() != 1) {
+		globalarray_0[1] = 0;
+		globalarray_0[2] = 0;
+		globalarray_0[4] = 0;
+		globalarray_0[6] = 0;
+	} else {
+		if (npcDefsAttribute(a0, 420) == 1) {
+			globalarray_0[1] = 0;
+			globalarray_0[2] = 0;
+		} else {
+			globalarray_0[1] = 1;
+			globalarray_0[2] = 1;
+		}
+		globalarray_0[4] = 1;
+		globalarray_0[6] = 1;
+	}
+	if (npcDefsAttribute(a0, 1323) < 1 && npcDefsAttribute(a0, 379) <= 0) {
+		globalarray_0[5] = 0;
+	} else {
+		globalarray_0[5] = 1;
+	}
+	return new script_8083_struct(globalarray_0[0], globalarray_0[1], globalarray_0[2], globalarray_0[3], globalarray_0[4], globalarray_0[5], globalarray_0[6], globalarray_0[7]);
+}

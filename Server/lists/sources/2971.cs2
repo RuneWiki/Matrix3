@@ -1,0 +1,113 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2971(int a0,int a1) {
+	object v9;
+	object v6;
+	int v0;
+	object v1;
+	int v2;
+	object v5 = "";
+	object v8 = "";
+	object v4 = "";
+	int v3 = -1;
+	int v7 = -1;
+	switch (a0) {
+		default:
+			v6 = "Unknown";
+			v1 = "This should not get here.";
+			v9 = "This should never get here.";
+			v2 = 62129;
+			v0 = 30081093;
+			break;
+		case 0:
+			v6 = "Nothing.";
+			v1 = "There are no requirements for building this feature.";
+			v9 = "This feature is an abscence of anything. Oddly, some creatures prefer the minimalist approach.";
+			v2 = 62129;
+			v0 = 30081093;
+			break;
+		case 1:
+			v6 = "Pond";
+			v1 = "You need a Construction level of 65 to build a pond.";
+			v9 = "Ponds attract creatures with an affinity for water. They are essentially very small, man-made lakes...or glorified puddles, depending on your view.";
+			v0 = 30081092;
+			v2 = 62128;
+			break;
+		case 2:
+			v6 = "Tall grass";
+			v1 = "You need a Construction level of 62 to build tall grass.";
+			v9 = "Tall grass is favoured by creatures who sneak and hide. It's also a favourite with people too lazy to trim their lawn. Essentially, it's a patch of land allowed to grow wild.";
+			v0 = 30081094;
+			v2 = 62134;
+			break;
+		case 3:
+			v6 = "Abandoned house";
+			v1 = "You need a Construction level of 57 to build an abandoned house.";
+			v9 = "Something approximating an abandoned house: popular amongst creatures that think they're domesticated.";
+			v0 = 30081095;
+			v2 = 62132;
+			break;
+		case 4:
+			v6 = "Thermal vent";
+			v1 = "You need a Construction level of 59 to build a thermal vent.";
+			v9 = "A home-made volcano, or, at least, something that looks like one. These are popular among earthy creatures.";
+			v0 = 30081096;
+			v2 = 62133;
+			break;
+		case 5:
+			v6 = "Standing stones";
+			v1 = "You need a Construction level of 70 to build standing stones.";
+			v9 = "A circle of home-made mystical stones, popular among creatures that are more magically inclined.";
+			v0 = 30081097;
+			v2 = 62136;
+			break;
+		case 6:
+			v6 = "Dark pit";
+			v1 = "You need a Construction level of 80 to build a dark pit.";
+			v9 = "A deep, dark, endless pit, popular among the more sinister creatures. Don't look too closely: you might fall in.";
+			v0 = 30081098;
+			v2 = 62131;
+			break;
+		case 7:
+			v6 = "Boneyard";
+			v1 = "You need a Construction level of 56 to build a boneyard.";
+			v9 = "An animal graveyard, or a collection of well-made bone mockeries. Popular among scavengers and sinister creatures.";
+			v0 = 30081099;
+			v2 = 62135;
+	}
+	script_2973();
+	if (cs2method_10938(22) < a1) {
+		cs2method_10520(13421568, 30081061);
+		v9 = cs2method_10427(v9, "<br>" + "<br>" + "You can pay Papa Mambo to build this for you.");
+	} else {
+		cs2method_10520(52224, 30081061);
+	}
+	cs2method_10026(30081061, v6);
+	cs2method_10026(30081062, v1);
+	cs2method_10026(30081060, v9);
+	cs2method_10336(v2, 30081059);
+	cs2method_10467(1, 30081093);
+	cs2method_10467(1, 30081092);
+	cs2method_10467(1, 30081094);
+	cs2method_10467(1, 30081095);
+	cs2method_10467(1, 30081096);
+	cs2method_10467(1, 30081097);
+	cs2method_10467(1, 30081098);
+	cs2method_10467(1, 30081099);
+	if (v0 != -1) {
+		cs2method_10467(0, v0);
+	} else {
+		cs2method_10467(0, 30081093);
+	}
+	return;
+}

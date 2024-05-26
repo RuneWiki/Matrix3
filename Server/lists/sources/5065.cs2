@@ -1,0 +1,130 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5065(int a0) {
+	int v5;
+	int v7;
+	int v17;
+	int v16;
+	int v4;
+	int v8;
+	int v3 = cs2method_10823(72810561);
+	cs2method_10283(0, v3, 1, 0, 72810562);
+	cs2method_10283(0, v3, 1, 0, 72810563);
+	cs2method_10283(0, v3, 1, 0, 72810564);
+	int v15 = cs2method_10823(72810548);
+	int v9 = 0;
+	int v14 = 0;
+	int v10 = 0;
+	switch (cs2_configs['cfg768']) {
+		default:
+			cs2_configs['cfg768'] = 1;
+			v16 = cs2method_10461(v15, cs2method_10051(v3, 3));
+			v4 = cs2method_10461(v15, cs2method_10051(v3, 2));
+			v17 = cs2method_10461(v15, v3);
+			script_5056(72810561, 1);
+			script_5056(72810562, 0);
+			script_5056(72810563, 0);
+			script_5056(72810564, 0);
+			break;
+		case 2:
+			v16 = v3;
+			v4 = cs2method_10461(v15, cs2method_10051(v3, 2));
+			v17 = cs2method_10461(v15, v3);
+			script_5056(72810561, 0);
+			script_5056(72810562, 1);
+			script_5056(72810563, 0);
+			script_5056(72810564, 0);
+			break;
+		case 3:
+			v16 = v3;
+			v4 = cs2method_10051(v3, 2);
+			v17 = cs2method_10461(v15, v3);
+			script_5056(72810561, 0);
+			script_5056(72810562, 0);
+			script_5056(72810563, 1);
+			script_5056(72810564, 0);
+			break;
+		case 4:
+			v16 = v3;
+			v4 = cs2method_10051(v3, 2);
+			v17 = cs2method_10051(v3, 3);
+			script_5056(72810561, 0);
+			script_5056(72810562, 0);
+			script_5056(72810563, 0);
+			script_5056(72810564, 1);
+	}
+	int v1 = 0;
+	int v18 = 0;
+	int v6 = 0;
+	int v2 = 0;
+	int v0 = 0;
+	if (a0 == 1) {
+		int v19 = v16;
+		int v21 = v4;
+		v8 = v17;
+		int v20 = v19;
+		v5 = v21;
+		v7 = v20;
+	} else {
+		int v12 = cs2method_10152(72810562);
+		if (v12 != v16) {
+			v7 = cs2method_10060(v12, cs2method_11048(cs2method_10872(cs2method_10461(v16, v12), 3), -3));
+			v0 = 1;
+		} else {
+			v7 = v16;
+		}
+		int v11 = cs2method_10152(72810563);
+		if (v11 != v4) {
+			v5 = cs2method_10060(v11, cs2method_11048(cs2method_10872(cs2method_10461(v4, v11), 3), -3));
+			v0 = 1;
+		} else {
+			v5 = v4;
+		}
+		int v13 = cs2method_10152(72810564);
+		if (v13 != v17) {
+			v8 = cs2method_10060(v13, cs2method_11048(cs2method_10872(cs2method_10461(v17, v13), 3), -3));
+			v0 = 1;
+		} else {
+			v8 = v17;
+		}
+	}
+	cs2method_10112(0, 0, 1, 0, 72810561);
+	cs2method_10112(0, v7, 1, 0, 72810562);
+	cs2method_10112(0, v5, 1, 0, 72810563);
+	cs2method_10112(0, v8, 1, 0, 72810564);
+	cs2method_10112(0, v3, 1, 0, 72810549);
+	cs2method_10112(0, cs2method_10060(v7, v3), 1, 0, 72810552);
+	cs2method_10112(0, cs2method_10060(v5, v3), 1, 0, 72810555);
+	cs2method_10112(0, cs2method_10060(v8, v3), 1, 0, 72810558);
+	cs2method_10283(0, cs2method_10461(v7, v3), 1, 0, 72810549);
+	cs2method_10283(0, cs2method_10461(v5, cs2method_10060(v7, v3)), 1, 0, 72810552);
+	cs2method_10283(0, cs2method_10461(v8, cs2method_10060(v5, v3)), 1, 0, 72810555);
+	cs2method_10283(0, cs2method_10060(v8, v3), 1, 1, 72810558);
+	script_72(72810551, 72810550, cs2method_10718(72810550));
+	script_72(72810554, 72810553, cs2method_10718(72810553));
+	script_72(72810557, 72810556, cs2method_10718(72810556));
+	script_72(72810560, 72810559, cs2method_10718(72810559));
+	if (v0 == 1) {
+		cs2method_20162(new function<script_5064>(int a0) {
+			if (a0 != -1) {
+				cs2_configs['cfg768'] = a0;
+			}
+			script_5065(0);
+			return;
+		}, -1, "i", new WidgetPointer(1111,52));
+	} else {
+		cs2method_20162(new function<none>() {
+		}, "", new WidgetPointer(1111,52));
+	}
+	return;
+}

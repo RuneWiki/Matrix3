@@ -1,0 +1,337 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_2845() {
+	flow_0:
+		if (client_configs['cfg1489'].bitcfg4513 == 1) {
+			cs2method_10336(20522, 30998571);
+			cs2method_10026(30998572, "Attacker level up to 2");
+			cs2method_10026(30998574, "+20 bonus damage");
+			cs2method_10026(30998573, "200 Attacker Honour Points");
+			if (client_configs['cfg1490'].bitcfg4518 > 199) {
+				cs2method_10520(65280, 30998573);
+			}
+		} else if (client_configs['cfg1489'].bitcfg4513 == 2) {
+			cs2method_10336(20523, 30998571);
+			cs2method_10026(30998572, "Attacker level up to 3");
+			cs2method_10026(30998574, "+30 bonus damage");
+			cs2method_10026(30998573, "300 Attacker Honour Points");
+			if (client_configs['cfg1490'].bitcfg4518 > 299) {
+				cs2method_10520(65280, 30998573);
+			}
+		} else if (client_configs['cfg1489'].bitcfg4513 == 3) {
+			cs2method_10336(20524, 30998571);
+			cs2method_10026(30998572, "Attacker level up to 4");
+			cs2method_10026(30998574, "+40 bonus damage");
+			cs2method_10026(30998573, "400 Attacker Honour Points");
+			if (client_configs['cfg1490'].bitcfg4518 > 399) {
+				cs2method_10520(65280, 30998573);
+			}
+		} else if (client_configs['cfg1489'].bitcfg4513 == 4) {
+			cs2method_10336(20525, 30998571);
+			cs2method_10026(30998572, "Attacker level up to 5");
+			cs2method_10026(30998574, "+50 bonus damage");
+			cs2method_10026(30998573, "500 Attacker Honour Points");
+			if (client_configs['cfg1490'].bitcfg4518 > 499) {
+				cs2method_10520(65280, 30998573);
+			}
+		} else if (client_configs['cfg1489'].bitcfg4513 == 5) {
+			cs2method_10336(20525, 30998571);
+			cs2method_10026(30998572, "Attacker level up complete");
+			cs2method_10026(30998574, " - Mastered - ");
+			cs2method_10026(30998573, " - Mastered - ");
+		} else {
+			client_configs['cfg1489'].bitcfg4513 = 1;
+			cs2method_10336(20522, 30998571);
+			cs2method_10026(30998572, "Attacker level up to 2");
+			cs2method_10026(30998574, "+20 bonus damage");
+			cs2method_10026(30998573, "200 Attacker Honour Points");
+			if (client_configs['cfg1490'].bitcfg4518 > 199) {
+				cs2method_10520(65280, 30998573);
+			}
+		}
+		if (client_configs['cfg1490'].bitcfg4515 == 1) {
+			cs2method_10336(20531, 30998578);
+			cs2method_10026(30998579, "Defender level up to 2");
+			cs2method_10026(30998581, "Lure range 5");
+			cs2method_10026(30998580, "200 Defender Honour Points");
+			if (client_configs['cfg1491'].bitcfg4526 > 199) {
+				cs2method_10520(65280, 30998580);
+			}
+		} else if (client_configs['cfg1490'].bitcfg4515 == 2) {
+			cs2method_10336(20532, 30998578);
+			cs2method_10026(30998579, "Defender level up to 3");
+			cs2method_10026(30998581, "Lure range 6");
+			cs2method_10026(30998580, "300 Defender Honour Points");
+			if (client_configs['cfg1491'].bitcfg4526 > 299) {
+				cs2method_10520(65280, 30998580);
+			}
+		} else if (client_configs['cfg1490'].bitcfg4515 == 3) {
+			cs2method_10336(20533, 30998578);
+			cs2method_10026(30998579, "Defender level up to 4");
+			cs2method_10026(30998581, "Lure range 8");
+			cs2method_10026(30998580, "400 Defender Honour Points");
+			if (client_configs['cfg1491'].bitcfg4526 > 399) {
+				cs2method_10520(65280, 30998580);
+			}
+		} else if (client_configs['cfg1490'].bitcfg4515 == 4) {
+			cs2method_10336(20534, 30998578);
+			cs2method_10026(30998579, "Defender level up to 5");
+			cs2method_10026(30998581, "Lure range 10");
+			cs2method_10026(30998580, "500 Defender Honour Points");
+			if (client_configs['cfg1491'].bitcfg4526 > 499) {
+				cs2method_10520(65280, 30998580);
+			}
+		} else if (client_configs['cfg1490'].bitcfg4515 == 5) {
+			cs2method_10336(20534, 30998578);
+			cs2method_10026(30998579, "Defender level up complete");
+			cs2method_10026(30998581, " - Mastered - ");
+			cs2method_10026(30998580, " - Mastered - ");
+		} else {
+			client_configs['cfg1490'].bitcfg4515 = 1;
+			cs2method_10336(20531, 30998578);
+			cs2method_10026(30998579, "Defender level up to 2");
+			cs2method_10026(30998581, "Lure range 5");
+			cs2method_10026(30998580, "200 Defender Honour Points");
+			if (client_configs['cfg1491'].bitcfg4526 > 199) {
+				cs2method_10520(65280, 30998580);
+			}
+		}
+		if (client_configs['cfg1490'].bitcfg4516 == 1) {
+			cs2method_10336(20526, 30998585);
+			cs2method_10026(30998586, "Collector level up to 2");
+			cs2method_10026(30998588, "Egg conversion");
+			cs2method_10026(30998587, "200 Collector Honour Points");
+			if (client_configs['cfg1491'].bitcfg4524 > 199) {
+				cs2method_10520(65280, 30998587);
+			}
+		} else if (client_configs['cfg1490'].bitcfg4516 == 2) {
+			cs2method_10336(20527, 30998585);
+			cs2method_10026(30998586, "Collector level up to 3");
+			cs2method_10026(30998588, "Egg convert success (80%)");
+			cs2method_10026(30998587, "300 Collector Honour Points");
+			if (client_configs['cfg1491'].bitcfg4524 > 299) {
+				cs2method_10520(65280, 30998587);
+			}
+		} else if (client_configs['cfg1490'].bitcfg4516 == 3) {
+			cs2method_10336(20528, 30998585);
+			cs2method_10026(30998586, "Collector level up to 4");
+			cs2method_10026(30998588, "Egg convert success (90%)");
+			cs2method_10026(30998587, "400 Collector Honour Points");
+			if (client_configs['cfg1491'].bitcfg4524 > 399) {
+				cs2method_10520(65280, 30998587);
+			}
+		} else if (client_configs['cfg1490'].bitcfg4516 == 4) {
+			cs2method_10336(20529, 30998585);
+			cs2method_10026(30998586, "Collector level up to 5");
+			cs2method_10026(30998588, "Egg convert success (100%)");
+			cs2method_10026(30998587, "500 Collector Honour Points");
+			if (client_configs['cfg1491'].bitcfg4524 > 499) {
+				cs2method_10520(65280, 30998587);
+			}
+		} else if (client_configs['cfg1490'].bitcfg4516 == 5) {
+			cs2method_10336(20529, 30998585);
+			cs2method_10026(30998586, "Collector level up complete");
+			cs2method_10026(30998588, " - Mastered - ");
+			cs2method_10026(30998587, " - Mastered - ");
+		} else {
+			client_configs['cfg1490'].bitcfg4516 = 1;
+			cs2method_10336(20526, 30998585);
+			cs2method_10026(30998586, "Collector level up to 2");
+			cs2method_10026(30998588, "Egg conversion");
+			cs2method_10026(30998587, "200 Collector Honour Points");
+			if (client_configs['cfg1491'].bitcfg4524 > 199) {
+				cs2method_10520(65280, 30998587);
+			}
+		}
+		if (client_configs['cfg1490'].bitcfg4517 == 1) {
+			cs2method_10336(20538, 30998592);
+			cs2method_10026(30998593, "Healer level up to 2");
+			cs2method_10026(30998595, "Heal 150 points, more run energy");
+			cs2method_10026(30998594, "200 Healer Honour Points");
+			if (client_configs['cfg1491'].bitcfg4525 > 199) {
+				cs2method_10520(65280, 30998594);
+			}
+		} else if (client_configs['cfg1490'].bitcfg4517 == 2) {
+			cs2method_10336(20539, 30998592);
+			cs2method_10026(30998593, "Healer level up to 3");
+			cs2method_10026(30998595, "Heal 200 points, more run energy");
+			cs2method_10026(30998594, "300 Healer Honour Points");
+			if (client_configs['cfg1491'].bitcfg4525 > 299) {
+				cs2method_10520(65280, 30998594);
+			}
+		} else if (client_configs['cfg1490'].bitcfg4517 == 3) {
+			cs2method_10336(20540, 30998592);
+			cs2method_10026(30998593, "Healer level up to 4");
+			cs2method_10026(30998595, "Heal 250 points, more run energy");
+			cs2method_10026(30998594, "400 Healer Honour Points");
+			if (client_configs['cfg1491'].bitcfg4525 > 399) {
+				cs2method_10520(65280, 30998594);
+			}
+		} else if (client_configs['cfg1490'].bitcfg4517 == 4) {
+			cs2method_10336(20541, 30998592);
+			cs2method_10026(30998593, "Healer level up to 5");
+			cs2method_10026(30998595, "Heal 350 points, more run energy");
+			cs2method_10026(30998594, "500 Healer Honour Points");
+			if (client_configs['cfg1491'].bitcfg4525 > 499) {
+				cs2method_10520(65280, 30998594);
+			}
+		} else if (client_configs['cfg1490'].bitcfg4517 == 5) {
+			cs2method_10336(20541, 30998592);
+			cs2method_10026(30998593, "Healer level up complete");
+			cs2method_10026(30998595, " - Mastered - ");
+			cs2method_10026(30998594, " - Mastered - ");
+		} else {
+			client_configs['cfg1490'].bitcfg4517 = 1;
+			cs2method_10336(20538, 30998592);
+			cs2method_10026(30998593, "Healer level up to 2");
+			cs2method_10026(30998595, "Heal 150 points and even more run energy");
+			cs2method_10026(30998594, "200 Healer Honour Points");
+			if (client_configs['cfg1491'].bitcfg4525 > 199) {
+				cs2method_10520(65280, 30998594);
+			}
+		}
+		if (client_configs['cfg1490'].bitcfg4518 > 274 && client_configs['cfg1491'].bitcfg4526 > 274 && client_configs['cfg1491'].bitcfg4524 > 274 && client_configs['cfg1491'].bitcfg4525 > 274) {
+			cs2method_10520(65280, 30998656);
+		}
+		if (client_configs['cfg1490'].bitcfg4518 > 274 && client_configs['cfg1491'].bitcfg4526 > 274 && client_configs['cfg1491'].bitcfg4524 > 274 && client_configs['cfg1491'].bitcfg4525 > 274) {
+			cs2method_10520(65280, 30998649);
+		}
+		if (client_configs['cfg1490'].bitcfg4518 > 274 && client_configs['cfg1491'].bitcfg4526 > 274 && client_configs['cfg1491'].bitcfg4524 > 274 && client_configs['cfg1491'].bitcfg4525 > 274) {
+			cs2method_10520(65280, 30998642);
+		}
+		if (client_configs['cfg1490'].bitcfg4518 > 274 && client_configs['cfg1491'].bitcfg4526 > 274 && client_configs['cfg1491'].bitcfg4524 > 274 && client_configs['cfg1491'].bitcfg4525 > 274) {
+			cs2method_10520(65280, 30998635);
+		}
+		if (client_configs['cfg1490'].bitcfg4518 > 374 && client_configs['cfg1491'].bitcfg4526 > 374 && client_configs['cfg1491'].bitcfg4524 > 374 && client_configs['cfg1491'].bitcfg4525 > 374) {
+			cs2method_10520(65280, 30998628);
+		}
+		if (client_configs['cfg1490'].bitcfg4518 > 374 && client_configs['cfg1491'].bitcfg4526 > 374 && client_configs['cfg1491'].bitcfg4524 > 374 && client_configs['cfg1491'].bitcfg4525 > 374) {
+			cs2method_10520(65280, 30998621);
+		}
+		if (client_configs['cfg1490'].bitcfg4518 > 99 && client_configs['cfg1491'].bitcfg4526 > 99 && client_configs['cfg1491'].bitcfg4524 > 99 && client_configs['cfg1491'].bitcfg4525 > 99) {
+			cs2method_10520(65280, 30998615);
+		}
+		if (client_configs['cfg1490'].bitcfg4518 > 149 && client_configs['cfg1491'].bitcfg4526 > 149 && client_configs['cfg1491'].bitcfg4524 > 149 && client_configs['cfg1491'].bitcfg4525 > 149) {
+			cs2method_10520(65280, 30998609);
+		}
+		if (script_5567(995, 95000) > 0) {
+			cs2method_10520(65280, 30998740);
+		}
+		if (client_configs['cfg1488'].bitcfg4507 == 1) {
+			cs2method_10520(65280, 30998623);
+			cs2method_10520(65280, 30998630);
+			cs2method_10520(65280, 30998637);
+			cs2method_10520(65280, 30998644);
+			cs2method_10520(65280, 30998651);
+			cs2method_10520(65280, 30998658);
+			cs2method_10520(65280, 30998742);
+		}
+		if (client_configs['cfg1490'].bitcfg4518 > 9 || client_configs['cfg1491'].bitcfg4526 > 9 || client_configs['cfg1491'].bitcfg4524 > 9 || client_configs['cfg1491'].bitcfg4525 > 9) {
+			cs2method_10520(65280, 30998734);
+		}
+		if (client_configs['cfg1490'].bitcfg4518 > 19 || client_configs['cfg1491'].bitcfg4526 > 19 || client_configs['cfg1491'].bitcfg4524 > 19 || client_configs['cfg1491'].bitcfg4525 > 19) {
+			cs2method_10520(65280, 30998728);
+		}
+		if (client_configs['cfg1490'].bitcfg4518 > 29 || client_configs['cfg1491'].bitcfg4526 > 29 || client_configs['cfg1491'].bitcfg4524 > 29 || client_configs['cfg1491'].bitcfg4525 > 29) {
+			cs2method_10520(65280, 30998722);
+		}
+		if (cs2method_10936(93, 15439) < 1 && cs2method_10936(95, 15439) < 1 && cs2method_10936(94, 15439) < 1 && cs2method_10936(530, 15439) < 1 && cs2method_10936(93, 15440) < 1 && cs2method_10936(95, 15440) < 1 && cs2method_10936(94, 15440) < 1 && cs2method_10936(530, 15440) < 1) {
+			cs2method_10520(65280, 30998747);
+		}
+		if (client_configs['cfg1489'].bitcfg4513 == 5 || client_configs['cfg1490'].bitcfg4515 == 5 || client_configs['cfg1490'].bitcfg4516 == 5 || client_configs['cfg1490'].bitcfg4517 == 5) {
+			cs2method_10520(65280, 30998711);
+		}
+		if (cs2method_10936(93, 15440) < 1 && cs2method_10936(95, 15440) < 1 && cs2method_10936(94, 15440) < 1 && cs2method_10936(530, 15440) < 1 && cs2method_10936(93, 29648) < 1 && cs2method_10936(95, 29648) < 1 && cs2method_10936(94, 29648) < 1 && cs2method_10936(530, 29648) < 1 && (cs2method_10936(93, 15439) > 0 || cs2method_10936(95, 15439) > 0 || cs2method_10936(94, 15439) > 0 || cs2method_10936(530, 15439) > 0 || cs2method_10936(93, 29647) > 0 || cs2method_10936(95, 29647) > 0 || cs2method_10936(94, 29647) > 0 || cs2method_10936(530, 29647) > 0)) {
+			cs2method_10520(65280, 30998712);
+		}
+		if (client_configs['cfg1490'].bitcfg4518 > 169 && client_configs['cfg1491'].bitcfg4526 > 169 && client_configs['cfg1491'].bitcfg4524 > 169 && client_configs['cfg1491'].bitcfg4525 > 169) {
+			cs2method_10520(65280, 30998674);
+		}
+		IF (cs2method_10936(93, 15438) > 0) 
+			GOTO	flow_157
+		IF (cs2method_10936(94, 15438) > 0 && client_configs['cfg1490'].bitcfg4518 > 219) 
+			GOTO	flow_158
+		GOTO	flow_162
+	flow_157:
+	flow_158:
+		if (client_configs['cfg1491'].bitcfg4526 > 219 && client_configs['cfg1491'].bitcfg4524 > 219 && client_configs['cfg1491'].bitcfg4525 > 219) {
+			cs2method_10520(65280, 30998668);
+		}
+	flow_162:
+		int v0 = 0;
+		if (cs2method_10936(93, 4151) > 0 || cs2method_10936(93, 11235) > 0) {
+			v0 = 1;
+		}
+		if (client_configs['cfg1493'].bitcfg4539 == 0) {
+			if (client_configs['cfg1490'].bitcfg4518 > 49 || client_configs['cfg1491'].bitcfg4526 > 49 || client_configs['cfg1491'].bitcfg4524 > 49 || client_configs['cfg1491'].bitcfg4525 > 49) {
+				cs2method_10520(65280, 30998690);
+			}
+		} else {
+			if (v0 == 1) {
+				cs2method_10520(65280, 30998690);
+			}
+		}
+		if (client_configs['cfg1493'].bitcfg4541 == 0) {
+			if (client_configs['cfg1490'].bitcfg4518 > 49 || client_configs['cfg1491'].bitcfg4526 > 49 || client_configs['cfg1491'].bitcfg4524 > 49 || client_configs['cfg1491'].bitcfg4525 > 49) {
+				cs2method_10520(65280, 30998684);
+			}
+		} else {
+			if (v0 == 1) {
+				cs2method_10520(65280, 30998684);
+			}
+		}
+		if (client_configs['cfg1493'].bitcfg4538 == 0) {
+			if (client_configs['cfg1490'].bitcfg4518 > 49 || client_configs['cfg1491'].bitcfg4526 > 49 || client_configs['cfg1491'].bitcfg4524 > 49 || client_configs['cfg1491'].bitcfg4525 > 49) {
+				cs2method_10520(65280, 30998702);
+			}
+		} else {
+			if (v0 == 1) {
+				cs2method_10520(65280, 30998702);
+			}
+		}
+		if (client_configs['cfg1493'].bitcfg4540 == 0) {
+			if (client_configs['cfg1490'].bitcfg4518 > 49 || client_configs['cfg1491'].bitcfg4526 > 49 || client_configs['cfg1491'].bitcfg4524 > 49 || client_configs['cfg1491'].bitcfg4525 > 49) {
+				cs2method_10520(65280, 30998696);
+			}
+		} else {
+			if (v0 == 1) {
+				cs2method_10520(65280, 30998696);
+			}
+		}
+		if (client_configs['cfg1493'].bitcfg4539 == 1) {
+			cs2method_10026(30998690, "Carrying a valid weapon");
+			cs2method_10026(30998689, "Use Penance Egg Paint (White)");
+		}
+		if (client_configs['cfg1493'].bitcfg4541 == 1) {
+			cs2method_10026(30998684, "Carrying a valid weapon");
+			cs2method_10026(30998683, "Use Penance Egg Paint (Green)");
+		}
+		if (client_configs['cfg1493'].bitcfg4540 == 1) {
+			cs2method_10026(30998696, "Carrying a valid weapon");
+			cs2method_10026(30998695, "Use Penance Egg Paint (Blue)");
+		}
+		if (client_configs['cfg1493'].bitcfg4538 == 1) {
+			cs2method_10026(30998702, "Carrying a valid weapon");
+			cs2method_10026(30998701, "Use Penance Egg Paint (Yellow)");
+		}
+		cs2method_10039(10534, -1, 30998700);
+		cs2method_10039(10531, -1, 30998682);
+		cs2method_10039(15705, -1, 30998688);
+		cs2method_10039(10533, -1, 30998694);
+		cs2method_10026(30998537, cs2method_10379(client_configs['cfg1490'].bitcfg4518));
+		cs2method_10026(30998538, cs2method_10379(client_configs['cfg1491'].bitcfg4526));
+		cs2method_10026(30998539, cs2method_10379(client_configs['cfg1491'].bitcfg4524));
+		cs2method_10026(30998540, cs2method_10379(client_configs['cfg1491'].bitcfg4525));
+		return;
+}

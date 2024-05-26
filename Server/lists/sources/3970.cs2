@@ -1,0 +1,38 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3970() {
+	int v0 = cs2method_10690(69140493);
+	if (cs2_configs['cfg1427'] < 190) {
+		cs2_configs['cfg1427'] = cs2method_10060(cs2_configs['cfg1427'], 1);
+	} else if (v0 < 255) {
+		int v1 = cs2method_10872(cs2method_10060(v0, 4), 255);
+		cs2method_10704(v1, 69140484);
+		cs2method_10704(v1, 69140493);
+		cs2method_10704(v1, 69140494);
+		cs2method_10704(v1, 69140495);
+		cs2method_10704(v1, 69140485);
+		cs2method_10704(v1, 69140490);
+		cs2method_10704(v1, 69140486);
+		cs2method_10704(v1, 69140487);
+		cs2method_10704(v1, 69140489);
+		cs2method_10704(v1, 69140488);
+		cs2method_10704(v1, 69140492);
+	} else {
+		cs2method_20162(new function<none>() {
+		}, "", new WidgetPointer(1055,1));
+		cs2method_10467(1, 69140480);
+		cs2_configs['cfg1427'] = 0;
+		script_3374(1012);
+	}
+	return;
+}

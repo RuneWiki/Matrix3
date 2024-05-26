@@ -1,0 +1,35 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_8112(int a0,int a1) {
+	flow_0:
+		IF (a0 == 0) 
+			GOTO	flow_1
+		GOTO	flow_2
+	flow_1:
+		IF (a1 == 1) 
+			GOTO	flow_4
+	flow_2:
+		IF (a0 == 1 && a1 == 0) 
+			GOTO	flow_4
+		GOTO	flow_5
+	flow_4:
+		cs2method_10112(0, 0, 2, 1, 93716484);
+		cs2method_10112(0, 0, 0, 1, 93716485);
+		GOTO	flow_6
+	flow_5:
+		cs2method_10112(0, 0, 1, 2, 93716484);
+		cs2method_10112(0, 0, 1, 0, 93716485);
+	flow_6:
+		return;
+}

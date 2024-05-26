@@ -1,0 +1,28 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_4464() {
+	int v0 = -1;
+	if (cs2method_10570() == 1) {
+		if (cs2method_10435() == 1) {
+			int v1 = cs2method_10793(cs2method_10765(cs2method_10954()));
+			if (v1 != -1 && cs2method_10101(v1) >= cs2method_10607()) {
+				return 1;
+			}
+		} else {
+			cs2method_10810("You must be in a clan to do that.");
+		}
+	} else {
+		cs2method_10810("You must be in a clan to do that.");
+	}
+	return 0;
+}

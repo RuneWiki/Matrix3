@@ -1,0 +1,60 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_1742() {
+	if (cs2method_10776() == 3) {
+		if (script_2581(19589) != 1) {
+			return 0;
+		}
+		if (script_2581(19590) != 1) {
+			return 0;
+		}
+		if (script_2581(19591) != 1) {
+			return 0;
+		}
+		if (script_2581(19593) != 1) {
+			return 0;
+		}
+		return 4;
+	}
+	if (cs2method_10776() == 1) {
+		if (script_2581(19589) != 0) {
+			return 0;
+		}
+		if (script_2581(19590) != 1) {
+			return 0;
+		}
+		if (script_2581(19591) != 0) {
+			return 0;
+		}
+		if (script_2581(19593) != 0) {
+			return 0;
+		}
+		return 3;
+	}
+	if (cs2method_10776() == 0) {
+		if (script_2581(19589) != 0) {
+			return 0;
+		}
+		if (script_2581(19590) != 0) {
+			return 0;
+		}
+		if (script_2581(19591) != 0) {
+			return 0;
+		}
+		if (script_2581(19593) != 0) {
+			return 0;
+		}
+		return 2;
+	}
+	return 0;
+}

@@ -1,0 +1,33 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_5008() {
+	int v1 = -1;
+	int v2 = -1;
+	int v0 = 0;
+	if (cs2method_10570() == 1) {
+		int v3 = cs2method_10793(cs2method_10954());
+		if (v3 < 0) {
+			return 0;
+		}
+		int v5 = cs2method_10393(v3);
+		int v4 = cs2method_10461(clan_chat_configs['cfg2132'], cs2method_11115());
+		if (v4 < 360) {
+			if (v5 < 126) {
+				return 0;
+			}
+			return 1;
+		}
+		return 1;
+	}
+	return 0;
+}

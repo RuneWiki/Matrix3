@@ -1,0 +1,30 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8240(int a0) {
+	cs2method_20348(new function<script_8241>() {
+		script_8242();
+		return;
+	}, 3814, 1, "Y", new WidgetPointer(a0));
+	cs2method_20486(new function<script_8243>() {
+		if (client_configs['cfg3680'].bitcfg22315 == 1) {
+			return;
+		}
+		client_configs['cfg3814'].bitcfg19924 = cs2method_11048(0, client_configs['cfg3814'].bitcfg19924);
+		client_configs['cfg3814'].bitcfg19924 = cs2method_10461(1, client_configs['cfg3814'].bitcfg19924);
+		script_8242();
+		script_8267();
+		return;
+	}, "", new WidgetPointer(a0));
+	script_8242();
+	return;
+}

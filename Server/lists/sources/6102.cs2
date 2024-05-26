@@ -1,0 +1,41 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6102() {
+	int v0 = 0;
+	int v1 = 0;
+	cs2method_10026(82903108, script_940(client_configs['cfg302']));
+	if (client_configs['cfg299'] != -1 && client_configs['cfg301'] != -1) {
+		int v2;
+		if (client_configs['cfg299'] == 93) {
+			v2 = script_6076(client_configs['cfg300'], client_configs['cfg302']);
+		} else {
+			v2 = script_6075(client_configs['cfg300'], client_configs['cfg302']);
+		}
+		if (v2 == -1) {
+			cs2method_10026(82903248, "N/A");
+			cs2method_10758(2180, 82903058);
+		} else if (client_configs['cfg299'] == client_configs['cfg305']) {
+			cs2method_10026(82903248, "Free!");
+			cs2method_10758(-1, 82903058);
+		} else {
+			cs2method_10026(82903248, script_940(v2));
+			cs2method_10758(idx17mapData('o', 'd', 200, client_configs['cfg306']), 82903058);
+		}
+		int v3 = cs2method_10509(cs2method_10236(82903120), 17813, cs2method_10744(82903248));
+		if (client_configs['cfg299'] != client_configs['cfg305']) {
+			v3 = cs2method_10060(cs2method_10060(v3, 2), cs2method_10236(82903058));
+		}
+		cs2method_10283(v3, 15, 0, 0, 82903057);
+	}
+	return;
+}

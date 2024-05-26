@@ -1,0 +1,93 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4628(int a0) {
+	int v2 = -1;
+	int v7 = -1;
+	int v37 = -1;
+	int v34 = -1;
+	int v26 = -1;
+	int v45 = -1;
+	int v1 = -1;
+	int v27 = -1;
+	int v4 = -1;
+	int v32 = -1;
+	int v30 = -1;
+	int v23 = -1;
+	int v43 = -1;
+	int v38 = -1;
+	int v19 = -1;
+	int v47 = -1;
+	int v40 = -1;
+	int v49 = -1;
+	int v15 = -1;
+	int v12 = -1;
+	int v46 = -1;
+	int v41 = -1;
+	int v22 = -1;
+	int v33 = -1;
+	int v25 = a0;
+	script_7814_struct(24,0,0) v42 = script_7814(v25);
+	int v24 = v42.intpart_23;
+	int v11 = v42.intpart_22;
+	int v10 = v42.intpart_21;
+	int v14 = v42.intpart_20;
+	int v6 = v42.intpart_19;
+	int v39 = v42.intpart_18;
+	int v13 = v42.intpart_17;
+	int v8 = v42.intpart_16;
+	int v20 = v42.intpart_15;
+	int v29 = v42.intpart_14;
+	int v36 = v42.intpart_13;
+	int v9 = v42.intpart_12;
+	int v35 = v42.intpart_11;
+	int v48 = v42.intpart_10;
+	int v21 = v42.intpart_9;
+	int v28 = v42.intpart_8;
+	int v31 = v42.intpart_7;
+	int v16 = v42.intpart_6;
+	int v17 = v42.intpart_5;
+	int v44 = v42.intpart_4;
+	int v5 = v42.intpart_3;
+	int v3 = v42.intpart_2;
+	int v0 = v42.intpart_1;
+	int v18 = v42.intpart_0;
+	cs2_configs['cfg1518'] = -1;
+	cs2_configs['cfg2353'] = "";
+	if (cs2method_10324(v6) == 1) {
+		cs2method_20061(new function<script_4629>(int a0,int a1,int a2) {
+			int v0 = 0;
+			if (cs2method_10324(a2) == 1) {
+				int v1;
+				if (a0 == 1) {
+					int v2 = cs2method_10060(cs2method_10488(), 3);
+					v1 = cs2method_10872(48, v2);
+					if (v1 == 48) {
+						cs2method_20061(new function<none>() {
+						}, "");
+					}
+				} else {
+					int v2 = cs2method_10461(cs2method_10488(), 3);
+					v1 = cs2method_11048(1, v2);
+					if (v1 == 1) {
+						cs2method_20061(new function<none>() {
+						}, "");
+						cs2method_10467(1, a1);
+					}
+				}
+				cs2method_10013(v1, 19, 0, 0);
+			}
+			return;
+		}, 0, new WidgetPointer(v6), new WidgetPointer(v39), "iII");
+	}
+	return;
+}

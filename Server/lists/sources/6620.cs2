@@ -1,0 +1,42 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6620(int a0) {
+	cs2method_10273(a0);
+	int v3 = 0;
+	int v6 = 0;
+	int v1 = 0;
+	int v4 = 0;
+	int v0 = 0;
+	int v7 = 100;
+	int v2 = 0;
+	int v5 = 0;
+	if (cs2method_10324(a0) == 1) {
+		v5 = cs2method_10461(cs2method_10968(cs2method_10488(), 10), 1);
+	}
+	while (v0 < v7) {
+		cs2method_10606(a0, 5, v0);
+		cs2method_10013(21, 21, 0, 0);
+		cs2method_10063(v3, v6, 0, 0);
+		if (a0 == 86704174) {
+			cs2method_10057(1, "Select");
+		}
+		v0 = cs2method_10060(v0, 1);
+		if (cs2method_10038(v0, 10) == 0) {
+			v3 = v1;
+			v6 = cs2method_10060(v6, cs2method_10060(1, v5));
+		} else {
+			v3 = cs2method_10060(cs2method_10060(1, v5), v3);
+		}
+	}
+	return;
+}

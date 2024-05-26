@@ -1,0 +1,18 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_340() {
+	if (client_configs['cfg1789'].bitcfg6068 == 1 && script_7034(client_configs['cfg1831']) != 5 && script_7034(client_configs['cfg1831']) != -1) {
+		return 1;
+	}
+	return 0;
+}

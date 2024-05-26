@@ -1,0 +1,17 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9504(int a0,int a1,int a2) {
+	object v0 = "Your total score: " + (string)cs2method_10055(client_configs['cfg3983'], 1) + "<br>" + "Current votes: " + (string)cs2method_10055(client_configs['cfg3981'], 1) + "<br>" + "Current renown:  " + (string)cs2method_10055(client_configs['cfg3980'], 1);
+	script_7769(49086536, a2, -1, 600, 17813, 17813, 16777215, 13, 4, 3, a1, v0, a0);
+	return;
+}

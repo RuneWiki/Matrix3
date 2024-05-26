@@ -1,0 +1,35 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7117() {
+	object v0 = "null";
+	int v1 = -1;
+	if (script_5767() == 0 && client_configs['cfg1168'] != -1 && cs2_configs['cfg2222'] != -1 && client_configs['cfg1169'] != -1 && cs2method_10245(103, 7056, client_configs['cfg1169']) == 1 && cs2method_10245(103, client_configs['cfg1168'], client_configs['cfg1169']) == 1) {
+		cs2method_10467(0, 89849906);
+		cs2method_10467(1, 89849867);
+		int v3 = cs2method_11045(103, 105, client_configs['cfg1168'], client_configs['cfg1169'], 0);
+		object v2 = idx17mapData('i', 's', cs2_configs['cfg2222'], v3);
+		if (cs2method_10846(v2, "0") == 0 || cs2method_10846(v2, "null") == 0 || client_configs['cfg1173'].bitcfg3033 == 0) {
+			v2 = "Pick Category";
+		}
+		script_4499(cs2_configs['cfg2222'], 0, -1, cs2method_10872(15, cs2method_10924(cs2_configs['cfg2222'])), 89849907, 89849917, 89849919, 89849918, 89849864, v2);
+		return;
+	}
+	cs2method_10467(1, 89849906);
+	cs2method_10467(0, 89849867);
+	if (cs2method_10846(cs2_configs['cfg2390'], "") != 0 && cs2method_10846(cs2_configs['cfg2390'], "null") != 0) {
+		cs2method_10026(89849905, cs2_configs['cfg2390']);
+	} else {
+		cs2method_10026(89849905, "Create Item");
+	}
+	return;
+}

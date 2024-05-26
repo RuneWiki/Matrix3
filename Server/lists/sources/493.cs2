@@ -1,0 +1,112 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_493(int a0,int a1) {
+	int v4;
+	int v5;
+	int v6;
+	int v0 = 0;
+	int v1 = 0;
+	int v2 = -1;
+	switch (a1) {
+		default:
+			return;
+		case 66519098:
+			v4 = 1;
+			break;
+		case 66519100:
+			v4 = 2;
+			break;
+		case 66519102:
+			v4 = 3;
+			break;
+		case 66519104:
+			v4 = 4;
+			break;
+		case 66519108:
+			v4 = 5;
+			break;
+		case 66519110:
+			v4 = 6;
+			break;
+		case 66519112:
+			v4 = 7;
+			break;
+		case 66519114:
+			v4 = 8;
+			break;
+		case 66519106:
+			v4 = 9;
+	}
+	if (a0 == 1) {
+		v6 = 16777215;
+	} else {
+		v6 = 16750623;
+	}
+	if (client_configs['cfg1659'].bitcfg5415 != v4 && client_configs['cfg1659'].bitcfg5416 != v4 && client_configs['cfg1659'].bitcfg5417 != v4 && client_configs['cfg1659'].bitcfg5418 != v4) {
+		cs2method_10520(v6, a1);
+		if (a0 == 1) {
+			int v3 = script_488(v4);
+			if (v3 != -1) {
+				cs2method_10467(1, 66519089);
+				cs2method_10467(0, 66519090);
+				cs2method_10467(0, 66519091);
+				cs2method_10467(0, 66519092);
+				cs2method_10467(0, 66519093);
+				cs2method_10467(0, 66519094);
+				cs2method_10026(66519091, idx22mapAttribute(v3, 1150));
+				cs2method_10758(idx22mapAttribute(v3, 1153), 66519090);
+				cs2method_10026(66519092, idx22mapAttribute(v3, 1151));
+				cs2method_10026(66519093, cs2method_10427("Cooldown: ", cs2method_10379(idx22mapAttribute(v3, 1155))));
+				cs2method_10026(66519094, cs2method_10427("Cost: ", cs2method_10379(idx22mapAttribute(v3, 1154))));
+			}
+		} else {
+			switch (client_configs['cfg1655'].bitcfg5391) {
+				default:
+					v5 = -1;
+					break;
+				case 1:
+					v5 = script_488(client_configs['cfg1659'].bitcfg5415);
+					break;
+				case 2:
+					v5 = script_488(client_configs['cfg1659'].bitcfg5416);
+					break;
+				case 3:
+					v5 = script_488(client_configs['cfg1659'].bitcfg5417);
+					break;
+				case 4:
+					v5 = script_488(client_configs['cfg1659'].bitcfg5418);
+			}
+			if (v5 == -1) {
+				cs2method_10467(0, 66519089);
+				cs2method_10467(1, 66519090);
+				cs2method_10467(1, 66519091);
+				cs2method_10467(1, 66519092);
+				cs2method_10467(1, 66519093);
+				cs2method_10467(1, 66519094);
+			} else {
+				cs2method_10467(1, 66519089);
+				cs2method_10467(0, 66519090);
+				cs2method_10467(0, 66519091);
+				cs2method_10467(0, 66519092);
+				cs2method_10467(0, 66519093);
+				cs2method_10467(0, 66519094);
+				cs2method_10026(66519091, idx22mapAttribute(v5, 1150));
+				cs2method_10758(idx22mapAttribute(v5, 1153), 66519090);
+				cs2method_10026(66519092, idx22mapAttribute(v5, 1151));
+				cs2method_10026(66519093, cs2method_10427("Cooldown: ", cs2method_10379(idx22mapAttribute(v5, 1155))));
+				cs2method_10026(66519094, cs2method_10427("Cost: ", cs2method_10379(idx22mapAttribute(v5, 1154))));
+			}
+		}
+	}
+	return;
+}

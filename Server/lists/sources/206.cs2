@@ -1,0 +1,200 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_206() {
+	object v15;
+	object v19;
+	object v6;
+	object v8;
+	object v22;
+	cs2method_10273(41156637);
+	object v13 = "";
+	int v14 = 0;
+	cs2method_10606(41156637, 5, v14);
+	if (client_configs['cfg2231'].bitcfg9999 == 1) {
+		v8 = "Dwarven Mine - Complete";
+		cs2method_10310(13616);
+	} else {
+		v8 = "Dwarven Mine - Incomplete";
+		cs2method_10310(13617);
+	}
+	cs2method_10063(150, 50, 0, 0);
+	cs2method_10013(25, 25, 0, 0);
+	cs2method_20353(new function<script_7785>(object a0,int a1,int a2,int a3,int a4,int a5) {
+		script_7788(a0, a5, a2, a3, a1, a4);
+		return;
+	}, new WidgetPointer(628,29), v14, new WidgetPointer(628,30), (string)v8, 25, 100, "IiIsii");
+	cs2method_20884(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(628,30), "I");
+	int v18 = cs2method_10060(v14, 1);
+	cs2method_10606(41156637, 5, v18);
+	if (client_configs['cfg2231'].bitcfg10000 == 1) {
+		v22 = "Varrock West Mine - Complete";
+		cs2method_10310(13616);
+	} else {
+		v22 = "Varrock West Mine - Incomplete";
+		cs2method_10310(13617);
+	}
+	cs2method_10063(275, 112, 0, 0);
+	cs2method_10013(25, 25, 0, 0);
+	cs2method_20353(new function<script_7785>(int a0,int a1,object a2,int a3,int a4,int a5) {
+		script_7788(a2, a3, a5, a1, a4, a0);
+		return;
+	}, new WidgetPointer(628,29), v18, new WidgetPointer(628,30), (string)v22, 25, 100, "IiIsii");
+	cs2method_20884(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(628,30), "I");
+	int v10 = cs2method_10060(v18, 1);
+	cs2method_10606(41156637, 5, v10);
+	if (client_configs['cfg2231'].bitcfg10001 == 1) {
+		v6 = "Varrock East Mine - Complete";
+		cs2method_10310(13616);
+	} else {
+		v6 = "Varrock East Mine - Incomplete";
+		cs2method_10310(13617);
+	}
+	cs2method_10063(350, 120, 0, 0);
+	cs2method_10013(25, 25, 0, 0);
+	cs2method_20353(new function<script_7785>(int a0,int a1,int a2,int a3,int a4,object a5) {
+		script_7788(a5, a4, a2, a1, a0, a3);
+		return;
+	}, new WidgetPointer(628,29), v10, new WidgetPointer(628,30), (string)v6, 25, 100, "IiIsii");
+	cs2method_20884(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(628,30), "I");
+	int v1 = cs2method_10060(v10, 1);
+	cs2method_10606(41156637, 5, v1);
+	if (client_configs['cfg2231'].bitcfg10002 == 1) {
+		v15 = "Rimmington Mine - Complete";
+		cs2method_10310(13616);
+	} else {
+		v15 = "Rimmington Mine - Incomplete";
+		cs2method_10310(13617);
+	}
+	cs2method_10063(120, 215, 0, 0);
+	cs2method_10013(25, 25, 0, 0);
+	cs2method_20353(new function<script_7785>(int a0,int a1,object a2,int a3,int a4,int a5) {
+		script_7788(a2, a1, a0, a3, a4, a5);
+		return;
+	}, new WidgetPointer(628,29), v1, new WidgetPointer(628,30), (string)v15, 25, 100, "IiIsii");
+	cs2method_20884(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(628,30), "I");
+	int v7 = cs2method_10060(v1, 1);
+	object v9 = "Falador Lodestone";
+	cs2method_10606(41156637, 5, v7);
+	cs2method_10310(22621);
+	cs2method_10063(118, 80, 0, 0);
+	cs2method_10013(15, 15, 0, 0);
+	cs2method_20353(new function<script_7785>(int a0,int a1,int a2,object a3,int a4,int a5) {
+		script_7788(a3, a0, a2, a1, a4, a5);
+		return;
+	}, new WidgetPointer(628,29), v7, new WidgetPointer(628,30), (string)v9, 25, 100, "IiIsii");
+	cs2method_20884(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(628,30), "I");
+	int v17 = cs2method_10060(v7, 1);
+	object v5 = "Varrock Lodestone";
+	cs2method_10606(41156637, 5, v17);
+	cs2method_10310(22621);
+	cs2method_10063(300, 105, 0, 0);
+	cs2method_10013(15, 15, 0, 0);
+	cs2method_20353(new function<script_7785>(int a0,int a1,int a2,int a3,object a4,int a5) {
+		script_7788(a4, a2, a5, a3, a1, a0);
+		return;
+	}, new WidgetPointer(628,29), v17, new WidgetPointer(628,30), (string)v5, 25, 100, "IiIsii");
+	cs2method_20884(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(628,30), "I");
+	int v2 = cs2method_10060(v17, 1);
+	object v3 = "Port Sarim Lodestone";
+	cs2method_10606(41156637, 5, v2);
+	cs2method_10310(22621);
+	cs2method_10063(151, 230, 0, 0);
+	cs2method_10013(15, 15, 0, 0);
+	cs2method_20353(new function<script_7785>(int a0,int a1,int a2,object a3,int a4,int a5) {
+		script_7788(a3, a2, a1, a0, a4, a5);
+		return;
+	}, new WidgetPointer(628,29), v2, new WidgetPointer(628,30), (string)v3, 25, 100, "IiIsii");
+	cs2method_20884(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(628,30), "I");
+	int v11 = cs2method_10060(v2, 1);
+	object v16 = "Artisan Workshop";
+	cs2method_10606(41156637, 5, v11);
+	cs2method_10310(22709);
+	cs2method_10063(177, 130, 0, 0);
+	cs2method_10013(15, 15, 0, 0);
+	cs2method_20353(new function<script_7785>(int a0,int a1,int a2,int a3,object a4,int a5) {
+		script_7788(a4, a1, a5, a2, a0, a3);
+		return;
+	}, new WidgetPointer(628,29), v11, new WidgetPointer(628,30), (string)v16, 25, 100, "IiIsii");
+	cs2method_20884(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(628,30), "I");
+	int v0 = cs2method_10060(v11, 1);
+	if (client_configs['cfg2231'].bitcfg9998 < 55) {
+		v19 = "Doric's Workshop";
+	} else {
+		v19 = "Doric & Son's Workshop";
+	}
+	cs2method_10606(41156637, 5, v0);
+	cs2method_10310(22709);
+	cs2method_10063(108, 65, 0, 0);
+	cs2method_10013(15, 15, 0, 0);
+	cs2method_20353(new function<script_7785>(int a0,int a1,int a2,int a3,object a4,int a5) {
+		script_7788(a4, a2, a1, a0, a5, a3);
+		return;
+	}, new WidgetPointer(628,29), v0, new WidgetPointer(628,30), (string)v19, 25, 100, "IiIsii");
+	cs2method_20884(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(628,30), "I");
+	int v12 = cs2method_10060(v0, 1);
+	object v21 = "Falador Castle";
+	cs2method_10606(41156637, 5, v12);
+	cs2method_10310(22293);
+	cs2method_10063(112, 122, 0, 0);
+	cs2method_10013(30, 30, 0, 0);
+	cs2method_20353(new function<script_7785>(int a0,int a1,int a2,object a3,int a4,int a5) {
+		script_7788(a3, a4, a1, a0, a5, a2);
+		return;
+	}, new WidgetPointer(628,29), v12, new WidgetPointer(628,30), (string)v21, 25, 100, "IiIsii");
+	cs2method_20884(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(628,30), "I");
+	int v20 = cs2method_10060(v12, 1);
+	cs2method_10606(41156637, 5, v20);
+	cs2method_10310(13620);
+	cs2method_10063(cs2method_10968(cs2method_10051(cs2method_10461(cs2method_10635(cs2method_10472()), 2815), 75), 100), cs2method_10968(cs2method_10051(cs2method_10461(3520, cs2method_10339(cs2method_10472())), 77), 100), 0, 0);
+	cs2method_10013(25, 25, 0, 0);
+	object v4 = "You are here";
+	cs2method_20353(new function<script_7785>(object a0,int a1,int a2,int a3,int a4,int a5) {
+		script_7788(a0, a4, a3, a2, a1, a5);
+		return;
+	}, new WidgetPointer(628,29), v20, new WidgetPointer(628,30), (string)v4, 25, 100, "IiIsii");
+	cs2method_20884(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(628,30), "I");
+	return;
+}

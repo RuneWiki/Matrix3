@@ -1,0 +1,20 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6472(int a0) {
+	int v0 = 5960;
+	for (int v2 = cs2method_10461(cs2method_10924(v0), 1), int v1 = 5961; v2 >= 0; v2 = cs2method_10461(v2, 1)) {
+		cs2method_10467(a0, (int)idx17mapData('i', 'I', v0, v2));
+		cs2method_10467(a0, (int)idx17mapData('i', 'I', v1, v2));
+	}
+	return;
+}

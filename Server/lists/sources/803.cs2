@@ -1,0 +1,193 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_803() {
+	object v0 = idx17mapData('i', 's', 1711, client_configs['cfg2720'].bitcfg13530);
+	switch (client_configs['cfg2720'].bitcfg13530) {
+		case 1:
+			cs2method_10467(0, 37683217);
+			cs2method_21121(new function<script_7781>(int a0,object a1,int a2,int a3,int a4) {
+				script_7788(a1, a4, -1, a0, a2, a3);
+				return;
+			}, new WidgetPointer(-32768,3), new WidgetPointer(575,2), (string)v0, 25, 130, "IIsii", new WidgetPointer(575,17));
+			break;
+		case 2:
+			cs2method_10467(0, 37683218);
+			cs2method_21121(new function<script_7781>(int a0,object a1,int a2,int a3,int a4) {
+				script_7788(a1, a2, -1, a3, a0, a4);
+				return;
+			}, new WidgetPointer(-32768,3), new WidgetPointer(575,2), (string)v0, 25, 160, "IIsii", new WidgetPointer(575,18));
+			break;
+		case 3:
+			cs2method_10467(0, 37683219);
+			cs2method_21121(new function<script_7781>(int a0,object a1,int a2,int a3,int a4) {
+				script_7788(a1, a2, -1, a4, a0, a3);
+				return;
+			}, new WidgetPointer(-32768,3), new WidgetPointer(575,2), (string)v0, 25, 200, "IIsii", new WidgetPointer(575,19));
+			break;
+		case 4:
+			cs2method_10467(0, 37683220);
+			cs2method_21121(new function<script_7781>(int a0,int a1,int a2,int a3,object a4) {
+				script_7788(a4, a2, -1, a0, a1, a3);
+				return;
+			}, new WidgetPointer(-32768,3), new WidgetPointer(575,2), (string)v0, 25, 200, "IIsii", new WidgetPointer(575,20));
+			break;
+		case 5:
+			cs2method_10467(0, 37683221);
+			cs2method_21121(new function<script_7781>(int a0,int a1,int a2,object a3,int a4) {
+				script_7788(a3, a0, -1, a1, a4, a2);
+				return;
+			}, new WidgetPointer(-32768,3), new WidgetPointer(575,2), (string)v0, 25, 200, "IIsii", new WidgetPointer(575,21));
+			break;
+		case 6:
+			cs2method_10467(0, 37683222);
+			cs2method_21121(new function<script_7781>(object a0,int a1,int a2,int a3,int a4) {
+				script_7788(a0, a4, -1, a1, a3, a2);
+				return;
+			}, new WidgetPointer(-32768,3), new WidgetPointer(575,2), (string)v0, 25, 200, "IIsii", new WidgetPointer(575,22));
+			break;
+		case 7:
+			cs2method_10467(0, 37683223);
+			cs2method_21121(new function<script_7781>(int a0,int a1,int a2,object a3,int a4) {
+				script_7788(a3, a2, -1, a4, a0, a1);
+				return;
+			}, new WidgetPointer(-32768,3), new WidgetPointer(575,2), (string)v0, 25, 200, "IIsii", new WidgetPointer(575,23));
+			break;
+		case 8:
+			cs2method_10467(0, 37683224);
+			cs2method_21121(new function<script_7781>(int a0,int a1,object a2,int a3,int a4) {
+				script_7788(a2, a4, -1, a1, a3, a0);
+				return;
+			}, new WidgetPointer(-32768,3), new WidgetPointer(575,2), (string)v0, 25, 200, "IIsii", new WidgetPointer(575,24));
+			break;
+		case 9:
+			cs2method_10467(0, 37683225);
+			cs2method_21121(new function<script_7781>(int a0,int a1,int a2,int a3,object a4) {
+				script_7788(a4, a2, -1, a1, a0, a3);
+				return;
+			}, new WidgetPointer(-32768,3), new WidgetPointer(575,2), (string)v0, 25, 200, "IIsii", new WidgetPointer(575,25));
+			break;
+		case 10:
+			cs2method_10467(0, 37683226);
+			cs2method_21121(new function<script_7781>(int a0,object a1,int a2,int a3,int a4) {
+				script_7788(a1, a3, -1, a4, a2, a0);
+				return;
+			}, new WidgetPointer(-32768,3), new WidgetPointer(575,2), (string)v0, 25, 200, "IIsii", new WidgetPointer(575,26));
+			break;
+		case 11:
+			cs2method_10467(0, 37683227);
+			cs2method_21121(new function<script_7781>(int a0,object a1,int a2,int a3,int a4) {
+				script_7788(a1, a3, -1, a4, a0, a2);
+				return;
+			}, new WidgetPointer(-32768,3), new WidgetPointer(575,2), (string)v0, 25, 200, "IIsii", new WidgetPointer(575,27));
+			break;
+		case 12:
+			cs2method_10467(0, 37683228);
+			cs2method_21121(new function<script_7781>(int a0,int a1,int a2,object a3,int a4) {
+				script_7788(a3, a0, -1, a1, a4, a2);
+				return;
+			}, new WidgetPointer(-32768,3), new WidgetPointer(575,2), (string)v0, 25, 200, "IIsii", new WidgetPointer(575,28));
+			break;
+		default:
+			return;
+	}
+	cs2_configs['cfg2'] = 0;
+	switch (client_configs['cfg2720'].bitcfg13530) {
+		case 1:
+			if (client_configs['cfg2719'].bitcfg13553 == 1) {
+				script_804();
+			} else {
+				script_813(client_configs['cfg2720'].bitcfg13530);
+			}
+			break;
+		case 2:
+			if (client_configs['cfg2719'].bitcfg13554 == 1) {
+				script_804();
+			} else {
+				script_813(client_configs['cfg2720'].bitcfg13530);
+			}
+			break;
+		case 3:
+			if (client_configs['cfg2719'].bitcfg13555 == 1) {
+				script_804();
+			} else {
+				script_813(client_configs['cfg2720'].bitcfg13530);
+			}
+			break;
+		case 4:
+			if (client_configs['cfg2719'].bitcfg13556 == 1) {
+				script_804();
+			} else {
+				script_813(client_configs['cfg2720'].bitcfg13530);
+			}
+			break;
+		case 5:
+			if (client_configs['cfg2719'].bitcfg13557 == 1) {
+				script_804();
+			} else {
+				script_813(client_configs['cfg2720'].bitcfg13530);
+			}
+			break;
+		case 6:
+			if (client_configs['cfg2719'].bitcfg13558 == 1) {
+				script_804();
+			} else {
+				script_813(client_configs['cfg2720'].bitcfg13530);
+			}
+			break;
+		case 7:
+			if (client_configs['cfg2719'].bitcfg13559 == 1) {
+				script_804();
+			} else {
+				script_813(client_configs['cfg2720'].bitcfg13530);
+			}
+			break;
+		case 8:
+			if (client_configs['cfg2719'].bitcfg13560 == 1) {
+				script_804();
+			} else {
+				script_813(client_configs['cfg2720'].bitcfg13530);
+			}
+			break;
+		case 9:
+			if (client_configs['cfg2719'].bitcfg13561 == 1) {
+				script_804();
+			} else {
+				script_813(client_configs['cfg2720'].bitcfg13530);
+			}
+			break;
+		case 10:
+			if (client_configs['cfg2719'].bitcfg13562 == 1) {
+				script_804();
+			} else {
+				script_813(client_configs['cfg2720'].bitcfg13530);
+			}
+			break;
+		case 11:
+			if (client_configs['cfg2719'].bitcfg13563 == 1) {
+				script_804();
+			} else {
+				script_813(client_configs['cfg2720'].bitcfg13530);
+			}
+			break;
+		case 12:
+			if (client_configs['cfg2719'].bitcfg13564 == 1) {
+				script_804();
+			} else {
+				script_813(client_configs['cfg2720'].bitcfg13530);
+			}
+			break;
+		default:
+			return;
+	}
+	return;
+}

@@ -1,0 +1,40 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8790(int a0,int a1,int a2) {
+	int v1 = 0;
+	int v0 = 0;
+	if (a2 == -1) {
+		if (script_8403(a0) >= 0 && script_8403(a0) <= cs2method_10236(a0) && script_8404(a0) >= 0 && script_8404(a0) <= cs2method_10823(a0)) {
+			return;
+		}
+	} else {
+		if (cs2method_11038(a0, a2) == 1) {
+			int v2 = a0;
+			int v5 = a2;
+			script_8406_struct(2,0,0) v3 = script_8406(v2, v5);
+			int v4 = v3.intpart_1;
+			int v6 = v3.intpart_0;
+			if (cs2method_11144() > v6 && cs2method_11144() < cs2method_10060(v6, cs2method_10488()) && cs2method_10524() > v4 && cs2method_10524() < cs2method_10060(v4, cs2method_10664())) {
+				return;
+			}
+		}
+	}
+	if (script_8403(a1) >= 0 && script_8403(a1) <= cs2method_10236(a1) && script_8404(a1) >= 0 && script_8404(a1) <= cs2method_10823(a1)) {
+		return;
+	}
+	if (cs2method_10609(96797076) == 0 && script_8403(96797076) >= 0 && script_8403(96797076) <= cs2method_10236(96797076)) {
+		return;
+	}
+	script_9965(a1);
+	return;
+}

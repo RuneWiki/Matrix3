@@ -1,0 +1,19 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+object script_9573(int a0) {
+	if (a0 > 9999) {
+		int v0 = cs2method_10968(a0, 1000);
+		return cs2method_10427(cs2method_10379(v0), "k");
+	}
+	return cs2method_10379(a0);
+}

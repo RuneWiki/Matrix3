@@ -1,0 +1,24 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6666() {
+	if (cs2_configs['cfg2004'] >= 0 && cs2_configs['cfg2005'] >= 0) {
+		cs2method_10026(87293975, (string)cs2method_10379(cs2_configs['cfg2004']) + "/" + (string)cs2method_10379(cs2_configs['cfg2005']));
+		cs2method_10283(cs2method_10122(cs2_configs['cfg2004'], cs2_configs['cfg2005'], 16384), cs2method_10823(87293952), 2, 0, 87293952);
+		cs2method_10520(16777215, 87293975);
+	} else {
+		cs2method_10026(87293975, "0/0");
+		cs2method_10520(10066329, 87293975);
+		cs2method_10283(0, cs2method_10823(87293952), 2, 0, 87293952);
+	}
+	return;
+}

@@ -1,0 +1,50 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+object script_7515(int a0) {
+	object v0 = "";
+	switch (a0) {
+		case 16323:
+			v0 = "Trade your chest with the next player.";
+			break;
+		case 16317:
+			v0 = "Trade your chest with the previous ranked player.";
+			break;
+		case 16329:
+			v0 = "Your chest contain the same as the previous ranked player.";
+			break;
+		case 16311:
+			v0 = "Randomly generate a new card that will be played immediately.";
+			break;
+		case 16335:
+			v0 = "Protects your chest from being moved once per game.";
+			break;
+		case 16320:
+			v0 = "Trade your chest with the player ranked last.";
+			break;
+		case 16341:
+			v0 = "Whatever is in your chest at the end of the game, you will receive a medium lamp as your reward.";
+			break;
+		case 16326:
+			v0 = "Adds an extra medium lamp to your chest but every player still to play will receive an extra card.";
+			break;
+		case 16332:
+			v0 = "Rise from the ashes by returning chests to the contents from the previous turn.";
+			break;
+		case 16338:
+			v0 = "Add a piece of gorajo clothing to your chest which can be worn outside of these dungeons.";
+			break;
+		case 16314:
+			v0 = "Randomise all player's chests.";
+	}
+	return v0;
+}

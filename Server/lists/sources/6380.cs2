@@ -1,0 +1,43 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_6380_struct(3,0,0) script_6380(int a0) {
+	switch (a0) {
+		case 0:
+			return new script_6380_struct((int)cs2_configs['cfg1947'], cs2_configs['cfg1948'], cs2method_10461(client_configs['cfg1756'].bitcfg5932, 1));
+		case 1:
+			return new script_6380_struct((int)cs2_configs['cfg1949'], cs2_configs['cfg1950'], cs2method_10461(client_configs['cfg1756'].bitcfg5933, 1));
+		case 2:
+			return new script_6380_struct((int)cs2_configs['cfg1951'], cs2_configs['cfg1952'], cs2method_10461(client_configs['cfg1757'].bitcfg5934, 1));
+		case 3:
+			return new script_6380_struct((int)cs2_configs['cfg1953'], cs2_configs['cfg1954'], cs2method_10461(client_configs['cfg1757'].bitcfg5935, 1));
+		case 4:
+			return new script_6380_struct((int)cs2_configs['cfg1955'], cs2_configs['cfg1956'], cs2method_10461(client_configs['cfg1758'].bitcfg5936, 1));
+		case 5:
+			return new script_6380_struct((int)cs2_configs['cfg1957'], cs2_configs['cfg1958'], cs2method_10461(client_configs['cfg1758'].bitcfg5937, 1));
+		case 6:
+			return new script_6380_struct((int)cs2_configs['cfg1959'], cs2_configs['cfg1960'], cs2method_10461(client_configs['cfg1759'].bitcfg5938, 1));
+		case 7:
+			return new script_6380_struct((int)cs2_configs['cfg1961'], cs2_configs['cfg1962'], cs2method_10461(client_configs['cfg1759'].bitcfg5939, 1));
+		case 8:
+			return new script_6380_struct((int)cs2_configs['cfg3503'], cs2_configs['cfg3504'], cs2method_10461(client_configs['cfg3692'].bitcfg18767, 1));
+		case 9:
+			return new script_6380_struct((int)cs2_configs['cfg3505'], cs2_configs['cfg3506'], cs2method_10461(client_configs['cfg3692'].bitcfg18768, 1));
+		case 10:
+			return new script_6380_struct((int)cs2_configs['cfg3507'], cs2_configs['cfg3508'], cs2method_10461(client_configs['cfg3693'].bitcfg18769, 1));
+		case 11:
+			return new script_6380_struct((int)cs2_configs['cfg3509'], cs2_configs['cfg3510'], cs2method_10461(client_configs['cfg3693'].bitcfg18770, 1));
+		case 12:
+			return new script_6380_struct((int)cs2_configs['cfg3511'], cs2_configs['cfg3512'], cs2method_10461(client_configs['cfg3694'].bitcfg18771, 1));
+	}
+	return new script_6380_struct(-1, -1, -1);
+}

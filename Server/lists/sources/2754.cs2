@@ -1,0 +1,135 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2754() {
+	cs2method_11007(48758809, 71);
+	cs2method_10467(0, 4653062);
+	cs2method_10758(19574, 39059595);
+	cs2method_10758(19575, 39059594);
+	cs2method_10467(1, 39059476);
+	cs2method_10467(0, 39059581);
+	cs2method_20390(new function<script_9061>(int a0) {
+		script_4634(a0);
+		return;
+	}, 4, "i", new WidgetPointer(596,137));
+	cs2method_20390(new function<script_2759>(int a0) {
+		object v0 = "";
+		switch (a0) {
+			case 1:
+				v0 = "axeso_juegos";
+				break;
+			case 2:
+				v0 = "axeso_comunidad";
+				break;
+			case 3:
+				v0 = "axeso_ayuda";
+				break;
+			case 0:
+				v0 = "axeso_redirect";
+				break;
+			case 4:
+				v0 = "axeso_register";
+				break;
+			case 11:
+				v0 = "uol_redirect";
+				break;
+			case 12:
+				v0 = "uol_phone";
+				break;
+			case 13:
+				v0 = "uol_sac";
+				break;
+			case 5:
+				v0 = "uol_bate_papo";
+				break;
+			case 6:
+				v0 = "uol_email";
+				break;
+			case 7:
+				v0 = "uol_notificias";
+				break;
+			case 8:
+				v0 = "uol_esporte";
+				break;
+			case 9:
+				v0 = "uol_entretenumento";
+				break;
+			case 10:
+				v0 = "uol_mulher";
+				break;
+			case 14:
+				v0 = "uol_create";
+		}
+		cs2method_10707(1, v0);
+		return;
+	}, 4, "i", new WidgetPointer(596,126));
+	cs2method_20390(new function<script_2759>(int a0) {
+		object v0 = "";
+		switch (a0) {
+			case 1:
+				v0 = "axeso_juegos";
+				break;
+			case 2:
+				v0 = "axeso_comunidad";
+				break;
+			case 3:
+				v0 = "axeso_ayuda";
+				break;
+			case 0:
+				v0 = "axeso_redirect";
+				break;
+			case 4:
+				v0 = "axeso_register";
+				break;
+			case 11:
+				v0 = "uol_redirect";
+				break;
+			case 12:
+				v0 = "uol_phone";
+				break;
+			case 13:
+				v0 = "uol_sac";
+				break;
+			case 5:
+				v0 = "uol_bate_papo";
+				break;
+			case 6:
+				v0 = "uol_email";
+				break;
+			case 7:
+				v0 = "uol_notificias";
+				break;
+			case 8:
+				v0 = "uol_esporte";
+				break;
+			case 9:
+				v0 = "uol_entretenumento";
+				break;
+			case 10:
+				v0 = "uol_mulher";
+				break;
+			case 14:
+				v0 = "uol_create";
+		}
+		cs2method_10707(1, v0);
+		return;
+	}, 4, "i", new WidgetPointer(596,86));
+	cs2method_10026(39059597, "Click the button below to use your Axeso5 details to login and play now!");
+	cs2method_10467(0, 39059538);
+	cs2method_10467(1, 39059535);
+	cs2method_10467(1, 39059532);
+	cs2method_10467(1, 39059529);
+	cs2method_10112(0, -9, 1, 0, 39059541);
+	cs2_configs['cfg3706'] = 1;
+	script_2962(0);
+	return;
+}

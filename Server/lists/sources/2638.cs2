@@ -1,0 +1,24 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2638() {
+	if (cs2_configs['cfg903'] == 0) {
+		cs2method_10758(2023, 56295436);
+		cs2method_10026(56295426, "Light");
+	} else {
+		if (cs2_configs['cfg903'] == 1) {
+			cs2method_10758(2022, 56295436);
+			cs2method_10026(56295426, "Heavy");
+		}
+	}
+	return;
+}

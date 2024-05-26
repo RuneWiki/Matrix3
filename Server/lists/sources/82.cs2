@@ -1,0 +1,95 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_82(object a0,int a1,int a2,int a3,int a4,int a5) {
+	flow_0:
+		cs2method_10467(1, 97648642);
+		IF (a4 == 0) 
+			GOTO	flow_1
+		GOTO	flow_1
+	flow_1:
+		if (a2 == -1 || a5 == -1 || a1 == -1) {
+			return;
+		}
+		object v4 = cs2method_10765(a0);
+		cs2method_10026(97648643, v4);
+		cs2method_10283(cs2method_10060(cs2method_10939(cs2method_10643(97648643), cs2method_10744(97648643)), 10), 17, 0, 0, 97648643);
+		int v0 = 0;
+		if (a3 > 0) {
+			cs2method_10026(97648665, cs2method_10379(a3));
+			v0 = cs2method_10461(cs2method_10004(), a3);
+		} else {
+			cs2method_10026(97648665, "-");
+		}
+		if (v0 >= 0) {
+			cs2method_10520(script_693(cs2method_10461(255, cs2method_10122(v0, cs2method_10004(), 255)), 255, 0), 97648665);
+		} else {
+			cs2method_10520(script_693(255, cs2method_10060(255, cs2method_11048(cs2method_10122(v0, cs2method_11048(a3, 200), 255), -255)), 0), 97648665);
+		}
+		cs2method_10758(a2, 97648653);
+		object v1 = "Weakness: ";
+		switch (a2) {
+			case 197:
+				v1 = cs2method_10427(v1, "Melee");
+				break;
+			case 202:
+				v1 = cs2method_10427(v1, "Magic");
+				break;
+			case 200:
+				v1 = cs2method_10427(v1, "Ranged");
+				break;
+			case 9286:
+				v1 = cs2method_10427(v1, "None");
+				break;
+			case 14364:
+				v1 = cs2method_10427(v1, "Air Spells");
+				break;
+			case 14365:
+				v1 = cs2method_10427(v1, "Water Spells");
+				break;
+			case 14366:
+				v1 = cs2method_10427(v1, "Earth Spells");
+				break;
+			case 14367:
+				v1 = cs2method_10427(v1, "Fire Spells");
+				break;
+			case 240:
+				v1 = cs2method_10427(v1, "Stab");
+				break;
+			case 234:
+				v1 = cs2method_10427(v1, "Slash");
+				break;
+			case 256:
+				v1 = cs2method_10427(v1, "Crush");
+				break;
+			case 14405:
+				v1 = cs2method_10427(v1, "Arrows");
+				break;
+			case 14370:
+				v1 = cs2method_10427(v1, "Bolts");
+				break;
+			case 251:
+				v1 = cs2method_10427(v1, "Thrown");
+		}
+		cs2method_21121(new function<script_8799>(int a0,object a1,int a2) {
+			script_8800(a2, a0, a1);
+			return;
+		}, (string)v1, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(1490,13));
+		script_91();
+		int v5 = 5;
+		int v3 = cs2method_10060(cs2method_10060(cs2method_10191(97648643), cs2method_10236(97648643)), v5);
+		cs2method_10112(v3, 7, 0, 0, 97648644);
+		int v2 = cs2method_10060(cs2method_10060(cs2method_10191(97648644), cs2method_10236(97648644)), v5);
+		cs2method_10112(v2, 0, 0, 0, 97648654);
+		return;
+}

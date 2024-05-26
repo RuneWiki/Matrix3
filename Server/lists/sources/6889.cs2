@@ -1,0 +1,166 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6889(int a0,int a1,int a2,int a3) {
+	cs2method_10273(a2);
+	cs2method_10273(a1);
+	int v4 = script_6890(0, a2, "Boosted stats will be reset.", 0);
+	int v3 = script_6890(v4, a2, "Existing prayers will be stopped.", 0);
+	if (client_configs['cfg1587'].bitcfg5000 > 0 || client_configs['cfg1587'].bitcfg17837 == 1) {
+		v3 = script_6890(v3, a2, "Some worn items will be taken off.", 0);
+	}
+	if (v3 > cs2method_10823(a2)) {
+		cs2method_11130(0, v3, a2);
+		script_4529(a3, a2, 7337);
+		cs2method_10467(0, a3);
+		cs2method_10112(6, 20, 0, 0, a2);
+	} else {
+		cs2method_11130(0, 0, a2);
+		cs2method_10273(a3);
+		cs2method_10467(1, a3);
+		cs2method_10112(0, 20, 1, 0, a2);
+	}
+	int v1 = 0;
+	int v2 = cs2method_10640(94, 3);
+	if (cs2method_10771() == 1 && (cs2method_10936(93, 10148) > 0 || v2 == 10148 || cs2method_10936(93, 10147) > 0 || v2 == 10147 || cs2method_10936(93, 10146) > 0 || v2 == 10146 || cs2method_10936(93, 10149) > 0 || v2 == 10149)) {
+		v1 = 1;
+	}
+	int v8 = 0;
+	if (v2 == 19830 || cs2method_10936(93, 19830) > 0) {
+		v8 = 1;
+	}
+	int v9 = 0;
+	if (v2 != -1 && cs2method_10628(v2) == 5) {
+		v9 = 1;
+	} else {
+		int v6 = cs2method_10461(cs2method_10894(93), 1);
+		while (v6 >= 0) {
+			int v10 = cs2method_10640(93, v6);
+			if (v10 != -1 && cs2method_10873(v10) == 3 && cs2method_10628(v10) == 5) {
+				int v10 = 1;
+				v6 = 0;
+				v9 = v10;
+			}
+			v6 = cs2method_10461(v6, 1);
+		}
+	}
+	int v7 = 0;
+	if (client_configs['cfg1587'].bitcfg4989 == 1) {
+		v7 = script_6890(v7, a1, "You cannot forfeit the duel.", cs2_configs['cfg1453']);
+	}
+	if (client_configs['cfg1587'].bitcfg4990 == 1) {
+		v7 = script_6890(v7, a1, "You cannot move.", cs2_configs['cfg1454']);
+	}
+	int v5 = 0;
+	if (client_configs['cfg1587'].bitcfg4991 == 1) {
+		v7 = script_6890(v7, a1, "You cannot use Ranged attacks.", cs2_configs['cfg1455']);
+		v5 = 1;
+	} else {
+		if (v8 == 1) {
+			v7 = script_6890(v7, a1, "Ranging is enabled, but " + "<col=ffffff>" + "your sling cannot be used against players" + "</col>" + ".", 0);
+		}
+	}
+	if (client_configs['cfg1587'].bitcfg4992 == 1) {
+		v7 = script_6890(v7, a1, "You cannot use melee attacks.", cs2_configs['cfg1456']);
+		v5 = 1;
+	}
+	if (client_configs['cfg1587'].bitcfg4993 == 1) {
+		v7 = script_6890(v7, a1, "You cannot use Magic attacks.", cs2_configs['cfg1457']);
+		v5 = 1;
+	} else {
+		if (client_configs['cfg4'].bitcfg0 == 2) {
+			v7 = script_6890(v7, a1, "Magical combat is enabled, but you're on the " + "<col=ffffff>" + "Lunar spellbook" + "</col>" + ".", 0);
+		}
+	}
+	if (v1 == 1 && v5 == 1) {
+		v7 = script_6890(v7, a1, "You cannot use " + "<col=ffffff>" + "salamanders" + "</col>" + ".", 0);
+	}
+	object v0 = "You can summon familiars.";
+	if (client_configs['cfg1587'].bitcfg5001 == 1) {
+		if (v5 == 1) {
+			v0 = "You can summon familiars. Melee / Ranged / Magic restrictions " + "<col=ffffff>" + "do not apply" + "</col>" + " to familiars' attacks.";
+		}
+		v7 = script_6890(v7, a1, v0, cs2_configs['cfg1464']);
+	}
+	if (client_configs['cfg1587'].bitcfg4999 == 1) {
+		v7 = script_6890(v7, a1, "You cannot use abilities.", cs2_configs['cfg1463']);
+	}
+	if (client_configs['cfg1587'].bitcfg4998 == 1) {
+		v7 = script_6890(v7, a1, "You can only attack with 'fun' weapons.", cs2_configs['cfg1462']);
+	}
+	if (client_configs['cfg1587'].bitcfg4994 == 1) {
+		v7 = script_6890(v7, a1, "You cannot use drinks.", cs2_configs['cfg1458']);
+	}
+	if (client_configs['cfg1587'].bitcfg4995 == 1) {
+		v7 = script_6890(v7, a1, "You cannot use food or healing portents.", cs2_configs['cfg1459']);
+	}
+	if (client_configs['cfg1587'].bitcfg4996 == 1) {
+		v7 = script_6890(v7, a1, "You cannot use Prayer.", cs2_configs['cfg1460']);
+	}
+	if (client_configs['cfg1587'].bitcfg4997 == 1) {
+		v7 = script_6890(v7, a1, "There will be obstacles in the arena.", cs2_configs['cfg1461']);
+	}
+	if (cs2method_10441(client_configs['cfg1587'].bitcfg5000, 0) == 1) {
+		v7 = script_6890(v7, a1, "You cannot wear items on your head.", cs2_configs['cfg1465']);
+	}
+	if (cs2method_10441(client_configs['cfg1587'].bitcfg5000, 1) == 1) {
+		v7 = script_6890(v7, a1, "You cannot wear items on your back, such as capes.", cs2_configs['cfg1466']);
+	}
+	if (cs2method_10441(client_configs['cfg1587'].bitcfg5000, 2) == 1) {
+		v7 = script_6890(v7, a1, "You cannot wear items on your front, such as amulets.", cs2_configs['cfg1467']);
+	}
+	if (cs2method_10441(client_configs['cfg1587'].bitcfg5000, 3) == 1) {
+		v7 = script_6890(v7, a1, "You cannot wield items in your right hand.", cs2_configs['cfg740']);
+	}
+	if (cs2method_10441(client_configs['cfg1587'].bitcfg5000, 4) == 1) {
+		v7 = script_6890(v7, a1, "You cannot wear items on your torso.", cs2_configs['cfg745']);
+	}
+	if (cs2method_10441(client_configs['cfg1587'].bitcfg5000, 5) == 1) {
+		object v10;
+		if (v9 == 1) {
+			v10 = "You cannot wield items in your left hand " + "<col=ffffff>" + "or use 2-handed weapons, such as bows" + "</col>" + ".";
+		} else {
+			v10 = "You cannot wield items in your left hand or use 2-handed weapons.";
+		}
+		v7 = script_6890(v7, a1, v10, cs2_configs['cfg780']);
+	}
+	if (cs2method_10441(client_configs['cfg1587'].bitcfg5000, 7) == 1) {
+		v7 = script_6890(v7, a1, "You cannot wear items on your legs.", cs2_configs['cfg781']);
+	}
+	if (cs2method_10441(client_configs['cfg1587'].bitcfg5000, 9) == 1) {
+		v7 = script_6890(v7, a1, "You cannot wear items on your hands.", cs2_configs['cfg782']);
+	}
+	if (cs2method_10441(client_configs['cfg1587'].bitcfg5000, 10) == 1) {
+		v7 = script_6890(v7, a1, "You cannot wear items on your feet.", cs2_configs['cfg789']);
+	}
+	if (cs2method_10441(client_configs['cfg1587'].bitcfg5000, 12) == 1) {
+		v7 = script_6890(v7, a1, "You cannot use your ring slot.", cs2_configs['cfg1409']);
+	}
+	if (cs2method_10441(client_configs['cfg1587'].bitcfg5000, 13) == 1) {
+		v7 = script_6890(v7, a1, "You cannot use your quiver.", cs2_configs['cfg1410']);
+	}
+	if (client_configs['cfg1587'].bitcfg17837 == 1) {
+		v7 = script_6890(v7, a1, "You cannot wear items in your pocket.", cs2_configs['cfg2700']);
+	}
+	if (v7 > cs2method_10823(a1)) {
+		cs2method_11130(0, v7, a1);
+		script_4529(a0, a1, 7337);
+		cs2method_10467(0, a0);
+		cs2method_10112(6, 20, 0, 0, a1);
+	} else {
+		cs2method_11130(0, 0, a1);
+		cs2method_10273(a0);
+		cs2method_10467(1, a0);
+		cs2method_10112(0, 20, 1, 0, a1);
+	}
+	return;
+}

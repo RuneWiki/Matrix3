@@ -1,0 +1,25 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6270() {
+	if (client_configs['cfg1305'].bitcfg18167 == 1) {
+		script_3093(-3, "Your account has recently had a billing failure.  Please check that your payment method is valid.", "", "", 0, 0, 2608, "Continue", 0, -1, "Continue", 1);
+	}
+	if (client_configs['cfg1305'].bitcfg18167 == 2) {
+		script_3093(-3, "Your membership has been cancelled due to billing failures. You will need to resubscribe.", "Subscribe", "Subscribe", 0, 0, 2608, "Close", 1, -1, "Close", 1);
+		cs2method_20486(new function<script_7615>() {
+			cs2method_10917(1, "billing_core", "purchasepopup.ws?externalName=rs", "packagegroupredirect.ws?value=rs");
+			return;
+		}, "", new WidgetPointer(906,541));
+	}
+	return;
+}

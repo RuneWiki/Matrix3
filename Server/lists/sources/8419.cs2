@@ -1,0 +1,77 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_8419(int a0,int a1,int a2) {
+	int v0 = -1;
+	switch (a2) {
+		case 0:
+			if (a1 == 1) {
+				v0 = idx22mapAttribute(a0, 3627);
+				if (v0 == -1) {
+					v0 = idx22mapAttribute(a0, 3598);
+				}
+			} else {
+				v0 = idx22mapAttribute(a0, 3598);
+			}
+			break;
+		case 1:
+			if (a1 == 1) {
+				v0 = idx22mapAttribute(a0, 3623);
+				if (v0 == -1) {
+					v0 = idx22mapAttribute(a0, 3590);
+				}
+			} else {
+				v0 = idx22mapAttribute(a0, 3590);
+			}
+			break;
+		case 2:
+			if (a1 == 1) {
+				v0 = idx22mapAttribute(a0, 3624);
+				if (v0 == -1) {
+					v0 = idx22mapAttribute(a0, 3591);
+				}
+			} else {
+				v0 = idx22mapAttribute(a0, 3591);
+			}
+			break;
+		case 3:
+			if (a1 == 1) {
+				v0 = idx22mapAttribute(a0, 4319);
+				if (v0 == -1) {
+					v0 = idx22mapAttribute(a0, 3599);
+				}
+			} else {
+				v0 = idx22mapAttribute(a0, 3599);
+			}
+			break;
+		case 4:
+			if (a1 == 1) {
+				v0 = idx22mapAttribute(a0, 3625);
+				if (v0 == -1) {
+					v0 = idx22mapAttribute(a0, 3600);
+				}
+			} else {
+				v0 = idx22mapAttribute(a0, 3600);
+			}
+			break;
+		case 5:
+			if (a1 == 1) {
+				v0 = idx22mapAttribute(a0, 3626);
+				if (v0 == -1) {
+					v0 = idx22mapAttribute(a0, 3594);
+				}
+			} else {
+				v0 = idx22mapAttribute(a0, 3594);
+			}
+	}
+	return v0;
+}

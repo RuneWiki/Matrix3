@@ -1,0 +1,49 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4222() {
+	if (cs2_configs['cfg1468'] > 100 && cs2_configs['cfg1468'] <= 355) {
+		cs2method_10704(cs2method_10461(255, cs2method_10461(cs2_configs['cfg1468'], 100)), 70451200);
+	}
+	if (cs2_configs['cfg1468'] > 100 && cs2_configs['cfg1468'] <= 150) {
+		cs2method_10112(cs2method_10060(-35, cs2method_10461(cs2_configs['cfg1468'], 100)), 122, 0, 0, 70451204);
+	}
+	if (cs2_configs['cfg1468'] > 200 && cs2_configs['cfg1468'] <= 455) {
+		cs2method_10112(cs2method_10060(-255, cs2method_10461(cs2_configs['cfg1468'], 200)), 70, 0, 0, 70451201);
+	}
+	if (cs2_configs['cfg1468'] > 250 && cs2_configs['cfg1468'] <= 505) {
+		cs2method_10112(cs2method_10060(-255, cs2method_10461(cs2_configs['cfg1468'], 250)), 85, 0, 0, 70451202);
+	}
+	if (cs2_configs['cfg1468'] > 300 && cs2_configs['cfg1468'] <= 555) {
+		cs2method_10112(cs2method_10060(-255, cs2method_10461(cs2_configs['cfg1468'], 300)), 100, 0, 0, 70451203);
+	}
+	if (cs2_configs['cfg1468'] > 500 && cs2_configs['cfg1468'] <= 755) {
+		cs2method_10112(cs2method_10461(0, cs2method_10461(cs2_configs['cfg1468'], 500)), 70, 0, 0, 70451201);
+	}
+	if (cs2_configs['cfg1468'] > 550 && cs2_configs['cfg1468'] <= 805) {
+		cs2method_10112(cs2method_10461(0, cs2method_10461(cs2_configs['cfg1468'], 550)), 85, 0, 0, 70451202);
+	}
+	if (cs2_configs['cfg1468'] > 600 && cs2_configs['cfg1468'] <= 855) {
+		cs2method_10112(cs2method_10461(0, cs2method_10461(cs2_configs['cfg1468'], 600)), 100, 0, 0, 70451203);
+	}
+	if (cs2_configs['cfg1468'] == 700) {
+		cs2method_10740(0, 0, 0, 210, 0, 1750, 70451204);
+	}
+	if (cs2_configs['cfg1468'] > 700 && cs2_configs['cfg1468'] <= 955) {
+		cs2method_10704(cs2method_10461(cs2_configs['cfg1468'], 700), 70451200);
+	}
+	if (cs2_configs['cfg1468'] > 700 && cs2_configs['cfg1468'] <= 750) {
+		cs2method_10112(cs2method_10461(0, cs2method_10461(cs2_configs['cfg1468'], 700)), 122, 0, 0, 70451204);
+	}
+	cs2_configs['cfg1468'] = cs2method_10060(cs2_configs['cfg1468'], 1);
+	return;
+}

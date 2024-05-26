@@ -1,0 +1,74 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1058() {
+	if (client_configs['cfg3814'].bitcfg19928 == 1 && script_1186() == 1) {
+		cs2method_10467(1, 96796714);
+		return;
+	}
+	object v1 = "Logout";
+	int v0 = 21255;
+	if (client_configs['cfg3814'].bitcfg19924 == 1) {
+		v0 = 21257;
+	}
+	cs2method_10467(0, 96796714);
+	cs2method_10283(32, 32, 0, 0, 96796714);
+	cs2method_10112(0, 0, 2, 0, 96796714);
+	cs2method_11159(36, 96796714);
+	if (cs2method_11038(96796714, 0) == 1) {
+		cs2method_10063(idx22mapAttribute(v0, 3575), idx22mapAttribute(v0, 3576), 2, 0);
+		cs2method_10013(idx22mapAttribute(v0, 3563), idx22mapAttribute(v0, 3564), 0, 0);
+		cs2method_10310(idx22mapAttribute(v0, 3601));
+		cs2method_20353(new function<script_8799>(object a0,int a1,int a2) {
+			script_8800(a2, a1, a0);
+			return;
+		}, (string)v1, new WidgetPointer(-32768,3), -1, "sIi");
+		cs2method_20884(new function<script_8805>() {
+			script_8808();
+			return;
+		}, "");
+	}
+	if (cs2method_11038(96796714, 1) == 1) {
+		if (client_configs['cfg3814'].bitcfg19924 == 0) {
+			cs2method_10310(20255);
+			cs2method_20674(new function<script_5336>(int a0,int a1,int a2) {
+				if (cs2method_11038(a2, a0) == 1) {
+					cs2method_10310(a1);
+				}
+				return;
+			}, new WidgetPointer(-32768,3), -2147483643, 20256, "Iid");
+			cs2method_20884(new function<script_5336>(int a0,int a1,int a2) {
+				if (cs2method_11038(a0, a2) == 1) {
+					cs2method_10310(a1);
+				}
+				return;
+			}, new WidgetPointer(-32768,3), -2147483643, 20255, "Iid");
+			cs2method_10057(1, "Logout");
+		} else {
+			cs2method_10310(20257);
+			cs2method_20674(new function<script_5336>(int a0,int a1,int a2) {
+				if (cs2method_11038(a1, a0) == 1) {
+					cs2method_10310(a2);
+				}
+				return;
+			}, new WidgetPointer(-32768,3), -2147483643, 20258, "Iid");
+			cs2method_20884(new function<script_5336>(int a0,int a1,int a2) {
+				if (cs2method_11038(a2, a1) == 1) {
+					cs2method_10310(a0);
+				}
+				return;
+			}, new WidgetPointer(-32768,3), -2147483643, 20257, "Iid");
+			cs2method_10057(1, "Logout");
+		}
+	}
+	return;
+}

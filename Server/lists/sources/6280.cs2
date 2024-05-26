@@ -1,0 +1,38 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6280(int a0) {
+	cs2method_10467(1, 85000431);
+	cs2method_10467(1, 85000430);
+	cs2method_10467(1, 85000429);
+	cs2method_10467(1, 85000433);
+	cs2method_10467(1, 85000432);
+	cs2method_10467(1, 85000462);
+	cs2method_10467(1, 85000455);
+	cs2method_10467(1, 85000448);
+	if (a0 == 1) {
+		cs2method_10026(85000316, "Taunt");
+		cs2method_10467(0, 85000431);
+		cs2method_10467(0, 85000432);
+		cs2method_10467(0, 85000462);
+	} else if (a0 == 2) {
+		cs2method_10026(85000316, "Title");
+		cs2method_10467(0, 85000430);
+		cs2method_10467(0, 85000433);
+		cs2method_10467(0, 85000455);
+	} else {
+		cs2method_10026(85000316, "Reward");
+		cs2method_10467(0, 85000429);
+		cs2method_10467(0, 85000448);
+	}
+	return;
+}

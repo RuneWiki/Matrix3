@@ -1,0 +1,62 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_5492_struct(1,1,0) script_5492(int a0) {
+	int v1 = -1;
+	object v0 = "";
+	switch (a0) {
+		case 0:
+			v1 = 15667;
+			v0 = "Crew Reroll";
+			break;
+		case 1:
+			v1 = 15689;
+			v0 = "Captain Reroll";
+			break;
+		case 2:
+			v1 = 15690;
+			v0 = "Voyage Reroll";
+			break;
+		case 3:
+			v1 = 15687;
+			v0 = "Adventurer Reroll";
+			break;
+		case 4:
+			v1 = 15695;
+			v0 = "Bag of Winds";
+			break;
+		case 5:
+			v1 = 15696;
+			v0 = "Ration Pack";
+			break;
+		case 6:
+			v1 = 15697;
+			v0 = "Seasinger's Bottled Cry";
+			break;
+		case 7:
+			v1 = 15694;
+			v0 = "Powder Keg";
+			break;
+		case 8:
+			v1 = 15698;
+			v0 = "Lifeboat";
+			break;
+		case 9:
+			v1 = 15699;
+			v0 = "Lotus-Tint Spectacles";
+			break;
+		case 10:
+			v1 = 15700;
+			v0 = "Fortune of the Sea";
+	}
+	return new script_5492_struct(v1, v0);
+}

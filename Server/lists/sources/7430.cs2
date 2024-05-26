@@ -1,0 +1,41 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_7430(int a0,int a1) {
+	int v2;
+	if (a0 == -1) {
+		return 0;
+	}
+	if (client_configs['cfg3472'] == -1) {
+		return 0;
+	}
+	int v0 = idx17mapData('J', 'J', 7225, a0);
+	if (v0 == -1) {
+		return 0;
+	}
+	int v1 = -1;
+	if (a1 < 9000) {
+		v2 = idx22mapAttribute(v0, 3148);
+	} else if (a1 >= 9000 && a1 < 24000) {
+		v2 = idx22mapAttribute(v0, 3150);
+	} else {
+		v2 = idx22mapAttribute(v0, 3152);
+	}
+	int v3 = npcDefsAttribute(v2, 75);
+	if (v3 == -1) {
+		return 0;
+	}
+	if (client_configs['cfg3472'] == v3) {
+		return 1;
+	}
+	return 0;
+}

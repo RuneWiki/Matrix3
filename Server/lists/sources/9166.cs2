@@ -1,0 +1,21 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_9166_struct(2,0,0) script_9166() {
+	if (client_configs['cfg3913'].bitcfg20739 == 1) {
+		return new script_9166_struct(1, client_configs['cfg3915'].bitcfg20750);
+	}
+	if (client_configs['cfg3915'].bitcfg20750 == 0) {
+		return new script_9166_struct(6, 0);
+	}
+	return new script_9166_struct(2, client_configs['cfg3915'].bitcfg20750);
+}

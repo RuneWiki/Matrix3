@@ -1,0 +1,28 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1817(int a0,int a1,int a2,int a3,int a4,int a5) {
+	cs2method_10026(a2, "Victory!");
+	cs2method_10112(75, 89, 0, 0, a2);
+	cs2method_10026(a1, "Your clan is victorious.");
+	cs2method_10112(79, 130, 0, 0, a1);
+	cs2method_10112(79, 180, 0, 0, a0);
+	cs2method_10283(175, 125, 0, 0, a0);
+	cs2method_10112(52, 118, 0, 0, a3);
+	cs2method_10467(0, a2);
+	cs2method_10467(0, a1);
+	cs2method_10467(0, a0);
+	cs2method_10467(0, a3);
+	cs2method_10467(0, a4);
+	cs2method_10467(1, a5);
+	return;
+}

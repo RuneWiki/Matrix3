@@ -1,0 +1,32 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6296(int a0,int a1,int a2,int a3,int a4,int a5,int a6) {
+	cs2method_10273(a4);
+	cs2method_10273(a5);
+	cs2method_10273(a0);
+	cs2method_10273(a6);
+	script_4513(a4, 1746);
+	script_4513(a5, 1747);
+	script_4513(a0, 1748);
+	script_4513(a6, 1750);
+	cs2method_20254(new function<script_6311>(int a0,int a1,int a2,int a3,int a4,int a5,int a6) {
+		script_6312(a2, a5, a6, a3, a4, a0, a1);
+		return;
+	}, a3, new WidgetPointer(a2), new WidgetPointer(a4), new WidgetPointer(a5), new WidgetPointer(a0), new WidgetPointer(a1), new WidgetPointer(a6), 398, 1, "iIIIIIIY", new WidgetPointer(a2));
+	cs2method_20243(new function<script_6311>(int a0,int a1,int a2,int a3,int a4,int a5,int a6) {
+		script_6312(a4, a6, a5, a1, a2, a3, a0);
+		return;
+	}, a3, new WidgetPointer(a2), new WidgetPointer(a4), new WidgetPointer(a5), new WidgetPointer(a0), new WidgetPointer(a1), new WidgetPointer(a6), 841, 1, "iIIIIIIY", new WidgetPointer(a2));
+	script_6312(a3, a2, a4, a5, a0, a1, a6);
+	return;
+}

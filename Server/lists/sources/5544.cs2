@@ -1,0 +1,45 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5544() {
+	int v0 = script_5542();
+	if (cs2method_10771() == 0) {
+		switch (cs2_configs['cfg1725']) {
+			case 1:
+				cs2method_10026(77201482, (string)cs2method_10379(v0) + " / " + (string)cs2method_10379(7));
+				break;
+			case 2:
+				cs2method_10026(77201482, (string)cs2method_10379(v0) + " / " + (string)cs2method_10379(6));
+				break;
+			case 3:
+				cs2method_10026(77201482, (string)cs2method_10379(v0) + " / " + (string)cs2method_10379(6));
+				break;
+			case 4:
+				cs2method_10026(77201482, (string)cs2method_10379(v0) + " / " + (string)cs2method_10379(1));
+		}
+	} else {
+		switch (cs2_configs['cfg1725']) {
+			case 1:
+				cs2method_10026(77201482, (string)cs2method_10379(v0) + " / " + (string)cs2method_10379(13));
+				break;
+			case 2:
+				cs2method_10026(77201482, (string)cs2method_10379(v0) + " / " + (string)cs2method_10379(8));
+				break;
+			case 3:
+				cs2method_10026(77201482, (string)cs2method_10379(v0) + " / " + (string)cs2method_10379(13));
+				break;
+			case 4:
+				cs2method_10026(77201482, (string)cs2method_10379(v0) + " / " + (string)cs2method_10379(5));
+		}
+	}
+	return;
+}

@@ -1,0 +1,181 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6757() {
+	int v4;
+	int v1 = 0;
+	int v14 = 0;
+	int v6 = idx22mapAttribute(11515, 1268);
+	if (v6 == 4092) {
+		return;
+	}
+	int v3 = -1;
+	int v8 = idx22mapAttribute(11515, 3330);
+	int v11 = idx22mapAttribute(11515, 3331);
+	if (v6 == 4094) {
+		if (idx22mapAttribute(11515, 3330) > -1 && idx22mapAttribute(11515, 3331) > -1) {
+			v4 = script_7687(v8, v11);
+		} else {
+			return;
+		}
+	} else {
+		v4 = script_5795(v6);
+	}
+	cs2method_10467(0, 88145977);
+	cs2method_10026(88146025, idx22mapAttribute(v4, 1266));
+	script_4532(88146025);
+	if (idx22mapAttribute(v4, 1290) == 1) {
+		cs2method_10026(88146116, "Free to play content");
+		cs2method_10520(6776679, 88146116);
+		cs2method_10758(13165, 88146115);
+	} else if (cs2method_10210() == 0) {
+		cs2method_10026(88146116, "RuneScape member: Click to subscribe!");
+		cs2method_10520(9803157, 88146116);
+		cs2method_10758(13166, 88146115);
+	} else if (cs2method_10771() == 0) {
+		cs2method_10026(88146116, "Member's world");
+		cs2method_10520(9803157, 88146116);
+		cs2method_10758(13166, 88146115);
+	} else {
+		cs2method_10026(88146116, "RuneScape member");
+		cs2method_10520(6776679, 88146116);
+		cs2method_10758(13165, 88146115);
+	}
+	int v7 = 0;
+	int v12 = 0;
+	int v0 = -1;
+	int v5 = -1;
+	int v15 = -1;
+	int v10 = -1;
+	int v2 = -1;
+	int v9 = 0;
+	int v13 = 0;
+	while (v9 < 12 && v13 == 0) {
+		switch (v9) {
+			case 0:
+				v7 = idx22mapAttribute(v4, 1294);
+				v12 = idx22mapAttribute(v4, 1295);
+				v0 = 88145980;
+				v5 = 88145993;
+				v15 = 88145994;
+				v2 = 88145991;
+				v10 = 88145992;
+				break;
+			case 1:
+				v7 = idx22mapAttribute(v4, 1296);
+				v12 = idx22mapAttribute(v4, 1297);
+				v0 = 88145981;
+				v5 = 88146034;
+				v15 = 88146035;
+				v2 = 88146032;
+				v10 = 88146033;
+				break;
+			case 2:
+				v7 = idx22mapAttribute(v4, 1298);
+				v12 = idx22mapAttribute(v4, 1299);
+				v0 = 88145982;
+				v5 = 88146041;
+				v15 = 88146042;
+				v2 = 88146039;
+				v10 = 88146040;
+				break;
+			case 3:
+				v7 = idx22mapAttribute(v4, 1300);
+				v12 = idx22mapAttribute(v4, 1301);
+				v0 = 88145983;
+				v5 = 88146048;
+				v15 = 88146049;
+				v2 = 88146046;
+				v10 = 88146047;
+				break;
+			case 4:
+				v7 = idx22mapAttribute(v4, 1302);
+				v12 = idx22mapAttribute(v4, 1303);
+				v0 = 88145984;
+				v5 = 88146055;
+				v15 = 88146056;
+				v2 = 88146053;
+				v10 = 88146054;
+				break;
+			case 5:
+				v7 = idx22mapAttribute(v4, 1304);
+				v12 = idx22mapAttribute(v4, 1305);
+				v0 = 88145985;
+				v5 = 88146062;
+				v15 = 88146063;
+				v2 = 88146060;
+				v10 = 88146061;
+				break;
+			case 6:
+				v7 = idx22mapAttribute(v4, 1306);
+				v12 = idx22mapAttribute(v4, 1307);
+				v0 = 88145987;
+				v5 = 88146069;
+				v15 = 88146070;
+				v2 = 88146067;
+				v10 = 88146068;
+				break;
+			case 7:
+				v7 = idx22mapAttribute(v4, 1308);
+				v12 = idx22mapAttribute(v4, 1309);
+				v0 = 88146071;
+				v5 = 88146077;
+				v15 = 88146078;
+				v2 = 88146075;
+				v10 = 88146076;
+				break;
+			case 8:
+				v7 = idx22mapAttribute(v4, 1310);
+				v12 = idx22mapAttribute(v4, 1311);
+				v0 = 88146079;
+				v5 = 88146085;
+				v15 = 88146086;
+				v2 = 88146083;
+				v10 = 88146084;
+				break;
+			case 9:
+				v7 = idx22mapAttribute(v4, 1312);
+				v12 = idx22mapAttribute(v4, 1313);
+				v0 = 88146087;
+				v5 = 88146093;
+				v15 = 88146094;
+				v2 = 88146091;
+				v10 = 88146092;
+				break;
+			case 10:
+				v7 = idx22mapAttribute(v4, 2227);
+				v12 = idx22mapAttribute(v4, 2228);
+				v0 = 88146095;
+				v5 = 88146101;
+				v15 = 88146102;
+				v2 = 88146099;
+				v10 = 88146100;
+				break;
+			case 11:
+				v7 = idx22mapAttribute(v4, 2229);
+				v12 = idx22mapAttribute(v4, 2230);
+				v0 = 88146103;
+				v5 = 88146109;
+				v15 = 88146110;
+				v2 = 88146107;
+				v10 = 88146108;
+		}
+		v9 = cs2method_10060(1, v9);
+		if (v7 == 0) {
+			v13 = 1;
+		} else {
+			script_6758(v6, v9, v7, v12, v0, v5, v15, v2, v10);
+		}
+	}
+	cs2method_10283(400, cs2method_10060(115, cs2method_10051(23, v9)), 0, 0, 88146000);
+	return;
+}

@@ -1,0 +1,126 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8206(int a0,int a1,int a2) {
+	object v13 = "";
+	int v11 = -1;
+	int v15 = -1;
+	int v7 = -1;
+	int v14 = -1;
+	int v17 = -1;
+	int v5 = a1;
+	int v3 = a0;
+	script_8215_struct(3,0,0) v10 = script_8215(v5, v3);
+	int v9 = v10.intpart_2;
+	int v1 = v10.intpart_1;
+	int v8 = v10.intpart_0;
+	if (v8 == -1 || v1 == -1 || v9 == -1) {
+		return;
+	}
+	int v16 = cs2method_10982(v1);
+	if (cs2method_11038(v16, 0) == 0) {
+		script_8207(a1, a0, v16);
+	}
+	object v6 = cs2method_10744(v8);
+	if (cs2method_11038(v16, 0) == 1) {
+		cs2method_10269(1);
+	}
+	switch (a2) {
+		case 6:
+			v11 = 21364;
+			int v4 = a1;
+			int v12 = a0;
+			script_8825_struct(2,0,0) v2 = script_8825(v4, v12);
+			v6 = script_8213(v2.intpart_0, v2.intpart_1, 0, 0);
+			cs2method_20680(new function<script_8205>(int a0,int a1,int a2) {
+				script_8206(a0, a2, a1);
+				return;
+			}, a1, a0, 0, "iii", new WidgetPointer(v1));
+			cs2method_20750(new function<script_8205>(int a0,int a1,int a2) {
+				script_8206(a0, a2, a1);
+				return;
+			}, a1, a0, 6, "iii", new WidgetPointer(v1));
+			break;
+		case 0:
+			v11 = 21366;
+			if (cs2method_10846(v6, "") != 0 && cs2method_11038(v16, 0) == 1) {
+				cs2method_10269(0);
+			}
+			break;
+		case 1:
+			v11 = 21365;
+			v6 = "";
+			cs2method_20680(new function<none>() {
+			}, "", new WidgetPointer(v1));
+			cs2method_20750(new function<script_8205>(int a0,int a1,int a2) {
+				script_8206(a0, a1, a2);
+				return;
+			}, a1, a0, 1, "iii", new WidgetPointer(v1));
+			break;
+		case 2:
+			v11 = 21368;
+			v6 = "";
+			cs2method_20680(new function<script_8205>(int a0,int a1,int a2) {
+				script_8206(a0, a1, a2);
+				return;
+			}, a1, a0, 3, "iii", new WidgetPointer(v1));
+			cs2method_20750(new function<script_8205>(int a0,int a1,int a2) {
+				script_8206(a1, a0, a2);
+				return;
+			}, a1, a0, 2, "iii", new WidgetPointer(v1));
+			break;
+		case 3:
+			v11 = 21368;
+			v6 = "";
+			cs2method_20680(new function<script_8205>(int a0,int a1,int a2) {
+				script_8206(a1, a2, a0);
+				return;
+			}, a1, a0, 3, "iii", new WidgetPointer(v1));
+			cs2method_20750(new function<script_8205>(int a0,int a1,int a2) {
+				script_8206(a0, a1, a2);
+				return;
+			}, a1, a0, 2, "iii", new WidgetPointer(v1));
+			break;
+		case 4:
+			v11 = 21368;
+			v6 = "Action unbound";
+			cs2method_20680(new function<script_8205>(int a0,int a1,int a2) {
+				script_8206(a0, a2, a1);
+				return;
+			}, a1, a0, 5, "iii", new WidgetPointer(v1));
+			cs2method_20750(new function<script_8205>(int a0,int a1,int a2) {
+				script_8206(a0, a2, a1);
+				return;
+			}, a1, a0, 4, "iii", new WidgetPointer(v1));
+			break;
+		case 5:
+			v11 = 21368;
+			v6 = "Action unbound";
+			cs2method_20680(new function<script_8205>(int a0,int a1,int a2) {
+				script_8206(a1, a0, a2);
+				return;
+			}, a1, a0, 5, "iii", new WidgetPointer(v1));
+			cs2method_20750(new function<script_8205>(int a0,int a1,int a2) {
+				script_8206(a2, a1, a0);
+				return;
+			}, a1, a0, 4, "iii", new WidgetPointer(v1));
+	}
+	script_7796(v1, v11);
+	cs2method_10026(v8, v6);
+	object v0 = "Change Keybind";
+	cs2method_11127(1, v1, v0);
+	cs2method_20486(new function<script_8208>(int a0,int a1) {
+		script_8209(a0, a1);
+		return;
+	}, a1, a0, "ii", new WidgetPointer(v1));
+	return;
+}

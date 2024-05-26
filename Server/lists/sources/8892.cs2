@@ -1,0 +1,81 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_8892_struct(1,1,0) script_8892() {
+	int v8;
+	int v12;
+	int v2;
+	int v6 = 0;
+	int v19 = 0;
+	int v1 = 0;
+	int v13 = 0;
+	int v11 = 1000000000;
+	int v0 = 0;
+	int v10 = cs2method_10968(client_configs['cfg3673'], v11);
+	int v14 = cs2method_10060(v10, cs2method_10968(client_configs['cfg3675'], v11));
+	int v9 = cs2method_10060(v14, cs2method_10968(client_configs['cfg3677'], v11));
+	int v17 = cs2method_10060(cs2method_10060(cs2method_10038(client_configs['cfg3673'], v11), cs2method_10038(client_configs['cfg3675'], v11)), cs2method_10038(client_configs['cfg3677'], v11));
+	int v5 = cs2method_10968(client_configs['cfg3674'], v11);
+	int v18 = cs2method_10060(v5, cs2method_10968(client_configs['cfg3676'], v11));
+	int v3 = cs2method_10060(v18, cs2method_10968(client_configs['cfg3678'], v11));
+	int v16 = cs2method_10060(cs2method_10060(cs2method_10038(client_configs['cfg3674'], v11), cs2method_10038(client_configs['cfg3676'], v11)), cs2method_10038(client_configs['cfg3678'], v11));
+	if (v9 > v3) {
+		v12 = 1;
+	} else if (v3 > v9) {
+		v12 = 2;
+	} else if (v17 > v16) {
+		v12 = 1;
+	} else if (v16 > v17) {
+		v12 = 2;
+	} else {
+		return new script_8892_struct(0, "0");
+	}
+	int v20 = 0;
+	int v15 = 0;
+	if (v12 == 1) {
+		v2 = cs2method_10461(v9, v3);
+		v8 = cs2method_10461(v17, v16);
+	} else if (v12 == 2) {
+		v2 = cs2method_10461(v3, v9);
+		v8 = cs2method_10461(v16, v17);
+	} else {
+		return new script_8892_struct(0, "0");
+	}
+	object v7 = ",";
+	if (cs2method_10262() == 2) {
+		v7 = " ";
+	} else {
+		if (cs2method_10262() == 3 || cs2method_10262() == 6) {
+			v7 = ".";
+		}
+	}
+	object v4 = cs2method_10055(v8, 1);
+	if (v2 > 0) {
+		if (v8 < 1000000) {
+			if (v8 < 10000) {
+				v4 = cs2method_10427("00", v4);
+			} else {
+				if (v8 < 100000) {
+					v4 = cs2method_10427("0", v4);
+				}
+			}
+		} else if (cs2method_10968(v8, 1000000) < 100) {
+			v4 = cs2method_10427("00", v4);
+		} else {
+			if (cs2method_10968(v8, 1000000) < 1000) {
+				v4 = cs2method_10427("0", v4);
+			}
+		}
+		return new script_8892_struct(v12, (string)cs2method_10379(v2) + (string)v7 + (string)v4);
+	}
+	return new script_8892_struct(v12, v4);
+}

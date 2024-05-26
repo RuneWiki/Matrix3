@@ -1,0 +1,35 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2889() {
+	int v0 = idx17mapData('i', 'n', 927, client_configs['cfg1706'].bitcfg5656);
+	int v2 = -1;
+	int v1 = -1;
+	if (v0 != -1) {
+		if (npcDefsAttribute(v0, 956) != -1) {
+			cs2method_10336(idx17mapData('n', 'm', 934, npcDefsAttribute(v0, 956)), 31195181);
+			cs2method_10067(idx17mapData('n', 'A', 935, npcDefsAttribute(v0, 956)), 31195181);
+			cs2method_10758(idx17mapData('n', 'd', 932, npcDefsAttribute(v0, 956)), 31195185);
+			cs2method_10026(31195188, idx17mapData('n', 's', 930, npcDefsAttribute(v0, 956)));
+		}
+		if (npcDefsAttribute(v0, 957) != -1) {
+			cs2method_10336(idx17mapData('n', 'm', 934, npcDefsAttribute(v0, 957)), 31195182);
+			cs2method_10067(idx17mapData('n', 'A', 935, npcDefsAttribute(v0, 957)), 31195182);
+			cs2method_10758(idx17mapData('n', 'd', 932, npcDefsAttribute(v0, 957)), 31195186);
+			cs2method_10026(31195189, idx17mapData('n', 's', 930, npcDefsAttribute(v0, 957)));
+		}
+		cs2method_10758(idx17mapData('n', 'd', 933, v0), 31195184);
+		cs2method_10336(idx17mapData('n', 'm', 934, v0), 31195180);
+		cs2method_10067(idx17mapData('n', 'A', 935, v0), 31195180);
+	}
+	return;
+}

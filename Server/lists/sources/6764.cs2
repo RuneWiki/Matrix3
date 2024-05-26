@@ -1,0 +1,113 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+int script_6764(int a0,int a1) {
+	if (cs2method_10004() < idx22mapAttribute(idx17mapData('i', 'J', 5513, a0), 2236)) {
+		return 0;
+	}
+	if (cs2method_10771() == 0 && a1 == 0) {
+		switch (a0) {
+			case 16:
+			case 19:
+			case 6:
+			case 22:
+			case 10:
+			case 11:
+			case 12:
+			case 13:
+				return 0;
+		}
+		return 1;
+	}
+	switch (a0) {
+		flow_9:
+			case 10:
+			IF (cs2method_10338(2) < 60) 
+				GOTO	flow_11
+			GOTO	flow_12
+		flow_11:
+			IF (cs2method_10338(16) < 60) 
+				GOTO	flow_13
+		flow_12:
+			IF (cs2method_10004() < 130) 
+				GOTO	flow_13
+			GOTO	flow_14
+		flow_13:
+			return 0;
+		flow_14:
+			break;
+			case 11:
+			IF (cs2method_10338(2) < 60) 
+				GOTO	flow_16
+			GOTO	flow_17
+		flow_16:
+			IF (cs2method_10338(16) < 60) 
+				GOTO	flow_18
+		flow_17:
+			IF (cs2method_10004() < 130) 
+				GOTO	flow_18
+			GOTO	flow_19
+		flow_18:
+			return 0;
+		flow_19:
+			break;
+			case 12:
+			IF (cs2method_10338(2) < 60) 
+				GOTO	flow_21
+			GOTO	flow_22
+		flow_21:
+			IF (cs2method_10338(16) < 60) 
+				GOTO	flow_23
+		flow_22:
+			IF (cs2method_10004() < 130) 
+				GOTO	flow_23
+			GOTO	flow_24
+		flow_23:
+			return 0;
+		flow_24:
+			break;
+			case 13:
+			IF (cs2method_10338(2) < 60) 
+				GOTO	flow_26
+			GOTO	flow_27
+		flow_26:
+			IF (cs2method_10338(16) < 60) 
+				GOTO	flow_28
+		flow_27:
+			IF (cs2method_10004() < 130) 
+				GOTO	flow_28
+			GOTO	flow_29
+		flow_28:
+			return 0;
+		flow_29:
+			break;
+			case 19:
+			IF (cs2method_10338(2) < 70 && cs2method_10338(16) < 70 && cs2method_10338(4) < 70) 
+				GOTO	flow_33
+			GOTO	flow_34
+		flow_33:
+			IF (cs2method_10338(3) < 70) 
+				GOTO	flow_35
+		flow_34:
+			IF (cs2method_10004() < 140) 
+				GOTO	flow_35
+			GOTO	flow_36
+		flow_35:
+			return 0;
+		flow_36:
+			break;
+			default:
+			return 1;
+	}
+	return 1;
+}

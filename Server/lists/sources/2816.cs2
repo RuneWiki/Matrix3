@@ -1,0 +1,22 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2816() {
+	if (cs2_configs['cfg1065'] != -1) {
+		script_2817();
+		cs2method_20243(new function<none>() {
+		}, "", new WidgetPointer(89,0));
+	} else {
+		cs2method_20243(load function<2816>, 1065, 1, "Y", new WidgetPointer(89,0));
+	}
+	return;
+}

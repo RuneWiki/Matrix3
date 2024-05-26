@@ -1,0 +1,30 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+object script_8204(int a0,int a1) {
+	object v0;
+	int v2 = -1;
+	object v1 = "";
+	if (a1 == 21) {
+		v0 = idx22mapAttribute(idx17mapData('i', 'J', 7716, a0), 3493);
+	} else if (a1 == 2) {
+		if (a0 == 6) {
+			v0 = "RS3 Helper";
+		} else {
+			v0 = idx22mapAttribute(idx17mapData('i', 'J', 7699, a0), 3493);
+		}
+	} else {
+		int v3 = idx17mapData('i', 'g', 7695, a1);
+		v0 = idx17mapData('i', 's', v3, a0);
+	}
+	return v0;
+}

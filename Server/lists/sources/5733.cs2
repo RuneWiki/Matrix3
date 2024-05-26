@@ -1,0 +1,68 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_5733(int a0) {
+	int v0 = 0;
+	if (script_5767() == 0 || script_5765(idx17mapData('i', 'S', 681, a0)) == 1) {
+		return 1;
+	}
+	switch (a0) {
+		case 1:
+			if (client_configs['cfg1265'].bitcfg3454 == 1 || client_configs['cfg1269'].bitcfg3561 == 584 || script_5765(idx17mapData('i', 'S', 681, a0)) == 1) {
+				return 1;
+			}
+			break;
+		case 11:
+		case 13:
+		case 14:
+			if (client_configs['cfg1265'].bitcfg3455 == 1 || client_configs['cfg1269'].bitcfg3561 == 585 || script_5765(idx17mapData('i', 'S', 681, a0)) == 1) {
+				return 1;
+			}
+			break;
+		case 15:
+		case 16:
+		case 21:
+		case 23:
+			if (client_configs['cfg1265'].bitcfg3456 == 1 || client_configs['cfg1269'].bitcfg3561 == 586 || script_5765(idx17mapData('i', 'S', 681, a0)) == 1) {
+				return 1;
+			}
+			break;
+		case 10:
+			if (client_configs['cfg1265'].bitcfg3457 == 1 || client_configs['cfg1269'].bitcfg3561 == 587 || script_5765(idx17mapData('i', 'S', 681, a0)) == 1) {
+				return 1;
+			}
+			break;
+		case 20:
+			if (client_configs['cfg1265'].bitcfg3458 == 1 || client_configs['cfg1269'].bitcfg3561 == 588 || script_5765(idx17mapData('i', 'S', 681, a0)) == 1) {
+				return 1;
+			}
+			break;
+		case 24:
+			if (client_configs['cfg1265'].bitcfg3459 == 1 || client_configs['cfg1269'].bitcfg3561 == 589 || script_5765(idx17mapData('i', 'S', 681, a0)) == 1) {
+				return 1;
+			}
+			break;
+		case 17:
+		case 19:
+		case 18:
+			if (client_configs['cfg1265'].bitcfg3460 == 1 || client_configs['cfg1269'].bitcfg3561 == 590 || script_5765(idx17mapData('i', 'S', 681, a0)) == 1) {
+				return 1;
+			}
+			break;
+		case 7:
+		case 9:
+			if (client_configs['cfg1265'].bitcfg3461 == 1 || client_configs['cfg1269'].bitcfg3561 == 591 || script_5765(idx17mapData('i', 'S', 681, a0)) == 1) {
+				return 1;
+			}
+	}
+	return 0;
+}

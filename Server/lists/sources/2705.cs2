@@ -1,0 +1,211 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2705(int a0,int a1,int a2,int a3,int a4,int a5) {
+	if (a1 == 1) {
+		cs2method_10058(48627718);
+		cs2method_20162(new function<none>() {
+		}, "", new WidgetPointer(742,6));
+	} else if (a1 == 2) {
+		cs2method_20162(new function<none>() {
+		}, "", new WidgetPointer(906,9));
+	} else if (a1 == 4) {
+		cs2method_20162(new function<none>() {
+		}, "", new WidgetPointer(1420,541));
+	} else {
+		cs2method_20162(new function<none>() {
+		}, "", new WidgetPointer(744,24));
+	}
+	int v0 = 0;
+	if (a5 == 1) {
+		cs2method_10828(cs2method_10085(), 1);
+		if (cs2method_11055() != 3) {
+			cs2method_10827(cs2method_11055());
+		}
+		cs2method_10648(cs2method_10344());
+		if (cs2method_10441(a2, 1) == 1) {
+			cs2_configs['cfg994'] = 2;
+		}
+		cs2_configs['cfg1240'] = 4;
+		cs2_configs['cfg1277'] = 0;
+	} else {
+		if (cs2method_10441(a2, 0) == 1) {
+			cs2method_10830();
+			if (a0 == 0) {
+				v0 = cs2method_11138();
+				cs2method_11075(v0);
+				script_2593(v0, -1);
+			}
+		} else {
+			v0 = cs2method_10085();
+		}
+		if (cs2method_10441(a2, 1) == 1 && cs2method_11055() != cs2method_10621()) {
+			cs2method_11071(cs2method_10621());
+		}
+		if (cs2method_10441(a2, 2) == 1) {
+			cs2method_10722(cs2method_10444());
+		}
+		if (cs2method_10441(a2, 3) == 1) {
+			cs2method_10048(0);
+		}
+		if (a1 == 3) {
+			script_1174(0);
+			script_3384(a1);
+			return;
+		}
+		if (a4 == 1) {
+			int v2 = v0;
+			int v3 = cs2method_11055();
+			int v5 = v0;
+			script_2692_struct(2,0,0) v4 = script_2692(v5);
+			script_3387(v2, v3, v4.intpart_0, v4.intpart_1, a1);
+		} else if (cs2method_10441(a2, 1) == 1 || a0 == 1) {
+			int v4 = v0;
+			int v2 = cs2method_11055();
+			int v3 = v0;
+			script_2692_struct(2,0,0) v5 = script_2692(v3);
+			script_2596(v4, v2, v5.intpart_0, v5.intpart_1, a1);
+		} else {
+			int v3 = v0;
+			int v5 = cs2method_11055();
+			int v4 = v0;
+			script_2692_struct(2,0,0) v2 = script_2692(v4);
+			script_3387(v3, v5, v2.intpart_0, v2.intpart_1, a1);
+		}
+		if (a1 == 1 && a3 == 1) {
+			cs2method_10810("The requested change has been cancelled.");
+		}
+	}
+	if (a1 != 1) {
+		int v1 = cs2method_10085();
+		if (a1 == 2) {
+			cs2method_10467(1, 59375679);
+			if (a4 == 1) {
+				int v4 = v1;
+				int v3 = cs2method_11055();
+				int v5 = v1;
+				script_2692_struct(2,0,0) v2 = script_2692(v5);
+				script_3387(v4, v3, v2.intpart_0, v2.intpart_1, a1);
+			} else if (cs2method_10441(a2, 1) == 1 || a0 == 1) {
+				int v2 = v1;
+				int v5 = cs2method_11055();
+				int v4 = v1;
+				script_2692_struct(2,0,0) v3 = script_2692(v4);
+				script_2596(v2, v5, v3.intpart_0, v3.intpart_1, a1);
+			} else {
+				int v3 = v1;
+				int v4 = cs2method_11055();
+				int v5 = v1;
+				script_2692_struct(2,0,0) v2 = script_2692(v5);
+				script_3387(v3, v4, v2.intpart_0, v2.intpart_1, a1);
+			}
+			if (a0 == 0 && a3 == 1) {
+				script_2190(0, "", -1, "The change of detail mode has been cancelled." + "<br>" + "<br>" + "Perhaps different graphical settings would work better for you?", "", "", 0);
+			}
+		} else if (a1 == 3) {
+			if (cs2method_10135() == 1) {
+				script_1174(5);
+				if (cs2_configs['cfg1273'] == 1) {
+					return;
+				}
+				cs2method_20162(new function<script_3381>(int a0,int a1) {
+					int v0 = cs2method_10060(a1, 1);
+					cs2method_20162(load function<3381>, new WidgetPointer(a0), v0, "Ii", new WidgetPointer(a0));
+					if (v0 > 1) {
+						cs2_configs['cfg1273'] = 1;
+						cs2method_20162(new function<none>() {
+						}, "", new WidgetPointer(a0));
+						script_2945(0);
+					}
+					return;
+				}, new WidgetPointer(975,21), 0, "Ii", new WidgetPointer(975,21));
+			} else if (cs2_configs['cfg3684'] != 1 && script_3487(3) == 1) {
+				script_1174(7);
+			} else {
+				cs2_configs['cfg3684'] = 0;
+				script_1174(11);
+			}
+		} else if (a1 == 4) {
+			if (a4 == 1) {
+				int v5 = v1;
+				int v4 = cs2method_11055();
+				int v2 = v1;
+				script_2692_struct(2,0,0) v3 = script_2692(v2);
+				script_3387(v5, v4, v3.intpart_0, v3.intpart_1, a1);
+			} else if (cs2method_10441(a2, 1) == 1 || a0 == 1) {
+				int v5 = v1;
+				int v2 = cs2method_11055();
+				int v4 = v1;
+				script_2692_struct(2,0,0) v3 = script_2692(v4);
+				script_2596(v5, v2, v3.intpart_0, v3.intpart_1, a1);
+			} else {
+				int v5 = v1;
+				int v2 = cs2method_11055();
+				int v3 = v1;
+				script_2692_struct(2,0,0) v4 = script_2692(v3);
+				script_3387(v5, v2, v4.intpart_0, v4.intpart_1, a1);
+			}
+			cs2method_10467(1, 93061662);
+			cs2method_10467(0, 93061533);
+		} else {
+			if (a4 == 1) {
+				int v5 = v1;
+				int v3 = cs2method_11055();
+				int v2 = v1;
+				script_2692_struct(2,0,0) v4 = script_2692(v2);
+				script_3387(v5, v3, v4.intpart_0, v4.intpart_1, a1);
+			} else if (cs2method_10441(a2, 1) == 1 || a0 == 1) {
+				int v4 = v1;
+				int v2 = cs2method_11055();
+				int v3 = v1;
+				script_2692_struct(2,0,0) v5 = script_2692(v3);
+				script_2596(v4, v2, v5.intpart_0, v5.intpart_1, a1);
+			} else {
+				int v5 = v1;
+				int v2 = cs2method_11055();
+				int v3 = v1;
+				script_2692_struct(2,0,0) v4 = script_2692(v3);
+				script_3387(v5, v2, v4.intpart_0, v4.intpart_1, a1);
+			}
+			if (a0 == 0 && a3 == 1) {
+				cs2method_10026(48758888, "The change of detail mode has been cancelled." + "<br>" + "<br>" + "Perhaps different graphical settings would work better for you?");
+				if (a4 == 1) {
+					cs2method_20390(new function<script_3452>(int a0,int a1,int a2) {
+						script_3239(a2, a1, a0);
+						return;
+					}, 6, 0, 1, "i11", new WidgetPointer(744,107));
+				} else if (cs2method_10441(a2, 1) == 1 || a0 == 1) {
+					cs2method_20390(new function<script_1173>(int a0) {
+						script_1174(a0);
+						return;
+					}, 6, "i", new WidgetPointer(744,107));
+				} else {
+					cs2method_20390(new function<script_3452>(int a0,int a1,int a2) {
+						script_3239(a2, a0, a1);
+						return;
+					}, 6, 0, 1, "i11", new WidgetPointer(744,107));
+				}
+				script_1174(9);
+			} else if (a4 == 1) {
+				script_3239(6, 0, 1);
+			} else if (cs2method_10441(a2, 1) == 1 || a0 == 1) {
+				script_1174(6);
+			} else {
+				script_3239(6, 0, 1);
+			}
+		}
+	}
+	if (a5 == 0 && a0 == 1) {
+		script_3384(a1);
+	}
+	return;
+}

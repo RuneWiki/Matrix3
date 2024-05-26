@@ -1,0 +1,50 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_3875(int a0) {
+	if (client_configs['cfg2662'] == idx17mapData('i', 'c', 2536, a0)) {
+		return 4;
+	}
+	switch (a0) {
+		case 0:
+			return 1;
+		case 1:
+			return 1;
+		case 2:
+			return 1;
+		case 3:
+			return 1;
+		case 4:
+			return 1;
+		case 5:
+			if (client_configs['cfg15'].bitcfg64 == 20) {
+				return 1;
+			}
+			return 2;
+		case 6:
+			if (client_configs['cfg15'].bitcfg66 == 20) {
+				return 1;
+			}
+			return 2;
+		case 7:
+			if (client_configs['cfg15'].bitcfg68 == 20) {
+				return 1;
+			}
+			return 2;
+		case 8:
+			if (client_configs['cfg2277'].bitcfg10479 >= 3) {
+				return 1;
+			}
+			return 3;
+	}
+	return 0;
+}

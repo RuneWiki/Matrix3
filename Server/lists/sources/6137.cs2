@@ -1,0 +1,43 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6137(int a0,int a1,int a2,int a3,int a4,int a5) {
+	int v0 = 80;
+	int v2 = 40;
+	int v1 = 20;
+	object v3 = "Place beacon";
+	cs2method_10606(83230842, 3, 0);
+	cs2method_10013(v0, v0, 0, 0);
+	cs2method_10063(cs2method_10461(a5, v2), cs2method_10461(a4, v2), 0, 0);
+	script_6136(v3);
+	cs2method_10606(83230842, 3, 1);
+	cs2method_10013(v2, v2, 0, 0);
+	cs2method_10063(cs2method_10461(a5, v1), cs2method_10461(a4, v1), 0, 0);
+	script_6136(v3);
+	cs2method_10606(83230843, 3, 0);
+	cs2method_10013(v0, v0, 0, 0);
+	cs2method_10063(cs2method_10461(a3, v2), cs2method_10461(a2, v2), 0, 0);
+	script_6136(v3);
+	cs2method_10606(83230843, 3, 1);
+	cs2method_10013(v2, v2, 0, 0);
+	cs2method_10063(cs2method_10461(a3, v1), cs2method_10461(a2, v1), 0, 0);
+	script_6136(v3);
+	cs2method_10606(83230844, 3, 0);
+	cs2method_10013(v0, v0, 0, 0);
+	cs2method_10063(cs2method_10461(a0, v2), cs2method_10461(a1, v2), 0, 0);
+	script_6136(v3);
+	cs2method_10606(83230844, 3, 1);
+	cs2method_10013(v2, v2, 0, 0);
+	cs2method_10063(cs2method_10461(a0, v1), cs2method_10461(a1, v1), 0, 0);
+	script_6136(v3);
+	return;
+}

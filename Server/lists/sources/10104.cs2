@@ -1,0 +1,112 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_10104(int a0,int a1,int a2,int a3,int a4,int a5) {
+	if (a4 == -1 || a0 == -1 || a1 == -1) {
+		return;
+	}
+	if (a4 == 94 && cs2_configs['cfg3822'] != -1) {
+		a3 = cs2method_10873(cs2_configs['cfg3822']);
+		if (a3 == 17) {
+			a3 = 15;
+		}
+	}
+	cs2_configs['cfg4163'] = new WidgetPointer(a1);
+	cs2_configs['cfg4164'] = a3;
+	if (cs2_configs['cfg3822'] == -1 || cs2_configs['cfg3823'] == -1 || a5 == 0) {
+		if (cs2method_11038(a1, a3) == 1) {
+			cs2method_10269(1);
+		}
+		cs2_configs['cfg4164'] = -1;
+		cs2method_21121(new function<none>() {
+		}, "", new WidgetPointer(a0));
+		return;
+	}
+	int v2 = -1;
+	int v0 = 16763653;
+	if (cs2method_11038(a0, a3) == 1) {
+		flow_11:
+			IF (a4 == 94) 
+				GOTO	flow_12
+			GOTO	flow_19
+		flow_12:
+			IF (cs2_configs['cfg3823'] != 94) 
+				GOTO	flow_13
+			GOTO	flow_18
+		flow_13:
+			int v3 = cs2method_10487();
+			IF (cs2method_10873(cs2_configs['cfg3822']) == -1) 
+				GOTO	flow_17
+			IF (a2 == 1) 
+				GOTO	flow_14
+			GOTO	flow_15
+		flow_14:
+			IF (script_9221(cs2_configs['cfg3822']) == 1 || script_925(cs2_configs['cfg3822']) == 0) 
+				GOTO	flow_17
+		flow_15:
+			IF (a2 == 0 && (script_10023(cs2_configs['cfg3822']) == 1 || script_5915(cs2_configs['cfg3822']) == 0)) 
+				GOTO	flow_17
+			GOTO	flow_18
+		flow_17:
+			v0 = 16711680;
+		flow_18:
+			GOTO	flow_25
+		flow_19:
+			IF (cs2_configs['cfg3823'] != 93) 
+				GOTO	flow_20
+			GOTO	flow_25
+		flow_20:
+			int v1 = cs2method_10487();
+			IF (a2 == 1) 
+				GOTO	flow_21
+			GOTO	flow_22
+		flow_21:
+			IF (script_9224(cs2_configs['cfg3822'], v1) == 1) 
+				GOTO	flow_24
+		flow_22:
+			IF (a2 == 0 && script_10021(cs2_configs['cfg3822'], v1) == 1) 
+				GOTO	flow_24
+			GOTO	flow_25
+		flow_24:
+			v0 = 16711680;
+		flow_25:
+	} else {
+		cs2method_21121(new function<none>() {
+		}, "", new WidgetPointer(a0));
+		cs2_configs['cfg4164'] = -1;
+		return;
+	}
+	if (cs2method_11038(a1, a3) == 1) {
+		if (v0 == 16711680) {
+			cs2method_21121(new function<script_10105>(int a0,int a1,int a2,int a3,int a4,int a5,int a6) {
+				if (cs2_configs['cfg3822'] != a0 || cs2_configs['cfg3823'] != a6) {
+					cs2method_21121(new function<none>() {
+					}, "", new WidgetPointer(a1));
+					return;
+				}
+				if (a4 <= cs2method_10133()) {
+					script_10104(a3, a1, a2, a5, 1, 1);
+					cs2method_21121(new function<none>() {
+					}, "", new WidgetPointer(a1));
+				}
+				return;
+			}, a4, new WidgetPointer(a0), a3, new WidgetPointer(a1), cs2method_10060(cs2method_10133(), 25), cs2_configs['cfg3822'], cs2_configs['cfg3823'], "vIiIiov", new WidgetPointer(a0));
+		} else {
+			cs2method_21121(new function<none>() {
+			}, "", new WidgetPointer(a0));
+		}
+		cs2method_10811(v0);
+		cs2method_10269(0);
+	}
+	return;
+}

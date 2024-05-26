@@ -1,0 +1,45 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_5687(int a0,int a1) {
+	cs2method_10606(79822905, 5, cs2method_10163(79822905));
+	cs2method_10310(9042);
+	cs2method_10013(130, 105, 0, 0);
+	cs2method_10063(5, a0, 0, 0);
+	cs2method_10606(79822905, 5, cs2method_10163(79822905));
+	cs2method_10310(9045);
+	cs2method_10013(130, 105, 0, 0);
+	cs2method_10063(5, a0, 2, 0);
+	cs2method_10606(79822905, 5, cs2method_10163(79822905));
+	cs2method_10310(9043);
+	cs2method_10013(138, 105, 0, 0);
+	cs2method_10063(135, a0, 0, 0);
+	cs2method_10606(79822905, 5, cs2method_10163(79822905));
+	cs2method_10310(9044);
+	cs2method_10013(138, 105, 0, 0);
+	cs2method_10063(135, a0, 2, 0);
+	cs2method_10606(79822905, 4, cs2method_10163(79822905));
+	cs2method_10063(10, a0, 0, 0);
+	cs2method_10692(4040);
+	cs2method_10173(0);
+	cs2method_10811(0);
+	cs2method_11105(1, 1, 18);
+	cs2method_10013(16, 100, 1, 0);
+	cs2method_10797("New unlocks below!" + "<br>" + "Click here to return to the normal skillguide");
+	cs2method_10057(1, "Continue");
+	cs2method_20703(new function<script_5688>(int a0) {
+		cs2_configs['cfg1753'] = a0;
+		script_5690();
+		return;
+	}, a1, "i");
+	return cs2method_10060(a0, 105);
+}

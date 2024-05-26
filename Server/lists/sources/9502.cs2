@@ -1,0 +1,88 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9502(int a0,int a1) {
+	int v0 = -1;
+	int v1 = 0;
+	int v2 = -1;
+	switch (a0) {
+		case 1:
+			v2 = 18993;
+			v0 = 49086525;
+			break;
+		case 2:
+			v2 = 18997;
+			v0 = 49086525;
+			break;
+		case 3:
+			v2 = 18996;
+			v0 = 49086524;
+			break;
+		case 4:
+			v2 = 18998;
+			v0 = 49086524;
+			break;
+		case 5:
+			v2 = 19000;
+			v0 = 49086523;
+			break;
+		case 6:
+			v2 = 18999;
+			v0 = 49086523;
+			break;
+		case 7:
+			v2 = 18994;
+			v0 = 49086522;
+			break;
+		case 8:
+			v2 = 18995;
+			v0 = 49086522;
+			break;
+		case 9:
+			v2 = 18985;
+			v0 = 49086520;
+			break;
+		case 10:
+			v2 = 18989;
+			v0 = 49086520;
+			break;
+		case 11:
+			v2 = 18988;
+			v0 = 49086519;
+			break;
+		case 12:
+			v2 = 18990;
+			v0 = 49086519;
+			break;
+		case 13:
+			v2 = 18992;
+			v0 = 49086518;
+			break;
+		case 14:
+			v2 = 18991;
+			v0 = 49086518;
+			break;
+		case 15:
+			v2 = 18986;
+			v0 = 49086517;
+			break;
+		case 16:
+			v2 = 18987;
+			v0 = 49086517;
+	}
+	cs2method_10467(0, v0);
+	cs2method_10606(v0, 5, 0);
+	cs2method_10063(0, 0, v1, 0);
+	cs2method_10310(v2);
+	cs2method_10013(18, 18, 0, 0);
+	return;
+}

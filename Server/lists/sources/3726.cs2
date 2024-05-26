@@ -1,0 +1,15 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+string script_3726() {
+	return "You have defeated Agoroth " + "<col=ffffff>" + (string)cs2method_10379(client_configs['cfg4414'].bitcfg22400) + " of " + (string)cs2method_10379(script_3876()) + "</col>" + " times this week.";
+}

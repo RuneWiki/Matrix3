@@ -1,0 +1,63 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4369(int a0,int a1,int a2,int a3) {
+	cs2_configs['cfg2539'] = (string)cs2method_10744(a2);
+	switch (a0) {
+		case 84:
+			script_4372(1);
+			break;
+		case 13:
+			if (script_9666() == 1) {
+				return;
+			}
+			script_4372(1);
+			break;
+		case 102:
+		case 103:
+		case 98:
+		case 99:
+		case 96:
+		case 97:
+			if (cs2method_10862() == 0) {
+				return;
+			}
+			int v0 = script_1553(a0, cs2_configs['cfg2539'], cs2_configs['cfg1498']);
+			/* 
+				java.lang.RuntimeException: Stack underflow
+					at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+					at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+					at tests.Main.main(Main.java:69)
+				
+			 */
+		case 85:
+			if (cs2method_10265(cs2_configs['cfg2539']) > 0) {
+				cs2_configs['cfg2539'] = (string)cs2method_11025(0, cs2method_10461(cs2method_10265(cs2_configs['cfg2539']), 1), cs2_configs['cfg2539']);
+			}
+			break;
+		default:
+			if (a0 == 67 && cs2method_10378() == 1) {
+				script_4367();
+				return;
+			}
+			if (cs2method_10265(cs2_configs['cfg2539']) < 13) {
+				cs2_configs['cfg2539'] = (string)script_74(0, a0, a3, cs2_configs['cfg2539']);
+			}
+	}
+	cs2_configs['cfg1498'] = script_1552(cs2_configs['cfg1498'], 5631, a2, cs2_configs['cfg2539'], -1);
+	cs2method_10112(cs2_configs['cfg1498'], cs2method_10152(a1), 0, 0, a1);
+	cs2method_10026(a2, cs2_configs['cfg2539']);
+	return;
+}

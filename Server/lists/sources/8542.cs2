@@ -1,0 +1,30 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8542() {
+	if (client_configs['cfg3895'].bitcfg20723 == 0) {
+		cs2method_10467(1, 16187393);
+		cs2method_10283(424, 215, 0, 0, 16187417);
+		cs2method_10283(6, 46, 1, 0, 16187413);
+		cs2method_10026(16187414, "Lumbridge needs you!" + "<br>" + "Carry rubble and gather resources to rebuild the homes damaged by the Battle of Lumbridge!");
+		cs2method_10283(16384, 16384, 2, 2, 16187414);
+		cs2method_10112(0, 0, 2, 0, 16187414);
+	} else {
+		cs2method_10467(0, 16187393);
+		cs2method_10283(424, 249, 0, 0, 16187417);
+		cs2method_10283(6, 80, 1, 0, 16187413);
+		cs2method_10026(16187414, "Today only, you can help build a memorial to the fallen of the Battle of Lumbridge." + "<br>" + "Bring stone to builder Bob between the foreman and the stockpiles.");
+		cs2method_10283(320, 16384, 0, 2, 16187414);
+		cs2method_10112(0, 0, 2, 0, 16187414);
+	}
+	return;
+}

@@ -1,0 +1,45 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_126(int a0,int a1,object a2) {
+	if (cs2_configs['cfg1413'] == 0) {
+		return;
+	}
+	int v0 = -1;
+	object v1 = cs2method_10765(a2);
+	switch (a1) {
+		case 1:
+			if (cs2_configs['cfg4128'] == 0) {
+				script_8512(v1, cs2_configs['cfg2231']);
+			}
+			break;
+		case 2:
+			if (cs2method_10284(a0) == 0) {
+				script_1050(1, 19, v1);
+			} else {
+				script_1050(3, 19, v1);
+			}
+			break;
+		case 4:
+		case 5:
+			if (cs2_configs['cfg4128'] == 1 && a1 == 4) {
+				script_8512(v1, cs2_configs['cfg2231']);
+			}
+			cs2method_10810("That player is currently offline.");
+			break;
+		case 8:
+			cs2_configs['cfg3936'] = (string)v1;
+			script_9961(8);
+	}
+	cs2_configs['cfg4128'] = 0;
+	return;
+}

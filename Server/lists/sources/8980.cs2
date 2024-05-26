@@ -1,0 +1,78 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8980(int a0) {
+	client_configs['cfg3643'].bitcfg18640 = cs2method_10060(a0, 1);
+	cs2method_10467(1, 98042072);
+	cs2method_10467(1, 98042077);
+	cs2method_10467(1, 98042069);
+	cs2method_10467(1, 98042064);
+	cs2method_10467(1, 98042054);
+	cs2method_10467(1, 98042046);
+	cs2method_10467(1, 98041972);
+	cs2method_10467(1, 98041973);
+	cs2method_10467(1, 98041978);
+	cs2method_10467(1, 98041994);
+	cs2method_10467(1, 98042003);
+	cs2method_10467(1, 98042009);
+	cs2method_10467(1, 98042016);
+	int v0 = -1;
+	switch (client_configs['cfg3643'].bitcfg18639) {
+		case 0:
+			v0 = 98042072;
+			break;
+		case 1:
+			v0 = 98042077;
+			break;
+		case 2:
+			switch (client_configs['cfg3643'].bitcfg18640) {
+				case 1:
+					v0 = 98042069;
+					break;
+				case 2:
+					v0 = 98042064;
+					break;
+				case 3:
+					v0 = 98042054;
+					break;
+				case 4:
+					v0 = 98042046;
+					break;
+				case 5:
+					v0 = 98042016;
+					break;
+				case 6:
+					v0 = 98042009;
+					break;
+				case 7:
+					v0 = 98042003;
+			}
+			break;
+		case 3:
+			switch (client_configs['cfg3643'].bitcfg18640) {
+				case 1:
+					v0 = 98041994;
+					break;
+				case 2:
+					v0 = 98041978;
+					break;
+				case 3:
+					v0 = 98041973;
+			}
+			break;
+		case 4:
+			v0 = 98041972;
+	}
+	cs2method_10467(0, v0);
+	script_8957(script_8960(client_configs['cfg3643'].bitcfg18639), cs2method_11048(0, cs2method_10060(client_configs['cfg3643'].bitcfg18640, 0)));
+	return;
+}

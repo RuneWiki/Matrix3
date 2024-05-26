@@ -1,0 +1,74 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6039(int a0,int a1,int a2,int a3) {
+	int v1 = idx17mapData('S', 'i', 1482, a1);
+	object v0 = idx17mapData('S', 's', 680, a1);
+	int v4 = script_6035(a1, cs2_configs['cfg1798'], cs2_configs['cfg1799'], 0);
+	int v3 = 3495;
+	if (v4 == 1) {
+		v3 = 371;
+	}
+	cs2method_10273(a3);
+	if (v1 == cs2_configs['cfg1796']) {
+		script_7794(a2, 28439);
+		cs2method_20680(new function<none>() {
+		}, "", new WidgetPointer(a2));
+		cs2method_20750(new function<none>() {
+		}, "", new WidgetPointer(a2));
+	} else if (v4 == 1) {
+		cs2method_20680(new function<script_7793>(int a0,int a1) {
+			script_7794(a0, a1);
+			return;
+		}, new WidgetPointer(-32768,3), 28440, "IJ", new WidgetPointer(a2));
+		cs2method_20750(new function<script_7793>(int a0,int a1) {
+			script_7794(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), 21363, "IJ", new WidgetPointer(a2));
+	} else {
+		cs2method_20680(new function<none>() {
+		}, "", new WidgetPointer(a2));
+		cs2method_20750(new function<none>() {
+		}, "", new WidgetPointer(a2));
+	}
+	script_7794(a2, 21363);
+	int v2 = 0;
+	cs2method_10606(a3, 5, v2);
+	cs2method_10013(25, 25, 0, 0);
+	cs2method_10063(0, 0, 1, 1);
+	cs2method_10310(idx17mapData('i', 'd', v3, v1));
+	if (v4 == 0) {
+		v0 = (string)v0 + " - Unavailable";
+		cs2method_10002(150);
+	}
+	cs2method_21121(new function<script_8799>(int a0,int a1,object a2) {
+		script_8800(a0, a1, a2);
+		return;
+	}, (string)v0, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(a3));
+	cs2method_11127(1, a3, "Choose");
+	cs2method_10316(a3, idx17mapData('S', 's', 680, a1));
+	cs2method_20486(new function<script_6040>(int a0,int a1,int a2,int a3) {
+		if (script_6035(a2, cs2_configs['cfg1798'], cs2_configs['cfg1799'], 1) == 0) {
+			return;
+		}
+		cs2_configs['cfg1796'] = a1;
+		for (int v1 = cs2method_10461(cs2method_10924(5727), 1); v1 >= 0; v1 = cs2method_10461(v1, 1)) {
+			int v0 = (int)idx17mapData('i', 'I', 5727, v1);
+			if (v0 != -1) {
+				cs2method_11047(v0);
+			}
+		}
+		cs2method_11047(a0);
+		return;
+	}, a1, v1, new WidgetPointer(a3), new WidgetPointer(a0), "SiII", new WidgetPointer(a3));
+	return;
+}

@@ -1,0 +1,21 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_7663(int a0) {
+	flow_0:
+		IF (a0 != -1 && client_configs['cfg3593'].bitcfg18336 != -1) 
+			GOTO	flow_2
+		GOTO	flow_2
+	flow_2:
+		return;
+}

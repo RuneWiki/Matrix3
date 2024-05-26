@@ -1,0 +1,47 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9246(int a0,int a1,int a2,int a3) {
+	int v3 = -1;
+	int v4 = -1;
+	int v1 = 0;
+	int v5 = 0;
+	int v2 = -1;
+	int v0 = -1;
+	if (cs2method_10324(a3) == 1) {
+		v2 = interfaceDefsAttribute(3819);
+	}
+	if (cs2method_10324(a2) == 1) {
+		v0 = interfaceDefsAttribute(3819);
+	}
+	if (a0 != -1 && a1 != -1) {
+		if (cs2method_10324(a3) == 1) {
+			v3 = interfaceDefsAttribute(3818);
+			v1 = interfaceDefsAttribute(3820);
+		}
+		if (cs2method_10324(a2) == 1) {
+			v4 = interfaceDefsAttribute(3818);
+			v5 = interfaceDefsAttribute(3820);
+		}
+		if (v3 == v4 && v3 != -1 && v1 == 0 && v4 != -1 && v5 == 0) {
+			if (cs2method_11038(a3, a0) == 1 && cs2method_11038(a2, a1) == 1) {
+				script_9247(a3, a0, v2, v3, a2, a1, v0, v4);
+				script_9882(a3, a0, v3, a2, a1, v4);
+			}
+		} else {
+			script_9248(a3, a0, v3, a2, a1, v4);
+		}
+	} else {
+		script_9248(a3, a0, v3, a2, a1, v4);
+	}
+	return;
+}

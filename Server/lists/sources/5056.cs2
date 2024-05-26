@@ -1,0 +1,46 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5056(int a0,int a1) {
+	if (a1 == 1) {
+		if (cs2method_11038(a0, 0) == 1) {
+			cs2method_10310(7571);
+		}
+		if (cs2method_11038(a0, 1) == 1) {
+			cs2method_10310(7570);
+		}
+		if (cs2method_11038(a0, 2) == 1) {
+			cs2method_10310(7572);
+		}
+		if (cs2method_11038(a0, 3) == 1) {
+			cs2method_10310(7577);
+		}
+		cs2method_21121(new function<none>() {
+		}, "", new WidgetPointer(a0));
+		cs2method_20750(new function<none>() {
+		}, "", new WidgetPointer(a0));
+	} else {
+		script_5058(a0, 0);
+		if (cs2method_11038(a0, 3) == 1) {
+			cs2method_10310(7576);
+		}
+		cs2method_21121(new function<script_5057>(int a0,int a1) {
+			script_5058(a0, a1);
+			return;
+		}, new WidgetPointer(-32768,3), 1, "I1", new WidgetPointer(a0));
+		cs2method_20750(new function<script_5057>(int a0,int a1) {
+			script_5058(a0, a1);
+			return;
+		}, new WidgetPointer(-32768,3), 0, "I1", new WidgetPointer(a0));
+	}
+	return;
+}

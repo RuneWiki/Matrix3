@@ -1,0 +1,27 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5906() {
+	script_5219(82116894);
+	script_5219(82116903);
+	script_6976();
+	script_5219(82116894);
+	cs2_configs['cfg1784'] = 0;
+	cs2method_10467(1, 82116636);
+	if (client_configs['cfg1451'].bitcfg4345 > 0) {
+		cs2method_10467(0, 82116636);
+	}
+	script_1545();
+	script_1523();
+	script_6670();
+	return;
+}

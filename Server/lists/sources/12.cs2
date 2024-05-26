@@ -1,0 +1,67 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_12_struct(1,1,0) script_12(int a0) {
+	switch (a0) {
+		case 1:
+			return new script_12_struct(15, "Attack");
+		case 2:
+			return new script_12_struct(8, "Strength");
+		case 5:
+			return new script_12_struct(15, "Defence");
+		case 3:
+			return new script_12_struct(11, "Ranged");
+		case 7:
+			return new script_12_struct(4, "Prayer");
+		case 4:
+			return new script_12_struct(11, "Magic");
+		case 6:
+			return new script_12_struct(3, "Constitution");
+		case 8:
+			return new script_12_struct(10, "Agility");
+		case 9:
+			return new script_12_struct(8, "Herblore");
+		case 10:
+			return new script_12_struct(9, "Thieving");
+		case 11:
+			return new script_12_struct(13, "Crafting");
+		case 19:
+			return new script_12_struct(9, "Fletching");
+		case 13:
+			return new script_12_struct(7, "Mining");
+		case 14:
+			return new script_12_struct(16, "Smithing");
+		case 15:
+			return new script_12_struct(8, "Fishing");
+		case 16:
+			return new script_12_struct(16, "Cooking");
+		case 17:
+			return new script_12_struct(9, "Firemaking");
+		case 18:
+			return new script_12_struct(8, "Woodcutting");
+		case 12:
+			return new script_12_struct(7, "Runecrafting");
+		case 20:
+			return new script_12_struct(5, "Slayer");
+		case 21:
+			return new script_12_struct(13, "Farming");
+		case 22:
+			return new script_12_struct(16, "Construction");
+		case 23:
+			return new script_12_struct(16, "Hunter");
+		case 24:
+			return new script_12_struct(8, "Summoning");
+		case 25:
+			return new script_12_struct(6, "Dungeoneering");
+	}
+	return new script_12_struct(-1, "");
+}

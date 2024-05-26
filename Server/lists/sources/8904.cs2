@@ -1,0 +1,105 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8904(int a0,int a1,int a2) {
+	int v6 = -1;
+	object v3 = "null";
+	int v19 = 0;
+	int v9 = -1;
+	switch (a1) {
+		case 1:
+			v9 = 20087;
+			object v1 = "<col=0000ff>" + "Saradomin" + "</col>" + "-aligned players deal 10% more damage to " + "<col=ff0000>" + "Zamorak" + "</col>" + "'s units.";
+			v6 = 97910826;
+			break;
+		case 2:
+			v9 = 20088;
+			object v15 = "<col=0000ff>" + "Saradomin" + "</col>" + "-aligned players take 15% less damage from " + "<col=ff0000>" + "Zamorak" + "</col>" + "'s units.";
+			v6 = 97910826;
+			break;
+		case 3:
+			v9 = 20089;
+			object v14 = "A second of each " + "<col=0000ff>" + "Saradomin" + "</col>" + "-aligned special unit may appear on the battlefield.";
+			v6 = 97910825;
+			break;
+		case 4:
+			v9 = 20090;
+			object v2 = "<col=0000ff>" + "Saradomin" + "</col>" + "-aligned special units bonuses are 50% more powerful.";
+			v6 = 97910825;
+			break;
+		case 5:
+			v9 = 20091;
+			object v18 = "<col=0000ff>" + "Saradomin" + "</col>" + "-aligned players gain 5% more resources from the battlefield.";
+			v6 = 97910824;
+			break;
+		case 6:
+			v9 = 20092;
+			object v8 = "<col=0000ff>" + "Saradomin" + "</col>" + "-aligned players gain %5 more resources from outside the battlefield.";
+			v6 = 97910824;
+			break;
+		case 7:
+			v9 = 20093;
+			object v16 = "Rewards from the quartermaster are now 5% cheaper for " + "<col=0000ff>" + "Saradomin" + "</col>" + " aligned players.";
+			v6 = 97910823;
+			break;
+		case 8:
+			v9 = 20094;
+			object v13 = "5% bonus chance to obtain rare drops on the battlefield for " + "<col=0000ff>" + "Saradomin" + "</col>" + " aligned players.";
+			v6 = 97910823;
+			break;
+		case 9:
+			v9 = 20095;
+			object v7 = "<col=ff0000>" + "Zamorak" + "</col>" + "-aligned players deal 10% more damage to " + "<col=0000ff>" + "Saradomin" + "</col>" + "'s units.";
+			v6 = 97910831;
+			break;
+		case 10:
+			v9 = 20096;
+			object v12 = "<col=ff0000>" + "Zamorak" + "</col>" + "-aligned players take 15% less damage from " + "<col=0000ff>" + "Saradomin" + "</col>" + "'s units.";
+			v6 = 97910831;
+			break;
+		case 11:
+			v9 = 20097;
+			object v4 = "A second of each " + "<col=ff0000>" + "Zamorak" + "</col>" + "-aligned special unit may appear on the battlefield.";
+			v6 = 97910830;
+			break;
+		case 12:
+			v9 = 20098;
+			object v11 = "<col=ff0000>" + "Zamorak" + "</col>" + "-aligned special units bonuses are 50% more powerful.";
+			v6 = 97910830;
+			break;
+		case 13:
+			v9 = 20099;
+			object v5 = "<col=ff0000>" + "Zamorak" + "</col>" + "-aligned players gain 5% more resources from the battlefield.";
+			v6 = 97910829;
+			break;
+		case 14:
+			v9 = 20100;
+			object v10 = "<col=ff0000>" + "Zamorak" + "</col>" + "-aligned players gain %5 more resources from outside the battlefield.";
+			v6 = 97910829;
+			break;
+		case 15:
+			v9 = 20101;
+			object v0 = "Rewards from the quartermaster are now 5% cheaper for " + "<col=ff0000>" + "Zamorak" + "</col>" + "-aligned players.";
+			v6 = 97910828;
+			break;
+		case 16:
+			v9 = 20102;
+			object v17 = "5% bonus chance to obtain rare drops on the battlefield for " + "<col=ff0000>" + "Zamorak" + "</col>" + "-aligned players.";
+			v6 = 97910828;
+	}
+	cs2method_10467(0, v6);
+	cs2method_10606(v6, 5, 0);
+	cs2method_10063(0, 0, v19, 0);
+	cs2method_10310(v9);
+	cs2method_10013(18, 18, 0, 0);
+	return;
+}

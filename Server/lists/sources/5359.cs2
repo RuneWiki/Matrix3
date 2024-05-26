@@ -1,0 +1,169 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5359(int a0,int a1,int a2,int a3) {
+	int v7 = 0;
+	int v2 = 0;
+	int v13 = 0;
+	int v0 = 0;
+	int v5 = 4;
+	int v16 = idx22mapAttribute(a1, 1935);
+	int v14 = 0;
+	int v18 = 0;
+	int v20 = 0;
+	object v10 = "";
+	object v6 = "";
+	object v3 = "";
+	object v9 = "";
+	object v11 = "";
+	object v4 = "";
+	int v19 = 0;
+	int v1 = 0;
+	int v15 = 0;
+	int v17 = 0;
+	int v8 = 0;
+	int v12 = -1;
+	if (a0 == 1 && idx22mapAttribute(a1, 1937) != 2 && cs2method_11038(a3, a2) == 1) {
+		int v23 = cs2method_10878();
+		int v21 = cs2method_10406();
+		int v27 = cs2method_10488();
+		int v24 = cs2method_10060(v23, v27);
+		int v25 = cs2method_10060(v21, v5);
+		int v30 = cs2method_10718(74907661);
+		if (cs2method_10461(v25, v30) <= 0) {
+			v17 = 2;
+			v25 = v30;
+		}
+		switch (idx22mapAttribute(a1, 1937)) {
+			case 1:
+				int v28 = cs2method_11045(74, 105, 5182, a1, 0);
+				if (v28 <= 31) {
+					v8 = cs2method_10441(client_configs['cfg1241'], v28);
+				} else if (v28 <= 62) {
+					v8 = cs2method_10441(client_configs['cfg1242'], cs2method_10461(v28, 31));
+				} else {
+					v8 = cs2method_10441(client_configs['cfg1243'], cs2method_10461(v28, 62));
+				}
+				break;
+			case 5:
+				int v26 = cs2method_11045(74, 105, 5183, a1, 0);
+				v8 = cs2method_10441(client_configs['cfg1247'], cs2method_10060(v26, 16));
+		}
+		cs2method_10112(v24, v25, 0, 0, 74907739);
+		cs2method_10026(74907774, idx22mapAttribute(a1, 1931));
+		if (idx22mapAttribute(a1, 1937) == 1) {
+			int v33 = cs2method_10968(itemDefsAttribute(v16, 1430), 100);
+			object v38 = "Duration: " + (string)cs2method_10379(v33) + " mins.";
+			int v39 = cs2method_10968(itemDefsAttribute(v16, 1429), 100);
+			object v36 = "Recharge: " + (string)cs2method_10379(v39) + " mins.";
+			if (v33 > 60) {
+				int v35 = cs2method_10038(v33, 60);
+				int v37 = cs2method_10968(v33, 60);
+				if (v35 > 0) {
+					if (v37 > 1) {
+						v38 = "Duration: " + (string)cs2method_10379(v37) + " hours, " + (string)cs2method_10379(v35) + " mins.";
+					} else {
+						v38 = "Duration: 1 hour, " + (string)cs2method_10379(v35) + " mins.";
+					}
+				} else if (v37 > 1) {
+					v38 = "Duration: " + (string)cs2method_10379(v37) + " hours.";
+				} else {
+					v38 = "Duration: 1 hour.";
+				}
+			}
+			if (v39 > 60) {
+				int v32 = cs2method_10038(v39, 60);
+				int v34 = cs2method_10968(v39, 60);
+				if (v34 > 24) {
+					int v41 = cs2method_10038(v34, 24);
+					int v40 = cs2method_10968(v34, 24);
+					if (v41 > 0) {
+						v36 = "Recharge: " + (string)cs2method_10379(v40) + " " + (string)script_4583("day", v40, "days") + ", " + (string)cs2method_10379(v41) + " " + (string)script_4583("hour", v41, "hours") + ".";
+					} else {
+						v36 = "Recharge: " + (string)cs2method_10379(v40) + " " + (string)script_4583("day", v40, "days") + ".";
+					}
+				} else if (v32 > 0) {
+					if (v34 > 1) {
+						v36 = "Recharge: " + (string)cs2method_10379(v34) + " hours, " + (string)cs2method_10379(v32) + " mins.";
+					} else {
+						v36 = "Recharge: 1 hour, " + (string)cs2method_10379(v32) + " mins.";
+					}
+				} else if (v34 > 1) {
+					v36 = "Recharge: " + (string)cs2method_10379(v34) + " hours.";
+				} else {
+					v36 = "Recharge: 1 hour.";
+				}
+			}
+			object v31 = "<br>" + "<br>" + (string)v38 + "<br>" + (string)v36;
+			cs2method_10026(74907774, cs2method_10427(cs2method_10744(74907774), v31));
+		} else {
+			if (idx22mapAttribute(a1, 1937) == 4) {
+				while (v19 < cs2method_10924(5184) && v1 == 0) {
+					if (idx17mapData('i', 'J', 5184, v19) == a1) {
+						v4 = idx17mapData('i', 's', 5187, v19);
+						v11 = idx17mapData('i', 's', 5186, v19);
+						v1 = 1;
+					}
+					v19 = cs2method_10060(v19, 1);
+				}
+				v11 = cs2method_10427("Male Title: ", v11);
+				v4 = cs2method_10427("Female Title: ", v4);
+				cs2method_10026(74907774, (string)v11 + "<br>" + (string)v4);
+			}
+		}
+		if (v8 == 0 && idx22mapAttribute(a1, 4262) == 0) {
+			v9 = "<br>" + "<br>" + "<col=ff0000>" + "Please visit Solomon's Store to purchase.";
+		}
+		cs2method_10026(74907774, cs2method_10427(cs2method_10744(74907774), v9));
+		int v22 = cs2method_10805(cs2method_10236(74907774), cs2method_10643(74907774), cs2method_10744(74907774));
+		int v29 = cs2method_10060(cs2method_10051(v22, 13), cs2method_10051(v5, 2));
+		cs2method_10283(cs2method_10236(74907739), v29, 0, 0, 74907739);
+		cs2method_10467(0, 74907739);
+		if (cs2method_10060(cs2method_10461(v25, v30), v29) > cs2method_10823(74907661)) {
+			v25 = cs2method_10060(v30, cs2method_10461(cs2method_10823(74907661), v29));
+			cs2method_10112(v24, v25, 0, 0, 74907739);
+			v17 = 1;
+		}
+		if (cs2method_10060(cs2method_10236(74907739), cs2method_10191(74907739)) > cs2method_10236(74907661)) {
+			int v31 = cs2method_10060(cs2method_10461(cs2method_10878(), cs2method_10236(74907739)), 2);
+			cs2method_10112(v31, v25, 0, 0, 74907739);
+			cs2method_10112(12, cs2method_10152(74907691), 2, 0, 74907691);
+			cs2method_10112(10, cs2method_10152(74907771), 2, 0, 74907771);
+			cs2method_10112(11, cs2method_10152(74907772), 2, 0, 74907772);
+			cs2method_10112(14, cs2method_10152(74907774), 2, 0, 74907774);
+			cs2method_10112(0, 10, 2, 0, 74907773);
+			cs2method_10759(1, 74907773);
+		} else {
+			cs2method_10112(12, cs2method_10152(74907691), 0, 0, 74907691);
+			cs2method_10112(10, cs2method_10152(74907771), 0, 0, 74907771);
+			cs2method_10112(11, cs2method_10152(74907772), 0, 0, 74907772);
+			cs2method_10112(14, cs2method_10152(74907774), 0, 0, 74907774);
+			cs2method_10112(0, 10, 0, 0, 74907773);
+			cs2method_10759(0, 74907773);
+		}
+		if (cs2method_10823(74907739) < cs2method_10060(cs2method_10823(74907773), 40)) {
+			cs2method_10112(cs2method_10191(74907773), 0, 0, 1, 74907773);
+		} else {
+			cs2method_10112(cs2method_10191(74907773), 10, 0, 0, 74907773);
+		}
+		if (v17 > 0) {
+			if (v17 == 1) {
+				cs2method_10112(cs2method_10191(74907773), 0, 0, 2, 74907773);
+			} else {
+				cs2method_10112(cs2method_10191(74907773), 0, 0, 0, 74907773);
+			}
+		}
+		return;
+	}
+	cs2method_10467(1, 74907739);
+	return;
+}

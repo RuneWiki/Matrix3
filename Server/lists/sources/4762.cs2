@@ -1,0 +1,79 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4762(int a0,int a1) {
+	if (a1 == -1 || a0 == -1) {
+		return;
+	}
+	cs2method_20348(new function<script_4495>(int a0,int a1) {
+		script_4762(a1, a0);
+		return;
+	}, new WidgetPointer(a1), a0, 3814, 1, "IJY", new WidgetPointer(a1));
+	int v9 = idx22mapAttribute(a0, 3797);
+	int v0 = idx22mapAttribute(a0, 4358);
+	if (v0 != -1) {
+		a0 = v0;
+	}
+	int v7 = script_3898(a0, v9);
+	int v8 = idx22mapAttribute(v7, 1385);
+	int v6 = idx22mapAttribute(v7, 1382);
+	int v4 = idx22mapAttribute(v7, 1386);
+	int v1 = idx22mapAttribute(v7, 1383);
+	int v2 = idx22mapAttribute(v7, 1384);
+	int v3 = idx22mapAttribute(v7, 1387);
+	int v5 = idx22mapAttribute(v7, 1358);
+	cs2method_10273(a1);
+	cs2method_10606(a1, 5, cs2method_10163(a1));
+	cs2method_10063(0, 0, 1, 0);
+	cs2method_10013(cs2method_10051(5, 2), 5, 1, 0);
+	cs2method_10310(v6);
+	cs2method_10002(v5);
+	cs2method_10606(a1, 5, cs2method_10163(a1));
+	cs2method_10063(0, 0, 1, 2);
+	cs2method_10013(cs2method_10051(5, 2), 5, 1, 0);
+	cs2method_10310(v1);
+	cs2method_10002(v5);
+	cs2method_10606(a1, 5, cs2method_10163(a1));
+	cs2method_10063(0, 0, 0, 1);
+	cs2method_10013(5, cs2method_10051(5, 2), 0, 1);
+	cs2method_10310(v2);
+	cs2method_10434(1);
+	cs2method_10002(v5);
+	cs2method_10606(a1, 5, cs2method_10163(a1));
+	cs2method_10063(0, 0, 2, 1);
+	cs2method_10013(5, cs2method_10051(5, 2), 0, 1);
+	cs2method_10310(v2);
+	cs2method_10002(v5);
+	cs2method_10606(a1, 5, cs2method_10163(a1));
+	cs2method_10063(0, 0, 0, 0);
+	cs2method_10013(5, 5, 0, 0);
+	cs2method_10310(v8);
+	cs2method_10434(1);
+	cs2method_10002(v5);
+	cs2method_10606(a1, 5, cs2method_10163(a1));
+	cs2method_10063(0, 0, 0, 2);
+	cs2method_10013(5, 5, 0, 0);
+	cs2method_10310(v4);
+	cs2method_10434(1);
+	cs2method_10002(v5);
+	cs2method_10606(a1, 5, cs2method_10163(a1));
+	cs2method_10063(0, 0, 2, 0);
+	cs2method_10013(5, 5, 0, 0);
+	cs2method_10310(v8);
+	cs2method_10002(v5);
+	cs2method_10606(a1, 5, cs2method_10163(a1));
+	cs2method_10063(0, 0, 2, 2);
+	cs2method_10013(5, 5, 0, 0);
+	cs2method_10310(v4);
+	cs2method_10002(v5);
+	return;
+}

@@ -1,0 +1,81 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_3273_struct(3,0,0) script_3273() {
+	int v0 = 0;
+	int v1 = cs2method_10968(cs2_configs['cfg1191'], 10);
+	int v2 = cs2method_10461(cs2_configs['cfg1191'], cs2method_10051(cs2method_10968(cs2_configs['cfg1191'], 10), 10));
+	switch (v1) {
+		case 1:
+			switch (v2) {
+				case 1:
+					v0 = 0;
+			}
+			break;
+		case 2:
+			switch (v2) {
+				case 1:
+					v0 = -760;
+					break;
+				case 2:
+					v0 = 507;
+			}
+			break;
+		case 3:
+			switch (v2) {
+				case 1:
+					v0 = -1520;
+					break;
+				case 2:
+					v0 = 190;
+					break;
+				case 3:
+					v0 = 950;
+			}
+			break;
+		case 4:
+			switch (v2) {
+				case 1:
+					v0 = -2280;
+					break;
+				case 2:
+					v0 = -760;
+					break;
+				case 3:
+					v0 = 633;
+					break;
+				case 4:
+					v0 = 1457;
+			}
+			break;
+		case 5:
+			switch (v2) {
+				default:
+					break;
+				case 1:
+					v0 = -3040;
+					break;
+				case 2:
+					v0 = -1267;
+					break;
+				case 3:
+					v0 = 380;
+					break;
+				case 4:
+					v0 = 1140;
+					break;
+				case 5:
+					v0 = 1900;
+			}
+	}
+	return new script_3273_struct(v1, v2, v0);
+}

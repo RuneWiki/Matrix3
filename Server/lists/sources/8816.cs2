@@ -1,0 +1,128 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8816(int a0) {
+	cs2method_20162(new function<none>() {
+	}, "", new WidgetPointer(1444,61));
+	if (a0 == 1) {
+		cs2method_20380(new function<script_8818>(int a0,int a1) {
+			if (cs2_configs['cfg2850'] <= 0) {
+				return;
+			}
+			if (script_8815(a0) == 0) {
+				switch (a0) {
+					flow_4:
+						default:
+						script_8210(-1, -1, "Invalid key. Please enter a new one.");
+						break;
+						case 13:
+						if (script_9666() == 1) {
+							return;
+						}
+						script_8212(cs2_configs['cfg2850'], cs2_configs['cfg2851'], -1, -1);
+						script_8820();
+						break;
+						case 86:
+						case 81:
+						case 82:
+						break;
+						case -1:
+						IF (cs2method_10698(a1) == 1) 
+							GOTO	flow_10
+						IF (a1 == -1 && a1 != 96) 
+							GOTO	flow_11
+						break;
+					flow_10:
+					flow_11:
+						script_8210(-1, -1, "Key not currently supported. Please enter a new one.");
+				}
+				return;
+			}
+			int v5 = 8;
+			if (cs2method_10378() == 1) {
+				v5 = 1;
+			} else if (cs2method_10558() == 1) {
+				v5 = 2;
+			} else {
+				if (cs2method_10862() == 1) {
+					v5 = 4;
+				}
+			}
+			int v11 = 0;
+			int v0 = 0;
+			int v4 = -1;
+			int v13 = 0;
+			int v6 = cs2method_10924(7691);
+			while (v13 < v6) {
+				v0 = idx17mapData('i', 'i', 7691, v13);
+				v4 = script_8824(v0, a0, v5);
+				if (v4 != -1) {
+					v13 = v6;
+				} else {
+					v13 = cs2method_10060(v13, 1);
+				}
+			}
+			object v20 = "";
+			int v10 = cs2_configs['cfg2850'];
+			int v12 = cs2_configs['cfg2851'];
+			int v18 = a0;
+			int v19 = v5;
+			script_8823_struct(1,1,0) v7 = script_8823(v10, v12, v18, v19);
+			object v1 = v7.objectpart_0;
+			int v15 = v7.intpart_0;
+			if (v15 == 0) {
+				if (cs2method_10846(v1, "") == 0) {
+					v1 = "Key bind failed. Please try again later.";
+				}
+				script_8210(-1, -1, v1);
+				return;
+			}
+			if (v4 != -1) {
+				if (cs2_configs['cfg2850'] != v0 || cs2_configs['cfg2851'] != v4) {
+					int v9 = v0;
+					int v16 = v4;
+					int v14 = 255;
+					int v17 = 0;
+					script_8823_struct(1,1,0) v8 = script_8823(v9, v16, v14, v17);
+					int v2 = v8.intpart_0;
+					v8.objectpart_0;
+					int v3 = v2;
+					/* 
+						java.lang.RuntimeException: Stack underflow
+							at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+							at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+							at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+							at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+							at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+							at mgi.tools.jagdecs2.FlowBlocksGenerator.cast(FlowBlocksGenerator.java:546)
+							at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+							at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+							at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+							at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+							at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+							at tests.Main.main(Main.java:69)
+						
+					 */
+				}
+				v0 = -1;
+				v4 = -1;
+			}
+			script_8212(cs2_configs['cfg2850'], cs2_configs['cfg2851'], v0, v4);
+			script_8820();
+			return;
+		}, -2147483640, false, "iz", new WidgetPointer(1444,61));
+	} else {
+		cs2method_20380(new function<none>() {
+		}, "", new WidgetPointer(1444,61));
+	}
+	return;
+}

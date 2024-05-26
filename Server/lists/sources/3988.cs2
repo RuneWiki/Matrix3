@@ -1,0 +1,146 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_3988(int a0) {
+	int v15;
+	int v4 = cs2method_10051(6, cs2method_10461(a0, 1));
+	int v7 = 0;
+	int v9 = 0;
+	int v10 = -1;
+	object v6 = "";
+	object v1 = "";
+	int v13 = 0;
+	int v12 = -1;
+	int v5 = -1;
+	int v8 = 0;
+	int v18 = 0;
+	int v2 = 3484;
+	int v20 = -1;
+	int v16 = -1;
+	int v11 = 0;
+	int v17 = 15;
+	int v19 = 15;
+	int v0 = 0;
+	while (v18 < cs2method_10060(cs2method_10924(3485), 6)) {
+		int v14 = idx17mapData('i', 'i', v2, v4);
+		int v3 = script_6798(v14);
+		if (v3 == 1643) {
+			v4 = 0;
+			if (v2 == 3484) {
+				v2 = 3485;
+			} else {
+				return v19;
+			}
+		} else {
+			if (v3 != -1) {
+				object v22 = idx22mapAttribute(v3, 1266);
+				int v24 = idx22mapAttribute(v3, 1271);
+				cs2method_10606(60096532, 5, v8);
+				int v23 = 4041;
+				int v21 = 4042;
+				cs2method_10310(v23);
+				cs2method_20674(new function<script_4013>(int a0,int a1) {
+					script_4014(a1, a0);
+					return;
+				}, -2147483643, v21, "id");
+				cs2method_20884(new function<script_4013>(int a0,int a1) {
+					script_4014(a0, a1);
+					return;
+				}, -2147483643, v23, "id");
+				cs2method_10013(cs2method_10060(70, 2), cs2method_10060(56, 1), 0, 0);
+				cs2method_10063(cs2method_10461(v17, 1), cs2method_10461(v19, 1), 0, 0);
+				cs2method_10057(1, "Summary for");
+				if (client_configs['cfg1293'].bitcfg3617 == 0) {
+					if (client_configs['cfg1269'].bitcfg3561 == v14) {
+						cs2method_10057(2, "Unpin");
+					} else {
+						if (script_3227(v14) != 2) {
+							cs2method_10057(2, "Pin");
+						}
+					}
+				}
+				cs2method_10200(v22);
+				cs2method_20703(new function<script_3990>(int a0,int a1,int a2) {
+					if (a1 != 1) {
+						return;
+					}
+					script_41(60096692);
+					int v0 = script_3227(a0);
+					if (v0 == 2) {
+						script_4014(a2, 4043);
+					} else {
+						script_4014(a2, 4041);
+					}
+					script_3991(a0);
+					return;
+				}, v14, -2147483643, -2147483644, "iii");
+				if (script_3999(v14) == 0) {
+					object v22 = " -" + "<br>";
+					object v23 = cs2method_10427(idx22mapAttribute(v3, 1266), v22);
+					object v21 = cs2method_10427(v23, idx22mapAttribute(v3, 1273));
+					cs2method_20353(new function<script_3998>(int a0,int a1,int a2,object a3,int a4,int a5) {
+						int v0 = 0;
+						int v1 = cs2method_10718(a2);
+						if (cs2method_10461(a0, v1) < 60) {
+							v0 = 2;
+						}
+						script_7769(60096692, a2, a5, 180, 17813, 17813, 16777215, 13, 4, v0, a4, a3, a1);
+						return;
+					}, cs2method_10406(), -2147483647, -2147483646, (string)v21, new WidgetPointer(-32768,3), -2147483643, "iiisIi");
+				}
+				if (script_3994(v14) == 1 && v14 != 4094) {
+					cs2_configs['cfg1422'] = v8;
+				}
+				cs2method_10606(60096532, 5, cs2method_10060(v8, 1));
+				cs2method_10013(50, 50, 0, 0);
+				cs2method_10310(v24);
+				cs2method_10063(cs2method_10060(v17, 2), cs2method_10060(v19, 2), 0, 0);
+				cs2method_10002(v0);
+				cs2method_10606(60096532, 5, cs2method_10060(v8, 2));
+				cs2method_10013(14, 18, 0, 0);
+				if (script_3996(v14) == 0) {
+					v15 = 4346;
+					cs2method_10013(11, 11, 0, 0);
+				} else {
+					v15 = -1;
+				}
+				cs2method_10310(v15);
+				cs2method_10063(cs2method_10461(cs2method_10060(v17, 70), 15), cs2method_10060(v19, 4), 0, 0);
+				cs2method_10606(60096532, 5, cs2method_10060(v8, 3));
+				cs2method_10013(11, 11, 0, 0);
+				cs2method_10063(cs2method_10461(cs2method_10060(v17, 70), 16), cs2method_10060(v19, 39), 0, 0);
+				if (script_3994(v14) == 1) {
+					cs2method_10310(4296);
+				}
+				v18 = cs2method_10060(v18, 1);
+				v8 = cs2method_10051(v18, 4);
+				v17 = cs2method_10060(cs2method_10060(v17, 70), 15);
+				v11 = cs2method_10038(cs2method_10060(v11, 1), 6);
+				if (v11 == 0) {
+					v19 = cs2method_10060(cs2method_10060(v19, 56), 15);
+					v17 = 15;
+				}
+			}
+		}
+		v4 = cs2method_10060(v4, 1);
+		if (v2 == 3484 && v4 == cs2method_10060(cs2method_10051(6, cs2method_10461(a0, 1)), 5)) {
+			v4 = 1;
+			v2 = 3485;
+		}
+	}
+	if (v11 != 0) {
+		v19 = cs2method_10060(v19, 56);
+	} else {
+		v19 = cs2method_10461(v19, 15);
+	}
+	return v19;
+}

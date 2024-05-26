@@ -1,0 +1,158 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2610(int a0) {
+	object v0 = "";
+	if (client_configs['cfg1630'].bitcfg5220 == 2) {
+		object v4;
+		object v3;
+		object v2;
+		object v1;
+		object v5;
+		object v6;
+		object v7;
+		object v8;
+		cs2method_10467(0, a0);
+		if (client_configs['cfg1631'].bitcfg5235 == 15) {
+			if (client_configs['cfg1631'].bitcfg5236 > 0) {
+				v3 = "Collected " + (string)cs2method_10379(client_configs['cfg1631'].bitcfg5236) + " out of 4 rocks";
+				cs2method_10758(1985, 2424853);
+			} else {
+				v3 = "Send a squad to collect rocks";
+				cs2method_10758(1990, 2424853);
+			}
+			cs2method_21121(new function<script_7781>(int a0,int a1,int a2,object a3,int a4) {
+				script_7788(a3, a1, -1, a2, a4, a0);
+				return;
+			}, new WidgetPointer(37,0), new WidgetPointer(37,26), (string)v3, 50, 150, "IIsii", new WidgetPointer(37,0));
+			cs2method_20750(new function<script_40>(int a0) {
+				script_41(a0);
+				return;
+			}, new WidgetPointer(37,26), "I", new WidgetPointer(37,0));
+			if (client_configs['cfg1631'].bitcfg5236 > 1) {
+				v1 = "Collected " + (string)cs2method_10379(client_configs['cfg1631'].bitcfg5236) + " out of 4 rocks";
+				cs2method_10758(1985, 2424856);
+			} else {
+				v1 = "Send a squad to collect rocks.";
+				cs2method_10758(1990, 2424856);
+			}
+			cs2method_21121(new function<script_7781>(int a0,int a1,int a2,int a3,object a4) {
+				script_7788(a4, a0, -1, a2, a1, a3);
+				return;
+			}, new WidgetPointer(37,2), new WidgetPointer(37,26), (string)v1, 50, 150, "IIsii", new WidgetPointer(37,2));
+			cs2method_20750(new function<script_40>(int a0) {
+				script_41(a0);
+				return;
+			}, new WidgetPointer(37,26), "I", new WidgetPointer(37,2));
+			if (client_configs['cfg1631'].bitcfg5236 > 2) {
+				v7 = "Collected " + (string)cs2method_10379(client_configs['cfg1631'].bitcfg5236) + " out of 4 rocks";
+				cs2method_10758(1985, 2424855);
+			} else {
+				v7 = "Send a squad to collect rocks.";
+				cs2method_10758(1990, 2424855);
+			}
+			cs2method_21121(new function<script_7781>(object a0,int a1,int a2,int a3,int a4) {
+				script_7788(a0, a2, -1, a3, a1, a4);
+				return;
+			}, new WidgetPointer(37,3), new WidgetPointer(37,26), (string)v7, 50, 150, "IIsii", new WidgetPointer(37,3));
+			cs2method_20750(new function<script_40>(int a0) {
+				script_41(a0);
+				return;
+			}, new WidgetPointer(37,26), "I", new WidgetPointer(37,3));
+			if (client_configs['cfg1631'].bitcfg5236 > 3) {
+				v4 = "Collected " + (string)cs2method_10379(client_configs['cfg1631'].bitcfg5236) + " out of 4 rocks";
+				cs2method_10758(1985, 2424854);
+			} else {
+				v4 = "Send a squad to collect rocks.";
+				cs2method_10758(1990, 2424854);
+			}
+			cs2method_21121(new function<script_7781>(object a0,int a1,int a2,int a3,int a4) {
+				script_7788(a0, a1, -1, a3, a4, a2);
+				return;
+			}, new WidgetPointer(37,4), new WidgetPointer(37,26), (string)v4, 50, 150, "IIsii", new WidgetPointer(37,4));
+			cs2method_20750(new function<script_40>(int a0) {
+				script_41(a0);
+				return;
+			}, new WidgetPointer(37,26), "I", new WidgetPointer(37,4));
+		} else {
+			if (client_configs['cfg1631'].bitcfg5231 > 0) {
+				v5 = "Collected wheels";
+				cs2method_10758(1981, 2424853);
+			} else {
+				v5 = "Send a squad to collect wheels.";
+				cs2method_10758(1986, 2424853);
+			}
+			cs2method_21121(new function<script_7781>(int a0,int a1,int a2,int a3,object a4) {
+				script_7788(a4, a2, -1, a0, a1, a3);
+				return;
+			}, new WidgetPointer(37,0), new WidgetPointer(37,26), (string)v5, 50, 150, "IIsii", new WidgetPointer(37,0));
+			cs2method_20750(new function<script_40>(int a0) {
+				script_41(a0);
+				return;
+			}, new WidgetPointer(37,26), "I", new WidgetPointer(37,0));
+			if (client_configs['cfg1631'].bitcfg5233 > 0) {
+				v8 = "Collected logs";
+				cs2method_10758(1982, 2424856);
+			} else {
+				v8 = "Send a squad to collect logs.";
+				cs2method_10758(1987, 2424856);
+			}
+			cs2method_21121(new function<script_7781>(int a0,object a1,int a2,int a3,int a4) {
+				script_7788(a1, a2, -1, a3, a0, a4);
+				return;
+			}, new WidgetPointer(37,2), new WidgetPointer(37,26), (string)v8, 50, 150, "IIsii", new WidgetPointer(37,2));
+			cs2method_20750(new function<script_40>(int a0) {
+				script_41(a0);
+				return;
+			}, new WidgetPointer(37,26), "I", new WidgetPointer(37,2));
+			if (client_configs['cfg1631'].bitcfg5234 > 0) {
+				v6 = "Collected rope";
+				cs2method_10758(1983, 2424855);
+			} else {
+				v6 = "Send a squad to collect rope.";
+				cs2method_10758(1988, 2424855);
+			}
+			cs2method_21121(new function<script_7781>(object a0,int a1,int a2,int a3,int a4) {
+				script_7788(a0, a1, -1, a4, a2, a3);
+				return;
+			}, new WidgetPointer(37,3), new WidgetPointer(37,26), (string)v6, 50, 150, "IIsii", new WidgetPointer(37,3));
+			cs2method_20750(new function<script_40>(int a0) {
+				script_41(a0);
+				return;
+			}, new WidgetPointer(37,26), "I", new WidgetPointer(37,3));
+			if (client_configs['cfg1631'].bitcfg5232 > 0) {
+				v2 = "Collected metal limbs";
+				cs2method_10758(1984, 2424854);
+			} else {
+				v2 = "Send a squad to collect metal limbs.";
+				cs2method_10758(1989, 2424854);
+			}
+			cs2method_21121(new function<script_7781>(object a0,int a1,int a2,int a3,int a4) {
+				script_7788(a0, a4, -1, a1, a3, a2);
+				return;
+			}, new WidgetPointer(37,4), new WidgetPointer(37,26), (string)v2, 50, 150, "IIsii", new WidgetPointer(37,4));
+			cs2method_20750(new function<script_40>(int a0) {
+				script_41(a0);
+				return;
+			}, new WidgetPointer(37,26), "I", new WidgetPointer(37,4));
+		}
+	} else if (client_configs['cfg1630'].bitcfg5220 == 1) {
+		cs2method_10467(1, a0);
+	} else if (client_configs['cfg1630'].bitcfg5220 == 3) {
+		cs2method_10467(1, a0);
+	} else {
+		if (client_configs['cfg1630'].bitcfg5220 == 4) {
+			cs2method_10467(1, a0);
+		}
+	}
+	return;
+}

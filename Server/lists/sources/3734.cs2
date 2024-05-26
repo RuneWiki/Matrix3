@@ -1,0 +1,66 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3734(int a0,int a1,int a2,int a3,int a4) {
+	object v1 = "";
+	int v2 = 0;
+	object v0 = "";
+	if (client_configs['cfg4494'].bitcfg22506 == 0) {
+		v1 = cs2method_10018(cs2_configs['cfg1799']);
+	} else {
+		if (client_configs['cfg4494'].bitcfg22507 == 1 && a0 > 0) {
+			object v3;
+			if (a4 == 1) {
+				v3 = "Small star";
+			} else {
+				v3 = "Small lamp";
+			}
+			v1 = (string)v1 + (string)cs2method_10379(a0) + " x " + (string)v3 + "<br>";
+			v2 = cs2method_10060(v2, a0);
+		}
+		if (client_configs['cfg4494'].bitcfg22508 == 1 && a1 > 0) {
+			object v3;
+			if (a4 == 1) {
+				v3 = "Medium star";
+			} else {
+				v3 = "Medium lamp";
+			}
+			v1 = (string)v1 + (string)cs2method_10379(a1) + " x " + (string)v3 + "<br>";
+			v2 = cs2method_10060(v2, a1);
+		}
+		if (client_configs['cfg4494'].bitcfg22509 == 1 && a3 > 0) {
+			object v3;
+			if (a4 == 1) {
+				v3 = "Large star";
+			} else {
+				v3 = "Large lamp";
+			}
+			v1 = (string)v1 + (string)cs2method_10379(a3) + " x " + (string)v3 + "<br>";
+			v2 = cs2method_10060(v2, a3);
+		}
+		if (client_configs['cfg4494'].bitcfg22510 == 1 && a2 > 0) {
+			object v3;
+			if (a4 == 1) {
+				v3 = "Huge star";
+			} else {
+				v3 = "Huge lamp";
+			}
+			v1 = (string)v1 + (string)cs2method_10379(a2) + " x " + (string)v3 + "<br>";
+			v2 = cs2method_10060(v2, a2);
+		}
+		if (v2 == 0) {
+			v1 = cs2method_10018(cs2_configs['cfg1799']);
+		}
+	}
+	cs2method_10026(75104261, v1);
+	return;
+}

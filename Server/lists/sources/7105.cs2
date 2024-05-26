@@ -1,0 +1,50 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_7105(int a0) {
+	if (a0 == -1) {
+		return 0;
+	}
+	if (cs2method_10771() == 0 && script_7116(a0) == 1) {
+		return 0;
+	}
+	int v1 = itemDefsAttribute(a0, 2640);
+	int v0 = itemDefsAttribute(a0, 2645);
+	int v2 = 1;
+	while (v1 > 0) {
+		if (script_7106(v1, v0, itemDefsAttribute(a0, 317), itemDefsAttribute(a0, 3649), v2) == 0) {
+			return 0;
+		}
+		v2 = cs2method_10060(v2, 1);
+		switch (v2) {
+			case 2:
+				v1 = itemDefsAttribute(a0, 2641);
+				v0 = itemDefsAttribute(a0, 2646);
+				break;
+			case 3:
+				v1 = itemDefsAttribute(a0, 2642);
+				v0 = itemDefsAttribute(a0, 2647);
+				break;
+			case 4:
+				v1 = itemDefsAttribute(a0, 2643);
+				v0 = itemDefsAttribute(a0, 2648);
+				break;
+			case 5:
+				v1 = itemDefsAttribute(a0, 2644);
+				v0 = itemDefsAttribute(a0, 2649);
+				break;
+			default:
+				v1 = 0;
+		}
+	}
+	return 1;
+}

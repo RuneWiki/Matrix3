@@ -1,0 +1,32 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_10026(int a0,int a1) {
+	int v0 = 0;
+	switch (a0) {
+		case 3003:
+			if (a1 == 0) {
+				v0 = 1;
+			}
+			break;
+		case 3049:
+		case 3050:
+			if (a1 != 3) {
+				v0 = 1;
+			}
+			break;
+		case 3004:
+		case 3054:
+			v0 = 1;
+	}
+	return v0;
+}

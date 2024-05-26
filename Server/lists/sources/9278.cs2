@@ -1,0 +1,55 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9278() {
+	int v1;
+	int v0 = 0;
+	if (cs2method_10461(2147483647, client_configs['cfg4024']) > client_configs['cfg4025']) {
+		v1 = cs2method_10060(client_configs['cfg4024'], client_configs['cfg4025']);
+	} else {
+		v1 = 2147483647;
+	}
+	cs2method_10026(33619970, "Total points: " + "<col=ebd090>" + (string)cs2method_10379(v1) + "</col>");
+	if (client_configs['cfg2974'].bitcfg21253 == 1 || v1 < 500) {
+		cs2method_10520(12134690, 33619994);
+		if (client_configs['cfg2974'].bitcfg21253 == 1) {
+			cs2method_10026(33619994, "Already unlocked.");
+		}
+		cs2method_10467(1, 33619995);
+		cs2method_10467(0, 33619996);
+	}
+	if (client_configs['cfg2974'].bitcfg21254 == 1 || v1 < 1000 || cs2method_10771() == 0) {
+		cs2method_10520(12134690, 33620008);
+		if (client_configs['cfg2974'].bitcfg21254 == 1) {
+			cs2method_10026(33620008, "Already unlocked.");
+		} else {
+			if (cs2method_10771() == 0) {
+				cs2method_10026(33620008, "Members' only.");
+			}
+		}
+		cs2method_10467(1, 33620009);
+		cs2method_10467(0, 33620010);
+	}
+	if (client_configs['cfg2974'].bitcfg21255 == 1 || v1 < 2000 || cs2method_10771() == 0 || cs2method_10441(client_configs['cfg1778'], cs2method_10038(42, 32)) == 1) {
+		cs2method_10520(12134690, 33620016);
+		if (client_configs['cfg2974'].bitcfg21255 == 1) {
+			cs2method_10026(33620016, "Already unlocked.");
+		} else {
+			if (cs2method_10771() == 0) {
+				cs2method_10026(33620016, "Members' only.");
+			}
+		}
+		cs2method_10467(1, 33620017);
+		cs2method_10467(0, 33620018);
+	}
+	return;
+}

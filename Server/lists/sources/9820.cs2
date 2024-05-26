@@ -1,0 +1,55 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9820(int a0,int a1,int a2,int a3) {
+	int v2 = 0;
+	int v0 = 5;
+	object v1 = "";
+	cs2method_10273(a1);
+	cs2method_10273(a2);
+	for (int v4 = 5, int v3 = 0; v2 < 60; v3 = cs2method_10060(cs2method_10406(), cs2method_10664())) {
+		cs2method_10606(a1, 4, v2);
+		cs2method_10797("Floor " + (string)cs2method_10379(cs2method_10060(v2, 1)));
+		cs2method_10013(cs2method_10461(cs2method_10968(cs2method_10236(a0), 4), 40), 25, 0, 0);
+		cs2method_10063(cs2method_10060(v4, 35), v0, 0, 0);
+		cs2method_10692(20452);
+		cs2method_11105(0, 1, 0);
+		cs2method_10811(7705248);
+		cs2method_10606(a2, 5, v2);
+		cs2method_10013(25, 25, 0, 0);
+		cs2method_10063(v4, v0, 0, 0);
+		if (script_9821(cs2method_10060(v2, 1)) == 1) {
+			object v5 = "You have completed this floor on hard mode.";
+			cs2method_10310(19713);
+			cs2method_20353(new function<script_8799>(int a0,object a1,int a2) {
+				script_8800(a0, a2, a1);
+				return;
+			}, (string)v5, new WidgetPointer(a2), v2, "sIi");
+		} else {
+			object v5 = "You have not completed this floor on hard mode.";
+			cs2method_10310(19712);
+			cs2method_20353(new function<script_8799>(object a0,int a1,int a2) {
+				script_8800(a1, a2, a0);
+				return;
+			}, (string)v5, new WidgetPointer(a2), v2, "sIi");
+		}
+		v0 = cs2method_10060(cs2method_10060(v0, cs2method_10664()), 5);
+		v2 = cs2method_10060(v2, 1);
+		if (cs2method_10038(v2, 15) == 0) {
+			v4 = cs2method_10060(cs2method_10060(cs2method_10488(), cs2method_10878()), 10);
+			v0 = 5;
+		}
+	}
+	cs2method_11130(0, v3, a0);
+	script_7791(a3, a0);
+	return;
+}

@@ -1,0 +1,46 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_357(int a0,int a1,int a2) {
+	object v0 = "";
+	switch (a0) {
+		case 5963782:
+		case 5963785:
+			if (cs2_configs['cfg3711'] == 1) {
+				v0 = "Convert all your memories into Divination experience.";
+			} else {
+				v0 = "To use a crater, you will need some memories. These can be gathered from nearby wisps.";
+			}
+			break;
+		case 5963777:
+		case 5963784:
+			if (cs2_configs['cfg3711'] == 1) {
+				v0 = "Convert all your memories into divine energy. Divine energy can be weaved to create beneficial objects.";
+			} else {
+				v0 = "To use a crater, you will need some memories. These can be gathered from nearby wisps.";
+			}
+			break;
+		case 5963783:
+		case 5963786:
+			if (cs2_configs['cfg3711'] == 1) {
+				if (cs2_configs['cfg3713'] == 1) {
+					v0 = "Convert memories and energy of the same tier into higher Divination experience. This is beneficial if you wish to use up spare energy. You will convert as many memories as you can with the level of energy you are carrying.";
+				} else {
+					v0 = "You do not have enough materials. To convert one memory you need 5 energy of the same tier, and converting one enriched memory requires 10 energy of the same tier.";
+				}
+			} else {
+				v0 = "To use a crater, you will need some memories. These can be gathered from nearby wisps.";
+			}
+	}
+	script_7769(5963779, a0, -1, 200, 17813, 17813, 16777215, 13, 3, 2, a2, v0, a1);
+	return;
+}

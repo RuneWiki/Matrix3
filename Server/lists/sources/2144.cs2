@@ -1,0 +1,24 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2144(int a0) {
+	int v0 = 1093;
+	if (cs2method_11010() == 1) {
+		v0 = 3872;
+	}
+	if (client_configs['cfg3285'] == 0) {
+		cs2method_10026(a0, "No Prefix");
+	} else {
+		cs2method_10026(a0, idx17mapData('i', 's', v0, client_configs['cfg3285']));
+	}
+	return;
+}

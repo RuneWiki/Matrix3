@@ -1,0 +1,74 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_2383(int a0) {
+	switch (a0) {
+		default:
+			return 1;
+		case 28096:
+		case 28099:
+		case 28094:
+		case 28092:
+		case 28093:
+			return 0;
+		case 28097:
+			if (client_configs['cfg4390'].bitcfg22266 == 0) {
+				return 1;
+			}
+			break;
+		case 28098:
+			if (client_configs['cfg4390'].bitcfg22267 == 0) {
+				return 1;
+			}
+			break;
+		case 28095:
+			if (client_configs['cfg4390'].bitcfg22268 == 0) {
+				return 1;
+			}
+			break;
+		case 28100:
+			if (client_configs['cfg4390'].bitcfg22269 == 0) {
+				return 1;
+			}
+			break;
+		case 28101:
+			if (client_configs['cfg4390'].bitcfg22270 == 0) {
+				return 1;
+			}
+			break;
+		case 28102:
+			if (client_configs['cfg4390'].bitcfg22271 == 0) {
+				return 1;
+			}
+			break;
+		case 28103:
+			if (client_configs['cfg4390'].bitcfg22272 == 0) {
+				return 1;
+			}
+			break;
+		case 28104:
+			if (client_configs['cfg4390'].bitcfg22273 == 0) {
+				return 1;
+			}
+			break;
+		case 28105:
+			if (client_configs['cfg4390'].bitcfg22274 == 0) {
+				return 1;
+			}
+			break;
+		case 28106:
+			if (client_configs['cfg4390'].bitcfg22275 == 0) {
+				return 1;
+			}
+	}
+	return 0;
+}

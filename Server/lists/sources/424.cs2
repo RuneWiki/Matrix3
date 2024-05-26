@@ -1,0 +1,27 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_424() {
+	int v2 = cs2method_10968(cs2method_10051(cs2_configs['cfg1365'], 6), 10);
+	int v0 = 0;
+	object v1 = "1 minute";
+	if (v2 < 60) {
+		cs2method_10026(67305496, "Your opponent has logged out." + "<br>" + "You may wait for them to return or end the Conquest now and be declared the winner.");
+		return;
+	}
+	if (v2 > 120) {
+		int v3 = cs2method_10968(v2, 60);
+		v1 = (string)cs2method_10379(v3) + " minutes";
+	}
+	cs2method_10026(67305496, "Your opponent has been logged out for " + (string)v1 + "." + "<br>" + "You may wait for them to return or end the Conquest now and be declared the winner.");
+	return;
+}

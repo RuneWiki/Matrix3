@@ -1,0 +1,76 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4363(int a0,int a1,long a2,object a3,int a4,int a5,int a6,int a7,int a8) {
+	cs2method_10026(72024144, a3);
+	cs2method_10758(5933, a8);
+	if (a2 != -1L) {
+		cs2method_20486(new function<script_4330>(long a0) {
+			cs2method_10824(0, "clan-forum", "threads.ws?threadid=" + (string)cs2method_10482(a0));
+			return;
+		}, a2, "\u00a7", new WidgetPointer(1099,126));
+		cs2method_11127(1, 72024190, "Select");
+		cs2method_10467(0, 72024142);
+	} else {
+		cs2method_10495(72024190);
+		cs2method_10467(1, 72024142);
+	}
+	if (cs2method_10752() == 1) {
+		if (script_4616(a5, a1) > 0 && a4 > 0 && a6 > 0 && a7 > 0) {
+			cs2method_10467(0, 72024145);
+		}
+		script_4621(72024070);
+		if (script_9357(cs2method_10393(cs2method_10793(cs2method_10765(cs2method_10954())))) == 1) {
+			cs2method_10467(0, 72024143);
+		} else {
+			cs2method_10467(1, 72024143);
+		}
+	} else {
+		cs2method_10467(1, 72024145);
+		cs2method_10467(1, 72024143);
+	}
+	client_configs['cfg2047'] = a0;
+	switch (a0) {
+		case 1:
+			cs2method_10758(5935, 72024076);
+			break;
+		case 2:
+			cs2method_10758(5935, 72024160);
+			break;
+		case 3:
+			cs2method_10758(5935, 72024163);
+			break;
+		case 4:
+			cs2method_10758(5935, 72024166);
+			break;
+		case 5:
+			cs2method_10758(5935, 72024169);
+			break;
+		case 6:
+			cs2method_10758(5935, 72024172);
+			break;
+		case 7:
+			cs2method_10758(5935, 72024175);
+			break;
+		case 8:
+			cs2method_10758(5935, 72024178);
+	}
+	script_4624(72024076, 1);
+	script_4624(72024160, 2);
+	script_4624(72024163, 3);
+	script_4624(72024166, 4);
+	script_4624(72024169, 5);
+	script_4624(72024172, 6);
+	script_4624(72024175, 7);
+	script_4624(72024178, 8);
+	return;
+}

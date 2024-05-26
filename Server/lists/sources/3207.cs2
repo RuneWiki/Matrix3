@@ -1,0 +1,38 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3207(int a0) {
+	script_3205();
+	int v0 = 0;
+	if (cs2method_10609((int)idx17mapData('i', 'I', 941, 5)) == 0) {
+		v0 = 1;
+	}
+	if (a0 == 1 && cs2method_10265(cs2_configs['cfg2481']) > 0) {
+		if (cs2method_10563(cs2_configs['cfg2481']) == 1) {
+			if (v0 == 0) {
+				cs2method_11102(26, 0, "Sorry, you cannot ignore players in your Friends List.");
+			} else {
+				cs2method_11102(26, 0, "Sorry, you cannot ignore players in your Friends List.");
+			}
+		} else if (v0 == 0) {
+			cs2method_11102(26, 0, "You are ignoring " + cs2_configs['cfg2481'] + " until you log out.");
+		} else {
+			cs2method_11102(26, 0, "You are ignoring " + cs2_configs['cfg2481'] + " until you log out.");
+		}
+		cs2method_10510(cs2_configs['cfg2481']);
+	}
+	if (cs2_configs['cfg1094'] == 1) {
+		script_3015(6, "", "Open a bug report form?" + "<br>" + "(opens a new window)", "", "");
+		cs2_configs['cfg1094'] = 0;
+	}
+	return;
+}

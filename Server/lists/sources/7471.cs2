@@ -1,0 +1,80 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7471() {
+	object v0 = "Available as a reward for completing all tasks in the Desert Task Set. Regenerates your rewards up to 3 times per day.";
+	if (client_configs['cfg3514'].bitcfg17792 <= 0) {
+		cs2method_20680(new function<none>() {
+		}, "", new WidgetPointer(1171,32));
+		cs2method_20750(new function<none>() {
+		}, "", new WidgetPointer(1171,32));
+		cs2method_10758(8304, 76742702);
+		cs2method_10758(8303, 76742700);
+		cs2method_10758(8305, 76742701);
+		cs2method_10520(10066329, 76742703);
+		cs2method_10495(76742688);
+		cs2method_21121(new function<script_1160>(int a0,int a1,int a2,object a3,int a4,int a5) {
+			script_1163(a0, a3, a5, a2, a1, a4);
+			return;
+		}, new WidgetPointer(-32768,3), -1, new WidgetPointer(1171,49), (string)v0, 30, 200, "IiIsii", new WidgetPointer(1171,47));
+		cs2method_20750(new function<script_40>(int a0) {
+			script_41(a0);
+			return;
+		}, new WidgetPointer(1171,49), "I", new WidgetPointer(1171,47));
+	} else if (client_configs['cfg3516'].bitcfg17801 == 1) {
+		object v1 = "Number of rolls left: " + (string)cs2method_10379(client_configs['cfg3514'].bitcfg17792);
+		cs2method_10758(8292, 76742702);
+		cs2method_10758(8291, 76742700);
+		cs2method_10758(8293, 76742701);
+		cs2method_20680(new function<script_5407>(int a0,int a1,int a2) {
+			cs2method_10758(8294, a1);
+			cs2method_10758(8295, a0);
+			cs2method_10758(8296, a2);
+			return;
+		}, new WidgetPointer(1171,44), new WidgetPointer(1171,46), new WidgetPointer(1171,45), "III", new WidgetPointer(1171,32));
+		cs2method_20750(new function<script_5408>(int a0,int a1,int a2) {
+			cs2method_10758(8291, a1);
+			cs2method_10758(8292, a2);
+			cs2method_10758(8293, a0);
+			return;
+		}, new WidgetPointer(1171,44), new WidgetPointer(1171,46), new WidgetPointer(1171,45), "III", new WidgetPointer(1171,32));
+		cs2method_10520(16101953, 76742703);
+		cs2method_11127(1, 76742688, "Reroll");
+		cs2method_21121(new function<script_1160>(int a0,object a1,int a2,int a3,int a4,int a5) {
+			script_1163(a4, a1, a5, a2, a3, a0);
+			return;
+		}, new WidgetPointer(-32768,3), -1, new WidgetPointer(1171,49), (string)v1, 30, 200, "IiIsii", new WidgetPointer(1171,47));
+		cs2method_20750(new function<script_40>(int a0) {
+			script_41(a0);
+			return;
+		}, new WidgetPointer(1171,49), "I", new WidgetPointer(1171,47));
+	} else {
+		cs2method_20680(new function<none>() {
+		}, "", new WidgetPointer(1171,32));
+		cs2method_20750(new function<none>() {
+		}, "", new WidgetPointer(1171,32));
+		cs2method_10758(8304, 76742702);
+		cs2method_10758(8303, 76742700);
+		cs2method_10758(8305, 76742701);
+		cs2method_10520(10066329, 76742703);
+		cs2method_10495(76742688);
+		cs2method_21121(new function<script_1160>(int a0,int a1,object a2,int a3,int a4,int a5) {
+			script_1163(a5, a2, a4, a3, a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), -1, new WidgetPointer(1171,49), (string)v0, 30, 200, "IiIsii", new WidgetPointer(1171,47));
+		cs2method_20750(new function<script_40>(int a0) {
+			script_41(a0);
+			return;
+		}, new WidgetPointer(1171,49), "I", new WidgetPointer(1171,47));
+	}
+	return;
+}

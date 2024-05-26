@@ -1,0 +1,35 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2772(int a0,int a1) {
+	int v0 = cs2method_10461(cs2method_10723(0), 2);
+	if (cs2_configs['cfg1007'] != 2 || a1 > v0) {
+		cs2method_20196(new function<none>() {
+		}, "", new WidgetPointer(a0));
+		return;
+	}
+	switch (cs2method_11097(2)) {
+		case 0:
+			cs2method_10567(34529, 1, 0);
+			break;
+		case 1:
+			cs2method_10567(28132, 1, 0);
+			break;
+		case 2:
+			cs2method_10567(31092, 1, 0);
+	}
+	cs2method_10382(0, a1, 2500, 2400, 1, a1);
+	if (a1 < v0) {
+		cs2method_20196(load function<2772>, new WidgetPointer(a0), cs2method_10060(a1, 1), "Ii", new WidgetPointer(a0));
+	}
+	return;
+}

@@ -1,0 +1,25 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_1521_struct(9,0,0) script_1521(int a0) {
+	switch (a0) {
+		case -1:
+			return new script_1521_struct(13621, 13622, 13623, 13633, 13634, 13635, 13645, 13646, 13647);
+		case 0:
+			return new script_1521_struct(13627, 13628, 13629, 13639, 13640, 13641, 13651, 13652, 13653);
+		case 1:
+			return new script_1521_struct(13624, 13625, 13626, 13636, 13637, 13638, 13648, 13649, 13650);
+		case 2:
+			return new script_1521_struct(13630, 13631, 13632, 13642, 13643, 13644, 13654, 13655, 13656);
+	}
+	return new script_1521_struct(-1, -1, -1, -1, -1, -1, -1, -1, -1);
+}

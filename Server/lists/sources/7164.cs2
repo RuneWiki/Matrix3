@@ -1,0 +1,292 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+string script_7164(int a0) {
+	int v0 = 0;
+	int v1 = 0;
+	if (client_configs['cfg549'] > 0) {
+		switch (client_configs['cfg549']) {
+			case 1:
+				v0 = 0;
+				v1 = 0;
+				break;
+			case 2:
+				v0 = 1;
+				v1 = 0;
+				break;
+			case 3:
+				v0 = 0;
+				v1 = 1;
+				break;
+			case 4:
+				v0 = 2;
+				v1 = 0;
+				break;
+			case 5:
+				v0 = 0;
+				v1 = 2;
+				break;
+			case 6:
+				v0 = 3;
+				v1 = 0;
+				break;
+			case 7:
+				v0 = 0;
+				v1 = 3;
+		}
+	}
+	switch (a0) {
+		default:
+			return "No requirement";
+		case 1:
+			return "Dungeon Complexity: 2+";
+		case 2:
+			return "Dungeon Complexity: 3+";
+		case 3:
+			return "Dungeon Complexity: 4+";
+		case 4:
+			return "Dungeon Complexity: 5+";
+		case 5:
+			return "Dungeon Complexity: 6";
+		case 6:
+			return "Partially complete: 'Zogre Flesh Eaters'";
+		case 7:
+			return "Partially complete: 'Zogre Flesh Eaters'";
+		case 42:
+			return "Partially complete: Zogre Flesh Eaters";
+		case 8:
+			return "Learn the barbarian way of smithing.";
+		case 9:
+			return "Learn the barbarian way of smithing.";
+		case 30:
+			return "Learn the barbarian way of mixing potions.";
+		case 10:
+			return "All Skills Level: 10";
+		case 11:
+			return "All Skills Level: 20";
+		case 12:
+			return "All Skills Level: 30";
+		case 13:
+			return "All Skills Level: 40";
+		case 14:
+			return "All Skills Level: 50";
+		case 15:
+			return "All Skills Level: 60";
+		case 16:
+			return "All Skills Level: 70";
+		case 17:
+			return "All Skills Level: 80";
+		case 18:
+			return "All Skills Level: 90";
+		case 19:
+			return "Partially complete: 'Nature Spirit'";
+		case 20:
+			return "Partially complete: 'Creature of Fenkenstrain'";
+		case 21:
+			return "Partially complete: 'In Aid of the Myreque'";
+		case 22:
+			return "Partially complete: 'Legacy of Seergaze'";
+		case 23:
+		case 31:
+		case 32:
+		case 33:
+		case 43:
+			return "Partially complete: 'Recipe for Disaster - Saving Pirate Pete'";
+		case 24:
+			return "Partially complete: 'Tai Bwo Wannai Trio'";
+		case 47:
+			return "Partially complete: 'Tai Bwo Wannai Trio'";
+		case 25:
+		case 27:
+		case 26:
+		case 29:
+		case 28:
+			return "Partially complete: 'Jungle Potion'";
+		case 34:
+			return "Partially complete: 'The Fremennik Isles'";
+		case 35:
+			return "Learn the spell by working at the livid farm";
+		case 36:
+			return "Partially complete: 'Ritual of the Mahjarrat'";
+		case 37:
+			if (client_configs['cfg2675'].bitcfg13265 == 0) {
+				return "Have the slashed book from 'Elemental Workshop I' with you.";
+			}
+			return "Partially complete: 'Elemental Workshop I'";
+		case 38:
+		case 74:
+			return "Partially complete: 'Elemental Workshop II'";
+		case 39:
+			return "Partially complete: 'Elemental Workshop III'";
+		case 40:
+		case 41:
+			return "Partially complete: 'Elemental Workshop IV'";
+		case 44:
+			return "Partially complete: 'Big Chompy Bird Hunting'";
+		case 45:
+			return "Partially complete: 'Branches of Darkmeyer'";
+		case 46:
+			return "Learn how to make it from a slayer master";
+		case 50:
+			return "Learn how to make it from a slayer master";
+		case 48:
+			return "Partially complete: 'Heroes' Quest'";
+		case 49:
+			return "Partially complete: 'The Fremennik Isles'";
+		case 73:
+			return "Partially complete: 'Land of the Goblins'";
+		case 51:
+			return "Unlock all four pieces of the Log-Splitting Scrimshaw scroll.";
+		case 52:
+			return "Unlock all four pieces of the Rock-Crushing Scrimshaw scroll.";
+		case 53:
+			return "Unlock all four pieces of the Tree-Shaking Scrimshaw scroll.";
+		case 54:
+			return "Unlock all four pieces of the Gem-Finding Scrimshaw scroll.";
+		case 55:
+			return "Unlock all four pieces of the Scrimshaw of Vampyrism scroll.";
+		case 56:
+			return "Unlock all four pieces of the Scrimshaw of Strength scroll.";
+		case 57:
+			return "Unlock all four pieces of the Scrimshaw of the Elements scroll.";
+		case 58:
+			return "Unlock all four pieces of the Scrimshaw of Magic scroll.";
+		case 59:
+			return "Unlock all four pieces of the Scrimshaw of Cruelty scroll.";
+		case 60:
+			return "Unlock all four pieces of the Scrimshaw of Ranging scroll.";
+		case 61:
+			return "Unlock all four pieces of the Shark Soup Recipe scroll.";
+		case 62:
+			return "Unlock all four pieces of the Rocktail Soup Recipe scroll.";
+		case 63:
+			return "Unlock all four pieces of the Tetsu Helm scroll.";
+		case 64:
+			return "Unlock all four pieces of the Tetsu Body scroll.";
+		case 65:
+			return "Unlock all four pieces of the Tetsu Platelegs scroll.";
+		case 67:
+			return "Unlock all four pieces of the Death Lotus Hood scroll.";
+		case 68:
+			return "Unlock all four pieces of the Death Lotus Chestplate scroll.";
+		case 69:
+			return "Unlock all four pieces of the Death Lotus Chaps scroll.";
+		case 70:
+			return "Unlock all four pieces of the Seasinger's Hood scroll.";
+		case 71:
+			return "Unlock all four pieces of the Seasinger's Robe Top scroll.";
+		case 72:
+			return "Unlock all four pieces of the Seasinger's Robe Bottom scroll.";
+		case 75:
+			return "Partially complete: 'Shades of Mort'ton'";
+		case 76:
+			if (client_configs['cfg3831'].bitcfg20127 == 0) {
+				return "You have not yet unlocked this permanent bonus.";
+			}
+			return "You have already unlocked this permanent bonus.";
+		case 77:
+			if (client_configs['cfg3831'].bitcfg20128 == 0) {
+				return "You have not yet unlocked this permanent bonus.";
+			}
+			return "You have already unlocked this permanent bonus.";
+		case 78:
+			if (client_configs['cfg3831'].bitcfg20129 == 0) {
+				return "You have not yet unlocked this permanent bonus.";
+			}
+			return "You have already unlocked this permanent bonus.";
+		case 79:
+			if (client_configs['cfg3831'].bitcfg20130 == 0) {
+				return "You have not yet unlocked this permanent bonus.";
+			}
+			return "You have already unlocked this permanent bonus.";
+		case 80:
+			if (client_configs['cfg3831'].bitcfg20131 == 0) {
+				return "You have not yet unlocked this permanent bonus.";
+			}
+			return "You have already unlocked this permanent bonus.";
+		case 81:
+			if (client_configs['cfg3831'].bitcfg20132 == 0) {
+				return "You have not yet unlocked this permanent bonus.";
+			}
+			return "You have already unlocked this permanent bonus.";
+		case 82:
+			if (client_configs['cfg3831'].bitcfg20133 == 0) {
+				return "You have not yet unlocked this permanent bonus.";
+			}
+			return "You have already unlocked this permanent bonus.";
+		case 92:
+			if (client_configs['cfg4338'].bitcfg22453 == 0) {
+				return "You have not yet unlocked this permanent bonus.";
+			}
+			return "You have already unlocked this permanent bonus.";
+		case 83:
+			if (client_configs['cfg3831'].bitcfg20134 == 0) {
+				return "You have not yet unlocked this permanent bonus.";
+			}
+			return "You have already unlocked this permanent bonus.";
+		case 84:
+			if (client_configs['cfg3831'].bitcfg20135 == 0) {
+				return "You have not yet unlocked this permanent bonus.";
+			}
+			return "You have already unlocked this permanent bonus.";
+		case 85:
+			if (client_configs['cfg3831'].bitcfg20136 == 0) {
+				return "You have not yet unlocked this permanent bonus.";
+			}
+			return "You have already unlocked this permanent bonus.";
+		case 86:
+			if (client_configs['cfg3831'].bitcfg20137 == 0) {
+				return "You have not yet unlocked this permanent bonus.";
+			}
+			return "You have already unlocked this permanent bonus.";
+		case 87:
+			return "You may only create one divine location per day.";
+		case 88:
+			return "Unlock all four pieces of the Leviathan Ring scroll.";
+		case 89:
+			return "Unlock all four pieces of the Reefwalker's Cape scroll.";
+		case 90:
+			return "Unlock all four pieces of the Death Lotus Dart scroll.";
+		case 91:
+			return "Partially complete: 'Legends' quest'";
+		case 93:
+			if (v0 < 1) {
+				return "You require an eagle lectern or better.";
+			}
+			break;
+		case 94:
+			if (v0 < 2) {
+				return "You require a teak eagle lectern or better.";
+			}
+			break;
+		case 95:
+			if (v0 < 3) {
+				return "You require a mahogany eagle lectern.";
+			}
+			break;
+		case 96:
+			if (v1 < 1) {
+				return "You require a demon lectern or better.";
+			}
+			break;
+		case 97:
+			if (v1 < 2) {
+				return "You require a teak demon lectern or better.";
+			}
+			break;
+		case 98:
+			if (v1 < 3) {
+				return "You require a mahogany demon lectern.";
+			}
+	}
+	return "";
+}

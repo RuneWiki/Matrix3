@@ -1,0 +1,78 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_2132(int a0,int a1,int a2,int a3,int a4) {
+	flow_0:
+		int v2 = cs2method_10060(cs2method_10191(a4), a3);
+		int v6 = cs2method_10060(cs2method_10152(a4), a2);
+		if (cs2method_10191(a0) >= v2 && cs2method_10191(a0) < cs2method_10060(v2, cs2method_10236(a4))) {
+			if (cs2method_10152(a0) >= v6 && cs2method_10152(a0) < cs2method_10060(v6, cs2method_10823(a4))) {
+				v2 = cs2method_10461(v2, cs2method_10060(cs2method_10877(3), 2));
+				v6 = cs2method_10461(v6, cs2method_10060(cs2method_10877(3), 2));
+				if (a1 <= cs2method_10133()) {
+					cs2method_10567(33803, 1, 0);
+					a1 = cs2method_10060(cs2method_10060(cs2method_10133(), 20), cs2method_10877(40));
+				}
+			}
+		} else {
+			if (v2 >= cs2method_10191(a0) && v2 < cs2method_10060(cs2method_10191(a0), cs2method_10236(a0)) && v6 >= cs2method_10152(a0) && v6 < cs2method_10060(cs2method_10152(a0), cs2method_10823(a0))) {
+				v2 = cs2method_10060(cs2method_10060(v2, cs2method_10877(3)), 2);
+				v6 = cs2method_10060(cs2method_10060(v6, cs2method_10877(3)), 2);
+				if (a1 <= cs2method_10133()) {
+					cs2method_10567(33803, 1, 0);
+					a1 = cs2method_10060(cs2method_10060(cs2method_10133(), 20), cs2method_10877(40));
+				}
+			}
+		}
+		int v0 = cs2method_11048(v2, 0);
+		int v7 = cs2method_11048(v6, 0);
+		int v1 = cs2method_10461(cs2method_10236(cs2method_10982(a4)), cs2method_10236(a4));
+		int v3 = cs2method_10872(v0, v1);
+		int v4 = cs2method_10461(cs2method_10823(cs2method_10982(a4)), cs2method_10823(a4));
+		int v5 = cs2method_10872(v7, v4);
+		IF (v3 <= 0) 
+			GOTO	flow_14
+		GOTO	flow_15
+	flow_14:
+		IF (a3 < 0) 
+			GOTO	flow_17
+	flow_15:
+		IF (v3 >= v1 && a3 > 0) 
+			GOTO	flow_17
+		GOTO	flow_18
+	flow_17:
+		a3 = cs2method_10461(0, a3);
+	flow_18:
+		IF (v5 <= 0) 
+			GOTO	flow_19
+		GOTO	flow_20
+	flow_19:
+		IF (a2 < 0) 
+			GOTO	flow_22
+	flow_20:
+		IF (v5 >= v4 && a2 > 0) 
+			GOTO	flow_22
+		GOTO	flow_23
+	flow_22:
+		a2 = cs2method_10461(0, a2);
+	flow_23:
+		if (a3 == 0) {
+			a3 = cs2method_10060(cs2method_10877(3), 1);
+		}
+		if (a2 == 0) {
+			a2 = cs2method_10060(cs2method_10877(3), 1);
+		}
+		cs2method_10112(v3, v5, 0, 0, a4);
+		cs2method_20162(load function<2132>, new WidgetPointer(a4), a3, a2, new WidgetPointer(a0), a1, "IiiIi", new WidgetPointer(a4));
+		return;
+}

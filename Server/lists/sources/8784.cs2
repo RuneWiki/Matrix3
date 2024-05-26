@@ -1,0 +1,91 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_8784() {
+	cs2_configs['cfg3474'] = cs2method_11048(0, cs2method_10461(cs2_configs['cfg3474'], 1));
+	if (script_8785() == 1) {
+		script_1177();
+		return;
+	}
+	int v16 = 0;
+	int v18 = -1;
+	int v13 = -1;
+	int v11 = 0;
+	int v9 = 0;
+	if (cs2_configs['cfg4132'] != 5) {
+		cs2_configs['cfg3473'].bitcfg19931 = 2;
+		cs2_configs['cfg3473'].bitcfg19932 = 2;
+		cs2_configs['cfg3473'].bitcfg19933 = 3;
+		int v8 = 0;
+		int v7 = cs2method_10924(7717);
+		while (v8 < v7) {
+			int v0 = idx17mapData('i', 'i', 7717, v8);
+			int v1 = idx17mapData('i', 'J', 7716, v0);
+			if (v1 != -1) {
+				int v3 = idx22mapAttribute(v1, 3503);
+				if (cs2method_10609(v3) == 0 && idx22mapAttribute(v1, 3521) == 1) {
+					script_8354(v0);
+				}
+			}
+			v8 = cs2method_10060(v8, 1);
+		}
+	}
+	if (cs2method_10908(94896131) == 0) {
+		script_8290(0);
+	}
+	script_8702(-1, 9);
+	script_1364();
+	script_8000();
+	script_1178();
+	if (cs2_configs['cfg2231'] == -1 || script_8314(cs2_configs['cfg2231']) == -1) {
+		cs2_configs['cfg2231'] = script_8524();
+		script_1558(cs2_configs['cfg2231'], 0);
+	}
+	if (cs2_configs['cfg4101'] == 1) {
+		script_2336();
+		cs2_configs['cfg4101'] = 0;
+	}
+	int v12 = 0;
+	int v17 = 0;
+	if (cs2_configs['cfg4132'] != 5) {
+		int v2 = 0;
+		int v4 = cs2method_10924(7718);
+		while (v2 < v4) {
+			flow_18:
+				int v6 = idx17mapData('i', 'i', 7718, v2);
+				IF (script_8137(v6) == 0) 
+					GOTO	flow_20
+				GOTO	flow_24
+			flow_20:
+				int v10 = v6;
+				script_8718_struct(2,0,0) v5 = script_8718(v10);
+				int v15 = v5.intpart_1;
+				int v14 = v5.intpart_0;
+				IF (v6 != 17) 
+					GOTO	flow_21
+				GOTO	flow_24
+			flow_21:
+				IF (v14 != -1) 
+					GOTO	flow_22
+				IF (v15 != -1 && script_8314(v6) == -1) 
+					GOTO	flow_23
+				GOTO	flow_24
+			flow_22:
+			flow_23:
+				script_3379(v6, 0);
+			flow_24:
+				v2 = cs2method_10060(v2, 1);
+		}
+	}
+	return;
+}

@@ -1,0 +1,29 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1595(int a0,object a1,object a2) {
+	if (cs2method_10909(a0) == 0) {
+		if (cs2method_10563(a1) == 1) {
+			cs2method_10057(5, "Message " + (string)a2);
+			cs2method_10057(7, "Remove friend " + (string)a2);
+		} else if (cs2method_10654(a1) == 1) {
+			cs2method_10057(8, "Remove ignore " + (string)a2);
+		} else {
+			cs2method_10057(5, "Add friend " + (string)a2);
+			cs2method_10057(6, "Add ignore " + (string)a2);
+		}
+	}
+	if (cs2method_10279() >= cs2method_10357() && cs2method_10279() > cs2method_10888(a0)) {
+		cs2method_10057(9, "Kick/ban user " + (string)a2);
+	}
+	return;
+}

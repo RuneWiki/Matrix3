@@ -1,0 +1,403 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1299(int a0) {
+	int v2;
+	script_2756();
+	cs2_configs['cfg2835'] = -1;
+	cs2method_20348(new function<script_2354>() {
+		if (client_configs['cfg3184'].bitcfg16464 == 0) {
+			return;
+		}
+		if (client_configs['cfg3184'].bitcfg16464 == 2) {
+			script_5940();
+			if (cs2method_10461(cs2method_10948(), client_configs['cfg1749']) >= 5 && client_configs['cfg3184'].bitcfg16464 == 2) {
+				cs2method_10467(1, 59375653);
+			}
+			cs2method_20348(new function<script_6204>() {
+				script_5523();
+				switch (client_configs['cfg3184'].bitcfg16465) {
+					case 0:
+						return;
+					case 12:
+						cs2method_10467(0, 59375655);
+						cs2method_10467(1, 59375618);
+						cs2method_10467(0, 59375620);
+						if (client_configs['cfg2863'].bitcfg16467 == 0) {
+							script_6192();
+						} else {
+							cs2method_10467(0, 59375653);
+							script_6190();
+						}
+						break;
+					case 1:
+					case 2:
+					case 8:
+					case 9:
+						script_8889();
+						script_3093(-5, "There has been a failure in validating your email. An internal error has occurred. Please try again later.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+						break;
+					case 14:
+						script_8889();
+						script_3093(-5, "There has been a failure in validating your email. An internal error has occurred. Please try again later.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+						break;
+					case 3:
+					case 4:
+						script_8889();
+						script_3093(-5, "The email validation process will continue once we have ensured that your addresses are secure. To speed up this process, please submit codes from both of your email addresses.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+						break;
+					case 5:
+					case 10:
+					case 11:
+						script_8889();
+						script_3093(-5, "There has been a failure in validating your email. The submitted code was invalid. Please check and try again.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+						break;
+					case 6:
+						script_8889();
+						script_3093(-5, "There has been a failure in validating your email. The submitted code has expired. Please re-register your email address.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+						break;
+					case 7:
+						script_8889();
+						script_3093(-5, "There has been a failure in validating your email. The code has already been submitted. Please request a new code, or submit an unused code.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+						break;
+					case 22:
+						script_5523();
+						cs2method_20162(new function<none>() {
+						}, "", new WidgetPointer(906,241));
+						cs2method_10467(1, 59375618);
+						script_3093(-5, "Your email address has been successfully set. Please leave this page open; an email has been sent to the address you provided. To verify your address, you need to click on the link in the email.", "", "", 1, 0, 2607, "Back", 0, -1, "Back", 1);
+						script_8889();
+						break;
+					case 13:
+						script_5523();
+						cs2method_20162(new function<none>() {
+						}, "", new WidgetPointer(906,241));
+						script_8889();
+						script_3093(-5, "There has been a failure in validating your email. An internal error has occurred. Please try again later.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+						break;
+					case 15:
+						script_5523();
+						cs2method_20162(new function<none>() {
+						}, "", new WidgetPointer(906,241));
+						script_8889();
+						script_3093(-5, "There has been a failure in validating your email. An internal error has occurred. Please try again later.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+						break;
+					case 16:
+						script_5523();
+						cs2method_20162(new function<none>() {
+						}, "", new WidgetPointer(906,241));
+						script_8889();
+						script_3093(-5, "There has been a failure in validating your email. An internal error has occurred. Please try again later.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+						break;
+					case 17:
+						script_5523();
+						cs2method_20162(new function<none>() {
+						}, "", new WidgetPointer(906,241));
+						script_8889();
+						script_3093(-5, "There has been a failure in validating your email. An internal error has occurred. Please try again later.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+						break;
+					case 18:
+						script_5523();
+						cs2method_20162(new function<none>() {
+						}, "", new WidgetPointer(906,241));
+						script_8889();
+						script_3093(-5, "There has been a failure in validating your email. An internal error has occurred. Please try again later.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+						break;
+					case 19:
+						script_5523();
+						cs2method_20162(new function<none>() {
+						}, "", new WidgetPointer(906,241));
+						cs2method_10467(1, 59375655);
+						script_3093(-5, "This email address has already been registered with another account.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+						script_5940();
+						break;
+					case 20:
+						script_5523();
+						cs2method_20162(new function<none>() {
+						}, "", new WidgetPointer(906,241));
+						cs2method_10467(1, 59375655);
+						script_3093(-5, "The two email addresses did not match.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+						script_5940();
+						break;
+					case 21:
+						script_5523();
+						cs2method_20162(new function<none>() {
+						}, "", new WidgetPointer(906,241));
+						cs2method_10467(1, 59375655);
+						script_3093(-5, "The email address you entered was not valid.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+						script_5940();
+						break;
+					case 31:
+						script_5523();
+						cs2method_20162(new function<none>() {
+						}, "", new WidgetPointer(906,241));
+						cs2method_10467(1, 59375655);
+						script_3093(-5, "The email address you entered could not be registered.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+						script_5940();
+						break;
+					case 23:
+						script_5523();
+						cs2method_20162(new function<none>() {
+						}, "", new WidgetPointer(906,241));
+						cs2method_10467(1, 59375618);
+						script_3093(-5, "You have successfully re-sent the email to your address. Please leave this page open; an email has been sent to the address you provided. To verify your address, you need to click on the link in the email.", "", "", 1, 0, 2607, "Back", 0, -1, "Back", 1);
+						script_8889();
+						break;
+					case 25:
+						script_5523();
+						script_8889();
+						script_3093(-5, "Your validation email failed to send. You do not have an eligible email address for the receipt of a re-sent validation code.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+						break;
+					case 29:
+						script_5523();
+						script_8889();
+						script_3093(-5, "Your validation email failed to send. You have sent too many requests in a short period of time. Please try again later.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+						break;
+					default:
+						script_5523();
+						script_8889();
+						script_3093(-5, "There has been a failure in validating your email. An internal error has occurred. Please try again later.", "", "", 1, 0, 2608, "Back", 0, -1, "Back", 1);
+				}
+				return;
+			}, 3184, 1, "Y", new WidgetPointer(906,39));
+		} else {
+			if (client_configs['cfg3184'].bitcfg16464 == 1) {
+				cs2method_10467(1, 59375655);
+				cs2method_10467(0, 59375653);
+				cs2method_10467(1, 59375678);
+				cs2method_20348(new function<none>() {
+				}, "", new WidgetPointer(906,9));
+			}
+		}
+		return;
+	}, 3184, 1, "Y", new WidgetPointer(906,9));
+	cs2method_20348(new function<script_5950>() {
+		if (cs2_configs['cfg1791'] == 0) {
+			cs2_configs['cfg1791'] = 1;
+			cs2_configs['cfg1795'] = cs2method_10133();
+			cs2method_20162(new function<script_6032>() {
+				if (cs2method_10133() < cs2method_10060(cs2_configs['cfg1795'], 200)) {
+					return;
+				}
+				cs2method_20162(new function<none>() {
+				}, "", new WidgetPointer(906,242));
+				cs2method_20348(new function<script_5951>() {
+					script_5952();
+					return;
+				}, 1751, 1, "Y", new WidgetPointer(906,242));
+				script_3097();
+				script_3093(-3, "After you have completed your transaction, click continue to return to the game.", "", "", 0, 0, 10150, "Continue", 0, -1, "Continue", 1);
+				cs2method_20486(new function<script_5953>() {
+					script_3097();
+					script_3093(-3, "Logging In - Please Wait", "", "", 0, 1, -1, "", 0, -1, "", 0);
+					cs2method_11153(cs2_configs['cfg4211'], cs2_configs['cfg4210']);
+					return;
+				}, "", new WidgetPointer(906,546));
+				return;
+			}, "", new WidgetPointer(906,242));
+		}
+		return;
+	}, 1745, 1, "Y", new WidgetPointer(906,242));
+	cs2method_20348(new function<script_6270>() {
+		if (client_configs['cfg1305'].bitcfg18167 == 1) {
+			script_3093(-3, "Your account has recently had a billing failure.  Please check that your payment method is valid.", "", "", 0, 0, 2608, "Continue", 0, -1, "Continue", 1);
+		}
+		if (client_configs['cfg1305'].bitcfg18167 == 2) {
+			script_3093(-3, "Your membership has been cancelled due to billing failures. You will need to resubscribe.", "Subscribe", "Subscribe", 0, 0, 2608, "Close", 1, -1, "Close", 1);
+			cs2method_20486(new function<script_7615>() {
+				cs2method_10917(1, "billing_core", "purchasepopup.ws?externalName=rs", "packagegroupredirect.ws?value=rs");
+				return;
+			}, "", new WidgetPointer(906,541));
+		}
+		return;
+	}, 1305, 1, "Y", new WidgetPointer(906,243));
+	cs2method_20243(new function<script_7732>() {
+		cs2method_10448(cs2_configs['cfg2771']);
+		return;
+	}, 2771, 1, "Y", new WidgetPointer(906,45));
+	cs2method_10704(0, 59375869);
+	int v1 = -1;
+	if (cs2method_10580() == 1) {
+		v2 = 59376027;
+	} else {
+		v2 = 59376053;
+	}
+	cs2method_10467(0, v2);
+	cs2method_20553(new function<script_4040>() {
+		script_4041();
+		return;
+	}, "", new WidgetPointer(906,9));
+	int v0 = cs2method_10368(0, cs2_configs['cfg2576'], "@");
+	if (v0 == -1) {
+		cs2_configs['cfg1414'] = 1;
+	} else {
+		cs2_configs['cfg1414'] = 2;
+	}
+	script_3097();
+	script_3058();
+	script_3060(0);
+	script_3064(1);
+	cs2_configs['cfg2478'] = "";
+	cs2_configs['cfg547'] = 0;
+	cs2method_10810("Welcome to the RuneScape Lobby.");
+	cs2method_11102(43, 0, "Welcome to the RuneScape Lobby.");
+	if (cs2method_10870() == 1) {
+		cs2method_10810("Users restricted to quick-chat cannot send messages from the Lobby.");
+		cs2method_11102(43, 0, "Users restricted to quick-chat cannot send messages from the Lobby.");
+	}
+	script_51();
+	cs2method_20380(new function<script_1328>(int a0) {
+		flow_0:
+			if (cs2method_10609(59375678) == 0 || cs2method_10609(59375679) == 0 || cs2method_10609(59375680) == 0 || cs2method_10609(59375662) == 0 || cs2method_10609(59375682) == 0 || cs2method_10609(59375692) == 0 || cs2method_10609(59375693) == 0) {
+				return;
+			}
+			int v4 = -1;
+			if (a0 == 80 && cs2method_10378() == 1) {
+				if (cs2method_10609(59375829) == 0) {
+					v4 = 0;
+				}
+				if (cs2method_10609(59375831) == 0) {
+					v4 = 1;
+				}
+				if (cs2method_10609(59375832) == 0) {
+					v4 = 2;
+				}
+				if (cs2method_10609(59375833) == 0) {
+					v4 = 3;
+				}
+				if (cs2method_10609(59375834) == 0) {
+					v4 = 5;
+				}
+				if (cs2method_10609(59375835) == 0) {
+					v4 = 4;
+				}
+				if (cs2method_10862() == 0) {
+					switch (v4) {
+						case 0:
+							script_3060(1);
+							return;
+						case 1:
+							script_3060(2);
+							return;
+						case 2:
+							script_3060(3);
+							return;
+						case 3:
+							script_3060(5);
+							return;
+						case 5:
+							script_3060(4);
+							return;
+						case 4:
+							script_3060(0);
+							return;
+					}
+					script_3060(0);
+					return;
+				}
+				switch (v4) {
+					case 0:
+						script_3060(4);
+						return;
+					case 1:
+						script_3060(0);
+						return;
+					case 2:
+						script_3060(1);
+						return;
+					case 3:
+						script_3060(2);
+						return;
+					case 5:
+						script_3060(3);
+						return;
+					case 4:
+						script_3060(5);
+						return;
+				}
+				script_3060(0);
+				return;
+			}
+			int v7 = 0;
+			object v1 = "";
+			object v8 = "";
+			IF (a0 == 84) 
+				GOTO	flow_37
+			IF (a0 == 80 && cs2method_10609(59375832) == 0) 
+				GOTO	flow_38
+			GOTO	flow_48
+		flow_37:
+		flow_38:
+			if (cs2method_10265(cs2_configs['cfg2505']) > 0) {
+				int v3 = cs2method_10818(cs2_configs['cfg2505']);
+				if (v3 != -1 && cs2method_10870() == 0) {
+					int v6 = v3;
+					opc_struct10599(0,2,0) v5 = cs2method_10599(v6);
+					object v2 = v5.objectpart_1;
+					object v0 = v5.objectpart_0;
+					script_3015(0, "Send message to " + (string)v0, "", cs2_configs['cfg2505'], "");
+					return;
+				}
+				if (cs2_configs['cfg1271'] > cs2method_10461(cs2method_10133(), 100)) {
+					return;
+				}
+				cs2method_10810("That player is not on your Friends list.");
+				cs2_configs['cfg1271'] = cs2method_10133();
+				return;
+			}
+			if (cs2_configs['cfg1271'] > cs2method_10461(cs2method_10133(), 100)) {
+				return;
+			}
+			cs2method_10810("You haven't received any messages to which you can reply.");
+			cs2_configs['cfg1271'] = cs2method_10133();
+			return;
+		flow_48:
+			return;
+	}, -2147483640, "i", new WidgetPointer(906,9));
+	object v3 = script_2781();
+	if (cs2method_10265(v3) > 0) {
+		script_2779((string)v3 + "<br>" + " ", -3000, 0, 0, 2607, 1, "Re-Subscribe Now", "Re-Subscribe Now", "Close", 0, 1, 350, "Close");
+	}
+	cs2method_20162(new function<script_1868>(int a0) {
+		if (cs2method_10038(cs2method_10133(), 50) == 0 && cs2method_11134() > 0) {
+			if (cs2method_10580() == 1) {
+				cs2method_10112(0, -8, 1, 1, 59375653);
+			}
+			script_1870(59375670);
+			cs2method_20162(new function<script_1869>(int a0) {
+				if (cs2method_10038(cs2method_10133(), 50) != 0) {
+					return;
+				}
+				script_1870(a0);
+				return;
+			}, new WidgetPointer(906,54), "I", new WidgetPointer(a0));
+		}
+		return;
+	}, new WidgetPointer(906,38), "I", new WidgetPointer(906,38));
+	script_4041();
+	cs2method_20162(new function<script_5954>(int a0) {
+		int v0 = cs2method_10872(cs2method_10060(cs2method_10690(a0), 10), 255);
+		cs2method_10704(v0, a0);
+		if (v0 == 255) {
+			cs2method_20162(new function<none>() {
+			}, "", new WidgetPointer(906,252));
+		}
+		return;
+	}, new WidgetPointer(906,253), "I", new WidgetPointer(906,252));
+	if (cs2_configs['cfg3496'] == 1 || cs2method_10846(cs2method_11025(0, 1, cs2method_10954()), "#") == 0 && client_configs['cfg3184'].bitcfg16464 != 2) {
+		cs2_configs['cfg3496'] = 0;
+		script_8046();
+		cs2method_20162(new function<none>() {
+		}, "", new WidgetPointer(906,9));
+	}
+	return;
+}

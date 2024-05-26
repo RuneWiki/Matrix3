@@ -1,0 +1,31 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_196() {
+	if (cs2method_10846(cs2method_11025(0, 1, cs2method_10954()), "#") == 0) {
+		return;
+	}
+	if (client_configs['cfg1746'] == 1) {
+		cs2method_10467(0, 59375656);
+		cs2method_10146(59375656);
+		if (client_configs['cfg1295'] > 1000) {
+			cs2method_10026(59375958, "Explore and enjoy the members' game for 14 days," + "<br>" + "absolutely free! Click below to activate your trial" + "<br>" + "and enjoy the following members' benefits:" + "<br>" + "<br>" + "- Over 150 extra Quests" + "<br>" + "- 9 Exclusive Skills" + "<br>" + "- Over 40 Minigames" + "<br>" + "- Join the Members' Loyalty Programme" + "<br>" + "- Extra Treasure Hunter keys" + "<br>" + "- Unlock over 400 extra bank spaces" + "<br>" + "- And much more!");
+			cs2method_10026(59375957, "You're eligible for Free Members' Access!");
+			cs2method_10467(1, 59375959);
+		} else {
+			cs2method_10026(59375958, "You're eligible for a free trial of the members-only" + "<br>" + "features of RuneScape!" + "<br>" + "<br>" + "Click the button below to start your two weeks of" + "<br>" + "membership and explore the wider and fuller world " + "<br>" + "we offer.");
+			cs2method_10026(59375957, "Your 14 days of free membership await...");
+			cs2method_10467(0, 59375959);
+		}
+	}
+	return;
+}

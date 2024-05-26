@@ -1,0 +1,51 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_8981(int a0) {
+	switch (client_configs['cfg3643'].bitcfg18639) {
+		case 0:
+			return cs2method_10441(client_configs['cfg3643'], 0);
+		case 1:
+			return cs2method_10441(client_configs['cfg3643'], 1);
+		case 2:
+			switch (a0) {
+				case 0:
+					return cs2method_10441(client_configs['cfg3643'], 2);
+				case 1:
+					return cs2method_10441(client_configs['cfg3643'], 3);
+				case 2:
+					return cs2method_10441(client_configs['cfg3643'], 4);
+				case 3:
+					return cs2method_10441(client_configs['cfg3643'], 5);
+				case 4:
+					return cs2method_10441(client_configs['cfg3643'], 7);
+				case 5:
+					return cs2method_10441(client_configs['cfg3643'], 8);
+				case 6:
+					return cs2method_10441(client_configs['cfg3643'], 9);
+			}
+			break;
+		case 3:
+			switch (a0) {
+				case 0:
+					return cs2method_10441(client_configs['cfg3643'], 10);
+				case 1:
+					return cs2method_10441(client_configs['cfg3643'], 11);
+				case 2:
+					return cs2method_10441(client_configs['cfg3643'], 12);
+			}
+			break;
+		case 4:
+			return cs2method_10441(client_configs['cfg3643'], 13);
+	}
+	return 0;
+}

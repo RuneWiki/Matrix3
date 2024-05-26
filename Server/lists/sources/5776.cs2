@@ -1,0 +1,20 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5776() {
+	int v0 = 0;
+	if (client_configs['cfg1269'].bitcfg3563 != 0) {
+		v0 = 1;
+	}
+	script_5777(client_configs['cfg1269'].bitcfg3563, v0);
+	return;
+}

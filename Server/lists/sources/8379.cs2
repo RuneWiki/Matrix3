@@ -1,0 +1,235 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_8379_struct(4,0,0) script_8379(int a0,int a1,int a2,int a3,int a4,int a5,int a6) {
+	globalarray_0 = new int[4];
+	int v22 = 0;
+	int v81 = a0;
+	int v127 = a3;
+	int v27 = a4;
+	int v129 = a2;
+	if (idx22mapAttribute(idx17mapData('i', 'J', 7716, a1), 3528) == 1) {
+		switch (a6) {
+			case 0:
+				int v94 = v81;
+				int v37 = v127;
+				int v15 = v27;
+				int v123 = v129;
+				int v145 = a1;
+				int v57 = 1;
+				script_8380_struct(4,0,0) v53 = script_8380(v94, v37, v15, v123, v145, v57);
+				int v86 = v53.intpart_3;
+				int v21 = v53.intpart_2;
+				int v2 = v53.intpart_1;
+				int v1 = v53.intpart_0;
+				int v141 = v1;
+				int v139 = v2;
+				int v115 = v21;
+				int v102 = v86;
+				int v138 = a1;
+				int v93 = 3;
+				script_8380_struct(4,0,0) v39 = script_8380(v141, v139, v115, v102, v138, v93);
+				v129 = v39.intpart_3;
+				v27 = v39.intpart_2;
+				v127 = v39.intpart_1;
+				v81 = v39.intpart_0;
+				break;
+			case 1:
+				int v103 = v81;
+				int v6 = v127;
+				int v0 = v27;
+				int v128 = v129;
+				int v95 = a1;
+				int v60 = 1;
+				script_8380_struct(4,0,0) v104 = script_8380(v103, v6, v0, v128, v95, v60);
+				v129 = v104.intpart_3;
+				v27 = v104.intpart_2;
+				v127 = v104.intpart_1;
+				v81 = v104.intpart_0;
+				break;
+			case 2:
+				int v101 = v81;
+				int v47 = v127;
+				int v23 = v27;
+				int v33 = v129;
+				int v111 = a1;
+				int v88 = 1;
+				script_8380_struct(4,0,0) v80 = script_8380(v101, v47, v23, v33, v111, v88);
+				int v125 = v80.intpart_3;
+				int v35 = v80.intpart_2;
+				int v91 = v80.intpart_1;
+				int v49 = v80.intpart_0;
+				int v55 = v49;
+				int v100 = v91;
+				int v16 = v35;
+				int v9 = v125;
+				int v51 = a1;
+				int v126 = 4;
+				script_8380_struct(4,0,0) v105 = script_8380(v55, v100, v16, v9, v51, v126);
+				v129 = v105.intpart_3;
+				v27 = v105.intpart_2;
+				v127 = v105.intpart_1;
+				v81 = v105.intpart_0;
+				break;
+			case 3:
+				int v56 = v81;
+				int v118 = v127;
+				int v41 = v27;
+				int v31 = v129;
+				int v25 = a1;
+				int v17 = 3;
+				script_8380_struct(4,0,0) v132 = script_8380(v56, v118, v41, v31, v25, v17);
+				v129 = v132.intpart_3;
+				v27 = v132.intpart_2;
+				v127 = v132.intpart_1;
+				v81 = v132.intpart_0;
+				break;
+			case 4:
+				int v72 = v81;
+				int v20 = v127;
+				int v14 = v27;
+				int v98 = v129;
+				int v30 = a1;
+				int v140 = 4;
+				script_8380_struct(4,0,0) v58 = script_8380(v72, v20, v14, v98, v30, v140);
+				v129 = v58.intpart_3;
+				v27 = v58.intpart_2;
+				v127 = v58.intpart_1;
+				v81 = v58.intpart_0;
+				break;
+			case 5:
+				int v61 = v81;
+				int v3 = v127;
+				int v73 = v27;
+				int v142 = v129;
+				int v117 = a1;
+				int v77 = 6;
+				script_8380_struct(4,0,0) v114 = script_8380(v61, v3, v73, v142, v117, v77);
+				int v59 = v114.intpart_3;
+				int v137 = v114.intpart_2;
+				int v29 = v114.intpart_1;
+				int v97 = v114.intpart_0;
+				int v69 = v97;
+				int v99 = v29;
+				int v48 = v137;
+				int v4 = v59;
+				int v75 = a1;
+				int v84 = 3;
+				script_8380_struct(4,0,0) v46 = script_8380(v69, v99, v48, v4, v75, v84);
+				v129 = v46.intpart_3;
+				v27 = v46.intpart_2;
+				v127 = v46.intpart_1;
+				v81 = v46.intpart_0;
+				break;
+			case 6:
+				int v12 = v81;
+				int v134 = v127;
+				int v5 = v27;
+				int v120 = v129;
+				int v63 = a1;
+				int v79 = 6;
+				script_8380_struct(4,0,0) v83 = script_8380(v12, v134, v5, v120, v63, v79);
+				v129 = v83.intpart_3;
+				v27 = v83.intpart_2;
+				v127 = v83.intpart_1;
+				v81 = v83.intpart_0;
+				break;
+			case 7:
+				int v65 = v81;
+				int v19 = v127;
+				int v89 = v27;
+				int v74 = v129;
+				int v144 = a1;
+				int v42 = 6;
+				script_8380_struct(4,0,0) v143 = script_8380(v65, v19, v89, v74, v144, v42);
+				int v66 = v143.intpart_3;
+				int v7 = v143.intpart_2;
+				int v76 = v143.intpart_1;
+				int v67 = v143.intpart_0;
+				int v70 = v67;
+				int v32 = v76;
+				int v68 = v7;
+				int v54 = v66;
+				int v18 = a1;
+				int v28 = 4;
+				script_8380_struct(4,0,0) v24 = script_8380(v70, v32, v68, v54, v18, v28);
+				v129 = v24.intpart_3;
+				v27 = v24.intpart_2;
+				v127 = v24.intpart_1;
+				v81 = v24.intpart_0;
+				break;
+			case 8:
+				int v116 = v81;
+				int v85 = v127;
+				int v146 = v27;
+				int v13 = v129;
+				int v38 = a1;
+				int v45 = 1;
+				script_8380_struct(4,0,0) v34 = script_8380(v116, v85, v146, v13, v38, v45);
+				int v131 = v34.intpart_3;
+				int v44 = v34.intpart_2;
+				int v113 = v34.intpart_1;
+				int v92 = v34.intpart_0;
+				int v10 = v92;
+				int v133 = v113;
+				int v11 = v44;
+				int v106 = v131;
+				int v87 = a1;
+				int v90 = 3;
+				script_8380_struct(4,0,0) v108 = script_8380(v10, v133, v11, v106, v87, v90);
+				int v82 = v108.intpart_3;
+				int v130 = v108.intpart_2;
+				int v26 = v108.intpart_1;
+				int v109 = v108.intpart_0;
+				int v8 = v109;
+				int v124 = v26;
+				int v110 = v130;
+				int v62 = v82;
+				int v135 = a1;
+				int v122 = 4;
+				script_8380_struct(4,0,0) v43 = script_8380(v8, v124, v110, v62, v135, v122);
+				int v36 = v43.intpart_3;
+				int v107 = v43.intpart_2;
+				int v64 = v43.intpart_1;
+				int v40 = v43.intpart_0;
+				int v121 = v40;
+				int v96 = v64;
+				int v119 = v107;
+				int v78 = v36;
+				int v71 = a1;
+				int v50 = 6;
+				script_8380_struct(4,0,0) v52 = script_8380(v121, v96, v119, v78, v71, v50);
+				v129 = v52.intpart_3;
+				v27 = v52.intpart_2;
+				v127 = v52.intpart_1;
+				v81 = v52.intpart_0;
+		}
+	}
+	int v112 = idx17mapData('i', 'J', 7716, a1);
+	int v136 = idx22mapAttribute(v112, 3503);
+	if (idx22mapAttribute(idx17mapData('i', 'J', 7716, a1), 3529) == 0 && a5 == 1) {
+		int v150 = v81;
+		int v149 = v127;
+		int v147 = v27;
+		int v152 = v129;
+		int v153 = a1;
+		int v148 = a6;
+		script_8381_struct(4,0,0) v151 = script_8381(v150, v149, v147, v152, v153, v148);
+		v129 = v151.intpart_3;
+		v27 = v151.intpart_2;
+		v127 = v151.intpart_1;
+		v81 = v151.intpart_0;
+		cs2method_10112(a0, a3, 0, 0, v136);
+		cs2method_10283(a4, a2, 0, 0, v136);
+	}
+	return new script_8379_struct(v81, v127, v27, v129);
+}

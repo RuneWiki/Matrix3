@@ -1,0 +1,44 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7351() {
+	int v4 = -1;
+	for (int v1 = -1, int v2 = -1, script_7386_struct(3,0,0) v5 = script_7386(), int v0 = v5.intpart_2, int v10 = v5.intpart_1, int v8 = v5.intpart_0, object v6 = "", object v3 = "", object v7 = "", int v11 = -1, int v9 = 1; v9 < 5; v9 = cs2method_10060(v9, 1)) {
+		switch (v9) {
+			case 1:
+				v6 = idx17mapData('i', 's', v8, client_configs['cfg3382'].bitcfg17040);
+				v3 = idx17mapData('i', 's', v10, client_configs['cfg3382'].bitcfg17041);
+				v7 = idx17mapData('i', 's', v0, client_configs['cfg3382'].bitcfg17042);
+				v11 = 61866110;
+				break;
+			case 2:
+				v6 = idx17mapData('i', 's', v8, client_configs['cfg3384'].bitcfg17048);
+				v3 = idx17mapData('i', 's', v10, client_configs['cfg3384'].bitcfg17049);
+				v7 = idx17mapData('i', 's', v0, client_configs['cfg3384'].bitcfg17050);
+				v11 = 61866116;
+				break;
+			case 3:
+				v6 = idx17mapData('i', 's', v8, client_configs['cfg3386'].bitcfg17056);
+				v3 = idx17mapData('i', 's', v10, client_configs['cfg3386'].bitcfg17057);
+				v7 = idx17mapData('i', 's', v0, client_configs['cfg3386'].bitcfg17058);
+				v11 = 61866122;
+				break;
+			case 4:
+				v6 = idx17mapData('i', 's', v8, client_configs['cfg3388'].bitcfg17064);
+				v3 = idx17mapData('i', 's', v10, client_configs['cfg3388'].bitcfg17065);
+				v7 = idx17mapData('i', 's', v0, client_configs['cfg3388'].bitcfg17066);
+				v11 = 61866128;
+		}
+		cs2method_10026(v11, (string)v6 + (string)v3 + (string)v7);
+	}
+	return;
+}

@@ -1,0 +1,51 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+int script_6742(int a0,int a1) {
+	flow_0:
+		IF (client_configs['cfg3240'].bitcfg16574 == a1) 
+			GOTO	flow_1
+		GOTO	flow_2
+	flow_1:
+		IF (client_configs['cfg3240'].bitcfg16575 == a0) 
+			GOTO	flow_10
+	flow_2:
+		IF (client_configs['cfg3241'].bitcfg16578 == a1) 
+			GOTO	flow_3
+		GOTO	flow_4
+	flow_3:
+		IF (client_configs['cfg3241'].bitcfg16579 == a0) 
+			GOTO	flow_10
+	flow_4:
+		IF (client_configs['cfg3242'].bitcfg16582 == a1) 
+			GOTO	flow_5
+		GOTO	flow_6
+	flow_5:
+		IF (client_configs['cfg3242'].bitcfg16583 == a0) 
+			GOTO	flow_10
+	flow_6:
+		IF (client_configs['cfg3243'].bitcfg16586 == a1) 
+			GOTO	flow_7
+		GOTO	flow_8
+	flow_7:
+		IF (client_configs['cfg3243'].bitcfg16587 == a0) 
+			GOTO	flow_10
+	flow_8:
+		IF (client_configs['cfg3244'].bitcfg16590 == a1 && client_configs['cfg3244'].bitcfg16591 == a0) 
+			GOTO	flow_10
+		GOTO	flow_11
+	flow_10:
+		return 1;
+	flow_11:
+		return 0;
+}

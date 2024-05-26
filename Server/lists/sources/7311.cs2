@@ -1,0 +1,27 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_7311(int a0) {
+	if (a0 >= 0 && a0 <= 5) {
+		return 1;
+	}
+	if (a0 >= 6 && a0 <= 11) {
+		return 2;
+	}
+	if (a0 >= 12 && a0 <= 17) {
+		return 3;
+	}
+	if (a0 >= 18 && a0 <= 23) {
+		return 4;
+	}
+	return 5;
+}

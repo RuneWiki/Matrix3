@@ -1,0 +1,33 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_8346_struct(2,0,0) script_8346(int a0,int a1,int a2,int a3) {
+	int v0 = 0;
+	int v1 = 0;
+	if (a3 > a2) {
+		v0 = 1;
+		a1 = cs2method_10461(a1, 10);
+	}
+	if (a0 > a1) {
+		v1 = 1;
+		a2 = cs2method_10461(a2, 10);
+	}
+	if (v0 == 0 && a3 > a2) {
+		v0 = 1;
+		a1 = cs2method_10461(a1, 10);
+	}
+	if (v1 == 0 && a0 > a1) {
+		v1 = 1;
+		int v2 = cs2method_10461(a2, 10);
+	}
+	return new script_8346_struct(v0, v1);
+}

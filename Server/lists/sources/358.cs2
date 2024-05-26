@@ -1,0 +1,86 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_358(int a0,int a1) {
+	int v5;
+	int v6;
+	int v9;
+	int v11;
+	int v16;
+	int v2;
+	int v8;
+	int v1;
+	int v3;
+	if (cs2_configs['cfg3711'] == 0) {
+		return;
+	}
+	int v0 = -1;
+	int v12 = -1;
+	int v17 = -1;
+	int v13 = -1;
+	int v4 = -1;
+	int v14 = -1;
+	int v7 = -1;
+	int v10 = -1;
+	int v15 = -1;
+	switch (a1) {
+		case 5963782:
+			v9 = 5963796;
+			v2 = 5963798;
+			v16 = 5963797;
+			v11 = 5963799;
+			v3 = 5963800;
+			v5 = 5963801;
+			v6 = 5963794;
+			v1 = 5963795;
+			v8 = 5963793;
+			break;
+		case 5963777:
+			v9 = 5963806;
+			v2 = 5963808;
+			v16 = 5963807;
+			v11 = 5963809;
+			v3 = 5963810;
+			v5 = 5963811;
+			v6 = 5963803;
+			v1 = 5963804;
+			v8 = 5963805;
+			break;
+		case 5963783:
+			v9 = 5963816;
+			v2 = 5963818;
+			v16 = 5963817;
+			v11 = 5963819;
+			v3 = 5963820;
+			v5 = 5963821;
+			v6 = 5963813;
+			v1 = 5963814;
+			v8 = 5963815;
+			break;
+		default:
+			return;
+	}
+	switch (a0) {
+		case 1:
+			script_359(v9, v2, v16, v11, v3, v5, v6, v1, v8);
+			break;
+		case 2:
+			script_360(v9, v2, v16, v11, v3, v5, v6, v1, v8);
+			break;
+		case 3:
+			script_361(v9, v2, v16, v11, v3, v5, v6, v1, v8);
+			break;
+		default:
+			return;
+	}
+	return;
+}

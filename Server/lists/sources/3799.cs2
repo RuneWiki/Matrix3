@@ -1,0 +1,135 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3799(int a0,int a1,int a2,int a3,int a4) {
+	cs2method_20553(new function<none>() {
+	}, "", new WidgetPointer(a3));
+	if (cs2method_10236(a3) != a0 || cs2method_10823(a3) != a2) {
+		return;
+	}
+	switch (a4) {
+		case 2:
+			script_8680(96534541);
+			break;
+		case 3:
+			script_8471(95944705);
+			break;
+		case 4:
+			if (a1 == 0) {
+				script_1237(95551519, 95551517, 95551518);
+			} else {
+				script_1237(95485961, 95485952, 95485960);
+			}
+			break;
+		case 1:
+			script_6790();
+			break;
+		case 0:
+			script_8489(96075779, 96075787, 96075778, 96075780, 96075782, 96075783, 96075784, 96075785, 96075786, 96075781);
+			break;
+		case 1019:
+		case 19:
+		case 18:
+		case 21:
+		case 20:
+		case 23:
+		case 22:
+			script_1650(a4);
+			break;
+		case 9:
+			if (a1 == 0) {
+				script_4716(38666248, 38666247, cs2_configs['cfg2822'], -5, 10, cs2_configs['cfg2823']);
+			} else {
+				script_4716(94240781, 94240780, cs2_configs['cfg2822'], -5, 10, cs2_configs['cfg2823']);
+			}
+			break;
+		case 6:
+			if (a1 == 0) {
+				script_8426(95682564, 95682565, 95682566, 95682561, 95682562, 95682563, 95682560, 1, client_configs['cfg3705'].bitcfg18787);
+			} else {
+				script_8426(95027200, 95027201, 95027206, 95027203, 95027204, 95027205, 95027202, 1, client_configs['cfg3705'].bitcfg18786);
+			}
+			break;
+		case 7:
+			if (a1 == 0) {
+				script_8426(95158279, 95158280, 95158282, 95158273, 95158274, 95158281, 95158272, 2, client_configs['cfg3705'].bitcfg18789);
+			} else {
+				script_8426(95420423, 95420424, 95420426, 95420417, 95420418, 95420425, 95420416, 2, client_configs['cfg3705'].bitcfg18788);
+			}
+			break;
+		case 5:
+			if (a1 == 0) {
+				script_8426(95748103, 95748104, 95748106, 95748097, 95748098, 95748105, 95748096, 3, client_configs['cfg3705'].bitcfg18791);
+			} else {
+				script_8426(95617031, 95617032, 95617034, 95617025, 95617026, 95617033, 95617024, 3, client_configs['cfg3705'].bitcfg18790);
+			}
+			break;
+		case 8:
+			if (a1 == 0) {
+				script_8426(94961671, 94961672, 94961674, 94961665, 94961666, 94961673, 94961664, 4, client_configs['cfg3705'].bitcfg18793);
+			} else {
+				script_8426(95223815, 95223816, 95223818, 95223809, 95223810, 95223817, 95223808, 4, client_configs['cfg3705'].bitcfg18792);
+			}
+			break;
+		case 14:
+			script_7961(36044801);
+			break;
+		case 16:
+			script_7810(-1, 72745032);
+			script_7812(-1, 72745032);
+			script_7813(72745032);
+			break;
+		case 15:
+			script_518(1427);
+			break;
+		case 1003:
+			script_8110();
+			break;
+		case 1002:
+			script_8144();
+			break;
+		case 1000:
+			script_8000();
+			break;
+		case 11:
+			if (a1 == 0) {
+				script_9859(1417);
+			}
+			break;
+		case 17:
+			if (cs2method_10397(a3, 1424) == 1) {
+				script_8035();
+			} else if (cs2method_10397(a3, 1429) == 1) {
+				script_8092();
+			} else if (cs2method_10397(a3, 936) == 1) {
+				script_1387();
+			} else if (cs2method_10397(a3, 953) == 1) {
+				script_1649();
+			} else {
+				if (cs2method_10397(a3, 946) == 1) {
+					script_1651();
+				}
+			}
+			break;
+		case 1017:
+			if (script_6354(49938734) == 1) {
+				script_6948();
+				if (client_configs['cfg3680'].bitcfg22315 == 1) {
+					script_3820();
+				}
+			}
+			break;
+		case 1004:
+			script_3773();
+	}
+	return;
+}

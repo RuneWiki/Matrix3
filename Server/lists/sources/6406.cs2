@@ -1,0 +1,107 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_6406() {
+	flow_0:
+		cs2method_10026(85721690, cs2method_10379(client_configs['cfg2092'].bitcfg9071));
+		if (client_configs['cfg2092'].bitcfg9071 == 0) {
+			cs2method_10520(11874064, 85721690);
+		}
+		IF (client_configs['cfg4061'].bitcfg22143 == 0) 
+			GOTO	flow_3
+		GOTO	flow_4
+	flow_3:
+		IF (client_configs['cfg2092'].bitcfg9071 < 600) 
+			GOTO	flow_6
+	flow_4:
+		IF (client_configs['cfg4061'].bitcfg22143 == 1 && client_configs['cfg2092'].bitcfg9071 < 60) 
+			GOTO	flow_6
+		GOTO	flow_29
+	flow_6:
+		script_6414(85721290, 0);
+		IF (client_configs['cfg4061'].bitcfg22142 == 0) 
+			GOTO	flow_7
+		GOTO	flow_8
+	flow_7:
+		IF (client_configs['cfg2092'].bitcfg9071 < 400) 
+			GOTO	flow_10
+	flow_8:
+		IF (client_configs['cfg4061'].bitcfg22142 == 1 && client_configs['cfg2092'].bitcfg9071 < 40) 
+			GOTO	flow_10
+		GOTO	flow_22
+	flow_10:
+		script_6414(85721140, 0);
+		script_6414(85721268, 0);
+		IF (client_configs['cfg4061'].bitcfg22141 == 0) 
+			GOTO	flow_11
+		GOTO	flow_12
+	flow_11:
+		IF (client_configs['cfg2092'].bitcfg9071 < 100) 
+			GOTO	flow_14
+	flow_12:
+		IF (client_configs['cfg4061'].bitcfg22141 == 1 && client_configs['cfg2092'].bitcfg9071 < 10) 
+			GOTO	flow_14
+		GOTO	flow_18
+	flow_14:
+		script_6414(85721246, 0);
+		if (client_configs['cfg2092'].bitcfg9071 < 75) {
+			script_6414(85721161, 0);
+			if (client_configs['cfg2092'].bitcfg9071 < 35) {
+				script_6414(85721182, 0);
+				script_6414(85721204, 0);
+				script_6414(85721225, 0);
+			}
+		}
+		GOTO	flow_21
+	flow_18:
+		if (script_6991() == 0) {
+			script_6414(85721246, 1);
+		} else {
+			script_9660(85721246);
+		}
+	flow_21:
+		GOTO	flow_28
+	flow_22:
+		if (script_9656() == 0) {
+			script_6414(85721268, 1);
+		} else {
+			script_9660(85721268);
+		}
+		if (script_6991() == 0) {
+			script_6414(85721246, 1);
+		} else {
+			script_9660(85721246);
+		}
+	flow_28:
+		GOTO	flow_38
+	flow_29:
+		if (script_9657() == 0 || cs2method_10338(1) < 70) {
+			script_6414(85721290, 1);
+		} else {
+			script_9660(85721290);
+		}
+		if (script_9656() == 0 || cs2method_10338(1) < 50) {
+			script_6414(85721268, 1);
+		} else {
+			script_9660(85721268);
+		}
+		if (script_6991() == 0 || cs2method_10338(1) < 30) {
+			script_6414(85721246, 1);
+		} else {
+			script_9660(85721246);
+		}
+	flow_38:
+		cs2method_10467(0, 85721966);
+		script_7791(85721966, 85721139);
+		return;
+}

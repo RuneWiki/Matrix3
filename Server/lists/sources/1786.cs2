@@ -1,0 +1,265 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1786(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12,int a13,int a14,int a15,int a16) {
+	cs2method_20348(new function<script_1787>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12,int a13,int a14,int a15,int a16) {
+		object v11 = "";
+		int v7 = 0;
+		int v1 = 0;
+		int v2 = 0;
+		if (cs2_configs['cfg271'] == 1) {
+			cs2method_10026(a8, (string)cs2method_10403() + ":");
+		} else {
+			cs2method_10026(a8, "This clan:");
+		}
+		cs2method_10026(a13, cs2method_10379(cs2_configs['cfg261']));
+		cs2method_10026(a4, cs2method_10379(cs2_configs['cfg262']));
+		if (client_configs['cfg1382'].bitcfg4095 > 0) {
+			if (cs2_configs['cfg263'] < 65535) {
+				cs2method_10026(a1, script_46(",", cs2_configs['cfg263']));
+			} else {
+				cs2method_10026(a1, "<col=ff0000>" + "You rock!" + "</col>");
+			}
+			if (cs2_configs['cfg264'] < 65535) {
+				cs2method_10026(a10, script_46(",", cs2_configs['cfg264']));
+			} else {
+				cs2method_10026(a10, "<col=ff0000>" + "They rock!" + "</col>");
+			}
+			cs2method_10467(0, a9);
+			cs2method_10467(0, a12);
+			cs2method_10467(0, a1);
+			cs2method_10467(0, a10);
+			v7 = 1;
+			if (client_configs['cfg1382'].bitcfg4095 < 15) {
+				object v14 = "/ " + (string)script_46(",", idx17mapData('i', 'i', 1605, client_configs['cfg1382'].bitcfg4095));
+				cs2method_10026(a11, v14);
+				cs2method_10026(a5, v14);
+				cs2method_10467(0, a11);
+				cs2method_10467(0, a5);
+				v1 = 1;
+			} else {
+				cs2method_10467(1, a11);
+				cs2method_10467(1, a5);
+			}
+		} else {
+			cs2method_10467(1, a9);
+			cs2method_10467(1, a12);
+			cs2method_10467(1, a1);
+			cs2method_10467(1, a10);
+			cs2method_10467(1, a11);
+			cs2method_10467(1, a5);
+		}
+		if (cs2_configs['cfg260'] == 1) {
+			cs2method_20162(new function<none>() {
+			}, "", new WidgetPointer(a3));
+			if (client_configs['cfg1382'].bitcfg4096 > 0) {
+				cs2method_10026(a0, "Time remaining:");
+				if (cs2_configs['cfg270'] > 60) {
+					script_1791(a3);
+				} else if (cs2_configs['cfg270'] > 1) {
+					cs2method_10026(a3, (string)cs2method_10379(cs2_configs['cfg270']) + " minutes");
+				} else if (cs2_configs['cfg270'] == 1) {
+					cs2method_10026(a3, "<col=ff0000>" + "1 minute" + "</col>");
+				} else {
+					cs2method_10026(a3, "<col=ff0000>" + "Not much!" + "</col>");
+				}
+				cs2method_10467(0, a0);
+				cs2method_10467(0, a3);
+				v2 = 1;
+			} else {
+				cs2method_10467(1, a0);
+				cs2method_10467(1, a3);
+			}
+		} else {
+			cs2method_10026(a0, "Countdown to battle:");
+			if (cs2_configs['cfg265'] != cs2_configs['cfg270']) {
+				cs2_configs['cfg265'] = cs2_configs['cfg270'];
+				script_1790(a3);
+				cs2method_20162(new function<script_1789>(int a0,int a1,int a2) {
+					int v0 = cs2method_10461(cs2method_10133(), a1);
+					cs2_configs['cfg265'] = cs2method_11048(cs2method_10461(a2, cs2method_10968(v0, 30)), 0);
+					script_1790(a0);
+					return;
+				}, new WidgetPointer(a3), cs2method_10133(), cs2_configs['cfg270'], "Iii", new WidgetPointer(a3));
+			}
+			cs2method_10467(0, a0);
+			cs2method_10467(0, a3);
+			v2 = 1;
+		}
+		int v8 = cs2method_10509(512, 494, cs2method_10744(a8));
+		int v4 = cs2method_10509(512, 494, cs2method_10744(a6));
+		int v10 = cs2method_11048(cs2method_10060(cs2method_10060(cs2method_10509(512, 494, cs2method_10744(a14)), 10), cs2method_10509(512, 494, cs2method_10744(a13))), v8);
+		int v5 = cs2method_11048(cs2method_10060(cs2method_10060(cs2method_10509(512, 494, cs2method_10744(a7)), 10), cs2method_10509(512, 494, cs2method_10744(a4))), v4);
+		int v3 = cs2method_10060(cs2method_10823(a8), cs2method_10823(a14));
+		if (v7 == 1) {
+			v10 = cs2method_11048(cs2method_10060(cs2method_10060(cs2method_10509(512, 494, cs2method_10744(a9)), 10), cs2method_10509(512, 494, cs2method_10744(a1))), v10);
+			v5 = cs2method_11048(cs2method_10060(cs2method_10060(cs2method_10509(512, 494, cs2method_10744(a12)), 10), cs2method_10509(512, 494, cs2method_10744(a10))), v5);
+			v3 = cs2method_10060(v3, cs2method_10823(a9));
+			if (v1 == 1) {
+				v10 = cs2method_11048(cs2method_10509(512, 494, cs2method_10744(a11)), v10);
+				v5 = cs2method_11048(cs2method_10509(512, 494, cs2method_10744(a5)), v5);
+				v3 = cs2method_10060(v3, cs2method_10823(a11));
+			}
+		}
+		int v0 = cs2method_10060(cs2method_10060(v10, 10), v5);
+		if (v2 == 0) {
+			cs2method_10283(cs2method_10060(v0, 8), cs2method_10060(v3, 8), 0, 0, a2);
+			cs2method_10283(cs2method_10236(a2), cs2method_10823(a2), 0, 0, a16);
+			script_1788(v10, a8, a14, a13, a9, a1, a11, v5, a6, a7, a4, a12, a10, a5, v0);
+			cs2method_10112(cs2method_10060(cs2method_10060(4, v10), 5), 4, 0, 0, a15);
+			cs2method_10283(0, v3, 0, 0, a15);
+			script_1086(a2, 0, 0, 0);
+			return;
+		}
+		int v6 = v3;
+		int v12 = cs2method_10060(cs2method_10060(cs2method_10060(v3, 10), cs2method_10823(a0)), cs2method_10823(a3));
+		int v9 = cs2method_11048(cs2method_10509(512, 494, cs2method_10744(a0)), v0);
+		int v13 = cs2method_11048(cs2method_10509(512, 494, cs2method_10744(a3)), v9);
+		cs2method_10283(cs2method_10060(v13, 8), cs2method_10060(v12, 8), 0, 0, a2);
+		cs2method_10283(cs2method_10236(a2), cs2method_10823(a2), 0, 0, a16);
+		script_1788(v10, a8, a14, a13, a9, a1, a11, v5, a6, a7, a4, a12, a10, a5, v13);
+		cs2method_10112(cs2method_10060(cs2method_10060(4, v10), cs2method_10968(cs2method_10461(v13, cs2method_10060(v10, v5)), 2)), 4, 0, 0, a15);
+		cs2method_10283(0, v6, 0, 0, a15);
+		cs2method_10283(v13, cs2method_10823(a0), 0, 0, a0);
+		cs2method_10283(v13, cs2method_10823(a3), 0, 0, a3);
+		cs2method_10112(4, cs2method_10060(cs2method_10060(4, v6), 10), 0, 0, a0);
+		cs2method_10112(4, cs2method_10060(cs2method_10060(cs2method_10060(4, v6), 10), cs2method_10823(a0)), 0, 0, a3);
+		script_1086(a2, cs2method_10060(cs2method_10060(4, v6), 5), 0, 0);
+		return;
+	}, new WidgetPointer(a14), new WidgetPointer(a16), new WidgetPointer(a15), new WidgetPointer(a9), new WidgetPointer(a12), new WidgetPointer(a7), new WidgetPointer(a1), new WidgetPointer(a6), new WidgetPointer(a10), new WidgetPointer(a0), new WidgetPointer(a8), new WidgetPointer(a4), new WidgetPointer(a2), new WidgetPointer(a5), new WidgetPointer(a11), new WidgetPointer(a13), new WidgetPointer(a3), 1382, 1, "IIIIIIIIIIIIIIIIIY", new WidgetPointer(a14));
+	cs2method_20243(new function<script_1787>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12,int a13,int a14,int a15,int a16) {
+		object v7 = "";
+		int v3 = 0;
+		int v0 = 0;
+		int v2 = 0;
+		if (cs2_configs['cfg271'] == 1) {
+			cs2method_10026(a7, (string)cs2method_10403() + ":");
+		} else {
+			cs2method_10026(a7, "This clan:");
+		}
+		cs2method_10026(a11, cs2method_10379(cs2_configs['cfg261']));
+		cs2method_10026(a16, cs2method_10379(cs2_configs['cfg262']));
+		if (client_configs['cfg1382'].bitcfg4095 > 0) {
+			if (cs2_configs['cfg263'] < 65535) {
+				cs2method_10026(a6, script_46(",", cs2_configs['cfg263']));
+			} else {
+				cs2method_10026(a6, "<col=ff0000>" + "You rock!" + "</col>");
+			}
+			if (cs2_configs['cfg264'] < 65535) {
+				cs2method_10026(a3, script_46(",", cs2_configs['cfg264']));
+			} else {
+				cs2method_10026(a3, "<col=ff0000>" + "They rock!" + "</col>");
+			}
+			cs2method_10467(0, a1);
+			cs2method_10467(0, a12);
+			cs2method_10467(0, a6);
+			cs2method_10467(0, a3);
+			v3 = 1;
+			if (client_configs['cfg1382'].bitcfg4095 < 15) {
+				object v14 = "/ " + (string)script_46(",", idx17mapData('i', 'i', 1605, client_configs['cfg1382'].bitcfg4095));
+				cs2method_10026(a2, v14);
+				cs2method_10026(a10, v14);
+				cs2method_10467(0, a2);
+				cs2method_10467(0, a10);
+				v0 = 1;
+			} else {
+				cs2method_10467(1, a2);
+				cs2method_10467(1, a10);
+			}
+		} else {
+			cs2method_10467(1, a1);
+			cs2method_10467(1, a12);
+			cs2method_10467(1, a6);
+			cs2method_10467(1, a3);
+			cs2method_10467(1, a2);
+			cs2method_10467(1, a10);
+		}
+		if (cs2_configs['cfg260'] == 1) {
+			cs2method_20162(new function<none>() {
+			}, "", new WidgetPointer(a0));
+			if (client_configs['cfg1382'].bitcfg4096 > 0) {
+				cs2method_10026(a8, "Time remaining:");
+				if (cs2_configs['cfg270'] > 60) {
+					script_1791(a0);
+				} else if (cs2_configs['cfg270'] > 1) {
+					cs2method_10026(a0, (string)cs2method_10379(cs2_configs['cfg270']) + " minutes");
+				} else if (cs2_configs['cfg270'] == 1) {
+					cs2method_10026(a0, "<col=ff0000>" + "1 minute" + "</col>");
+				} else {
+					cs2method_10026(a0, "<col=ff0000>" + "Not much!" + "</col>");
+				}
+				cs2method_10467(0, a8);
+				cs2method_10467(0, a0);
+				v2 = 1;
+			} else {
+				cs2method_10467(1, a8);
+				cs2method_10467(1, a0);
+			}
+		} else {
+			cs2method_10026(a8, "Countdown to battle:");
+			if (cs2_configs['cfg265'] != cs2_configs['cfg270']) {
+				cs2_configs['cfg265'] = cs2_configs['cfg270'];
+				script_1790(a0);
+				cs2method_20162(new function<script_1789>(int a0,int a1,int a2) {
+					int v0 = cs2method_10461(cs2method_10133(), a0);
+					cs2_configs['cfg265'] = cs2method_11048(cs2method_10461(a2, cs2method_10968(v0, 30)), 0);
+					script_1790(a1);
+					return;
+				}, new WidgetPointer(a0), cs2method_10133(), cs2_configs['cfg270'], "Iii", new WidgetPointer(a0));
+			}
+			cs2method_10467(0, a8);
+			cs2method_10467(0, a0);
+			v2 = 1;
+		}
+		int v8 = cs2method_10509(512, 494, cs2method_10744(a7));
+		int v12 = cs2method_10509(512, 494, cs2method_10744(a9));
+		int v11 = cs2method_11048(cs2method_10060(cs2method_10060(cs2method_10509(512, 494, cs2method_10744(a13)), 10), cs2method_10509(512, 494, cs2method_10744(a11))), v8);
+		int v5 = cs2method_11048(cs2method_10060(cs2method_10060(cs2method_10509(512, 494, cs2method_10744(a15)), 10), cs2method_10509(512, 494, cs2method_10744(a16))), v12);
+		int v13 = cs2method_10060(cs2method_10823(a7), cs2method_10823(a13));
+		if (v3 == 1) {
+			v11 = cs2method_11048(cs2method_10060(cs2method_10060(cs2method_10509(512, 494, cs2method_10744(a1)), 10), cs2method_10509(512, 494, cs2method_10744(a6))), v11);
+			v5 = cs2method_11048(cs2method_10060(cs2method_10060(cs2method_10509(512, 494, cs2method_10744(a12)), 10), cs2method_10509(512, 494, cs2method_10744(a3))), v5);
+			v13 = cs2method_10060(v13, cs2method_10823(a1));
+			if (v0 == 1) {
+				v11 = cs2method_11048(cs2method_10509(512, 494, cs2method_10744(a2)), v11);
+				v5 = cs2method_11048(cs2method_10509(512, 494, cs2method_10744(a10)), v5);
+				v13 = cs2method_10060(v13, cs2method_10823(a2));
+			}
+		}
+		int v10 = cs2method_10060(cs2method_10060(v11, 10), v5);
+		if (v2 == 0) {
+			cs2method_10283(cs2method_10060(v10, 8), cs2method_10060(v13, 8), 0, 0, a14);
+			cs2method_10283(cs2method_10236(a14), cs2method_10823(a14), 0, 0, a4);
+			script_1788(v11, a7, a13, a11, a1, a6, a2, v5, a9, a15, a16, a12, a3, a10, v10);
+			cs2method_10112(cs2method_10060(cs2method_10060(4, v11), 5), 4, 0, 0, a5);
+			cs2method_10283(0, v13, 0, 0, a5);
+			script_1086(a14, 0, 0, 0);
+			return;
+		}
+		int v9 = v13;
+		int v1 = cs2method_10060(cs2method_10060(cs2method_10060(v13, 10), cs2method_10823(a8)), cs2method_10823(a0));
+		int v4 = cs2method_11048(cs2method_10509(512, 494, cs2method_10744(a8)), v10);
+		int v6 = cs2method_11048(cs2method_10509(512, 494, cs2method_10744(a0)), v4);
+		cs2method_10283(cs2method_10060(v6, 8), cs2method_10060(v1, 8), 0, 0, a14);
+		cs2method_10283(cs2method_10236(a14), cs2method_10823(a14), 0, 0, a4);
+		script_1788(v11, a7, a13, a11, a1, a6, a2, v5, a9, a15, a16, a12, a3, a10, v6);
+		cs2method_10112(cs2method_10060(cs2method_10060(4, v11), cs2method_10968(cs2method_10461(v6, cs2method_10060(v11, v5)), 2)), 4, 0, 0, a5);
+		cs2method_10283(0, v9, 0, 0, a5);
+		cs2method_10283(v6, cs2method_10823(a8), 0, 0, a8);
+		cs2method_10283(v6, cs2method_10823(a0), 0, 0, a0);
+		cs2method_10112(4, cs2method_10060(cs2method_10060(4, v9), 10), 0, 0, a8);
+		cs2method_10112(4, cs2method_10060(cs2method_10060(cs2method_10060(4, v9), 10), cs2method_10823(a8)), 0, 0, a0);
+		script_1086(a14, cs2method_10060(cs2method_10060(4, v9), 5), 0, 0);
+		return;
+	}, new WidgetPointer(a14), new WidgetPointer(a16), new WidgetPointer(a15), new WidgetPointer(a9), new WidgetPointer(a12), new WidgetPointer(a7), new WidgetPointer(a1), new WidgetPointer(a6), new WidgetPointer(a10), new WidgetPointer(a0), new WidgetPointer(a8), new WidgetPointer(a4), new WidgetPointer(a2), new WidgetPointer(a5), new WidgetPointer(a11), new WidgetPointer(a13), new WidgetPointer(a3), 270, 260, 261, 262, 263, 264, 271, 7, "IIIIIIIIIIIIIIIIIY", new WidgetPointer(a14));
+	return;
+}

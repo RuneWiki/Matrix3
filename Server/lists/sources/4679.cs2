@@ -1,0 +1,23 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4679() {
+	if (idx17mapData('i', 'i', 3839, cs2_configs['cfg1535']) < 1) {
+		cs2method_10112(10, 26, 0, 0, 19791895);
+		cs2method_10467(1, 19791896);
+		cs2method_10026(19791883, "Difficulty: " + (string)cs2method_10379(cs2_configs['cfg1535']) + "/10");
+	} else {
+		cs2method_10467(0, 19791896);
+		cs2method_10026(19791883, "Difficulty: " + (string)cs2method_10379(cs2_configs['cfg1535']) + "/10");
+	}
+	return;
+}

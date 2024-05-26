@@ -1,0 +1,221 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8506(int a0,int a1,int a2,int a3,object a4,int a5,object a6,object a7) {
+	cs2method_10620();
+	cs2method_20703(new function<script_86>(int a0,int a1,int a2) {
+		int v16 = -1;
+		int v11 = script_8552(a1);
+		if (cs2method_11038(v11, a2) == 1) {
+			int v9 = interfaceDefsAttribute(3443);
+		} else {
+			return;
+		}
+		int v19 = 0;
+		int v22 = 0;
+		int v3 = 0;
+		object v2 = "";
+		object v13 = "";
+		object v12 = "";
+		object v1 = "";
+		int v14 = -1;
+		object v21 = "";
+		int v15 = v9;
+		opc_struct10864(4,5,0) v6 = cs2method_10864(v15);
+		object v20 = v6.objectpart_4;
+		int v0 = v6.intpart_3;
+		object v7 = v6.objectpart_3;
+		object v5 = v6.objectpart_2;
+		object v10 = v6.objectpart_1;
+		object v8 = v6.objectpart_0;
+		int v18 = v6.intpart_2;
+		int v17 = v6.intpart_1;
+		int v4 = v6.intpart_0;
+		if (v4 == -1) {
+			return;
+		}
+		switch (a0) {
+			case 1:
+				cs2method_10153(4, v5);
+				break;
+			case 2:
+				cs2method_10153(1, v5);
+				break;
+			case 3:
+				cs2method_10153(7, v5);
+				break;
+			case 4:
+				cs2method_10153(1, v5);
+				break;
+			case 5:
+				cs2method_10153(9, v5);
+				break;
+			case 6:
+				if (script_2709() == 0) {
+					cs2method_10810("You cannot add a friend until you have entered your date of birth");
+					return;
+				}
+				if (cs2method_10563(v5) == 1) {
+					if (cs2method_10296() == 0 && cs2method_10870() == 0) {
+						script_8512(v5, a1);
+						return;
+					}
+				} else {
+					cs2method_11133(v5);
+				}
+				break;
+			case 7:
+				cs2method_10290(v5);
+				break;
+			case 8:
+				cs2_configs['cfg2578'] = (string)v5;
+				break;
+			case 9:
+				if (v4 == 17) {
+					script_1052(4, v0, v5, a1);
+				} else if (v4 == 18) {
+					script_1052(5, v0, v5, a1);
+				} else if (v4 == 20) {
+					script_1052(6, v0, v5, a1);
+				} else if (v4 == 42) {
+					script_1052(9, v0, v5, a1);
+				} else {
+					if (v4 == 45) {
+						script_1052(11, v0, v5, a1);
+					}
+				}
+				break;
+			case 10:
+				if (v4 == 41 || v4 == 42) {
+					script_4465(v5);
+				} else if (v4 == 9 || v4 == 20) {
+					script_1633(v5);
+				} else {
+					cs2method_10153(5, v5);
+				}
+		}
+		return;
+	}, a3, -2147483644, -2147483643, "iii");
+	cs2method_10200("<col=ffffff>" + (string)cs2method_10765(a6));
+	if (a3 == 1019) {
+		script_3927(1019);
+	}
+	switch (a0) {
+		case 1:
+		case 2:
+		case 3:
+		case 6:
+		case 7:
+		case 9:
+		case 41:
+		case 44:
+			if (cs2method_10846(cs2method_10765(cs2method_10927()), cs2method_10765(a6)) == 0 || cs2method_10846(cs2method_10765(cs2method_10954()), cs2method_10765(a4)) == 0) {
+			} else {
+				if (cs2method_10563(cs2method_10765(a4)) == 1) {
+					if (cs2method_10296() == 0 && cs2method_10870() == 0) {
+						cs2method_10057(6, "Message");
+					}
+				} else {
+					cs2method_10057(6, "Add friend");
+					cs2method_10057(7, "Add ignore");
+				}
+				if (client_configs['cfg1775'].bitcfg16564 == 1) {
+					cs2method_10057(8, "Report");
+				}
+				if (a0 == 41 && a5 == 1) {
+					cs2method_10057(10, "Kick/ban");
+				}
+				if (a0 == 9 && a2 == 1) {
+					cs2method_10057(10, "Kick/ban");
+				}
+			}
+			break;
+		case 100:
+			cs2method_10057(1, "Accept trade");
+			break;
+		case 101:
+		case 106:
+		case 107:
+		case 105:
+		case 118:
+		case 114:
+		case 113:
+			cs2method_10057(2, "Accept challenge");
+			break;
+		case 102:
+			cs2method_10057(3, "Give assistance");
+			break;
+		case 111:
+			cs2method_10057(4, "Open invitation");
+			break;
+		case 112:
+			cs2method_10057(3, "Vote");
+			break;
+		case 17:
+		case 18:
+		case 20:
+		case 42:
+		case 45:
+			if (cs2method_10846(cs2method_10765(cs2method_10927()), cs2method_10765(a6)) == 0 || cs2method_10846(cs2method_10765(cs2method_10954()), cs2method_10765(a4)) == 0) {
+			} else {
+				if (cs2method_10563(cs2method_10765(a4)) == 1) {
+					if (cs2method_10296() == 0 && cs2method_10870() == 0) {
+						cs2method_10057(6, "Message");
+					}
+				} else {
+					cs2method_10057(6, "Add friend");
+					cs2method_10057(7, "Add ignore");
+				}
+				if (a0 == 42 && a5 == 1) {
+					cs2method_10057(10, "Kick/ban");
+				}
+				if (a0 == 20 && a2 == 1) {
+					cs2method_10057(10, "Kick/ban");
+				}
+				if (cs2method_10171(a1) > 0) {
+					if (script_8627(a3) == -1) {
+						script_8628(a3, a1);
+						script_8610(a3, a6);
+						if (a0 == 20) {
+							script_8630(a3, 6);
+							cs2method_10057(9, "Quick Response");
+						}
+						if (a0 == 42) {
+							script_8630(a3, 9);
+							cs2method_10057(9, "Quick Response");
+						}
+						if (a0 == 45) {
+							script_8630(a3, 11);
+							cs2method_10057(9, "Quick Response");
+						} else if (a0 == 18) {
+							script_8630(a3, 5);
+							if (cs2method_10563(cs2method_10765(a4)) == 1) {
+								cs2method_10057(9, "Quick Response");
+							}
+						} else {
+							script_8630(a3, 4);
+							cs2method_10057(9, "Quick Response");
+						}
+					} else {
+						cs2method_10057(9, "Quick Response");
+					}
+				}
+			}
+			break;
+		case 108:
+			cs2method_10057(10, "Accept alliance");
+			break;
+		case 117:
+			cs2method_10057(5, "View invite from");
+	}
+	return;
+}

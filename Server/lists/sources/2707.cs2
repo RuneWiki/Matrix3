@@ -1,0 +1,76 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2707(int a0,int a1,object a2,int a3,int a4,int a5,int a6,int a7) {
+	if (a5 == -1 || a3 == -1 || cs2method_10846(a2, "") == 0) {
+		return;
+	}
+	if (cs2_configs['cfg1'] < cs2method_10060(cs2method_10133(), a6)) {
+		if (cs2_configs['cfg1'] < cs2method_10133()) {
+			cs2_configs['cfg1'] = cs2method_10133();
+		}
+		cs2_configs['cfg1'] = cs2method_10060(cs2_configs['cfg1'], 2);
+		return;
+	}
+	if (cs2method_11038(a5, a1) == 1) {
+		a7 = cs2method_10060(a7, script_1743());
+		a0 = cs2method_10060(a0, script_1744());
+	}
+	cs2_configs['cfg1'] = cs2method_10060(cs2method_10060(cs2method_10133(), a6), 10);
+	int v1 = 0;
+	int v0 = 0;
+	int v2 = -1;
+	if (cs2_configs['cfg2'] != 1) {
+		int v7 = cs2method_10982(a3);
+		if (v7 != -1 && a4 >= cs2method_10236(v7)) {
+			a4 = cs2method_10236(v7);
+		}
+		int v5 = cs2method_10060(6, cs2method_10509(cs2method_10461(a4, 6), 495, a2));
+		int v6 = cs2method_10060(6, cs2method_10051(16, cs2method_10805(cs2method_10461(a4, 6), 495, a2)));
+		cs2method_10283(v5, v6, 0, 0, a3);
+		int v4 = cs2method_10461(cs2method_10461(a7, 5), v5);
+		int v3 = cs2method_10461(cs2method_10461(a0, 3), v6);
+		if (v7 != -1) {
+			if (cs2method_10060(v4, v5) > cs2method_10236(v7)) {
+				v4 = cs2method_10461(cs2method_10236(v7), v5);
+			}
+			if (cs2method_10060(v3, v6) > cs2method_10823(v7)) {
+				v3 = cs2method_10461(cs2method_10823(v7), v6);
+			}
+		}
+		if (v4 < 0) {
+			v4 = 0;
+		}
+		if (v3 < 0) {
+			v3 = 0;
+		}
+		cs2method_10112(v4, v3, 0, 0, a3);
+		cs2method_10273(a3);
+		cs2method_10606(a3, 3, 0);
+		cs2method_10013(v5, v6, 0, 0);
+		cs2method_10238(1);
+		cs2method_10811(921102);
+		cs2method_10606(a3, 3, 1);
+		cs2method_10013(v5, v6, 0, 0);
+		cs2method_10238(0);
+		cs2method_10811(15461606);
+		cs2method_10606(a3, 4, 2);
+		cs2method_10013(cs2method_10461(a4, 6), v6, 0, 0);
+		cs2method_10063(0, 0, 1, 1);
+		cs2method_10797(a2);
+		cs2method_11105(1, 1, 16);
+		cs2method_10692(495);
+		cs2method_10811(16101953);
+		cs2_configs['cfg2'] = 1;
+	}
+	return;
+}

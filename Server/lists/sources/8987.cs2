@@ -1,0 +1,28 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8987(int a0) {
+	int v3 = cs2method_10948();
+	int v6 = cs2method_10060(v3, 1);
+	int v1 = cs2method_10038(cs2method_10968(cs2method_11115(), 60), 24);
+	int v5 = cs2method_10038(cs2method_11115(), 60);
+	int v4 = cs2method_10461(23, v1);
+	int v2 = cs2method_10461(60, v5);
+	int v0 = cs2method_10461(script_8985(), v3);
+	if (client_configs['cfg3661'].bitcfg18722 == 0) {
+		cs2method_10026(a0, "Time remaining to vote: " + (string)cs2method_10379(v0) + " Days " + (string)cs2method_10379(v4) + " Hours " + (string)cs2method_10379(v2) + " Minutes");
+	} else {
+		int v7 = cs2method_10461(script_8986(), v3);
+		cs2method_10026(a0, "Time remaining to vote: " + (string)cs2method_10379(v7) + " Days " + (string)cs2method_10379(v4) + " Hours " + (string)cs2method_10379(v2) + " Minutes");
+	}
+	return;
+}

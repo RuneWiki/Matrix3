@@ -1,0 +1,78 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7198() {
+	script_7997();
+	cs2_configs['cfg1069'] = 500;
+	cs2_configs['cfg1070'] = cs2method_10327(cs2method_10472(), 0, 0, -8);
+	cs2_configs['cfg1071'] = 0;
+	cs2_configs['cfg1072'] = cs2method_10472();
+	cs2_configs['cfg1073'] = 450;
+	cs2_configs['cfg1282'] = 25;
+	cs2_configs['cfg1075'] = 0;
+	cs2_configs['cfg1076'] = 0;
+	cs2_configs['cfg1074'] = 3;
+	script_7199();
+	script_8836(7693);
+	cs2method_20162(new function<script_2852>(int a0) {
+		if (cs2_configs['cfg1074'] == 3) {
+			return;
+		}
+		if (cs2_configs['cfg1076'] < cs2method_10060(cs2_configs['cfg1075'], 250) && cs2_configs['cfg1076'] > cs2method_10461(cs2_configs['cfg1075'], 250)) {
+			cs2_configs['cfg1076'] = cs2_configs['cfg1075'];
+		} else if (cs2_configs['cfg1076'] > cs2_configs['cfg1075']) {
+			if (cs2method_10461(cs2_configs['cfg1076'], 32768) > cs2_configs['cfg1075']) {
+				cs2_configs['cfg1076'] = cs2method_10060(cs2_configs['cfg1076'], 250);
+				if (cs2_configs['cfg1076'] > 65535) {
+					cs2_configs['cfg1076'] = cs2method_10461(cs2_configs['cfg1076'], 63335);
+				}
+			} else {
+				cs2_configs['cfg1076'] = cs2method_10461(cs2_configs['cfg1076'], 250);
+				if (cs2_configs['cfg1076'] < 0) {
+					cs2_configs['cfg1076'] = cs2method_10060(cs2_configs['cfg1076'], 63335);
+				}
+			}
+		} else if (cs2method_10060(cs2_configs['cfg1076'], 32768) < cs2_configs['cfg1075']) {
+			cs2_configs['cfg1076'] = cs2method_10461(cs2_configs['cfg1076'], 250);
+			if (cs2_configs['cfg1076'] < 0) {
+				cs2_configs['cfg1076'] = cs2method_10060(cs2_configs['cfg1076'], 63335);
+			}
+		} else {
+			cs2_configs['cfg1076'] = cs2method_10060(cs2_configs['cfg1076'], 250);
+			if (cs2_configs['cfg1076'] > 65535) {
+				cs2_configs['cfg1076'] = cs2method_10461(cs2_configs['cfg1076'], 63335);
+			}
+		}
+		cs2method_10074(cs2_configs['cfg1076'], 31129608);
+		return;
+	}, new WidgetPointer(475,6), "I", new WidgetPointer(475,6));
+	cs2method_10467(0, 31129604);
+	cs2method_10467(0, 31129606);
+	cs2method_10467(0, 31129660);
+	cs2method_20162(new function<script_2870>(int a0,int a1) {
+		if (cs2method_10133() >= a1) {
+			cs2method_10467(1, a0);
+			cs2method_20162(new function<none>() {
+			}, "", new WidgetPointer(a0));
+		}
+		return;
+	}, new WidgetPointer(-32768,3), cs2method_10060(cs2method_10133(), 150), "Ii", new WidgetPointer(475,60));
+	script_3455();
+	cs2method_20162(new function<script_7940>(int a0) {
+		if (script_7942() == 1) {
+			return;
+		}
+		script_7941(a0);
+		return;
+	}, new WidgetPointer(-32768,3), "I", new WidgetPointer(1477,13));
+	return;
+}

@@ -1,0 +1,33 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_8085() {
+	if (client_configs['cfg1831'] == -1) {
+		return 0;
+	}
+	if (cs2method_10771() == 0) {
+		return 0;
+	}
+	if (itemDefsAttribute(client_configs['cfg1831'], 394) > 0) {
+		if (npcDefsAttribute(itemDefsAttribute(client_configs['cfg1831'], 74), 424) > 0) {
+			return 1;
+		}
+		return 2;
+	}
+	if (cs2method_10843(client_configs['cfg1831']) == 31 || cs2method_10843(client_configs['cfg1831']) == 30 || cs2method_10843(client_configs['cfg1831']) == 29 || cs2method_10843(client_configs['cfg1831']) == 33 || cs2method_10843(client_configs['cfg1831']) == 32) {
+		return 3;
+	}
+	if (client_configs['cfg1831'] == 24906 || client_configs['cfg1831'] == 24907 || client_configs['cfg1831'] == 24908) {
+		return 4;
+	}
+	return 5;
+}

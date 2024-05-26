@@ -1,0 +1,28 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8209(int a0,int a1) {
+	if (cs2_configs['cfg2850'] == a1 && cs2_configs['cfg2851'] == a0) {
+		return;
+	}
+	script_9963();
+	script_8808();
+	int v0 = cs2_configs['cfg2850'];
+	int v1 = cs2_configs['cfg2851'];
+	if (script_8817(a1, a0) == 1) {
+		if (cs2_configs['cfg2850'] > 0) {
+			script_8206(v0, v1, 6);
+		}
+		script_8206(a1, a0, 1);
+	}
+	return;
+}

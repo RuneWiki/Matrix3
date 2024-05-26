@@ -1,0 +1,34 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9031() {
+	if (cs2_configs['cfg2776'] >= 1 && cs2_configs['cfg2776'] <= 4) {
+		return;
+	}
+	switch (client_configs['cfg3653']) {
+		case 1:
+			script_9032();
+			break;
+		case 2:
+			script_9033();
+			break;
+		case 3:
+			script_9034();
+			break;
+		case 4:
+			script_9035();
+			break;
+		default:
+			script_9036();
+	}
+	return;
+}

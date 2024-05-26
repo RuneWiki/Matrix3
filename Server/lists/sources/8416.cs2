@@ -1,0 +1,47 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8416() {
+	object v1;
+	object v0 = "";
+	switch (client_configs['cfg3894'].bitcfg20718) {
+		case 1:
+			v1 = "Rubble";
+			break;
+		case 2:
+			v1 = "Stone";
+			break;
+		case 3:
+			v1 = "Plaster";
+			break;
+		case 4:
+			v1 = "Straw";
+			break;
+		case 5:
+			v1 = "Plank";
+			break;
+		case 6:
+			v1 = "Beam";
+			break;
+		case 7:
+			v1 = "Fabric";
+			break;
+		default:
+			v1 = "None";
+	}
+	if (client_configs['cfg3894'].bitcfg20718 != 0) {
+		cs2method_10026(16187402, "<col=7592a0>" + (string)v1 + ": " + "<col=ffffff>" + (string)cs2method_10379(client_configs['cfg3894'].bitcfg20716) + "%");
+	} else {
+		cs2method_10026(16187402, "<col=7592a0>" + (string)v1);
+	}
+	return;
+}

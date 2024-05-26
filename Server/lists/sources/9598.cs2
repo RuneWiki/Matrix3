@@ -1,0 +1,98 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9598(int a0) {
+	if (a0 == 1 && client_configs['cfg4041'].bitcfg3855 == 1) {
+		return;
+	}
+	if (a0 == 2 && client_configs['cfg4041'].bitcfg3857 == 1) {
+		return;
+	}
+	if (a0 == 3 && client_configs['cfg4041'].bitcfg22244 == 1) {
+		return;
+	}
+	cs2method_10467(1, 67436581);
+	cs2method_10467(1, 67436642);
+	cs2method_10467(1, 67436583);
+	cs2method_10467(1, 67436582);
+	cs2method_10467(0, 67436643);
+	cs2method_10026(67436644, "retrieving poll information...");
+	cs2method_10112(15, 36, 0, 0, 67436646);
+	switch (a0) {
+		case 0:
+			script_9599();
+			cs2method_21121(new function<none>() {
+			}, "", new WidgetPointer(1029,76));
+			cs2method_20750(new function<none>() {
+			}, "", new WidgetPointer(1029,76));
+			cs2method_20390(new function<none>() {
+			}, "", new WidgetPointer(1029,76));
+			cs2method_10467(1, 67436645);
+			cs2method_10467(1, 67436641);
+			cs2method_10758(18102, 67436620);
+			cs2method_10758(20708, 67436621);
+			cs2method_10637(0, 0, 14, 67436646);
+			cs2method_10112(15, 30, 0, 0, 67436646);
+			break;
+		case 1:
+			if (client_configs['cfg4041'].bitcfg3855 == 0) {
+				script_9599();
+				client_configs['cfg4040'].bitcfg21343 = 0;
+				cs2method_21121(new function<none>() {
+				}, "", new WidgetPointer(1029,79));
+				cs2method_20750(new function<none>() {
+				}, "", new WidgetPointer(1029,79));
+				cs2method_20390(new function<none>() {
+				}, "", new WidgetPointer(1029,79));
+				cs2method_10467(0, 67436645);
+				cs2method_10467(0, 67436641);
+				cs2method_10758(18102, 67436623);
+				cs2method_10758(20620, 67436624);
+				cs2method_10637(0, 1, 14, 67436646);
+			}
+			break;
+		case 2:
+			if (client_configs['cfg4041'].bitcfg3857 == 0) {
+				script_9599();
+				client_configs['cfg4040'].bitcfg21343 = 1;
+				cs2method_21121(new function<none>() {
+				}, "", new WidgetPointer(1029,84));
+				cs2method_20750(new function<none>() {
+				}, "", new WidgetPointer(1029,84));
+				cs2method_20390(new function<none>() {
+				}, "", new WidgetPointer(1029,84));
+				cs2method_10467(0, 67436645);
+				cs2method_10467(0, 67436641);
+				cs2method_10758(18102, 67436628);
+				cs2method_10758(20706, 67436629);
+				cs2method_10637(0, 1, 14, 67436646);
+			}
+			break;
+		case 3:
+			if (client_configs['cfg4041'].bitcfg22244 == 0) {
+				script_9599();
+				client_configs['cfg4040'].bitcfg21343 = 2;
+				cs2method_21121(new function<none>() {
+				}, "", new WidgetPointer(1029,147));
+				cs2method_20750(new function<none>() {
+				}, "", new WidgetPointer(1029,147));
+				cs2method_20390(new function<none>() {
+				}, "", new WidgetPointer(1029,147));
+				cs2method_10467(0, 67436645);
+				cs2method_10467(0, 67436641);
+				cs2method_10758(18102, 67436691);
+				cs2method_10758(20707, 67436692);
+				cs2method_10637(0, 1, 14, 67436646);
+			}
+	}
+	return;
+}

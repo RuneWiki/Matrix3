@@ -1,0 +1,43 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2395(int a0,int a1) {
+	object v1 = "";
+	int v0 = -1;
+	switch (a1) {
+		case 68419593:
+			if (client_configs['cfg4389'].bitcfg22263 == 0) {
+				v1 = "You do not have a passive ability set.";
+			} else {
+				v0 = idx17mapData('i', 'J', 8712, client_configs['cfg4389'].bitcfg22263);
+			}
+			break;
+		case 68419601:
+			if (client_configs['cfg4389'].bitcfg22264 == 0) {
+				v1 = "You do not have an ability set in slot 1.";
+			} else {
+				v0 = idx17mapData('i', 'J', 8712, client_configs['cfg4389'].bitcfg22264);
+			}
+			break;
+		case 68419615:
+			if (client_configs['cfg4389'].bitcfg22265 == 0) {
+				v1 = "You do not have an ability set in slot 2.";
+			} else {
+				v0 = idx17mapData('i', 'J', 8712, client_configs['cfg4389'].bitcfg22265);
+			}
+	}
+	if (v0 != -1) {
+		v1 = idx22mapAttribute(v0, 4241);
+	}
+	script_8800(a1, a0, v1);
+	return;
+}

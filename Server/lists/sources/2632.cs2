@@ -1,0 +1,60 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2632(int a0) {
+	if (a0 != 56295424) {
+		script_1360(a0);
+	}
+	switch (a0) {
+		case 56295424:
+			cs2method_10026(56295454, "Go to");
+			cs2method_10026(56295455, "Click to view this squad.");
+			break;
+		case 56295429:
+			cs2method_10026(56295454, "Attack");
+			cs2method_10026(56295455, "Select the enemy squad you wish to attack.");
+			break;
+		case 56295430:
+			cs2method_10026(56295454, "Move");
+			cs2method_10026(56295455, "Select the destination for your squad.");
+			break;
+		case 56295431:
+			cs2method_10026(56295454, "Explore");
+			cs2method_10026(56295455, "Send the unit to explore for treasure.");
+			break;
+		case 56295432:
+			if (client_configs['cfg1630'].bitcfg5220 == 2) {
+				cs2method_10026(56295454, "Attack wall/catapult");
+				cs2method_10026(56295455, "Select the wall or catapult you want your squad to attack.");
+			} else if (client_configs['cfg1630'].bitcfg5220 == 3) {
+				cs2method_10026(56295454, "Collect gold");
+				cs2method_10026(56295455, "Select the cave entrance from which your squad should gather gold.");
+			} else {
+				if (client_configs['cfg1630'].bitcfg5220 == 4) {
+					cs2method_10026(56295454, "Rescue");
+					cs2method_10026(56295455, "Select the fissure from which your squad should rescue TzHaar.");
+				}
+			}
+			break;
+		case 56295433:
+			if (client_configs['cfg1630'].bitcfg5220 == 2) {
+				cs2method_10026(56295454, "Collect");
+				cs2method_10026(56295455, "Select a resource for your squad to collect.");
+			} else {
+				if (client_configs['cfg1630'].bitcfg5220 == 4) {
+					cs2method_10026(56295454, "Steal");
+					cs2method_10026(56295455, "Select a lander to steal TzHaar from.");
+				}
+			}
+	}
+	return;
+}

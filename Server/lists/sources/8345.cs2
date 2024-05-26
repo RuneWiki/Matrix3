@@ -1,0 +1,32 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_8345_struct(2,0,0) script_8345(int a0,int a1) {
+	int v16 = 0;
+	int v9 = 0;
+	int v15 = 0;
+	int v3 = 0;
+	int v4 = a0;
+	script_8336_struct(2,0,0) v13 = script_8336(v4);
+	int v5 = v13.intpart_1;
+	int v8 = v13.intpart_0;
+	int v0 = cs2method_10350(a0);
+	int v14 = cs2method_10970(a0);
+	int v6 = v0;
+	int v11 = v14;
+	int v10 = v8;
+	int v12 = v5;
+	script_8346_struct(2,0,0) v2 = script_8346(v6, v11, v10, v12);
+	int v1 = v2.intpart_1;
+	int v7 = v2.intpart_0;
+	return new script_8345_struct(v7, v1);
+}

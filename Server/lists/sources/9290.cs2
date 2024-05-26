@@ -1,0 +1,54 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_9290(int a0,int a1) {
+	flow_0:
+		int v2 = 0;
+		int v3 = 0;
+		IF (a0 == -1) 
+			GOTO	flow_1
+		GOTO	flow_2
+	flow_1:
+		IF (cs2method_10324(a1) == 1) 
+			GOTO	flow_3
+	flow_2:
+		IF (cs2method_11038(a1, a0) == 1) 
+			GOTO	flow_3
+		GOTO	flow_10
+	flow_3:
+		if (script_6353() == 0 || script_6375() == 0) {
+			cs2method_10273(44105728);
+			return;
+		}
+		int v4 = script_6355();
+		int v1 = script_6356();
+		cs2_configs['cfg3847'] = v4;
+		cs2_configs['cfg3848'] = cs2method_10060(v4, cs2method_10488());
+		cs2_configs['cfg3849'] = v1;
+		cs2_configs['cfg3850'] = cs2method_10060(v1, cs2method_10664());
+		cs2_configs['cfg3844'] = 1;
+		int v5 = cs2method_10060(v4, cs2method_10968(cs2method_10488(), 2));
+		int v0 = cs2method_10060(v1, cs2method_10968(cs2method_10664(), 2));
+		if (cs2_configs['cfg3845'] <= 0) {
+			cs2_configs['cfg3845'] = 100;
+		}
+		if (cs2_configs['cfg3846'] <= 0) {
+			cs2_configs['cfg3846'] = 50;
+		}
+		script_770(1, v5, v0);
+		GOTO	flow_11
+	flow_10:
+		return;
+	flow_11:
+		return;
+}

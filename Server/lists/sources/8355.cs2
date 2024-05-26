@@ -1,0 +1,35 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8355(int a0,int a1) {
+	if (a1 == a0) {
+		return;
+	}
+	int v7 = idx17mapData('i', 'J', 7716, a1);
+	int v1 = idx17mapData('i', 'J', 7716, a0);
+	int v2 = script_8418(v1, 0);
+	int v6 = idx22mapAttribute(v7, 3509);
+	int v0 = idx22mapAttribute(v1, 3509);
+	int v3 = idx22mapAttribute(v1, 3508);
+	int v4 = script_8374(v6);
+	cs2method_10273(v0);
+	script_8363(a0);
+	for (int v5 = 0; v5 < v4; v5 = cs2method_10060(v5, 1)) {
+		script_8362(a0, script_8371(v6, v5), v5);
+	}
+	cs2method_10283(cs2method_10236(v6), cs2method_10823(v6), 0, 0, v0);
+	cs2method_11130(cs2method_10350(v6), cs2method_10970(v6), v0);
+	cs2method_10251(cs2method_10134(v6), cs2method_10718(v6), v0);
+	script_8359(a0, v4, script_8372(v0, a0));
+	script_8378(0, a0);
+	return;
+}

@@ -1,0 +1,76 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9230(int a0,int a1) {
+	cs2method_10620();
+	if (a1 != -1) {
+		cs2method_11070(a1, a0);
+		script_2833(a1, 1);
+		cs2method_21150(new function<script_9226>(int a0,int a1,int a2) {
+			if (cs2method_11038(a0, a1) == 1) {
+				cs2_configs['cfg3822'] = cs2method_10487();
+				cs2_configs['cfg3823'] = a2;
+			}
+			script_6582(a2, a0, a1, script_8404(49938647));
+			return;
+		}, 93, new WidgetPointer(-32768,3), -2147483643, "vIi");
+		cs2method_20902(new function<script_1616>(int a0,int a1,int a2,int a3) {
+			script_10106(a0, a3, a1, a2);
+			return;
+		}, new WidgetPointer(-32768,3), -2147483643, new WidgetPointer(-32768,6), -2147483641, "IiIi");
+		cs2method_20703(new function<script_1620>(int a0,int a1,int a2,int a3,int a4) {
+			int v0 = cs2method_10060(a1, cs2method_10133());
+			if (cs2method_11038(a3, a0) == 1 || a0 == -1 && cs2method_10324(a3) == 1) {
+				cs2method_10002(a2);
+				cs2method_20061(new function<script_1621>(int a0,int a1,int a2,int a3) {
+					if (cs2method_10133() < a3) {
+						return;
+					}
+					if (cs2method_11038(a0, a1) == 1 || a1 == -1 && cs2method_10324(a0) == 1) {
+						cs2method_10002(a2);
+						cs2method_20061(new function<none>() {
+						}, "");
+					}
+					return;
+				}, new WidgetPointer(a3), a0, a4, v0, "Iiii");
+			}
+			return;
+		}, new WidgetPointer(-32768,3), -2147483643, 100, 0, 8, "Iiiii");
+		cs2method_20353(new function<script_5495>(int a0) {
+			script_9252(a0);
+			return;
+		}, a1, "o");
+		cs2method_20884(new function<script_5495>(int a0) {
+			script_9252(a0);
+			return;
+		}, -1, "o");
+		cs2method_10626(2);
+		cs2method_10065(5);
+		cs2method_11009(5);
+	} else {
+		cs2method_11070(-1, 0);
+		cs2method_20902(new function<none>() {
+		}, "");
+		cs2method_20703(new function<none>() {
+		}, "");
+		cs2method_20353(new function<none>() {
+		}, "");
+		cs2method_20884(new function<none>() {
+		}, "");
+		cs2method_10335("");
+		cs2method_10200("");
+		cs2method_10626(3);
+		cs2method_10065(10000);
+		cs2method_11009(10000);
+	}
+	return;
+}

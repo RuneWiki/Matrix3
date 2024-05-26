@@ -1,0 +1,53 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9240(int a0,int a1,object a2,object a3,int a4,int a5,object a6,object a7,object a8,object a9,int a10,object a11,int a12,object a13,object a14,object a15) {
+	if (a10 != -1) {
+		cs2method_10337(1);
+		cs2method_11070(a10, a1);
+		cs2method_10356(1);
+		script_9241(a12, a5, a0);
+		cs2method_10200(cs2method_10018(a10));
+		cs2method_10057(1, a14);
+		cs2method_10057(2, a8);
+		cs2method_10057(3, a15);
+		cs2method_10057(4, a13);
+		cs2method_10057(5, a6);
+		cs2method_10057(6, a3);
+		cs2method_10057(7, a9);
+		cs2method_10057(8, a11);
+		cs2method_10057(9, a2);
+		cs2method_10057(10, a7);
+		cs2method_20353(new function<script_5495>(int a0) {
+			script_9252(a0);
+			return;
+		}, a10, "o");
+		cs2method_20884(new function<script_5495>(int a0) {
+			script_9252(a0);
+			return;
+		}, -1, "o");
+		script_9881(a12);
+	} else {
+		cs2method_10620();
+		cs2method_10200("");
+		cs2method_20902(new function<none>() {
+		}, "");
+		cs2method_20353(new function<none>() {
+		}, "");
+		cs2method_20884(new function<none>() {
+		}, "");
+		cs2method_10065(0);
+		cs2method_11009(0);
+		cs2method_10903(-1, 0);
+	}
+	return;
+}

@@ -1,0 +1,28 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6344() {
+	switch (cs2method_10262()) {
+		case 0:
+			cs2method_10824(0, "rswiki", "en/Customer_Support");
+			break;
+		case 2:
+			cs2method_10824(0, "rswiki", "fr/Service_client\u00e8le");
+			break;
+		case 1:
+			cs2method_10824(0, "rswiki", "de/Kundenbetreuung");
+			break;
+		case 3:
+			cs2method_10824(0, "rswiki", "pt/Suporte_ao_Cliente");
+	}
+	return;
+}

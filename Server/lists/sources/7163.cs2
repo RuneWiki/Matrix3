@@ -1,0 +1,536 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_7163(int a0) {
+	int v1 = 0;
+	int v0 = 0;
+	if (client_configs['cfg549'] > 0) {
+		switch (client_configs['cfg549']) {
+			case 1:
+				v1 = 0;
+				v0 = 0;
+				break;
+			case 2:
+				v1 = 1;
+				v0 = 0;
+				break;
+			case 3:
+				v1 = 0;
+				v0 = 1;
+				break;
+			case 4:
+				v1 = 2;
+				v0 = 0;
+				break;
+			case 5:
+				v1 = 0;
+				v0 = 2;
+				break;
+			case 6:
+				v1 = 3;
+				v0 = 0;
+				break;
+			case 7:
+				v1 = 0;
+				v0 = 3;
+		}
+	}
+	switch (a0) {
+		default:
+			return 1;
+		case 1:
+			if (cs2_configs['cfg2226'] < 2) {
+				return 0;
+			}
+			break;
+		case 2:
+			if (cs2_configs['cfg2226'] < 3) {
+				return 0;
+			}
+			break;
+		case 3:
+			if (cs2_configs['cfg2226'] < 4) {
+				return 0;
+			}
+			break;
+		case 4:
+			if (cs2_configs['cfg2226'] < 5) {
+				return 0;
+			}
+			break;
+		case 5:
+			if (cs2_configs['cfg2226'] < 6) {
+				return 0;
+			}
+			break;
+		case 6:
+			if (client_configs['cfg2272'].bitcfg10461 == 0) {
+				return 0;
+			}
+			break;
+		case 7:
+			if (client_configs['cfg2272'].bitcfg10460 == 0) {
+				return 0;
+			}
+			break;
+		case 8:
+			if (client_configs['cfg607'].bitcfg1621 == 0) {
+				return 0;
+			}
+			break;
+		case 9:
+			if (client_configs['cfg607'].bitcfg1622 == 0) {
+				return 0;
+			}
+			break;
+		case 10:
+			if (script_7167(10) == 0) {
+				return 0;
+			}
+			break;
+		case 11:
+			if (script_7167(20) == 0) {
+				return 0;
+			}
+			break;
+		case 12:
+			if (script_7167(30) == 0) {
+				return 0;
+			}
+			break;
+		case 13:
+			if (script_7167(40) == 0) {
+				return 0;
+			}
+			break;
+		case 14:
+			if (script_7167(50) == 0) {
+				return 0;
+			}
+			break;
+		case 15:
+			if (script_7167(60) == 0) {
+				return 0;
+			}
+			break;
+		case 16:
+			if (script_7167(70) == 0) {
+				return 0;
+			}
+			break;
+		case 17:
+			if (script_7167(80) == 0) {
+				return 0;
+			}
+			break;
+		case 18:
+			if (script_7167(90) == 0) {
+				return 0;
+			}
+			break;
+		case 19:
+			if (client_configs['cfg2355'] < 70) {
+				return 0;
+			}
+			break;
+		case 20:
+			if (client_configs['cfg2615'] < 3) {
+				return 0;
+			}
+			break;
+		case 21:
+			if (client_configs['cfg2417'].bitcfg11498 < 390) {
+				return 0;
+			}
+			break;
+		case 22:
+			if (client_configs['cfg2788'].bitcfg13978 < 260) {
+				return 0;
+			}
+			break;
+		case 23:
+			if (client_configs['cfg2584'].bitcfg12753 <= 90) {
+				return 0;
+			}
+			break;
+		case 24:
+			if (client_configs['cfg2524'] < 7) {
+				return 0;
+			}
+			break;
+		case 47:
+			if (client_configs['cfg2524'] < 3) {
+				return 0;
+			}
+			break;
+		case 25:
+			if (client_configs['cfg2484'] < 1) {
+				return 0;
+			}
+			break;
+		case 26:
+			if (client_configs['cfg2484'] < 3) {
+				return 0;
+			}
+			break;
+		case 27:
+			if (client_configs['cfg2484'] < 5) {
+				return 0;
+			}
+			break;
+		case 28:
+			if (client_configs['cfg2484'] < 7) {
+				return 0;
+			}
+			break;
+		case 29:
+			if (client_configs['cfg2484'] < 9) {
+				return 0;
+			}
+			break;
+		case 30:
+			if (client_configs['cfg607'].bitcfg1620 == 0) {
+				return 0;
+			}
+			break;
+		case 31:
+			if (client_configs['cfg2584'].bitcfg12753 < 20 || client_configs['cfg2580'].bitcfg12731 == 0) {
+				return 0;
+			}
+			break;
+		case 32:
+			if (client_configs['cfg2584'].bitcfg12753 < 20 || client_configs['cfg2580'].bitcfg12735 == 0) {
+				return 0;
+			}
+			break;
+		case 33:
+			if (client_configs['cfg2584'].bitcfg12753 < 20 || client_configs['cfg2580'].bitcfg12732 == 0) {
+				return 0;
+			}
+			break;
+		case 43:
+			if (client_configs['cfg2584'].bitcfg12753 < 20 || client_configs['cfg2580'].bitcfg12734 == 0) {
+				return 0;
+			}
+			break;
+		case 34:
+			if (client_configs['cfg2666'].bitcfg13178 < 290) {
+				return 0;
+			}
+			break;
+		case 35:
+			if (client_configs['cfg3167'].bitcfg16374 < 6) {
+				return 0;
+			}
+			break;
+		case 36:
+			if (client_configs['cfg2430'].bitcfg11610 < 170 || client_configs['cfg2432'].bitcfg11646 == 0) {
+				return 0;
+			}
+			break;
+		case 37:
+			if (client_configs['cfg2675'].bitcfg13265 == 0 && cs2method_10936(93, 9715) == 0) {
+				return 0;
+			}
+			break;
+		case 38:
+			if (client_configs['cfg2744'].bitcfg13674 < 11 && cs2method_10936(93, 9717) == 0) {
+				return 0;
+			}
+			break;
+		case 74:
+			if (client_configs['cfg2744'].bitcfg13674 < 11 && cs2method_10936(93, 9718) == 0) {
+				return 0;
+			}
+			break;
+		case 39:
+			if (client_configs['cfg2539'].bitcfg12504 < 5 && cs2method_10936(93, 18685) == 0) {
+				return 0;
+			}
+			break;
+		case 40:
+			if (client_configs['cfg2487'].bitcfg12170 < 9 && cs2method_10936(93, 20431) == 0) {
+				return 0;
+			}
+			break;
+		case 41:
+			if (client_configs['cfg2487'].bitcfg12170 < 9 && cs2method_10936(93, 20432) == 0) {
+				return 0;
+			}
+			break;
+		case 42:
+			if (client_configs['cfg2272'].bitcfg10459 < 1) {
+				return 0;
+			}
+			break;
+		case 44:
+			if (client_configs['cfg2772'] < 5) {
+				return 0;
+			}
+			break;
+		case 45:
+			if (client_configs['cfg2360'].bitcfg11020 < 140) {
+				return 0;
+			}
+			break;
+		case 46:
+			if (client_configs['cfg2091'].bitcfg9066 == 0) {
+				return 0;
+			}
+			break;
+		case 50:
+			if (client_configs['cfg2091'].bitcfg9065 == 0) {
+				return 0;
+			}
+			break;
+		case 48:
+			if (client_configs['cfg2618'] == 0) {
+				return 0;
+			}
+			break;
+		case 49:
+			if (client_configs['cfg2666'].bitcfg13178 < 270) {
+				return 0;
+			}
+			break;
+		case 73:
+			if (client_configs['cfg2682'].bitcfg13322 < 6) {
+				return 0;
+			}
+			break;
+		case 51:
+			if (client_configs['cfg3454'].bitcfg17465 < 4) {
+				return 0;
+			}
+			break;
+		case 52:
+			if (client_configs['cfg3454'].bitcfg17466 < 4) {
+				return 0;
+			}
+			break;
+		case 53:
+			if (client_configs['cfg3454'].bitcfg17467 < 4) {
+				return 0;
+			}
+			break;
+		case 54:
+			if (client_configs['cfg3454'].bitcfg17468 < 4) {
+				return 0;
+			}
+			break;
+		case 55:
+			if (client_configs['cfg3454'].bitcfg17469 < 4) {
+				return 0;
+			}
+			break;
+		case 56:
+			if (client_configs['cfg3454'].bitcfg17470 < 4) {
+				return 0;
+			}
+			break;
+		case 57:
+			if (client_configs['cfg3454'].bitcfg17471 < 4) {
+				return 0;
+			}
+			break;
+		case 58:
+			if (client_configs['cfg3454'].bitcfg17472 < 4) {
+				return 0;
+			}
+			break;
+		case 59:
+			if (client_configs['cfg3454'].bitcfg17473 < 4) {
+				return 0;
+			}
+			break;
+		case 60:
+			if (client_configs['cfg3454'].bitcfg17474 < 4) {
+				return 0;
+			}
+			break;
+		case 61:
+			if (client_configs['cfg3455'].bitcfg17477 < 4) {
+				return 0;
+			}
+			break;
+		case 62:
+			if (client_configs['cfg3455'].bitcfg17478 < 4) {
+				return 0;
+			}
+			break;
+		case 63:
+			if (client_configs['cfg3455'].bitcfg17479 < 4) {
+				return 0;
+			}
+			break;
+		case 64:
+			if (client_configs['cfg3455'].bitcfg17480 < 4) {
+				return 0;
+			}
+			break;
+		case 65:
+			if (client_configs['cfg3455'].bitcfg17481 < 4) {
+				return 0;
+			}
+			break;
+		case 67:
+			if (client_configs['cfg3455'].bitcfg17484 < 4) {
+				return 0;
+			}
+			break;
+		case 68:
+			if (client_configs['cfg3455'].bitcfg17485 < 4) {
+				return 0;
+			}
+			break;
+		case 69:
+			if (client_configs['cfg3455'].bitcfg17486 < 4) {
+				return 0;
+			}
+			break;
+		case 70:
+			if (client_configs['cfg3456'].bitcfg17490 < 4) {
+				return 0;
+			}
+			break;
+		case 71:
+			if (client_configs['cfg3456'].bitcfg17491 < 4) {
+				return 0;
+			}
+			break;
+		case 72:
+			if (client_configs['cfg3456'].bitcfg17492 < 4) {
+				return 0;
+			}
+			break;
+		case 75:
+			if (client_configs['cfg2620'] < 5) {
+				return 0;
+			}
+			break;
+		case 76:
+			if (client_configs['cfg3831'].bitcfg20127 > 0) {
+				return 0;
+			}
+			break;
+		case 77:
+			if (client_configs['cfg3831'].bitcfg20128 > 0) {
+				return 0;
+			}
+			break;
+		case 78:
+			if (client_configs['cfg3831'].bitcfg20129 > 0) {
+				return 0;
+			}
+			break;
+		case 79:
+			if (client_configs['cfg3831'].bitcfg20130 > 0) {
+				return 0;
+			}
+			break;
+		case 80:
+			if (client_configs['cfg3831'].bitcfg20131 > 0) {
+				return 0;
+			}
+			break;
+		case 81:
+			if (client_configs['cfg3831'].bitcfg20132 > 0) {
+				return 0;
+			}
+			break;
+		case 82:
+			if (client_configs['cfg3831'].bitcfg20133 > 0) {
+				return 0;
+			}
+			break;
+		case 92:
+			if (client_configs['cfg4338'].bitcfg22453 > 0) {
+				return 0;
+			}
+			break;
+		case 83:
+			if (client_configs['cfg3831'].bitcfg20134 > 0) {
+				return 0;
+			}
+			break;
+		case 84:
+			if (client_configs['cfg3831'].bitcfg20135 > 0) {
+				return 0;
+			}
+			break;
+		case 85:
+			if (client_configs['cfg3831'].bitcfg20136 > 0) {
+				return 0;
+			}
+			break;
+		case 86:
+			if (client_configs['cfg3831'].bitcfg20137 > 0) {
+				return 0;
+			}
+			break;
+		case 87:
+			if (client_configs['cfg3831'].bitcfg20138 == 1) {
+				return 0;
+			}
+			break;
+		case 88:
+			if (client_configs['cfg4033'].bitcfg21319 < 4) {
+				return 0;
+			}
+			break;
+		case 89:
+			if (client_configs['cfg4033'].bitcfg21320 < 4) {
+				return 0;
+			}
+			break;
+		case 90:
+			if (client_configs['cfg4033'].bitcfg21321 < 4) {
+				return 0;
+			}
+			break;
+		case 91:
+			if (client_configs['cfg2265'] < 15) {
+				return 0;
+			}
+			break;
+		case 93:
+			if (v1 < 1) {
+				return 0;
+			}
+			break;
+		case 94:
+			if (v1 < 2) {
+				return 0;
+			}
+			break;
+		case 95:
+			if (v1 < 3) {
+				return 0;
+			}
+			break;
+		case 96:
+			if (v0 < 1) {
+				return 0;
+			}
+			break;
+		case 97:
+			if (v0 < 2) {
+				return 0;
+			}
+			break;
+		case 98:
+			if (v0 < 3) {
+				return 0;
+			}
+	}
+	return 1;
+}

@@ -1,0 +1,56 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2521() {
+	int v2 = 0;
+	int v1 = 0;
+	int v4 = 0;
+	int v0 = 0;
+	int v7 = -1;
+	int v3 = -1;
+	int v5 = cs2method_10968(cs2method_10461(cs2method_10236(55574530), 180), 4);
+	int v6 = cs2method_10968(cs2method_10461(cs2method_10823(55574530), 128), 3);
+	while (v2 < 5 && idx17mapData('i', 'o', cs2_configs['cfg875'], v2) != 11760) {
+		int v8 = idx17mapData('i', 'o', cs2_configs['cfg875'], v2);
+		switch (v2) {
+			case 0:
+				cs2method_10026(55574547, cs2method_10018(cs2method_10480(v8)));
+				v0 = cs2_configs['cfg876'];
+				break;
+			case 1:
+				cs2method_10026(55574548, cs2method_10018(cs2method_10480(v8)));
+				v0 = cs2_configs['cfg877'];
+				break;
+			case 2:
+				cs2method_10026(55574549, cs2method_10018(cs2method_10480(v8)));
+				v0 = cs2_configs['cfg878'];
+				break;
+			case 3:
+				cs2method_10026(55574550, cs2method_10018(cs2method_10480(v8)));
+				v0 = cs2_configs['cfg879'];
+				break;
+			case 4:
+				cs2method_10026(55574551, cs2method_10018(cs2method_10480(v8)));
+				v0 = cs2_configs['cfg880'];
+		}
+		cs2method_10606(55574530, 5, v2);
+		cs2method_10013(36, 32, 0, 0);
+		cs2method_10063(cs2method_10051(cs2method_10060(36, v5), cs2method_10038(v2, 5)), cs2method_10051(cs2method_10968(v2, 5), cs2method_10060(32, v6)), 0, 0);
+		cs2method_11070(cs2method_10480(v8), v0);
+		cs2method_10200("<col=ff981f>" + (string)cs2method_10018(cs2method_10480(v8)));
+		cs2method_10057(1, "Select");
+		cs2method_10057(2, "Examine");
+		cs2method_10278(3355443);
+		v2 = cs2method_10060(v2, 1);
+	}
+	return;
+}

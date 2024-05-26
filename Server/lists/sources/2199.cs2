@@ -1,0 +1,28 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2199() {
+	switch (cs2method_10877(4)) {
+		case 0:
+			cs2_configs['cfg1136'] = new WidgetPointer(932,10);
+			break;
+		case 1:
+			cs2_configs['cfg1136'] = new WidgetPointer(932,11);
+			break;
+		case 2:
+			cs2_configs['cfg1136'] = new WidgetPointer(932,12);
+			break;
+		case 3:
+			cs2_configs['cfg1136'] = new WidgetPointer(932,13);
+	}
+	return;
+}

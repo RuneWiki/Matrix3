@@ -1,0 +1,191 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_6506_struct(2,0,0) script_6506(int a0,int a1) {
+	if (idx22mapAttribute(a0, 2976) == 1) {
+		return new script_6506_struct(cs2_configs['cfg2215'], cs2_configs['cfg2216']);
+	}
+	switch (a0) {
+		default:
+			return new script_6506_struct(0, 0);
+		case 14881:
+			return new script_6506_struct(cs2_configs['cfg2091'], cs2_configs['cfg2092']);
+		case 14882:
+			return new script_6506_struct(cs2_configs['cfg2091'], cs2_configs['cfg2092']);
+		case 14677:
+			return new script_6506_struct(cs2_configs['cfg2093'], cs2_configs['cfg2094']);
+		case 14678:
+			return new script_6506_struct(cs2_configs['cfg2095'], cs2_configs['cfg2096']);
+		case 14679:
+			return new script_6506_struct(cs2_configs['cfg2097'], cs2_configs['cfg2098']);
+		case 14680:
+			return new script_6506_struct(cs2_configs['cfg2099'], cs2_configs['cfg2100']);
+		case 14681:
+			return new script_6506_struct(cs2_configs['cfg2101'], cs2_configs['cfg2102']);
+		case 14682:
+			return new script_6506_struct(cs2_configs['cfg2103'], cs2_configs['cfg2104']);
+		case 5670:
+			return new script_6506_struct(cs2_configs['cfg4116'], cs2_configs['cfg4117']);
+		case 14683:
+			return new script_6506_struct(cs2_configs['cfg2105'], cs2_configs['cfg2106']);
+		case 14684:
+			return new script_6506_struct(cs2_configs['cfg2107'], cs2_configs['cfg2108']);
+		case 14685:
+			return new script_6506_struct(cs2_configs['cfg2109'], cs2_configs['cfg2110']);
+		case 14686:
+			return new script_6506_struct(cs2_configs['cfg2111'], cs2_configs['cfg2112']);
+		case 14687:
+			return new script_6506_struct(cs2_configs['cfg2113'], cs2_configs['cfg2114']);
+		case 14688:
+			return new script_6506_struct(cs2_configs['cfg2115'], cs2_configs['cfg2116']);
+		case 19255:
+			return new script_6506_struct(cs2_configs['cfg2713'], cs2_configs['cfg2714']);
+		case 28290:
+			return new script_6506_struct(cs2_configs['cfg4196'], cs2_configs['cfg4197']);
+		case 14698:
+			return new script_6506_struct(cs2_configs['cfg2117'], cs2_configs['cfg2118']);
+		case 14699:
+			return new script_6506_struct(cs2_configs['cfg2119'], cs2_configs['cfg2120']);
+		case 3107:
+			return new script_6506_struct(cs2_configs['cfg4118'], cs2_configs['cfg4119']);
+		case 14700:
+			return new script_6506_struct(cs2_configs['cfg2121'], cs2_configs['cfg2122']);
+		case 14701:
+			return new script_6506_struct(cs2_configs['cfg2123'], cs2_configs['cfg2124']);
+		case 14702:
+			return new script_6506_struct(cs2_configs['cfg2125'], cs2_configs['cfg2126']);
+		case 14703:
+			return new script_6506_struct(cs2_configs['cfg2127'], cs2_configs['cfg2128']);
+		case 14704:
+			return new script_6506_struct(cs2_configs['cfg2129'], cs2_configs['cfg2130']);
+		case 14705:
+			return new script_6506_struct(cs2_configs['cfg2131'], cs2_configs['cfg2132']);
+		case 14706:
+			return new script_6506_struct(cs2_configs['cfg2133'], cs2_configs['cfg2134']);
+		case 14707:
+			return new script_6506_struct(cs2_configs['cfg2135'], cs2_configs['cfg2136']);
+		case 14708:
+			return new script_6506_struct(cs2_configs['cfg2137'], cs2_configs['cfg2138']);
+		case 14709:
+			return new script_6506_struct(cs2_configs['cfg2139'], cs2_configs['cfg2140']);
+		case 14710:
+			return new script_6506_struct(cs2_configs['cfg2141'], cs2_configs['cfg2142']);
+		case 14711:
+			return new script_6506_struct(cs2_configs['cfg2143'], cs2_configs['cfg2144']);
+		case 14712:
+			return new script_6506_struct(cs2_configs['cfg2145'], cs2_configs['cfg2146']);
+		case 14713:
+			return new script_6506_struct(cs2_configs['cfg2147'], cs2_configs['cfg2148']);
+		case 14714:
+			return new script_6506_struct(cs2_configs['cfg2149'], cs2_configs['cfg2150']);
+		case 14715:
+			return new script_6506_struct(cs2_configs['cfg2151'], cs2_configs['cfg2152']);
+		case 14716:
+			return new script_6506_struct(cs2_configs['cfg2153'], cs2_configs['cfg2154']);
+		case 14717:
+			return new script_6506_struct(cs2_configs['cfg2155'], cs2_configs['cfg2156']);
+		case 14718:
+			return new script_6506_struct(cs2_configs['cfg2157'], cs2_configs['cfg2158']);
+		case 14719:
+			return new script_6506_struct(cs2_configs['cfg2159'], cs2_configs['cfg2160']);
+		case 14720:
+			return new script_6506_struct(cs2_configs['cfg2161'], cs2_configs['cfg2162']);
+		case 14721:
+			return new script_6506_struct(cs2_configs['cfg2163'], cs2_configs['cfg2164']);
+		case 19252:
+			return new script_6506_struct(cs2_configs['cfg2715'], cs2_configs['cfg2716']);
+		case 25028:
+			return new script_6506_struct(cs2_configs['cfg3893'], cs2_configs['cfg3894']);
+		case 14690:
+			return new script_6506_struct(cs2_configs['cfg2165'], cs2_configs['cfg2166']);
+		case 19253:
+			return new script_6506_struct(cs2_configs['cfg2717'], cs2_configs['cfg2718']);
+		case 24188:
+			return new script_6506_struct(cs2_configs['cfg3895'], cs2_configs['cfg3896']);
+		case 24189:
+			return new script_6506_struct(cs2_configs['cfg3897'], cs2_configs['cfg3898']);
+		case 24190:
+			return new script_6506_struct(cs2_configs['cfg3899'], cs2_configs['cfg3900']);
+		case 28287:
+			return new script_6506_struct(cs2_configs['cfg4198'], cs2_configs['cfg4199']);
+		case 7260:
+			return new script_6506_struct(cs2_configs['cfg4173'], cs2_configs['cfg4174']);
+		case 14663:
+			return new script_6506_struct(cs2_configs['cfg2167'], cs2_configs['cfg2168']);
+		case 14664:
+			return new script_6506_struct(cs2_configs['cfg2169'], cs2_configs['cfg2170']);
+		case 6336:
+			return new script_6506_struct(cs2_configs['cfg4120'], cs2_configs['cfg4121']);
+		case 14665:
+			return new script_6506_struct(cs2_configs['cfg2171'], cs2_configs['cfg2172']);
+		case 14666:
+			return new script_6506_struct(cs2_configs['cfg2173'], cs2_configs['cfg2174']);
+		case 14667:
+			return new script_6506_struct(cs2_configs['cfg2175'], cs2_configs['cfg2176']);
+		case 14668:
+			return new script_6506_struct(cs2_configs['cfg2177'], cs2_configs['cfg2178']);
+		case 14669:
+			return new script_6506_struct(cs2_configs['cfg2179'], cs2_configs['cfg2180']);
+		case 14670:
+			return new script_6506_struct(cs2_configs['cfg2181'], cs2_configs['cfg2182']);
+		case 14671:
+			return new script_6506_struct(cs2_configs['cfg2183'], cs2_configs['cfg2184']);
+		case 14672:
+			return new script_6506_struct(cs2_configs['cfg2185'], cs2_configs['cfg2186']);
+		case 14673:
+			return new script_6506_struct(cs2_configs['cfg2187'], cs2_configs['cfg2188']);
+		case 14674:
+			return new script_6506_struct(cs2_configs['cfg2189'], cs2_configs['cfg2190']);
+		case 19340:
+			return new script_6506_struct(cs2_configs['cfg2723'], cs2_configs['cfg2724']);
+		case 19341:
+			return new script_6506_struct(cs2_configs['cfg2725'], cs2_configs['cfg2726']);
+		case 19251:
+			return new script_6506_struct(cs2_configs['cfg2719'], cs2_configs['cfg2720']);
+		case 28289:
+			return new script_6506_struct(cs2_configs['cfg4200'], cs2_configs['cfg4201']);
+		case 14725:
+			return new script_6506_struct(cs2_configs['cfg2191'], cs2_configs['cfg2192']);
+		case 14726:
+			return new script_6506_struct(cs2_configs['cfg2193'], cs2_configs['cfg2194']);
+		case 14727:
+			return new script_6506_struct(cs2_configs['cfg2195'], cs2_configs['cfg2196']);
+		case 19272:
+			return new script_6506_struct(cs2_configs['cfg4122'], cs2_configs['cfg4123']);
+		case 14728:
+			return new script_6506_struct(cs2_configs['cfg2197'], cs2_configs['cfg2198']);
+		case 14729:
+			return new script_6506_struct(cs2_configs['cfg2199'], cs2_configs['cfg2200']);
+		case 14730:
+			return new script_6506_struct(cs2_configs['cfg2201'], cs2_configs['cfg2202']);
+		case 14731:
+			return new script_6506_struct(cs2_configs['cfg2203'], cs2_configs['cfg2204']);
+		case 14732:
+			return new script_6506_struct(cs2_configs['cfg2205'], cs2_configs['cfg2206']);
+		case 14733:
+			return new script_6506_struct(cs2_configs['cfg2207'], cs2_configs['cfg2208']);
+		case 14734:
+			return new script_6506_struct(cs2_configs['cfg2209'], cs2_configs['cfg2210']);
+		case 14735:
+			return new script_6506_struct(cs2_configs['cfg2211'], cs2_configs['cfg2212']);
+		case 14736:
+			return new script_6506_struct(cs2_configs['cfg2213'], cs2_configs['cfg2214']);
+		case 19342:
+			return new script_6506_struct(cs2_configs['cfg2727'], cs2_configs['cfg2728']);
+		case 19343:
+			return new script_6506_struct(cs2_configs['cfg2729'], cs2_configs['cfg2730']);
+		case 19254:
+			return new script_6506_struct(cs2_configs['cfg2721'], cs2_configs['cfg2722']);
+		case 28288:
+			return new script_6506_struct(cs2_configs['cfg4202'], cs2_configs['cfg4203']);
+	}
+}

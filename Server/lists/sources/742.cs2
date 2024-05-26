@@ -1,0 +1,46 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_742() {
+	int v2 = client_configs['cfg2712'];
+	int v4 = 0;
+	if (v2 == 0) {
+		return;
+	}
+	if (v2 == 10) {
+		cs2_configs['cfg105'] = cs2method_10461(cs2_configs['cfg105'], 1);
+		if (client_configs['cfg2709'].bitcfg13481 != cs2_configs['cfg105']) {
+			if (client_configs['cfg2709'].bitcfg13481 > cs2_configs['cfg105']) {
+				int v5 = 1;
+				cs2method_10810("Part of the mechanism jams due to your frenzied manipulation.");
+			}
+			cs2_configs['cfg105'] = client_configs['cfg2709'].bitcfg13481;
+		}
+		if (cs2_configs['cfg105'] == 0) {
+			cs2method_10810("The mechanism issues forth a whine and shuts down.");
+			script_675();
+		}
+		script_738();
+		return;
+	}
+	int v3 = cs2method_10461(v2, 1);
+	if (cs2method_10441(cs2_configs['cfg106'], v3) == 1) {
+		return;
+	}
+	cs2_configs['cfg106'] = cs2method_10668(cs2_configs['cfg106'], v3);
+	cs2_configs['cfg105'] = cs2method_10060(cs2_configs['cfg105'], 5);
+	script_738();
+	int v0 = idx17mapData('i', 'm', 1155, v3);
+	int v1 = (int)idx17mapData('i', 'I', 1154, v3);
+	cs2method_10336(v0, v1);
+	return;
+}

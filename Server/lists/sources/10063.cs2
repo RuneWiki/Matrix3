@@ -1,0 +1,35 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_10063(int a0) {
+	int v2 = 0;
+	object v1 = "null";
+	if (script_9745(a0) == 1) {
+		cs2method_10670(43546, 1, 0, 100);
+		script_10078(a0);
+	} else if (v0 >= cs2method_10872(script_9743(), cs2_configs['cfg4158'])) {
+		object v3;
+		if (v0 >= cs2_configs['cfg4158']) {
+			v3 = "You have already frozen " + (string)cs2method_10379(cs2_configs['cfg4158']) + " categories and cannot freeze any more.";
+		} else {
+			v3 = "You do not have enough Hearts of Ice to freeze any more categories.";
+		}
+		script_10057(script_10065(a0), v3, 100);
+		cs2method_10670(10046, 1, 0, 200);
+	} else {
+		cs2method_10670(43561, 1, 0, 100);
+		script_10077(a0);
+	}
+	int v0 = script_9744();
+	script_10070();
+	return;
+}

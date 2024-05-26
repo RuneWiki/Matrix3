@@ -1,0 +1,32 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2278() {
+	if (cs2_configs['cfg1198'] == 1) {
+		cs2method_10026(61145351, cs2_configs['cfg2383']);
+		cs2method_10026(61145352, idx17mapData('i', 's', 2857, cs2_configs['cfg1203']));
+		cs2method_10026(61145353, idx17mapData('i', 's', 2857, cs2_configs['cfg1204']));
+		cs2method_10026(61145354, idx17mapData('i', 's', 2857, cs2_configs['cfg1205']));
+		cs2method_10026(61145355, idx17mapData('i', 's', 2857, cs2_configs['cfg1206']));
+		cs2method_10026(61145356, idx17mapData('i', 's', 2857, cs2_configs['cfg1207']));
+		cs2method_10026(61145357, idx17mapData('i', 's', 2857, cs2_configs['cfg1208']));
+	} else {
+		cs2method_10026(61145351, "");
+		cs2method_10026(61145352, "");
+		cs2method_10026(61145353, "");
+		cs2method_10026(61145354, "");
+		cs2method_10026(61145355, "");
+		cs2method_10026(61145356, "");
+		cs2method_10026(61145357, "");
+	}
+	return;
+}

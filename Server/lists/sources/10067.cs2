@@ -1,0 +1,85 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_10067(int a0,int a1) {
+	int v9 = -1;
+	int v8 = -1;
+	int v3 = -1;
+	int v6 = -1;
+	int v2 = -1;
+	int v12 = -1;
+	int v11 = -1;
+	object v4 = "";
+	int v13 = 0;
+	int v21 = 82116904;
+	int v5 = a0;
+	script_9775_struct(3,0,0) v14 = script_9775(v5);
+	int v16 = v14.intpart_2;
+	int v17 = v14.intpart_1;
+	int v10 = v14.intpart_0;
+	object v15 = script_9738(a0);
+	int v18 = script_9739(a0);
+	int v22 = a1;
+	script_9771_struct(4,0,0) v1 = script_9771(v22);
+	int v19 = v1.intpart_3;
+	int v7 = v1.intpart_2;
+	int v20 = v1.intpart_1;
+	int v0 = v1.intpart_0;
+	cs2method_10758(script_9780(v16), v20);
+	cs2method_10039(v10, v17, v7);
+	if (script_9745(a0) == 1) {
+		cs2method_10467(0, v19);
+	} else {
+		cs2method_10467(1, v19);
+	}
+	script_10058(a0, v0);
+	cs2method_21121(new function<script_6966>(int a0,object a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10) {
+		script_6967(a10, a2, a1, a7, a0, a8, a4, a6, a5, a9, a3);
+		return;
+	}, new WidgetPointer(v21), new WidgetPointer(-32768,3), -2147483643, v10, v17, v16, (string)v15, a0, v18, -2147483647, -2147483646, "IIioiisiiii", new WidgetPointer(v20));
+	cs2method_20750(new function<script_10089>() {
+		script_10090();
+		return;
+	}, "", new WidgetPointer(v20));
+	switch (a1) {
+		case 1:
+			cs2_configs['cfg3987'] = a0;
+			break;
+		case 2:
+			cs2_configs['cfg3988'] = a0;
+			break;
+		case 3:
+			cs2_configs['cfg3989'] = a0;
+			break;
+		case 4:
+			cs2_configs['cfg3990'] = a0;
+			break;
+		case 5:
+			cs2_configs['cfg3991'] = a0;
+			break;
+		case 6:
+			cs2_configs['cfg3992'] = a0;
+			break;
+		case 7:
+			cs2_configs['cfg3993'] = a0;
+			break;
+		case 8:
+			cs2_configs['cfg3994'] = a0;
+			break;
+		case 9:
+			cs2_configs['cfg3995'] = a0;
+			break;
+		case 10:
+			cs2_configs['cfg3996'] = a0;
+	}
+	return;
+}

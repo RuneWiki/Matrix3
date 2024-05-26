@@ -1,0 +1,131 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1509() {
+	cs2method_10273(47775759);
+	script_7794(47775759, 21361);
+	cs2method_10273(47775746);
+	script_7794(47775746, 21362);
+	script_1516(47775746, 380, 100);
+	cs2method_10273(47775762);
+	script_7794(47775762, 21361);
+	cs2_configs['cfg778'] = client_configs['cfg172'].bitcfg481;
+	script_1513();
+	cs2method_20348(new function<script_1510>() {
+		if (client_configs['cfg172'].bitcfg481 != cs2_configs['cfg778']) {
+			cs2_configs['cfg778'] = client_configs['cfg172'].bitcfg481;
+			script_1513();
+		}
+		return;
+	}, 172, 1, "Y", new WidgetPointer(729,7));
+	cs2method_20243(new function<script_1511>() {
+		script_1513();
+		return;
+	}, 1010, 1011, 1012, 1013, 1016, 1017, 6, "Y", new WidgetPointer(729,7));
+	cs2method_20486(new function<script_1512>(int a0,int a1) {
+		if (a1 != 1) {
+			return;
+		}
+		switch (a0) {
+			case 1:
+			case 2:
+				if (script_2793(cs2_configs['cfg1010'], 3) != -1) {
+					return;
+				}
+		}
+		cs2_configs['cfg778'] = a0;
+		script_1513();
+		return;
+	}, -2147483644, 0, "ii", new WidgetPointer(729,11));
+	cs2method_20486(new function<script_1512>(int a0,int a1) {
+		if (a0 != 1) {
+			return;
+		}
+		switch (a1) {
+			case 1:
+			case 2:
+				if (script_2793(cs2_configs['cfg1010'], 3) != -1) {
+					return;
+				}
+		}
+		cs2_configs['cfg778'] = a1;
+		script_1513();
+		return;
+	}, -2147483644, 1, "ii", new WidgetPointer(729,12));
+	cs2method_20486(new function<script_1512>(int a0,int a1) {
+		if (a1 != 1) {
+			return;
+		}
+		switch (a0) {
+			case 1:
+			case 2:
+				if (script_2793(cs2_configs['cfg1010'], 3) != -1) {
+					return;
+				}
+		}
+		cs2_configs['cfg778'] = a0;
+		script_1513();
+		return;
+	}, -2147483644, 2, "ii", new WidgetPointer(729,13));
+	cs2method_20486(new function<script_1512>(int a0,int a1) {
+		if (a0 != 1) {
+			return;
+		}
+		switch (a1) {
+			case 1:
+			case 2:
+				if (script_2793(cs2_configs['cfg1010'], 3) != -1) {
+					return;
+				}
+		}
+		cs2_configs['cfg778'] = a1;
+		script_1513();
+		return;
+	}, -2147483644, 3, "ii", new WidgetPointer(729,14));
+	object v1 = "Choose a top";
+	cs2method_21121(new function<script_1160>(object a0,int a1,int a2,int a3,int a4,int a5) {
+		script_1163(a5, a0, a4, a2, a1, a3);
+		return;
+	}, new WidgetPointer(-32768,3), -1, new WidgetPointer(729,22), (string)v1, 25, 512, "IiIsii", new WidgetPointer(729,11));
+	cs2method_20750(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(729,22), "I", new WidgetPointer(729,11));
+	object v0 = "Choose some sleeves";
+	cs2method_21121(new function<script_1160>(int a0,int a1,object a2,int a3,int a4,int a5) {
+		script_1163(a3, a2, a4, a5, a1, a0);
+		return;
+	}, new WidgetPointer(-32768,3), -1, new WidgetPointer(729,22), (string)v0, 25, 512, "IiIsii", new WidgetPointer(729,12));
+	cs2method_20750(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(729,22), "I", new WidgetPointer(729,12));
+	object v3 = "Decorate your wrists";
+	cs2method_21121(new function<script_1160>(int a0,int a1,int a2,int a3,int a4,object a5) {
+		script_1163(a3, a5, a0, a2, a4, a1);
+		return;
+	}, new WidgetPointer(-32768,3), -1, new WidgetPointer(729,22), (string)v3, 25, 512, "IiIsii", new WidgetPointer(729,13));
+	cs2method_20750(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(729,22), "I", new WidgetPointer(729,13));
+	object v2 = "Choose some leggings";
+	cs2method_21121(new function<script_1160>(int a0,int a1,int a2,int a3,object a4,int a5) {
+		script_1163(a5, a4, a3, a2, a0, a1);
+		return;
+	}, new WidgetPointer(-32768,3), -1, new WidgetPointer(729,22), (string)v2, 25, 512, "IiIsii", new WidgetPointer(729,14));
+	cs2method_20750(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(729,22), "I", new WidgetPointer(729,14));
+	return;
+}

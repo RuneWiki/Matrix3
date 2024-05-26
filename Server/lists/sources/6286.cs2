@@ -1,0 +1,29 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6286() {
+	if (cs2_configs['cfg1929'] < 0) {
+		cs2_configs['cfg1929'] = 0;
+	}
+	if (cs2_configs['cfg1929'] == 0) {
+		cs2_configs['cfg1929'] = 1;
+		cs2method_10467(1, 84934678);
+		cs2method_10467(0, 84934662);
+		cs2method_10112(120, 2, 2, 0, 84934679);
+	} else {
+		cs2_configs['cfg1929'] = 0;
+		cs2method_10467(0, 84934678);
+		cs2method_10467(1, 84934662);
+		cs2method_10112(120, 60, 2, 0, 84934679);
+	}
+	return;
+}

@@ -1,0 +1,28 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+object script_2057(int a0,int a1) {
+	if (a0 == -1) {
+		return "No voyage struct!";
+	}
+	if (a0 == 17069) {
+		return "No voyage selected!";
+	}
+	if (a0 == 17071) {
+		if (a1 == 0) {
+			return "Your ship has been damaged and requires a period of time in dry dock to recover.";
+		}
+		return "Ship repairs under way.";
+	}
+	object v0 = idx22mapAttribute(a0, 2369);
+	return v0;
+}

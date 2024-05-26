@@ -1,0 +1,112 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_9631(int a0,int a1,int a2) {
+	int v1 = 0;
+	int v3 = 0;
+	int v0 = 0;
+	int v5 = 0;
+	int v2 = a2;
+	while (v5 == 0 && (v1 == v3 || v1 == v0)) {
+		v2 = cs2method_10060(v2, 5);
+		if (cs2method_11038(a0, v2) == 1) {
+			if (interfaceDefsAttribute(4032) != -1) {
+				if (interfaceDefsAttribute(4032) == 1) {
+					if (interfaceDefsAttribute(4033) != 1) {
+						v1 = cs2method_10060(v1, 1);
+						if (cs2method_10713() == 20326) {
+							v3 = cs2method_10060(v3, 1);
+						} else {
+							if (cs2method_10713() == 20268) {
+								v0 = cs2method_10060(v0, 1);
+							}
+						}
+					}
+				} else {
+					if (interfaceDefsAttribute(4032) == 0) {
+						v5 = 1;
+					}
+				}
+			}
+		} else {
+			v5 = 1;
+		}
+	}
+	int v6 = a2;
+	int v4 = 0;
+	while (v4 == 0 && (v1 == v3 || v1 == v0)) {
+		v6 = cs2method_10461(v6, 5);
+		if (v6 < 0) {
+			v4 = 1;
+		} else if (cs2method_11038(a0, v6) == 1) {
+			if (interfaceDefsAttribute(4032) != -1) {
+				if (interfaceDefsAttribute(4032) == 1) {
+					if (interfaceDefsAttribute(4033) != 1) {
+						v1 = cs2method_10060(v1, 1);
+						if (cs2method_10713() == 20326) {
+							v3 = cs2method_10060(v3, 1);
+						} else {
+							if (cs2method_10713() == 20268) {
+								v0 = cs2method_10060(v0, 1);
+							}
+						}
+					}
+				} else {
+					if (interfaceDefsAttribute(4032) == 0) {
+						flow_32:
+							IF (v1 == v3) 
+								GOTO	flow_33
+							GOTO	flow_34
+						flow_33:
+							IF (a1 == 2) 
+								GOTO	flow_37
+						flow_34:
+							IF (v1 > 0 && v1 == v3 && a1 == 0) 
+								GOTO	flow_37
+							GOTO	flow_38
+						flow_37:
+							cs2method_10310(20328);
+							GOTO	flow_50
+						flow_38:
+							IF (v1 == v0) 
+								GOTO	flow_39
+							GOTO	flow_40
+						flow_39:
+							IF (a1 == 2) 
+								GOTO	flow_43
+						flow_40:
+							IF (v1 > 0 && v1 == v0 && a1 == 1) 
+								GOTO	flow_43
+							GOTO	flow_44
+						flow_43:
+							cs2method_10310(20328);
+							GOTO	flow_50
+						flow_44:
+							if (v1 == v3 && a1 == 1) {
+								cs2method_10310(20326);
+							} else {
+								if (v1 == v0 && a1 == 0) {
+									cs2method_10310(20268);
+								}
+							}
+						flow_50:
+							v4 = 1;
+					}
+				}
+			}
+		} else {
+			v4 = 1;
+		}
+	}
+	return;
+}

@@ -1,0 +1,75 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1227(int a0,int a1,int a2) {
+	if (client_configs['cfg3008'].bitcfg15151 < 1 || client_configs['cfg3008'].bitcfg15151 > 63) {
+		cs2method_10467(1, a1);
+		cs2method_10467(1, a2);
+		return;
+	}
+	if (client_configs['cfg3008'].bitcfg15151 == 63) {
+		cs2method_10026(a2, "TzTok-Jad");
+	} else {
+		cs2method_10026(a2, "Wave " + (string)cs2method_10379(client_configs['cfg3008'].bitcfg15151));
+	}
+	int v0 = cs2method_10461(0, cs2method_10823(a0));
+	cs2method_10112(0, v0, 1, 1, a1);
+	cs2method_10112(0, v0, 1, 1, a2);
+	cs2method_10467(0, a1);
+	cs2method_10467(0, a2);
+	cs2method_20162(new function<script_1228>(int a0,int a1,int a2,int a3) {
+		int v2 = cs2method_10823(a2);
+		int v0 = cs2method_10461(cs2method_10133(), a3);
+		int v1 = 0;
+		if (v0 == 25) {
+			cs2method_10670(8105, 1, 0, 100);
+		}
+		if (v0 <= 30) {
+			int v3 = cs2method_10461(cs2method_10122(v0, 30, v2), v2);
+			cs2method_10112(0, v3, 1, 1, a0);
+			cs2method_10112(0, v3, 1, 1, a1);
+			return;
+		}
+		if (v0 < 170) {
+			return;
+		}
+		if (v0 < 200) {
+			int v3 = cs2method_10461(0, cs2method_10122(cs2method_10461(v0, 170), 30, v2));
+			cs2method_10112(0, v3, 1, 1, a0);
+			cs2method_10112(0, v3, 1, 1, a1);
+			return;
+		}
+		cs2method_20162(new function<none>() {
+		}, "", new WidgetPointer(a2));
+		cs2method_10495(a0);
+		cs2method_10467(1, a0);
+		cs2method_10467(1, a1);
+		cs2method_10467(1, a2);
+		return;
+	}, new WidgetPointer(a0), new WidgetPointer(a1), new WidgetPointer(a2), cs2method_10133(), "IIIi", new WidgetPointer(a0));
+	cs2method_11127(1, a1, "Dismiss");
+	cs2method_20486(new function<script_1229>(int a0,int a1,int a2,int a3) {
+		if (a3 != 1) {
+			return;
+		}
+		cs2method_20486(new function<none>() {
+		}, "", new WidgetPointer(a2));
+		cs2method_20162(new function<none>() {
+		}, "", new WidgetPointer(a0));
+		cs2method_10495(a2);
+		cs2method_10467(1, a2);
+		cs2method_10467(1, a1);
+		cs2method_10467(1, a0);
+		return;
+	}, -2147483644, new WidgetPointer(a0), new WidgetPointer(a1), new WidgetPointer(a2), "iIII", new WidgetPointer(a1));
+	return;
+}

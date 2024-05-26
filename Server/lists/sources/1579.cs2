@@ -1,0 +1,25 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1579(int a0,int a1) {
+	script_125(a0, a1);
+	if (a1 == 36044801) {
+		if (script_6354(94437407) == 1) {
+			script_125(cs2_configs['cfg1036'], 94437407);
+		}
+	} else {
+		if (script_6354(36044801) == 1) {
+			script_125(cs2_configs['cfg1036'], 36044801);
+		}
+	}
+	return;
+}

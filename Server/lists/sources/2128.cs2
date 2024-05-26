@@ -1,0 +1,35 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2128(int a0,int a1) {
+	switch (a1) {
+		case 1:
+			cs2method_10336(16036, a0);
+			cs2method_10740(0, 0, script_686(cs2_configs['cfg680'], 2048), cs2_configs['cfg681'], script_686(cs2_configs['cfg682'], 2048), 800, a0);
+			break;
+		case 2:
+			cs2method_10336(16025, a0);
+			cs2method_10740(0, 17, script_686(cs2_configs['cfg683'], 2048), cs2_configs['cfg684'], script_686(cs2_configs['cfg685'], 2048), 800, a0);
+			break;
+		case 3:
+			cs2method_10336(16022, a0);
+			cs2method_10740(0, 0, script_686(cs2_configs['cfg686'], 2048), cs2_configs['cfg687'], script_686(cs2_configs['cfg688'], 2048), 800, a0);
+			break;
+		case 4:
+			cs2method_10336(16034, a0);
+			cs2method_10740(0, 0, script_686(cs2_configs['cfg689'], 2048), cs2_configs['cfg690'], script_686(cs2_configs['cfg691'], 2048), 800, a0);
+			break;
+		default:
+			cs2method_10336(-1, a0);
+	}
+	return;
+}

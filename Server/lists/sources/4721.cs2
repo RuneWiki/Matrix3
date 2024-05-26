@@ -1,0 +1,35 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_4721_struct(0,10,0) script_4721() {
+	object v6 = "";
+	object v19 = "";
+	object v3 = "";
+	object v14 = "";
+	object v1 = "";
+	object v15 = "";
+	object v2 = "";
+	object v13 = "";
+	object v11 = "";
+	object v17 = "";
+	object v16 = script_4345(clan_configs['cfg20'].bitcfg8817, clan_configs['cfg20'].bitcfg8818);
+	object v18 = script_4345(clan_configs['cfg20'].bitcfg8819, clan_configs['cfg20'].bitcfg8820);
+	object v10 = script_4345(clan_configs['cfg21'].bitcfg8821, clan_configs['cfg21'].bitcfg8822);
+	object v5 = script_4345(clan_configs['cfg21'].bitcfg8823, clan_configs['cfg21'].bitcfg8824);
+	object v0 = script_4345(clan_configs['cfg22'].bitcfg8825, clan_configs['cfg22'].bitcfg8826);
+	object v9 = script_4345(clan_configs['cfg22'].bitcfg8827, clan_configs['cfg22'].bitcfg8828);
+	object v8 = script_4345(clan_configs['cfg23'].bitcfg8829, clan_configs['cfg23'].bitcfg8830);
+	object v4 = script_4345(clan_configs['cfg23'].bitcfg8831, clan_configs['cfg23'].bitcfg8832);
+	object v12 = script_4345(clan_configs['cfg24'].bitcfg8833, clan_configs['cfg24'].bitcfg8834);
+	object v7 = script_4345(clan_configs['cfg24'].bitcfg8835, clan_configs['cfg24'].bitcfg8836);
+	return new script_4721_struct(v16, v18, v10, v5, v0, v9, v8, v4, v12, v7);
+}

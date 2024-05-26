@@ -1,0 +1,57 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3160(int a0,int a1) {
+	if (cs2method_10870() == 1 || script_5280() == 1) {
+		return;
+	}
+	switch (a0) {
+		case 84:
+			if (cs2method_10435() == 1) {
+				if (cs2method_10265(cs2_configs['cfg2479']) > 0) {
+					cs2method_10190(2);
+					cs2method_10539(cs2_configs['cfg2479']);
+				}
+			} else {
+				cs2method_11102(43, 0, "You are not in a Clan.");
+			}
+			cs2_configs['cfg2479'] = "";
+			cs2method_10026(59768856, cs2method_11053(cs2_configs['cfg2479']));
+			cs2_configs['cfg1098'] = cs2method_10265(cs2_configs['cfg2479']);
+			script_1390(59768856, 59768857, cs2_configs['cfg2479']);
+			break;
+		case 102:
+		case 103:
+		case 98:
+		case 99:
+		case 96:
+		case 97:
+			cs2_configs['cfg1098'] = script_1553(a0, cs2_configs['cfg2479'], cs2_configs['cfg1098']);
+			script_1390(59768856, 59768857, cs2_configs['cfg2479']);
+			break;
+		default:
+			if (cs2method_10698(a1) == 1 || a0 == 85 || a0 == 101) {
+				int v2 = cs2_configs['cfg1098'];
+				int v0 = 0;
+				int v5 = a0;
+				int v1 = a1;
+				object v4 = cs2_configs['cfg2479'];
+				script_802_struct(1,1,0) v3 = script_802(v2, v4, v0, v5, v1);
+				object v6 = v3.objectpart_0;
+				cs2_configs['cfg1098'] = v3.intpart_0;
+				cs2_configs['cfg2479'] = (string)v6;
+				cs2method_10026(59768856, cs2method_11053(cs2_configs['cfg2479']));
+				script_1390(59768856, 59768857, cs2_configs['cfg2479']);
+			}
+	}
+	return;
+}

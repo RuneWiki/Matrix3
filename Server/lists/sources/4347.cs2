@@ -1,0 +1,28 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4347() {
+	int v0 = -1;
+	if (client_configs['cfg2072'] > 0) {
+		int v1 = idx17mapData('i', 'g', 3703, client_configs['cfg2072']);
+		if (v1 != -1) {
+			cs2method_10467(1, 71893194);
+			cs2method_10251(0, 0, 71893199);
+			script_4499(v1, 1, cs2method_10924(v1), 7, 71893188, 71893198, 71893200, 71893199, 71893205, "Select a keyword");
+		}
+	} else {
+		cs2method_10467(0, 71893194);
+		script_4501("Select a keyword", 71893188);
+		script_4501("Select a category", 71893174);
+	}
+	return;
+}

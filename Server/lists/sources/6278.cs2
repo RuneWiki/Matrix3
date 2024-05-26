@@ -1,0 +1,34 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6278(int a0,int a1,int a2) {
+	if (a1 == 0) {
+		cs2method_10026(a0, "- ACTIVE -");
+		cs2method_10520(16711680, a2);
+		cs2method_10704(200, a2);
+	} else if (a1 == 1) {
+		cs2method_10026(a0, "Activate");
+		cs2method_10520(10309156, a2);
+		cs2method_10704(200, a2);
+	} else if (a1 == 2) {
+		cs2method_10026(a0, "Buy");
+	} else if (a1 == 3) {
+		cs2method_10026(a0, "Bought");
+		cs2method_10520(10309156, a2);
+		cs2method_10704(200, a2);
+	} else {
+		if (a1 == 4) {
+			cs2method_10026(a0, "Locked");
+		}
+	}
+	return;
+}

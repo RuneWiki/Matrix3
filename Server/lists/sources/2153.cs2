@@ -1,0 +1,102 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_2153(int a0) {
+	int v3 = idx22mapAttribute(a0, 871);
+	if (idx22mapAttribute(a0, 897) == 1 && cs2method_10060(cs2method_10338(0), cs2method_10338(2)) < 130) {
+		return 0;
+	}
+	if (v3 == -1) {
+		return 1;
+	}
+	if (cs2method_10338(v3) < idx22mapAttribute(a0, 872)) {
+		return 0;
+	}
+	int v7 = idx22mapAttribute(a0, 873);
+	if (v7 == -1) {
+		return 1;
+	}
+	if (cs2method_10338(v7) < idx22mapAttribute(a0, 874)) {
+		return 0;
+	}
+	int v2 = idx22mapAttribute(a0, 875);
+	if (v2 == -1) {
+		return 1;
+	}
+	if (cs2method_10338(v2) < idx22mapAttribute(a0, 876)) {
+		return 0;
+	}
+	int v10 = idx22mapAttribute(a0, 877);
+	if (v10 == -1) {
+		return 1;
+	}
+	if (cs2method_10338(v10) < idx22mapAttribute(a0, 878)) {
+		return 0;
+	}
+	int v6 = idx22mapAttribute(a0, 879);
+	if (v6 == -1) {
+		return 1;
+	}
+	if (cs2method_10338(v6) < idx22mapAttribute(a0, 880)) {
+		return 0;
+	}
+	int v8 = idx22mapAttribute(a0, 881);
+	if (v8 == -1) {
+		return 1;
+	}
+	if (cs2method_10338(v8) < idx22mapAttribute(a0, 882)) {
+		return 0;
+	}
+	int v1 = idx22mapAttribute(a0, 883);
+	if (v1 == -1) {
+		return 1;
+	}
+	if (cs2method_10338(v1) < idx22mapAttribute(a0, 884)) {
+		return 0;
+	}
+	int v9 = idx22mapAttribute(a0, 885);
+	if (v9 == -1) {
+		return 1;
+	}
+	if (cs2method_10338(v9) < idx22mapAttribute(a0, 886)) {
+		return 0;
+	}
+	int v11 = idx22mapAttribute(a0, 887);
+	if (v11 == -1) {
+		return 1;
+	}
+	if (cs2method_10338(v11) < idx22mapAttribute(a0, 888)) {
+		return 0;
+	}
+	int v4 = idx22mapAttribute(a0, 889);
+	if (v4 == -1) {
+		return 1;
+	}
+	if (cs2method_10338(v4) < idx22mapAttribute(a0, 890)) {
+		return 0;
+	}
+	int v0 = idx22mapAttribute(a0, 891);
+	if (v0 == -1) {
+		return 1;
+	}
+	if (cs2method_10338(v0) < idx22mapAttribute(a0, 892)) {
+		return 0;
+	}
+	int v5 = idx22mapAttribute(a0, 893);
+	if (v5 == -1) {
+		return 1;
+	}
+	if (cs2method_10338(v5) < idx22mapAttribute(a0, 894)) {
+		return 0;
+	}
+	return 1;
+}

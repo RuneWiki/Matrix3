@@ -1,0 +1,145 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_7266(int a0,int a1) {
+	switch (a1) {
+		case 0:
+			switch (a0) {
+				case 2:
+					if (client_configs['cfg3029'].bitcfg15210 == 0) {
+						return 1;
+					}
+					break;
+				case 1:
+					if (client_configs['cfg3029'].bitcfg15209 == 0) {
+						return 1;
+					}
+					break;
+				case 0:
+					if (client_configs['cfg3029'].bitcfg15208 == 0) {
+						return 1;
+					}
+			}
+			break;
+		case 1:
+			switch (a0) {
+				case 2:
+					if (client_configs['cfg3029'].bitcfg15213 == 0) {
+						return 1;
+					}
+					break;
+				case 1:
+					if (client_configs['cfg3029'].bitcfg15212 == 0) {
+						return 1;
+					}
+					break;
+				case 0:
+					if (client_configs['cfg3029'].bitcfg15211 == 0) {
+						return 1;
+					}
+			}
+			break;
+		case 2:
+			switch (a0) {
+				case 2:
+					if (client_configs['cfg3029'].bitcfg15216 == 0) {
+						return 1;
+					}
+					break;
+				case 1:
+					if (client_configs['cfg3029'].bitcfg15215 == 0) {
+						return 1;
+					}
+					break;
+				case 0:
+					if (client_configs['cfg3029'].bitcfg15214 == 0) {
+						return 1;
+					}
+			}
+			break;
+		case 3:
+			switch (a0) {
+				case 2:
+					if (client_configs['cfg3029'].bitcfg15219 == 0) {
+						return 1;
+					}
+					break;
+				case 1:
+					if (client_configs['cfg3029'].bitcfg15218 == 0) {
+						return 1;
+					}
+					break;
+				case 0:
+					if (client_configs['cfg3029'].bitcfg15217 == 0) {
+						return 1;
+					}
+			}
+			break;
+		case 4:
+			switch (a0) {
+				case 2:
+					if (client_configs['cfg3029'].bitcfg15222 == 0) {
+						return 1;
+					}
+					break;
+				case 1:
+					if (client_configs['cfg3029'].bitcfg15221 == 0) {
+						return 1;
+					}
+					break;
+				case 0:
+					if (client_configs['cfg3029'].bitcfg15220 == 0) {
+						return 1;
+					}
+			}
+			break;
+		case 5:
+			switch (a0) {
+				case 2:
+					if (client_configs['cfg3029'].bitcfg15225 == 0) {
+						return 1;
+					}
+					break;
+				case 1:
+					if (client_configs['cfg3029'].bitcfg15224 == 0) {
+						return 1;
+					}
+					break;
+				case 0:
+					if (client_configs['cfg3029'].bitcfg15223 == 0) {
+						return 1;
+					}
+			}
+			break;
+		case 6:
+			switch (a0) {
+				case 2:
+					if (client_configs['cfg3029'].bitcfg15228 == 0) {
+						return 1;
+					}
+					break;
+				case 1:
+					if (client_configs['cfg3029'].bitcfg15227 == 0) {
+						return 1;
+					}
+					break;
+				case 0:
+					if (client_configs['cfg3029'].bitcfg15226 == 0) {
+						return 1;
+					}
+			}
+			break;
+		default:
+			return 0;
+	}
+	return 0;
+}

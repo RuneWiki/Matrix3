@@ -1,0 +1,46 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_3406_struct(3,0,0) script_3406() {
+	int v18 = 0;
+	for (int v25 = 0, int v15 = 0, int v4 = script_1960(), int v23 = 0, int v21 = 0, int v12 = 0, int v1 = 0, object v7 = "", object v17 = "", object v19 = "", object v24 = "", int v8 = -1, object v22 = "", int v6 = v4, opc_struct10864(4,5,0) v2 = cs2method_10864(v6), object v16 = v2.objectpart_4, int v11 = v2.intpart_3, object v9 = v2.objectpart_3, object v13 = v2.objectpart_2, object v5 = v2.objectpart_1, object v3 = v2.objectpart_0, int v10 = v2.intpart_2, int v20 = v2.intpart_1, int v0 = v2.intpart_0; v23 < 100 && v0 != -1; v0 = v14.intpart_0) {
+		switch (v0) {
+			case 18:
+			case 3:
+			case 7:
+				v18 = cs2method_10060(v18, 1);
+				break;
+			case 20:
+			case 9:
+				v15 = cs2method_10060(v15, 1);
+				break;
+			case 42:
+			case 41:
+			case 44:
+			case 45:
+				v25 = cs2method_10060(v25, 1);
+		}
+		v23 = cs2method_10060(v23, 1);
+		v4 = cs2method_10461(v4, 1);
+		int v27 = v4;
+		opc_struct10864(4,5,0) v14 = cs2method_10864(v27);
+		object v33 = v14.objectpart_4;
+		int v29 = v14.intpart_3;
+		object v34 = v14.objectpart_3;
+		object v32 = v14.objectpart_2;
+		object v31 = v14.objectpart_1;
+		object v30 = v14.objectpart_0;
+		int v26 = v14.intpart_2;
+		int v28 = v14.intpart_1;
+	}
+	return new script_3406_struct(v18, v25, v15);
+}

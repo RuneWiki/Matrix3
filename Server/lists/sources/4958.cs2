@@ -1,0 +1,20 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_4958_struct(5,0,0) script_4958(int a0) {
+	int v4 = script_4949(a0);
+	int v1 = script_4959(a0);
+	int v2 = script_4980(v4);
+	int v0 = script_4954(v4);
+	int v3 = script_4955(v4);
+	return new script_4958_struct(v4, v1, v0, v3, v2);
+}

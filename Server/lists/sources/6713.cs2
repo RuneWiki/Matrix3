@@ -1,0 +1,22 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6713() {
+	if (cs2method_10060(cs2_configs['cfg2016'], 3000) <= cs2method_10133()) {
+		cs2_configs['cfg2016'] = cs2method_10133();
+		cs2method_10212();
+		cs2method_10026(39059623, "Another email has been sent to your registered address. Please follow the link to authorise your current device.");
+	} else {
+		cs2method_10026(39059623, "An email was sent to your registered address recently. Please wait a minute before trying to resend.");
+	}
+	return;
+}

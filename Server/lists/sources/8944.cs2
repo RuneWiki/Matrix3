@@ -1,0 +1,50 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8944(int a0) {
+	if (cs2_configs['cfg2772'] == a0) {
+		return;
+	}
+	int v3 = -1;
+	int v6 = -1;
+	int v0 = -1;
+	int v2 = -1;
+	switch (a0) {
+		case 1:
+			v3 = 97976327;
+			v6 = 97976326;
+			v0 = 97976328;
+			int v7 = 97976458;
+			break;
+		case 2:
+			v3 = 97976658;
+			v6 = 97976325;
+			v0 = 97976657;
+			int v5 = 97976660;
+			break;
+		case 3:
+			v3 = 97976662;
+			v6 = 97976324;
+			v0 = 97976661;
+			int v1 = 97976664;
+			break;
+		case 4:
+			v3 = 97976666;
+			v6 = 97976323;
+			v0 = 97976665;
+			int v4 = 97976668;
+	}
+	cs2method_10758(11868, v0);
+	cs2method_10758(11867, v6);
+	cs2method_10758(11866, v3);
+	return;
+}

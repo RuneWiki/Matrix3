@@ -1,0 +1,36 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6599(int a0,int a1,int a2) {
+	int v4 = 0;
+	int v2 = cs2method_10122(a1, a2, 100);
+	int v0 = 0;
+	int v3 = 0;
+	int v5 = 0;
+	int v7 = cs2method_10060(cs2method_10936(674, idx17mapData('i', 'o', 6063, 0)), cs2method_10936(674, idx17mapData('i', 'o', 6063, 1)));
+	int v1 = cs2method_10060(idx17mapData('i', 'i', 6060, 0), idx17mapData('i', 'i', 6060, 1));
+	if (cs2method_10324(a0) == 1) {
+		opc_struct10611(2,0,0) v9 = cs2method_10611();
+		int v8 = v9.intpart_1;
+		int v6 = v9.intpart_0;
+		if (a2 < 500) {
+			int v8 = cs2method_10968(v6, v1);
+			v6 = cs2method_10461(v6, cs2method_10051(v8, v7));
+		}
+		int v10 = cs2method_10968(cs2method_10051(v6, v2), 100);
+		cs2method_10013(v10, cs2method_10664(), 0, 0);
+		if (a2 < 500) {
+			cs2method_10283(cs2method_10060(v6, 22), cs2method_10823(86900813), 0, 0, 86900813);
+		}
+	}
+	return;
+}

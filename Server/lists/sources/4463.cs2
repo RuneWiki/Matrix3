@@ -1,0 +1,41 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4463(int a0,int a1) {
+	object v1 = "";
+	int v0 = 0;
+	if (cs2method_10435() == 1) {
+		if (cs2method_10570() == 1) {
+			v1 = cs2method_10929(a0);
+			if (a1 == 1) {
+				if (cs2method_10563(v1) == 1) {
+					v0 = 1;
+				} else {
+					cs2method_11102(0, 0, "You only message people on your Friends List.");
+				}
+			} else {
+				if (a1 == 8) {
+					script_4466(v1);
+				}
+			}
+		} else {
+			cs2method_10810("You must be in a clan to do that.");
+		}
+	} else {
+		cs2method_10810("You must be in a clan to do that.");
+	}
+	if (v0 == 1) {
+		script_8512(v1, 18);
+		return;
+	}
+	return;
+}

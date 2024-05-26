@@ -1,0 +1,82 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1866(int a0,int a1,int a2) {
+	if (a1 == 84) {
+		if (cs2_configs['cfg3703'] != -1) {
+			if (cs2method_10580() == 1) {
+				script_7955(cs2_configs['cfg3703']);
+			} else {
+				cs2method_10491(cs2_configs['cfg3703']);
+			}
+		}
+		cs2_configs['cfg2545'] = "";
+		script_308(a0);
+		return;
+	}
+	if (a1 == 13) {
+		if (script_9666() == 1) {
+			return;
+		}
+		script_308(a0);
+		return;
+	}
+	if (a1 != 85 && cs2method_10698(a2) == 0) {
+		return;
+	}
+	object v4 = cs2method_10765(script_74(4, a1, a2, cs2_configs['cfg2545']));
+	if (cs2method_10368(0, v4, "  ") != -1) {
+		return;
+	}
+	if (cs2method_10846(v4, " ") == 0) {
+		return;
+	}
+	if (cs2method_10805(cs2method_10236(a0), 494, v4) > 1) {
+		return;
+	}
+	cs2_configs['cfg2545'] = (string)cs2method_10181(v4);
+	for (int v11 = cs2method_10265(cs2_configs['cfg2545']), int v15 = -1, int v14 = -1, int v2 = -1, int v9 = 0, object v10 = "", int v7 = -1, int v6 = 2147483647, int v17 = 2147483647, opc_struct10104(2,0,0) v3 = cs2method_10104(), int v18 = v3.intpart_1, int v13 = v3.intpart_0; v13 != -1; v18 = v0.intpart_1, v13 = v0.intpart_0) {
+		object v12 = cs2method_10765(script_2332(cs2method_10953(v13), "<br>", " "));
+		int v5 = cs2method_10368(0, cs2method_10181(v12), cs2_configs['cfg2545']);
+		if (v5 != -1 && v5 <= v6) {
+			int v16 = cs2method_10265(v12);
+			if (v16 < v17) {
+				object v20 = v12;
+				v7 = v18;
+				v10 = v20;
+				int v19 = v5;
+				v17 = v16;
+				v6 = v19;
+			}
+		}
+		opc_struct10897(2,0,0) v0 = cs2method_10897();
+	}
+	if (v7 == -1) {
+		cs2_configs['cfg3703'] = -1;
+		if (cs2method_10509(cs2method_10236(a0), 494, cs2_configs['cfg2545']) > cs2method_10236(a0)) {
+			cs2method_10637(2, 1, 0, a0);
+		} else {
+			cs2method_10637(0, 1, 0, a0);
+		}
+		cs2method_10026(a0, "<col=ff0000>" + cs2_configs['cfg2545'] + "</col>");
+		return;
+	}
+	object v8 = "";
+	if (v6 > 0) {
+		v8 = cs2method_11025(0, v6, v10);
+	}
+	object v1 = cs2method_10427(v8, "<col=ffffff>" + (string)cs2method_11025(v6, cs2method_10060(v6, v11), v10) + "</col>");
+	v8 = cs2method_10427(v1, cs2method_11025(cs2method_10060(v6, v11), cs2method_10265(v10), v10));
+	cs2method_10026(a0, v8);
+	cs2_configs['cfg3703'] = v7;
+	return;
+}

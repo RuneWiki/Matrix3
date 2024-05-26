@@ -1,0 +1,21 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+string script_9149() {
+	if (client_configs['cfg2759'] == 140) {
+		if (client_configs['cfg1408'].bitcfg4168 == 0) {
+			return "You have found " + "<col=ffffff>" + (string)cs2method_10379(client_configs['cfg1408'].bitcfg4164) + " of 10" + "</col>" + " penguins this week and have " + "<col=ffffff>" + "not yet found" + "</col>" + " the polar bear.";
+		}
+		return "You have found " + "<col=ffffff>" + (string)cs2method_10379(client_configs['cfg1408'].bitcfg4164) + " of 10" + "</col>" + " penguins this week and you've " + "<col=ffffff>" + "found" + "</col>" + " the polar bear.";
+	}
+	return "You have found " + "<col=ffffff>" + (string)cs2method_10379(client_configs['cfg1408'].bitcfg4164) + " of 10" + "</col>" + " penguins this week. If you complete the quest " + "<col=ffffff>" + "'Hunt for Red Raktuber'" + "</col>" + " you'll also be able to hunt a polar bear";
+}

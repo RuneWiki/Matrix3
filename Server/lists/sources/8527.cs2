@@ -1,0 +1,39 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8527(int a0) {
+	object v8 = "";
+	object v1 = "";
+	object v16 = "";
+	object v13 = "";
+	object v17 = "";
+	object v10 = "";
+	object v2 = "";
+	object v3 = "";
+	script_4729_struct(0,8,0) v14 = script_4729();
+	object v4 = v14.objectpart_7;
+	object v5 = v14.objectpart_6;
+	object v0 = v14.objectpart_5;
+	object v7 = v14.objectpart_4;
+	object v15 = v14.objectpart_3;
+	object v6 = v14.objectpart_2;
+	object v12 = v14.objectpart_1;
+	object v11 = v14.objectpart_0;
+	int v9 = script_8526(a0);
+	cs2method_11102(v9, 0, "Chat commands.");
+	cs2method_11102(v9, 0, (string)v11 + " : Switch to All Chat.");
+	cs2method_11102(v9, 0, (string)v7 + " or / : Switch to Friends Chat.");
+	cs2method_11102(v9, 0, (string)v6 + " or // : Switch to Clan Chat.");
+	cs2method_11102(v9, 0, (string)v5 + " or /// : Switch to Guest Clan Chat.");
+	cs2method_11102(v9, 0, "You can also prefix a message with /, // or /// to send it to Friends, Clan or Guest Clan Chat.");
+	return;
+}

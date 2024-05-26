@@ -1,0 +1,36 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_441(int a0,int a1) {
+	int v0 = 44367891;
+	switch (a1) {
+		case 1:
+			v0 = 44367891;
+			break;
+		case 2:
+			v0 = 44367908;
+			break;
+		case 3:
+			v0 = 44367915;
+			break;
+		case 4:
+			v0 = 44367922;
+			break;
+		case 5:
+			v0 = 44367929;
+			break;
+		case 6:
+			v0 = 44367936;
+	}
+	cs2method_10026(v0, "Players: " + (string)cs2method_10379(a0));
+	return;
+}

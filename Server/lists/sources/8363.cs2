@@ -1,0 +1,64 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8363(int a0) {
+	int v1 = idx17mapData('i', 'J', 7716, a0);
+	int v0 = script_8418(v1, 0);
+	int v2 = idx22mapAttribute(v1, 3508);
+	cs2method_10273(v2);
+	cs2method_10606(v2, 5, 0);
+	cs2method_10097(3540, 4);
+	script_8258(v1);
+	cs2method_10063(0, 0, 0, 0);
+	cs2method_10013(idx22mapAttribute(v0, 3583), idx22mapAttribute(v0, 3586), 0, 1);
+	cs2method_10310(idx22mapAttribute(v0, 3607));
+	cs2method_10606(v2, 5, 1);
+	cs2method_10097(3540, 1);
+	script_8258(v1);
+	cs2method_10063(0, 0, 1, 0);
+	cs2method_10013(cs2method_10051(2, idx22mapAttribute(v0, 3583)), idx22mapAttribute(v0, 3586), 1, 1);
+	cs2method_10310(idx22mapAttribute(v0, 3608));
+	cs2method_10577(1);
+	cs2method_10606(v2, 5, 2);
+	cs2method_10097(3540, 4);
+	script_8258(v1);
+	cs2method_10063(0, 0, 2, 0);
+	cs2method_10013(idx22mapAttribute(v0, 3583), idx22mapAttribute(v0, 3586), 0, 1);
+	cs2method_10310(idx22mapAttribute(v0, 3607));
+	cs2method_10434(1);
+	cs2method_10606(v2, 5, 3);
+	script_8258(v1);
+	cs2method_10063(0, 0, 0, 2);
+	cs2method_10013(idx22mapAttribute(v0, 3587), idx22mapAttribute(v0, 3586), 0, 0);
+	cs2method_10310(idx22mapAttribute(v0, 3738));
+	cs2method_10606(v2, 5, 4);
+	script_8258(v1);
+	cs2method_10063(0, 0, 2, 2);
+	cs2method_10013(idx22mapAttribute(v0, 3587), idx22mapAttribute(v0, 3586), 0, 0);
+	cs2method_10310(idx22mapAttribute(v0, 3738));
+	cs2method_10434(1);
+	cs2method_10606(v2, 5, 5);
+	cs2method_10097(3540, 3);
+	script_8258(v1);
+	cs2method_10063(idx22mapAttribute(v0, 3583), 0, 0, 2);
+	cs2method_10013(0, idx22mapAttribute(v0, 3586), 0, 0);
+	cs2method_10310(idx22mapAttribute(v0, 3737));
+	cs2method_10577(1);
+	cs2method_10606(v2, 5, 6);
+	cs2method_10097(3540, 3);
+	script_8258(v1);
+	cs2method_10063(idx22mapAttribute(v0, 3583), 0, 2, 2);
+	cs2method_10013(0, idx22mapAttribute(v0, 3586), 0, 0);
+	cs2method_10310(idx22mapAttribute(v0, 3737));
+	cs2method_10577(1);
+	return;
+}

@@ -1,0 +1,25 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_9016(int a0) {
+	switch (script_9017(a0)) {
+		case 0:
+			return idx22mapAttribute(idx17mapData('i', 'J', 7569, a0), 3423);
+		case 1:
+			return idx22mapAttribute(idx17mapData('i', 'J', 7569, a0), 3424);
+		case 2:
+			return idx22mapAttribute(idx17mapData('i', 'J', 7569, a0), 3425);
+		case 3:
+			return idx22mapAttribute(idx17mapData('i', 'J', 7569, a0), 3426);
+	}
+	return 0;
+}

@@ -1,0 +1,38 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_9225(int a0,int a1) {
+	if (a1 == 23039) {
+		return 1;
+	}
+	if (a1 == 28573 || a1 == 28574) {
+		if (a0 == 1) {
+			cs2method_10670(10046, 1, 0, 130);
+			cs2method_10810("A magical force prevents you from banking this item.");
+		}
+		return 1;
+	}
+	if (itemDefsAttribute(a1, 59) == 1) {
+		if (a0 == 1) {
+			switch (a1) {
+				case 3895:
+				case 3894:
+					cs2method_10810("You have more urgent things to do with this anthem.");
+					break;
+				case 4033:
+					cs2method_10810("Sorry, you can't bank the monkey.");
+			}
+		}
+		return 1;
+	}
+	return 0;
+}

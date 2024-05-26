@@ -1,0 +1,163 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_662(int a0) {
+	object v16;
+	flow_0:
+		int v3 = (int)idx17mapData('i', 'I', 1080, a0);
+		int v5 = idx17mapData('i', 'v', 1079, a0);
+		cs2method_10273(v3);
+		int v13 = cs2method_10236(v3);
+		int v14 = cs2method_10823(v3);
+		int v4 = cs2method_10461(cs2method_10968(v13, 2), 40);
+		int v11 = cs2method_10461(v14, 47);
+		int v9 = cs2method_10640(v5, 0);
+		int v0 = cs2method_10640(v5, 1);
+		int v2 = (int)idx17mapData('i', 'I', 1082, a0);
+		if (v2 != -1) {
+			if (cs2method_10210() == 1 || cs2method_10601(a0) == 0) {
+				cs2method_10467(1, v2);
+			} else {
+				cs2method_10467(0, v2);
+			}
+		}
+		script_98(v3, 0, 18266, cs2method_10461(v4, 2), cs2method_10461(v11, 2), 40, 36);
+		int v15 = 1140;
+		IF (v2 == -1) 
+			GOTO	flow_5
+		IF (cs2method_10609(v2) == 1 && cs2method_11038(v3, 0) == 1) 
+			GOTO	flow_6
+		GOTO	flow_14
+	flow_5:
+	flow_6:
+		cs2method_20674(new function<script_688>(int a0,int a1,int a2) {
+			if (cs2method_11038(a1, a0) == 1) {
+				cs2method_10310(a2);
+			}
+			return;
+		}, new WidgetPointer(-32768,3), -2147483643, v15, "Iid");
+		int v8 = 18266;
+		cs2method_20884(new function<script_688>(int a0,int a1,int a2) {
+			if (cs2method_11038(a0, a2) == 1) {
+				cs2method_10310(a1);
+			}
+			return;
+		}, new WidgetPointer(-32768,3), -2147483643, v8, "Iid");
+		if (v9 != -1) {
+			if (cs2method_10675(v9) != v9) {
+				if (cs2method_11065(v5, 0) > 1) {
+					cs2method_10057(1, "Collect-notes");
+					cs2method_10057(2, "Collect-items");
+				} else {
+					cs2method_10057(1, "Collect-items");
+					cs2method_10057(2, "Collect-notes");
+				}
+			} else {
+				cs2method_10057(1, "Collect");
+			}
+			cs2method_10200(cs2method_10018(v9));
+		}
+	flow_14:
+		cs2method_10606(v3, 5, 1);
+		cs2method_10063(v4, v11, 0, 0);
+		cs2method_10013(36, 32, 0, 0);
+		cs2method_10278(3355443);
+		cs2method_11070(v9, cs2method_11065(v5, 0));
+		int v1 = cs2method_10060(cs2method_10968(v13, 2), 4);
+		script_98(v3, 2, 18266, cs2method_10461(v1, 2), cs2method_10461(v11, 2), 40, 36);
+		IF (v2 == -1) 
+			GOTO	flow_15
+		IF (cs2method_10609(v2) == 1 && cs2method_11038(v3, 2) == 1) 
+			GOTO	flow_16
+		GOTO	flow_24
+	flow_15:
+	flow_16:
+		int v12 = 1140;
+		cs2method_20674(new function<script_688>(int a0,int a1,int a2) {
+			if (cs2method_11038(a2, a0) == 1) {
+				cs2method_10310(a1);
+			}
+			return;
+		}, new WidgetPointer(-32768,3), -2147483643, v12, "Iid");
+		int v18 = 18266;
+		cs2method_20884(new function<script_688>(int a0,int a1,int a2) {
+			if (cs2method_11038(a2, a0) == 1) {
+				cs2method_10310(a1);
+			}
+			return;
+		}, new WidgetPointer(-32768,3), -2147483643, v18, "Iid");
+		if (v0 != -1) {
+			if (cs2method_10675(v0) != v0) {
+				if (cs2method_11065(v5, 1) > 1) {
+					cs2method_10057(1, "Collect-notes");
+					cs2method_10057(2, "Collect-items");
+				} else {
+					cs2method_10057(1, "Collect-items");
+					cs2method_10057(2, "Collect-notes");
+				}
+			} else {
+				cs2method_10057(1, "Collect");
+			}
+			cs2method_10200(cs2method_10018(v0));
+		}
+	flow_24:
+		cs2method_10606(v3, 5, 3);
+		cs2method_10063(v1, v11, 0, 0);
+		cs2method_10013(36, 32, 0, 0);
+		cs2method_10278(3355443);
+		cs2method_11070(v0, cs2method_11065(v5, 1));
+		script_652(11, 11, cs2method_10461(v13, 65), 16, a0, v3, 4, 1, 0);
+		cs2method_10606(v3, 3, 9);
+		int v6 = cs2method_10461(v13, 30);
+		cs2method_10063(v6, 11, 0, 0);
+		cs2method_10013(18, 16, 0, 0);
+		cs2method_10811(0);
+		cs2method_10002(160);
+		cs2method_10238(1);
+		cs2method_10606(v3, 6, 10);
+		int v10 = cs2method_10950(a0);
+		if (cs2method_10601(a0) == 0) {
+			cs2method_10063(v6, 11, 0, 0);
+			cs2method_10013(18, 16, 0, 0);
+			cs2method_11070(v10, 0);
+			cs2method_20353(new function<script_8799>(int a0,object a1,int a2) {
+				script_8800(a2, a0, a1);
+				return;
+			}, (string)cs2method_10018(v10), new WidgetPointer(-32768,3), -2147483643, "sIi");
+		}
+		cs2method_10606(v3, 3, 11);
+		int v7 = cs2method_10461(v13, 50);
+		cs2method_10063(v7, 11, 0, 0);
+		cs2method_10013(18, 16, 0, 0);
+		cs2method_10811(0);
+		cs2method_10002(160);
+		cs2method_10238(1);
+		cs2method_10606(v3, 5, 12);
+		object v17 = "null";
+		if (cs2method_10601(a0) == 0) {
+			cs2method_10063(v7, 12, 0, 0);
+			cs2method_10013(16, 14, 0, 0);
+			if (cs2method_10915(a0) == 0) {
+				cs2method_10310(1157);
+				v16 = "Buy at " + (string)cs2method_10055(cs2method_11041(a0), 1) + "gp each";
+			} else {
+				cs2method_10310(1156);
+				v16 = "Sell at " + (string)cs2method_10055(cs2method_11041(a0), 1) + "gp each";
+			}
+			cs2method_20353(new function<script_8799>(int a0,object a1,int a2) {
+				script_8800(a2, a0, a1);
+				return;
+			}, (string)v16, new WidgetPointer(-32768,3), -2147483643, "sIi");
+		}
+		return;
+}

@@ -1,0 +1,38 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6325() {
+	object v0 = "<col=c8c8c8>";
+	int v1 = 11504;
+	if (cs2_configs['cfg1936'] == 2) {
+		script_6326(1, 85458957, 85458958);
+		script_6326(0, 85458960, 85458961);
+		script_6326(0, 85458963, 85458964);
+		v1 = 11505;
+	} else if (cs2_configs['cfg1936'] == 1) {
+		script_6326(0, 85458957, 85458958);
+		script_6326(1, 85458960, 85458961);
+		script_6326(0, 85458963, 85458964);
+	} else {
+		script_6326(0, 85458957, 85458958);
+		script_6326(0, 85458960, 85458961);
+		script_6326(1, 85458963, 85458964);
+		v0 = "<col=787878>";
+	}
+	cs2method_10758(v1, 85458956);
+	if (cs2_configs['cfg1935'] > 0) {
+		cs2method_10026(85458950, (string)v0 + (string)cs2method_10379(cs2method_10872(cs2_configs['cfg1935'], 999999999)) + "</col>");
+	} else {
+		cs2method_10026(85458950, (string)v0 + "None" + "</col>");
+	}
+	return;
+}

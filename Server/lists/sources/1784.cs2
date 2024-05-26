@@ -1,0 +1,368 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1784() {
+	int v76;
+	int v45;
+	int v30;
+	int v25;
+	int v67;
+	int v20;
+	int v37;
+	int v52;
+	int v51;
+	int v50;
+	int v83;
+	int v49;
+	int v62;
+	int v33;
+	int v9;
+	int v60;
+	int v44 = 0;
+	int v17 = cs2method_10461(cs2method_10236(51904515), 16);
+	int v2 = 0;
+	int v77 = v44;
+	int v26 = v2;
+	int v19 = v17;
+	int v69 = 1;
+	object v18 = "~ Winning ~";
+	script_1785_struct(2,0,0) v64 = script_1785(v77, v26, v18, v19, v69);
+	int v78 = v64.intpart_1;
+	int v57 = v64.intpart_0;
+	int v12 = v57;
+	int v58 = v78;
+	int v4 = v17;
+	int v16 = 0;
+	object v42 = "Victory is awarded...";
+	script_1785_struct(2,0,0) v73 = script_1785(v12, v58, v42, v4, v16);
+	int v87 = v73.intpart_1;
+	int v1 = v73.intpart_0;
+	if (cs2_configs['cfg248'] == 0) {
+		int v90 = v1;
+		int v89 = v87;
+		int v94 = v17;
+		int v92 = 0;
+		object v91 = "...to the team that defeats all its enemies.";
+		script_1785_struct(2,0,0) v93 = script_1785(v90, v89, v91, v94, v92);
+		v37 = v93.intpart_1;
+		v76 = v93.intpart_0;
+	} else {
+		int v94 = v1;
+		int v93 = v87;
+		int v91 = v17;
+		int v92 = 0;
+		object v89 = "...to the team that defeats all its enemies, excluding the last five.";
+		script_1785_struct(2,0,0) v90 = script_1785(v94, v93, v89, v91, v92);
+		v37 = v90.intpart_1;
+		v76 = v90.intpart_0;
+	}
+	if (cs2_configs['cfg246'] > 0 && cs2_configs['cfg246'] < 15) {
+		int v90 = v76;
+		int v92 = v37;
+		int v89 = v17;
+		int v91 = 0;
+		object v93 = "OR" + "<br>" + "...to the team that first achieves " + (string)cs2method_10379(idx17mapData('i', 'i', 1605, cs2_configs['cfg246'])) + " kills.";
+		script_1785_struct(2,0,0) v94 = script_1785(v90, v92, v93, v89, v91);
+		v37 = v94.intpart_1;
+		v76 = v94.intpart_0;
+	}
+	if (cs2_configs['cfg247'] > 0) {
+		if (cs2_configs['cfg246'] > 0) {
+			int v93 = v76;
+			int v94 = v37;
+			int v91 = v17;
+			int v92 = 0;
+			object v89 = "OR" + "<br>" + "...to the team that scores the most kills " + script_1751(idx17mapData('i', 'i', 1800, cs2_configs['cfg247'])) + ".";
+			script_1785_struct(2,0,0) v90 = script_1785(v93, v94, v89, v91, v92);
+			v37 = v90.intpart_1;
+			v76 = v90.intpart_0;
+		} else {
+			int v89 = v76;
+			int v94 = v37;
+			int v92 = v17;
+			int v90 = 0;
+			object v91 = "OR" + "<br>" + "...to the team with the most survivors " + script_1751(idx17mapData('i', 'i', 1800, cs2_configs['cfg247'])) + ".";
+			script_1785_struct(2,0,0) v93 = script_1785(v89, v94, v91, v92, v90);
+			v37 = v93.intpart_1;
+			v76 = v93.intpart_0;
+		}
+	}
+	int v31 = cs2method_10060(v76, 7);
+	if (cs2_configs['cfg246'] == 0) {
+		int v92 = v31;
+		int v90 = v37;
+		int v91 = v17;
+		int v93 = 0;
+		object v94 = "<col=ff981f>" + "Knock-out mode:" + "</col>" + "<br>" + "Once war has begun, players may no longer join/rejoin the fight.";
+		script_1785_struct(2,0,0) v89 = script_1785(v92, v90, v94, v91, v93);
+		v9 = v89.intpart_1;
+		v33 = v89.intpart_0;
+	} else {
+		int v94 = v31;
+		int v91 = v37;
+		int v90 = v17;
+		int v92 = 0;
+		object v93 = "<col=ff981f>" + "Run-in mode:" + "</col>" + "<br>" + "Players may join/rejoin the fight at any time during the war.";
+		script_1785_struct(2,0,0) v89 = script_1785(v94, v91, v93, v90, v92);
+		v9 = v89.intpart_1;
+		v33 = v89.intpart_0;
+		if (cs2_configs['cfg246'] == 15 && cs2_configs['cfg247'] == 0) {
+			int v91 = cs2method_10060(v33, 7);
+			int v93 = v91;
+			int v90 = v9;
+			int v95 = v17;
+			int v94 = 0;
+			object v92 = "This war has no time limit or kill target, so it might go on for ages!";
+			script_1785_struct(2,0,0) v89 = script_1785(v93, v90, v92, v95, v94);
+			v9 = v89.intpart_1;
+			v33 = v89.intpart_0;
+		}
+	}
+	int v23 = cs2method_10060(v33, 7);
+	int v70 = v23;
+	int v53 = v9;
+	int v39 = v17;
+	int v27 = 1;
+	object v54 = "~ Item loss ~";
+	script_1785_struct(2,0,0) v63 = script_1785(v70, v53, v54, v39, v27);
+	int v34 = v63.intpart_1;
+	int v84 = v63.intpart_0;
+	if (cs2_configs['cfg249'] == 0) {
+		int v89 = v84;
+		int v91 = v34;
+		int v90 = v17;
+		int v94 = 0;
+		object v92 = "On death, players keep their items.";
+		script_1785_struct(2,0,0) v93 = script_1785(v89, v91, v92, v90, v94);
+		v83 = v93.intpart_1;
+		v51 = v93.intpart_0;
+	} else {
+		int v89 = v84;
+		int v94 = v34;
+		int v93 = v17;
+		int v92 = 0;
+		object v90 = "<col=ff0000>" + "On death, players DROP their items." + "</col>" + "<br>" + "Players may not teleport.";
+		script_1785_struct(2,0,0) v91 = script_1785(v89, v94, v90, v93, v92);
+		v83 = v91.intpart_1;
+		v51 = v91.intpart_0;
+	}
+	int v14 = cs2method_10060(v51, 7);
+	int v72 = v14;
+	int v21 = v83;
+	int v3 = v17;
+	int v29 = 1;
+	object v61 = "~ Combat rules ~";
+	script_1785_struct(2,0,0) v68 = script_1785(v72, v21, v61, v3, v29);
+	int v46 = v68.intpart_1;
+	int v75 = v68.intpart_0;
+	if (cs2_configs['cfg250'] == 0) {
+		int v91 = v75;
+		int v94 = v46;
+		int v92 = v17;
+		int v89 = 0;
+		object v90 = "Melee combat is allowed.";
+		script_1785_struct(2,0,0) v93 = script_1785(v91, v94, v90, v92, v89);
+		v20 = v93.intpart_1;
+		v67 = v93.intpart_0;
+	} else {
+		int v94 = v75;
+		int v93 = v46;
+		int v90 = v17;
+		int v89 = 0;
+		object v91 = "<col=ff0000>" + "Melee combat" + "</col>" + " is forbidden.";
+		script_1785_struct(2,0,0) v92 = script_1785(v94, v93, v91, v90, v89);
+		v20 = v92.intpart_1;
+		v67 = v92.intpart_0;
+	}
+	switch (cs2_configs['cfg252']) {
+		case 0:
+			int v15 = v67;
+			int v71 = v20;
+			int v43 = v17;
+			int v48 = 0;
+			object v22 = "Magical combat is allowed.";
+			script_1785_struct(2,0,0) v79 = script_1785(v15, v71, v22, v43, v48);
+			v20 = v79.intpart_1;
+			v67 = v79.intpart_0;
+			break;
+		case 1:
+			int v59 = v67;
+			int v8 = v20;
+			int v6 = v17;
+			int v86 = 0;
+			object v41 = "Spells from the " + "<col=ff0000>" + "standard spellbook" + "</col>" + " are allowed.";
+			script_1785_struct(2,0,0) v5 = script_1785(v59, v8, v41, v6, v86);
+			v20 = v5.intpart_1;
+			v67 = v5.intpart_0;
+			break;
+		case 2:
+			if (cs2method_10771() == 1) {
+				int v91 = v67;
+				int v92 = v20;
+				int v94 = v17;
+				int v90 = 0;
+				object v89 = "The " + "<col=ff0000>" + "Bind" + "</col>" + ", " + "<col=ff0000>" + "Snare" + "</col>" + " and " + "<col=ff0000>" + "Entangle" + "</col>" + " spells are allowed.";
+				script_1785_struct(2,0,0) v93 = script_1785(v91, v92, v89, v94, v90);
+				v20 = v93.intpart_1;
+				v67 = v93.intpart_0;
+			} else {
+				int v93 = v67;
+				int v92 = v20;
+				int v90 = v17;
+				int v89 = 0;
+				object v94 = "The " + "<col=ff0000>" + "Bind" + "</col>" + " spell is allowed.";
+				script_1785_struct(2,0,0) v91 = script_1785(v93, v92, v94, v90, v89);
+				v20 = v91.intpart_1;
+				v67 = v91.intpart_0;
+			}
+			break;
+		case 3:
+			int v35 = v67;
+			int v28 = v20;
+			int v32 = v17;
+			int v47 = 0;
+			object v24 = "<col=ff0000>" + "Magical combat" + "</col>" + " is forbidden.";
+			script_1785_struct(2,0,0) v65 = script_1785(v35, v28, v24, v32, v47);
+			v20 = v65.intpart_1;
+			v67 = v65.intpart_0;
+	}
+	if (cs2_configs['cfg251'] == 0) {
+		int v89 = v67;
+		int v93 = v20;
+		int v92 = v17;
+		int v94 = 0;
+		object v91 = "Ranged combat is allowed.";
+		script_1785_struct(2,0,0) v90 = script_1785(v89, v93, v91, v92, v94);
+		v50 = v90.intpart_1;
+		v62 = v90.intpart_0;
+	} else {
+		int v91 = v67;
+		int v94 = v20;
+		int v90 = v17;
+		int v92 = 0;
+		object v89 = "<col=ff0000>" + "Ranged combat" + "</col>" + " is forbidden.";
+		script_1785_struct(2,0,0) v93 = script_1785(v91, v94, v89, v90, v92);
+		v50 = v93.intpart_1;
+		v62 = v93.intpart_0;
+	}
+	if (cs2_configs['cfg256'] == 0) {
+		int v90 = v62;
+		int v93 = v50;
+		int v94 = v17;
+		int v89 = 0;
+		object v92 = "Prayer is allowed.";
+		script_1785_struct(2,0,0) v91 = script_1785(v90, v93, v92, v94, v89);
+		v49 = v91.intpart_1;
+		v25 = v91.intpart_0;
+	} else {
+		int v94 = v62;
+		int v92 = v50;
+		int v89 = v17;
+		int v93 = 0;
+		object v91 = "<col=ff0000>" + "Prayer" + "</col>" + " is forbidden.";
+		script_1785_struct(2,0,0) v90 = script_1785(v94, v92, v91, v89, v93);
+		v49 = v90.intpart_1;
+		v25 = v90.intpart_0;
+	}
+	if (cs2method_10771() == 1) {
+		if (cs2_configs['cfg253'] == 0) {
+			int v94 = v25;
+			int v90 = v49;
+			int v89 = v17;
+			int v93 = 0;
+			object v92 = "Summoning is allowed.";
+			script_1785_struct(2,0,0) v91 = script_1785(v94, v90, v92, v89, v93);
+			v49 = v91.intpart_1;
+			v25 = v91.intpart_0;
+		} else {
+			int v93 = v25;
+			int v92 = v49;
+			int v91 = v17;
+			int v94 = 0;
+			object v89 = "<col=ff0000>" + "Summoning" + "</col>" + " is forbidden." + "<br>" + "Familiars will be dismissed.";
+			script_1785_struct(2,0,0) v90 = script_1785(v93, v92, v89, v91, v94);
+			v49 = v90.intpart_1;
+			v25 = v90.intpart_0;
+		}
+	}
+	if (cs2_configs['cfg254'] == 0) {
+		int v90 = v25;
+		int v94 = v49;
+		int v91 = v17;
+		int v93 = 0;
+		object v92 = "Food is allowed.";
+		script_1785_struct(2,0,0) v89 = script_1785(v90, v94, v92, v91, v93);
+		v45 = v89.intpart_1;
+		v60 = v89.intpart_0;
+	} else {
+		int v93 = v25;
+		int v94 = v49;
+		int v89 = v17;
+		int v91 = 0;
+		object v90 = "<col=ff0000>" + "Food" + "</col>" + " is forbidden.";
+		script_1785_struct(2,0,0) v92 = script_1785(v93, v94, v90, v89, v91);
+		v45 = v92.intpart_1;
+		v60 = v92.intpart_0;
+	}
+	if (cs2_configs['cfg255'] == 0) {
+		int v91 = v60;
+		int v89 = v45;
+		int v92 = v17;
+		int v94 = 0;
+		object v93 = "Potions are allowed.";
+		script_1785_struct(2,0,0) v90 = script_1785(v91, v89, v93, v92, v94);
+		v30 = v90.intpart_1;
+		v52 = v90.intpart_0;
+	} else {
+		int v94 = v60;
+		int v89 = v45;
+		int v91 = v17;
+		int v92 = 0;
+		object v90 = "<col=ff0000>" + "Potions" + "</col>" + " are forbidden." + "<br>" + "Boosted stats will be reset (excluding Prayer boosts).";
+		script_1785_struct(2,0,0) v93 = script_1785(v94, v89, v90, v91, v92);
+		v30 = v93.intpart_1;
+		v52 = v93.intpart_0;
+	}
+	int v82 = cs2method_10060(v52, 7);
+	int v10 = v82;
+	int v74 = v30;
+	int v0 = v17;
+	int v13 = 1;
+	object v80 = "~ Arena ~";
+	script_1785_struct(2,0,0) v85 = script_1785(v10, v74, v80, v0, v13);
+	int v7 = v85.intpart_1;
+	int v88 = v85.intpart_0;
+	int v66 = v88;
+	int v55 = v7;
+	int v81 = v17;
+	int v38 = 0;
+	object v36 = idx22mapAttribute(idx17mapData('i', 'J', 1604, cs2_configs['cfg257']), 555);
+	script_1785_struct(2,0,0) v40 = script_1785(v66, v55, v36, v81, v38);
+	int v11 = v40.intpart_1;
+	int v56 = v40.intpart_0;
+	if (v56 > cs2method_10823(51904515)) {
+		cs2method_10467(0, 51904516);
+		cs2method_10112(7, 46, 0, 0, 51904515);
+		cs2method_11130(0, v56, 51904515);
+		script_31(51904516, 51904515, 792, 789, 790, 791, 773, 788);
+		if (cs2method_11038(51904516, 1) == 1) {
+			script_37(51904516, 51904515, cs2method_10718(51904515), 1);
+		}
+	} else {
+		cs2method_10273(51904516);
+		cs2method_10467(1, 51904516);
+		cs2method_10112(15, 46, 0, 0, 51904515);
+		cs2method_11130(0, 0, 51904515);
+		cs2method_10251(0, 0, 51904515);
+	}
+	return;
+}

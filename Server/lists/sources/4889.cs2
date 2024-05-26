@@ -1,0 +1,197 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4889() {
+	object v0 = "";
+	cs2method_10467(1, 82444848);
+	cs2method_10467(1, 82444856);
+	cs2method_10467(1, 82444852);
+	cs2method_10467(1, 82444860);
+	cs2method_10467(1, 82444864);
+	cs2method_10467(1, 82444868);
+	cs2method_10467(1, 82444872);
+	cs2method_10467(1, 82444876);
+	cs2method_10467(1, 82444880);
+	cs2method_10467(1, 82444884);
+	cs2method_10467(1, 82444888);
+	cs2method_10467(1, 82444892);
+	cs2method_10467(1, 82444896);
+	if (clan_chat_configs['cfg2575'].bitcfg6507 > 1) {
+		cs2method_10467(0, 82444884);
+		cs2method_10467(0, 82444860);
+		cs2method_10467(1, 82444885);
+		cs2method_10467(1, 82444861);
+	} else {
+		cs2method_10467(0, 82444885);
+		cs2method_10467(0, 82444861);
+		object v2 = "You need at least a tier 2 citadel to customise the keep fireplace.";
+		cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,object a9,int a10,int a11,int a12) {
+			script_7769(a3, a0, a8, a2, a12, a10, a6, a4, a5, a1, a11, a9, a7);
+			return;
+		}, new WidgetPointer(1258,121), new WidgetPointer(1258,597), -1, (string)v2, 120, 17813, 17813, 16777215, 13, 4, 1, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,597));
+		cs2method_20750(new function<script_40>(int a0) {
+			script_41(a0);
+			return;
+		}, new WidgetPointer(1258,121), "I", new WidgetPointer(1258,597));
+		object v1 = "You need at least a tier 2 citadel to customise the potted plants.";
+		cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,object a7,int a8,int a9,int a10,int a11,int a12) {
+			script_7769(a0, a5, a1, a3, a4, a6, a11, a2, a8, a10, a12, a7, a9);
+			return;
+		}, new WidgetPointer(1258,121), new WidgetPointer(1258,573), -1, (string)v1, 120, 17813, 17813, 16777215, 13, 4, 1, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,573));
+		cs2method_20750(new function<script_40>(int a0) {
+			script_41(a0);
+			return;
+		}, new WidgetPointer(1258,121), "I", new WidgetPointer(1258,573));
+	}
+	if (clan_chat_configs['cfg2575'].bitcfg6507 > 2) {
+		cs2method_10467(0, 82444848);
+		cs2method_10467(0, 82444856);
+		cs2method_10467(0, 82444864);
+		cs2method_10467(0, 82444872);
+		cs2method_10467(0, 82444876);
+		cs2method_10467(0, 82444896);
+		cs2method_10467(1, 82444849);
+		cs2method_10467(1, 82444857);
+		cs2method_10467(1, 82444865);
+		cs2method_10467(1, 82444869);
+		cs2method_10467(1, 82444873);
+		cs2method_10467(1, 82444877);
+		cs2method_10467(1, 82444897);
+	} else {
+		cs2method_10467(0, 82444849);
+		cs2method_10467(0, 82444857);
+		cs2method_10467(0, 82444865);
+		cs2method_10467(0, 82444873);
+		cs2method_10467(0, 82444877);
+		cs2method_10467(0, 82444897);
+		object v4 = "You need at least a tier 3 citadel to customise the party room chairs.";
+		cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,object a10,int a11,int a12) {
+			script_7769(a7, a8, a2, a12, a11, a6, a4, a5, a3, a1, a0, a10, a9);
+			return;
+		}, new WidgetPointer(1258,121), new WidgetPointer(1258,561), -1, (string)v4, 120, 17813, 17813, 16777215, 13, 4, 1, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,561));
+		cs2method_20750(new function<script_40>(int a0) {
+			script_41(a0);
+			return;
+		}, new WidgetPointer(1258,121), "I", new WidgetPointer(1258,561));
+		object v5 = "You need at least a tier 3 citadel to customise the party room tables.";
+		cs2method_21121(new function<script_7768>(int a0,int a1,int a2,object a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+			script_7769(a8, a6, a10, a0, a12, a1, a2, a9, a4, a5, a7, a3, a11);
+			return;
+		}, new WidgetPointer(1258,121), new WidgetPointer(1258,569), -1, (string)v5, 120, 17813, 17813, 16777215, 13, 4, 1, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,569));
+		cs2method_20750(new function<script_40>(int a0) {
+			script_41(a0);
+			return;
+		}, new WidgetPointer(1258,121), "I", new WidgetPointer(1258,569));
+		object v1 = "You need at least a tier 3 citadel to customise the sundials.";
+		cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,object a12) {
+			script_7769(a7, a0, a4, a3, a8, a5, a10, a1, a6, a9, a2, a12, a11);
+			return;
+		}, new WidgetPointer(1258,121), new WidgetPointer(1258,577), -1, (string)v1, 120, 17813, 17813, 16777215, 13, 4, 1, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,577));
+		cs2method_20750(new function<script_40>(int a0) {
+			script_41(a0);
+			return;
+		}, new WidgetPointer(1258,121), "I", new WidgetPointer(1258,577));
+		object v3 = "You need at least a tier 3 citadel to customise the keep tapestry.";
+		cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,object a11,int a12) {
+			script_7769(a1, a5, a7, a2, a3, a0, a6, a4, a10, a8, a9, a11, a12);
+			return;
+		}, new WidgetPointer(1258,121), new WidgetPointer(1258,585), -1, (string)v3, 120, 17813, 17813, 16777215, 13, 4, 1, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,585));
+		cs2method_20750(new function<script_40>(int a0) {
+			script_41(a0);
+			return;
+		}, new WidgetPointer(1258,121), "I", new WidgetPointer(1258,585));
+		object v2 = "You need at least a tier 3 citadel to customise the keep banners.";
+		cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,object a11,int a12) {
+			script_7769(a3, a12, a2, a5, a0, a7, a4, a8, a1, a6, a10, a11, a9);
+			return;
+		}, new WidgetPointer(1258,121), new WidgetPointer(1258,589), -1, (string)v2, 120, 17813, 17813, 16777215, 13, 4, 1, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,589));
+		cs2method_20750(new function<script_40>(int a0) {
+			script_41(a0);
+			return;
+		}, new WidgetPointer(1258,121), "I", new WidgetPointer(1258,589));
+		object v6 = "You need at least a tier 3 citadel to customise the keep door.";
+		cs2method_21121(new function<script_7768>(int a0,int a1,int a2,object a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+			script_7769(a8, a5, a10, a7, a6, a4, a12, a2, a11, a1, a0, a3, a9);
+			return;
+		}, new WidgetPointer(1258,121), new WidgetPointer(1258,609), -1, (string)v6, 120, 17813, 17813, 16777215, 13, 4, 1, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,609));
+		cs2method_20750(new function<script_40>(int a0) {
+			script_41(a0);
+			return;
+		}, new WidgetPointer(1258,121), "I", new WidgetPointer(1258,609));
+	}
+	if (clan_chat_configs['cfg2575'].bitcfg6507 > 3) {
+		cs2method_10467(0, 82444888);
+		cs2method_10467(0, 82444892);
+		cs2method_10467(0, 82444852);
+		cs2method_10467(0, 82444880);
+		cs2method_10467(1, 82444889);
+		cs2method_10467(1, 82444893);
+		cs2method_10467(1, 82444853);
+		cs2method_10467(1, 82444881);
+	} else {
+		cs2method_10467(0, 82444889);
+		cs2method_10467(0, 82444893);
+		cs2method_10467(0, 82444853);
+		cs2method_10467(0, 82444881);
+		object v4 = "You need at least a tier 4 citadel to customise the keep lower windows.";
+		cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,object a8,int a9,int a10,int a11,int a12) {
+			script_7769(a7, a4, a2, a5, a3, a10, a1, a12, a0, a11, a9, a8, a6);
+			return;
+		}, new WidgetPointer(1258,121), new WidgetPointer(1258,601), -1, (string)v4, 120, 17813, 17813, 16777215, 13, 4, 1, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,601));
+		cs2method_20750(new function<script_40>(int a0) {
+			script_41(a0);
+			return;
+		}, new WidgetPointer(1258,121), "I", new WidgetPointer(1258,601));
+		object v2 = "You need at least a tier 4 citadel to customise the keep upper windows.";
+		cs2method_21121(new function<script_7768>(int a0,object a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+			script_7769(a9, a4, a10, a12, a5, a3, a8, a0, a7, a6, a2, a1, a11);
+			return;
+		}, new WidgetPointer(1258,121), new WidgetPointer(1258,605), -1, (string)v2, 120, 17813, 17813, 16777215, 13, 4, 1, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,605));
+		cs2method_20750(new function<script_40>(int a0) {
+			script_41(a0);
+			return;
+		}, new WidgetPointer(1258,121), "I", new WidgetPointer(1258,605));
+		object v3 = "You need at least a tier 4 citadel to customise the citadel flags.";
+		cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,object a12) {
+			script_7769(a7, a10, a3, a2, a9, a1, a4, a8, a5, a11, a6, a12, a0);
+			return;
+		}, new WidgetPointer(1258,121), new WidgetPointer(1258,565), -1, (string)v3, 120, 17813, 17813, 16777215, 13, 4, 1, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,565));
+		cs2method_20750(new function<script_40>(int a0) {
+			script_41(a0);
+			return;
+		}, new WidgetPointer(1258,121), "I", new WidgetPointer(1258,565));
+		object v1 = "You need at least a tier 4 citadel to customise the keep shields.";
+		cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,object a11,int a12) {
+			script_7769(a2, a10, a0, a8, a7, a6, a4, a1, a12, a3, a9, a11, a5);
+			return;
+		}, new WidgetPointer(1258,121), new WidgetPointer(1258,593), -1, (string)v1, 120, 17813, 17813, 16777215, 13, 4, 1, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,593));
+		cs2method_20750(new function<script_40>(int a0) {
+			script_41(a0);
+			return;
+		}, new WidgetPointer(1258,121), "I", new WidgetPointer(1258,593));
+	}
+	if (clan_chat_configs['cfg2575'].bitcfg6507 > 4) {
+		cs2method_10467(0, 82444868);
+	} else {
+		cs2method_10467(0, 82444869);
+		object v1 = "You need at least a tier 5 citadel to customise the keep flag.";
+		cs2method_21121(new function<script_7768>(int a0,int a1,int a2,object a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+			script_7769(a1, a8, a4, a0, a9, a10, a11, a6, a2, a12, a5, a3, a7);
+			return;
+		}, new WidgetPointer(1258,121), new WidgetPointer(1258,581), -1, (string)v1, 120, 17813, 17813, 16777215, 13, 4, 1, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1258,581));
+		cs2method_20750(new function<script_40>(int a0) {
+			script_41(a0);
+			return;
+		}, new WidgetPointer(1258,121), "I", new WidgetPointer(1258,581));
+	}
+	return;
+}

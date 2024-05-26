@@ -1,0 +1,158 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_7162_struct(1,1,0) script_7162(int a0,int a1,int a2) {
+	object v0;
+	object v2 = "Bonus on use.";
+	int v1 = 65280;
+	switch (a2) {
+		case 1:
+			v0 = "Special Effect: chance of adding ranged level to damage";
+			break;
+		case 6:
+			v0 = "Special Effect: chance of leeching prayer points (PvP)";
+			break;
+		case 7:
+			v0 = "Special Effect: chance of stunning";
+			break;
+		case 2:
+			v0 = "Special Effect: chance of extra water damage";
+			break;
+		case 8:
+			v0 = "Special Effect: chance of poisoning";
+			break;
+		case 9:
+			v0 = "Special Effect: chance of lowering target's Magic level";
+			break;
+		case 5:
+			v0 = "Special Effect: chance of damaging self for 10% life points, and target for 20% life points";
+			break;
+		case 10:
+			v0 = "Special Effect: chance of adding 15% damage";
+			break;
+		case 4:
+			v0 = "Special Effect: chance of extra dragonbreath damage";
+			break;
+		case 3:
+			v0 = "Special Effect: chance of extra damage and life leech";
+			break;
+		case 17:
+			v0 = "Special Effect: target specific body parts against mages (PvP)";
+			break;
+		case 11:
+			if (a0 == 0) {
+				v0 = "Boost skill: random combat skill";
+			} else {
+				v0 = "Boost skill: random combat skill, by " + (string)cs2method_10379(a0);
+			}
+			break;
+		case 12:
+			v0 = "Restore: " + script_7161(6) + ", by 10 for 10s";
+			break;
+		case 13:
+			v0 = "Substitutes : air runes when casting spells";
+			break;
+		case 14:
+			v0 = "Substitutes : water runes when casting spells";
+			break;
+		case 15:
+			v0 = "Substitutes : earth runes when casting spells";
+			break;
+		case 16:
+			v0 = "Substitutes : fire runes when casting spells";
+			break;
+		case 18:
+			v0 = "Restore : " + script_7161(7) + ", by " + (string)cs2method_10379(cs2method_10872(4095, cs2method_10060(cs2method_10968(1200, 10), cs2method_10122(37, 100, script_7081())))) + " over 5min";
+			break;
+		case 19:
+			v0 = "Special effect: add poison to attacks, for " + (string)cs2method_10379(a0) + "s";
+			break;
+		case 20:
+			v0 = "Special effect: temporarily root target where it's standing";
+			break;
+		case 21:
+			v0 = "Special effect: can kill vampyres";
+			break;
+		case 22:
+			v0 = "Turns a fishing rod into an oily fishing rod";
+			break;
+		case 23:
+			v0 = "Temporarily cures the afflicted in Mort'ton";
+			break;
+		case 24:
+			v0 = "Chance of finding a stone spirit helper while mining";
+			break;
+		case 25:
+			v0 = "Used to make Juju Gumbo";
+			break;
+		case 26:
+			v0 = "Chance of doubling the number herbs picked up from patches";
+			break;
+		case 27:
+			v0 = "Chance of finding a woodcutting spirit helper while cutting trees";
+			break;
+		case 28:
+			v0 = "Chance of catching baron sharks while fishing sharks";
+			break;
+		case 29:
+			v0 = "Used to attract jadinkos";
+			break;
+		case 31:
+			v0 = "All traps become automatically smoked";
+			break;
+		case 32:
+			v0 = "Farming XP bonus in the Herblore Habitat";
+			break;
+		case 33:
+			v0 = "Herblore XP bonus while making juju potions";
+			break;
+		case 34:
+			v0 = "Hunter XP bonus in the Herblore Habitat";
+			break;
+		case 35:
+			v0 = "Reduces poison damage taken by " + (string)cs2method_10379(a0) + "% for " + (string)cs2method_10379(a1) + "s";
+			break;
+		case 36:
+			v0 = "Reduces dragon fire damage taken by " + (string)cs2method_10379(a0) + "% for " + (string)cs2method_10379(a1) + "s";
+			break;
+		case 37:
+			v0 = "Reduce damage in the TzHaar volcano by " + (string)cs2method_10379(5) + "%";
+			break;
+		case 38:
+			v0 = "Reduce damage in the TzHaar volcano by " + (string)cs2method_10379(5) + "%";
+			break;
+		case 39:
+			v0 = "Reduces damage in the TzHaar volcano by " + (string)cs2method_10379(9) + "%; increases melee attack accuracy against lava and obsidian creatures by " + (string)cs2method_10379(10) + "%";
+			break;
+		case 40:
+			v0 = "Reduces damage in the TzHaar volcano by " + (string)cs2method_10379(9) + "%; increases ranged attack accuracy against lava and obsidian creatures by " + (string)cs2method_10379(10) + "%";
+			break;
+		case 41:
+			v0 = "Reduces damage in the TzHaar volcano by " + (string)cs2method_10379(9) + "%; increases magic attack accuracy against lava and obsidian creatures by " + (string)cs2method_10379(10) + "%";
+			break;
+		case 42:
+			v0 = "Reduces damage in the TzHaar volcano by " + (string)cs2method_10379(10) + "%";
+			break;
+		case 43:
+			v0 = "Reduce damage in the TzHaar volcano by " + (string)cs2method_10379(12) + "%";
+			break;
+		case 44:
+			v0 = "Reduces damage in the TzHaar volcano by " + (string)cs2method_10379(12) + "%";
+			break;
+		case 45:
+			v0 = "Reduces damage in the TzHaar volcano by " + (string)cs2method_10379(14) + "%";
+			break;
+		default:
+			return new script_7162_struct(13083202, "No bonus on use");
+	}
+	return new script_7162_struct(v1, v0);
+}

@@ -1,0 +1,103 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_9223(int a0,int a1,int a2,int a3) {
+	flow_0:
+		script_9848();
+		if (a0 != 95944719 && a0 != 95813646 && a0 != 49938560) {
+			return;
+		}
+		if (script_7980(a3) != -1) {
+			script_7002(a0, a2, a3);
+			return;
+		}
+		int v3 = -1;
+		switch (a3) {
+			case 96534536:
+			case 96600077:
+			case 49938439:
+				int v0 = 93;
+				break;
+			default:
+				script_9844(a3, a1, a0, a2, 94);
+				return;
+		}
+		int v5 = -1;
+		int v4 = -1;
+		IF (v0 != -1 && cs2method_11038(a0, a2) == 1) 
+			GOTO	flow_12
+		GOTO	flow_30
+	flow_12:
+		IF (a1 == -1) 
+			GOTO	flow_13
+		GOTO	flow_14
+	flow_13:
+		script_9217(v0, 0, cs2method_10487(), a2, a0, a3);
+		GOTO	flow_30
+	flow_14:
+		IF (cs2method_11038(a3, a1) == 1) 
+			GOTO	flow_15
+		GOTO	flow_30
+	flow_15:
+		int v1 = cs2method_10487();
+		int v2 = cs2method_10487();
+		IF (v2 == -1) 
+			GOTO	flow_16
+		GOTO	flow_17
+	flow_16:
+		script_9218(v0, 0, v1, a2, a1, a0, a3);
+		GOTO	flow_30
+	flow_17:
+		IF (cs2method_10873(v1) == cs2method_10873(v2)) 
+			GOTO	flow_18
+		GOTO	flow_19
+	flow_18:
+		script_9214(v2, v0, a1, a0, a3);
+		GOTO	flow_30
+	flow_19:
+		IF (cs2method_10873(v2) != -1) 
+			GOTO	flow_20
+		GOTO	flow_29
+	flow_20:
+		IF (cs2method_10873(v1) == 5) 
+			GOTO	flow_21
+		GOTO	flow_22
+	flow_21:
+		IF (cs2method_10628(v2) == 5) 
+			GOTO	flow_28
+	flow_22:
+		IF (cs2method_10873(v1) == 3) 
+			GOTO	flow_23
+		GOTO	flow_24
+	flow_23:
+		IF (cs2method_10628(v2) == 3) 
+			GOTO	flow_28
+	flow_24:
+		IF (cs2method_10628(v1) == 5) 
+			GOTO	flow_25
+		GOTO	flow_26
+	flow_25:
+		IF (cs2method_10873(v2) == 5) 
+			GOTO	flow_28
+	flow_26:
+		IF (cs2method_10628(v1) == 3 && cs2method_10873(v2) == 3) 
+			GOTO	flow_28
+		GOTO	flow_29
+	flow_28:
+		script_9214(v2, v0, a1, a0, a3);
+		GOTO	flow_30
+	flow_29:
+		script_9217(v0, 0, cs2method_10487(), a2, a0, a3);
+	flow_30:
+		return;
+}

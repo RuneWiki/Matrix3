@@ -1,0 +1,38 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_3360_struct(2,1,0) script_3360() {
+	switch (client_configs['cfg1831']) {
+		default:
+			return new script_3360_struct(5, 18057, "Aptitude (Tier 1)");
+		case 17955:
+			return new script_3360_struct(5, 18057, "Aptitude (Tier 1)");
+		case 17956:
+			return new script_3360_struct(15, 18058, "Aptitude (Tier 2)");
+		case 17957:
+			return new script_3360_struct(25, 18059, "Aptitude (Tier 3)");
+		case 17958:
+			return new script_3360_struct(35, 18060, "Aptitude (Tier 4)");
+		case 17959:
+			return new script_3360_struct(45, 18061, "Aptitude (Tier 5)");
+		case 17960:
+			return new script_3360_struct(55, 18062, "Aptitude (Tier 6)");
+		case 17961:
+			return new script_3360_struct(65, 18063, "Aptitude (Tier 7)");
+		case 17962:
+			return new script_3360_struct(75, 18064, "Aptitude (Tier 8)");
+		case 17963:
+			return new script_3360_struct(85, 18065, "Aptitude (Tier 9)");
+		case 17964:
+			return new script_3360_struct(95, 18066, "Aptitude (Tier 10)");
+	}
+}

@@ -1,0 +1,24 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1334(int a0,object a1,int a2) {
+	if (a0 != -1) {
+		if (a2 == 1) {
+			cs2method_10026(a0, "<u=91b1f4>" + (string)a1 + "</u>");
+			cs2method_10520(9548276, a0);
+		} else {
+			cs2method_10026(a0, "<u=2c6ff8>" + (string)a1 + "</u>");
+			cs2method_10520(2912248, a0);
+		}
+	}
+	return;
+}

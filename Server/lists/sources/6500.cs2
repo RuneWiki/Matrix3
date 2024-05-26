@@ -1,0 +1,21 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_6500(int a0) {
+	if (client_configs['cfg248'].bitcfg677 == 1) {
+		if (a0 == 1) {
+			cs2method_10810("You cannot display cosmetic gear at the moment.");
+		}
+		return 0;
+	}
+	return 1;
+}

@@ -1,0 +1,89 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4717(int a0,int a1,int a2,int a3) {
+	cs2method_10273(a0);
+	int v0 = 48;
+	int v10 = 48;
+	int v1 = 0;
+	int v6 = -1;
+	int v5 = -1;
+	int v13 = -1;
+	object v8 = "";
+	object v9 = "";
+	int v2 = 1;
+	int v11 = -1;
+	int v7 = cs2method_11048(cs2_configs['cfg2768'], 0);
+	cs2method_10026(38666260, "1");
+	cs2method_10026(94240787, "1");
+	while (v1 < cs2method_10924(a1)) {
+		int v12 = idx17mapData('i', 'J', a1, v1);
+		int v3 = idx22mapAttribute(v12, 1420);
+		int v14 = script_4718(v12);
+		object v4 = idx22mapAttribute(v12, 1419);
+		cs2method_10606(a0, 5, v1);
+		cs2method_10013(v0, v10, 0, 0);
+		cs2method_10063(0, 0, 0, 0);
+		if (v14 == 0) {
+			v3 = idx22mapAttribute(v12, 1421);
+		}
+		if (v12 == 1783) {
+			if (cs2method_11010() > 0) {
+				int v15 = 1789;
+				v3 = idx22mapAttribute(v15, 1420);
+				object v14 = idx22mapAttribute(v15, 1419);
+				object v16 = "Curtsy";
+				cs2method_10057(1, "Curtsy");
+				cs2method_10057(2, "Bow");
+				cs2method_20353(new function<script_8799>(object a0,int a1,int a2) {
+					script_8800(a2, a1, a0);
+					return;
+				}, (string)v14, new WidgetPointer(-32768,3), -2147483643, "sIi");
+			} else {
+				cs2method_10057(1, "Bow");
+				cs2method_10057(2, "Curtsy");
+				object v14 = "Bow";
+				cs2method_20353(new function<script_8799>(int a0,int a1,object a2) {
+					script_8800(a1, a0, a2);
+					return;
+				}, (string)v4, new WidgetPointer(-32768,3), -2147483643, "sIi");
+			}
+		} else if (v12 == 19557) {
+			cs2method_10057(1, "Talk (A)");
+			cs2method_10057(2, "Talk (B)");
+			object v14 = "Talk";
+			cs2method_20353(new function<script_8799>(int a0,object a1,int a2) {
+				script_8800(a2, a0, a1);
+				return;
+			}, (string)v4, new WidgetPointer(-32768,3), -2147483643, "sIi");
+		} else {
+			cs2method_10057(1, v4);
+			cs2method_20353(new function<script_8799>(int a0,object a1,int a2) {
+				script_8800(a2, a0, a1);
+				return;
+			}, (string)v4, new WidgetPointer(-32768,3), -2147483643, "sIi");
+		}
+		cs2method_10310(v3);
+		cs2method_20884(new function<script_8805>() {
+			script_8808();
+			return;
+		}, "");
+		cs2method_20902(new function<script_7001>(int a0,int a1,int a2) {
+			script_7002(a1, a2, a0);
+			return;
+		}, new WidgetPointer(-32768,3), -2147483643, new WidgetPointer(-32768,6), "IiI");
+		v1 = cs2method_10060(v1, 1);
+	}
+	script_4716(38666248, 38666247, a1, -5, 10, v7);
+	script_4716(94240781, 94240780, a1, -5, 10, v7);
+	return;
+}

@@ -1,0 +1,49 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_174(int a0,int a1,object a2,int a3) {
+	if (cs2_configs['cfg1413'] == 0) {
+		return 0;
+	}
+	if (a0 == 2 && cs2method_10846("", cs2method_10403()) == 0) {
+		cs2method_11102(11, 0, "You need to be in a Friends Chat channel to use Friends Channel Quick Chat.");
+		return 0;
+	}
+	if (a0 == 8 && cs2method_10435() == 0) {
+		cs2method_11102(43, 0, "You need to be in a Clan to use Clan Channel Quick Chat.");
+		return 0;
+	}
+	if (a0 == 10 && cs2method_10143() == 0) {
+		cs2method_11102(46, 0, "You need to be a guest in a Clan Channel to use Guest Clan Quick Chat.");
+		return 0;
+	}
+	cs2method_10467(1, script_8585(a1));
+	cs2method_10467(0, script_8586(a1));
+	cs2method_10467(1, script_8588(a1));
+	cs2method_10467(1, script_8590(a1));
+	cs2method_10467(1, script_8594(a1));
+	cs2method_10467(0, script_8598(a1));
+	cs2method_10467(0, script_8599(a1));
+	cs2method_10467(1, script_8600(a1));
+	cs2method_10251(0, 0, script_8598(a1));
+	script_8614(a1, a0);
+	script_8606(a2, a1);
+	script_8616(a1, a3);
+	script_8543(a1);
+	cs2method_20390(new function<script_8545>(int a0) {
+		if (a0 != cs2_configs['cfg2231']) {
+			script_8543(a0);
+		}
+		return;
+	}, a1, "i", new WidgetPointer(script_8586(a1)));
+	return 1;
+}

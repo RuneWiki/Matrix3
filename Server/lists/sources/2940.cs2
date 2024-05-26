@@ -1,0 +1,60 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_2940(int a0) {
+	flow_0:
+		int v0 = script_2948();
+		IF (v0 == -3) 
+			GOTO	flow_1
+		GOTO	flow_2
+	flow_1:
+		IF (a0 != 13) 
+			GOTO	flow_3
+	flow_2:
+		IF (v0 == 21 || v0 == 1) 
+			GOTO	flow_3
+		GOTO	flow_4
+	flow_3:
+		return;
+	flow_4:
+		cs2method_10026(39059494, cs2_configs['cfg2576']);
+		cs2method_10026(39059519, script_2949(cs2_configs['cfg2577']));
+		cs2_configs['cfg4210'] = "";
+		cs2_configs['cfg4211'] = 0;
+		if (cs2method_10609(39059553) == 0) {
+			cs2_configs['cfg174'] = 18;
+			cs2_configs['cfg1099'] = cs2method_10265(cs2_configs['cfg2576']);
+			script_3237(39059579, 39059580, 39059578, cs2_configs['cfg2576'], 18);
+		} else {
+			if (cs2method_10265(cs2_configs['cfg2576']) > 0) {
+				cs2_configs['cfg174'] = 4;
+			} else {
+				cs2_configs['cfg174'] = 3;
+			}
+			if (cs2_configs['cfg174'] == 3) {
+				cs2_configs['cfg1099'] = cs2method_10265(cs2_configs['cfg2576']);
+				script_3237(39059493, 39059494, 39059495, cs2_configs['cfg2576'], 3);
+			} else {
+				cs2_configs['cfg1099'] = cs2method_10265(script_2949(cs2_configs['cfg2577']));
+				script_3237(39059518, 39059519, 39059520, script_2949(cs2_configs['cfg2577']), 4);
+			}
+		}
+		cs2method_10467(0, 48758813);
+		cs2method_10467(0, 39059456);
+		if (cs2method_10580() == 1) {
+			cs2method_10467(0, 48758806);
+		} else {
+			cs2method_10467(0, 48758807);
+		}
+		return;
+}

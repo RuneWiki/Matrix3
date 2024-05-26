@@ -1,0 +1,78 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7991() {
+	cs2method_20162(new function<script_7992>() {
+		if (cs2method_10038(cs2method_10133(), 3000) != 0) {
+			return;
+		}
+		if (cs2_configs['cfg2824'] == 1) {
+			cs2method_20162(new function<none>() {
+			}, "", new WidgetPointer(1477,767));
+			return;
+		}
+		int v5 = 0;
+		int v4 = 0;
+		int v6 = 0;
+		opc_struct10829(3,0,0) v0 = cs2method_10829();
+		int v1 = v0.intpart_2;
+		int v7 = v0.intpart_1;
+		int v3 = v0.intpart_0;
+		if (cs2method_10580() == 0) {
+			return;
+		}
+		if (v1 < 30) {
+			return;
+		}
+		int v2 = 96797389;
+		if (v7 < 10) {
+			cs2method_11007(v2, 1423);
+			script_8421(93257732, 93257734, "Performance Problems?", 93257733, 93257737, 21259, -1, 1);
+			cs2method_10112(0, 10, 1, 0, 93257731);
+			cs2_configs['cfg2824'] = 1;
+			cs2method_10026(93257731, "You can improve your performance by either changing your graphics settings or by downloading the desktop version of the game." + "<br>" + "Use the links below to improve your game performance.");
+			cs2method_20486(new function<script_132>() {
+				cs2method_10058(96797389);
+				int v0 = script_2582(19589, 0, 0);
+				/* 
+					java.lang.RuntimeException: Stack underflow
+						at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.cast(FlowBlocksGenerator.java:546)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.cast(FlowBlocksGenerator.java:546)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+						at tests.Main.main(Main.java:69)
+					
+				 */
+			}, "", new WidgetPointer(1423,12));
+			cs2method_20486(new function<script_7995>() {
+				cs2method_10058(96797389);
+				cs2method_10824(0, "www", "downloads.ws");
+				return;
+			}, "", new WidgetPointer(1423,31));
+		}
+		return;
+	}, "", new WidgetPointer(1477,767));
+	return;
+}

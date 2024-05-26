@@ -1,0 +1,106 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8152(int a0,int a1,int a2) {
+	if (script_5767() == 1) {
+		return;
+	}
+	if (cs2method_10609(96797078) == 0) {
+		return;
+	}
+	if (cs2_configs['cfg3467'] != -1) {
+		return;
+	}
+	int v4 = idx17mapData('i', 'J', 7699, a2);
+	if (v4 == -1 || a1 == -1) {
+		return;
+	}
+	int v7 = idx22mapAttribute(v4, 3481);
+	int v1 = script_9970(v7);
+	if (v1 == 0) {
+		script_8800(a1, -1, "Open " + idx22mapAttribute(v4, 3493));
+		return;
+	}
+	cs2method_11007(96797079, 1432);
+	script_8421(93847553, 93847555, "", 93847554, -1, 21259, -1, 0);
+	int v9 = idx22mapAttribute(21255, 3569);
+	int v0 = cs2method_10051(cs2method_10060(32, 4), v1);
+	int v10 = cs2method_10060(cs2method_10060(v0, 32), cs2method_10051(2, 4));
+	int v2 = cs2method_10060(32, cs2method_10051(4, 2));
+	if (cs2method_10324(a1) == 1) {
+		if (a0 == 3) {
+			a0 = script_8788(interfaceDefsAttribute(3640), v2, a1, -1, a0, cs2method_10060(32, 4), -4);
+		} else if (a0 == 2) {
+			a0 = script_8788(interfaceDefsAttribute(3640), v2, a1, -1, a0, cs2method_10461(cs2method_10461(0, 32), 4), -4);
+		} else if (a0 == 0) {
+			a0 = script_8788(v2, interfaceDefsAttribute(3640), a1, -1, a0, -4, cs2method_10060(32, 4));
+		} else {
+			a0 = script_8788(v2, interfaceDefsAttribute(3640), a1, -1, a0, -4, cs2method_10461(cs2method_10461(0, 32), 4));
+		}
+	}
+	switch (a0) {
+		case 3:
+			int v5 = script_8788(v10, v2, a1, -1, a0, cs2method_10060(32, 4), -4);
+			/* 
+				java.lang.RuntimeException: Stack underflow
+					at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+					at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+					at tests.Main.main(Main.java:69)
+				
+			 */
+		case 2:
+			int v3 = script_8788(v10, v2, a1, -1, a0, cs2method_10461(cs2method_10461(0, 32), 4), -4);
+			/* 
+				java.lang.RuntimeException: Stack underflow
+					at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+					at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+					at tests.Main.main(Main.java:69)
+				
+			 */
+		case 0:
+			int v8 = script_8788(v2, v10, a1, -1, a0, -4, cs2method_10060(32, 4));
+			/* 
+				java.lang.RuntimeException: Stack underflow
+					at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+					at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+					at tests.Main.main(Main.java:69)
+				
+			 */
+		case 1:
+			int v6 = script_8788(v2, v10, a1, -1, a0, -4, cs2method_10461(cs2method_10461(0, 32), 4));
+			/* 
+				java.lang.RuntimeException: Stack underflow
+					at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+					at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+					at tests.Main.main(Main.java:69)
+				
+			 */
+	}
+	if (cs2method_10324(93847556) == 1) {
+		cs2method_10995(3642, v7);
+		cs2method_10995(3643, a0);
+	}
+	script_8153(v7, a0);
+	return;
+}

@@ -1,0 +1,99 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9795(int a0,int a1) {
+	object v0 = "Tutorial:" + "<br>" + "Welcome to the Guards team!";
+	int v2 = 0;
+	if (client_configs['cfg4166'].bitcfg21694 == 0) {
+		switch (client_configs['cfg4162'].bitcfg21687) {
+			case 1:
+				v0 = "Tutorial - Robbers:" + "<br>" + "<br>" + "Welcome to the island, fresh with opportunity." + "<br>" + "Your goal as a robber is to infiltrate the town, locate the bank and bring as many loot bags to the boat as possible while avoiding the guards!";
+				break;
+			case 2:
+				v0 = "Tutorial - Robbers:" + "<br>" + "<br>" + "To help you sneak around the island, you can take the form of any citizen - just click on any of them to do so." + "<br>" + "Try this now.";
+				v2 = 1;
+				break;
+			case 3:
+				v0 = "Tutorial - Robbers:" + "<br>" + "<br>" + "Now you are disguised, it'll be harder for guards to spot you - especially if you act like the citizens do.";
+				break;
+			case 4:
+				v0 = "Tutorial - Robbers:" + "<br>" + "<br>" + "Ultimately, your goal is to locate the bank and take some loot." + "<br>" + "Follow the trail there now.";
+				v2 = 1;
+				break;
+			case 5:
+				v0 = "Tutorial - Robbers:" + "<br>" + "<br>" + "This is the bank - plenty of loot ripe for the taking, so let's grab some now.";
+				v2 = 1;
+				break;
+			case 6:
+				v0 = "Tutorial - Robbers:" + "<br>" + "<br>" + "Now that you have loot, you can no longer change form, so you're easier for the guards to spot." + "<br>" + "Follow the trail to the boat to offload this loot as quickly as possible.";
+				v2 = 1;
+				break;
+			case 7:
+				v0 = "Tutorial - Robbers:" + "<br>" + "<br>" + "Speak to Liara to offload your loot." + "<br>" + "<br>" + "If the boat is too well guarded, additional drop-off points can be found around the map.";
+				v2 = 1;
+				break;
+			case 8:
+				v0 = "Tutorial - Robbers:" + "<br>" + "<br>" + "If the robbers offload enough loot, they'll win." + "<br>" + "If the guards arrest all of the robbers, last 20 minutes stopping loot capture, or confiscate enough loot from robbers, they win.";
+				break;
+			case 9:
+				v0 = "Tutorial - Robbers:" + "<br>" + "<br>" + "If a guard spots you correctly, you'll have to evade capture." + "<br>" + "If you fail to evade, you'll be arrested on the spot.";
+				break;
+			case 10:
+				v0 = "Tutorial - Robbers:" + "<br>" + "<br>" + "If you get arrested two times, you'll be sent to jail.";
+				break;
+			case 11:
+				v0 = "Tutorial - Robbers:" + "<br>" + "<br>" + "There are a few ways to escape from jail." + "<br>" + "<br>" + "However, if you don't make it out in time, you'll be converted to the guard team to catch the remaining robbers!";
+				break;
+			case 12:
+				v0 = "Tutorial - Robbers:" + "<br>" + "<br>" + "And those are the basics!" + "<br>" + "There are perks to being on each side that can be unlocked from the rewards shop, as well as random events, where townsfolk need your help." + "<br>" + "For now, click to exit!";
+		}
+	} else {
+		switch (client_configs['cfg4162'].bitcfg21687) {
+			case 1:
+				v0 = "Tutorial - Guards:" + "<br>" + "<br>" + "Welcome to the island - yours to defend." + "<br>" + "Your goal as a guard is to prevent the robbers from getting away with too much loot.";
+				break;
+			case 2:
+				v0 = "Tutorial - Guards:" + "<br>" + "<br>" + "To help, there are various things you can do. The main ability you have is the ability to accuse.";
+				break;
+			case 3:
+				v0 = "Tutorial - Guards:" + "<br>" + "<br>" + "If you think someone is a robber, you can click on them to accuse them." + "<br>" + "<br>" + "Try this now.";
+				v2 = 1;
+				break;
+			case 4:
+				v0 = "Tutorial - Guards:" + "<br>" + "<br>" + "If you are right, the robber will be identified and you can run in for the arrest" + "<br>" + "<br>" + "Try arresting someone now.";
+				v2 = 1;
+				break;
+			case 5:
+				v0 = "Tutorial - Guards:" + "<br>" + "<br>" + "After a robber has been arrested twice, any further arrests will put them in jail. If they don't get out of jail, they'll join the guards' team!";
+				break;
+			case 6:
+				v0 = "Tutorial - Guards:" + "<br>" + "<br>" + "If all the robbers are caught and converted to guards or the robbers don't get enough loot within 20 minutes, the guard team wins.";
+				break;
+			case 7:
+				v0 = "Tutorial - Guards:" + "<br>" + "<br>" + "Be careful though! If you falsely accuse three citizens, Internal Affairs will show up and jail you for 30 seconds for bad form!";
+				break;
+			case 8:
+				v0 = "Tutorial - Guards:" + "<br>" + "<br>" + "And those are the basics!" + "<br>" + "Visit the reward shop for perks that can be unlocked. There are also random events, where townsfolk need your help." + "<br>" + "For now, click to exit!";
+		}
+	}
+	cs2method_10170(17813, a1);
+	int v3 = cs2method_10872(500, cs2method_11048(30, cs2method_10051(cs2method_10805(cs2method_10236(a1), cs2method_10643(a1), v0), 15)));
+	int v1 = cs2method_10060(v3, 85);
+	if (v2 == 1) {
+		cs2method_10467(1, 67764238);
+	} else {
+		cs2method_10467(0, 67764238);
+	}
+	cs2method_10283(cs2method_10236(a0), v1, 0, 0, a0);
+	cs2method_10026(a1, v0);
+	return;
+}

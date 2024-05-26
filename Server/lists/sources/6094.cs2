@@ -1,0 +1,46 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6094() {
+	int v3 = 82903060;
+	int v2 = 10448;
+	if (client_configs['cfg307'].bitcfg987 == 1) {
+		v2 = 10453;
+	}
+	for (int v1 = 0; v1 < 40; v1 = cs2method_10060(v1, 1)) {
+		if (cs2method_11038(v3, v1) == 1) {
+			cs2method_10310(v2);
+			cs2method_20674(new function<script_6100>(int a0,int a1,int a2,int a3,int a4) {
+				script_6101(a4, a0, a2, a3, a1);
+				return;
+			}, client_configs['cfg307'].bitcfg987, 0, 1, new WidgetPointer(-32768,3), -2147483643, "iiiIi");
+			cs2method_20884(new function<script_6100>(int a0,int a1,int a2,int a3,int a4) {
+				script_6101(a0, a3, a4, a1, a2);
+				return;
+			}, client_configs['cfg307'].bitcfg987, 0, 0, new WidgetPointer(-32768,3), -2147483643, "iiiIi");
+		}
+	}
+	for (int v0 = 0, int v4 = 82903061; v0 < 40; v0 = cs2method_10060(v0, 1)) {
+		if (cs2method_11038(v4, v0) == 1) {
+			cs2method_10310(v2);
+			cs2method_20674(new function<script_6100>(int a0,int a1,int a2,int a3,int a4) {
+				script_6101(a4, a0, a1, a3, a2);
+				return;
+			}, client_configs['cfg307'].bitcfg987, 0, 1, new WidgetPointer(-32768,3), -2147483643, "iiiIi");
+			cs2method_20884(new function<script_6100>(int a0,int a1,int a2,int a3,int a4) {
+				script_6101(a1, a4, a0, a2, a3);
+				return;
+			}, client_configs['cfg307'].bitcfg987, 0, 0, new WidgetPointer(-32768,3), -2147483643, "iiiIi");
+		}
+	}
+	return;
+}

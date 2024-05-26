@@ -1,0 +1,90 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3825() {
+	int v4 = -1;
+	int v8 = -1;
+	globalarray_0 = new int[3];
+	for (int v9 = 0, int v0 = 1, int v3 = 0; v9 < 3 && idx17mapData('i', 'J', 8830, v0) != -1; v0 = cs2method_10060(v0, 1)) {
+		int v5 = 0;
+		int v2 = idx17mapData('i', 'J', 8830, v0);
+		if (cs2method_10210() == 1 || idx22mapAttribute(v2, 4327) == 0) {
+			switch (idx22mapAttribute(v2, 4325)) {
+				case 1:
+					v5 = client_configs['cfg4471'].bitcfg22627;
+					break;
+				case 2:
+					if (client_configs['cfg4413'].bitcfg22385 != 100 || client_configs['cfg4471'].bitcfg22626 == 1) {
+						v5 = 1;
+					}
+					break;
+				case 3:
+					v5 = client_configs['cfg1264'].bitcfg3412;
+					break;
+				case 4:
+					v5 = script_3830();
+					break;
+				case 5:
+					v5 = client_configs['cfg4471'].bitcfg22620;
+					break;
+				case 6:
+					v5 = client_configs['cfg4471'].bitcfg22624;
+					break;
+				case 7:
+					v5 = client_configs['cfg4471'].bitcfg22625;
+					break;
+				case 8:
+					v5 = client_configs['cfg4471'].bitcfg22621;
+			}
+			if (v5 == 0) {
+				int v10 = idx22mapAttribute(v2, 4324);
+				if (v10 == -1 || script_3224(idx22mapAttribute(v10, 1268)) == 1) {
+					globalarray_0[v9] = idx22mapAttribute(v2, 4325);
+					v9 = cs2method_10060(v9, 1);
+				} else {
+					cs2method_10810("Requirements not met for: " + idx22mapAttribute(v2, 4328));
+				}
+			}
+		}
+	}
+	int v6 = -1;
+	int v1 = -1;
+	int v7 = -1;
+	if (globalarray_0[0] != 0) {
+		int v10 = idx17mapData('i', 'J', 8830, globalarray_0[0]);
+		cs2method_10026(98369712, idx22mapAttribute(v10, 4328));
+		cs2method_10758(idx22mapAttribute(v10, 4326), 98369711);
+	} else {
+		cs2method_10026(98369712, "Minigames: Combat");
+		cs2method_10758(23108, 98369711);
+		cs2method_10467(1, 98369713);
+		cs2method_10467(1, 98369723);
+	}
+	if (globalarray_0[1] != 0) {
+		int v10 = idx17mapData('i', 'J', 8830, globalarray_0[1]);
+		cs2method_10026(98369722, idx22mapAttribute(v10, 4328));
+		cs2method_10758(idx22mapAttribute(v10, 4326), 98369721);
+	} else {
+		cs2method_10026(98369722, "Minigames: Combat");
+		cs2method_10758(23108, 98369721);
+		cs2method_10467(1, 98369723);
+	}
+	if (globalarray_0[2] != 0) {
+		int v10 = idx17mapData('i', 'J', 8830, globalarray_0[2]);
+		cs2method_10026(98369732, idx22mapAttribute(v10, 4328));
+		cs2method_10758(idx22mapAttribute(v10, 4326), 98369731);
+	} else {
+		cs2method_10026(98369732, "Minigames: Combat");
+		cs2method_10758(23108, 98369731);
+	}
+	return;
+}

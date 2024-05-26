@@ -1,0 +1,247 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_4174(int a0) {
+	if (a0 == -1) {
+		return 0;
+	}
+	int v0 = script_4173(idx22mapAttribute(a0, 2788));
+	if (v0 == -1) {
+		return 0;
+	}
+	switch (v0) {
+		case 9814:
+		case 9813:
+			if (client_configs['cfg1297'] < client_configs['cfg423']) {
+				return 0;
+			}
+			break;
+		case 20758:
+		case 20759:
+		case 20756:
+		case 20757:
+		case 20754:
+		case 20755:
+		case 20762:
+		case 20760:
+		case 20761:
+			if (client_configs['cfg265'].bitcfg20381 == 1) {
+				return 0;
+			}
+			break;
+		case 9749:
+		case 9748:
+		case 9747:
+			if (cs2method_10338(0) < 99) {
+				return 0;
+			}
+			break;
+		case 9772:
+		case 9773:
+		case 9771:
+			if (cs2method_10338(16) < 99) {
+				return 0;
+			}
+			break;
+		case 9789:
+		case 9791:
+		case 9790:
+			if (cs2method_10338(22) < 99) {
+				return 0;
+			}
+			break;
+		case 9802:
+		case 9803:
+		case 9801:
+			if (cs2method_10338(7) < 99) {
+				return 0;
+			}
+			break;
+		case 9781:
+		case 9780:
+		case 9782:
+			if (cs2method_10338(12) < 99) {
+				return 0;
+			}
+			break;
+		case 9755:
+		case 9754:
+		case 9753:
+			if (cs2method_10338(1) < 99) {
+				return 0;
+			}
+			break;
+		case 29187:
+		case 29186:
+		case 29185:
+			if (cs2method_10338(25) < 99) {
+				return 0;
+			}
+			break;
+		case 18508:
+		case 18509:
+		case 18510:
+			if (cs2method_10338(24) < 99) {
+				return 0;
+			}
+			break;
+		case 19709:
+			if (cs2method_10338(24) < 120) {
+				return 0;
+			}
+			break;
+		case 9811:
+		case 9810:
+		case 9812:
+			if (cs2method_10338(19) < 99) {
+				return 0;
+			}
+			break;
+		case 9806:
+		case 9804:
+		case 9805:
+			if (cs2method_10338(11) < 99) {
+				return 0;
+			}
+			break;
+		case 9800:
+		case 9798:
+		case 9799:
+			if (cs2method_10338(10) < 99) {
+				return 0;
+			}
+			break;
+		case 9785:
+		case 9784:
+		case 9783:
+			if (cs2method_10338(9) < 99) {
+				return 0;
+			}
+			break;
+		case 9774:
+		case 9775:
+		case 9776:
+			if (cs2method_10338(15) < 99) {
+				return 0;
+			}
+			break;
+		case 9768:
+		case 9769:
+		case 9770:
+			if (cs2method_10338(3) < 99) {
+				return 0;
+			}
+			break;
+		case 9950:
+		case 9948:
+		case 9949:
+			if (cs2method_10338(21) < 99) {
+				return 0;
+			}
+			break;
+		case 9764:
+		case 9762:
+		case 9763:
+			if (cs2method_10338(6) < 99) {
+				return 0;
+			}
+			break;
+		case 9794:
+		case 9792:
+		case 9793:
+			if (cs2method_10338(14) < 99) {
+				return 0;
+			}
+			break;
+		case 9760:
+		case 9761:
+		case 9759:
+			if (cs2method_10338(5) < 99) {
+				return 0;
+			}
+			break;
+		case 9758:
+		case 9757:
+		case 9756:
+			if (cs2method_10338(4) < 99) {
+				return 0;
+			}
+			break;
+		case 9765:
+		case 9766:
+		case 9767:
+			if (cs2method_10338(20) < 99) {
+				return 0;
+			}
+			break;
+		case 9788:
+		case 9787:
+		case 9786:
+			if (cs2method_10338(18) < 99) {
+				return 0;
+			}
+			break;
+		case 9795:
+		case 9796:
+		case 9797:
+			if (cs2method_10338(13) < 99) {
+				return 0;
+			}
+			break;
+		case 9752:
+		case 9751:
+		case 9750:
+			if (cs2method_10338(2) < 99) {
+				return 0;
+			}
+			break;
+		case 12169:
+		case 12171:
+		case 12170:
+			if (cs2method_10338(23) < 99) {
+				return 0;
+			}
+			break;
+		case 9777:
+		case 9779:
+		case 9778:
+			if (cs2method_10338(17) < 99) {
+				return 0;
+			}
+			break;
+		case 9807:
+		case 9809:
+		case 9808:
+			if (cs2method_10338(8) < 99) {
+				return 0;
+			}
+			break;
+		case 20768:
+		case 20767:
+			if (client_configs['cfg265'].bitcfg20380 == 1) {
+				return 0;
+			}
+			break;
+		case 20769:
+		case 20770:
+			if (client_configs['cfg265'].bitcfg690 == 1) {
+				return 0;
+			}
+			break;
+		case 20772:
+		case 20771:
+			if (client_configs['cfg265'].bitcfg690 == 1 && client_configs['cfg265'].bitcfg691 == 1) {
+				return 0;
+			}
+	}
+	return 1;
+}

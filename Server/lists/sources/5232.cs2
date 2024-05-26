@@ -1,0 +1,27 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5232(int a0,int a1) {
+	if (cs2method_10723(0) == 5 && cs2_configs['cfg1007'] == 2) {
+		if (a1 == 1) {
+			cs2method_10382(0, 1, 800, 700, 1, 1);
+			cs2method_20196(load function<5232>, new WidgetPointer(a0), 2, "Ii", new WidgetPointer(a0));
+			return;
+		}
+		if (a1 == 2) {
+			cs2method_10382(0, 2, 700, 40, 1, 2);
+		}
+	}
+	cs2method_20196(new function<none>() {
+	}, "", new WidgetPointer(a0));
+	return;
+}

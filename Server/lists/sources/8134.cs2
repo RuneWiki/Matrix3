@@ -1,0 +1,37 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8134(int a0) {
+	if (a0 != 1) {
+		return;
+	}
+	if (cs2_configs['cfg2058'] == 1) {
+		if (cs2_configs['cfg2247'] == 1) {
+			return;
+		}
+		script_7013(1, 1);
+	} else {
+		if (cs2_configs['cfg2247'] == 1) {
+			return;
+		}
+		if (client_configs['cfg3250'].bitcfg16626 == 1) {
+			return;
+		}
+		if (script_5767() == 1) {
+			cs2method_10810("You can't do that during the tutorial.");
+			return;
+		}
+		script_7011(1);
+	}
+	script_8133();
+	return;
+}

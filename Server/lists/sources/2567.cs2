@@ -1,0 +1,50 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2567() {
+	int v0 = 0;
+	int v3 = 0;
+	int v1 = 0;
+	int v2 = 0;
+	int v6 = -1;
+	int v7 = 5;
+	int v5 = cs2method_10968(cs2method_10461(cs2method_10236(55181329), cs2method_10051(36, v7)), cs2method_10461(v7, 1));
+	int v4 = cs2method_10968(cs2method_10461(cs2method_10823(55181329), 128), 3);
+	if (cs2method_10936(93, 15001) > 0) {
+		v6 = 1991;
+	} else if (cs2method_10936(93, 15002) > 0) {
+		v6 = 1995;
+	} else if (cs2method_10936(93, 15003) > 0) {
+		v6 = 1998;
+	} else {
+		if (cs2method_10936(93, 15004) > 0) {
+			v6 = 1999;
+		}
+	}
+	while (v2 == 0) {
+		if (idx17mapData('i', 'o', v6, v0) != 1511) {
+			cs2method_10606(55181329, 5, v0);
+			cs2method_10013(36, 32, 0, 0);
+			cs2method_10063(cs2method_10051(cs2method_10060(36, v5), cs2method_10038(v0, v7)), cs2method_10051(cs2method_10968(v0, v7), cs2method_10060(32, v4)), 0, 0);
+			cs2method_11070(idx17mapData('i', 'o', v6, v0), -1);
+			cs2method_10200("<col=ff981f>" + (string)cs2method_10018(idx17mapData('i', 'o', v6, v0)));
+			cs2method_10057(1, "Withdraw");
+			cs2method_10057(2, "Examine");
+			cs2method_10278(3355443);
+			cs2method_10356(1);
+			v0 = cs2method_10060(v0, 1);
+		} else {
+			v2 = 1;
+		}
+	}
+	return;
+}

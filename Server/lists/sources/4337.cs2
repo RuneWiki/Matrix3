@@ -1,0 +1,30 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+string script_4337(int a0) {
+	object v4 = "+";
+	if (a0 < 0) {
+		v4 = "-";
+		a0 = cs2method_10461(0, a0);
+	}
+	int v0 = cs2method_10968(a0, 60);
+	int v1 = cs2method_10038(a0, 60);
+	object v2 = cs2method_10379(v0);
+	if (v0 < 10) {
+		v2 = "0" + (string)cs2method_10379(v0);
+	}
+	object v3 = cs2method_10379(v1);
+	if (v1 < 10) {
+		v3 = "0" + (string)cs2method_10379(v1);
+	}
+	return (string)v4 + (string)v2 + ":" + (string)v3;
+}

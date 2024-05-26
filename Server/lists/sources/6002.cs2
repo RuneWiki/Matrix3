@@ -1,0 +1,181 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6002(int a0) {
+	object v5;
+	if (client_configs['cfg3926'] == 31 || client_configs['cfg3926'] == 2079 || client_configs['cfg3926'] == 2080) {
+		return;
+	}
+	object v2 = "null";
+	int v0 = cs2method_10461(cs2method_10191(a0), 101);
+	int v7 = cs2method_10152(a0);
+	int v6 = script_6003(cs2method_10769(a0));
+	int v1 = cs2method_11048(v0, 20);
+	int v10 = cs2method_10872(v1, 230);
+	if (v7 <= 150) {
+		int v11 = cs2method_10060(v7, 40);
+	} else {
+		int v11 = cs2method_10461(v7, 50);
+	}
+	int v4 = 0;
+	int v3 = 1;
+	object v8 = "";
+	switch (a0) {
+		case 71565316:
+			v2 = idx17mapData('c', 's', 5726, 52661131);
+			v8 = idx17mapData('c', 's', 8620, 52661131);
+			if (client_configs['cfg2151'].bitcfg9482 == 15) {
+				v4 = 1;
+			}
+			break;
+		case 71565327:
+			v2 = idx17mapData('c', 's', 5726, 34164555);
+			v8 = idx17mapData('c', 's', 8620, 34164555);
+			if (client_configs['cfg2253'].bitcfg10236 == 190) {
+				v4 = 1;
+			}
+			break;
+		case 71565328:
+			v2 = idx17mapData('c', 's', 5726, 54021233);
+			v8 = idx17mapData('c', 's', 8620, 54021233);
+			v4 = client_configs['cfg3'].bitcfg28;
+			v3 = 0;
+			break;
+		case 71565329:
+			v2 = idx17mapData('c', 's', 5726, 43158805);
+			v8 = idx17mapData('c', 's', 8620, 43158805);
+			v4 = client_configs['cfg3'].bitcfg29;
+			break;
+		case 71565330:
+			v2 = idx17mapData('c', 's', 5726, 47500761);
+			v8 = idx17mapData('c', 's', 8620, 47500761);
+			v4 = client_configs['cfg3'].bitcfg30;
+			v3 = 0;
+			break;
+		case 71565331:
+			v2 = idx17mapData('c', 's', 5726, 46386556);
+			v8 = idx17mapData('c', 's', 8620, 46386556);
+			v4 = client_configs['cfg3'].bitcfg31;
+			break;
+		case 71565332:
+			v2 = idx17mapData('c', 's', 5726, 50875619);
+			v8 = idx17mapData('c', 's', 8620, 50875619);
+			v4 = client_configs['cfg3'].bitcfg32;
+			v3 = 0;
+			break;
+		case 71565333:
+			v2 = idx17mapData('c', 's', 5726, 50253234);
+			v8 = idx17mapData('c', 's', 8620, 50253234);
+			v4 = client_configs['cfg3'].bitcfg33;
+			v3 = 0;
+			break;
+		case 71565334:
+			v2 = idx17mapData('c', 's', 5726, 48614732);
+			v8 = idx17mapData('c', 's', 8620, 48614732);
+			v4 = client_configs['cfg3'].bitcfg34;
+			v3 = 0;
+			break;
+		case 71565335:
+			v2 = idx17mapData('c', 's', 5726, 52972694);
+			v8 = idx17mapData('c', 's', 8620, 52972694);
+			v4 = client_configs['cfg3'].bitcfg35;
+			v3 = 0;
+			break;
+		case 71565336:
+			v2 = idx17mapData('c', 's', 5726, 49335440);
+			v8 = idx17mapData('c', 's', 8620, 49335440);
+			v4 = client_configs['cfg3'].bitcfg36;
+			v3 = 0;
+			break;
+		case 71565337:
+			v2 = idx17mapData('c', 's', 5726, 44060059);
+			v8 = idx17mapData('c', 's', 8620, 44060059);
+			v4 = client_configs['cfg3'].bitcfg37;
+			break;
+		case 71565338:
+			v2 = idx17mapData('c', 's', 5726, 47156595);
+			v8 = idx17mapData('c', 's', 8620, 47156595);
+			v4 = client_configs['cfg3'].bitcfg38;
+			v3 = 0;
+			break;
+		case 71565339:
+			v2 = idx17mapData('c', 's', 5726, 52661553);
+			v8 = idx17mapData('c', 's', 8620, 52661553);
+			v4 = client_configs['cfg3'].bitcfg39;
+			v3 = 0;
+			break;
+		case 71565340:
+			v2 = idx17mapData('c', 's', 5726, 41438231);
+			v8 = idx17mapData('c', 's', 8620, 41438231);
+			v4 = client_configs['cfg3'].bitcfg40;
+			break;
+		case 71565341:
+			v2 = idx17mapData('c', 's', 5726, 57626044);
+			v8 = idx17mapData('c', 's', 8620, 57626044);
+			v4 = client_configs['cfg3'].bitcfg18523;
+			break;
+		case 71565342:
+			v2 = idx17mapData('c', 's', 5726, 38768024);
+			v8 = idx17mapData('c', 's', 8620, 38768024);
+			v4 = client_configs['cfg3'].bitcfg18524;
+			break;
+		case 71565343:
+			v2 = idx17mapData('c', 's', 5726, 44437086);
+			v8 = idx17mapData('c', 's', 8620, 44437086);
+			v4 = client_configs['cfg3'].bitcfg18525;
+			break;
+		case 71565344:
+			v2 = idx17mapData('c', 's', 5726, 45239372);
+			v8 = idx17mapData('c', 's', 8620, 45239372);
+			v4 = client_configs['cfg3'].bitcfg18526;
+			break;
+		case 71565345:
+			v2 = idx17mapData('c', 's', 5726, 41487160);
+			v8 = idx17mapData('c', 's', 8620, 41487160);
+			v4 = client_configs['cfg3'].bitcfg18527;
+			break;
+		case 71565346:
+			v2 = idx17mapData('c', 's', 5726, 36932686);
+			v8 = idx17mapData('c', 's', 8620, 36932686);
+			v4 = client_configs['cfg3'].bitcfg18528;
+			break;
+		case 71565347:
+			v2 = idx17mapData('c', 's', 5726, 51498548);
+			v8 = idx17mapData('c', 's', 8620, 51498548);
+			v4 = client_configs['cfg3'].bitcfg18529;
+			v3 = 0;
+			break;
+		case 71565348:
+			v2 = idx17mapData('c', 's', 5726, 577407637);
+			v8 = idx17mapData('c', 's', 8620, 577407637);
+			v4 = client_configs['cfg3'].bitcfg22522;
+			v3 = 0;
+	}
+	object v9 = "";
+	if (v3 == 1 && cs2method_10771() == 0) {
+		v4 = 0;
+		if (cs2method_10210() == 0) {
+			v5 = "Members' only area." + "<br>" + "Click to subscribe.";
+		} else {
+			v5 = "This lodestone is unavailable" + "<br>" + "on free worlds.";
+		}
+	} else if (v4 == 1) {
+		v5 = "Click to teleport to" + "<br>" + "this lodestone." + "<br>" + (string)v8;
+	} else {
+		v5 = "This lodestone is" + "<br>" + "not yet active.";
+	}
+	script_3819(v4, v2, a0, v5, -1);
+	cs2method_10758(v6, 71565350);
+	cs2method_10112(cs2method_10461(cs2method_10191(a0), 5), cs2method_10461(cs2method_10152(a0), 5), 0, 0, 71565349);
+	cs2method_10467(0, 71565349);
+	return;
+}

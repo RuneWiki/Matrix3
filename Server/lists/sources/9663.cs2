@@ -1,0 +1,36 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+string script_9663() {
+	int v0 = cs2method_10338(18);
+	int v1 = 0;
+	int v2 = 0;
+	if (v0 >= 35) {
+		return "Runes for 250 casts of Slayer Dart.";
+	}
+	if (v0 < 5) {
+		v1 = 50;
+		v2 = 450;
+	} else if (v0 < 15) {
+		v1 = 100;
+		v2 = 525;
+	} else if (v0 < 25) {
+		v1 = 150;
+		v2 = 600;
+	} else {
+		if (v0 < 35) {
+			v1 = 200;
+			v2 = 675;
+		}
+	}
+	return (string)cs2method_10379(v1) + " death runes and " + (string)cs2method_10379(v2) + " air runes.";
+}

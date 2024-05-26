@@ -1,0 +1,23 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4339(int a0,int a1,int a2) {
+	cs2method_20537(new function<script_5230>(int a0,int a1,int a2) {
+		if (cs2method_10752() == 1) {
+			script_4340(a1, clan_configs['cfg0'], a2, a0);
+			cs2method_20537(new function<none>() {
+			}, "", new WidgetPointer(a0));
+		}
+		return;
+	}, a0, new WidgetPointer(a2), new WidgetPointer(a1), "iII", new WidgetPointer(a1));
+	return;
+}

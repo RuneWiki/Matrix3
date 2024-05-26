@@ -1,0 +1,41 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1671(int a0,int a1) {
+	object v0 = "Empty display";
+	switch (a1) {
+		case 0:
+			cs2method_21121(new function<script_7781>(int a0,int a1,int a2,int a3,object a4) {
+				script_7788(a4, a2, -1, a3, a0, a1);
+				return;
+			}, new WidgetPointer(-32768,3), new WidgetPointer(81,40), (string)v0, 25, 180, "IIsii", new WidgetPointer(a0));
+			break;
+		case 1:
+			cs2method_21121(new function<script_7781>(int a0,int a1,object a2,int a3,int a4) {
+				script_7788(a2, a4, -1, a3, a1, a0);
+				return;
+			}, new WidgetPointer(-32768,3), new WidgetPointer(83,40), (string)v0, 25, 180, "IIsii", new WidgetPointer(a0));
+			break;
+		case 2:
+			cs2method_21121(new function<script_7781>(int a0,int a1,int a2,int a3,object a4) {
+				script_7788(a4, a2, -1, a3, a0, a1);
+				return;
+			}, new WidgetPointer(-32768,3), new WidgetPointer(80,52), (string)v0, 25, 180, "IIsii", new WidgetPointer(a0));
+			break;
+		case 3:
+			cs2method_21121(new function<script_7781>(object a0,int a1,int a2,int a3,int a4) {
+				script_7788(a0, a3, -1, a1, a4, a2);
+				return;
+			}, new WidgetPointer(-32768,3), new WidgetPointer(82,38), (string)v0, 25, 180, "IIsii", new WidgetPointer(a0));
+	}
+	return;
+}

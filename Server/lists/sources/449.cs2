@@ -1,0 +1,36 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_449(int a0) {
+	object v0 = "A PvP minigame";
+	switch (a0) {
+		case 44367879:
+			v0 = "Death match" + "<br>" + "A multiplayer mode for up to 30 players. First person to score 50 kills wins!" + "<br>" + "<br>" + "Combat levels 0-10" + "<br>" + "<br>" + "<col=00c800>" + "Items are kept on death";
+			break;
+		case 44367880:
+			v0 = "Death match" + "<br>" + "A multiplayer mode for up to 30 players. First person to score 50 kills wins!" + "<br>" + "<br>" + "Combat levels 10-50" + "<br>" + "<br>" + "<col=00c800>" + "Items are kept on death";
+			break;
+		case 44367882:
+			v0 = "Death match" + "<br>" + "A multiplayer mode for up to 30 players. First person to score 50 kills wins!" + "<br>" + "<br>" + "Combat levels 40-90" + "<br>" + "<br>" + "<col=00c800>" + "Items are kept on death";
+			break;
+		case 44367884:
+			v0 = "Death match" + "<br>" + "A multiplayer mode for up to 30 players. First person to score 50 kills wins!" + "<br>" + "<br>" + "Combat levels 80-110" + "<br>" + "<br>" + "<col=00c800>" + "Items are kept on death";
+			break;
+		case 44367886:
+			v0 = "Death match" + "<br>" + "A multiplayer mode for up to 30 players. First person to score 50 kills wins!" + "<br>" + "<br>" + "Combat levels 100+" + "<br>" + "<br>" + "<col=00c800>" + "Items are kept on death";
+			break;
+		case 44367888:
+			v0 = "Bounty hunter" + "<br>" + "A " + "<col=e12323>" + "dangerous" + "</col>" + " multiplayer mode for up to 50 players. You will be assigned a target to kill but may chose to attack anyone who isn't in combat." + "<br>" + "<br>" + "<col=e12323>" + "Items are lost if you die in this mode.";
+	}
+	cs2method_10026(44367875, v0);
+	return;
+}

@@ -1,0 +1,19 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_5183(int a0,int a1,int a2,int a3) {
+	client_configs['cfg1111'] = a3;
+	client_configs['cfg1111'].bitcfg3020 = cs2method_10872(63, cs2method_11048(0, cs2method_10060(client_configs['cfg1111'].bitcfg3020, a0)));
+	client_configs['cfg1111'].bitcfg3021 = cs2method_10872(7, cs2method_11048(0, cs2method_10060(client_configs['cfg1111'].bitcfg3021, a1)));
+	client_configs['cfg1111'].bitcfg3022 = cs2method_10872(127, cs2method_11048(0, cs2method_10060(client_configs['cfg1111'].bitcfg3022, a2)));
+	return client_configs['cfg1111'];
+}

@@ -1,0 +1,38 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_134() {
+	if (cs2method_10271() == 5 || cs2method_10271() == 6) {
+		cs2method_10026(38928433, "Suggest to mute this player for 48 hours");
+		cs2method_10026(38928395, "Suggest to mute this player for 48 hours");
+		cs2method_10026(38928416, "Suggest to mute this player for 48 hours");
+	} else {
+		cs2method_10026(38928433, "Mute this player for 48 hours");
+		cs2method_10026(38928395, "Mute this player for 48 hours");
+		cs2method_10026(38928416, "Mute this player for 48 hours");
+	}
+	if (cs2_configs['cfg6'] == 1) {
+		cs2_configs['cfg6'] = 0;
+	} else {
+		cs2_configs['cfg6'] = 1;
+	}
+	if (cs2_configs['cfg6'] == 0) {
+		cs2method_10758(8364, 38928432);
+		cs2method_10758(8364, 38928394);
+		cs2method_10758(8364, 38928415);
+	} else {
+		cs2method_10758(8366, 38928432);
+		cs2method_10758(8366, 38928394);
+		cs2method_10758(8366, 38928415);
+	}
+	return;
+}

@@ -1,0 +1,163 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4168(int a0) {
+	int v1 = 0;
+	int v2 = 1;
+	int v0 = cs2method_10936(93, 25355);
+	switch (a0) {
+		case 1:
+			v1 = client_configs['cfg2884'].bitcfg14633;
+			break;
+		case 2:
+			v1 = client_configs['cfg2884'].bitcfg14634;
+			break;
+		case 3:
+			v1 = client_configs['cfg2884'].bitcfg14635;
+			break;
+		case 4:
+			v1 = client_configs['cfg2884'].bitcfg14637;
+			break;
+		case 5:
+			v1 = client_configs['cfg2884'].bitcfg14636;
+			break;
+		case 6:
+			v1 = client_configs['cfg2884'].bitcfg14638;
+			break;
+		case 7:
+			v1 = client_configs['cfg2884'].bitcfg14632;
+	}
+	if (v1 == 1) {
+		switch (a0) {
+			case 1:
+				cs2method_10467(1, 41418815);
+				cs2method_10467(0, 41418819);
+				cs2method_10026(41418813, "You have already purchased this item.");
+				break;
+			case 2:
+				cs2method_10467(1, 41418838);
+				cs2method_10467(0, 41418842);
+				cs2method_10026(41418836, "You have already purchased this item.");
+				break;
+			case 3:
+				cs2method_10467(1, 41418851);
+				cs2method_10467(0, 41418855);
+				cs2method_10026(41418849, "You have already purchased this item.");
+				break;
+			case 4:
+				cs2method_10467(1, 41418864);
+				cs2method_10467(0, 41418868);
+				cs2method_10026(41418862, "You have already purchased this item.");
+				break;
+			case 5:
+				cs2method_10467(1, 41418877);
+				cs2method_10467(0, 41418881);
+				cs2method_10026(41418875, "You have already purchased this item.");
+				break;
+			case 6:
+				cs2method_10467(1, 41418890);
+				cs2method_10467(0, 41418894);
+				cs2method_10026(41418888, "You have already purchased this item.");
+				break;
+			case 7:
+				cs2method_10467(1, 41418904);
+				cs2method_10467(0, 41418908);
+				cs2method_10026(41418901, "You have already purchased this item.");
+		}
+		return;
+	}
+	switch (a0) {
+		case 1:
+			if (v0 < 25) {
+				v2 = 0;
+				cs2method_10467(1, 41418815);
+				cs2method_10467(0, 41418819);
+				cs2method_10026(41418813, "You do not have enough ectoplasm to buy this item.");
+			}
+			break;
+		case 2:
+			if (v0 < 25) {
+				v2 = 0;
+				cs2method_10467(1, 41418838);
+				cs2method_10467(0, 41418842);
+				cs2method_10026(41418836, "You do not have enough ectoplasm to buy this item.");
+			}
+			break;
+		case 3:
+			if (v0 < 25) {
+				v2 = 0;
+				cs2method_10467(1, 41418851);
+				cs2method_10467(0, 41418855);
+				cs2method_10026(41418849, "You do not have enough ectoplasm to buy this item.");
+			}
+			break;
+		case 4:
+			if (v0 < 25) {
+				v2 = 0;
+				cs2method_10467(1, 41418864);
+				cs2method_10467(0, 41418868);
+				cs2method_10026(41418862, "You do not have enough ectoplasm to buy this item.");
+			}
+			break;
+		case 5:
+			if (v0 < 25) {
+				v2 = 0;
+				cs2method_10467(1, 41418877);
+				cs2method_10467(0, 41418881);
+				cs2method_10026(41418875, "You do not have enough ectoplasm to buy this item.");
+			}
+			break;
+		case 6:
+			if (v0 < 25) {
+				v2 = 0;
+				cs2method_10467(1, 41418890);
+				cs2method_10467(0, 41418894);
+				cs2method_10026(41418888, "You do not have enough ectoplasm to buy this item.");
+			}
+			break;
+		case 7:
+			if (v0 < 50) {
+				v2 = 0;
+				cs2method_10467(1, 41418904);
+				cs2method_10467(0, 41418908);
+				cs2method_10026(41418901, "You do not have enough ectoplasm to buy this item.");
+			}
+			break;
+		case 8:
+			if (v0 < 1) {
+				v2 = 0;
+				cs2method_10467(1, 41418918);
+				cs2method_10467(0, 41418922);
+			}
+	}
+	if (v2 == 0) {
+		return;
+	}
+	if (a0 == 7) {
+		if (cs2method_10060(cs2method_10936(94, 25356), cs2method_10936(94, 25362)) < 1 || cs2method_10060(cs2method_10936(94, 25357), cs2method_10936(94, 25363)) < 1 || cs2method_10060(cs2method_10936(94, 25358), cs2method_10936(94, 25364)) < 1 || cs2method_10060(cs2method_10936(94, 25360), cs2method_10936(94, 25366)) < 1 || cs2method_10060(cs2method_10936(94, 25359), cs2method_10936(94, 25365)) < 1 || cs2method_10060(cs2method_10936(94, 25361), cs2method_10936(94, 25367)) < 1) {
+			cs2method_10467(1, 41418904);
+			cs2method_10467(0, 41418908);
+			cs2method_10026(41418901, "You can only buy this item while wearing the full robe set.");
+		}
+	} else {
+		if (a0 == 8) {
+			if (client_configs['cfg2884'].bitcfg14633 == 0 || client_configs['cfg2884'].bitcfg14634 == 0 || client_configs['cfg2884'].bitcfg14635 == 0 || client_configs['cfg2884'].bitcfg14637 == 0 || client_configs['cfg2884'].bitcfg14636 == 0 || client_configs['cfg2884'].bitcfg14638 == 0 || client_configs['cfg2884'].bitcfg14632 == 0) {
+				cs2method_10467(1, 41418918);
+				cs2method_10467(0, 41418922);
+			} else {
+				cs2method_10467(0, 41418918);
+				cs2method_10467(1, 41418922);
+			}
+		}
+	}
+	return;
+}

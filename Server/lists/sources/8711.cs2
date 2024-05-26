@@ -1,0 +1,30 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_8711(int a0,int a1,int a2) {
+	int v6 = 10;
+	switch (a2) {
+		case 0:
+			return 0;
+		case 2048:
+			return cs2method_10461(cs2method_10968(a1, 2), cs2method_10968(a0, 2));
+		case 4095:
+			return cs2method_10461(a1, a0);
+	}
+	int v2 = cs2method_10051(a2, v6);
+	int v4 = cs2method_10051(a0, v6);
+	int v0 = cs2method_10051(a1, v6);
+	int v1 = cs2method_10778(cs2method_10968(cs2method_10461(0, v0), 2), cs2method_10968(v0, 2), cs2method_10051(0, v6), cs2method_10051(4095, v6), v2);
+	int v3 = cs2method_10060(cs2method_10461(v1, cs2method_10968(v4, 2)), cs2method_10968(v0, 2));
+	int v5 = cs2method_11048(0, cs2method_10872(v3, cs2method_10461(v0, v4)));
+	return cs2method_10968(v5, v6);
+}

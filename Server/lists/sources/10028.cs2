@@ -1,0 +1,39 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_10028_struct(7,1,0) script_10028(int a0,int a1,int a2,object a3,int a4) {
+	int v7 = 0;
+	int v19 = 0;
+	int v0 = 0;
+	int v9 = a0;
+	int v10 = a4;
+	script_9926_struct(2,0,0) v18 = script_9926(v9, v10);
+	int v4 = v18.intpart_1;
+	int v13 = v18.intpart_0;
+	int v12 = a0;
+	int v14 = v13;
+	int v17 = a1;
+	script_10027_struct(2,0,0) v5 = script_10027(v12, v14, v17);
+	int v2 = v5.intpart_1;
+	int v8 = v5.intpart_0;
+	int v15 = script_10026(a0, v8);
+	int v3 = a0;
+	int v6 = v8;
+	int v16 = v4;
+	int v11 = v2;
+	int v20 = v15;
+	int v22 = a2;
+	int v1 = 17;
+	object v21 = a3;
+	cs2method_10351();
+	return new script_10028_struct(v3, v6, v16, v11, v20, v22, v1, v21);
+}

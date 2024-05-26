@@ -1,0 +1,76 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_577(object a0) {
+	int v2 = cs2method_10947(1, a0);
+	int v1 = cs2method_10236(25493508);
+	int v4 = cs2method_10461(v1, 8);
+	if (v2 == -1) {
+		cs2method_10606(25493508, 4, 0);
+		cs2method_10063(0, 48, 0, 0);
+		cs2method_10013(v1, 16, 0, 0);
+		cs2method_10692(20281);
+		cs2method_10797("Too many results. Please refine your search.");
+		cs2method_11105(1, 1, 0);
+		cs2method_10811(10508800);
+		cs2method_10173(0);
+		cs2method_11130(0, 0, 25493508);
+		script_578();
+		return;
+	}
+	if (v2 == 0) {
+		cs2method_10606(25493508, 4, 0);
+		cs2method_10063(0, 48, 0, 0);
+		cs2method_10013(v1, 16, 0, 0);
+		cs2method_10692(20281);
+		cs2method_10797("No matching items found.");
+		cs2method_11105(1, 1, 0);
+		cs2method_10811(10508800);
+		cs2method_10173(0);
+		cs2method_11130(0, 0, 25493508);
+		script_578();
+		return;
+	}
+	int v0 = 1;
+	int v3 = cs2method_11119();
+	cs2method_10606(25493508, 3, 0);
+	while (v3 != -1) {
+		cs2method_10606(25493508, 4, v0);
+		cs2method_10063(4, cs2method_10051(15, cs2method_10461(v0, 1)), 0, 0);
+		cs2method_10013(v4, 15, 0, 0);
+		cs2method_10811(10508800);
+		cs2method_10797(cs2method_10018(v3));
+		cs2method_10692(20452);
+		cs2method_10173(0);
+		cs2method_20674(new function<script_579>(int a0,int a1) {
+			if (cs2method_11038(25493508, 0) == 1) {
+				cs2method_10063(0, cs2method_10051(15, cs2method_10461(a1, 1)), 0, 0);
+				cs2method_10013(cs2method_10236(25493508), 15, 0, 0);
+				cs2method_10811(0);
+				cs2method_10002(220);
+				cs2method_10238(1);
+			}
+			cs2method_10039(a0, -1, 25493517);
+			return;
+		}, v0, v3, "io");
+		cs2method_20672(new function<script_580>(int a0) {
+			cs2method_10029(a0);
+			script_573();
+			return;
+		}, v3, "o");
+		v3 = cs2method_11119();
+		v0 = cs2method_10060(v0, 1);
+	}
+	cs2method_11130(0, cs2method_10051(15, cs2method_10461(v0, 1)), 25493508);
+	script_578();
+	return;
+}

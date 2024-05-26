@@ -1,0 +1,142 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9464() {
+	int v10 = idx17mapData('i', 'J', 8224, cs2_configs['cfg3880']);
+	if (v10 == -1) {
+		cs2method_10569();
+		return;
+	}
+	int v0 = 0;
+	object v4 = idx22mapAttribute(v10, 3951);
+	object v6 = idx22mapAttribute(v10, 3952);
+	object v7 = idx22mapAttribute(v10, 3957);
+	object v8 = idx22mapAttribute(v10, 3962);
+	object v9 = idx22mapAttribute(v10, 3967);
+	cs2method_10026(48889886, v4);
+	cs2method_10026(48889915, v6);
+	cs2method_10026(48889924, v7);
+	cs2method_10026(48889933, v8);
+	cs2method_10026(48889942, v9);
+	object v1 = "N/A";
+	int v11 = -1;
+	if (cs2_configs['cfg3876'] > 0) {
+		int v5 = idx17mapData('i', 'J', 8224, cs2method_10461(cs2_configs['cfg3880'], 1));
+		switch (cs2_configs['cfg3876']) {
+			case 1:
+				v1 = idx22mapAttribute(v5, 3952);
+				break;
+			case 2:
+				v1 = idx22mapAttribute(v5, 3957);
+				break;
+			case 3:
+				v1 = idx22mapAttribute(v5, 3962);
+				break;
+			case 4:
+				v1 = idx22mapAttribute(v5, 3967);
+		}
+	}
+	cs2method_10026(48889868, v1);
+	cs2method_10026(48889882, cs2method_10379(script_9467()));
+	cs2method_10026(48889884, cs2method_10379(100000));
+	cs2method_10283(cs2method_10122(script_9467(), 100000, 117), cs2method_10823(48889948), 0, 0, 48889948);
+	cs2method_10026(48889892, cs2method_10379(script_9468()));
+	cs2method_10026(48889894, cs2method_10379(100000));
+	cs2method_10283(cs2method_10122(script_9468(), 100000, 117), cs2method_10823(48889955), 0, 0, 48889955);
+	cs2method_10026(48889899, cs2method_10379(script_9469()));
+	cs2method_10026(48889901, cs2method_10379(100000));
+	cs2method_10283(cs2method_10122(script_9469(), 100000, 117), cs2method_10823(48889898), 0, 0, 48889898);
+	cs2method_10026(48889905, cs2method_10379(script_9470()));
+	cs2method_10026(48889907, cs2method_10379(100000));
+	cs2method_10283(cs2method_10122(script_9470(), 100000, 117), cs2method_10823(48889968), 0, 0, 48889968);
+	int v2 = 0;
+	int v3 = 0;
+	switch (cs2_configs['cfg3880']) {
+		case 1:
+			v2 = client_configs['cfg3955'].bitcfg21092;
+			v3 = client_configs['cfg3955'].bitcfg21093;
+			break;
+		case 2:
+			v2 = client_configs['cfg3955'].bitcfg21094;
+			v3 = client_configs['cfg3955'].bitcfg21095;
+			break;
+		case 3:
+			v2 = client_configs['cfg3955'].bitcfg21096;
+			v3 = client_configs['cfg3955'].bitcfg21097;
+			break;
+		case 4:
+			v2 = client_configs['cfg3955'].bitcfg21098;
+			v3 = client_configs['cfg3955'].bitcfg21099;
+			break;
+		case 5:
+			v2 = client_configs['cfg3955'].bitcfg21100;
+			v3 = client_configs['cfg3955'].bitcfg21101;
+			break;
+		case 6:
+			v2 = client_configs['cfg3955'].bitcfg21102;
+			v3 = client_configs['cfg3955'].bitcfg21103;
+			break;
+		case 7:
+			v2 = client_configs['cfg3955'].bitcfg21104;
+			v3 = client_configs['cfg3955'].bitcfg21105;
+	}
+	cs2method_10467(1, 48889913);
+	cs2method_10467(1, 48889922);
+	cs2method_10467(1, 48889931);
+	cs2method_10467(1, 48889940);
+	cs2method_10467(1, 48889911);
+	cs2method_10467(1, 48889920);
+	cs2method_10467(1, 48889929);
+	cs2method_10467(1, 48889938);
+	if (v2 == 0) {
+		cs2method_10467(1, 48889913);
+		cs2method_10467(1, 48889922);
+		cs2method_10467(1, 48889931);
+		cs2method_10467(1, 48889940);
+		cs2method_10467(0, 48889985);
+	} else {
+		cs2method_10467(0, 48889913);
+		cs2method_10467(0, 48889922);
+		cs2method_10467(0, 48889931);
+		cs2method_10467(0, 48889940);
+		cs2method_10467(1, 48889985);
+		switch (v2) {
+			case 1:
+				cs2method_10467(0, 48889911);
+				cs2method_10467(1, 48889913);
+				break;
+			case 2:
+				cs2method_10467(0, 48889920);
+				cs2method_10467(1, 48889922);
+				break;
+			case 3:
+				cs2method_10467(0, 48889929);
+				cs2method_10467(1, 48889931);
+				break;
+			case 4:
+				cs2method_10467(0, 48889938);
+				cs2method_10467(1, 48889940);
+		}
+	}
+	if (v3 == 1 || v2 == 0) {
+		cs2method_10467(0, 48889977);
+	} else {
+		cs2method_10467(1, 48889977);
+	}
+	if (cs2_configs['cfg3880'] > 7) {
+		cs2method_10467(0, 48889913);
+		cs2method_10467(0, 48889922);
+		cs2method_10467(0, 48889931);
+		cs2method_10467(0, 48889940);
+	}
+	return;
+}

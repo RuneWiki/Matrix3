@@ -1,0 +1,181 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1864(int a0,int a1,int a2,int a3) {
+	if (a2 != 1) {
+		return;
+	}
+	switch (a3) {
+		case 12:
+			switch (a1) {
+				case 0:
+					cs2method_10810("Rick: " + (string)cs2method_10379(idx17mapData('i', 'i', 238, 1)) + " coins.");
+					break;
+				case 1:
+					cs2method_10810("Maid: " + (string)cs2method_10379(idx17mapData('i', 'i', 238, 3)) + " coins.");
+					break;
+				case 2:
+					cs2method_10810("Cook: " + (string)cs2method_10379(idx17mapData('i', 'i', 238, 5)) + " coins.");
+					break;
+				case 3:
+					cs2method_10810("Butler: " + (string)cs2method_10379(idx17mapData('i', 'i', 238, 6)) + " coins.");
+					break;
+				case 4:
+					cs2method_10810("Demon Butler: " + (string)cs2method_10379(idx17mapData('i', 'i', 238, 8)) + " coins.");
+			}
+			return;
+		case 0:
+			switch (a0) {
+				case 8170:
+					a0 = 8415;
+					break;
+				case 8315:
+					a0 = 8395;
+					break;
+				case 8222:
+					a0 = 8396;
+					break;
+				case 8121:
+					a0 = 8397;
+					break;
+				case 8379:
+					a0 = 8406;
+					break;
+				case 8037:
+					a0 = 8398;
+					break;
+				case 8255:
+					a0 = 8401;
+					break;
+				case 8163:
+					a0 = 8399;
+					break;
+				case 8027:
+					a0 = 8400;
+					break;
+				case 8259:
+					a0 = 8403;
+					break;
+				case 8340:
+					a0 = 8407;
+					break;
+				case 9822:
+					a0 = 9842;
+					break;
+				case 8068:
+					a0 = 8405;
+					break;
+				case 8333:
+					a0 = 8408;
+					break;
+				case 8195:
+					a0 = 8416;
+					break;
+				case 8363:
+					a0 = 8409;
+					break;
+				case 8302:
+					a0 = 8410;
+					break;
+				case 8123:
+					a0 = 8411;
+					break;
+				case 8122:
+					a0 = 18800;
+					break;
+				case 8151:
+					a0 = 8414;
+			}
+			cs2method_10810((string)cs2method_10018(a0) + ": " + (string)cs2method_10055(cs2method_10340(a0), 1) + " coins.");
+			return;
+		case 14:
+		case 15:
+			return;
+	}
+	globalarray_0 = new int[6];
+	globalarray_1 = new int[6];
+	int v0 = 0;
+	if (itemDefsAttribute(a0, 211) != -1) {
+		globalarray_0[0] = itemDefsAttribute(a0, 211);
+		globalarray_0[0] = itemDefsAttribute(a0, 212);
+		v0 = cs2method_10060(v0, 1);
+	}
+	if (itemDefsAttribute(a0, 213) != -1) {
+		globalarray_0[1] = itemDefsAttribute(a0, 213);
+		globalarray_0[1] = itemDefsAttribute(a0, 214);
+		v0 = cs2method_10060(v0, 1);
+	}
+	if (itemDefsAttribute(a0, 215) != -1) {
+		globalarray_0[2] = itemDefsAttribute(a0, 215);
+		globalarray_0[2] = itemDefsAttribute(a0, 216);
+		v0 = cs2method_10060(v0, 1);
+	}
+	if (itemDefsAttribute(a0, 217) != -1) {
+		globalarray_0[3] = itemDefsAttribute(a0, 217);
+		globalarray_0[3] = itemDefsAttribute(a0, 218);
+		v0 = cs2method_10060(v0, 1);
+	}
+	if (itemDefsAttribute(a0, 219) != -1) {
+		globalarray_0[4] = itemDefsAttribute(a0, 219);
+		globalarray_0[4] = itemDefsAttribute(a0, 220);
+		v0 = cs2method_10060(v0, 1);
+	}
+	if (itemDefsAttribute(a0, 221) != -1) {
+		globalarray_0[5] = itemDefsAttribute(a0, 221);
+		globalarray_0[5] = itemDefsAttribute(a0, 222);
+		v0 = cs2method_10060(v0, 1);
+	}
+	switch (v0) {
+		case 1:
+			cs2method_10810((string)cs2method_10018(a0) + ":");
+			cs2method_10810((string)cs2method_10055(globalarray_1[0], 1) + " x " + (string)cs2method_10018(globalarray_0[0]));
+			break;
+		case 2:
+			cs2method_10810((string)cs2method_10018(a0) + ":");
+			cs2method_10810((string)cs2method_10055(globalarray_1[0], 1) + " x " + (string)cs2method_10018(globalarray_0[0]));
+			cs2method_10810((string)cs2method_10055(globalarray_1[1], 1) + " x " + (string)cs2method_10018(globalarray_0[1]));
+			break;
+		case 3:
+			cs2method_10810((string)cs2method_10018(a0) + ":");
+			cs2method_10810((string)cs2method_10055(globalarray_1[0], 1) + " x " + (string)cs2method_10018(globalarray_0[0]));
+			cs2method_10810((string)cs2method_10055(globalarray_1[1], 1) + " x " + (string)cs2method_10018(globalarray_0[1]));
+			cs2method_10810((string)cs2method_10055(globalarray_1[2], 1) + " x " + (string)cs2method_10018(globalarray_0[2]));
+			break;
+		case 4:
+			cs2method_10810((string)cs2method_10018(a0) + ":");
+			cs2method_10810((string)cs2method_10055(globalarray_1[0], 1) + " x " + (string)cs2method_10018(globalarray_0[0]));
+			cs2method_10810((string)cs2method_10055(globalarray_1[1], 1) + " x " + (string)cs2method_10018(globalarray_0[1]));
+			cs2method_10810((string)cs2method_10055(globalarray_1[2], 1) + " x " + (string)cs2method_10018(globalarray_0[2]));
+			cs2method_10810((string)cs2method_10055(globalarray_1[3], 1) + " x " + (string)cs2method_10018(globalarray_0[3]));
+			break;
+		case 5:
+			cs2method_10810((string)cs2method_10018(a0) + ":");
+			cs2method_10810((string)cs2method_10055(globalarray_1[0], 1) + " x " + (string)cs2method_10018(globalarray_0[0]));
+			cs2method_10810((string)cs2method_10055(globalarray_1[1], 1) + " x " + (string)cs2method_10018(globalarray_0[1]));
+			cs2method_10810((string)cs2method_10055(globalarray_1[2], 1) + " x " + (string)cs2method_10018(globalarray_0[2]));
+			cs2method_10810((string)cs2method_10055(globalarray_1[3], 1) + " x " + (string)cs2method_10018(globalarray_0[3]));
+			cs2method_10810((string)cs2method_10055(globalarray_1[4], 1) + " x " + (string)cs2method_10018(globalarray_0[4]));
+			break;
+		case 6:
+			cs2method_10810((string)cs2method_10018(a0) + ":");
+			cs2method_10810((string)cs2method_10055(globalarray_1[0], 1) + " x " + (string)cs2method_10018(globalarray_0[0]));
+			cs2method_10810((string)cs2method_10055(globalarray_1[1], 1) + " x " + (string)cs2method_10018(globalarray_0[1]));
+			cs2method_10810((string)cs2method_10055(globalarray_1[2], 1) + " x " + (string)cs2method_10018(globalarray_0[2]));
+			cs2method_10810((string)cs2method_10055(globalarray_1[3], 1) + " x " + (string)cs2method_10018(globalarray_0[3]));
+			cs2method_10810((string)cs2method_10055(globalarray_1[4], 1) + " x " + (string)cs2method_10018(globalarray_0[4]));
+			cs2method_10810((string)cs2method_10055(globalarray_1[5], 1) + " x " + (string)cs2method_10018(globalarray_0[5]));
+			break;
+		default:
+			cs2method_10810(cs2method_10018(a0));
+	}
+	return;
+}

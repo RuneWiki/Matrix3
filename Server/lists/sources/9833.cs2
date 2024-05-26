@@ -1,0 +1,117 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_9833(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9) {
+	int v5;
+	int v3 = itemDefsAttribute(a1, 537);
+	int v19 = 0;
+	int v2 = a1;
+	int v14 = a9;
+	int v4 = a7;
+	int v9 = a2;
+	int v10 = a3;
+	script_9832_struct(2,0,0) v11 = script_9832(v2, v14, v4, v9, v10);
+	int v12 = v11.intpart_1;
+	int v8 = v11.intpart_0;
+	if (v12 >= v8) {
+		return 0;
+	}
+	int v16 = script_6969(a1, a3);
+	int v18 = 0;
+	int v13 = 0;
+	if (a6 == -1) {
+		if (client_configs['cfg110'].bitcfg288 > 1) {
+			int v20 = client_configs['cfg110'].bitcfg288;
+			script_1467_struct(2,0,0) v21 = script_1467(v20);
+			v5 = v21.intpart_1;
+			v18 = v21.intpart_0;
+		} else {
+			v5 = script_6971();
+		}
+		if (a6 == -1) {
+			a6 = v5;
+		}
+	}
+	int v6 = cs2method_10461(v8, v12);
+	if (client_configs['cfg110'].bitcfg288 == 0) {
+		client_configs['cfg110'].bitcfg288 = 1;
+		cs2_configs['cfg188'] = 1;
+	}
+	int v1 = -1;
+	int v15 = 0;
+	if (script_9827(cs2method_10480(a1)) == 0) {
+		v1 = script_9673(a0, cs2method_10480(a1), v18);
+		v15 = cs2method_10936(95, cs2method_10480(a1));
+		if (cs2method_11038(a0, v1) == 1) {
+			v15 = cs2method_11048(v15, cs2method_11089());
+		}
+	}
+	if (v15 > 0) {
+		int v17 = v1;
+		if (cs2method_11038(a0, v17) == 1) {
+			script_6580(cs2method_10487(), cs2method_10060(v15, v6));
+		}
+		if (a2 == 1 && client_configs['cfg110'].bitcfg288 != 1) {
+			client_configs['cfg110'].bitcfg288 = script_1468(v17);
+		}
+	} else {
+		if (a6 < cs2method_10461(v16, 1)) {
+			script_9826(cs2method_10480(a1), v6, a6);
+		}
+		int v20 = script_7590(script_1468(a6), 1);
+		/* 
+			java.lang.RuntimeException: Stack underflow
+				at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+				at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+				at tests.Main.main(Main.java:69)
+			
+		 */
+	}
+	int v0 = script_8887(a4, a1);
+	if (v0 != -1 && a8 == 0) {
+		a5 = cs2method_10872(a5, v0);
+	}
+	script_9834(a1, v3);
+	if (cs2method_11038(a4, a5) == 1 && cs2method_10487() == a1) {
+		if (cs2method_10480(a1) != a1 || cs2method_10991(a1) == 1) {
+			int v7 = cs2method_10461(cs2method_11089(), v6);
+			if (v7 <= 0) {
+				a1 = -1;
+				v7 = 0;
+			}
+			if (a7 == 93) {
+				script_9240(a4, "Deposit-1", interfaceDefsAttribute(3819), 93, "Deposit-5", a1, "Deposit-10", "Deposit-" + (string)cs2method_10379(client_configs['cfg3922']), "Deposit-X", "Deposit-All", "", v7, 1, "", "", "Examine");
+			} else {
+				if (a7 == 94) {
+					script_9222(a1, v7);
+				}
+			}
+		} else if (cs2method_11078(a1) == 1) {
+			if (a7 == 93) {
+				script_9240(a4, "", interfaceDefsAttribute(3819), 93, "", -1, "", "", "", "", "", 0, 1, "", "", "");
+			} else {
+				if (a7 == 94) {
+					script_9222(-1, 0);
+				}
+			}
+			if (v6 > 1) {
+				script_9835(a4, a7, -1, a1, -1, cs2method_10461(v6, 1));
+			}
+		} else {
+			script_9835(a4, a7, a5, a1, -1, v6);
+		}
+	}
+	return 1;
+}

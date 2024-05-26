@@ -1,0 +1,38 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2703(int a0,int a1,int a2,int a3,int a4) {
+	int v0 = cs2method_10461(a3, cs2method_10133());
+	if (v0 <= 0) {
+		script_2705(0, a0, a2, 1, a1, a4);
+		return;
+	}
+	int v1 = cs2method_11055();
+	if (cs2method_10441(a0, 1) == 1 && v1 != 3) {
+		script_2705(0, a0, a2, 1, a1, a4);
+		return;
+	}
+	int v2 = 48627718;
+	if (a2 == 1) {
+		if (cs2method_10908(v2) == 0) {
+			script_2701(a0, a1, a4);
+		}
+		cs2method_10026(57868304, "Reverting in: " + (string)cs2method_10379(cs2method_10968(v0, 50)));
+	} else if (a2 == 2) {
+		cs2method_10026(59375763, "Reverting in: " + (string)cs2method_10379(cs2method_10968(v0, 50)));
+	} else if (a2 == 4) {
+		cs2method_10026(93061671, "Reverting in: " + (string)cs2method_10379(cs2method_10968(v0, 50)));
+	} else {
+		cs2method_10026(48758846, "Reverting in: " + (string)cs2method_10379(cs2method_10968(v0, 50)));
+	}
+	return;
+}

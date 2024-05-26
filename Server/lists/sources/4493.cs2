@@ -1,0 +1,115 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4493(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12,int a13,int a14,int a15,int a16,int a17,int a18,int a19,int a20,int a21,int a22,int a23,int a24,int a25,int a26,int a27,int a28,int a29,int a30) {
+	int v2 = 1;
+	for (int v1 = -1, int v0 = 1; v0 <= 30; v0 = cs2method_10060(v0, 1)) {
+		switch (v0) {
+			case 1:
+				v1 = a18;
+				break;
+			case 2:
+				v1 = a1;
+				break;
+			case 3:
+				v1 = a21;
+				break;
+			case 4:
+				v1 = a26;
+				break;
+			case 5:
+				v1 = a2;
+				break;
+			case 6:
+				v1 = a11;
+				break;
+			case 7:
+				v1 = a6;
+				break;
+			case 8:
+				v1 = a15;
+				break;
+			case 9:
+				v1 = a8;
+				break;
+			case 10:
+				v1 = a4;
+				break;
+			case 11:
+				v1 = a27;
+				break;
+			case 12:
+				v1 = a29;
+				break;
+			case 13:
+				v1 = a28;
+				break;
+			case 14:
+				v1 = a22;
+				break;
+			case 15:
+				v1 = a10;
+				break;
+			case 16:
+				v1 = a23;
+				break;
+			case 17:
+				v1 = a24;
+				break;
+			case 18:
+				v1 = a12;
+				break;
+			case 19:
+				v1 = a5;
+				break;
+			case 20:
+				v1 = a13;
+				break;
+			case 21:
+				v1 = a14;
+				break;
+			case 22:
+				v1 = a19;
+				break;
+			case 23:
+				v1 = a30;
+				break;
+			case 24:
+				v1 = a9;
+				break;
+			case 25:
+				v1 = a20;
+				break;
+			case 26:
+				v1 = a7;
+				break;
+			case 27:
+				v1 = a25;
+				break;
+			case 28:
+				v1 = a0;
+				break;
+			case 29:
+				v1 = a17;
+				break;
+			case 30:
+				v1 = a3;
+		}
+		if (v1 != -1 && script_4504(v1, 0) == 0) {
+			v2 = 0;
+		}
+	}
+	if (v2 == 1 && a16 != -1) {
+		cs2method_10467(1, a16);
+	}
+	return;
+}

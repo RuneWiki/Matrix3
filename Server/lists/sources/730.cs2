@@ -1,0 +1,23 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_730(int a0,int a1,int a2) {
+	int v1 = cs2method_10936(93, 13650);
+	int v0 = idx17mapData('o', 'i', 1680, a2);
+	cs2method_10026(a0, (string)cs2method_10379(v0) + " tokens");
+	if (v0 > v1 || cs2method_10416(a2) == 1 && cs2method_10771() == 0) {
+		cs2method_10520(16711680, a1);
+	} else {
+		cs2method_10520(112641, a1);
+	}
+	return;
+}

@@ -1,0 +1,20 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4336(int a0) {
+	if (clan_configs['cfg3'].bitcfg8808 == 0 && cs2method_10232() >= 5) {
+		cs2method_10026(a0, cs2method_10765(clan_configs['cfg1']));
+		return;
+	}
+	cs2method_10026(a0, "");
+	return;
+}

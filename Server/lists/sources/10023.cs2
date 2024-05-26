@@ -1,0 +1,24 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_10023(int a0) {
+	int v3 = 0;
+	object v5 = "0";
+	int v1 = a0;
+	script_10024_struct(1,1,0) v4 = script_10024(v1);
+	object v2 = v4.objectpart_0;
+	int v0 = v4.intpart_0;
+	if (v0 == 2) {
+		v0 = 1;
+	}
+	return v0;
+}

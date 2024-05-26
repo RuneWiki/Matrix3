@@ -1,0 +1,51 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5488() {
+	switch (cs2_configs['cfg2688']) {
+		case 1:
+			cs2method_10336(81333, 44040195);
+			cs2method_10026(44040199, "The Death Lotus assassins, their contracts fulfilled, left the port. The Black Marketeer was able to return to the warehouse.");
+			break;
+		case 2:
+			cs2method_10336(81302, 44040195);
+			cs2method_10026(44040199, "Surula, satisfied with a job well done was able to relax for a whole minute before the next load of customers arrived.");
+			break;
+		case 3:
+			cs2method_10336(70433, 44040195);
+			cs2method_10026(44040199, "Umi successfully helped out in the warehouse. She can go back to learning the ways of the Seasingers now.");
+	}
+	int v8 = -1;
+	object v10 = "";
+	int v7 = cs2_configs['cfg2685'];
+	script_5492_struct(1,1,0) v5 = script_5492(v7);
+	object v2 = v5.objectpart_0;
+	int v0 = v5.intpart_0;
+	object v14 = cs2method_10427("1 x ", v2);
+	cs2method_10026(44040198, v14);
+	cs2method_10758(v0, 44040197);
+	int v9 = cs2_configs['cfg2686'];
+	script_5492_struct(1,1,0) v1 = script_5492(v9);
+	object v13 = v1.objectpart_0;
+	int v15 = v1.intpart_0;
+	object v4 = cs2method_10427("1 x ", v13);
+	cs2method_10026(44040220, v4);
+	cs2method_10758(v15, 44040201);
+	int v12 = cs2_configs['cfg2687'];
+	script_5492_struct(1,1,0) v3 = script_5492(v12);
+	object v6 = v3.objectpart_0;
+	int v11 = v3.intpart_0;
+	object v16 = cs2method_10427("1 x ", v6);
+	cs2method_10026(44040222, v16);
+	cs2method_10758(v11, 44040221);
+	return;
+}

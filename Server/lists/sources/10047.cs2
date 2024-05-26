@@ -1,0 +1,87 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_10047() {
+	if (cs2method_10609(82116851) == 1) {
+		script_10050();
+		return 0;
+	}
+	int v0 = 0;
+	if (cs2method_10397(82116854, 1192) == 1) {
+		cs2method_20380(new function<script_5585>(int a0,int a1,int a2,int a3) {
+			if (a1 == 83) {
+				cs2method_10704(0, a0);
+				cs2method_10015(a2);
+			} else {
+				if (a1 == 13) {
+					script_675();
+				}
+			}
+			return;
+		}, -2147483640, false, new WidgetPointer(1192,5), new WidgetPointer(1192,7), "izII", new WidgetPointer(1253,246));
+		v0 = 1;
+	} else {
+		if (cs2method_10397(82116854, 627) == 1) {
+			cs2method_20380(new function<script_10048>(int a0) {
+				switch (a0) {
+					case 16:
+						if (cs2method_10609(41091074) == 0) {
+							cs2method_10520(14389248, 41091083);
+							cs2method_10520(14389248, 41091084);
+							cs2method_10015(41091074);
+						}
+						break;
+					case 17:
+						if (cs2method_10609(41091075) == 0) {
+							cs2method_10520(14389248, 41091089);
+							cs2method_10520(14389248, 41091090);
+							cs2method_10015(41091075);
+						}
+						break;
+					case 18:
+						if (cs2method_10609(41091076) == 0) {
+							cs2method_10520(14389248, 41091094);
+							cs2method_10520(14389248, 41091095);
+							cs2method_10015(41091076);
+						}
+						break;
+					case 19:
+						if (cs2method_10609(41091077) == 0) {
+							cs2method_10520(14389248, 41091099);
+							cs2method_10520(14389248, 41091100);
+							cs2method_10015(41091077);
+						}
+						break;
+					case 20:
+						if (cs2method_10609(41091078) == 0) {
+							cs2method_10520(14389248, 41091104);
+							cs2method_10520(14389248, 41091105);
+							cs2method_10015(41091078);
+						}
+				}
+				return;
+			}, -2147483640, "i", new WidgetPointer(1253,246));
+			v0 = 1;
+		}
+	}
+	if (v0 == 1) {
+		cs2method_20380(new function<script_10049>(int a0) {
+			if (a0 == 13) {
+				cs2method_10467(1, 82116851);
+				script_10050();
+				script_6574(1);
+			}
+			return;
+		}, -2147483640, "i", new WidgetPointer(1253,243));
+	}
+	return v0;
+}

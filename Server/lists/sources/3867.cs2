@@ -1,0 +1,70 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3867() {
+	if (client_configs['cfg2662'] == -1) {
+		return;
+	}
+	script_8844(1, 13, 8, 98631710, -1);
+	for (int v2 = 0, int v4 = 16, int v1 = 0, int v0 = -1; v2 < cs2method_10924(8852); v2 = cs2method_10060(v2, 1), v4 = cs2method_10060(v4, 1)) {
+		cs2method_10433("Stuff for index " + (string)cs2method_10379(v2) + ":");
+		int v5 = script_3875(v2);
+		int v3 = (int)idx17mapData('i', 'I', 8852, v2);
+		cs2method_20680(new function<script_3871>(int a0,int a1) {
+			int v0 = 22323;
+			if (a1 == 1) {
+				v0 = 22322;
+			}
+			int v1 = (int)idx17mapData('i', 'I', 8852, a0);
+			cs2method_10758(v0, v1);
+			return;
+		}, v2, v5, "ii", new WidgetPointer(v3));
+		cs2method_21121(new function<script_3872>(int a0,int a1) {
+			object v0 = "Not available";
+			switch (a1) {
+				case 1:
+					v0 = cs2method_10427((string)cs2method_10379(cs2method_10060(a0, 1)) + ": ", idx17mapData('i', 's', 2535, a0));
+					break;
+				case 2:
+					v0 = "There is no spirit tree planted here.";
+					break;
+				case 3:
+					v0 = "You have not unlocked this destination.";
+					break;
+				case 4:
+					v0 = "You are currently at this tree.";
+			}
+			int v1 = (int)idx17mapData('i', 'I', 8852, a0);
+			script_8800(v1, -1, v0);
+			return;
+		}, v2, v5, "ii", new WidgetPointer(v3));
+		cs2method_20750(new function<script_3873>(int a0,int a1) {
+			int v0 = 22323;
+			if (a0 == 1) {
+				v0 = 22321;
+			}
+			int v1 = (int)idx17mapData('i', 'I', 8852, a1);
+			cs2method_10758(v0, v1);
+			script_8808();
+			return;
+		}, v2, v5, "ii", new WidgetPointer(v3));
+		if (v5 == 1) {
+			cs2method_11127(1, v3, "Teleport");
+			cs2method_10758(22321, v3);
+			script_8844(1, v4, 8, v3, -1);
+		} else {
+			cs2method_11127(1, v3, "");
+			cs2method_10758(22323, v3);
+		}
+	}
+	return;
+}

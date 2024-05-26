@@ -1,0 +1,64 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_485(int a0) {
+	int v1;
+	int v2 = -1;
+	int v0 = 0;
+	cs2method_10520(16750623, a0);
+	switch (client_configs['cfg1655'].bitcfg5388) {
+		default:
+			return;
+		case 1:
+			v1 = script_486(client_configs['cfg1656'].bitcfg5396);
+			break;
+		case 2:
+			v1 = script_486(client_configs['cfg1656'].bitcfg5397);
+			break;
+		case 3:
+			v1 = script_486(client_configs['cfg1657'].bitcfg5402);
+			break;
+		case 4:
+			v1 = script_486(client_configs['cfg1657'].bitcfg5403);
+			break;
+		case 5:
+			v1 = script_486(client_configs['cfg1658'].bitcfg5406);
+			break;
+		case 6:
+			v1 = script_486(client_configs['cfg1658'].bitcfg5407);
+			break;
+		case 7:
+			v1 = script_486(client_configs['cfg1658'].bitcfg5408);
+			break;
+		case 8:
+			v1 = script_486(client_configs['cfg1658'].bitcfg5409);
+			break;
+		case 9:
+			v1 = script_486(client_configs['cfg1658'].bitcfg5410);
+			break;
+		case 10:
+			v1 = script_486(client_configs['cfg1659'].bitcfg5411);
+	}
+	if (v1 == -1) {
+		cs2method_10467(0, 66519175);
+		cs2method_10467(1, 66519155);
+	} else {
+		cs2method_10758(npcDefsAttribute(v1, 1148), 66519042);
+		cs2method_10026(66519040, npcDefsAttribute(v1, 1139));
+		cs2method_10026(66519178, "Movement: " + (string)cs2method_10379(npcDefsAttribute(v1, 1134)));
+		cs2method_10026(66519179, "Damage: " + (string)cs2method_10379(cs2method_10051(npcDefsAttribute(v1, 1135), 100)));
+		cs2method_10026(66519180, "Health: " + (string)cs2method_10379(cs2method_10051(npcDefsAttribute(v1, 1136), 100)));
+		cs2method_10026(66519181, "Range: " + (string)cs2method_10379(npcDefsAttribute(v1, 1137)));
+		cs2method_10026(66519182, "Cost: " + (string)cs2method_10379(npcDefsAttribute(v1, 1138)));
+	}
+	return;
+}

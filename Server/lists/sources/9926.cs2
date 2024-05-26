@@ -1,0 +1,63 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_9926_struct(2,0,0) script_9926(int a0,int a1) {
+	if (script_9925(a1, a0) == 0) {
+		return new script_9926_struct(-1, 0);
+	}
+	switch (a1) {
+		default:
+			return new script_9926_struct(0, 0);
+		case 3007:
+			script_9140_struct(2,0,0) v1 = script_9140();
+			return new script_9926_struct(v1.intpart_0, v1.intpart_1);
+		case 3035:
+			script_9144_struct(2,0,0) v13 = script_9144();
+			return new script_9926_struct(v13.intpart_0, v13.intpart_1);
+		case 3002:
+			script_9147_struct(2,0,0) v7 = script_9147();
+			return new script_9926_struct(v7.intpart_0, v7.intpart_1);
+		case 3055:
+			script_9150_struct(2,0,0) v11 = script_9150();
+			return new script_9926_struct(v11.intpart_0, v11.intpart_1);
+		case 3000:
+			script_9152_struct(2,0,0) v4 = script_9152();
+			return new script_9926_struct(v4.intpart_0, v4.intpart_1);
+		case 3050:
+			script_9155_struct(2,0,0) v9 = script_9155();
+			return new script_9926_struct(v9.intpart_0, v9.intpart_1);
+		case 3053:
+			script_9153_struct(2,0,0) v6 = script_9153();
+			return new script_9926_struct(v6.intpart_0, v6.intpart_1);
+		case 3047:
+			script_9161_struct(2,0,0) v2 = script_9161();
+			return new script_9926_struct(v2.intpart_0, v2.intpart_1);
+		case 3003:
+			script_9158_struct(2,0,0) v10 = script_9158();
+			return new script_9926_struct(v10.intpart_0, v10.intpart_1);
+		case 3049:
+			script_9165_struct(2,0,0) v0 = script_9165();
+			return new script_9926_struct(v0.intpart_0, v0.intpart_1);
+		case 3051:
+			script_9164_struct(2,0,0) v12 = script_9164();
+			return new script_9926_struct(v12.intpart_0, v12.intpart_1);
+		case 3004:
+			script_9166_struct(2,0,0) v3 = script_9166();
+			return new script_9926_struct(v3.intpart_0, v3.intpart_1);
+		case 3054:
+			script_9167_struct(2,0,0) v5 = script_9167();
+			return new script_9926_struct(v5.intpart_0, v5.intpart_1);
+		case 3063:
+			script_3724_struct(2,0,0) v8 = script_3724();
+			return new script_9926_struct(v8.intpart_0, v8.intpart_1);
+	}
+}

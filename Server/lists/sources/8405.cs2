@@ -1,0 +1,19 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_8405_struct(2,0,0) script_8405(int a0) {
+	int v2 = cs2method_10191(a0);
+	for (int v0 = cs2method_10152(a0), int v1 = cs2method_10155(a0); v1 != -1; v0 = cs2method_10461(cs2method_10060(v0, cs2method_10152(v1)), cs2method_10718(v1)), v1 = cs2method_10155(v1)) {
+		v2 = cs2method_10461(cs2method_10060(v2, cs2method_10191(v1)), cs2method_10134(v1));
+	}
+	return new script_8405_struct(v2, v0);
+}

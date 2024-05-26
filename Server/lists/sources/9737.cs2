@@ -1,0 +1,142 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9737(object a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9) {
+	int v19;
+	if (a5 == -1) {
+		return;
+	}
+	int v8 = 82116904;
+	int v18 = 82116905;
+	cs2method_10467(0, v8);
+	cs2method_10026(82116913, cs2method_10018(a5));
+	cs2method_10026(82116914, a0);
+	cs2method_10039(a5, a8, 82116918);
+	switch (a2) {
+		case 1:
+			cs2method_10026(82116916, "Common");
+			break;
+		case 2:
+			cs2method_10026(82116916, "Fairly Common");
+			break;
+		case 3:
+			cs2method_10026(82116916, "Uncommon");
+			break;
+		case 4:
+			cs2method_10026(82116916, "Rare");
+			break;
+		case 5:
+			cs2method_10026(82116916, "Very Rare");
+			break;
+		case 6:
+			cs2method_10026(82116916, "Very Rare");
+	}
+	cs2method_10758(script_9780(a2), 82116921);
+	cs2method_10026(82116917, idx17mapData('i', 's', 8530, a4));
+	cs2method_10758(idx17mapData('i', 'd', 8531, a4), 82116919);
+	if (a1 == 1) {
+		cs2method_10758(22223, 82116920);
+		cs2method_10026(82116915, "Members Only");
+		if (cs2method_10210() == 0) {
+			cs2method_10520(10027008, 82116910);
+		} else {
+			cs2method_10520(465441, 82116910);
+		}
+	} else {
+		cs2method_10758(22224, 82116920);
+		cs2method_10026(82116915, "All Players");
+		cs2method_10520(465441, 82116910);
+	}
+	cs2method_10283(1, 1, 0, 0, v18);
+	if (script_9883(a5, -1, "", 26868, v18, 82116908) > 0) {
+		cs2method_10467(0, v18);
+		cs2method_10467(0, 82116908);
+		cs2method_10467(0, 82116907);
+		cs2method_10283(cs2method_10060(cs2method_10236(v18), 16), cs2method_10060(25, cs2method_10823(v18)), 0, 0, v18);
+		cs2method_10112(cs2method_10968(16, 2), cs2method_10060(cs2method_10968(16, 2), 25), 0, 0, 82116908);
+	} else {
+		cs2method_10467(1, 82116905);
+	}
+	int v21 = 0;
+	int v4 = 0;
+	int v15 = 0;
+	int v10 = 0;
+	int v6 = cs2method_10982(v8);
+	if (v6 != -1) {
+		int v23 = script_3365(v6);
+		v15 = script_3366(v6);
+		v21 = v23;
+		int v24 = cs2method_10060(v21, cs2method_10236(v6));
+		int v25 = cs2method_10060(v15, cs2method_10823(v6));
+		v19 = v24;
+	} else if (v6 != -1) {
+		int v24 = cs2method_10236(v6);
+		int v23 = cs2method_10823(v6);
+		v19 = v24;
+	} else {
+		int v24 = 765;
+		int v23 = 503;
+		v19 = v24;
+	}
+	int v11 = 0;
+	int v7 = 0;
+	int v12 = 0;
+	int v1 = 0;
+	int v3 = 0;
+	int v9 = 0;
+	int v22 = 0;
+	int v13 = cs2method_10823(v8);
+	int v17 = cs2method_10236(v8);
+	if (cs2method_11038(a9, a7) == 1 || a7 == -1 && cs2method_10324(a9) == 1) {
+		int v33 = script_1743();
+		int v25 = script_1744();
+		int v28 = cs2method_10488();
+		int v23 = cs2method_10664();
+		int v26 = v33;
+		int v32 = v25;
+		int v30 = v28;
+		int v24 = v26;
+		int v27 = v32;
+		int v31 = v24;
+		v3 = cs2method_10461(cs2method_10060(v31, cs2method_10968(v30, 2)), cs2method_10968(v17, 2));
+		v9 = cs2method_10060(cs2method_10461(v27, v13), 10);
+		if (v3 < v21) {
+			int v34 = cs2method_10461(v3, v21);
+			v3 = cs2method_10461(v3, v34);
+			v22 = cs2method_11048(v34, cs2method_10461(0, cs2method_10968(cs2method_10461(v17, 35), 2)));
+		} else {
+			if (cs2method_10060(v3, v17) > v19) {
+				int v23 = cs2method_10461(cs2method_10060(v3, v17), v19);
+				v3 = cs2method_10461(v3, v23);
+				v22 = cs2method_10872(v23, cs2method_10968(cs2method_10461(v17, 35), 2));
+			}
+		}
+		int v29 = cs2method_10461(cs2method_10060(v22, cs2method_10968(v17, 2)), 9);
+		cs2method_10112(v29, 0, 0, 2, 82116932);
+		cs2method_10283(cs2method_10461(v29, 17), 18, 0, 0, 82116929);
+		cs2method_10283(cs2method_10461(cs2method_10461(v17, v29), 34), 18, 0, 0, 82116930);
+	} else {
+		cs2method_10467(1, v8);
+	}
+	int v14 = cs2method_10236(cs2method_10155(v8));
+	int v0 = cs2method_10461(v3, v21);
+	int v20 = cs2method_10461(v9, v15);
+	int v5 = cs2method_10872(cs2method_11048(0, v0), cs2method_10461(v14, v17));
+	int v16 = cs2method_10872(cs2method_11048(0, v20), cs2method_10461(cs2method_10823(cs2method_10155(v8)), v13));
+	cs2method_10112(v5, v16, 0, 0, v8);
+	int v2 = cs2method_10461(cs2method_10060(v5, v17), 3);
+	if (v2 > cs2method_10461(v14, cs2method_10236(v18))) {
+		v2 = cs2method_10060(cs2method_10461(v5, cs2method_10236(v18)), 3);
+	}
+	cs2method_10112(v2, cs2method_10060(v16, 40), 0, 0, v18);
+	return;
+}

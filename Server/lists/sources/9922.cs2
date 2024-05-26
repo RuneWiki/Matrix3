@@ -1,0 +1,47 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+string script_9922(int a0) {
+	int v0 = -1;
+	switch (a0) {
+		case 1:
+			v0 = client_configs['cfg4277'].bitcfg22096;
+			break;
+		case 2:
+			v0 = client_configs['cfg4277'].bitcfg22097;
+			break;
+		case 3:
+			v0 = client_configs['cfg4277'].bitcfg22098;
+			break;
+		case 4:
+			v0 = client_configs['cfg4277'].bitcfg22099;
+			break;
+		case 5:
+			v0 = client_configs['cfg4278'].bitcfg22100;
+			break;
+		case 6:
+			v0 = client_configs['cfg4278'].bitcfg22101;
+			break;
+		case 7:
+			v0 = client_configs['cfg4278'].bitcfg22102;
+			break;
+		case 8:
+			v0 = client_configs['cfg4278'].bitcfg22103;
+			break;
+		case 9:
+			v0 = client_configs['cfg4279'].bitcfg22104;
+			break;
+		case 10:
+			v0 = client_configs['cfg4279'].bitcfg22105;
+	}
+	return idx17mapData('i', 's', 8624, v0);
+}

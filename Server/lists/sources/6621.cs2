@@ -1,0 +1,39 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_6621(int a0,int a1) {
+	int v0 = 0;
+	while (v0 < 100) {
+		flow_1:
+			IF (cs2method_10640(a0, v0) == 7099) 
+				GOTO	flow_3
+			GOTO	flow_6
+		flow_3:
+			if (cs2method_11038(a1, v0) == 1) {
+				cs2method_10310(12187);
+			}
+			GOTO	flow_9
+		flow_6:
+			IF (cs2method_10640(a0, v0) == 3873 || cs2method_10640(a0, v0) == 3874 || cs2method_10640(a0, v0) == 3875 || cs2method_10640(a0, v0) == 3876 || cs2method_10640(a0, v0) == 3877 || cs2method_10640(a0, v0) == 3878) 
+				GOTO	flow_7
+			IF (cs2method_10640(a0, v0) == 3870 && cs2method_11038(a1, v0) == 1) 
+				GOTO	flow_8
+			GOTO	flow_9
+		flow_7:
+		flow_8:
+			cs2method_10310(12186);
+		flow_9:
+			v0 = cs2method_10060(v0, 1);
+	}
+	return;
+}

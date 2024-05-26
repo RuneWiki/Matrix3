@@ -1,0 +1,33 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7428() {
+	object v2;
+	object v0;
+	int v1 = cs2method_10968(cs2_configs['cfg2696'], cs2method_10968(24000, 100));
+	script_4542(v1, 85918093, 85918098);
+	object v3 = (string)cs2method_10379(cs2method_10968(cs2_configs['cfg2696'], 10)) + "/";
+	object v4 = "";
+	if (cs2_configs['cfg2696'] < 9000) {
+		v2 = cs2method_10427(v3, cs2method_10379(cs2method_10968(9000, 10)));
+		v0 = "Growth until adolescent";
+	} else {
+		v2 = cs2method_10427(v3, cs2method_10379(cs2method_10968(24000, 10)));
+		v0 = "Growth until adult";
+	}
+	script_4212(85918098, v2, 3793, 14014931, 0);
+	cs2method_21121(new function<script_7768>(int a0,int a1,object a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+		script_7769(a10, a3, a9, a11, a8, a7, a6, a12, a5, a0, a1, a2, a4);
+		return;
+	}, new WidgetPointer(1311,82), new WidgetPointer(-32768,3), -1, (string)v0, 120, 17813, 17813, 16777215, 13, 4, 2, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1311,257));
+	return;
+}

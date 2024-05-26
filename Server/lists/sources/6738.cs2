@@ -1,0 +1,234 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6738(int a0,int a1,int a2) {
+	object v1;
+	if (a1 == 6) {
+		cs2method_10026(88014873, "Lucky Challenge: " + idx22mapAttribute(a0, 1266));
+	} else {
+		cs2method_10026(88014873, idx22mapAttribute(a0, 1266));
+	}
+	cs2method_10026(88014867, idx22mapAttribute(a0, 1273));
+	switch (a2) {
+		case 8:
+			cs2method_10758(13217, 88014874);
+			break;
+		case 1:
+			cs2method_10758(13193, 88014874);
+			break;
+		case 22:
+			cs2method_10758(13209, 88014874);
+			break;
+		case 16:
+			cs2method_10758(13212, 88014874);
+			break;
+		case 11:
+			cs2method_10758(13203, 88014874);
+			break;
+		case 26:
+			cs2method_10758(13218, 88014874);
+			break;
+		case 25:
+			cs2method_10758(13215, 88014874);
+			break;
+		case 21:
+			cs2method_10758(13213, 88014874);
+			break;
+		case 17:
+			cs2method_10758(13200, 88014874);
+			break;
+		case 15:
+			cs2method_10758(13211, 88014874);
+			break;
+		case 19:
+			cs2method_10758(13204, 88014874);
+			break;
+		case 9:
+			cs2method_10758(13210, 88014874);
+			break;
+		case 23:
+			cs2method_10758(13202, 88014874);
+			break;
+		case 13:
+			cs2method_10758(13198, 88014874);
+			break;
+		case 7:
+			cs2method_10758(13197, 88014874);
+			break;
+		case 12:
+			cs2method_10758(13206, 88014874);
+			break;
+		case 20:
+			cs2method_10758(13214, 88014874);
+			break;
+		case 14:
+			cs2method_10758(13208, 88014874);
+			break;
+		case 24:
+			cs2method_10758(13216, 88014874);
+			break;
+		case 10:
+			cs2method_10758(13201, 88014874);
+			break;
+		case 18:
+			cs2method_10758(13207, 88014874);
+			break;
+		case 63:
+			cs2method_10758(20737, 88014874);
+			break;
+		case 62:
+			cs2method_10758(21099, 88014874);
+	}
+	cs2method_10026(88014859, idx22mapAttribute(a0, 1274));
+	if (script_6783(1) == a0 || script_6783(2) == a0 || script_6783(3) == a0 || script_6783(4) == a0 || script_6783(5) == a0 || script_345() == a0) {
+		cs2method_10026(88014933, idx22mapAttribute(a0, 1275));
+	} else {
+		cs2method_10026(88014933, "Only daily challenges need to be handed in.");
+	}
+	cs2method_10467(0, 88014854);
+	object v0 = "";
+	if (a1 == 6) {
+		if (idx22mapAttribute(a0, 4057) == 63) {
+			switch (idx22mapAttribute(idx22mapAttribute(a0, 4062), 848)) {
+				case 0:
+				case 1:
+					v0 = cs2method_10427(v0, "A medium XP lamp");
+					break;
+				case 2:
+				case 3:
+				case 5:
+					v0 = cs2method_10427(v0, "A large XP lamp");
+					break;
+				case 4:
+					v0 = cs2method_10427(v0, "A huge XP lamp");
+			}
+		} else if (idx22mapAttribute(a0, 4057) == 62) {
+			v0 = cs2method_10427(v0, "A medium XP lamp");
+		} else {
+			v0 = cs2method_10427(v0, idx17mapData('i', 's', 108, a2) + " XP");
+		}
+	} else if (a2 == 1) {
+		if (idx22mapAttribute(a0, 4097) == 0 && cs2method_10210() == 1) {
+			v0 = cs2method_10427(v0, "1 Treasure Hunter key, a Combat XP Lamp");
+		} else {
+			v0 = cs2method_10427(v0, "A Combat XP Lamp");
+		}
+	} else if (idx22mapAttribute(a0, 4097) == 0 && cs2method_10210() == 1) {
+		v0 = cs2method_10427(v0, "1 Treasure Hunter key, " + idx17mapData('i', 's', 108, a2) + " XP");
+	} else {
+		v0 = cs2method_10427(v0, idx17mapData('i', 's', 108, a2) + " XP");
+	}
+	if (idx22mapAttribute(a0, 2705) != -1) {
+		v1 = cs2method_10427(v0, ", a Challenge Mystery Bag.");
+	} else {
+		v1 = cs2method_10427(v0, ".");
+	}
+	int v2 = 0;
+	int v3 = idx22mapAttribute(a0, 2235);
+	switch (a1) {
+		case 1:
+			v2 = client_configs['cfg3240'].bitcfg16576;
+			cs2method_10467(0, 88014875);
+			if (v2 >= v3) {
+				cs2method_10758(13902, 88014875);
+			} else {
+				cs2method_10758(13901, 88014875);
+			}
+			cs2method_10467(0, 88014853);
+			cs2method_10026(88014890, "Days left:");
+			cs2method_10026(88014889, script_3944(5));
+			cs2method_10026(88014861, v1);
+			break;
+		case 2:
+			v2 = client_configs['cfg3241'].bitcfg16580;
+			cs2method_10467(0, 88014875);
+			if (v2 >= v3) {
+				cs2method_10758(13902, 88014875);
+			} else {
+				cs2method_10758(13901, 88014875);
+			}
+			cs2method_10467(0, 88014853);
+			cs2method_10026(88014890, "Days left:");
+			cs2method_10026(88014889, script_3944(4));
+			cs2method_10026(88014861, v1);
+			break;
+		case 3:
+			v2 = client_configs['cfg3242'].bitcfg16584;
+			cs2method_10467(0, 88014875);
+			if (v2 >= v3) {
+				cs2method_10758(13902, 88014875);
+			} else {
+				cs2method_10758(13901, 88014875);
+			}
+			cs2method_10467(0, 88014853);
+			cs2method_10026(88014890, "Days left:");
+			cs2method_10026(88014889, script_3944(3));
+			cs2method_10026(88014861, v1);
+			break;
+		case 4:
+			v2 = client_configs['cfg3243'].bitcfg16588;
+			cs2method_10467(0, 88014875);
+			if (v2 >= v3) {
+				cs2method_10758(13902, 88014875);
+			} else {
+				cs2method_10758(13901, 88014875);
+			}
+			cs2method_10467(0, 88014853);
+			cs2method_10026(88014890, "Days left:");
+			cs2method_10026(88014889, script_3944(2));
+			cs2method_10026(88014861, v1);
+			break;
+		case 5:
+			v2 = client_configs['cfg3244'].bitcfg16592;
+			cs2method_10467(0, 88014875);
+			if (v2 >= v3) {
+				cs2method_10758(13902, 88014875);
+			} else {
+				cs2method_10758(13901, 88014875);
+			}
+			cs2method_10467(0, 88014853);
+			cs2method_10026(88014890, "Days left:");
+			cs2method_10026(88014889, script_3944(1));
+			cs2method_10026(88014861, v1);
+			break;
+		case 6:
+			v2 = client_configs['cfg4057'].bitcfg21379;
+			cs2method_10467(0, 88014875);
+			if (v2 >= v3) {
+				cs2method_10758(13902, 88014875);
+			} else {
+				cs2method_10758(13901, 88014875);
+			}
+			cs2method_10467(0, 88014853);
+			cs2method_10026(88014890, "Hours left:");
+			cs2method_10026(88014889, script_346());
+			cs2method_10026(88014861, v1);
+			break;
+		default:
+			if (script_6783(6) == a0) {
+				v2 = client_configs['cfg3245'].bitcfg16596;
+			}
+			cs2method_10758(13901, 88014875);
+			cs2method_10467(1, 88014875);
+			cs2method_10467(1, 88014853);
+			cs2method_10026(88014889, "-");
+			cs2method_10026(88014861, "You will earn XP as you complete the Challenge, but only Daily Challenges give additional rewards.");
+	}
+	cs2method_10467(0, 88014872);
+	cs2method_10026(88014924, (string)cs2method_10379(v2) + " / " + (string)cs2method_10379(v3));
+	if (v3 != 0) {
+		cs2method_10283(cs2method_10122(v2, v3, 16384), 16384, 2, 2, 88014919);
+	} else {
+		cs2method_10283(16384, 16384, 2, 2, 88014919);
+	}
+	return;
+}

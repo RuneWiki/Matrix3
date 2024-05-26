@@ -1,0 +1,109 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3702() {
+	object v1 = "Select a task on the left for more information";
+	int v2 = 0;
+	int v0 = 0;
+	switch (client_configs['cfg4428'].bitcfg22451) {
+		case 0:
+			v1 = "Select a task on the left for more information.";
+			break;
+		case 1:
+			v1 = "Complete a Dungeoneering floor (Complexity 6).";
+			break;
+		case 2:
+			v1 = "Complete a Slayer assignment.";
+			break;
+		case 3:
+			v1 = "Complete a Treasure Trail (any difficulty).";
+			break;
+		case 4:
+			v1 = "Equip a full outfit that has no stats.";
+			break;
+		case 5:
+			v1 = "Do a dance on every bridge over the River Lum.";
+			break;
+		case 6:
+			v1 = "Fletch 100 unfinished bows.";
+			break;
+		case 7:
+			v1 = "Smith 100 bars into items.";
+			break;
+		case 8:
+			v1 = "Turn 100 pieces of rune essence into runes.";
+			break;
+		case 9:
+			v1 = "Complete a quest" + "<br>" + "(or Tears of Guthix)";
+			break;
+		case 10:
+			v1 = "Take a minute out to rest.";
+			break;
+		case 11:
+			v1 = "Complete a full round of Heist!";
+			break;
+		case 12:
+			v1 = "Complete a full game of Castle Wars.";
+			break;
+		case 13:
+			v1 = "Burn 100 logs" + "<br>" + "(any type).";
+			break;
+		case 14:
+			v1 = "Run from Shantay Pass to Sophanem Gate with no water source.";
+			break;
+		case 15:
+			v1 = "Bury 100 bones in the Salve Temple graveyard.";
+			break;
+		case 16:
+			v1 = "Kill a demon or goblin flash mob (or goblin raid boss).";
+			break;
+		case 17:
+			v1 = "Survive the Wilderness for 10 minutes without leaving.";
+			break;
+		case 18:
+			v1 = "Complete a round of the Cabbage Facepunch Bonanza.";
+			break;
+		case 19:
+			v1 = "Feed 10 breadcrumbs to a duck in less than 20 seconds.";
+			break;
+		case 20:
+			v1 = "Gather your daily limit from divine locations.";
+	}
+	if (script_3705(client_configs['cfg4428'].bitcfg22451) > 0) {
+		cs2method_10467(0, 68878350);
+		cs2method_10467(1, 68878351);
+	} else if (client_configs['cfg4428'].bitcfg22451 == 0) {
+		cs2method_10467(1, 68878350);
+		cs2method_10467(1, 68878351);
+	} else {
+		cs2method_10467(1, 68878350);
+		cs2method_10467(0, 68878351);
+		if (client_configs['cfg4427'].bitcfg22437 > 0) {
+			if (client_configs['cfg4427'].bitcfg22437 == client_configs['cfg4428'].bitcfg22451) {
+				cs2method_10467(1, 68878406);
+				v1 = cs2method_10427(v1, "<br>" + "<col=00c800>" + "This is your active task.");
+			} else {
+				cs2method_10467(0, 68878406);
+			}
+		}
+		if (client_configs['cfg4427'].bitcfg22438 > 0) {
+			if (client_configs['cfg4427'].bitcfg22438 == client_configs['cfg4428'].bitcfg22451) {
+				cs2method_10467(1, 68878405);
+				v1 = cs2method_10427(v1, "<br>" + "<col=00c800>" + "A JMod can help with this task.");
+			} else {
+				cs2method_10467(0, 68878405);
+			}
+		}
+	}
+	cs2method_10026(68878349, v1);
+	return;
+}

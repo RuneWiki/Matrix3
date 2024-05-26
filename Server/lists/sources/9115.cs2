@@ -1,0 +1,39 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9115() {
+	cs2method_10121(client_configs['cfg3906'], 2147483647, 18022410);
+	cs2method_10026(18022409, cs2method_10018(client_configs['cfg3906']));
+	script_9117();
+	cs2method_20348(new function<script_9116>() {
+		script_9117();
+		return;
+	}, 3908, 1, "Y", new WidgetPointer(275,11));
+	if (client_configs['cfg3906'] == 29492 || client_configs['cfg3906'] == 29494) {
+		cs2method_10026(18022426, "Total Bonds : " + (string)cs2method_10055(client_configs['cfg3909'], 1));
+	} else if (client_configs['cfg3909'] == 1) {
+		cs2method_10026(18022426, "Value: " + (string)cs2method_10055(client_configs['cfg3909'], 1) + " coin");
+	} else {
+		cs2method_10026(18022426, "Value: " + (string)cs2method_10055(client_configs['cfg3909'], 1) + " coins");
+	}
+	script_9119();
+	cs2method_20348(new function<script_9118>() {
+		script_9119();
+		return;
+	}, 3910, 3910, 2, "Y", new WidgetPointer(275,28));
+	script_9123();
+	cs2method_20243(new function<script_9122>() {
+		script_9123();
+		return;
+	}, 3763, 1, "Y", new WidgetPointer(275,14));
+	return;
+}

@@ -1,0 +1,37 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_5215(int a0) {
+	switch (a0) {
+		case 1:
+			return clan_chat_configs['cfg2734'];
+		case 2:
+			return clan_chat_configs['cfg2735'];
+		case 3:
+			return clan_chat_configs['cfg2736'];
+		case 4:
+			return clan_chat_configs['cfg2737'];
+		case 5:
+			return clan_chat_configs['cfg2738'];
+		case 6:
+			return clan_chat_configs['cfg2739'];
+		case 7:
+			return clan_chat_configs['cfg2740'];
+		case 8:
+			return clan_chat_configs['cfg2741'];
+		case 10:
+			return clan_chat_configs['cfg2743'];
+		case 9:
+			return clan_chat_configs['cfg2742'];
+	}
+	return -1;
+}

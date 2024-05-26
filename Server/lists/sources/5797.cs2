@@ -1,0 +1,56 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_5797(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10) {
+	int v2 = 1;
+	int v0 = a9;
+	int v1 = a9;
+	if (a0 == 3060 && client_configs['cfg4056'].bitcfg21373 == 1) {
+		a1 = 1;
+	}
+	cs2method_10283(0, v0, 1, 0, a6);
+	if (a8 == 1) {
+		cs2method_10273(a6);
+		if (a3 != -1) {
+			cs2method_10273(a3);
+		}
+		cs2method_10273(a5);
+		cs2method_11130(0, 0, a4);
+		cs2method_10283(0, 0, 1, 1, a6);
+		cs2method_10283(17, 0, 1, 1, a4);
+	}
+	while (v2 < cs2method_10060(a1, 1)) {
+		v1 = script_5798(a0, a10, v2, v0, "", a6, a3, a7);
+		if (v0 == v1) {
+			v2 = cs2method_10060(a1, 1);
+		} else {
+			v2 = cs2method_10060(v2, 1);
+		}
+		v0 = v1;
+	}
+	cs2method_10283(cs2method_10236(a6), v0, 0, 0, a6);
+	if (a3 != -1) {
+		cs2method_10283(cs2method_10236(a3), v0, 0, 0, a3);
+	}
+	if (v0 < a2) {
+		cs2method_10467(1, a5);
+		cs2method_10283(3, 0, 1, 1, a4);
+	} else {
+		v0 = cs2method_10060(v0, 5);
+		cs2method_11130(0, cs2method_11048(v0, cs2method_10823(a4)), a4);
+		cs2method_10283(cs2method_10060(cs2method_10236(a5), 2), 0, 1, 1, a4);
+		cs2method_10467(0, a5);
+		script_7791(a5, a4);
+	}
+	cs2_configs['cfg1772'] = v1;
+	return v1;
+}

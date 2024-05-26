@@ -1,0 +1,115 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4697(int a0) {
+	object v0;
+	object v3;
+	object v2;
+	object v11;
+	int v4 = cs2method_10133();
+	object v1 = "";
+	object v9 = "";
+	object v5 = "";
+	object v7 = "";
+	object v10 = "";
+	object v12 = "";
+	int v6 = 0;
+	int v15 = 0;
+	int v8 = 0;
+	int v13 = 1;
+	if (v4 >= cs2method_10060(a0, 200) || a0 == 0) {
+		a0 = v4;
+		if (cs2_configs['cfg1540'] < 1) {
+			v2 = "Destroyed";
+		} else if (cs2_configs['cfg1540'] < cs2method_10968(5, 2)) {
+			v2 = "Under attack";
+		} else if (cs2_configs['cfg1540'] < 5) {
+			v2 = "Unlit ammo";
+		} else {
+			v2 = "Fine";
+		}
+		if (cs2_configs['cfg1541'] < 1) {
+			v11 = "Empty";
+		} else if (cs2_configs['cfg1541'] < cs2method_10968(10, 2)) {
+			v11 = "Low";
+		} else if (cs2_configs['cfg1541'] < 10) {
+			v11 = "Almost full";
+		} else {
+			v11 = "Full";
+		}
+		if (cs2_configs['cfg1542'] == 1) {
+			v3 = "1 broken";
+		} else if (cs2_configs['cfg1542'] > 0) {
+			v3 = (string)cs2method_10379(cs2_configs['cfg1542']) + " broken";
+		} else {
+			v3 = "Repaired";
+		}
+		if (cs2_configs['cfg1543'] == 1) {
+			v0 = (string)cs2method_10379(v13) + " broken";
+		} else if (cs2_configs['cfg1543'] > 0) {
+			v0 = (string)cs2method_10379(cs2_configs['cfg1543']) + " broken";
+		} else {
+			v0 = "Repaired";
+		}
+		int v21 = cs2method_10968(cs2_configs['cfg1545'], 2);
+		cs2method_10283(cs2method_10968(cs2method_10051(v21, 16384), 100), cs2method_10823(32768012), 2, 0, 32768012);
+		if (v21 < 97) {
+			cs2method_10467(1, 32768013);
+		}
+		object v19 = cs2method_10379(cs2method_10051(cs2_configs['cfg1544'], 10));
+		cs2method_10026(32768029, (string)cs2method_10379(cs2_configs['cfg1546']) + " min");
+		if (cs2_configs['cfg1547'] != 0) {
+			cs2method_10467(0, 32768010);
+			cs2method_10283(cs2method_10236(32768002), 253, 0, 0, 32768002);
+			switch (cs2_configs['cfg1547']) {
+				case 1:
+					v12 = "Clobbering Time!";
+					break;
+				case 2:
+					v12 = "Slow-mo";
+					break;
+				case 3:
+					v12 = "No Well";
+					break;
+				case 4:
+					v12 = "Oil Spill";
+					break;
+				case 5:
+					v12 = "Fire in the Hole!";
+					break;
+				case 6:
+					v12 = "Armoured Trolls";
+			}
+		} else {
+			cs2method_10467(1, 32768010);
+			cs2method_10283(cs2method_10236(32768002), 225, 0, 0, 32768002);
+		}
+		int v24 = script_4699(32768008, 32768021, "Ballista", v2, 32768022);
+		int v25 = script_4699(32768005, 32768019, "Oil", v11, 32768020);
+		int v20 = cs2method_11048(v24, v25);
+		int v23 = script_4699(32768006, 32768039, "Barricades", v3, 32768040);
+		int v22 = cs2method_11048(v20, v23);
+		int v16 = script_4699(32768007, 32768017, "Walls", v0, 32768018);
+		int v17 = cs2method_11048(v22, v16);
+		int v18 = script_4699(32768009, 32768041, "Trolls", v19, 32768042);
+		int v14 = cs2method_11048(v17, v18);
+		if (cs2_configs['cfg1547'] != 0) {
+			int v16 = script_4699(32768010, 32768015, "Troll Attack", v12, 32768016);
+			v14 = cs2method_11048(v14, v16);
+		}
+		if (cs2method_10060(v14, 15) > cs2method_10236(32768002)) {
+			cs2method_10283(cs2method_10060(v14, 15), cs2method_10823(32768002), 0, 0, 32768002);
+		}
+	}
+	cs2method_20162(load function<4697>, a0, "i", new WidgetPointer(500,8));
+	return;
+}

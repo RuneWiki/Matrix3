@@ -1,0 +1,97 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6284(int a0) {
+	int v1 = -1;
+	int v2 = -1;
+	object v0 = "";
+	if (a0 == -1) {
+		v1 = -1;
+		v0 = "";
+	} else if (a0 == 0) {
+		v1 = 11233;
+		v0 = "6";
+	} else if (a0 == 1) {
+		v1 = 11234;
+		v0 = "5";
+	} else if (a0 == 2) {
+		v1 = 11235;
+		v0 = "4";
+	} else if (a0 == 3) {
+		v1 = 11236;
+		v0 = "3";
+	} else if (a0 == 4) {
+		v1 = 11237;
+		v0 = "2";
+	} else if (a0 == 5) {
+		v1 = 11238;
+		v0 = "1";
+	} else if (a0 == 6) {
+		v1 = 11239;
+		v0 = "";
+	} else {
+		if (a0 == 7) {
+			v1 = 11240;
+			v0 = "";
+		}
+	}
+	if (cs2method_11038(84934670, 0) == 1) {
+		if (v1 != -1) {
+			int v3 = cs2method_10713();
+			if (v3 == v1) {
+				return;
+			}
+			cs2method_10467(0, 84934671);
+			if (a0 != 6) {
+				cs2method_10026(84934656, "<br>" + "Supreme Champions:" + "<br>" + "None");
+				cs2method_10467(1, 84934666);
+				cs2method_11130(0, 24, 84934665);
+			}
+			cs2method_10026(84934674, v0);
+			cs2method_10310(v1);
+			cs2method_10606(84934670, 5, 1);
+			cs2method_10310(v3);
+			cs2method_10013(50, 50, 0, 0);
+			cs2method_10063(0, 0, 4, 4);
+			cs2method_20162(new function<script_6285>(int a0) {
+				int v0 = 0;
+				if (cs2method_10038(cs2method_10133(), 6) == 0 && cs2method_11038(84934670, a0) == 1) {
+					int v1 = cs2method_10699();
+					if (v1 >= 235) {
+						cs2method_10526();
+						cs2method_20162(new function<none>() {
+						}, "", new WidgetPointer(1296,14));
+					} else {
+						cs2method_10002(cs2method_10060(v1, 20));
+					}
+				}
+				return;
+			}, 1, "i", new WidgetPointer(1296,14));
+		} else {
+			cs2method_10310(-1);
+			cs2method_10467(1, 84934671);
+			cs2_configs['cfg1931'] = 0;
+			cs2method_10467(1, 84934657);
+			cs2method_10074(0, 84934660);
+		}
+	} else {
+		if (v1 != -1) {
+			cs2method_10467(0, 84934671);
+			cs2method_10026(84934674, v0);
+			cs2method_10606(84934670, 5, 0);
+			cs2method_10310(v1);
+			cs2method_10013(50, 50, 0, 0);
+			cs2method_10063(0, 0, 4, 4);
+		}
+	}
+	return;
+}

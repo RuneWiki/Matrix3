@@ -1,0 +1,84 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7518(int a0,int a1) {
+	cs2method_10026(a0, script_7520(cs2_configs['cfg2709']));
+	if (client_configs['cfg3522'].bitcfg17941 == 0) {
+		switch (cs2_configs['cfg2709']) {
+			case 10:
+				cs2method_10467(1, 79495171);
+				script_7521("Ready yourself in the start room by grabbing any equipment and food you need.");
+				break;
+			case 25:
+				cs2method_10467(0, 79495171);
+				cs2method_10467(1, 91160580);
+				break;
+			case 80:
+				cs2method_10467(1, 79495171);
+				script_7521("Keep track of your objectives in the top-left. Deposit the most items to achieve rank 1!");
+				break;
+			case 95:
+				cs2method_10467(0, 79495171);
+				cs2method_10467(1, 91160580);
+				break;
+			case 130:
+				cs2method_10467(1, 79495171);
+				script_7521("Collect cards to use in the treasure room. Each card has a different power, click one to examine your deck.");
+				break;
+			case 145:
+				cs2method_10467(0, 79495171);
+				cs2method_10467(1, 91160580);
+				break;
+			case 210:
+				cs2method_10467(1, 79495171);
+				script_7521("Come first to start the treasure room with the huge lamp and earn a bonus card!");
+				break;
+			case 225:
+				cs2method_10467(0, 79495171);
+				cs2method_10467(1, 91160580);
+				break;
+			case 310:
+				cs2method_10467(1, 79495171);
+				script_7521("Make sure you deposit items before the objective is complete, otherwise the items won't add to your score.");
+				break;
+			case 325:
+				cs2method_10467(0, 79495171);
+				cs2method_10467(1, 91160580);
+				break;
+			case 610:
+				cs2method_10467(1, 79495171);
+				script_7521("Only 1 minute left! Make sure you deposit any items before time runs out!");
+				break;
+			case 625:
+				cs2method_10467(0, 79495171);
+				cs2method_10467(1, 91160580);
+		}
+	}
+	if (cs2_configs['cfg2709'] > 0) {
+		cs2method_20162(new function<script_7519>(int a0,int a1) {
+			if (cs2method_10133() < a0) {
+				return;
+			}
+			if (cs2_configs['cfg2709'] < 710) {
+				script_7518(a1, 30);
+			} else {
+				cs2method_20162(new function<none>() {
+				}, "", new WidgetPointer(a1));
+			}
+			return;
+		}, new WidgetPointer(a0), cs2method_10060(cs2method_10133(), a1), "Ii", new WidgetPointer(a0));
+	} else {
+		cs2method_20162(new function<none>() {
+		}, "", new WidgetPointer(a0));
+	}
+	return;
+}

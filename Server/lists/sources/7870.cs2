@@ -1,0 +1,93 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_7870(int a0,int a1,int a2,int a3,int a4,int a5,object a6,int a7) {
+	int v1;
+	int v2;
+	if (cs2_configs['cfg3484'] == 1) {
+		return;
+	}
+	int v3 = -1;
+	if (a4 == -1) {
+		v2 = cs2method_10982(a3);
+	} else {
+		v2 = a3;
+	}
+	int v0 = 0;
+	if (a7 == 1) {
+		flow_6:
+			IF (a4 == -1) 
+				GOTO	flow_7
+			GOTO	flow_8
+		flow_7:
+			IF (cs2method_10324(a3) == 1) 
+				GOTO	flow_9
+		flow_8:
+			IF (cs2method_11038(a3, a4) == 1) 
+				GOTO	flow_9
+			GOTO	flow_10
+		flow_9:
+			cs2method_10606(v2, 5, a5);
+			cs2method_10013(cs2method_10060(cs2method_10488(), a1), cs2method_10060(cs2method_10664(), a1), 0, 0);
+			cs2method_10063(cs2method_10461(cs2method_10878(), cs2method_10968(a1, 2)), cs2method_10461(cs2method_10406(), cs2method_10968(a1, 2)), 0, 0);
+			cs2method_10310(19633);
+		flow_10:
+			if (v2 == 93061300) {
+				v1 = 0;
+			} else {
+				v1 = 1;
+			}
+			script_7871(a6, a4, v1);
+			if (a2 != -1) {
+				cs2method_20162(new function<script_7865>(int a0,int a1,int a2) {
+					if (cs2method_10133() < a2) {
+						return;
+					}
+					cs2method_11037(a0, a1);
+					return;
+				}, cs2method_10060(cs2method_10133(), 10), a0, a2, "iii", new WidgetPointer(1420,157));
+			}
+	} else {
+		if (cs2method_11038(v2, a5) == 1) {
+			cs2method_10526();
+		}
+		script_7874();
+		if (a2 != -1) {
+			cs2method_20162(new function<script_7864>(int a0,int a1) {
+				if (cs2method_10133() < a0) {
+					return;
+				}
+				switch (a1) {
+					case 0:
+						cs2method_11037(a1, cs2_configs['cfg1015']);
+						break;
+					case 1:
+						cs2method_11037(a1, cs2_configs['cfg1016']);
+						break;
+					case 2:
+						cs2method_11037(a1, cs2_configs['cfg1017']);
+						break;
+					case 3:
+						cs2method_11037(a1, cs2_configs['cfg1018']);
+						break;
+					case 4:
+						cs2method_11037(a1, cs2_configs['cfg1019']);
+				}
+				cs2method_20162(new function<none>() {
+				}, "", new WidgetPointer(1420,157));
+				return;
+			}, cs2method_10060(cs2method_10133(), 10), a2, "ii", new WidgetPointer(1420,157));
+		}
+	}
+	return;
+}

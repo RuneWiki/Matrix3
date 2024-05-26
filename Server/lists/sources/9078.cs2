@@ -1,0 +1,63 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9078(int a0) {
+	cs2method_10467(1, 48758997);
+	cs2method_10112(0, 0, 1, 1, 39059694);
+	if (a0 == 0) {
+		cs2method_20162(new function<script_9080>() {
+			cs2method_20162(new function<none>() {
+			}, "", new WidgetPointer(744,213));
+			cs2method_20162(new function<none>() {
+			}, "", new WidgetPointer(596,239));
+			cs2method_20162(new function<none>() {
+			}, "", new WidgetPointer(596,238));
+			cs2method_20162(new function<none>() {
+			}, "", new WidgetPointer(744,22));
+			cs2method_20162(new function<none>() {
+			}, "", new WidgetPointer(744,23));
+			script_2950(-3, "Logging In - Please Wait", 0, 1, -1, 0, "", -1, 0, "");
+			script_2945(0);
+			return;
+		}, "", new WidgetPointer(744,213));
+	} else {
+		cs2method_20162(new function<script_9079>() {
+			cs2method_20162(new function<none>() {
+			}, "", new WidgetPointer(744,213));
+			cs2method_20162(new function<none>() {
+			}, "", new WidgetPointer(596,239));
+			cs2method_20162(new function<none>() {
+			}, "", new WidgetPointer(596,238));
+			cs2method_20162(new function<none>() {
+			}, "", new WidgetPointer(744,22));
+			cs2method_20162(new function<none>() {
+			}, "", new WidgetPointer(744,23));
+			cs2method_10467(0, 39059456);
+			cs2method_10704(0, 48758806);
+			cs2method_10704(0, 48758807);
+			cs2_configs['cfg1088'] = 0;
+			script_1174(7);
+			return;
+		}, "", new WidgetPointer(744,213));
+	}
+	script_8006(39059694, 48758997, 48758996, 0, 200, 20);
+	script_8010(20, 39059695, -1);
+	cs2method_10467(1, 39059456);
+	cs2method_10467(0, 39059696);
+	cs2method_10467(0, 39059694);
+	if (cs2method_10580() == 1) {
+		script_8010(20, 48758806, -1);
+	} else {
+		script_8010(20, 48758807, -1);
+	}
+	return;
+}

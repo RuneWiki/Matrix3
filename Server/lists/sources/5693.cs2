@@ -1,0 +1,29 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5693(int a0,int a1) {
+	int v2 = 0;
+	int v0 = 0;
+	object v1 = "Members only";
+	if (cs2method_11038(79822905, a1) == 1) {
+		cs2method_10112(cs2method_10878(), cs2method_10406(), 0, 0, 79822908);
+		if (a0 == 1) {
+			v1 = "Level up to unlock this item!";
+		}
+		int v3 = cs2method_10060(cs2method_10939(3793, v1), 10);
+		int v4 = cs2method_10060(cs2method_10051(cs2method_10805(v3, 3793, v1), 15), 10);
+		cs2method_10283(v3, v4, 0, 0, 79822908);
+		cs2method_10026(79823019, v1);
+		cs2method_10467(0, 79822908);
+	}
+	return;
+}

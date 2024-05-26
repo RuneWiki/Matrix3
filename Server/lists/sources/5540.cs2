@@ -1,0 +1,604 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_5540(int a0,int a1,int a2,int a3) {
+	int v0 = 0;
+	if (cs2_configs['cfg1725'] == 1) {
+		if (cs2method_10771() == 0 && (cs2_configs['cfg1724'] == 7 || cs2_configs['cfg1724'] == 8 || cs2_configs['cfg1724'] == 9 || cs2_configs['cfg1724'] == 10 || cs2_configs['cfg1724'] == 11 || cs2_configs['cfg1724'] == 13)) {
+			cs2method_10026(77201489, "Members Item");
+		} else if (cs2_configs['cfg1808'] == 1) {
+			if (client_configs['cfg1103'].bitcfg18535 == 1) {
+				cs2method_10026(77201489, cs2method_10018(idx17mapData('i', 'o', 7505, client_configs['cfg1102'].bitcfg18521)));
+			} else {
+				cs2method_10026(77201489, cs2method_10018(idx17mapData('i', 'o', 7501, client_configs['cfg1102'].bitcfg18521)));
+			}
+		} else if (cs2_configs['cfg1808'] == 4) {
+			cs2method_10026(77201489, cs2method_10018(idx17mapData('i', 'o', 7503, client_configs['cfg1102'].bitcfg18522)));
+		} else {
+			cs2method_10026(77201489, cs2method_10018(idx17mapData('i', 'o', 5350, cs2_configs['cfg1724'])));
+		}
+		switch (a1) {
+			case 1:
+				v0 = cs2method_11048(client_configs['cfg1102'].bitcfg2983, client_configs['cfg1102'].bitcfg18521);
+				break;
+			case 2:
+				v0 = client_configs['cfg1102'].bitcfg2984;
+				break;
+			case 3:
+				v0 = client_configs['cfg1102'].bitcfg2971;
+				break;
+			case 4:
+				v0 = cs2method_11048(client_configs['cfg1102'].bitcfg2985, client_configs['cfg1102'].bitcfg18522);
+				break;
+			case 5:
+				v0 = client_configs['cfg1102'].bitcfg2968;
+				break;
+			case 6:
+				v0 = client_configs['cfg1102'].bitcfg2986;
+				break;
+			case 7:
+				if (cs2method_10771() == 0) {
+					v0 = 0;
+				} else {
+					v0 = client_configs['cfg1103'].bitcfg2988;
+				}
+				break;
+			case 8:
+				if (cs2method_10771() == 0) {
+					v0 = 0;
+				} else {
+					v0 = client_configs['cfg1103'].bitcfg2999;
+				}
+				break;
+			case 9:
+				if (cs2method_10771() == 0) {
+					v0 = 0;
+				} else {
+					v0 = client_configs['cfg1103'].bitcfg3002;
+				}
+				break;
+			case 10:
+				if (cs2method_10771() == 0) {
+					v0 = 0;
+				} else {
+					v0 = client_configs['cfg1103'].bitcfg3004;
+				}
+				break;
+			case 11:
+				if (cs2method_10771() == 0) {
+					v0 = 0;
+				} else {
+					v0 = client_configs['cfg1103'].bitcfg3005;
+				}
+				break;
+			case 12:
+				v0 = client_configs['cfg1102'].bitcfg2969;
+				break;
+			case 13:
+				if (cs2method_10771() == 0) {
+					v0 = 0;
+				} else {
+					v0 = client_configs['cfg1103'].bitcfg3007;
+				}
+				break;
+			default:
+				v0 = -1;
+		}
+		if (v0 >= 1) {
+			if (a1 == 1) {
+				cs2method_10758(idx17mapData('i', 'd', 7502, cs2method_10060(client_configs['cfg1102'].bitcfg18521, client_configs['cfg1102'].bitcfg2983)), a3);
+				cs2method_10039(-1, -1, a0);
+			} else if (a1 == 4) {
+				cs2method_10758(idx17mapData('i', 'd', 7504, cs2method_10060(client_configs['cfg1102'].bitcfg18522, client_configs['cfg1102'].bitcfg2985)), a3);
+				cs2method_10039(-1, -1, a0);
+			} else {
+				cs2method_10758(idx17mapData('i', 'd', 5348, a1), a3);
+				cs2method_10039(-1, -1, a0);
+			}
+		} else {
+			if (v0 == 0) {
+				cs2method_10758(idx17mapData('i', 'd', 5349, a1), a3);
+				cs2method_10039(-1, -1, a0);
+			}
+		}
+	} else if (cs2_configs['cfg1725'] == 2) {
+		if (cs2method_10771() == 0 && (cs2_configs['cfg1724'] == 4 || cs2_configs['cfg1724'] == 8)) {
+			cs2method_10026(77201489, "Members Item");
+		} else {
+			cs2method_10026(77201489, cs2method_10018(idx17mapData('i', 'o', 5353, cs2_configs['cfg1724'])));
+		}
+		switch (a1) {
+			case 1:
+				v0 = client_configs['cfg1102'].bitcfg2978;
+				break;
+			case 2:
+				v0 = client_configs['cfg1102'].bitcfg2977;
+				break;
+			case 3:
+				v0 = client_configs['cfg1102'].bitcfg2982;
+				break;
+			case 4:
+				if (cs2method_10771() == 0) {
+					v0 = 0;
+				} else {
+					v0 = client_configs['cfg1103'].bitcfg3001;
+				}
+				break;
+			case 5:
+				v0 = client_configs['cfg1102'].bitcfg2979;
+				break;
+			case 6:
+				v0 = client_configs['cfg1102'].bitcfg2980;
+				break;
+			case 7:
+				v0 = client_configs['cfg1102'].bitcfg2981;
+				break;
+			case 8:
+				if (cs2method_10771() == 0) {
+					v0 = 0;
+				} else {
+					v0 = client_configs['cfg1103'].bitcfg3003;
+				}
+				break;
+			default:
+				v0 = -1;
+		}
+		if (v0 == 1) {
+			cs2method_10758(idx17mapData('i', 'd', 5351, a1), a3);
+			cs2method_10039(-1, -1, a0);
+		} else {
+			if (v0 == 0) {
+				cs2method_10758(idx17mapData('i', 'd', 5352, a1), a3);
+				cs2method_10039(-1, -1, a0);
+			}
+		}
+	} else if (cs2_configs['cfg1725'] == 3) {
+		if (cs2method_10771() == 0 && (cs2_configs['cfg1724'] == 2 || cs2_configs['cfg1724'] == 8 || cs2_configs['cfg1724'] == 9 || cs2_configs['cfg1724'] == 4 || cs2_configs['cfg1724'] == 11 || cs2_configs['cfg1724'] == 12 || cs2_configs['cfg1724'] == 13)) {
+			cs2method_10026(77201489, "Members Item");
+		} else {
+			cs2method_10026(77201489, cs2method_10018(idx17mapData('i', 'o', 5356, cs2_configs['cfg1724'])));
+		}
+		switch (a1) {
+			case 1:
+				v0 = client_configs['cfg1102'].bitcfg2974;
+				break;
+			case 2:
+				if (cs2method_10771() == 0) {
+					v0 = 0;
+				} else {
+					v0 = client_configs['cfg1103'].bitcfg2992;
+				}
+				break;
+			case 3:
+				v0 = client_configs['cfg1102'].bitcfg2970;
+				break;
+			case 4:
+				if (cs2method_10771() == 0) {
+					v0 = 0;
+				} else {
+					v0 = client_configs['cfg1103'].bitcfg2991;
+				}
+				break;
+			case 5:
+				v0 = client_configs['cfg1102'].bitcfg2973;
+				break;
+			case 6:
+				v0 = client_configs['cfg1102'].bitcfg2975;
+				break;
+			case 7:
+				v0 = client_configs['cfg1102'].bitcfg2976;
+				break;
+			case 8:
+				if (cs2method_10771() == 0) {
+					v0 = 0;
+				} else {
+					v0 = client_configs['cfg1103'].bitcfg2989;
+				}
+				break;
+			case 9:
+				if (cs2method_10771() == 0) {
+					v0 = 0;
+				} else {
+					v0 = client_configs['cfg1103'].bitcfg2990;
+				}
+				break;
+			case 10:
+				v0 = client_configs['cfg1102'].bitcfg2972;
+				break;
+			case 11:
+				if (cs2method_10771() == 0) {
+					v0 = 0;
+				} else {
+					v0 = client_configs['cfg1103'].bitcfg2994;
+				}
+				break;
+			case 12:
+				if (cs2method_10771() == 0) {
+					v0 = 0;
+				} else {
+					v0 = client_configs['cfg1103'].bitcfg2993;
+				}
+				break;
+			case 13:
+				if (cs2method_10771() == 0) {
+					v0 = 0;
+				} else {
+					v0 = client_configs['cfg1103'].bitcfg3006;
+				}
+				break;
+			default:
+				v0 = -1;
+		}
+		if (v0 == 1) {
+			cs2method_10758(idx17mapData('i', 'd', 5354, a1), a3);
+			cs2method_10039(-1, -1, a0);
+		} else {
+			if (v0 == 0) {
+				cs2method_10758(idx17mapData('i', 'd', 5355, a1), a3);
+				cs2method_10039(-1, -1, a0);
+			}
+		}
+	} else if (cs2_configs['cfg1725'] == 4) {
+		if (cs2method_10771() == 0 && (cs2_configs['cfg1724'] == 1 || cs2_configs['cfg1724'] == 2 || cs2_configs['cfg1724'] == 4 || cs2_configs['cfg1724'] == 5)) {
+			cs2method_10026(77201489, "Members Item");
+		} else {
+			cs2method_10026(77201489, cs2method_10018(idx17mapData('i', 'o', 5359, cs2_configs['cfg1724'])));
+		}
+		switch (a1) {
+			case 1:
+				if (cs2method_10771() == 0) {
+					v0 = 0;
+				} else {
+					v0 = client_configs['cfg1103'].bitcfg2997;
+				}
+				break;
+			case 2:
+				if (cs2method_10771() == 0) {
+					v0 = 0;
+				} else {
+					v0 = client_configs['cfg1103'].bitcfg2995;
+				}
+				break;
+			case 3:
+				v0 = client_configs['cfg1103'].bitcfg3000;
+				break;
+			case 4:
+				if (cs2method_10771() == 0) {
+					v0 = 0;
+				} else {
+					v0 = client_configs['cfg1103'].bitcfg2996;
+				}
+				break;
+			case 5:
+				if (cs2method_10771() == 0) {
+					v0 = 0;
+				} else {
+					v0 = client_configs['cfg1103'].bitcfg2998;
+				}
+				break;
+			default:
+				v0 = -1;
+		}
+		if (v0 == 1) {
+			cs2method_10758(idx17mapData('i', 'd', 5357, a1), a3);
+			cs2method_10039(-1, -1, a0);
+		} else {
+			if (v0 == 0) {
+				cs2method_10758(idx17mapData('i', 'd', 5358, a1), a3);
+				cs2method_10039(-1, -1, a0);
+			}
+		}
+	} else if (cs2_configs['cfg1725'] == 11) {
+		if (cs2_configs['cfg1808'] == 1) {
+			cs2method_10026(77201489, cs2method_10018(idx17mapData('i', 'o', 5732, client_configs['cfg1107'].bitcfg3008)));
+		} else if (cs2_configs['cfg1808'] == 2) {
+			cs2method_10026(77201489, cs2method_10018(idx17mapData('i', 'o', 5733, client_configs['cfg1107'].bitcfg3009)));
+		} else {
+			cs2method_10026(77201489, cs2method_10018(idx17mapData('i', 'o', 5731, cs2_configs['cfg1808'])));
+		}
+		switch (a1) {
+			case 1:
+				v0 = client_configs['cfg1107'].bitcfg3008;
+				break;
+			case 2:
+				v0 = client_configs['cfg1107'].bitcfg3009;
+				break;
+			case 3:
+				v0 = client_configs['cfg1107'].bitcfg3013;
+				break;
+			case 4:
+				v0 = client_configs['cfg1107'].bitcfg3010;
+				break;
+			case 5:
+				v0 = client_configs['cfg1107'].bitcfg3015;
+				break;
+			case 6:
+				v0 = client_configs['cfg1107'].bitcfg3012;
+				break;
+			case 7:
+				v0 = client_configs['cfg1107'].bitcfg3014;
+				break;
+			case 8:
+				v0 = client_configs['cfg1107'].bitcfg3011;
+				break;
+			default:
+				v0 = -1;
+		}
+		if (v0 >= 1) {
+			if (a1 == 1) {
+				cs2method_10758(idx17mapData('i', 'd', 335, v0), a3);
+				cs2method_10039(-1, -1, a0);
+			} else if (a1 == 2) {
+				cs2method_10758(idx17mapData('i', 'd', 5729, v0), a3);
+				cs2method_10039(-1, -1, a0);
+			} else {
+				cs2method_10758(idx17mapData('i', 'd', 334, a1), a3);
+				cs2method_10039(-1, -1, a0);
+			}
+		} else {
+			if (v0 == 0) {
+				cs2method_10758(idx17mapData('i', 'd', 5730, a1), a3);
+				cs2method_10039(-1, -1, a0);
+			}
+		}
+	} else if (cs2_configs['cfg1725'] == 12) {
+		if (cs2_configs['cfg1808'] < 1) {
+			cs2method_10026(77201489, "Empty");
+		} else {
+			cs2method_10026(77201489, cs2method_10018(idx17mapData('i', 'o', 5734, cs2_configs['cfg1808'])));
+		}
+		while (v0 == 0) {
+			switch (a1) {
+				case 1:
+					v0 = cs2_configs['cfg1812'];
+					break;
+				case 2:
+					v0 = cs2_configs['cfg1813'];
+					break;
+				case 3:
+					v0 = cs2_configs['cfg1814'];
+					break;
+				case 4:
+					v0 = cs2_configs['cfg1815'];
+					break;
+				case 5:
+					v0 = cs2_configs['cfg1816'];
+					break;
+				case 6:
+					v0 = cs2_configs['cfg1817'];
+					break;
+				case 7:
+					v0 = cs2_configs['cfg1818'];
+					break;
+				case 8:
+					v0 = cs2_configs['cfg1819'];
+					break;
+				case 9:
+					v0 = cs2_configs['cfg1820'];
+					break;
+				case 10:
+					v0 = cs2_configs['cfg1821'];
+					break;
+				case 11:
+					v0 = cs2_configs['cfg1822'];
+					break;
+				case 12:
+					v0 = cs2_configs['cfg1823'];
+					break;
+				case 13:
+					v0 = cs2_configs['cfg1824'];
+					break;
+				case 14:
+					v0 = cs2_configs['cfg1825'];
+					break;
+				case 15:
+					v0 = cs2_configs['cfg1826'];
+					break;
+				case 16:
+					v0 = cs2_configs['cfg1827'];
+					break;
+				case 17:
+					v0 = cs2_configs['cfg1828'];
+					break;
+				case 18:
+					v0 = cs2_configs['cfg1829'];
+					break;
+				case 19:
+					v0 = cs2_configs['cfg1830'];
+					break;
+				case 20:
+					v0 = cs2_configs['cfg1831'];
+					break;
+				case 21:
+					v0 = cs2_configs['cfg1832'];
+					break;
+				case 22:
+					v0 = cs2_configs['cfg1833'];
+					break;
+				case 23:
+					v0 = cs2_configs['cfg1834'];
+					break;
+				case 24:
+					v0 = cs2_configs['cfg1835'];
+					break;
+				case 25:
+					v0 = cs2_configs['cfg1836'];
+					break;
+				case 26:
+					v0 = cs2_configs['cfg1837'];
+					break;
+				case 27:
+					v0 = cs2_configs['cfg1838'];
+					break;
+				case 28:
+					v0 = cs2_configs['cfg1839'];
+					break;
+				case 29:
+					v0 = cs2_configs['cfg1840'];
+					break;
+				case 30:
+					v0 = cs2_configs['cfg1841'];
+					break;
+				case 31:
+					v0 = cs2_configs['cfg1842'];
+					break;
+				case 32:
+					v0 = cs2_configs['cfg1843'];
+					break;
+				case 33:
+					v0 = cs2_configs['cfg1844'];
+					break;
+				case 34:
+					v0 = cs2_configs['cfg1845'];
+					break;
+				case 35:
+					v0 = cs2_configs['cfg1846'];
+					break;
+				case 36:
+					v0 = cs2_configs['cfg1847'];
+					break;
+				case 37:
+					v0 = cs2_configs['cfg1848'];
+					break;
+				case 38:
+					v0 = cs2_configs['cfg1849'];
+					break;
+				case 39:
+					v0 = cs2_configs['cfg1850'];
+					break;
+				case 40:
+					v0 = cs2_configs['cfg1851'];
+					break;
+				case 41:
+					v0 = cs2_configs['cfg1852'];
+					break;
+				case 42:
+					v0 = cs2_configs['cfg1853'];
+					break;
+				case 43:
+					v0 = cs2_configs['cfg1854'];
+					break;
+				case 44:
+					v0 = cs2_configs['cfg1855'];
+					break;
+				case 45:
+					v0 = cs2_configs['cfg1856'];
+					break;
+				case 46:
+					v0 = cs2_configs['cfg1857'];
+					break;
+				case 47:
+					v0 = cs2_configs['cfg1858'];
+					break;
+				case 48:
+					v0 = cs2_configs['cfg1859'];
+					break;
+				case 49:
+					v0 = cs2_configs['cfg1860'];
+					break;
+				case 50:
+					v0 = cs2_configs['cfg1861'];
+					break;
+				case 51:
+					v0 = cs2_configs['cfg1862'];
+					break;
+				case 52:
+					v0 = cs2_configs['cfg1863'];
+					break;
+				case 53:
+					v0 = cs2_configs['cfg1864'];
+					break;
+				case 54:
+					v0 = cs2_configs['cfg1865'];
+					break;
+				case 55:
+					v0 = cs2_configs['cfg1866'];
+					break;
+				case 56:
+					v0 = cs2_configs['cfg1867'];
+					break;
+				case 57:
+					v0 = cs2_configs['cfg1868'];
+					break;
+				case 58:
+					v0 = cs2_configs['cfg1869'];
+					break;
+				case 59:
+					v0 = cs2_configs['cfg1870'];
+					break;
+				case 60:
+					v0 = cs2_configs['cfg1871'];
+					break;
+				case 61:
+					v0 = cs2_configs['cfg1872'];
+					break;
+				case 62:
+					v0 = cs2_configs['cfg1873'];
+					break;
+				case 63:
+					v0 = cs2_configs['cfg1874'];
+					break;
+				case 64:
+					v0 = cs2_configs['cfg1875'];
+					break;
+				default:
+					v0 = -1;
+			}
+			if (v0 == 0) {
+				if (a1 < cs2_configs['cfg1808']) {
+					a1 = cs2method_10461(a1, 1);
+				} else {
+					if (a1 >= cs2_configs['cfg1808']) {
+						a1 = cs2method_10060(a1, 1);
+					}
+				}
+			}
+		}
+		if (v0 == 1) {
+			cs2method_10039(idx17mapData('i', 'o', 5734, a1), -1, a0);
+			cs2method_10758(-1, a3);
+		} else {
+			if (v0 == 0) {
+				cs2method_10758(-1, a3);
+			}
+		}
+	} else {
+		cs2method_10026(77201489, "");
+		cs2method_10467(0, a2);
+		cs2method_10467(0, a3);
+		cs2method_10467(0, a0);
+		cs2method_10758(-1, a2);
+		cs2method_10758(-1, a3);
+		return -1;
+	}
+	if (v0 >= 1) {
+		cs2method_10467(0, a2);
+		cs2method_10467(0, a3);
+		cs2method_10467(0, a0);
+		cs2method_10758(8754, a2);
+	} else if (v0 == 0) {
+		cs2method_10467(0, a2);
+		cs2method_10467(0, a3);
+		cs2method_10467(0, a0);
+		cs2method_10758(8756, a2);
+	} else {
+		cs2method_10467(1, a2);
+		cs2method_10467(1, a3);
+		cs2method_10467(1, a0);
+		cs2method_10758(-1, a2);
+		cs2method_10758(-1, a3);
+	}
+	if (v0 >= 0) {
+		return a1;
+	}
+	return -1;
+}

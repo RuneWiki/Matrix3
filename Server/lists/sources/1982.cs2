@@ -1,0 +1,57 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_1982_struct(2,0,0) script_1982(int a0,int a1,object a2,object a3,int a4) {
+	object v4 = "";
+	object v0 = "";
+	object v1 = cs2method_10427("<col=aed0e0>" + (string)a2 + "</col>", a3);
+	object v2 = "<col=ffffff>" + (string)a2 + (string)a3 + "</col>";
+	if (cs2method_11038(a0, 0) == 1) {
+		cs2method_10797(v1);
+		cs2method_20674(new function<script_7777>(object a0,int a1,int a2) {
+			if (cs2method_11038(a1, a2) == 1) {
+				cs2method_10797(a0);
+			}
+			return;
+		}, new WidgetPointer(-32768,3), -2147483643, (string)v2, "Iis");
+		cs2method_20884(new function<script_7777>(int a0,int a1,object a2) {
+			if (cs2method_11038(a1, a0) == 1) {
+				cs2method_10797(a2);
+			}
+			return;
+		}, new WidgetPointer(-32768,3), -2147483643, (string)v1, "Iis");
+	} else {
+		cs2method_10606(a0, 4, 0);
+		cs2method_10063(20, 0, 0, 0);
+		cs2method_10013(20, 0, 1, 1);
+		cs2method_10692(20452);
+		cs2method_11105(0, 1, 0);
+		cs2method_10797(v1);
+		cs2method_20674(new function<script_7777>(int a0,int a1,object a2) {
+			if (cs2method_11038(a1, a0) == 1) {
+				cs2method_10797(a2);
+			}
+			return;
+		}, new WidgetPointer(-32768,3), -2147483643, (string)v2, "Iis");
+		cs2method_20884(new function<script_7777>(int a0,object a1,int a2) {
+			if (cs2method_11038(a0, a2) == 1) {
+				cs2method_10797(a1);
+			}
+			return;
+		}, new WidgetPointer(-32768,3), -2147483643, (string)v1, "Iis");
+	}
+	cs2method_11127(1, a0, cs2method_11067(1, a4));
+	cs2method_10316(a0, cs2method_10331(a4));
+	cs2method_10112(0, a1, 0, 0, a0);
+	int v3 = cs2method_10939(20452, cs2method_10765(v2));
+	return new script_1982_struct(v3, cs2method_10060(a1, cs2method_10823(a0)));
+}

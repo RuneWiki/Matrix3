@@ -1,0 +1,36 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2135(int a0,int a1,int a2) {
+	int v3 = cs2method_10191(a0);
+	int v1 = cs2method_10152(a0);
+	if (a1 >= 0 && a1 <= cs2method_10968(cs2method_10236(a0), 2)) {
+		v3 = cs2method_10461(v3, cs2method_10060(cs2method_10877(2), 2));
+	} else {
+		if (a1 <= cs2method_10236(a0)) {
+			v3 = cs2method_10060(cs2method_10060(v3, cs2method_10877(2)), 2);
+		}
+	}
+	if (a2 >= 0 && a2 <= cs2method_10968(cs2method_10823(a0), 2)) {
+		v1 = cs2method_10461(v1, cs2method_10060(cs2method_10877(2), 2));
+	} else {
+		if (a2 <= cs2method_10823(a0)) {
+			v1 = cs2method_10060(cs2method_10060(v1, cs2method_10877(2)), 2);
+		}
+	}
+	int v4 = cs2method_11048(v3, 0);
+	int v0 = cs2method_11048(v1, 0);
+	int v5 = cs2method_10872(v4, cs2method_10461(cs2method_10236(cs2method_10982(a0)), cs2method_10236(a0)));
+	int v2 = cs2method_10872(v0, cs2method_10461(cs2method_10823(cs2method_10982(a0)), cs2method_10823(a0)));
+	cs2method_10112(v5, v2, 0, 0, a0);
+	return;
+}

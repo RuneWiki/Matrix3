@@ -1,0 +1,29 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1773() {
+	if (cs2_configs['cfg249'] == 0) {
+		cs2method_10520(0, 51839087);
+		cs2method_10520(16750623, 51839088);
+		cs2method_10467(1, 51839090);
+		cs2method_10520(16750623, 51839091);
+		cs2method_10026(51839091, "...you keep" + "<br>" + "your items.");
+	} else {
+		cs2method_10520(16711680, 51839087);
+		cs2method_10520(16776960, 51839088);
+		cs2method_10467(0, 51839090);
+		cs2method_10520(16776960, 51839091);
+		cs2method_10026(51839091, "...you DROP ALL your items.");
+	}
+	script_1784();
+	return;
+}

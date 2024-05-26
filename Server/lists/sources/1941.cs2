@@ -1,0 +1,43 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1941() {
+	int v0 = cs2method_10060(cs2method_10060(cs2method_10060(client_configs['cfg1596'], client_configs['cfg1598']), client_configs['cfg1601']), cs2method_10051(2, cs2method_10461(client_configs['cfg1597'], client_configs['cfg1599'])));
+	cs2method_10026(53018641, "Score: " + (string)cs2method_10379(v0));
+	if (cs2_configs['cfg556'] == 0) {
+		return;
+	}
+	int v1 = cs2method_10461(cs2_configs['cfg556'], cs2method_10133());
+	int v3 = cs2method_10968(v1, 3000);
+	int v2 = cs2method_10038(cs2method_10968(v1, 50), 60);
+	if (v3 < 0 || v2 < 0) {
+		cs2method_10026(53018639, "Game ending");
+		cs2method_11101(1, 53018639);
+		script_1942();
+	} else if (v3 == 0 && v2 == 0) {
+		cs2method_10026(53018639, "Game ending");
+	} else if (v2 < 10) {
+		cs2method_10026(53018639, (string)cs2method_10379(v3) + ":0" + (string)cs2method_10379(v2));
+	} else {
+		cs2method_10026(53018639, (string)cs2method_10379(v3) + ":" + (string)cs2method_10379(v2));
+	}
+	if (v3 < 1) {
+		cs2method_10520(16711680, 53018639);
+		cs2method_11101(1, 53018639);
+		script_1942();
+	} else {
+		if (cs2method_10609(53018642) == 0) {
+			cs2method_10467(1, 53018642);
+		}
+	}
+	return;
+}

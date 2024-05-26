@@ -1,0 +1,58 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_4644_struct(2,0,0) script_4644(int a0) {
+	switch (a0) {
+		default:
+			return new script_4644_struct(0, 0);
+		case 1:
+			if (client_configs['cfg1545'].bitcfg4776 == 1) {
+				if (client_configs['cfg1545'].bitcfg4775 == 1) {
+					return new script_4644_struct(1, 1);
+				}
+				return new script_4644_struct(1, 0);
+			}
+			break;
+		case 2:
+			if (client_configs['cfg1545'].bitcfg4778 == 1) {
+				if (client_configs['cfg1545'].bitcfg4777 == 1) {
+					return new script_4644_struct(1, 1);
+				}
+				return new script_4644_struct(1, 0);
+			}
+			break;
+		case 4:
+			if (client_configs['cfg1545'].bitcfg4780 == 1) {
+				if (client_configs['cfg1545'].bitcfg4779 == 1) {
+					return new script_4644_struct(1, 1);
+				}
+				return new script_4644_struct(1, 0);
+			}
+			break;
+		case 3:
+			if (client_configs['cfg1546'].bitcfg4782 == 1) {
+				if (client_configs['cfg1546'].bitcfg4781 == 1) {
+					return new script_4644_struct(1, 1);
+				}
+				return new script_4644_struct(1, 0);
+			}
+			break;
+		case 6:
+			if (client_configs['cfg1546'].bitcfg4784 == 1) {
+				if (client_configs['cfg1546'].bitcfg4783 == 1) {
+					return new script_4644_struct(1, 1);
+				}
+				return new script_4644_struct(1, 0);
+			}
+	}
+	return new script_4644_struct(0, 0);
+}

@@ -1,0 +1,63 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4114() {
+	script_662(0);
+	script_662(1);
+	script_662(2);
+	script_662(3);
+	script_662(4);
+	script_662(5);
+	int v3 = cs2method_10640(540, 0);
+	if (v3 == -1) {
+		cs2method_10467(0, 7143452);
+		cs2method_10039(-1, -1, 7143444);
+		cs2method_10026(7143445, "");
+		cs2method_10316(7143444, "null");
+		cs2method_11127(1, 7143444, "null");
+		return;
+	}
+	cs2method_10467(1, 7143452);
+	cs2method_10039(v3, -1, 7143444);
+	cs2method_10316(7143444, "<col=ff9040>" + (string)cs2method_10018(v3) + "</col>");
+	int v1 = 1140;
+	cs2method_20680(new function<script_44>(int a0,int a1) {
+		cs2method_10758(a1, a0);
+		return;
+	}, new WidgetPointer(109,19), v1, "Id", new WidgetPointer(109,19));
+	int v2 = 18266;
+	cs2method_20750(new function<script_44>(int a0,int a1) {
+		cs2method_10758(a1, a0);
+		return;
+	}, new WidgetPointer(109,19), v2, "Id", new WidgetPointer(109,19));
+	object v5 = "Lent item";
+	object v9 = "Still on loan";
+	cs2method_10026(7143442, v5);
+	if (client_configs['cfg429'] != -1 || client_configs['cfg431'] > 0) {
+		cs2method_10704(200, 7143444);
+		cs2method_10520(16711680, 7143445);
+		cs2method_11127(1, 7143444, "Demand");
+	} else {
+		cs2method_10704(0, 7143444);
+		cs2method_10520(57088, 7143445);
+		v9 = "Available";
+		cs2method_11127(1, 7143444, "Reclaim");
+	}
+	cs2method_10026(7143445, v9);
+	int v0 = cs2method_11048(cs2method_10939(17814, v5), cs2method_10939(17813, v9));
+	int v7 = cs2method_11048(v0, cs2method_10236(7143444));
+	int v8 = cs2method_10060(v7, 30);
+	int v6 = cs2method_11048(v8, 106);
+	int v4 = cs2method_10872(v6, 178);
+	cs2method_10283(v4, 73, 0, 0, 7143451);
+	return;
+}

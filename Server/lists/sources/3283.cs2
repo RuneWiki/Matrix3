@@ -1,0 +1,32 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3283(int a0,int a1,int a2,int a3) {
+	if (a2 == 0) {
+		a2 = 12;
+	}
+	int v0 = cs2method_10805(cs2method_10060(cs2method_10236(a0), 16), a1, cs2method_10744(a0));
+	int v1 = cs2method_10051(v0, a2);
+	cs2method_10810("txt " + (string)cs2method_10379(v1) + ", layer " + (string)cs2method_10379(cs2method_10823(a0)));
+	if (cs2method_10823(a0) >= v1) {
+		cs2method_10810("No scroll txt " + (string)cs2method_10379(v1) + ", layer " + (string)cs2method_10379(cs2method_10823(a0)));
+		cs2method_10283(cs2method_10060(cs2method_10236(a0), 16), cs2method_10823(a0), 0, 0, a0);
+		cs2method_10467(1, a3);
+	} else {
+		int v2 = cs2method_10805(cs2method_10236(a0), a1, cs2method_10744(a0));
+		int v3 = cs2method_10051(v2, a2);
+		cs2method_11130(0, cs2method_10060(v3, 10), a0);
+		cs2method_10810("Scroll txt " + (string)cs2method_10379(v3) + ", layer " + (string)cs2method_10379(cs2method_10823(a0)));
+		script_31(a3, a0, 792, 789, 790, 791, 773, 788);
+	}
+	return;
+}

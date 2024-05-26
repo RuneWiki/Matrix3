@@ -1,0 +1,62 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_4793_struct(6,0,0) script_4793(int a0,int a1) {
+	switch (a0) {
+		case 1:
+			return new script_4793_struct(clan_chat_configs['cfg2634'], clan_chat_configs['cfg2635'], clan_chat_configs['cfg2636'], clan_chat_configs['cfg2637'], clan_chat_configs['cfg2638'], clan_chat_configs['cfg2639']);
+		case 2:
+			return new script_4793_struct(clan_chat_configs['cfg2640'], clan_chat_configs['cfg2641'], clan_chat_configs['cfg2642'], clan_chat_configs['cfg2643'], clan_chat_configs['cfg2644'], clan_chat_configs['cfg2645']);
+		case 3:
+			return new script_4793_struct(clan_chat_configs['cfg2646'], clan_chat_configs['cfg2647'], clan_chat_configs['cfg2648'], clan_chat_configs['cfg2649'], clan_chat_configs['cfg2650'], clan_chat_configs['cfg2651']);
+		case 4:
+			switch (a1) {
+				case 1:
+					return new script_4793_struct(clan_chat_configs['cfg2652'], clan_chat_configs['cfg2653'], clan_chat_configs['cfg2654'], clan_chat_configs['cfg2655'], clan_chat_configs['cfg2656'], clan_chat_configs['cfg2657']);
+				case 2:
+					return new script_4793_struct(clan_chat_configs['cfg2658'], clan_chat_configs['cfg2659'], clan_chat_configs['cfg2660'], clan_chat_configs['cfg2661'], clan_chat_configs['cfg2662'], clan_chat_configs['cfg2663']);
+				case 3:
+					return new script_4793_struct(clan_chat_configs['cfg2664'], clan_chat_configs['cfg2665'], clan_chat_configs['cfg2666'], clan_chat_configs['cfg2667'], clan_chat_configs['cfg2668'], clan_chat_configs['cfg2669']);
+				case 4:
+					return new script_4793_struct(clan_chat_configs['cfg2670'], clan_chat_configs['cfg2671'], clan_chat_configs['cfg2672'], clan_chat_configs['cfg2673'], clan_chat_configs['cfg2674'], clan_chat_configs['cfg2675']);
+				case 5:
+					return new script_4793_struct(clan_chat_configs['cfg2676'], clan_chat_configs['cfg2677'], clan_chat_configs['cfg2678'], clan_chat_configs['cfg2679'], clan_chat_configs['cfg2680'], clan_chat_configs['cfg2681']);
+				case 6:
+					return new script_4793_struct(clan_chat_configs['cfg2682'], clan_chat_configs['cfg2683'], clan_chat_configs['cfg2684'], clan_chat_configs['cfg2685'], clan_chat_configs['cfg2686'], clan_chat_configs['cfg2687']);
+				case 7:
+					return new script_4793_struct(clan_chat_configs['cfg2688'], clan_chat_configs['cfg2689'], clan_chat_configs['cfg2690'], clan_chat_configs['cfg2691'], clan_chat_configs['cfg2692'], clan_chat_configs['cfg2693']);
+				case 8:
+					return new script_4793_struct(clan_chat_configs['cfg2694'], clan_chat_configs['cfg2695'], clan_chat_configs['cfg2696'], clan_chat_configs['cfg2697'], clan_chat_configs['cfg2698'], clan_chat_configs['cfg2699']);
+				case 9:
+					return new script_4793_struct(clan_chat_configs['cfg2700'], clan_chat_configs['cfg2701'], clan_chat_configs['cfg2702'], clan_chat_configs['cfg2703'], clan_chat_configs['cfg2704'], clan_chat_configs['cfg2705']);
+				case 10:
+					return new script_4793_struct(clan_chat_configs['cfg2706'], clan_chat_configs['cfg2707'], clan_chat_configs['cfg2708'], clan_chat_configs['cfg2709'], clan_chat_configs['cfg2710'], clan_chat_configs['cfg2711']);
+				case 11:
+					return new script_4793_struct(clan_chat_configs['cfg2712'], clan_chat_configs['cfg2713'], clan_chat_configs['cfg2714'], clan_chat_configs['cfg2715'], clan_chat_configs['cfg2716'], clan_chat_configs['cfg2717']);
+				case 12:
+					return new script_4793_struct(clan_chat_configs['cfg2718'], clan_chat_configs['cfg2719'], clan_chat_configs['cfg2720'], clan_chat_configs['cfg2721'], clan_chat_configs['cfg2722'], clan_chat_configs['cfg2723']);
+			}
+			break;
+		case 5:
+			switch (a1) {
+				default:
+					break;
+				case 1:
+					return new script_4793_struct(clan_chat_configs['cfg2149'], clan_chat_configs['cfg2150'], clan_chat_configs['cfg2151'], clan_chat_configs['cfg2152'], clan_chat_configs['cfg2153'], clan_chat_configs['cfg2154']);
+				case 2:
+					return new script_4793_struct(clan_chat_configs['cfg2166'], clan_chat_configs['cfg2167'], clan_chat_configs['cfg2168'], clan_chat_configs['cfg2169'], clan_chat_configs['cfg2170'], clan_chat_configs['cfg2171']);
+				case 3:
+					return new script_4793_struct(clan_chat_configs['cfg2183'], clan_chat_configs['cfg2184'], clan_chat_configs['cfg2185'], clan_chat_configs['cfg2186'], clan_chat_configs['cfg2187'], clan_chat_configs['cfg2188']);
+			}
+	}
+	return new script_4793_struct(0, 0, 0, 0, 0, 0);
+}

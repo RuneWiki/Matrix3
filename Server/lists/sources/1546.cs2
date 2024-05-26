@@ -1,0 +1,20 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1546(int a0) {
+	if (cs2_configs['cfg1000'] > cs2method_10004()) {
+		cs2method_10026(a0, "Combat Lvl: " + (string)cs2method_10379(cs2method_10004()) + "+" + (string)cs2method_10379(cs2method_10461(cs2_configs['cfg1000'], cs2method_10004())));
+	} else {
+		cs2method_10026(a0, "Combat Lvl: " + (string)cs2method_10379(cs2method_10004()));
+	}
+	return;
+}

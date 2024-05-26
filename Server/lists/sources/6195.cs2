@@ -1,0 +1,72 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6195() {
+	int v0 = 0;
+	cs2method_20380(new function<none>() {
+	}, "", new WidgetPointer(137,117));
+	cs2method_20380(new function<script_6196>(int a0,int a1,int a2,int a3) {
+		int v0 = 0;
+		int v1 = 0;
+		switch (a1) {
+			case 84:
+				script_6203();
+				return;
+			case 13:
+				return;
+			case 102:
+			case 103:
+			case 98:
+			case 99:
+			case 96:
+			case 97:
+				cs2_configs['cfg1921'] = script_6200(cs2_configs['cfg2552'], a1, cs2_configs['cfg1921']);
+				script_6199(59376094, cs2_configs['cfg2552'], 59375913);
+				return;
+			case 80:
+				return;
+			case 85:
+			case 101:
+			case -1:
+				if (cs2method_10698(a2) == 1 || a1 == 85 || a1 == 101) {
+					if (cs2method_10761(a2, 0, "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!#$%&'*+-/=?^_.{}~@") == -1 && a1 != 85 && a1 != 101) {
+						return;
+					}
+					if (a2 == 60) {
+						return;
+					}
+					int v3 = cs2_configs['cfg1921'];
+					int v7 = a3;
+					int v6 = a1;
+					int v8 = a2;
+					object v5 = cs2_configs['cfg2552'];
+					script_802_struct(1,1,0) v2 = script_802(v3, v5, v7, v6, v8);
+					object v4 = v2.objectpart_0;
+					cs2_configs['cfg1921'] = v2.intpart_0;
+					cs2_configs['cfg2552'] = (string)v4;
+					cs2method_10026(a0, cs2_configs['cfg2552']);
+					script_6199(59376094, cs2_configs['cfg2552'], 59375913);
+					return;
+				}
+				return;
+		}
+		return;
+	}, -2147483640, false, new WidgetPointer(-32768,3), v0, "izIi", new WidgetPointer(906,478));
+	cs2_configs['cfg1921'] = 0;
+	cs2method_20390(new function<script_6197>(int a0,int a1,int a2,int a3) {
+		script_6198(a3, a2, a0, a1);
+		return;
+	}, -2147483647, -2147483646, new WidgetPointer(906,478), new WidgetPointer(906,297), "iiII", new WidgetPointer(906,478));
+	script_6199(59376094, "", 59375913);
+	cs2method_10467(1, 59375913);
+	return;
+}

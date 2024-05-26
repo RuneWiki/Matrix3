@@ -1,0 +1,69 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_8360(int a0,int a1,int a2,int a3,int a4,int a5) {
+	flow_0:
+		IF (a4 == -1) 
+			GOTO	flow_1
+		GOTO	flow_2
+	flow_1:
+		IF (cs2method_10134(a3) <= 0) 
+			GOTO	flow_4
+	flow_2:
+		IF (a4 == 1 && cs2method_10134(a3) >= cs2method_10461(cs2method_10350(a3), cs2method_10236(a3))) 
+			GOTO	flow_4
+		GOTO	flow_5
+	flow_4:
+		return;
+	flow_5:
+		if (cs2method_11038(a1, a2) == 1) {
+			cs2method_20229(new function<script_9935>(int a0,int a1,int a2,int a3,int a4,int a5,int a6) {
+				if (cs2method_11038(a4, a5) == 1) {
+					cs2method_20061(new function<script_9938>(int a0,int a1,int a2) {
+						if (cs2method_10133() >= a1) {
+							script_9939(a0, a2);
+						}
+						return;
+					}, new WidgetPointer(-32768,3), -2147483643, cs2method_10060(cs2method_10133(), 2), "Iii");
+					if (cs2method_10133() >= a3) {
+						cs2method_20502(new function<none>() {
+						}, "");
+						script_9940(a1, a2, 3, a6);
+					} else {
+						cs2method_20502(new function<script_9937>(int a0,int a1,int a2,int a3,int a4,int a5,int a6) {
+							if (cs2method_10133() <= a6) {
+								script_9940(a0, a1, a5, a3);
+							}
+							script_9939(a2, a4);
+							return;
+						}, a1, new WidgetPointer(-32768,3), -2147483643, new WidgetPointer(a2), a0, a6, cs2method_10060(cs2method_10133(), 1), "iIiIiii");
+					}
+				}
+				return;
+			}, a0, new WidgetPointer(-32768,3), -2147483643, new WidgetPointer(a3), a5, a4, cs2method_10060(cs2method_10133(), 10), "iIiIiii");
+			cs2method_20502(new function<script_9937>(int a0,int a1,int a2,int a3,int a4,int a5,int a6) {
+				if (cs2method_10133() <= a4) {
+					script_9940(a1, a3, a6, a5);
+				}
+				script_9939(a0, a2);
+				return;
+			}, a0, new WidgetPointer(-32768,3), -2147483643, new WidgetPointer(a3), a5, a4, cs2method_10060(cs2method_10133(), 1), "iIiIiii");
+			cs2method_20061(new function<script_9938>(int a0,int a1,int a2) {
+				if (cs2method_10133() >= a1) {
+					script_9939(a0, a2);
+				}
+				return;
+			}, new WidgetPointer(-32768,3), -2147483643, cs2method_10060(cs2method_10133(), 2), "Iii");
+		}
+		return;
+}

@@ -1,0 +1,28 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4277() {
+	int v0 = cs2method_10968(cs2method_10051(client_configs['cfg1997'].bitcfg8701, 6), 10);
+	object v2 = cs2method_10379(cs2method_10968(v0, 60));
+	object v1 = cs2method_10379(cs2method_10038(v0, 60));
+	if (cs2method_10265(v1) < 2) {
+		v1 = cs2method_10427("0", v1);
+	}
+	if (client_configs['cfg1997'].bitcfg8702 == 0) {
+		cs2method_10026(71303180, "Match Starts In:");
+		cs2method_10026(71303181, (string)v2 + ":" + (string)v1);
+	} else {
+		cs2method_10026(71303180, "Time Remaining:");
+		cs2method_10026(71303181, (string)v2 + ":" + (string)v1);
+	}
+	return;
+}

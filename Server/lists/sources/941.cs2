@@ -1,0 +1,50 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_941(int a0) {
+	cs2method_10467(1, 12648465);
+	cs2_configs['cfg2582'] = 0;
+	cs2_configs['cfg2583'] = 0;
+	cs2_configs['cfg2584'] = 0;
+	cs2_configs['cfg2585'] = 0;
+	cs2_configs['cfg2586'] = 0;
+	cs2_configs['cfg2587'] = 0;
+	cs2_configs['cfg2588'] = 0;
+	cs2_configs['cfg2589'] = 0;
+	cs2_configs['cfg2590'] = 0;
+	cs2_configs['cfg2591'] = 0;
+	cs2_configs['cfg2592'] = 0;
+	cs2_configs['cfg2593'] = 0;
+	cs2_configs['cfg2594'] = 0;
+	cs2_configs['cfg2595'] = 0;
+	cs2_configs['cfg2596'] = 0;
+	cs2_configs['cfg2597'] = 0;
+	cs2_configs['cfg2598'] = 0;
+	cs2_configs['cfg2599'] = 0;
+	cs2_configs['cfg2600'] = 0;
+	if (client_configs['cfg3294'].bitcfg16863 >= 70 && client_configs['cfg3294'].bitcfg16863 < 100 && cs2method_10936(93, 26114) > 0 && cs2method_10936(93, 26114) > 0) {
+		cs2method_10467(0, 12648596);
+		switch (cs2method_10262()) {
+			case 1:
+				cs2method_10758(15348, 12648599);
+				break;
+			case 2:
+				cs2method_10758(15349, 12648599);
+				break;
+			default:
+				cs2method_10758(15345, 12648599);
+		}
+	} else {
+		cs2method_10467(1, 12648596);
+	}
+	return;
+}

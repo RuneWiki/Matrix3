@@ -1,0 +1,44 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2028(int a0) {
+	if (cs2method_10441(client_configs['cfg2105'], 13) == 1) {
+		cs2method_10740(0, 0, 512, 1536, 0, 400, a0);
+	} else if (cs2method_10441(client_configs['cfg2105'], 14) == 1) {
+		cs2method_10740(0, 0, 512, 1664, 0, 400, a0);
+	} else if (cs2method_10441(client_configs['cfg2105'], 15) == 1) {
+		cs2method_10740(0, 0, 512, 1792, 0, 400, a0);
+	} else if (cs2method_10441(client_configs['cfg2105'], 16) == 1) {
+		cs2method_10740(0, 0, 512, 1920, 0, 400, a0);
+	} else if (cs2method_10441(client_configs['cfg2105'], 17) == 1) {
+		cs2method_10740(0, 0, 512, 0, 0, 400, a0);
+	} else if (cs2method_10441(client_configs['cfg2105'], 18) == 1) {
+		cs2method_10740(0, 0, 512, 128, 0, 400, a0);
+	} else if (cs2method_10441(client_configs['cfg2105'], 19) == 1) {
+		cs2method_10740(0, 0, 512, 256, 0, 400, a0);
+	} else if (cs2method_10441(client_configs['cfg2105'], 20) == 1) {
+		cs2method_10740(0, 0, 512, 384, 0, 400, a0);
+	} else if (cs2method_10441(client_configs['cfg2105'], 21) == 1) {
+		cs2method_10740(0, 0, 512, 512, 0, 400, a0);
+	} else if (cs2method_10441(client_configs['cfg2105'], 22) == 1) {
+		cs2method_10740(0, 0, 512, 640, 0, 400, a0);
+	} else if (cs2method_10441(client_configs['cfg2105'], 23) == 1) {
+		cs2method_10740(0, 0, 512, 768, 0, 400, a0);
+	} else if (cs2method_10441(client_configs['cfg2105'], 24) == 1) {
+		cs2method_10740(0, 0, 512, 896, 0, 400, a0);
+	} else {
+		if (cs2method_10441(client_configs['cfg2105'], 25) == 1) {
+			cs2method_10740(0, 0, 512, 1024, 0, 400, a0);
+		}
+	}
+	return;
+}

@@ -1,0 +1,54 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_964() {
+	switch (client_configs['cfg2478'].bitcfg12072) {
+		default:
+			cs2_configs['cfg122'] = 0;
+			break;
+		case 1:
+			cs2_configs['cfg122'] = 1536;
+			break;
+		case 2:
+			cs2_configs['cfg122'] = 1024;
+			break;
+		case 3:
+			cs2_configs['cfg122'] = 512;
+	}
+	switch (client_configs['cfg2478'].bitcfg12073) {
+		default:
+			cs2_configs['cfg123'] = 0;
+			break;
+		case 1:
+			cs2_configs['cfg123'] = 1536;
+			break;
+		case 2:
+			cs2_configs['cfg123'] = 1024;
+			break;
+		case 3:
+			cs2_configs['cfg123'] = 512;
+	}
+	switch (client_configs['cfg2478'].bitcfg12074) {
+		default:
+			cs2_configs['cfg124'] = 0;
+			break;
+		case 1:
+			cs2_configs['cfg124'] = 1536;
+			break;
+		case 2:
+			cs2_configs['cfg124'] = 1024;
+			break;
+		case 3:
+			cs2_configs['cfg124'] = 512;
+	}
+	return;
+}

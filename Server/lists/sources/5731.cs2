@@ -1,0 +1,111 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_5731(int a0,int a1) {
+	switch (a1) {
+		case 347:
+			if (script_1432() < 15) {
+				return 0;
+			}
+			break;
+		case 907:
+			if (script_1432() < 20) {
+				return 0;
+			}
+			break;
+		case 850:
+			if (script_1432() < 30) {
+				return 0;
+			}
+			break;
+		case 510:
+			if (script_1432() < 45) {
+				return 0;
+			}
+			break;
+		case 519:
+			if (script_1432() < 50) {
+				return 0;
+			}
+			break;
+		case 851:
+			if (script_1432() < 70) {
+				return 0;
+			}
+			break;
+		case 513:
+			if (script_1432() < 70) {
+				return 0;
+			}
+			break;
+		case 476:
+			if (script_1432() < 85) {
+				return 0;
+			}
+			break;
+		case 670:
+			if (cs2method_10338(15) < 4) {
+				return 0;
+			}
+			break;
+		case 619:
+			if (cs2method_10338(a0) < 40) {
+				return 0;
+			}
+			break;
+		case 847:
+			if (cs2method_10338(5) < 40 || cs2method_10338(22) < 45) {
+				return 0;
+			}
+			break;
+		case 515:
+			if (cs2method_10338(16) < 35) {
+				return 0;
+			}
+			break;
+		case 775:
+			if (cs2method_10338(12) < 15 || cs2method_10338(11) < 15 || cs2method_10338(22) < 15) {
+				return 0;
+			}
+			break;
+		case 461:
+			if (cs2method_10338(16) < 51) {
+				return 0;
+			}
+			break;
+		case 660:
+			if (cs2method_10338(10) < 48) {
+				return 0;
+			}
+			break;
+		case 449:
+			if (cs2method_10338(16) < 15) {
+				return 0;
+			}
+			break;
+		case 642:
+			if (client_configs['cfg2793'] < 15) {
+				return 0;
+			}
+			break;
+		case 1008:
+			if (client_configs['cfg2334'].bitcfg10826 < 60) {
+				return 0;
+			}
+			break;
+		case 776:
+			if (client_configs['cfg481'].bitcfg1548 == 0) {
+				return 0;
+			}
+	}
+	return 1;
+}

@@ -1,0 +1,98 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9632(int a0,int a1,int a2,int a3) {
+	int v2 = a2;
+	int v1 = 0;
+	int v6 = -1;
+	int v3 = -1;
+	int v7 = 0;
+	int v5 = 0;
+	int v4 = 0;
+	if (cs2method_11038(a0, cs2method_10060(a2, 2)) == 1) {
+		if (cs2method_10713() == 20263) {
+			cs2method_10310(18975);
+			v3 = 0;
+		} else {
+			if (cs2method_10713() == 18975) {
+				cs2method_10310(20263);
+				v3 = 1;
+			}
+		}
+		script_9641(a1);
+		if (cs2method_11038(a0, a2) == 1) {
+			int v0 = interfaceDefsAttribute(4032);
+			if (v0 != -1 && v1 == 0) {
+				while (true) {
+					v2 = cs2method_10060(v2, 5);
+					if (cs2method_11038(a0, v2) == 1) {
+						if (v5 == 1) {
+							script_9634(a0, v2, v7);
+						} else if (v3 == 0) {
+							if (interfaceDefsAttribute(4032) != -1) {
+								if (interfaceDefsAttribute(4032) <= v0) {
+									v5 = 1;
+									script_9634(a0, v2, v7);
+								} else if (cs2method_10727() == 0) {
+									v7 = script_9633(a0, v2, v7, 1);
+								} else {
+									if (cs2method_10664() != 0) {
+										script_9634(a0, v2, v7);
+									}
+								}
+							} else if (cs2method_10727() == 0) {
+								v7 = script_9633(a0, v2, v7, 1);
+							} else {
+								script_9634(a0, v2, v7);
+							}
+						} else {
+							if (v3 == 1) {
+								if (interfaceDefsAttribute(4032) != -1) {
+									if (interfaceDefsAttribute(4032) <= v0) {
+										v5 = 1;
+										script_9634(a0, v2, v7);
+									} else if (cs2method_10664() == 0) {
+										v4 = 0;
+									} else if (cs2method_10727() == 1) {
+										v7 = script_9633(a0, v2, v7, 0);
+										if (cs2method_11038(a0, cs2method_10060(v2, 2)) == 1) {
+											if (cs2method_10713() == 18975) {
+												v4 = 1;
+											} else {
+												v4 = 0;
+											}
+										}
+									} else {
+										script_9634(a0, v2, v7);
+									}
+								} else if (v4 == 0) {
+									if (cs2method_10727() == 1) {
+										v7 = script_9633(a0, v2, v7, 0);
+									} else {
+										script_9634(a0, v2, v7);
+									}
+								} else {
+									script_9634(a0, v2, v7);
+								}
+							}
+						}
+					} else {
+						v1 = 1;
+					}
+				}
+			}
+		}
+	}
+	cs2method_11130(0, cs2method_10060(cs2method_10970(a0), v7), a0);
+	script_9622(a0, a3);
+	return;
+}

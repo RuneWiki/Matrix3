@@ -1,0 +1,130 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2723(int a0,int a1,int a2) {
+	int v7 = cs2method_10338(25);
+	object v1 = "";
+	object v2 = "You can use this colony, but a higher-level colony would be more beneficial.";
+	object v6 = "This is the ideal colony for your Divination level.";
+	int v8 = 2;
+	switch (a0) {
+		case 6029333:
+			if (v7 >= 10) {
+				v1 = v2;
+			} else {
+				v1 = v6;
+			}
+			break;
+		case 6029334:
+			if (v7 < 10) {
+				v1 = "This colony requires level 10 Divination.";
+			} else if (v7 >= 20) {
+				v1 = v2;
+			} else {
+				v1 = v6;
+			}
+			break;
+		case 6029335:
+			if (v7 < 20) {
+				v1 = "This colony requires level 20 Divination.";
+			} else if (v7 >= 30) {
+				v1 = v2;
+			} else {
+				v1 = v6;
+			}
+			break;
+		case 6029336:
+			if (v7 < 30) {
+				v1 = "This colony requires level 30 Divination.";
+			} else if (v7 >= 40) {
+				v1 = v2;
+			} else {
+				v1 = v6;
+			}
+			break;
+		case 6029337:
+			if (v7 < 40) {
+				v1 = "This colony requires level 40 Divination.";
+			} else if (v7 >= 50) {
+				v1 = v2;
+			} else {
+				v1 = v6;
+			}
+			break;
+		case 6029338:
+			if (v7 < 50) {
+				v1 = "This colony requires level 50 Divination.";
+			} else if (v7 >= 60) {
+				v1 = v2;
+			} else {
+				v1 = v6;
+			}
+			int v5 = 0;
+			break;
+		case 6029339:
+			if (v7 < 60) {
+				v1 = "This colony requires level 60 Divination.";
+			} else if (v7 >= 70) {
+				v1 = v2;
+			} else {
+				v1 = v6;
+			}
+			int v0 = 0;
+			break;
+		case 6029340:
+			if (v7 < 70) {
+				v1 = "This colony requires level 70 Divination.";
+			} else if (v7 >= 80) {
+				v1 = v2;
+			} else {
+				v1 = v6;
+			}
+			break;
+		case 6029341:
+			if (v7 < 80) {
+				v1 = "This colony requires level 80 Divination.";
+			} else if (v7 >= 85) {
+				v1 = v2;
+			} else {
+				v1 = v6;
+			}
+			break;
+		case 6029342:
+			if (v7 < 85) {
+				v1 = "This colony requires level 85 Divination.";
+			} else if (v7 >= 90) {
+				v1 = v2;
+			} else {
+				v1 = v6;
+			}
+			break;
+		case 6029343:
+			if (v7 < 90) {
+				v1 = "This colony requires level 90 Divination.";
+			} else if (v7 >= 95) {
+				v1 = v2;
+			} else {
+				v1 = v6;
+			}
+			int v4 = 0;
+			break;
+		case 6029344:
+			if (v7 < 95) {
+				v1 = "This colony requires level 95 Divination.";
+			} else {
+				v1 = v6;
+			}
+			int v3 = 0;
+	}
+	script_7769(6029319, a0, -1, 200, 17813, 17813, 16777215, 13, 3, 2, a1, v1, a2);
+	return;
+}

@@ -1,0 +1,32 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9292() {
+	if (cs2method_10819() != 1) {
+		return;
+	}
+	int v4 = 0;
+	int v1 = 0;
+	opc_struct11039(2,0,0) v2 = cs2method_11039();
+	int v0 = v2.intpart_1;
+	int v3 = v2.intpart_0;
+	if (v3 > 1000) {
+		if (v0 > 5000 && v0 < 10900) {
+			script_766(0);
+		} else {
+			script_766(1);
+		}
+	} else {
+		script_766(1);
+	}
+	return;
+}

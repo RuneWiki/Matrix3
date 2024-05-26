@@ -1,0 +1,45 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3385() {
+	cs2method_11007(48758811, 976);
+	cs2method_10283(422, 200, 0, 0, 63963137);
+	script_8421(63963138, 63963139, "Graphics Setup", 63963141, -1, 24163, -1, 1);
+	object v0 = "";
+	if (cs2method_10775() == 1) {
+		object v2 = "There was a problem with your current graphic settings, so you have been given default settings for safety. Click below to auto-choose best graphical settings.";
+		cs2method_10026(63963162, v2);
+		cs2method_10283(cs2method_10236(63963137), cs2method_10060(cs2method_10051(22, cs2method_10805(cs2method_10236(63963162), 17813, v2)), 165), 0, 0, 63963137);
+		cs2method_10283(cs2method_10939(17813, cs2method_10744(63963163)), cs2method_10823(63963163), 0, 0, 63963163);
+	} else if (cs2_configs['cfg1277'] == 1 && cs2_configs['cfg1240'] == -1) {
+		object v2 = "This is your first time playing. Click below to auto-choose best graphical settings.";
+		cs2method_10026(63963162, v2);
+		cs2method_10283(cs2method_10236(63963137), cs2method_10060(cs2method_10051(22, cs2method_10805(cs2method_10236(63963162), 17813, v2)), 165), 0, 0, 63963137);
+		cs2method_10283(cs2method_10939(17813, cs2method_10744(63963163)), cs2method_10823(63963163), 0, 0, 63963163);
+	} else if (cs2_configs['cfg1240'] == -1) {
+		object v2 = "This is your first time playing, click below to auto choose best graphical settings.";
+		cs2method_10026(63963162, v2);
+		cs2method_10112(0, 10, 1, 0, 63963162);
+		cs2method_10283(cs2method_10236(63963137), cs2method_10060(cs2method_10051(22, cs2method_10805(cs2method_10236(63963162), 17813, v2)), 165), 0, 0, 63963137);
+		cs2method_10467(1, 63963163);
+	} else {
+		object v1 = "Available graphics options have changed. Click below to auto choose best graphical settings.";
+		if (cs2_configs['cfg1277'] == 1) {
+			v1 = "Available graphics options have changed. Click below to auto-choose best graphical settings.";
+		}
+		cs2method_10026(63963162, v1);
+		cs2method_10283(cs2method_10236(63963137), cs2method_10060(cs2method_10051(22, cs2method_10805(cs2method_10236(63963162), 17813, v1)), 165), 0, 0, 63963137);
+		cs2method_10283(cs2method_10939(17813, cs2method_10744(63963163)), cs2method_10823(63963163), 0, 0, 63963163);
+	}
+	cs2_configs['cfg1277'] = 1;
+	return;
+}

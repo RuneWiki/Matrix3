@@ -1,0 +1,78 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6418(int a0) {
+	int v2 = -1;
+	int v0 = -1;
+	int v1 = 0;
+	switch (a0) {
+		case 85721582:
+			if (client_configs['cfg2093'].bitcfg9075 == 0) {
+				return;
+			}
+			v2 = 85721594;
+			v0 = 85721595;
+			v1 = client_configs['cfg2093'].bitcfg9075;
+			break;
+		case 85721597:
+			if (client_configs['cfg2092'].bitcfg9073 == 0) {
+				return;
+			}
+			v2 = 85721609;
+			v0 = 85721610;
+			v1 = client_configs['cfg2092'].bitcfg9073;
+			break;
+		case 85721612:
+			if (client_configs['cfg2093'].bitcfg9076 == 0) {
+				return;
+			}
+			v2 = 85721624;
+			v0 = 85721625;
+			v1 = client_configs['cfg2093'].bitcfg9076;
+			break;
+		case 85721627:
+			if (client_configs['cfg2094'].bitcfg9077 == 0) {
+				return;
+			}
+			v2 = 85721639;
+			v0 = 85721640;
+			v1 = client_configs['cfg2094'].bitcfg9077;
+			break;
+		case 85721642:
+			if (client_configs['cfg2094'].bitcfg9081 == 0) {
+				return;
+			}
+			v2 = 85721654;
+			v0 = 85721655;
+			v1 = client_configs['cfg2094'].bitcfg9081;
+			break;
+		case 85721657:
+			if (client_configs['cfg2094'].bitcfg9082 == 0) {
+				return;
+			}
+			v2 = 85721669;
+			v0 = 85721670;
+			v1 = client_configs['cfg2094'].bitcfg9082;
+			break;
+		case 85721672:
+			if (client_configs['cfg4061'].bitcfg22772 == 0) {
+				return;
+			}
+			v2 = 85721684;
+			v0 = 85721685;
+			v1 = client_configs['cfg4061'].bitcfg22772;
+	}
+	cs2method_10026(v2, idx17mapData('i', 's', 1563, v1));
+	cs2method_10467(0, v0);
+	script_6410();
+	return;
+}

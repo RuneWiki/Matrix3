@@ -1,0 +1,83 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_3788(int a0) {
+	switch (a0) {
+		case 115:
+		case 127:
+		case 120:
+			return 0;
+		case 125:
+			return 0;
+		case 0:
+		case 4:
+		case 27:
+		case 26:
+		case 29:
+		case 28:
+		case 110:
+		case 109:
+		case 117:
+		case 126:
+		case 124:
+		case 123:
+		case 122:
+		case 121:
+			return 0;
+		case 1:
+			return 1;
+		case 2:
+		case 17:
+		case 116:
+			return 1;
+		case 7:
+			return 2;
+		case 3:
+		case 5:
+		case 6:
+		case 19:
+		case 18:
+		case 31:
+		case 30:
+			return 2;
+		case 9:
+		case 11:
+		case 20:
+			return 3;
+		case 103:
+		case 100:
+		case 101:
+		case 111:
+		case 108:
+		case 106:
+		case 105:
+		case 119:
+		case 118:
+		case 114:
+		case 113:
+		case 112:
+			return 6;
+		case 102:
+		case 104:
+			return 7;
+		case 42:
+		case 43:
+		case 41:
+		case 107:
+			return 4;
+		case 46:
+		case 44:
+		case 45:
+			return 5;
+	}
+	return 0;
+}

@@ -1,0 +1,28 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_870_struct(4,0,0) script_870(int a0,int a1,int a2,int a3,int a4) {
+	switch (a3) {
+		case 12:
+			a1 = cs2method_10060(a1, 1);
+			break;
+		case 11:
+			a2 = cs2method_10060(a2, 1);
+			break;
+		case 8:
+			a0 = cs2method_10060(a0, 1);
+			break;
+		case 9:
+			a4 = cs2method_10060(a4, 1);
+	}
+	return new script_870_struct(a4, a0, a2, a1);
+}

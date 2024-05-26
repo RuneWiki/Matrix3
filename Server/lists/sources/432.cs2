@@ -1,0 +1,53 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_432(int a0) {
+	int v1;
+	int v0 = -1;
+	switch (a0) {
+		default:
+			return;
+		case 67108874:
+			if (cs2_configs['cfg1388'] == 1) {
+				v1 = 293;
+			} else {
+				v1 = script_488(client_configs['cfg1659'].bitcfg5415);
+			}
+			break;
+		case 67108877:
+			if (cs2_configs['cfg1388'] == 1) {
+				v1 = 300;
+			} else {
+				v1 = script_488(client_configs['cfg1659'].bitcfg5416);
+			}
+			break;
+		case 67108880:
+			if (cs2_configs['cfg1388'] == 1) {
+				v1 = 305;
+			} else {
+				v1 = script_488(client_configs['cfg1659'].bitcfg5417);
+			}
+			break;
+		case 67108883:
+			if (cs2_configs['cfg1388'] == 1) {
+				v1 = 1044;
+			} else {
+				v1 = script_488(client_configs['cfg1659'].bitcfg5418);
+			}
+	}
+	if (v1 != -1) {
+		script_10008(idx22mapAttribute(v1, 1150) + "<br>" + idx22mapAttribute(v1, 1151) + "<br>" + "Cost: " + (string)cs2method_10379(idx22mapAttribute(v1, 1154)) + "<br>" + "Cooldown: " + (string)cs2method_10379(idx22mapAttribute(v1, 1155)), a0, -1);
+	} else {
+		script_8808();
+	}
+	return;
+}

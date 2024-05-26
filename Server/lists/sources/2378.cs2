@@ -1,0 +1,54 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2378(int a0) {
+	int v0 = -1;
+	switch (client_configs['cfg172'].bitcfg486) {
+		case 0:
+			v0 = 58982417;
+			break;
+		case 1:
+			v0 = 58982418;
+			break;
+		case 2:
+			v0 = 58982419;
+			break;
+		case 3:
+			v0 = 58982420;
+			break;
+		case 4:
+			v0 = 58982421;
+			break;
+		case 5:
+			v0 = 58982422;
+			break;
+		case 6:
+			v0 = 58982423;
+			break;
+		case 7:
+			v0 = 58982416;
+			break;
+		case 8:
+			v0 = 58982415;
+			break;
+		case 9:
+			v0 = 58982414;
+			break;
+		case 10:
+			v0 = 58982424;
+			break;
+		case 11:
+			v0 = 58982425;
+	}
+	script_2380(v0, a0);
+	return;
+}

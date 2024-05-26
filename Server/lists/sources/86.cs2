@@ -1,0 +1,105 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_86(int a0,int a1,int a2) {
+	int v0 = -1;
+	int v19 = script_8552(a0);
+	if (cs2method_11038(v19, a2) == 1) {
+		int v18 = interfaceDefsAttribute(3443);
+	} else {
+		return;
+	}
+	int v21 = 0;
+	int v11 = 0;
+	int v6 = 0;
+	object v3 = "";
+	object v15 = "";
+	object v16 = "";
+	object v12 = "";
+	int v2 = -1;
+	object v13 = "";
+	int v7 = v18;
+	opc_struct10864(4,5,0) v4 = cs2method_10864(v7);
+	object v10 = v4.objectpart_4;
+	int v20 = v4.intpart_3;
+	object v14 = v4.objectpart_3;
+	object v5 = v4.objectpart_2;
+	object v1 = v4.objectpart_1;
+	object v22 = v4.objectpart_0;
+	int v9 = v4.intpart_2;
+	int v8 = v4.intpart_1;
+	int v17 = v4.intpart_0;
+	if (v17 == -1) {
+		return;
+	}
+	switch (a1) {
+		case 1:
+			cs2method_10153(4, v5);
+			break;
+		case 2:
+			cs2method_10153(1, v5);
+			break;
+		case 3:
+			cs2method_10153(7, v5);
+			break;
+		case 4:
+			cs2method_10153(1, v5);
+			break;
+		case 5:
+			cs2method_10153(9, v5);
+			break;
+		case 6:
+			if (script_2709() == 0) {
+				cs2method_10810("You cannot add a friend until you have entered your date of birth");
+				return;
+			}
+			if (cs2method_10563(v5) == 1) {
+				if (cs2method_10296() == 0 && cs2method_10870() == 0) {
+					script_8512(v5, a0);
+					return;
+				}
+			} else {
+				cs2method_11133(v5);
+			}
+			break;
+		case 7:
+			cs2method_10290(v5);
+			break;
+		case 8:
+			cs2_configs['cfg2578'] = (string)v5;
+			break;
+		case 9:
+			if (v17 == 17) {
+				script_1052(4, v20, v5, a0);
+			} else if (v17 == 18) {
+				script_1052(5, v20, v5, a0);
+			} else if (v17 == 20) {
+				script_1052(6, v20, v5, a0);
+			} else if (v17 == 42) {
+				script_1052(9, v20, v5, a0);
+			} else {
+				if (v17 == 45) {
+					script_1052(11, v20, v5, a0);
+				}
+			}
+			break;
+		case 10:
+			if (v17 == 41 || v17 == 42) {
+				script_4465(v5);
+			} else if (v17 == 9 || v17 == 20) {
+				script_1633(v5);
+			} else {
+				cs2method_10153(5, v5);
+			}
+	}
+	return;
+}

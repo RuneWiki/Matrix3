@@ -1,0 +1,33 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7363(int a0,int a1,object a2,int a3,int a4,int a5,int a6) {
+	int v3 = cs2method_10122(a3, a4, 100);
+	int v2 = cs2method_10051(v3, 655);
+	int v0 = cs2method_10051(cs2method_10461(v3, 50), 655);
+	if (v3 <= 50) {
+		cs2method_10074(cs2method_11048(cs2method_10461(65353, v2), 32768), a0);
+		cs2method_10074(65353, a5);
+	} else if (v3 < 100) {
+		cs2method_10074(32768, a0);
+		cs2method_10074(cs2method_11048(cs2method_10461(65353, v0), 32768), a5);
+	} else {
+		cs2method_10074(32768, a0);
+		cs2method_10074(32768, a5);
+	}
+	object v1 = cs2method_10427(a2, "<br>" + "(" + (string)cs2method_10379(a3) + " of " + (string)cs2method_10379(a4) + ")");
+	cs2method_21121(new function<script_8799>(object a0,int a1,int a2) {
+		script_8800(a1, a2, a0);
+		return;
+	}, (string)v1, new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(a1));
+	return;
+}

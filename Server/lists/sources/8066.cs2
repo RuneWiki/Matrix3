@@ -1,0 +1,28 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_8066_struct(2,0,0) script_8066(int a0) {
+	if (script_8292(3, 2) == 1) {
+		if (client_configs['cfg3936'] != a0) {
+			if (cs2method_11038(12451857, 29) == 1) {
+				return new script_8066_struct(12451857, a0);
+			}
+			return new script_8066_struct(idx22mapAttribute(21301, 3509), cs2method_10461(cs2method_10051(4, 2), 1));
+		}
+	} else {
+		if (script_8292(3, -1) == 1) {
+			return new script_8066_struct(idx22mapAttribute(21301, 3509), cs2method_10461(cs2method_10051(4, 2), 1));
+		}
+		return new script_8066_struct(script_8069(3), -1);
+	}
+	return new script_8066_struct(-1, 0);
+}

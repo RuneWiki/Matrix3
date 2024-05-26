@@ -1,0 +1,85 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4885(int a0) {
+	int v1;
+	int v3 = 0;
+	int v0 = 0;
+	int v4 = 0;
+	if (cs2method_10172() == 1) {
+		int v5 = script_4964(a0);
+		int v2 = script_4971(v5);
+		if (script_4886(v2) == 0) {
+			return;
+		}
+		if (client_configs['cfg1983'].bitcfg6993 == v2 || client_configs['cfg1985'].bitcfg7002 == v2 || client_configs['cfg1987'].bitcfg7011 == v2) {
+			return;
+		}
+		switch (v5) {
+			case 35:
+			case 38:
+			case 39:
+			case 36:
+			case 37:
+			case 42:
+			case 43:
+			case 40:
+			case 41:
+			case 46:
+			case 47:
+			case 44:
+			case 45:
+			case 48:
+				v1 = 0;
+				break;
+			default:
+				v1 = 1;
+		}
+		if (client_configs['cfg1981'].bitcfg6981 > 0 && script_4828(client_configs['cfg1981'].bitcfg6981) == 0) {
+			switch (client_configs['cfg1981'].bitcfg6981) {
+				case 1:
+					client_configs['cfg1983'].bitcfg6993 = v2;
+					client_configs['cfg1982'].bitcfg6987 = v1;
+					break;
+				case 2:
+					client_configs['cfg1985'].bitcfg7002 = v2;
+					client_configs['cfg1984'].bitcfg6996 = v1;
+					break;
+				case 3:
+					client_configs['cfg1987'].bitcfg7011 = v2;
+					client_configs['cfg1986'].bitcfg7005 = v1;
+			}
+			return;
+		}
+		if (clan_chat_configs['cfg2144'].bitcfg6690 != v2 && clan_chat_configs['cfg2161'].bitcfg6699 != v2 && clan_chat_configs['cfg2178'].bitcfg6708 != v2) {
+			if (client_configs['cfg1981'].bitcfg6982 == 0) {
+				client_configs['cfg1983'].bitcfg6993 = v2;
+				client_configs['cfg1982'].bitcfg6987 = v1;
+				client_configs['cfg1981'].bitcfg6981 = 1;
+				script_4849();
+			} else if (client_configs['cfg1981'].bitcfg6983 == 0) {
+				client_configs['cfg1985'].bitcfg7002 = v2;
+				client_configs['cfg1984'].bitcfg6996 = v1;
+				client_configs['cfg1981'].bitcfg6981 = 2;
+				script_4849();
+			} else {
+				if (client_configs['cfg1981'].bitcfg6984 == 0) {
+					client_configs['cfg1987'].bitcfg7011 = v2;
+					client_configs['cfg1986'].bitcfg7005 = v1;
+					client_configs['cfg1981'].bitcfg6981 = 3;
+					script_4849();
+				}
+			}
+		}
+	}
+	return;
+}

@@ -1,0 +1,28 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2060() {
+	cs2method_10758(15529, 62259374);
+	cs2method_10758(15529, 62259217);
+	cs2method_10758(15529, 62259379);
+	switch (client_configs['cfg3406'].bitcfg17130) {
+		case 1:
+			cs2method_10758(15528, 62259374);
+			break;
+		case 2:
+			cs2method_10758(15528, 62259217);
+			break;
+		case 3:
+			cs2method_10758(15528, 62259379);
+	}
+	return;
+}

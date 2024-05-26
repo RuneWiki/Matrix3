@@ -1,0 +1,46 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_8258(int a0) {
+	flow_0:
+		IF (idx22mapAttribute(a0, 3539) == 1) 
+			GOTO	flow_1
+		GOTO	flow_2
+	flow_1:
+		IF (client_configs['cfg3680'].bitcfg22315 == 0) 
+			GOTO	flow_4
+	flow_2:
+		IF (client_configs['cfg3680'].bitcfg22315 == 1 && a0 == 21279) 
+			GOTO	flow_4
+		GOTO	flow_14
+	flow_4:
+		switch (interfaceDefsAttribute(3540)) {
+			case 2:
+				cs2method_10002(cs2method_10968(cs2_configs['cfg3465'].bitcfg19930, 2));
+				break;
+			case 3:
+				cs2method_10002(cs2method_10872(cs2method_10968(cs2method_10051(cs2_configs['cfg3465'].bitcfg19930, 3), 2), 127));
+				break;
+			case 1:
+				cs2method_10002(cs2_configs['cfg3465'].bitcfg19930);
+				break;
+			case 4:
+				if (client_configs['cfg3814'].bitcfg19928 == 1 && cs2_configs['cfg3465'].bitcfg19930 > 226 && script_1186() == 1) {
+					cs2method_10002(cs2method_10461(255, cs2method_10051(5, cs2method_10461(255, cs2_configs['cfg3465'].bitcfg19930))));
+				} else {
+					cs2method_10002(cs2method_10968(cs2_configs['cfg3465'].bitcfg19930, 2));
+				}
+		}
+	flow_14:
+		return;
+}

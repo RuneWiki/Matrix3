@@ -1,0 +1,45 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9579(int a0) {
+	if (a0 == -1) {
+		return;
+	}
+	int v3 = 0;
+	int v1 = 3;
+	int v4 = 0;
+	globalarray_0 = new WidgetPointer[v1];
+	int v2 = 0;
+	if (cs2method_10324(cs2method_10155(a0)) == 1 && interfaceDefsAttribute(4040) != -1) {
+		if (cs2method_10609(interfaceDefsAttribute(4040)) == 0) {
+			v3 = 1;
+		}
+		globalarray_0[0] = interfaceDefsAttribute(4037);
+		globalarray_0[1] = interfaceDefsAttribute(4038);
+		globalarray_0[2] = interfaceDefsAttribute(4039);
+		while (v4 < v1) {
+			int v0 = 0;
+			if (globalarray_0[v4] != -1 && cs2method_11038(globalarray_0[v4], v0) == 1) {
+				while (true) {
+					if (v3 == 1) {
+						cs2method_10310(interfaceDefsAttribute(4055));
+					} else {
+						cs2method_10310(interfaceDefsAttribute(4054));
+					}
+					v0 = cs2method_10060(v0, 1);
+				}
+			}
+			v4 = cs2method_10060(v4, 1);
+		}
+	}
+	return;
+}

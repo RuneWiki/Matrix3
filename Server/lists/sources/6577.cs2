@@ -1,0 +1,22 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6577() {
+	if (client_configs['cfg1450'].bitcfg4321 == 2) {
+		client_configs['cfg1450'].bitcfg4321 = 4;
+	} else {
+		if (client_configs['cfg1450'].bitcfg4321 == 1) {
+			client_configs['cfg1450'].bitcfg4321 = 3;
+		}
+	}
+	return;
+}

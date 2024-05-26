@@ -1,0 +1,177 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_943(int a0) {
+	if (cs2_configs['cfg1279'] == a0) {
+		return;
+	}
+	cs2method_10363(6185, 1, 0, 100, 350);
+	switch (a0) {
+		case 1:
+			cs2method_10467(1, 3932210);
+			cs2method_10283(cs2method_10236(3932206), 22, 0, 0, 3932206);
+			cs2method_10520(16248247, 3932211);
+			cs2method_10758(10465, 3932207);
+			cs2method_10758(10466, 3932208);
+			cs2method_10758(10465, 3932209);
+			cs2method_10467(0, 3932235);
+			switch (cs2_configs['cfg1279']) {
+				case 2:
+					cs2method_10467(0, 3932216);
+					cs2method_10283(cs2method_10236(3932212), 20, 0, 0, 3932212);
+					cs2method_10520(15052881, 3932217);
+					cs2method_10758(10463, 3932213);
+					cs2method_10758(10464, 3932214);
+					cs2method_10758(10463, 3932215);
+					cs2method_10467(1, 3932374);
+					break;
+				case 3:
+					cs2method_10467(0, 3932222);
+					cs2method_10283(cs2method_10236(3932218), 20, 0, 0, 3932218);
+					cs2method_10520(15052881, 3932223);
+					cs2method_10758(10463, 3932219);
+					cs2method_10758(10464, 3932220);
+					cs2method_10758(10463, 3932221);
+					cs2method_10467(1, 3932447);
+			}
+			cs2method_20680(new function<script_1881>(int a0,int a1,int a2,int a3,int a4) {
+				script_2168(a2, a0, a4, a3, a1);
+				return;
+			}, 1, 1, new WidgetPointer(60,47), new WidgetPointer(60,48), new WidgetPointer(60,49), "iiIII", new WidgetPointer(60,46));
+			cs2method_20750(new function<script_1881>(int a0,int a1,int a2,int a3,int a4) {
+				script_2168(a0, a1, a2, a3, a4);
+				return;
+			}, 1, 0, new WidgetPointer(60,47), new WidgetPointer(60,48), new WidgetPointer(60,49), "iiIII", new WidgetPointer(60,46));
+			cs2method_20680(new function<script_1881>(int a0,int a1,int a2,int a3,int a4) {
+				script_2168(a0, a4, a2, a3, a1);
+				return;
+			}, 0, 1, new WidgetPointer(60,53), new WidgetPointer(60,54), new WidgetPointer(60,55), "iiIII", new WidgetPointer(60,52));
+			cs2method_20750(new function<script_1881>(int a0,int a1,int a2,int a3,int a4) {
+				script_2168(a4, a2, a1, a3, a0);
+				return;
+			}, 0, 0, new WidgetPointer(60,53), new WidgetPointer(60,54), new WidgetPointer(60,55), "iiIII", new WidgetPointer(60,52));
+			cs2method_20680(new function<script_1881>(int a0,int a1,int a2,int a3,int a4) {
+				script_2168(a2, a0, a3, a4, a1);
+				return;
+			}, 0, 1, new WidgetPointer(60,59), new WidgetPointer(60,60), new WidgetPointer(60,61), "iiIII", new WidgetPointer(60,58));
+			cs2method_20750(new function<script_1881>(int a0,int a1,int a2,int a3,int a4) {
+				script_2168(a2, a0, a3, a1, a4);
+				return;
+			}, 0, 0, new WidgetPointer(60,59), new WidgetPointer(60,60), new WidgetPointer(60,61), "iiIII", new WidgetPointer(60,58));
+			break;
+		case 2:
+			cs2method_10467(1, 3932216);
+			cs2method_10283(cs2method_10236(3932212), 22, 0, 0, 3932212);
+			cs2method_10520(16248247, 3932217);
+			cs2method_10758(10465, 3932213);
+			cs2method_10758(10466, 3932214);
+			cs2method_10758(10465, 3932215);
+			cs2method_10467(0, 3932374);
+			switch (cs2_configs['cfg1279']) {
+				case 1:
+					cs2method_10467(0, 3932210);
+					cs2method_10283(cs2method_10236(3932206), 20, 0, 0, 3932206);
+					cs2method_10520(15052881, 3932211);
+					cs2method_10758(10463, 3932207);
+					cs2method_10758(10464, 3932208);
+					cs2method_10758(10463, 3932209);
+					cs2method_10467(1, 3932235);
+					break;
+				case 3:
+					cs2method_10467(0, 3932222);
+					cs2method_10283(cs2method_10236(3932218), 20, 0, 0, 3932218);
+					cs2method_10520(15052881, 3932223);
+					cs2method_10758(10463, 3932219);
+					cs2method_10758(10464, 3932220);
+					cs2method_10758(10463, 3932221);
+					cs2method_10467(1, 3932447);
+			}
+			cs2method_20680(new function<script_1881>(int a0,int a1,int a2,int a3,int a4) {
+				script_2168(a4, a0, a3, a2, a1);
+				return;
+			}, 0, 1, new WidgetPointer(60,47), new WidgetPointer(60,48), new WidgetPointer(60,49), "iiIII", new WidgetPointer(60,46));
+			cs2method_20750(new function<script_1881>(int a0,int a1,int a2,int a3,int a4) {
+				script_2168(a4, a2, a3, a1, a0);
+				return;
+			}, 0, 0, new WidgetPointer(60,47), new WidgetPointer(60,48), new WidgetPointer(60,49), "iiIII", new WidgetPointer(60,46));
+			cs2method_20680(new function<script_1881>(int a0,int a1,int a2,int a3,int a4) {
+				script_2168(a3, a1, a0, a4, a2);
+				return;
+			}, 1, 1, new WidgetPointer(60,53), new WidgetPointer(60,54), new WidgetPointer(60,55), "iiIII", new WidgetPointer(60,52));
+			cs2method_20750(new function<script_1881>(int a0,int a1,int a2,int a3,int a4) {
+				script_2168(a0, a3, a4, a2, a1);
+				return;
+			}, 1, 0, new WidgetPointer(60,53), new WidgetPointer(60,54), new WidgetPointer(60,55), "iiIII", new WidgetPointer(60,52));
+			cs2method_20680(new function<script_1881>(int a0,int a1,int a2,int a3,int a4) {
+				script_2168(a4, a3, a2, a1, a0);
+				return;
+			}, 0, 1, new WidgetPointer(60,59), new WidgetPointer(60,60), new WidgetPointer(60,61), "iiIII", new WidgetPointer(60,58));
+			cs2method_20750(new function<script_1881>(int a0,int a1,int a2,int a3,int a4) {
+				script_2168(a3, a4, a2, a0, a1);
+				return;
+			}, 0, 0, new WidgetPointer(60,59), new WidgetPointer(60,60), new WidgetPointer(60,61), "iiIII", new WidgetPointer(60,58));
+			break;
+		case 3:
+			cs2method_10467(1, 3932222);
+			cs2method_10283(cs2method_10236(3932218), 22, 0, 0, 3932218);
+			cs2method_10520(16248247, 3932223);
+			cs2method_10758(10465, 3932219);
+			cs2method_10758(10466, 3932220);
+			cs2method_10758(10465, 3932221);
+			cs2method_10467(0, 3932447);
+			switch (cs2_configs['cfg1279']) {
+				case 1:
+					cs2method_10467(0, 3932210);
+					cs2method_10283(cs2method_10236(3932206), 20, 0, 0, 3932206);
+					cs2method_10520(15052881, 3932211);
+					cs2method_10758(10463, 3932207);
+					cs2method_10758(10464, 3932208);
+					cs2method_10758(10463, 3932209);
+					cs2method_10467(1, 3932235);
+					break;
+				case 2:
+					cs2method_10467(0, 3932216);
+					cs2method_10283(cs2method_10236(3932212), 20, 0, 0, 3932212);
+					cs2method_10520(15052881, 3932217);
+					cs2method_10758(10463, 3932213);
+					cs2method_10758(10464, 3932214);
+					cs2method_10758(10463, 3932215);
+					cs2method_10467(1, 3932374);
+			}
+			cs2method_20680(new function<script_1881>(int a0,int a1,int a2,int a3,int a4) {
+				script_2168(a1, a4, a0, a3, a2);
+				return;
+			}, 0, 1, new WidgetPointer(60,47), new WidgetPointer(60,48), new WidgetPointer(60,49), "iiIII", new WidgetPointer(60,46));
+			cs2method_20750(new function<script_1881>(int a0,int a1,int a2,int a3,int a4) {
+				script_2168(a2, a1, a0, a3, a4);
+				return;
+			}, 0, 0, new WidgetPointer(60,47), new WidgetPointer(60,48), new WidgetPointer(60,49), "iiIII", new WidgetPointer(60,46));
+			cs2method_20680(new function<script_1881>(int a0,int a1,int a2,int a3,int a4) {
+				script_2168(a2, a1, a0, a3, a4);
+				return;
+			}, 0, 1, new WidgetPointer(60,53), new WidgetPointer(60,54), new WidgetPointer(60,55), "iiIII", new WidgetPointer(60,52));
+			cs2method_20750(new function<script_1881>(int a0,int a1,int a2,int a3,int a4) {
+				script_2168(a3, a1, a2, a0, a4);
+				return;
+			}, 0, 0, new WidgetPointer(60,53), new WidgetPointer(60,54), new WidgetPointer(60,55), "iiIII", new WidgetPointer(60,52));
+			cs2method_20680(new function<script_1881>(int a0,int a1,int a2,int a3,int a4) {
+				script_2168(a3, a2, a0, a1, a4);
+				return;
+			}, 1, 1, new WidgetPointer(60,59), new WidgetPointer(60,60), new WidgetPointer(60,61), "iiIII", new WidgetPointer(60,58));
+			cs2method_20750(new function<script_1881>(int a0,int a1,int a2,int a3,int a4) {
+				script_2168(a3, a0, a1, a4, a2);
+				return;
+			}, 1, 0, new WidgetPointer(60,59), new WidgetPointer(60,60), new WidgetPointer(60,61), "iiIII", new WidgetPointer(60,58));
+	}
+	cs2_configs['cfg1279'] = a0;
+	return;
+}

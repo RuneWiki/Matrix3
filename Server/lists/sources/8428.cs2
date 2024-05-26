@@ -1,0 +1,40 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_8428_struct(2,0,0) script_8428(int a0) {
+	if (a0 == -1) {
+		return new script_8428_struct(-1, -1);
+	}
+	int v2 = -1;
+	int v1 = -1;
+	int v0 = idx22mapAttribute(a0, 2806);
+	switch (v0) {
+		case 1:
+		case 2:
+			v1 = 95682562;
+			v2 = 95027204;
+			break;
+		case 3:
+			v1 = 95158274;
+			v2 = 95420418;
+			break;
+		case 4:
+			v1 = 95748098;
+			v2 = 95617026;
+			break;
+		case 5:
+		case 6:
+			v1 = 94961666;
+			v2 = 95223810;
+	}
+	return new script_8428_struct(v2, v1);
+}

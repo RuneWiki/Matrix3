@@ -1,0 +1,62 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5268(object a0,object a1,int a2) {
+	int v0 = cs2method_10163(74514543);
+	int v2 = cs2method_10051(cs2method_10968(v0, 2), 20);
+	cs2method_10606(74514543, 4, v0);
+	cs2method_10797(a1);
+	object v1 = cs2method_10427(a0, "<col=800000>" + (string)cs2method_10442(a2, " Teams: Yes.", " Teams: No."));
+	cs2method_20353(new function<script_1160>(int a0,int a1,int a2,int a3,int a4,object a5) {
+		script_1163(a2, a5, a3, a4, a1, a0);
+		return;
+	}, new WidgetPointer(-32768,3), -1, new WidgetPointer(1137,14), (string)v1, 25, 519, "IiIsii");
+	cs2method_10013(8100, 20, 2, 0);
+	cs2method_20703(new function<script_5267>() {
+		cs2method_10467(1, 74514445);
+		script_5219(74514446);
+		cs2method_10273(74514543);
+		return;
+	}, "");
+	if (cs2method_10038(v0, 2) == 0) {
+		cs2method_10063(2, v2, 0, 0);
+	} else {
+		cs2method_10063(2, v2, 2, 0);
+	}
+	cs2method_10692(494);
+	cs2method_10811(65280);
+	cs2method_10173(1);
+	cs2method_20674(new function<script_1356>(int a0,int a1,int a2) {
+		if (cs2method_11038(a1, a0) == 1) {
+			cs2method_10811(a2);
+		}
+		return;
+	}, new WidgetPointer(-32768,3), -2147483643, 16777215, "Iii");
+	cs2method_20884(new function<script_1949>(int a0,int a1,int a2,int a3) {
+		if (cs2method_11038(a1, a2) == 1) {
+			cs2method_10811(a3);
+			if (a0 != -1) {
+				script_41(a0);
+			}
+		}
+		return;
+	}, new WidgetPointer(-32768,3), -2147483643, 65280, new WidgetPointer(1137,14), "IiiI");
+	cs2method_10057(1, "Select");
+	if (v0 >= 10 && cs2method_10038(v0, 2) == 0) {
+		cs2method_10467(0, 74514544);
+		cs2method_10283(18, 2, 1, 1, 74514543);
+		cs2method_11130(0, cs2method_10060(v2, 20), 74514543);
+		script_31(74514544, 74514543, 792, 789, 790, 791, 773, 788);
+		script_72(74514544, 74514543, cs2method_10051(cs2method_10968(cs2method_10461(client_configs['cfg2909'].bitcfg14749, 1), 2), 20));
+	}
+	return;
+}

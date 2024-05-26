@@ -1,0 +1,24 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_7965(int a0) {
+	if (client_configs['cfg623'] == -1 && client_configs['cfg616'] == -1 && a0 != -1 && idx22mapAttribute(a0, 3394) == 1) {
+		switch (idx22mapAttribute(a0, 2880)) {
+			case 4:
+			case 1:
+			case 2:
+				return 0;
+		}
+		return 1;
+	}
+	return 0;
+}

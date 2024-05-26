@@ -1,0 +1,22 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2085() {
+	if (cs2_configs['cfg645'] <= 5) {
+		cs2method_10520(3368703, 54788125);
+	} else if (cs2_configs['cfg645'] >= 25) {
+		cs2method_10520(14754595, 54788125);
+	} else {
+		cs2method_10520(6710886, 54788125);
+	}
+	return;
+}

@@ -1,0 +1,223 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4689() {
+	cs2method_10467(0, 36110345);
+	cs2method_10026(36110351, idx17mapData('i', 's', 3855, 1));
+	cs2method_10758(6188, 36110353);
+	cs2method_10026(36110352, cs2method_10379(idx17mapData('i', 'i', 3856, 1)));
+	cs2method_10467(0, 36110369);
+	cs2method_10026(36110377, idx17mapData('i', 's', 3855, 2));
+	cs2method_10758(6189, 36110379);
+	cs2method_10026(36110378, cs2method_10379(idx17mapData('i', 'i', 3856, 2)));
+	cs2method_10467(0, 36110383);
+	cs2method_10026(36110391, idx17mapData('i', 's', 3855, 3));
+	cs2method_10758(6190, 36110393);
+	cs2method_10026(36110392, cs2method_10379(idx17mapData('i', 'i', 3856, 3)));
+	cs2method_10467(0, 36110397);
+	cs2method_10026(36110405, idx17mapData('i', 's', 3855, 4));
+	cs2method_10758(6191, 36110407);
+	cs2method_10026(36110406, cs2method_10379(idx17mapData('i', 'i', 3856, 4)));
+	cs2method_21121(new function<script_4692>(int a0,int a1) {
+		int v10;
+		object v1;
+		int v5 = 36110359;
+		int v3 = -1;
+		object v4 = "";
+		object v7 = "";
+		int v0 = 0;
+		int v6 = 0;
+		object v8 = "";
+		int v9 = 0;
+		switch (a0) {
+			case 36110346:
+				v10 = 1;
+				v1 = "Nothing breaks for 30 seconds.";
+				break;
+			case 36110372:
+				v10 = 2;
+				v1 = "Kill twice as many trolls when repairing things.";
+				break;
+			case 36110386:
+				v10 = 3;
+				v1 = "Fix twice as fast and counter-acts troll magic run energy effects.";
+				break;
+			case 36110400:
+				v10 = 4;
+				v1 = "Broken things don't hurt gatehouse health for 30 seconds.";
+				break;
+			default:
+				cs2method_10467(1, v5);
+				return;
+		}
+		cs2method_10026(36110365, idx17mapData('i', 's', 3855, v10));
+		cs2method_10026(36110366, v1);
+		cs2method_10026(36110367, "Cost: " + (string)cs2method_10379(idx17mapData('i', 'i', 3856, v10)));
+		int v2 = idx17mapData('i', 'i', 3857, v10);
+		if (v2 == 50) {
+			v8 = "30 sec";
+		}
+		if (v2 == 100) {
+			v8 = "1 min";
+		}
+		cs2method_10026(36110368, "Cooldown: " + (string)v8);
+		cs2method_10520(3552566, a0);
+		cs2method_10112(cs2method_10191(v5), a1, 0, 0, v5);
+		cs2method_10467(0, v5);
+		return;
+	}, new WidgetPointer(-32768,3), 80, "Ii", new WidgetPointer(551,10));
+	cs2method_21121(new function<script_4692>(int a0,int a1) {
+		int v1;
+		object v3;
+		int v5 = 36110359;
+		int v4 = -1;
+		object v8 = "";
+		object v7 = "";
+		int v0 = 0;
+		int v6 = 0;
+		object v10 = "";
+		int v2 = 0;
+		switch (a0) {
+			case 36110346:
+				v1 = 1;
+				v3 = "Nothing breaks for 30 seconds.";
+				break;
+			case 36110372:
+				v1 = 2;
+				v3 = "Kill twice as many trolls when repairing things.";
+				break;
+			case 36110386:
+				v1 = 3;
+				v3 = "Fix twice as fast and counter-acts troll magic run energy effects.";
+				break;
+			case 36110400:
+				v1 = 4;
+				v3 = "Broken things don't hurt gatehouse health for 30 seconds.";
+				break;
+			default:
+				cs2method_10467(1, v5);
+				return;
+		}
+		cs2method_10026(36110365, idx17mapData('i', 's', 3855, v1));
+		cs2method_10026(36110366, v3);
+		cs2method_10026(36110367, "Cost: " + (string)cs2method_10379(idx17mapData('i', 'i', 3856, v1)));
+		int v9 = idx17mapData('i', 'i', 3857, v1);
+		if (v9 == 50) {
+			v10 = "30 sec";
+		}
+		if (v9 == 100) {
+			v10 = "1 min";
+		}
+		cs2method_10026(36110368, "Cooldown: " + (string)v10);
+		cs2method_10520(3552566, a0);
+		cs2method_10112(cs2method_10191(v5), a1, 0, 0, v5);
+		cs2method_10467(0, v5);
+		return;
+	}, new WidgetPointer(-32768,3), 129, "Ii", new WidgetPointer(551,36));
+	cs2method_21121(new function<script_4692>(int a0,int a1) {
+		int v3;
+		object v1;
+		int v4 = 36110359;
+		int v8 = -1;
+		object v0 = "";
+		object v6 = "";
+		int v5 = 0;
+		int v7 = 0;
+		object v10 = "";
+		int v2 = 0;
+		switch (a0) {
+			case 36110346:
+				v3 = 1;
+				v1 = "Nothing breaks for 30 seconds.";
+				break;
+			case 36110372:
+				v3 = 2;
+				v1 = "Kill twice as many trolls when repairing things.";
+				break;
+			case 36110386:
+				v3 = 3;
+				v1 = "Fix twice as fast and counter-acts troll magic run energy effects.";
+				break;
+			case 36110400:
+				v3 = 4;
+				v1 = "Broken things don't hurt gatehouse health for 30 seconds.";
+				break;
+			default:
+				cs2method_10467(1, v4);
+				return;
+		}
+		cs2method_10026(36110365, idx17mapData('i', 's', 3855, v3));
+		cs2method_10026(36110366, v1);
+		cs2method_10026(36110367, "Cost: " + (string)cs2method_10379(idx17mapData('i', 'i', 3856, v3)));
+		int v9 = idx17mapData('i', 'i', 3857, v3);
+		if (v9 == 50) {
+			v10 = "30 sec";
+		}
+		if (v9 == 100) {
+			v10 = "1 min";
+		}
+		cs2method_10026(36110368, "Cooldown: " + (string)v10);
+		cs2method_10520(3552566, a0);
+		cs2method_10112(cs2method_10191(v4), a1, 0, 0, v4);
+		cs2method_10467(0, v4);
+		return;
+	}, new WidgetPointer(-32768,3), 31, "Ii", new WidgetPointer(551,50));
+	cs2method_21121(new function<script_4692>(int a0,int a1) {
+		int v9;
+		object v2;
+		int v4 = 36110359;
+		int v5 = -1;
+		object v0 = "";
+		object v3 = "";
+		int v1 = 0;
+		int v7 = 0;
+		object v6 = "";
+		int v8 = 0;
+		switch (a1) {
+			case 36110346:
+				v9 = 1;
+				v2 = "Nothing breaks for 30 seconds.";
+				break;
+			case 36110372:
+				v9 = 2;
+				v2 = "Kill twice as many trolls when repairing things.";
+				break;
+			case 36110386:
+				v9 = 3;
+				v2 = "Fix twice as fast and counter-acts troll magic run energy effects.";
+				break;
+			case 36110400:
+				v9 = 4;
+				v2 = "Broken things don't hurt gatehouse health for 30 seconds.";
+				break;
+			default:
+				cs2method_10467(1, v4);
+				return;
+		}
+		cs2method_10026(36110365, idx17mapData('i', 's', 3855, v9));
+		cs2method_10026(36110366, v2);
+		cs2method_10026(36110367, "Cost: " + (string)cs2method_10379(idx17mapData('i', 'i', 3856, v9)));
+		int v10 = idx17mapData('i', 'i', 3857, v9);
+		if (v10 == 50) {
+			v6 = "30 sec";
+		}
+		if (v10 == 100) {
+			v6 = "1 min";
+		}
+		cs2method_10026(36110368, "Cooldown: " + (string)v6);
+		cs2method_10520(3552566, a1);
+		cs2method_10112(cs2method_10191(v4), a0, 0, 0, v4);
+		cs2method_10467(0, v4);
+		return;
+	}, new WidgetPointer(-32768,3), 80, "Ii", new WidgetPointer(551,64));
+	return;
+}

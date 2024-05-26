@@ -1,0 +1,97 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_6771(int a0,int a1) {
+	int v0 = idx22mapAttribute(idx17mapData('i', 'J', 5525, a1), 2236);
+	if (cs2method_10338(15) < v0) {
+		return 0;
+	}
+	if (cs2method_10771() == 0 && a0 == 0) {
+		switch (a1) {
+			case 5:
+			case 1:
+			case 2:
+				return 1;
+		}
+		return 0;
+	}
+	switch (a1) {
+		case 33:
+			if (cs2method_10338(19) < 58 || cs2method_10338(21) < 70) {
+				return 0;
+			}
+			break;
+		case 36:
+			if (cs2method_10338(19) < 74 || cs2method_10338(21) < 70) {
+				return 0;
+			}
+			break;
+		case 37:
+			if (cs2method_10338(19) < 71 || cs2method_10338(21) < 70) {
+				return 0;
+			}
+			break;
+		case 38:
+			if (cs2method_10338(19) < 76 || cs2method_10338(21) < 70) {
+				return 0;
+			}
+			break;
+		case 41:
+			if (cs2method_10338(19) < 80 || cs2method_10338(21) < 70) {
+				return 0;
+			}
+			break;
+		case 34:
+			if (cs2method_10338(19) < 58 || cs2method_10338(21) < 78) {
+				return 0;
+			}
+			break;
+		case 45:
+			if (cs2method_10338(19) < 70 || cs2method_10338(21) < 74) {
+				return 0;
+			}
+			break;
+		case 57:
+			if (cs2method_10338(19) < 80 || cs2method_10338(21) < 80) {
+				return 0;
+			}
+			break;
+		case 54:
+			if (cs2method_10338(19) < 80 || cs2method_10338(21) < 77) {
+				return 0;
+			}
+			break;
+		case 53:
+			if (cs2method_10338(19) < 76 || cs2method_10338(21) < 78) {
+				return 0;
+			}
+			break;
+		case 49:
+			if (cs2method_10338(19) < 77 || cs2method_10338(21) < 78) {
+				return 0;
+			}
+			break;
+		case 42:
+			if (cs2method_10338(19) < 65 || cs2method_10338(21) < 71) {
+				return 0;
+			}
+			break;
+		case 59:
+			if (cs2method_10338(19) < 80 || cs2method_10338(21) < 81) {
+				return 0;
+			}
+			break;
+		default:
+			return 1;
+	}
+	return 1;
+}

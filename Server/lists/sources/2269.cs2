@@ -1,0 +1,75 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2269() {
+	int v0;
+	int v1;
+	int v5;
+	int v8 = client_configs['cfg3449'].bitcfg17434;
+	int v10 = -1;
+	int v2 = -1;
+	int v6 = -1;
+	int v4 = -1;
+	int v9 = 0;
+	int v3 = 0;
+	int v7 = 0;
+	switch (v8) {
+		case 1:
+			v4 = client_configs['cfg3427'].bitcfg17155;
+			v9 = client_configs['cfg3427'].bitcfg17156;
+			v3 = client_configs['cfg3427'].bitcfg17157;
+			v7 = client_configs['cfg3458'].bitcfg17226;
+			break;
+		case 2:
+			v4 = client_configs['cfg3428'].bitcfg17168;
+			v9 = client_configs['cfg3428'].bitcfg17169;
+			v3 = client_configs['cfg3428'].bitcfg17170;
+			v7 = client_configs['cfg3458'].bitcfg17227;
+			break;
+		case 3:
+			v4 = client_configs['cfg3429'].bitcfg17181;
+			v9 = client_configs['cfg3429'].bitcfg17182;
+			v3 = client_configs['cfg3429'].bitcfg17183;
+			v7 = client_configs['cfg3458'].bitcfg17228;
+			break;
+		case 4:
+			v4 = client_configs['cfg3430'].bitcfg17194;
+			v9 = client_configs['cfg3430'].bitcfg17195;
+			v3 = client_configs['cfg3430'].bitcfg17196;
+			v7 = client_configs['cfg3458'].bitcfg17229;
+			break;
+		case 5:
+			v4 = client_configs['cfg3431'].bitcfg17207;
+			v9 = client_configs['cfg3431'].bitcfg17208;
+			v3 = client_configs['cfg3431'].bitcfg17209;
+			v7 = client_configs['cfg3458'].bitcfg17230;
+			break;
+		case 6:
+			v4 = client_configs['cfg3432'].bitcfg17220;
+			v9 = client_configs['cfg3432'].bitcfg17221;
+			v3 = client_configs['cfg3432'].bitcfg17222;
+			v7 = client_configs['cfg3458'].bitcfg17231;
+	}
+	if (v4 == 0) {
+		v0 = idx17mapData('i', 'm', 5770, v7);
+		v1 = idx17mapData('i', 'm', 2191, v9);
+		v5 = idx17mapData('i', 'm', 2193, v3);
+	} else {
+		v0 = idx17mapData('i', 'm', 5771, v7);
+		v1 = idx17mapData('i', 'm', 2192, v9);
+		v5 = idx17mapData('i', 'm', 2194, v3);
+	}
+	cs2method_10336(v0, 57933868);
+	cs2method_10336(v1, 57933866);
+	cs2method_10336(v5, 57933867);
+	return;
+}

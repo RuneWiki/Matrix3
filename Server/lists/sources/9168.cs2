@@ -1,0 +1,21 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+string script_9168() {
+	if (client_configs['cfg3587'].bitcfg18267 < cs2method_10948()) {
+		return "You have taken part in " + "<col=ffffff>" + "0 of 3" + "</col>" + " events today";
+	}
+	if (client_configs['cfg3587'].bitcfg18272 > 3) {
+		return "You have taken part in " + "<col=ffffff>" + "3 of 3" + "</col>" + " events today";
+	}
+	return "You have taken part in " + "<col=ffffff>" + (string)cs2method_10379(client_configs['cfg3587'].bitcfg18272) + " of 3" + "</col>" + " events today";
+}

@@ -1,0 +1,131 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1558(int a0,int a1) {
+	if (a0 <= 0 || a0 == 1019) {
+		return;
+	}
+	int v2 = script_8557(a0);
+	int v1 = script_8555(a0);
+	int v4 = script_8556(a0);
+	int v6 = script_8552(a0);
+	int v0 = script_8553(a0);
+	int v3 = script_8558(a0);
+	int v5 = script_8554(a0);
+	int v7 = script_8550(a0);
+	cs2method_10520(16777215, v2);
+	cs2method_11101(1, v4);
+	cs2method_10520(16777215, v4);
+	if (script_2709() == 0 && client_configs['cfg1295'] == 1000) {
+		cs2method_10026(v4, "");
+		cs2method_20390(new function<none>() {
+		}, "", new WidgetPointer(v4));
+		cs2method_20162(new function<none>() {
+		}, "", new WidgetPointer(v4));
+		cs2method_10467(1, v2);
+		cs2method_10467(1, v5);
+		cs2method_10467(1, v4);
+		cs2method_10467(1, v1);
+		cs2method_10112(0, 72, 0, 0, v6);
+		cs2method_10283(488, 72, 0, 1, v6);
+		cs2method_10112(0, 72, 2, 0, v0);
+		cs2method_10283(16, 72, 0, 1, v0);
+		cs2method_10467(1, v4);
+		cs2method_10467(0, v3);
+		return;
+	}
+	cs2method_10467(0, v2);
+	cs2method_10467(0, v5);
+	cs2method_10467(0, v4);
+	cs2method_10467(0, v1);
+	cs2method_10112(0, cs2method_10823(v1), 2, 2, v0);
+	cs2method_10112(2, cs2method_10060(cs2method_10823(v1), 2), 0, 2, v6);
+	if (client_configs['cfg3680'].bitcfg22315 == 1) {
+		cs2method_10283(cs2method_10060(cs2method_10236(v0), 2), 41, 1, 1, v6);
+		cs2method_10112(0, cs2method_10060(cs2method_10823(v1), 1), 2, 2, v0);
+		cs2method_10283(16, 41, 0, 1, v0);
+	} else {
+		cs2method_10283(cs2method_10060(cs2method_10236(v0), 2), 46, 1, 1, v6);
+		cs2method_10283(16, 44, 0, 1, v0);
+	}
+	cs2method_10467(0, v4);
+	cs2method_10467(1, v3);
+	if (a1 == 1 && (cs2method_10870() == 1 || cs2method_10296() == 1)) {
+		cs2method_10026(v4, "Left-click here to enter Public Quick Chat or right-click for Friends Channel Quick Chat.");
+		cs2method_20390(new function<none>() {
+		}, "", new WidgetPointer(v4));
+		cs2method_20162(new function<none>() {
+		}, "", new WidgetPointer(v4));
+		cs2method_10467(1, v2);
+		return;
+	}
+	switch (v7) {
+		case 4:
+			if (cs2method_10265(cs2_configs['cfg2367']) > 0) {
+				cs2method_10026(v5, "To " + cs2_configs['cfg2367'] + ":");
+			} else {
+				cs2method_10026(v5, (string)cs2method_10927() + "<img=3>" + ":");
+			}
+			break;
+		case 1:
+			cs2method_10026(v5, "Friends Chat" + "<img=3>" + ":");
+			break;
+		case 2:
+			cs2method_10026(v5, "Clan Chat" + "<img=3>" + ":");
+			break;
+		case 3:
+			cs2method_10026(v5, "Guest Clan Chat" + "<img=3>" + ":");
+			break;
+		default:
+			cs2method_10026(v5, (string)cs2method_10927() + "<img=3>" + ":");
+	}
+	cs2method_10170(20452, v4);
+	cs2method_10520(8366591, v4);
+	cs2method_10170(20452, v5);
+	cs2method_10520(16777215, v5);
+	cs2method_11101(1, v5);
+	cs2method_10520(16777215, v2);
+	if (cs2method_10265(script_8521(a0)) > 0 || cs2_configs['cfg2873'] == 8 && cs2_configs['cfg2231'] == a0) {
+		cs2method_10026(v4, cs2method_11053(script_8521(a0)));
+	} else {
+		if (cs2_configs['cfg2231'] == a0) {
+			cs2method_10026(v4, "[Press Enter to Chat]");
+		} else {
+			cs2method_10026(v4, "[Click Here to Chat]");
+		}
+		cs2method_10520(9868950, v4);
+	}
+	script_7172(a0);
+	cs2method_10112(5, 0, 0, 2, v5);
+	cs2method_10283(cs2method_10939(20452, cs2method_10744(v5)), cs2method_10823(v5), 0, 0, v5);
+	cs2method_10112(cs2method_10060(cs2method_10060(cs2method_10060(2, cs2method_10191(v5)), cs2method_10236(v5)), 2), 0, 0, 2, v1);
+	cs2method_10283(cs2method_10461(cs2method_10461(cs2method_10236(cs2method_10982(v1)), cs2method_10191(v1)), 5), cs2method_10823(v1), 0, 0, v1);
+	cs2method_20390(new function<script_1554>(int a0,int a1,int a2) {
+		cs2_configs['cfg1028'] = script_1401(a1, 20452, a2, script_8521(a0));
+		script_1555(a0, a2);
+		return;
+	}, a0, -2147483647, 0, "iii", new WidgetPointer(v4));
+	object v8 = script_8521(a0);
+	cs2_configs['cfg1028'] = cs2method_10872(cs2_configs['cfg1028'], cs2method_10265(cs2method_11053(v8)));
+	cs2_configs['cfg1028'] = cs2method_11048(cs2_configs['cfg1028'], 0);
+	script_1555(a0, 0);
+	if (cs2method_10265(cs2method_10927()) > 0) {
+		cs2method_20162(new function<none>() {
+		}, "", new WidgetPointer(v6));
+	} else {
+		cs2method_20162(new function<script_4308>(int a0,int a1) {
+			script_1558(a0, a1);
+			return;
+		}, a0, a1, "i1", new WidgetPointer(v6));
+	}
+	return;
+}

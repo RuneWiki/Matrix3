@@ -1,0 +1,38 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_7857(object a0) {
+	if (cs2method_10846(cs2_configs['cfg3707'], a0) == 0) {
+		return 0;
+	}
+	for (int v0 = cs2method_10265(a0), object v3 = cs2method_11025(cs2method_10060(cs2method_10368(0, a0, "@"), 1), v0, a0), object v1 = cs2method_11025(0, cs2method_10368(0, a0, "@"), a0), object v4 = "", int v2 = 116, int v5 = 0; v5 < cs2method_10924(7725); v5 = cs2method_10060(v5, 1)) {
+		if (cs2method_10846(v3, idx17mapData('i', 's', 7725, v5)) == 0) {
+			return 0;
+		}
+	}
+	int v6 = 0;
+	while (v6 < cs2method_10924(7725)) {
+		if (cs2method_10538(v3, idx17mapData('i', 's', 7725, v6)) <= 2) {
+			object v7 = "Did you mean " + (string)v1 + "@" + idx17mapData('i', 's', 7725, v6) + "?";
+			cs2_configs['cfg3707'] = (string)v1 + "@" + idx17mapData('i', 's', 7725, v6);
+			cs2method_10026(93061693, v7);
+			int v8 = cs2method_11048(116, cs2method_10060(10, cs2method_10939(17813, cs2_configs['cfg3707'] + "?")));
+			cs2method_10283(v8, cs2method_10060(cs2method_10051(cs2method_10805(cs2method_10461(v8, 10), 17813, v7), 12), 30), 0, 0, 93061329);
+			cs2method_10467(0, 93061329);
+			cs2method_10467(1, 93061235);
+			cs2method_10467(0, 93061573);
+			return 1;
+		}
+		v6 = cs2method_10060(v6, 1);
+	}
+	return 0;
+}

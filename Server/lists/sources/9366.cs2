@@ -1,0 +1,50 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9366(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8) {
+	int v0 = idx17mapData('i', 'g', 3689, a5);
+	if (a1 == 0 || a7 == 0 || a5 == 0 || script_4616(a2, a3) <= 0) {
+		return;
+	}
+	cs2method_10026(45940789, cs2method_10922(a2));
+	cs2method_10026(45940824, script_9365());
+	if (client_configs['cfg2030'].bitcfg8945 == 0) {
+		cs2method_10026(45940887, idx17mapData('i', 's', 3695, a3));
+		cs2method_10026(45940831, "");
+	} else {
+		cs2method_10026(45940831, idx17mapData('i', 's', 3695, a3));
+		cs2method_10026(45940887, "");
+	}
+	cs2method_10026(45940852, idx17mapData('i', 's', 3687, a5));
+	if (v0 != -1 && a4 > 0) {
+		cs2method_10026(45940859, idx17mapData('i', 's', v0, a4));
+	} else {
+		cs2method_10026(45940859, "");
+	}
+	cs2method_10026(45940845, idx17mapData('i', 's', 3696, a7));
+	cs2method_10026(45940838, cs2method_10379(a1));
+	cs2method_10026(45940866, idx17mapData('i', 's', 3725, a0));
+	if (client_configs['cfg3939'].bitcfg20998 == 1) {
+		cs2method_10026(45940880, "Broadcast will only be sent to " + idx17mapData('i', 's', 3725, a0) + "+");
+	} else {
+		cs2method_10026(45940880, "Broadcast will be sent to the whole clan.");
+	}
+	if (a8 == 0) {
+		cs2method_10026(45940873, "This event is not mandatory.");
+	} else {
+		cs2method_10026(45940873, "This event is mandatory.");
+	}
+	script_9369();
+	script_9374();
+	cs2method_10467(1, 45940815);
+	return;
+}

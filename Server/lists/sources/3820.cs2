@@ -1,0 +1,42 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3820() {
+	int v3 = 0;
+	int v2 = 0;
+	int v0 = 0;
+	if (client_configs['cfg3680'].bitcfg22315 == 0) {
+		cs2method_10112(0, 0, 0, 0, 49938442);
+		cs2method_10283(cs2method_10236(49938442), 0, 0, 1, 49938442);
+		cs2method_10112(0, 72, 2, 0, 49938432);
+		cs2method_10283(200, 260, 0, 0, 49938432);
+	} else {
+		cs2method_10283(cs2method_10236(49938442), 189, 0, 1, 49938442);
+		int v1 = cs2method_10236(idx22mapAttribute(idx17mapData('i', 'J', 7716, 1000), 3503));
+		if (cs2method_10614() == 2) {
+			int v4 = cs2method_10461(cs2method_10968(v1, 2), cs2method_10968(cs2method_10236(49938442), 2));
+			cs2method_10112(0, 0, 0, 0, 49938442);
+		} else {
+			cs2method_10112(0, 0, 1, 0, 49938442);
+			if (cs2method_10060(cs2method_10060(cs2method_10191(49938442), cs2method_10236(49938442)), 248) > v1) {
+				cs2method_10112(248, 0, 2, 0, 49938442);
+			}
+		}
+		script_3814_struct(2,0,0) v5 = script_3814();
+		int v6 = v5.intpart_1;
+		int v4 = v5.intpart_0;
+		cs2method_10112(v4, v6, 2, 2, 49938432);
+		cs2method_10283(210, 286, 0, 0, 49938432);
+	}
+	script_9236(49938438, 49938439, 49938440, 93, 0, -1, -1, 1, "Deposit");
+	return;
+}

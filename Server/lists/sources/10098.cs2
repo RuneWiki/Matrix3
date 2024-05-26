@@ -1,0 +1,20 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_10098() {
+	object v0 = "Use this button to share" + "<br>" + "this layout with a player" + "<br>" + "on your Friends List.";
+	cs2method_21121(new function<script_8799>(int a0,object a1,int a2) {
+		script_8800(a2, a0, a1);
+		return;
+	}, (string)v0, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(1436,16));
+	return;
+}

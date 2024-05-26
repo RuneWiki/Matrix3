@@ -1,0 +1,113 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2131(int a0,int a1) {
+	cs2method_20162(new function<script_2132>(int a0,int a1,int a2,int a3,int a4) {
+		flow_0:
+			int v3 = cs2method_10060(cs2method_10191(a0), a1);
+			int v2 = cs2method_10060(cs2method_10152(a0), a2);
+			if (cs2method_10191(a4) >= v3 && cs2method_10191(a4) < cs2method_10060(v3, cs2method_10236(a0))) {
+				if (cs2method_10152(a4) >= v2 && cs2method_10152(a4) < cs2method_10060(v2, cs2method_10823(a0))) {
+					v3 = cs2method_10461(v3, cs2method_10060(cs2method_10877(3), 2));
+					v2 = cs2method_10461(v2, cs2method_10060(cs2method_10877(3), 2));
+					if (a3 <= cs2method_10133()) {
+						cs2method_10567(33803, 1, 0);
+						a3 = cs2method_10060(cs2method_10060(cs2method_10133(), 20), cs2method_10877(40));
+					}
+				}
+			} else {
+				if (v3 >= cs2method_10191(a4) && v3 < cs2method_10060(cs2method_10191(a4), cs2method_10236(a4)) && v2 >= cs2method_10152(a4) && v2 < cs2method_10060(cs2method_10152(a4), cs2method_10823(a4))) {
+					v3 = cs2method_10060(cs2method_10060(v3, cs2method_10877(3)), 2);
+					v2 = cs2method_10060(cs2method_10060(v2, cs2method_10877(3)), 2);
+					if (a3 <= cs2method_10133()) {
+						cs2method_10567(33803, 1, 0);
+						a3 = cs2method_10060(cs2method_10060(cs2method_10133(), 20), cs2method_10877(40));
+					}
+				}
+			}
+			int v6 = cs2method_11048(v3, 0);
+			int v7 = cs2method_11048(v2, 0);
+			int v0 = cs2method_10461(cs2method_10236(cs2method_10982(a0)), cs2method_10236(a0));
+			int v1 = cs2method_10872(v6, v0);
+			int v5 = cs2method_10461(cs2method_10823(cs2method_10982(a0)), cs2method_10823(a0));
+			int v4 = cs2method_10872(v7, v5);
+			IF (v1 <= 0) 
+				GOTO	flow_14
+			GOTO	flow_15
+		flow_14:
+			IF (a1 < 0) 
+				GOTO	flow_17
+		flow_15:
+			IF (v1 >= v0 && a1 > 0) 
+				GOTO	flow_17
+			GOTO	flow_18
+		flow_17:
+			a1 = cs2method_10461(0, a1);
+		flow_18:
+			IF (v4 <= 0) 
+				GOTO	flow_19
+			GOTO	flow_20
+		flow_19:
+			IF (a2 < 0) 
+				GOTO	flow_22
+		flow_20:
+			IF (v4 >= v5 && a2 > 0) 
+				GOTO	flow_22
+			GOTO	flow_23
+		flow_22:
+			a2 = cs2method_10461(0, a2);
+		flow_23:
+			if (a1 == 0) {
+				a1 = cs2method_10060(cs2method_10877(3), 1);
+			}
+			if (a2 == 0) {
+				a2 = cs2method_10060(cs2method_10877(3), 1);
+			}
+			cs2method_10112(v1, v4, 0, 0, a0);
+			cs2method_20162(load function<2132>, new WidgetPointer(a0), a1, a2, new WidgetPointer(a4), a3, "IiiIi", new WidgetPointer(a0));
+			return;
+	}, new WidgetPointer(a0), cs2method_10461(cs2method_10877(6), 3), cs2method_10461(cs2method_10877(6), 3), new WidgetPointer(a1), 0, "IiiIi", new WidgetPointer(a0));
+	cs2method_20680(new function<script_2133>(int a0) {
+		cs2method_10067(1, a0);
+		cs2method_10567(33803, 1, 0);
+		return;
+	}, new WidgetPointer(a0), "I", new WidgetPointer(a0));
+	cs2method_21121(new function<script_2135>(int a0,int a1,int a2) {
+		int v4 = cs2method_10191(a0);
+		int v2 = cs2method_10152(a0);
+		if (a1 >= 0 && a1 <= cs2method_10968(cs2method_10236(a0), 2)) {
+			v4 = cs2method_10461(v4, cs2method_10060(cs2method_10877(2), 2));
+		} else {
+			if (a1 <= cs2method_10236(a0)) {
+				v4 = cs2method_10060(cs2method_10060(v4, cs2method_10877(2)), 2);
+			}
+		}
+		if (a2 >= 0 && a2 <= cs2method_10968(cs2method_10823(a0), 2)) {
+			v2 = cs2method_10461(v2, cs2method_10060(cs2method_10877(2), 2));
+		} else {
+			if (a2 <= cs2method_10823(a0)) {
+				v2 = cs2method_10060(cs2method_10060(v2, cs2method_10877(2)), 2);
+			}
+		}
+		int v1 = cs2method_11048(v4, 0);
+		int v3 = cs2method_11048(v2, 0);
+		int v5 = cs2method_10872(v1, cs2method_10461(cs2method_10236(cs2method_10982(a0)), cs2method_10236(a0)));
+		int v0 = cs2method_10872(v3, cs2method_10461(cs2method_10823(cs2method_10982(a0)), cs2method_10823(a0)));
+		cs2method_10112(v5, v0, 0, 0, a0);
+		return;
+	}, new WidgetPointer(a0), -2147483647, -2147483646, "Iii", new WidgetPointer(a0));
+	cs2method_20750(new function<script_2134>(int a0) {
+		cs2method_10067(0, a0);
+		return;
+	}, new WidgetPointer(a0), "I", new WidgetPointer(a0));
+	return;
+}

@@ -1,0 +1,46 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9065(int a0,int a1,object a2,int a3,int a4,int a5) {
+	int v2;
+	int v1 = 18453;
+	int v5 = 18455;
+	int v4 = 18454;
+	cs2method_20750(new function<script_2924>(int a0,int a1,int a2,int a3,int a4,int a5) {
+		script_2925(a1, a2, a5, a0, a3, a4);
+		return;
+	}, new WidgetPointer(a1), v1, new WidgetPointer(a5), v4, new WidgetPointer(a0), v5, "IdIdId", new WidgetPointer(a4));
+	cs2method_10758(v1, a1);
+	cs2method_10758(v4, a5);
+	cs2method_10758(v5, a0);
+	int v6 = 18462;
+	int v3 = 18464;
+	int v7 = 18463;
+	cs2method_20680(new function<script_2924>(int a0,int a1,int a2,int a3,int a4,int a5) {
+		script_2925(a4, a5, a0, a2, a3, a1);
+		return;
+	}, new WidgetPointer(a1), v6, new WidgetPointer(a5), v7, new WidgetPointer(a0), v3, "IdIdId", new WidgetPointer(a4));
+	int v0 = -1;
+	if (a3 == 1) {
+		if (cs2method_10135() == 1) {
+			v2 = 63897644;
+		} else {
+			v2 = 39059628;
+		}
+	} else if (cs2method_10135() == 1) {
+		v2 = 63897649;
+	} else {
+		v2 = 39059633;
+	}
+	cs2method_10026(v2, a2);
+	return;
+}

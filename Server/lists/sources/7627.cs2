@@ -1,0 +1,21 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7627() {
+	if (client_configs['cfg3580'].bitcfg18198 == 0) {
+		cs2method_10026(21364803, "This override can be accessed from the Customisation interface, which can be found on the Worn Equipment tab." + "<br>" + "Under the 'Main Hand' category you will be able to select this cosmetic override, making any 2h-sword you wield look like the Sword of Edicts.");
+	} else {
+		cs2method_10026(21364803, "This override can be accessed from the Customisation interface, which can be found on the Worn Equipment tab." + "<br>" + "Under the 'Main Hand' category you can select this cosmetic override, making any 2h-sword you wield look like the Sword of Edicts.");
+	}
+	cs2method_10467(0, 21364773);
+	return;
+}

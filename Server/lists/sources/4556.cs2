@@ -1,0 +1,81 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4556(int a0) {
+	if (a0 == 1 && cs2method_10870() == 0) {
+		cs2method_20380(new function<script_4555>(int a0,int a1) {
+			if (cs2method_10588() <= 0 || cs2method_10870() == 1 || script_5280() == 1) {
+				return;
+			}
+			switch (a0) {
+				case 84:
+					if (cs2method_10588() > 0) {
+						if (cs2method_10265(cs2_configs['cfg2480']) > 0) {
+							cs2method_10190(1);
+							cs2method_10539(cs2_configs['cfg2480']);
+						}
+					} else {
+						cs2method_11102(11, 0, "You are not in a Friends Chat Channel.");
+					}
+					cs2_configs['cfg2480'] = "";
+					cs2method_10026(38600731, cs2method_11053(cs2_configs['cfg2480']));
+					cs2_configs['cfg1507'] = cs2method_10265(cs2_configs['cfg2480']);
+					script_4571(38600731, 38600732, cs2_configs['cfg2480']);
+					break;
+				case 102:
+				case 103:
+				case 98:
+				case 99:
+				case 96:
+				case 97:
+					cs2_configs['cfg1507'] = script_1553(a0, cs2_configs['cfg2480'], cs2_configs['cfg1507']);
+					script_4571(38600731, 38600732, cs2_configs['cfg2480']);
+					break;
+				default:
+					if (cs2method_10698(a1) == 1 || a0 == 85 || a0 == 101) {
+						int v1 = cs2_configs['cfg1507'];
+						int v0 = 0;
+						int v4 = a0;
+						int v5 = a1;
+						object v6 = cs2_configs['cfg2480'];
+						script_802_struct(1,1,0) v2 = script_802(v1, v6, v0, v4, v5);
+						object v3 = v2.objectpart_0;
+						cs2_configs['cfg1507'] = v2.intpart_0;
+						cs2_configs['cfg2480'] = (string)v3;
+						cs2method_10026(38600731, cs2method_11053(cs2_configs['cfg2480']));
+						script_4571(38600731, 38600732, cs2_configs['cfg2480']);
+					}
+			}
+			return;
+		}, -2147483640, false, "iz", new WidgetPointer(589,26));
+		cs2method_20162(new function<script_4572>(int a0,int a1) {
+			if (cs2method_10588() <= 0) {
+				cs2method_10026(38600731, "");
+				cs2method_10467(1, a0);
+				return;
+			}
+			if (cs2method_10038(cs2method_10461(cs2method_10133(), a1), 40) < 20 && cs2method_10180() == 1) {
+				cs2method_10467(0, a0);
+			} else {
+				cs2method_10467(1, a0);
+			}
+			return;
+		}, cs2method_10133(), new WidgetPointer(589,28), "iI", new WidgetPointer(589,27));
+	} else {
+		cs2method_20380(new function<none>() {
+		}, "", new WidgetPointer(589,26));
+		cs2method_20162(new function<none>() {
+		}, "", new WidgetPointer(589,27));
+		cs2method_10026(38600731, cs2method_11053(cs2_configs['cfg2480']));
+	}
+	return;
+}

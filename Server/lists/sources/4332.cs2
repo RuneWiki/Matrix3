@@ -1,0 +1,32 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4332(int a0,int a1) {
+	int v5 = -1;
+	int v2 = -1;
+	int v6 = clan_configs['cfg13'].bitcfg8815;
+	int v3 = clan_configs['cfg13'].bitcfg8816;
+	int v0 = 1;
+	script_4384_struct(2,0,0) v7 = script_4384(v6, v3, v0);
+	int v1 = v7.intpart_1;
+	int v4 = v7.intpart_0;
+	cs2method_10758(v4, a1);
+	cs2method_10758(v1, a0);
+	if (cs2method_10232() >= 5) {
+		cs2method_10520(cs2method_10671(clan_configs['cfg16']), a1);
+		cs2method_10520(cs2method_10671(clan_configs['cfg17']), a0);
+	} else {
+		cs2method_10520(cs2method_10671(6716), a1);
+		cs2method_10520(cs2method_10671(6716), a0);
+	}
+	return;
+}

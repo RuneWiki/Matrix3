@@ -1,0 +1,24 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_599() {
+	if (client_configs['cfg139'] == 0) {
+		if (cs2_configs['cfg84'] <= 2147483637) {
+			cs2_configs['cfg84'] = cs2method_10060(cs2_configs['cfg84'], 10);
+		}
+	} else {
+		cs2_configs['cfg84'] = 10;
+	}
+	cs2method_10026(6881329, cs2method_10055(cs2_configs['cfg84'], 1));
+	script_602();
+	return;
+}

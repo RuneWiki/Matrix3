@@ -1,0 +1,95 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1430(int a0,int a1,int a2,int a3,int a4) {
+	cs2method_10283(0, 0, 1, 1, a2);
+	cs2method_10283(16, 0, 0, 1, a1);
+	int v11 = cs2method_10894(a0);
+	int v29 = cs2method_10236(a2);
+	int v23 = cs2method_10823(a2);
+	int v20 = cs2method_10060(36, 2);
+	int v35 = cs2method_10060(cs2method_10060(32, 4), 2);
+	int v27 = 0;
+	int v4 = 0;
+	int v33 = 0;
+	int v15 = 0;
+	int v22 = 0;
+	int v9 = v29;
+	int v34 = v23;
+	int v36 = v20;
+	int v3 = v35;
+	int v32 = 16;
+	int v24 = v11;
+	script_1899_struct(5,0,0) v6 = script_1899(v9, v34, v36, v3, v32, v24);
+	int v26 = v6.intpart_4;
+	int v30 = v6.intpart_3;
+	int v10 = v6.intpart_2;
+	int v8 = v6.intpart_1;
+	int v28 = v6.intpart_0;
+	int v0 = cs2method_10051(v35, v28);
+	if (v26 == 1) {
+		cs2method_10283(16, 0, 1, 1, a2);
+	} else {
+		cs2method_10273(a1);
+	}
+	globalarray_0 = new int[v8];
+	for (int v18 = 0; v18 < v8; v18 = cs2method_10060(v18, 1)) {
+		globalarray_0[v18] = script_8108(v10, v30, v18);
+	}
+	int v16 = 0;
+	int v13 = 0;
+	if (v26 == 1) {
+		cs2method_11130(0, v0, a2);
+		script_31(a1, a2, 792, 789, 790, 791, 773, 788);
+	} else {
+		cs2method_11130(0, 0, a2);
+	}
+	for (int v7 = 0, int v19 = 0, int v21 = 0, int v1 = 0, int v12 = 0, int v14 = -1, int v5 = 0; v7 < v11; v7 = cs2method_10060(v7, 1)) {
+		int v37 = cs2method_10038(v7, v8);
+		int v38 = cs2method_10968(v7, v8);
+		int v17 = globalarray_0[v37];
+		int v25 = cs2method_10060(cs2method_10051(v38, v35), 2);
+		if (cs2method_11038(a3, v7) == 1) {
+			cs2method_10063(cs2method_10461(v17, 1), cs2method_10461(v25, 1), 0, 0);
+		}
+		if (cs2method_11038(a4, v7) == 1) {
+			cs2method_10063(cs2method_10060(v17, 3), cs2method_10060(v25, 1), 0, 0);
+			cs2method_10620();
+			int v31 = cs2method_10418(a0, v7);
+			int v2 = cs2method_10595(a0, v7);
+			switch (v31) {
+				case 2472:
+				case 2474:
+				case 2462:
+				case 2476:
+				case 2460:
+				case 2464:
+				case 2466:
+				case 2468:
+				case 2470:
+					v31 = 299;
+			}
+			if (v31 != -1) {
+				cs2method_11070(v31, v2);
+				cs2method_10200(cs2method_10018(v31));
+				cs2method_10269(0);
+				cs2method_10057(10, "Examine" + "<col=ff9040>");
+				cs2method_10356(1);
+			} else {
+				cs2method_11070(-1, 0);
+				cs2method_10269(1);
+				cs2method_10200("");
+			}
+		}
+	}
+	return;
+}

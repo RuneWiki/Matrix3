@@ -1,0 +1,37 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_8855(int a0) {
+	switch (a0) {
+		case 0:
+			return cs2_configs['cfg2874'].bitcfg18872;
+		case 1:
+			return cs2_configs['cfg2874'].bitcfg18873;
+		case 2:
+			return cs2_configs['cfg2875'].bitcfg18874;
+		case 3:
+			return cs2_configs['cfg2875'].bitcfg18875;
+		case 4:
+			return cs2_configs['cfg2876'].bitcfg18876;
+		case 5:
+			return cs2_configs['cfg2876'].bitcfg18877;
+		case 6:
+			return cs2_configs['cfg2877'].bitcfg18878;
+		case 7:
+			return cs2_configs['cfg2877'].bitcfg18879;
+		case 8:
+			return cs2_configs['cfg2878'].bitcfg18880;
+		case 9:
+			return cs2_configs['cfg2878'].bitcfg18881;
+	}
+	return 0;
+}

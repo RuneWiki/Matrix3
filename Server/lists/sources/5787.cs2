@@ -1,0 +1,62 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5787(int a0) {
+	int v5 = 1;
+	if (a0 == client_configs['cfg1269'].bitcfg3561) {
+		v5 = 0;
+	}
+	int v4 = script_5795(a0);
+	if (v4 == -1) {
+		return;
+	}
+	if (v5 == 1) {
+		cs2method_10467(0, 80150530);
+		cs2method_10467(0, 80150537);
+		cs2method_10467(0, 80150529);
+		script_5796(a0, 1, 80150530, 80150537, 80150529, -1, -1, -1);
+	} else {
+		cs2method_10467(1, 80150530);
+		cs2method_10467(1, 80150537);
+		cs2method_10467(1, 80150529);
+	}
+	object v2 = idx22mapAttribute(v4, 2225);
+	cs2method_10026(80150535, v2);
+	object v6 = idx22mapAttribute(v4, 1292);
+	if (client_configs['cfg1293'].bitcfg3617 == 1) {
+		v6 = "";
+	}
+	object v3 = "null";
+	int v7 = 0;
+	if (v5 == 1) {
+		cs2method_10467(0, 80150537);
+		cs2method_10467(0, 80150534);
+		object v8 = idx22mapAttribute(v4, 1273);
+		int v9 = cs2method_10509(274, 17813, v8);
+		cs2method_10283(v9, cs2method_10823(80150529), 0, 0, 80150529);
+		cs2method_10520(11251102, 80150529);
+		cs2method_10283(cs2method_10060(56, v9), 50, 0, 0, 80150534);
+		cs2method_10112(cs2method_10191(80150535), cs2method_10060(cs2method_10060(2, cs2method_10823(80150534)), cs2method_10152(80150534)), 0, 0, 80150535);
+	} else {
+		cs2method_10283(0, 0, 0, 0, 80150534);
+		cs2method_10112(cs2method_10191(80150535), cs2method_10152(80150537), 0, 0, 80150535);
+	}
+	int v0 = cs2method_10051(15, cs2method_10805(330, 17813, v2));
+	int v1 = cs2method_10051(15, cs2method_10805(330, 17813, v6));
+	cs2method_10026(80150536, v6);
+	cs2method_10283(cs2method_10236(80150535), v0, 0, 0, 80150535);
+	cs2method_10112(cs2method_10191(80150536), cs2method_10060(cs2method_10060(cs2method_10152(80150535), v0), 4), 0, 0, 80150536);
+	cs2method_10283(cs2method_10236(80150536), v1, 0, 0, 80150536);
+	cs2method_10283(cs2method_10236(80150531), cs2method_10872(291, cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10152(80150535), v0), v1), 75)), 0, 0, 80150531);
+	cs2method_10283(363, 291, 0, 0, 96796984);
+	return;
+}

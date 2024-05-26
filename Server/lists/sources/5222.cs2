@@ -1,0 +1,50 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5222(int a0) {
+	object v5;
+	int v6 = script_4949(a0);
+	int v2 = script_4959(a0);
+	int v0 = script_4972(a0);
+	if (v0 == -1) {
+		return;
+	}
+	int v8 = cs2method_10155(v0);
+	int v3 = cs2method_10155(v8);
+	object v4 = "";
+	object v9 = "Empty skill plot";
+	int v1 = 3;
+	if (a0 == 1) {
+		v5 = "Citadel : Tier " + (string)cs2method_10379(v2);
+	} else if (a0 == 2) {
+		v5 = "Storehouse : Tier " + (string)cs2method_10379(v2);
+	} else if (a0 == 3) {
+		v5 = "Battlefield : Tier " + (string)cs2method_10379(v2);
+	} else if (v2 > 0) {
+		v5 = (string)v7 + " : Tier " + (string)cs2method_10379(v2);
+	} else {
+		v5 = "Empty skill plot";
+	}
+	object v7 = idx17mapData('i', 's', 4287, v6);
+	if (cs2method_10191(v8) < cs2method_10461(cs2method_10968(cs2method_10236(v3), 2), 50)) {
+		v1 = 1;
+	}
+	cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,object a9,int a10,int a11,int a12) {
+		script_7769(a12, a3, a5, a4, a6, a8, a11, a7, a2, a10, a1, a9, a0);
+		return;
+	}, new WidgetPointer(1261,153), new WidgetPointer(v0), -1, (string)v5, 120, 17813, 17813, 16777215, 13, 4, v1, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(v0));
+	cs2method_20750(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(1261,153), "I", new WidgetPointer(v0));
+	return;
+}

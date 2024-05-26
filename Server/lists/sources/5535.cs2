@@ -1,0 +1,25 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5535(int a0) {
+	if (a0 == -1) {
+		a0 = cs2_configs['cfg1725'];
+	}
+	if (cs2_configs['cfg1724'] == -1) {
+		cs2_configs['cfg1724'] = 1;
+	}
+	if (a0 != cs2_configs['cfg1725']) {
+		cs2method_10363(6185, 1, 0, 100, 350);
+	}
+	script_5536(a0, 1);
+	return;
+}

@@ -1,0 +1,20 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_1551(int a0,int a1,int a2,object a3) {
+	object v1 = script_1602(a3);
+	int v0 = cs2method_10872(cs2method_10265(v1), a2);
+	if (v0 <= 0) {
+		return a1;
+	}
+	return cs2method_10060(cs2method_10939(a0, cs2method_11025(0, v0, v1)), a1);
+}

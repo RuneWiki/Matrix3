@@ -1,0 +1,21 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+object script_2949(object a0) {
+	int v1 = cs2method_10265(a0);
+	object v0 = "";
+	while (v1 > 0) {
+		v0 = (string)v0 + "*";
+		v1 = cs2method_10461(v1, 1);
+	}
+	return v0;
+}

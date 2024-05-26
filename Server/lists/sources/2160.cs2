@@ -1,0 +1,75 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2160(int a0) {
+	int v9 = idx17mapData('i', 'J', 169, a0);
+	if (v9 == -1) {
+		return;
+	}
+	int v6 = idx22mapAttribute(v9, 61);
+	if (v6 == -1) {
+		return;
+	}
+	int v8 = idx22mapAttribute(v9, 152);
+	int v4 = idx22mapAttribute(v9, 153);
+	cs2method_10273(v8);
+	int v0 = 0;
+	int v2 = 0;
+	int v7 = -1;
+	int v3 = -1;
+	int v1 = 0;
+	cs2_configs['cfg693'] = client_configs['cfg115'].bitcfg315;
+	cs2_configs['cfg694'] = client_configs['cfg115'].bitcfg317;
+	cs2_configs['cfg1103'] = client_configs['cfg115'].bitcfg318;
+	cs2_configs['cfg692'] = client_configs['cfg115'].bitcfg316;
+	cs2_configs['cfg3853'] = client_configs['cfg115'].bitcfg20864;
+	cs2_configs['cfg272'] = cs2method_10924(v6);
+	while (v2 < cs2_configs['cfg272']) {
+		int v5 = idx17mapData('i', 'J', v6, v0);
+		cs2method_10606(v8, 4, v0);
+		if (v5 != -1) {
+			v2 = cs2method_10060(v2, 1);
+			int v10 = script_2193(v0);
+			cs2method_10063(0, 0, 0, 0);
+			cs2method_10013(10, 15, 1, 0);
+			cs2method_10811(2236962);
+			cs2method_10692(494);
+			cs2method_11105(0, 0, 0);
+			cs2method_10173(1);
+			cs2method_10797(idx22mapAttribute(v5, 845));
+			if (v3 == -1 && v5 == 510 && a0 == 1) {
+				v3 = cs2method_11051();
+			}
+		} else {
+			cs2method_10269(1);
+		}
+		v0 = cs2method_10060(v0, 1);
+	}
+	cs2_configs['cfg273'] = cs2method_10461(v0, 1);
+	while (v0 < cs2method_10060(cs2_configs['cfg273'], 10)) {
+		cs2method_10606(v8, 4, v0);
+		cs2method_10692(496);
+		cs2method_10013(0, 20, 1, 0);
+		cs2method_11105(0, 1, 0);
+		cs2method_10797("");
+		cs2method_10811(16750848);
+		cs2method_10269(1);
+		cs2method_10173(1);
+		v0 = cs2method_10060(v0, 1);
+	}
+	script_2162(a0, cs2_configs['cfg693'], cs2_configs['cfg694'], cs2_configs['cfg692'], cs2_configs['cfg1103'], cs2_configs['cfg3853']);
+	script_31(v4, v8, 5666, 5663, 5664, 5665, 5686, 5685);
+	if (v3 != -1) {
+		script_214(v8, v3);
+	}
+	return;
+}

@@ -1,0 +1,75 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1797(int a0,int a1) {
+	int v0 = 0;
+	int v1 = 0;
+	while (v0 < 10) {
+		switch (v0) {
+			case 0:
+				cs2method_10112(25, v1, 0, 0, 51838999);
+				cs2method_10112(4, v1, 0, 0, 51839000);
+				cs2method_10112(0, v1, 0, 0, 51839001);
+				break;
+			case 1:
+				cs2method_10112(25, v1, 0, 0, 51839002);
+				cs2method_10112(4, v1, 0, 0, 51839003);
+				cs2method_10112(0, v1, 0, 0, 51839004);
+				break;
+			case 2:
+				cs2method_10112(25, v1, 0, 0, 51839005);
+				cs2method_10112(4, v1, 0, 0, 51839006);
+				cs2method_10112(0, v1, 0, 0, 51839007);
+				break;
+			case 3:
+				cs2method_10112(25, v1, 0, 0, 51839008);
+				cs2method_10112(4, v1, 0, 0, 51839009);
+				cs2method_10112(0, v1, 0, 0, 51839010);
+				break;
+			case 4:
+				cs2method_10112(25, v1, 0, 0, 51839011);
+				cs2method_10112(4, v1, 0, 0, 51839012);
+				cs2method_10112(0, v1, 0, 0, 51839013);
+				break;
+			case 5:
+				cs2method_10112(25, v1, 0, 0, 51839014);
+				cs2method_10112(4, v1, 0, 0, 51839015);
+				cs2method_10112(0, v1, 0, 0, 51839016);
+				break;
+			case 6:
+				cs2method_10112(25, v1, 0, 0, 51839017);
+				cs2method_10112(4, v1, 0, 0, 51839018);
+				cs2method_10112(0, v1, 0, 0, 51839019);
+				break;
+			case 7:
+				cs2method_10112(25, v1, 0, 0, 51839020);
+				cs2method_10112(4, v1, 0, 0, 51839021);
+				cs2method_10112(0, v1, 0, 0, 51839022);
+				break;
+			case 8:
+				cs2method_10112(25, v1, 0, 0, 51839023);
+				cs2method_10112(4, v1, 0, 0, 51839024);
+				cs2method_10112(0, v1, 0, 0, 51839025);
+				break;
+			case 9:
+				cs2method_10112(25, v1, 0, 0, 51839026);
+				cs2method_10112(4, v1, 0, 0, 51839027);
+				cs2method_10112(0, v1, 0, 0, 51839028);
+		}
+		v1 = cs2method_10060(v1, 17);
+		v0 = cs2method_10060(v0, 1);
+	}
+	cs2method_11130(0, v1, a0);
+	cs2method_10251(0, 0, a0);
+	script_31(a1, a0, 792, 789, 790, 791, 773, 788);
+	return;
+}

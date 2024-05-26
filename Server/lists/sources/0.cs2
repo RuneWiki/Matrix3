@@ -1,0 +1,35 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_0(int a0,int a1,int a2) {
+	int v3 = cs2method_10968(cs2method_10060(a2, a1), 2);
+	int v4 = globalarray_0[v3];
+	globalarray_0[v3] = globalarray_0[a1];
+	globalarray_0[a1] = v4;
+	for (int v0 = a2, int v2 = a2, int v1 = -1; v2 < a1; v2 = cs2method_10060(v2, 1)) {
+		if (cs2method_10846(cs2method_10181(cs2method_10744(globalarray_0[v2])), cs2method_10181(cs2method_10744(v4))) < cs2method_10147(v2, 1)) {
+			int v5 = globalarray_0[v2];
+			globalarray_0[v2] = globalarray_0[v0];
+			globalarray_0[v0] = v5;
+			v0 = cs2method_10060(v0, 1);
+		}
+	}
+	globalarray_0[a1] = globalarray_0[v0];
+	globalarray_0[v0] = v4;
+	if (a2 < cs2method_10461(v0, 1)) {
+		script_0(0, a2, cs2method_10461(v0, 1));
+	}
+	if (cs2method_10060(v0, 1) < a1) {
+		script_0(0, cs2method_10060(v0, 1), a1);
+	}
+	return;
+}

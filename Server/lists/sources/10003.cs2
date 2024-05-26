@@ -1,0 +1,34 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_10003(int a0,int a1,int a2) {
+	int v1;
+	int v0 = script_9978(a0);
+	int v2 = -1;
+	if (script_9976(a0) == 1) {
+		v1 = idx17mapData('i', 'J', 7699, v0);
+	} else {
+		v1 = idx17mapData('i', 'J', 7716, a0);
+	}
+	if (cs2method_11038(a2, cs2method_11048(1, cs2method_10060(a1, 1))) == 1) {
+		if (script_9972(a0, 1) == -1) {
+			cs2method_11127(1, a2, "Add");
+			cs2method_10310(script_3794(v1, 1));
+		} else {
+			cs2method_11127(1, a2, "Remove");
+			if (cs2method_10982(a2) == 37814308) {
+				cs2method_10310(script_3794(v1, 0));
+			}
+		}
+	}
+	return;
+}

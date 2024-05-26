@@ -1,0 +1,77 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4132(int a0,int a1) {
+	switch (cs2_configs['cfg1452']) {
+		case 201:
+			cs2method_10273(a0);
+			cs2method_10606(a0, 3, 0);
+			cs2method_10238(1);
+			cs2method_10811(8323072);
+			cs2method_10013(0, 0, 1, 1);
+			cs2method_10063(0, 0, 0, 0);
+			cs2method_10002(255);
+			script_665(0, 50, a0, 1);
+			break;
+		case 202:
+			script_667(50, a0, 1);
+			break;
+		case 203:
+			if (cs2method_11038(a0, 0) == 1) {
+				cs2method_20061(new function<script_4133>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8) {
+					flow_0:
+						int v2 = 0;
+						int v3 = 0;
+						IF (a8 == -1) 
+							GOTO	flow_1
+						GOTO	flow_2
+					flow_1:
+						IF (cs2method_10324(a3) == 1) 
+							GOTO	flow_3
+					flow_2:
+						IF (cs2method_11038(a3, a8) == 1) 
+							GOTO	flow_3
+						GOTO	flow_13
+					flow_3:
+						if (a6 > 0) {
+							cs2method_20061(load function<4133>, new WidgetPointer(a3), a8, a1, a2, a0, a4, a5, cs2method_10461(a6, 1), a7, "Iiiiiiii\u00ab");
+							return;
+						}
+						int v1 = cs2method_10699();
+						int v0 = cs2method_10872(cs2method_11048(cs2method_10060(v1, a1), a0), a4);
+						if (v0 == a0 || v0 == a4) {
+							if (v0 == a4) {
+								a6 = a5;
+							}
+							if (v0 == a0 && a7 != -1) {
+								cs2method_10670(a7, 1, 50, 255);
+							}
+							cs2method_20061(load function<4133>, new WidgetPointer(a3), a8, a2, a1, a0, a4, a5, a6, a7, "Iiiiiiii\u00ab");
+						}
+						cs2method_10002(v0);
+					flow_13:
+						return;
+				}, new WidgetPointer(a0), 0, 3, -3, 150, 255, 50, 0, 3581, "Iiiiiiii\u00ab");
+			}
+			break;
+		case 204:
+			cs2method_10273(a0);
+			script_4138(0, 50, a0);
+			break;
+		case 205:
+			script_4140(50, a0);
+			break;
+		case 206:
+			cs2method_10273(a0);
+	}
+	return;
+}

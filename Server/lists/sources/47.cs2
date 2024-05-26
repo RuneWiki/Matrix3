@@ -1,0 +1,24 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+object script_47(int a0) {
+	if (a0 > 99) {
+		return cs2method_10379(a0);
+	}
+	if (a0 > 9) {
+		return "0" + (string)cs2method_10379(a0);
+	}
+	if (a0 >= 0) {
+		return "00" + (string)cs2method_10379(a0);
+	}
+	return cs2method_10379(a0);
+}

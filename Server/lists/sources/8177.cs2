@@ -1,0 +1,30 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8177() {
+	if (client_configs['cfg689'].bitcfg1899 == 1) {
+		cs2method_10810("You can't do that while in combat.");
+		return;
+	}
+	if (cs2_configs['cfg3477'] == 1) {
+		cs2method_10810("You can't do that in Edit Mode.");
+		return;
+	}
+	if (client_configs['cfg1113'].bitcfg3028 > 0) {
+		cs2method_10810("You can't do that right now.");
+		return;
+	}
+	cs2method_10467(0, 96797383);
+	script_6739(9);
+	script_8841(1, 1);
+	return;
+}

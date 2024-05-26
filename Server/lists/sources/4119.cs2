@@ -1,0 +1,40 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4119(int a0,int a1,int a2,int a3,int a4) {
+	if (a4 == -1 || a0 == -1) {
+		return;
+	}
+	cs2method_20348(load function<4119>, new WidgetPointer(-32768,3), new WidgetPointer(a2), new WidgetPointer(a3), new WidgetPointer(a1), a0, 3814, 1, "IIIIJY", new WidgetPointer(a4));
+	int v3 = script_3816(a0);
+	int v2 = idx22mapAttribute(v3, 4363);
+	int v1 = idx22mapAttribute(v3, 4364);
+	int v0 = idx22mapAttribute(v3, 4365);
+	if (a2 != -1) {
+		cs2method_10758(v2, a2);
+		cs2method_10759(idx22mapAttribute(v3, 4366), a2);
+	}
+	if (a3 != -1) {
+		cs2method_10758(v1, a3);
+		cs2method_10759(idx22mapAttribute(v3, 4366), a3);
+	}
+	if (a1 != -1) {
+		cs2method_10758(v0, a1);
+		cs2method_10759(idx22mapAttribute(v3, 4366), a1);
+		if (idx22mapAttribute(v3, 4366) == 1) {
+			cs2method_10112(-6, -1, 2, 2, a1);
+		} else {
+			cs2method_10112(-6, -1, 0, 2, a1);
+		}
+	}
+	return;
+}

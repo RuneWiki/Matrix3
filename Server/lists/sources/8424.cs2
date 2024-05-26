@@ -1,0 +1,28 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8424() {
+	switch (client_configs['cfg3894'].bitcfg20714) {
+		case 0:
+			cs2method_10026(16187401, "Explorer Jack's House");
+			break;
+		case 1:
+			cs2method_10026(16187401, "Hank's Fishing Store");
+			break;
+		case 2:
+			cs2method_10026(16187401, "General Store");
+			break;
+		case 3:
+			cs2method_10026(16187401, "All 3 buildings complete!");
+	}
+	return;
+}

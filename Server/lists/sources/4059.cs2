@@ -1,0 +1,26 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4059(int a0,int a1) {
+	int v0 = 5;
+	if (cs2method_10152(a0) >= 0) {
+		cs2method_10112(0, 0, 1, 0, a0);
+		cs2_configs['cfg1432'] = 0;
+		cs2method_11127(1, 69337090, "Select");
+		cs2method_11127(1, 69337091, "Select");
+		cs2method_20162(new function<none>() {
+		}, "", new WidgetPointer(a1));
+	} else {
+		cs2method_10112(0, cs2method_10060(cs2method_10152(a0), v0), 1, 0, a0);
+	}
+	return;
+}

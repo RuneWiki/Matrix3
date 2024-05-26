@@ -1,0 +1,26 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8510(int a0,int a1,int a2) {
+	object v2 = "";
+	int v5 = cs2_configs['cfg1028'];
+	int v4 = 0;
+	int v6 = a1;
+	int v3 = a0;
+	object v7 = script_8521(a2);
+	script_802_struct(1,1,0) v0 = script_802(v5, v7, v4, v6, v3);
+	object v8 = v0.objectpart_0;
+	cs2_configs['cfg1028'] = v0.intpart_0;
+	object v1 = v8;
+	script_8522(v1, a2);
+	return;
+}

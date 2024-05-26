@@ -1,0 +1,80 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_490() {
+	int v2 = script_488(client_configs['cfg1659'].bitcfg5415);
+	int v3 = script_488(client_configs['cfg1659'].bitcfg5416);
+	int v0 = script_488(client_configs['cfg1659'].bitcfg5417);
+	int v5 = script_488(client_configs['cfg1659'].bitcfg5418);
+	int v4 = script_489(client_configs['cfg1659'].bitcfg5415);
+	int v6 = script_489(client_configs['cfg1659'].bitcfg5416);
+	int v7 = script_489(client_configs['cfg1659'].bitcfg5417);
+	int v1 = script_489(client_configs['cfg1659'].bitcfg5418);
+	cs2method_10520(16750623, 66519098);
+	cs2method_10520(16750623, 66519100);
+	cs2method_10520(16750623, 66519102);
+	cs2method_10520(16750623, 66519104);
+	cs2method_10520(16750623, 66519108);
+	cs2method_10520(16750623, 66519110);
+	cs2method_10520(16750623, 66519112);
+	cs2method_10520(16750623, 66519114);
+	cs2method_10520(16750623, 66519106);
+	if (v4 != -1) {
+		cs2method_10520(5787714, v4);
+	}
+	if (v6 != -1) {
+		cs2method_10520(5787714, v6);
+	}
+	if (v7 != -1) {
+		cs2method_10520(5787714, v7);
+	}
+	if (v1 != -1) {
+		cs2method_10520(5787714, v1);
+	}
+	if (v2 == -1) {
+		cs2method_10467(1, 66519136);
+		cs2method_10467(0, 66519137);
+	} else {
+		cs2method_10467(0, 66519136);
+		cs2method_10467(1, 66519137);
+		cs2method_10026(66519140, idx22mapAttribute(v2, 1150));
+		cs2method_10758(idx22mapAttribute(v2, 1153), 66519139);
+	}
+	if (v3 == -1) {
+		cs2method_10467(1, 66519130);
+		cs2method_10467(0, 66519133);
+	} else {
+		cs2method_10467(0, 66519130);
+		cs2method_10467(1, 66519133);
+		cs2method_10026(66519132, idx22mapAttribute(v3, 1150));
+		cs2method_10758(idx22mapAttribute(v3, 1153), 66519131);
+	}
+	if (v0 == -1) {
+		cs2method_10467(1, 66519124);
+		cs2method_10467(0, 66519127);
+	} else {
+		cs2method_10467(0, 66519124);
+		cs2method_10467(1, 66519127);
+		cs2method_10026(66519126, idx22mapAttribute(v0, 1150));
+		cs2method_10758(idx22mapAttribute(v0, 1153), 66519125);
+	}
+	if (v5 == -1) {
+		cs2method_10467(1, 66519118);
+		cs2method_10467(0, 66519121);
+	} else {
+		cs2method_10467(0, 66519118);
+		cs2method_10467(1, 66519121);
+		cs2method_10026(66519120, idx22mapAttribute(v5, 1150));
+		cs2method_10758(idx22mapAttribute(v5, 1153), 66519119);
+	}
+	return;
+}

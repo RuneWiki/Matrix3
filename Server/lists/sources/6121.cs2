@@ -1,0 +1,46 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6121(int a0) {
+	object v0;
+	object v2 = "";
+	switch (a0) {
+		case 0:
+			v0 = "Kill them all!";
+			break;
+		case 1:
+			v0 = "Kill the enemies until reinforcements stop coming!";
+			break;
+		case 2:
+			v0 = "Everything is dead! Marmaros has stopped fighting too.";
+			break;
+		case 3:
+			v0 = "Kill that boss!";
+			break;
+		case 4:
+			v0 = "The boss has legged it with your sword - get him!";
+			break;
+		case 5:
+			v0 = "Kill more enemies than Marmaros to be the best brother!";
+			break;
+		default:
+			v0 = "Unexpected value " + (string)cs2method_10379(a0) + ".";
+	}
+	if (cs2method_10846(v0, cs2method_10744(40697890)) == 0) {
+		return;
+	}
+	int v1 = cs2method_10939(494, v0);
+	cs2method_10283(v1, 32, 0, 0, 40697890);
+	cs2method_10283(cs2method_10060(v1, 64), 28, 0, 0, 40697867);
+	cs2method_10026(40697890, v0);
+	return;
+}

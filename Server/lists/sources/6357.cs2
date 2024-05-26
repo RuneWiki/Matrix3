@@ -1,0 +1,46 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_6357(int a0) {
+	if (a0 < 0 || a0 >= 13) {
+		return -1;
+	}
+	switch (a0) {
+		case 0:
+			return 96797092;
+		case 1:
+			return 96797114;
+		case 2:
+			return 96797136;
+		case 3:
+			return 96797158;
+		case 4:
+			return 96797180;
+		case 5:
+			return 96797202;
+		case 6:
+			return 96797224;
+		case 7:
+			return 96797246;
+		case 8:
+			return 96797268;
+		case 9:
+			return 96797290;
+		case 10:
+			return 96797312;
+		case 11:
+			return 96797334;
+		case 12:
+			return 96797356;
+	}
+	return -1;
+}

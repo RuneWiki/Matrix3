@@ -1,0 +1,27 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3692(int a0) {
+	cs2method_10467(0, 25624741);
+	cs2method_10026(25624780, "0");
+	cs2method_10026(25624778, "0");
+	int v0 = 5000000;
+	if (client_configs['cfg2515'].bitcfg12425 >= 30) {
+		v0 = 7500000;
+	}
+	if (a0 == 0) {
+		cs2method_10026(25624576, "Specify the value to withdraw below." + "<br>" + "Current coffer: " + (string)script_8003(client_configs['cfg2239'].bitcfg10059) + " / " + (string)script_8003(v0));
+	} else {
+		cs2method_10026(25624576, "Specify the value to deposit below." + "<br>" + "Current coffer: " + (string)script_8003(client_configs['cfg2239'].bitcfg10059) + " / " + (string)script_8003(v0));
+	}
+	return;
+}

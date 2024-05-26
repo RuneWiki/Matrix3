@@ -1,0 +1,80 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9452(int a0) {
+	int v8 = -1;
+	int v3 = -1;
+	int v2 = -1;
+	int v5 = -1;
+	int v1 = -1;
+	int v10 = -1;
+	int v9 = -1;
+	int v7 = -1;
+	int v4 = -1;
+	int v0 = 0;
+	int v6 = 0;
+	switch (a0) {
+		case 2:
+			v8 = 48955415;
+			v3 = 48955473;
+			v2 = 48955485;
+			v5 = 48955497;
+			v1 = 48955612;
+			v10 = 48955611;
+			v7 = 48955404;
+			v0 = client_configs['cfg3953'].bitcfg21083;
+			v6 = cs2_configs['cfg3868'];
+			v4 = 48955466;
+			break;
+		case 0:
+			v8 = 48955413;
+			v3 = 48955515;
+			v2 = 48955527;
+			v5 = 48955539;
+			v1 = 48955608;
+			v10 = 48955607;
+			v7 = 48955406;
+			v0 = client_configs['cfg3953'].bitcfg21084;
+			v6 = cs2_configs['cfg3869'];
+			v4 = 48955508;
+			break;
+		case 1:
+			v8 = 48955407;
+			v3 = 48955559;
+			v2 = 48955571;
+			v5 = 48955583;
+			v1 = 48955412;
+			v10 = 48955411;
+			v7 = 48955405;
+			v0 = client_configs['cfg3953'].bitcfg21085;
+			v6 = cs2_configs['cfg3870'];
+			v4 = 48955552;
+			break;
+		case 3:
+			v8 = 48955417;
+			v3 = 48955431;
+			v2 = 48955443;
+			v5 = 48955455;
+			v1 = 48955616;
+			v10 = 48955615;
+			v7 = 48955403;
+			v0 = client_configs['cfg3953'].bitcfg21086;
+			v6 = cs2_configs['cfg3871'];
+			v4 = 48955424;
+	}
+	cs2method_10467(0, v8);
+	cs2method_10467(1, v4);
+	script_9453(v7);
+	script_9463(v3, v5, v2, v0);
+	script_9462(v1, v10, a0, v6);
+	return;
+}

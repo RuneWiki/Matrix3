@@ -1,0 +1,22 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4418() {
+	object v0 = cs2method_10765(cs2method_10744(72548444));
+	if (cs2method_10563(v0) == 0) {
+		cs2method_10810("Attempting to add " + (string)v0 + " to your Friends List.");
+		cs2method_11133(v0);
+	} else {
+		cs2method_10810("You've already added " + (string)v0 + " to your friends list.");
+	}
+	return;
+}

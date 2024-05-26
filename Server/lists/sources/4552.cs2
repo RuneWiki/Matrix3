@@ -1,0 +1,78 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4552(int a0) {
+	int v33;
+	int v32 = -1;
+	int v21 = -1;
+	int v7 = -1;
+	int v10 = -1;
+	int v26 = -1;
+	int v17 = -1;
+	int v18 = -1;
+	int v0 = -1;
+	int v3 = -1;
+	int v24 = -1;
+	int v36 = -1;
+	int v19 = -1;
+	int v20 = -1;
+	int v28 = -1;
+	int v12 = -1;
+	int v8 = a0;
+	script_7960_struct(15,0,0) v35 = script_7960(v8);
+	int v5 = v35.intpart_14;
+	int v29 = v35.intpart_13;
+	int v1 = v35.intpart_12;
+	int v30 = v35.intpart_11;
+	int v11 = v35.intpart_10;
+	int v22 = v35.intpart_9;
+	int v31 = v35.intpart_8;
+	int v14 = v35.intpart_7;
+	int v25 = v35.intpart_6;
+	int v16 = v35.intpart_5;
+	int v15 = v35.intpart_4;
+	int v34 = v35.intpart_3;
+	int v23 = v35.intpart_2;
+	int v13 = v35.intpart_1;
+	int v27 = v35.intpart_0;
+	cs2method_10026(v14, "Friends List" + "<br>" + "RuneScape " + (string)cs2method_10379(cs2method_10966()));
+	cs2method_20073(new function<script_124>(int a0) {
+		script_125(cs2_configs['cfg1036'], a0);
+		return;
+	}, new WidgetPointer(a0), "I", new WidgetPointer(v23));
+	cs2method_11130(0, 0, v27);
+	cs2method_10251(0, 0, v13);
+	script_31(v13, v27, 5666, 5663, 5664, 5665, 5686, 5685);
+	cs2method_10273(v25);
+	int v2 = 0;
+	int v9 = 0;
+	int v4 = 200;
+	if (cs2method_10210() == 1) {
+		v33 = 400;
+	} else {
+		v33 = 200;
+	}
+	while (v9 < v33) {
+		int v6 = cs2method_10060(cs2method_10051(v9, 15), 5);
+		if (cs2method_10038(v9, 2) != 0) {
+			cs2method_10606(v25, 3, cs2method_10163(v25));
+			cs2method_10013(16384, 15, 2, 0);
+			cs2method_10063(0, v6, 0, 0);
+			cs2method_10811(2302496);
+			cs2method_10238(1);
+			cs2method_10002(128);
+		}
+		v9 = cs2method_10060(v9, 1);
+	}
+	script_125(cs2_configs['cfg1036'], a0);
+	return;
+}

@@ -1,0 +1,37 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1577(int a0,int a1) {
+	object v0 = cs2_configs['cfg2540'];
+	int v1 = cs2method_10236(a0);
+	if (cs2method_10509(v1, 497, v0) > v1) {
+		while (cs2method_10509(2147483647, 497, (string)v0 + "...") > v1) {
+			v0 = cs2method_11025(0, cs2method_10461(cs2method_10265(v0), 1), v0);
+		}
+		v0 = (string)v0 + "...";
+		cs2method_21121(new function<script_7781>(object a0,int a1,int a2,int a3,int a4) {
+			script_7788(a0, a3, -1, a2, a1, a4);
+			return;
+		}, new WidgetPointer(-32768,3), new WidgetPointer(a1), cs2_configs['cfg2540'], 25, 5000, "IIsii", new WidgetPointer(a0));
+		cs2method_20750(new function<script_40>(int a0) {
+			script_41(a0);
+			return;
+		}, new WidgetPointer(a1), "I", new WidgetPointer(a0));
+	} else {
+		cs2method_21121(new function<none>() {
+		}, "", new WidgetPointer(a0));
+		cs2method_20750(new function<none>() {
+		}, "", new WidgetPointer(a0));
+	}
+	cs2method_10026(a0, v0);
+	return;
+}

@@ -1,0 +1,34 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2176(int a0) {
+	object v0 = "";
+	switch (a0) {
+		case 12451848:
+		case 12451845:
+			if (cs2_configs['cfg692'] == 1) {
+				v0 = "Click to hide the quests you cannot start." + "<br>" + "<br>" + "Some recommended stats and abilities (such as combat levels) are left for you to decide.";
+			} else {
+				v0 = "Click to show all quests regardless of requirements.";
+			}
+			break;
+		case 12451849:
+		case 12451852:
+			if (cs2_configs['cfg692'] == 1) {
+				v0 = "Click to hide the quests you have completed.";
+			} else {
+				v0 = "Click to show all quests regardless of completion status.";
+			}
+	}
+	script_8800(12451864, -1, v0);
+	return;
+}

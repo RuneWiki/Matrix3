@@ -1,0 +1,49 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4554(int a0) {
+	cs2method_10283(cs2method_10461(cs2method_10191(38600749), cs2method_10191(38600747)), 0, 0, 1, 38600759);
+	cs2method_10283(cs2method_10461(cs2method_10461(cs2method_10236(38600755), cs2method_10236(38600759)), 2), 0, 0, 1, 38600761);
+	cs2method_11130(0, 0, 38600755);
+	cs2method_10251(0, 0, 38600755);
+	script_31(38600756, 38600755, 792, 789, 790, 791, 773, 788);
+	cs2method_11130(0, 0, 38600727);
+	cs2method_10251(0, 0, 38600727);
+	script_31(38600728, 38600727, 792, 789, 790, 791, 773, 788);
+	cs2method_20203(new function<script_4558>(int a0,int a1,int a2,int a3,int a4,int a5) {
+		script_4559(a1, a2, a4, a5, a0, a3);
+		return;
+	}, new WidgetPointer(589,55), new WidgetPointer(589,56), new WidgetPointer(589,57), new WidgetPointer(589,53), new WidgetPointer(589,51), new WidgetPointer(589,52), "IIIIII", new WidgetPointer(589,51));
+	cs2method_20073(new function<script_4558>(int a0,int a1,int a2,int a3,int a4,int a5) {
+		script_4559(a5, a3, a1, a4, a0, a2);
+		return;
+	}, new WidgetPointer(589,55), new WidgetPointer(589,56), new WidgetPointer(589,57), new WidgetPointer(589,53), new WidgetPointer(589,51), new WidgetPointer(589,52), "IIIIII", new WidgetPointer(589,51));
+	script_4559(38600759, 38600760, 38600761, 38600757, 38600755, 38600756);
+	if (cs2method_10588() > 0) {
+		cs2method_10026(38600745, "Leave chat channel");
+		cs2method_11127(1, 38600743, "Leave chat channel");
+	} else {
+		cs2method_10026(38600745, "Join chat channel");
+		cs2method_11127(1, 38600743, "Join chat channel");
+	}
+	cs2_configs['cfg2480'] = "";
+	script_3024(38600735);
+	cs2_configs['cfg1507'] = cs2method_10265(cs2_configs['cfg2480']);
+	cs2method_20390(new function<script_4570>(int a0,int a1,int a2) {
+		cs2_configs['cfg1507'] = script_1401(a2, 494, cs2method_10191(a1), cs2_configs['cfg2480']);
+		script_4571(a1, a0, cs2_configs['cfg2480']);
+		return;
+	}, -2147483647, new WidgetPointer(589,27), new WidgetPointer(589,28), "iII", new WidgetPointer(589,27));
+	script_4571(38600731, 38600732, cs2_configs['cfg2480']);
+	cs2method_10467(1, 38600732);
+	return;
+}

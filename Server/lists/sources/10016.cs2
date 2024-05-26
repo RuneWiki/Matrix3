@@ -1,0 +1,59 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_10016(int a0) {
+	int v5 = cs2method_10094(a0);
+	int v8 = -1;
+	object v2 = "null";
+	object v3 = "null";
+	int v4 = -1;
+	int v7 = -1;
+	if (v5 != -1 || cs2method_10846(v3, "null") != 0) {
+		object v0 = worldMapLabelDefsAttribute(a0, 4209);
+		int v1 = idx17mapData('y', 'J', 8636, v5);
+		if (v1 != -1) {
+			v2 = idx22mapAttribute(v1, 596);
+		}
+		switch (v5) {
+			case 1217:
+				if (cs2method_10846(v0, "null") != 0) {
+					v2 = (string)v2 + "<br>" + (string)v0;
+				} else {
+					if (worldMapLabelDefsAttribute(a0, 4210) != -1) {
+						v2 = (string)v2 + "<br>" + "Level " + (string)cs2method_10379(worldMapLabelDefsAttribute(a0, 4210)) + " Agility";
+					}
+				}
+				break;
+			case 948:
+				v2 = "Map link";
+				break;
+			case 1157:
+				int v9 = worldMapLabelDefsAttribute(a0, 4207);
+				if (v9 != -1) {
+					int v6 = idx17mapData('i', 'J', 2252, v9);
+					if (v6 != -1) {
+						script_10009(v6, 93192226, 0);
+						return;
+					}
+				}
+				break;
+			default:
+				if (cs2method_10846(v0, "null") != 0) {
+					v2 = v0;
+				}
+		}
+		if (cs2method_10846(v2, "null") != 0 && cs2method_10846(v2, "") != 0) {
+			script_8800(93192226, 0, v2);
+		}
+	}
+	return;
+}

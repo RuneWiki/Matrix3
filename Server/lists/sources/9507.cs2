@@ -1,0 +1,23 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+string script_9507(int a0) {
+	if (a0 <= 1) {
+		return "1 minute";
+	}
+	int v1 = cs2method_10968(a0, 60);
+	int v0 = cs2method_10038(a0, 60);
+	if (v1 > 0) {
+		return (string)cs2method_10379(v1) + " " + (string)script_4583("hour", v1, "hours") + " and " + (string)cs2method_10379(v0) + " " + (string)script_4583("minute", v0, "minutes");
+	}
+	return (string)cs2method_10379(v0) + " minutes";
+}

@@ -1,0 +1,25 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+string script_276(int a0) {
+	switch (a0) {
+		case 1:
+			return "Lake";
+		case 2:
+			return "River";
+		case 3:
+			return "Beach";
+		case 4:
+			return "Docks";
+	}
+	return "Waterfront";
+}

@@ -1,0 +1,88 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_4920() {
+	object v5;
+	flow_0:
+		int v1 = -1;
+		int v0 = -1;
+		int v3 = -1;
+		switch (client_configs['cfg1978'].bitcfg6679) {
+			case 0:
+				v1 = 82510013;
+				v0 = 82510007;
+				v3 = 82509871;
+				break;
+			case 1:
+			case 3:
+			case 4:
+				v1 = 82641271;
+				v0 = 82641265;
+				v3 = 82641037;
+				break;
+			case 2:
+			case 5:
+				v1 = 82444913;
+				v0 = 82444907;
+				v3 = 82444425;
+				break;
+			case 6:
+				v1 = 82575680;
+				v0 = 82575674;
+				v3 = 82575462;
+		}
+		object v2 = "";
+		IF (cs2_configs['cfg1557'] == 0 && cs2_configs['cfg1558'] < 6 && cs2_configs['cfg1558'] == 0 && cs2_configs['cfg1559'] < 20) 
+			GOTO	flow_10
+		GOTO	flow_11
+	flow_10:
+		GOTO	flow_11
+	flow_11:
+		if (cs2_configs['cfg1557'] == 0 && cs2_configs['cfg1558'] == 0 && cs2_configs['cfg1559'] == 0) {
+			cs2method_10026(v0, "Due!");
+			return;
+		}
+		if (cs2_configs['cfg1557'] > 0) {
+			v2 = cs2method_10427(v2, (string)cs2method_10379(cs2_configs['cfg1557']) + "d ");
+		}
+		if (cs2_configs['cfg1558'] > 0) {
+			v2 = cs2method_10427(v2, (string)cs2method_10379(cs2_configs['cfg1558']) + "h ");
+		}
+		if (cs2_configs['cfg1559'] > 0) {
+			v2 = cs2method_10427(v2, (string)cs2method_10379(cs2_configs['cfg1559']) + "m");
+		}
+		cs2method_10026(v0, v2);
+		object v4 = "";
+		if (cs2method_10172() == 1) {
+			cs2method_10026(v1, cs2method_10379(clan_chat_configs['cfg2136']));
+			if (cs2method_10461(clan_chat_configs['cfg2575'].bitcfg6507, clan_chat_configs['cfg2628'].bitcfg6556) == 7) {
+				cs2method_10520(2672721, v1);
+				v5 = "Number of clan members who have visited your citadel.";
+			} else if (script_4786(cs2method_10461(clan_chat_configs['cfg2575'].bitcfg6507, clan_chat_configs['cfg2628'].bitcfg6556)) == 1) {
+				cs2method_10520(2672721, v1);
+				v5 = "Sufficient full members have visited to allow upgrades.";
+			} else {
+				cs2method_10520(12857645, v1);
+				v5 = "More full members must visit your citadel to allow upgrades.";
+			}
+			cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,object a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+				script_7769(a11, a10, a0, a8, a2, a9, a1, a3, a5, a7, a6, a4, a12);
+				return;
+			}, new WidgetPointer(1259,57), new WidgetPointer(-32768,3), -1, (string)v5, 120, 17813, 17813, 16777215, 13, 4, 2, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(v3));
+			cs2method_20750(new function<script_40>(int a0) {
+				script_41(a0);
+				return;
+			}, new WidgetPointer(1259,57), "I", new WidgetPointer(v3));
+		}
+		return;
+}

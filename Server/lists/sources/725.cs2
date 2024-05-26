@@ -1,0 +1,48 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_725(int a0) {
+	cs2_configs['cfg199'] = -1;
+	int v0 = idx22mapAttribute(idx17mapData('i', 'J', 7716, 1007), 3505);
+	cs2method_20243(new function<script_726>(int a0,int a1) {
+		if (cs2method_10908(a1) == 0 || cs2_configs['cfg199'] == -1) {
+			cs2method_10273(a0);
+			cs2_configs['cfg199'] = -1;
+			cs2method_20162(new function<none>() {
+			}, "", new WidgetPointer(a0));
+			cs2method_20553(new function<none>() {
+			}, "", new WidgetPointer(a0));
+			return;
+		}
+		cs2method_20162(new function<script_727>(int a0,int a1) {
+			if (cs2method_10908(a1) == 1 && cs2_configs['cfg199'] != -1) {
+				return;
+			}
+			cs2method_10273(a0);
+			cs2_configs['cfg199'] = -1;
+			cs2method_20162(new function<none>() {
+			}, "", new WidgetPointer(a0));
+			cs2method_20553(new function<none>() {
+			}, "", new WidgetPointer(a0));
+			return;
+		}, new WidgetPointer(a0), new WidgetPointer(a1), "II", new WidgetPointer(a0));
+		cs2method_20553(load function<726>, new WidgetPointer(a0), new WidgetPointer(a1), "II", new WidgetPointer(a0));
+		cs2method_10606(a0, 3, 0);
+		cs2method_10063(0, 0, 3, 3);
+		cs2method_10013(16384, 16384, 2, 2);
+		cs2method_10811(cs2_configs['cfg199']);
+		cs2method_10002(cs2_configs['cfg213']);
+		cs2method_10238(1);
+		return;
+	}, new WidgetPointer(a0), new WidgetPointer(v0), 199, 213, 2, "IIY", new WidgetPointer(a0));
+	return;
+}

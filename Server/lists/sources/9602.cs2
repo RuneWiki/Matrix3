@@ -1,0 +1,110 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9602(int a0,int a1,int a2) {
+	object v13;
+	object v0;
+	object v16;
+	object v5;
+	object v17;
+	int v8 = cs2method_10461(a2, cs2method_11115());
+	object v11 = "null";
+	int v12 = 0;
+	int v18 = 0;
+	int v7 = 0;
+	int v4 = 0;
+	int v9 = 0;
+	int v10 = 0;
+	object v19 = "null";
+	object v1 = "null";
+	object v2 = "null";
+	object v14 = "null";
+	object v15 = "null";
+	if (v8 <= 0) {
+		v16 = "";
+		switch (a0) {
+			case 0:
+				cs2method_10467(1, 67436594);
+				cs2method_10026(67436593, "Closed");
+				break;
+			case 1:
+				cs2method_10467(1, 67436601);
+				cs2method_10026(67436600, "Closed");
+				break;
+			case 2:
+				cs2method_10467(1, 67436610);
+				cs2method_10026(67436607, "Closed");
+		}
+		cs2method_10467(1, 67436580);
+		cs2method_10467(1, 67436579);
+	} else {
+		int v20 = cs2method_10968(v8, 10080);
+		int v22 = cs2method_10051(v20, 7);
+		int v21 = cs2method_10461(cs2method_10968(v8, 1440), v22);
+		int v23 = cs2method_10051(cs2method_10060(v22, v21), 24);
+		int v6 = cs2method_10461(cs2method_10968(v8, 60), v23);
+		int v24 = cs2method_10051(cs2method_10060(v23, v6), 60);
+		int v3 = cs2method_10461(v8, v24);
+		if (v20 == 1) {
+			v17 = "1 week";
+		} else {
+			v17 = (string)cs2method_10379(v20) + " weeks";
+		}
+		if (v21 == 1) {
+			v13 = "1 day";
+		} else {
+			v13 = (string)cs2method_10379(v21) + " days";
+		}
+		if (v6 == 1) {
+			v0 = "1 hour";
+		} else {
+			v0 = (string)cs2method_10379(v6) + " hours";
+		}
+		if (v3 == 1) {
+			v5 = "1 minute";
+		} else {
+			v5 = (string)cs2method_10379(v3) + " minutes";
+		}
+		if (v20 > 0) {
+			v16 = (string)v17 + ", " + (string)v13;
+		} else if (v21 > 0) {
+			v16 = (string)v13 + ", " + (string)v0;
+		} else if (v6 > 0) {
+			v16 = (string)v0 + ", " + (string)v5;
+		} else if (v3 == 1) {
+			v16 = "1 minute";
+		} else {
+			v16 = v5;
+		}
+	}
+	switch (a0) {
+		case 0:
+			cs2method_10026(67436594, v16);
+			break;
+		case 1:
+			cs2method_10026(67436601, v16);
+			break;
+		case 2:
+			cs2method_10026(67436610, v16);
+	}
+	if (client_configs['cfg4040'].bitcfg21343 == a0) {
+		cs2method_10026(67436580, v16);
+		cs2method_10283(cs2method_10060(42, cs2method_10509(250, 17814, v16)), 40, 0, 0, 67436582);
+	}
+	if (v8 == 0) {
+		cs2method_20162(new function<none>() {
+		}, "", new WidgetPointer(a1));
+	} else {
+		cs2method_20162(load function<9602>, new WidgetPointer(a1), a0, a2, "Iii", new WidgetPointer(a1));
+	}
+	return;
+}

@@ -1,0 +1,140 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_9179(int a0,int a1,int a2) {
+	flow_0:
+		int v2 = 0;
+		int v1 = 0;
+		IF (a2 == 1) 
+			GOTO	flow_1
+		GOTO	flow_2
+	flow_1:
+		IF (script_9178(idx22mapAttribute(a1, 1268)) == 0) 
+			GOTO	flow_4
+	flow_2:
+		IF (idx22mapAttribute(a1, 3812) == 1 && script_3224(idx22mapAttribute(a1, 1268)) == 0) 
+			GOTO	flow_4
+		GOTO	flow_5
+	flow_4:
+		cs2method_10606(88080410, 5, a0);
+		cs2method_10269(1);
+		cs2method_10606(88080411, 4, a0);
+		cs2method_10269(1);
+		GOTO	flow_23
+	flow_5:
+		int v3 = idx22mapAttribute(a1, 1268);
+		script_9132_struct(2,0,0) v4 = script_9132(v3);
+		int v0 = v4.intpart_1;
+		v2 = v4.intpart_0;
+		cs2method_10606(88080410, 5, a0);
+		switch (v2) {
+			case 0:
+				cs2method_10310(21101);
+				break;
+			case 1:
+				cs2method_10310(21101);
+				break;
+			case 2:
+			case 5:
+				cs2method_10310(21103);
+				break;
+			case 3:
+			case 6:
+			case 7:
+				cs2method_10310(21104);
+				break;
+			case 4:
+				cs2method_10310(21101);
+				break;
+			case -1:
+				cs2method_10310(21102);
+		}
+		cs2method_10013(40, 40, 0, 0);
+		cs2method_20884(new function<script_8805>() {
+			script_8808();
+			return;
+		}, "");
+		cs2method_20353(new function<script_9134>(int a0,int a1) {
+			script_9135(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), -2147483643, "Ii");
+		cs2method_10606(88080411, 4, a0);
+		cs2method_10692(17813);
+		switch (v2) {
+			case 0:
+				cs2method_10811(16763656);
+				cs2method_10797("Play");
+				break;
+			case 1:
+				cs2method_10811(16763656);
+				cs2method_10797(script_9171(v0));
+				break;
+			case 2:
+			case 5:
+				cs2method_10811(16777215);
+				cs2method_10797(script_9171(v0));
+				break;
+			case 3:
+			case 7:
+				cs2method_10811(8223867);
+				cs2method_10797(script_9171(v0));
+				break;
+			case 6:
+				cs2method_10811(8223867);
+				cs2method_10797("--:--");
+				break;
+			case 4:
+				cs2method_10811(16763656);
+				cs2method_10797(script_9171(v0));
+				break;
+			case -1:
+				cs2method_10811(0);
+				cs2method_10797("Locked");
+		}
+		cs2method_11105(1, 1, 13);
+		cs2method_10013(60, 43, 0, 0);
+		cs2method_20884(new function<script_8805>() {
+			script_8808();
+			return;
+		}, "");
+		cs2method_20353(new function<script_9134>(int a0,int a1) {
+			script_9135(a1, a0);
+			return;
+		}, new WidgetPointer(-32768,3), -2147483643, "Ii");
+	flow_23:
+		if (cs2method_11038(88080409, a0) == 1) {
+			switch (v2) {
+				case 0:
+					cs2method_10811(16763656);
+					break;
+				case 1:
+					cs2method_10811(16763656);
+					break;
+				case 2:
+				case 5:
+					cs2method_10811(16777215);
+					break;
+				case 3:
+				case 6:
+				case 7:
+					cs2method_10811(8223867);
+					break;
+				case 4:
+					cs2method_10811(16763656);
+					break;
+				case -1:
+					cs2method_10811(0);
+			}
+		}
+		return;
+}

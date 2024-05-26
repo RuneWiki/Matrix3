@@ -1,0 +1,99 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1167() {
+	int v6;
+	int v11 = -1;
+	switch (cs2_configs['cfg1001']) {
+		case 1:
+			v6 = 738;
+			break;
+		case 2:
+			v6 = 739;
+			break;
+		case 3:
+			v6 = 740;
+			break;
+		case 4:
+			v6 = 741;
+			break;
+		case 5:
+			v6 = 742;
+			break;
+		default:
+			return;
+	}
+	script_9554(57999394, idx17mapData('i', 's', 205, cs2_configs['cfg1001']), 57999396, 57999395, 21218);
+	int v8 = 0;
+	int v12 = 0;
+	int v14 = 12;
+	int v4 = 10;
+	int v3 = 25;
+	int v13 = 10;
+	int v15 = cs2method_10924(v6);
+	int v10 = 5;
+	int v0 = -1;
+	int v7 = 80;
+	int v5 = -1;
+	int v2 = 0;
+	if (cs2_configs['cfg1001'] == 5) {
+		v10 = 4;
+		v7 = 96;
+		v3 = 32;
+		v14 = 14;
+	}
+	cs2method_10273(57999360);
+	while (v8 < v15) {
+		int v1 = idx17mapData('i', 'o', v6, v8);
+		int v9 = (int)idx17mapData('i', 'I', 737, v8);
+		if (v1 != -1 && v9 != -1) {
+			cs2method_10467(0, v9);
+			cs2method_10283(v7, v7, 0, 0, v9);
+			cs2method_10112(cs2method_10060(v14, cs2method_10051(cs2method_10060(v7, v14), cs2method_10038(v8, v10))), cs2method_10060(v4, cs2method_10051(cs2method_10968(v8, v10), cs2method_10060(v7, v4))), 0, 0, v9);
+			cs2method_10606(57999360, 5, v12);
+			cs2method_10013(36, 32, 0, 0);
+			cs2method_10543(idx17mapData('i', 'o', v6, v8), -1);
+			cs2method_10063(cs2method_10060(v3, cs2method_10191(v9)), cs2method_10060(v13, cs2method_10152(v9)), 0, 0);
+			cs2method_10057(1, "Examine");
+			cs2method_10200("<col=ff9040>" + (string)cs2method_10018(v1));
+			cs2method_10606(57999360, 4, cs2method_10060(v12, 1));
+			cs2method_10013(cs2method_10236(v9), cs2method_10461(cs2method_10236(v9), 5), 0, 0);
+			cs2method_10692(17813);
+			cs2method_10811(13408512);
+			cs2method_10173(1);
+			cs2method_11105(1, 2, 0);
+			if (cs2method_10846(cs2method_10447(), "") == 0) {
+				cs2method_10797("Getting data...");
+			}
+			cs2method_10063(cs2method_10191(v9), cs2method_10152(v9), 0, 0);
+			v12 = cs2method_10060(v12, 2);
+			v2 = cs2method_10060(cs2method_10406(), cs2method_10664());
+		}
+		v8 = cs2method_10060(v8, 1);
+	}
+	while (v8 < cs2method_10924(737)) {
+		cs2method_10467(1, (int)idx17mapData('i', 'I', 737, v8));
+		v8 = cs2method_10060(v8, 1);
+	}
+	if (v2 < cs2method_10823(57999360)) {
+		cs2method_10251(0, 0, 57999360);
+		cs2method_11130(0, 0, 57999360);
+		cs2method_10273(57999361);
+		cs2method_10467(1, 57999361);
+	} else {
+		cs2method_10467(0, 57999361);
+		cs2method_10251(0, 0, 57999360);
+		cs2method_11130(cs2method_10236(57999360), cs2method_10060(v2, v3), 57999360);
+		script_31(57999361, 57999360, 792, 789, 790, 791, 773, 788);
+	}
+	return;
+}

@@ -1,0 +1,90 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2561() {
+	int v2 = 0;
+	int v1 = 0;
+	int v4 = 0;
+	int v0 = 0;
+	if (cs2_configs['cfg844'] == 0) {
+		cs2method_10758(1135, 56557595);
+		cs2method_10758(1134, 56557596);
+	} else {
+		cs2method_10758(1134, 56557595);
+		cs2method_10758(1135, 56557596);
+	}
+	if (cs2_configs['cfg844'] == 0) {
+		if (cs2_configs['cfg845'] == 1) {
+			cs2method_10026(56557625, "Dwarf");
+			v2 = 175;
+			v1 = 5300;
+			v4 = 60;
+		} else if (cs2_configs['cfg845'] == 2) {
+			cs2method_10026(56557625, "Goblin");
+			v2 = 175;
+			v1 = 4800;
+			v4 = 110;
+		} else {
+			if (cs2_configs['cfg845'] == 3) {
+				cs2method_10026(56557625, "Elf");
+				v2 = 225;
+				v1 = 4800;
+				v4 = 60;
+			}
+		}
+	} else {
+		if (cs2_configs['cfg844'] == 1) {
+			if (cs2_configs['cfg845'] == 1) {
+				cs2method_10026(56557625, "Dwarf");
+				v2 = 350;
+				v1 = 10100;
+				v4 = 60;
+			} else if (cs2_configs['cfg845'] == 2) {
+				cs2method_10026(56557625, "Goblin");
+				v2 = 350;
+				v1 = 9600;
+				v4 = 110;
+			} else {
+				if (cs2_configs['cfg845'] == 3) {
+					cs2method_10026(56557625, "Elf");
+					v2 = 400;
+					v1 = 9600;
+					v4 = 60;
+				}
+			}
+		}
+	}
+	int v3 = 100;
+	cs2method_10026(56557583, script_46(",", v3));
+	cs2method_10026(56557573, cs2method_10379(v2));
+	cs2method_10026(56557575, cs2method_10379(v1));
+	cs2method_10026(56557577, cs2method_10379(v4));
+	cs2method_10026(56557626, idx17mapData('i', 's', 2386, cs2_configs['cfg845']));
+	if (cs2_configs['cfg845'] == 1 && cs2_configs['cfg844'] == 0) {
+		cs2method_10336(47798, 56557602);
+	} else if (cs2_configs['cfg845'] == 2 && cs2_configs['cfg844'] == 0) {
+		cs2method_10336(47794, 56557602);
+	} else if (cs2_configs['cfg845'] == 3 && cs2_configs['cfg844'] == 0) {
+		cs2method_10336(47792, 56557602);
+	} else if (cs2_configs['cfg845'] == 1 && cs2_configs['cfg844'] == 1) {
+		cs2method_10336(47786, 56557602);
+	} else if (cs2_configs['cfg845'] == 2 && cs2_configs['cfg844'] == 1) {
+		cs2method_10336(47787, 56557602);
+	} else {
+		if (cs2_configs['cfg845'] == 3 && cs2_configs['cfg844'] == 1) {
+			cs2method_10336(47796, 56557602);
+		}
+	}
+	cs2_configs['cfg839'] = client_configs['cfg1625'].bitcfg5213;
+	cs2_configs['cfg846'] = client_configs['cfg1632'].bitcfg5243;
+	return;
+}

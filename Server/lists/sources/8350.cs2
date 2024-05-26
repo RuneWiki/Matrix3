@@ -1,0 +1,82 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_8350(int a0,int a1,int a2) {
+	int v0 = idx17mapData('i', 'J', 7716, a0);
+	int v4 = idx22mapAttribute(v0, 3509);
+	int v8 = idx22mapAttribute(v0, 3508);
+	if (v4 == -1 || idx22mapAttribute(v0, 3521) == 0) {
+		return;
+	}
+	int v5 = 0;
+	int v2 = -1;
+	int v6 = -1;
+	int v7 = -1;
+	int v1 = a0;
+	int v3 = script_8727(a1, a0);
+	globalarray_0 = new int[128];
+	while (v3 != -1) {
+		flow_3:
+			IF (a2 == 0) 
+				GOTO	flow_6
+			IF (v3 == a0) 
+				GOTO	flow_5
+			IF (script_8730(a1, v3) == 0 && globalarray_0[v3] != 1) 
+				GOTO	flow_6
+			GOTO	flow_7
+		flow_5:
+		flow_6:
+			globalarray_0[v3] = 1;
+			v1 = v3;
+			v3 = script_8727(a1, v3);
+			GOTO	flow_8
+		flow_7:
+			v3 = -1;
+		flow_8:
+	}
+	cs2method_10273(v4);
+	while (v1 != -1) {
+		flow_10:
+			IF (a2 == 0) 
+				GOTO	flow_13
+			IF (v1 == a0) 
+				GOTO	flow_12
+			IF (script_8730(a1, v1) == 0 && script_8351(v1) == 0) 
+				GOTO	flow_13
+			GOTO	flow_16
+		flow_12:
+		flow_13:
+			if (v1 == a0) {
+				v2 = v5;
+			}
+			script_8362(a0, v1, v5);
+			v1 = script_8728(a1, v1);
+			v5 = cs2method_10060(v5, 1);
+			GOTO	flow_17
+		flow_16:
+			v1 = -1;
+		flow_17:
+	}
+	if (v2 == -1) {
+		v2 = v5;
+		script_8362(a0, a0, v5);
+	}
+	script_8359(a0, v5, v2);
+	script_8370(a0, v2);
+	if (v5 > 1) {
+		script_8378(0, a0);
+	} else {
+		script_8378(1, a0);
+	}
+	return;
+}

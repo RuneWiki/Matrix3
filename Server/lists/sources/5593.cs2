@@ -1,0 +1,78 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_5593(int a0,int a1) {
+	flow_0:
+		IF (a1 == 16 || a0 == 49) 
+			GOTO	flow_1
+		GOTO	flow_2
+	flow_1:
+		cs2method_10520(14389248, 77856780);
+		cs2method_10520(14389248, 77856781);
+		cs2method_10015(77856771);
+		GOTO	flow_16
+	flow_2:
+		IF (a1 == 17) 
+			GOTO	flow_3
+		IF (a0 == 50 && cs2method_10609(77856772) == 0) 
+			GOTO	flow_4
+		GOTO	flow_5
+	flow_3:
+	flow_4:
+		cs2method_10520(14389248, 77856786);
+		cs2method_10520(14389248, 77856787);
+		cs2method_10015(77856772);
+		GOTO	flow_16
+	flow_5:
+		IF (a1 == 18) 
+			GOTO	flow_6
+		IF (a0 == 51 && cs2method_10609(77856773) == 0) 
+			GOTO	flow_7
+		GOTO	flow_8
+	flow_6:
+	flow_7:
+		cs2method_10520(14389248, 77856791);
+		cs2method_10520(14389248, 77856792);
+		cs2method_10015(77856773);
+		GOTO	flow_16
+	flow_8:
+		IF (a1 == 19) 
+			GOTO	flow_9
+		IF (a0 == 52 && cs2method_10609(77856774) == 0) 
+			GOTO	flow_10
+		GOTO	flow_11
+	flow_9:
+	flow_10:
+		cs2method_10520(14389248, 77856796);
+		cs2method_10520(14389248, 77856797);
+		cs2method_10015(77856774);
+		GOTO	flow_16
+	flow_11:
+		IF (a1 == 20) 
+			GOTO	flow_12
+		IF (a0 == 53 && cs2method_10609(77856775) == 0) 
+			GOTO	flow_13
+		GOTO	flow_14
+	flow_12:
+	flow_13:
+		cs2method_10520(14389248, 77856801);
+		cs2method_10520(14389248, 77856802);
+		cs2method_10015(77856775);
+		GOTO	flow_16
+	flow_14:
+		if (a1 == 13) {
+			script_675();
+		}
+	flow_16:
+		return;
+}

@@ -1,0 +1,205 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6580(int a0,int a1) {
+	cs2method_11070(a1, a0);
+	if (a1 != -1 && a0 > 0) {
+		cs2method_10200("<col=ff981f>" + (string)cs2method_10018(a1));
+		cs2method_10057(1, "Withdraw-1");
+		cs2method_10057(2, "Withdraw-5");
+		cs2method_10057(3, "Withdraw-10");
+		cs2method_10057(4, "Withdraw-" + (string)cs2method_10379(client_configs['cfg111']));
+		cs2method_10057(5, "Withdraw-X");
+		cs2method_10057(6, "Withdraw-All");
+		cs2method_10057(7, "Withdraw-All but one");
+		if (cs2method_10873(a1) != -1 && idx17mapData('o', '1', 3446, a1) == 0) {
+			if (cs2method_10846(itemDefsAttribute(a1, 1264), "") == 0) {
+				cs2method_10057(8, cs2method_10940(a1, 2));
+			} else {
+				cs2method_10057(8, itemDefsAttribute(a1, 1264));
+			}
+		} else {
+			cs2method_10057(8, "");
+		}
+		cs2method_10057(10, "Examine" + "<col=ff9040>");
+		cs2method_20703(new function<script_6317>(int a0,int a1,int a2) {
+			int v1 = -1;
+			int v0 = script_1468(a1);
+			int v2 = 0;
+			if (cs2method_11038(a2, a1) == 1) {
+				int v3 = cs2method_10487();
+				switch (a0) {
+					case 1:
+						v2 = cs2method_10872(1, cs2method_11089());
+						break;
+					case 2:
+						v2 = cs2method_10872(5, cs2method_11089());
+						break;
+					case 3:
+						v2 = cs2method_10872(10, cs2method_11089());
+						break;
+					case 4:
+						v2 = cs2method_10872(client_configs['cfg111'], cs2method_11089());
+						break;
+					case 6:
+						v2 = cs2method_10936(95, v3);
+						break;
+					case 8:
+						if (script_9828(1, v3) == 1) {
+							script_9214(v3, 95, a1, 49938560, a2);
+							script_9838();
+						}
+						return;
+				}
+				if (script_6505(v3, v2, a1, 93, -1, a2, 49938439) == 1) {
+					script_9838();
+				}
+			} else {
+				return;
+			}
+			return;
+		}, -2147483644, -2147483643, new WidgetPointer(-32768,3), "iiI");
+		cs2method_10564(49938442, -1);
+		cs2method_10065(5);
+		cs2method_11009(0);
+		cs2method_21150(new function<script_1454>(int a0,int a1,int a2) {
+			script_6582(95, a0, a1, a2);
+			return;
+		}, new WidgetPointer(-32768,3), -2147483643, -2147483646, "Iii");
+		cs2method_20902(new function<script_9837>(int a0,int a1,int a2,int a3) {
+			script_9848();
+			if (a1 < 0 || a1 >= cs2method_10894(95)) {
+				return;
+			}
+			int v6 = -1;
+			int v2 = -1;
+			int v1 = 2901;
+			int v0 = 2901;
+			if (cs2method_11038(a0, a1) == 1) {
+				v6 = cs2method_10487();
+				v2 = cs2method_11089();
+				v1 = itemDefsAttribute(v6, 537);
+				int v7 = itemDefsAttribute(v6, 118);
+			}
+			if (v6 == -1 || v2 <= 0) {
+				return;
+			}
+			switch (a2) {
+				case 49938647:
+					if (cs2method_11038(a0, a1) == 1 && cs2method_11038(a2, a3) == 1) {
+						script_6580(cs2method_10487(), cs2method_11089());
+						if (cs2method_11038(a2, a3) == 1) {
+							script_6580(v6, v2);
+						}
+						cs2method_10363(44040, 1, 0, 88, 512);
+						script_9834(v6, v1);
+					}
+					break;
+				case 49938704:
+					int v4 = a1;
+					int v5 = a3;
+					int v3 = a0;
+					/* 
+						mgi.tools.jagdecs2.DecompilerException: No documentation for:CALL_CS2	9840
+							at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:198)
+							at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+							at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+							at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+							at mgi.tools.jagdecs2.FlowBlocksGenerator.cast(FlowBlocksGenerator.java:546)
+							at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+							at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+							at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+							at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+							at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+							at tests.Main.main(Main.java:69)
+						
+					 */
+				case 49938439:
+					script_9839(v6, v2, a1, a0, 93, a3, a2);
+					cs2method_10670(9704, 1, 0, 90);
+					break;
+				case 49938572:
+				case 49938685:
+					script_9843(1, a1, a0);
+					script_9834(v6, v1);
+					break;
+				case 49938580:
+				case 49938686:
+					script_9843(2, a1, a0);
+					script_9834(v6, v1);
+					break;
+				case 49938687:
+				case 49938588:
+					script_9843(3, a1, a0);
+					script_9834(v6, v1);
+					break;
+				case 49938596:
+				case 49938688:
+					script_9843(4, a1, a0);
+					script_9834(v6, v1);
+					break;
+				case 49938604:
+				case 49938689:
+					script_9843(5, a1, a0);
+					script_9834(v6, v1);
+					break;
+				case 49938612:
+				case 49938690:
+					script_9843(6, a1, a0);
+					script_9834(v6, v1);
+					break;
+				case 49938691:
+				case 49938620:
+					script_9843(7, a1, a0);
+					script_9834(v6, v1);
+					break;
+				case 49938628:
+				case 49938692:
+					script_9843(8, a1, a0);
+					script_9834(v6, v1);
+					break;
+				case 49938636:
+				case 49938693:
+					script_9843(9, a1, a0);
+					script_9834(v6, v1);
+					break;
+				case 49938560:
+				case 49938733:
+					if (script_9828(1, v6) == 1) {
+						script_9214(v6, 95, a1, a2, a0);
+					}
+					break;
+				default:
+					return;
+			}
+			script_9838();
+			return;
+		}, new WidgetPointer(-32768,3), -2147483643, new WidgetPointer(-32768,6), -2147483641, "IiIi");
+		cs2method_20674(new function<script_6678>(int a0,int a1,int a2) {
+			script_6712(a1, a0, a2);
+			return;
+		}, new WidgetPointer(-32768,3), -2147483643, 1, "Ii1");
+		cs2method_20353(new function<script_5495>(int a0) {
+			script_9252(a0);
+			return;
+		}, a1, "o");
+		cs2method_20884(new function<script_6677>(int a0,int a1) {
+			script_6712(a1, a0, 0);
+			script_9252(-1);
+			return;
+		}, new WidgetPointer(-32768,3), -2147483643, "Ii");
+	} else {
+		cs2method_10620();
+		cs2method_10355();
+	}
+	return;
+}

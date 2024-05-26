@@ -1,0 +1,540 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_4770(int a0,int a1,int a2,int a3,int a4,int a5) {
+	int v17 = cs2method_10968(a2, 8);
+	int v35 = 38;
+	int v33 = 7438;
+	int v32 = 5465;
+	int v19 = -1;
+	object v5 = "";
+	int v7 = 0;
+	int v6 = 0;
+	int v14 = cs2method_10461(clan_chat_configs['cfg2575'].bitcfg6507, clan_chat_configs['cfg2628'].bitcfg6556);
+	int v12 = 0;
+	object v23 = "";
+	int v34 = 0;
+	int v24 = 0;
+	int v4 = 0;
+	if (a0 < 1 || a0 > 900) {
+		return 0;
+	}
+	int v30 = a0;
+	script_4791_struct(7,1,0) v13 = script_4791(v30);
+	int v26 = v13.intpart_6;
+	int v15 = v13.intpart_5;
+	int v8 = v13.intpart_4;
+	int v1 = v13.intpart_3;
+	int v3 = v13.intpart_2;
+	int v27 = v13.intpart_1;
+	object v9 = v13.objectpart_0;
+	int v10 = v13.intpart_0;
+	cs2method_10606(a1, 3, a2);
+	cs2method_10063(2, cs2method_10051(v35, v17), 0, 0);
+	cs2method_10013(4, v35, 1, 0);
+	if (cs2method_10038(v17, 2) == 0) {
+		cs2method_10811(1578773);
+	} else {
+		cs2method_10811(2170652);
+	}
+	cs2method_10238(1);
+	cs2method_10057(1, "Details for");
+	cs2method_20703(new function<script_4776>(int a0,int a1,int a2) {
+		if (cs2method_10172() == 1) {
+			script_4777(a1, a2, a0);
+			cs2_configs['cfg1560'] = 0;
+		}
+		return;
+	}, a0, v17, a5, "iii");
+	cs2method_21135(new function<script_4773>(int a0,int a1,int a2) {
+		if (cs2method_10172() == 1 && client_configs['cfg1977'].bitcfg6658 == a0) {
+			if (cs2_configs['cfg1560'] == 1) {
+				script_4768();
+				script_4777(a0, a1, a2);
+			}
+			cs2_configs['cfg1560'] = 0;
+		}
+		return;
+	}, a0, v17, a5, 1560, 1, "iiiY");
+	int v16 = cs2method_10060(a2, 1);
+	cs2method_20674(new function<script_4779>(int a0,int a1,int a2) {
+		if (cs2method_11038(a2, a0) == 1) {
+			if (a1 == 0) {
+				cs2method_10269(1);
+			} else {
+				cs2method_10269(0);
+			}
+		}
+		return;
+	}, new WidgetPointer(a1), v16, 1, "Iii");
+	cs2method_20884(new function<script_4779>(int a0,int a1,int a2) {
+		if (cs2method_11038(a1, a0) == 1) {
+			if (a2 == 0) {
+				cs2method_10269(1);
+			} else {
+				cs2method_10269(0);
+			}
+		}
+		return;
+	}, new WidgetPointer(a1), v16, 0, "Iii");
+	cs2method_10564(a1, -1);
+	cs2method_10626(3);
+	cs2method_10065(8);
+	cs2method_11009(30);
+	cs2method_10200(v9);
+	int v11 = cs2method_10060(a2, 1);
+	cs2method_10606(a1, 5, v11);
+	cs2method_10310(v32);
+	cs2method_10013(4, v35, 1, 0);
+	cs2method_10063(2, cs2method_10051(v35, v17), 0, 0);
+	cs2method_10269(1);
+	int v25 = cs2method_10060(v11, 1);
+	cs2method_10606(a1, 5, v25);
+	cs2method_10063(8, cs2method_10060(3, cs2method_10051(v35, v17)), 0, 0);
+	cs2method_10013(32, 32, 0, 0);
+	cs2method_10310(v33);
+	int v29 = cs2method_10060(v25, 1);
+	cs2method_10606(a1, 5, v29);
+	cs2method_10063(9, cs2method_10060(4, cs2method_10051(v35, v17)), 0, 0);
+	cs2method_10310(v10);
+	if (a0 == 16 || a0 == 17 || a0 == 18) {
+		cs2method_11142(49149);
+	}
+	cs2method_10013(30, 30, 0, 0);
+	int v21 = cs2method_10060(v29, 1);
+	cs2method_10606(a1, 4, v21);
+	cs2method_10063(48, cs2method_10051(v35, v17), 0, 0);
+	cs2method_10013(92, v35, 1, 0);
+	cs2method_10692(17813);
+	cs2method_11105(0, 1, 16);
+	cs2method_10811(13680808);
+	int v22 = v27;
+	if (a0 > 300 && a0 < 600) {
+		v22 = cs2method_10461(v22, v3);
+	}
+	object v0 = "";
+	if (v8 == 5) {
+		if (v22 == 1) {
+			v0 = "(Basic)";
+		} else if (v22 == 2) {
+			v0 = "(Medium)";
+		} else {
+			if (v22 == 3) {
+				v0 = "(Grand)";
+			}
+		}
+	} else {
+		v0 = "(Tier " + (string)cs2method_10379(v22) + ")";
+	}
+	cs2method_10797((string)v9 + "<br>" + (string)v0);
+	int v2 = cs2method_10060(v21, 1);
+	cs2method_10606(a1, 4, v2);
+	cs2method_10797((string)cs2method_10379(a4) + "%");
+	cs2method_10692(17813);
+	cs2method_11105(0, 1, 16);
+	cs2method_10013(34, v35, 0, 0);
+	cs2method_10063(21, cs2method_10051(v35, v17), 2, 0);
+	if (a0 < 300) {
+		cs2method_10269(1);
+	} else {
+		cs2method_10269(0);
+	}
+	if (a4 < 100) {
+		cs2method_10811(8797740);
+	} else if (a3 == 1) {
+		cs2method_10811(4416367);
+	} else if (a3 == 2) {
+		cs2method_10811(2837036);
+	} else if (a3 == 3) {
+		cs2method_10811(9926727);
+	} else {
+		if (a3 == 0) {
+			cs2method_10811(13680808);
+			cs2method_10797("N/A");
+		}
+	}
+	int v31 = cs2method_10060(v2, 1);
+	cs2method_10606(a1, 5, v31);
+	if (a0 > 300 && a0 < 600) {
+		if (a4 < 100) {
+			cs2method_10269(0);
+			cs2method_10063(5, cs2method_10060(12, cs2method_10051(v35, v17)), 2, 0);
+			cs2method_10013(15, 15, 0, 0);
+			cs2method_10310(7542);
+			if (v8 == 1) {
+				if (v1 == 0) {
+					v23 = "Your citadel will become dilapidated this tick!";
+				} else if (v1 == 1 && v27 > 1) {
+					v23 = "Your citadel will lose a tier this tick. You may lose tiers on other buildings!";
+				} else if (v1 == 1) {
+					v23 = "Your citadel will accrue double upkeep this tick.";
+				} else {
+					if (v1 > 1) {
+						v23 = "Your citadel owes double upkeep this tick.";
+					}
+				}
+			} else if (v1 == 0) {
+				v23 = "This building will become dilapidated this tick.";
+			} else if (v1 == 1 && v27 > 1) {
+				v23 = "This building will lose a tier this tick!";
+			} else if (v1 == 1) {
+				v23 = "This building will accrue double upkeep this tick.";
+			} else {
+				if (v1 > 1) {
+					v23 = "This building owes double upkeep this tick.";
+				}
+			}
+			cs2method_20674(new function<script_4781>(int a0,int a1,int a2) {
+				if (cs2method_11038(a2, a0) == 1) {
+					if (a1 == 1) {
+						cs2method_10310(7543);
+					} else {
+						cs2method_10310(7542);
+						script_41(73072826);
+					}
+				}
+				return;
+			}, new WidgetPointer(a1), -2147483643, 1, "Iii");
+			cs2method_20353(new function<script_4783>(object a0,int a1,int a2) {
+				script_4784(a2, a1, a0);
+				return;
+			}, (string)v23, new WidgetPointer(a1), -2147483643, "sIi");
+			cs2method_20884(new function<script_4781>(int a0,int a1,int a2) {
+				if (cs2method_11038(a0, a1) == 1) {
+					if (a2 == 1) {
+						cs2method_10310(7543);
+					} else {
+						cs2method_10310(7542);
+						script_41(73072826);
+					}
+				}
+				return;
+			}, new WidgetPointer(a1), -2147483643, 0, "Iii");
+		} else if (script_4787(clan_chat_configs['cfg2575'].bitcfg6507) == 0) {
+			cs2method_10269(0);
+			cs2method_10063(5, cs2method_10060(12, cs2method_10051(v35, v17)), 2, 0);
+			cs2method_10013(15, 15, 0, 0);
+			cs2method_10310(7542);
+			object v36 = "You need more members to visit your citadel this week to avoid this building degrading.";
+			cs2method_20674(new function<script_4781>(int a0,int a1,int a2) {
+				if (cs2method_11038(a1, a2) == 1) {
+					if (a0 == 1) {
+						cs2method_10310(7543);
+					} else {
+						cs2method_10310(7542);
+						script_41(73072826);
+					}
+				}
+				return;
+			}, new WidgetPointer(a1), -2147483643, 1, "Iii");
+			cs2method_20353(new function<script_4783>(int a0,object a1,int a2) {
+				script_4784(a2, a0, a1);
+				return;
+			}, (string)v36, new WidgetPointer(a1), -2147483643, "sIi");
+			cs2method_20884(new function<script_4781>(int a0,int a1,int a2) {
+				if (cs2method_11038(a0, a1) == 1) {
+					if (a2 == 1) {
+						cs2method_10310(7543);
+					} else {
+						cs2method_10310(7542);
+						script_41(73072826);
+					}
+				}
+				return;
+			}, new WidgetPointer(a1), -2147483643, 0, "Iii");
+		} else {
+			if (v1 > 1) {
+				object v36 = "This building owes double upkeep this tick.";
+				cs2method_20674(new function<script_4781>(int a0,int a1,int a2) {
+					if (cs2method_11038(a0, a2) == 1) {
+						if (a1 == 1) {
+							cs2method_10310(7543);
+						} else {
+							cs2method_10310(7542);
+							script_41(73072826);
+						}
+					}
+					return;
+				}, new WidgetPointer(a1), -2147483643, 1, "Iii");
+				cs2method_20353(new function<script_4783>(object a0,int a1,int a2) {
+					script_4784(a2, a1, a0);
+					return;
+				}, (string)v36, new WidgetPointer(a1), -2147483643, "sIi");
+				cs2method_20884(new function<script_4781>(int a0,int a1,int a2) {
+					if (cs2method_11038(a1, a2) == 1) {
+						if (a0 == 1) {
+							cs2method_10310(7543);
+						} else {
+							cs2method_10310(7542);
+							script_41(73072826);
+						}
+					}
+					return;
+				}, new WidgetPointer(a1), -2147483643, 0, "Iii");
+			}
+		}
+	} else if (a0 == 601) {
+		if (script_4785() == 0) {
+			cs2method_10269(0);
+			cs2method_10063(60, cs2method_10060(12, cs2method_10051(v35, v17)), 2, 0);
+			cs2method_10013(15, 15, 0, 0);
+			cs2method_10310(7542);
+			object v36 = "You lack some skill plot prerequisites to build this upgrade.";
+			cs2method_20674(new function<script_4781>(int a0,int a1,int a2) {
+				if (cs2method_11038(a1, a0) == 1) {
+					if (a2 == 1) {
+						cs2method_10310(7543);
+					} else {
+						cs2method_10310(7542);
+						script_41(73072826);
+					}
+				}
+				return;
+			}, new WidgetPointer(a1), -2147483643, 1, "Iii");
+			cs2method_20353(new function<script_4783>(object a0,int a1,int a2) {
+				script_4784(a1, a2, a0);
+				return;
+			}, (string)v36, new WidgetPointer(a1), -2147483643, "sIi");
+			cs2method_20884(new function<script_4781>(int a0,int a1,int a2) {
+				if (cs2method_11038(a2, a1) == 1) {
+					if (a0 == 1) {
+						cs2method_10310(7543);
+					} else {
+						cs2method_10310(7542);
+						script_41(73072826);
+					}
+				}
+				return;
+			}, new WidgetPointer(a1), -2147483643, 0, "Iii");
+		} else if (script_4786(clan_chat_configs['cfg2575'].bitcfg6507) == 0) {
+			cs2method_10269(0);
+			cs2method_10063(60, cs2method_10060(12, cs2method_10051(v35, v17)), 2, 0);
+			cs2method_10013(15, 15, 0, 0);
+			cs2method_10310(7542);
+			object v36 = "You need more members to visit your citadel this week to build this upgrade.";
+			cs2method_20674(new function<script_4781>(int a0,int a1,int a2) {
+				if (cs2method_11038(a0, a2) == 1) {
+					if (a1 == 1) {
+						cs2method_10310(7543);
+					} else {
+						cs2method_10310(7542);
+						script_41(73072826);
+					}
+				}
+				return;
+			}, new WidgetPointer(a1), -2147483643, 1, "Iii");
+			cs2method_20353(new function<script_4783>(int a0,int a1,object a2) {
+				script_4784(a1, a0, a2);
+				return;
+			}, (string)v36, new WidgetPointer(a1), -2147483643, "sIi");
+			cs2method_20884(new function<script_4781>(int a0,int a1,int a2) {
+				if (cs2method_11038(a2, a0) == 1) {
+					if (a1 == 1) {
+						cs2method_10310(7543);
+					} else {
+						cs2method_10310(7542);
+						script_41(73072826);
+					}
+				}
+				return;
+			}, new WidgetPointer(a1), -2147483643, 0, "Iii");
+		} else {
+			cs2method_10269(1);
+		}
+	} else if (a0 > 600) {
+		if (script_4787(clan_chat_configs['cfg2575'].bitcfg6507) == 0) {
+			cs2method_10269(0);
+			cs2method_10063(60, cs2method_10060(12, cs2method_10051(v35, v17)), 2, 0);
+			cs2method_10013(15, 15, 0, 0);
+			cs2method_10310(7542);
+			object v36 = "Cannot upgrade: not enough full members have visited to perform upkeep.";
+			cs2method_20674(new function<script_4781>(int a0,int a1,int a2) {
+				if (cs2method_11038(a1, a2) == 1) {
+					if (a0 == 1) {
+						cs2method_10310(7543);
+					} else {
+						cs2method_10310(7542);
+						script_41(73072826);
+					}
+				}
+				return;
+			}, new WidgetPointer(a1), -2147483643, 1, "Iii");
+			cs2method_20353(new function<script_4783>(int a0,object a1,int a2) {
+				script_4784(a2, a0, a1);
+				return;
+			}, (string)v36, new WidgetPointer(a1), -2147483643, "sIi");
+			cs2method_20884(new function<script_4781>(int a0,int a1,int a2) {
+				if (cs2method_11038(a1, a0) == 1) {
+					if (a2 == 1) {
+						cs2method_10310(7543);
+					} else {
+						cs2method_10310(7542);
+						script_41(73072826);
+					}
+				}
+				return;
+			}, new WidgetPointer(a1), -2147483643, 0, "Iii");
+		} else if (v14 < v27) {
+			cs2method_10269(0);
+			cs2method_10063(60, cs2method_10060(12, cs2method_10051(v35, v17)), 2, 0);
+			cs2method_10013(15, 15, 0, 0);
+			cs2method_10310(7542);
+			object v36 = "Cannot upgrade: citadel walls will be too low tier. You will still be charged!";
+			cs2method_20674(new function<script_4781>(int a0,int a1,int a2) {
+				if (cs2method_11038(a0, a1) == 1) {
+					if (a2 == 1) {
+						cs2method_10310(7543);
+					} else {
+						cs2method_10310(7542);
+						script_41(73072826);
+					}
+				}
+				return;
+			}, new WidgetPointer(a1), -2147483643, 1, "Iii");
+			cs2method_20353(new function<script_4783>(object a0,int a1,int a2) {
+				script_4784(a2, a1, a0);
+				return;
+			}, (string)v36, new WidgetPointer(a1), -2147483643, "sIi");
+			cs2method_20884(new function<script_4781>(int a0,int a1,int a2) {
+				if (cs2method_11038(a2, a1) == 1) {
+					if (a0 == 1) {
+						cs2method_10310(7543);
+					} else {
+						cs2method_10310(7542);
+						script_41(73072826);
+					}
+				}
+				return;
+			}, new WidgetPointer(a1), -2147483643, 0, "Iii");
+		} else if (a0 == 603 || a0 == 602) {
+			if (cs2_configs['cfg1561'] == 0) {
+				cs2_configs['cfg1561'] = 1;
+			} else {
+				cs2method_10269(0);
+				cs2method_10063(60, cs2method_10060(12, cs2method_10051(v35, v17)), 2, 0);
+				cs2method_10013(15, 15, 0, 0);
+				cs2method_10310(7542);
+				object v36 = "Cannot upgrade: You may upgrade only one of storehouse or battlefield per week.";
+				cs2method_20674(new function<script_4781>(int a0,int a1,int a2) {
+					if (cs2method_11038(a2, a0) == 1) {
+						if (a1 == 1) {
+							cs2method_10310(7543);
+						} else {
+							cs2method_10310(7542);
+							script_41(73072826);
+						}
+					}
+					return;
+				}, new WidgetPointer(a1), -2147483643, 1, "Iii");
+				cs2method_20353(new function<script_4783>(object a0,int a1,int a2) {
+					script_4784(a2, a1, a0);
+					return;
+				}, (string)v36, new WidgetPointer(a1), -2147483643, "sIi");
+				cs2method_20884(new function<script_4781>(int a0,int a1,int a2) {
+					if (cs2method_11038(a2, a1) == 1) {
+						if (a0 == 1) {
+							cs2method_10310(7543);
+						} else {
+							cs2method_10310(7542);
+							script_41(73072826);
+						}
+					}
+					return;
+				}, new WidgetPointer(a1), -2147483643, 0, "Iii");
+			}
+		} else if (a0 >= 604 && a0 <= 615) {
+			if (cs2_configs['cfg1562'] < 2) {
+				cs2_configs['cfg1562'] = cs2method_10060(cs2_configs['cfg1562'], 1);
+			} else {
+				cs2method_10269(0);
+				cs2method_10063(60, cs2method_10060(12, cs2method_10051(v35, v17)), 2, 0);
+				cs2method_10013(15, 15, 0, 0);
+				cs2method_10310(7542);
+				object v36 = "Cannot upgrade: You may upgrade only two skilling plots per week.";
+				cs2method_20674(new function<script_4781>(int a0,int a1,int a2) {
+					if (cs2method_11038(a2, a0) == 1) {
+						if (a1 == 1) {
+							cs2method_10310(7543);
+						} else {
+							cs2method_10310(7542);
+							script_41(73072826);
+						}
+					}
+					return;
+				}, new WidgetPointer(a1), -2147483643, 1, "Iii");
+				cs2method_20353(new function<script_4783>(int a0,int a1,object a2) {
+					script_4784(a0, a1, a2);
+					return;
+				}, (string)v36, new WidgetPointer(a1), -2147483643, "sIi");
+				cs2method_20884(new function<script_4781>(int a0,int a1,int a2) {
+					if (cs2method_11038(a1, a2) == 1) {
+						if (a0 == 1) {
+							cs2method_10310(7543);
+						} else {
+							cs2method_10310(7542);
+							script_41(73072826);
+						}
+					}
+					return;
+				}, new WidgetPointer(a1), -2147483643, 0, "Iii");
+			}
+		} else {
+			cs2method_10269(1);
+		}
+	} else {
+		cs2method_10269(1);
+	}
+	int v28 = cs2method_10060(v31, 1);
+	cs2method_10606(a1, 5, v28);
+	object v18 = "Cancel this job.";
+	if (a0 > 600 || a0 < 300) {
+		cs2method_10269(0);
+		cs2method_10063(5, cs2method_10060(12, cs2method_10051(v35, v17)), 2, 0);
+		cs2method_10013(15, 15, 0, 0);
+		cs2method_10310(7545);
+		cs2method_20674(new function<script_4780>(int a0,int a1,int a2) {
+			if (cs2method_11038(a2, a1) == 1) {
+				if (a0 == 1) {
+					cs2method_10310(7546);
+				} else {
+					cs2method_10310(7545);
+					script_41(73072826);
+				}
+			}
+			return;
+		}, new WidgetPointer(a1), -2147483643, 1, "Iii");
+		cs2method_20353(new function<script_4783>(int a0,object a1,int a2) {
+			script_4784(a2, a0, a1);
+			return;
+		}, (string)v18, new WidgetPointer(a1), -2147483643, "sIi");
+		cs2method_20884(new function<script_4780>(int a0,int a1,int a2) {
+			if (cs2method_11038(a0, a1) == 1) {
+				if (a2 == 1) {
+					cs2method_10310(7546);
+				} else {
+					cs2method_10310(7545);
+					script_41(73072826);
+				}
+			}
+			return;
+		}, new WidgetPointer(a1), -2147483643, 0, "Iii");
+		cs2method_10057(1, "Cancel");
+		cs2method_20703(new function<script_40>(int a0) {
+			script_41(a0);
+			return;
+		}, new WidgetPointer(1115,186), "I");
+	} else {
+		cs2method_10269(1);
+	}
+	int v20 = cs2method_10060(v28, 1);
+	return v20;
+}

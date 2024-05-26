@@ -1,0 +1,89 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6443(int a0,int a1,int a2,int a3,int a4) {
+	int v2;
+	int v0;
+	int v1 = 0;
+	if (cs2_configs['cfg1968'] == 1) {
+		a0 = 200;
+		v0 = 850;
+		v2 = 80;
+	} else if (cs2_configs['cfg1963'] != 5) {
+		v2 = cs2method_10060(110, a1);
+	} else {
+		v2 = cs2method_10060(60, a1);
+	}
+	v0 = cs2method_10060(300, a4);
+	if (cs2method_11038(85917747, 0) == 1 && a3 == 0) {
+		a0 = cs2method_10286();
+		v0 = cs2method_10215();
+		v2 = cs2method_10967();
+	}
+	if (a2 == 1) {
+		cs2method_10273(85917747);
+	}
+	cs2method_10606(85917747, 6, cs2method_10163(85917747));
+	if (cs2_configs['cfg1963'] != 5) {
+		cs2method_10013(0, 0, 1, 1);
+	} else {
+		cs2method_10013(8, 70, 1, 1);
+	}
+	cs2method_10063(0, 0, 1, 1);
+	if (cs2_configs['cfg1963'] != 5) {
+		if (cs2_configs['cfg1968'] == 1) {
+			cs2method_10130();
+			if (a0 > 1024) {
+				a0 = cs2method_11048(a0, 1572);
+			} else {
+				a0 = cs2method_10872(a0, 512);
+			}
+		} else {
+			cs2method_10755();
+		}
+	} else {
+		cs2method_10364(cs2_configs['cfg2692']);
+		if (cs2_configs['cfg2692'] != -1 && npcDefsAttribute(cs2_configs['cfg2692'], 4177) == 0) {
+			script_7411(cs2_configs['cfg3756']);
+		}
+	}
+	cs2method_10304(0, v2, 10, a0, 10, v0);
+	if (cs2_configs['cfg1963'] != 5) {
+		if (cs2_configs['cfg1968'] == 1) {
+			cs2method_10629(12287);
+		} else {
+			if (cs2_configs['cfg779'] != -1) {
+				cs2method_10629(cs2method_10544(cs2_configs['cfg779']));
+			} else {
+				cs2method_10629(cs2method_10544(1426));
+			}
+			cs2method_21135(new function<script_1517>(int a0,int a1) {
+				if (cs2method_11038(a1, a0) == 1) {
+					if (cs2_configs['cfg779'] != -1) {
+						cs2method_10629(cs2method_10544(cs2_configs['cfg779']));
+					} else {
+						cs2method_10629(cs2method_10544(1426));
+					}
+				}
+				return;
+			}, new WidgetPointer(-32768,3), -2147483643, 779, 1, "IiY");
+		}
+	} else {
+		if (cs2_configs['cfg2693'] != -1) {
+			cs2method_10629(cs2_configs['cfg2693']);
+		}
+		if (cs2_configs['cfg2692'] == 19123) {
+			cs2method_10629(21964);
+		}
+	}
+	return;
+}

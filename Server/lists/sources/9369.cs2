@@ -1,0 +1,91 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9369() {
+	int v2 = -1;
+	int v0 = -1;
+	int v1 = -1;
+	switch (client_configs['cfg2047']) {
+		case 1:
+			v2 = idx17mapData('i', 'g', 3689, client_configs['cfg2018'].bitcfg8896);
+			v0 = client_configs['cfg2035'].bitcfg8936;
+			v1 = client_configs['cfg2039'];
+			break;
+		case 2:
+			v2 = idx17mapData('i', 'g', 3689, client_configs['cfg2018'].bitcfg8897);
+			v0 = client_configs['cfg2035'].bitcfg8937;
+			v1 = client_configs['cfg2040'];
+			break;
+		case 3:
+			v2 = idx17mapData('i', 'g', 3689, client_configs['cfg2018'].bitcfg8898);
+			v0 = client_configs['cfg2036'].bitcfg8938;
+			v1 = client_configs['cfg2041'];
+			break;
+		case 4:
+			v2 = idx17mapData('i', 'g', 3689, client_configs['cfg2018'].bitcfg8899);
+			v0 = client_configs['cfg2036'].bitcfg8939;
+			v1 = client_configs['cfg2042'];
+			break;
+		case 5:
+			v2 = idx17mapData('i', 'g', 3689, client_configs['cfg2019'].bitcfg8900);
+			v0 = client_configs['cfg2037'].bitcfg8940;
+			v1 = client_configs['cfg2043'];
+			break;
+		case 6:
+			v2 = idx17mapData('i', 'g', 3689, client_configs['cfg2019'].bitcfg8901);
+			v0 = client_configs['cfg2037'].bitcfg8941;
+			v1 = client_configs['cfg2044'];
+			break;
+		case 7:
+			v2 = idx17mapData('i', 'g', 3689, client_configs['cfg2019'].bitcfg8902);
+			v0 = client_configs['cfg2038'].bitcfg8942;
+			v1 = client_configs['cfg2045'];
+			break;
+		case 8:
+			v2 = idx17mapData('i', 'g', 3689, client_configs['cfg2019'].bitcfg8903);
+			v0 = client_configs['cfg2038'].bitcfg8943;
+			v1 = client_configs['cfg2046'];
+	}
+	if (client_configs['cfg2047'] > 0 && client_configs['cfg2047'] < 9) {
+		script_9368(client_configs['cfg3939'].bitcfg20989, 0, 45940790, 45940792, 45940791, 45940793);
+		script_9368(client_configs['cfg3939'].bitcfg20990, 0, 45940820, 45940822, 45940821, 45940823);
+		if (client_configs['cfg2030'].bitcfg8945 == 0) {
+			script_9368(client_configs['cfg3939'].bitcfg20991, 0, 45940883, 45940885, 45940884, 45940886);
+			script_9368(client_configs['cfg3939'].bitcfg20992, 1, 45940827, 45940829, 45940828, 45940830);
+		} else {
+			script_9368(client_configs['cfg3939'].bitcfg20991, 1, 45940883, 45940885, 45940884, 45940886);
+			script_9368(client_configs['cfg3939'].bitcfg20992, 0, 45940827, 45940829, 45940828, 45940830);
+		}
+		script_9368(client_configs['cfg3939'].bitcfg20993, 0, 45940834, 45940836, 45940835, 45940837);
+		script_9368(client_configs['cfg3939'].bitcfg20994, 0, 45940841, 45940843, 45940842, 45940844);
+		script_9368(client_configs['cfg3939'].bitcfg20995, 0, 45940848, 45940850, 45940849, 45940851);
+		if (v2 != -1 && v0 > 0) {
+			script_9368(client_configs['cfg3939'].bitcfg20996, 0, 45940855, 45940857, 45940856, 45940858);
+		} else {
+			script_9368(client_configs['cfg3939'].bitcfg20996, 1, 45940855, 45940857, 45940856, 45940858);
+		}
+		script_9368(client_configs['cfg3939'].bitcfg20997, 0, 45940862, 45940864, 45940863, 45940865);
+		if (client_configs['cfg3939'].bitcfg20997 == 1 && v1 > 0) {
+			script_9368(client_configs['cfg3939'].bitcfg20998, 0, 45940876, 45940878, 45940877, 45940879);
+		} else {
+			script_9368(0, 1, 45940876, 45940878, 45940877, 45940879);
+		}
+		script_9368(client_configs['cfg3939'].bitcfg20999, 0, 45940869, 45940871, 45940870, 45940872);
+		script_9368(client_configs['cfg3939'].bitcfg21000, 0, 45940890, 45940892, 45940891, 45940893);
+		if (client_configs['cfg3939'].bitcfg20998 == 1) {
+			cs2method_10026(45940880, "Broadcast will only be sent to " + idx17mapData('i', 's', 3725, v1));
+		} else {
+			cs2method_10026(45940880, "Broadcast will be sent to whole clan.");
+		}
+	}
+	return;
+}

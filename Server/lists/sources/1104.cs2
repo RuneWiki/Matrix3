@@ -1,0 +1,26 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1104() {
+	object v5 = "";
+	object v1 = "";
+	object v0 = "";
+	object v7 = "";
+	int v2 = client_configs['cfg3813'];
+	script_9962_struct(0,4,0) v9 = script_9962(v2);
+	object v6 = v9.objectpart_3;
+	object v3 = v9.objectpart_2;
+	object v4 = v9.objectpart_1;
+	object v8 = v9.objectpart_0;
+	script_1122(1703937, 1703938, 1703955, 1703939, 1703956, v8, 1703940, client_configs['cfg3813'], 1703942, 1703943, v4, 1703944, v3, 1703945, 1703947, 1703949, 1703950, 1703951, 1703952, v6, 1703954);
+	return;
+}

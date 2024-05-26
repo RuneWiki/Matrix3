@@ -1,0 +1,48 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2878(int a0,int a1,int a2,int a3) {
+	if (cs2method_10769(a3) != 16942 && cs2method_10769(a3) != 16944 && cs2method_10769(a2) != 16926 && cs2method_10769(a2) != 16928) {
+		script_8808();
+		cs2_configs['cfg1'] = 0;
+	}
+	cs2method_10273(a0);
+	for (int v3 = 0; v3 < 12; v3 = cs2method_10060(v3, 1)) {
+		cs2method_10606(a0, 4, v3);
+	}
+	while (v3 < 24) {
+		cs2method_10606(a0, 5, v3);
+		v3 = cs2method_10060(v3, 1);
+	}
+	int v11 = 5;
+	int v2 = script_2879(a0, 0, client_configs['cfg76'].bitcfg190, v11);
+	int v4 = script_2879(a0, 1, client_configs['cfg76'].bitcfg191, v2);
+	int v0 = script_2879(a0, 2, client_configs['cfg77'].bitcfg192, v4);
+	int v6 = script_2879(a0, 3, client_configs['cfg77'].bitcfg193, v0);
+	int v5 = script_2879(a0, 4, client_configs['cfg78'].bitcfg194, v6);
+	int v1 = script_2879(a0, 5, client_configs['cfg78'].bitcfg195, v5);
+	int v12 = script_2879(a0, 6, client_configs['cfg79'].bitcfg196, v1);
+	int v9 = script_2879(a0, 7, client_configs['cfg79'].bitcfg197, v12);
+	int v10 = script_2879(a0, 8, client_configs['cfg80'].bitcfg198, v9);
+	int v7 = script_2879(a0, 9, client_configs['cfg80'].bitcfg199, v10);
+	int v8 = script_2879(a0, 10, client_configs['cfg81'].bitcfg200, v7);
+	int v13 = script_2879(a0, 11, client_configs['cfg81'].bitcfg201, v8);
+	if (client_configs['cfg76'].bitcfg190 == 32767 && cs2_configs['cfg1077'] == 1) {
+		cs2method_10467(0, a1);
+	} else {
+		cs2method_10467(1, a1);
+	}
+	cs2method_10606(a0, 4, cs2method_10163(a0));
+	cs2method_10063(15, v13, 0, 0);
+	cs2method_10013(150, v13, 0, 1);
+	return;
+}

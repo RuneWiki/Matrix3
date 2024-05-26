@@ -1,0 +1,21 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4351(int a0) {
+	if (client_configs['cfg2030'].bitcfg8944 == client_configs['cfg2047']) {
+		client_configs['cfg2030'].bitcfg8944 = 0;
+	} else {
+		client_configs['cfg2030'].bitcfg8944 = client_configs['cfg2047'];
+	}
+	script_4353(a0);
+	return;
+}

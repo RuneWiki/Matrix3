@@ -1,0 +1,26 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8884(int a0) {
+	if (a0 == 10 || a0 == 9) {
+		cs2method_10283(cs2_configs['cfg2997'], cs2_configs['cfg2998'], 0, 0, 96796679);
+		script_8702(9, 10);
+		cs2method_10283(0, 0, 1, 1, 96796679);
+	} else {
+		if (a0 == -1) {
+			a0 = 8;
+		}
+	}
+	script_8885(a0);
+	script_8781(a0);
+	return;
+}

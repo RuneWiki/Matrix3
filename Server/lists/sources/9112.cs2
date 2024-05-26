@@ -1,0 +1,24 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9112(int a0) {
+	object v0;
+	object v2 = "";
+	if (cs2method_10968(2147483647, 5) < cs2_configs['cfg3764']) {
+		v0 = "Over $2 Bil";
+	} else {
+		v0 = "$" + (string)cs2method_10055(cs2method_10122(47, 10, cs2_configs['cfg3764']), 1);
+	}
+	int v1 = cs2method_10968(cs2_configs['cfg3763'], 5);
+	script_8800(a0, -1, "Total charity donation:" + "<br>" + "$" + (string)cs2method_10055(v1, 1) + " USD from coins" + "<br>" + (string)v0 + " USD from Bonds");
+	return;
+}

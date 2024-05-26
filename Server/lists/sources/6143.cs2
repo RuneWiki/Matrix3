@@ -1,0 +1,63 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6143(int a0,int a1) {
+	switch (a1) {
+		case 1:
+			cs2method_10467(1, 83230842);
+			break;
+		case 2:
+			cs2method_10467(1, 83230843);
+			break;
+		case 3:
+			cs2method_10467(1, 83230844);
+	}
+	int v0 = 0;
+	if (cs2method_10609(83230727) == 0) {
+		v0 = cs2method_10060(v0, 1);
+	}
+	if (cs2method_10609(83230768) == 0) {
+		v0 = cs2method_10060(v0, 1);
+	}
+	if (cs2method_10609(83230770) == 0) {
+		v0 = cs2method_10060(v0, 1);
+	}
+	switch (v0) {
+		case 0:
+			cs2method_10467(0, 83230727);
+			if (a0 == 1) {
+				cs2method_10467(0, 83230781);
+				cs2method_10467(0, 83230728);
+			} else {
+				cs2method_10467(0, 83230778);
+			}
+			break;
+		case 1:
+			cs2method_10467(0, 83230768);
+			if (a0 == 1) {
+				cs2method_10467(0, 83230782);
+				cs2method_10467(0, 83230769);
+			} else {
+				cs2method_10467(0, 83230779);
+			}
+			break;
+		case 2:
+			cs2method_10467(0, 83230770);
+			if (a0 == 1) {
+				cs2method_10467(0, 83230783);
+				cs2method_10467(0, 83230771);
+			} else {
+				cs2method_10467(0, 83230780);
+			}
+	}
+	return;
+}

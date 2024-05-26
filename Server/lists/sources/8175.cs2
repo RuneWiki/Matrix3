@@ -1,0 +1,51 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_8175_struct(2,0,0) script_8175(int a0,int a1,int a2) {
+	int v0 = 0;
+	for (int v4 = 0, int v5 = 0, int v9 = 0, int v7 = 2147483647, int v8 = 2147483647, int v3 = 0, int v1 = 0; v9 <= 1; v5 = 0, v9 = cs2method_10060(v9, 1)) {
+		while (v5 <= 1) {
+			int v15 = a0;
+			int v10 = v5;
+			int v14 = v9;
+			script_8141_struct(2,0,0) v13 = script_8141(v15, v10, v14);
+			int v11 = v13.intpart_1;
+			int v12 = v13.intpart_0;
+			int v2 = cs2method_11048(cs2method_10461(v12, a1), cs2method_10461(a1, v12));
+			int v6 = cs2method_11048(cs2method_10461(v11, a2), cs2method_10461(a2, v11));
+			if (a1 != -1) {
+				if (v2 <= v7) {
+					if (a2 != -1) {
+						if (v6 <= v8) {
+							v7 = v2;
+							v8 = v6;
+							v3 = v5;
+							v1 = v9;
+						}
+					} else {
+						v7 = v2;
+						v3 = v5;
+						v1 = v9;
+					}
+				}
+			} else {
+				if (v6 <= v8) {
+					v8 = v6;
+					v3 = v5;
+					v1 = v9;
+				}
+			}
+			v5 = cs2method_10060(v5, 1);
+		}
+	}
+	return new script_8175_struct(v3, v1);
+}

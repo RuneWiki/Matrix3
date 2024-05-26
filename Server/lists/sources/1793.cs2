@@ -1,0 +1,36 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1793(int a0,int a1,int a2,int a3,int a4,int a5) {
+	script_1795(a2, a4);
+	if (client_configs['cfg1381'].bitcfg4094 == 1) {
+		cs2method_10026(a0, "Free-for-all: Dangerous");
+		cs2method_10026(a5, "This is a " + "<col=ff0000>" + "DANGEROUS" + "</col>" + " arena. When players fight each other in here, they drop " + "<col=ff0000>" + "ALL" + "</col>" + " their items on death. Gravestones do not appear." + "<br>" + "<br>" + "A non-combat zone exists at the southern end of the arena. This portal leads into that zone." + "<br>" + "<br>" + "You cannot teleport out of this arena unless you're standing in the non-combat zone.");
+		cs2method_20348(new function<script_1794>(int a0,int a1) {
+			script_1795(a0, a1);
+			return;
+		}, new WidgetPointer(a2), new WidgetPointer(a4), 1381, 447, 2, "IIY", new WidgetPointer(a2));
+	} else {
+		cs2method_10026(a0, "Free-for-all: Safe");
+		cs2method_10026(a5, "This is a SAFE arena. Although players may fight each other in here, items are not dropped on death." + "<br>" + "<br>" + "You can teleport out of the arena at any time." + "<br>" + "<br>" + "A non-combat zone exists at the southern end of the arena. This portal leads into that zone.");
+		cs2method_20348(new function<script_1794>(int a0,int a1) {
+			script_1795(a1, a0);
+			return;
+		}, new WidgetPointer(a2), new WidgetPointer(a4), 1381, 446, 2, "IIY", new WidgetPointer(a2));
+	}
+	int v0 = cs2method_10509(cs2method_10236(a0), 496, cs2method_10744(a0));
+	int v1 = cs2method_10968(cs2method_10461(cs2method_10236(a0), v0), 2);
+	int v2 = cs2method_10461(v1, cs2method_10060(cs2method_10236(a1), 10));
+	cs2method_10112(v2, cs2method_10152(a1), 0, 0, a1);
+	cs2method_10112(v2, cs2method_10152(a3), 2, 0, a3);
+	return;
+}

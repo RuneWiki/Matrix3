@@ -1,0 +1,42 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_8418(int a0,int a1) {
+	int v1 = idx22mapAttribute(a0, 3518);
+	int v2 = -1;
+	if (client_configs['cfg3680'].bitcfg22315 == 1) {
+		if (a0 == 21278) {
+			return 28333;
+		}
+		if (a0 == 21279) {
+			return 28334;
+		}
+	}
+	int v4 = script_3816(v1);
+	if (v4 != -1) {
+		v1 = v4;
+	}
+	if (client_configs['cfg3814'].bitcfg19928 == 1 && script_1186() == 1 && a1 == 0) {
+		int v0 = idx22mapAttribute(v1, 3795);
+		if (v0 != -1) {
+			v1 = v0;
+		}
+	} else {
+		if (client_configs['cfg3814'].bitcfg19924 == 1 && a1 == 0) {
+			int v3 = idx22mapAttribute(v1, 3794);
+			if (v3 != -1) {
+				v1 = v3;
+			}
+		}
+	}
+	return v1;
+}

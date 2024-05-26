@@ -1,0 +1,68 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6905(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7) {
+	if (a6 == 2) {
+		cs2method_10467(1, a3);
+		cs2method_10467(1, a7);
+		cs2method_10467(0, a2);
+		cs2method_10067(9788, a1);
+		cs2method_10067(9788, a5);
+		script_6906(0, a0);
+		script_6906(1, a4);
+		cs2method_20486(new function<script_6904>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7) {
+			cs2method_10363(6185, 1, 0, 100, 350);
+			script_6905(a5, a4, a0, a6, a2, a1, a7, a3);
+			return;
+		}, 1, new WidgetPointer(a0), new WidgetPointer(a4), new WidgetPointer(a1), new WidgetPointer(a5), new WidgetPointer(a3), new WidgetPointer(a7), new WidgetPointer(a2), "iIIIIIII", new WidgetPointer(a0));
+		cs2method_20486(new function<script_6908>() {
+			cs2method_10363(6185, 1, 0, 100, 350);
+			return;
+		}, "", new WidgetPointer(a4));
+	} else if (a6 == 1) {
+		cs2method_10467(1, a3);
+		cs2method_10467(0, a7);
+		cs2method_10467(1, a2);
+		cs2method_10067(9850, a1);
+		cs2method_10067(9850, a5);
+		script_6906(1, a0);
+		script_6906(0, a4);
+		cs2method_20486(new function<script_6908>() {
+			cs2method_10363(6185, 1, 0, 100, 350);
+			return;
+		}, "", new WidgetPointer(a0));
+		cs2method_20486(new function<script_6904>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7) {
+			cs2method_10363(6185, 1, 0, 100, 350);
+			script_6905(a1, a0, a7, a4, a5, a2, a3, a6);
+			return;
+		}, 2, new WidgetPointer(a0), new WidgetPointer(a4), new WidgetPointer(a1), new WidgetPointer(a5), new WidgetPointer(a3), new WidgetPointer(a7), new WidgetPointer(a2), "iIIIIIII", new WidgetPointer(a4));
+	} else {
+		cs2method_10467(0, a3);
+		cs2method_10467(1, a7);
+		cs2method_10467(1, a2);
+		cs2method_10067(9804, a1);
+		cs2method_10067(9804, a5);
+		script_6906(0, a0);
+		script_6906(0, a4);
+		cs2method_20486(new function<script_6904>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7) {
+			cs2method_10363(6185, 1, 0, 100, 350);
+			script_6905(a0, a7, a5, a3, a4, a2, a1, a6);
+			return;
+		}, 1, new WidgetPointer(a0), new WidgetPointer(a4), new WidgetPointer(a1), new WidgetPointer(a5), new WidgetPointer(a3), new WidgetPointer(a7), new WidgetPointer(a2), "iIIIIIII", new WidgetPointer(a0));
+		cs2method_20486(new function<script_6904>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7) {
+			cs2method_10363(6185, 1, 0, 100, 350);
+			script_6905(a1, a7, a4, a2, a0, a3, a5, a6);
+			return;
+		}, 2, new WidgetPointer(a0), new WidgetPointer(a4), new WidgetPointer(a1), new WidgetPointer(a5), new WidgetPointer(a3), new WidgetPointer(a7), new WidgetPointer(a2), "iIIIIIII", new WidgetPointer(a4));
+	}
+	return;
+}

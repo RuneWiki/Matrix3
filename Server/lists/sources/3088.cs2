@@ -1,0 +1,43 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3088(object a0,int a1,object a2) {
+	if (cs2method_10846(a0, "dob") == 0 && cs2method_10846(a2, "set_members_dob.ws") == 0) {
+		cs2method_10917(1, "billing_core", "purchasepopup.ws?externalName=rs", "packagegroupredirect.ws?value=rs");
+		cs2_configs['cfg1795'] = cs2method_10133();
+		cs2method_20162(new function<script_6032>() {
+			if (cs2method_10133() < cs2method_10060(cs2_configs['cfg1795'], 200)) {
+				return;
+			}
+			cs2method_20162(new function<none>() {
+			}, "", new WidgetPointer(906,242));
+			cs2method_20348(new function<script_5951>() {
+				script_5952();
+				return;
+			}, 1751, 1, "Y", new WidgetPointer(906,242));
+			script_3097();
+			script_3093(-3, "After you have completed your transaction, click continue to return to the game.", "", "", 0, 0, 10150, "Continue", 0, -1, "Continue", 1);
+			cs2method_20486(new function<script_5953>() {
+				script_3097();
+				script_3093(-3, "Logging In - Please Wait", "", "", 0, 1, -1, "", 0, -1, "", 0);
+				cs2method_11153(cs2_configs['cfg4211'], cs2_configs['cfg4210']);
+				return;
+			}, "", new WidgetPointer(906,546));
+			return;
+		}, "", new WidgetPointer(906,242));
+	} else {
+		if (cs2method_10846(a0, "") != 0 && cs2method_10846(a2, "") != 0) {
+			cs2method_10824(a1, a0, a2);
+		}
+	}
+	return;
+}

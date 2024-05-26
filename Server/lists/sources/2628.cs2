@@ -1,0 +1,77 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2628() {
+	if (cs2_configs['cfg906'] == 0) {
+		cs2method_10758(1868, 56295435);
+		cs2method_10026(56295427, "Idle");
+	} else {
+		if (cs2_configs['cfg906'] == 2) {
+			cs2method_10758(1867, 56295435);
+			switch (cs2_configs['cfg907']) {
+				case 0:
+					cs2_configs['cfg906'] = 0;
+					cs2method_10758(1868, 56295435);
+					cs2method_10026(56295427, "Idle");
+					break;
+				case 1:
+				case 2:
+					cs2method_10026(56295427, "Exploring");
+					break;
+				case 3:
+				case 4:
+					cs2method_10026(56295427, "Attacking wall");
+					break;
+				case 5:
+				case 6:
+				case 7:
+					cs2method_10026(56295427, "Rescuing TzHaar");
+					break;
+				case 8:
+				case 9:
+					cs2method_10026(56295427, "Collecting gold");
+					break;
+				case 10:
+				case 11:
+				case 12:
+					cs2method_10026(56295427, "Stealing TzHaar");
+					break;
+				case 13:
+				case 14:
+				case 15:
+					cs2method_10026(56295427, "Collecting parts");
+					break;
+				case 17:
+				case 16:
+				case 18:
+					cs2method_10026(56295427, "Collecting Rocks");
+					break;
+				case 19:
+				case 20:
+					cs2method_10026(56295427, "Attacking catapult");
+					break;
+				case 21:
+					cs2method_10026(56295427, "Retaliating");
+					break;
+				case 22:
+					cs2method_10026(56295427, "Moving to destination");
+					break;
+				case 23:
+					cs2method_10026(56295427, "Attacking");
+					break;
+				default:
+					cs2method_10026(56295427, "Busy");
+			}
+		}
+	}
+	return;
+}

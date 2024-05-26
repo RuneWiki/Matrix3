@@ -1,0 +1,54 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9835(int a0,int a1,int a2,int a3,int a4,int a5) {
+	int v0 = a3;
+	if (v0 == -1) {
+		if (a2 != -1) {
+			v0 = script_8887(a1, a2);
+		} else {
+			v0 = script_9822(a1);
+		}
+	}
+	int v1 = 0;
+	if (a5 != -1) {
+		v1 = 1;
+	}
+	while (a0 > 0) {
+		if (cs2method_11038(a1, v0) == 1) {
+			if (a4 == 93) {
+				script_9240(a1, "Deposit-1", interfaceDefsAttribute(3819), 93, "Deposit-5", a5, "Deposit-10", "Deposit-" + (string)cs2method_10379(client_configs['cfg3922']), "Deposit-X", "Deposit-All", "", v1, 1, "", "", "Examine");
+			} else {
+				if (a4 == 94) {
+					script_9222(a5, v1);
+				}
+			}
+		}
+		a0 = cs2method_10461(a0, 1);
+		if (a2 != -1) {
+			v0 = script_9673(a1, a2, v0);
+		} else {
+			v0 = script_9823(a1, v0);
+		}
+		if (v0 == -1) {
+			if (a2 != -1) {
+				v0 = script_8887(a1, a2);
+			} else {
+				v0 = script_9822(a1);
+			}
+			if (v0 == -1) {
+				a0 = 0;
+			}
+		}
+	}
+	return;
+}

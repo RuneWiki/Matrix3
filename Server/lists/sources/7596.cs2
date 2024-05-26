@@ -1,0 +1,64 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7596() {
+	if (script_7597() == 1) {
+		cs2method_10810("Your keybinds are already set to their default configuration.");
+		return;
+	}
+	if (cs2method_10262() == 2) {
+		cs2_configs['cfg2066'] = 48;
+		cs2_configs['cfg2067'] = 64;
+		cs2_configs['cfg2068'] = 34;
+		cs2_configs['cfg2069'] = 35;
+		cs2_configs['cfg2070'] = 36;
+		cs2_configs['cfg2071'] = 37;
+		cs2_configs['cfg2072'] = 38;
+		cs2_configs['cfg2073'] = 39;
+		cs2_configs['cfg2074'] = 40;
+		cs2_configs['cfg2075'] = 41;
+		cs2_configs['cfg2076'] = 32;
+		cs2_configs['cfg2077'] = 49;
+		cs2_configs['cfg2078'] = 66;
+	} else if (cs2method_10262() == 1) {
+		cs2_configs['cfg2066'] = 16;
+		cs2_configs['cfg2067'] = 17;
+		cs2_configs['cfg2068'] = 18;
+		cs2_configs['cfg2069'] = 19;
+		cs2_configs['cfg2070'] = 20;
+		cs2_configs['cfg2071'] = 21;
+		cs2_configs['cfg2072'] = 22;
+		cs2_configs['cfg2073'] = 23;
+		cs2_configs['cfg2074'] = 24;
+		cs2_configs['cfg2075'] = 25;
+		cs2_configs['cfg2076'] = 1001;
+		cs2_configs['cfg2077'] = 1002;
+		cs2_configs['cfg2078'] = 36;
+	} else {
+		cs2_configs['cfg2066'] = 16;
+		cs2_configs['cfg2067'] = 17;
+		cs2_configs['cfg2068'] = 18;
+		cs2_configs['cfg2069'] = 19;
+		cs2_configs['cfg2070'] = 20;
+		cs2_configs['cfg2071'] = 21;
+		cs2_configs['cfg2072'] = 22;
+		cs2_configs['cfg2073'] = 23;
+		cs2_configs['cfg2074'] = 24;
+		cs2_configs['cfg2075'] = 25;
+		cs2_configs['cfg2076'] = 26;
+		cs2_configs['cfg2077'] = 27;
+		cs2_configs['cfg2078'] = 36;
+	}
+	script_6993(0, 1, 0, -1);
+	cs2method_10810("Default keybinds have been restored.");
+	return;
+}

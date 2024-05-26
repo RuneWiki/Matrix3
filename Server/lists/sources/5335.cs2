@@ -1,0 +1,171 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_5335(int a0,int a1,int a2,int a3,int a4,object a5,int a6) {
+	int v2;
+	int v8;
+	flow_0:
+		int v3 = 0;
+		int v6 = 0;
+		int v10 = 0;
+		int v9 = 0;
+		int v12 = 0;
+		int v13 = 0;
+		int v11 = 0;
+		int v14 = 0;
+		int v15 = -1;
+		if (a1 == -1 && cs2method_10324(a4) == 1) {
+			v3 = cs2method_10060(cs2method_10191(a4), 5);
+			v6 = cs2method_10060(cs2method_10060(cs2method_10152(a4), cs2method_10823(a4)), 5);
+		} else {
+			if (cs2method_11038(a4, a1) == 1) {
+				v3 = cs2method_10060(cs2method_10878(), 5);
+				v6 = cs2method_10060(cs2method_10060(cs2method_10406(), cs2method_10664()), 5);
+			}
+		}
+		IF (a1 == -1) 
+			GOTO	flow_6
+		GOTO	flow_7
+	flow_6:
+		IF (cs2method_10324(a4) == 1) 
+			GOTO	flow_8
+	flow_7:
+		IF (cs2method_11038(a4, a1) == 1) 
+			GOTO	flow_8
+		GOTO	flow_42
+	flow_8:
+		if (script_4761(a0) == 0) {
+			return;
+		}
+		if (cs2_configs['cfg2'] != 1) {
+			int v5 = cs2method_10982(a2);
+			if (v5 != -1 && a6 >= cs2method_10236(v5)) {
+				a6 = cs2method_10236(v5);
+			}
+			if (a3 == 0) {
+				v8 = cs2method_10060(4, cs2method_10509(cs2method_10461(a6, 4), 20452, a5));
+				v2 = cs2method_10060(4, cs2method_10051(16, cs2method_10805(cs2method_10461(a6, 4), 20452, a5)));
+			} else {
+				v8 = cs2method_10060(12, cs2method_10509(cs2method_10461(a6, 12), 17813, a5));
+				v2 = cs2method_10060(12, cs2method_10051(16, cs2method_10805(cs2method_10461(a6, 12), 17813, a5)));
+			}
+			if (v5 != -1) {
+				int v1 = cs2method_10461(v3, cs2method_10134(v5));
+				int v0 = cs2method_10461(v6, cs2method_10718(v5));
+				if (v1 < 0) {
+					v3 = cs2method_10134(v5);
+					v1 = 0;
+				}
+				if (v0 < 0) {
+					v6 = cs2method_10718(v5);
+					v0 = 0;
+				}
+				if (v1 > 0) {
+					int v4 = cs2method_10060(cs2method_10461(v1, cs2method_10236(v5)), v8);
+					if (v4 > 0) {
+						v3 = cs2method_10461(v3, v4);
+					}
+				}
+				if (v0 > 0) {
+					int v7 = cs2method_10060(cs2method_10461(v0, cs2method_10823(v5)), v2);
+					if (v7 > 0) {
+						v6 = cs2method_10461(cs2method_10461(cs2method_10461(v6, v7), cs2method_10664()), 10);
+					}
+				}
+			}
+			if (v3 < 0) {
+				v3 = 0;
+			}
+			if (v6 < 0) {
+				v6 = 0;
+			}
+			cs2method_10283(v8, v2, 0, 0, a2);
+			cs2method_10112(v3, v6, 0, 0, a2);
+			cs2method_10273(a2);
+			cs2method_10606(a2, 3, 0);
+			cs2method_10013(cs2method_10236(a2), cs2method_10823(a2), 0, 0);
+			cs2method_10238(1);
+			if (a3 == 0) {
+				cs2method_10811(921102);
+			} else {
+				cs2method_10811(0);
+			}
+			if (a3 == 0) {
+				cs2method_10606(a2, 3, 1);
+				cs2method_10013(cs2method_10236(a2), cs2method_10823(a2), 0, 0);
+				cs2method_10238(0);
+				cs2method_10811(15461606);
+			} else {
+				cs2method_10606(a2, 5, cs2method_10163(a2));
+				cs2method_10013(4, 10, 1, 0);
+				cs2method_10063(0, 0, 1, 0);
+				cs2method_10310(4649);
+				cs2method_10577(1);
+				cs2method_10606(a2, 5, cs2method_10163(a2));
+				cs2method_10013(4, 10, 1, 0);
+				cs2method_10063(0, 0, 1, 2);
+				cs2method_10310(4649);
+				cs2method_10577(1);
+				cs2method_10230(1);
+				cs2method_10606(a2, 5, cs2method_10163(a2));
+				cs2method_10013(10, 4, 0, 1);
+				cs2method_10063(0, 0, 0, 1);
+				cs2method_10310(4651);
+				cs2method_10577(1);
+				cs2method_10434(1);
+				cs2method_10606(a2, 5, cs2method_10163(a2));
+				cs2method_10013(10, 4, 0, 1);
+				cs2method_10063(0, 0, 2, 1);
+				cs2method_10310(4651);
+				cs2method_10577(1);
+				cs2method_10606(a2, 5, cs2method_10163(a2));
+				cs2method_10013(10, 10, 0, 0);
+				cs2method_10063(0, 0, 0, 0);
+				cs2method_10310(4650);
+				cs2method_10434(1);
+				cs2method_10606(a2, 5, cs2method_10163(a2));
+				cs2method_10013(10, 10, 0, 0);
+				cs2method_10063(0, 0, 2, 0);
+				cs2method_10310(4650);
+				cs2method_10606(a2, 5, cs2method_10163(a2));
+				cs2method_10013(10, 10, 0, 0);
+				cs2method_10063(0, 0, 0, 2);
+				cs2method_10310(4650);
+				cs2method_10434(1);
+				cs2method_10230(1);
+				cs2method_10606(a2, 5, cs2method_10163(a2));
+				cs2method_10013(10, 10, 0, 0);
+				cs2method_10063(0, 0, 2, 2);
+				cs2method_10310(4650);
+				cs2method_10230(1);
+			}
+			cs2method_10606(a2, 4, cs2method_10163(a2));
+			cs2method_10797(a5);
+			if (a3 == 0) {
+				cs2method_10013(cs2method_10461(a6, 4), cs2method_10823(a2), 0, 0);
+				cs2method_10063(2, 0, 0, 0);
+				cs2method_11105(0, 1, 16);
+				cs2method_10692(20452);
+				cs2method_10811(16101953);
+			} else {
+				cs2method_10013(cs2method_10461(cs2method_10236(a2), 12), cs2method_10461(cs2method_10823(a2), 12), 0, 0);
+				cs2method_10063(6, 6, 0, 0);
+				cs2method_11105(1, 1, 13);
+				cs2method_10811(16777215);
+				cs2method_10692(17813);
+			}
+			cs2_configs['cfg2'] = 1;
+		}
+	flow_42:
+		return;
+}

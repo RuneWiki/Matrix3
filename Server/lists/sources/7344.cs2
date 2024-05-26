@@ -1,0 +1,75 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7344() {
+	object v0;
+	int v5 = 0;
+	int v2 = 0;
+	script_4187_struct(2,0,0) v1 = script_4187();
+	int v7 = v1.intpart_1;
+	int v6 = v1.intpart_0;
+	object v3 = "";
+	if (v6 == 0) {
+		v0 = (string)cs2method_10379(v7) + "m";
+	} else {
+		v0 = (string)cs2method_10379(v6) + "h";
+	}
+	cs2method_10758(idx17mapData('i', 'd', 1024, client_configs['cfg3453'].bitcfg17462), 61669377);
+	cs2method_10026(61669378, (string)cs2method_10379(client_configs['cfg3453'].bitcfg17463) + " " + idx17mapData('i', 's', 2164, client_configs['cfg3453'].bitcfg17462));
+	cs2method_10026(61669379, "available at " + (string)cs2method_10379(idx17mapData('i', 'i', 7162, client_configs['cfg3453'].bitcfg17462)) + " coins each");
+	cs2method_10026(61669392, "Buy 1 for " + (string)cs2method_10379(idx17mapData('i', 'i', 7162, client_configs['cfg3453'].bitcfg17462)));
+	cs2method_10026(61669397, "Buy 5 for " + (string)cs2method_10379(cs2method_10051(5, idx17mapData('i', 'i', 7162, client_configs['cfg3453'].bitcfg17462))));
+	cs2method_10026(61669402, "Buy 10 for " + (string)cs2method_10379(cs2method_10051(10, idx17mapData('i', 'i', 7162, client_configs['cfg3453'].bitcfg17462))));
+	cs2method_10026(61669407, "Buy 50 for " + (string)cs2method_10379(cs2method_10051(50, idx17mapData('i', 'i', 7162, client_configs['cfg3453'].bitcfg17462))));
+	cs2method_10026(61669414, "Buy " + (string)cs2method_10379(client_configs['cfg3453'].bitcfg17463) + " for " + (string)cs2method_10379(cs2method_10051(client_configs['cfg3453'].bitcfg17463, idx17mapData('i', 'i', 7162, client_configs['cfg3453'].bitcfg17462))));
+	if (client_configs['cfg3453'].bitcfg17463 < 50) {
+		cs2method_10467(1, 61669403);
+	}
+	if (client_configs['cfg3453'].bitcfg17463 < 10) {
+		cs2method_10467(1, 61669398);
+	}
+	if (client_configs['cfg3453'].bitcfg17463 < 5) {
+		cs2method_10467(1, 61669393);
+	}
+	if (client_configs['cfg3453'].bitcfg17463 < 1) {
+		cs2method_10467(1, 61669388);
+		cs2method_10467(1, 61669408);
+		cs2method_10026(61669409, "New stock available in " + (string)v0 + ".");
+		cs2method_10467(0, 61669409);
+	}
+	int v4 = 0;
+	switch (client_configs['cfg3453'].bitcfg17462) {
+		case 1:
+			v4 = client_configs['cfg3441'];
+			break;
+		case 2:
+			v4 = client_configs['cfg3442'];
+			break;
+		case 3:
+			v4 = client_configs['cfg3443'];
+			break;
+		case 4:
+			v4 = client_configs['cfg3444'];
+			break;
+		case 5:
+			v4 = client_configs['cfg3445'];
+			break;
+		case 6:
+			v4 = client_configs['cfg3446'];
+			break;
+		case 7:
+			v4 = client_configs['cfg3447'];
+	}
+	cs2method_10026(61669387, "(You currently own " + (string)cs2method_10379(v4) + ")");
+	cs2method_10026(61669428, "Finish repairs for " + (string)cs2method_10379(cs2method_10051(client_configs['cfg3417'], 20)) + "k");
+	return;
+}

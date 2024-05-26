@@ -1,0 +1,53 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8323(int a0,int a1) {
+	int v0 = idx17mapData('i', 'J', 7716, a0);
+	switch (v0) {
+		default:
+			if (client_configs['cfg3680'].bitcfg22315 == 0) {
+				if (a1 == 1) {
+					script_8357(a0);
+				} else {
+					script_8324(a0);
+				}
+				script_8327(a0);
+			} else {
+				if (cs2_configs['cfg3465'].bitcfg22615 == cs2method_10060(a0, 1)) {
+					if (cs2method_10614() == 2 && a1 == 0) {
+						return;
+					}
+					cs2_configs['cfg3465'].bitcfg22615 = 0;
+				}
+				cs2method_10467(1, idx22mapAttribute(idx17mapData('i', 'J', 7716, a0), 3503));
+			}
+			script_121(a0);
+			script_8157();
+			break;
+		case 21300:
+			script_675();
+			break;
+		case 21301:
+			script_8290(1);
+			break;
+		case 21136:
+			script_8746(0);
+			return;
+	}
+	script_8705(a0);
+	script_6739(4);
+	script_8731();
+	if (script_6354(idx22mapAttribute(v0, 3514)) == 1) {
+		script_8268(a0, 1);
+	}
+	return;
+}

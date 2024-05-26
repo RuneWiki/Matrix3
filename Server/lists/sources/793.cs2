@@ -1,0 +1,62 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_793() {
+	int v7 = 0;
+	int v4 = 0;
+	int v5 = 0;
+	int v2 = 0;
+	int v1 = 0;
+	int v3 = 0;
+	int v6 = 0;
+	int v0 = 0;
+	if (cs2method_10324(44105728) == 1) {
+		int v8 = cs2method_10604();
+		opc_struct10267(3,0,0) v17 = cs2method_10267(v8);
+		int v13 = v17.intpart_2;
+		int v15 = v17.intpart_1;
+		int v11 = v17.intpart_0;
+		opc_struct10372(5,0,0) v14 = cs2method_10372();
+		int v9 = v14.intpart_4;
+		int v18 = v14.intpart_3;
+		int v12 = v14.intpart_2;
+		int v10 = v14.intpart_1;
+		int v16 = v14.intpart_0;
+		if (cs2_configs['cfg3844'] == 0 && v16 == 1) {
+			opc_struct10372(5,0,0) v19 = cs2method_10372();
+			int v28 = v19.intpart_0;
+			int v22 = v19.intpart_1;
+			int v23 = v19.intpart_2;
+			int v21 = v19.intpart_3;
+			cs2_configs['cfg3850'] = v19.intpart_4;
+			int v20 = v28;
+			int v24 = v22;
+			int v29 = v23;
+			cs2_configs['cfg3848'] = v21;
+			int v25 = v20;
+			int v26 = v24;
+			cs2_configs['cfg3849'] = v29;
+			int v27 = v25;
+			cs2_configs['cfg3847'] = v26;
+			v16 = v27;
+			cs2_configs['cfg3844'] = 1;
+		}
+		if (cs2_configs['cfg3845'] <= 0 || cs2_configs['cfg3845'] >= 300) {
+			cs2_configs['cfg3845'] = 100;
+		}
+		if (cs2_configs['cfg3846'] <= 0 || cs2_configs['cfg3845'] >= 200) {
+			cs2_configs['cfg3846'] = 25;
+		}
+		script_770(v16, v11, v15);
+	}
+	return;
+}

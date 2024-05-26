@@ -1,0 +1,78 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2023(int a0,int a1,int a2) {
+	object v7 = "";
+	int v5 = 0;
+	object v0 = "";
+	int v1 = -1;
+	int v6 = 0;
+	switch (a2) {
+		case 1:
+			v6 = idx22mapAttribute(a1, 2654);
+			v7 = idx17mapData('i', 's', 2163, v6);
+			v5 = idx22mapAttribute(a1, 2685);
+			break;
+		case 2:
+			v6 = idx22mapAttribute(a1, 3051);
+			v7 = idx17mapData('i', 's', 2163, v6);
+			v5 = idx22mapAttribute(a1, 3052);
+			break;
+		case 3:
+			v6 = idx22mapAttribute(a1, 3053);
+			v7 = idx17mapData('i', 's', 2163, v6);
+			v5 = idx22mapAttribute(a1, 3054);
+	}
+	switch (v6) {
+		default:
+			v7 = "";
+			break;
+		case 1:
+			v0 = " " + (string)cs2method_10018(idx17mapData('i', 'o', 2171, v5));
+			break;
+		case 2:
+			v0 = " " + (string)cs2method_10018(idx17mapData('i', 'o', 2174, v5));
+			break;
+		case 3:
+			v0 = " " + (string)cs2method_10018(idx17mapData('i', 'o', 2173, v5));
+			break;
+		case 4:
+			v0 = " " + (string)cs2method_10018(idx17mapData('i', 'o', 2171, v5));
+			break;
+		case 5:
+			v0 = " " + idx17mapData('i', 's', 1626, v5);
+			break;
+		case 6:
+			break;
+		case 7:
+			v0 = " " + idx17mapData('i', 's', 1626, v5);
+			break;
+		case 8:
+			int v4 = idx17mapData('i', 'J', 1022, v5);
+			v0 = " " + idx22mapAttribute(v4, 2365);
+			break;
+		case 9:
+			v0 = " " + idx17mapData('i', 's', 1626, v5);
+			break;
+		case 10:
+		case 11:
+			int v3 = idx17mapData('i', 'J', 2175, v5);
+			v0 = " " + idx22mapAttribute(v3, 3090);
+			break;
+		case 12:
+		case 13:
+			v0 = " " + idx17mapData('i', 's', 1626, v5);
+	}
+	object v2 = cs2method_10427(v7, v0);
+	cs2method_10026(a0, v2);
+	return;
+}

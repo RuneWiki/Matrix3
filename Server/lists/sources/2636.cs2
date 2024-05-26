@@ -1,0 +1,26 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2636() {
+	if (client_configs['cfg1630'].bitcfg5220 == 2) {
+		cs2method_10882(56295432, "Attack wall");
+		cs2method_10882(56295433, "Collect");
+	} else if (client_configs['cfg1630'].bitcfg5220 == 4) {
+		cs2method_10882(56295432, "Rescue");
+		cs2method_10882(56295433, "Steal");
+	} else {
+		if (client_configs['cfg1630'].bitcfg5220 == 3) {
+			cs2method_10882(56295432, "Collect gold");
+		}
+	}
+	return;
+}

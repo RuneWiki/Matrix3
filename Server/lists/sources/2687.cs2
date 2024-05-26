@@ -1,0 +1,27 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_2687() {
+	if (client_configs['cfg1627'] < 100) {
+		return 10000;
+	}
+	if (client_configs['cfg1627'] < 200) {
+		return 12500;
+	}
+	if (client_configs['cfg1627'] < 300) {
+		return 15000;
+	}
+	if (client_configs['cfg1627'] < 400) {
+		return 17500;
+	}
+	return 20000;
+}

@@ -1,0 +1,24 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2624() {
+	int v1 = 1;
+	int v0 = -1;
+	while ((int)idx17mapData('i', 'I', 2450, v1) != 55705626) {
+		int v2 = (int)idx17mapData('i', 'I', 2450, v1);
+		cs2method_10026(v2, "<col=800000>" + idx17mapData('I', 's', 2449, v2) + "  " + "<col=000000>" + idx17mapData('I', 's', 2448, v2));
+		v1 = cs2method_10060(v1, 1);
+	}
+	cs2method_11130(0, 240, 55705604);
+	script_72(55705605, 55705604, cs2method_10718(55705604));
+	return;
+}

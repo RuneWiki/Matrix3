@@ -1,0 +1,49 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9442(int a0,int a1) {
+	cs2method_10273(a0);
+	int v0 = cs2method_10236(a0);
+	int v1 = cs2method_10823(a0);
+	int v5 = cs2method_10461(v0, 8);
+	int v2 = cs2method_10461(v1, 6);
+	int v4 = cs2method_10461(v0, 16);
+	int v3 = cs2method_10461(v1, 18);
+	if (a1 == 0) {
+		script_98(a0, 0, 21538, 0, 0, 8, 6);
+		script_98(a0, 1, 21539, 8, 0, v4, 6);
+		script_98(a0, 2, 21540, v5, 0, 8, 6);
+		script_98(a0, 3, 21541, 0, 6, 8, 6);
+		script_98(a0, 4, 21542, 8, 6, v4, 6);
+		script_98(a0, 5, 21543, v5, 6, 8, 6);
+		script_98(a0, 6, 21544, 0, 12, 8, v3);
+		script_98(a0, 7, 21545, 8, 12, v4, v3);
+		script_98(a0, 8, 21546, v5, 12, 8, v3);
+		script_98(a0, 9, 21547, 0, v2, 8, 6);
+		script_98(a0, 10, 21548, 8, v2, v4, 6);
+		script_98(a0, 11, 21549, v5, v2, 8, 6);
+	} else {
+		script_98(a0, 0, 21550, 0, 0, 8, 6);
+		script_98(a0, 1, 21551, 8, 0, v4, 6);
+		script_98(a0, 2, 21552, v5, 0, 8, 6);
+		script_98(a0, 3, 21553, 0, 6, 8, 6);
+		script_98(a0, 4, 21554, 8, 6, v4, 6);
+		script_98(a0, 5, 21555, v5, 6, 8, 6);
+		script_98(a0, 6, 21556, 0, 12, 8, v3);
+		script_98(a0, 7, 21557, 8, 12, v4, v3);
+		script_98(a0, 8, 21558, v5, 12, 8, v3);
+		script_98(a0, 9, 21559, 0, v2, 8, 6);
+		script_98(a0, 10, 21560, 8, v2, v4, 6);
+		script_98(a0, 11, 21561, v5, v2, 8, 6);
+	}
+	return;
+}

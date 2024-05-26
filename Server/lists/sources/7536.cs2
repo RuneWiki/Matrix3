@@ -1,0 +1,60 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7536(int a0,int a1,int a2,int a3) {
+	if (a2 == -1 || a0 == -1) {
+		return;
+	}
+	cs2method_10670(6185, 1, 0, 200);
+	for (int v1 = cs2method_10461(cs2method_10924(a2), 1); v1 >= 0; v1 = cs2method_10461(v1, 1)) {
+		if (cs2method_11038(a1, v1) == 1) {
+			if (v1 == a3) {
+				script_7543(a1, 15050, 0);
+				cs2method_20061(new function<script_7542>(int a0,int a1,int a2) {
+					if (cs2method_10133() <= a2 || cs2method_10609(91357196) == 0) {
+						return;
+					}
+					int v0 = 255;
+					if (cs2method_11038(a1, a0) == 1) {
+						if (cs2method_11038(a1, interfaceDefsAttribute(3253)) == 1) {
+							v0 = cs2method_10872(cs2method_10060(cs2method_10699(), 15), 255);
+						}
+						script_7543(a1, 15048, v0);
+						if (v0 >= 255) {
+							cs2method_20061(new function<none>() {
+							}, "");
+						}
+					}
+					return;
+				}, new WidgetPointer(-32768,3), -2147483643, 0, "Iii");
+			} else {
+				script_7543(a1, 15048, 255);
+				cs2method_20061(new function<none>() {
+				}, "");
+			}
+		}
+	}
+	cs2method_10121(idx22mapAttribute(a0, 3252), 1, 91357200);
+	object v5 = "<col=ffffff>" + (string)cs2method_10379(idx22mapAttribute(a0, 3249)) + " x " + idx17mapData('i', 's', 1563, idx22mapAttribute(a0, 3248)) + "</col>" + "<br>";
+	int v2 = idx22mapAttribute(a0, 3250);
+	object v0 = "Level " + (string)cs2method_10379(v2) + " Slayer";
+	object v3 = "<br>" + "<br>" + "You need to carry the scroll to make progress on the contract. Kills that are counted towards this contract cannot also count towards a Slayer assignment." + "<br>" + "<br>" + "You will receive Slayer XP for each contract kill: " + "<col=ffffff>" + (string)cs2method_10379(20) + "%" + "</col>" + " of the amount you'd have received on a Slayer assignment.";
+	int v4 = cs2method_10060(cs2method_10051(cs2method_10805(cs2method_10236(91357204), 17813, cs2method_10427(v5, cs2method_10427(v0, v3))), 13), 2);
+	cs2method_10283(cs2method_10236(91357198), cs2method_11048(cs2method_10060(v4, 44), 130), 0, 0, 91357198);
+	script_7538(v5, v2, v0, a3, v3);
+	cs2method_20024(new function<script_7537>(int a0,object a1,int a2,object a3,object a4) {
+		script_7538(a4, a2, a1, a0, a3);
+		return;
+	}, (string)v5, (string)v0, (string)v3, v2, a3, 18, 1, "sssiiY", new WidgetPointer(1394,14));
+	cs2method_10467(0, 91357196);
+	return;
+}

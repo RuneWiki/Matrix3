@@ -1,0 +1,59 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_593(int a0) {
+	int v4 = idx17mapData('i', 'v', 1079, client_configs['cfg138']);
+	int v5 = cs2method_10640(v4, 0);
+	script_9263(6881357, v5, cs2method_11065(v4, 0));
+	int v2 = cs2method_10640(v4, 1);
+	script_9263(6881359, v2, cs2method_11065(v4, 1));
+	cs2method_20254(new function<script_589>() {
+		script_621();
+		return;
+	}, v4, 1, "Y", new WidgetPointer(105,24));
+	int v8 = cs2method_10915(a0);
+	int v6 = cs2method_10941(a0);
+	int v3 = cs2method_10387(a0);
+	int v1 = cs2method_10534(a0);
+	object v0 = cs2method_10055(v3, 1);
+	object v7 = cs2method_10055(v1, 1);
+	cs2method_10273(6881351);
+	if (cs2method_10324(6881351) == 1) {
+		if (cs2method_10318(a0) == 1) {
+			cs2method_10606(6881351, 4, 0);
+			cs2method_10063(0, 0, 0, 0);
+			cs2method_10013(cs2method_10488(), cs2method_10664(), 0, 0);
+			cs2method_10692(17813);
+			cs2method_10811(14407812);
+			cs2method_10797("Submitting offer...");
+			cs2method_11105(1, 1, 0);
+		} else {
+			script_652(0, 0, cs2method_10488(), cs2method_10664(), a0, 6881351, 0, 1, 2);
+		}
+	}
+	if (cs2method_10041(a0) == 1) {
+		if (v8 == 0) {
+			cs2method_10026(6881350, "You bought a total of " + "<col=cc9900>" + (string)v0 + "</col>" + "<br>" + "for a total price of " + "<col=cc9900>" + (string)v7 + "</col>" + " gp.");
+		} else {
+			cs2method_10026(6881350, "You sold a total of " + "<col=cc9900>" + (string)v0 + "</col>" + "<br>" + "for a total price of " + "<col=cc9900>" + (string)v7 + "</col>" + " gp.");
+		}
+		cs2method_10467(1, 6881355);
+	} else {
+		if (v8 == 0) {
+			cs2method_10026(6881350, "You have bought a total of " + "<col=cc9900>" + (string)v0 + "</col>" + " so far" + "<br>" + "for a total price of " + "<col=cc9900>" + (string)v7 + "</col>" + " gp.");
+		} else {
+			cs2method_10026(6881350, "You have sold a total of " + "<col=cc9900>" + (string)v0 + "</col>" + " so far" + "<br>" + "for a total price of " + "<col=cc9900>" + (string)v7 + "</col>" + " gp.");
+		}
+		cs2method_10467(0, 6881355);
+	}
+	return;
+}

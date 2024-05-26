@@ -1,0 +1,30 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_2034(int a0) {
+	int v1 = cs2method_10262();
+	int v0 = a0;
+	switch (v1) {
+		case 1:
+			v0 = script_2035(a0);
+			break;
+		case 2:
+			v0 = script_2036(a0);
+			break;
+		case 3:
+			v0 = script_2037(a0);
+			break;
+		case 6:
+			v0 = script_7686(a0);
+	}
+	return v0;
+}

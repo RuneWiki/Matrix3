@@ -1,0 +1,133 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5784(int a0) {
+	if (a0 == -1) {
+		return;
+	}
+	int v6 = 4;
+	int v11 = 4;
+	int v1 = 4;
+	int v5 = 4;
+	int v7 = 29;
+	int v13 = 8;
+	int v10 = 56;
+	int v4 = 7;
+	int v8 = 120;
+	int v9 = 64;
+	int v2 = 53;
+	int v12 = 8;
+	int v3 = 68;
+	int v0 = 43;
+	if (cs2method_10324(a0) == 1) {
+		cs2method_10063(0, 0, 1, 1);
+		cs2method_10013(cs2method_10051(v6, 2), cs2method_10051(v11, 2), 1, 1);
+	}
+	cs2method_10273(a0);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10013(cs2method_10051(v12, 2), v5, 1, 0);
+	cs2method_10063(0, v7, 1, 0);
+	cs2method_10310(5472);
+	cs2method_10577(1);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10013(cs2method_10051(v12, 2), v5, 1, 0);
+	cs2method_10063(0, v4, 1, 2);
+	cs2method_10310(5472);
+	cs2method_10577(1);
+	cs2method_10230(1);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10013(v1, cs2method_10060(v7, v4), 0, 1);
+	cs2method_10063(v12, v7, 0, 0);
+	cs2method_10310(5473);
+	cs2method_10577(1);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10013(v1, cs2method_10060(v7, v4), 0, 1);
+	cs2method_10063(v12, v7, 2, 0);
+	cs2method_10310(5473);
+	cs2method_10577(1);
+	cs2method_10434(1);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10013(cs2method_10051(cs2method_10060(v13, v10), 2), v7, 1, 0);
+	cs2method_10063(0, 0, 1, 0);
+	cs2method_10310(9638);
+	cs2method_10577(1);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10013(v10, v7, 0, 0);
+	cs2method_10063(v12, 0, 0, 0);
+	cs2method_10310(9639);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10013(v10, v7, 0, 0);
+	cs2method_10063(v12, 0, 2, 0);
+	cs2method_10310(9639);
+	cs2method_10434(1);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10013(cs2method_10051(cs2method_10060(v9, v8), 2), v4, 1, 0);
+	cs2method_10063(0, 0, 1, 2);
+	cs2method_10310(9630);
+	cs2method_10577(1);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10013(v8, v4, 0, 0);
+	cs2method_10063(v9, 0, 0, 2);
+	cs2method_10310(9629);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10013(v8, v4, 0, 0);
+	cs2method_10063(v9, 0, 2, 2);
+	cs2method_10310(9631);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10013(v12, cs2method_10060(cs2method_10060(cs2method_10060(v7, v2), v3), v0), 0, 1);
+	cs2method_10063(0, cs2method_10060(v7, v3), 0, 0);
+	cs2method_10310(9642);
+	cs2method_10577(1);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10013(v12, v3, 0, 0);
+	cs2method_10063(0, v7, 0, 0);
+	cs2method_10310(9637);
+	cs2method_10434(1);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10013(v12, v0, 0, 0);
+	cs2method_10063(0, v2, 0, 2);
+	cs2method_10310(9643);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10013(v12, cs2method_10060(cs2method_10060(cs2method_10060(v7, v2), v3), v0), 0, 1);
+	cs2method_10063(0, cs2method_10060(v7, v3), 2, 0);
+	cs2method_10310(9642);
+	cs2method_10577(1);
+	cs2method_10434(1);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10013(v12, v3, 0, 0);
+	cs2method_10063(0, v7, 2, 0);
+	cs2method_10310(9637);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10013(v12, v0, 0, 0);
+	cs2method_10063(0, v2, 2, 2);
+	cs2method_10310(9643);
+	cs2method_10434(1);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10013(v13, v7, 0, 0);
+	cs2method_10063(0, 0, 0, 0);
+	cs2method_10310(9640);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10013(v13, v7, 0, 0);
+	cs2method_10063(0, 0, 2, 0);
+	cs2method_10310(9640);
+	cs2method_10434(1);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10013(v9, v2, 0, 0);
+	cs2method_10063(0, 0, 0, 2);
+	cs2method_10310(9632);
+	cs2method_10606(a0, 5, cs2method_10163(a0));
+	cs2method_10013(v9, v2, 0, 0);
+	cs2method_10063(0, 0, 2, 2);
+	cs2method_10310(9632);
+	cs2method_10434(1);
+	return;
+}

@@ -1,0 +1,27 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_9669(int a0,int a1) {
+	if (itemDefsAttribute(a0, 4092) != -1) {
+		a0 = itemDefsAttribute(a0, 4092);
+	}
+	if (a0 != -1 && itemDefsAttribute(a0, 4084) == 1) {
+		return 1;
+	}
+	if (itemDefsAttribute(a1, 4092) != -1) {
+		a1 = itemDefsAttribute(a1, 4092);
+	}
+	if (a1 != -1 && itemDefsAttribute(a1, 4084) == 1) {
+		return 2;
+	}
+	return 0;
+}

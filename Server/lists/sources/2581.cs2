@@ -1,0 +1,114 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_2581(int a0) {
+	switch (a0) {
+		case 830:
+			return script_42(cs2method_10582());
+		case 831:
+			if (cs2method_10983() == 0) {
+				return -1;
+			}
+			return script_42(cs2method_10194());
+		case 833:
+			return cs2method_10005();
+		case 834:
+			return script_42(cs2method_11011());
+		case 836:
+			if (cs2method_10354() == 0) {
+				return -1;
+			}
+			return script_42(cs2method_10865());
+		case 837:
+			if (cs2method_10839() == 0 || cs2method_10322() == 0 || cs2method_10990() == 0) {
+				return -1;
+			}
+			return cs2method_10973();
+		case 838:
+			return script_42(cs2method_10956());
+		case 19590:
+		case 839:
+			if (cs2method_10508() == 0) {
+				return -1;
+			}
+			return script_42(cs2method_11052());
+		case 840:
+			return script_42(cs2method_10508());
+		case 19593:
+		case 841:
+			if (cs2method_10997() == 0) {
+				return -1;
+			}
+			return cs2method_10344();
+		case 21215:
+			/* 
+				java.lang.RuntimeException: Stack underflow
+					at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+					at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+					at tests.Main.main(Main.java:69)
+				
+			 */
+		case 842:
+			if (cs2method_10754() == 0) {
+				return -1;
+			}
+			return cs2method_10928();
+		case 843:
+			if (cs2method_10292() == 0) {
+				return -1;
+			}
+			return script_42(cs2method_10322());
+		case 844:
+			return script_42(cs2_configs['cfg987']);
+		case 845:
+			return cs2_configs['cfg178'];
+		case 908:
+			return cs2method_10125();
+		case 963:
+			if (cs2method_10322() == 0 || cs2method_10478() == 0) {
+				return -1;
+			}
+			return script_42(cs2method_10839());
+		case 1009:
+			if (cs2method_10712() == 0) {
+				return -1;
+			}
+			return cs2method_10614();
+		case 2430:
+			if (cs2method_10402() == 1) {
+				return cs2method_10589();
+			}
+			return -1;
+		case 2858:
+			if (cs2method_10839() == 0 || cs2method_10322() == 0 || cs2method_10956() == 0 || cs2method_10046() == 0) {
+				return -1;
+			}
+			return cs2method_10455();
+		case 2840:
+			return script_42(cs2_configs['cfg1686']);
+		case 2841:
+			return cs2_configs['cfg1701'];
+		case 19591:
+			return cs2method_10455();
+		case 19592:
+			return cs2method_10776();
+		case 19589:
+			return cs2method_10973();
+		case 21214:
+			return cs2_configs['cfg3698'];
+	}
+	return -1;
+}

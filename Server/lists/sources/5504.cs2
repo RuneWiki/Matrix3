@@ -1,0 +1,81 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5504(int a0) {
+	object v1;
+	object v0 = "The potion slot is only available after you have claimed the Daemonheim Aura 2.";
+	if (cs2method_10771() == 0) {
+		cs2method_10758(15907, 7602210);
+		cs2method_10758(-1, a0);
+		cs2method_10495(a0);
+		object v2 = "The potion slot is only available for use on a members world.";
+		cs2method_21121(new function<script_8799>(int a0,int a1,object a2) {
+			script_8800(a1, a0, a2);
+			return;
+		}, (string)v2, new WidgetPointer(a0), -1, "sIi", new WidgetPointer(a0));
+		object v3 = "This slot is only for use on a members world.";
+		cs2method_21121(new function<script_8799>(int a0,object a1,int a2) {
+			script_8800(a0, a2, a1);
+			return;
+		}, (string)v3, new WidgetPointer(116,58), -1, "sIi", new WidgetPointer(116,58));
+		cs2method_21121(new function<script_8799>(int a0,object a1,int a2) {
+			script_8800(a0, a2, a1);
+			return;
+		}, (string)v3, new WidgetPointer(116,59), -1, "sIi", new WidgetPointer(116,59));
+		return;
+	}
+	if (client_configs['cfg3861'].bitcfg20534 == 0) {
+		object v2 = "This slot is only available after you have claimed the Daemonheim aura 3.";
+		cs2method_21121(new function<script_8799>(int a0,object a1,int a2) {
+			script_8800(a2, a0, a1);
+			return;
+		}, (string)v2, new WidgetPointer(116,58), -1, "sIi", new WidgetPointer(116,58));
+		cs2method_21121(new function<script_8799>(int a0,int a1,object a2) {
+			script_8800(a0, a1, a2);
+			return;
+		}, (string)v2, new WidgetPointer(116,59), -1, "sIi", new WidgetPointer(116,59));
+	}
+	if (client_configs['cfg3861'].bitcfg20532 == 0) {
+		cs2method_10758(15907, 7602210);
+		cs2method_10758(-1, a0);
+		cs2method_10495(a0);
+		object v2 = "The potion slot is only available after you have claimed the Daemonheim Aura 2.";
+		cs2method_21121(new function<script_8799>(int a0,int a1,object a2) {
+			script_8800(a1, a0, a2);
+			return;
+		}, (string)v2, new WidgetPointer(a0), -1, "sIi", new WidgetPointer(a0));
+		return;
+	}
+	if (client_configs['cfg3857'] == -1) {
+		cs2method_10758(15907, 7602210);
+		cs2method_10758(-1, a0);
+		cs2method_10495(a0);
+		v1 = "To bind a potion, right click it and select Bind. You may claim a bound potion from this slot once per floor.";
+	} else if (client_configs['cfg3855'].bitcfg20478 == 1) {
+		cs2method_10495(a0);
+		cs2method_11127(10, a0, "Examine");
+		cs2method_10316(a0, "<col=ff9040>" + (string)cs2method_10018(client_configs['cfg3857']));
+		v1 = "To bind a potion, right click it and select Bind. You have already claimed a potion on this floor.";
+	} else {
+		cs2method_11127(1, a0, "Take");
+		cs2method_11127(10, a0, "Examine");
+		cs2method_10316(a0, "<col=ff9040>" + (string)cs2method_10018(client_configs['cfg3857']));
+		v1 = "To bind a potion, right click it and select Bind. You may claim a bound potion from this slot once per floor.";
+	}
+	cs2method_10758(-1, 7602210);
+	cs2method_10121(client_configs['cfg3857'], 1, a0);
+	cs2method_21121(new function<script_8799>(object a0,int a1,int a2) {
+		script_8800(a2, a1, a0);
+		return;
+	}, (string)v1, new WidgetPointer(a0), -1, "sIi", new WidgetPointer(a0));
+	return;
+}

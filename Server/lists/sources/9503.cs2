@@ -1,0 +1,91 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9503(int a0,int a1,int a2) {
+	object v3;
+	int v9 = 0;
+	object v8 = "null";
+	switch (a2) {
+		case 49086525:
+			int v0 = cs2_configs['cfg3881'];
+			if (v0 == 1) {
+				v8 = "<col=dcdbd6>" + "Armadyl" + "</col>" + "-aligned diviners collect divine energy 10% faster.";
+			} else {
+				v8 = "<col=dcdbd6>" + "Armadyl" + "</col>" + "-aligned convoys can collect 10% more divine energy on each trip.";
+			}
+			break;
+		case 49086524:
+			int v6 = cs2_configs['cfg3882'];
+			if (v6 == 1) {
+				v8 = "<col=dcdbd6>" + "Armadyl" + "</col>" + "-aligned caravan units have 10% more life points.";
+			} else {
+				v8 = "<col=dcdbd6>" + "Armadyl" + "</col>" + "-aligned bodyguards deal 50% more damage.";
+			}
+			break;
+		case 49086523:
+			int v5 = cs2_configs['cfg3883'];
+			if (v5 == 1) {
+				v8 = "<col=dcdbd6>" + "Armadyl" + "</col>" + "-aligned players heal bodyguards and caravans 10% faster.";
+			} else {
+				v8 = "<col=dcdbd6>" + "Armadyl" + "</col>" + "-aligned players gather 10% more divine energy when gathering with a convoy.";
+			}
+			break;
+		case 49086522:
+			int v7 = cs2_configs['cfg3884'];
+			if (v7 == 1) {
+				v8 = "<col=dcdbd6>" + "Armadyl" + "</col>" + "-aligned buildings are 15% stronger.";
+			} else {
+				v8 = "<col=dcdbd6>" + "Armadyl" + "</col>" + "-aligned buildings have boosts to their associated effects.";
+			}
+			break;
+		case 49086520:
+			int v1 = cs2_configs['cfg3885'];
+			if (v1 == 1) {
+				v8 = "<col=d66e1f>" + "Bandos" + "</col>" + "-aligned diviners collect divine energy 10% faster.";
+			} else {
+				v8 = "<col=d66e1f>" + "Bandos" + "</col>" + "-aligned convoys can collect 10% more divine energy on each trip.";
+			}
+			break;
+		case 49086519:
+			int v10 = cs2_configs['cfg3886'];
+			if (v10 == 1) {
+				v8 = "<col=d66e1f>" + "Bandos" + "</col>" + "-aligned caravan units have 10% more life points.";
+			} else {
+				v8 = "<col=d66e1f>" + "Bandos" + "</col>" + "-aligned bodyguards deal 50% more damage.";
+			}
+			break;
+		case 49086518:
+			int v4 = cs2_configs['cfg3887'];
+			if (v4 == 1) {
+				v8 = "<col=d66e1f>" + "Bandos" + "</col>" + "-aligned players heal bodyguards and caravans 10% faster.";
+			} else {
+				v8 = "<col=d66e1f>" + "Bandos" + "</col>" + "-aligned players gather 10% more divine energy when gathering with a convoy.";
+			}
+			break;
+		case 49086517:
+			int v2 = cs2_configs['cfg3888'];
+			if (v2 == 1) {
+				v8 = "<col=d66e1f>" + "Bandos" + "</col>" + "-aligned buildings are 15% stronger.";
+			} else {
+				v8 = "<col=d66e1f>" + "Bandos" + "</col>" + "-aligned buildings have boosts to their associated effects.";
+			}
+	}
+	if (client_configs['cfg3975'].bitcfg21115 == 3) {
+		v3 = cs2method_10427(v8, "<br>" + "<br>" + "<col=dcdbd6>" + "You are aligned with Armadyl.");
+	} else if (client_configs['cfg3975'].bitcfg21115 == 4) {
+		v3 = cs2method_10427(v8, "<br>" + "<br>" + "<col=d66e1f>" + "You are aligned with Bandos.");
+	} else {
+		v3 = cs2method_10427(v8, "<br>" + "<br>" + "You are currently unaligned.");
+	}
+	script_7769(49086536, a2, -1, 128, 17813, 17813, 16777215, 13, 4, 3, a1, v3, a0);
+	return;
+}

@@ -1,0 +1,50 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_8438(int a0,int a1) {
+	int v0 = -1;
+	if (a1 == 3) {
+		if (client_configs['cfg3680'].bitcfg22315 == 1) {
+			switch (a0) {
+				case 0:
+					v0 = 0;
+					break;
+				case 1:
+					v0 = 1;
+					break;
+				case 2:
+					v0 = 2;
+					break;
+				default:
+					v0 = 1;
+			}
+		} else {
+			switch (a0) {
+				case 0:
+					v0 = 5;
+					break;
+				case 1:
+					v0 = 0;
+					break;
+				case 2:
+					v0 = 1;
+					break;
+				case 3:
+					v0 = 2;
+					break;
+				default:
+					v0 = 1;
+			}
+		}
+	}
+	return v0;
+}

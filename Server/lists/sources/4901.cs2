@@ -1,0 +1,39 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4901() {
+	int v5 = -1;
+	int v4 = -1;
+	int v0 = -1;
+	int v3 = -1;
+	int v7 = 1;
+	if (cs2method_10172() == 1) {
+		int v9 = clan_chat_configs['cfg2575'].bitcfg6507;
+		int v8 = script_4904(0, 0, v9);
+		if (v8 != -1) {
+			cs2method_10758(v8, 82509848);
+		}
+		int v6 = script_4904(0, 1, v9);
+		if (v6 != -1) {
+			cs2method_10758(v6, 82509847);
+		}
+		int v2 = script_4904(0, 2, v9);
+		if (v2 != -1) {
+			cs2method_10758(v2, 82509846);
+		}
+		int v1 = script_4904(0, 3, v9);
+		if (v1 != -1) {
+			cs2method_10758(v1, 82509845);
+		}
+	}
+	return;
+}

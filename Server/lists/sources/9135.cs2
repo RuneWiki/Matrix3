@@ -1,0 +1,71 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9135(int a0,int a1) {
+	object v0 = "";
+	int v8 = -1;
+	int v6 = -1;
+	switch (client_configs['cfg3919'].bitcfg20794) {
+		case 0:
+		case 1:
+			v6 = 6452;
+			break;
+		case 2:
+			v6 = 8014;
+			break;
+		case 3:
+			v6 = 8015;
+			break;
+		case 4:
+			v6 = 8016;
+			break;
+		case 5:
+			v6 = 8017;
+	}
+	int v4 = idx17mapData('i', 'J', v6, cs2method_10060(1, a1));
+	int v3 = 0;
+	int v7 = 0;
+	int v9 = idx22mapAttribute(v4, 1268);
+	script_9132_struct(2,0,0) v2 = script_9132(v9);
+	int v5 = v2.intpart_1;
+	int v1 = v2.intpart_0;
+	switch (v1) {
+		case 0:
+			v0 = "This activity is available to play";
+			break;
+		case 1:
+			v0 = "This activity will reset in " + script_9172(v5);
+			break;
+		case 2:
+			v0 = "This activity begins in " + script_9172(v5);
+			break;
+		case 5:
+			v0 = "The lobby for this activity opens in " + script_9172(v5);
+			break;
+		case 3:
+			v0 = "You can play this activity again in " + script_9172(v5);
+			break;
+		case 4:
+			v0 = "This activity ends in " + script_9172(v5);
+			break;
+		case -1:
+			v0 = "You don't meet the requirements for this activity.";
+			break;
+		case 6:
+			v0 = "There are currently no upcoming stars";
+			break;
+		case 7:
+			v0 = "This activity will reset in " + script_9172(v5);
+	}
+	script_8800(a0, a1, v0);
+	return;
+}

@@ -1,0 +1,57 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5328() {
+	int v0 = 0;
+	int v2 = 1;
+	int v4 = cs2method_10968(cs2method_10461(cs2method_10236(62324760), cs2method_10051(cs2method_10461(8, 1), v2)), 8);
+	int v1 = cs2method_10461(cs2method_10051(cs2method_10060(v4, v2), 8), v2);
+	cs2method_10283(cs2method_10060(v1, 12), cs2method_10823(62324738), 0, 0, 62324738);
+	cs2method_10273(62324760);
+	int v3 = 0;
+	while (v0 < 8) {
+		cs2method_10606(62324760, 5, cs2method_10051(v0, 6));
+		cs2method_10310(5610);
+		cs2method_10013(6, 0, 0, 1);
+		cs2method_10063(v3, 0, 0, 0);
+		cs2method_10811(5460819);
+		cs2method_10606(62324760, 5, cs2method_10060(cs2method_10051(v0, 6), 1));
+		cs2method_10310(5611);
+		cs2method_10013(cs2method_10461(v4, 12), 0, 0, 1);
+		cs2method_10063(cs2method_10060(v3, 6), 0, 0, 0);
+		cs2method_10269(0);
+		cs2method_10811(5460819);
+		cs2method_10606(62324760, 5, cs2method_10060(cs2method_10051(v0, 6), 2));
+		cs2method_10310(5612);
+		cs2method_10013(6, 0, 0, 1);
+		cs2method_10063(cs2method_10461(cs2method_10060(v3, v4), 6), 0, 0, 0);
+		cs2method_10811(5460819);
+		cs2method_10606(62324760, 5, cs2method_10060(cs2method_10051(v0, 6), 3));
+		cs2method_10310(5610);
+		cs2method_10013(6, 0, 0, 1);
+		cs2method_10063(v3, 0, 0, 0);
+		cs2method_10606(62324760, 5, cs2method_10060(cs2method_10051(v0, 6), 4));
+		cs2method_10310(5611);
+		cs2method_10013(cs2method_10461(v4, 12), 0, 0, 1);
+		cs2method_10063(cs2method_10060(v3, 6), 0, 0, 0);
+		cs2method_10269(0);
+		cs2method_10606(62324760, 5, cs2method_10060(cs2method_10051(v0, 6), 5));
+		cs2method_10310(5612);
+		cs2method_10013(6, 0, 0, 1);
+		cs2method_10063(cs2method_10461(cs2method_10060(v3, v4), 6), 0, 0, 0);
+		v3 = cs2method_10060(cs2method_10060(v3, v2), v4);
+		v0 = cs2method_10060(v0, 1);
+	}
+	cs2_configs['cfg1657'] = -1;
+	cs2_configs['cfg1658'] = 0;
+	return;
+}

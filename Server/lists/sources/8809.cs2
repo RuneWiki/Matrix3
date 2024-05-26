@@ -1,0 +1,72 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8809() {
+	if (cs2method_10210() == 0) {
+		cs2method_10039(29933, 1, 16121887);
+		cs2method_10026(16121885, "Small" + "<br>" + "Rebuildathon" + "<br>" + "lamp");
+		cs2method_10039(29934, 1, 16121918);
+		cs2method_10026(16121916, "Medium" + "<br>" + "Rebuildathon" + "<br>" + "lamp");
+	} else {
+		cs2method_10039(29934, 1, 16121887);
+		cs2method_10026(16121885, "Medium" + "<br>" + "Rebuildathon" + "<br>" + "lamp");
+		cs2method_10039(29935, 1, 16121918);
+		cs2method_10026(16121916, "Large" + "<br>" + "Rebuildathon" + "<br>" + "lamp");
+	}
+	cs2method_10039(29929, 1, 16121931);
+	if (client_configs['cfg3892'].bitcfg20702 == 1) {
+		switch (client_configs['cfg3894'].bitcfg20714) {
+			case 1:
+				cs2method_10467(0, 16121879);
+				cs2method_10467(1, 16121873);
+				break;
+			case 2:
+				cs2method_10467(0, 16121879);
+				cs2method_10467(1, 16121873);
+				cs2method_10467(0, 16121878);
+				cs2method_10467(1, 16121871);
+				break;
+			case 3:
+				cs2method_10467(0, 16121879);
+				cs2method_10467(1, 16121873);
+				cs2method_10467(0, 16121878);
+				cs2method_10467(1, 16121871);
+				cs2method_10467(0, 16121877);
+				cs2method_10467(1, 16121869);
+		}
+	}
+	if (client_configs['cfg3893'].bitcfg20713 < 150) {
+		cs2method_10467(1, 16121894);
+		cs2method_10467(0, 16121895);
+	}
+	if (client_configs['cfg3893'].bitcfg20713 < 300) {
+		cs2method_10467(1, 16121923);
+		cs2method_10467(0, 16121924);
+	}
+	if (client_configs['cfg3892'].bitcfg20703 == 1 && client_configs['cfg3895'].bitcfg20724 != 1) {
+		cs2method_10467(1, 16121936);
+		cs2method_10467(0, 16121937);
+		cs2method_10026(16121939, "Claimed");
+	}
+	if (client_configs['cfg3892'].bitcfg20704 == 1) {
+		cs2method_10467(1, 16121949);
+		cs2method_10467(0, 16121950);
+		cs2method_10026(16121952, "Claimed");
+	}
+	if (client_configs['cfg3892'].bitcfg20705 == 1) {
+		cs2method_10467(1, 16121962);
+		cs2method_10467(0, 16121963);
+		cs2method_10026(16121965, "Claimed");
+	}
+	cs2method_10026(16121876, "Your contribution points: " + (string)cs2method_10379(client_configs['cfg3893'].bitcfg20713));
+	return;
+}

@@ -1,0 +1,25 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+object script_7209(object a0) {
+	int v0;
+	int v1 = -1;
+	if (cs2method_10846(a0, "") == 0) {
+		v0 = 0;
+	} else {
+		v0 = script_7210(a0);
+		if (v0 != 2147483647) {
+			v0 = cs2method_10060(v0, 1);
+		}
+	}
+	return cs2method_10379(v0);
+}

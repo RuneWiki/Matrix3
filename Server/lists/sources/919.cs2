@@ -1,0 +1,56 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_919() {
+	int v3;
+	int v1 = cs2method_10936(93, cs2_configs['cfg743']);
+	int v4 = cs2method_10936(623, cs2_configs['cfg743']);
+	object v2 = "Cost:";
+	int v0 = -1;
+	if (cs2_configs['cfg744'] == 0) {
+		v2 = "None available";
+	} else if (cs2_configs['cfg744'] == -1) {
+		v2 = "Free sample!";
+	} else {
+		v0 = cs2_configs['cfg744'];
+	}
+	cs2method_10026(29425688, v2);
+	if (cs2method_10461(cs2method_10461(2147483647, v1), v4) > 0) {
+		v3 = cs2method_10060(v1, v4);
+	} else {
+		v3 = 2147483647;
+	}
+	if (v0 > v3) {
+		cs2method_10520(16711680, 29425689);
+	} else {
+		cs2method_10520(cs2_configs['cfg1241'], 29425689);
+	}
+	if (v0 > -1) {
+		cs2method_11116(cs2_configs['cfg743'], v0, 29425687);
+	} else {
+		cs2method_10121(-1, -1, 29425687);
+	}
+	if (cs2_configs['cfg744'] == -1) {
+		cs2method_10026(29425686, "Take");
+		cs2method_11127(1, 29425685, "Take 1");
+		cs2method_11127(2, 29425685, "Take 5");
+		cs2method_11127(3, 29425685, "Take 10");
+		cs2method_11127(4, 29425685, "Take 50");
+	} else {
+		cs2method_10026(29425686, "Buy");
+		cs2method_11127(1, 29425685, "Buy 1");
+		cs2method_11127(2, 29425685, "Buy 5");
+		cs2method_11127(3, 29425685, "Buy 10");
+		cs2method_11127(4, 29425685, "Buy 50");
+	}
+	return;
+}

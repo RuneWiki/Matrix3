@@ -1,0 +1,27 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_827(int a0) {
+	int v0 = 0;
+	if (cs2method_10133() >= cs2method_10060(a0, 32) && cs2method_10133() < cs2method_10060(a0, 140)) {
+		cs2method_10026(30474242, "Varrock Herald");
+		cs2method_10026(30474243, "Covering all of Misthalin and beyond.");
+		cs2method_10026(30474244, "1 gp");
+		cs2method_10026(30474245, "Oo'glog Ogresses Open Health Spa!");
+	} else {
+		cs2method_10026(30474242, " ");
+		cs2method_10026(30474243, " ");
+		cs2method_10026(30474244, " ");
+		cs2method_10026(30474245, " ");
+	}
+	return;
+}

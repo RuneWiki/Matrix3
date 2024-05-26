@@ -1,0 +1,95 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_4830(int a0) {
+	int v11 = -1;
+	int v15 = -1;
+	int v5 = -1;
+	int v0 = -1;
+	int v10 = -1;
+	int v6 = 0;
+	int v13 = 0;
+	int v1 = 0;
+	int v14 = 0;
+	int v2 = 0;
+	int v9 = 0;
+	int v3 = 0;
+	switch (a0) {
+		case 1:
+			v6 = client_configs['cfg1982'].bitcfg6985;
+			v13 = client_configs['cfg1982'].bitcfg6986;
+			v14 = client_configs['cfg1983'].bitcfg6990;
+			v2 = client_configs['cfg1983'].bitcfg6991;
+			v9 = client_configs['cfg1983'].bitcfg6992;
+			v3 = client_configs['cfg1982'].bitcfg6989;
+			break;
+		case 2:
+			v6 = client_configs['cfg1984'].bitcfg6994;
+			v13 = client_configs['cfg1984'].bitcfg6995;
+			v14 = client_configs['cfg1985'].bitcfg6999;
+			v2 = client_configs['cfg1985'].bitcfg7000;
+			v9 = client_configs['cfg1985'].bitcfg7001;
+			v3 = client_configs['cfg1984'].bitcfg6998;
+			break;
+		case 3:
+			v6 = client_configs['cfg1986'].bitcfg7003;
+			v13 = client_configs['cfg1986'].bitcfg7004;
+			v14 = client_configs['cfg1987'].bitcfg7008;
+			v2 = client_configs['cfg1987'].bitcfg7009;
+			v9 = client_configs['cfg1987'].bitcfg7010;
+			v3 = client_configs['cfg1986'].bitcfg7007;
+	}
+	if (v3 == 1) {
+		return 5;
+	}
+	if (v6 == 0) {
+		return -1;
+	}
+	int v4 = idx17mapData('i', 'g', 4043, v6);
+	if (v4 == -1) {
+		return -1;
+	}
+	if (v13 > 0 && v13 <= 3) {
+		int v8 = idx17mapData('i', 'g', v4, v13);
+		if (v8 != -1) {
+			int v7 = idx17mapData('i', 'g', v8, 1);
+			int v12 = idx17mapData('i', 'g', v8, 2);
+			int v16 = idx17mapData('i', 'g', v8, 3);
+			if (v7 != -1) {
+				if (v14 > 0 && v14 <= cs2method_10924(v7)) {
+					if (clan_chat_configs['cfg2575'].bitcfg6507 >= idx22mapAttribute(idx17mapData('i', 'J', v7, v14), 1567)) {
+						if (v12 == -1) {
+						} else if (v2 > 0 && v2 <= cs2method_10924(v12)) {
+							if (clan_chat_configs['cfg2575'].bitcfg6507 < idx22mapAttribute(idx17mapData('i', 'J', v12, v2), 1567)) {
+								return 2;
+							}
+						} else {
+							return 3;
+						}
+						if (v16 == -1) {
+						} else if (v9 > 0 && v9 <= cs2method_10924(v16)) {
+							if (clan_chat_configs['cfg2575'].bitcfg6507 < idx22mapAttribute(idx17mapData('i', 'J', v16, v9), 1567)) {
+								return 2;
+							}
+						} else {
+							return 3;
+						}
+						return 1;
+					}
+					return 2;
+				}
+				return 3;
+			}
+		}
+	}
+	return -1;
+}

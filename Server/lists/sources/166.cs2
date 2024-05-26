@@ -1,0 +1,91 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_166(int a0) {
+	switch (a0) {
+		case 1:
+			return client_configs['cfg446'].bitcfg1134;
+		case 2:
+			return client_configs['cfg446'].bitcfg1135;
+		case 3:
+			return client_configs['cfg446'].bitcfg1136;
+		case 4:
+			return client_configs['cfg446'].bitcfg1137;
+		case 5:
+			return client_configs['cfg446'].bitcfg1138;
+		case 6:
+			return client_configs['cfg446'].bitcfg1139;
+		case 7:
+			return client_configs['cfg446'].bitcfg1140;
+		case 8:
+			return client_configs['cfg446'].bitcfg1141;
+		case 9:
+			return client_configs['cfg446'].bitcfg1142;
+		case 10:
+			return client_configs['cfg446'].bitcfg1143;
+		case 11:
+			return client_configs['cfg447'].bitcfg1146;
+		case 12:
+			return client_configs['cfg447'].bitcfg1147;
+		case 13:
+			return client_configs['cfg447'].bitcfg1148;
+		case 14:
+			return client_configs['cfg447'].bitcfg1149;
+		case 15:
+			return client_configs['cfg447'].bitcfg1150;
+		case 16:
+			return client_configs['cfg447'].bitcfg1151;
+		case 17:
+			return client_configs['cfg447'].bitcfg1152;
+		case 18:
+			return client_configs['cfg447'].bitcfg1153;
+		case 19:
+			return client_configs['cfg447'].bitcfg1154;
+		case 20:
+			return client_configs['cfg447'].bitcfg1155;
+		case 22:
+			if (client_configs['cfg446'].bitcfg1144 == 1) {
+				return 7;
+			}
+			return 0;
+		case 23:
+			return client_configs['cfg448'].bitcfg1159;
+		case 24:
+			return client_configs['cfg448'].bitcfg1160;
+		case 25:
+			return client_configs['cfg448'].bitcfg1161;
+		case 26:
+			return client_configs['cfg448'].bitcfg1162;
+		case 27:
+			return client_configs['cfg448'].bitcfg1163;
+		case 28:
+			return client_configs['cfg448'].bitcfg1164;
+		case 29:
+			return client_configs['cfg448'].bitcfg1165;
+		case 30:
+			return client_configs['cfg448'].bitcfg1166;
+		case 31:
+			if (client_configs['cfg447'].bitcfg1156 == 1) {
+				return 7;
+			}
+			return 0;
+		case 33:
+			return client_configs['cfg449'].bitcfg1167;
+		case 34:
+			return client_configs['cfg449'].bitcfg1168;
+		case 35:
+			return client_configs['cfg449'].bitcfg1169;
+		case 36:
+			return client_configs['cfg449'].bitcfg1170;
+	}
+	return 0;
+}

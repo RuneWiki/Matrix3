@@ -1,0 +1,22 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9953(int a0,int a1) {
+	script_8414(a1, a0);
+	cs2method_20835(new function<script_3421>(int a0,int a1,int a2) {
+		if (cs2method_11038(a1, a0) == 1 || cs2method_10324(a1) == 1 && a0 == -1) {
+			script_3927(a2);
+		}
+		return;
+	}, new WidgetPointer(-32768,3), -2147483643, a1, 3814, 1, "IiiY");
+	return;
+}

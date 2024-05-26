@@ -1,0 +1,37 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2358(int a0) {
+	int v6 = idx17mapData('I', 'i', 2125, a0);
+	int v2 = idx17mapData('I', 'i', 2124, a0);
+	int v3 = 1;
+	if ((int)client_configs['cfg2644'] == -1) {
+		int v7;
+		if (v2 == 1) {
+			v7 = cs2method_10441(client_configs['cfg2641'], v6);
+		} else if (v2 == 2) {
+			v7 = cs2method_10441(client_configs['cfg2642'], v6);
+		} else {
+			v7 = cs2method_10441(client_configs['cfg2643'], v6);
+		}
+		if (v7 == 0) {
+			cs2method_10276(a0);
+		}
+		return;
+	}
+	int v1 = idx17mapData('I', 'J', 704, (int)client_configs['cfg2644']);
+	int v5 = idx22mapAttribute(v1, 1222);
+	int v4 = idx22mapAttribute(v1, 1223);
+	int v0 = (int)idx17mapData('I', 'I', 1592, (int)client_configs['cfg2644']);
+	cs2method_10112(v5, v4, 0, 0, v0);
+	return;
+}

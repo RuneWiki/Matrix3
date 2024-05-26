@@ -1,0 +1,51 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8940(int a0) {
+	int v1 = -1;
+	int v0 = -1;
+	int v2 = -1;
+	int v4 = -1;
+	script_8942(1);
+	script_8942(2);
+	script_8942(3);
+	script_8942(4);
+	switch (a0) {
+		case 1:
+			v1 = 97976327;
+			v0 = 97976326;
+			v2 = 97976328;
+			int v7 = 97976458;
+			break;
+		case 2:
+			v1 = 97976658;
+			v0 = 97976325;
+			v2 = 97976657;
+			int v5 = 97976660;
+			break;
+		case 3:
+			v1 = 97976662;
+			v0 = 97976324;
+			v2 = 97976661;
+			int v6 = 97976664;
+			break;
+		case 4:
+			v1 = 97976666;
+			v0 = 97976323;
+			v2 = 97976665;
+			int v3 = 97976668;
+	}
+	cs2method_10758(11871, v2);
+	cs2method_10758(11870, v0);
+	cs2method_10758(11869, v1);
+	return;
+}

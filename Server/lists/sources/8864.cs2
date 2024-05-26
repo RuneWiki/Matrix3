@@ -1,0 +1,54 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8864() {
+	int v2 = -1;
+	int v0 = 0;
+	int v4 = 0;
+	int v1 = 0;
+	int v5 = 0;
+	int v3 = 0;
+	if (cs2method_10908(idx22mapAttribute(21300, 3505)) == 1 || cs2method_10908(96797033) == 1) {
+		cs2_configs['cfg3692'] = 1;
+		script_7997();
+		if (client_configs['cfg3680'].bitcfg22315 == 0) {
+			int v22 = 1;
+			int v14 = 1004;
+			script_8725_struct(4,0,0) v8 = script_8725(v22, v14);
+			int v18 = v8.intpart_3;
+			int v24 = v8.intpart_2;
+			int v23 = v8.intpart_1;
+			int v16 = v8.intpart_0;
+			int v12 = idx17mapData('i', 'J', 7716, 1004);
+			cs2method_10467(0, idx22mapAttribute(v12, 3503));
+			int v6 = script_8711(v16, v24, cs2method_10236(cs2method_10982(idx22mapAttribute(v12, 3503))));
+			int v11 = script_8711(v23, v18, cs2method_10823(cs2method_10982(idx22mapAttribute(v12, 3503))));
+			int v27 = v6;
+			int v9 = v11;
+			int v19 = v24;
+			int v7 = v18;
+			int v21 = 1004;
+			int v20 = 0;
+			int v26 = 0;
+			script_8382_struct(5,0,0) v25 = script_8382(v27, v9, v19, v7, v21, v20, v26);
+			int v10 = v25.intpart_4;
+			int v13 = v25.intpart_3;
+			int v15 = v25.intpart_2;
+			int v28 = v25.intpart_1;
+			int v17 = v25.intpart_0;
+			script_8387(v17, v28, v15, v13, 1004);
+			script_8705(1004);
+		}
+		script_1243();
+	}
+	return;
+}

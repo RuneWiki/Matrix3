@@ -1,0 +1,98 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_8114(int a0,int a1) {
+	flow_0:
+		globalarray_0 = new int[14];
+		globalarray_1 = new int[14];
+		int v0 = 0;
+		int v1 = 0;
+		int v2 = 19;
+		IF (a0 == 0) 
+			GOTO	flow_1
+		GOTO	flow_11
+	flow_1:
+		IF (a1 == 0) 
+			GOTO	flow_2
+		GOTO	flow_5
+	flow_2:
+		IF (v0 < 14) 
+			GOTO	flow_3
+		GOTO	flow_4
+	flow_3:
+		globalarray_0[v0] = cs2method_10051(36, v0);
+		globalarray_0[v0] = 0;
+		v0 = cs2method_10060(v0, 1);
+		GOTO	flow_2
+	flow_4:
+		GOTO	flow_10
+	flow_5:
+		IF (v0 < 14) 
+			GOTO	flow_6
+		GOTO	flow_10
+	flow_6:
+		if (v0 < 7) {
+			globalarray_0[v0] = cs2method_10051(36, v0);
+		} else {
+			globalarray_0[v0] = cs2method_10051(36, cs2method_10461(v0, 7));
+		}
+		globalarray_0[v0] = cs2method_10051(36, cs2method_10968(v0, 7));
+		v0 = cs2method_10060(v0, 1);
+		GOTO	flow_5
+	flow_10:
+		GOTO	flow_20
+	flow_11:
+		IF (a1 == 0) 
+			GOTO	flow_12
+		GOTO	flow_15
+	flow_12:
+		IF (v0 < 14) 
+			GOTO	flow_13
+		GOTO	flow_14
+	flow_13:
+		globalarray_0[v0] = cs2method_10051(36, v0);
+		globalarray_0[v0] = 0;
+		v0 = cs2method_10060(v0, 1);
+		GOTO	flow_12
+	flow_14:
+		GOTO	flow_20
+	flow_15:
+		IF (v0 < 14) 
+			GOTO	flow_16
+		GOTO	flow_20
+	flow_16:
+		if (v0 < 7) {
+			globalarray_0[v0] = cs2method_10051(36, v0);
+		} else {
+			globalarray_0[v0] = cs2method_10051(36, cs2method_10461(v0, 7));
+		}
+		globalarray_0[v0] = cs2method_10051(36, cs2method_10968(v0, 7));
+		v0 = cs2method_10060(v0, 1);
+		GOTO	flow_15
+	flow_20:
+		cs2method_10112(globalarray_0[0], globalarray_1[0], 0, 0, 93716540);
+		cs2method_10112(globalarray_0[1], globalarray_1[1], 0, 0, 93716553);
+		cs2method_10112(globalarray_0[2], globalarray_1[2], 0, 0, 93716566);
+		cs2method_10112(globalarray_0[3], globalarray_1[3], 0, 0, 93716579);
+		cs2method_10112(globalarray_0[4], globalarray_1[4], 0, 0, 93716592);
+		cs2method_10112(globalarray_0[5], globalarray_1[5], 0, 0, 93716605);
+		cs2method_10112(globalarray_0[6], globalarray_1[6], 0, 0, 93716618);
+		cs2method_10112(globalarray_0[7], globalarray_1[7], 0, 0, 93716631);
+		cs2method_10112(globalarray_0[8], globalarray_1[8], 0, 0, 93716644);
+		cs2method_10112(globalarray_0[9], globalarray_1[9], 0, 0, 93716657);
+		cs2method_10112(globalarray_0[10], globalarray_1[10], 0, 0, 93716670);
+		cs2method_10112(globalarray_0[11], globalarray_1[11], 0, 0, 93716683);
+		cs2method_10112(globalarray_0[12], globalarray_1[12], 0, 0, 93716696);
+		cs2method_10112(globalarray_0[13], globalarray_1[13], 0, 0, 93716709);
+		return;
+}

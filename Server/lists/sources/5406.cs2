@@ -1,0 +1,47 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5406(int a0,int a1) {
+	cs2method_10467(1, 76808194);
+	cs2method_10467(1, 76808197);
+	cs2method_10467(0, 76808199);
+	if (a0 == 1) {
+		cs2method_10026(76808200, "Yeah! You won!");
+		switch (cs2method_10877(2)) {
+			case 0:
+				cs2method_10670(7897, 1, 0, 255);
+				break;
+			case 1:
+				cs2method_10670(7885, 1, 0, 255);
+		}
+		if (client_configs['cfg1316'].bitcfg3655 > 0 || client_configs['cfg1316'].bitcfg3656 > 0 || client_configs['cfg1316'].bitcfg3659 != 0) {
+			cs2method_10026(76808202, "You now have a dominion factor of: " + (string)script_46(",", a1));
+		} else {
+			cs2method_10026(76808202, "");
+		}
+	} else {
+		cs2method_10026(76808200, "Unlucky, you lost!");
+		switch (cs2method_10877(2)) {
+			case 0:
+				cs2method_10670(7904, 1, 0, 255);
+				break;
+			case 1:
+				cs2method_10670(7874, 1, 0, 255);
+		}
+		if (client_configs['cfg1316'].bitcfg3655 > 0 || client_configs['cfg1316'].bitcfg3656 > 0 || client_configs['cfg1316'].bitcfg3659 != 0) {
+			cs2method_10026(76808202, "You leave with a dominion factor of: " + (string)script_46(",", a1));
+		} else {
+			cs2method_10026(76808202, "");
+		}
+	}
+	return;
+}

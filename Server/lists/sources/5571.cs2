@@ -1,0 +1,44 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5571(int a0,int a1,int a2,int a3) {
+	int v2 = cs2method_10968(cs2method_10060(a2, a1), 2);
+	int v0 = idx22mapAttribute(idx17mapData('i', 'J', a0, globalarray_0[v2]), 1932);
+	globalarray_0[v2] = globalarray_0[a1];
+	globalarray_0[a1] = v0;
+	for (int v1 = a2, int v4 = a2, int v3 = -1; v4 < a1; v4 = cs2method_10060(v4, 1)) {
+		if (idx22mapAttribute(idx17mapData('i', 'J', a0, globalarray_0[v4]), 1933) > 0) {
+			if (idx22mapAttribute(idx17mapData('i', 'J', a0, globalarray_0[v4]), 1933) >= v0) {
+				int v5 = globalarray_0[v4];
+				globalarray_0[v4] = globalarray_0[v1];
+				globalarray_0[v1] = v5;
+				v1 = cs2method_10060(v1, 1);
+			}
+		} else {
+			if (idx22mapAttribute(idx17mapData('i', 'J', a0, globalarray_0[v4]), 1932) >= v0) {
+				int v5 = globalarray_0[v4];
+				globalarray_0[v4] = globalarray_0[v1];
+				globalarray_0[v1] = v5;
+				v1 = cs2method_10060(v1, 1);
+			}
+		}
+	}
+	globalarray_0[a1] = globalarray_0[v1];
+	globalarray_0[v1] = v2;
+	if (a2 < cs2method_10461(v1, 1)) {
+		script_5571(0, a2, cs2method_10461(v1, 1), a0);
+	}
+	if (cs2method_10060(v1, 1) < a1) {
+		script_5571(0, cs2method_10060(v1, 1), a1, a0);
+	}
+	return;
+}

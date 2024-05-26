@@ -1,0 +1,39 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3791() {
+	int v3 = 375;
+	cs2method_10283(cs2method_10236(93913115), v3, 0, 0, 93913115);
+	int v2 = 40;
+	int v1 = 268;
+	int v0 = v1;
+	cs2method_10467(1, 93913106);
+	cs2method_10467(1, 93913107);
+	cs2method_10467(1, 93913109);
+	if (script_5767() == 1) {
+		cs2method_10467(0, 93913107);
+		v0 = cs2method_10060(cs2method_10060(cs2method_10152(93913107), cs2method_10823(93913107)), cs2method_10461(cs2method_10152(93913107), cs2method_10823(93913104)));
+	} else if (client_configs['cfg3680'].bitcfg22315 == 1) {
+		cs2method_10467(0, 93913109);
+		v0 = cs2method_10060(cs2method_10060(cs2method_10152(93913109), cs2method_10823(93913109)), cs2method_10461(cs2method_10152(93913109), cs2method_10823(93913104)));
+	} else {
+		cs2method_10467(0, 93913106);
+		script_4499(7711, 0, -1, 5, 93913184, 93913194, 93913196, 93913195, 93913198, "Select a Preset");
+		v2 = cs2method_10060(cs2method_10060(cs2method_10060(v2, cs2method_10152(93913106)), cs2method_10152(93913093)), cs2method_10152(93913093));
+	}
+	if (cs2method_10609(93913097) == 0) {
+		v3 = cs2method_10060(cs2method_10060(v3, 5), cs2method_10823(93913097));
+	}
+	cs2method_10112(0, v0, 1, 0, 93913105);
+	cs2method_10283(cs2method_10236(93913115), cs2method_11048(v2, cs2method_10461(v3, cs2method_10461(v1, v0))), 0, 0, 93913115);
+	return;
+}

@@ -1,0 +1,146 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_7265(int a0,int a1) {
+	int v0 = 0;
+	switch (a0) {
+		case 0:
+			switch (a1) {
+				case 2:
+					if (client_configs['cfg3028'].bitcfg15198 >= 3) {
+						return 1;
+					}
+					break;
+				case 1:
+					if (client_configs['cfg3028'].bitcfg15198 >= 2) {
+						return 1;
+					}
+					break;
+				case 0:
+					if (client_configs['cfg3028'].bitcfg15198 >= 1) {
+						return 1;
+					}
+			}
+			break;
+		case 1:
+			switch (a1) {
+				case 2:
+					if (client_configs['cfg3028'].bitcfg15199 >= 3) {
+						return 1;
+					}
+					break;
+				case 1:
+					if (client_configs['cfg3028'].bitcfg15199 >= 2) {
+						return 1;
+					}
+					break;
+				case 0:
+					if (client_configs['cfg3028'].bitcfg15199 >= 1) {
+						return 1;
+					}
+			}
+			break;
+		case 2:
+			switch (a1) {
+				case 2:
+					if (client_configs['cfg3028'].bitcfg15200 >= 3) {
+						return 1;
+					}
+					break;
+				case 1:
+					if (client_configs['cfg3028'].bitcfg15200 >= 2) {
+						return 1;
+					}
+					break;
+				case 0:
+					if (client_configs['cfg3028'].bitcfg15200 >= 1) {
+						return 1;
+					}
+			}
+			break;
+		case 3:
+			switch (a1) {
+				case 2:
+					if (client_configs['cfg3028'].bitcfg15201 >= 3) {
+						return 1;
+					}
+					break;
+				case 1:
+					if (client_configs['cfg3028'].bitcfg15201 >= 2) {
+						return 1;
+					}
+					break;
+				case 0:
+					if (client_configs['cfg3028'].bitcfg15201 >= 1) {
+						return 1;
+					}
+			}
+			break;
+		case 4:
+			switch (a1) {
+				case 2:
+					if (client_configs['cfg3028'].bitcfg15202 >= 3) {
+						return 1;
+					}
+					break;
+				case 1:
+					if (client_configs['cfg3028'].bitcfg15202 >= 2) {
+						return 1;
+					}
+					break;
+				case 0:
+					if (client_configs['cfg3028'].bitcfg15202 >= 1) {
+						return 1;
+					}
+			}
+			break;
+		case 5:
+			switch (a1) {
+				case 2:
+					if (client_configs['cfg3028'].bitcfg15203 >= 3) {
+						return 1;
+					}
+					break;
+				case 1:
+					if (client_configs['cfg3028'].bitcfg15203 >= 2) {
+						return 1;
+					}
+					break;
+				case 0:
+					if (client_configs['cfg3028'].bitcfg15203 >= 1) {
+						return 1;
+					}
+			}
+			break;
+		case 6:
+			switch (a1) {
+				case 2:
+					if (client_configs['cfg3028'].bitcfg15204 >= 3) {
+						return 1;
+					}
+					break;
+				case 1:
+					if (client_configs['cfg3028'].bitcfg15204 >= 2) {
+						return 1;
+					}
+					break;
+				case 0:
+					if (client_configs['cfg3028'].bitcfg15204 >= 1) {
+						return 1;
+					}
+			}
+			break;
+		default:
+			return 0;
+	}
+	return 0;
+}

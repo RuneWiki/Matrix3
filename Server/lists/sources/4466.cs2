@@ -1,0 +1,53 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4466(object a0) {
+	int v4 = -1;
+	int v3 = -1;
+	int v2 = -1;
+	int v1 = -1;
+	int v0 = cs2method_10890(a0);
+	if (v0 >= 0) {
+		if (v0 == -1) {
+			return;
+		}
+		int v7 = cs2method_10101(v0);
+		int v6 = cs2method_10890(cs2method_10765(cs2method_10954()));
+		if (v6 >= 0) {
+			if (v6 == v0) {
+				cs2method_11102(43, 0, "You cannot temporarily ban yourself.");
+				return;
+			}
+			int v5 = cs2method_10101(v6);
+			if (v6 == -1) {
+				return;
+			}
+			if (v5 >= cs2method_10736()) {
+				if (v7 > -1) {
+					cs2method_11102(43, 0, "You can only temporarily ban guests.");
+					cs2method_11102(43, 0, "A clan admin can remove your clanmate.");
+				} else if (v5 > v7) {
+					cs2method_10098(cs2method_10890(a0));
+					cs2method_10190(2);
+					cs2method_10539("[Attempting to kick/ban user from this channel.]");
+				} else {
+					cs2method_11102(43, 0, "You can only kick people with a lower rank than yourself.");
+				}
+			} else {
+				cs2method_11102(43, 0, "You do not have sufficient rank to kick.");
+			}
+		}
+	} else {
+		cs2method_11102(43, 0, "Could not find that guest to kick from your Clan Chat.");
+	}
+	return;
+}

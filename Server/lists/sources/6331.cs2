@@ -1,0 +1,21 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6331() {
+	object v0 = "Bury";
+	if (client_configs['cfg2634'].bitcfg12975 == 1) {
+		v0 = "Abort";
+	}
+	cs2method_10026(85458968, v0);
+	cs2method_11127(1, 85458966, v0);
+	return;
+}

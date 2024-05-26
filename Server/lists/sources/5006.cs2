@@ -1,0 +1,75 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5006() {
+	int v0 = client_configs['cfg1978'].bitcfg6677;
+	int v1 = v0;
+	int v5 = 1;
+	int v4 = 0;
+	int v7 = 0;
+	int v3 = 0;
+	int v2 = 100;
+	if (cs2method_10172() == 1) {
+		int v8 = clan_chat_configs['cfg2575'].bitcfg6507;
+		int v6 = 0;
+		while (v6 == 0 && v2 > 0) {
+			v2 = cs2method_10461(v2, 1);
+			switch (v0) {
+				case 17:
+					v1 = 6;
+					break;
+				case 18:
+					v1 = 17;
+					v6 = 1;
+					break;
+				case 19:
+					v1 = 18;
+					v6 = 1;
+					break;
+				case 1:
+					v1 = 19;
+					v6 = 1;
+					break;
+				case 2:
+					v1 = 1;
+					v6 = 1;
+					break;
+				case 3:
+					v1 = 2;
+					break;
+				case 4:
+					v1 = 3;
+					break;
+				case 7:
+					v1 = 4;
+					break;
+				case 5:
+					v1 = 7;
+					break;
+				case 6:
+					v1 = 5;
+			}
+			if (v6 == 0 && script_4979(v1) <= clan_chat_configs['cfg2575'].bitcfg6507) {
+				v6 = 1;
+			}
+			v0 = v1;
+		}
+		if (v2 <= 0) {
+			return;
+		}
+		if (v6 == 1) {
+			client_configs['cfg1978'].bitcfg6677 = v1;
+			script_4988(client_configs['cfg1978'].bitcfg6677);
+		}
+	}
+	return;
+}

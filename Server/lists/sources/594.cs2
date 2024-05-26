@@ -1,0 +1,141 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_594(int a0,int a1,int a2,int a3) {
+	if (itemDefsAttribute(a1, 3758) != -1 && a0 == 0) {
+		a1 = itemDefsAttribute(a1, 3758);
+	}
+	cs2method_10039(a1, -1, 6881291);
+	object v3 = "null";
+	object v5 = "null";
+	object v0 = "null";
+	if (a0 == 0) {
+		cs2method_11127(1, 6881289, "Select");
+		cs2method_10026(6881285, "Buy Offer");
+		cs2method_10758(1157, 6881288);
+		cs2method_10026(6881387, "+1");
+		cs2method_11127(1, 6881385, "Add 1");
+		cs2method_10026(6881393, "+10");
+		cs2method_11127(1, 6881391, "Add 10");
+		cs2method_10026(6881399, "+100");
+		cs2method_11127(1, 6881397, "Add 100");
+		cs2method_10026(6881405, "+1K");
+		cs2method_11127(1, 6881403, "Add 1000");
+		if (a1 == -1) {
+			object v7 = "Click here to search for an item to buy";
+			cs2method_21121(new function<script_8799>(object a0,int a1,int a2) {
+				script_8800(a2, a1, a0);
+				return;
+			}, (string)v7, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(105,11));
+		} else {
+			cs2method_21121(new function<script_9564>(int a0,int a1,int a2) {
+				script_9565(a2, a0, a1);
+				return;
+			}, a1, new WidgetPointer(-32768,3), -2147483643, "oIi", new WidgetPointer(105,11));
+		}
+		cs2method_10112(0, cs2method_10152(6881280), 0, 0, 6881280);
+		cs2method_10112(150, cs2method_10152(6881282), 0, 0, 6881282);
+		cs2method_10112(0, cs2method_10152(6881281), 2, 0, 6881281);
+	} else {
+		cs2method_10495(6881289);
+		cs2method_10026(6881285, "Sell Offer");
+		cs2method_10758(1156, 6881288);
+		cs2method_10026(6881387, "1");
+		cs2method_11127(1, 6881385, "Sell 1");
+		cs2method_10026(6881393, "10");
+		cs2method_11127(1, 6881391, "Sell 10");
+		cs2method_10026(6881399, "100");
+		cs2method_11127(1, 6881397, "Sell 100");
+		cs2method_10026(6881405, "ALL");
+		cs2method_11127(1, 6881403, "Sell All");
+		if (a1 == -1) {
+			object v7 = "Use your inventory to select an item to sell here";
+			cs2method_21121(new function<script_8799>(object a0,int a1,int a2) {
+				script_8800(a2, a1, a0);
+				return;
+			}, (string)v7, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(105,11));
+		} else {
+			cs2method_21121(new function<script_9564>(int a0,int a1,int a2) {
+				script_9565(a0, a2, a1);
+				return;
+			}, a1, new WidgetPointer(-32768,3), -2147483643, "oIi", new WidgetPointer(105,11));
+		}
+		cs2method_10112(2, cs2method_10152(6881281), 0, 0, 6881281);
+		cs2method_10112(148, cs2method_10152(6881282), 2, 0, 6881282);
+		cs2method_10112(0, cs2method_10152(6881280), 2, 0, 6881280);
+	}
+	if (a1 == -1) {
+		cs2method_10026(6881284, "Choose an item to exchange");
+		cs2method_10026(6881286, "N/A");
+		if (client_configs['cfg139'] == 0) {
+			cs2method_10026(6881283, "Click the icon to the left to search for items.");
+			if (cs2method_10690(6881292) == 255) {
+				cs2method_20162(new function<script_634>(int a0,int a1,int a2,int a3) {
+					int v0 = cs2method_10461(cs2method_10690(a3), a1);
+					cs2method_10704(v0, a3);
+					if (v0 <= a2) {
+						cs2method_20162(new function<script_633>(int a0,int a1,int a2,int a3) {
+							int v0 = cs2method_10060(cs2method_10690(a2), a1);
+							cs2method_10704(v0, a2);
+							if (v0 >= a3) {
+								cs2method_20162(load function<634>, new WidgetPointer(a2), a0, a3, a1, "Iiii", new WidgetPointer(a2));
+							}
+							return;
+						}, new WidgetPointer(a3), a2, a0, a1, "Iiii", new WidgetPointer(a3));
+					}
+					return;
+				}, new WidgetPointer(105,12), 0, 255, 5, "Iiii", new WidgetPointer(105,12));
+			}
+		} else {
+			if (client_configs['cfg139'] == 1) {
+				cs2method_10026(6881283, "Select an item in your inventory to sell.");
+				cs2method_10704(255, 6881292);
+				cs2method_20162(new function<none>() {
+				}, "", new WidgetPointer(105,12));
+			}
+		}
+	} else {
+		cs2method_10026(6881284, cs2method_10018(a1));
+		if (client_configs['cfg135'] != -1) {
+			object v7 = cs2method_10055(client_configs['cfg140'], 1);
+			cs2method_10026(6881286, (string)v7 + " gp");
+		} else {
+			cs2method_10026(6881283, "Retrieving details...");
+			cs2method_10026(6881286, "N/A");
+		}
+		cs2method_10704(255, 6881292);
+		cs2method_20162(new function<none>() {
+		}, "", new WidgetPointer(105,12));
+	}
+	int v2 = 0;
+	int v6 = 0;
+	int v4 = 0;
+	int v1 = 0;
+	if (cs2method_10324(6881286) == 1 && cs2method_10324(6881287) == 1) {
+		int v7 = cs2method_10488();
+		int v10 = cs2method_10509(v7, 17813, cs2method_10447());
+		int v8 = cs2method_10488();
+		int v9 = cs2method_10461(cs2method_10968(cs2method_10461(v7, v10), 2), cs2method_10461(v8, 5));
+		cs2method_10063(v9, cs2method_10406(), 0, 0);
+	}
+	if (cs2_configs['cfg82'] <= 0) {
+		object v7 = cs2method_10055(a2, 1);
+		cs2method_10026(6881329, v7);
+		cs2_configs['cfg84'] = client_configs['cfg136'];
+	}
+	if (cs2_configs['cfg83'] <= 0) {
+		object v7 = cs2method_10055(a3, 1);
+		cs2method_10026(6881332, (string)v7 + " gp");
+		cs2_configs['cfg85'] = client_configs['cfg137'];
+	}
+	return;
+}

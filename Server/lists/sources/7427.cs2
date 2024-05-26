@@ -1,0 +1,33 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7427() {
+	int v0 = cs2method_10968(cs2method_10051(client_configs['cfg3493'].bitcfg17638, 100), 60);
+	object v1 = "";
+	if (cs2method_10324(85917974) == 1) {
+		object v2;
+		if (client_configs['cfg3493'].bitcfg17638 == 60) {
+			v2 = (string)cs2method_10379(0) + (string)cs2method_10379(1) + ":" + (string)cs2method_10379(0) + (string)cs2method_10379(0);
+		} else if (client_configs['cfg3493'].bitcfg17638 > 0) {
+			if (client_configs['cfg3493'].bitcfg17638 < 10) {
+				v2 = (string)cs2method_10379(0) + (string)cs2method_10379(0) + ":" + (string)cs2method_10379(0) + (string)cs2method_10379(client_configs['cfg3493'].bitcfg17638);
+			} else {
+				v2 = (string)cs2method_10379(0) + (string)cs2method_10379(0) + ":" + (string)cs2method_10379(client_configs['cfg3493'].bitcfg17638);
+			}
+		} else {
+			v2 = "No Bonus";
+		}
+		script_4542(v0, 85917974, 85917979);
+		script_4212(85917979, v2, 3793, 14014931, 0);
+	}
+	return;
+}

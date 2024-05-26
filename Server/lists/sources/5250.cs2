@@ -1,0 +1,86 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5250(int a0) {
+	switch (client_configs['cfg1539']) {
+		case 2:
+			if (a0 == 1) {
+				cs2method_10026(73859090, "Battle-mage Helm");
+				cs2method_10026(73859089, "Strong against melee and magical attacks, weak against ranged.");
+			}
+			if (a0 == 2) {
+				cs2method_10026(73859090, "Trickster Hood");
+				cs2method_10026(73859089, "Strong against ranged and magical attacks, weak against melee.");
+			}
+			if (a0 == 3) {
+				cs2method_10026(73859090, "Vanguard Helm");
+				cs2method_10026(73859089, "Strong against melee and ranged attacks, weak against magic.");
+			}
+			break;
+		case 1:
+			if (a0 == 1) {
+				cs2method_10026(73859090, "Battle-mage robe legs");
+				cs2method_10026(73859089, "Strong against melee and magical attacks, weak against ranged.");
+			}
+			if (a0 == 2) {
+				cs2method_10026(73859090, "Trickster robe legs");
+				cs2method_10026(73859089, "Strong against ranged and magical attacks, weak against melee.");
+			}
+			if (a0 == 3) {
+				cs2method_10026(73859090, "Vanguard leg armour");
+				cs2method_10026(73859089, "Strong against melee and ranged attacks, weak against magic.");
+			}
+			break;
+		case 3:
+			if (a0 == 1) {
+				cs2method_10026(73859090, "Battle-mage robe");
+				cs2method_10026(73859089, "Strong against melee and magical attacks, weak against ranged.");
+			}
+			if (a0 == 2) {
+				cs2method_10026(73859090, "Trickster robe");
+				cs2method_10026(73859089, "Strong against ranged and magical attacks, weak against melee.");
+			}
+			if (a0 == 3) {
+				cs2method_10026(73859090, "Vanguard body armour");
+				cs2method_10026(73859089, "Strong against melee and ranged attacks, weak against magic.");
+			}
+			break;
+		case 5:
+			if (a0 == 1) {
+				cs2method_10026(73859090, "Battle-mage gloves");
+				cs2method_10026(73859089, "Strong against melee and magical attacks, weak against ranged.");
+			}
+			if (a0 == 2) {
+				cs2method_10026(73859090, "Trickster gloves");
+				cs2method_10026(73859089, "Strong against ranged and magical attacks, weak against melee.");
+			}
+			if (a0 == 3) {
+				cs2method_10026(73859090, "Vanguard gloves");
+				cs2method_10026(73859089, "Strong against melee and ranged attacks, weak against magic.");
+			}
+			break;
+		case 4:
+			if (a0 == 1) {
+				cs2method_10026(73859090, "Battle-mage boots");
+				cs2method_10026(73859089, "Strong against melee and magical attacks, weak against ranged.");
+			}
+			if (a0 == 2) {
+				cs2method_10026(73859090, "Trickster boots");
+				cs2method_10026(73859089, "Strong against ranged and magical attacks, weak against melee.");
+			}
+			if (a0 == 3) {
+				cs2method_10026(73859090, "Vanguard boots");
+				cs2method_10026(73859089, "Strong against melee and ranged attacks, weak against magic.");
+			}
+	}
+	return;
+}

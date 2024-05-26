@@ -1,0 +1,440 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4220() {
+	cs2method_11153(cs2_configs['cfg4211'], cs2_configs['cfg4210']);
+	int v0 = 59375808;
+	if (cs2_configs['cfg2581'] == 1) {
+		cs2method_10656(0);
+	}
+	cs2method_20162(new function<script_3063>(int a0,int a1,int a2,int a3,int a4,int a5,int a6) {
+		object v21;
+		int v6 = cs2method_11152();
+		if (v6 == -3) {
+			script_3064(0);
+			script_3093(v6, "Logging In - Please Wait", "", "", 0, 1, -1, "", 0, -1, "", 0);
+			cs2_configs['cfg1100'] = -3;
+			return;
+		}
+		if (cs2_configs['cfg1100'] == -3) {
+			script_3097();
+		}
+		int v9 = 0;
+		object v16 = "";
+		int v2 = 0;
+		object v4 = "";
+		int v12 = 0;
+		object v11 = "";
+		int v7 = 0;
+		int v10 = 0;
+		object v5 = "";
+		if (v6 == 21) {
+			object v24;
+			script_5874();
+			cs2_configs['cfg1100'] = 21;
+			script_3064(0);
+			if (cs2_configs['cfg200'] == 0 && cs2_configs['cfg1745'] == 0) {
+				cs2_configs['cfg200'] = cs2method_10541();
+				if (cs2method_10210() == 0 && (int)/*dang!*/special5(6) == 1) {
+					cs2_configs['cfg1745'] = 1;
+				}
+			}
+			if (cs2_configs['cfg200'] > 0) {
+				cs2_configs['cfg200'] = cs2method_10461(cs2_configs['cfg200'], 1);
+				if (cs2_configs['cfg1745'] == 1 && cs2_configs['cfg200'] == 0 && cs2method_10343() == 0) {
+					cs2method_10711();
+				}
+			}
+			if (cs2_configs['cfg200'] <= 0 && (cs2_configs['cfg1745'] == 0 || cs2method_10343() == 1)) {
+				if (cs2method_10164() == 0) {
+					cs2_configs['cfg200'] = 1;
+					return;
+				}
+				if (a1 > 0) {
+					int v35 = a1;
+					opc_struct10627(4,3,0) v32 = cs2method_10627(v35);
+					object v34 = v32.objectpart_2;
+					int v31 = v32.intpart_3;
+					int v30 = v32.intpart_2;
+					object v27 = v32.objectpart_1;
+					int v29 = v32.intpart_1;
+					object v28 = v32.objectpart_0;
+					int v33 = v32.intpart_0;
+					if (cs2method_10883(a1, v34) == 1) {
+						int v27 = 0;
+					}
+				}
+				cs2method_20162(new function<none>() {
+				}, "", new WidgetPointer(a2));
+				if (cs2_configs['cfg1745'] == 1) {
+					cs2method_11107();
+					cs2_configs['cfg1745'] = 0;
+				}
+				if (cs2_configs['cfg1745'] == 0 || cs2method_10343() == 1) {
+					cs2method_11093(a6);
+					cs2method_10150(a5);
+					cs2method_10187(a0);
+					cs2method_10656(a3);
+				}
+				int v26 = script_3062(a2);
+				/* 
+					java.lang.RuntimeException: Stack underflow
+						at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.cast(FlowBlocksGenerator.java:546)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeCall(FlowBlocksGenerator.java:278)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:235)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+						at tests.Main.main(Main.java:69)
+					
+				 */
+			}
+			int v25 = cs2method_10968(cs2_configs['cfg200'], 50);
+			if (v25 == 1) {
+				v24 = "You have only just left another world. Your profile will be transferred in" + "<br>" + "1 second.";
+			} else {
+				v24 = "You have only just left another world. Your profile will be transferred in" + "<br>" + (string)cs2method_10379(v25) + " seconds.";
+			}
+			if (cs2method_10609(59375662) == 1) {
+				script_3093(v6, v24, "Abort Login", "Abort Login", 0, 0, 2611, "", 1, 1, "", 0);
+			} else {
+				script_1871(v24);
+			}
+			return;
+		}
+		if (v6 == 42) {
+			cs2method_10467(0, 59375677);
+			cs2method_10026(59375631, cs2method_10379(a1));
+			cs2method_10026(59375632, cs2method_10379(cs2method_10361()));
+			if (cs2_configs['cfg1100'] != 42) {
+				script_3093(v6, "Beta World " + (string)cs2method_10379(a1) + " is currently full." + "<br>" + "You have been added to the" + "<br>" + "queue for this world." + "<br>" + "You can track your progress in the" + "<br>" + "queue from lower left corner of this" + "<br>" + "screen." + "<br>" + "You can continue playing RuneScape" + "<br>" + " in a different browser tab" + "<br>" + " while queuing.", "", "", 1, 0, 2611, "OK", 0, 0, "OK", 1);
+			}
+			cs2_configs['cfg1100'] = 42;
+			return;
+		}
+		if (v6 == 43) {
+			cs2method_10026(59375631, cs2method_10379(a1));
+			cs2method_10026(59375632, cs2method_10379(cs2method_10361()));
+			cs2_configs['cfg1100'] = 43;
+			return;
+		}
+		cs2method_10467(1, 59375677);
+		if (a2 == 59375625) {
+			script_1299(1);
+		}
+		script_3097();
+		script_3064(1);
+		cs2method_20162(new function<none>() {
+		}, "", new WidgetPointer(a2));
+		object v0 = "";
+		int v18 = 1;
+		int v15 = 0;
+		int v22 = 2608;
+		int v19 = 0;
+		int v23 = 0;
+		object v1 = "";
+		object v20 = "";
+		int v13 = 1;
+		object v3 = "Back";
+		object v17 = "Back";
+		int v8 = cs2method_10930();
+		int v14 = cs2method_10463();
+		switch (v6) {
+			case -2:
+				script_3097();
+				return;
+			case 29:
+				switch (v8) {
+					case 0:
+						v21 = "You must have a Combat Level of at least 20 (not including Summoning) to enter a PvP world.";
+						break;
+					case 1:
+						v21 = "You are currently carrying lent items and cannot enter a PvP world.";
+						break;
+					case 2:
+						v21 = "You must be standing in the Wilderness or Edgeville to enter this bounty world.";
+						break;
+					case 3:
+						v21 = "You must have a total skill level of 1,000 or greater to enter this world.";
+						break;
+					case 5:
+						v21 = "You must have a total skill level of 1,500 or greater to enter this world.";
+						break;
+					case 6:
+						v21 = "You must have a total skill level of 2,000 or greater to enter this world.";
+						break;
+					case 7:
+						v21 = "You must have a total skill level of 2,400 or greater to enter this world.";
+						break;
+					case 4:
+						v21 = "You must move to a safe area before you can log in to a PvP or bounty world.";
+						break;
+					case 8:
+						v21 = "VIP server access is only available to Gold Premier Club members." + "<br>" + "Become a VIP today. On sale for a limited time only.";
+						v18 = 0;
+						v22 = 2607;
+						v19 = 1;
+						v1 = "Buy online";
+						v20 = "Buy online";
+						break;
+					case 9:
+						v21 = "This server is for staff only.";
+						break;
+					case 10:
+						v21 = "You cannot enter a legacy world while in the tutorial.";
+						break;
+					default:
+						v21 = "Unexpected server response. Please try using a different world.";
+				}
+				break;
+			case 46:
+				v21 = "This instance is marked for deletion/rebuild. Please try using a different world.";
+				break;
+			case 45:
+				switch (v14) {
+					case 0:
+						switch (v8) {
+							case 0:
+								v21 = "You must be near the TzHaar Fight Pits entrance to enter a global match.";
+								break;
+							default:
+								v21 = "Unable to log in. Please try using a different world.";
+						}
+						break;
+					case 1:
+						switch (v8) {
+							case 1:
+								v21 = "There was an error connecting to your meeting room. Please try again.";
+								break;
+							case 2:
+								v21 = "You need a higher rank to enter that private tent.";
+								break;
+							case 3:
+								v21 = "You need an invitation to enter that private room.";
+								break;
+							default:
+								v21 = "Unable to log in. Please try using a different world.";
+						}
+						break;
+					case 6:
+						switch (v8) {
+							case 0:
+								v21 = "The instance you attempted to join is full.";
+								break;
+							case 1:
+								v21 = "You can't join that instance as you or your follower are carrying items.";
+								break;
+							default:
+								v21 = "Unable to log in. Please try using a different world.";
+						}
+						break;
+					default:
+						v21 = "Unable to log in. Please try using a different world.";
+				}
+				break;
+			case -5:
+				v21 = "Connection timed out. Please try using a different world.";
+				break;
+			case -4:
+				v21 = "Error connecting to server.";
+				break;
+			case -1:
+				v21 = "No response from server. Please try using a different world.";
+				break;
+			case 5:
+				v21 = "Your account has not logged out from its last session or the server is too busy to handle your request. Please try again in a few minutes or try a different server.";
+				break;
+			case 7:
+				v21 = "This world is full. Please use a different world.";
+				break;
+			case 8:
+				v21 = "Unable to connect: login server offline.";
+				break;
+			case 9:
+				v21 = "Login limit exceeded: too many connections from your address.";
+				break;
+			case 10:
+				v21 = "Unable to connect: bad session id.";
+				break;
+			case 13:
+				v21 = "Could not complete login. Please try using a different world.";
+				break;
+			case 16:
+				v21 = "Too many incorrect logins from your address. Please wait 5 minutes before trying again.";
+				break;
+			case 17:
+				v21 = "You are standing in a members-only area. To play on this world, move to a free area first.";
+				break;
+			case 20:
+				v21 = "Invalid loginserver requested. Please try using a different world.";
+				break;
+			case 22:
+				v21 = "Malformed login packet. Please try again.";
+				break;
+			case 23:
+				v21 = "No reply from login server. Please wait a minute and try again.";
+				break;
+			case 24:
+				v21 = "Error loading your profile. Please contact customer support.";
+				break;
+			case 25:
+				v21 = "Unexpected loginserver response. Please try using a different world.";
+				break;
+			case 26:
+				v21 = "This computer's address has been blocked, as it was used to break our rules.";
+				break;
+			case 27:
+				v21 = "Service unavailable.";
+				break;
+			case 3:
+				v21 = "Your password has been updated. Please leave the lobby and log in again.";
+				break;
+			case 36:
+				v21 = "Unable to connect: authentication server offline.";
+				break;
+			case 37:
+				v21 = "Your account is currently inaccessible. Please try again in a few minutes.";
+				break;
+			case 39:
+				v21 = "The instance you tried to join no longer exists. Please try using a different world.";
+				break;
+			case 41:
+				v21 = "The instance you tried to join is full. Please try back later or try using a different world.";
+				break;
+			case 44:
+				v21 = "Our systems are currently unavailable. Please try again in a few minutes.";
+				break;
+			case 55:
+				v21 = "Could not complete login. Access to this account is not authorised.";
+				break;
+			case 35:
+				v21 = "Your session has expired. Please click 'Back' in your browser to renew it.";
+				v3 = "Close";
+				v17 = "Close";
+				break;
+			case 14:
+				v18 = 0;
+				v22 = 2610;
+				v21 = "The server is being updated. Please wait a few minutes and try again.";
+				break;
+			case 6:
+				v18 = 0;
+				v22 = 2610;
+				v21 = "RuneScape has been updated! Please reload this page.";
+				break;
+			case 4:
+				v21 = "Your account has been disabled. Check your Message Centre for details.";
+				v19 = 1;
+				v1 = "Message Centre";
+				v20 = "Message Centre";
+				break;
+			case 11:
+				v21 = "Your password is an extremely common choice, and is not secure. You must change it before you can log in.";
+				v19 = 1;
+				v1 = "Change Password";
+				v20 = "Change Password";
+				break;
+			case 18:
+				v22 = 2612;
+				v21 = "Your account has been locked. If you have not received an account recovery email, please select 'Recover Account'.";
+				v19 = 1;
+				v1 = "Recover Account";
+				v20 = "Recover Account";
+				break;
+			case 31:
+				v21 = "You must change your account's display name before you can log in.";
+				v19 = 1;
+				v1 = "Change Display Name";
+				v20 = "Change Display Name";
+				break;
+			case 30:
+				v21 = "This is not a member's account. Please choose a 'free' world from the website to play on this account.";
+				v19 = 1;
+				v1 = "Subscribe";
+				v20 = "Subscribe";
+				break;
+			case 19:
+				v21 = "Fullscreen is currently a members-only feature. To log in, either exit fullscreen via the options menu or use a member's account.";
+				v19 = 1;
+				v1 = "Subscribe";
+				v20 = "Subscribe";
+				break;
+			case 12:
+				v18 = 0;
+				v22 = 2607;
+				v21 = "You need a member's account to log in to this world. Please subscribe or use a different world.";
+				v19 = 1;
+				v1 = "Subscribe";
+				v20 = "Subscribe";
+				break;
+			case 40:
+				v18 = 0;
+				v22 = 2607;
+				v21 = "You need a member's account to log in to this instance. Please subscribe or use a different world.";
+				v19 = 1;
+				v1 = "Subscribe";
+				v20 = "Subscribe";
+				break;
+			case 32:
+				v21 = "Your attempt to log into your account was unsuccessful.  Don't worry, it's easy to sort this out quickly.";
+				v19 = 1;
+				v1 = "Click Here";
+				v20 = "Click Here";
+				v13 = 0;
+				break;
+			case 47:
+			case 51:
+				v21 = "You need to validate your email address to log in.";
+				cs2method_10467(0, 59375655);
+				break;
+			case 48:
+				v21 = "Your game session has now ended." + "<br>" + "<br>" + "To play again, please close your browser tab/window and wait 5 minutes before reloading the game. ";
+				break;
+			case 50:
+				v21 = "The Jagex Account Guardian is protecting this account." + "<br>" + "<br>" + "This device is not recognised." + "<br>" + "<br>" + "No new devices can be added for up to 24 hours as too many failed attempts to answer the security questions have been made." + "<br>" + "<br>" + "During this time access will still be granted to any devices already trusted.";
+				v19 = 1;
+				v1 = "Back";
+				v20 = "Back";
+				v22 = 13105;
+				break;
+			case 52:
+				v21 = "You need to validate this device to use with your account. Please follow the instructions in the window that will open shortly.";
+				v19 = 1;
+				v1 = "Back";
+				v20 = "Back";
+				v13 = 0;
+				v22 = 13105;
+				break;
+			case 49:
+				v21 = "The device you are doing is no longer valid. You should have received an email to validate the device. Please follow the instructions there. Be sure to check your spam folder.";
+				v19 = 1;
+				v1 = "Back";
+				v20 = "Back";
+				v13 = 0;
+				v22 = 13105;
+				break;
+			case 54:
+				v21 = "Activity on this account has been exceeded." + "<br>" + "<br>" + "Please try again tomorrow.";
+				break;
+			default:
+				v21 = "Unexpected server response. Please try using a different world.";
+		}
+		script_3093(v6, v21, v1, v20, v18, v15, v22, v3, v19, v23, v17, v13);
+		return;
+	}, new WidgetPointer(v0), cs2method_10966(), cs2method_10132(), cs2method_10225(), cs2method_10398(), cs2method_10591(), cs2method_10151(), "Iiiiiii", new WidgetPointer(v0));
+	return;
+}

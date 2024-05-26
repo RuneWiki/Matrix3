@@ -1,0 +1,22 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2909(int a0,int a1) {
+	if (client_configs['cfg1421'].bitcfg4213 == 0) {
+		cs2method_10467(1, a1);
+	} else if (client_configs['cfg1421'].bitcfg4213 < 5) {
+		cs2method_10026(a0, "<lt>" + "1 min");
+	} else {
+		cs2method_10026(a0, (string)cs2method_10379(cs2method_10968(cs2method_10060(client_configs['cfg1421'].bitcfg4213, 4), 5)) + " min");
+	}
+	return;
+}

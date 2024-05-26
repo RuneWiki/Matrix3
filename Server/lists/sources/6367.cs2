@@ -1,0 +1,681 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6367(int a0,int a1) {
+	switch (a1) {
+		case 0:
+			switch (a0) {
+				case 1:
+					cs2_configs['cfg1939'] = cs2_configs['cfg1940'];
+					cs2_configs['cfg1940'] = new WidgetPointer(-1,65535);
+					break;
+				case 2:
+					cs2_configs['cfg1939'] = cs2_configs['cfg1941'];
+					cs2_configs['cfg1941'] = new WidgetPointer(-1,65535);
+					break;
+				case 3:
+					cs2_configs['cfg1939'] = cs2_configs['cfg1942'];
+					cs2_configs['cfg1942'] = new WidgetPointer(-1,65535);
+					break;
+				case 4:
+					cs2_configs['cfg1939'] = cs2_configs['cfg1943'];
+					cs2_configs['cfg1943'] = new WidgetPointer(-1,65535);
+					break;
+				case 5:
+					cs2_configs['cfg1939'] = cs2_configs['cfg1944'];
+					cs2_configs['cfg1944'] = new WidgetPointer(-1,65535);
+					break;
+				case 6:
+					cs2_configs['cfg1939'] = cs2_configs['cfg1945'];
+					cs2_configs['cfg1945'] = new WidgetPointer(-1,65535);
+					break;
+				case 7:
+					cs2_configs['cfg1939'] = cs2_configs['cfg1946'];
+					cs2_configs['cfg1946'] = new WidgetPointer(-1,65535);
+					break;
+				case 8:
+					cs2_configs['cfg1939'] = cs2_configs['cfg3498'];
+					cs2_configs['cfg3498'] = new WidgetPointer(-1,65535);
+					break;
+				case 9:
+					cs2_configs['cfg1939'] = cs2_configs['cfg3499'];
+					cs2_configs['cfg3499'] = new WidgetPointer(-1,65535);
+					break;
+				case 10:
+					cs2_configs['cfg1939'] = cs2_configs['cfg3500'];
+					cs2_configs['cfg3500'] = new WidgetPointer(-1,65535);
+					break;
+				case 11:
+					cs2_configs['cfg1939'] = cs2_configs['cfg3501'];
+					cs2_configs['cfg3501'] = new WidgetPointer(-1,65535);
+					break;
+				case 12:
+					cs2_configs['cfg1939'] = cs2_configs['cfg3502'];
+					cs2_configs['cfg3502'] = new WidgetPointer(-1,65535);
+			}
+			break;
+		case 1:
+			switch (a0) {
+				case 0:
+					cs2_configs['cfg1940'] = cs2_configs['cfg1939'];
+					cs2_configs['cfg1939'] = new WidgetPointer(-1,65535);
+					break;
+				case 2:
+					cs2_configs['cfg1940'] = cs2_configs['cfg1941'];
+					cs2_configs['cfg1941'] = new WidgetPointer(-1,65535);
+					break;
+				case 3:
+					cs2_configs['cfg1940'] = cs2_configs['cfg1942'];
+					cs2_configs['cfg1942'] = new WidgetPointer(-1,65535);
+					break;
+				case 4:
+					cs2_configs['cfg1940'] = cs2_configs['cfg1943'];
+					cs2_configs['cfg1943'] = new WidgetPointer(-1,65535);
+					break;
+				case 5:
+					cs2_configs['cfg1940'] = cs2_configs['cfg1944'];
+					cs2_configs['cfg1944'] = new WidgetPointer(-1,65535);
+					break;
+				case 6:
+					cs2_configs['cfg1940'] = cs2_configs['cfg1945'];
+					cs2_configs['cfg1945'] = new WidgetPointer(-1,65535);
+					break;
+				case 7:
+					cs2_configs['cfg1940'] = cs2_configs['cfg1946'];
+					cs2_configs['cfg1946'] = new WidgetPointer(-1,65535);
+					break;
+				case 8:
+					cs2_configs['cfg1940'] = cs2_configs['cfg3498'];
+					cs2_configs['cfg3498'] = new WidgetPointer(-1,65535);
+					break;
+				case 9:
+					cs2_configs['cfg1940'] = cs2_configs['cfg3499'];
+					cs2_configs['cfg3499'] = new WidgetPointer(-1,65535);
+					break;
+				case 10:
+					cs2_configs['cfg1940'] = cs2_configs['cfg3500'];
+					cs2_configs['cfg3500'] = new WidgetPointer(-1,65535);
+					break;
+				case 11:
+					cs2_configs['cfg1940'] = cs2_configs['cfg3501'];
+					cs2_configs['cfg3501'] = new WidgetPointer(-1,65535);
+					break;
+				case 12:
+					cs2_configs['cfg1940'] = cs2_configs['cfg3502'];
+					cs2_configs['cfg3502'] = new WidgetPointer(-1,65535);
+			}
+			break;
+		case 2:
+			switch (a0) {
+				case 0:
+					cs2_configs['cfg1941'] = cs2_configs['cfg1939'];
+					cs2_configs['cfg1939'] = new WidgetPointer(-1,65535);
+					break;
+				case 1:
+					cs2_configs['cfg1941'] = cs2_configs['cfg1940'];
+					cs2_configs['cfg1940'] = new WidgetPointer(-1,65535);
+					break;
+				case 3:
+					cs2_configs['cfg1941'] = cs2_configs['cfg1942'];
+					cs2_configs['cfg1942'] = new WidgetPointer(-1,65535);
+					break;
+				case 4:
+					cs2_configs['cfg1941'] = cs2_configs['cfg1943'];
+					cs2_configs['cfg1943'] = new WidgetPointer(-1,65535);
+					break;
+				case 5:
+					cs2_configs['cfg1941'] = cs2_configs['cfg1944'];
+					cs2_configs['cfg1944'] = new WidgetPointer(-1,65535);
+					break;
+				case 6:
+					cs2_configs['cfg1941'] = cs2_configs['cfg1945'];
+					cs2_configs['cfg1945'] = new WidgetPointer(-1,65535);
+					break;
+				case 7:
+					cs2_configs['cfg1941'] = cs2_configs['cfg1946'];
+					cs2_configs['cfg1946'] = new WidgetPointer(-1,65535);
+					break;
+				case 8:
+					cs2_configs['cfg1941'] = cs2_configs['cfg3498'];
+					cs2_configs['cfg3498'] = new WidgetPointer(-1,65535);
+					break;
+				case 9:
+					cs2_configs['cfg1941'] = cs2_configs['cfg3499'];
+					cs2_configs['cfg3499'] = new WidgetPointer(-1,65535);
+					break;
+				case 10:
+					cs2_configs['cfg1941'] = cs2_configs['cfg3500'];
+					cs2_configs['cfg3500'] = new WidgetPointer(-1,65535);
+					break;
+				case 11:
+					cs2_configs['cfg1941'] = cs2_configs['cfg3501'];
+					cs2_configs['cfg3501'] = new WidgetPointer(-1,65535);
+					break;
+				case 12:
+					cs2_configs['cfg1941'] = cs2_configs['cfg3502'];
+					cs2_configs['cfg3502'] = new WidgetPointer(-1,65535);
+			}
+			break;
+		case 3:
+			switch (a0) {
+				case 0:
+					cs2_configs['cfg1942'] = cs2_configs['cfg1939'];
+					cs2_configs['cfg1939'] = new WidgetPointer(-1,65535);
+					break;
+				case 1:
+					cs2_configs['cfg1942'] = cs2_configs['cfg1940'];
+					cs2_configs['cfg1940'] = new WidgetPointer(-1,65535);
+					break;
+				case 2:
+					cs2_configs['cfg1942'] = cs2_configs['cfg1941'];
+					cs2_configs['cfg1941'] = new WidgetPointer(-1,65535);
+					break;
+				case 4:
+					cs2_configs['cfg1942'] = cs2_configs['cfg1943'];
+					cs2_configs['cfg1943'] = new WidgetPointer(-1,65535);
+					break;
+				case 5:
+					cs2_configs['cfg1942'] = cs2_configs['cfg1944'];
+					cs2_configs['cfg1944'] = new WidgetPointer(-1,65535);
+					break;
+				case 6:
+					cs2_configs['cfg1942'] = cs2_configs['cfg1945'];
+					cs2_configs['cfg1945'] = new WidgetPointer(-1,65535);
+					break;
+				case 7:
+					cs2_configs['cfg1942'] = cs2_configs['cfg1946'];
+					cs2_configs['cfg1946'] = new WidgetPointer(-1,65535);
+					break;
+				case 8:
+					cs2_configs['cfg1942'] = cs2_configs['cfg3498'];
+					cs2_configs['cfg3498'] = new WidgetPointer(-1,65535);
+					break;
+				case 9:
+					cs2_configs['cfg1942'] = cs2_configs['cfg3499'];
+					cs2_configs['cfg3499'] = new WidgetPointer(-1,65535);
+					break;
+				case 10:
+					cs2_configs['cfg1942'] = cs2_configs['cfg3500'];
+					cs2_configs['cfg3500'] = new WidgetPointer(-1,65535);
+					break;
+				case 11:
+					cs2_configs['cfg1942'] = cs2_configs['cfg3501'];
+					cs2_configs['cfg3501'] = new WidgetPointer(-1,65535);
+					break;
+				case 12:
+					cs2_configs['cfg1942'] = cs2_configs['cfg3502'];
+					cs2_configs['cfg3502'] = new WidgetPointer(-1,65535);
+			}
+			break;
+		case 4:
+			switch (a0) {
+				case 0:
+					cs2_configs['cfg1943'] = cs2_configs['cfg1939'];
+					cs2_configs['cfg1939'] = new WidgetPointer(-1,65535);
+					break;
+				case 1:
+					cs2_configs['cfg1943'] = cs2_configs['cfg1940'];
+					cs2_configs['cfg1940'] = new WidgetPointer(-1,65535);
+					break;
+				case 2:
+					cs2_configs['cfg1943'] = cs2_configs['cfg1941'];
+					cs2_configs['cfg1941'] = new WidgetPointer(-1,65535);
+					break;
+				case 3:
+					cs2_configs['cfg1943'] = cs2_configs['cfg1942'];
+					cs2_configs['cfg1942'] = new WidgetPointer(-1,65535);
+					break;
+				case 5:
+					cs2_configs['cfg1943'] = cs2_configs['cfg1944'];
+					cs2_configs['cfg1944'] = new WidgetPointer(-1,65535);
+					break;
+				case 6:
+					cs2_configs['cfg1943'] = cs2_configs['cfg1945'];
+					cs2_configs['cfg1945'] = new WidgetPointer(-1,65535);
+					break;
+				case 7:
+					cs2_configs['cfg1943'] = cs2_configs['cfg1946'];
+					cs2_configs['cfg1946'] = new WidgetPointer(-1,65535);
+					break;
+				case 8:
+					cs2_configs['cfg1943'] = cs2_configs['cfg3498'];
+					cs2_configs['cfg3498'] = new WidgetPointer(-1,65535);
+					break;
+				case 9:
+					cs2_configs['cfg1943'] = cs2_configs['cfg3499'];
+					cs2_configs['cfg3499'] = new WidgetPointer(-1,65535);
+					break;
+				case 10:
+					cs2_configs['cfg1943'] = cs2_configs['cfg3500'];
+					cs2_configs['cfg3500'] = new WidgetPointer(-1,65535);
+					break;
+				case 11:
+					cs2_configs['cfg1943'] = cs2_configs['cfg3501'];
+					cs2_configs['cfg3501'] = new WidgetPointer(-1,65535);
+					break;
+				case 12:
+					cs2_configs['cfg1943'] = cs2_configs['cfg3502'];
+					cs2_configs['cfg3502'] = new WidgetPointer(-1,65535);
+			}
+			break;
+		case 5:
+			switch (a0) {
+				case 0:
+					cs2_configs['cfg1944'] = cs2_configs['cfg1939'];
+					cs2_configs['cfg1939'] = new WidgetPointer(-1,65535);
+					break;
+				case 1:
+					cs2_configs['cfg1944'] = cs2_configs['cfg1940'];
+					cs2_configs['cfg1940'] = new WidgetPointer(-1,65535);
+					break;
+				case 2:
+					cs2_configs['cfg1944'] = cs2_configs['cfg1941'];
+					cs2_configs['cfg1941'] = new WidgetPointer(-1,65535);
+					break;
+				case 3:
+					cs2_configs['cfg1944'] = cs2_configs['cfg1942'];
+					cs2_configs['cfg1942'] = new WidgetPointer(-1,65535);
+					break;
+				case 4:
+					cs2_configs['cfg1944'] = cs2_configs['cfg1943'];
+					cs2_configs['cfg1943'] = new WidgetPointer(-1,65535);
+					break;
+				case 6:
+					cs2_configs['cfg1944'] = cs2_configs['cfg1945'];
+					cs2_configs['cfg1945'] = new WidgetPointer(-1,65535);
+					break;
+				case 7:
+					cs2_configs['cfg1944'] = cs2_configs['cfg1946'];
+					cs2_configs['cfg1946'] = new WidgetPointer(-1,65535);
+					break;
+				case 8:
+					cs2_configs['cfg1944'] = cs2_configs['cfg3498'];
+					cs2_configs['cfg3498'] = new WidgetPointer(-1,65535);
+					break;
+				case 9:
+					cs2_configs['cfg1944'] = cs2_configs['cfg3499'];
+					cs2_configs['cfg3499'] = new WidgetPointer(-1,65535);
+					break;
+				case 10:
+					cs2_configs['cfg1944'] = cs2_configs['cfg3500'];
+					cs2_configs['cfg3500'] = new WidgetPointer(-1,65535);
+					break;
+				case 11:
+					cs2_configs['cfg1944'] = cs2_configs['cfg3501'];
+					cs2_configs['cfg3501'] = new WidgetPointer(-1,65535);
+					break;
+				case 12:
+					cs2_configs['cfg1944'] = cs2_configs['cfg3502'];
+					cs2_configs['cfg3502'] = new WidgetPointer(-1,65535);
+			}
+			break;
+		case 6:
+			switch (a0) {
+				case 0:
+					cs2_configs['cfg1945'] = cs2_configs['cfg1939'];
+					cs2_configs['cfg1939'] = new WidgetPointer(-1,65535);
+					break;
+				case 1:
+					cs2_configs['cfg1945'] = cs2_configs['cfg1940'];
+					cs2_configs['cfg1940'] = new WidgetPointer(-1,65535);
+					break;
+				case 2:
+					cs2_configs['cfg1945'] = cs2_configs['cfg1941'];
+					cs2_configs['cfg1941'] = new WidgetPointer(-1,65535);
+					break;
+				case 3:
+					cs2_configs['cfg1945'] = cs2_configs['cfg1942'];
+					cs2_configs['cfg1942'] = new WidgetPointer(-1,65535);
+					break;
+				case 4:
+					cs2_configs['cfg1945'] = cs2_configs['cfg1943'];
+					cs2_configs['cfg1943'] = new WidgetPointer(-1,65535);
+					break;
+				case 5:
+					cs2_configs['cfg1945'] = cs2_configs['cfg1944'];
+					cs2_configs['cfg1944'] = new WidgetPointer(-1,65535);
+					break;
+				case 7:
+					cs2_configs['cfg1945'] = cs2_configs['cfg1946'];
+					cs2_configs['cfg1946'] = new WidgetPointer(-1,65535);
+					break;
+				case 8:
+					cs2_configs['cfg1945'] = cs2_configs['cfg3498'];
+					cs2_configs['cfg3498'] = new WidgetPointer(-1,65535);
+					break;
+				case 9:
+					cs2_configs['cfg1945'] = cs2_configs['cfg3499'];
+					cs2_configs['cfg3499'] = new WidgetPointer(-1,65535);
+					break;
+				case 10:
+					cs2_configs['cfg1945'] = cs2_configs['cfg3500'];
+					cs2_configs['cfg3500'] = new WidgetPointer(-1,65535);
+					break;
+				case 11:
+					cs2_configs['cfg1945'] = cs2_configs['cfg3501'];
+					cs2_configs['cfg3501'] = new WidgetPointer(-1,65535);
+					break;
+				case 12:
+					cs2_configs['cfg1945'] = cs2_configs['cfg3502'];
+					cs2_configs['cfg3502'] = new WidgetPointer(-1,65535);
+			}
+			break;
+		case 7:
+			switch (a0) {
+				case 0:
+					cs2_configs['cfg1946'] = cs2_configs['cfg1939'];
+					cs2_configs['cfg1939'] = new WidgetPointer(-1,65535);
+					break;
+				case 1:
+					cs2_configs['cfg1946'] = cs2_configs['cfg1940'];
+					cs2_configs['cfg1940'] = new WidgetPointer(-1,65535);
+					break;
+				case 2:
+					cs2_configs['cfg1946'] = cs2_configs['cfg1941'];
+					cs2_configs['cfg1941'] = new WidgetPointer(-1,65535);
+					break;
+				case 3:
+					cs2_configs['cfg1946'] = cs2_configs['cfg1942'];
+					cs2_configs['cfg1942'] = new WidgetPointer(-1,65535);
+					break;
+				case 4:
+					cs2_configs['cfg1946'] = cs2_configs['cfg1943'];
+					cs2_configs['cfg1943'] = new WidgetPointer(-1,65535);
+					break;
+				case 5:
+					cs2_configs['cfg1946'] = cs2_configs['cfg1944'];
+					cs2_configs['cfg1944'] = new WidgetPointer(-1,65535);
+					break;
+				case 6:
+					cs2_configs['cfg1946'] = cs2_configs['cfg1945'];
+					cs2_configs['cfg1945'] = new WidgetPointer(-1,65535);
+					break;
+				case 8:
+					cs2_configs['cfg1946'] = cs2_configs['cfg3498'];
+					cs2_configs['cfg3498'] = new WidgetPointer(-1,65535);
+					break;
+				case 9:
+					cs2_configs['cfg1946'] = cs2_configs['cfg3499'];
+					cs2_configs['cfg3499'] = new WidgetPointer(-1,65535);
+					break;
+				case 10:
+					cs2_configs['cfg1946'] = cs2_configs['cfg3500'];
+					cs2_configs['cfg3500'] = new WidgetPointer(-1,65535);
+					break;
+				case 11:
+					cs2_configs['cfg1946'] = cs2_configs['cfg3501'];
+					cs2_configs['cfg3501'] = new WidgetPointer(-1,65535);
+					break;
+				case 12:
+					cs2_configs['cfg1946'] = cs2_configs['cfg3502'];
+					cs2_configs['cfg3502'] = new WidgetPointer(-1,65535);
+			}
+			break;
+		case 8:
+			switch (a0) {
+				case 0:
+					cs2_configs['cfg3498'] = cs2_configs['cfg1939'];
+					cs2_configs['cfg1939'] = new WidgetPointer(-1,65535);
+					break;
+				case 1:
+					cs2_configs['cfg3498'] = cs2_configs['cfg1940'];
+					cs2_configs['cfg1940'] = new WidgetPointer(-1,65535);
+					break;
+				case 2:
+					cs2_configs['cfg3498'] = cs2_configs['cfg1941'];
+					cs2_configs['cfg1941'] = new WidgetPointer(-1,65535);
+					break;
+				case 3:
+					cs2_configs['cfg3498'] = cs2_configs['cfg1942'];
+					cs2_configs['cfg1942'] = new WidgetPointer(-1,65535);
+					break;
+				case 4:
+					cs2_configs['cfg3498'] = cs2_configs['cfg1943'];
+					cs2_configs['cfg1943'] = new WidgetPointer(-1,65535);
+					break;
+				case 5:
+					cs2_configs['cfg3498'] = cs2_configs['cfg1944'];
+					cs2_configs['cfg1944'] = new WidgetPointer(-1,65535);
+					break;
+				case 6:
+					cs2_configs['cfg3498'] = cs2_configs['cfg1945'];
+					cs2_configs['cfg1945'] = new WidgetPointer(-1,65535);
+					break;
+				case 7:
+					cs2_configs['cfg3498'] = cs2_configs['cfg1946'];
+					cs2_configs['cfg1946'] = new WidgetPointer(-1,65535);
+					break;
+				case 9:
+					cs2_configs['cfg3498'] = cs2_configs['cfg3499'];
+					cs2_configs['cfg3499'] = new WidgetPointer(-1,65535);
+					break;
+				case 10:
+					cs2_configs['cfg3498'] = cs2_configs['cfg3500'];
+					cs2_configs['cfg3500'] = new WidgetPointer(-1,65535);
+					break;
+				case 11:
+					cs2_configs['cfg3498'] = cs2_configs['cfg3501'];
+					cs2_configs['cfg3501'] = new WidgetPointer(-1,65535);
+					break;
+				case 12:
+					cs2_configs['cfg3498'] = cs2_configs['cfg3502'];
+					cs2_configs['cfg3502'] = new WidgetPointer(-1,65535);
+			}
+			break;
+		case 9:
+			switch (a0) {
+				case 0:
+					cs2_configs['cfg3499'] = cs2_configs['cfg1939'];
+					cs2_configs['cfg1939'] = new WidgetPointer(-1,65535);
+					break;
+				case 1:
+					cs2_configs['cfg3499'] = cs2_configs['cfg1940'];
+					cs2_configs['cfg1940'] = new WidgetPointer(-1,65535);
+					break;
+				case 2:
+					cs2_configs['cfg3499'] = cs2_configs['cfg1941'];
+					cs2_configs['cfg1941'] = new WidgetPointer(-1,65535);
+					break;
+				case 3:
+					cs2_configs['cfg3499'] = cs2_configs['cfg1942'];
+					cs2_configs['cfg1942'] = new WidgetPointer(-1,65535);
+					break;
+				case 4:
+					cs2_configs['cfg3499'] = cs2_configs['cfg1943'];
+					cs2_configs['cfg1943'] = new WidgetPointer(-1,65535);
+					break;
+				case 5:
+					cs2_configs['cfg3499'] = cs2_configs['cfg1944'];
+					cs2_configs['cfg1944'] = new WidgetPointer(-1,65535);
+					break;
+				case 6:
+					cs2_configs['cfg3499'] = cs2_configs['cfg1945'];
+					cs2_configs['cfg1945'] = new WidgetPointer(-1,65535);
+					break;
+				case 7:
+					cs2_configs['cfg3499'] = cs2_configs['cfg1946'];
+					cs2_configs['cfg1946'] = new WidgetPointer(-1,65535);
+					break;
+				case 8:
+					cs2_configs['cfg3499'] = cs2_configs['cfg3498'];
+					cs2_configs['cfg3498'] = new WidgetPointer(-1,65535);
+					break;
+				case 10:
+					cs2_configs['cfg3499'] = cs2_configs['cfg3500'];
+					cs2_configs['cfg3500'] = new WidgetPointer(-1,65535);
+					break;
+				case 11:
+					cs2_configs['cfg3499'] = cs2_configs['cfg3501'];
+					cs2_configs['cfg3501'] = new WidgetPointer(-1,65535);
+					break;
+				case 12:
+					cs2_configs['cfg3499'] = cs2_configs['cfg3502'];
+					cs2_configs['cfg3502'] = new WidgetPointer(-1,65535);
+			}
+			break;
+		case 10:
+			switch (a0) {
+				case 0:
+					cs2_configs['cfg3500'] = cs2_configs['cfg1939'];
+					cs2_configs['cfg1939'] = new WidgetPointer(-1,65535);
+					break;
+				case 1:
+					cs2_configs['cfg3500'] = cs2_configs['cfg1940'];
+					cs2_configs['cfg1940'] = new WidgetPointer(-1,65535);
+					break;
+				case 2:
+					cs2_configs['cfg3500'] = cs2_configs['cfg1941'];
+					cs2_configs['cfg1941'] = new WidgetPointer(-1,65535);
+					break;
+				case 3:
+					cs2_configs['cfg3500'] = cs2_configs['cfg1942'];
+					cs2_configs['cfg1942'] = new WidgetPointer(-1,65535);
+					break;
+				case 4:
+					cs2_configs['cfg3500'] = cs2_configs['cfg1943'];
+					cs2_configs['cfg1943'] = new WidgetPointer(-1,65535);
+					break;
+				case 5:
+					cs2_configs['cfg3500'] = cs2_configs['cfg1944'];
+					cs2_configs['cfg1944'] = new WidgetPointer(-1,65535);
+					break;
+				case 6:
+					cs2_configs['cfg3500'] = cs2_configs['cfg1945'];
+					cs2_configs['cfg1945'] = new WidgetPointer(-1,65535);
+					break;
+				case 7:
+					cs2_configs['cfg3500'] = cs2_configs['cfg1946'];
+					cs2_configs['cfg1946'] = new WidgetPointer(-1,65535);
+					break;
+				case 8:
+					cs2_configs['cfg3500'] = cs2_configs['cfg3498'];
+					cs2_configs['cfg3498'] = new WidgetPointer(-1,65535);
+					break;
+				case 9:
+					cs2_configs['cfg3500'] = cs2_configs['cfg3499'];
+					cs2_configs['cfg3499'] = new WidgetPointer(-1,65535);
+					break;
+				case 11:
+					cs2_configs['cfg3500'] = cs2_configs['cfg3501'];
+					cs2_configs['cfg3501'] = new WidgetPointer(-1,65535);
+					break;
+				case 12:
+					cs2_configs['cfg3500'] = cs2_configs['cfg3502'];
+					cs2_configs['cfg3502'] = new WidgetPointer(-1,65535);
+			}
+			break;
+		case 11:
+			switch (a0) {
+				case 0:
+					cs2_configs['cfg3501'] = cs2_configs['cfg1939'];
+					cs2_configs['cfg1939'] = new WidgetPointer(-1,65535);
+					break;
+				case 1:
+					cs2_configs['cfg3501'] = cs2_configs['cfg1940'];
+					cs2_configs['cfg1940'] = new WidgetPointer(-1,65535);
+					break;
+				case 2:
+					cs2_configs['cfg3501'] = cs2_configs['cfg1941'];
+					cs2_configs['cfg1941'] = new WidgetPointer(-1,65535);
+					break;
+				case 3:
+					cs2_configs['cfg3501'] = cs2_configs['cfg1942'];
+					cs2_configs['cfg1942'] = new WidgetPointer(-1,65535);
+					break;
+				case 4:
+					cs2_configs['cfg3501'] = cs2_configs['cfg1943'];
+					cs2_configs['cfg1943'] = new WidgetPointer(-1,65535);
+					break;
+				case 5:
+					cs2_configs['cfg3501'] = cs2_configs['cfg1944'];
+					cs2_configs['cfg1944'] = new WidgetPointer(-1,65535);
+					break;
+				case 6:
+					cs2_configs['cfg3501'] = cs2_configs['cfg1945'];
+					cs2_configs['cfg1945'] = new WidgetPointer(-1,65535);
+					break;
+				case 7:
+					cs2_configs['cfg3501'] = cs2_configs['cfg1946'];
+					cs2_configs['cfg1946'] = new WidgetPointer(-1,65535);
+					break;
+				case 8:
+					cs2_configs['cfg3501'] = cs2_configs['cfg3498'];
+					cs2_configs['cfg3498'] = new WidgetPointer(-1,65535);
+					break;
+				case 9:
+					cs2_configs['cfg3501'] = cs2_configs['cfg3499'];
+					cs2_configs['cfg3499'] = new WidgetPointer(-1,65535);
+					break;
+				case 10:
+					cs2_configs['cfg3501'] = cs2_configs['cfg3500'];
+					cs2_configs['cfg3500'] = new WidgetPointer(-1,65535);
+					break;
+				case 12:
+					cs2_configs['cfg3501'] = cs2_configs['cfg3502'];
+					cs2_configs['cfg3502'] = new WidgetPointer(-1,65535);
+			}
+			break;
+		case 12:
+			switch (a0) {
+				default:
+					break;
+				case 0:
+					cs2_configs['cfg3502'] = cs2_configs['cfg1939'];
+					cs2_configs['cfg1939'] = new WidgetPointer(-1,65535);
+					break;
+				case 1:
+					cs2_configs['cfg3502'] = cs2_configs['cfg1940'];
+					cs2_configs['cfg1940'] = new WidgetPointer(-1,65535);
+					break;
+				case 2:
+					cs2_configs['cfg3502'] = cs2_configs['cfg1941'];
+					cs2_configs['cfg1941'] = new WidgetPointer(-1,65535);
+					break;
+				case 3:
+					cs2_configs['cfg3502'] = cs2_configs['cfg1942'];
+					cs2_configs['cfg1942'] = new WidgetPointer(-1,65535);
+					break;
+				case 4:
+					cs2_configs['cfg3502'] = cs2_configs['cfg1943'];
+					cs2_configs['cfg1943'] = new WidgetPointer(-1,65535);
+					break;
+				case 5:
+					cs2_configs['cfg3502'] = cs2_configs['cfg1944'];
+					cs2_configs['cfg1944'] = new WidgetPointer(-1,65535);
+					break;
+				case 6:
+					cs2_configs['cfg3502'] = cs2_configs['cfg1945'];
+					cs2_configs['cfg1945'] = new WidgetPointer(-1,65535);
+					break;
+				case 7:
+					cs2_configs['cfg3502'] = cs2_configs['cfg1946'];
+					cs2_configs['cfg1946'] = new WidgetPointer(-1,65535);
+					break;
+				case 8:
+					cs2_configs['cfg3502'] = cs2_configs['cfg3498'];
+					cs2_configs['cfg3498'] = new WidgetPointer(-1,65535);
+					break;
+				case 9:
+					cs2_configs['cfg3502'] = cs2_configs['cfg3499'];
+					cs2_configs['cfg3499'] = new WidgetPointer(-1,65535);
+					break;
+				case 10:
+					cs2_configs['cfg3502'] = cs2_configs['cfg3500'];
+					cs2_configs['cfg3500'] = new WidgetPointer(-1,65535);
+					break;
+				case 11:
+					cs2_configs['cfg3502'] = cs2_configs['cfg3501'];
+					cs2_configs['cfg3501'] = new WidgetPointer(-1,65535);
+			}
+	}
+	return;
+}

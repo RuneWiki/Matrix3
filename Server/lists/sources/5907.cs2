@@ -1,0 +1,68 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5907(int a0,int a1,int a2,int a3,int a4) {
+	int v3 = 0;
+	int v2 = cs2method_10461(cs2method_10163(a4), 1);
+	int v0 = 0;
+	int v1 = 0;
+	if (cs2method_10609(a2) == 1) {
+		if (cs2method_11038(a3, a1) == 1) {
+			int v4 = cs2method_10664();
+		}
+		cs2method_10467(0, a2);
+		cs2method_10467(0, a0);
+		while (v2 >= 0) {
+			if (cs2method_11038(a4, v2) == 1 && cs2method_10265(cs2method_10447()) > 0) {
+				cs2method_10995(3646, 1);
+				cs2method_10057(1, "Select");
+				cs2method_20703(new function<script_5912>(int a0,int a1,int a2,int a3,int a4,int a5) {
+					object v1 = "";
+					if (cs2method_11038(a0, a2) == 1) {
+						if (interfaceDefsAttribute(3646) == 1) {
+							object v0 = cs2method_10447();
+							if (cs2method_11038(a3, a5) == 1) {
+								cs2method_10797(v0);
+							}
+						} else {
+							return;
+						}
+					}
+					script_5902(a1, a4);
+					return;
+				}, -2147483643, new WidgetPointer(a4), new WidgetPointer(a3), new WidgetPointer(a2), new WidgetPointer(a0), a1, "iIIIIi");
+			}
+			v2 = cs2method_10461(v2, 1);
+		}
+		script_6360(a4);
+		script_5910(a2, a3, a1, a0);
+		cs2method_20162(new function<script_5909>(int a0,int a1,int a2,int a3) {
+			script_5910(a0, a2, a1, a3);
+			return;
+		}, new WidgetPointer(a2), new WidgetPointer(a3), a1, new WidgetPointer(a0), "IIiI", new WidgetPointer(a2));
+	} else {
+		int v8 = a3;
+		int v6 = a1;
+		script_9865_struct(2,0,0) v5 = script_9865(v8, v6);
+		int v7 = v5.intpart_1;
+		int v4 = v5.intpart_0;
+		if (cs2method_10060(v4, 5) == v4 && cs2method_10461(v7, v3) == v7) {
+			script_5902(a2, a0);
+		}
+		script_5910(a2, a3, a1, a0);
+		cs2method_20162(new function<script_5909>(int a0,int a1,int a2,int a3) {
+			script_5910(a0, a2, a1, a3);
+			return;
+		}, new WidgetPointer(a2), new WidgetPointer(a3), a1, new WidgetPointer(a0), "IIiI", new WidgetPointer(a2));
+	}
+	return;
+}

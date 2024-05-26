@@ -1,0 +1,27 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3819(int a0,object a1,object a2,int a3,int a4) {
+	int v0 = 1;
+	if (cs2method_10324(96797400) == 1 && interfaceDefsAttribute(4205) == 1 && cs2method_11038(96797400, 0) == 1 && interfaceDefsAttribute(4320) == a0 && cs2method_10846(interfaceDefsAttribute(4321), a1) == 0 && cs2method_10846(interfaceDefsAttribute(4322), a2) == 0) {
+		v0 = 0;
+	}
+	if (v0 == 1) {
+		cs2method_10273(96797400);
+		cs2method_10606(96797400, 5, 0);
+		cs2method_10995(4320, a0);
+		cs2method_10733(4321, a1);
+		cs2method_10733(4322, a2);
+	}
+	script_9566(-1, 1, 1000, 25, a3, a4, 495, 16777215, "null", v0);
+	return;
+}

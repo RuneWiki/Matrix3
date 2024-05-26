@@ -1,0 +1,35 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+string script_912(int a0) {
+	object v0 = idx17mapData('o', 's', 1440, a0);
+	if (cs2method_10846(v0, "") != 0) {
+		return "<br>" + (string)v0;
+	}
+	switch (cs2_configs['cfg746']) {
+		case 0:
+			if (itemDefsAttribute(a0, 1047) != 1) {
+				return "<br>" + idx17mapData('i', 's', 1437, itemDefsAttribute(a0, 23));
+			}
+			break;
+		case 1:
+			return "<br>" + idx17mapData('i', 's', 1439, itemDefsAttribute(a0, 23));
+		case 2:
+		case 5:
+			return "<br>" + idx17mapData('i', 's', 1436, itemDefsAttribute(a0, 23));
+		case 3:
+			return "<br>" + idx17mapData('i', 's', 1438, itemDefsAttribute(a0, 23));
+		case 4:
+			return "<br>" + "Requires an ogre composite bow.";
+	}
+	return "";
+}

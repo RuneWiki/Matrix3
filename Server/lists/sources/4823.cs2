@@ -1,0 +1,23 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_4823(int a0) {
+	switch (a0) {
+		case 1:
+			return script_4824(clan_chat_configs['cfg2144'].bitcfg6690);
+		case 2:
+			return script_4824(clan_chat_configs['cfg2161'].bitcfg6699);
+		case 3:
+			return script_4824(clan_chat_configs['cfg2178'].bitcfg6708);
+	}
+	return -1;
+}

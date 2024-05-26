@@ -1,0 +1,22 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4109(int a0,int a1,int a2,int a3,int a4,int a5) {
+	int v2 = cs2method_10236(a1);
+	int v1 = cs2method_11048(cs2method_10872(a2, cs2method_10461(cs2method_10236(a0), v2)), 0);
+	int v0 = cs2method_10191(a0);
+	cs2method_10283(cs2method_10060(v0, v1), 0, 0, 1, a4);
+	cs2method_10283(cs2method_10060(cs2method_10060(v0, v1), v2), 0, 1, 1, a3);
+	cs2method_10112(cs2method_10060(cs2method_10060(v0, v1), v2), 0, 0, 0, a3);
+	cs2method_10112(v1, 0, 0, 1, a1);
+	return;
+}

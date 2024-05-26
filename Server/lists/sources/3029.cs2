@@ -1,0 +1,195 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3029(int a0,int a1,int a2,int a3,int a4,int a5) {
+	int v8;
+	if (cs2method_10535(a2, -1) == 1) {
+		cs2method_20162(new function<script_3028>(int a0,int a1,int a2,int a3,int a4,int a5) {
+			script_3029(a1, a5, a3, a2, a4, a0);
+			return;
+		}, new WidgetPointer(a1), new WidgetPointer(a0), new WidgetPointer(a4), new WidgetPointer(a2), new WidgetPointer(a3), new WidgetPointer(a5), "IIIIII", new WidgetPointer(a3));
+		return;
+	}
+	cs2method_20162(new function<none>() {
+	}, "", new WidgetPointer(a3));
+	cs2method_10273(a1);
+	cs2method_10273(a0);
+	cs2method_10273(a4);
+	cs2method_10273(a2);
+	int v17 = cs2method_10193();
+	int v5 = 0;
+	int v10 = 0;
+	object v9 = "";
+	object v14 = "";
+	object v11 = "";
+	int v6 = 0;
+	int v1 = 0;
+	int v2 = 15;
+	int v7 = 0;
+	int v13 = 5;
+	int v3 = 0;
+	int v16 = 0;
+	int v0 = 0;
+	object v4 = "";
+	int v18 = 200;
+	if (cs2method_10210() == 1) {
+		v18 = 400;
+	}
+	if (v17 == -2) {
+		cs2method_10026(59572262, "Name");
+		script_3038(a2, "Loading Friends List." + "<br>" + "<br>" + "Please wait.");
+		cs2method_10283(cs2method_10236(59572255), cs2method_10823(59572260), 0, 0, 59572255);
+	} else if (v17 == -1) {
+		cs2method_10026(59572262, "Name");
+		script_3038(a2, "Connecting to server." + "<br>" + "<br>" + "Please wait.");
+		cs2method_10283(cs2method_10236(59572255), cs2method_10823(59572260), 0, 0, 59572255);
+	} else if (v17 > 0) {
+		object v19;
+		int v21;
+		cs2method_10026(59572262, "Name (" + (string)cs2method_10379(v17) + "/" + (string)cs2method_10379(v18) + ")");
+		cs2method_10283(cs2method_10236(59572255), 4, 0, 1, 59572255);
+		while (v5 < v17) {
+			int v23 = v5;
+			opc_struct10599(0,2,0) v26 = cs2method_10599(v23);
+			object v12 = v26.objectpart_1;
+			object v24 = v26.objectpart_0;
+			int v22 = cs2method_10961(v5);
+			script_2996(a2, v5, cs2method_10236(a2), v2, 0, v10, 0, 1, 0);
+			if (cs2method_10038(v5, 2) == 0) {
+				cs2method_10811(2103569);
+			} else {
+				cs2method_10811(2695190);
+			}
+			cs2method_20674(new function<script_3030>(int a0,int a1) {
+				script_3032(a1, a0, 1);
+				return;
+			}, new WidgetPointer(a2), v5, "Ii");
+			cs2method_20884(new function<script_3035>() {
+				cs2method_10467(1, 59572267);
+				script_2470(59572256, 59572259);
+				return;
+			}, "");
+			if (cs2method_10265(v12) > 0) {
+				object v20;
+				int v19 = cs2method_10060(cs2method_10939(494, "Last known as: " + (string)v12), 8);
+				if (v19 > cs2method_10236(59572243)) {
+					v20 = "Last known as:" + "<br>" + (string)v12;
+				} else {
+					v20 = "Last known as: " + (string)v12;
+				}
+				cs2method_20353(new function<script_2467>(int a0,int a1,int a2,object a3,int a4,int a5,int a6,int a7,int a8) {
+					script_2468(a3, a5, a6, a2, a1, a0, a4, a7, a8);
+					return;
+				}, new WidgetPointer(-32768,3), -2147483643, (string)v20, -2147483647, -2147483646, new WidgetPointer(909,41), new WidgetPointer(909,32), new WidgetPointer(909,35), 494, "IisiiIIIf");
+			}
+			cs2method_10200(v24);
+			if (v22 > 0) {
+				cs2method_10057(1, "Message");
+				cs2method_10057(2, "Join");
+			} else {
+				cs2method_10057(3, "Message");
+				cs2method_10057(4, "Join");
+			}
+			cs2method_10057(10, "Delete");
+			cs2method_20703(new function<script_3039>(int a0,object a1,int a2,int a3) {
+				switch (a0) {
+					case 1:
+						if (cs2method_10870() == 0) {
+							script_3015(0, "Send message to " + (string)a1, "", a1, "");
+						} else {
+							cs2method_10810("Users restricted to quick-chat cannot send messages from the Lobby.");
+						}
+						break;
+					case 2:
+						script_1182(a2);
+						break;
+					case 3:
+					case 4:
+						cs2method_10810("That player is currently offline.");
+						break;
+					case 10:
+						cs2method_10613(cs2method_10765(a1));
+				}
+				return;
+			}, -2147483644, v22, (string)v24, v5, "iisi");
+			script_2994(a0, v5, 14, 14, 5, cs2method_10060(v10, 1), -1, 0, 0, 0, 0);
+			if (cs2method_10846(v12, "") != 0) {
+				cs2method_10310(2313);
+				v21 = 20;
+			} else {
+				cs2method_10310(-1);
+				v21 = 5;
+			}
+			object v25 = v24;
+			script_2995(a1, v5, 0, v2, v21, v10, 16777215, 494, 0, v25, 1, 0, 1);
+			cs2method_10013(v21, v2, 1, 0);
+			cs2method_10975(1);
+			if (v22 == 0) {
+				v19 = "Offline";
+				v3 = 16711680;
+			} else if (v22 >= 1149 && v22 < 1200) {
+				v19 = "Beta lobby";
+			} else if (v22 >= 200 && v22 < 300) {
+				v19 = "Beta " + (string)cs2method_10379(v22);
+			} else {
+				v19 = cs2method_10219(v5);
+			}
+			if (v22 > 0) {
+				if (v22 == cs2method_10966()) {
+					v3 = 65280;
+				} else {
+					v3 = 16776960;
+				}
+			}
+			script_2995(a4, v5, 0, v2, 5, v10, v3, 494, 0, v19, 1, 0, 1);
+			cs2method_10013(5, v2, 1, 0);
+			cs2method_10975(1);
+			v10 = cs2method_10060(v10, v2);
+			v5 = cs2method_10060(v5, 1);
+		}
+		int v20 = cs2method_10060(cs2method_10968(cs2method_10823(a3), v2), 1);
+		if (v20 > v17) {
+			while (v5 < v20) {
+				script_2996(a2, v5, cs2method_10236(a2), v2, 0, v10, 0, 1, 0);
+				if (cs2method_10038(v5, 2) == 0) {
+					cs2method_10811(2103569);
+				} else {
+					cs2method_10811(2695190);
+				}
+				v10 = cs2method_10060(v10, v2);
+				v5 = cs2method_10060(v5, 1);
+			}
+			v8 = cs2method_10823(a3);
+		} else {
+			v8 = v10;
+		}
+		if (v20 <= v17) {
+			int v15 = cs2method_10718(59572265);
+			cs2method_11130(0, v8, 59572265);
+			if (v15 > v8) {
+				v15 = v8;
+			}
+			script_72(59572271, 59572265, v15);
+		} else {
+			cs2method_11130(0, 0, 59572265);
+			cs2method_10251(0, 0, 59572265);
+			script_72(59572271, 59572265, 0);
+		}
+	} else {
+		if (v17 == 0) {
+			cs2method_10026(59572262, "Name");
+			script_3038(a2, "You have not added any friends to your list.");
+			cs2method_10283(cs2method_10236(59572255), cs2method_10823(59572260), 0, 0, 59572255);
+		}
+	}
+	return;
+}

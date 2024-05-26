@@ -1,0 +1,95 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2184(int a0,int a1,int a2) {
+	cs2method_10273(a0);
+	int v5 = cs2method_10968(cs2method_10461(cs2method_10236(a0), cs2method_10051(5, 36)), 6);
+	int v4 = 0;
+	int v1 = -1;
+	int v0 = 0;
+	int v2 = 0;
+	int v3 = 0;
+	if (cs2method_10684(90) < cs2method_10894(90)) {
+		while (v4 < cs2method_10894(90)) {
+			int v6 = cs2method_11065(90, v4);
+			cs2method_10606(a0, 5, cs2method_10051(v4, 2));
+			cs2method_10606(a0, 4, cs2method_10060(cs2method_10051(v4, 2), 1));
+			if (v6 > 0) {
+				int v7 = cs2method_10640(90, v4);
+				cs2method_10013(36, 32, 0, 0);
+				v3 = cs2method_10060(cs2method_10051(cs2method_10968(v4, 5), cs2method_10060(32, 40)), 2);
+				cs2method_10063(cs2method_10060(cs2method_10051(cs2method_10038(v4, 5), cs2method_10060(36, v5)), v5), v3, 0, 0);
+				cs2method_10269(0);
+				cs2method_11070(v7, v6);
+				cs2method_10278(3355443);
+				cs2method_10356(1);
+				cs2method_10057(1, "Remove-1");
+				cs2method_10057(2, "Remove-5");
+				cs2method_10057(3, "Remove-10");
+				cs2method_10057(4, "Remove-All");
+				cs2method_10057(5, "Remove-X");
+				cs2method_10057(10, "Examine");
+				cs2method_10200("<col=ff9040>" + (string)cs2method_10018(v7));
+				cs2method_10013(cs2method_10461(cs2method_10060(36, v5), 6), 40, 0, 0);
+				cs2method_10063(cs2method_10060(cs2method_10060(cs2method_10051(cs2method_10038(v4, 5), cs2method_10060(36, v5)), cs2method_10968(v5, 2)), 3), cs2method_10060(v3, 32), 0, 0);
+				cs2method_10269(0);
+				cs2method_11105(1, 0, 0);
+				cs2method_10692(494);
+				cs2method_10811(16777215);
+				cs2method_10173(1);
+				int v8 = script_2185(v4);
+				if (v6 > 1) {
+					cs2method_10797((string)cs2method_10055(v6, 1) + " x " + (string)cs2method_10055(v8, 1) + "<br>" + "= " + (string)cs2method_10055(cs2method_10051(v6, v8), 1));
+				} else {
+					cs2method_10797(cs2method_10055(v8, 1));
+				}
+			} else {
+				cs2method_10013(0, 0, 0, 0);
+				cs2method_10063(0, 0, 0, 0);
+				cs2method_10269(1);
+				cs2method_10013(0, 0, 0, 0);
+				cs2method_10063(0, 0, 0, 0);
+				cs2method_10269(1);
+			}
+			v4 = cs2method_10060(v4, 1);
+		}
+	} else {
+		cs2method_10606(a0, 4, 0);
+		cs2method_10013(0, cs2method_10823(a0), 1, 0);
+		cs2method_10063(0, 0, 1, 0);
+		cs2method_10811(16777215);
+		cs2method_10173(1);
+		cs2method_11105(1, 1, 0);
+		cs2method_10692(495);
+		cs2method_10797("Click on items in your inventory to check their values.");
+	}
+	v3 = cs2method_10060(cs2method_10060(v3, 32), 40);
+	if (v3 > cs2method_10823(a0)) {
+		cs2method_11130(0, v3, a0);
+		cs2method_10112(-8, cs2method_10152(a0), 1, 0, a0);
+		script_31(a1, a0, 792, 789, 790, 791, 773, 788);
+		if (cs2method_11038(a1, 1) == 1) {
+			script_37(a1, a0, cs2method_10718(a0), 1);
+		}
+	} else {
+		cs2method_11130(0, 0, a0);
+		cs2method_10251(0, 0, a0);
+		cs2method_10273(a1);
+		cs2method_10112(0, cs2method_10152(a0), 1, 0, a0);
+	}
+	if (cs2_configs['cfg728'] < 0) {
+		cs2method_10026(a2, "Total value:" + "<br>" + "---");
+	} else {
+		cs2method_10026(a2, "Total value:" + "<br>" + (string)cs2method_10055(cs2_configs['cfg728'], 1));
+	}
+	return;
+}

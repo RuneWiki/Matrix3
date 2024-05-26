@@ -1,0 +1,232 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_257() {
+	object v3;
+	object v7;
+	object v8;
+	object v2;
+	object v0 = "";
+	if (cs2_configs['cfg1111'] == -1 || cs2_configs['cfg1113'] == -1 || cs2_configs['cfg1112'] == -1 || cs2_configs['cfg1114'] == -1 || cs2_configs['cfg1115'] == -1 || cs2_configs['cfg1116'] == -1 || cs2_configs['cfg1117'] == -1 || cs2_configs['cfg1927'] == -1) {
+		return;
+	}
+	int v9 = cs2method_10051(cs2method_10163(60227644), cs2method_10060(18, 4));
+	int v10 = cs2method_10051(cs2method_10060(cs2method_10163(60227644), 1), cs2method_10060(18, 4));
+	cs2method_11130(cs2method_10350(60227643), v10, 60227643);
+	cs2method_10283(cs2method_10236(60227609), v10, 0, 0, 60227609);
+	cs2method_10606(60227609, 4, cs2method_10163(60227609));
+	if (cs2_configs['cfg1927'] >= 1) {
+		cs2method_10811(15849648);
+	} else {
+		cs2method_10811(10789991);
+	}
+	cs2method_10013(16384, 18, 2, 0);
+	cs2method_10063(0, v9, 0, 2);
+	cs2method_10692(494);
+	cs2method_10797(script_1668(cs2_configs['cfg1111']));
+	cs2method_11105(1, 1, 0);
+	object v4 = (string)cs2method_10447() + ": The type of fish";
+	cs2method_20353(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,object a9,int a10,int a11,int a12) {
+		script_7769(a3, a8, a1, a10, a5, a2, a0, a11, a7, a4, a6, a9, a12);
+		return;
+	}, new WidgetPointer(919,24), new WidgetPointer(-32768,3), -1, (string)v4, 200, 17813, 17813, 16777215, 13, 4, 1, -2147483647, -2147483646, "IIisiffiiiiii");
+	cs2method_20884(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(919,24), "I");
+	cs2method_10283(cs2method_10236(60227644), v10, 0, 0, 60227644);
+	cs2method_10606(60227644, 4, cs2method_10163(60227644));
+	if (cs2_configs['cfg1927'] >= 1) {
+		cs2method_10811(15849648);
+	} else {
+		cs2method_10811(10789991);
+	}
+	cs2method_10013(16384, 18, 2, 0);
+	cs2method_10063(0, v9, 0, 2);
+	cs2method_10692(494);
+	cs2method_10797(script_276(cs2_configs['cfg1113']));
+	cs2method_11105(1, 1, 0);
+	object v1 = (string)cs2method_10447() + ": The habitat in which you caught the fish";
+	cs2method_20353(new function<script_7768>(int a0,int a1,int a2,int a3,object a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+		script_7769(a11, a0, a8, a9, a10, a7, a2, a5, a12, a1, a6, a4, a3);
+		return;
+	}, new WidgetPointer(919,24), new WidgetPointer(-32768,3), -1, (string)v1, 200, 17813, 17813, 16777215, 13, 4, 1, -2147483647, -2147483646, "IIisiffiiiiii");
+	cs2method_20884(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(919,24), "I");
+	cs2method_10283(cs2method_10236(60227645), v10, 0, 0, 60227645);
+	cs2method_10606(60227645, 4, cs2method_10163(60227645));
+	if (cs2_configs['cfg1927'] >= 1) {
+		cs2method_10811(15849648);
+	} else {
+		cs2method_10811(10789991);
+	}
+	cs2method_10013(16384, 18, 2, 0);
+	cs2method_10063(0, v9, 0, 2);
+	cs2method_10692(494);
+	cs2method_10797(cs2method_10379(cs2_configs['cfg1112']));
+	cs2method_11105(1, 1, 0);
+	object v6 = (string)cs2method_10447() + ": The weight of the fish";
+	cs2method_20353(new function<script_7768>(int a0,object a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+		script_7769(a5, a11, a10, a2, a6, a12, a8, a7, a9, a0, a4, a1, a3);
+		return;
+	}, new WidgetPointer(919,24), new WidgetPointer(-32768,3), -1, (string)v6, 200, 17813, 17813, 16777215, 13, 4, 1, -2147483647, -2147483646, "IIisiffiiiiii");
+	cs2method_20884(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(919,24), "I");
+	cs2method_10283(cs2method_10236(60227646), v10, 0, 0, 60227646);
+	cs2method_10606(60227646, 5, cs2method_10163(60227646));
+	cs2method_10013(20, 20, 0, 0);
+	cs2method_10063(0, v9, 1, 2);
+	int v5 = -1;
+	switch (cs2_configs['cfg1114']) {
+		case 1:
+			v5 = 15658;
+			v6 = "Worm";
+			break;
+		case 2:
+			v5 = 15659;
+			v6 = "Maggot";
+			break;
+		case 3:
+			v5 = 15662;
+			v6 = "Cricket";
+			break;
+		case 4:
+			v5 = 15663;
+			v6 = "Locust";
+			break;
+		case 5:
+			v5 = 15661;
+			v6 = "Crayfish";
+			break;
+		case 6:
+			v5 = 15660;
+			v6 = "Shrimp";
+			break;
+		case 7:
+			v5 = 15664;
+			v6 = "Green moth";
+			break;
+		case 8:
+			v5 = 15665;
+			v6 = "Grey moth";
+	}
+	if (cs2_configs['cfg1927'] < 2) {
+		cs2method_10903(v5, 0);
+		v7 = (string)v6 + ": The bait you used to catch the fish";
+	} else {
+		v7 = "You do not know which bait was used to catch this big fish";
+	}
+	cs2method_20353(new function<script_7768>(int a0,int a1,object a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+		script_7769(a12, a6, a3, a1, a4, a10, a9, a7, a11, a0, a5, a2, a8);
+		return;
+	}, new WidgetPointer(919,24), new WidgetPointer(-32768,3), -1, (string)v7, 200, 17813, 17813, 16777215, 13, 4, 3, -2147483647, -2147483646, "IIisiffiiiiii");
+	cs2method_20884(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(919,24), "I");
+	cs2method_10283(cs2method_10236(60227647), v10, 0, 0, 60227647);
+	cs2method_10606(60227647, 4, cs2method_10163(60227647));
+	if (cs2_configs['cfg1927'] >= 1) {
+		cs2method_10811(15849648);
+	} else {
+		cs2method_10811(10789991);
+	}
+	cs2method_10013(16384, 18, 2, 0);
+	cs2method_10063(0, v9, 0, 2);
+	cs2method_10692(494);
+	if (cs2_configs['cfg1927'] < 2) {
+		cs2method_10797(script_278(cs2_configs['cfg1115']));
+		v8 = (string)cs2method_10447() + ": The hook you used to catch the fish";
+	} else {
+		v8 = "You do not know which hook was used to catch this big fish";
+	}
+	cs2method_11105(1, 1, 0);
+	cs2method_20353(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,object a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+		script_7769(a9, a12, a4, a8, a2, a11, a7, a10, a1, a3, a0, a5, a6);
+		return;
+	}, new WidgetPointer(919,24), new WidgetPointer(-32768,3), -1, (string)v8, 200, 17813, 17813, 16777215, 13, 4, 3, -2147483647, -2147483646, "IIisiffiiiiii");
+	cs2method_20884(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(919,24), "I");
+	cs2method_10283(cs2method_10236(60227648), v10, 0, 0, 60227648);
+	cs2method_10606(60227648, 4, cs2method_10163(60227648));
+	if (cs2_configs['cfg1927'] >= 1) {
+		cs2method_10811(15849648);
+	} else {
+		cs2method_10811(10789991);
+	}
+	cs2method_10013(16384, 18, 2, 0);
+	cs2method_10063(0, v9, 0, 2);
+	cs2method_10692(494);
+	if (cs2_configs['cfg1927'] < 2) {
+		cs2method_10797(cs2method_10379(cs2_configs['cfg1116']));
+		v2 = (string)cs2method_10447() + ": The distance from the shore where you caught the fish";
+	} else {
+		v2 = "You do not know which weights were used to catch this big fish";
+	}
+	cs2method_11105(1, 1, 0);
+	cs2method_20353(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,object a9,int a10,int a11,int a12) {
+		script_7769(a7, a6, a2, a1, a12, a5, a4, a0, a3, a8, a10, a9, a11);
+		return;
+	}, new WidgetPointer(919,24), new WidgetPointer(-32768,3), -1, (string)v2, 200, 17813, 17813, 16777215, 13, 4, 3, -2147483647, -2147483646, "IIisiffiiiiii");
+	cs2method_20884(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(919,24), "I");
+	cs2method_10283(cs2method_10236(60227649), v10, 0, 0, 60227649);
+	cs2method_10606(60227649, 4, cs2method_10163(60227649));
+	if (cs2_configs['cfg1927'] >= 1) {
+		cs2method_10811(15849648);
+	} else {
+		cs2method_10811(10789991);
+	}
+	cs2method_10013(16384, 18, 2, 0);
+	cs2method_10063(0, v9, 0, 2);
+	cs2method_10692(494);
+	if (cs2_configs['cfg1927'] < 2) {
+		cs2method_10797((string)cs2method_10379(cs2_configs['cfg1117']) + "%");
+	}
+	cs2method_11105(1, 1, 0);
+	if (cs2_configs['cfg1117'] == 100) {
+		v3 = (string)cs2method_10447() + ": You are catching the highest-quality fish of this type at this habitat.";
+	} else {
+		v3 = (string)cs2method_10447() + ": The quality of the fish you caught. Selecting a more suitable habitat, bait, hook and/or weights increases the rating of catches.";
+	}
+	if (cs2_configs['cfg1927'] == 2) {
+		v3 = "You helped a contestant to catch this big fish";
+	}
+	cs2method_20353(new function<script_7768>(int a0,int a1,int a2,int a3,object a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+		script_7769(a5, a3, a7, a0, a10, a6, a8, a9, a2, a11, a12, a4, a1);
+		return;
+	}, new WidgetPointer(919,24), new WidgetPointer(-32768,3), -1, (string)v3, 200, 17813, 17813, 16777215, 13, 4, 3, -2147483647, -2147483646, "IIisiffiiiiii");
+	cs2method_20884(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(919,24), "I");
+	if (cs2method_10823(60227631) == 200) {
+		script_31(60227642, 60227643, 5666, 5663, 5664, 5665, 5686, 5685);
+	}
+	cs2_configs['cfg1111'] = -1;
+	cs2_configs['cfg1113'] = -1;
+	cs2_configs['cfg1112'] = -1;
+	cs2_configs['cfg1114'] = -1;
+	cs2_configs['cfg1115'] = -1;
+	cs2_configs['cfg1116'] = -1;
+	cs2_configs['cfg1117'] = -1;
+	cs2_configs['cfg1927'] = -1;
+	return;
+}

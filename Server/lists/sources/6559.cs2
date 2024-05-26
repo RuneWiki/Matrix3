@@ -1,0 +1,85 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6559() {
+	int v0;
+	int v10;
+	int v9;
+	int v7;
+	int v2;
+	int v11;
+	int v3;
+	int v1;
+	int v5 = -1;
+	int v4 = -1;
+	int v8 = -1;
+	int v6 = 0;
+	if (client_configs['cfg2932'].bitcfg14882 == 1) {
+		v9 = 1;
+		v7 = 11724;
+		v2 = 11725;
+		v3 = 11726;
+	} else {
+		v9 = 0;
+		v7 = 11733;
+		v2 = 11734;
+		v3 = 11735;
+	}
+	cs2method_10758(v7, 86310958);
+	cs2method_20750(new function<script_44>(int a0,int a1) {
+		cs2method_10758(a1, a0);
+		return;
+	}, new WidgetPointer(1317,46), v7, "Id", new WidgetPointer(1317,46));
+	cs2method_20680(new function<script_44>(int a0,int a1) {
+		cs2method_10758(a0, a1);
+		return;
+	}, new WidgetPointer(1317,46), v2, "Id", new WidgetPointer(1317,46));
+	cs2method_21103(new function<script_44>(int a0,int a1) {
+		cs2method_10758(a0, a1);
+		return;
+	}, new WidgetPointer(1317,46), v2, "Id", new WidgetPointer(1317,46));
+	cs2method_20390(new function<script_44>(int a0,int a1) {
+		cs2method_10758(a1, a0);
+		return;
+	}, new WidgetPointer(1317,46), v3, "Id", new WidgetPointer(1317,46));
+	cs2method_10467(v9, 86310959);
+	if (client_configs['cfg2932'].bitcfg14890 == 1) {
+		v0 = 1;
+		v1 = 11721;
+		v10 = 11722;
+		v11 = 11723;
+	} else {
+		v0 = 0;
+		v1 = 11730;
+		v10 = 11731;
+		v11 = 11732;
+	}
+	cs2method_10758(v1, 86310960);
+	cs2method_20750(new function<script_44>(int a0,int a1) {
+		cs2method_10758(a0, a1);
+		return;
+	}, new WidgetPointer(1317,48), v1, "Id", new WidgetPointer(1317,48));
+	cs2method_20680(new function<script_44>(int a0,int a1) {
+		cs2method_10758(a1, a0);
+		return;
+	}, new WidgetPointer(1317,48), v10, "Id", new WidgetPointer(1317,48));
+	cs2method_21103(new function<script_44>(int a0,int a1) {
+		cs2method_10758(a0, a1);
+		return;
+	}, new WidgetPointer(1317,48), v10, "Id", new WidgetPointer(1317,48));
+	cs2method_20390(new function<script_44>(int a0,int a1) {
+		cs2method_10758(a1, a0);
+		return;
+	}, new WidgetPointer(1317,48), v11, "Id", new WidgetPointer(1317,48));
+	cs2method_10467(v0, 86310961);
+	return;
+}

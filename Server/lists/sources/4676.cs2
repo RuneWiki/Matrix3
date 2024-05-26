@@ -1,0 +1,131 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4676(int a0) {
+	switch (a0) {
+		case 1:
+			if (client_configs['cfg1545'].bitcfg4775 == 1) {
+				cs2method_10467(1, 6684687);
+				cs2method_10467(1, 6684689);
+			} else {
+				if (client_configs['cfg1543'].bitcfg4758 == 10 && cs2method_10338(6) >= 30 && cs2method_10338(4) >= 30 && cs2method_10338(0) >= 30) {
+					cs2method_10467(0, 6684742);
+					cs2method_10467(0, 6684687);
+					cs2method_10467(0, 6684689);
+					if (client_configs['cfg1545'].bitcfg4776 == 0) {
+						cs2method_10026(6684742, "You receive two new books.");
+					}
+				}
+			}
+			if (client_configs['cfg1545'].bitcfg4776 == 1) {
+				cs2method_10467(1, 6684686);
+				cs2method_10467(1, 6684688);
+			} else {
+				cs2method_10467(0, 6684742);
+				cs2method_10467(0, 6684686);
+				cs2method_10467(0, 6684688);
+			}
+			break;
+		case 2:
+			if (client_configs['cfg1545'].bitcfg4777 == 1) {
+				cs2method_10467(1, 6684687);
+				cs2method_10467(1, 6684689);
+			} else {
+				if (client_configs['cfg1543'].bitcfg4758 == 10 && cs2method_10338(16) >= 55 && cs2method_10338(17) >= 55) {
+					cs2method_10467(0, 6684742);
+					cs2method_10467(0, 6684687);
+					cs2method_10467(0, 6684689);
+					if (client_configs['cfg1545'].bitcfg4778 == 0) {
+						cs2method_10026(6684742, "You receive two new books.");
+					}
+				}
+			}
+			if (client_configs['cfg1545'].bitcfg4778 == 1) {
+				cs2method_10467(1, 6684686);
+				cs2method_10467(1, 6684688);
+			} else {
+				cs2method_10467(0, 6684742);
+				cs2method_10467(0, 6684686);
+				cs2method_10467(0, 6684688);
+			}
+			break;
+		case 4:
+			if (client_configs['cfg1545'].bitcfg4779 == 1) {
+				cs2method_10467(1, 6684687);
+				cs2method_10467(1, 6684689);
+			} else {
+				if (client_configs['cfg1543'].bitcfg4758 == 10 && cs2method_10338(2) >= 70) {
+					cs2method_10467(0, 6684742);
+					cs2method_10467(0, 6684687);
+					cs2method_10467(0, 6684689);
+					if (client_configs['cfg1545'].bitcfg4780 == 0) {
+						cs2method_10026(6684742, "You receive two new books.");
+					}
+				}
+			}
+			if (client_configs['cfg1545'].bitcfg4780 == 1) {
+				cs2method_10467(1, 6684686);
+				cs2method_10467(1, 6684688);
+			} else {
+				cs2method_10467(0, 6684742);
+				cs2method_10467(0, 6684686);
+				cs2method_10467(0, 6684688);
+			}
+			break;
+		case 3:
+			if (client_configs['cfg1546'].bitcfg4781 == 1) {
+				cs2method_10467(1, 6684687);
+				cs2method_10467(1, 6684689);
+			} else {
+				if (client_configs['cfg1543'].bitcfg4758 == 10 && cs2method_10338(0) >= 60 && cs2method_10338(17) >= 45 && cs2method_10338(24) >= 55) {
+					cs2method_10467(0, 6684742);
+					cs2method_10467(0, 6684687);
+					cs2method_10467(0, 6684689);
+					if (client_configs['cfg1546'].bitcfg4782 == 0) {
+						cs2method_10026(6684742, "You receive two new books.");
+					}
+				}
+			}
+			if (client_configs['cfg1546'].bitcfg4782 == 1) {
+				cs2method_10467(1, 6684686);
+				cs2method_10467(1, 6684688);
+			} else {
+				cs2method_10467(0, 6684742);
+				cs2method_10467(0, 6684686);
+				cs2method_10467(0, 6684688);
+			}
+			break;
+		case 6:
+			if (client_configs['cfg1546'].bitcfg4783 == 1) {
+				cs2method_10467(1, 6684687);
+				cs2method_10467(1, 6684689);
+			} else {
+				if (client_configs['cfg1543'].bitcfg4758 == 10 && cs2method_10338(2) >= 75) {
+					cs2method_10467(0, 6684742);
+					cs2method_10467(0, 6684687);
+					cs2method_10467(0, 6684689);
+					if (client_configs['cfg1546'].bitcfg4784 == 0) {
+						cs2method_10026(6684742, "You receive two new books.");
+					}
+				}
+			}
+			if (client_configs['cfg1546'].bitcfg4784 == 1) {
+				cs2method_10467(1, 6684686);
+				cs2method_10467(1, 6684688);
+			} else {
+				cs2method_10467(0, 6684742);
+				cs2method_10467(0, 6684686);
+				cs2method_10467(0, 6684688);
+			}
+	}
+	return;
+}

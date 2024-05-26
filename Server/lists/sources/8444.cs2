@@ -1,0 +1,59 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_8444_struct(4,4,0) script_8444(int a0) {
+	int v5 = -1;
+	int v3 = -1;
+	int v6 = -1;
+	int v1 = -1;
+	object v2 = "";
+	object v7 = "";
+	object v0 = "";
+	object v4 = "";
+	switch (a0) {
+		case 1:
+			v5 = 14873;
+			v2 = "Attack";
+			v3 = 14874;
+			v7 = "Strength";
+			break;
+		case 2:
+			v5 = 14875;
+			v2 = "Ranged";
+			break;
+		case 3:
+			if (client_configs['cfg3680'].bitcfg22315 == 1) {
+				v5 = 14367;
+				v2 = "Combat";
+				v3 = 14333;
+				v7 = "Teleport";
+				v6 = 14379;
+				v0 = "Skilling";
+			} else {
+				v5 = 14876;
+				v2 = "Abilities";
+				v3 = 14367;
+				v7 = "Combat";
+				v6 = 14333;
+				v0 = "Teleport";
+				v1 = 14379;
+				v4 = "Skilling";
+			}
+			break;
+		case 4:
+			v5 = 14877;
+			v2 = "Defence";
+			v3 = 14878;
+			v7 = "Constitution";
+	}
+	return new script_8444_struct(v5, v3, v6, v1, v2, v7, v0, v4);
+}

@@ -1,0 +1,63 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_779(int a0,int a1,object a2,int a3,int a4) {
+	cs2method_10273(a1);
+	if (cs2method_10846(a2, "Call familiar") == 0 && idx17mapData('o', 'o', 1283, client_configs['cfg1831']) == 526) {
+		a2 = "Call pet";
+	}
+	if (cs2method_10846(a2, "Dismiss familiar") == 0 && idx17mapData('o', 'o', 1283, client_configs['cfg1831']) == 526) {
+		a2 = "Dismiss pet";
+	}
+	int v6 = cs2method_10060(2, cs2method_10051(13, cs2method_10805(125, 495, a2)));
+	int v7 = cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(2, v6), 32), 14), 2);
+	int v5 = 5;
+	int v2 = 5;
+	int v4 = 1;
+	int v0 = 1;
+	int v1 = cs2method_10461(cs2method_10461(v7, 32), 14);
+	int v8 = cs2method_10152(a4);
+	if (v8 == 225 && cs2method_10191(a4) == 83) {
+		v8 = 180;
+	}
+	int v3 = cs2method_10461(cs2method_10191(a4), 60);
+	if (v3 < 0) {
+		v3 = 5;
+	}
+	if (v3 > 70) {
+		v3 = 65;
+	}
+	cs2method_10606(a1, 3, 0);
+	cs2method_10063(v3, v8, 0, 0);
+	cs2method_10013(128, v1, 0, 0);
+	cs2method_10238(1);
+	cs2method_10811(921102);
+	cs2method_10606(a1, 3, 1);
+	cs2method_10063(cs2method_10060(v3, 1), cs2method_10060(v8, 1), 0, 0);
+	cs2method_10013(127, cs2method_10461(v1, 1), 0, 0);
+	cs2method_10238(0);
+	cs2method_10811(15461606);
+	cs2method_10606(a1, 3, 2);
+	cs2method_10063(v3, v8, 0, 0);
+	cs2method_10013(127, cs2method_10461(v1, 1), 0, 0);
+	cs2method_10238(0);
+	cs2method_10811(15461606);
+	cs2method_10606(a1, 4, 3);
+	cs2method_10063(cs2method_10060(v3, 2), cs2method_10060(v8, 2), 0, 0);
+	cs2method_10013(125, v6, 0, 0);
+	cs2method_11105(1, 1, 0);
+	cs2method_10692(495);
+	cs2method_10811(16101953);
+	cs2method_10173(0);
+	cs2method_10797(a2);
+	return;
+}

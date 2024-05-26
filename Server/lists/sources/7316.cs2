@@ -1,0 +1,168 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_7316(int a0,int a1) {
+	int v42 = cs2method_10640(a0, a1);
+	if (v42 == -1) {
+		return 0;
+	}
+	int v22 = 0;
+	int v39 = script_7319(a1);
+	int v9 = cs2method_10968(cs2method_10147(v39, 57344), 8192);
+	switch (v9) {
+		case 0:
+		case 1:
+			v22 = cs2method_10060(v22, 1);
+			break;
+		case 2:
+		case 3:
+		case 4:
+			v22 = cs2method_10060(v22, 2);
+			break;
+		case 5:
+		case 6:
+		case 7:
+			v22 = cs2method_10060(v22, 4);
+	}
+	int v19 = cs2method_10968(cs2method_10147(v39, 458752), 65536);
+	switch (v19) {
+		case 0:
+		case 1:
+			v22 = cs2method_10060(v22, 1);
+			break;
+		case 2:
+		case 3:
+		case 4:
+			v22 = cs2method_10060(v22, 2);
+			break;
+		case 5:
+		case 6:
+		case 7:
+			v22 = cs2method_10060(v22, 4);
+	}
+	int v16 = cs2method_10968(cs2method_10147(v39, 3670016), 524288);
+	switch (v16) {
+		case 0:
+		case 1:
+			v22 = cs2method_10060(v22, 1);
+			break;
+		case 2:
+		case 3:
+		case 4:
+			v22 = cs2method_10060(v22, 2);
+			break;
+		case 5:
+		case 6:
+		case 7:
+			v22 = cs2method_10060(v22, 4);
+	}
+	int v10 = cs2method_10968(cs2method_10147(v39, 29360128), 4194304);
+	switch (v10) {
+		case 0:
+		case 1:
+			v22 = cs2method_10060(v22, 1);
+			break;
+		case 2:
+		case 3:
+		case 4:
+			v22 = cs2method_10060(v22, 2);
+			break;
+		case 5:
+		case 6:
+		case 7:
+			v22 = cs2method_10060(v22, 4);
+	}
+	int v26 = cs2method_10968(cs2method_10147(v39, 2113929216), 33554432);
+	int v21 = idx17mapData('i', 'J', 2175, v26);
+	int v18 = idx22mapAttribute(v21, 3092);
+	int v50 = idx17mapData('i', 'J', 2175, v26);
+	switch (v26) {
+		default:
+			switch (v18) {
+				case 1:
+				case 2:
+					v22 = cs2method_10060(v22, 3);
+					break;
+				case 3:
+				case 4:
+					v22 = cs2method_10060(v22, 7);
+					break;
+				case 5:
+					v22 = cs2method_10060(v22, 15);
+			}
+			break;
+		case 1:
+			int v51 = idx17mapData('i', 'J', 2175, client_configs['cfg3421'].bitcfg17148);
+			int v0 = cs2method_10060(v18, idx22mapAttribute(v51, 3092));
+			int v6 = idx17mapData('i', 'J', 2175, client_configs['cfg3421'].bitcfg17149);
+			int v4 = cs2method_10060(v0, idx22mapAttribute(v6, 3092));
+			int v34 = idx17mapData('i', 'J', 2175, client_configs['cfg3421'].bitcfg17150);
+			int v11 = cs2method_10060(v4, idx22mapAttribute(v34, 3092));
+			int v35 = idx17mapData('i', 'J', 2175, client_configs['cfg3421'].bitcfg17151);
+			int v46 = cs2method_10060(v11, idx22mapAttribute(v35, 3092));
+			break;
+		case 2:
+			int v41 = idx17mapData('i', 'J', 2175, client_configs['cfg3422'].bitcfg17161);
+			int v38 = cs2method_10060(v18, idx22mapAttribute(v41, 3092));
+			int v47 = idx17mapData('i', 'J', 2175, client_configs['cfg3422'].bitcfg17162);
+			int v31 = cs2method_10060(v38, idx22mapAttribute(v47, 3092));
+			int v27 = idx17mapData('i', 'J', 2175, client_configs['cfg3422'].bitcfg17163);
+			int v2 = cs2method_10060(v31, idx22mapAttribute(v27, 3092));
+			int v32 = idx17mapData('i', 'J', 2175, client_configs['cfg3422'].bitcfg17164);
+			int v28 = cs2method_10060(v2, idx22mapAttribute(v32, 3092));
+			break;
+		case 3:
+			int v8 = idx17mapData('i', 'J', 2175, client_configs['cfg3423'].bitcfg17174);
+			int v23 = cs2method_10060(v18, idx22mapAttribute(v8, 3092));
+			int v33 = idx17mapData('i', 'J', 2175, client_configs['cfg3423'].bitcfg17175);
+			int v43 = cs2method_10060(v23, idx22mapAttribute(v33, 3092));
+			int v24 = idx17mapData('i', 'J', 2175, client_configs['cfg3423'].bitcfg17176);
+			int v3 = cs2method_10060(v43, idx22mapAttribute(v24, 3092));
+			int v29 = idx17mapData('i', 'J', 2175, client_configs['cfg3423'].bitcfg17177);
+			int v14 = cs2method_10060(v3, idx22mapAttribute(v29, 3092));
+			break;
+		case 4:
+			int v12 = idx17mapData('i', 'J', 2175, client_configs['cfg3424'].bitcfg17187);
+			int v49 = cs2method_10060(v18, idx22mapAttribute(v12, 3092));
+			int v44 = idx17mapData('i', 'J', 2175, client_configs['cfg3424'].bitcfg17188);
+			int v30 = cs2method_10060(v49, idx22mapAttribute(v44, 3092));
+			int v13 = idx17mapData('i', 'J', 2175, client_configs['cfg3424'].bitcfg17189);
+			int v52 = cs2method_10060(v30, idx22mapAttribute(v13, 3092));
+			int v40 = idx17mapData('i', 'J', 2175, client_configs['cfg3424'].bitcfg17190);
+			int v25 = cs2method_10060(v52, idx22mapAttribute(v40, 3092));
+			break;
+		case 5:
+			int v17 = idx17mapData('i', 'J', 2175, client_configs['cfg3425'].bitcfg17200);
+			int v36 = cs2method_10060(v18, idx22mapAttribute(v17, 3092));
+			int v20 = idx17mapData('i', 'J', 2175, client_configs['cfg3425'].bitcfg17201);
+			int v15 = cs2method_10060(v36, idx22mapAttribute(v20, 3092));
+			int v37 = idx17mapData('i', 'J', 2175, client_configs['cfg3425'].bitcfg17202);
+			int v7 = cs2method_10060(v15, idx22mapAttribute(v37, 3092));
+			int v45 = idx17mapData('i', 'J', 2175, client_configs['cfg3425'].bitcfg17203);
+			int v48 = cs2method_10060(v7, idx22mapAttribute(v45, 3092));
+	}
+	int v1 = itemDefsAttribute(v42, 3079);
+	int v5 = cs2method_10060(v22, cs2method_10051(v1, 2));
+	if (v5 < 14) {
+		return 1;
+	}
+	if (v5 < 22) {
+		return 2;
+	}
+	if (v5 < 29) {
+		return 3;
+	}
+	if (v5 < 36) {
+		return 4;
+	}
+	return 5;
+}

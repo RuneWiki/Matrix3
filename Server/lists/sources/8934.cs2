@@ -1,0 +1,97 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8934(int a0) {
+	cs2method_10670(36961, 1, 0, 200);
+	cs2method_10467(0, 97976669);
+	int v1 = idx17mapData('i', 'J', 7568, a0);
+	int v2 = idx22mapAttribute(v1, 3398);
+	object v0 = "Are you sure you want to claim this reward?";
+	if (cs2method_10938(1) < itemDefsAttribute(v2, 750)) {
+		v0 = cs2method_10427(v0, "<br>" + "<col=ff0000>" + "You require " + (string)cs2method_10379(itemDefsAttribute(v2, 750)) + " Defence to wear this armour.");
+	}
+	cs2method_10026(97976674, v0);
+	if (client_configs['cfg3667'].bitcfg18730 == 1) {
+		cs2method_10026(97976672, cs2method_10018(idx22mapAttribute(v1, 3398)));
+		if (idx22mapAttribute(v1, 3408) == 1) {
+			cs2method_10039(-1, -1, 97976673);
+			cs2method_10758(idx22mapAttribute(v1, 3415), 97976673);
+		} else {
+			cs2method_10039(idx22mapAttribute(v1, 3398), -1, 97976673);
+		}
+	} else if (idx22mapAttribute(v1, 3408) == 1) {
+		cs2method_10039(-1, -1, 97976673);
+		cs2method_10758(idx22mapAttribute(v1, 3416), 97976673);
+	} else {
+		cs2method_10039(idx22mapAttribute(v1, 3399), -1, 97976673);
+	}
+	cs2method_10026(97976672, cs2method_10018(idx22mapAttribute(v1, 3399)));
+	cs2method_20486(new function<script_8938>(int a0) {
+		int v7 = -1;
+		int v5 = -1;
+		int v1 = -1;
+		int v0 = -1;
+		int v3 = -1;
+		int v2 = 0;
+		int v13 = idx17mapData('i', 'J', 7568, a0);
+		int v4 = idx22mapAttribute(v13, 3404);
+		int v11 = a0;
+		script_8928_struct(6,0,0) v10 = script_8928(v11);
+		int v14 = v10.intpart_5;
+		int v15 = v10.intpart_4;
+		int v8 = v10.intpart_3;
+		int v12 = v10.intpart_2;
+		int v9 = v10.intpart_1;
+		int v6 = v10.intpart_0;
+		if (idx22mapAttribute(v13, 3410) == 1) {
+			v4 = cs2method_10122(40, 100, v4);
+		}
+		if (cs2_configs['cfg2774'] == 1) {
+			v4 = cs2method_10122(95, 100, v4);
+		}
+		if (client_configs['cfg3669'] < v4) {
+			return;
+		}
+		if (idx22mapAttribute(v13, 3408) == 1) {
+			script_8936(v8, v9, 0, v13, 1);
+			cs2method_10797("Purchased");
+		} else {
+			if (v14 == -1) {
+				return;
+			}
+			if (idx22mapAttribute(v13, 3410) == 0) {
+				cs2method_10026(v9, "Reclaim");
+			} else {
+				cs2method_10026(v9, cs2method_10379(v4));
+			}
+			cs2method_10758(7892, v14);
+			cs2method_20680(new function<script_8930>(int a0) {
+				cs2method_10758(7895, a0);
+				return;
+			}, new WidgetPointer(v14), "I", new WidgetPointer(v14));
+			cs2method_20069(new function<script_8930>(int a0) {
+				cs2method_10758(7895, a0);
+				return;
+			}, new WidgetPointer(v14), "I", new WidgetPointer(v14));
+			cs2method_21103(new function<script_8930>(int a0) {
+				cs2method_10758(7895, a0);
+				return;
+			}, new WidgetPointer(v14), "I", new WidgetPointer(v14));
+			cs2method_20750(new function<script_8931>(int a0) {
+				cs2method_10758(7892, a0);
+				return;
+			}, new WidgetPointer(v14), "I", new WidgetPointer(v14));
+		}
+		return;
+	}, a0, "i", new WidgetPointer(1495,351));
+	return;
+}

@@ -1,0 +1,22 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3409(int a0) {
+	object v0 = "Access Forums";
+	script_3408(a0, v0);
+	cs2method_10283(cs2method_10939(495, v0), cs2method_10823(a0), 0, 0, a0);
+	cs2method_10026(a0, "<u=64c8fa>" + (string)v0 + "</u>");
+	cs2method_20486(new function<script_3410>() {
+		return;
+	}, "", new WidgetPointer(a0));
+	return;
+}

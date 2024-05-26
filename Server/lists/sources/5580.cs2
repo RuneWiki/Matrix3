@@ -1,0 +1,131 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5580() {
+	object v6;
+	int v7;
+	object v5 = "";
+	object v12 = "";
+	int v11 = -1;
+	cs2method_10467(1, 77398083);
+	cs2method_10467(1, 77398095);
+	cs2method_10467(1, 77398107);
+	cs2method_10467(1, 77398119);
+	cs2method_10467(1, 77398131);
+	cs2method_10467(1, 77398143);
+	cs2method_10467(1, 77398155);
+	cs2method_10467(1, 77398167);
+	cs2method_10467(1, 77398238);
+	cs2method_10467(1, 77398250);
+	cs2method_10467(1, 77398261);
+	cs2method_10467(1, 77398272);
+	cs2method_10467(1, 77398283);
+	cs2method_10467(1, 77398294);
+	switch (client_configs['cfg1694'].bitcfg5578) {
+		case 0:
+		case -1:
+			v6 = "Select an item to buy";
+			object v18 = "Select an item to buy";
+			v7 = -1;
+			break;
+		case 1:
+			v6 = (string)cs2method_10379(client_configs['cfg1694'].bitcfg5579) + "x 1,200 Thieving XP";
+			object v0 = "1.2k Thieving XP (x" + (string)cs2method_10379(client_configs['cfg1694'].bitcfg5579) + ")";
+			v7 = cs2method_10051(10, client_configs['cfg1694'].bitcfg5579);
+			cs2method_10467(0, 77398083);
+			break;
+		case 2:
+			v6 = (string)cs2method_10379(client_configs['cfg1694'].bitcfg5579) + "x 12,000 Thieving XP";
+			object v1 = "12k Thieving XP (x" + (string)cs2method_10379(client_configs['cfg1694'].bitcfg5579) + ")";
+			v7 = cs2method_10051(100, client_configs['cfg1694'].bitcfg5579);
+			cs2method_10467(0, 77398095);
+			break;
+		case 3:
+			v6 = (string)cs2method_10379(client_configs['cfg1694'].bitcfg5579) + "x 120,000 Thieving XP";
+			object v4 = "120k Thieving XP (x" + (string)cs2method_10379(client_configs['cfg1694'].bitcfg5579) + ")";
+			v7 = cs2method_10051(1000, client_configs['cfg1694'].bitcfg5579);
+			cs2method_10467(0, 77398107);
+			break;
+		case 4:
+			v6 = (string)cs2method_10379(client_configs['cfg1694'].bitcfg5579) + "x 1.2M Thieving XP";
+			object v19 = "1.2M Thieving XP (x" + (string)cs2method_10379(client_configs['cfg1694'].bitcfg5579) + ")";
+			v7 = cs2method_10051(10000, client_configs['cfg1694'].bitcfg5579);
+			cs2method_10467(0, 77398119);
+			break;
+		case 5:
+			v6 = (string)cs2method_10379(client_configs['cfg1694'].bitcfg5579) + "x 950 Agility XP";
+			object v16 = "950 Agility XP (x" + (string)cs2method_10379(client_configs['cfg1694'].bitcfg5579) + ")";
+			v7 = cs2method_10051(10, client_configs['cfg1694'].bitcfg5579);
+			cs2method_10467(0, 77398131);
+			break;
+		case 6:
+			v6 = (string)cs2method_10379(client_configs['cfg1694'].bitcfg5579) + "x 9,500 Agility XP";
+			object v8 = "9.5k Agility XP (x" + (string)cs2method_10379(client_configs['cfg1694'].bitcfg5579) + ")";
+			v7 = cs2method_10051(100, client_configs['cfg1694'].bitcfg5579);
+			cs2method_10467(0, 77398143);
+			break;
+		case 7:
+			v6 = (string)cs2method_10379(client_configs['cfg1694'].bitcfg5579) + "x 95,000 Agility XP";
+			object v3 = "95k Agility XP (x" + (string)cs2method_10379(client_configs['cfg1694'].bitcfg5579) + ")";
+			v7 = cs2method_10051(1000, client_configs['cfg1694'].bitcfg5579);
+			cs2method_10467(0, 77398155);
+			break;
+		case 8:
+			v6 = (string)cs2method_10379(client_configs['cfg1694'].bitcfg5579) + "x 950,000 Agility XP";
+			object v9 = "950k Agility XP (x" + (string)cs2method_10379(client_configs['cfg1694'].bitcfg5579) + ")";
+			v7 = cs2method_10051(10000, client_configs['cfg1694'].bitcfg5579);
+			cs2method_10467(0, 77398167);
+			break;
+		case 9:
+			v6 = "Factory mask";
+			object v17 = "Factory mask";
+			v7 = 2250;
+			cs2method_10467(0, 77398238);
+			break;
+		case 10:
+			v6 = "Factory body";
+			object v2 = "Factory body";
+			v7 = 3500;
+			cs2method_10467(0, 77398250);
+			break;
+		case 11:
+			v6 = "Factory legs";
+			object v10 = "Factory legs";
+			v7 = 2750;
+			cs2method_10467(0, 77398261);
+			break;
+		case 12:
+			v6 = "Factory gloves";
+			object v13 = "Factory gloves";
+			v7 = 1750;
+			cs2method_10467(0, 77398272);
+			break;
+		case 13:
+			v6 = "Factory boots";
+			object v14 = "Factory boots";
+			v7 = 1750;
+			cs2method_10467(0, 77398283);
+			break;
+		case 14:
+			v6 = "Rogues' Den multitool";
+			object v15 = "Vintage Rogues' Den multitool kit";
+			v7 = 35;
+			cs2method_10467(0, 77398294);
+			break;
+		default:
+			return;
+	}
+	cs2method_10026(77398182, v6);
+	cs2method_10026(77398022, "Buy " + (string)v6 + " for " + (string)cs2method_10379(v7) + " points?");
+	script_5578(v7);
+	return;
+}

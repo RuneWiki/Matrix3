@@ -1,0 +1,24 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_8817(int a0,int a1) {
+	if (cs2method_11114(105, 7691, a1) == 0) {
+		return 0;
+	}
+	if (script_942(a1, a0) == 0) {
+		return 0;
+	}
+	cs2_configs['cfg2850'] = a1;
+	cs2_configs['cfg2851'] = a0;
+	script_8841(22, 1);
+	return 1;
+}

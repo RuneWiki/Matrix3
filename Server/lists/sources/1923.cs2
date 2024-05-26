@@ -1,0 +1,36 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1923() {
+	int v2 = cs2_configs['cfg550'];
+	int v1 = cs2_configs['cfg554'];
+	int v3 = cs2_configs['cfg555'];
+	int v0 = 0;
+	if (v2 == 0) {
+		int v6 = cs2method_11048(0, cs2method_10872(cs2method_10461(5, v1), 5));
+		int v5 = cs2method_11048(0, cs2method_10872(cs2method_10461(5, v3), 5));
+		cs2method_10026(52690978, cs2method_10379(v6));
+		cs2method_10026(52690977, cs2method_10379(v5));
+		cs2method_10467(0, 52690946);
+	} else {
+		cs2method_10467(1, 52690946);
+		if (cs2method_10038(v2, 100) != 0) {
+			v0 = 1;
+		}
+		int v4 = cs2method_10968(cs2method_10968(cs2method_10051(v2, 60), 100), 60);
+		if (v0 == 1) {
+			v4 = cs2method_10060(v4, 1);
+		}
+		cs2method_10026(52690945, "Game start : " + (string)cs2method_10379(v4) + " mins");
+	}
+	return;
+}

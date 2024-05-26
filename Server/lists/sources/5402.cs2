@@ -1,0 +1,94 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5402(int a0) {
+	int v5 = -1;
+	object v7 = "";
+	object v0 = "";
+	object v8 = "";
+	object v3 = "";
+	cs2method_10520(16101953, 76677181);
+	cs2method_10520(16101953, 76677182);
+	cs2method_10520(16101953, 76677183);
+	cs2method_10520(16101953, 76677184);
+	cs2method_10520(16101953, 76677185);
+	cs2method_10520(16101953, 76677186);
+	cs2method_10520(16101953, 76677187);
+	cs2method_10520(16101953, 76677188);
+	cs2method_10520(16101953, 76677287);
+	cs2method_10520(16101953, 76677366);
+	switch (a0) {
+		case 1:
+			cs2method_10520(16777215, 76677181);
+			break;
+		case 2:
+			cs2method_10520(16777215, 76677182);
+			break;
+		case 3:
+			cs2method_10520(16777215, 76677183);
+			break;
+		case 4:
+			cs2method_10520(16777215, 76677184);
+			break;
+		case 5:
+			cs2method_10520(16777215, 76677185);
+			break;
+		case 6:
+			cs2method_10520(16777215, 76677186);
+			break;
+		case 7:
+			cs2method_10520(16777215, 76677187);
+			break;
+		case 8:
+			cs2method_10520(16777215, 76677188);
+			break;
+		case 9:
+			cs2method_10520(16777215, 76677287);
+			break;
+		case 10:
+			cs2method_10520(16777215, 76677366);
+	}
+	int v1 = idx17mapData('i', 'J', 5332, a0);
+	if (v1 == 7335 || v1 == 7336) {
+		if (cs2method_11038(76677261, 0) == 0) {
+			cs2method_10606(76677261, 5, 0);
+			cs2method_10013(274, 96, 0, 0);
+			cs2method_10063(4, 6, 0, 0);
+			cs2method_10310(9723);
+		}
+	} else {
+		if (cs2method_11038(76677261, 0) == 1) {
+			cs2method_10526();
+		}
+	}
+	object v6 = idx22mapAttribute(v1, 2184);
+	object v2 = "If you win you'll get a dominion factor of: " + "<col=f5b241>" + (string)cs2method_10379(idx17mapData('i', 'i', 5224, a0)) + "</col>" + ". You will get no dominion factor for dying.";
+	if (idx22mapAttribute(v1, 2097) == 1) {
+		v3 = "<col=f5b241>" + "Arena" + "</col>" + ": Single-way combat.";
+	} else if (idx22mapAttribute(v1, 2097) == 2) {
+		v3 = "<col=f5b241>" + "Arena" + "</col>" + ": Multi-way combat.";
+	} else if (idx22mapAttribute(v1, 2097) == 3) {
+		v3 = "<col=f5b241>" + "Arena" + "</col>" + ": Single-way combat with small blocking pillars.";
+	} else if (idx22mapAttribute(v1, 2097) == 4) {
+		v3 = "<col=f5b241>" + "Arena" + "</col>" + ": Multi-way combat with large blocking pillars.";
+	} else {
+		if (idx22mapAttribute(v1, 2097) == 5) {
+			v3 = "<col=f5b241>" + "Arena" + "</col>" + ": Multi-way combat with podiums and small blocking pillars";
+		}
+	}
+	cs2method_10026(76677262, (string)v6 + "<br>" + "<br>" + (string)v3 + "<br>" + "<br>" + (string)v2);
+	script_5475(76677262, (string)v6 + "<br>" + "<br>" + (string)v3 + "<br>" + "<br>" + (string)v2, 76677261, 76677260);
+	object v4 = idx22mapAttribute(v1, 2095);
+	cs2method_10026(76677158, v4);
+	cs2method_10670(8088, 1, 0, 255);
+	return;
+}

@@ -1,0 +1,62 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7666(int a0,int a1) {
+	object v2 = "";
+	int v0 = 0;
+	int v1 = 0;
+	if (a1 == 1) {
+		if (cs2method_10060(cs2method_10265(cs2method_10765(cs2_configs['cfg2758'])), 1) > 500) {
+			return;
+		}
+		int v6 = cs2method_10265(cs2_configs['cfg2758']);
+		int v3 = a0;
+		opc_struct10385(2,0,0) v8 = cs2method_10385(v6, v3);
+		int v4 = v8.intpart_1;
+		int v7 = v8.intpart_0;
+		if (v4 > cs2method_10823(a0)) {
+			return;
+		}
+		object v5 = cs2method_11025(cs2_configs['cfg2749'], cs2method_10265(cs2_configs['cfg2758']), cs2_configs['cfg2758']);
+		cs2_configs['cfg2758'] = (string)cs2method_11025(0, cs2_configs['cfg2749'], cs2_configs['cfg2758']);
+		cs2_configs['cfg2758'] = (string)cs2method_10427(cs2_configs['cfg2758'], "<br>");
+		cs2_configs['cfg2758'] = (string)cs2method_10427(cs2_configs['cfg2758'], v5);
+		cs2_configs['cfg2749'] = cs2method_10060(cs2_configs['cfg2749'], 4);
+		cs2method_10026(a0, cs2_configs['cfg2758']);
+		script_7671(cs2_configs['cfg2758'], 92078088, 92078115);
+		cs2method_10026(92078087, cs2method_10379(cs2method_10461(500, cs2method_10265(cs2method_10765(cs2_configs['cfg2758'])))));
+		return;
+	}
+	if (a1 == 2) {
+		if (cs2method_10060(cs2method_10265(cs2method_10765(cs2_configs['cfg2759'])), 1) > 500) {
+			return;
+		}
+		int v5 = cs2method_10265(cs2_configs['cfg2759']);
+		int v3 = a0;
+		opc_struct10385(2,0,0) v8 = cs2method_10385(v5, v3);
+		int v4 = v8.intpart_1;
+		int v7 = v8.intpart_0;
+		if (v4 > cs2method_10823(a0)) {
+			return;
+		}
+		object v6 = cs2method_11025(cs2_configs['cfg2750'], cs2method_10265(cs2_configs['cfg2759']), cs2_configs['cfg2759']);
+		cs2_configs['cfg2759'] = (string)cs2method_11025(0, cs2_configs['cfg2750'], cs2_configs['cfg2759']);
+		cs2_configs['cfg2759'] = (string)cs2method_10427(cs2_configs['cfg2759'], "<br>");
+		cs2_configs['cfg2759'] = (string)cs2method_10427(cs2_configs['cfg2759'], v6);
+		cs2_configs['cfg2750'] = cs2method_10060(cs2_configs['cfg2750'], 4);
+		cs2method_10026(a0, cs2_configs['cfg2759']);
+		script_7671(cs2_configs['cfg2759'], 92078145, 92078146);
+		cs2method_10026(92078107, cs2method_10379(cs2method_10461(500, cs2method_10265(cs2method_10765(cs2_configs['cfg2759'])))));
+		return;
+	}
+	return;
+}

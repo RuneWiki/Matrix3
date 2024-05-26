@@ -1,0 +1,73 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5448(int a0) {
+	int v6 = -1;
+	object v4 = "";
+	object v1 = "";
+	int v3 = 0;
+	object v0 = "";
+	cs2_configs['cfg1681'] = a0;
+	int v7 = cs2method_10060(cs2method_10051(cs2method_10461(cs2_configs['cfg1680'], 1), 6), a0);
+	cs2method_10758(8430, 76546076);
+	cs2method_10758(8430, 76546075);
+	cs2method_10758(8430, 76546074);
+	cs2method_10758(8430, 76546073);
+	cs2method_10758(8430, 76546072);
+	cs2method_10758(8430, 76546071);
+	if (a0 == 1) {
+		cs2method_10758(8433, 76546076);
+	} else if (a0 == 2) {
+		cs2method_10758(8433, 76546075);
+	} else if (a0 == 3) {
+		cs2method_10758(8433, 76546074);
+	} else if (a0 == 4) {
+		cs2method_10758(8433, 76546073);
+	} else if (a0 == 5) {
+		cs2method_10758(8433, 76546072);
+	} else {
+		if (a0 == 6) {
+			cs2method_10758(8433, 76546071);
+		}
+	}
+	int v2 = idx17mapData('i', 'J', 5213, v7);
+	object v5 = idx22mapAttribute(v2, 2095);
+	object v8 = idx22mapAttribute(v2, 2184);
+	if (idx22mapAttribute(v2, 2097) == 1) {
+		v0 = "<col=f5b241>" + "Arena" + "</col>" + ": Single-way combat.";
+	} else if (idx22mapAttribute(v2, 2097) == 2) {
+		v0 = "<col=f5b241>" + "Arena" + "</col>" + ": Multi-way combat.";
+	} else if (idx22mapAttribute(v2, 2097) == 3) {
+		v0 = "<col=f5b241>" + "Arena" + "</col>" + ": Single-way combat with small blocking pillars.";
+	} else if (idx22mapAttribute(v2, 2097) == 4) {
+		v0 = "<col=f5b241>" + "Arena" + "</col>" + ": Multi-way combat with large blocking pillars.";
+	} else {
+		if (idx22mapAttribute(v2, 2097) == 5) {
+			v0 = "<col=f5b241>" + "Arena" + "</col>" + ": Multi-way combat with podiums";
+		}
+	}
+	cs2method_10026(76546050, v5);
+	cs2method_10670(8097, 1, 0, 180);
+	if (script_5451(v7) == 0) {
+		if (v7 == 1) {
+			cs2method_10026(76546149, "You must win against this monster in Endurance or Special mode before you can fight it here.");
+		} else if (v7 == 22 || v7 == 10 || v7 == 6 || v7 == 34 || v7 == 23 || v7 == 11 || v7 == 39) {
+			cs2method_10026(76546149, "You must win against this monster in Climber, Endurance or Special mode before you can fight it here.");
+		} else {
+			cs2method_10026(76546149, "You must win against this monster in Climber or Endurance mode before you can fight it here.");
+		}
+	} else {
+		cs2method_10026(76546149, (string)v8 + "<br>" + "<br>" + (string)v0);
+	}
+	script_5475(76546149, v8, 76546058, 76546061);
+	return;
+}

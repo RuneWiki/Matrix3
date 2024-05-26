@@ -1,0 +1,298 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1439(int a0,int a1,int a2) {
+	int v3;
+	cs2method_10273(a2);
+	cs2method_10273(a0);
+	cs2method_10273(a1);
+	cs2_configs['cfg656'] = cs2method_10872(cs2_configs['cfg656'], cs2method_10461(cs2_configs['cfg657'], 1));
+	int v4 = 0;
+	if (cs2_configs['cfg658'] > 0 || cs2_configs['cfg659'] > 0 || cs2_configs['cfg660'] > 0 || cs2_configs['cfg661'] > 0 || cs2_configs['cfg662'] > 0 || cs2_configs['cfg663'] > 0 || cs2_configs['cfg664'] > 0 || cs2_configs['cfg665'] > 0 || cs2_configs['cfg666'] > 0 || cs2_configs['cfg667'] > 0 || cs2_configs['cfg668'] > 0 || cs2_configs['cfg669'] > 0 || cs2_configs['cfg670'] > 0 || cs2_configs['cfg658'] > 13 || cs2_configs['cfg672'] > 0 || cs2_configs['cfg673'] > 0) {
+		v4 = 1;
+	}
+	if (v4 == 0 || cs2_configs['cfg656'] > 0) {
+		cs2method_10606(a1, 4, cs2method_10163(a1));
+		cs2method_10013(2, 14, 1, 0);
+		cs2method_10063(0, 0, 1, 2);
+		cs2method_11105(1, 1, 0);
+		cs2method_10692(494);
+		cs2method_10811(16750623);
+		if (v4 == 0) {
+			cs2method_10797((string)cs2method_10379(cs2method_10060(cs2_configs['cfg656'], 1)) + " / " + (string)cs2method_10379(cs2_configs['cfg657']));
+		} else {
+			cs2method_10797((string)cs2method_10379(cs2_configs['cfg656']) + " / " + (string)cs2method_10379(cs2method_10461(cs2_configs['cfg657'], 1)));
+		}
+	}
+	if (cs2_configs['cfg656'] > 0) {
+		cs2method_10606(a1, 4, cs2method_10163(a1));
+		cs2method_10013(2, 17, 1, 1);
+		cs2method_10063(0, 1, 1, 0);
+		cs2method_11105(0, 0, 0);
+		cs2method_10692(495);
+		cs2method_10811(16750623);
+		switch (cs2_configs['cfg656']) {
+			case 1:
+				cs2method_10797(cs2_configs['cfg2300']);
+				break;
+			case 2:
+				cs2method_10797(cs2_configs['cfg2301']);
+				break;
+			case 3:
+				cs2method_10797(cs2_configs['cfg2302']);
+				break;
+			case 4:
+				cs2method_10797(cs2_configs['cfg2303']);
+				break;
+			case 5:
+				cs2method_10797(cs2_configs['cfg2304']);
+				break;
+			case 6:
+				cs2method_10797(cs2_configs['cfg2305']);
+				break;
+			case 7:
+				cs2method_10797(cs2_configs['cfg2306']);
+				break;
+			case 8:
+				cs2method_10797(cs2_configs['cfg2307']);
+				break;
+			case 9:
+				cs2method_10797(cs2_configs['cfg2308']);
+				break;
+			case 10:
+				cs2method_10797(cs2_configs['cfg2309']);
+				break;
+			case 11:
+				cs2method_10797(cs2_configs['cfg2310']);
+				break;
+			case 12:
+				cs2method_10797(cs2_configs['cfg2311']);
+				break;
+			case 13:
+				cs2method_10797(cs2_configs['cfg2312']);
+				break;
+			case 14:
+				cs2method_10797(cs2_configs['cfg2313']);
+				break;
+			case 15:
+				cs2method_10797(cs2_configs['cfg2314']);
+				break;
+			case 16:
+				cs2method_10797(cs2_configs['cfg2315']);
+				break;
+			case 17:
+				cs2method_10797(cs2_configs['cfg2316']);
+				break;
+			case 18:
+				cs2method_10797(cs2_configs['cfg2317']);
+				break;
+			case 19:
+				cs2method_10797(cs2_configs['cfg2318']);
+				break;
+			case 20:
+				cs2method_10797(cs2_configs['cfg2319']);
+				break;
+			case 21:
+				cs2method_10797(cs2_configs['cfg2320']);
+				break;
+			case 22:
+				cs2method_10797(cs2_configs['cfg2321']);
+				break;
+			case 23:
+				cs2method_10797(cs2_configs['cfg2322']);
+				break;
+			case 24:
+				cs2method_10797(cs2_configs['cfg2323']);
+				break;
+			case 25:
+				cs2method_10797(cs2_configs['cfg2324']);
+				break;
+			case 26:
+				cs2method_10797(cs2_configs['cfg2325']);
+				break;
+			case 27:
+				cs2method_10797(cs2_configs['cfg2326']);
+				break;
+			case 28:
+				cs2method_10797(cs2_configs['cfg2327']);
+				break;
+			case 29:
+				cs2method_10797(cs2_configs['cfg2328']);
+				break;
+			case 30:
+				cs2method_10797(cs2_configs['cfg2329']);
+				break;
+			case 31:
+				cs2method_10797(cs2_configs['cfg2330']);
+				break;
+			case 32:
+				cs2method_10797(cs2_configs['cfg2331']);
+				break;
+			case 33:
+				cs2method_10797(cs2_configs['cfg2332']);
+				break;
+			case 34:
+				cs2method_10797(cs2_configs['cfg2333']);
+				break;
+			case 35:
+				cs2method_10797(cs2_configs['cfg2334']);
+				break;
+			case 36:
+				cs2method_10797(cs2_configs['cfg2335']);
+				break;
+			case 37:
+				cs2method_10797(cs2_configs['cfg2336']);
+				break;
+			case 38:
+				cs2method_10797(cs2_configs['cfg2337']);
+				break;
+			case 39:
+				cs2method_10797(cs2_configs['cfg2338']);
+				break;
+			case 40:
+				cs2method_10797(cs2_configs['cfg2339']);
+				break;
+			case 41:
+				cs2method_10797(cs2_configs['cfg2340']);
+				break;
+			case 42:
+				cs2method_10797(cs2_configs['cfg2341']);
+				break;
+			case 43:
+				cs2method_10797(cs2_configs['cfg2342']);
+				break;
+			case 44:
+				cs2method_10797(cs2_configs['cfg2343']);
+				break;
+			case 45:
+				cs2method_10797(cs2_configs['cfg2344']);
+				break;
+			case 46:
+				cs2method_10797(cs2_configs['cfg2345']);
+				break;
+			case 47:
+				cs2method_10797(cs2_configs['cfg2346']);
+				break;
+			case 48:
+				cs2method_10797(cs2_configs['cfg2347']);
+				break;
+			case 49:
+				cs2method_10797(cs2_configs['cfg2348']);
+		}
+		return;
+	}
+	for (int v2 = 0, object v0 = "", int v1 = 0; v2 < 16; v2 = cs2method_10060(v2, 1)) {
+		object v5;
+		switch (v2) {
+			case 0:
+				v5 = cs2_configs['cfg2284'];
+				v3 = cs2_configs['cfg658'];
+				break;
+			case 1:
+				v5 = cs2_configs['cfg2285'];
+				v3 = cs2_configs['cfg659'];
+				break;
+			case 2:
+				v5 = cs2_configs['cfg2286'];
+				v3 = cs2_configs['cfg660'];
+				break;
+			case 3:
+				v5 = cs2_configs['cfg2287'];
+				v3 = cs2_configs['cfg661'];
+				break;
+			case 4:
+				v5 = cs2_configs['cfg2288'];
+				v3 = cs2_configs['cfg662'];
+				break;
+			case 5:
+				v5 = cs2_configs['cfg2289'];
+				v3 = cs2_configs['cfg663'];
+				break;
+			case 6:
+				v5 = cs2_configs['cfg2290'];
+				v3 = cs2_configs['cfg664'];
+				break;
+			case 7:
+				v5 = cs2_configs['cfg2291'];
+				v3 = cs2_configs['cfg665'];
+				break;
+			case 8:
+				v5 = cs2_configs['cfg2292'];
+				v3 = cs2_configs['cfg666'];
+				break;
+			case 9:
+				v5 = cs2_configs['cfg2293'];
+				v3 = cs2_configs['cfg667'];
+				break;
+			case 10:
+				v5 = cs2_configs['cfg2294'];
+				v3 = cs2_configs['cfg668'];
+				break;
+			case 11:
+				v5 = cs2_configs['cfg2295'];
+				v3 = cs2_configs['cfg669'];
+				break;
+			case 12:
+				v5 = cs2_configs['cfg2296'];
+				v3 = cs2_configs['cfg670'];
+				break;
+			case 13:
+				v5 = cs2_configs['cfg2297'];
+				v3 = cs2_configs['cfg671'];
+				break;
+			case 14:
+				v5 = cs2_configs['cfg2298'];
+				v3 = cs2_configs['cfg672'];
+				break;
+			case 15:
+				v5 = cs2_configs['cfg2299'];
+				v3 = cs2_configs['cfg673'];
+				break;
+			default:
+				v5 = "";
+				v3 = 0;
+		}
+		if (cs2method_10265(v5) > 0) {
+			cs2method_10606(a1, 4, cs2method_10163(a1));
+			if (v2 == cs2method_10461(16, 1)) {
+				cs2method_10013(6, 17, 1, 0);
+			} else {
+				cs2method_10013(2, 12, 1, 0);
+			}
+			cs2method_10063(0, cs2method_10060(cs2method_10051(v2, 12), 1), 1, 0);
+			cs2method_11105(0, 0, 0);
+			cs2method_10692(495);
+			cs2method_10811(16750623);
+			cs2method_10797(v5);
+			if (v3 > 0) {
+				cs2method_10057(1, "Go");
+				cs2method_20703(new function<script_2065>(int a0,int a1,int a2,int a3,int a4) {
+					script_2070(a0, a1, a3, a4, a2);
+					return;
+				}, -2147483644, v3, new WidgetPointer(a2), new WidgetPointer(a0), new WidgetPointer(a1), "iiIII");
+				cs2method_20674(new function<script_1356>(int a0,int a1,int a2) {
+					if (cs2method_11038(a0, a2) == 1) {
+						cs2method_10811(a1);
+					}
+					return;
+				}, new WidgetPointer(-32768,3), -2147483643, 16777215, "Iii");
+				cs2method_20884(new function<script_1356>(int a0,int a1,int a2) {
+					if (cs2method_11038(a2, a1) == 1) {
+						cs2method_10811(a0);
+					}
+					return;
+				}, new WidgetPointer(-32768,3), -2147483643, 16750623, "Iii");
+			}
+		}
+	}
+	return;
+}

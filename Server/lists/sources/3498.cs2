@@ -1,0 +1,95 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3498(int a0,int a1) {
+	int v1;
+	int v5 = 65142826;
+	int v3 = 65142830;
+	int v0 = 65142832;
+	int v4 = cs2method_10060(10, cs2method_10051(10, a0));
+	int v2 = cs2method_10152(65142872);
+	switch (v2) {
+		case -22:
+			v1 = a0;
+			break;
+		case -137:
+			v1 = cs2method_10060(a0, 11);
+			break;
+		case -222:
+			v1 = cs2method_10060(a0, 17);
+			break;
+		case -277:
+			v1 = cs2method_10060(a0, 29);
+			break;
+		case -400:
+			v1 = cs2method_10060(a0, 35);
+			break;
+		case -500:
+			v1 = cs2method_10060(a0, 47);
+			break;
+		default:
+			v1 = a0;
+	}
+	if (a1 != 0) {
+		v1 = a1;
+	}
+	cs2method_10112(0, v4, 0, 0, v5);
+	cs2method_10026(v3, cs2method_10379(v1));
+	switch (a0) {
+		case 1:
+			cs2method_10026(v0, cs2method_10744(65142796));
+			break;
+		case 2:
+			cs2method_10026(v0, cs2method_10744(65142798));
+			break;
+		case 3:
+			cs2method_10026(v0, cs2method_10744(65142800));
+			break;
+		case 4:
+			cs2method_10026(v0, cs2method_10744(65142802));
+			break;
+		case 5:
+			cs2method_10026(v0, cs2method_10744(65142804));
+			break;
+		case 6:
+			cs2method_10026(v0, cs2method_10744(65142806));
+			break;
+		case 7:
+			cs2method_10026(v0, cs2method_10744(65142808));
+			break;
+		case 8:
+			cs2method_10026(v0, cs2method_10744(65142810));
+			break;
+		case 9:
+			cs2method_10026(v0, cs2method_10744(65142812));
+			break;
+		case 10:
+			cs2method_10026(v0, cs2method_10744(65142814));
+			break;
+		case 11:
+			cs2method_10026(v0, cs2method_10744(65142816));
+			break;
+		case 12:
+			cs2method_10026(v0, cs2method_10744(65142818));
+			break;
+		case 13:
+			cs2method_10026(v0, cs2method_10744(65142820));
+			break;
+		case 14:
+			cs2method_10026(v0, cs2method_10744(65142822));
+			break;
+		case 15:
+			cs2method_10026(v0, cs2method_10744(65142824));
+			break;
+	}
+	return;
+}

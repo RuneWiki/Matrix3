@@ -1,0 +1,63 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2759(int a0) {
+	object v0 = "";
+	switch (a0) {
+		case 1:
+			v0 = "axeso_juegos";
+			break;
+		case 2:
+			v0 = "axeso_comunidad";
+			break;
+		case 3:
+			v0 = "axeso_ayuda";
+			break;
+		case 0:
+			v0 = "axeso_redirect";
+			break;
+		case 4:
+			v0 = "axeso_register";
+			break;
+		case 11:
+			v0 = "uol_redirect";
+			break;
+		case 12:
+			v0 = "uol_phone";
+			break;
+		case 13:
+			v0 = "uol_sac";
+			break;
+		case 5:
+			v0 = "uol_bate_papo";
+			break;
+		case 6:
+			v0 = "uol_email";
+			break;
+		case 7:
+			v0 = "uol_notificias";
+			break;
+		case 8:
+			v0 = "uol_esporte";
+			break;
+		case 9:
+			v0 = "uol_entretenumento";
+			break;
+		case 10:
+			v0 = "uol_mulher";
+			break;
+		case 14:
+			v0 = "uol_create";
+	}
+	cs2method_10707(1, v0);
+	return;
+}

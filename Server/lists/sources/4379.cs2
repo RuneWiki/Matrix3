@@ -1,0 +1,65 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4379(int a0,int a1,int a2,int a3,int a4) {
+	cs2_configs['cfg2538'] = (string)cs2method_10744(a2);
+	switch (a3) {
+		case 84:
+			script_4382();
+			break;
+		case 13:
+			if (script_9666() == 1) {
+				return;
+			}
+			script_4382();
+			break;
+		case 102:
+		case 103:
+		case 98:
+		case 99:
+		case 96:
+		case 97:
+			if (cs2method_10862() == 0) {
+				return;
+			}
+			int v0 = script_1553(a3, cs2_configs['cfg2538'], cs2_configs['cfg1496']);
+			/* 
+				java.lang.RuntimeException: Stack underflow
+					at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+					at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+					at tests.Main.main(Main.java:69)
+				
+			 */
+		case 85:
+			if (cs2method_10265(cs2_configs['cfg2538']) > 0) {
+				cs2_configs['cfg2538'] = (string)cs2method_11025(0, cs2method_10461(cs2method_10265(cs2_configs['cfg2538']), 1), cs2_configs['cfg2538']);
+			}
+			break;
+		default:
+			if (cs2method_10265(cs2_configs['cfg2538']) < 80) {
+				cs2_configs['cfg2538'] = (string)script_74(0, a3, a0, cs2_configs['cfg2538']);
+			}
+	}
+	cs2_configs['cfg1496'] = script_1552(cs2_configs['cfg1496'], 5631, a2, cs2_configs['cfg2538'], -1);
+	cs2method_10112(cs2_configs['cfg1496'], cs2method_10152(a4), 0, 0, a4);
+	cs2method_10026(a1, (string)cs2method_10379(cs2method_10265(cs2_configs['cfg2538'])) + "/80");
+	if (cs2method_10265(cs2_configs['cfg2538']) >= 70) {
+		cs2method_10520(14483456, a1);
+	} else {
+		cs2method_10520(2039065, a1);
+	}
+	cs2method_10026(a2, cs2_configs['cfg2538']);
+	return;
+}

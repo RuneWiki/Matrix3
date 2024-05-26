@@ -1,0 +1,92 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6672(int a0,int a1) {
+	int v3;
+	object v1;
+	object v10;
+	if (client_configs['cfg1454'] < 0) {
+		return;
+	}
+	if (cs2_configs['cfg4157'] == -1) {
+		return;
+	}
+	object v6 = "Discard item";
+	int v4 = 0;
+	object v7 = "Discard the prize.";
+	object v5 = "You cannot discard this item.";
+	object v9 = "Cash Out";
+	int v8 = 0;
+	int v2 = 1;
+	object v0 = "The amount of coins that will be received if using 'Cash out' instead of claiming the item.";
+	if (client_configs['cfg1454'] == 0) {
+		v1 = "Discard item";
+		v3 = 1;
+		v10 = "Discard";
+		v0 = "This item has no coin value, but you may discard it if you don't want the item.";
+	} else if (cs2method_10771() == 0 && cs2_configs['cfg4157'] != 1) {
+		v1 = "Discard item";
+		v3 = 1;
+		v10 = "Discard";
+		v7 = "You can only cash out this item on a members' world, but you may discard this item instead.";
+		v8 = 1;
+		v0 = "The amount of coins recieved if you use 'Cash out' on a members' world. You can only cash out this item on a members' world, but you may discard it.";
+		v2 = 0;
+	} else if (script_9729(995, client_configs['cfg1454']) != 1) {
+		v1 = "Pouch Full";
+		v3 = 0;
+		v10 = "Pouch Full";
+		v5 = "You do not have enough space in your inventory or money pouch to cash out this item.";
+		v8 = 1;
+		v0 = "You do not have enough space in your inventory or money pouch to cash out this item.";
+	} else {
+		v1 = "Convert to " + (string)cs2method_10055(client_configs['cfg1454'], 1) + " coins";
+		v3 = 1;
+		v7 = "Convert to coins. " + (string)cs2method_10055(client_configs['cfg1454'], 1) + " coins.";
+		v10 = "Cash Out";
+	}
+	if (cs2_configs['cfg1790'] == 7) {
+		v7 = "Treasure Hunter is not available at the moment. Please try later.";
+		v5 = "Treasure Hunter is not available at the moment. Please try later.";
+		v8 = 1;
+		v3 = 0;
+	}
+	if (cs2_configs['cfg1790'] == 10) {
+		v7 = "Loading...";
+		v5 = "Loading...";
+		v3 = 0;
+	}
+	if (v8 == 1) {
+		cs2method_21121(new function<script_10007>(int a0,int a1,object a2) {
+			script_10008(a2, a1, a0);
+			return;
+		}, (string)v7, new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(1253,471));
+		cs2method_21121(new function<script_10007>(int a0,object a1,int a2) {
+			script_10008(a1, a2, a0);
+			return;
+		}, (string)v5, new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(1253,472));
+	} else {
+		cs2method_21121(new function<none>() {
+		}, "", new WidgetPointer(1253,471));
+		cs2method_21121(new function<none>() {
+		}, "", new WidgetPointer(1253,472));
+	}
+	cs2method_11127(1, 82117079, v1);
+	cs2method_10467(v3, 82117080);
+	cs2method_10467(v2, 82116646);
+	cs2method_10026(82117082, v10);
+	cs2method_21121(new function<script_10007>(int a0,int a1,object a2) {
+		script_10008(a2, a0, a1);
+		return;
+	}, (string)v0, new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(1253,39));
+	return;
+}

@@ -1,0 +1,85 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7174(int a0,object a1,int a2,int a3) {
+	if (cs2method_10846(a1, "") == 0) {
+		return;
+	}
+	cs2_configs['cfg2232'] = a3;
+	int v10 = script_8875(4);
+	if (v10 == -1) {
+		return;
+	}
+	int v9 = cs2method_10236(v10);
+	int v2 = cs2method_10823(v10);
+	int v11 = cs2method_10805(cs2method_10968(cs2method_10051(v9, 3), 4), 3795, a1);
+	int v7 = cs2method_10509(cs2method_10968(cs2method_10051(v9, 3), 4), 3795, a1);
+	int v0 = cs2method_10051(v11, 32);
+	int v3 = cs2method_10060(v7, 12);
+	int v1 = cs2method_10060(v0, 10);
+	cs2method_10283(cs2method_10060(v3, 6), cs2method_10060(6, v1), 0, 0, 89915392);
+	cs2method_10283(v3, v1, 0, 0, 89915393);
+	cs2method_10112(0, 0, 1, 1, 89915393);
+	cs2method_10283(v3, v1, 0, 0, 89915396);
+	cs2method_10112(0, 0, 1, 1, 89915396);
+	cs2method_10283(v7, v0, 0, 0, 89915395);
+	cs2method_10112(0, 0, 1, 1, 89915395);
+	int v4 = 0;
+	int v5 = 0;
+	int v6 = cs2method_10968(v2, 20);
+	switch (a0) {
+		case 0:
+			v4 = 40;
+			break;
+		case 1:
+			v4 = cs2method_10461(cs2method_10968(v9, 2), cs2method_10968(v3, 2));
+			break;
+		case 2:
+			v4 = cs2method_10461(cs2method_10461(v9, v3), 40);
+	}
+	switch (a2) {
+		case 0:
+			v5 = v6;
+			break;
+		case 1:
+			v5 = cs2method_10461(cs2method_10968(v2, 2), cs2method_10968(v1, 2));
+			break;
+		case 2:
+			v5 = cs2method_10461(cs2method_10461(v2, v1), v6);
+	}
+	cs2method_10112(v4, v5, 0, 0, 89915392);
+	cs2method_10026(89915395, a1);
+	cs2method_10637(0, 1, 0, 89915395);
+	cs2method_10170(3795, 89915395);
+	cs2method_10467(0, 89915392);
+	int v8 = cs2method_11048(0, cs2method_10060(1, cs2method_10761(58, 0, a1)));
+	switch (cs2_configs['cfg2233']) {
+		default:
+			script_7179();
+			break;
+		case 0:
+			script_7179();
+			break;
+		case 1:
+			script_7180(v8, a1);
+			break;
+		case 2:
+			script_7181(a1, v8);
+			break;
+		case 3:
+			script_7184();
+			break;
+		case 4:
+			script_7185();
+	}
+	return;
+}

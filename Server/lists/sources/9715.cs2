@@ -1,0 +1,35 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9715(int a0) {
+	int v4 = -1;
+	int v3 = -1;
+	object v2 = "";
+	int v5 = a0;
+	script_9693_struct(2,1,0) v0 = script_9693(v5);
+	object v8 = v0.objectpart_0;
+	int v6 = v0.intpart_1;
+	int v1 = v0.intpart_0;
+	cs2method_10758(v6, 97320976);
+	object v7 = cs2method_10427("Combat Mode: ", v8);
+	cs2method_21121(new function<script_8799>(object a0,int a1,int a2) {
+		script_8800(a2, a1, a0);
+		return;
+	}, (string)v7, new WidgetPointer(1485,16), -1, "sIi", new WidgetPointer(1485,16));
+	if (client_configs['cfg627'].bitcfg21416 == 1) {
+		cs2method_10467(0, 97320976);
+	} else {
+		script_3374(1009);
+		cs2method_10467(1, 97320976);
+	}
+	return;
+}

@@ -1,0 +1,28 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+object script_46(int a0,object a1) {
+	int v2 = cs2method_10968(a0, 1000000000);
+	int v3 = cs2method_10968(cs2method_10461(a0, cs2method_10051(v2, 1000000000)), 1000000);
+	int v0 = cs2method_10968(cs2method_10461(a0, cs2method_10060(cs2method_10051(v2, 1000000000), cs2method_10051(v3, 1000000))), 1000);
+	int v1 = cs2method_10461(a0, cs2method_10060(cs2method_10060(cs2method_10051(v2, 1000000000), cs2method_10051(v3, 1000000)), cs2method_10051(v0, 1000)));
+	if (v2 > 0) {
+		return (string)cs2method_10379(v2) + (string)a1 + (string)script_47(v3) + (string)a1 + (string)script_47(v0) + (string)a1 + (string)script_47(v1);
+	}
+	if (v3 > 0) {
+		return (string)cs2method_10379(v3) + (string)a1 + (string)script_47(v0) + (string)a1 + (string)script_47(v1);
+	}
+	if (v0 > 0) {
+		return (string)cs2method_10379(v0) + (string)a1 + (string)script_47(v1);
+	}
+	return cs2method_10379(a0);
+}

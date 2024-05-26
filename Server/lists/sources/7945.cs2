@@ -1,0 +1,24 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7945() {
+	if (cs2method_10819() == 1) {
+		opc_struct11039(2,0,0) v0 = cs2method_11039();
+		int v1 = v0.intpart_0;
+		cs2_configs['cfg3529'] = v0.intpart_1;
+		cs2_configs['cfg3528'] = v1;
+	} else {
+		cs2_configs['cfg3528'] = 0;
+		cs2_configs['cfg3529'] = cs2method_10968(16284, 2);
+	}
+	return;
+}

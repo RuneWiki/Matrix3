@@ -1,0 +1,30 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_7243(int a0) {
+	int v0 = 0;
+	if (cs2method_10873(a0) == 3 || cs2method_10873(a0) == 5 || cs2method_10873(a0) == 13) {
+		if (itemDefsAttribute(a0, 2827) == 1 || itemDefsAttribute(a0, 2823) == 1) {
+			v0 = cs2method_10968(itemDefsAttribute(a0, 965), 10);
+		} else if (itemDefsAttribute(a0, 2825) == 1 || itemDefsAttribute(a0, 2821) == 1) {
+			v0 = cs2method_10968(itemDefsAttribute(a0, 641), 10);
+		} else {
+			if (itemDefsAttribute(a0, 2826) == 1 || cs2method_10873(a0) == 13 || itemDefsAttribute(a0, 2822) == 1) {
+				v0 = cs2method_10968(itemDefsAttribute(a0, 643), 10);
+			}
+		}
+	}
+	if (cs2method_10873(a0) == 5) {
+		return cs2method_10122(v0, 100, 50);
+	}
+	return v0;
+}

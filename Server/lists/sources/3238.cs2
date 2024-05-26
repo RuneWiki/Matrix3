@@ -1,0 +1,34 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_3238(int a0,int a1,int a2) {
+	flow_0:
+		int v0 = script_2948();
+		IF (cs2_configs['cfg174'] == a2 && cs2method_10038(cs2method_10461(cs2method_10133(), a0), 40) < 20 && v0 != -3 && v0 != 21 && v0 != 1) 
+			GOTO	flow_5
+		GOTO	flow_8
+	flow_5:
+		IF (cs2method_10609(39059610) == 1) 
+			GOTO	flow_6
+		IF (cs2method_10609(39059646) == 1 && cs2method_10180() == 1) 
+			GOTO	flow_7
+		GOTO	flow_8
+	flow_6:
+	flow_7:
+		cs2method_10467(0, a1);
+		GOTO	flow_9
+	flow_8:
+		cs2method_10467(1, a1);
+	flow_9:
+		return;
+}

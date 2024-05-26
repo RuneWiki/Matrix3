@@ -1,0 +1,28 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_6077(int a0) {
+	if (a0 == -1) {
+		return 0;
+	}
+	int v1 = cs2method_10480(a0);
+	int v3 = idx17mapData('o', 'i', 732, v1);
+	if (client_configs['cfg306'] == 6529 && v3 != -1) {
+		return v3;
+	}
+	int v0 = idx17mapData('o', 'i', 1441, v1);
+	if (v0 != -1 && v0 > 0) {
+		return v0;
+	}
+	int v2 = cs2method_11048(1, cs2method_10122(cs2method_10340(v1), 100, 30));
+	return v2;
+}

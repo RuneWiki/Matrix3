@@ -1,0 +1,75 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2492() {
+	if (cs2method_10846(cs2_configs['cfg2461'], "") == 0) {
+		cs2method_21121(new function<script_7781>(int a0,int a1,int a2,object a3,int a4) {
+			script_7788(a3, a0, -1, a2, a4, a1);
+			return;
+		}, new WidgetPointer(862,50), new WidgetPointer(862,11), cs2_configs['cfg2461'], 50, 250, "IIsii", new WidgetPointer(862,50));
+		cs2method_20750(new function<script_40>(int a0) {
+			script_41(a0);
+			return;
+		}, new WidgetPointer(862,11), "I", new WidgetPointer(862,50));
+	}
+	if (cs2method_10846(cs2_configs['cfg2462'], "") == 0) {
+		cs2method_21121(new function<script_7781>(int a0,object a1,int a2,int a3,int a4) {
+			script_7788(a1, a0, -1, a2, a3, a4);
+			return;
+		}, new WidgetPointer(862,51), new WidgetPointer(862,11), cs2_configs['cfg2462'], 50, 250, "IIsii", new WidgetPointer(862,51));
+		cs2method_20750(new function<script_40>(int a0) {
+			script_41(a0);
+			return;
+		}, new WidgetPointer(862,11), "I", new WidgetPointer(862,51));
+	}
+	if (cs2method_10846(cs2_configs['cfg2463'], "") == 0) {
+		cs2method_21121(new function<script_7781>(object a0,int a1,int a2,int a3,int a4) {
+			script_7788(a0, a1, -1, a4, a2, a3);
+			return;
+		}, new WidgetPointer(862,52), new WidgetPointer(862,11), cs2_configs['cfg2463'], 50, 250, "IIsii", new WidgetPointer(862,52));
+		cs2method_20750(new function<script_40>(int a0) {
+			script_41(a0);
+			return;
+		}, new WidgetPointer(862,11), "I", new WidgetPointer(862,52));
+	}
+	if (cs2method_10846(cs2_configs['cfg2464'], "") == 0) {
+		cs2method_21121(new function<script_7781>(int a0,int a1,int a2,int a3,object a4) {
+			script_7788(a4, a1, -1, a3, a2, a0);
+			return;
+		}, new WidgetPointer(862,53), new WidgetPointer(862,11), cs2_configs['cfg2464'], 50, 250, "IIsii", new WidgetPointer(862,53));
+		cs2method_20750(new function<script_40>(int a0) {
+			script_41(a0);
+			return;
+		}, new WidgetPointer(862,11), "I", new WidgetPointer(862,53));
+	}
+	if (cs2method_10846(cs2_configs['cfg2465'], "") == 0) {
+		cs2method_21121(new function<script_7781>(int a0,int a1,object a2,int a3,int a4) {
+			script_7788(a2, a1, -1, a4, a0, a3);
+			return;
+		}, new WidgetPointer(862,54), new WidgetPointer(862,11), cs2_configs['cfg2465'], 50, 250, "IIsii", new WidgetPointer(862,54));
+		cs2method_20750(new function<script_40>(int a0) {
+			script_41(a0);
+			return;
+		}, new WidgetPointer(862,11), "I", new WidgetPointer(862,54));
+	}
+	if (cs2method_10846(cs2_configs['cfg2466'], "") == 0) {
+		cs2method_21121(new function<script_7781>(int a0,int a1,int a2,int a3,object a4) {
+			script_7788(a4, a0, -1, a1, a2, a3);
+			return;
+		}, new WidgetPointer(862,55), new WidgetPointer(862,11), cs2_configs['cfg2466'], 50, 250, "IIsii", new WidgetPointer(862,55));
+		cs2method_20750(new function<script_40>(int a0) {
+			script_41(a0);
+			return;
+		}, new WidgetPointer(862,11), "I", new WidgetPointer(862,55));
+	}
+	return;
+}

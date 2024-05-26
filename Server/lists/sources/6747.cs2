@@ -1,0 +1,148 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6747(int a0) {
+	int v4 = idx22mapAttribute(a0, 1268);
+	cs2method_10467(0, 88080394);
+	cs2method_10467(1, 88080402);
+	cs2method_10467(0, 88080392);
+	cs2method_10467(0, 88080393);
+	if (script_9178(v4) == 1) {
+		cs2method_10758(21106, 88080393);
+		cs2method_11127(1, 88080393, "Remove Favourite");
+	} else {
+		cs2method_10758(21105, 88080393);
+		cs2method_11127(1, 88080393, "Add Favourite");
+	}
+	cs2method_10026(88080446, idx22mapAttribute(a0, 1266));
+	if (idx22mapAttribute(a0, 3629) == 0) {
+		cs2method_10758(21099, 88080447);
+	} else {
+		cs2method_10758(21100, 88080447);
+	}
+	if (cs2method_10846(idx22mapAttribute(a0, 3631), "") != 0) {
+		cs2method_10026(88080451, idx22mapAttribute(a0, 3631));
+	} else {
+		cs2method_10026(88080451, idx22mapAttribute(a0, 1273));
+	}
+	if (cs2method_10846(idx22mapAttribute(a0, 1292), "") != 0) {
+		cs2method_10026(88080464, idx22mapAttribute(a0, 1292));
+	} else {
+		cs2method_10026(88080464, "There are no rewards for this minigame.");
+	}
+	script_9181();
+	int v5 = 80;
+	if (cs2method_10771() == 0 && idx22mapAttribute(a0, 1290) == 2) {
+		cs2method_10467(1, 88080387);
+		cs2method_10467(1, 88080437);
+		cs2method_10467(1, 88080506);
+		cs2method_10467(1, 88080507);
+		cs2method_10026(88080436, "Options");
+		if (cs2method_10210() == 1) {
+			cs2method_10026(88080430, "This activity is a members only feature. Please log into a members' world to play");
+		} else {
+			cs2method_10026(88080430, "This activity is a members only feature.");
+			cs2method_10467(0, 88080455);
+		}
+	} else if (script_3224(idx22mapAttribute(a0, 1268)) == 0) {
+		cs2method_10026(88080436, "Requirements");
+		v5 = script_9182(a0);
+		cs2method_10467(1, 88080387);
+		cs2method_10467(1, 88080437);
+		cs2method_10026(88080430, "");
+		cs2method_10467(1, 88080455);
+		cs2method_10467(1, 88080506);
+		cs2method_10467(1, 88080507);
+	} else {
+		cs2method_10026(88080436, "Options");
+		cs2method_10467(0, 88080387);
+		if (client_configs['cfg1269'].bitcfg3561 == v4) {
+			cs2method_11127(1, 88080477, "Unset Active");
+			cs2method_10026(88080475, "Unset Active Task");
+		} else {
+			cs2method_11127(1, 88080477, "Set Active");
+			cs2method_10026(88080475, "Set as Active Task");
+		}
+		if (idx22mapAttribute(a0, 2700) == -1 && idx22mapAttribute(a0, 2701) == -1) {
+			cs2method_10467(1, 88080437);
+		} else if (client_configs['cfg3919'].bitcfg20797 == 1 && idx22mapAttribute(a0, 2701) > 0) {
+			cs2method_10467(0, 88080506);
+			cs2method_10467(1, 88080509);
+			cs2method_10467(0, 88080508);
+			cs2method_10467(0, 88080507);
+		} else {
+			cs2method_10467(1, 88080506);
+			cs2method_10467(1, 88080507);
+		}
+		cs2method_10467(0, 88080437);
+		cs2method_10026(88080430, "");
+		cs2method_10467(1, 88080455);
+	}
+	int v1 = cs2method_10060(155, v5);
+	cs2method_10283(0, cs2method_10060(v5, 5), 1, 0, 88080386);
+	cs2method_10112(0, v1, 1, 0, 88080384);
+	int v0 = 0;
+	int v2 = 4094;
+	object v3 = script_9133(v4);
+	if (cs2method_10846(v3, "") != 0) {
+		v0 = script_9180(1, v0, 88080438, v3, 88080454);
+	} else {
+		cs2method_10026(88080438, "");
+	}
+	if (cs2method_10846(idx22mapAttribute(a0, 1274), "") != 0) {
+		v0 = script_9180(1, v0, 88080439, idx22mapAttribute(a0, 1274), 88080454);
+	} else {
+		cs2method_10026(88080439, "There are no hints available for this task. Good luck!");
+		cs2method_10467(0, 88080439);
+		cs2method_10170(17813, 88080439);
+		cs2method_10637(0, 1, 12, 88080439);
+		cs2method_10112(0, v0, 0, 0, 88080439);
+	}
+	if (cs2method_10846(idx22mapAttribute(a0, 1275), "") != 0) {
+		v0 = script_9180(2, v0, 88080440, idx22mapAttribute(a0, 1275), 88080454);
+	} else {
+		cs2method_10026(88080440, "");
+	}
+	if (cs2method_10846(idx22mapAttribute(a0, 1276), "") != 0) {
+		v0 = script_9180(3, v0, 88080441, idx22mapAttribute(a0, 1276), 88080454);
+	} else {
+		cs2method_10026(88080441, "");
+	}
+	if (cs2method_10846(idx22mapAttribute(a0, 1277), "") != 0) {
+		v0 = script_9180(4, v0, 88080442, idx22mapAttribute(a0, 1277), 88080454);
+	} else {
+		cs2method_10026(88080442, "");
+	}
+	if (cs2method_10846(idx22mapAttribute(a0, 1278), "") != 0) {
+		v0 = script_9180(5, v0, 88080443, idx22mapAttribute(a0, 1278), 88080454);
+	} else {
+		cs2method_10026(88080443, "");
+	}
+	if (cs2method_10846(idx22mapAttribute(a0, 1279), "") != 0) {
+		v0 = script_9180(6, v0, 88080444, idx22mapAttribute(a0, 1279), 88080454);
+	} else {
+		cs2method_10026(88080444, "");
+	}
+	if (cs2method_10846(idx22mapAttribute(a0, 1280), "") != 0) {
+		v0 = script_9180(7, v0, 88080445, idx22mapAttribute(a0, 1280), 88080454);
+	} else {
+		cs2method_10026(88080445, "");
+	}
+	cs2method_10283(0, cs2method_10060(v0, 30), 1, 0, 88080384);
+	cs2method_10273(88080403);
+	cs2method_11130(0, cs2method_10060(cs2method_10060(v1, v0), 30), 88080394);
+	cs2method_10251(0, 0, 88080394);
+	if (cs2method_10970(88080394) > cs2method_10823(88080394)) {
+		script_7791(88080403, 88080394);
+	}
+	return;
+}

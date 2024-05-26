@@ -1,0 +1,61 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6708() {
+	int v0 = -1;
+	switch (client_configs['cfg2983'].bitcfg15071) {
+		case 1:
+			v0 = 6160408;
+			break;
+		case 2:
+			v0 = 6160432;
+			break;
+		case 3:
+			v0 = 6160436;
+			break;
+		case 4:
+			v0 = 6160440;
+			break;
+		case 5:
+			v0 = 6160444;
+			break;
+		case 6:
+			v0 = 6160448;
+			break;
+		case 7:
+			v0 = 6160452;
+			break;
+		case 8:
+			v0 = 6160456;
+			break;
+		case 9:
+			v0 = 6160460;
+	}
+	cs2method_10467(1, 6160408);
+	cs2method_10467(1, 6160432);
+	cs2method_10467(1, 6160436);
+	cs2method_10467(1, 6160440);
+	cs2method_10467(1, 6160444);
+	cs2method_10467(1, 6160448);
+	cs2method_10467(1, 6160452);
+	cs2method_10467(1, 6160456);
+	cs2method_10467(1, 6160460);
+	if (v0 == -1) {
+		cs2method_10467(1, 6160388);
+		cs2method_10467(0, 6160428);
+		return;
+	}
+	cs2method_10467(0, 6160388);
+	cs2method_10467(1, 6160428);
+	cs2method_10467(0, v0);
+	return;
+}

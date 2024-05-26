@@ -1,0 +1,64 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_813(int a0) {
+	int v7 = a0;
+	int v8 = -1;
+	int v0 = 0;
+	int v10 = -1;
+	int v2 = a0;
+	script_814_struct(3,0,0) v1 = script_814(v2);
+	int v6 = v1.intpart_2;
+	int v5 = v1.intpart_1;
+	int v4 = v1.intpart_0;
+	cs2method_10336(v6, v5);
+	script_1421(a0);
+	int v3 = cs2method_10461(a0, 1);
+	while (v3 > 0) {
+		int v14 = v3;
+		script_814_struct(3,0,0) v13 = script_814(v14);
+		int v15 = v13.intpart_2;
+		int v11 = v13.intpart_1;
+		int v12 = v13.intpart_0;
+		cs2method_10336(v15, v11);
+		script_1421(v3);
+		if (v12 > 1) {
+			v3 = cs2method_10461(v3, 1);
+		} else {
+			v3 = cs2method_10461(v3, 1);
+			while (v3 > 0) {
+				script_818(v3);
+				v3 = cs2method_10461(v3, 1);
+			}
+		}
+	}
+	int v9 = cs2method_10060(a0, 1);
+	while (v9 <= 14) {
+		int v15 = v9;
+		script_814_struct(3,0,0) v12 = script_814(v15);
+		int v11 = v12.intpart_2;
+		int v13 = v12.intpart_1;
+		int v14 = v12.intpart_0;
+		cs2method_10336(v11, v13);
+		script_1421(v9);
+		if (v14 > 1) {
+			v9 = cs2method_10060(v9, 1);
+		} else {
+			v9 = cs2method_10060(v9, 1);
+			while (v9 <= 14) {
+				script_818(v9);
+				v9 = cs2method_10060(v9, 1);
+			}
+		}
+	}
+	return;
+}

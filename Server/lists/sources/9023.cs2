@@ -1,0 +1,46 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9023(int a0) {
+	int v2 = script_8925();
+	int v1 = -1;
+	object v0 = "null";
+	if (a0 == 0) {
+		cs2method_10467(0, 98172981);
+		cs2method_10467(1, 98172979);
+		cs2method_10467(0, 98173001);
+		cs2method_10467(1, 98173000);
+		if (v2 <= 1) {
+			cs2method_10467(0, 98173021);
+		} else {
+			cs2method_10467(1, 98173021);
+		}
+		cs2method_10467(0, 98173008);
+		int v4 = idx17mapData('i', 'J', 7569, v2);
+		object v3 = idx22mapAttribute(v4, 3418);
+		cs2method_10026(98172975, v3);
+		cs2method_10026(98172974, "Treasury left: " + (string)cs2method_10055(script_9014(v2), 1));
+	} else {
+		cs2method_10467(1, 98172981);
+		cs2method_10467(0, 98172979);
+		cs2method_10467(0, 98173021);
+		if (v2 > 8) {
+			cs2method_10467(0, 98173008);
+		} else {
+			cs2method_10467(1, 98173008);
+		}
+		cs2method_10467(1, 98173001);
+		cs2method_10467(0, 98173000);
+		script_9021(cs2_configs['cfg2787']);
+	}
+	return;
+}

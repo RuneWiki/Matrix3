@@ -1,0 +1,55 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1311(int a0) {
+	if (a0 == 1) {
+		cs2method_20380(new function<script_574>(int a0,int a1) {
+			if (a0 == 84) {
+				cs2_configs['cfg81'] = 0;
+				cs2method_20162(new function<none>() {
+				}, "", new WidgetPointer(389,7));
+				script_576();
+				return;
+			}
+			if (a0 == 13) {
+				if (script_9666() == 1) {
+					return;
+				}
+				cs2method_10569();
+				script_573();
+				return;
+			}
+			object v0 = script_74(0, a0, a1, cs2_configs['cfg2506']);
+			if (cs2method_10846(cs2_configs['cfg2506'], v0) == 0) {
+				return;
+			}
+			cs2_configs['cfg2506'] = (string)v0;
+			cs2method_10026(25493511, (string)cs2method_11053(cs2_configs['cfg2506']) + "*");
+			cs2_configs['cfg81'] = 50;
+			cs2method_20162(new function<script_575>() {
+				cs2_configs['cfg81'] = cs2method_10461(cs2_configs['cfg81'], 1);
+				if (cs2_configs['cfg81'] > 0) {
+					return;
+				}
+				cs2method_20162(new function<none>() {
+				}, "", new WidgetPointer(389,7));
+				script_576();
+				return;
+			}, "", new WidgetPointer(389,7));
+			return;
+		}, -2147483640, false, "iz", new WidgetPointer(389,7));
+	} else {
+		cs2method_20380(new function<none>() {
+		}, "", new WidgetPointer(389,7));
+	}
+	return;
+}

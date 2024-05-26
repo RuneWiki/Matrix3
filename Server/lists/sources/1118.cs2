@@ -1,0 +1,26 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1118() {
+	script_1998();
+	script_3710(client_configs['cfg3843'].bitcfg22477);
+	cs2method_20348(new function<script_1997>() {
+		script_1998();
+		return;
+	}, 3843, 4151, 2, "Y", new WidgetPointer(400,32));
+	object v0 = "Kicks are counted when you anyone kicks your ball and when you kick someone else's ball.";
+	cs2method_21121(new function<script_10007>(int a0,int a1,object a2) {
+		script_10008(a2, a1, a0);
+		return;
+	}, (string)v0, new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(400,34));
+	return;
+}

@@ -1,0 +1,109 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9987(int a0) {
+	int v1;
+	if (cs2_configs['cfg3467'] != -1) {
+		return;
+	}
+	if (a0 == -1) {
+		return;
+	}
+	int v2 = script_9974(1);
+	int v8 = 8;
+	int v7 = cs2method_10461(v2, v8);
+	if (v7 <= 0) {
+		script_8800(a0, -1, "Open Ribbon Setup");
+		return;
+	}
+	cs2method_10467(1, 37879816);
+	cs2method_10467(1, 37879817);
+	cs2method_10467(1, 37879818);
+	cs2method_10467(1, 37879819);
+	cs2method_10467(1, 37879820);
+	cs2method_10467(1, 37879821);
+	cs2method_10467(1, 37879822);
+	cs2method_10467(1, 37879823);
+	cs2method_10467(1, 37879824);
+	cs2method_10467(1, 37879825);
+	cs2method_10467(1, 37879826);
+	cs2method_10467(1, 37879827);
+	cs2method_10467(1, 37879828);
+	cs2method_10467(1, 37879829);
+	cs2method_10467(1, 37879831);
+	cs2method_10467(1, 37879832);
+	cs2method_10467(1, 37879808);
+	cs2method_10467(1, 37879809);
+	cs2method_10467(1, 37879810);
+	cs2method_10467(1, 37879811);
+	cs2method_10467(1, 37879812);
+	cs2method_10467(1, 37879813);
+	cs2method_10467(1, 37879814);
+	cs2method_10467(1, 37879815);
+	int v9 = 0;
+	int v10 = 0;
+	script_3795_struct(2,0,0) v6 = script_3795();
+	int v13 = v6.intpart_1;
+	int v14 = v6.intpart_0;
+	int v11 = v13;
+	script_8421(37879833, 37879836, "", 37879834, -1, 21259, -1, 0);
+	int v4 = cs2method_10060(32, cs2method_10051(4, 2));
+	int v16 = script_9968(v7);
+	int v15 = script_9969(v7);
+	if (v11 == 0) {
+		v1 = script_9964(v4, v16, a0, -1, 1, cs2method_10461(0, 4), cs2method_10461(0, cs2method_10060(32, 4)), 96797008);
+	} else if (v11 == 1) {
+		v1 = script_9964(v16, v4, a0, -1, 2, cs2method_10461(0, cs2method_10060(32, 4)), cs2method_10461(0, 4), 96797008);
+	} else {
+		return;
+	}
+	if (cs2method_11038(37879833, 0) == 1) {
+		if (v1 == 1) {
+			cs2method_10013(cs2method_10488(), cs2method_10461(cs2method_10664(), 32), 0, 0);
+			cs2method_10063(0, 0, 0, 2);
+			cs2method_10283(cs2method_10236(37879834), v15, 0, 0, 37879834);
+			cs2method_10112(0, 4, 1, 2, 37879834);
+		} else if (v1 == 0) {
+			cs2method_10013(cs2method_10488(), cs2method_10461(cs2method_10664(), 32), 0, 0);
+			cs2method_10063(0, 0, 0, 0);
+			cs2method_10283(cs2method_10236(37879834), v15, 0, 0, 37879834);
+			cs2method_10112(0, 4, 1, 0, 37879834);
+		} else if (v1 == 3) {
+			cs2method_10013(cs2method_10461(cs2method_10488(), 32), cs2method_10664(), 0, 0);
+			cs2method_10063(0, 0, 0, 0);
+			cs2method_10283(v15, cs2method_10823(37879834), 0, 0, 37879834);
+			cs2method_10112(4, 0, 0, 1, 37879834);
+		} else {
+			if (v1 == 2) {
+				cs2method_10013(cs2method_10461(cs2method_10488(), 32), cs2method_10664(), 0, 0);
+				cs2method_10063(0, 0, 2, 0);
+				cs2method_10283(v15, cs2method_10823(37879834), 0, 0, 37879834);
+				cs2method_10112(4, 0, 2, 1, 37879834);
+			}
+		}
+	}
+	for (int v20 = -1, int v0 = -1, script_3795_struct(2,0,0) v21 = script_3795(), int v5 = v21.intpart_1, int v12 = v21.intpart_0, int v18 = v8, int v3 = 0, int v19 = cs2method_10060(v7, v8); v18 < v19; v18 = cs2method_10060(v18, 1)) {
+		int v22 = script_9971(v18, 1);
+		int v17 = script_9979(v22, 37879830);
+		if (v17 != -1) {
+			cs2method_10467(0, v17);
+			script_9995(v22, v17, 0);
+			if (v1 == 0 || v1 == 1) {
+				cs2method_10112(0, v3, 1, 2, v17);
+			} else {
+				cs2method_10112(v3, 0, 2, 1, v17);
+			}
+			v3 = cs2method_10060(cs2method_10060(v3, 32), 4);
+		}
+	}
+	return;
+}

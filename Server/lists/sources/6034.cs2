@@ -1,0 +1,49 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_6034() {
+	int v5 = 0;
+	for (int v6 = 0, int v0 = 1, int v1 = 1, int v3 = 0, int v4 = 0, int v7 = 0; v0 < 7; v1 = 1, v3 = v2, v7 = 0) {
+		switch (v0) {
+			case 1:
+				v6 = client_configs['cfg1391'].bitcfg4126;
+				break;
+			case 2:
+				v6 = client_configs['cfg1391'].bitcfg4127;
+				break;
+			case 3:
+				v6 = client_configs['cfg1392'].bitcfg4131;
+				break;
+			case 4:
+				v6 = client_configs['cfg1392'].bitcfg4132;
+				break;
+			case 5:
+				v6 = client_configs['cfg1393'].bitcfg4133;
+				break;
+			case 6:
+				v6 = client_configs['cfg1393'].bitcfg4134;
+		}
+		while (v1 != 100 && v7 == 0) {
+			int v8 = idx17mapData('i', 'i', 5034, v1);
+			if (v6 >= v8) {
+				v3 = v1;
+			} else {
+				v7 = 1;
+			}
+			v1 = cs2method_10060(v1, 1);
+		}
+		v0 = cs2method_10060(v0, 1);
+		v5 = cs2method_10060(v5, v3);
+		int v2 = 0;
+	}
+	return v5;
+}

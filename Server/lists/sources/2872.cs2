@@ -1,0 +1,47 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2872(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12,int a13) {
+	if (cs2_configs['cfg1077'] == 1) {
+		cs2method_10758(16939, a13);
+		script_2878(a4, a3, a12, a10);
+		cs2method_10467(1, a0);
+		cs2method_10467(1, a2);
+		cs2method_10467(1, a1);
+		cs2method_10467(1, a8);
+		cs2method_10467(1, a5);
+		cs2method_10467(1, a6);
+		cs2method_10467(0, a4);
+		cs2method_10467(0, a12);
+		cs2method_10467(0, a11);
+		cs2method_10467(0, a10);
+		script_3683(a1, a8, a9, a0, a2, a7, a5);
+		if (client_configs['cfg76'].bitcfg190 == 32767) {
+			cs2method_10467(0, a3);
+		}
+	} else {
+		cs2method_10758(16937, a13);
+		cs2method_10467(1, a4);
+		cs2method_10467(1, a12);
+		cs2method_10467(1, a11);
+		cs2method_10467(1, a10);
+		cs2method_10467(1, a3);
+		cs2method_10467(1, a8);
+		cs2method_10467(0, a0);
+		cs2method_10467(0, a2);
+		cs2method_10467(0, a1);
+		cs2method_10467(0, a5);
+		cs2method_10467(0, a6);
+	}
+	cs2_configs['cfg2'] = 0;
+	return;
+}

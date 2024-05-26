@@ -1,0 +1,62 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_10004(int a0,int a1,int a2,int a3) {
+	int v0 = idx17mapData('i', 'J', 7699, a0);
+	int v5 = idx17mapData('i', 'J', 7716, a3);
+	int v1 = idx22mapAttribute(21255, 3569);
+	int v7 = 32;
+	int v4 = 32;
+	if (script_9976(a3) == 1) {
+		v5 = v0;
+		v1 = 32;
+	}
+	int v3 = idx22mapAttribute(v0, 4188);
+	int v8 = idx22mapAttribute(v0, 4189);
+	if (client_configs['cfg3680'].bitcfg22315 == 1) {
+		int v10 = 0;
+		script_5825_struct(2,0,0) v9 = script_5825(v10);
+		v8 = v9.intpart_1;
+		v3 = v9.intpart_0;
+		v1 = 22;
+		v7 = 30;
+		v4 = 37;
+	}
+	if (a1 == -1) {
+		a1 = 0;
+		cs2method_10283(v7, v4, 0, 0, a2);
+	}
+	cs2method_10606(a2, 5, a1);
+	cs2method_10013(v7, v4, 0, 0);
+	cs2method_10063(0, 0, 1, 1);
+	cs2method_10310(v3);
+	cs2method_20674(new function<script_5336>(int a0,int a1,int a2) {
+		if (cs2method_11038(a1, a0) == 1) {
+			cs2method_10310(a2);
+		}
+		return;
+	}, new WidgetPointer(a2), a1, v8, "Iid");
+	cs2method_20884(new function<script_5336>(int a0,int a1,int a2) {
+		if (cs2method_11038(a2, a1) == 1) {
+			cs2method_10310(a0);
+		}
+		return;
+	}, new WidgetPointer(a2), a1, v3, "Iid");
+	int v6 = cs2method_10060(a1, 1);
+	cs2method_10606(a2, 5, v6);
+	cs2method_10013(v1, v1, 0, 0);
+	cs2method_10063(0, 0, 1, 1);
+	cs2method_10310(script_3794(v5, 1));
+	cs2method_10995(3536, a3);
+	int v2 = cs2method_10060(v6, 1);
+	return v2;
+}

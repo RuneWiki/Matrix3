@@ -1,0 +1,53 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9415(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7) {
+	cs2method_10467(1, a5);
+	cs2method_10467(0, a6);
+	cs2method_21121(new function<script_9417>(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8) {
+		object v0 = "";
+		if (client_configs['cfg3980'] < a3) {
+			v0 = "You cannot afford this reward." + "<br>";
+		}
+		if (cs2method_10461(client_configs['cfg3950'].bitcfg21034, 1) < a7) {
+			v0 = cs2method_10427(v0, "You need a higher-level faction token to purchase this reward." + "<br>");
+		}
+		if (a1 == 0 && cs2method_10684(93) == 0) {
+			v0 = cs2method_10427(v0, "You do not have space in your inventory for this reward." + "<br>");
+		}
+		if (a8 == 1) {
+			if (a5 == 1) {
+				if (script_9414(a4) == 1) {
+					v0 = "You already have this reward in your inventory, bank or house.";
+				}
+			} else {
+				switch (a4) {
+					case 25082:
+					case 25080:
+					case 25081:
+					case 25079:
+						v0 = "You must use or destroy the lamp you own before purchasing another.";
+						break;
+					default:
+						v0 = "You have already purchased this reward.";
+				}
+			}
+		}
+		script_8800(a0, -1, v0);
+		return;
+	}, new WidgetPointer(a2), -2147483647, -2147483646, a3, idx22mapAttribute(a0, 3939), idx22mapAttribute(a0, 3941), idx22mapAttribute(a0, 3943), a1, a0, "IiiiiiiiJ", new WidgetPointer(a2));
+	cs2method_20750(new function<script_8805>() {
+		script_8808();
+		return;
+	}, "", new WidgetPointer(a2));
+	return;
+}

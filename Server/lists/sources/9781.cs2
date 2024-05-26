@@ -1,0 +1,41 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9781() {
+	switch (cs2method_10262()) {
+		case 0:
+			cs2method_10758(21143, 47382536);
+			break;
+		case 1:
+			cs2method_10758(21142, 47382536);
+			break;
+		case 2:
+			cs2method_10758(21145, 47382536);
+			break;
+		case 3:
+			cs2method_10758(21146, 47382536);
+			break;
+		case 6:
+			cs2method_10758(21144, 47382536);
+	}
+	cs2method_10026(47382538, cs2method_10055(1750, 1));
+	cs2method_10026(47382540, cs2method_10055(1000, 1));
+	cs2method_10026(47382542, cs2method_10055(800, 1));
+	cs2method_10026(47382539, cs2method_10055(1750, 1));
+	cs2method_10026(47382541, cs2method_10055(1000, 1));
+	cs2method_10026(47382543, cs2method_10055(800, 1));
+	cs2method_10026(47382544, cs2method_10055(50, 1));
+	script_9783();
+	cs2method_10467(1, 47382551);
+	client_configs['cfg4150'].bitcfg21625 = 0;
+	return;
+}

@@ -1,0 +1,44 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9269(int a0,int a1,int a2,int a3) {
+	int v0;
+	if (a1 == -1 || a0 != 7012356) {
+		return;
+	}
+	if (a3 < 0 || a3 >= cs2method_10894(93)) {
+		return;
+	}
+	if (client_configs['cfg138'] == -1) {
+		return;
+	}
+	int v2 = 0;
+	if (a1 == 6881357) {
+		v0 = 0;
+	} else if (a1 == 6881359) {
+		v0 = 1;
+	} else {
+		return;
+	}
+	int v1 = client_configs['cfg138'];
+	script_9270(a1, client_configs['cfg138'], v0, a0, a3, a2);
+	if (cs2method_10802(6881357) == -1 && cs2method_10802(6881359) == -1 && (cs2method_10601(client_configs['cfg138']) == 1 || cs2method_10041(client_configs['cfg138']) == 1)) {
+		script_9261();
+		if ((int)idx17mapData('i', 'I', 1073, v1) != -1) {
+			cs2method_10273((int)idx17mapData('i', 'I', 1073, v1));
+		}
+		if ((int)idx17mapData('i', 'I', 1076, v1) != -1) {
+			cs2method_10467(0, (int)idx17mapData('i', 'I', 1076, v1));
+		}
+	}
+	return;
+}

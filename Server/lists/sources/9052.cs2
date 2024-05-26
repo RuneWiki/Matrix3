@@ -1,0 +1,61 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9052() {
+	int v0 = script_8925();
+	if (cs2_configs['cfg2777'] == 1) {
+		cs2method_10467(1, 98173124);
+		cs2method_10467(0, 98173079);
+		cs2method_10467(0, 98173088);
+		cs2method_10467(0, 98173097);
+		cs2method_10467(0, 98173106);
+		switch (cs2_configs['cfg2776']) {
+			case 1:
+				script_9032();
+				break;
+			case 2:
+				script_9033();
+				break;
+			case 3:
+				script_9034();
+				break;
+			case 4:
+				script_9035();
+				break;
+			default:
+				script_9036();
+		}
+	} else {
+		cs2method_10467(0, 98173124);
+		if (script_9018(idx22mapAttribute(idx17mapData('i', 'J', 7569, v0), 3423)) == 0) {
+			cs2method_10467(0, 98173079);
+		} else {
+			cs2method_10467(1, 98173079);
+		}
+		if (script_9018(idx22mapAttribute(idx17mapData('i', 'J', 7569, v0), 3424)) == 0) {
+			cs2method_10467(0, 98173088);
+		} else {
+			cs2method_10467(1, 98173088);
+		}
+		if (script_9018(idx22mapAttribute(idx17mapData('i', 'J', 7569, v0), 3425)) == 0) {
+			cs2method_10467(0, 98173097);
+		} else {
+			cs2method_10467(1, 98173097);
+		}
+		if (script_9018(idx22mapAttribute(idx17mapData('i', 'J', 7569, v0), 3426)) == 0) {
+			cs2method_10467(0, 98173106);
+		} else {
+			cs2method_10467(1, 98173106);
+		}
+	}
+	return;
+}

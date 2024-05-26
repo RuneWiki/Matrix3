@@ -1,0 +1,20 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3710(int a0) {
+	if (a0 == 1) {
+		cs2method_10026(26214411, "In rolling mode, the ball can be kicked away from you only, but will bounce off surfaces and can be kicked when moving.");
+	} else {
+		cs2method_10026(26214411, "In free mode, you can attempt to kick the ball anywhere by clicking on the ball and then on the ground, but may not always end up where you expect.");
+	}
+	return;
+}

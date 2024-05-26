@@ -1,0 +1,35 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_4590_struct(6,0,0) script_4590() {
+	int v0 = -1;
+	int v3 = -1;
+	int v1 = -1;
+	int v4 = -1;
+	int v2 = -1;
+	int v5 = -1;
+	if (cs2method_10435() == 1) {
+		v1 = cs2method_11016();
+		v0 = cs2method_10890(cs2method_10765(cs2method_10954()));
+		if (v0 >= 0) {
+			v3 = cs2method_10101(v0);
+		}
+	}
+	if (cs2method_10143() == 1) {
+		v5 = cs2method_11016();
+		v4 = cs2method_10890(cs2method_10765(cs2method_10954()));
+		if (v4 >= 0) {
+			v2 = cs2method_10101(v4);
+		}
+	}
+	return new script_4590_struct(v0, v3, v1, v4, v2, v5);
+}

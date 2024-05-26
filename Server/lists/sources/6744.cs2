@@ -1,0 +1,141 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+?? script_6744() {
+	int v1 = -1;
+	int v7 = 1;
+	int v6 = 0;
+	switch (client_configs['cfg3919'].bitcfg20794) {
+		case 0:
+			v1 = 6452;
+			break;
+		case 1:
+			v1 = 6452;
+			v6 = 1;
+			break;
+		case 2:
+			v1 = 8014;
+			break;
+		case 3:
+			v1 = 8015;
+			break;
+		case 4:
+			v1 = 8016;
+			break;
+		case 5:
+			v1 = 8017;
+	}
+	cs2method_10273(88080406);
+	cs2method_10273(88080408);
+	cs2method_10273(88080409);
+	cs2method_10273(88080407);
+	cs2method_10273(88080412);
+	cs2method_10273(88080410);
+	cs2method_10273(88080411);
+	cs2method_10467(1, 88080399);
+	int v2 = 0;
+	int v0 = 0;
+	int v5 = cs2method_10924(v1);
+	int v4 = -1;
+	while (v2 < v5) {
+		flow_9:
+			int v3 = idx17mapData('i', 'J', v1, cs2method_10060(1, v2));
+			IF (v6 == 1) 
+				GOTO	flow_11
+			GOTO	flow_12
+		flow_11:
+			IF (script_9178(idx22mapAttribute(v3, 1268)) == 0) 
+				GOTO	flow_14
+		flow_12:
+			IF (idx22mapAttribute(v3, 3812) == 1 && script_3224(idx22mapAttribute(v3, 1268)) == 0) 
+				GOTO	flow_14
+			GOTO	flow_15
+		flow_14:
+			cs2method_10606(88080406, 5, v2);
+			cs2method_10269(1);
+			cs2method_10606(88080408, 5, v2);
+			cs2method_10269(1);
+			cs2method_10606(88080409, 4, v2);
+			cs2method_10269(1);
+			cs2method_10606(88080407, 3, v2);
+			cs2method_10269(1);
+			GOTO	flow_25
+		flow_15:
+			cs2method_10606(88080406, 5, v2);
+			if (cs2method_10461(client_configs['cfg3233'], 1) == v2) {
+				cs2method_10310(13136);
+			} else {
+				cs2method_10310(13133);
+				cs2method_20353(new function<script_6729>(int a0,int a1) {
+					if (cs2method_11038(a0, a1) == 1) {
+						cs2method_10310(13134);
+					}
+					return;
+				}, new WidgetPointer(1344,22), -2147483643, "Ii");
+				cs2method_20884(new function<script_6730>(int a0,int a1) {
+					if (cs2method_11038(a0, a1) == 1) {
+						cs2method_10310(13133);
+					}
+					return;
+				}, new WidgetPointer(1344,22), -2147483643, "Ii");
+			}
+			cs2method_10013(254, 43, 0, 0);
+			cs2method_10063(1, cs2method_10060(0, cs2method_10051(cs2method_10060(43, 3), v0)), 0, 2);
+			cs2method_10606(88080407, 3, v2);
+			cs2method_10013(254, 43, 0, 0);
+			cs2method_10063(1, cs2method_10060(0, cs2method_10051(cs2method_10060(43, 3), v0)), 0, 2);
+			cs2method_10811(6710886);
+			cs2method_10057(1, "Select");
+			cs2method_20703(new function<script_6733>(int a0,int a1,int a2) {
+				cs2method_10670(36961, 1, 0, 100);
+				script_6735(a0, a2, a1);
+				return;
+			}, new WidgetPointer(1344,22), new WidgetPointer(-1,65535), -2147483643, "IIi");
+			if (script_3224(idx22mapAttribute(v3, 1268)) == 0) {
+				cs2method_10002(130);
+				cs2method_10238(1);
+			} else {
+				cs2method_10002(255);
+			}
+			cs2method_10606(88080409, 4, v2);
+			cs2method_10692(17813);
+			cs2method_10811(16777215);
+			cs2method_10797(idx22mapAttribute(v3, 1266));
+			cs2method_11105(0, 1, 13);
+			cs2method_10013(130, 43, 0, 0);
+			cs2method_10063(40, cs2method_10060(2, cs2method_10051(cs2method_10060(43, 3), v0)), 0, 2);
+			cs2method_10606(88080408, 5, v2);
+			if (idx22mapAttribute(v3, 3629) == 0) {
+				cs2method_10310(21099);
+			} else {
+				cs2method_10310(21100);
+			}
+			cs2method_10013(40, 40, 0, 0);
+			cs2method_10063(1, cs2method_10060(1, cs2method_10051(cs2method_10060(43, 3), v0)), 0, 2);
+			v0 = cs2method_10060(v0, 1);
+		flow_25:
+			v2 = cs2method_10060(v2, 1);
+	}
+	if (v0 == 0) {
+		cs2method_10467(0, 88080399);
+	}
+	/* 
+		mgi.tools.jagdecs2.DecompilerException: No documentation for:CALL_CS2	9175
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:198)
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+			at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+			at tests.Main.main(Main.java:69)
+		
+	 */
+}

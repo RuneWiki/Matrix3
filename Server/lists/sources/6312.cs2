@@ -1,0 +1,115 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6312(int a0,int a1,int a2,int a3,int a4,int a5,int a6) {
+	cs2method_10273(a0);
+	cs2method_10273(a4);
+	int v2 = cs2method_10640(398, cs2method_10461(a1, 1));
+	if (v2 == -1 || v2 == 8245) {
+		cs2method_10467(1, a5);
+		cs2method_10467(1, a2);
+		cs2method_10467(1, a6);
+		cs2method_10467(1, a4);
+		cs2method_10467(1, a3);
+		return;
+	}
+	cs2method_10467(0, a5);
+	cs2method_10467(0, a2);
+	cs2method_10467(0, a4);
+	cs2method_10606(a4, 5, 0);
+	cs2method_10013(36, 32, 0, 0);
+	cs2method_10063(12, 4, 0, 0);
+	cs2method_10903(v2, 1);
+	cs2method_10356(1);
+	cs2method_10278(3153952);
+	cs2method_10606(a4, 4, 1);
+	cs2method_10013(60, cs2method_10060(32, 4), 0, 1);
+	cs2method_10063(0, 0, 0, 2);
+	cs2method_10692(494);
+	cs2method_11105(1, 1, 0);
+	cs2method_10811(16750623);
+	cs2method_10173(1);
+	cs2method_10797("Level " + (string)cs2method_10379(itemDefsAttribute(v2, 23)));
+	cs2method_10606(a4, 4, 2);
+	cs2method_10013(60, 12, 1, 0);
+	cs2method_10063(0, 0, 2, 0);
+	cs2method_10692(494);
+	cs2method_11105(0, 1, 0);
+	cs2method_10811(16750623);
+	cs2method_10173(1);
+	cs2method_10797(cs2method_10018(v2));
+	cs2method_10606(a4, 4, 3);
+	cs2method_10013(60, 12, 1, 1);
+	cs2method_10063(0, 0, 2, 2);
+	cs2method_10692(494);
+	cs2method_11105(0, 1, 0);
+	cs2method_10811(13421772);
+	cs2method_10173(1);
+	object v1 = itemDefsAttribute(v2, 2522);
+	if (cs2method_10265(v1) <= 0) {
+		object v3 = script_6313(itemDefsAttribute(v2, 211), "", itemDefsAttribute(v2, 212));
+		object v7 = script_6313(itemDefsAttribute(v2, 213), v3, itemDefsAttribute(v2, 214));
+		object v6 = script_6313(itemDefsAttribute(v2, 215), v7, itemDefsAttribute(v2, 216));
+		object v5 = script_6313(itemDefsAttribute(v2, 217), v6, itemDefsAttribute(v2, 218));
+		object v4 = script_6313(itemDefsAttribute(v2, 219), v5, itemDefsAttribute(v2, 220));
+		v1 = script_6313(itemDefsAttribute(v2, 221), v4, itemDefsAttribute(v2, 222));
+	}
+	cs2method_10797(v1);
+	if (cs2method_10441(cs2_configs['cfg841'], a1) == 0) {
+		cs2method_10467(1, a6);
+		cs2method_10467(0, a3);
+	} else {
+		cs2method_10467(0, a6);
+		cs2method_10467(1, a3);
+	}
+	int v0 = 0;
+	if (cs2method_10441(cs2_configs['cfg841'], 0) == 1) {
+		v0 = 1;
+	}
+	cs2method_10606(a0, 4, 0);
+	cs2method_10013(0, 0, 1, 1);
+	cs2method_10063(0, 0, 1, 1);
+	cs2method_10062("Make All");
+	if (v0 == 0) {
+		cs2method_10269(1);
+	}
+	cs2method_10606(a0, 4, 1);
+	cs2method_10013(0, 0, 1, 1);
+	cs2method_10063(0, 0, 1, 1);
+	cs2method_10062("Make X");
+	if (v0 == 0) {
+		cs2method_10269(1);
+	}
+	cs2method_10606(a0, 4, 2);
+	cs2method_10013(0, 0, 1, 1);
+	cs2method_10063(0, 0, 1, 1);
+	cs2method_10062("Make 10");
+	if (v0 == 0) {
+		cs2method_10269(1);
+	}
+	cs2method_10606(a0, 4, 3);
+	cs2method_10013(0, 0, 1, 1);
+	cs2method_10063(0, 0, 1, 1);
+	cs2method_10062("Make 5");
+	if (v0 == 0) {
+		cs2method_10269(1);
+	}
+	cs2method_10606(a0, 4, 4);
+	cs2method_10013(0, 0, 1, 1);
+	cs2method_10063(0, 0, 1, 1);
+	if (v0 == 0) {
+		cs2method_10062("Build");
+	} else {
+		cs2method_10062("Make 1");
+	}
+	return;
+}

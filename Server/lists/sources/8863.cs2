@@ -1,0 +1,47 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8863(int a0,object a1,int a2) {
+	int v1 = idx17mapData('i', 'J', 7716, a2);
+	int v2 = idx22mapAttribute(v1, 3513);
+	if (v2 == -1) {
+		return;
+	}
+	cs2method_10273(v2);
+	cs2method_10606(v2, 3, 0);
+	cs2method_10063(0, 0, 0, 0);
+	cs2method_10013(0, 0, 1, 1);
+	cs2method_10811(1);
+	cs2method_10238(1);
+	cs2method_10002(75);
+	if (a0 == 1 && (idx22mapAttribute(v1, 3505) == -1 || cs2method_10908(idx22mapAttribute(v1, 3505)) == 1)) {
+		cs2method_10467(1, v2);
+		return;
+	}
+	cs2method_10467(0, v2);
+	if (cs2method_10846(a1, "") == 0) {
+		a1 = idx22mapAttribute(v1, 3493);
+	}
+	object v0 = cs2method_10427(a1, " currently unavailable.");
+	cs2method_10606(v2, 4, 1);
+	cs2method_10013(10, 10, 1, 1);
+	cs2method_10063(5, 5, 0, 0);
+	cs2method_10797(v0);
+	cs2method_11105(1, 0, 10);
+	cs2method_10811(16777215);
+	cs2method_10692(20452);
+	cs2method_10606(v2, 5, 2);
+	cs2method_10013(64, 64, 0, 0);
+	cs2method_10310(18690);
+	script_8392(a2);
+	return;
+}

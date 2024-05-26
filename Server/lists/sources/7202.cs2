@@ -1,0 +1,108 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7202(int a0,int a1,int a2,int a3,int a4) {
+	if (a0 == -1 || (int)cs2_configs['cfg2235'] == -1) {
+		return;
+	}
+	if (a0 != (int)cs2_configs['cfg2235']) {
+		script_7207(a2, a1, a4, cs2method_10744(a4), a3);
+		return;
+	}
+	script_8841(11, 1);
+	cs2_configs['cfg2250'] = "";
+	cs2method_10467(1, a4);
+	cs2method_10467(0, a2);
+	cs2method_20380(new function<script_7211>(int a0,int a1,int a2,int a3,int a4,int a5,int a6) {
+		if (cs2_configs['cfg2873'] != 11) {
+			return;
+		}
+		if (cs2method_10609(a2) == 1) {
+			return;
+		}
+		switch (a4) {
+			case 84:
+				if (cs2method_10265(cs2_configs['cfg2250']) > 0) {
+					if (cs2_configs['cfg2236'] == 7) {
+						cs2_configs['cfg2250'] = (string)script_2332(cs2_configs['cfg2250'], "K", "000");
+						cs2_configs['cfg2250'] = (string)script_2332(cs2_configs['cfg2250'], "k", "000");
+						cs2_configs['cfg2250'] = (string)script_2332(cs2_configs['cfg2250'], "M", "000000");
+						cs2_configs['cfg2250'] = (string)script_2332(cs2_configs['cfg2250'], "m", "000000");
+						if (cs2method_10262() == 1) {
+							cs2_configs['cfg2250'] = (string)script_2332(cs2_configs['cfg2250'], "T", "000");
+							cs2_configs['cfg2250'] = (string)script_2332(cs2_configs['cfg2250'], "t", "000");
+						}
+					}
+					script_7207(a2, a3, a0, cs2_configs['cfg2250'], a5);
+					script_7208(cs2_configs['cfg2250']);
+					return;
+				}
+				if (cs2_configs['cfg2236'] == 7) {
+					script_7206(a1, a2, a3, a0, a5);
+					return;
+				}
+				break;
+			case 13:
+				if (script_9666() == 1) {
+					return;
+				}
+				if (cs2_configs['cfg2236'] == 7) {
+					script_7206(a1, a2, a3, a0, a5);
+				}
+				return;
+			case 102:
+			case 103:
+			case 98:
+			case 99:
+			case 96:
+			case 97:
+				if (cs2method_10862() == 0) {
+					return;
+				}
+				cs2_configs['cfg1029'] = script_1553(a4, cs2_configs['cfg2250'], cs2_configs['cfg1029']);
+				break;
+			default:
+				if (cs2_configs['cfg2236'] == 7) {
+					int v7 = cs2_configs['cfg1029'];
+					int v0 = 6;
+					int v2 = a4;
+					int v5 = a6;
+					int v1 = cs2_configs['cfg2237'];
+					object v6 = cs2_configs['cfg2250'];
+					script_7170_struct(1,1,0) v3 = script_7170(v7, v0, v6, v2, v5, v1);
+					object v4 = v3.objectpart_0;
+					cs2_configs['cfg1029'] = v3.intpart_0;
+					cs2_configs['cfg2250'] = (string)v4;
+				}
+		}
+		cs2method_10026(a2, cs2method_11053(cs2_configs['cfg2250']));
+		script_7213(a2, a3);
+		return;
+	}, -2147483640, false, new WidgetPointer(a0), new WidgetPointer(a2), new WidgetPointer(a1), new WidgetPointer(a4), new WidgetPointer(a3), "izIIIII", new WidgetPointer(a2));
+	cs2method_20390(new function<script_7212>(int a0,int a1,int a2) {
+		script_8841(11, 1);
+		cs2_configs['cfg1029'] = script_1504(a2, cs2_configs['cfg2250'], 4040, a1, -1);
+		script_7213(a1, a0);
+		return;
+	}, -2147483647, new WidgetPointer(a2), new WidgetPointer(a1), "iII", new WidgetPointer(a2));
+	script_7213(a2, a1);
+	cs2method_20638(new function<script_7205>(int a0,int a1,int a2,int a3,int a4) {
+		script_7206(a0, a1, a4, a3, a2);
+		return;
+	}, new WidgetPointer(a0), new WidgetPointer(a2), new WidgetPointer(a1), new WidgetPointer(a4), new WidgetPointer(a3), "IIIII", new WidgetPointer(a2));
+	cs2method_10467(0, a3);
+	cs2method_20390(new function<script_7205>(int a0,int a1,int a2,int a3,int a4) {
+		script_7206(a2, a4, a1, a3, a0);
+		return;
+	}, new WidgetPointer(a0), new WidgetPointer(a2), new WidgetPointer(a1), new WidgetPointer(a4), new WidgetPointer(a3), "IIIII", new WidgetPointer(a3));
+	return;
+}

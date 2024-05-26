@@ -1,0 +1,84 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7253() {
+	int v0;
+	int v2;
+	int v6;
+	int v9 = 0;
+	int v3 = -1;
+	int v5 = -1;
+	int v8 = -1;
+	int v4 = -1;
+	object v7 = "";
+	object v1 = "No crewman";
+	while (v9 < cs2method_10894(677)) {
+		int v10 = cs2method_10640(677, v9);
+		if (cs2method_10245(111, 2173, v10) == 1) {
+			v2 = 15581;
+			v6 = 15579;
+			v0 = 15580;
+		} else {
+			v2 = 15584;
+			v6 = 15582;
+			v0 = 15583;
+		}
+		if (cs2method_11038(60031101, v9) == 1) {
+			if (client_configs['cfg3393'] == v9) {
+				cs2method_10310(v2);
+				cs2method_20674(new function<none>() {
+				}, "");
+				cs2method_20884(new function<none>() {
+				}, "");
+			} else {
+				cs2method_10310(v6);
+				cs2method_20674(new function<script_688>(int a0,int a1,int a2) {
+					if (cs2method_11038(a0, a1) == 1) {
+						cs2method_10310(a2);
+					}
+					return;
+				}, new WidgetPointer(-32768,3), cs2method_11051(), v0, "Iid");
+				cs2method_20884(new function<script_688>(int a0,int a1,int a2) {
+					if (cs2method_11038(a0, a1) == 1) {
+						cs2method_10310(a2);
+					}
+					return;
+				}, new WidgetPointer(-32768,3), cs2method_11051(), v6, "Iid");
+			}
+		}
+		if (cs2method_11038(60031105, v9) == 1) {
+			if (client_configs['cfg3393'] == v9) {
+				cs2method_10310(v2);
+				cs2method_20674(new function<none>() {
+				}, "");
+				cs2method_20884(new function<none>() {
+				}, "");
+			} else {
+				cs2method_10310(v6);
+				cs2method_20674(new function<script_688>(int a0,int a1,int a2) {
+					if (cs2method_11038(a0, a2) == 1) {
+						cs2method_10310(a1);
+					}
+					return;
+				}, new WidgetPointer(-32768,3), cs2method_11051(), v0, "Iid");
+				cs2method_20884(new function<script_688>(int a0,int a1,int a2) {
+					if (cs2method_11038(a2, a1) == 1) {
+						cs2method_10310(a0);
+					}
+					return;
+				}, new WidgetPointer(-32768,3), cs2method_11051(), v6, "Iid");
+			}
+		}
+		v9 = cs2method_10060(v9, 1);
+	}
+	return;
+}

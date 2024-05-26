@@ -1,0 +1,60 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_1479(object a0,int a1) {
+	object v3;
+	object v2 = cs2method_11053(a0);
+	script_8808();
+	cs2_configs['cfg1'] = 0;
+	script_1464();
+	cs2method_10467(1, 49938646);
+	if (cs2method_10265(v2) == 0) {
+		if (cs2method_11038(49938734, 14) == 1) {
+			cs2method_10797("Bank of RuneScape (no search entered)");
+		}
+		cs2method_10467(0, 49938645);
+		script_1455();
+		return 0;
+	}
+	if (cs2method_11038(49938734, 14) == 1 && cs2method_10939(cs2method_10334(), "Bank of RuneScape (search: '" + (string)v2 + "')") < cs2method_10488()) {
+		cs2method_10797("Bank of RuneScape (search: '" + (string)v2 + "')");
+	}
+	cs2method_10467(1, 49938645);
+	int v1 = script_6971();
+	int v0 = 0;
+	int v5 = 0;
+	cs2method_10251(0, 0, 49938647);
+	object v4 = "";
+	while (v0 < v1) {
+		if (cs2method_11038(49938647, v0) == 1) {
+			if (a1 == 1) {
+				v3 = cs2method_10018(cs2method_10640(95, v0));
+			} else {
+				v3 = cs2method_10018(cs2method_10487());
+			}
+			if (cs2method_10368(0, cs2method_10181(v3), cs2method_10181(v2)) != -1) {
+				cs2method_10063(cs2method_10060(cs2method_10051(44, cs2method_10038(v5, 10)), 8), cs2method_10060(cs2method_10051(cs2method_10968(v5, 10), 44), 5), 0, 0);
+				cs2method_10269(0);
+				v5 = cs2method_10060(v5, 1);
+			} else {
+				cs2method_10063(0, 0, 0, 0);
+				cs2method_10269(1);
+			}
+		}
+		v0 = cs2method_10060(v0, 1);
+	}
+	if (v5 == 0) {
+		cs2method_10467(0, 49938646);
+	}
+	script_1458(v5);
+	return v5;
+}

@@ -1,0 +1,24 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+object script_6313(int a0,int a1,object a2) {
+	if (a0 <= 0 || a1 == -1) {
+		return a2;
+	}
+	if (cs2method_10265(a2) > 0) {
+		a2 = cs2method_10427(a2, "<br>");
+	}
+	if (a1 == 1539) {
+		return cs2method_10427(a2, "Nails: " + (string)cs2method_10379(a0));
+	}
+	return cs2method_10427(a2, (string)cs2method_10018(a1) + ": " + (string)cs2method_10379(a0));
+}

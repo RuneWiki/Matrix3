@@ -1,0 +1,408 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5637(int a0,int a1) {
+	script_8841(34, 1);
+	cs2method_20162(new function<script_5800>(int a0,int a1) {
+		if (cs2method_10133() > a0) {
+			cs2method_10467(1, 14352384);
+		}
+		return;
+	}, cs2method_10060(cs2method_10133(), 216), cs2method_10133(), "ii", new WidgetPointer(219,0));
+	cs2method_10467(0, 14352384);
+	cs2method_20243(new function<none>() {
+	}, "", new WidgetPointer(219,29));
+	cs2method_20243(new function<none>() {
+	}, "", new WidgetPointer(219,33));
+	switch (a1) {
+		case 1:
+			cs2method_10467(0, 14352385);
+			if (cs2method_10771() == 0) {
+				cs2method_10467(1, 14352398);
+				cs2method_10467(0, 14352391);
+			}
+			switch (a0) {
+				case 1:
+					cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+					return;
+				case 2:
+					cs2method_10026(14352388, "You've gained " + (string)cs2method_10379(14) + " days of membership.");
+					if (cs2method_10771() == 1) {
+						cs2method_10467(1, 14352389);
+					} else {
+						cs2method_10026(14352389, "You can now log in to members' worlds.");
+					}
+					cs2method_10810("You've gained " + (string)cs2method_10379(14) + " days of membership.");
+					break;
+				case 3:
+					cs2method_10026(14352388, "You've purchased " + (string)cs2method_10379(14) + " days of membership.");
+					cs2method_10026(14352389, "It will be added to your account shortly.");
+					cs2method_10810("Your membership will be added to your account shortly.");
+					break;
+				case 4:
+					cs2method_10467(1, 14352384);
+					script_9554(14352394, "Sorry", 14352399, 14352395, 21218);
+					cs2method_10026(14352388, "We were unable to process your request.");
+					cs2method_10026(14352389, "Please try again later.");
+					cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+					return;
+				case 5:
+					cs2method_10467(1, 14352384);
+					script_9554(14352394, "Sorry", 14352399, 14352395, 21218);
+					cs2method_10026(14352388, "We were unable to process your request.");
+					cs2method_10026(14352389, "Please try again later.");
+					cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+					return;
+			}
+			break;
+		case 3:
+			cs2method_10467(0, 14352386);
+			cs2method_10467(1, 14352398);
+			cs2method_10467(0, 14352415);
+			switch (a0) {
+				case 1:
+					cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+					return;
+				case 2:
+					cs2method_10026(14352412, "You've gained " + (string)cs2method_10379(8) + " keys.");
+					cs2method_10026(14352413, "Current keys: " + (string)cs2method_10379(script_6950()));
+					cs2method_20243(new function<script_6055>() {
+						cs2method_10026(14352413, "Current keys: " + (string)cs2method_10379(script_6950()));
+						return;
+					}, 1800, 1, "Y", new WidgetPointer(219,29));
+					cs2method_10810("You've gained " + (string)cs2method_10379(8) + " keys.");
+					break;
+				case 3:
+					cs2method_10026(14352412, "You've purchased " + (string)cs2method_10379(8) + " keys.");
+					cs2method_10026(14352413, "They will be added to your account shortly.");
+					cs2method_10810("Your keys will be added to your account shortly.");
+					break;
+				case 4:
+					cs2method_10467(1, 14352384);
+					script_9554(14352394, "Sorry", 14352399, 14352395, 21218);
+					cs2method_10026(14352412, "We were unable to process your request.");
+					cs2method_10026(14352413, "Please try again later.");
+					cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+					return;
+				case 5:
+					cs2method_10467(1, 14352384);
+					script_9554(14352394, "Sorry", 14352399, 14352395, 21218);
+					cs2method_10026(14352412, "We were unable to process your request.");
+					cs2method_10026(14352413, "Please try again later.");
+					cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+					return;
+			}
+			break;
+		case 2:
+			cs2method_10467(0, 14352387);
+			cs2method_10467(1, 14352398);
+			cs2method_10467(0, 14352419);
+			switch (a0) {
+				case 1:
+					cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+					return;
+				case 2:
+					cs2method_10026(14352416, "You've gained " + (string)cs2method_10379(160) + " Runecoins.");
+					cs2method_10026(14352417, "Current Runecoins : " + (string)script_8003(cs2_configs['cfg1970']));
+					cs2method_20243(new function<script_6189>() {
+						cs2method_10026(14352417, "Current RuneCoins : " + (string)script_8003(cs2_configs['cfg1970']));
+						return;
+					}, 1970, 1, "Y", new WidgetPointer(219,33));
+					cs2method_10810("You've gained " + (string)cs2method_10379(160) + " Runecoins.");
+					break;
+				case 3:
+					cs2method_10026(14352416, "You've purchased " + (string)cs2method_10379(160) + " Runecoins.");
+					cs2method_10026(14352417, "They will be added to your account shortly.");
+					cs2method_10810("Your Runecoins will be added to your account shortly.");
+					break;
+				case 4:
+					cs2method_10467(1, 14352384);
+					script_9554(14352394, "Sorry", 14352399, 14352395, 21218);
+					cs2method_10026(14352416, "We were unable to process your request.");
+					cs2method_10026(14352417, "Please try again later.");
+					cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+					return;
+				case 5:
+					cs2method_10467(1, 14352384);
+					script_9554(14352394, "Sorry", 14352399, 14352395, 21218);
+					cs2method_10026(14352416, "We were unable to process your request.");
+					cs2method_10026(14352417, "Please try again later.");
+					cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+					return;
+			}
+			break;
+		case 4:
+			cs2method_10467(0, 14352385);
+			if (cs2method_10771() == 0) {
+				cs2method_10467(1, 14352398);
+				cs2method_10467(0, 14352391);
+			}
+			switch (a0) {
+				case 1:
+					cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+					return;
+				case 2:
+					cs2method_10026(14352388, "You've gained Bronze membership status.");
+					if (cs2method_10771() == 1) {
+						cs2method_10467(1, 14352389);
+					} else {
+						cs2method_10026(14352389, "You can now log in to members' worlds.");
+					}
+					cs2method_10810("You've gained Bronze membership status.");
+					break;
+				case 3:
+					cs2method_10026(14352388, "You've purchased Bronze membership status.");
+					cs2method_10026(14352389, "It will be added to your account shortly.");
+					cs2method_10810("Your membership package will be added to your account shortly.");
+					break;
+				case 4:
+					cs2method_10467(1, 14352384);
+					script_9554(14352394, "Sorry", 14352399, 14352395, 21218);
+					cs2method_10026(14352388, "We were unable to process your request.");
+					cs2method_10026(14352389, "Please try again later.");
+					cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+					return;
+				case 5:
+					cs2method_10467(1, 14352384);
+					script_9554(14352394, "Sorry", 14352399, 14352395, 21218);
+					cs2method_10026(14352388, "We were unable to process your request.");
+					cs2method_10026(14352389, "Please try again later.");
+					cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+					return;
+			}
+			break;
+		case 5:
+			cs2method_10467(0, 14352385);
+			if (cs2method_10771() == 0) {
+				cs2method_10467(1, 14352398);
+				cs2method_10467(0, 14352391);
+			}
+			switch (a0) {
+				case 1:
+					cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+					return;
+				case 2:
+					cs2method_10026(14352388, "You've gained Silver membership status.");
+					if (cs2method_10771() == 1) {
+						cs2method_10467(1, 14352389);
+					} else {
+						cs2method_10026(14352389, "You can now log in to Members Worlds.");
+					}
+					cs2method_10810("You've gained Silver membership status.");
+					break;
+				case 3:
+					cs2method_10026(14352388, "You've purchased Silver membership status.");
+					cs2method_10026(14352389, "It will be added to your account shortly.");
+					cs2method_10810("Your Membership package will be added to your account shortly.");
+					break;
+				case 4:
+					cs2method_10467(1, 14352384);
+					script_9554(14352394, "Sorry", 14352399, 14352395, 21218);
+					cs2method_10026(14352388, "We were unable to process your request.");
+					cs2method_10026(14352389, "Please try again later.");
+					cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+					return;
+				case 5:
+					cs2method_10467(1, 14352384);
+					script_9554(14352394, "Sorry", 14352399, 14352395, 21218);
+					cs2method_10026(14352388, "We were unable to process your request.");
+					cs2method_10026(14352389, "Please try again later.");
+					cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+					return;
+			}
+			break;
+		case 6:
+			cs2method_10467(0, 14352385);
+			if (cs2method_10771() == 0) {
+				cs2method_10467(1, 14352398);
+				cs2method_10467(0, 14352391);
+			}
+			switch (a0) {
+				case 1:
+					cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+					return;
+				case 2:
+					cs2method_10026(14352388, "You've gained Gold membership status.");
+					if (cs2method_10771() == 1) {
+						cs2method_10467(1, 14352389);
+					} else {
+						cs2method_10026(14352389, "You can now log in to members' worlds.");
+					}
+					cs2method_10810("You've gained Gold membership status.");
+					break;
+				case 3:
+					cs2method_10026(14352388, "You've purchased Gold membership status.");
+					cs2method_10026(14352389, "It will be added to your account shortly.");
+					cs2method_10810("Your membership package will be added to your account shortly.");
+					break;
+				case 4:
+					cs2method_10467(1, 14352384);
+					script_9554(14352394, "Sorry", 14352399, 14352395, 21218);
+					cs2method_10026(14352388, "We were unable to process your request.");
+					cs2method_10026(14352389, "Please try again later.");
+					cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+					return;
+				case 5:
+					cs2method_10467(1, 14352384);
+					script_9554(14352394, "Sorry", 14352399, 14352395, 21218);
+					cs2method_10026(14352388, "We were unable to process your request.");
+					cs2method_10026(14352389, "Please try again later.");
+					cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+					return;
+			}
+			break;
+		case 7:
+			cs2method_10467(0, 14352385);
+			if (cs2method_10771() == 0) {
+				cs2method_10467(1, 14352398);
+				cs2method_10467(0, 14352391);
+			}
+			switch (a0) {
+				case 1:
+					cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+					return;
+				case 2:
+					cs2method_10026(14352388, "You've gained Summer Special " + "<br>" + "membership status.");
+					if (cs2method_10771() == 1) {
+						cs2method_10467(1, 14352389);
+					} else {
+						cs2method_10026(14352389, "You can now log in to members' worlds.");
+					}
+					cs2method_10810("You've gained Summer Special membership status.");
+					break;
+				case 3:
+					cs2method_10026(14352388, "You've purchased Summer Special " + "<br>" + "membership status.");
+					cs2method_10026(14352389, "It will be added to your account shortly.");
+					cs2method_10810("Your Summer Special membership package will be added to your account shortly.");
+					break;
+				case 4:
+					cs2method_10467(1, 14352384);
+					script_9554(14352394, "Sorry", 14352399, 14352395, 21218);
+					cs2method_10026(14352388, "We were unable to process your request.");
+					cs2method_10026(14352389, "Please try again later.");
+					cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+					return;
+				case 5:
+					cs2method_10467(1, 14352384);
+					script_9554(14352394, "Sorry", 14352399, 14352395, 21218);
+					cs2method_10026(14352388, "We were unable to process your request.");
+					cs2method_10026(14352389, "Please try again later.");
+					cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+					return;
+			}
+			break;
+		case 102:
+		case 100:
+		case 108:
+		case 106:
+		case 104:
+			cs2method_10467(1, 14352398);
+			cs2method_10467(0, 14352396);
+			switch (a0) {
+				case 1:
+					cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+					return;
+				case 2:
+					cs2method_10026(14352473, "You've purchased 16 weeks of rental time for a preset slot.");
+					cs2method_10810("You've purchased 16 weeks of rental time for a preset slot.");
+					break;
+				case 3:
+					cs2method_10026(14352473, "You've purchased 16 weeks of rental time for a preset slot. It will be added to your account shortly.");
+					cs2method_10810("Your 16 weeks of rental time for your preset slot will be added to your account shortly.");
+					break;
+				case 4:
+					cs2method_10467(1, 14352384);
+					script_9554(14352394, "Sorry", 14352399, 14352395, 21218);
+					cs2method_10026(14352473, "We were unable to process your request. Please try again later.");
+					cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+					return;
+				case 5:
+					cs2method_10467(1, 14352384);
+					script_9554(14352394, "Sorry", 14352399, 14352395, 21218);
+					cs2method_10026(14352473, "We were unable to process your request. Please try again later.");
+					cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+					return;
+			}
+			break;
+		case 103:
+		case 101:
+		case 109:
+		case 107:
+		case 105:
+			cs2method_10467(1, 14352398);
+			cs2method_10467(0, 14352396);
+			switch (a0) {
+				case 1:
+					cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+					return;
+				case 2:
+					cs2method_10026(14352473, "You've purchased 32 weeks of rental time for a preset slot.");
+					cs2method_10810("You've purchased 32 weeks of rental time for a preset slot.");
+					break;
+				case 3:
+					cs2method_10026(14352473, "You've purchased 32 weeks of rental time for a preset slot. It will be added to your account shortly.");
+					cs2method_10810("Your 32 weeks of rental time for your preset slot will be added to your account shortly.");
+					break;
+				case 4:
+					cs2method_10467(1, 14352384);
+					script_9554(14352394, "Sorry", 14352399, 14352395, 21218);
+					cs2method_10026(14352473, "We were unable to process your request. Please try again later.");
+					cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+					return;
+				case 5:
+					cs2method_10467(1, 14352384);
+					script_9554(14352394, "Sorry", 14352399, 14352395, 21218);
+					cs2method_10026(14352473, "We were unable to process your request. Please try again later.");
+					cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+					return;
+			}
+			break;
+		case 110:
+		case 111:
+		case 114:
+		case 113:
+		case 112:
+			cs2method_10467(1, 14352398);
+			cs2method_10467(0, 14352397);
+			switch (a0) {
+				case 1:
+					cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+					return;
+				case 2:
+					cs2method_10026(14352485, "You've purchased a permanent unlock for a preset slot.");
+					cs2method_10810("You've purchased a permanent unlock for a preset slot.");
+					break;
+				case 3:
+					cs2method_10026(14352485, "You've purchased a permanent unlock for a preset slot. It will be added to your account shortly.");
+					cs2method_10810("Your permanent unlock for your preset slot will be added to your account shortly.");
+					break;
+				case 4:
+					cs2method_10467(1, 14352384);
+					script_9554(14352394, "Sorry", 14352399, 14352395, 21218);
+					cs2method_10026(14352485, "We were unable to process your request. Please try again later.");
+					cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+					return;
+				case 5:
+					cs2method_10467(1, 14352384);
+					script_9554(14352394, "Sorry", 14352399, 14352395, 21218);
+					cs2method_10026(14352485, "We were unable to process your request. Please try again later.");
+					cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+					return;
+			}
+			break;
+		default:
+			cs2method_10810("Sorry, we were unable to process your request. Please try again later.");
+			cs2method_10569();
+			return;
+	}
+	return;
+}

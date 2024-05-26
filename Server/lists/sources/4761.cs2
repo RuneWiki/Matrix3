@@ -1,0 +1,23 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_4761(int a0) {
+	if (cs2_configs['cfg1'] < cs2method_10060(cs2method_10133(), a0)) {
+		if (cs2_configs['cfg1'] < cs2method_10133()) {
+			cs2_configs['cfg1'] = cs2method_10133();
+		}
+		cs2_configs['cfg1'] = cs2method_10060(cs2_configs['cfg1'], 2);
+		return 0;
+	}
+	cs2_configs['cfg1'] = cs2method_10060(cs2method_10060(cs2method_10133(), a0), 10);
+	return 1;
+}

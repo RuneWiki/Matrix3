@@ -1,0 +1,84 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2642() {
+	int v9 = 0;
+	int v14 = 0;
+	int v12 = 0;
+	int v10 = 0;
+	cs2_configs['cfg842'] = 1;
+	int v1 = -1;
+	script_2645(56360984);
+	cs2method_10273(56360983);
+	cs2method_10026(56360979, "A list of items you can trade with Mal for investment credit." + "<br>" + "Items highlighted with a green rectangle are present in your bank or inventory.");
+	int v8 = cs2method_10968(cs2method_10461(cs2method_10236(56360983), cs2method_10051(36, 10)), 10);
+	int v13 = cs2method_10968(cs2method_10461(cs2method_10823(56360983), 128), 3);
+	int v5 = 3;
+	int v0 = 3;
+	int v6 = 0;
+	while (v10 == 0 && v9 < 900) {
+		int v16 = idx17mapData('i', 'o', 1939, v9);
+		if (v16 != 11760 && v16 != -1) {
+			cs2method_10606(56360983, 5, v9);
+			cs2method_10013(36, 32, 0, 0);
+			cs2method_10063(cs2method_10060(v5, cs2method_10051(cs2method_10060(36, v8), cs2method_10038(v9, 10))), cs2method_10060(v0, cs2method_10051(cs2method_10968(v9, 10), cs2method_10060(32, v13))), 0, 0);
+			cs2method_11070(v16, -1);
+			cs2method_10200("<col=ff981f>" + (string)cs2method_10018(v16));
+			cs2method_10057(1, "Examine");
+			cs2method_10278(3355443);
+			cs2method_10356(1);
+			v6 = cs2method_10406();
+			v9 = cs2method_10060(v9, 1);
+		} else {
+			v10 = 1;
+		}
+	}
+	for (int v7 = 0, int v3 = 9999, int v11 = 0, int v2 = 0; v7 <= cs2method_10894(93); v7 = cs2method_10060(v7, 1)) {
+		if (cs2method_10640(93, v7) != -1) {
+			int v17 = idx17mapData('o', 'i', 1941, cs2method_10640(93, v7));
+			if (v17 != 9999 && v17 < 900 && cs2method_11038(56360983, v17) == 1) {
+				int v17 = cs2method_10878();
+				int v18 = cs2method_10406();
+				cs2method_10356(2);
+				cs2method_10606(56360983, 3, v9);
+				cs2method_10013(36, 32, 0, 0);
+				cs2method_10063(cs2method_10461(v17, 1), cs2method_10461(v18, 1), 0, 0);
+				cs2method_10811(6750054);
+				cs2method_10002(150);
+				v9 = cs2method_10060(v9, 1);
+			}
+		}
+	}
+	int v15 = 0;
+	int v4 = 9999;
+	while (v15 <= cs2method_10894(95)) {
+		if (cs2method_10640(95, v15) != -1) {
+			int v17 = idx17mapData('o', 'i', 1941, cs2method_10640(95, v15));
+			if (v17 != 9999 && v17 < 900 && cs2method_11038(56360983, v17) == 1) {
+				int v17 = cs2method_10878();
+				int v18 = cs2method_10406();
+				cs2method_10356(2);
+				cs2method_10606(56360983, 3, v9);
+				cs2method_10013(36, 32, 0, 0);
+				cs2method_10063(cs2method_10461(v17, 1), cs2method_10461(v18, 1), 0, 0);
+				cs2method_10811(6750054);
+				cs2method_10002(150);
+				v9 = cs2method_10060(v9, 1);
+			}
+		}
+		v15 = cs2method_10060(v15, 1);
+	}
+	cs2method_11130(cs2method_10236(56360983), cs2method_10060(v6, 32), 56360983);
+	cs2method_10251(0, 0, 56360983);
+	script_31(56360982, 56360983, 792, 789, 790, 791, 773, 788);
+	return;
+}

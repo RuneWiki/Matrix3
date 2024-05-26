@@ -1,0 +1,22 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1762(int a0) {
+	if (cs2_configs['cfg231'] > 6) {
+		cs2method_10026(a0, "Time Left : " + (string)cs2method_10379(cs2method_10461(cs2_configs['cfg231'], 5)) + " mins");
+	} else if (cs2_configs['cfg231'] == 6) {
+		cs2method_10026(a0, "Time Left : 1 min");
+	} else {
+		cs2method_10026(a0, "Time Left : 0 mins");
+	}
+	return;
+}

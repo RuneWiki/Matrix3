@@ -1,0 +1,31 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2486() {
+	if (cs2_configs['cfg882'] != -1) {
+		cs2method_10026(42926122, "Players: " + (string)cs2method_10379(cs2_configs['cfg882']));
+	}
+	if (cs2_configs['cfg887'] != -1) {
+		cs2method_10026(42926111, "Players: " + (string)cs2method_10379(cs2_configs['cfg887']));
+	}
+	if (cs2_configs['cfg892'] != -1) {
+		cs2method_10026(42926118, "Players: " + (string)cs2method_10379(cs2_configs['cfg892']));
+	}
+	if (cs2_configs['cfg897'] != -1) {
+		cs2method_10026(42926106, "Players: " + (string)cs2method_10379(cs2_configs['cfg897']));
+	}
+	cs2method_10520(14784543, 42926122);
+	cs2method_10520(14784543, 42926111);
+	cs2method_10520(14784543, 42926118);
+	cs2method_10520(14784543, 42926106);
+	return;
+}

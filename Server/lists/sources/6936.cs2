@@ -1,0 +1,49 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6936() {
+	object v0 = "Absolutely nothing";
+	for (object v2 = v0, int v3 = cs2method_10461(9, 1), int v1 = 1; v3 >= 0; v3 = cs2method_10461(v3, 1)) {
+		if (cs2method_10595(134, v3) > 0) {
+			v1 = 0;
+			v3 = 0;
+		}
+	}
+	if (cs2method_10684(134) < 9) {
+		if (cs2_configs['cfg546'] >= 0) {
+			v0 = (string)cs2method_10055(cs2_configs['cfg546'], 1) + " gp";
+		} else {
+			v0 = "Unknown value";
+		}
+	}
+	if (v1 == 0) {
+		if (cs2_configs['cfg1333'] >= 0) {
+			v2 = (string)cs2method_10055(cs2_configs['cfg1333'], 1) + " gp";
+		} else {
+			v2 = "Unknown value";
+		}
+	}
+	if (cs2_configs['cfg546'] < 0 || cs2_configs['cfg1333'] < 0) {
+		object v4 = "<col=ff0000>" + (string)v0 + "</col>";
+		v2 = "<col=ff0000>" + (string)v2 + "</col>";
+		v0 = v4;
+	} else if (cs2_configs['cfg546'] > cs2_configs['cfg1333']) {
+		v2 = "<col=ff0000>" + (string)v2 + "</col>";
+	} else {
+		if (cs2_configs['cfg546'] < cs2_configs['cfg1333']) {
+			v0 = "<col=ff0000>" + (string)v0 + "</col>";
+		}
+	}
+	cs2method_10026(89587722, v0);
+	cs2method_10026(89587727, v2);
+	return;
+}

@@ -1,0 +1,30 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9661(int a0) {
+	object v0 = "";
+	switch (a0) {
+		case 85721154:
+			v0 = (string)script_9662() + " Slayer XP.";
+			break;
+		case 85721197:
+			v0 = script_9663();
+			break;
+		case 85721218:
+			v0 = script_9664() + " broad bolts.";
+			break;
+		case 85721239:
+			v0 = script_9664() + " broad arrows.";
+	}
+	script_8800(a0, -1, v0);
+	return;
+}

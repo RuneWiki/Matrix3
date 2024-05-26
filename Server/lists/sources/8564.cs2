@@ -1,0 +1,32 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_8564_struct(2,0,0) script_8564(int a0) {
+	switch (a0) {
+		case 18:
+			if (client_configs['cfg3680'].bitcfg22315 == 0) {
+				return new script_8564_struct(8978492, 8978493);
+			}
+			return new script_8564_struct(8978683, 8978684);
+		case 19:
+			return new script_8564_struct(96141396, 96141397);
+		case 20:
+			return new script_8564_struct(96469077, 96469078);
+		case 21:
+			return new script_8564_struct(96403543, 96403544);
+		case 22:
+			return new script_8564_struct(96338111, 96338112);
+		case 23:
+			return new script_8564_struct(30408713, 30408714);
+	}
+	return new script_8564_struct(-1, -1);
+}

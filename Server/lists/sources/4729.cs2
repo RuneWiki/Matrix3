@@ -1,0 +1,82 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_4729_struct(0,8,0) script_4729() {
+	object v4;
+	object v11;
+	object v7;
+	object v10;
+	object v14;
+	object v9;
+	object v2;
+	object v1;
+	object v0 = "";
+	object v6 = "";
+	object v3 = "";
+	object v13 = "";
+	object v12 = "";
+	object v15 = "";
+	object v8 = "";
+	object v5 = "";
+	switch (cs2method_10262()) {
+		default:
+			v14 = "/p";
+			v7 = "/c";
+			v9 = "/f";
+			v1 = "/g";
+			v4 = "\\p";
+			v10 = "\\c";
+			v2 = "\\f";
+			v11 = "\\g";
+			break;
+		case 1:
+			v14 = "/a";
+			v7 = "/c";
+			v9 = "/f";
+			v1 = "/g";
+			v4 = "\\a";
+			v10 = "\\c";
+			v2 = "\\f";
+			v11 = "\\g";
+			break;
+		case 2:
+			v14 = "/p";
+			v7 = "/c";
+			v9 = "/a";
+			v1 = "/i";
+			v4 = "\\p";
+			v10 = "\\c";
+			v2 = "\\a";
+			v11 = "\\i";
+			break;
+		case 3:
+			v14 = "/p";
+			v7 = "/c";
+			v9 = "/f";
+			v1 = "/g";
+			v4 = "\\p";
+			v10 = "\\c";
+			v2 = "\\f";
+			v11 = "\\g";
+			break;
+		case 4:
+			v14 = "/p";
+			v7 = "/c";
+			v9 = "/f";
+			v1 = "/g";
+			v4 = "\\p";
+			v10 = "\\c";
+			v2 = "\\f";
+			v11 = "\\g";
+	}
+	return new script_4729_struct(v14, v4, v7, v10, v9, v2, v1, v11);
+}

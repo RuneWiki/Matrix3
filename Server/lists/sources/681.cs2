@@ -1,0 +1,35 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_681(int a0,int a1,int a2,int a3,int a4,int a5) {
+	cs2method_10273(a1);
+	cs2method_10251(0, 0, a1);
+	cs2method_10273(a5);
+	cs2method_10273(a2);
+	cs2method_10026(a0, "Gravestones");
+	cs2method_10026(a4, "Please make your selection from the list.");
+	cs2method_10026(a3, "");
+	script_682(a1, 0, 0, a2, a3, a0, a4);
+	for (int v3 = 1, int v0 = 0; v0 <= 26; v0 = cs2method_10060(v0, 1)) {
+		if (cs2method_10441(client_configs['cfg662'].bitcfg1670, v0) == 1) {
+			script_682(a1, cs2method_10060(v0, 1), v3, a2, a3, a0, a4);
+			v3 = cs2method_10060(v3, 1);
+		}
+	}
+	int v2 = cs2method_10968(cs2method_10461(cs2method_10236(a1), 164), 2);
+	int v1 = cs2method_10060(v2, cs2method_10051(cs2method_10060(146, v2), v3));
+	if (v1 > cs2method_10823(a1)) {
+		cs2method_11130(0, v1, a1);
+		script_31(a5, a1, 792, 789, 790, 791, 773, 788);
+	}
+	return;
+}

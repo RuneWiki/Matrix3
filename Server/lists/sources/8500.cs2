@@ -1,0 +1,43 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8500(int a0) {
+	cs2method_20660(new function<script_8501>() {
+		int v1 = cs2method_10038(cs2method_10968(cs2method_11134(), 50), 60);
+		int v0 = cs2method_10968(cs2method_11134(), 3000);
+		if (v1 < 10) {
+			cs2method_10026(96797405, "System update in:" + "<br>" + (string)cs2method_10379(v0) + ":0" + (string)cs2method_10379(v1));
+		} else {
+			cs2method_10026(96797405, "System update in:" + "<br>" + (string)cs2method_10379(v0) + ":" + (string)cs2method_10379(v1));
+		}
+		if (cs2method_11134() > 0) {
+			cs2method_10467(0, 96797402);
+		} else {
+			cs2method_10467(1, 96797402);
+		}
+		return;
+	}, "", new WidgetPointer(a0));
+	cs2method_20348(new function<script_1984>() {
+		script_1985(client_configs['cfg1775'].bitcfg21712);
+		return;
+	}, 1775, 1, "Y", new WidgetPointer(a0));
+	cs2method_20240(new function<script_9728>() {
+		cs2_configs['cfg2835'] = script_1960();
+		return;
+	}, "", new WidgetPointer(a0));
+	cs2method_20348(new function<script_1984>() {
+		script_1985(client_configs['cfg1775'].bitcfg21712);
+		return;
+	}, 1775, 1, "Y", new WidgetPointer(a0));
+	cs2method_10841(0, cs2method_10149(), cs2method_10610());
+	return;
+}

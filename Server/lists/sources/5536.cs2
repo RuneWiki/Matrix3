@@ -1,0 +1,60 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5536(int a0,int a1) {
+	cs2_configs['cfg1725'] = a1;
+	cs2_configs['cfg1724'] = a0;
+	cs2_configs['cfg1808'] = a0;
+	if (a1 >= 1 && a1 <= 4) {
+		script_6071(0);
+	} else {
+		if (a1 >= 11 && a1 <= 12) {
+			script_6071(1);
+		}
+	}
+	switch (a1) {
+		case 1:
+			cs2method_10758(10422, 77201457);
+			cs2method_10026(77201485, "Tool Belt - General");
+			cs2method_10467(0, 77201487);
+			break;
+		case 2:
+			cs2method_10758(10423, 77201458);
+			cs2method_10026(77201485, "Tool Belt - Fishing");
+			cs2method_10467(0, 77201487);
+			break;
+		case 3:
+			cs2method_10758(10424, 77201459);
+			cs2method_10026(77201485, "Tool Belt - Crafting");
+			cs2method_10467(0, 77201487);
+			break;
+		case 4:
+			cs2method_10758(10425, 77201460);
+			cs2method_10026(77201485, "Tool Belt - Farming");
+			cs2method_10467(0, 77201487);
+			break;
+		case 11:
+			cs2method_10758(10426, 77201461);
+			cs2method_10026(77201485, "Dungeoneering - Tools");
+			cs2method_10467(0, 77201487);
+			break;
+		case 12:
+			cs2method_10758(10427, 77201462);
+			cs2method_10026(77201485, "Dungeoneering - Keys");
+			cs2method_10467(1, 77201487);
+	}
+	script_6069();
+	script_5537();
+	script_5539();
+	script_5544();
+	return;
+}

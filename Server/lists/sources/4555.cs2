@@ -1,0 +1,57 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4555(int a0,int a1) {
+	if (cs2method_10588() <= 0 || cs2method_10870() == 1 || script_5280() == 1) {
+		return;
+	}
+	switch (a1) {
+		case 84:
+			if (cs2method_10588() > 0) {
+				if (cs2method_10265(cs2_configs['cfg2480']) > 0) {
+					cs2method_10190(1);
+					cs2method_10539(cs2_configs['cfg2480']);
+				}
+			} else {
+				cs2method_11102(11, 0, "You are not in a Friends Chat Channel.");
+			}
+			cs2_configs['cfg2480'] = "";
+			cs2method_10026(38600731, cs2method_11053(cs2_configs['cfg2480']));
+			cs2_configs['cfg1507'] = cs2method_10265(cs2_configs['cfg2480']);
+			script_4571(38600731, 38600732, cs2_configs['cfg2480']);
+			break;
+		case 102:
+		case 103:
+		case 98:
+		case 99:
+		case 96:
+		case 97:
+			cs2_configs['cfg1507'] = script_1553(a1, cs2_configs['cfg2480'], cs2_configs['cfg1507']);
+			script_4571(38600731, 38600732, cs2_configs['cfg2480']);
+			break;
+		default:
+			if (cs2method_10698(a0) == 1 || a1 == 85 || a1 == 101) {
+				int v5 = cs2_configs['cfg1507'];
+				int v3 = 0;
+				int v4 = a1;
+				int v0 = a0;
+				object v6 = cs2_configs['cfg2480'];
+				script_802_struct(1,1,0) v1 = script_802(v5, v6, v3, v4, v0);
+				object v2 = v1.objectpart_0;
+				cs2_configs['cfg1507'] = v1.intpart_0;
+				cs2_configs['cfg2480'] = (string)v2;
+				cs2method_10026(38600731, cs2method_11053(cs2_configs['cfg2480']));
+				script_4571(38600731, 38600732, cs2_configs['cfg2480']);
+			}
+	}
+	return;
+}

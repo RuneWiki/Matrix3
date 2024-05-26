@@ -1,0 +1,54 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4597() {
+	int v3 = 1114143;
+	object v0 = "What if I entered the Wilderness?";
+	object v9 = "Back";
+	int v4 = 12;
+	int v7 = 36;
+	int v1 = 0;
+	int v5 = cs2method_10236(1114121);
+	int v2 = 0;
+	if (client_configs['cfg663'].bitcfg1675 >= 2) {
+		cs2method_10467(1, 1114123);
+		cs2method_10283(0, 0, 1, 1, 1114119);
+	} else if (client_configs['cfg663'].bitcfg1675 == 1) {
+		cs2method_10026(1114143, v9);
+	} else {
+		cs2method_10026(1114143, v0);
+	}
+	cs2method_10467(0, 1114123);
+	cs2method_10283(0, v7, 1, 1, 1114119);
+	cs2method_10273(1114121);
+	int v6 = cs2method_10805(v5, 20452, cs2_configs['cfg2369']);
+	int v8 = cs2method_10051(v6, v4);
+	cs2method_10606(1114121, 4, 0);
+	cs2method_10013(0, v8, 1, 0);
+	cs2method_10063(0, 0, 1, 0);
+	cs2method_10692(20452);
+	cs2method_11105(1, 0, 0);
+	cs2method_10811(7705248);
+	cs2method_10797(cs2_configs['cfg2369']);
+	if (v8 > cs2method_10823(1114121)) {
+		cs2method_10283(24, 8, 1, 1, 1114121);
+		cs2method_11130(0, v8, 1114121);
+		script_7791(1114122, 1114121);
+		cs2method_10467(0, 1114122);
+	} else {
+		cs2method_10283(8, 8, 1, 1, 1114121);
+		cs2method_11130(0, 0, 1114121);
+		cs2method_10467(1, 1114122);
+		cs2method_10251(0, 0, 1114121);
+	}
+	return;
+}

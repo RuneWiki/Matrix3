@@ -1,0 +1,55 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_3269_struct(4,0,0) script_3269(int a0,int a1,int a2,int a3) {
+	if (a0 == 0) {
+		a1 = 48;
+		a2 = 48;
+	}
+	int v1 = a3;
+	if (cs2_configs['cfg1198'] == 1) {
+		int v2 = cs2method_10060(v1, 2);
+		if (a0 == 1) {
+			v1 = cs2method_10060(v2, a2);
+		} else {
+			v1 = cs2method_10060(v2, a1);
+		}
+	}
+	int v5 = v1;
+	if (cs2_configs['cfg1199'] == 1) {
+		int v7 = cs2method_10060(v5, 2);
+		if (a0 == 2) {
+			v5 = cs2method_10060(v7, a2);
+		} else {
+			v5 = cs2method_10060(v7, a1);
+		}
+	}
+	int v0 = v5;
+	if (cs2_configs['cfg1200'] == 1) {
+		int v4 = cs2method_10060(v0, 2);
+		if (a0 == 3) {
+			v0 = cs2method_10060(v4, a2);
+		} else {
+			v0 = cs2method_10060(v4, a1);
+		}
+	}
+	int v3 = v0;
+	if (cs2_configs['cfg1201'] == 1) {
+		int v6 = cs2method_10060(v3, 2);
+		if (a0 == 4) {
+			v3 = cs2method_10060(v6, a2);
+		} else {
+			v3 = cs2method_10060(v6, a1);
+		}
+	}
+	return new script_3269_struct(v1, v5, v0, v3);
+}

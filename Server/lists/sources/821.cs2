@@ -1,0 +1,22 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+object script_821() {
+	object v1 = "";
+	object v3 = script_822(client_configs['cfg2986'].bitcfg15079, v1, 1);
+	object v5 = script_822(client_configs['cfg2986'].bitcfg15080, v3, 0);
+	object v0 = script_822(client_configs['cfg2986'].bitcfg15081, v5, 0);
+	object v6 = script_822(client_configs['cfg2986'].bitcfg15082, v0, 0);
+	object v4 = script_822(client_configs['cfg2986'].bitcfg15083, v6, 0);
+	object v2 = script_822(client_configs['cfg2986'].bitcfg15084, v4, 0);
+	return v2;
+}

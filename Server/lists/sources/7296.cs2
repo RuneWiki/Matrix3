@@ -1,0 +1,132 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+object script_7296(int a0,int a1) {
+	object v8;
+	object v10;
+	object v14;
+	object v2;
+	object v22;
+	object v4;
+	object v5;
+	object v3;
+	int v6 = idx22mapAttribute(a0, 664);
+	int v16 = idx22mapAttribute(a0, 697);
+	object v12 = "";
+	int v1 = idx22mapAttribute(a0, 665);
+	int v0 = idx22mapAttribute(a0, 698);
+	object v13 = "";
+	int v19 = idx22mapAttribute(a0, 684);
+	int v24 = idx22mapAttribute(a0, 699);
+	object v23 = "";
+	int v7 = idx22mapAttribute(a0, 688);
+	int v20 = idx22mapAttribute(a0, 700);
+	object v18 = "";
+	object v9 = cs2method_10379(v6);
+	if (v6 > cs2_configs['cfg2612']) {
+		v8 = cs2method_10427("<col=0x00ff00>", v9);
+	} else if (v6 < cs2_configs['cfg2612']) {
+		v8 = cs2method_10427("<col=0xff0000>", v9);
+	} else {
+		v8 = cs2method_10427("<col=0xf7edb7>", v9);
+	}
+	if (v16 != 0 || cs2_configs['cfg2613'] != 0) {
+		if (v16 > cs2_configs['cfg2613']) {
+			v22 = cs2method_10427(v8, "<col=^pop_ship_part_better>");
+		} else if (v16 < cs2_configs['cfg2613']) {
+			v22 = cs2method_10427(v8, "<col=^pop_ship_part_worse>");
+		} else {
+			v22 = cs2method_10427(v8, "<col=^pop_ship_part_same>");
+		}
+		if (v16 > 0) {
+			v8 = cs2method_10427(v22, " (+" + (string)cs2method_10379(v16) + "% boost)" + "</col>");
+		} else if (v16 < 0) {
+			v8 = cs2method_10427(v22, " (-" + (string)cs2method_10379(v16) + "% boost)" + "</col>");
+		} else {
+			v8 = cs2method_10427(v22, " (+0% boost)" + "</col>");
+		}
+	}
+	object v17 = cs2method_10379(v1);
+	if (v6 > cs2_configs['cfg2616']) {
+		v4 = cs2method_10427("<col=^pop_ship_part_better>", v17);
+	} else if (v1 < cs2_configs['cfg2616']) {
+		v4 = cs2method_10427("<col=^pop_ship_part_worse>", v17);
+	} else {
+		v4 = cs2method_10427("<col=^pop_ship_part_same>", v17);
+	}
+	if (v0 != 0 || cs2_configs['cfg2617'] != 0) {
+		if (v0 > cs2_configs['cfg2617']) {
+			v5 = cs2method_10427(v4, "<col=^pop_ship_part_better>");
+		} else if (v0 < cs2_configs['cfg2617']) {
+			v5 = cs2method_10427(v4, "<col=^pop_ship_part_worse>");
+		} else {
+			v5 = cs2method_10427(v4, "<col=^pop_ship_part_same>");
+		}
+		if (v0 > 0) {
+			v4 = cs2method_10427(v5, " (+" + (string)cs2method_10379(v0) + "% boost)" + "</col>");
+		} else if (v0 < 0) {
+			v4 = cs2method_10427(v5, " (-" + (string)cs2method_10379(v0) + "% boost)" + "</col>");
+		} else {
+			v4 = cs2method_10427(v5, " (+0% boost)" + "</col>");
+		}
+	}
+	object v21 = cs2method_10379(v19);
+	if (v19 > cs2_configs['cfg2614']) {
+		v2 = cs2method_10427("<col=^pop_ship_part_better>", v21);
+	} else if (v19 < cs2_configs['cfg2614']) {
+		v2 = cs2method_10427("<col=^pop_ship_part_worse>", v21);
+	} else {
+		v2 = cs2method_10427("<col=^pop_ship_part_same>", v21);
+	}
+	if (v24 != 0 || cs2_configs['cfg2615'] != 0) {
+		if (v24 > cs2_configs['cfg2615']) {
+			v3 = cs2method_10427(v2, "<col=^pop_ship_part_better>");
+		} else if (v24 < cs2_configs['cfg2615']) {
+			v3 = cs2method_10427(v2, "<col=^pop_ship_part_worse>");
+		} else {
+			v3 = cs2method_10427(v2, "<col=^pop_ship_part_same>");
+		}
+		if (v24 > 0) {
+			v2 = cs2method_10427(v3, " (+" + (string)cs2method_10379(v24) + "% boost)" + "</col>");
+		} else if (v24 < 0) {
+			v2 = cs2method_10427(v3, " (-" + (string)cs2method_10379(v24) + "% boost)" + "</col>");
+		} else {
+			v2 = cs2method_10427(v3, " (+0% boost)" + "</col>");
+		}
+	}
+	object v15 = cs2method_10379(v7);
+	if (v7 > cs2_configs['cfg2618']) {
+		v14 = cs2method_10427("<col=^pop_ship_part_better>", v15);
+	} else if (v7 < cs2_configs['cfg2618']) {
+		v14 = cs2method_10427("<col=^pop_ship_part_worse>", v15);
+	} else {
+		v14 = cs2method_10427("<col=^pop_ship_part_same>", v15);
+	}
+	if (v20 != 0 || cs2_configs['cfg2619'] != 0) {
+		if (v20 > cs2_configs['cfg2619']) {
+			v10 = cs2method_10427(v14, "<col=^pop_ship_part_better>");
+		} else if (v20 < cs2_configs['cfg2619']) {
+			v10 = cs2method_10427(v14, "<col=^pop_ship_part_worse>");
+		} else {
+			v10 = cs2method_10427(v14, "<col=^pop_ship_part_same>");
+		}
+		if (v20 > 0) {
+			v14 = cs2method_10427(v10, " (+" + (string)cs2method_10379(v20) + "% boost)" + "</col>");
+		} else if (v20 < 0) {
+			v14 = cs2method_10427(v10, " (-" + (string)cs2method_10379(v20) + "% boost)" + "</col>");
+		} else {
+			v14 = cs2method_10427(v10, " (+0% boost)" + "</col>");
+		}
+	}
+	object v11 = "Morale : " + (string)v4 + "<br>" + "Combat: " + (string)v2 + "<br>" + "Seafaring: " + (string)v14 + "<br>" + "Speed: " + (string)v8;
+	return v11;
+}

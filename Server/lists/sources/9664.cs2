@@ -1,0 +1,28 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+string script_9664() {
+	int v0 = cs2method_10338(18);
+	if (v0 < 5) {
+		return "50";
+	}
+	if (v0 < 15) {
+		return "100";
+	}
+	if (v0 < 25) {
+		return "150";
+	}
+	if (v0 < 35) {
+		return "200";
+	}
+	return "250";
+}

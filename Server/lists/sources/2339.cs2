@@ -1,0 +1,77 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2339() {
+	cs2_configs['cfg770'] = 0;
+	int v0 = cs2method_10461(cs2method_10635(cs2method_10472()), cs2method_10038(cs2method_10635(cs2method_10472()), 64));
+	int v3 = cs2method_10461(cs2method_10339(cs2method_10472()), cs2method_10038(cs2method_10339(cs2method_10472()), 64));
+	int v1 = 574;
+	int v4 = 942;
+	int v2 = cs2method_10327(0, v0, 0, v3);
+	cs2method_11031(0, 14);
+	cs2method_11031(1, 14);
+	cs2method_10971(0, 0, cs2method_10327(v2, 20, 0, 30), v4, cs2method_10327(v2, 27, 0, 26), v4, 0);
+	cs2method_10971(1, 0, cs2method_10327(v2, 25, 0, 36), v1, cs2method_10327(v2, 31, 0, 33), v1, 0);
+	cs2method_10971(0, 1, cs2method_10327(v2, 41, 0, 36), v4, cs2method_10327(v2, 41, 0, 39), v4, 0);
+	cs2method_10971(1, 1, cs2method_10327(v2, 38, 0, 42), v1, cs2method_10327(v2, 38, 0, 46), v1, 0);
+	cs2method_10971(0, 2, cs2method_10327(v2, 35, 0, 49), v4, cs2method_10327(v2, 37, 0, 51), v4, 0);
+	cs2method_10971(1, 2, cs2method_10327(v2, 38, 0, 57), v1, cs2method_10327(v2, 40, 0, 57), v1, 0);
+	cs2method_10971(0, 3, cs2method_10327(v2, 35, 0, 40), v4, cs2method_10327(v2, 31, 0, 37), v4, 0);
+	cs2method_10971(1, 3, cs2method_10327(v2, 38, 0, 54), v1, cs2method_10327(v2, 37, 0, 54), v1, 0);
+	cs2method_10971(0, 4, cs2method_10327(v2, 24, 0, 41), v4, cs2method_10327(v2, 24, 0, 38), v4, 0);
+	cs2method_10971(1, 4, cs2method_10327(v2, 12, 0, 43), v1, cs2method_10327(v2, 7, 0, 41), v1, 0);
+	cs2method_10971(0, 5, cs2method_10327(v2, 30, 0, 43), v4, cs2method_10327(v2, 31, 0, 43), v4, 0);
+	cs2method_10971(1, 5, cs2method_10327(v2, 8, 0, 41), v1, cs2method_10327(v2, 0, 0, 39), v1, 0);
+	cs2method_10971(0, 6, cs2method_10327(v2, 35, 0, 43), v4, cs2method_10327(v2, 37, 0, 43), v4, 0);
+	cs2method_10971(1, 6, cs2method_10327(v2, 36, 0, 27), v1, cs2method_10327(v2, 27, 0, 28), v1, 0);
+	cs2method_10971(0, 7, cs2method_10327(v2, 35, 0, 45), v4, cs2method_10327(v2, 31, 0, 44), v4, 0);
+	cs2method_10971(1, 7, cs2method_10327(v2, 36, 0, 30), v1, cs2method_10327(v2, 35, 0, 31), v1, 0);
+	cs2method_10971(0, 8, cs2method_10327(v2, 41, 0, 40), v4, cs2method_10327(v2, 42, 0, 40), v4, 0);
+	cs2method_10971(1, 8, cs2method_10327(v2, 54, 0, 39), v1, cs2method_10327(v2, 56, 0, 39), v1, 0);
+	cs2method_10971(0, 9, cs2method_10327(v2, 44, 0, 42), v4, cs2method_10327(v2, 44, 0, 45), v4, 0);
+	cs2method_10971(1, 9, cs2method_10327(v2, 54, 0, 40), v1, cs2method_10327(v2, 53, 0, 39), v1, 0);
+	cs2method_10971(0, 10, cs2method_10327(v2, 30, 0, 51), v4, cs2method_10327(v2, 20, 0, 50), v4, 0);
+	cs2method_10971(1, 10, cs2method_10327(v2, 32, 0, 40), v1, cs2method_10327(v2, 26, 0, 42), v1, 0);
+	cs2method_10971(0, 11, cs2method_10327(v2, 22, 0, 39), v4, cs2method_10327(v2, 22, 0, 36), v4, 0);
+	cs2method_10971(1, 11, cs2method_10327(v2, 33, 0, 41), v1, cs2method_10327(v2, 34, 0, 41), v1, 0);
+	cs2method_10971(0, 12, cs2method_10327(v2, 32, 0, 29), v4, cs2method_10327(v2, 42, 0, 27), v4, 0);
+	cs2method_10971(1, 12, cs2method_10327(v2, 32, 0, 42), v1, cs2method_10327(v2, 32, 0, 43), v1, 0);
+	cs2method_10971(0, 13, cs2method_10327(v2, 47, 0, 40), 778, cs2method_10327(v2, 47, 0, 46), 778, 0);
+	cs2method_10971(1, 13, cs2method_10327(v2, 31, 0, 41), v1, cs2method_10327(v2, 28, 0, 41), v1, 0);
+	cs2method_20196(new function<script_2344>() {
+		if (cs2_configs['cfg770'] < cs2method_10723(0)) {
+			cs2_configs['cfg770'] = cs2method_10060(cs2_configs['cfg770'], 1);
+			switch (cs2_configs['cfg770']) {
+				default:
+					cs2method_20196(new function<none>() {
+					}, "", new WidgetPointer(558,0));
+					cs2method_10382(0, cs2_configs['cfg770'], 900, 500, 1, cs2_configs['cfg770']);
+					break;
+				case 9:
+				case 10:
+				case 11:
+					cs2method_20196(load function<2344>, "", new WidgetPointer(558,0));
+					cs2method_10382(0, cs2_configs['cfg770'], 900, 900, 1, cs2_configs['cfg770']);
+					break;
+				case 12:
+					cs2method_20196(new function<none>() {
+					}, "", new WidgetPointer(558,0));
+					cs2method_10382(0, cs2_configs['cfg770'], 900, 100, 1, cs2_configs['cfg770']);
+			}
+		} else {
+			cs2_configs['cfg770'] = 0;
+		}
+		return;
+	}, "", new WidgetPointer(558,0));
+	cs2method_10382(0, cs2_configs['cfg770'], 500, 900, 1, cs2_configs['cfg770']);
+	return;
+}

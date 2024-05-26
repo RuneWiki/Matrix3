@@ -1,0 +1,30 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_2785(int a0) {
+	switch (a0) {
+		case 34:
+		case 32:
+		case 33:
+			if (client_configs['cfg1295'] < 93) {
+				return 32;
+			}
+			if (client_configs['cfg1295'] < 120) {
+				return 33;
+			}
+			return 34;
+		case 44:
+			cs2_configs['cfg622'] = cs2method_10327(29366464, 24, 0, 8);
+			return 0;
+	}
+	return a0;
+}

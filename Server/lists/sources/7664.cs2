@@ -1,0 +1,154 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7664(int a0,int a1,int a2,int a3) {
+	int v0 = 0;
+	int v4 = 0;
+	int v2 = 0;
+	object v3 = "";
+	if (script_2709() == 0) {
+		cs2method_10810("Chat is not available until your date of birth is recorded. Please enter your DOB above.");
+		return;
+	}
+	switch (a0) {
+		case 84:
+			script_7666(cs2_configs['cfg2753'], a1);
+			script_7665(cs2_configs['cfg2753']);
+			return;
+		case 13:
+			if (script_9666() == 1) {
+				return;
+			}
+			if (cs2method_10609(92078109) == 0) {
+				script_2881();
+				return;
+			}
+			script_675();
+			script_7660();
+			return;
+		case 102:
+		case 103:
+		case 98:
+		case 99:
+		case 96:
+		case 97:
+			if (cs2method_10862() == 0 && a0 != 102 && a0 != 103) {
+				return;
+			}
+			if (cs2_configs['cfg2753'] == 1) {
+				cs2_configs['cfg2749'] = script_7673(cs2_configs['cfg2758'], a0, cs2_configs['cfg2749'], a1);
+				script_7671(cs2_configs['cfg2758'], 92078088, 92078115);
+				return;
+			}
+			if (cs2_configs['cfg2753'] == 2) {
+				cs2_configs['cfg2750'] = script_7673(cs2_configs['cfg2759'], a0, cs2_configs['cfg2750'], a1);
+				script_7671(cs2_configs['cfg2759'], 92078145, 92078146);
+				return;
+			}
+			break;
+		case 80:
+			if (cs2_configs['cfg2753'] == 1) {
+				cs2_configs['cfg2755'] = cs2_configs['cfg2749'];
+				script_7670(0, 0, 92078145, 92078146);
+				cs2_configs['cfg2750'] = cs2_configs['cfg2756'];
+				script_7671(cs2_configs['cfg2759'], 92078145, 92078146);
+			} else {
+				if (cs2_configs['cfg2753'] == 2) {
+					cs2_configs['cfg2756'] = cs2_configs['cfg2750'];
+					script_7670(0, 0, 92078088, 92078115);
+					cs2_configs['cfg2749'] = cs2_configs['cfg2755'];
+					script_7671(cs2_configs['cfg2758'], 92078088, 92078115);
+				}
+			}
+			break;
+		default:
+			object v1 = "";
+			object v5 = cs2method_10410(a2, v1);
+			if (cs2method_10698(a2) == 1 || a0 == 85 || a0 == 101) {
+				if (a2 == 60) {
+					return;
+				}
+				if (cs2_configs['cfg2753'] == 1) {
+					if (a0 != 85 && a0 != 101 && cs2method_10265(cs2method_10765(cs2_configs['cfg2758'])) >= 500) {
+						script_7667(92078087);
+						return;
+					}
+					int v7 = cs2method_10265(cs2_configs['cfg2758']);
+					int v10 = a1;
+					opc_struct10385(2,0,0) v14 = cs2method_10385(v7, v10);
+					int v13 = v14.intpart_1;
+					int v12 = v14.intpart_0;
+					if (v13 >= cs2method_10823(a1) && a0 != 85 && a0 != 101) {
+						return;
+					}
+					int v6 = cs2_configs['cfg2749'];
+					int v15 = a3;
+					int v9 = a0;
+					int v16 = a2;
+					object v8 = cs2_configs['cfg2758'];
+					script_802_struct(1,1,0) v11 = script_802(v6, v8, v15, v9, v16);
+					object v17 = v11.objectpart_0;
+					cs2_configs['cfg2749'] = v11.intpart_0;
+					cs2_configs['cfg2758'] = (string)v17;
+					cs2method_10026(a1, cs2_configs['cfg2758']);
+					if (cs2method_10846(cs2method_10744(a1), "Fox Mulder") == 0) {
+						cs2method_10026(a1, "Keep searching for the Truth.");
+					}
+					if (cs2method_10846(cs2method_10744(a1), "Zodalia") == 0) {
+						cs2method_10026(a1, "By the axe of the emperor!");
+					} else if (cs2method_10846(cs2method_10744(a1), "3.1415926535897932384626433832795028841971") == 0) {
+						cs2method_10026(a1, "I'm hungry gimme that pie!");
+					} else if (cs2method_10846(cs2method_10744(a1), "Fr33 st00f pl0x!") == 0) {
+						cs2method_10026(a1, "Have you tried picking up ashes?");
+					} else {
+						if (cs2method_10846(cs2method_10744(a1), "OMG bugs!") == 0) {
+							cs2_configs['cfg2752'] = 5000;
+						}
+					}
+					script_7671(cs2_configs['cfg2758'], 92078088, 92078115);
+				} else {
+					if (cs2_configs['cfg2753'] == 2) {
+						if (a0 != 85 && a0 != 101 && cs2method_10265(cs2method_10765(cs2_configs['cfg2759'])) >= 500) {
+							script_7667(92078107);
+							return;
+						}
+						int v11 = cs2method_10265(cs2_configs['cfg2759']);
+						int v14 = a1;
+						opc_struct10385(2,0,0) v17 = cs2method_10385(v11, v14);
+						int v10 = v17.intpart_1;
+						int v16 = v17.intpart_0;
+						if (v10 >= cs2method_10823(a1) && a0 != 85 && a0 != 101) {
+							return;
+						}
+						int v7 = cs2_configs['cfg2750'];
+						int v12 = a3;
+						int v9 = a0;
+						int v15 = a2;
+						object v8 = cs2_configs['cfg2759'];
+						script_802_struct(1,1,0) v13 = script_802(v7, v8, v12, v9, v15);
+						object v6 = v13.objectpart_0;
+						cs2_configs['cfg2750'] = v13.intpart_0;
+						cs2_configs['cfg2759'] = (string)v6;
+						cs2method_10026(a1, cs2_configs['cfg2759']);
+						script_7671(cs2_configs['cfg2759'], 92078145, 92078146);
+					}
+				}
+			}
+			script_7665(cs2_configs['cfg2753']);
+			script_1733(92078087);
+			script_1733(92078107);
+			cs2method_10026(92078087, cs2method_10379(cs2method_10461(500, cs2method_10265(cs2method_10765(cs2_configs['cfg2758'])))));
+			cs2method_10026(92078107, cs2method_10379(cs2method_10461(500, cs2method_10265(cs2method_10765(cs2_configs['cfg2759'])))));
+			return;
+	}
+	return;
+}

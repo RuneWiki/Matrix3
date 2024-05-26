@@ -1,0 +1,61 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_9860(int a0,int a1,object a2,int a3) {
+	int v0;
+	int v2;
+	flow_0:
+		int v3 = 0;
+		int v19 = 0;
+		int v5 = a3;
+		object v1 = a2;
+		script_7775_struct(2,0,0) v4 = script_7775(v1, v5);
+		int v15 = v4.intpart_1;
+		int v14 = v4.intpart_0;
+		int v13 = 0;
+		int v9 = 0;
+		if (a1 == -1) {
+			v2 = script_8407(a0);
+			v0 = script_8408(a0);
+		} else {
+			int v17 = a0;
+			int v18 = a1;
+			script_8406_struct(2,0,0) v11 = script_8406(v17, v18);
+			v0 = v11.intpart_1;
+			v2 = v11.intpart_0;
+		}
+		IF (a1 == -1) 
+			GOTO	flow_4
+		GOTO	flow_5
+	flow_4:
+		IF (cs2method_10324(a0) == 1) 
+			GOTO	flow_6
+	flow_5:
+		IF (cs2method_11038(a0, a1) == 1) 
+			GOTO	flow_6
+		GOTO	flow_7
+	flow_6:
+		v2 = cs2method_10060(cs2method_10461(v2, cs2method_10968(v14, 2)), cs2method_10968(cs2method_10488(), 2));
+		v0 = cs2method_10461(v0, v15);
+	flow_7:
+		int v8 = cs2method_10236(96796678);
+		int v7 = cs2method_10823(96796678);
+		int v16 = cs2method_11048(v2, 0);
+		int v10 = cs2method_11048(v0, 0);
+		int v6 = cs2method_10872(v16, cs2method_10461(v8, v14));
+		int v12 = cs2method_10872(v10, cs2method_10461(v7, v15));
+		if (cs2method_10324(96797087) == 1) {
+			cs2method_10112(v6, v12, 0, 0, 96797087);
+		}
+		return;
+}

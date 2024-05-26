@@ -1,0 +1,41 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2116(int a0,int a1,int a2,int a3,int a4) {
+	cs2method_10273(a1);
+	cs2method_10273(a0);
+	cs2method_10026(a3, "");
+	for (int v1 = 0, int v2 = 0, int v0 = cs2method_10968(cs2method_10461(cs2method_10236(a1), 320), 3); v1 < cs2method_10894(307); v1 = cs2method_10060(v1, 1)) {
+		if (cs2method_11065(307, v1) > 0) {
+			script_2117(v1, v2, v0, a1, a0, a3);
+			v2 = cs2method_10060(v2, 1);
+		} else {
+			script_2118(v1, a1);
+		}
+	}
+	int v3 = cs2method_10060(v0, cs2method_10051(cs2method_10968(cs2method_10060(v2, 1), 2), cs2method_10060(v0, 64)));
+	cs2method_10251(0, 0, a1);
+	if (v3 > cs2method_10823(a1)) {
+		cs2method_11130(0, v3, a1);
+		script_31(a2, a1, 792, 789, 790, 791, 773, 788);
+		cs2method_10112(392, cs2method_10152(a3), 0, 0, a3);
+		cs2method_10112(392, cs2method_10152(a0), 0, 0, a0);
+		cs2method_10467(0, a4);
+	} else {
+		cs2method_11130(0, 0, a1);
+		cs2method_10273(a2);
+		cs2method_10112(384, cs2method_10152(a0), 0, 0, a0);
+		cs2method_10112(384, cs2method_10152(a3), 0, 0, a3);
+		cs2method_10467(1, a4);
+	}
+	return;
+}

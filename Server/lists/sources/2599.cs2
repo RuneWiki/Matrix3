@@ -1,0 +1,275 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2599() {
+	int v2 = 0;
+	int v7 = 0;
+	int v0 = 0;
+	int v1 = -1;
+	globalarray_0 = new int[10];
+	globalarray_1 = new int[10];
+	globalarray_2 = new int[10];
+	int v4 = 0;
+	while (v7 < 28 && v0 < 10) {
+		int v5 = cs2method_10640(93, v7);
+		if (v5 != -1 && (itemDefsAttribute(v5, 802) == 1 || itemDefsAttribute(v5, 803) == 1)) {
+			globalarray_0[v0] = v5;
+			v0 = cs2method_10060(v0, 1);
+		}
+		v7 = cs2method_10060(v7, 1);
+	}
+	int v3 = -1;
+	globalarray_0[0] = client_configs['cfg1634'].bitcfg5268;
+	globalarray_0[1] = client_configs['cfg1634'].bitcfg5269;
+	globalarray_0[2] = client_configs['cfg1634'].bitcfg5270;
+	globalarray_0[3] = client_configs['cfg1634'].bitcfg5271;
+	globalarray_0[4] = client_configs['cfg1634'].bitcfg5272;
+	globalarray_0[5] = client_configs['cfg1634'].bitcfg5273;
+	globalarray_0[6] = client_configs['cfg1634'].bitcfg5274;
+	globalarray_0[7] = client_configs['cfg1634'].bitcfg5275;
+	globalarray_0[8] = client_configs['cfg1634'].bitcfg5276;
+	globalarray_0[9] = client_configs['cfg1634'].bitcfg5277;
+	for (int v6 = 0; v6 < 10; v6 = cs2method_10060(v6, 1)) {
+		if (globalarray_0[v6] != -1) {
+			if (itemDefsAttribute(v3, 803) == 1) {
+				globalarray_0[v6] = cs2method_10051(client_configs['cfg1634'].bitcfg5268, 50);
+			}
+			if (itemDefsAttribute(globalarray_0[v6], 803) == 1 && globalarray_1[v6] == 1) {
+				globalarray_0[v6] = 50;
+				v4 = cs2method_10060(v4, globalarray_2[v6]);
+			}
+			cs2method_10026((int)idx17mapData('i', 'I', 2424, v6), "Cost: " + (string)cs2method_10379(globalarray_2[v6]));
+		}
+	}
+	cs2method_10026(19136613, cs2method_10379(globalarray_2[cs2_configs['cfg929']]));
+	cs2_configs['cfg928'] = v4;
+	cs2method_10026(19136638, cs2method_10379(cs2_configs['cfg928']));
+	cs2method_10026(19136640, "Remaining investment credits: " + (string)cs2method_10379(cs2method_10461(client_configs['cfg1625'].bitcfg5213, cs2_configs['cfg928'])));
+	if (cs2_configs['cfg928'] <= client_configs['cfg1625'].bitcfg5213) {
+		cs2method_10758(1870, 19136635);
+		cs2method_20486(new function<script_2605>() {
+			cs2method_10567(27123, 1, 0);
+			cs2method_10467(0, 19136642);
+			cs2method_10026(19136644, "Are you sure you wish to apply the selected changes?");
+			cs2method_10467(1, 19136647);
+			cs2method_10467(0, 19136649);
+			cs2method_10467(1, 19136646);
+			return;
+		}, "", new WidgetPointer(292,122));
+		cs2method_11127(1, 19136634, "Apply changes");
+		cs2method_20680(new function<script_94>(int a0) {
+			script_1360(a0);
+			return;
+		}, new WidgetPointer(-32768,3), "I", new WidgetPointer(292,122));
+		cs2method_10520(16750901, 19136638);
+		cs2method_20390(new function<none>() {
+		}, "", new WidgetPointer(292,122));
+	} else {
+		cs2method_10758(1871, 19136635);
+		cs2method_20486(new function<none>() {
+		}, "", new WidgetPointer(292,122));
+		cs2method_10495(19136634);
+		cs2method_20680(new function<none>() {
+		}, "", new WidgetPointer(292,122));
+		cs2method_10520(16716049, 19136638);
+		cs2method_20390(new function<script_2606>(int a0) {
+			cs2method_10670(10046, 1, 0, 255);
+			int v0 = -1;
+			switch (cs2_configs['cfg929']) {
+				case 0:
+					if (cs2_configs['cfg930'] != -1) {
+						int v1 = cs2method_10640(93, cs2_configs['cfg930']);
+					}
+					break;
+				case 1:
+					if (cs2_configs['cfg931'] != -1) {
+						int v1 = cs2method_10640(93, cs2_configs['cfg931']);
+					}
+					break;
+				case 2:
+					if (cs2_configs['cfg932'] != -1) {
+						int v1 = cs2method_10640(93, cs2_configs['cfg932']);
+					}
+					break;
+				case 3:
+					if (cs2_configs['cfg933'] != -1) {
+						int v1 = cs2method_10640(93, cs2_configs['cfg933']);
+					}
+					break;
+				case 4:
+					if (cs2_configs['cfg934'] != -1) {
+						int v1 = cs2method_10640(93, cs2_configs['cfg934']);
+					}
+					break;
+				case 5:
+					if (cs2_configs['cfg935'] != -1) {
+						int v1 = cs2method_10640(93, cs2_configs['cfg935']);
+					}
+					break;
+				case 6:
+					if (cs2_configs['cfg936'] != -1) {
+						int v1 = cs2method_10640(93, cs2_configs['cfg936']);
+					}
+					break;
+				case 7:
+					if (cs2_configs['cfg937'] != -1) {
+						int v1 = cs2method_10640(93, cs2_configs['cfg937']);
+					}
+					break;
+				case 8:
+					if (cs2_configs['cfg938'] != -1) {
+						int v1 = cs2method_10640(93, cs2_configs['cfg938']);
+					}
+					break;
+				case 9:
+					if (cs2_configs['cfg939'] != -1) {
+						int v1 = cs2method_10640(93, cs2_configs['cfg939']);
+					}
+			}
+			switch (a0) {
+				case 19136631:
+					if (cs2method_10566(93, 803) == 0) {
+						cs2method_10810("You have no squads that need resupplying.");
+					} else {
+						cs2method_10810("You do not have sufficient investment credits to resupply all your squads.");
+					}
+					break;
+				case 19136634:
+					cs2method_10810("You do not have sufficient investment credits to apply the selected changes.");
+					break;
+				case 19136615:
+				case 19136614:
+				case 19136623:
+				case 19136622:
+				case 19136616:
+					cs2method_10810("You must resupply this squad first.");
+					break;
+				case 19136625:
+					cs2method_10810("This squad does not need resupplying.");
+			}
+			return;
+		}, new WidgetPointer(-32768,3), "I", new WidgetPointer(292,122));
+	}
+	for (int v8 = 0; v8 < 10; v8 = cs2method_10060(v8, 1)) {
+		if (globalarray_0[v8] != -1 && itemDefsAttribute(globalarray_0[v8], 803) == 1) {
+			v2 = cs2method_10060(v2, 50);
+		}
+	}
+	if (v2 > 0) {
+		cs2method_10026(19136636, "Resupply all" + "<br>" + "(" + (string)cs2method_10379(v2) + ")");
+	}
+	if (client_configs['cfg1625'].bitcfg5213 >= v2 && v2 > 0) {
+		cs2method_10520(16750901, 19136636);
+		cs2method_20486(new function<script_2603>() {
+			cs2method_10567(27123, 1, 0);
+			cs2method_10467(0, 19136642);
+			cs2method_10026(19136644, "Are you sure you wish to resupply all defeated squads?");
+			cs2method_10467(0, 19136647);
+			cs2method_10467(1, 19136646);
+			cs2method_10467(1, 19136649);
+			return;
+		}, "", new WidgetPointer(292,119));
+		cs2method_11127(1, 19136631, "Resupply all");
+		cs2method_20680(new function<script_94>(int a0) {
+			script_1360(a0);
+			return;
+		}, new WidgetPointer(-32768,3), "I", new WidgetPointer(292,119));
+		cs2method_20390(new function<none>() {
+		}, "", new WidgetPointer(292,119));
+	} else {
+		cs2method_10026(19136636, "Resupply all");
+		cs2method_10520(6710886, 19136636);
+		cs2method_20486(new function<none>() {
+		}, "", new WidgetPointer(292,119));
+		cs2method_10495(19136631);
+		cs2method_20680(new function<none>() {
+		}, "", new WidgetPointer(292,119));
+		cs2method_20390(new function<script_2606>(int a0) {
+			cs2method_10670(10046, 1, 0, 255);
+			int v0 = -1;
+			switch (cs2_configs['cfg929']) {
+				case 0:
+					if (cs2_configs['cfg930'] != -1) {
+						int v1 = cs2method_10640(93, cs2_configs['cfg930']);
+					}
+					break;
+				case 1:
+					if (cs2_configs['cfg931'] != -1) {
+						int v1 = cs2method_10640(93, cs2_configs['cfg931']);
+					}
+					break;
+				case 2:
+					if (cs2_configs['cfg932'] != -1) {
+						int v1 = cs2method_10640(93, cs2_configs['cfg932']);
+					}
+					break;
+				case 3:
+					if (cs2_configs['cfg933'] != -1) {
+						int v1 = cs2method_10640(93, cs2_configs['cfg933']);
+					}
+					break;
+				case 4:
+					if (cs2_configs['cfg934'] != -1) {
+						int v1 = cs2method_10640(93, cs2_configs['cfg934']);
+					}
+					break;
+				case 5:
+					if (cs2_configs['cfg935'] != -1) {
+						int v1 = cs2method_10640(93, cs2_configs['cfg935']);
+					}
+					break;
+				case 6:
+					if (cs2_configs['cfg936'] != -1) {
+						int v1 = cs2method_10640(93, cs2_configs['cfg936']);
+					}
+					break;
+				case 7:
+					if (cs2_configs['cfg937'] != -1) {
+						int v1 = cs2method_10640(93, cs2_configs['cfg937']);
+					}
+					break;
+				case 8:
+					if (cs2_configs['cfg938'] != -1) {
+						int v1 = cs2method_10640(93, cs2_configs['cfg938']);
+					}
+					break;
+				case 9:
+					if (cs2_configs['cfg939'] != -1) {
+						int v1 = cs2method_10640(93, cs2_configs['cfg939']);
+					}
+			}
+			switch (a0) {
+				case 19136631:
+					if (cs2method_10566(93, 803) == 0) {
+						cs2method_10810("You have no squads that need resupplying.");
+					} else {
+						cs2method_10810("You do not have sufficient investment credits to resupply all your squads.");
+					}
+					break;
+				case 19136634:
+					cs2method_10810("You do not have sufficient investment credits to apply the selected changes.");
+					break;
+				case 19136615:
+				case 19136614:
+				case 19136623:
+				case 19136622:
+				case 19136616:
+					cs2method_10810("You must resupply this squad first.");
+					break;
+				case 19136625:
+					cs2method_10810("This squad does not need resupplying.");
+			}
+			return;
+		}, new WidgetPointer(-32768,3), "I", new WidgetPointer(292,119));
+	}
+	return;
+}

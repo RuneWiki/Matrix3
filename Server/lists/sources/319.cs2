@@ -1,0 +1,102 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_319(object a0,object a1,int a2,int a3,object a4,int a5,int a6,object a7,object a8,object a9,int a10) {
+	cs2method_10273(a3);
+	int v14 = 0;
+	int v18 = 0;
+	cs2method_11130(0, cs2method_10051(cs2method_10060(cs2method_10968(cs2method_10461(cs2method_10461(a5, 5), a6), a2), 1), 57), a3);
+	int v0 = 0;
+	int v7 = 1;
+	int v13 = 0;
+	int v17 = 0;
+	int v16 = -1;
+	object v12 = "hello";
+	int v1 = 0;
+	globalarray_0 = new int[10];
+	int v11 = -1;
+	int v9 = 0;
+	int v4 = 0;
+	while (v0 <= cs2method_10461(a5, a6)) {
+		if (itemDefsAttribute(idx17mapData('i', 'o', 1182, v7), 457) > 0) {
+			flow_3:
+				int v6 = cs2method_10060(cs2method_10060(16, cs2method_10051(cs2method_10038(v0, a2), 48)), cs2method_10051(cs2method_10038(v0, a2), 5));
+				int v2 = cs2method_10060(cs2method_10051(cs2method_10968(v0, a2), 52), cs2method_10051(cs2method_10968(v0, a2), 5));
+				cs2method_10606(a3, 5, v4);
+				int v15 = cs2method_10060(v4, 1);
+				cs2method_10013(48, 52, 0, 0);
+				cs2method_10063(v6, v2, 0, 0);
+				cs2method_10310(2205);
+				cs2method_20674(new function<script_6114>(int a0,int a1,int a2) {
+					if (cs2method_11038(a0, a2) == 1) {
+						cs2method_10269(a1);
+					}
+					return;
+				}, new WidgetPointer(-32768,3), v15, 0, "Ii1");
+				cs2method_20884(new function<script_6114>(int a0,int a1,int a2) {
+					if (cs2method_11038(a1, a0) == 1) {
+						cs2method_10269(a2);
+					}
+					return;
+				}, new WidgetPointer(-32768,3), v15, 1, "Ii1");
+				cs2method_10606(a3, 5, v15);
+				v4 = cs2method_10060(v15, 1);
+				cs2method_10013(48, 52, 0, 0);
+				cs2method_10063(v6, v2, 0, 0);
+				cs2method_10310(2206);
+				cs2method_10269(1);
+				cs2method_10606(a3, 5, v4);
+				cs2method_10013(36, 32, 0, 0);
+				cs2method_10063(cs2method_10060(v6, 6), cs2method_10060(v2, 4), 0, 0);
+				int v3 = idx17mapData('i', 'o', 1182, v7);
+				int v10 = idx17mapData('o', 'i', 1185, cs2method_10480(v3));
+				IF (v3 == 12292) 
+					GOTO	flow_4
+				GOTO	flow_5
+			flow_4:
+				script_760(a4, v3, v3, a0, a3, v4, a9, a8, a1, a7);
+				GOTO	flow_9
+			flow_5:
+				IF (cs2method_10936(93, v3) > 0) 
+					GOTO	flow_6
+				IF (cs2method_10936(93, cs2method_10675(v3)) > 0 && cs2method_10338(23) >= idx17mapData('i', 'i', 1472, v10)) 
+					GOTO	flow_7
+				GOTO	flow_8
+			flow_6:
+			flow_7:
+				script_760(a4, v3, v3, a0, a3, v4, a9, a8, a1, a7);
+				GOTO	flow_9
+			flow_8:
+				script_760(a4, idx17mapData('i', 'o', 1183, v7), v3, a0, a3, v4, a9, a8, a1, a7);
+			flow_9:
+				int v5 = cs2method_10060(v4, 1);
+				cs2method_10606(a3, 5, v5);
+				int v8 = cs2method_10060(v5, 1);
+				cs2method_10013(12, 12, 0, 0);
+				cs2method_10063(cs2method_10060(v6, 2), cs2method_10060(v2, 38), 0, 0);
+				cs2method_10903(12183, 1);
+				cs2method_10606(a3, 4, v8);
+				v4 = cs2method_10060(v8, 1);
+				cs2method_10013(31, 12, 0, 0);
+				cs2method_10063(cs2method_10060(v6, 13), cs2method_10060(v2, 39), 0, 0);
+				cs2method_10692(494);
+				cs2method_10811(16777215);
+				cs2method_11105(2, 1, 0);
+				cs2method_10797(script_940(itemDefsAttribute(v3, 457)));
+				cs2method_10173(1);
+		}
+		v0 = cs2method_10060(v0, 1);
+		v7 = cs2method_10060(v7, 1);
+	}
+	return;
+}

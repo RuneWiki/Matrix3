@@ -1,0 +1,33 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6668() {
+	if (cs2_configs['cfg2006'] > 0) {
+		cs2method_10026(87293981, idx17mapData('i', 's', 4285, cs2_configs['cfg2006']));
+		cs2method_10758(idx17mapData('i', 'd', 4286, cs2_configs['cfg2006']), 87293980);
+		cs2method_10520(16777215, 87293981);
+	} else {
+		cs2method_10026(87293981, "N/A");
+		cs2method_10758(-1, 87293980);
+		cs2method_10520(10066329, 87293981);
+	}
+	if (cs2_configs['cfg2007'] >= 0 && cs2_configs['cfg2008'] >= 0) {
+		cs2method_10026(87293979, (string)cs2method_10379(cs2method_10968(cs2_configs['cfg2007'], 100)) + "/" + (string)cs2method_10379(cs2method_10968(cs2_configs['cfg2008'], 100)));
+		cs2method_10283(cs2method_10122(cs2_configs['cfg2007'], cs2_configs['cfg2008'], 16384), cs2method_10823(87293992), 2, 0, 87293992);
+		cs2method_10520(16777215, 87293979);
+	} else {
+		cs2method_10026(87293979, "0/0");
+		cs2method_10283(0, cs2method_10823(87293979), 0, 0, 87293992);
+		cs2method_10520(10066329, 87293979);
+	}
+	return;
+}

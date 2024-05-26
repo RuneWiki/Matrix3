@@ -1,0 +1,36 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9126() {
+	if (cs2method_10163(16253014) != client_configs['cfg3905'] && (client_configs['cfg3905'] < 100 || cs2method_10163(16253014) != 100)) {
+		script_7221(16253014, 16253022, 16253016, 16253018, 16253021, cs2method_10872(100, client_configs['cfg3905']));
+	}
+	int v0 = 0;
+	if (client_configs['cfg3905'] > 0) {
+		v0 = cs2method_10122(client_configs['cfg3908'], client_configs['cfg3905'], cs2method_10872(100, client_configs['cfg3905']));
+	}
+	if (cs2method_10609(16253022) == 1) {
+		cs2method_10433("wishing_well_update_button_state");
+		script_7229(16253014, 0, 16253014, cs2method_10461(v0, 1), 16253016, 16253018, 16253021);
+	}
+	if (client_configs['cfg3908'] == client_configs['cfg3905']) {
+		cs2method_10467(0, 16253013);
+	} else {
+		cs2method_10467(1, 16253013);
+	}
+	if (client_configs['cfg3908'] <= 1) {
+		cs2method_10467(0, 16253008);
+	} else {
+		cs2method_10467(1, 16253008);
+	}
+	return;
+}

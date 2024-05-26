@@ -1,0 +1,22 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6404() {
+	cs2method_10026(85721689, "Current points:");
+	cs2method_10026(85721690, cs2method_10379(client_configs['cfg2092'].bitcfg9071));
+	if (client_configs['cfg2092'].bitcfg9071 == 0) {
+		cs2method_10520(11874064, 85721690);
+	} else {
+		cs2method_10520(16512486, 85721690);
+	}
+	return;
+}

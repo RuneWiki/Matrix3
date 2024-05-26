@@ -1,0 +1,48 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_9983(int a0,int a1) {
+	flow_0:
+		int v0 = script_9972(a0, 1);
+		int v1 = -1;
+		if (v0 == -1) {
+			v1 = script_9972(-1, 1);
+			if (v1 == -1) {
+				cs2method_10810("There are no free slots on the bar.");
+				return;
+			}
+		} else {
+			if (a0 == script_9977(7)) {
+				script_9860(a1, -1, 0, "The Extras button must be within the first eight slots.");
+				cs2method_10810("The Extras button must be within the first eight slots.");
+				return;
+			}
+		}
+		script_9980(a0, v1);
+		IF (v1 < 0) 
+			GOTO	flow_7
+		GOTO	flow_8
+	flow_7:
+		IF (v0 >= 0) 
+			GOTO	flow_10
+	flow_8:
+		IF (v0 < 0 && v1 >= 0) 
+			GOTO	flow_10
+		GOTO	flow_11
+	flow_10:
+		script_10002(a0);
+	flow_11:
+		script_8144();
+		script_9985();
+		return;
+}

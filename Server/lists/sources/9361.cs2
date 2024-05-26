@@ -1,0 +1,46 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9361(int a0) {
+	if (cs2method_10570() == 1) {
+		switch (a0) {
+			case 45940902:
+				client_configs['cfg2047'] = 1;
+				break;
+			case 45940909:
+				client_configs['cfg2047'] = 2;
+				break;
+			case 45940916:
+				client_configs['cfg2047'] = 3;
+				break;
+			case 45940923:
+				client_configs['cfg2047'] = 4;
+				break;
+			case 45940930:
+				client_configs['cfg2047'] = 5;
+				break;
+			case 45940937:
+				client_configs['cfg2047'] = 6;
+				break;
+			case 45940944:
+				client_configs['cfg2047'] = 7;
+				break;
+			case 45940951:
+				client_configs['cfg2047'] = 8;
+		}
+		cs2method_10026(45940799, "");
+		cs2method_10026(45940736, "");
+		cs2method_10026(45940824, "");
+		script_9363();
+	}
+	return;
+}

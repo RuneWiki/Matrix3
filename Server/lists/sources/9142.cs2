@@ -1,0 +1,24 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+object script_9142() {
+	int v1 = cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10060(client_configs['cfg1663'].bitcfg5479, client_configs['cfg1663'].bitcfg5480), client_configs['cfg1663'].bitcfg5481), client_configs['cfg2438'].bitcfg5482), client_configs['cfg2438'].bitcfg5483), client_configs['cfg1663'].bitcfg5484);
+	int v2 = 3;
+	if (client_configs['cfg2437'].bitcfg11683 == 270) {
+		v2 = cs2method_10060(v2, 2);
+	}
+	if (client_configs['cfg2141'].bitcfg9391 == 175) {
+		v2 = cs2method_10060(v2, 1);
+	}
+	object v0 = "You have completed " + "<col=ffffff>" + (string)cs2method_10379(v1) + " of " + (string)cs2method_10379(v2) + "</col>" + " performances this week";
+	return v0;
+}

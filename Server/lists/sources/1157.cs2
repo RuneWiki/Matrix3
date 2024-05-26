@@ -1,0 +1,36 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1157(int a0) {
+	cs2method_10467(0, 96272384);
+	if (a0 != 1) {
+		return;
+	}
+	if (script_42(cs2_configs['cfg266']) == 0) {
+		cs2_configs['cfg2409'] = "";
+		cs2_configs['cfg2410'] = "";
+		cs2_configs['cfg266'] = 1;
+	}
+	if (cs2method_10265(cs2_configs['cfg2409']) > 0) {
+		cs2method_10026(96272386, "Edit the name of your caller:" + "<br>" + "(Delete it to disable this feature.)");
+	} else {
+		cs2method_10026(96272386, "Enter the name of your caller:");
+	}
+	cs2_configs['cfg5'] = 12;
+	script_1564(cs2_configs['cfg2409']);
+	cs2method_20390(new function<script_1805>() {
+		script_1806(cs2_configs['cfg2506']);
+		return;
+	}, "", new WidgetPointer(1469,1));
+	script_2026();
+	return;
+}

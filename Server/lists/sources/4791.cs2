@@ -1,0 +1,213 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_4791_struct(7,1,0) script_4791(int a0) {
+	int v2;
+	object v10;
+	int v7 = -1;
+	object v0 = "";
+	int v3 = 0;
+	int v12 = idx17mapData('i', 'J', 4008, a0);
+	if (v12 == -1) {
+		cs2method_10810("Clan Build Tick : Job ID " + (string)cs2method_10379(a0) + " has no associated struct. Please report this as a bug, quoting this line.");
+		return new script_4791_struct(-1, 0, 0, 0, 0, 0, 0, "");
+	}
+	int v13 = idx22mapAttribute(v12, 1481);
+	int v6 = idx22mapAttribute(v12, 1482);
+	int v4 = 0;
+	int v14 = 0;
+	int v9 = 0;
+	int v1 = -1;
+	int v15 = 0;
+	int v5 = -1;
+	int v8 = -1;
+	int v11 = 0;
+	if (cs2method_10172() == 1) {
+		switch (v13) {
+			case 1:
+				v10 = "Stronghold";
+				v2 = 7418;
+				v4 = clan_chat_configs['cfg2575'].bitcfg6507;
+				v14 = cs2method_10872(clan_chat_configs['cfg2628'].bitcfg6556, cs2method_10461(v4, 1));
+				v3 = cs2method_10060(clan_chat_configs['cfg2583'].bitcfg6526, clan_chat_configs['cfg2601'].bitcfg6541);
+				break;
+			case 2:
+				v10 = "Storehouse";
+				v2 = 7419;
+				v4 = clan_chat_configs['cfg2575'].bitcfg6508;
+				v14 = cs2method_10872(clan_chat_configs['cfg2628'].bitcfg6554, cs2method_10461(v4, 1));
+				v3 = cs2method_10060(clan_chat_configs['cfg2583'].bitcfg6522, clan_chat_configs['cfg2601'].bitcfg6539);
+				break;
+			case 3:
+				v10 = "Battlefield";
+				v2 = 7417;
+				v4 = clan_chat_configs['cfg2575'].bitcfg6509;
+				v14 = cs2method_10872(clan_chat_configs['cfg2628'].bitcfg6555, cs2method_10461(v4, 1));
+				v3 = cs2method_10060(clan_chat_configs['cfg2583'].bitcfg6523, clan_chat_configs['cfg2601'].bitcfg6540);
+				break;
+			case 4:
+				switch (v6) {
+					case 1:
+						v9 = clan_chat_configs['cfg2552'].bitcfg6483;
+						v4 = clan_chat_configs['cfg2566'].bitcfg6495;
+						if (v9 == 1) {
+							v11 = 1;
+						}
+						v14 = cs2method_10872(clan_chat_configs['cfg2601'].bitcfg6542, cs2method_10461(v4, v11));
+						v3 = cs2method_10060(clan_chat_configs['cfg2583'].bitcfg6510, clan_chat_configs['cfg2601'].bitcfg6527);
+						break;
+					case 2:
+						v9 = clan_chat_configs['cfg2552'].bitcfg6484;
+						v4 = clan_chat_configs['cfg2566'].bitcfg6496;
+						if (v9 == 1) {
+							v11 = 1;
+						}
+						v14 = cs2method_10872(clan_chat_configs['cfg2601'].bitcfg6543, cs2method_10461(v4, v11));
+						v3 = cs2method_10060(clan_chat_configs['cfg2583'].bitcfg6511, clan_chat_configs['cfg2601'].bitcfg6528);
+						break;
+					case 3:
+						v9 = clan_chat_configs['cfg2552'].bitcfg6485;
+						v4 = clan_chat_configs['cfg2566'].bitcfg6497;
+						if (v9 == 1) {
+							v11 = 1;
+						}
+						v14 = cs2method_10872(clan_chat_configs['cfg2619'].bitcfg6544, cs2method_10461(v4, v11));
+						v3 = cs2method_10060(clan_chat_configs['cfg2583'].bitcfg6512, clan_chat_configs['cfg2601'].bitcfg6529);
+						break;
+					case 4:
+						v9 = clan_chat_configs['cfg2552'].bitcfg6486;
+						v4 = clan_chat_configs['cfg2566'].bitcfg6498;
+						if (v9 == 1) {
+							v11 = 1;
+						}
+						v14 = cs2method_10872(clan_chat_configs['cfg2619'].bitcfg6545, cs2method_10461(v4, v11));
+						v3 = cs2method_10060(clan_chat_configs['cfg2583'].bitcfg6513, clan_chat_configs['cfg2601'].bitcfg6530);
+						break;
+					case 5:
+						v9 = clan_chat_configs['cfg2552'].bitcfg6487;
+						v4 = clan_chat_configs['cfg2566'].bitcfg6499;
+						if (v9 == 1) {
+							v11 = 1;
+						}
+						v14 = cs2method_10872(clan_chat_configs['cfg2619'].bitcfg6546, cs2method_10461(v4, v11));
+						v3 = cs2method_10060(clan_chat_configs['cfg2583'].bitcfg6514, clan_chat_configs['cfg2601'].bitcfg6531);
+						break;
+					case 6:
+						v9 = clan_chat_configs['cfg2552'].bitcfg6488;
+						v4 = clan_chat_configs['cfg2566'].bitcfg6500;
+						if (v9 == 1) {
+							v11 = 1;
+						}
+						v14 = cs2method_10872(clan_chat_configs['cfg2619'].bitcfg6547, cs2method_10461(v4, v11));
+						v3 = cs2method_10060(clan_chat_configs['cfg2583'].bitcfg6515, clan_chat_configs['cfg2601'].bitcfg6532);
+						break;
+					case 7:
+						v9 = clan_chat_configs['cfg2559'].bitcfg6489;
+						v4 = clan_chat_configs['cfg2566'].bitcfg6501;
+						if (v9 == 1) {
+							v11 = 1;
+						}
+						v14 = cs2method_10872(clan_chat_configs['cfg2619'].bitcfg6548, cs2method_10461(v4, v11));
+						v3 = cs2method_10060(clan_chat_configs['cfg2583'].bitcfg6516, clan_chat_configs['cfg2601'].bitcfg6533);
+						break;
+					case 8:
+						v9 = clan_chat_configs['cfg2559'].bitcfg6490;
+						v4 = clan_chat_configs['cfg2566'].bitcfg6502;
+						if (v9 == 1) {
+							v11 = 1;
+						}
+						v14 = cs2method_10872(clan_chat_configs['cfg2619'].bitcfg6549, cs2method_10461(v4, v11));
+						v3 = cs2method_10060(clan_chat_configs['cfg2583'].bitcfg6517, clan_chat_configs['cfg2601'].bitcfg6534);
+						break;
+					case 9:
+						v9 = clan_chat_configs['cfg2559'].bitcfg6491;
+						v4 = clan_chat_configs['cfg2575'].bitcfg6503;
+						if (v9 == 1) {
+							v11 = 1;
+						}
+						v14 = cs2method_10872(clan_chat_configs['cfg2619'].bitcfg6550, cs2method_10461(v4, v11));
+						v3 = cs2method_10060(clan_chat_configs['cfg2583'].bitcfg6518, clan_chat_configs['cfg2601'].bitcfg6535);
+						break;
+					case 10:
+						v9 = clan_chat_configs['cfg2559'].bitcfg6492;
+						v4 = clan_chat_configs['cfg2575'].bitcfg6504;
+						if (v9 == 1) {
+							v11 = 1;
+						}
+						v14 = cs2method_10872(clan_chat_configs['cfg2619'].bitcfg6551, cs2method_10461(v4, v11));
+						v3 = cs2method_10060(clan_chat_configs['cfg2583'].bitcfg6519, clan_chat_configs['cfg2601'].bitcfg6536);
+						break;
+					case 11:
+						v9 = clan_chat_configs['cfg2559'].bitcfg6493;
+						v4 = clan_chat_configs['cfg2575'].bitcfg6505;
+						if (v9 == 1) {
+							v11 = 1;
+						}
+						v14 = cs2method_10872(clan_chat_configs['cfg2628'].bitcfg6552, cs2method_10461(v4, v11));
+						v3 = cs2method_10060(clan_chat_configs['cfg2583'].bitcfg6520, clan_chat_configs['cfg2601'].bitcfg6537);
+						break;
+					case 12:
+						v9 = clan_chat_configs['cfg2559'].bitcfg6494;
+						v4 = clan_chat_configs['cfg2575'].bitcfg6506;
+						if (v9 == 1) {
+							v11 = 1;
+						}
+						v14 = cs2method_10872(clan_chat_configs['cfg2628'].bitcfg6553, cs2method_10461(v4, v11));
+						v3 = cs2method_10060(clan_chat_configs['cfg2583'].bitcfg6521, clan_chat_configs['cfg2601'].bitcfg6538);
+						break;
+					default:
+						cs2method_10810("Clan Build Tick : No skill plot found with index " + (string)cs2method_10379(v6) + ". Please report this as a bug, quoting this line.");
+				}
+				v10 = idx17mapData('i', 's', 4287, v9);
+				v2 = idx17mapData('i', 'd', 4288, v9);
+				break;
+			case 5:
+				switch (v6) {
+					case 1:
+						v9 = clan_chat_configs['cfg2138'].bitcfg6682;
+						v4 = clan_chat_configs['cfg2138'].bitcfg6683;
+						break;
+					case 2:
+						v9 = clan_chat_configs['cfg2155'].bitcfg6691;
+						v4 = clan_chat_configs['cfg2155'].bitcfg6692;
+						break;
+					case 3:
+						v9 = clan_chat_configs['cfg2172'].bitcfg6700;
+						v4 = clan_chat_configs['cfg2172'].bitcfg6701;
+						break;
+					default:
+						cs2method_10810("Clan Build Tick : No cosmetic job slot found with index " + (string)cs2method_10379(v6) + ". Please report this as a bug, quoting this line.");
+				}
+				int v16 = script_4820(v6);
+				int v18 = script_4823(v6);
+				int v17 = script_4826(v6);
+				if (a0 == 16 || a0 == 17 || a0 == 18) {
+					v10 = "Reset hotspot (slot " + (string)cs2method_10379(v6) + ").";
+					v2 = 6496;
+				} else {
+					v10 = idx17mapData('i', 's', v18, v9);
+					v2 = idx17mapData('i', 'd', v17, v9);
+				}
+				break;
+			default:
+				cs2method_10810("Clan Build Tick : Unexpected job building class " + (string)cs2method_10379(v13) + ". Please report this as a bug, quoting this line.");
+				return new script_4791_struct(-1, 0, 0, 0, 0, 0, 0, "");
+		}
+	} else {
+		cs2method_10810("Clan Build Tick : Could not access clan profile.");
+		return new script_4791_struct(-1, 0, 0, 0, 0, 0, 0, "");
+	}
+	if (a0 > 600 && v13 != 5) {
+		v4 = cs2method_10060(v4, 1);
+	}
+	return new script_4791_struct(v2, v4, v14, v3, v13, v6, v9, v10);
+}

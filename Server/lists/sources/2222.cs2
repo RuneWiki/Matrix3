@@ -1,0 +1,25 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2222() {
+	int v0 = 0;
+	int v5 = 0;
+	int v1 = 1003;
+	script_8138_struct(2,0,0) v4 = script_8138(v1);
+	int v3 = v4.intpart_1;
+	int v2 = v4.intpart_0;
+	if (v2 == -1 || v3 == -1) {
+		return;
+	}
+	script_9667(v2, v3);
+	return;
+}

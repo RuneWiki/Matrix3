@@ -1,0 +1,58 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1417(int a0) {
+	if (cs2_configs['cfg1387'] == 1) {
+		return;
+	}
+	int v3 = script_1502(a0);
+	int v0 = -1;
+	int v2 = cs2method_10191(a0);
+	int v1 = cs2method_10152(a0);
+	if (client_configs['cfg1656'].bitcfg5392 == v3) {
+		v0 = script_486(client_configs['cfg1656'].bitcfg5396);
+	} else if (client_configs['cfg1656'].bitcfg5393 == v3) {
+		v0 = script_486(client_configs['cfg1656'].bitcfg5397);
+	} else if (client_configs['cfg1656'].bitcfg5394 == v3) {
+		v0 = script_486(client_configs['cfg1657'].bitcfg5402);
+	} else if (client_configs['cfg1656'].bitcfg5395 == v3) {
+		v0 = script_486(client_configs['cfg1657'].bitcfg5403);
+	} else if (client_configs['cfg1657'].bitcfg5398 == v3) {
+		v0 = script_486(client_configs['cfg1658'].bitcfg5406);
+	} else if (client_configs['cfg1657'].bitcfg5399 == v3) {
+		v0 = script_486(client_configs['cfg1658'].bitcfg5407);
+	} else if (client_configs['cfg1657'].bitcfg5400 == v3) {
+		v0 = script_486(client_configs['cfg1658'].bitcfg5408);
+	} else if (client_configs['cfg1657'].bitcfg5401 == v3) {
+		v0 = script_486(client_configs['cfg1658'].bitcfg5409);
+	} else if (client_configs['cfg1658'].bitcfg5404 == v3) {
+		v0 = script_486(client_configs['cfg1658'].bitcfg5410);
+	} else {
+		if (client_configs['cfg1658'].bitcfg5405 == v3) {
+			v0 = script_486(client_configs['cfg1659'].bitcfg5411);
+		}
+	}
+	if (v0 != -1) {
+		cs2method_10026(66650353, npcDefsAttribute(v0, 1139));
+		cs2method_10283(cs2method_10060(cs2method_10939(2710, npcDefsAttribute(v0, 1139)), 10), cs2method_10823(66650338), 0, 0, 66650338);
+		int v4 = cs2method_10461(cs2method_10060(v2, cs2method_10236(a0)), 3);
+		int v5 = cs2method_10461(v1, cs2method_10823(a0));
+		if (cs2method_10060(v4, cs2method_10236(66650338)) >= cs2method_10060(cs2method_10191(66650143), cs2method_10236(66650143))) {
+			v4 = cs2method_10060(cs2method_10461(cs2method_10191(a0), cs2method_10236(66650338)), 3);
+		}
+		cs2method_10112(v4, v5, 0, 0, 66650338);
+		cs2method_10467(0, 66650338);
+	} else {
+		cs2method_10467(1, 66650338);
+	}
+	return;
+}

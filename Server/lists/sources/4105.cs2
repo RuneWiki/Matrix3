@@ -1,0 +1,80 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4105(int a0,int a1,int a2,int a3,int a4) {
+	if (cs2_configs['cfg729'] > 1) {
+		cs2method_10026(a2, (string)cs2method_10055(cs2_configs['cfg729'], 1) + " coins");
+	} else if (cs2_configs['cfg729'] == 1) {
+		cs2method_10026(a2, "1 coin");
+	} else if (cs2_configs['cfg729'] == 0) {
+		cs2method_10026(a2, "Nothing");
+	} else {
+		cs2method_10026(a2, "Lots!");
+	}
+	if (cs2_configs['cfg697'] > 1) {
+		cs2method_10026(a1, (string)cs2method_10055(cs2_configs['cfg697'], 1) + " coins");
+	} else if (cs2_configs['cfg697'] == 1) {
+		cs2method_10026(a1, "1 coin");
+	} else if (cs2_configs['cfg697'] == 0) {
+		cs2method_10026(a1, "<col=ff0000>" + "Nothing" + "</col>");
+	} else {
+		cs2method_10026(a1, "Lots!");
+	}
+	object v1 = "<col=ff0000>" + "Unknown" + "</col>";
+	int v0 = 0;
+	if (cs2_configs['cfg729'] < 0) {
+		if (cs2_configs['cfg697'] < 0) {
+			cs2method_10026(a0, v1);
+			cs2method_10467(1, a3);
+		} else {
+			cs2method_10026(a0, v1);
+			cs2method_10467(0, a3);
+			cs2method_10758(1174, a3);
+			cs2method_10112(script_4106(a4, v1), 0, 0, 2, a3);
+		}
+	} else if (cs2_configs['cfg697'] < 0) {
+		object v3 = "Unknown";
+		cs2method_10026(a0, v3);
+		cs2method_10467(0, a3);
+		cs2method_10758(1172, a3);
+		cs2method_10112(script_4106(a4, v3), 0, 2, 2, a3);
+	} else if (v2 > 0) {
+		object v3;
+		if (v2 == 1) {
+			v3 = "<col=ff0000>" + "1 coin" + "</col>";
+		} else {
+			v3 = "<col=ff0000>" + (string)cs2method_10055(v2, 1) + " coins" + "</col>";
+		}
+		cs2method_10026(a0, v3);
+		cs2method_10467(0, a3);
+		cs2method_10758(1174, a3);
+		cs2method_10112(script_4106(a4, v3), 0, 0, 2, a3);
+	} else if (v2 < 0) {
+		object v4;
+		int v3 = cs2method_10461(0, v2);
+		if (v3 == 1) {
+			v4 = "1 coin";
+		} else {
+			v4 = (string)cs2method_10055(v3, 1) + " coins";
+		}
+		cs2method_10026(a0, v4);
+		cs2method_10467(0, a3);
+		cs2method_10758(1172, a3);
+		cs2method_10112(script_4106(a4, v4), 0, 2, 2, a3);
+	} else {
+		object v3 = "No net transfer";
+		cs2method_10026(a0, v3);
+		cs2method_10467(1, a3);
+	}
+	int v2 = cs2method_10461(cs2_configs['cfg729'], cs2_configs['cfg697']);
+	return;
+}

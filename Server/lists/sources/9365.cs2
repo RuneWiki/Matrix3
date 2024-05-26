@@ -1,0 +1,42 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+object script_9365() {
+	object v3;
+	int v4 = 0;
+	int v2 = 0;
+	int v7 = 0;
+	object v6 = "";
+	if (cs2_configs['cfg3856'] > 0) {
+		int v1 = cs2method_10968(cs2_configs['cfg3856'], 1440);
+		int v5 = cs2method_10968(cs2method_10038(cs2_configs['cfg3856'], 1440), 60);
+		int v0 = cs2method_10038(cs2_configs['cfg3856'], 60);
+		if (v1 > 0) {
+			if (v1 == 1) {
+				v6 = "1 day, ";
+			} else {
+				v6 = (string)cs2method_10379(v1) + " days, ";
+			}
+		}
+		if (v5 == 1) {
+			v3 = (string)v6 + "1 hr, ";
+		} else {
+			v3 = (string)v6 + (string)cs2method_10379(v5) + " hrs, ";
+		}
+		if (v0 == 1) {
+			v6 = (string)v3 + "1 min ";
+		} else {
+			v6 = (string)v3 + (string)cs2method_10379(v0) + " mins ";
+		}
+	}
+	return v6;
+}

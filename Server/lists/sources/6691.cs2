@@ -1,0 +1,79 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6691(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12,int a13,int a14) {
+	cs2method_10273(a5);
+	script_6680(a5);
+	cs2method_10273(a3);
+	script_6680(a3);
+	cs2method_10273(a0);
+	script_6680(a0);
+	cs2method_10273(a8);
+	script_6680(a8);
+	cs2method_10273(a4);
+	script_6680(a4);
+	object v1 = "Points:";
+	cs2method_10283(cs2method_10060(cs2method_10509(2147483647, cs2method_10643(a11), script_6696(v1, 1500)), 10), cs2method_10823(a0), 0, 0, a0);
+	int v0 = cs2method_10060(cs2method_10939(cs2method_10643(a13), cs2method_10744(a13)), 5);
+	cs2method_10283(cs2method_10060(cs2method_10060(v0, cs2method_10939(cs2method_10643(a7), script_6702(cs2method_10051(20, 100)))), 10), cs2method_10823(a8), 0, 0, a8);
+	cs2method_10283(cs2method_10060(v0, 10), cs2method_10823(a7), 1, 0, a7);
+	cs2method_10283(cs2method_10060(cs2method_11048(cs2method_10939(cs2method_10643(a1), cs2method_10744(a1)), cs2method_10236(a14)), 10), cs2method_10823(a4), 0, 0, a4);
+	script_6704(a2, a5);
+	cs2method_20553(new function<script_6703>(int a0,int a1) {
+		script_6704(a1, a0);
+		return;
+	}, new WidgetPointer(a2), new WidgetPointer(a5), "II", new WidgetPointer(a2));
+	int v2 = cs2method_10872(cs2method_10236(a2), 200);
+	script_6693(a5, a10, a9, a6, v2);
+	cs2method_20243(new function<script_6692>(int a0,int a1,int a2,int a3,int a4) {
+		script_6693(a3, a0, a2, a1, a4);
+		return;
+	}, new WidgetPointer(a5), new WidgetPointer(a10), new WidgetPointer(a9), new WidgetPointer(a6), v2, 2011, 1, "IIIIiY", new WidgetPointer(a5));
+	cs2method_20750(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(a6), "I", new WidgetPointer(a5));
+	script_6695(a0, a11, a6, v1);
+	cs2method_20348(new function<script_6694>(int a0,int a1,object a2,int a3) {
+		script_6695(a3, a0, a1, a2);
+		return;
+	}, new WidgetPointer(a0), new WidgetPointer(a11), new WidgetPointer(a6), (string)v1, 1572, 1, "IIIsY", new WidgetPointer(a2));
+	object v4 = "This shows the number of points you have scored during this hunt.";
+	cs2method_21121(new function<script_1160>(int a0,int a1,object a2,int a3,int a4,int a5) {
+		script_1163(a3, a2, a4, a0, a1, a5);
+		return;
+	}, new WidgetPointer(a0), -1, new WidgetPointer(a6), (string)v4, 25, v2, "IiIsii", new WidgetPointer(a0));
+	cs2method_20750(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(a6), "I", new WidgetPointer(a0));
+	script_6698(a3, a12, a4, a6, v2);
+	cs2method_20243(new function<script_6697>(int a0,int a1,int a2,int a3,int a4) {
+		script_6698(a4, a3, a0, a1, a2);
+		return;
+	}, new WidgetPointer(a3), new WidgetPointer(a12), new WidgetPointer(a4), new WidgetPointer(a6), v2, 2013, 1, "IIIIiY", new WidgetPointer(a3));
+	script_6700(a8, a7, 15);
+	cs2method_20243(new function<script_6699>(int a0,int a1) {
+		script_6700(a0, a1, 15);
+		return;
+	}, new WidgetPointer(a8), new WidgetPointer(a7), 2012, 1, "IIY", new WidgetPointer(a8));
+	object v3 = "This is the remaining time during which moths may be caught.";
+	cs2method_21121(new function<script_1160>(int a0,int a1,int a2,int a3,int a4,object a5) {
+		script_1163(a0, a5, a2, a4, a3, a1);
+		return;
+	}, new WidgetPointer(a8), -1, new WidgetPointer(a6), (string)v3, 25, v2, "IiIsii", new WidgetPointer(a8));
+	cs2method_20750(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(a6), "I", new WidgetPointer(a8));
+	return;
+}

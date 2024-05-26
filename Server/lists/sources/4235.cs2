@@ -1,0 +1,19 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4235() {
+	if (cs2_configs['cfg1494'] > 100) {
+		cs2_configs['cfg1494'] = 100;
+	}
+	cs2method_10283(cs2method_10122(cs2_configs['cfg1494'], 100, 16384), 16384, 2, 2, 31522831);
+	return;
+}

@@ -1,0 +1,142 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_6848(int a0) {
+	flow_0:
+		int v1 = script_6849(cs2method_10499(88735779));
+		int v2 = script_6850(a0);
+		int v0 = -1;
+		if (v1 == -1) {
+			return;
+		}
+		if (v2 == -1) {
+			return;
+		}
+		if (v2 == v1) {
+			return;
+		}
+		IF (client_configs['cfg2449'].bitcfg9429 == 35) 
+			GOTO	flow_7
+		GOTO	flow_8
+	flow_7:
+		IF (v1 == 4) 
+			GOTO	flow_14
+	flow_8:
+		IF (client_configs['cfg2449'].bitcfg9429 == 57) 
+			GOTO	flow_9
+		GOTO	flow_10
+	flow_9:
+		IF (v1 == 7) 
+			GOTO	flow_14
+	flow_10:
+		IF (client_configs['cfg2449'].bitcfg9429 == 67) 
+			GOTO	flow_11
+		GOTO	flow_12
+	flow_11:
+		IF (v1 == 10) 
+			GOTO	flow_14
+	flow_12:
+		IF (client_configs['cfg2449'].bitcfg9429 == 92 && v1 == 13) 
+			GOTO	flow_14
+		GOTO	flow_15
+	flow_14:
+		cs2method_10810("The sundial's gnomon feels like it's locked in place.");
+		return;
+	flow_15:
+		script_6843();
+		if (v1 == 0) {
+			if (v2 >= 1 && v2 <= 8) {
+				cs2method_10074(30583, 88735779);
+				v1 = 8;
+			} else {
+				cs2method_10074(34588, 88735779);
+				v1 = 9;
+			}
+		}
+		if (v2 > v1) {
+			if (cs2method_10461(v2, v1) <= 7) {
+				v0 = 0;
+			} else {
+				v0 = 1;
+			}
+		} else if (v2 < v1) {
+			if (cs2method_10461(v1, v2) <= 7) {
+				v0 = 1;
+			} else {
+				v0 = 0;
+			}
+		} else {
+			if (v2 == v1) {
+				script_6853(v2);
+				return;
+			}
+		}
+		cs2method_20162(new function<script_6851>(int a0,int a1,int a2,int a3) {
+			int v3 = cs2method_10461(cs2method_10133(), a3);
+			int v4 = script_6854(a1);
+			int v0 = script_6854(a2);
+			int v2 = -1;
+			int v1 = 0;
+			if (v3 == 1 || cs2method_10038(v3, 25) == 1) {
+				cs2method_10670(19101, 1, 0, 100);
+			}
+			if (a0 == 1) {
+				v2 = cs2method_10461(cs2method_10499(88735779), 128);
+			} else {
+				if (a0 == 0) {
+					v2 = cs2method_10060(cs2method_10499(88735779), 128);
+				}
+			}
+			if (v2 < 0) {
+				v2 = cs2method_10060(v2, 65536);
+			} else {
+				if (v2 > 65535) {
+					v2 = cs2method_10461(v2, 65536);
+				}
+			}
+			cs2method_10074(v2, 88735779);
+			if (a0 == 1) {
+				if (v4 < v0) {
+					if (cs2method_10499(88735779) <= v4 || cs2method_10499(88735779) >= v0) {
+						v1 = 1;
+					}
+				} else {
+					if (cs2method_10499(88735779) <= v4 && cs2method_10499(88735779) >= v0) {
+						v1 = 1;
+					}
+				}
+			} else {
+				if (a0 == 0) {
+					if (v4 > v0) {
+						if (cs2method_10499(88735779) >= v4 || cs2method_10499(88735779) <= v0) {
+							v1 = 1;
+						}
+					} else {
+						if (cs2method_10499(88735779) >= v4 && cs2method_10499(88735779) <= v0) {
+							v1 = 1;
+						}
+					}
+				}
+			}
+			if (v1 == 0) {
+				script_6852(a2);
+				cs2method_20162(new function<none>() {
+				}, "", new WidgetPointer(1354,35));
+				cs2method_10670(19101, 1, 0, 0);
+				cs2method_10363(6758, 1, 0, 240, 280);
+				script_6853(a2);
+			}
+			return;
+		}, cs2method_10133(), v1, v2, v0, "iii1", new WidgetPointer(1354,35));
+		return;
+}

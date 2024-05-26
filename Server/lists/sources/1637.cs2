@@ -1,0 +1,24 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1637(int a0,int a1) {
+	int v0 = idx17mapData('S', 'i', 1482, a1);
+	if (script_1636(a1) == 1) {
+		if (cs2method_10441(client_configs['cfg3238'], v0) == 0) {
+			client_configs['cfg3238'] = cs2method_10668(client_configs['cfg3238'], v0);
+		} else {
+			client_configs['cfg3238'] = cs2method_10874(client_configs['cfg3238'], v0);
+		}
+		cs2method_11047(a0);
+	}
+	return;
+}

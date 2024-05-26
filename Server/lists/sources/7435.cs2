@@ -1,0 +1,39 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_7435(int a0,int a1) {
+	int v7 = -1;
+	int v1 = -1;
+	int v16 = 0;
+	int v2 = 0;
+	int v15 = -1;
+	object v5 = "";
+	int v0 = 0;
+	int v3 = a1;
+	script_7434_struct(6,1,0) v13 = script_7434(v3);
+	int v10 = v13.intpart_5;
+	object v8 = v13.objectpart_0;
+	int v14 = v13.intpart_4;
+	int v9 = v13.intpart_3;
+	int v12 = v13.intpart_2;
+	int v4 = v13.intpart_1;
+	int v6 = v13.intpart_0;
+	int v11 = cs2method_11048(cs2method_10872(a0, v9), v12);
+	if (a1 == 31129616) {
+		cs2_configs['cfg171'] = v11;
+	} else if (a1 == 31129633) {
+		cs2_configs['cfg1272'] = v11;
+	} else {
+		v11 = 0;
+	}
+	return v11;
+}

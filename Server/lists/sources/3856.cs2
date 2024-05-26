@@ -1,0 +1,76 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3856(int a0,int a1,int a2,object a3) {
+	int v0 = 0;
+	int v2 = 0;
+	int v1 = 12;
+	if (a1 == 1) {
+		int v4 = cs2_configs['cfg2749'];
+		int v5 = a2;
+		opc_struct10385(2,0,0) v3 = cs2method_10385(v4, v5);
+		v2 = v3.intpart_1;
+		v0 = v3.intpart_0;
+		if (cs2method_10461(v2, v1) > 60) {
+			cs2method_10251(0, cs2method_10461(cs2method_10461(v2, v1), 60), 92078112);
+			script_31(92078113, 92078112, 5666, 5663, 5664, 5665, 5686, 5685);
+		} else {
+			cs2method_10251(0, 0, 92078112);
+			script_31(92078113, 92078112, 5666, 5663, 5664, 5665, 5686, 5685);
+		}
+	} else {
+		if (a1 == 2) {
+			int v5 = cs2_configs['cfg2750'];
+			int v3 = a2;
+			opc_struct10385(2,0,0) v4 = cs2method_10385(v5, v3);
+			v2 = v4.intpart_1;
+			v0 = v4.intpart_0;
+			if (cs2method_10461(v2, v1) > 60) {
+				cs2method_10251(0, cs2method_10461(cs2method_10461(v2, v1), 60), 92078104);
+				script_31(92078105, 92078104, 5666, 5663, 5664, 5665, 5686, 5685);
+			} else {
+				cs2method_10251(0, 0, 92078104);
+				script_31(92078105, 92078104, 5666, 5663, 5664, 5665, 5686, 5685);
+			}
+		}
+	}
+	cs2method_10112(cs2method_10060(v0, 4), cs2method_10060(cs2method_10461(v2, v1), 4), 0, 0, a0);
+	if (cs2method_10180() == 1) {
+		cs2method_10467(0, a0);
+	} else {
+		cs2method_10467(1, a0);
+	}
+	cs2method_20162(new function<script_7672>(int a0,int a1) {
+		if (cs2method_10038(cs2method_10461(cs2method_10133(), a1), 40) < 20 && cs2method_10180() == 1) {
+			flow_2:
+				IF (cs2_configs['cfg2753'] == 1) 
+					GOTO	flow_3
+				GOTO	flow_4
+			flow_3:
+				IF (a0 != 92078115) 
+					GOTO	flow_6
+			flow_4:
+				IF (cs2_configs['cfg2753'] == 2 && a0 != 92078146) 
+					GOTO	flow_6
+				GOTO	flow_7
+			flow_6:
+				cs2method_10467(1, a0);
+				return;
+			flow_7:
+				cs2method_10467(0, a0);
+		} else {
+			cs2method_10467(1, a0);
+		}
+		return;
+	}, cs2method_10133(), new WidgetPointer(a0), "iI", new WidgetPointer(a2));
+	return;
+}

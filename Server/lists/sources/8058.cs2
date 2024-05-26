@@ -1,0 +1,96 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8058(int a0,int a1,int a2,int a3,int a4) {
+	int v1 = cs2method_11048(-1, a1);
+	int v0 = cs2method_11048(-1, a4);
+	switch (a3) {
+		case 0:
+			cs2_configs['cfg1947'] = new WidgetPointer(a2);
+			cs2_configs['cfg1948'] = v0;
+			client_configs['cfg1756'].bitcfg5932 = cs2method_10060(1, v1);
+			client_configs['cfg1760'] = a0;
+			break;
+		case 1:
+			cs2_configs['cfg1949'] = new WidgetPointer(a2);
+			cs2_configs['cfg1950'] = v0;
+			client_configs['cfg1756'].bitcfg5933 = cs2method_10060(1, v1);
+			client_configs['cfg1761'] = a0;
+			break;
+		case 2:
+			cs2_configs['cfg1951'] = new WidgetPointer(a2);
+			cs2_configs['cfg1952'] = v0;
+			client_configs['cfg1757'].bitcfg5934 = cs2method_10060(1, v1);
+			client_configs['cfg1762'] = a0;
+			break;
+		case 3:
+			cs2_configs['cfg1953'] = new WidgetPointer(a2);
+			cs2_configs['cfg1954'] = v0;
+			client_configs['cfg1757'].bitcfg5935 = cs2method_10060(1, v1);
+			client_configs['cfg1763'] = a0;
+			break;
+		case 4:
+			cs2_configs['cfg1955'] = new WidgetPointer(a2);
+			cs2_configs['cfg1956'] = v0;
+			client_configs['cfg1758'].bitcfg5936 = cs2method_10060(1, v1);
+			client_configs['cfg1764'] = a0;
+			break;
+		case 5:
+			cs2_configs['cfg1957'] = new WidgetPointer(a2);
+			cs2_configs['cfg1958'] = v0;
+			client_configs['cfg1758'].bitcfg5937 = cs2method_10060(1, v1);
+			client_configs['cfg1765'] = a0;
+			break;
+		case 6:
+			cs2_configs['cfg1959'] = new WidgetPointer(a2);
+			cs2_configs['cfg1960'] = v0;
+			client_configs['cfg1759'].bitcfg5938 = cs2method_10060(1, v1);
+			client_configs['cfg1766'] = a0;
+			break;
+		case 7:
+			cs2_configs['cfg1961'] = new WidgetPointer(a2);
+			cs2_configs['cfg1962'] = v0;
+			client_configs['cfg1759'].bitcfg5939 = cs2method_10060(1, v1);
+			client_configs['cfg1767'] = a0;
+			break;
+		case 8:
+			cs2_configs['cfg3503'] = new WidgetPointer(a2);
+			cs2_configs['cfg3504'] = v0;
+			client_configs['cfg3692'].bitcfg18767 = cs2method_10060(1, v1);
+			client_configs['cfg3695'] = a0;
+			break;
+		case 9:
+			cs2_configs['cfg3505'] = new WidgetPointer(a2);
+			cs2_configs['cfg3506'] = v0;
+			client_configs['cfg3692'].bitcfg18768 = cs2method_10060(1, v1);
+			client_configs['cfg3696'] = a0;
+			break;
+		case 10:
+			cs2_configs['cfg3507'] = new WidgetPointer(a2);
+			cs2_configs['cfg3508'] = v0;
+			client_configs['cfg3693'].bitcfg18769 = cs2method_10060(1, v1);
+			client_configs['cfg3697'] = a0;
+			break;
+		case 11:
+			cs2_configs['cfg3509'] = new WidgetPointer(a2);
+			cs2_configs['cfg3510'] = v0;
+			client_configs['cfg3693'].bitcfg18770 = cs2method_10060(1, v1);
+			client_configs['cfg3698'] = a0;
+			break;
+		case 12:
+			cs2_configs['cfg3511'] = new WidgetPointer(a2);
+			cs2_configs['cfg3512'] = v0;
+			client_configs['cfg3694'].bitcfg18771 = cs2method_10060(1, v1);
+			client_configs['cfg3699'] = a0;
+	}
+	return;
+}

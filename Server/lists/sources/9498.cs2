@@ -1,0 +1,22 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9498() {
+	if (cs2_configs['cfg3892'] == 1) {
+		cs2method_10026(49086534, "War map teleport enabled in " + (string)cs2method_10379(cs2method_10968(cs2method_10060(cs2_configs['cfg3891'], 49), 50)) + "s");
+	} else if (client_configs['cfg3975'].bitcfg21127 == 1) {
+		cs2method_10026(49086534, "PvP will be enabled in " + (string)cs2method_10379(cs2method_10968(cs2method_10060(cs2_configs['cfg3891'], 49), 50)) + "s");
+	} else {
+		cs2method_10026(49086534, "You have entered a PvP area and have your PvP toggle turned on." + "<br>" + "<br>" + "PvP will be enabled in " + (string)cs2method_10379(cs2method_10968(cs2method_10060(cs2_configs['cfg3891'], 49), 50)) + "s.");
+	}
+	return;
+}

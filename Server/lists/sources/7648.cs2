@@ -1,0 +1,27 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7648(int a0) {
+	cs2method_20162(new function<script_7650>(int a0) {
+		if (client_configs['cfg35'].bitcfg207 == 1 || client_configs['cfg1113'].bitcfg3028 == 1) {
+			return;
+		}
+		if (cs2_configs['cfg2746'] == 1) {
+			if (cs2method_10769(a0) != 16934 && cs2method_10769(a0) != 16936) {
+				cs2method_10758(16934, a0);
+			}
+			script_8800(a0, -1, "Skip button");
+		}
+		return;
+	}, new WidgetPointer(-32768,3), "I", new WidgetPointer(a0));
+	return;
+}

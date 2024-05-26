@@ -1,0 +1,22 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1119(int a0,int a1,int a2,int a3,int a4,int a5,int a6) {
+	script_1446(a0, a6, "Large gnomeball", 26214425, 26214405);
+	script_1446(a0, a1, "Cabbage ball", 26214426, 26214400);
+	script_1446(a0, a4, "Skull ball", 26214427, 26214401);
+	script_1446(a0, a2, "Golden chinchompa ball", 26214428, 26214402);
+	script_1446(a0, a3, "Zaros ball", 26214429, 26214403);
+	script_1446(a0, a5, "Stone of Jas ball", 26214430, 26214404);
+	cs2method_10026(26214434, "Kicks: " + (string)cs2method_10379(a0));
+	return;
+}

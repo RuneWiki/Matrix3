@@ -1,0 +1,46 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7429() {
+	int v3;
+	int v0 = 0;
+	int v6 = 0;
+	int v1 = 16;
+	int v2 = 3;
+	int v4 = 0;
+	int v7 = 0;
+	int v5 = 7224;
+	switch (cs2_configs['cfg2692']) {
+		case 18445:
+			v3 = 7942;
+			break;
+		default:
+			v3 = 7224;
+	}
+	while (v0 < cs2method_10924(v3)) {
+		cs2method_10606(85918056, 4, v6);
+		v7 = cs2method_10051(v0, cs2method_10060(v1, v2));
+		cs2method_10063(v4, v7, 0, 0);
+		cs2method_10013(5, v1, 1, 0);
+		cs2method_10797(idx17mapData('i', 's', v3, v0));
+		cs2method_11105(0, 1, 0);
+		cs2method_10692(494);
+		cs2method_10811(16777215);
+		cs2method_10057(1, "Select");
+		cs2method_10012(1, 46);
+		v6 = cs2method_10060(v6, 1);
+		v0 = cs2method_10060(v0, 1);
+	}
+	cs2method_11130(cs2method_10236(85918056), cs2method_10060(v7, v1), 85918056);
+	script_31(85918055, 85918056, 4343, 4340, 4341, 4342, 4337, 4336);
+	return;
+}

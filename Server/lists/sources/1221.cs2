@@ -1,0 +1,276 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_1221(int a0,int a1) {
+	if (cs2_configs['cfg174'] == 11) {
+		return;
+	}
+	int v1 = script_2948();
+	object v22 = " ";
+	switch (cs2_configs['cfg174']) {
+		flow_3:
+			case 12:
+			return;
+			case 2:
+			switch (v1) {
+				case 21:
+				case 1:
+				case -3:
+					return;
+			}
+			if (a0 == 13) {
+				script_1174(11);
+				return;
+			}
+			return;
+			case 3:
+			switch (v1) {
+				case 21:
+				case 1:
+				case -3:
+					return;
+			}
+			switch (a0) {
+				case 13:
+					script_1174(11);
+					return;
+				case 84:
+				case 80:
+					if (cs2_configs['cfg175'] >= cs2method_10133()) {
+						return;
+					}
+					cs2_configs['cfg174'] = 4;
+					cs2_configs['cfg175'] = cs2method_10133();
+					cs2_configs['cfg1099'] = cs2method_10265(script_2949(cs2_configs['cfg2577']));
+					script_3237(39059518, 39059519, 39059520, script_2949(cs2_configs['cfg2577']), 4);
+					return;
+				case 102:
+				case 103:
+				case 98:
+				case 99:
+				case 96:
+				case 97:
+					cs2_configs['cfg1099'] = script_1553(a0, cs2_configs['cfg2576'], cs2_configs['cfg1099']);
+					script_3237(39059493, 39059494, 39059495, cs2_configs['cfg2576'], 3);
+					return;
+			}
+			IF (cs2method_10265(cs2_configs['cfg2576']) >= 320 && a0 != 85) 
+				GOTO	flow_23
+			GOTO	flow_24
+		flow_23:
+			IF (a0 != 101) 
+				GOTO	flow_25
+		flow_24:
+			IF (cs2method_10265(cs2method_10765(cs2method_10410(a1, ""))) == 0) 
+				GOTO	flow_25
+			GOTO	flow_26
+		flow_25:
+			return;
+		flow_26:
+			int v8 = cs2_configs['cfg1099'];
+			int v16 = 0;
+			int v6 = a0;
+			int v2 = a1;
+			object v3 = cs2_configs['cfg2576'];
+			script_802_struct(1,1,0) v17 = script_802(v8, v3, v16, v6, v2);
+			object v5 = v17.objectpart_0;
+			cs2_configs['cfg1099'] = v17.intpart_0;
+			cs2_configs['cfg2576'] = (string)v5;
+			cs2method_10026(39059494, cs2_configs['cfg2576']);
+			script_3237(39059493, 39059494, 39059495, cs2_configs['cfg2576'], 3);
+			return;
+			case 4:
+			switch (v1) {
+				case 21:
+				case 1:
+				case -3:
+					return;
+			}
+			switch (a0) {
+				case 13:
+					script_1174(11);
+					return;
+				case 84:
+				case 80:
+					if (cs2_configs['cfg175'] >= cs2method_10133()) {
+						return;
+					}
+					if (a0 == 84 && cs2method_10265(cs2_configs['cfg2576']) > 0) {
+						script_2945(0);
+						return;
+					}
+					cs2_configs['cfg174'] = 3;
+					cs2_configs['cfg175'] = cs2method_10133();
+					cs2_configs['cfg1099'] = cs2method_10265(cs2_configs['cfg2576']);
+					script_3237(39059493, 39059494, 39059495, cs2_configs['cfg2576'], 3);
+					return;
+				case 102:
+				case 103:
+				case 98:
+				case 99:
+				case 96:
+				case 97:
+					cs2_configs['cfg1099'] = script_1553(a0, script_2949(cs2_configs['cfg2577']), cs2_configs['cfg1099']);
+					script_3237(39059518, 39059519, 39059520, script_2949(cs2_configs['cfg2577']), 4);
+					return;
+			}
+			if (cs2method_10265(cs2_configs['cfg2577']) >= 20 && a0 != 85 && a0 != 101) {
+				return;
+			}
+			int v25 = cs2_configs['cfg1099'];
+			int v20 = 0;
+			int v18 = a0;
+			int v29 = a1;
+			object v12 = cs2_configs['cfg2577'];
+			script_802_struct(1,1,0) v4 = script_802(v25, v12, v20, v18, v29);
+			object v23 = v4.objectpart_0;
+			cs2_configs['cfg1099'] = v4.intpart_0;
+			cs2_configs['cfg2577'] = (string)v23;
+			cs2method_10026(39059519, script_2949(cs2_configs['cfg2577']));
+			script_3237(39059518, 39059519, 39059520, script_2949(cs2_configs['cfg2577']), 4);
+			return;
+			case 19:
+			switch (v1) {
+				case 21:
+				case 1:
+				case -3:
+					return;
+			}
+			switch (a0) {
+				case 84:
+					if (cs2_configs['cfg175'] >= cs2method_10133()) {
+						return;
+					}
+					if (a0 == 84 && cs2method_10265(cs2_configs['cfg4210']) > 0) {
+						script_4120();
+						return;
+					}
+					cs2_configs['cfg174'] = 19;
+					cs2_configs['cfg175'] = cs2method_10133();
+					cs2_configs['cfg1099'] = cs2method_10265(cs2_configs['cfg4210']);
+					return;
+				case 102:
+				case 103:
+				case 98:
+				case 99:
+				case 96:
+				case 97:
+					cs2_configs['cfg1099'] = script_1553(a0, cs2_configs['cfg4210'], cs2_configs['cfg1099']);
+					script_3237(39059674, 39059675, 39059676, cs2_configs['cfg4210'], 19);
+					return;
+			}
+			if (cs2method_10265(cs2_configs['cfg4210']) >= 6 && a0 != 85 && a0 != 101) {
+				return;
+			}
+			int v27 = cs2_configs['cfg1099'];
+			int v15 = 1;
+			int v21 = a0;
+			int v11 = a1;
+			object v24 = cs2_configs['cfg4210'];
+			script_802_struct(1,1,0) v7 = script_802(v27, v24, v15, v21, v11);
+			object v19 = v7.objectpart_0;
+			cs2_configs['cfg1099'] = v7.intpart_0;
+			cs2_configs['cfg4210'] = (string)v19;
+			cs2method_10026(39059675, cs2_configs['cfg4210']);
+			script_3237(39059674, 39059675, 39059676, cs2_configs['cfg4210'], 19);
+			return;
+			case 18:
+			switch (v1) {
+				case 21:
+				case 1:
+				case -3:
+					return;
+			}
+			switch (a0) {
+				case 13:
+					script_1174(11);
+					cs2method_10467(0, 39059476);
+					cs2method_10467(1, 39059553);
+					cs2_configs['cfg2576'] = "";
+					return;
+				case 84:
+				case 80:
+					if (cs2_configs['cfg175'] >= cs2method_10133()) {
+						return;
+					}
+					cs2_configs['cfg175'] = cs2method_10133();
+					if (cs2method_10265(cs2_configs['cfg2576']) > 0) {
+						script_7722("null");
+					}
+					return;
+				case 102:
+				case 103:
+				case 98:
+				case 99:
+				case 96:
+				case 97:
+					cs2_configs['cfg1099'] = script_1553(a0, cs2_configs['cfg2576'], cs2_configs['cfg1099']);
+					script_3237(39059579, 39059580, 39059578, cs2_configs['cfg2576'], 18);
+					return;
+			}
+			IF (cs2method_10265(cs2_configs['cfg2576']) >= 320 && a0 != 85) 
+				GOTO	flow_76
+			GOTO	flow_77
+		flow_76:
+			IF (a0 != 101) 
+				GOTO	flow_78
+		flow_77:
+			IF (cs2method_10265(cs2method_10765(cs2method_10410(a1, ""))) == 0) 
+				GOTO	flow_78
+			GOTO	flow_79
+		flow_78:
+			return;
+		flow_79:
+			int v14 = cs2_configs['cfg1099'];
+			int v9 = 0;
+			int v10 = a0;
+			int v26 = a1;
+			object v13 = cs2_configs['cfg2576'];
+			script_802_struct(1,1,0) v0 = script_802(v14, v13, v9, v10, v26);
+			object v28 = v0.objectpart_0;
+			cs2_configs['cfg1099'] = v0.intpart_0;
+			cs2_configs['cfg2576'] = (string)v28;
+			cs2method_10026(39059580, cs2_configs['cfg2576']);
+			script_3237(39059579, 39059580, 39059578, cs2_configs['cfg2576'], 18);
+			return;
+			case 5:
+			switch (v1) {
+				case -3:
+				case 1:
+					return;
+			}
+			if (v1 == 21 && a0 == 13) {
+				script_3235();
+				return;
+			}
+			if (a0 == 13) {
+				script_2954();
+				return;
+			}
+			return;
+			case 6:
+			case 7:
+			case 8:
+			case 14:
+			case 15:
+			script_3216(a0, a1);
+			return;
+			case 13:
+			if (a0 == 13) {
+				script_1174(cs2_configs['cfg1091']);
+				return;
+			}
+			return;
+	}
+	return;
+}

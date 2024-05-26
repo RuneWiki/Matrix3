@@ -1,0 +1,45 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5218(int a0,int a1,int a2,int a3,int a4) {
+	int v1 = 0;
+	int v0 = 0;
+	cs2method_10467(0, cs2method_10155(a2));
+	if (a4 > 0) {
+		cs2method_20162(load function<5218>, new WidgetPointer(a2), new WidgetPointer(a0), a3, cs2method_10461(a4, 1), new WidgetPointer(a1), "IIiiI", new WidgetPointer(a1));
+		return;
+	}
+	if (cs2method_11038(a2, 0) == 1) {
+		int v2;
+		int v4 = cs2method_10699();
+		if (a3 == 0) {
+			v2 = cs2method_10461(v4, 22);
+		} else {
+			v2 = cs2method_10060(v4, 22);
+		}
+		int v3 = cs2method_11048(v2, 0);
+		v0 = cs2method_10872(v3, 255);
+	}
+	script_4161(a2, v0);
+	script_4161(a0, v0);
+	if (v0 == 0 && a3 == 0) {
+		cs2method_20162(new function<none>() {
+		}, "", new WidgetPointer(a1));
+	} else if (v0 == 255 && a3 == 1) {
+		cs2method_20162(new function<none>() {
+		}, "", new WidgetPointer(a1));
+		cs2method_10467(1, cs2method_10155(a2));
+	} else {
+		cs2method_20162(load function<5218>, new WidgetPointer(a2), new WidgetPointer(a0), a3, 0, new WidgetPointer(a1), "IIiiI", new WidgetPointer(a1));
+	}
+	return;
+}

@@ -1,0 +1,54 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9363() {
+	script_9367();
+	switch (client_configs['cfg2047']) {
+		case 1:
+			script_9362(45940901);
+			script_9366(1, client_configs['cfg2026'].bitcfg8920, client_configs['cfg2031'].bitcfg8928, client_configs['cfg2018'].bitcfg8896, client_configs['cfg2035'].bitcfg8936, client_configs['cfg2020'].bitcfg8904, client_configs['cfg2024'].bitcfg8912, client_configs['cfg2039'], client_configs['cfg2030'].bitcfg8946);
+			break;
+		case 2:
+			script_9362(45940908);
+			script_9366(2, client_configs['cfg2026'].bitcfg8921, client_configs['cfg2031'].bitcfg8929, client_configs['cfg2018'].bitcfg8897, client_configs['cfg2035'].bitcfg8937, client_configs['cfg2020'].bitcfg8905, client_configs['cfg2024'].bitcfg8913, client_configs['cfg2040'], client_configs['cfg2030'].bitcfg8947);
+			break;
+		case 3:
+			script_9362(45940915);
+			script_9366(3, client_configs['cfg2027'].bitcfg8922, client_configs['cfg2032'].bitcfg8930, client_configs['cfg2018'].bitcfg8898, client_configs['cfg2036'].bitcfg8938, client_configs['cfg2021'].bitcfg8906, client_configs['cfg2024'].bitcfg8914, client_configs['cfg2041'], client_configs['cfg2030'].bitcfg8948);
+			break;
+		case 4:
+			script_9362(45940922);
+			script_9366(4, client_configs['cfg2027'].bitcfg8923, client_configs['cfg2032'].bitcfg8931, client_configs['cfg2018'].bitcfg8899, client_configs['cfg2036'].bitcfg8939, client_configs['cfg2021'].bitcfg8907, client_configs['cfg2024'].bitcfg8915, client_configs['cfg2042'], client_configs['cfg2030'].bitcfg8949);
+			break;
+		case 5:
+			script_9362(45940929);
+			script_9366(5, client_configs['cfg2028'].bitcfg8924, client_configs['cfg2033'].bitcfg8932, client_configs['cfg2019'].bitcfg8900, client_configs['cfg2037'].bitcfg8940, client_configs['cfg2022'].bitcfg8908, client_configs['cfg2025'].bitcfg8916, client_configs['cfg2043'], client_configs['cfg2030'].bitcfg8950);
+			break;
+		case 6:
+			script_9362(45940936);
+			script_9366(6, client_configs['cfg2028'].bitcfg8925, client_configs['cfg2033'].bitcfg8933, client_configs['cfg2019'].bitcfg8901, client_configs['cfg2037'].bitcfg8941, client_configs['cfg2022'].bitcfg8909, client_configs['cfg2025'].bitcfg8917, client_configs['cfg2044'], client_configs['cfg2030'].bitcfg8951);
+			break;
+		case 7:
+			script_9362(45940943);
+			script_9366(7, client_configs['cfg2029'].bitcfg8926, client_configs['cfg2034'].bitcfg8934, client_configs['cfg2019'].bitcfg8902, client_configs['cfg2038'].bitcfg8942, client_configs['cfg2023'].bitcfg8910, client_configs['cfg2025'].bitcfg8918, client_configs['cfg2045'], client_configs['cfg2030'].bitcfg8952);
+			break;
+		case 8:
+			script_9362(45940950);
+			script_9366(8, client_configs['cfg2029'].bitcfg8927, client_configs['cfg2034'].bitcfg8935, client_configs['cfg2019'].bitcfg8903, client_configs['cfg2038'].bitcfg8943, client_configs['cfg2023'].bitcfg8911, client_configs['cfg2025'].bitcfg8919, client_configs['cfg2046'], client_configs['cfg2030'].bitcfg8953);
+	}
+	cs2method_10467(1, 45940776);
+	cs2method_20243(new function<script_9364>() {
+		cs2method_10026(45940824, script_9365());
+		return;
+	}, 3856, 1, "Y", new WidgetPointer(701,88));
+	return;
+}

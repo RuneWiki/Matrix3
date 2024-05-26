@@ -1,0 +1,50 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_5956(int a0) {
+	int v0 = 0;
+	if (cs2method_10172() == 1) {
+		switch (a0) {
+			case 1:
+				v0 = clan_chat_configs['cfg2834'].bitcfg6412;
+				break;
+			case 2:
+				v0 = clan_chat_configs['cfg2834'].bitcfg6413;
+				break;
+			case 3:
+				v0 = clan_chat_configs['cfg2834'].bitcfg6416;
+				break;
+			case 4:
+				v0 = clan_chat_configs['cfg2834'].bitcfg6414;
+				break;
+			case 5:
+				v0 = clan_chat_configs['cfg2834'].bitcfg6419;
+				break;
+			case 6:
+				v0 = clan_chat_configs['cfg2834'].bitcfg6415;
+				break;
+			case 7:
+				v0 = clan_chat_configs['cfg2834'].bitcfg6420;
+				break;
+			case 8:
+				v0 = clan_chat_configs['cfg2834'].bitcfg6418;
+				break;
+			case 9:
+				v0 = clan_chat_configs['cfg2834'].bitcfg6417;
+				break;
+			case 10:
+				v0 = clan_chat_configs['cfg2834'].bitcfg6421;
+		}
+		return v0;
+	}
+	return 0;
+}

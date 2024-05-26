@@ -1,0 +1,27 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7970(int a0,int a1) {
+	int v0 = script_7974(a1, a0);
+	cs2method_10039(-1, -1, v0);
+	cs2method_10758(14520, v0);
+	cs2method_10495(v0);
+	cs2method_10112(0, 0, 1, 1, v0);
+	cs2method_10283(30, 30, 0, 0, v0);
+	cs2method_10906(v0);
+	cs2method_10882(v0, "");
+	cs2method_21110(new function<script_7001>(int a0,int a1,int a2) {
+		script_7002(a2, a1, a0);
+		return;
+	}, new WidgetPointer(-32768,3), -2147483643, new WidgetPointer(-32768,6), "IiI", new WidgetPointer(v0));
+	return;
+}

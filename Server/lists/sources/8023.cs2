@@ -1,0 +1,155 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8023(int a0,int a1,int a2) {
+	if (client_configs['cfg1271'].bitcfg3577 != a1) {
+		return;
+	}
+	int v4 = 79953938;
+	int v0 = 79953939;
+	int v14 = 79953929;
+	int v3 = 79953930;
+	int v9 = 79953966;
+	int v8 = 79953967;
+	int v12 = 79953958;
+	int v20 = 79953959;
+	int v11 = 79953921;
+	if (a2 == 69206019) {
+		v4 = 69206032;
+		v0 = 69206033;
+		v14 = 69206023;
+		v3 = 69206024;
+		v9 = 69206064;
+		v8 = 69206065;
+		v12 = 69206056;
+		v20 = 69206057;
+		v11 = 69206020;
+	}
+	int v18 = 1;
+	int v5 = 1;
+	if (a0 <= 0) {
+		a0 = cs2method_11048(client_configs['cfg1270'].bitcfg3575, 1);
+	}
+	if (a0 == 1) {
+		v18 = 0;
+	}
+	for (int v1 = script_5795(a1), int v7 = 1, int v22 = 0, int v15 = 1, object v19 = "", object v17 = "", object v13 = "", object v6 = "", int v16 = 42; v15 < 9; v15 = cs2method_10060(v15, 1)) {
+		switch (v15) {
+			case 1:
+				v17 = idx22mapAttribute(v1, 1274);
+				v13 = idx22mapAttribute(v1, 1275);
+				v6 = idx22mapAttribute(v1, 1276);
+				break;
+			case 2:
+				if (a1 == 3041 || a1 == 3060 && client_configs['cfg4056'].bitcfg21373 == 1) {
+					v17 = "Only daily challenges need to be handed in.";
+				} else {
+					v17 = idx22mapAttribute(v1, 1275);
+				}
+				v13 = idx22mapAttribute(v1, 1276);
+				v6 = idx22mapAttribute(v1, 1277);
+				break;
+			case 3:
+				v17 = idx22mapAttribute(v1, 1276);
+				v13 = idx22mapAttribute(v1, 1277);
+				v6 = idx22mapAttribute(v1, 1278);
+				break;
+			case 4:
+				v17 = idx22mapAttribute(v1, 1277);
+				v13 = idx22mapAttribute(v1, 1278);
+				v6 = idx22mapAttribute(v1, 1279);
+				break;
+			case 5:
+				v17 = idx22mapAttribute(v1, 1278);
+				v13 = idx22mapAttribute(v1, 1279);
+				v6 = idx22mapAttribute(v1, 1280);
+				break;
+			case 6:
+				v17 = idx22mapAttribute(v1, 1279);
+				v13 = idx22mapAttribute(v1, 1280);
+				v6 = idx22mapAttribute(v1, 1281);
+				break;
+			case 7:
+				v17 = idx22mapAttribute(v1, 1280);
+				v13 = idx22mapAttribute(v1, 1281);
+				break;
+			case 8:
+				v17 = idx22mapAttribute(v1, 1281);
+		}
+		if (cs2method_10846(v13, "") == 0 && v22 == 0) {
+			v7 = v15;
+			v22 = 1;
+		}
+		if (cs2method_10846(v6, "") == 0 && v22 == 0 && v4 == -1) {
+			v7 = v15;
+			v22 = 1;
+		}
+		if (v15 == a0) {
+			v19 = v17;
+		}
+	}
+	if (v7 <= a0) {
+		v5 = 0;
+	}
+	if (cs2method_10846(idx22mapAttribute(v1, 1274), "") == 0) {
+		a0 = 0;
+		v7 = 0;
+	}
+	cs2method_10026(v14, cs2method_10379(a0));
+	cs2method_10026(v3, cs2method_10379(v7));
+	cs2method_10251(0, 0, v4);
+	cs2method_10273(v4);
+	if (a0 == 0 && v7 == 0) {
+		v19 = "There are no hints available for this Task. Good luck!";
+	}
+	int v21 = script_5798(a1, v1, 0, 0, v19, v4, -1, -1);
+	int v2 = cs2method_11048(v21, 0);
+	if (cs2method_11038(v4, 0) == 1) {
+		cs2method_10013(0, 0, 1, 1);
+	}
+	int v10 = cs2method_10823(a2);
+	cs2method_20486(new function<script_5870>(int a0,int a1) {
+		script_6793(a0, a1);
+		script_6794(a0, a1);
+		return;
+	}, a1, cs2method_10060(a0, 1), "ii", new WidgetPointer(v9));
+	cs2method_10467(v5, v8);
+	cs2method_20486(new function<script_5870>(int a0,int a1) {
+		script_6793(a0, a1);
+		script_6794(a0, a1);
+		return;
+	}, a1, cs2method_10461(a0, 1), "ii", new WidgetPointer(v12));
+	cs2method_10467(v18, v20);
+	if (v7 < 2) {
+		cs2method_10467(1, v11);
+		v10 = cs2method_10060(v10, cs2method_10823(v11));
+	} else if (client_configs['cfg1293'].bitcfg3617 == 0 || script_3999(client_configs['cfg3249'].bitcfg16612) == 0 && client_configs['cfg3249'].bitcfg16612 == client_configs['cfg1269'].bitcfg3561) {
+		cs2method_10467(0, v11);
+	} else {
+		cs2method_10467(1, v11);
+		v10 = cs2method_10060(v10, cs2method_10823(v11));
+	}
+	cs2method_10467(0, v4);
+	if (v2 < v10) {
+		cs2method_10467(1, v0);
+		cs2method_11130(0, cs2method_10823(v4), v4);
+		cs2method_10251(0, 0, v4);
+	} else {
+		v2 = cs2method_10060(v2, 5);
+		cs2method_10283(cs2method_10060(cs2method_10236(v0), 2), 0, 1, 1, v4);
+		cs2method_11130(0, cs2method_11048(v2, cs2method_10823(v4)), v4);
+		cs2method_10251(0, 0, v4);
+		cs2method_10467(0, v0);
+		script_7791(v0, v4);
+	}
+	return;
+}

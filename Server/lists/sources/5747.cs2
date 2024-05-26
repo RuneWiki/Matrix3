@@ -1,0 +1,140 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_5747_struct(2,0,0) script_5747(int a0,int a1,int a2,int a3,int a4) {
+	object v10;
+	cs2method_10606(81199112, 5, a1);
+	if (a0 == 1) {
+		cs2method_10310(7635);
+	} else {
+		cs2method_10310(7629);
+	}
+	cs2method_10013(12, 51, 0, 0);
+	cs2method_10063(cs2method_10060(cs2method_10051(cs2method_10060(cs2method_10060(cs2method_10051(2, 12), 434), 5), cs2method_10038(a2, 1)), 5), cs2method_10051(cs2method_10060(51, 3), cs2method_10968(a2, 1)), 0, 0);
+	int v4 = cs2method_10060(a1, 1);
+	cs2method_10606(81199112, 5, v4);
+	if (a0 == 1) {
+		cs2method_10310(7636);
+	} else {
+		cs2method_10310(7630);
+	}
+	cs2method_10013(434, 51, 0, 0);
+	cs2method_10063(cs2method_10060(cs2method_10060(cs2method_10051(cs2method_10060(cs2method_10060(cs2method_10051(2, 12), 434), 5), cs2method_10038(a2, 1)), 5), 12), cs2method_10051(cs2method_10060(51, 3), cs2method_10968(a2, 1)), 0, 0);
+	int v7 = cs2method_10060(v4, 1);
+	cs2method_10606(81199112, 5, v7);
+	if (a0 == 1) {
+		cs2method_10310(7637);
+	} else {
+		cs2method_10310(7631);
+	}
+	cs2method_10013(12, 51, 0, 0);
+	cs2method_10063(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10051(cs2method_10060(cs2method_10060(cs2method_10051(2, 12), 434), 5), cs2method_10038(a2, 1)), 5), 12), 434), cs2method_10051(cs2method_10060(51, 3), cs2method_10968(a2, 1)), 0, 0);
+	int v2 = cs2method_10060(v7, 1);
+	cs2method_10606(81199112, 4, v2);
+	cs2method_10797(idx22mapAttribute(a3, 1266));
+	cs2method_10692(17814);
+	cs2method_10811(15458492);
+	cs2method_10013(330, 13, 0, 0);
+	cs2method_10063(cs2method_10060(cs2method_10060(cs2method_10051(cs2method_10060(cs2method_10060(cs2method_10051(2, 12), 434), 5), cs2method_10038(a2, 1)), 5), 70), cs2method_10060(cs2method_10051(cs2method_10060(51, 3), cs2method_10968(a2, 1)), 1), 0, 0);
+	int v11 = cs2method_10060(v2, 1);
+	cs2method_10606(81199112, 4, v11);
+	cs2method_10797(idx22mapAttribute(a3, 1273));
+	cs2method_10692(20452);
+	cs2method_10811(14145202);
+	cs2method_10013(330, 30, 0, 0);
+	cs2method_10063(cs2method_10060(cs2method_10060(cs2method_10051(cs2method_10060(cs2method_10060(cs2method_10051(2, 12), 434), 5), cs2method_10038(a2, 1)), 5), 70), cs2method_10060(cs2method_10051(cs2method_10060(51, 3), cs2method_10968(a2, 1)), 16), 0, 0);
+	int v6 = cs2method_10060(v11, 1);
+	cs2method_10606(81199112, 5, v6);
+	if (idx22mapAttribute(a3, 1270) != 4094) {
+		cs2method_10310(idx22mapAttribute(idx17mapData('i', 'J', 2252, idx22mapAttribute(a3, 1270)), 952));
+	} else {
+		cs2method_10310(idx22mapAttribute(a3, 1271));
+	}
+	cs2method_10013(40, 40, 0, 0);
+	cs2method_10063(cs2method_10060(cs2method_10060(cs2method_10051(cs2method_10060(cs2method_10060(cs2method_10051(2, 12), 434), 5), cs2method_10038(a2, 1)), 5), 7), cs2method_10060(cs2method_10051(cs2method_10060(51, 3), cs2method_10968(a2, 1)), 5), 0, 0);
+	int v5 = cs2method_10060(v6, 1);
+	object v0 = "";
+	int v8 = 3;
+	cs2method_10606(81199112, 5, v5);
+	if (a0 == 1) {
+		cs2method_10310(9603);
+	} else if (a4 == 1) {
+		cs2method_10310(9601);
+	} else {
+		cs2method_10310(9602);
+	}
+	cs2method_10013(34, 34, 0, 0);
+	cs2method_10063(cs2method_10461(cs2method_10461(cs2method_10060(cs2method_10060(cs2method_10060(cs2method_10051(cs2method_10060(cs2method_10060(cs2method_10051(2, 12), 434), 5), cs2method_10038(a2, 1)), 5), 12), 434), 34), 4), cs2method_10060(cs2method_10051(cs2method_10060(51, 3), cs2method_10968(a2, 1)), cs2method_10968(cs2method_10461(51, 34), 2)), 0, 0);
+	if (a0 == 1) {
+		v10 = "Task Complete";
+	} else if (a4 == 1) {
+		v10 = "Requirements met.";
+	} else {
+		v10 = "Requirements not met.";
+	}
+	cs2method_20353(new function<script_7768>(int a0,object a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+		script_7769(a6, a12, a10, a5, a11, a8, a3, a7, a2, a0, a9, a1, a4);
+		return;
+	}, new WidgetPointer(1239,10), new WidgetPointer(1239,8), v5, (string)v10, 175, -1, -1, -1, 12, 3, v8, -2147483647, -2147483646, "IIisiffiiiiii");
+	cs2method_20884(new function<script_40>(int a0) {
+		script_41(a0);
+		return;
+	}, new WidgetPointer(1239,10), "I");
+	int v9 = cs2method_10060(v5, 1);
+	cs2method_10606(81199112, 5, v9);
+	cs2method_10013(456, 51, 0, 0);
+	cs2method_10063(cs2method_10060(cs2method_10051(cs2method_10060(cs2method_10060(cs2method_10051(2, 12), 434), 5), cs2method_10038(a2, 1)), 5), cs2method_10051(cs2method_10060(51, 3), cs2method_10968(a2, 1)), 0, 0);
+	cs2method_10057(1, "Select");
+	cs2method_10200(cs2method_10427("<col=00ff00>", idx22mapAttribute(a3, 1266)));
+	cs2method_20674(new function<script_5748>(int a0) {
+		if (cs2method_11038(81199112, cs2method_10461(a0, cs2method_10461(8, 1))) == 1) {
+			cs2method_10310(7632);
+		}
+		if (cs2method_11038(81199112, cs2method_10461(a0, cs2method_10461(8, 2))) == 1) {
+			cs2method_10310(7633);
+		}
+		if (cs2method_11038(81199112, cs2method_10461(a0, cs2method_10461(8, 3))) == 1) {
+			cs2method_10310(7634);
+		}
+		return;
+	}, -2147483643, "i");
+	if (a0 == 0) {
+		cs2method_20884(new function<script_5749>(int a0) {
+			if (cs2method_11038(81199112, cs2method_10461(a0, cs2method_10461(8, 1))) == 1) {
+				cs2method_10310(7629);
+			}
+			if (cs2method_11038(81199112, cs2method_10461(a0, cs2method_10461(8, 2))) == 1) {
+				cs2method_10310(7630);
+			}
+			if (cs2method_11038(81199112, cs2method_10461(a0, cs2method_10461(8, 3))) == 1) {
+				cs2method_10310(7631);
+			}
+			return;
+		}, -2147483643, "i");
+	} else {
+		cs2method_20884(new function<script_5750>(int a0) {
+			if (cs2method_11038(81199112, cs2method_10461(a0, cs2method_10461(8, 1))) == 1) {
+				cs2method_10310(7635);
+			}
+			if (cs2method_11038(81199112, cs2method_10461(a0, cs2method_10461(8, 2))) == 1) {
+				cs2method_10310(7636);
+			}
+			if (cs2method_11038(81199112, cs2method_10461(a0, cs2method_10461(8, 3))) == 1) {
+				cs2method_10310(7637);
+			}
+			return;
+		}, -2147483643, "i");
+	}
+	int v1 = cs2method_10060(v9, 1);
+	int v3 = cs2method_10060(a2, 1);
+	return new script_5747_struct(v1, v3);
+}

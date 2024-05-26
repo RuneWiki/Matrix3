@@ -1,0 +1,29 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_3354_struct(1,1,0) script_3354(int a0) {
+	switch (a0) {
+		case 0:
+			return new script_3354_struct(0, "Bosses");
+		case 1:
+			return new script_3354_struct(0, "Floors");
+		case 2:
+			return new script_3354_struct(0, "Item Binding");
+		case 3:
+			return new script_3354_struct(0, "Rewards");
+		case 4:
+			return new script_3354_struct(0, "Areas");
+		case 5:
+			return new script_3354_struct(0, "Milestones");
+	}
+	return new script_3354_struct(-1, "");
+}

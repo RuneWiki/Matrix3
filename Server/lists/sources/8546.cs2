@@ -1,0 +1,31 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_8546_struct(9,0,0) script_8546(int a0) {
+	switch (a0) {
+		case 18:
+			return new script_8546_struct(client_configs['cfg1772'].bitcfg18797, client_configs['cfg1772'].bitcfg18798, client_configs['cfg1772'].bitcfg18799, client_configs['cfg1772'].bitcfg18800, client_configs['cfg1772'].bitcfg18801, client_configs['cfg1772'].bitcfg18802, client_configs['cfg1772'].bitcfg18803, client_configs['cfg1772'].bitcfg18804, client_configs['cfg1774'].bitcfg20828);
+		case 19:
+			return new script_8546_struct(client_configs['cfg1772'].bitcfg18812, client_configs['cfg1772'].bitcfg18813, client_configs['cfg1772'].bitcfg18814, client_configs['cfg1772'].bitcfg18815, client_configs['cfg1772'].bitcfg18816, client_configs['cfg1772'].bitcfg18817, client_configs['cfg1772'].bitcfg18818, client_configs['cfg1772'].bitcfg18819, client_configs['cfg1774'].bitcfg20829);
+		case 20:
+			return new script_8546_struct(client_configs['cfg1772'].bitcfg18827, client_configs['cfg1772'].bitcfg18828, client_configs['cfg1773'].bitcfg18829, client_configs['cfg1773'].bitcfg18830, client_configs['cfg1773'].bitcfg18831, client_configs['cfg1773'].bitcfg18832, client_configs['cfg1773'].bitcfg18833, client_configs['cfg1773'].bitcfg18834, client_configs['cfg1774'].bitcfg20830);
+		case 21:
+			return new script_8546_struct(client_configs['cfg1773'].bitcfg18842, client_configs['cfg1773'].bitcfg18843, client_configs['cfg1773'].bitcfg18844, client_configs['cfg1773'].bitcfg18845, client_configs['cfg1773'].bitcfg18846, client_configs['cfg1773'].bitcfg18847, client_configs['cfg1773'].bitcfg18848, client_configs['cfg1773'].bitcfg18849, client_configs['cfg1774'].bitcfg20831);
+		case 22:
+			return new script_8546_struct(client_configs['cfg1773'].bitcfg18857, client_configs['cfg1773'].bitcfg18858, client_configs['cfg1773'].bitcfg18859, client_configs['cfg1773'].bitcfg18860, client_configs['cfg1774'].bitcfg18861, client_configs['cfg1774'].bitcfg18862, client_configs['cfg1774'].bitcfg18863, client_configs['cfg1774'].bitcfg18864, client_configs['cfg1774'].bitcfg20832);
+		case 23:
+			return new script_8546_struct(client_configs['cfg1774'].bitcfg20813, client_configs['cfg1774'].bitcfg20814, client_configs['cfg1774'].bitcfg20815, client_configs['cfg1774'].bitcfg20816, client_configs['cfg1774'].bitcfg20817, client_configs['cfg1774'].bitcfg20818, client_configs['cfg1774'].bitcfg20819, client_configs['cfg1774'].bitcfg20820, client_configs['cfg1774'].bitcfg20833);
+		case 1019:
+			return new script_8546_struct(0, 0, 0, 0, 1, 0, 0, 0, 0);
+	}
+	return new script_8546_struct(0, 0, 0, 0, 0, 0, 0, 0, 0);
+}

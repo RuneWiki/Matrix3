@@ -1,0 +1,29 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6210(int a0) {
+	object v0 = "Join your clan chat channel";
+	cs2method_20618(load function<6210>, new WidgetPointer(-32768,3), "I", new WidgetPointer(a0));
+	if (cs2method_10435() == 1) {
+		cs2method_10758(6255, 15335470);
+		cs2method_11127(1, 15335458, "Leave Clan Channel");
+		v0 = "Leave your clan chat channel";
+	} else {
+		cs2method_10758(6256, 15335470);
+		cs2method_11127(1, 15335458, "Join Clan Channel");
+	}
+	cs2method_21121(new function<script_8799>(int a0,int a1,object a2) {
+		script_8800(a0, a1, a2);
+		return;
+	}, (string)v0, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(234,34));
+	return;
+}

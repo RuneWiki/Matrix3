@@ -1,0 +1,87 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2041() {
+	cs2method_10026(1835050, "Bronze: " + (string)cs2method_10379(client_configs['cfg1310'].bitcfg3627));
+	if (client_configs['cfg1310'].bitcfg3627 > 0) {
+		cs2method_10520(16750623, 1835052);
+		cs2method_10520(16750623, 1835050);
+	} else {
+		cs2method_10520(10066329, 1835052);
+		cs2method_10520(10066329, 1835050);
+	}
+	cs2method_10026(1835047, "Iron: " + (string)cs2method_10379(client_configs['cfg1310'].bitcfg3628));
+	if (client_configs['cfg1310'].bitcfg3628 > 0) {
+		cs2method_10520(16750623, 1835049);
+		cs2method_10520(16750623, 1835047);
+	} else {
+		cs2method_10520(10066329, 1835049);
+		cs2method_10520(10066329, 1835047);
+	}
+	cs2method_10026(1835045, "Steel: " + (string)cs2method_10379(client_configs['cfg1310'].bitcfg3629));
+	if (client_configs['cfg1310'].bitcfg3629 > 0) {
+		cs2method_10520(16750623, 1835046);
+		cs2method_10520(16750623, 1835045);
+	} else {
+		cs2method_10520(10066329, 1835046);
+		cs2method_10520(10066329, 1835045);
+	}
+	cs2method_10026(1835042, "Mithril: " + (string)cs2method_10379(client_configs['cfg1310'].bitcfg3630));
+	if (client_configs['cfg1310'].bitcfg3630 > 0) {
+		cs2method_10520(16750623, 1835043);
+		cs2method_10520(16750623, 1835042);
+	} else {
+		cs2method_10520(10066329, 1835043);
+		cs2method_10520(10066329, 1835042);
+	}
+	cs2method_10026(1835039, "Adamantite: " + (string)cs2method_10379(client_configs['cfg1311'].bitcfg3631));
+	if (client_configs['cfg1311'].bitcfg3631 > 0) {
+		cs2method_10520(16750623, 1835040);
+		cs2method_10520(16750623, 1835039);
+	} else {
+		cs2method_10520(10066329, 1835040);
+		cs2method_10520(10066329, 1835039);
+	}
+	cs2method_10026(1835036, "Runite: " + (string)cs2method_10379(client_configs['cfg1311'].bitcfg3632));
+	if (client_configs['cfg1311'].bitcfg3632 > 0) {
+		cs2method_10520(16750623, 1835037);
+		cs2method_10520(16750623, 1835036);
+	} else {
+		cs2method_10520(10066329, 1835037);
+		cs2method_10520(10066329, 1835036);
+	}
+	cs2method_10026(1835033, "Silver: " + (string)cs2method_10379(client_configs['cfg1311'].bitcfg3634));
+	if (client_configs['cfg1311'].bitcfg3634 > 0) {
+		cs2method_10520(16750623, 1835034);
+		cs2method_10520(16750623, 1835033);
+	} else {
+		cs2method_10520(10066329, 1835034);
+		cs2method_10520(10066329, 1835033);
+	}
+	cs2method_10026(1835030, "Gold: " + (string)cs2method_10379(client_configs['cfg1311'].bitcfg3633));
+	if (client_configs['cfg1311'].bitcfg3633 > 0) {
+		cs2method_10520(16750623, 1835031);
+		cs2method_10520(16750623, 1835030);
+	} else {
+		cs2method_10520(10066329, 1835031);
+		cs2method_10520(10066329, 1835030);
+	}
+	cs2method_10026(1835010, "Perfect Gold: " + (string)cs2method_10379(client_configs['cfg1314'].bitcfg3644));
+	if (client_configs['cfg1314'].bitcfg3644 > 0) {
+		cs2method_10520(16750623, 1835012);
+		cs2method_10520(16750623, 1835010);
+	} else {
+		cs2method_10520(10066329, 1835012);
+		cs2method_10520(10066329, 1835010);
+	}
+	return;
+}

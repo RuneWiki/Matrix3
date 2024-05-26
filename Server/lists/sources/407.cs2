@@ -1,0 +1,43 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_407() {
+	object v3;
+	int v4;
+	if (cs2_configs['cfg1362'] < 1) {
+		return;
+	}
+	int v2 = cs2method_10968(cs2method_10051(cs2_configs['cfg1362'], 6), 10);
+	int v5 = 0;
+	int v0 = 0;
+	object v1 = "";
+	if (v2 < 60) {
+		v4 = v2;
+	} else {
+		v4 = cs2method_10038(v2, 60);
+		v0 = cs2method_10968(v2, 60);
+	}
+	if (v4 < 10) {
+		v3 = cs2method_10427("0", cs2method_10379(v4));
+		if (v0 == 0 && cs2_configs['cfg1389'] == 0) {
+			cs2_configs['cfg1389'] = 1;
+			if (client_configs['cfg1655'].bitcfg5387 == 1) {
+				cs2method_10670(3434, 1, 0, 255);
+			}
+		}
+	} else {
+		v3 = cs2method_10379(v4);
+	}
+	cs2method_10026(66191383, "Turn Time Left" + "<br>" + (string)cs2method_10379(v0) + ":" + (string)v3);
+	cs2method_10026(66387992, (string)cs2method_10379(v0) + ":" + (string)v3);
+	return;
+}

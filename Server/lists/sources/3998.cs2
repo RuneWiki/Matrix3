@@ -1,0 +1,21 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3998(int a0,int a1,int a2,int a3,int a4,object a5) {
+	int v1 = 0;
+	int v0 = cs2method_10718(a1);
+	if (cs2method_10461(a0, v0) < 60) {
+		v1 = 2;
+	}
+	script_7769(60096692, a1, a4, 180, 17813, 17813, 16777215, 13, 4, v1, a3, a5, a2);
+	return;
+}

@@ -1,0 +1,48 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7722(object a0) {
+	int v1 = 0;
+	int v0 = 2608;
+	script_2954();
+	if (cs2method_10265(cs2_configs['cfg2576']) > 0) {
+		int v2 = cs2method_10148(cs2_configs['cfg2576']);
+		switch (v2) {
+			case 2:
+				int v3 = 2612;
+				script_2950(-1000, "Page has opened in a new window (please check your popup blocker)", 0, 0, v3, 0, "", -1, 1, "Back");
+				break;
+			case 3:
+				script_2950(-1000, "Error connecting to server.", 1, 0, v0, 0, "", -1, 1, "Back");
+				break;
+			case 4:
+				script_2950(-1000, "The part of the website you are trying to connect to is offline at the moment. Please try again later.", 1, 0, v0, 0, "", -1, 1, "Back");
+				break;
+			case 5:
+				script_2950(-1000, "Sorry, there was an error trying to log you in to this part of the website. Please try again later.", 1, 0, v0, 0, "", -1, 1, "Back");
+				break;
+			case 6:
+				script_2950(-1000, "Error connecting to server.", 1, 0, v0, 0, "", -1, 1, "Back");
+				break;
+			case 7:
+				script_2950(-1000, "You must enter a valid login to proceed. For accounts created after 24th November 2010, please use your email address to login. Otherwise please login with your username, even if you have registered your email.", 1, 0, v0, 0, "", -1, 1, "Back");
+		}
+	} else {
+		cs2method_10467(1, 39059476);
+		cs2method_10467(0, 39059553);
+		cs2_configs['cfg174'] = 18;
+		cs2method_10026(39059580, "");
+		cs2_configs['cfg2576'] = "";
+		script_3237(39059579, 39059580, 39059578, cs2_configs['cfg2576'], 18);
+	}
+	return;
+}

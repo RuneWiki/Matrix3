@@ -1,0 +1,63 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1337(int a0) {
+	if (a0 == 1) {
+		cs2method_20380(new function<script_6068>(int a0,int a1,int a2,int a3,int a4,int a5) {
+			flow_0:
+				IF (cs2method_10262() == 0) 
+					GOTO	flow_1
+				GOTO	flow_2
+			flow_1:
+				IF (a0 == 37) 
+					GOTO	flow_8
+			flow_2:
+				IF (cs2method_10262() == 1) 
+					GOTO	flow_3
+				GOTO	flow_4
+			flow_3:
+				IF (a0 == 54) 
+					GOTO	flow_8
+			flow_4:
+				IF (cs2method_10262() == 2) 
+					GOTO	flow_5
+				GOTO	flow_6
+			flow_5:
+				IF (a0 == 40) 
+					GOTO	flow_8
+			flow_6:
+				IF (cs2method_10262() == 3 && a0 == 49) 
+					GOTO	flow_8
+				GOTO	flow_9
+			flow_8:
+				cs2method_10704(0, a4);
+				cs2method_10015(a5);
+				script_8841(28, 0);
+				GOTO	flow_14
+			flow_9:
+				if (a0 == 69 || a0 == 13) {
+					if (a0 == 13 && script_9666() == 1) {
+						return;
+					}
+					cs2method_10704(0, a1);
+					cs2method_10015(a2);
+					script_8841(28, 0);
+				}
+			flow_14:
+				return;
+		}, -2147483640, false, new WidgetPointer(1183,6), new WidgetPointer(1183,7), new WidgetPointer(1183,15), new WidgetPointer(1183,19), "izIIII", new WidgetPointer(1183,0));
+	} else {
+		cs2method_20380(new function<none>() {
+		}, "", new WidgetPointer(1183,0));
+	}
+	return;
+}

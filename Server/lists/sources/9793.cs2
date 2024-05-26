@@ -1,0 +1,57 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9793() {
+	if (client_configs['cfg4166'].bitcfg21694 == 0) {
+		if (client_configs['cfg4166'].bitcfg21700 == 0) {
+			cs2method_10467(0, 68222989);
+		} else {
+			cs2method_10467(1, 68222989);
+		}
+		if (client_configs['cfg4166'].bitcfg21701 == 0) {
+			cs2method_10467(0, 68223000);
+		} else {
+			cs2method_10467(1, 68223000);
+		}
+		if (client_configs['cfg4166'].bitcfg21702 == 0) {
+			cs2method_10467(0, 68223011);
+		} else {
+			cs2method_10467(1, 68223011);
+		}
+		cs2method_10026(68222995, "Resist arrest");
+		cs2method_10026(68223006, "Great escape");
+		cs2method_10026(68223017, "Decoy");
+	} else {
+		if (client_configs['cfg4166'].bitcfg21696 == 0) {
+			cs2method_10467(0, 68222989);
+		} else {
+			cs2method_10467(1, 68222989);
+		}
+		if (client_configs['cfg4166'].bitcfg21697 == 0) {
+			cs2method_10467(0, 68223000);
+		} else {
+			cs2method_10467(1, 68223000);
+		}
+		if (client_configs['cfg4166'].bitcfg21698 == 0) {
+			cs2method_10467(0, 68223011);
+		} else {
+			cs2method_10467(1, 68223011);
+		}
+		cs2method_10026(68222995, "Friendly wave");
+		cs2method_10026(68223006, "Security sensor");
+		cs2method_10026(68223017, "Undercover cop");
+	}
+	script_7999(68222995, 28448);
+	script_7999(68223006, 28448);
+	script_7999(68223017, 28448);
+	return;
+}

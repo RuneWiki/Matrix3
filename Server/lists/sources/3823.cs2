@@ -1,0 +1,68 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3823() {
+	int v1 = -1;
+	int v8 = -1;
+	globalarray_0 = new int[3];
+	for (int v5 = 0, int v0 = 1; v5 < 3 && idx17mapData('i', 'J', 8828, v0) != -1; v0 = cs2method_10060(v0, 1)) {
+		int v6 = idx17mapData('i', 'J', 8828, v0);
+		if (cs2method_10210() == 1 || idx22mapAttribute(v6, 4327) == 0) {
+			int v11 = idx22mapAttribute(v6, 4324);
+			if (script_2193(idx22mapAttribute(v11, 1270)) == 0 && (v11 == -1 || script_3224(idx22mapAttribute(v11, 1268)) == 1)) {
+				if (idx22mapAttribute(v11, 1270) == 177 && script_2193(175) != 2) {
+				} else if (idx22mapAttribute(v11, 1270) == 195 && script_2193(194) != 2) {
+				} else {
+					globalarray_0[v5] = idx22mapAttribute(v6, 4325);
+					v5 = cs2method_10060(v5, 1);
+				}
+			}
+		}
+	}
+	int v7 = -1;
+	int v2 = -1;
+	int v10 = -1;
+	int v3 = -1;
+	int v9 = -1;
+	int v4 = -1;
+	if (globalarray_0[0] != 0) {
+		int v11 = idx17mapData('i', 'J', 8828, globalarray_0[0]);
+		int v12 = idx22mapAttribute(v11, 4324);
+		cs2method_10026(98369656, idx22mapAttribute(v12, 1266));
+		cs2method_10758(idx22mapAttribute(v11, 4326), 98369655);
+	} else {
+		cs2method_10026(98369656, "More Quests...");
+		cs2method_10758(23110, 98369655);
+		cs2method_10467(1, 98369560);
+		cs2method_10467(1, 98369561);
+	}
+	if (globalarray_0[1] != 0) {
+		int v12 = idx17mapData('i', 'J', 8828, globalarray_0[1]);
+		int v11 = idx22mapAttribute(v12, 4324);
+		cs2method_10026(98369665, idx22mapAttribute(v11, 1266));
+		cs2method_10758(idx22mapAttribute(v12, 4326), 98369664);
+	} else {
+		cs2method_10026(98369665, "More Quests...");
+		cs2method_10758(23110, 98369664);
+		cs2method_10467(1, 98369561);
+	}
+	if (globalarray_0[2] != 0) {
+		int v12 = idx17mapData('i', 'J', 8828, globalarray_0[2]);
+		int v11 = idx22mapAttribute(v12, 4324);
+		cs2method_10026(98369674, idx22mapAttribute(v11, 1266));
+		cs2method_10758(idx22mapAttribute(v12, 4326), 98369673);
+	} else {
+		cs2method_10026(98369674, "More Quests...");
+		cs2method_10758(23110, 98369673);
+	}
+	return;
+}

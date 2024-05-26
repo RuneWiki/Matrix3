@@ -1,0 +1,286 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+void script_1839(int a0,int a1,int a2,int a3) {
+	int v41;
+	flow_0:
+		cs2method_10273(a1);
+		int v3 = 0;
+		int v32 = 0;
+		int v11 = 0;
+		int v1 = 0;
+		int v2 = 5;
+		cs2method_10606(a1, 5, 0);
+		cs2method_10269(1);
+		cs2method_10063(0, 0, 0, 0);
+		cs2method_10013(0, 23, 1, 0);
+		cs2method_10577(1);
+		cs2method_10310(20331);
+		cs2method_10606(a1, 5, 1);
+		cs2method_10063(cs2method_10968(3, 2), cs2method_10461(cs2method_10060(v2, cs2method_10968(18, 2)), cs2method_10968(14, 2)), 0, 0);
+		cs2method_10013(14, 14, 0, 0);
+		cs2method_10310(20735);
+		cs2method_10606(a1, 4, 2);
+		cs2method_10797("Select/deselect all");
+		cs2method_10063(cs2method_10060(cs2method_10060(cs2method_10878(), cs2method_10488()), 3), v2, 0, 0);
+		cs2method_10013(cs2method_10060(cs2method_10060(cs2method_10878(), 16), cs2method_10968(3, 2)), 18, 1, 0);
+		cs2method_10811(16763653);
+		cs2method_10692(17814);
+		cs2method_10173(1);
+		cs2method_11105(0, 1, 0);
+		cs2method_10606(a1, 3, 3);
+		cs2method_10258();
+		cs2method_10063(0, v2, 0, 0);
+		cs2method_10013(0, 18, 1, 0);
+		cs2method_10238(1);
+		cs2method_10811(1780788);
+		cs2method_10606(a1, 3, 4);
+		cs2method_10258();
+		cs2method_10063(0, v2, 0, 0);
+		cs2method_10013(0, 18, 1, 0);
+		cs2method_10002(255);
+		cs2method_20884(new function<script_9624>(int a0,int a1,int a2) {
+			if (cs2method_11038(a1, a2) == 1 && cs2method_11038(a1, 0) == 1) {
+				cs2method_10811(a0);
+				cs2method_10269(1);
+			}
+			return;
+		}, new WidgetPointer(a1), cs2method_11051(), 16763653, "Iii");
+		cs2method_10200("<col=ff9040>" + "All" + "</col>");
+		cs2method_10057(1, "Select/deselect");
+		cs2method_20674(new function<script_9623>(int a0,int a1,int a2) {
+			if (cs2method_11038(a1, a0) == 1 && cs2method_11038(a1, 0) == 1) {
+				cs2method_10811(a2);
+				cs2method_10269(1);
+				cs2method_10063(cs2method_10878(), cs2method_10461(cs2method_10406(), cs2method_10968(5, 2)), 0, 0);
+				cs2method_10269(0);
+			}
+			return;
+		}, new WidgetPointer(a1), cs2method_11051(), 16777215, "Iii");
+		cs2method_20884(new function<script_9624>(int a0,int a1,int a2) {
+			if (cs2method_11038(a2, a0) == 1 && cs2method_11038(a2, 0) == 1) {
+				cs2method_10811(a1);
+				cs2method_10269(1);
+			}
+			return;
+		}, new WidgetPointer(a1), cs2method_11051(), 16763653, "Iii");
+		cs2method_20703(new function<script_9637>(int a0,int a1,int a2,int a3) {
+			script_9638(a1, a3, a0, a2);
+			return;
+		}, new WidgetPointer(a1), new WidgetPointer(a0), new WidgetPointer(a2), 7, "IIIi");
+		int v46 = cs2method_10060(cs2method_10060(v2, 18), 5);
+		cs2method_10606(a1, 9, 5);
+		cs2method_10063(0, v46, 0, 0);
+		cs2method_10013(0, 0, 1, 0);
+		cs2method_10811(4281695);
+		cs2method_10606(a1, 9, 6);
+		cs2method_10063(0, cs2method_10461(v46, 1), 0, 0);
+		cs2method_10013(0, 0, 1, 0);
+		cs2method_10811(0);
+		int v12 = cs2method_10060(v46, 5);
+		globalarray_0 = new int[cs2method_10060(140, 1)];
+		int v54 = -1;
+		globalarray_1 = new int[cs2method_10060(140, 1)];
+		int v16 = -1;
+		int v26 = -1;
+		int v21 = -1;
+		int v47 = 0;
+		int v10 = 0;
+		int v14 = 1;
+		int v19 = 1;
+		int v17 = -1;
+		int v55 = 0;
+		int v27 = 0;
+		int v35 = 0;
+		int v49 = -1;
+		int v58 = 0;
+		int v60 = 0;
+		int v53 = 0;
+		int v62 = -1;
+		IF (a3 == 0) 
+			GOTO	flow_1
+		GOTO	flow_7
+	flow_1:
+		IF (v3 <= 140) 
+			GOTO	flow_2
+		GOTO	flow_6
+	flow_2:
+		int v9 = idx17mapData('i', 'J', 1805, v3);
+		if (v9 != -1 && (cs2method_10771() == 1 || idx22mapAttribute(v9, 478) == 0)) {
+			globalarray_0[v1] = v3;
+			globalarray_0[v1] = cs2method_10060(cs2method_10060(cs2method_10051(cs2method_10060(idx22mapAttribute(v9, 597), 1), 100), idx22mapAttribute(v9, 4031)), 1);
+			v1 = cs2method_10060(v1, 1);
+		}
+		v3 = cs2method_10060(v3, 1);
+		GOTO	flow_1
+	flow_6:
+		GOTO	flow_12
+	flow_7:
+		IF (v3 <= 140) 
+			GOTO	flow_8
+		GOTO	flow_12
+	flow_8:
+		int v38 = idx17mapData('i', 'J', 1805, v3);
+		if (v38 != -1 && (cs2method_10771() == 1 || idx22mapAttribute(v38, 478) == 0)) {
+			globalarray_0[v1] = v3;
+			v1 = cs2method_10060(v1, 1);
+		}
+		v3 = cs2method_10060(v3, 1);
+		GOTO	flow_7
+	flow_12:
+		v1 = cs2method_10461(v1, 1);
+		int v4 = 0;
+		if (a3 == 1) {
+			script_1842(0, 0, v1);
+			while (v4 <= v1) {
+				int v59 = a1;
+				int v8 = globalarray_0[v4];
+				int v37 = v12;
+				int v61 = 0;
+				int v30 = 0;
+				int v57 = 1;
+				script_1840_struct(2,0,0) v29 = script_1840(v59, v8, v37, v61, v30, v57);
+				int v50 = v29.intpart_1;
+				v12 = v29.intpart_0;
+				v4 = cs2method_10060(v4, 1);
+			}
+			cs2method_10026(a2, "Key order:" + "<br>" + "Alphabetical");
+		} else {
+			if (a3 == 0) {
+				cs2method_10709(cs2method_10060(v1, 1), 1, 0);
+				while (v16 < cs2method_10924(1806)) {
+					int v28 = cs2method_10163(a1);
+					int v7 = 0;
+					int v5 = 0;
+					int v13 = 0;
+					int v31 = script_9640(v10);
+					v12 = script_1841(a1, a0, v16, v12, v10, v31);
+					v10 = cs2method_10060(v10, 1);
+					while (idx22mapAttribute(idx17mapData('i', 'J', 1805, globalarray_0[v32]), 597) == v16) {
+						v32 = cs2method_10060(v32, 1);
+					}
+					int v15 = -1;
+					int v24 = idx17mapData('i', 'g', 8351, v16);
+					if (v24 != -1) {
+						while (v15 < cs2method_10924(v24)) {
+							int v42 = cs2method_10163(a1);
+							int v25 = 0;
+							int v20 = 0;
+							int v40 = 0;
+							if (v15 != -1) {
+								v41 = 2;
+								v19 = script_9640(v10);
+								v12 = script_9625(a1, a0, v24, v15, v12, v10, v31, v19);
+								v10 = cs2method_10060(v10, 1);
+							} else {
+								v41 = 1;
+								script_9626(a1);
+							}
+							while (idx22mapAttribute(idx17mapData('i', 'J', 1805, globalarray_0[v11]), 4031) == v15) {
+								v11 = cs2method_10060(v11, 1);
+							}
+							if (cs2method_10060(v4, 1) < v11) {
+								script_1842(0, v4, cs2method_10461(v11, 1));
+							}
+							while (v4 < v11) {
+								int v56 = a1;
+								int v34 = globalarray_0[v4];
+								int v0 = v12;
+								int v33 = v41;
+								int v23 = 1;
+								int v48 = cs2method_10147(v31, v19);
+								script_1840_struct(2,0,0) v22 = script_1840(v56, v34, v0, v33, v23, v48);
+								int v45 = v22.intpart_1;
+								v12 = v22.intpart_0;
+								if (v45 == 1) {
+									v25 = cs2method_10060(v25, 1);
+									v20 = cs2method_10060(v20, 1);
+								} else {
+									if (v45 == 0) {
+										v25 = cs2method_10060(v25, 1);
+										v40 = cs2method_10060(v40, 1);
+									}
+								}
+								v4 = cs2method_10060(v4, 1);
+							}
+							if (cs2method_11038(a1, v42) == 1) {
+								if (v25 > 0) {
+									v7 = cs2method_10060(v7, 1);
+									if (v25 == v20) {
+										v5 = cs2method_10060(v5, 1);
+										cs2method_10310(20326);
+									} else if (v25 == v40) {
+										v13 = cs2method_10060(v13, 1);
+										cs2method_10310(20268);
+									} else {
+										cs2method_10310(20328);
+									}
+								} else {
+									cs2method_10097(4033, 1);
+								}
+							}
+							v15 = cs2method_10060(v15, 1);
+						}
+					} else {
+						v11 = v32;
+						if (cs2method_10060(v4, 1) < v11) {
+							script_1842(0, v4, cs2method_10461(v11, 1));
+						}
+						while (v4 < v11) {
+							int v36 = a1;
+							int v44 = globalarray_0[v4];
+							int v51 = v12;
+							int v6 = 1;
+							int v43 = 1;
+							int v52 = v31;
+							script_1840_struct(2,0,0) v18 = script_1840(v36, v44, v51, v6, v43, v52);
+							int v39 = v18.intpart_1;
+							v12 = v18.intpart_0;
+							if (v39 == 1) {
+								v7 = cs2method_10060(v7, 1);
+								v5 = cs2method_10060(v5, 1);
+							} else {
+								if (v39 == 0) {
+									v7 = cs2method_10060(v7, 1);
+									v13 = cs2method_10060(v13, 1);
+								}
+							}
+							v4 = cs2method_10060(v4, 1);
+						}
+					}
+					if (cs2method_11038(a1, v28) == 1) {
+						if (v7 > 0) {
+							if (v7 == v5) {
+								cs2method_10310(20326);
+							} else if (v7 == v13) {
+								cs2method_10310(20268);
+							} else {
+								cs2method_10310(20328);
+							}
+						} else {
+							cs2method_10097(4033, 1);
+						}
+					}
+					v16 = cs2method_10060(v16, 1);
+				}
+				cs2method_10026(a2, "Key order:" + "<br>" + "Categorised");
+			}
+		}
+		cs2method_11130(0, v12, a1);
+		script_9622(a1, a0);
+		cs2method_20553(new function<script_9621>(int a0,int a1) {
+			script_9622(a1, a0);
+			return;
+		}, new WidgetPointer(a1), new WidgetPointer(a0), "II", new WidgetPointer(cs2method_10155(cs2method_10155(a1))));
+		return;
+}

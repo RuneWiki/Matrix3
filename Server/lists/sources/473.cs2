@@ -1,0 +1,24 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_473(int a0,int a1) {
+	if (cs2method_10338(19) < 25) {
+		cs2method_10026(a1, "<col=c80000>" + "A Farming level of " + (string)cs2method_10379(25) + " is required." + "</col>");
+		return;
+	}
+	if (client_configs['cfg1568'].bitcfg4861 < a0) {
+		cs2method_10026(a1, "<col=c80000>" + (string)cs2method_10379(a0) + " Commendations required." + "</col>");
+	} else {
+		cs2method_10026(a1, (string)cs2method_10379(a0) + " Commendations.");
+	}
+	return;
+}

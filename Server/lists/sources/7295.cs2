@@ -1,0 +1,52 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_7295_struct(3,0,0) script_7295(int a0) {
+	int v4;
+	int v0;
+	int v3;
+	int v1 = 0;
+	int v2 = 0;
+	int v5 = 0;
+	switch (a0) {
+		case 0:
+			return new script_7295_struct(0, 29, client_configs['cfg3404']);
+		case 1:
+			v0 = 0;
+			v3 = 5;
+			v4 = client_configs['cfg3404'].bitcfg17080;
+			break;
+		case 2:
+			v0 = 6;
+			v3 = 11;
+			v4 = client_configs['cfg3404'].bitcfg17091;
+			break;
+		case 3:
+			v0 = 12;
+			v3 = 17;
+			v4 = client_configs['cfg3404'].bitcfg17102;
+			break;
+		case 4:
+			v0 = 18;
+			v3 = 23;
+			v4 = client_configs['cfg3404'].bitcfg17113;
+			break;
+		case 5:
+			v0 = 24;
+			v3 = 29;
+			v4 = -1;
+			break;
+		default:
+			return new script_7295_struct(-1, -1, -1);
+	}
+	return new script_7295_struct(v0, v3, v4);
+}

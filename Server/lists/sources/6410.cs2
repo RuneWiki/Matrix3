@@ -1,0 +1,38 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6410() {
+	if (client_configs['cfg2092'].bitcfg9072 == 0) {
+		script_6414(85721544, 0);
+		script_6414(85721563, 0);
+		cs2method_10026(85721556, "You must complete one assignment.");
+		cs2method_10026(85721575, "You must complete one assignment.");
+		return;
+	}
+	if (client_configs['cfg2092'].bitcfg9071 < 100) {
+		script_6414(85721563, 0);
+		if (client_configs['cfg183'] > 0) {
+			cs2method_10026(85721575, "100 points");
+		} else {
+			cs2method_10026(85721575, "You must have an assignment.");
+		}
+		if (client_configs['cfg2092'].bitcfg9071 < 30) {
+			script_6414(85721544, 0);
+		}
+		if (client_configs['cfg183'] > 0) {
+			cs2method_10026(85721556, "30 points.");
+		} else {
+			cs2method_10026(85721556, "You must have an assignment.");
+		}
+	}
+	return;
+}

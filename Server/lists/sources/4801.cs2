@@ -1,0 +1,34 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4801(int a0) {
+	switch (a0) {
+		default:
+			cs2_configs['cfg1659'] = 0;
+			cs2method_10026(74907690, "Price: Low-High");
+			break;
+		case 1:
+			cs2_configs['cfg1659'] = 1;
+			cs2method_10026(74907690, "Price: High-Low");
+			break;
+		case 2:
+			cs2_configs['cfg1659'] = 2;
+			cs2method_10026(74907690, "Name: A-Z");
+			break;
+		case 3:
+			cs2_configs['cfg1659'] = 3;
+			cs2method_10026(74907690, "Name: Z-A");
+	}
+	cs2method_10467(1, 74907685);
+	script_5350(client_configs['cfg1235'].bitcfg3303, 74907661);
+	return;
+}

@@ -1,0 +1,82 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9245(int a0,int a1,int a2,int a3,int a4,int a5,int a6,int a7) {
+	object v6;
+	object v3;
+	object v23;
+	object v21;
+	object v24;
+	object v25;
+	object v20;
+	object v8;
+	object v19;
+	object v5;
+	int v10 = -1;
+	int v15 = -1;
+	int v18 = -1;
+	int v26 = -1;
+	object v13 = "";
+	object v2 = "";
+	object v17 = "";
+	object v4 = "";
+	object v9 = "";
+	object v7 = "";
+	object v0 = "";
+	object v1 = "";
+	object v12 = "";
+	object v27 = "";
+	if (cs2method_11038(a6, a0) == 1 && cs2method_11038(a2, a3) == 1) {
+		int v16 = cs2method_10487();
+		int v14 = cs2method_11089();
+		int v11 = cs2method_10487();
+		int v22 = cs2method_11089();
+		if (v16 != -1) {
+			v3 = cs2method_10586(1);
+			v20 = cs2method_10586(2);
+			v6 = cs2method_10586(3);
+			v8 = cs2method_10586(4);
+			v24 = cs2method_10586(5);
+			v5 = cs2method_10586(6);
+			v23 = cs2method_10586(7);
+			v25 = cs2method_10586(8);
+			v21 = cs2method_10586(9);
+			v19 = cs2method_10586(10);
+		} else {
+			v3 = cs2method_10586(1);
+			v20 = cs2method_10586(2);
+			v6 = cs2method_10586(3);
+			v8 = cs2method_10586(4);
+			v24 = cs2method_10586(5);
+			v5 = cs2method_10586(6);
+			v23 = cs2method_10586(7);
+			v25 = cs2method_10586(8);
+			v21 = cs2method_10586(9);
+			v19 = cs2method_10586(10);
+		}
+		if (cs2method_11038(a6, a0) == 1) {
+			script_9240(a6, v3, a7, a4, v20, v11, v6, v8, v24, v5, v23, v22, 1, v25, v21, v19);
+		}
+		if (cs2method_11038(a2, a3) == 1) {
+			script_9240(a2, v3, a1, a5, v20, v16, v6, v8, v24, v5, v23, v14, 1, v25, v21, v19);
+		}
+		if (a6 != a2 && a5 == a4) {
+			if (cs2method_11038(a6, a3) == 1) {
+				script_9240(a6, v3, a7, a5, v20, v16, v6, v8, v24, v5, v23, v14, 1, v25, v21, v19);
+			}
+			if (cs2method_11038(a2, a0) == 1) {
+				script_9240(a2, v3, a1, a4, v20, v11, v6, v8, v24, v5, v23, v22, 1, v25, v21, v19);
+			}
+		}
+	}
+	return;
+}

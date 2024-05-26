@@ -1,0 +1,28 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6037(int a0,int a1,int a2,int a3) {
+	cs2method_20243(new function<script_6038>(int a0,int a1,int a2,int a3) {
+		script_6039(a0, a2, a3, a1);
+		return;
+	}, a1, new WidgetPointer(a0), new WidgetPointer(a2), new WidgetPointer(a3), 1796, 1797, 1798, 1799, 4, "SIIIY", new WidgetPointer(a0));
+	cs2method_20024(new function<script_6038>(int a0,int a1,int a2,int a3) {
+		script_6039(a1, a3, a2, a0);
+		return;
+	}, a1, new WidgetPointer(a0), new WidgetPointer(a2), new WidgetPointer(a3), a1, 1, "SIIIY", new WidgetPointer(a0));
+	cs2method_20553(new function<script_6038>(int a0,int a1,int a2,int a3) {
+		script_6039(a3, a0, a1, a2);
+		return;
+	}, a1, new WidgetPointer(a0), new WidgetPointer(a2), new WidgetPointer(a3), "SIII", new WidgetPointer(a0));
+	script_6039(a1, a0, a2, a3);
+	return;
+}

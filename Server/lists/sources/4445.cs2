@@ -1,0 +1,86 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4445(int a0) {
+	int v40 = -1;
+	int v32 = -1;
+	int v2 = -1;
+	int v14 = -1;
+	int v24 = -1;
+	int v17 = -1;
+	int v9 = -1;
+	int v38 = -1;
+	int v11 = -1;
+	int v29 = -1;
+	int v23 = -1;
+	int v19 = -1;
+	int v3 = -1;
+	int v16 = -1;
+	int v25 = -1;
+	int v22 = -1;
+	int v20 = -1;
+	int v39 = -1;
+	int v41 = -1;
+	int v7 = -1;
+	int v42 = a0;
+	script_7815_struct(20,0,0) v21 = script_7815(v42);
+	int v6 = v21.intpart_19;
+	int v30 = v21.intpart_18;
+	int v35 = v21.intpart_17;
+	int v26 = v21.intpart_16;
+	int v33 = v21.intpart_15;
+	int v12 = v21.intpart_14;
+	int v15 = v21.intpart_13;
+	int v10 = v21.intpart_12;
+	int v0 = v21.intpart_11;
+	int v5 = v21.intpart_10;
+	int v18 = v21.intpart_9;
+	int v13 = v21.intpart_8;
+	int v4 = v21.intpart_7;
+	int v34 = v21.intpart_6;
+	int v1 = v21.intpart_5;
+	int v31 = v21.intpart_4;
+	int v27 = v21.intpart_3;
+	int v36 = v21.intpart_2;
+	int v28 = v21.intpart_1;
+	int v8 = v21.intpart_0;
+	cs2method_10273(v31);
+	cs2method_10273(v1);
+	cs2method_10273(v34);
+	cs2method_10273(v4);
+	cs2method_10273(v27);
+	cs2method_11127(1, v35, "Join chat");
+	cs2method_10758(6256, v15);
+	cs2method_10467(1, v28);
+	cs2method_10467(0, v18);
+	cs2method_10026(v26, "");
+	object v37 = "Join another" + "<br>" + "clan's clanchat.";
+	cs2method_21121(new function<script_8799>(int a0,object a1,int a2) {
+		script_8800(a0, a2, a1);
+		return;
+	}, (string)v37, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(1110,46));
+	cs2method_20750(new function<script_8805>() {
+		script_8808();
+		return;
+	}, "", new WidgetPointer(1110,46));
+	cs2method_11127(1, 72745006, "Join Clan Chat channel");
+	cs2method_21121(new function<script_8799>(object a0,int a1,int a2) {
+		script_8800(a2, a1, a0);
+		return;
+	}, (string)v37, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(1440,40));
+	cs2method_20750(new function<script_8805>() {
+		script_8808();
+		return;
+	}, "", new WidgetPointer(1440,40));
+	cs2method_11127(1, 94371880, "Join Clan Chat channel");
+	return;
+}

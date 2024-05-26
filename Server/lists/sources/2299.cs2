@@ -1,0 +1,31 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_2299(int a0,int a1,int a2,int a3) {
+	if (cs2_configs['cfg181'] == 1) {
+		if (client_configs['cfg3277'].bitcfg16789 == 1) {
+			cs2method_11127(2, a1, "Finish quick curse selection");
+			cs2method_10026(95485972, "Select your quick curses:");
+			cs2method_10026(95551501, "Select your quick curses:");
+		} else {
+			cs2method_11127(2, a1, "Finish quick prayer selection");
+			cs2method_10026(95485972, "Select your quick prayers:");
+			cs2method_10026(95551501, "Select your quick prayers:");
+		}
+	} else if (client_configs['cfg3277'].bitcfg16789 == 1) {
+		cs2method_11127(2, a1, "Select quick curses");
+	} else {
+		cs2method_11127(2, a1, "Select quick prayers");
+	}
+	script_2303(a0, a1, a2, a3);
+	return;
+}

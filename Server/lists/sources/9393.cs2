@@ -1,0 +1,231 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9393() {
+	int v0 = 20110;
+	object v5 = "- Locked";
+	if (client_configs['cfg3990'].bitcfg21192 == 1) {
+		v0 = 18993;
+		v5 = "<col=cacaca>" + "Armadylean" + "</col>" + " diviners gather resources 10% faster.";
+	} else if (client_configs['cfg3990'].bitcfg21193 == 1) {
+		v0 = 18997;
+		v5 = "<col=cacaca>" + "Armadylean" + "</col>" + " caravans have a 10% increase in capacity.";
+	} else {
+		if (script_9471() == 1) {
+			v5 = "- Vote in progress";
+		}
+	}
+	cs2method_10758(v0, 46268525);
+	cs2method_10026(46268526, v5);
+	int v15 = 20110;
+	object v3 = "- Locked";
+	if (client_configs['cfg3990'].bitcfg21194 == 1) {
+		v15 = 18996;
+		v3 = "<col=cacaca>" + "Armadylean" + "</col>" + " caravans have 10% more life points.";
+	} else if (client_configs['cfg3990'].bitcfg21195 == 1) {
+		v15 = 18998;
+		v3 = "<col=cacaca>" + "Armadylean" + "</col>" + " bodyguards have 50% greater damage.";
+	} else {
+		if (script_9471() == 3) {
+			v3 = "- Vote in progress";
+		}
+	}
+	cs2method_10758(v15, 46268532);
+	cs2method_10026(46268533, v3);
+	int v7 = 20110;
+	object v4 = "- Locked";
+	if (client_configs['cfg3990'].bitcfg21196 == 1) {
+		v7 = 19000;
+		v4 = "<col=cacaca>" + "Armadyl-aligned" + "</col>" + " players heal and repair 10% faster.";
+	} else if (client_configs['cfg3990'].bitcfg21197 == 1) {
+		v7 = 18999;
+		v4 = "<col=cacaca>" + "Armadyl-aligned" + "</col>" + " players gather resources 10% faster.";
+	} else {
+		if (script_9471() == 5) {
+			v4 = "- Vote in progress";
+		}
+	}
+	cs2method_10758(v7, 46268536);
+	cs2method_10026(46268537, v4);
+	int v14 = 20110;
+	object v1 = "- Locked";
+	if (client_configs['cfg3990'].bitcfg21198 == 1) {
+		v14 = 18994;
+		v1 = "<col=cacaca>" + "Armadylean" + "</col>" + " buildings decay 15% slower.";
+	} else if (client_configs['cfg3990'].bitcfg21199 == 1) {
+		v14 = 18995;
+		v1 = "<col=cacaca>" + "Armadylean" + "</col>" + " buildings provide 25% better bonuses.";
+	} else {
+		if (script_9471() == 7) {
+			v1 = "- Vote in progress";
+		}
+	}
+	cs2method_10758(v14, 46268540);
+	cs2method_10026(46268541, v1);
+	int v11 = 20111;
+	object v6 = "- Locked";
+	if (client_configs['cfg3990'].bitcfg21200 == 1) {
+		v11 = 18985;
+		v6 = "<col=dc7800>" + "Bandosian" + "</col>" + " diviners gather resources 10% faster.";
+	} else if (client_configs['cfg3990'].bitcfg21201 == 1) {
+		v11 = 18989;
+		v6 = "<col=dc7800>" + "Bandosian" + "</col>" + " caravans have a 10% increase in capacity.";
+	} else {
+		if (script_9471() == 1) {
+			v6 = "- Vote in progress";
+		}
+	}
+	cs2method_10758(v11, 46268573);
+	cs2method_10026(46268574, v6);
+	int v13 = 20111;
+	object v8 = "- Locked";
+	if (client_configs['cfg3990'].bitcfg21202 == 1) {
+		v13 = 18988;
+		v8 = "<col=dc7800>" + "Bandosian" + "</col>" + " caravans have 10% more life points.";
+	} else if (client_configs['cfg3990'].bitcfg21203 == 1) {
+		v13 = 18990;
+		v8 = "<col=dc7800>" + "Bandosian" + "</col>" + " bodyguards have 50% greater damage.";
+	} else {
+		if (script_9471() == 3) {
+			v8 = "- Vote in progress";
+		}
+	}
+	cs2method_10758(v13, 46268578);
+	cs2method_10026(46268579, v8);
+	int v12 = 20111;
+	object v10 = "- Locked";
+	if (client_configs['cfg3990'].bitcfg21204 == 1) {
+		v12 = 18988;
+		v10 = "<col=dc7800>" + "Bandos-aligned" + "</col>" + " players heal and repair 10% faster.";
+	} else if (client_configs['cfg3990'].bitcfg21205 == 1) {
+		v12 = 18991;
+		v10 = "<col=dc7800>" + "Bandos-aligned" + "</col>" + " players gather resources 10% faster.";
+	} else {
+		if (script_9471() == 5) {
+			v10 = "- Vote in progress";
+		}
+	}
+	cs2method_10758(v12, 46268583);
+	cs2method_10026(46268584, v10);
+	int v2 = 20111;
+	object v9 = "- Locked";
+	if (client_configs['cfg3990'].bitcfg21206 == 1) {
+		v2 = 18986;
+		v9 = "<col=dc7800>" + "Bandosian" + "</col>" + " buildings decay 15% slower.";
+	} else if (client_configs['cfg3990'].bitcfg21207 == 1) {
+		v2 = 18987;
+		v9 = "<col=dc7800>" + "Bandosian" + "</col>" + " buildings provide 25% better bonuses.";
+	} else {
+		if (script_9471() == 7) {
+			v9 = "- Vote in progress";
+		}
+	}
+	cs2method_10758(v2, 46268588);
+	cs2method_10026(46268589, v9);
+	if (client_configs['cfg3990'].bitcfg21208 == 1) {
+		cs2method_10467(1, 46268547);
+		cs2method_10758(21624, 46268546);
+		cs2method_10026(46268550, "Improved Bodyguards");
+		cs2method_10026(46268549, "The combat abilities of bodyguards for caravans are substantially improved.");
+	} else if (client_configs['cfg3990'].bitcfg21209 == 1) {
+		cs2method_10467(1, 46268547);
+		cs2method_10758(21625, 46268546);
+		cs2method_10026(46268550, "Improved Diviners");
+		cs2method_10026(46268549, "The skill of diviners attached to convoys is substantially improved.");
+	} else {
+		cs2method_10467(0, 46268547);
+		cs2method_10758(20143, 46268546);
+		cs2method_10026(46268550, "Unknown Upgrade");
+		cs2method_10026(46268549, "- Locked");
+	}
+	if (client_configs['cfg3990'].bitcfg21210 == 1) {
+		cs2method_10467(1, 46268554);
+		cs2method_10758(21623, 46268553);
+		cs2method_10026(46268558, "Bigger Caravans");
+		cs2method_10026(46268557, "Caravans are larger than normal, giving increased capacity.");
+	} else if (client_configs['cfg3990'].bitcfg21211 == 1) {
+		cs2method_10467(1, 46268554);
+		cs2method_10758(21628, 46268553);
+		cs2method_10026(46268558, "Tougher Caravans");
+		cs2method_10026(46268557, "Caravans are tougher than normal.");
+	} else {
+		cs2method_10467(0, 46268554);
+		cs2method_10758(20143, 46268553);
+		cs2method_10026(46268558, "Unknown Upgrade");
+		cs2method_10026(46268557, "- Locked");
+	}
+	if (client_configs['cfg3990'].bitcfg21212 == 1) {
+		cs2method_10467(1, 46268650);
+		cs2method_10758(21627, 46268649);
+		cs2method_10026(46268654, "Reduced Godless Attacks");
+		cs2method_10026(46268653, "Your convoys suffer fewer Godless ambushes.");
+	} else if (client_configs['cfg3990'].bitcfg21213 == 1) {
+		cs2method_10467(1, 46268650);
+		cs2method_10758(21626, 46268649);
+		cs2method_10026(46268654, "Improved Building Benefits");
+		cs2method_10026(46268653, "You receive greater benefits from having buildings on the majority of the sites.");
+	} else {
+		cs2method_10467(0, 46268650);
+		cs2method_10758(20143, 46268649);
+		cs2method_10026(46268654, "Unknown Upgrade");
+		cs2method_10026(46268653, "- Locked");
+	}
+	if (client_configs['cfg3990'].bitcfg21214 == 1) {
+		cs2method_10467(1, 46268599);
+		cs2method_10758(21624, 46268598);
+		cs2method_10026(46268603, "Improved Bodyguards");
+		cs2method_10026(46268602, "The combat abilities of bodyguards for caravans are substantially improved.");
+	} else if (client_configs['cfg3990'].bitcfg21215 == 1) {
+		cs2method_10467(1, 46268599);
+		cs2method_10758(21625, 46268598);
+		cs2method_10026(46268603, "Improved Diviners");
+		cs2method_10026(46268602, "The skill of diviners attached to convoys is substantially improved.");
+	} else {
+		cs2method_10467(0, 46268599);
+		cs2method_10758(20143, 46268598);
+		cs2method_10026(46268603, "Unknown Upgrade");
+		cs2method_10026(46268602, "- Locked");
+	}
+	if (client_configs['cfg3989'].bitcfg21216 == 1) {
+		cs2method_10467(1, 46268607);
+		cs2method_10758(21623, 46268606);
+		cs2method_10026(46268611, "Bigger Caravans");
+		cs2method_10026(46268610, "Caravans are larger then normal, giving increased capacity.");
+	} else if (client_configs['cfg3989'].bitcfg21217 == 1) {
+		cs2method_10467(1, 46268607);
+		cs2method_10758(21628, 46268606);
+		cs2method_10026(46268611, "Tougher Caravans");
+		cs2method_10026(46268610, "Caravans are tougher than normal.");
+	} else {
+		cs2method_10467(0, 46268607);
+		cs2method_10758(20143, 46268606);
+		cs2method_10026(46268611, "Unknown Upgrade");
+		cs2method_10026(46268610, "- Locked");
+	}
+	if (client_configs['cfg3987'].bitcfg21218 == 1) {
+		cs2method_10467(1, 46268658);
+		cs2method_10758(21627, 46268657);
+		cs2method_10026(46268661, "Reduced Godless Attacks");
+		cs2method_10026(46268660, "Your convoys suffer fewer Godless ambushes.");
+	} else if (client_configs['cfg3987'].bitcfg21219 == 1) {
+		cs2method_10467(1, 46268658);
+		cs2method_10758(21626, 46268657);
+		cs2method_10026(46268661, "Improved Building Benefits");
+		cs2method_10026(46268660, "You receive greater benefits from having buildings on the majority of the sites.");
+	} else {
+		cs2method_10467(0, 46268658);
+		cs2method_10758(20143, 46268657);
+		cs2method_10026(46268661, "Unknown Upgrade");
+		cs2method_10026(46268660, "- Locked");
+	}
+	return;
+}

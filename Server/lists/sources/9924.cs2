@@ -1,0 +1,654 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+// Beautifier was aborted, because this function contains unsolved flow blocks.
+
+
+object script_9924(int a0,int a1,int a2) {
+	object v0 = "";
+	int v1 = -1;
+	if (a2 == 0) {
+		v1 = 0;
+	}
+	if (a2 == 1) {
+		v1 = 1;
+	}
+	switch (a1) {
+		flow_5:
+			default:
+			v0 = "";
+			v1 = 0;
+			break;
+			case 1094:
+			case 23:
+			case 147:
+			case 167:
+			case 294:
+			case 249:
+			case 961:
+			if (a0 == 1) {
+				v0 = "You must have access to the fairy ring network to complete this Task.";
+				if (client_configs['cfg2474'].bitcfg12058 == 1) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 49:
+			if (a0 == 1) {
+				v0 = "You must unlock 500 music tracks in order to perform the Air Guitar emote.";
+				if (client_configs['cfg461'].bitcfg1181 == 1) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 59:
+			if (a0 == 2) {
+				v0 = "You must also have completed the Abyss miniquest.";
+				if (client_configs['cfg3149'] >= 4) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 107:
+			IF (a0 == 1) 
+				GOTO	flow_19
+			GOTO	flow_23
+		flow_19:
+			v0 = "You must have progressed to a certain point in the Dragon Slayer quest.";
+			IF (client_configs['cfg2268'] >= 2) 
+				GOTO	flow_20
+			GOTO	flow_21
+		flow_20:
+			IF (client_configs['cfg2269'].bitcfg10420 == 0) 
+				GOTO	flow_22
+		flow_21:
+			IF (client_configs['cfg2268'] >= 10) 
+				GOTO	flow_22
+			GOTO	flow_23
+		flow_22:
+			v1 = 1;
+		flow_23:
+			break;
+			case 178:
+			if (a0 == 1) {
+				v0 = "You must begin the relevant section of Otto Godblessed's barbarian training.";
+				if (client_configs['cfg607'].bitcfg1616 > 0) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 180:
+			if (a0 == 1) {
+				v0 = "You must begin the relevant section of Otto Godblessed's barbarian training.";
+				if (client_configs['cfg607'].bitcfg1623 > 0) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 177:
+			if (a0 == 1) {
+				v0 = "You must begin the relevant section of Otto Godblessed's barbarian training.";
+				if (client_configs['cfg607'].bitcfg1623 > 0) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 316:
+			if (a0 == 1) {
+				v0 = "You must begin the relevant section of Otto Godblessed's barbarian training.";
+				if (client_configs['cfg607'].bitcfg1616 > 0) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 321:
+			if (a0 == 1) {
+				v0 = "You must begin the relevant section of Otto Godblessed's barbarian training.";
+				if (client_configs['cfg607'].bitcfg1623 > 0) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 322:
+			if (a0 == 1) {
+				v0 = "You must begin the relevant section of Otto Godblessed's barbarian training.";
+				if (client_configs['cfg607'].bitcfg1622 > 0) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 323:
+			if (a0 == 1) {
+				v0 = "You must begin the relevant section of Otto Godblessed's barbarian training.";
+				if (client_configs['cfg607'].bitcfg1620 > 0) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 175:
+			if (a0 == 1) {
+				v0 = "You must complete the Bar Crawl miniquest.";
+				if (client_configs['cfg2747'] >= 6 || client_configs['cfg2748'].bitcfg13706 == 1) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 219:
+			case 331:
+			if (a0 == 2) {
+				v0 = "You must have a combat level of at least " + (string)cs2method_10379(100) + " to accept an assignment in Shilo Village.";
+				if (script_1432() >= 100) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 248:
+			if (a0 == 1) {
+				v0 = "You must have completed the Knight Waves in Camelot.";
+				if (client_configs['cfg2393'].bitcfg11319 == 8) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 276:
+			if (a0 == 1) {
+				v0 = "You require 33 Quest Points to enter the Champions' Guild.";
+				if (client_configs['cfg1297'] >= 33) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 3011:
+			if (a0 == 1) {
+				v0 = "You require 33 Quest Points to enter the Champions' Guild.";
+				if (client_configs['cfg1297'] >= 33) {
+					v1 = 1;
+				}
+			} else {
+				if (a0 == 2) {
+					v0 = "You need a challenge scroll in your inventory or bank.";
+					if (v1 == -1 && (cs2method_10376(93, 28) > 0 || cs2method_10376(95, 28) > 0 || client_configs['cfg1681'].bitcfg5514 == 0)) {
+						v1 = 1;
+					}
+				}
+			}
+			break;
+			case 281:
+			if (a0 == 1) {
+				v0 = "You must unlock all four emotes by completing levels of the Stronghold of Security.";
+				if (client_configs['cfg3109'].bitcfg16030 == 1 && client_configs['cfg3109'].bitcfg16031 == 1 && client_configs['cfg3109'].bitcfg16032 == 1 && client_configs['cfg3109'].bitcfg16033 == 1) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 285:
+			if (a0 == 1) {
+				v0 = "You must learn the secret of the Senntisten necklace.";
+				if (client_configs['cfg3158'].bitcfg16309 == 1) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 289:
+			if (a0 == 1) {
+				v0 = "You must have a combat level of at least " + (string)cs2method_10379(40) + " to accept an assignment from Vannaka.";
+				if (script_1432() >= 40) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 300:
+			if (a0 == 1) {
+				v0 = "Completing quests will increase your access to Kudos with the Varrock Museum.";
+				if (script_4035() >= 153) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 3000:
+			if (a0 == 2) {
+				if (client_configs['cfg1297'] >= client_configs['cfg1573'].bitcfg4915 || script_4218() <= 0) {
+					v1 = 1;
+				}
+				v0 = "You must have gained a Quest Point or 100,000 total experience since last entering Juna's cavern.";
+			}
+			break;
+			case 3001:
+			case 914:
+			case 912:
+			case 913:
+			case 3013:
+			case 3031:
+			if (a0 == 1) {
+				v0 = "You must have a " + "<col=ffffff>" + "combat level" + "</col>" + " of at least " + "<col=ffffff>" + "55" + "</col>" + ".";
+				if (cs2method_10004() >= 55) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 3052:
+			if (a0 == 1) {
+				v0 = "You need a " + "<col=ffffff>" + "clue scroll" + "</col>" + " in your inventory or bank.";
+				if (v1 == -1 && (cs2method_10376(95, 46) > 0 || cs2method_10376(93, 46) > 0 || cs2method_10376(95, 47) > 0 || cs2method_10376(93, 47) > 0 || cs2method_10376(95, 51) == 0 || cs2method_10376(93, 51) == 0 || cs2method_10376(95, 1864) == 0 || cs2method_10376(93, 1864) == 0)) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 3002:
+			if (a0 == 1) {
+				v0 = "You need to visit " + "<col=ffffff>" + "Larry" + "</col>" + " or " + "<col=ffffff>" + "Chuck" + "</col>" + " in " + "<col=ffffff>" + "Ardougne Zoo" + "</col>" + " before you can begin penguin spying.";
+				if (client_configs['cfg1408'].bitcfg4165 == 1) {
+					v1 = 1;
+				}
+			} else if (a0 == 2) {
+				v0 = "You must have spied on fewer than ten penguins already this week.";
+				if (client_configs['cfg1408'].bitcfg4164 < 10) {
+					v1 = 1;
+				}
+			} else {
+				if (a0 == 3) {
+					v0 = "You may spy on penguins if your total Penguin Points are less than the maximum of fifty.";
+					if (client_configs['cfg1408'].bitcfg4163 < 50) {
+						v1 = 1;
+					}
+				}
+			}
+			break;
+			case 12:
+			if (a0 == 1) {
+				v0 = "You must have Larry or Chuck explain the purpose of Penguin Hide and Seek.";
+				if (client_configs['cfg1408'].bitcfg4165 == 1) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 3003:
+			if (a0 == 1) {
+				v0 = "You may not chop down more than two evil trees per day.";
+				if (client_configs['cfg1650'].bitcfg5331 < 2) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 3047:
+			if (a0 == 1) {
+				v0 = "You must have completed or manually turned off the tutorial.";
+				if (client_configs['cfg1293'].bitcfg3617 == 0 || client_configs['cfg1272'].bitcfg3584 >= 60 || client_configs['cfg2674'].bitcfg13240 == 40) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 3007:
+			if (a0 == 1) {
+				v0 = "You may attempt the Agility, Magic and Ranged performances after a week has passed since your last show.";
+				if (client_configs['cfg1663'].bitcfg5479 == 0 || client_configs['cfg1663'].bitcfg5480 == 0 || client_configs['cfg1663'].bitcfg5481 == 0) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 3035:
+			if (a0 == 1) {
+				v0 = "You may not help catch more than two Plutonial chinchompas per day.";
+				if (client_configs['cfg1572'].bitcfg4882 == 0) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 3008:
+			if (a0 == 2) {
+				v0 = "You must wait at least a day since you last faced Bork.";
+				if (client_configs['cfg3044'] != cs2method_10948()) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 3010:
+			if (a0 == 2) {
+				v0 = "At least a week must pass since you last faced the Skeletal Horror.";
+				if (cs2method_11115() > client_configs['cfg2204'].bitcfg9900) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 3012:
+			if (a0 == 1) {
+				v0 = "You require " + "<col=ffffff>" + "50 Runecrafting" + "</col>" + " to enter the Runecrafters' Guild.";
+				if (cs2method_10338(20) >= 50) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 3015:
+			if (a0 == 2) {
+				v0 = "You must have at least " + "<col=ffffff>" + "65 Attack" + "</col>" + " or " + "<col=ffffff>" + "Defence" + "</col>" + " in order to take on a case.";
+				if (cs2method_10338(0) >= 65 || cs2method_10338(1) >= 65) {
+					v1 = 1;
+				}
+			} else {
+				if (a0 == 3) {
+					v0 = "You need to have a " + "<col=ffffff>" + "court summons" + "</col>" + " in your inventory or bank";
+					if (cs2method_10936(93, 18757) > 0 || cs2method_10936(95, 18757) > 0) {
+						v1 = 1;
+					}
+				}
+			}
+			break;
+			case 3034:
+			if (a0 == 1) {
+				v0 = "To enter the Warriors' Guild your Attack or Strength level must be 99, or your combined Attack and Strength levels must total 130 or more.";
+				if (cs2method_10060(cs2method_10338(2), cs2method_10338(0)) >= 130 || cs2method_10338(0) >= 99 || cs2method_10338(2) >= 99) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 610:
+			if (a0 == 2) {
+				v0 = "You need to have made some progress in the Icthlarin's Little Helper quest to enter Sophanem.";
+				if (client_configs['cfg2357'].bitcfg10987 >= 3) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 448:
+			if (a0 == 10) {
+				v0 = "You must have at least 56 Quest Points to begin this quest.";
+				if (client_configs['cfg1297'] > 55) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 466:
+			if (a0 == 3) {
+				v0 = "You must complete the bar crawl miniquest.";
+				if (client_configs['cfg2747'] >= 6 || client_configs['cfg2748'].bitcfg13706 == 1) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 457:
+			if (a0 == 5) {
+				v0 = "You must have a combat level of at least " + (string)cs2method_10379(90) + " to begin this quest.";
+				if (script_1432() >= 90) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 497:
+			if (a0 == 9) {
+				v0 = "You must have at least 101 Quest Points to begin this quest.";
+				if (client_configs['cfg1297'] >= 101) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 506:
+			if (a0 == 4) {
+				v0 = "You must have at least 21 Quest Points to begin this quest.";
+				if (client_configs['cfg1297'] >= 21) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 858:
+			if (a0 == 2) {
+				v0 = "You must have either started The Giant Dwarf or completed Priest in Peril to complete this task.";
+				if (client_configs['cfg2171'] >= 60 || client_configs['cfg2676'].bitcfg13266 >= 5) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 881:
+			if (a0 == 2) {
+				v0 = "You must have finished the gnome cooking and gnome cocktail tutorials to complete this task.";
+				if (client_configs['cfg3202'] >= 7 && client_configs['cfg3197'] >= 7) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 911:
+			if (a0 == 1) {
+				v0 = "You should have a combat level of at least " + (string)cs2method_10379(idx22mapAttribute(script_6798(a1), 2233)) + ".";
+				if (script_1432() >= idx22mapAttribute(script_6798(a1), 2233)) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 916:
+			case 915:
+			if (a0 == 1) {
+				v0 = "You should have a combat level of at least " + (string)cs2method_10379(idx22mapAttribute(script_6798(a1), 2233)) + ".";
+				if (script_1432() >= idx22mapAttribute(script_6798(a1), 2233)) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 513:
+			if (a0 == 5) {
+				v0 = "You must play a game of Pest Control.";
+				if (client_configs['cfg1568'].bitcfg4861 > 0 || client_configs['cfg2635'].bitcfg13049 == 1) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 530:
+			if (a0 == 4) {
+				v0 = "You require at least 44 Quest Points.";
+				if (client_configs['cfg1297'] >= 44) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 656:
+			if (a0 == 2) {
+				v0 = "You need to have partially completed the Zogre Flesh Eaters quest (learning how to cure disease from Sithik Ints).";
+				if (client_configs['cfg2272'].bitcfg10459 == 1) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 818:
+			if (a0 == 2) {
+				v0 = "You need a combat level of at least " + (string)cs2method_10379(idx22mapAttribute(script_6798(a1), 2233)) + ".";
+				if (script_1432() >= idx22mapAttribute(script_6798(a1), 2233)) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 819:
+			if (a0 == 2) {
+				v0 = "You need a combat level of at least " + (string)cs2method_10379(idx22mapAttribute(script_6798(a1), 2233)) + ".";
+				if (script_1432() >= idx22mapAttribute(script_6798(a1), 2233)) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 820:
+			if (a0 == 3) {
+				v0 = "You need a combat level of at least " + (string)cs2method_10379(idx22mapAttribute(script_6798(a1), 2233)) + ".";
+				if (script_1432() >= idx22mapAttribute(script_6798(a1), 2233)) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 822:
+			if (a0 == 3) {
+				v0 = "You need a combat level of at least " + (string)cs2method_10379(idx22mapAttribute(script_6798(a1), 2233)) + ".";
+				if (script_1432() >= idx22mapAttribute(script_6798(a1), 2233)) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 933:
+			case 928:
+			if (a0 == 2) {
+				v0 = "You need to find and free Skaldrun from the frozen floors in Daemonheim.";
+				if (client_configs['cfg1543'].bitcfg4759 >= 3) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 623:
+			if (a0 == 2) {
+				v0 = "You need to complete the first Thieves' Guild caper: From Tiny Acorns.";
+				if (client_configs['cfg2085'].bitcfg9022 >= 20) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 908:
+			if (a0 == 1) {
+				v0 = "You need a combat level of at least " + (string)cs2method_10379(idx22mapAttribute(script_6798(a1), 2233)) + ".";
+				if (script_1432() >= idx22mapAttribute(script_6798(a1), 2233)) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 447:
+			if (a0 == 6) {
+				v0 = "You need to work on the Tai Bwo Wannai Cleanup.";
+				if (client_configs['cfg3138'].bitcfg16199 > 0) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 659:
+			if (a0 == 2) {
+				v0 = "You need to learn how to brew this during the In Aid of the Myreque quest.";
+				if (client_configs['cfg2417'].bitcfg11498 >= 280) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 449:
+			if (a0 == 4) {
+				v0 = "You need to rescue Mad Eadgar from the Troll Stronghold.";
+				if (client_configs['cfg2348'].bitcfg10909 != 0) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 985:
+			if (a0 == 1) {
+				v0 = "You need to own and be able to use a Blood Altar teleport tablet.";
+				if (cs2method_10060(cs2method_10936(93, 13610), cs2method_10936(95, 13610)) > 0 && client_configs['cfg2788'].bitcfg13978 >= 490) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 976:
+			if (a0 == 2) {
+				v0 = "You need to have cremated 200 or more Vyrewatch.";
+				if (client_configs['cfg2789'].bitcfg14000 >= 200) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 991:
+			if (a0 == 1) {
+				v0 = "You need to have a combined level of 500 or more for your Temple Trekking companions.";
+				if (script_6034() >= 500) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 980:
+			if (a0 == 1) {
+				v0 = "You need to have achieved level 70 Defence and either level 70 Attack or Ranged.";
+				if (cs2method_10338(1) >= 70 && (cs2method_10338(0) >= 70 || cs2method_10338(4) > 70)) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 982:
+			if (a0 == 3) {
+				v0 = "You need to have started the quest Branches of Darkmeyer.";
+				if (client_configs['cfg2360'].bitcfg11020 >= 110) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 1117:
+			if (a0 == 1) {
+				v0 = "You need to have completed all achievements in the Dominion Tower including killing Sunfreet.";
+				if (script_7472(1) == 1) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 1105:
+			if (a0 == 1) {
+				v0 = "You need to have achieved 450 kills, spectated a match in the Dominion Tower and have a dreadnip to release.";
+				if (client_configs['cfg1320'].bitcfg3730 >= 500 && cs2method_10936(93, 22370) > 0) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 1107:
+			if (a0 == 1) {
+				v0 = "You need to have access to the fountain in Enakhra's Temple.";
+				if (client_configs['cfg2187'].bitcfg9740 == 30) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 1122:
+			if (a0 == 1) {
+				v0 = "You need a combat level of at least " + (string)cs2method_10379(idx22mapAttribute(script_6798(a1), 2233)) + ".";
+				if (script_1432() >= idx22mapAttribute(script_6798(a1), 2233)) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 1181:
+			if (a0 == 1) {
+				v0 = "You need to have access to rum-pumped crabs.";
+				if (client_configs['cfg2165'].bitcfg9602 >= 75) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 1146:
+			if (a0 == 1) {
+				v0 = "You need to have achieved level 7 Smithing or level 8 Crafting.";
+				if (cs2method_10938(13) >= 7 || cs2method_10938(12) >= 8) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 3042:
+			if (a0 == 1) {
+				v0 = "You must have defeated at least " + "<col=ffffff>" + (string)cs2method_10379(20) + " bosses" + "</col>";
+				v1 = script_6787();
+			}
+			break;
+			case 3056:
+			if (a0 == 1) {
+				v0 = "You need a " + "<col=ffffff>" + "combat level" + "</col>" + " of at least " + "<col=ffffff>" + "60" + "</col>" + ".";
+				if (script_1432() >= 60) {
+					v1 = 1;
+				}
+			}
+			break;
+			case 1201:
+			if (a0 == 9) {
+				v0 = "You must have defeated Bork in the Chaos Tunnels.";
+				if (client_configs['cfg3043'].bitcfg15344 >= 10) {
+					v1 = 1;
+				}
+			}
+	}
+	if (v1 == -1) {
+		v1 = 0;
+	}
+	if (v1 == 1) {
+		v0 = cs2method_10427("<str>", v0);
+	}
+	return v0;
+}

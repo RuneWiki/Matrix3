@@ -1,0 +1,28 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4614(int a0) {
+	switch (a0) {
+		case 1310722:
+			cs2method_10520(cs2method_10671(client_configs['cfg424'].bitcfg1039), a0);
+			break;
+		case 1310728:
+			cs2method_10520(cs2method_10671(client_configs['cfg424'].bitcfg1040), a0);
+			break;
+		case 1310731:
+			cs2method_10520(cs2method_10671(client_configs['cfg425'].bitcfg1041), a0);
+			break;
+		case 1310725:
+			cs2method_10520(cs2method_10671(client_configs['cfg425'].bitcfg1042), a0);
+	}
+	return;
+}

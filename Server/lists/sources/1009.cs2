@@ -1,0 +1,39 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_1009_struct(1,1,0) script_1009(int a0) {
+	switch (a0) {
+		case 0:
+			return new script_1009_struct(0, "Bows");
+		case 1:
+			return new script_1009_struct(1, "Thrown");
+		case 2:
+			return new script_1009_struct(0, "Armour");
+		case 3:
+			return new script_1009_struct(0, "Crossbows");
+		case 4:
+			return new script_1009_struct(1, "Shortcuts");
+		case 5:
+			return new script_1009_struct(1, "Salamanders");
+		case 6:
+			return new script_1009_struct(1, "Areas");
+		case 7:
+			return new script_1009_struct(0, "Other");
+		case 8:
+			return new script_1009_struct(1, "Minigames");
+		case 9:
+			return new script_1009_struct(0, "Dungeoneering");
+		case 10:
+			return new script_1009_struct(0, "Milestones");
+	}
+	return new script_1009_struct(-1, "");
+}

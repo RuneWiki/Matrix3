@@ -1,0 +1,201 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7006(int a0) {
+	int v2;
+	int v0 = -1;
+	int v5 = -1;
+	int v1 = -1;
+	int v7 = -1;
+	int v8 = -1;
+	int v6 = -1;
+	int v4 = script_7980(a0);
+	switch (v4) {
+		case 1:
+			if (client_configs['cfg727'] > 0) {
+				v7 = client_configs['cfg727'].bitcfg1724;
+				v8 = client_configs['cfg727'].bitcfg1723;
+			} else {
+				v8 = 10;
+				v5 = client_configs['cfg811'];
+			}
+			break;
+		case 2:
+			if (client_configs['cfg728'] > 0) {
+				v7 = client_configs['cfg728'].bitcfg1726;
+				v8 = client_configs['cfg728'].bitcfg1725;
+			} else {
+				v8 = 10;
+				v5 = client_configs['cfg812'];
+			}
+			break;
+		case 3:
+			if (client_configs['cfg729'] > 0) {
+				v7 = client_configs['cfg729'].bitcfg1728;
+				v8 = client_configs['cfg729'].bitcfg1727;
+			} else {
+				v8 = 10;
+				v5 = client_configs['cfg813'];
+			}
+			break;
+		case 4:
+			if (client_configs['cfg730'] > 0) {
+				v7 = client_configs['cfg730'].bitcfg1730;
+				v8 = client_configs['cfg730'].bitcfg1729;
+			} else {
+				v8 = 10;
+				v5 = client_configs['cfg814'];
+			}
+			break;
+		case 5:
+			if (client_configs['cfg731'] > 0) {
+				v7 = client_configs['cfg731'].bitcfg1732;
+				v8 = client_configs['cfg731'].bitcfg1731;
+			} else {
+				v8 = 10;
+				v5 = client_configs['cfg815'];
+			}
+			break;
+		case 6:
+			if (client_configs['cfg732'] > 0) {
+				v7 = client_configs['cfg732'].bitcfg1734;
+				v8 = client_configs['cfg732'].bitcfg1733;
+			} else {
+				v8 = 10;
+				v5 = client_configs['cfg816'];
+			}
+			break;
+		case 7:
+			if (client_configs['cfg733'] > 0) {
+				v7 = client_configs['cfg733'].bitcfg1736;
+				v8 = client_configs['cfg733'].bitcfg1735;
+			} else {
+				v8 = 10;
+				v5 = client_configs['cfg817'];
+			}
+			break;
+		case 8:
+			if (client_configs['cfg734'] > 0) {
+				v7 = client_configs['cfg734'].bitcfg1738;
+				v8 = client_configs['cfg734'].bitcfg1737;
+			} else {
+				v8 = 10;
+				v5 = client_configs['cfg818'];
+			}
+			break;
+		case 9:
+			if (client_configs['cfg735'] > 0) {
+				v7 = client_configs['cfg735'].bitcfg1740;
+				v8 = client_configs['cfg735'].bitcfg1739;
+			} else {
+				v8 = 10;
+				v5 = client_configs['cfg819'];
+			}
+			break;
+		case 10:
+			if (client_configs['cfg736'] > 0) {
+				v7 = client_configs['cfg736'].bitcfg1742;
+				v8 = client_configs['cfg736'].bitcfg1741;
+			} else {
+				v8 = 10;
+				v5 = client_configs['cfg820'];
+			}
+			break;
+		case 11:
+			if (client_configs['cfg737'] > 0) {
+				v7 = client_configs['cfg737'].bitcfg1744;
+				v8 = client_configs['cfg737'].bitcfg1743;
+			} else {
+				v8 = 10;
+				v5 = client_configs['cfg821'];
+			}
+			break;
+		case 12:
+			if (client_configs['cfg738'] > 0) {
+				v7 = client_configs['cfg738'].bitcfg1746;
+				v8 = client_configs['cfg738'].bitcfg1745;
+			} else {
+				v8 = 10;
+				v5 = client_configs['cfg822'];
+			}
+			break;
+		case 13:
+			if (client_configs['cfg4432'] > 0) {
+				v7 = client_configs['cfg4432'].bitcfg22338;
+				v8 = client_configs['cfg4432'].bitcfg22337;
+			} else {
+				v8 = 10;
+				v5 = client_configs['cfg4446'];
+			}
+			break;
+		case 14:
+			if (client_configs['cfg4433'] > 0) {
+				v7 = client_configs['cfg4433'].bitcfg22340;
+				v8 = client_configs['cfg4433'].bitcfg22339;
+			} else {
+				v8 = 10;
+				v5 = client_configs['cfg4447'];
+			}
+	}
+	if (v5 != -1) {
+		int v9 = script_8313(2);
+		/* 
+			java.lang.RuntimeException: Stack underflow
+				at mgi.tools.jagdecs2.CS2Stack.pop(CS2Stack.java:46)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:191)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+				at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:77)
+				at tests.Main.main(Main.java:69)
+			
+		 */
+	}
+	switch (v8) {
+		default:
+			return;
+		case 1:
+			v2 = 6734;
+			break;
+		case 2:
+			v2 = 6735;
+			break;
+		case 3:
+			v2 = 6736;
+			break;
+		case 4:
+			v2 = 6737;
+			break;
+		case 5:
+			v2 = 6738;
+			break;
+		case 6:
+			v2 = 6740;
+	}
+	int v3 = idx17mapData('i', 'J', v2, v7);
+	if (v3 == -1) {
+		return;
+	}
+	if (idx22mapAttribute(v3, 2876) == 1) {
+		script_8311(2);
+	}
+	if (v4 != -1) {
+		int v9 = script_7975(1430, v4);
+		cs2method_10704(0, v9);
+		cs2method_10906(v9);
+		if (script_8292(2, -1) == 1) {
+			int v9 = script_7975(1436, v4);
+			cs2method_10704(0, v9);
+			cs2method_10906(v9);
+		}
+	}
+	return;
+}

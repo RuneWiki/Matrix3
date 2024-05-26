@@ -1,0 +1,136 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4696() {
+	cs2method_20162(new function<script_4697>(int a0) {
+		object v10;
+		object v7;
+		object v6;
+		object v2;
+		int v13 = cs2method_10133();
+		object v11 = "";
+		object v4 = "";
+		object v14 = "";
+		object v3 = "";
+		object v15 = "";
+		object v9 = "";
+		int v0 = 0;
+		int v12 = 0;
+		int v8 = 0;
+		int v1 = 1;
+		if (v13 >= cs2method_10060(a0, 200) || a0 == 0) {
+			a0 = v13;
+			if (cs2_configs['cfg1540'] < 1) {
+				v6 = "Destroyed";
+			} else if (cs2_configs['cfg1540'] < cs2method_10968(5, 2)) {
+				v6 = "Under attack";
+			} else if (cs2_configs['cfg1540'] < 5) {
+				v6 = "Unlit ammo";
+			} else {
+				v6 = "Fine";
+			}
+			if (cs2_configs['cfg1541'] < 1) {
+				v2 = "Empty";
+			} else if (cs2_configs['cfg1541'] < cs2method_10968(10, 2)) {
+				v2 = "Low";
+			} else if (cs2_configs['cfg1541'] < 10) {
+				v2 = "Almost full";
+			} else {
+				v2 = "Full";
+			}
+			if (cs2_configs['cfg1542'] == 1) {
+				v10 = "1 broken";
+			} else if (cs2_configs['cfg1542'] > 0) {
+				v10 = (string)cs2method_10379(cs2_configs['cfg1542']) + " broken";
+			} else {
+				v10 = "Repaired";
+			}
+			if (cs2_configs['cfg1543'] == 1) {
+				v7 = (string)cs2method_10379(v1) + " broken";
+			} else if (cs2_configs['cfg1543'] > 0) {
+				v7 = (string)cs2method_10379(cs2_configs['cfg1543']) + " broken";
+			} else {
+				v7 = "Repaired";
+			}
+			int v16 = cs2method_10968(cs2_configs['cfg1545'], 2);
+			cs2method_10283(cs2method_10968(cs2method_10051(v16, 16384), 100), cs2method_10823(32768012), 2, 0, 32768012);
+			if (v16 < 97) {
+				cs2method_10467(1, 32768013);
+			}
+			object v19 = cs2method_10379(cs2method_10051(cs2_configs['cfg1544'], 10));
+			cs2method_10026(32768029, (string)cs2method_10379(cs2_configs['cfg1546']) + " min");
+			if (cs2_configs['cfg1547'] != 0) {
+				cs2method_10467(0, 32768010);
+				cs2method_10283(cs2method_10236(32768002), 253, 0, 0, 32768002);
+				switch (cs2_configs['cfg1547']) {
+					case 1:
+						v9 = "Clobbering Time!";
+						break;
+					case 2:
+						v9 = "Slow-mo";
+						break;
+					case 3:
+						v9 = "No Well";
+						break;
+					case 4:
+						v9 = "Oil Spill";
+						break;
+					case 5:
+						v9 = "Fire in the Hole!";
+						break;
+					case 6:
+						v9 = "Armoured Trolls";
+				}
+			} else {
+				cs2method_10467(1, 32768010);
+				cs2method_10283(cs2method_10236(32768002), 225, 0, 0, 32768002);
+			}
+			int v17 = script_4699(32768008, 32768021, "Ballista", v6, 32768022);
+			int v23 = script_4699(32768005, 32768019, "Oil", v2, 32768020);
+			int v18 = cs2method_11048(v17, v23);
+			int v24 = script_4699(32768006, 32768039, "Barricades", v10, 32768040);
+			int v20 = cs2method_11048(v18, v24);
+			int v22 = script_4699(32768007, 32768017, "Walls", v7, 32768018);
+			int v25 = cs2method_11048(v20, v22);
+			int v21 = script_4699(32768009, 32768041, "Trolls", v19, 32768042);
+			int v5 = cs2method_11048(v25, v21);
+			if (cs2_configs['cfg1547'] != 0) {
+				int v16 = script_4699(32768010, 32768015, "Troll Attack", v9, 32768016);
+				v5 = cs2method_11048(v5, v16);
+			}
+			if (cs2method_10060(v5, 15) > cs2method_10236(32768002)) {
+				cs2method_10283(cs2method_10060(v5, 15), cs2method_10823(32768002), 0, 0, 32768002);
+			}
+		}
+		cs2method_20162(load function<4697>, a0, "i", new WidgetPointer(500,8));
+		return;
+	}, 0, "i", new WidgetPointer(500,8));
+	if (cs2method_10609(32768011) == 0) {
+		cs2method_20162(new function<script_4695>(int a0,int a1) {
+			int v0 = cs2method_10133();
+			if (v0 >= cs2method_10060(a0, 15) || a0 == 0) {
+				cs2method_10704(a1, 32768011);
+				a0 = v0;
+				if (cs2_configs['cfg1548'] == 0) {
+					a1 = 255;
+				} else if (a1 == 255) {
+					a1 = 0;
+				} else {
+					a1 = 255;
+				}
+			}
+			cs2method_20162(load function<4695>, a0, a1, "ii", new WidgetPointer(500,11));
+			return;
+		}, 0, 0, "ii", new WidgetPointer(500,11));
+	}
+	return;
+}

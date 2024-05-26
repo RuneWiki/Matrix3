@@ -1,0 +1,79 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_713(int a0,int a1,int a2,int a3,int a4,int a5,int a6) {
+	int v1 = cs2method_10640(541, 0);
+	if (v1 != -1) {
+		cs2method_10121(v1, 1, a2);
+		cs2method_10832(1, a2);
+		cs2method_10807(3355443, a2);
+		cs2method_11127(1, a2, "Remove");
+		cs2method_11127(10, a2, "Examine");
+		cs2method_10316(a2, "<col=ff9040>" + (string)cs2method_10018(v1) + "</col>");
+		if (client_configs['cfg432'].bitcfg1046 == 0) {
+			cs2method_10026(a4, "<col=ff0000>" + "Until" + "</col>" + "<br>" + "<col=ff0000>" + "logout" + "</col>");
+			cs2method_10495(a4);
+			cs2method_11127(2, a4, "Specify");
+		} else {
+			if (client_configs['cfg432'].bitcfg1046 == 1) {
+				cs2method_10026(a4, "1 hour");
+			} else {
+				cs2method_10026(a4, (string)cs2method_10379(client_configs['cfg432'].bitcfg1046) + " hours");
+			}
+			cs2method_11127(1, a4, "'Until logout'");
+			cs2method_11127(2, a4, "Edit");
+		}
+		cs2method_10316(a4, "<col=ff9040>" + "Duration" + "</col>");
+		script_679(a0);
+		cs2method_21121(new function<script_94>(int a0) {
+			script_1360(a0);
+			return;
+		}, new WidgetPointer(a0), "I", new WidgetPointer(a0));
+		cs2method_20750(new function<script_92>(int a0) {
+			script_679(a0);
+			return;
+		}, new WidgetPointer(a0), "I", new WidgetPointer(a0));
+	} else {
+		cs2method_10121(-1, 0, a2);
+		cs2method_10026(a4, "");
+		cs2method_10495(a2);
+		cs2method_10495(a4);
+		cs2method_10316(a2, "");
+		cs2method_10316(a4, "");
+		cs2method_10273(a0);
+		cs2method_21121(new function<none>() {
+		}, "", new WidgetPointer(a0));
+		cs2method_20750(new function<none>() {
+		}, "", new WidgetPointer(a0));
+	}
+	int v0 = cs2method_10418(541, 0);
+	if (v0 != -1) {
+		cs2method_10121(v0, 1, a1);
+		cs2method_10832(1, a1);
+		cs2method_10807(3355443, a1);
+		cs2method_11127(10, a1, "Examine");
+		cs2method_10316(a1, "<col=ff9040>" + (string)cs2method_10018(v0) + "</col>");
+		if (client_configs['cfg432'].bitcfg1047 == 0) {
+			cs2method_10026(a3, "<col=ff0000>" + "Until" + "</col>" + "<br>" + "<col=ff0000>" + "logout" + "</col>");
+		} else if (client_configs['cfg432'].bitcfg1047 == 1) {
+			cs2method_10026(a3, "1 hour");
+		} else {
+			cs2method_10026(a3, (string)cs2method_10379(client_configs['cfg432'].bitcfg1047) + " hours");
+		}
+	} else {
+		cs2method_10121(-1, 0, a1);
+		cs2method_10026(a3, "");
+		cs2method_10495(a1);
+		cs2method_10316(a1, "");
+	}
+	return;
+}

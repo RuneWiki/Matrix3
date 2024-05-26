@@ -1,0 +1,43 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7378(int a0,int a1,int a2,int a3,int a4,object a5,int a6) {
+	int v2 = cs2method_10122(a2, a6, 100);
+	int v0 = cs2method_10051(v2, 655);
+	int v1 = cs2method_10051(cs2method_10461(v2, 50), 655);
+	if (v2 <= 50) {
+		cs2method_10074(cs2method_11048(cs2method_10461(65353, v0), 32768), a3);
+		cs2method_10074(65353, a1);
+	} else if (v2 < 100) {
+		cs2method_10074(32768, a3);
+		cs2method_10074(cs2method_11048(cs2method_10461(65353, v1), 32768), a1);
+	} else {
+		cs2method_10074(32768, a3);
+		cs2method_10074(32768, a1);
+	}
+	cs2method_21121(new function<script_7373>(int a0,object a1,int a2,int a3,int a4,int a5) {
+		object v0;
+		script_7374(a4, 0);
+		if (a0 == a2) {
+			v0 = cs2method_10427(a1, "<br>" + "This scroll is complete!");
+		} else {
+			v0 = cs2method_10427(a1, "<br>" + "(" + (string)cs2method_10379(a0) + " of " + (string)cs2method_10379(a2) + " pieces found)");
+		}
+		script_8800(a4, -1, v0);
+		return;
+	}, new WidgetPointer(-32768,3), a2, a6, (string)a5, -2147483647, -2147483646, "Iiisii", new WidgetPointer(a0));
+	cs2method_20750(new function<script_7375>() {
+		cs2method_10467(1, 90374222);
+		return;
+	}, "", new WidgetPointer(a0));
+	return;
+}

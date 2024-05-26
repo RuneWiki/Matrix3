@@ -1,0 +1,19 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_6688(int a0,int a1) {
+	if (a1 == 1 || cs2_configs['cfg2014'] < client_configs['cfg1572'].bitcfg4881) {
+		cs2_configs['cfg2014'] = client_configs['cfg1572'].bitcfg4881;
+	}
+	script_6690(a0, -1);
+	return;
+}

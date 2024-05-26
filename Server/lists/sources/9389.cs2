@@ -1,0 +1,49 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9389(int a0) {
+	if (cs2method_10324(a0) == 1) {
+		if (client_configs['cfg3975'].bitcfg21115 == 4) {
+			cs2method_10336(92669, a0);
+			cs2method_10740(0, 0, 0, 10, 0, 3750, a0);
+			cs2method_10067(22284, a0);
+			cs2method_10112(7, -110, 1, 0, a0);
+			cs2method_10026(46268467, "<col=dc7800>" + "Bandos");
+			cs2method_10467(0, 46268460);
+			cs2method_10467(1, 46268646);
+			cs2method_10467(0, 46268498);
+			cs2method_10467(0, 46268499);
+		} else if (client_configs['cfg3975'].bitcfg21115 == 3) {
+			cs2method_10336(90943, a0);
+			cs2method_10740(0, 0, 0, 308, 0, 1729, a0);
+			cs2method_10067(22321, a0);
+			cs2method_10112(-6, 36, 1, 0, a0);
+			cs2method_10026(46268467, "<col=cacaca>" + "Armadyl");
+			cs2method_10467(1, 46268460);
+			cs2method_10467(1, 46268646);
+			cs2method_10467(0, 46268498);
+			cs2method_10467(0, 46268499);
+		} else {
+			cs2method_10336(92345, a0);
+			cs2method_10740(0, 0, 0, 1860, 0, 407, a0);
+			cs2method_10067(20778, a0);
+			cs2method_10112(-6, 36, 1, 0, a0);
+			cs2method_10026(46268467, "<col=ffffff>" + "No one");
+			cs2method_10467(1, 46268460);
+			cs2method_10467(0, 46268646);
+			cs2method_10467(1, 46268465);
+			cs2method_10467(1, 46268498);
+			cs2method_10467(1, 46268499);
+		}
+	}
+	return;
+}

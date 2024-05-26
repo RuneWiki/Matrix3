@@ -1,0 +1,47 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_835() {
+	int v13 = -1;
+	int v5 = -1;
+	int v17 = -1;
+	int v9 = -1;
+	int v1 = -1;
+	int v15 = -1;
+	int v7 = -1;
+	int v0 = idx17mapData('i', 'J', 7716, 18);
+	int v10 = idx22mapAttribute(v0, 3503);
+	int v14 = idx17mapData('i', 'J', 7716, 19);
+	int v16 = idx22mapAttribute(v14, 3503);
+	int v2 = idx17mapData('i', 'J', 7716, 20);
+	int v11 = idx22mapAttribute(v2, 3503);
+	int v18 = idx17mapData('i', 'J', 7716, 21);
+	int v8 = idx22mapAttribute(v18, 3503);
+	int v3 = idx17mapData('i', 'J', 7716, 22);
+	int v6 = idx22mapAttribute(v3, 3503);
+	int v12 = idx17mapData('i', 'J', 7716, 23);
+	int v4 = idx22mapAttribute(v12, 3503);
+	if (v10 == -1 || v16 == -1 || v11 == -1 || v8 == -1 || v6 == -1 || v4 == -1) {
+		return;
+	}
+	if (cs2method_10609(v10) == 0 || cs2method_10609(v16) == 0 || cs2method_10609(v11) == 0 || cs2method_10609(v8) == 0 || cs2method_10609(v6) == 0 || cs2method_10609(v4) == 0) {
+		cs2method_10467(1, v10);
+		cs2method_10467(1, v16);
+		cs2method_10467(1, v11);
+		cs2method_10467(1, v8);
+		cs2method_10467(1, v6);
+		cs2method_10467(1, v4);
+	} else {
+		script_8868();
+	}
+	return;
+}

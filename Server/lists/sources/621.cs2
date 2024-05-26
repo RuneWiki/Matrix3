@@ -1,0 +1,73 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_621() {
+	object v3;
+	object v0;
+	int v1 = 0;
+	object v2 = "null";
+	script_622();
+	if (client_configs['cfg138'] == -1 || cs2method_10601(client_configs['cfg138']) == 1 && client_configs['cfg139'] == -1) {
+		cs2method_10467(0, 6881306);
+		script_628();
+		cs2method_20254(new function<none>() {
+		}, "", new WidgetPointer(105,24));
+		cs2_configs['cfg83'] = 0;
+		cs2_configs['cfg82'] = 0;
+	} else if (cs2method_10601(client_configs['cfg138']) == 0) {
+		cs2method_10467(0, 6881300);
+		cs2method_10467(0, 6881304);
+		script_594(cs2method_10915(client_configs['cfg138']), cs2method_10950(client_configs['cfg138']), cs2method_10941(client_configs['cfg138']), cs2method_11041(client_configs['cfg138']));
+		script_593(client_configs['cfg138']);
+		if (cs2method_10915(client_configs['cfg138']) == 0) {
+			v0 = "Maximum total cost of purchase";
+		} else {
+			v0 = "Minimum total value of sale";
+		}
+		cs2method_21121(new function<script_8799>(int a0,int a1,object a2) {
+			script_8800(a1, a0, a2);
+			return;
+		}, (string)v0, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(105,66));
+		object v4 = cs2method_10055(cs2method_10051(cs2method_10941(client_configs['cfg138']), cs2method_11041(client_configs['cfg138'])), 1);
+		cs2method_10026(6881346, (string)v4 + " gp");
+	} else {
+		cs2method_10467(0, 6881300);
+		cs2method_10467(0, 6881301);
+		if (client_configs['cfg139'] == 0) {
+			if (client_configs['cfg135'] != -1) {
+				cs2method_10467(1, 6881293);
+			} else {
+				cs2method_10467(0, 6881293);
+			}
+			v3 = "Maximum total cost of purchase";
+		} else {
+			cs2method_10467(1, 6881293);
+			v3 = "Minimum total value of sale";
+		}
+		cs2method_21121(new function<script_8799>(object a0,int a1,int a2) {
+			script_8800(a1, a2, a0);
+			return;
+		}, (string)v3, new WidgetPointer(-32768,3), -2147483643, "sIi", new WidgetPointer(105,66));
+		if (client_configs['cfg137'] > 0) {
+			if (client_configs['cfg136'] > cs2method_10968(2147483647, client_configs['cfg137'])) {
+				cs2method_10026(6881346, "Too high!");
+			} else {
+				object v4 = cs2method_10055(cs2method_10051(client_configs['cfg136'], client_configs['cfg137']), 1);
+				cs2method_10026(6881346, (string)v4 + " gp");
+			}
+		} else {
+			cs2method_10026(6881346, "0 gp");
+		}
+		script_594(client_configs['cfg139'], client_configs['cfg135'], client_configs['cfg136'], client_configs['cfg137']);
+	}
+	return;
+}

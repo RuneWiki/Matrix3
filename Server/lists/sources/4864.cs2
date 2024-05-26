@@ -1,0 +1,368 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_4864() {
+	object v13;
+	object v8;
+	int v7 = 0;
+	int v36 = 0;
+	int v9 = 0;
+	int v52 = 1;
+	int v51 = 0;
+	int v19 = 0;
+	int v55 = 0;
+	int v47 = 0;
+	int v20 = 0;
+	int v26 = 0;
+	int v49 = 0;
+	int v60 = 0;
+	int v4 = 0;
+	int v12 = 0;
+	int v25 = 0;
+	int v39 = 0;
+	int v32 = 0;
+	int v54 = 0;
+	int v61 = 0;
+	int v10 = 0;
+	int v17 = 0;
+	int v24 = 0;
+	int v5 = 0;
+	int v31 = 0;
+	int v11 = 0;
+	int v56 = 0;
+	int v45 = 0;
+	int v57 = 0;
+	int v22 = 0;
+	int v27 = 0;
+	int v30 = 0;
+	int v21 = 0;
+	int v33 = -1;
+	object v42 = "";
+	int v29 = 0;
+	int v35 = 0;
+	int v44 = 0;
+	int v14 = 0;
+	int v50 = 0;
+	int v23 = 0;
+	int v34 = 0;
+	int v28 = 0;
+	object v18 = "";
+	object v41 = "You do not have permission from your clan to set the primary resource target.";
+	object v59 = "Toggle whether this resource is the primary resource target.";
+	object v1 = "You do not have permission from your clan to set resource target amounts.";
+	object v53 = "Set a target amount of this resource to be collected.";
+	int v6 = -1;
+	globalarray_0 = new int[10];
+	int v43 = 0;
+	int v2 = 0;
+	int v16 = 0;
+	if (cs2method_10172() == 1) {
+		script_4797_struct(6,0,0) v65 = script_4797();
+		int v62 = v65.intpart_5;
+		int v67 = v65.intpart_4;
+		int v63 = v65.intpart_3;
+		int v64 = v65.intpart_2;
+		int v66 = v65.intpart_1;
+		int v68 = v65.intpart_0;
+		while (v52 <= 31) {
+			int v62 = script_4790(v52);
+			if (v62 > 0) {
+				int v65 = v62;
+				script_4791_struct(7,1,0) v68 = script_4791(v65);
+				int v69 = v68.intpart_6;
+				int v15 = v68.intpart_5;
+				int v46 = v68.intpart_4;
+				int v72 = v68.intpart_3;
+				int v67 = v68.intpart_2;
+				int v71 = v68.intpart_1;
+				object v74 = v68.objectpart_0;
+				int v73 = v68.intpart_0;
+				int v63 = v62;
+				int v66 = v71;
+				script_4792_struct(6,0,0) v70 = script_4792(v63, v66);
+				int v3 = v70.intpart_5;
+				int v48 = v70.intpart_4;
+				int v58 = v70.intpart_3;
+				int v37 = v70.intpart_2;
+				int v40 = v70.intpart_1;
+				int v38 = v70.intpart_0;
+				int v64 = script_4975(v62);
+				if (v64 == 3) {
+					v61 = cs2method_10060(v61, v38);
+					v10 = cs2method_10060(v10, v40);
+					v17 = cs2method_10060(v17, v37);
+					v5 = cs2method_10060(v5, v58);
+					v31 = cs2method_10060(v31, v48);
+					v24 = cs2method_10060(v24, v3);
+					int v63 = v46;
+					int v62 = v15;
+					script_4793_struct(6,0,0) v64 = script_4793(v63, v62);
+					v3 = v64.intpart_5;
+					v48 = v64.intpart_4;
+					v58 = v64.intpart_3;
+					v37 = v64.intpart_2;
+					v40 = v64.intpart_1;
+					v38 = v64.intpart_0;
+					v45 = cs2method_10060(v45, v38);
+					v57 = cs2method_10060(v57, v40);
+					v22 = cs2method_10060(v22, v37);
+					v30 = cs2method_10060(v30, v58);
+					v21 = cs2method_10060(v21, v48);
+					v27 = cs2method_10060(v27, v3);
+				}
+			}
+			v52 = cs2method_10060(v52, 1);
+		}
+		v61 = cs2method_10461(v61, v45);
+		v10 = cs2method_10461(v10, v57);
+		v17 = cs2method_10461(v17, v22);
+		v31 = cs2method_10461(v31, v21);
+		v5 = cs2method_10461(v5, v30);
+		v24 = cs2method_10461(v24, v27);
+		int v0 = clan_chat_configs['cfg2744'];
+		if (v0 > 0) {
+			switch (clan_chat_configs['cfg2744']) {
+				case 1:
+					v11 = clan_chat_configs['cfg2734'];
+					break;
+				case 2:
+					v11 = clan_chat_configs['cfg2735'];
+					break;
+				case 3:
+					v11 = clan_chat_configs['cfg2736'];
+					break;
+				case 4:
+					v11 = clan_chat_configs['cfg2737'];
+					break;
+				case 5:
+					v11 = clan_chat_configs['cfg2738'];
+					break;
+				case 6:
+					v11 = clan_chat_configs['cfg2739'];
+					break;
+				case 7:
+					v11 = clan_chat_configs['cfg2740'];
+					break;
+				case 9:
+					v11 = clan_chat_configs['cfg2742'];
+					break;
+				case 8:
+					v11 = clan_chat_configs['cfg2741'];
+					break;
+				case 10:
+					v11 = clan_chat_configs['cfg2743'];
+			}
+			v8 = (string)cs2method_10379(v11) + " " + idx17mapData('i', 's', 4285, v0);
+		} else {
+			v8 = "No target set";
+		}
+		globalarray_0[0] = cs2method_11048(cs2method_10968(clan_chat_configs['cfg2724'], 100), cs2method_10060(v68, v61));
+		globalarray_0[1] = cs2method_11048(cs2method_10968(clan_chat_configs['cfg2725'], 100), cs2method_10060(v66, v10));
+		globalarray_0[2] = cs2method_11048(cs2method_10968(clan_chat_configs['cfg2728'], 100), cs2method_10060(v64, v17));
+		globalarray_0[3] = cs2method_11048(cs2method_10968(clan_chat_configs['cfg2730'], 100), cs2method_10060(v62, v24));
+		globalarray_0[4] = cs2method_11048(cs2method_10968(clan_chat_configs['cfg2732'], 100), cs2method_10060(v63, v5));
+		globalarray_0[5] = cs2method_11048(cs2method_10968(clan_chat_configs['cfg2731'], 100), cs2method_10060(v67, v31));
+		globalarray_0[6] = cs2method_11048(cs2method_10968(clan_chat_configs['cfg2726'], 100), clan_chat_configs['cfg2736']);
+		globalarray_0[7] = cs2method_11048(cs2method_10968(clan_chat_configs['cfg2727'], 100), clan_chat_configs['cfg2737']);
+		globalarray_0[8] = cs2method_11048(cs2method_10968(clan_chat_configs['cfg2729'], 100), clan_chat_configs['cfg2739']);
+		globalarray_0[9] = cs2method_11048(cs2method_10968(clan_chat_configs['cfg2733'], 100), clan_chat_configs['cfg2743']);
+		while (v43 < 10) {
+			if (globalarray_0[v43] > v2) {
+				v2 = globalarray_0[v43];
+			}
+			v43 = cs2method_10060(v43, 1);
+		}
+		script_4866(1, clan_chat_configs['cfg2724'], v68, v61, v45, v2);
+		script_4866(2, clan_chat_configs['cfg2725'], v66, v10, v57, v2);
+		script_4866(3, clan_chat_configs['cfg2726'], 0, 0, 0, v2);
+		script_4866(4, clan_chat_configs['cfg2727'], 0, 0, 0, v2);
+		script_4866(5, clan_chat_configs['cfg2728'], v64, v17, v22, v2);
+		script_4866(6, clan_chat_configs['cfg2729'], 0, 0, 0, v2);
+		script_4866(7, clan_chat_configs['cfg2730'], v62, v24, v27, v2);
+		script_4866(8, clan_chat_configs['cfg2731'], v67, v31, v21, v2);
+		script_4866(9, clan_chat_configs['cfg2732'], v63, v5, v30, v2);
+		script_4866(10, clan_chat_configs['cfg2733'], 0, 0, 0, v2);
+		cs2method_10026(82575642, v8);
+		switch (client_configs['cfg1978'].bitcfg6680) {
+			case 1:
+				cs2method_10758(7381, 82575660);
+				break;
+			case 2:
+				cs2method_10758(7380, 82575660);
+				break;
+			case 3:
+				cs2method_10758(7384, 82575660);
+				break;
+			case 4:
+				cs2method_10758(7378, 82575660);
+				break;
+			case 5:
+				cs2method_10758(7377, 82575660);
+				break;
+			case 6:
+				cs2method_10758(7379, 82575660);
+				break;
+			case 7:
+				cs2method_10758(7376, 82575660);
+				break;
+			case 8:
+				cs2method_10758(7383, 82575660);
+				break;
+			case 9:
+				cs2method_10758(7382, 82575660);
+				break;
+			case 10:
+				cs2method_10758(7385, 82575660);
+				break;
+			default:
+				cs2method_10758(-1, 82575660);
+		}
+		switch (client_configs['cfg1978'].bitcfg6680) {
+			case 1:
+				v28 = clan_chat_configs['cfg2734'];
+				break;
+			case 2:
+				v28 = clan_chat_configs['cfg2735'];
+				break;
+			case 3:
+				v28 = clan_chat_configs['cfg2736'];
+				break;
+			case 4:
+				v28 = clan_chat_configs['cfg2737'];
+				break;
+			case 5:
+				v28 = clan_chat_configs['cfg2738'];
+				break;
+			case 6:
+				v28 = clan_chat_configs['cfg2739'];
+				break;
+			case 7:
+				v28 = clan_chat_configs['cfg2740'];
+				break;
+			case 8:
+				v28 = clan_chat_configs['cfg2741'];
+				break;
+			case 9:
+				v28 = clan_chat_configs['cfg2742'];
+				break;
+			case 10:
+				v28 = clan_chat_configs['cfg2743'];
+		}
+		if (v28 > 0) {
+			v13 = cs2method_10379(v28);
+		} else {
+			v13 = "No target set";
+		}
+		if (client_configs['cfg1978'].bitcfg6680 > 0) {
+			object v64;
+			cs2method_10467(0, 82575451);
+			cs2method_10467(1, 82575453);
+			cs2method_10026(82575392, idx17mapData('i', 's', 4285, client_configs['cfg1978'].bitcfg6680));
+			cs2method_10026(82575656, v13);
+			if (script_5956(client_configs['cfg1978'].bitcfg6680) == 1 || script_5956(client_configs['cfg1978'].bitcfg6680) == 2) {
+				cs2method_10758(5917, 82575447);
+				cs2method_10758(5919, 82575449);
+			}
+			if (script_5956(client_configs['cfg1978'].bitcfg6680) == 3) {
+				cs2method_10758(5917, 82575449);
+				cs2method_10758(5919, 82575447);
+			}
+			if (script_5956(client_configs['cfg1978'].bitcfg6680) == 0) {
+				cs2method_10758(5919, 82575449);
+				cs2method_10758(5919, 82575447);
+			}
+			object v62 = "Toggle whether this skill plot will lock when the resource target is reached. It will automatically unlock once all resource targets are hit.";
+			cs2method_21121(new function<script_7768>(int a0,int a1,object a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+				script_7769(a11, a8, a1, a9, a6, a3, a0, a10, a5, a12, a4, a2, a7);
+				return;
+			}, new WidgetPointer(1260,326), new WidgetPointer(-32768,3), -1, (string)v62, 180, 17813, 17813, 16777215, 13, 4, 3, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1260,87));
+			cs2method_20750(new function<script_40>(int a0) {
+				script_41(a0);
+				return;
+			}, new WidgetPointer(1260,326), "I", new WidgetPointer(1260,87));
+			object v63 = "Toggle whether this skill plot is locked. If this is checked, the plot will stay locked until manually unlocked.";
+			cs2method_21121(new function<script_7768>(int a0,object a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+				script_7769(a5, a3, a7, a9, a0, a2, a6, a11, a12, a10, a4, a1, a8);
+				return;
+			}, new WidgetPointer(1260,326), new WidgetPointer(-32768,3), -1, (string)v63, 180, 17813, 17813, 16777215, 13, 4, 3, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1260,89));
+			cs2method_20750(new function<script_40>(int a0) {
+				script_41(a0);
+				return;
+			}, new WidgetPointer(1260,326), "I", new WidgetPointer(1260,89));
+			if (clan_chat_configs['cfg2744'] == client_configs['cfg1978'].bitcfg6680) {
+				if (script_5224(-1) == 1) {
+					cs2method_10758(5916, 82575494);
+					v64 = "Toggle whether this resource is the primary resource target.";
+					cs2method_11127(1, 82575494, "Make Primary Target");
+				} else {
+					cs2method_10758(5919, 82575494);
+					v64 = "You do not have permission from your clan to set the primary resource target.";
+					cs2method_11127(1, 82575494, "");
+				}
+			} else if (script_5224(-1) == 1) {
+				if (script_5214(client_configs['cfg1978'].bitcfg6680) <= clan_chat_configs['cfg2575'].bitcfg6507) {
+					cs2method_10758(5920, 82575494);
+					v64 = "Toggle whether this resource is the primary resource target.";
+					cs2method_11127(1, 82575494, "Make Primary Target");
+				} else {
+					cs2method_10758(5923, 82575494);
+					v64 = "This resource will become available at citadel tier " + (string)cs2method_10379(script_5214(client_configs['cfg1978'].bitcfg6680)) + ".";
+					cs2method_11127(1, 82575494, "");
+				}
+			} else {
+				cs2method_10758(5923, 82575494);
+				v64 = "You do not have permission from your clan to set the primary resource target.";
+				cs2method_11127(1, 82575494, "");
+			}
+			cs2method_21121(new function<script_7768>(int a0,object a1,int a2,int a3,int a4,int a5,int a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+				script_7769(a9, a7, a11, a6, a8, a10, a3, a4, a0, a12, a2, a1, a5);
+				return;
+			}, new WidgetPointer(1260,326), new WidgetPointer(-32768,3), -1, (string)v64, 180, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1260,134));
+			cs2method_20750(new function<script_40>(int a0) {
+				script_41(a0);
+				return;
+			}, new WidgetPointer(1260,326), "I", new WidgetPointer(1260,134));
+			cs2method_10467(0, 82575650);
+			cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,object a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+				script_7769(a4, a7, a8, a2, a9, a12, a3, a1, a11, a5, a10, a6, a0);
+				return;
+			}, new WidgetPointer(1260,326), new WidgetPointer(-32768,3), -1, (string)v53, 180, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1260,289));
+			cs2method_20750(new function<script_40>(int a0) {
+				script_41(a0);
+				return;
+			}, new WidgetPointer(1260,326), "I", new WidgetPointer(1260,289));
+			if (script_5224(-1) == 1) {
+				if (script_5214(client_configs['cfg1978'].bitcfg6680) <= clan_chat_configs['cfg2575'].bitcfg6507) {
+					cs2method_10467(1, 82575650);
+				} else {
+					cs2method_10467(0, 82575650);
+					v1 = "This resource will become available at citadel tier " + (string)cs2method_10379(script_5214(client_configs['cfg1978'].bitcfg6680)) + ".";
+				}
+			} else {
+				cs2method_10467(0, 82575650);
+				v1 = "You do not have permission from your clan to set resource targets.";
+			}
+			cs2method_21121(new function<script_7768>(int a0,int a1,int a2,int a3,int a4,int a5,object a6,int a7,int a8,int a9,int a10,int a11,int a12) {
+				script_7769(a10, a9, a2, a8, a3, a0, a4, a12, a5, a11, a7, a6, a1);
+				return;
+			}, new WidgetPointer(1260,326), new WidgetPointer(-32768,3), -1, (string)v1, 180, 17813, 17813, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisiffiiiiii", new WidgetPointer(1260,290));
+			cs2method_20750(new function<script_40>(int a0) {
+				script_41(a0);
+				return;
+			}, new WidgetPointer(1260,326), "I", new WidgetPointer(1260,290));
+		} else {
+			cs2method_10467(1, 82575451);
+			cs2method_10467(0, 82575453);
+		}
+	}
+	return;
+}

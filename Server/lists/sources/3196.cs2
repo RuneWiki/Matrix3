@@ -1,0 +1,68 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3196(int a0,int a1,int a2,int a3,int a4,int a5) {
+	int v0 = -1;
+	object v2 = "";
+	object v1 = "";
+	switch (a0) {
+		case 1:
+			v2 = "Help - selecting an offender";
+			v1 = "Here you can enter the name of a player to report." + "<br>" + "<br>" + "Clicking 'Next' will then allow you to select the offence you believe that player has committed.";
+			break;
+		case 2:
+			v2 = "Help - selecting an offender";
+			v1 = "You can select a player to report from the chat list shown." + "<br>" + "<br>" + "Chat from other players appears in black, while your chat is grey. You can't select your own chat." + "<br>" + "<br>" + "To report a player, click on any line of their chat and click the 'Next' button to continue. You will then be shown a list of offences: choose the offence you are reporting the player for." + "<br>" + "<br>" + "The list of offences has a 'Change player' button, so you can choose again if you select the wrong player." + "<br>" + "<br>" + "Don't delay; once chat leaves the chat box, it can no longer be reported.";
+			break;
+		case 3:
+			v2 = "Help - selecting an offence";
+			v1 = "Here you can select the offence that you believe the player has committed." + "<br>" + "<br>" + "Clicking one of the offence buttons will send recent chat to Player Support for investigation. You should act quickly to report the player, particularly in areas where there is a lot of chat, such as at the Grand Exchange." + "<br>" + "<br>" + "If you have selected the wrong player, you can use the 'Change player' button to return to the chat list and choose again." + "<br>" + "<br>" + "You can only report players who have spoken recently." + "<br>" + "<br>" + "Once your report has been sent, you'll be asked if you want to temporarily add the offender to your Ignore List.";
+			break;
+		case 4:
+			v2 = "Help - honour";
+			v1 = "An item scam is defined as cheating another player during a trade. We don't consider it a scam to ask for large amounts of gp for an item, but it is not in the spirit of the game to overprice an item. It is your responsibility to make sure that you are paying a good price." + "<br>" + "<br>" + "Asking for someone's bank PIN or recovery answers is just as serious as asking for a password; giving out your bank PIN allows other players access to your bank space. Never tell another player your password, PIN number or any other account security details." + "<br>" + "<br>" + "If you notice a bug, please report it to us straight away. If, after noticing a bug, you continue to exploit it, you are likely to have action taken against your account." + "<br>" + "<br>" + "There are no cheats for any of our games. Anyone that approaches you in-game to offer you cheats should be reported under 'Encouraging rule-breaking'." + "<br>" + "<br>" + "Don't encourage rule-breaking, such as encouraging someone to try real-world trading, scamming or exploiting bugs." + "<br>" + "<br>" + "You should not swap your account with another player, or share your account with anyone else. Sharing your account makes it less secure, and is also unfair to other players.";
+			break;
+		case 5:
+			v2 = "Help - respect";
+			v1 = "There's no need to report anyone for using the term 'noob', it simply means 'new player'." + "<br>" + "<br>" + "Seriously offensive language includes racism and chat of a sexual nature." + "<br>" + "<br>" + "You don't need to report players for using abbreviations such as 'lmao', 'wtf', 'gtfo'." + "<br>" + "<br>" + "You shouldn't report any chat that has been starred out (like this: ****), as the censor has prevented anything that may have been offensive from being seen." + "<br>" + "<br>" + "Solicitation includes asking for a boyfriend or girlfriend in-game." + "<br>" + "<br>" + "Disruptive behaviour includes flooding the chat window with lines of unnecessary chat, but only if you feel it's impairing your gameplay." + "<br>" + "<br>" + "Beware of context when reporting players for real-life threats: they could be talking about in-game combat!";
+			break;
+		case 6:
+			v2 = "Help - security";
+			v1 = "Giving out your contact information in-game can put the security of your account at risk. There are some unscrupulous people out there, so, to protect your account and your privacy, it makes sense not to give your details to anyone you don't know." + "<br>" + "<br>" + "Contact information includes: full name, email addresses, instant messenger screen names, telephone numbers, your home/work address or age." + "<br>" + "<br>" + "Promoting a non-Jagex website in the forums or in-game could get you banned, even if you post the URL for your clan's site. We understand this rule may cause some inconvenience, but we want it to be impossible for people to send players to scam sites.";
+			break;
+		case 7:
+			v2 = "Help - ignoring a player temporarily";
+			v1 = "Now that your report has been sent, you can choose whether or not to ignore the offender. This is a temporary measure, and will only last until you log out. To permanently ignore a player, make a note of their name and add them to your Ignore List once the 'Report' windows are closed." + "<br>" + "<br>" + "You cannot ignore moderators or people on your Friends List.";
+	}
+	cs2method_10026(a1, v2);
+	cs2method_10026(a3, v1);
+	cs2method_10283(cs2method_10236(a2), cs2method_10060(cs2method_10051(cs2method_10805(cs2method_10236(a3), 17813, v1), 12), 48), 0, 0, a2);
+	switch (a4) {
+		case 59834368:
+			v0 = 59375701;
+			break;
+		case 59899904:
+			v0 = 59375717;
+			break;
+		case 64159744:
+			v0 = 59375691;
+			break;
+		case 59965458:
+			v0 = 59375709;
+	}
+	if (v0 != -1) {
+		cs2method_10283(cs2method_10236(v0), cs2method_10823(a2), 0, 0, v0);
+		cs2method_10283(cs2method_10236(a4), cs2method_10823(a2), 0, 0, a4);
+	}
+	cs2method_10467(0, a5);
+	return;
+}

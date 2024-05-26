@@ -1,0 +1,72 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_922(object a0,int a1,int a2) {
+	int v1 = cs2method_10805(135, 494, a0);
+	int v0 = cs2method_10060(6, cs2method_10051(cs2_configs['cfg742'], 11));
+	if (cs2method_10846(a0, "") != 0) {
+		cs2method_10606(29425672, 4, cs2method_10163(29425672));
+		cs2method_10063(0, cs2method_10060(v0, 3), 1, 0);
+		cs2method_10013(135, cs2method_10051(11, v1), 0, 0);
+		cs2method_10692(494);
+		cs2method_10811(12976642);
+		cs2method_10797(a0);
+		cs2method_10173(1);
+		cs2method_11105(a2, 0, 0);
+		cs2_configs['cfg742'] = cs2method_10060(cs2_configs['cfg742'], v1);
+	}
+	cs2method_10606(29425672, 5, cs2method_10163(29425672));
+	cs2method_10013(12, 12, 0, 0);
+	cs2method_10063(3, cs2method_10060(v0, 3), 0, 0);
+	cs2method_10310(2180);
+	cs2method_10606(29425672, 5, cs2method_10163(29425672));
+	cs2method_10013(12, 12, 0, 0);
+	cs2method_10063(3, cs2method_10060(v0, 3), 2, 0);
+	cs2method_10310(2180);
+	cs2method_10606(29425672, 5, cs2method_10163(29425672));
+	cs2method_10013(4, 4, 0, 0);
+	cs2method_10063(0, v0, 0, 0);
+	cs2method_10310(2225);
+	cs2method_10606(29425672, 5, cs2method_10163(29425672));
+	cs2method_10013(cs2method_10461(a1, 8), 4, 0, 0);
+	cs2method_10063(4, v0, 0, 0);
+	cs2method_10310(2226);
+	cs2method_10577(1);
+	cs2method_10606(29425672, 5, cs2method_10163(29425672));
+	cs2method_10013(4, 4, 0, 0);
+	cs2method_10063(0, v0, 2, 0);
+	cs2method_10310(2227);
+	cs2method_10606(29425672, 5, cs2method_10163(29425672));
+	cs2method_10013(4, cs2method_10461(cs2method_10051(11, v1), 2), 0, 0);
+	cs2method_10063(-2, cs2method_10060(v0, 4), 2, 0);
+	cs2method_10310(2228);
+	cs2method_10577(1);
+	cs2method_10606(29425672, 5, cs2method_10163(29425672));
+	cs2method_10013(4, 4, 0, 0);
+	cs2method_10063(0, cs2method_10060(cs2method_10051(11, v1), 8), 2, 0);
+	cs2method_10310(2230);
+	cs2method_10606(29425672, 5, cs2method_10163(29425672));
+	cs2method_10013(cs2method_10461(a1, 8), 4, 0, 0);
+	cs2method_10063(4, cs2method_10060(cs2method_10051(11, v1), 10), 0, 0);
+	cs2method_10310(2226);
+	cs2method_10577(1);
+	cs2method_10606(29425672, 5, cs2method_10163(29425672));
+	cs2method_10013(4, 4, 0, 0);
+	cs2method_10063(0, cs2method_10060(cs2method_10051(11, v1), 8), 0, 0);
+	cs2method_10310(2229);
+	cs2method_10606(29425672, 5, cs2method_10163(29425672));
+	cs2method_10013(4, cs2method_10461(cs2method_10051(11, v1), 2), 0, 0);
+	cs2method_10063(0, cs2method_10060(v0, 4), 0, 0);
+	cs2method_10310(2228);
+	cs2method_10577(1);
+	return;
+}

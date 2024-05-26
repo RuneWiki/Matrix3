@@ -1,0 +1,30 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8771(int a0) {
+	if (a0 == 1) {
+		script_8844(1, 96, 0, 96796688, -1);
+		script_8844(2, 97, 0, 96796688, -1);
+		script_8844(3, 98, 0, 96796688, -1);
+		script_8844(4, 99, 0, 96796688, -1);
+		cs2method_10076(1, 1, 1, 96796688);
+		cs2method_10076(2, 1, 1, 96796688);
+		cs2method_10076(3, 1, 1, 96796688);
+		cs2method_10076(4, 1, 1, 96796688);
+	} else {
+		cs2method_10009(1, 0, 0, 96796688);
+		cs2method_10009(2, 0, 0, 96796688);
+		cs2method_10009(3, 0, 0, 96796688);
+		cs2method_10009(4, 0, 0, 96796688);
+	}
+	return;
+}

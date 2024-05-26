@@ -1,0 +1,137 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_761(int a0,int a1,int a2,int a3,int a4) {
+	int v8 = 43843590;
+	int v6 = 43843607;
+	int v13 = 43843604;
+	int v2 = 43843606;
+	int v16 = 43843609;
+	int v14 = 43843605;
+	if (a0 == 2) {
+		v8 = 45547522;
+		v6 = 45547543;
+		v13 = 45547540;
+		v2 = 45547542;
+		v16 = 45547545;
+		v14 = 45547541;
+	}
+	int v12 = idx17mapData('i', 'J', 8079, client_configs['cfg3926']);
+	int v10 = cs2method_10236(v8);
+	int v9 = cs2method_10823(v8);
+	int v4 = cs2method_10461(a1, 20);
+	int v11 = a2;
+	int v7 = v6;
+	int v5 = 2;
+	int v3 = cs2method_10461(a1, cs2method_10968(v10, 2));
+	int v0 = cs2method_10461(a2, 85);
+	int v1 = cs2method_10461(cs2method_10461(a2, v9), 73);
+	int v15 = cs2method_10236(43843588);
+	int v17 = cs2method_10823(43843588);
+	if (idx22mapAttribute(v12, 3999) == 1 && v1 < 0) {
+		if (v17 > cs2method_10060(cs2method_10060(a4, v9), 69)) {
+			v0 = a4;
+			v1 = cs2method_10060(a4, 63);
+			v7 = v13;
+			v5 = 1;
+		} else {
+			v1 = 0;
+			v0 = cs2method_10461(v9, 12);
+		}
+	}
+	cs2method_10112(cs2method_10872(cs2method_11048(0, v3), cs2method_10060(cs2method_10461(v15, v10), 15)), v1, 0, 0, v8);
+	cs2method_10112(cs2method_10872(cs2method_11048(15, v4), cs2method_10461(v15, 56)), v0, 0, 0, v7);
+	cs2method_10467(1, v6);
+	cs2method_10467(1, v13);
+	if (idx22mapAttribute(v12, 3832) == 0) {
+		cs2method_10467(0, v7);
+		if (v7 == v13) {
+			cs2method_10467(1, v14);
+		} else {
+			cs2method_10467(0, v14);
+		}
+	}
+	if (a0 == 1 && cs2_configs['cfg3838'] != v5) {
+		if (v7 == v6) {
+			cs2method_20162(new function<script_759>(int a0,int a1,int a2) {
+				int v1;
+				if (a1 > 100 && cs2method_10038(a1, 40) == 14) {
+					cs2method_10670(41755, 1, 0, 255);
+				}
+				if (cs2method_10038(a1, 40) < 20) {
+					v1 = cs2method_10060(a0, 1);
+				} else {
+					v1 = cs2method_10461(a0, 1);
+				}
+				int v0 = cs2method_10060(a1, 1);
+				cs2method_10112(0, v1, 0, 0, a2);
+				cs2method_20162(load function<759>, new WidgetPointer(a2), v1, v0, "Iii", new WidgetPointer(a2));
+				return;
+			}, new WidgetPointer(v16), 10, 0, "Iii", new WidgetPointer(v16));
+		} else {
+			cs2method_20162(new function<script_759>(int a0,int a1,int a2) {
+				int v1;
+				if (a1 > 100 && cs2method_10038(a1, 40) == 14) {
+					cs2method_10670(41755, 1, 0, 255);
+				}
+				if (cs2method_10038(a1, 40) < 20) {
+					v1 = cs2method_10060(a2, 1);
+				} else {
+					v1 = cs2method_10461(a2, 1);
+				}
+				int v0 = cs2method_10060(a1, 1);
+				cs2method_10112(0, v1, 0, 0, a0);
+				cs2method_20162(load function<759>, new WidgetPointer(a0), v1, v0, "Iii", new WidgetPointer(a0));
+				return;
+			}, new WidgetPointer(v2), 20, 20, "Iii", new WidgetPointer(v2));
+		}
+		cs2_configs['cfg3838'] = v5;
+	} else {
+		if (a0 == 2 && cs2_configs['cfg3839'] != 1) {
+			if (v7 == v6) {
+				cs2method_20162(new function<script_759>(int a0,int a1,int a2) {
+					int v1;
+					if (a1 > 100 && cs2method_10038(a1, 40) == 14) {
+						cs2method_10670(41755, 1, 0, 255);
+					}
+					if (cs2method_10038(a1, 40) < 20) {
+						v1 = cs2method_10060(a2, 1);
+					} else {
+						v1 = cs2method_10461(a2, 1);
+					}
+					int v0 = cs2method_10060(a1, 1);
+					cs2method_10112(0, v1, 0, 0, a0);
+					cs2method_20162(load function<759>, new WidgetPointer(a0), v1, v0, "Iii", new WidgetPointer(a0));
+					return;
+				}, new WidgetPointer(v16), 10, 0, "Iii", new WidgetPointer(v16));
+			} else {
+				cs2method_20162(new function<script_759>(int a0,int a1,int a2) {
+					int v1;
+					if (a0 > 100 && cs2method_10038(a0, 40) == 14) {
+						cs2method_10670(41755, 1, 0, 255);
+					}
+					if (cs2method_10038(a0, 40) < 20) {
+						v1 = cs2method_10060(a2, 1);
+					} else {
+						v1 = cs2method_10461(a2, 1);
+					}
+					int v0 = cs2method_10060(a0, 1);
+					cs2method_10112(0, v1, 0, 0, a1);
+					cs2method_20162(load function<759>, new WidgetPointer(a1), v1, v0, "Iii", new WidgetPointer(a1));
+					return;
+				}, new WidgetPointer(v2), 20, 20, "Iii", new WidgetPointer(v2));
+			}
+			cs2_configs['cfg3839'] = v5;
+		}
+	}
+	return;
+}

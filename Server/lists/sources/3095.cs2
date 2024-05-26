@@ -1,0 +1,217 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3095(int a0,int a1,int a2) {
+	object v3 = "";
+	object v6 = "";
+	switch (a2) {
+		case 4:
+			object v2 = "www";
+			object v9 = "account_settings.ws?mod=messages";
+			cs2method_20486(new function<script_3088>(object a0,object a1,int a2) {
+				if (cs2method_10846(a0, "dob") == 0 && cs2method_10846(a1, "set_members_dob.ws") == 0) {
+					cs2method_10917(1, "billing_core", "purchasepopup.ws?externalName=rs", "packagegroupredirect.ws?value=rs");
+					cs2_configs['cfg1795'] = cs2method_10133();
+					cs2method_20162(new function<script_6032>() {
+						if (cs2method_10133() < cs2method_10060(cs2_configs['cfg1795'], 200)) {
+							return;
+						}
+						cs2method_20162(new function<none>() {
+						}, "", new WidgetPointer(906,242));
+						cs2method_20348(new function<script_5951>() {
+							script_5952();
+							return;
+						}, 1751, 1, "Y", new WidgetPointer(906,242));
+						script_3097();
+						script_3093(-3, "After you have completed your transaction, click continue to return to the game.", "", "", 0, 0, 10150, "Continue", 0, -1, "Continue", 1);
+						cs2method_20486(new function<script_5953>() {
+							script_3097();
+							script_3093(-3, "Logging In - Please Wait", "", "", 0, 1, -1, "", 0, -1, "", 0);
+							cs2method_11153(cs2_configs['cfg4211'], cs2_configs['cfg4210']);
+							return;
+						}, "", new WidgetPointer(906,546));
+						return;
+					}, "", new WidgetPointer(906,242));
+				} else {
+					if (cs2method_10846(a0, "") != 0 && cs2method_10846(a1, "") != 0) {
+						cs2method_10824(a2, a0, a1);
+					}
+				}
+				return;
+			}, (string)v2, (string)v9, 1, "ss1", new WidgetPointer(a0));
+			break;
+		case 11:
+			object v5 = "www";
+			object v10 = "account_settings.ws?mod=security";
+			cs2method_20486(new function<script_3088>(int a0,object a1,object a2) {
+				if (cs2method_10846(a1, "dob") == 0 && cs2method_10846(a2, "set_members_dob.ws") == 0) {
+					cs2method_10917(1, "billing_core", "purchasepopup.ws?externalName=rs", "packagegroupredirect.ws?value=rs");
+					cs2_configs['cfg1795'] = cs2method_10133();
+					cs2method_20162(new function<script_6032>() {
+						if (cs2method_10133() < cs2method_10060(cs2_configs['cfg1795'], 200)) {
+							return;
+						}
+						cs2method_20162(new function<none>() {
+						}, "", new WidgetPointer(906,242));
+						cs2method_20348(new function<script_5951>() {
+							script_5952();
+							return;
+						}, 1751, 1, "Y", new WidgetPointer(906,242));
+						script_3097();
+						script_3093(-3, "After you have completed your transaction, click continue to return to the game.", "", "", 0, 0, 10150, "Continue", 0, -1, "Continue", 1);
+						cs2method_20486(new function<script_5953>() {
+							script_3097();
+							script_3093(-3, "Logging In - Please Wait", "", "", 0, 1, -1, "", 0, -1, "", 0);
+							cs2method_11153(cs2_configs['cfg4211'], cs2_configs['cfg4210']);
+							return;
+						}, "", new WidgetPointer(906,546));
+						return;
+					}, "", new WidgetPointer(906,242));
+				} else {
+					if (cs2method_10846(a1, "") != 0 && cs2method_10846(a2, "") != 0) {
+						cs2method_10824(a0, a1, a2);
+					}
+				}
+				return;
+			}, (string)v5, (string)v10, 1, "ss1", new WidgetPointer(a0));
+			break;
+		case 18:
+			object v4 = "accountappeal";
+			object v1 = "lockchoice.ws";
+			cs2method_20486(new function<script_3089>(int a0,object a1,object a2) {
+				if (cs2method_10846(a1, "") != 0 && cs2method_10846(a2, "") != 0) {
+					cs2method_10707(a0, "loginapplet/loginapplet.ws?ssl=1&expired=0&mod=" + (string)a1 + "&dest=" + (string)a2);
+				}
+				return;
+			}, (string)v4, (string)v1, 1, "ss1", new WidgetPointer(a0));
+			break;
+		case 31:
+			object v11 = "www";
+			object v8 = "account_settings.ws?mod=charname";
+			cs2method_20486(new function<script_3088>(int a0,object a1,object a2) {
+				if (cs2method_10846(a1, "dob") == 0 && cs2method_10846(a2, "set_members_dob.ws") == 0) {
+					cs2method_10917(1, "billing_core", "purchasepopup.ws?externalName=rs", "packagegroupredirect.ws?value=rs");
+					cs2_configs['cfg1795'] = cs2method_10133();
+					cs2method_20162(new function<script_6032>() {
+						if (cs2method_10133() < cs2method_10060(cs2_configs['cfg1795'], 200)) {
+							return;
+						}
+						cs2method_20162(new function<none>() {
+						}, "", new WidgetPointer(906,242));
+						cs2method_20348(new function<script_5951>() {
+							script_5952();
+							return;
+						}, 1751, 1, "Y", new WidgetPointer(906,242));
+						script_3097();
+						script_3093(-3, "After you have completed your transaction, click continue to return to the game.", "", "", 0, 0, 10150, "Continue", 0, -1, "Continue", 1);
+						cs2method_20486(new function<script_5953>() {
+							script_3097();
+							script_3093(-3, "Logging In - Please Wait", "", "", 0, 1, -1, "", 0, -1, "", 0);
+							cs2method_11153(cs2_configs['cfg4211'], cs2_configs['cfg4210']);
+							return;
+						}, "", new WidgetPointer(906,546));
+						return;
+					}, "", new WidgetPointer(906,242));
+				} else {
+					if (cs2method_10846(a1, "") != 0 && cs2method_10846(a2, "") != 0) {
+						cs2method_10824(a0, a1, a2);
+					}
+				}
+				return;
+			}, (string)v11, (string)v8, 1, "ss1", new WidgetPointer(a0));
+			break;
+		case 32:
+		case -2000:
+		case -3000:
+		case 40:
+		case 12:
+		case 19:
+		case 30:
+			object v0 = "dob";
+			object v7 = "set_members_dob.ws";
+			cs2method_20486(new function<script_3088>(object a0,object a1,int a2) {
+				if (cs2method_10846(a0, "dob") == 0 && cs2method_10846(a1, "set_members_dob.ws") == 0) {
+					cs2method_10917(1, "billing_core", "purchasepopup.ws?externalName=rs", "packagegroupredirect.ws?value=rs");
+					cs2_configs['cfg1795'] = cs2method_10133();
+					cs2method_20162(new function<script_6032>() {
+						if (cs2method_10133() < cs2method_10060(cs2_configs['cfg1795'], 200)) {
+							return;
+						}
+						cs2method_20162(new function<none>() {
+						}, "", new WidgetPointer(906,242));
+						cs2method_20348(new function<script_5951>() {
+							script_5952();
+							return;
+						}, 1751, 1, "Y", new WidgetPointer(906,242));
+						script_3097();
+						script_3093(-3, "After you have completed your transaction, click continue to return to the game.", "", "", 0, 0, 10150, "Continue", 0, -1, "Continue", 1);
+						cs2method_20486(new function<script_5953>() {
+							script_3097();
+							script_3093(-3, "Logging In - Please Wait", "", "", 0, 1, -1, "", 0, -1, "", 0);
+							cs2method_11153(cs2_configs['cfg4211'], cs2_configs['cfg4210']);
+							return;
+						}, "", new WidgetPointer(906,546));
+						return;
+					}, "", new WidgetPointer(906,242));
+				} else {
+					if (cs2method_10846(a0, "") != 0 && cs2method_10846(a1, "") != 0) {
+						cs2method_10824(a2, a0, a1);
+					}
+				}
+				return;
+			}, (string)v0, (string)v7, 1, "ss1", new WidgetPointer(a0));
+			break;
+		case 21:
+			cs2method_20390(new function<script_1872>() {
+				script_1873();
+				return;
+			}, "", new WidgetPointer(a0));
+			cs2method_20390(new function<none>() {
+			}, "", new WidgetPointer(a1));
+			return;
+		case 50:
+		case 49:
+		case 52:
+			cs2method_20390(new function<script_6714>() {
+				int v0 = 39059523;
+				if (cs2method_10135() == 1) {
+					v0 = 63897621;
+				}
+				cs2method_20162(new function<none>() {
+				}, "", new WidgetPointer(v0));
+				cs2method_11143();
+				return;
+			}, "", new WidgetPointer(a0));
+			cs2method_20390(new function<none>() {
+			}, "", new WidgetPointer(a1));
+			break;
+		case 29:
+			cs2method_20390(new function<script_4253>() {
+				cs2method_10917(1, "billing_core", "popupredirect.ws?externalName=rsprem13gb", "packagegroupredirect.ws?value=rsprem13gb");
+				return;
+			}, "", new WidgetPointer(a0));
+			cs2method_20390(new function<none>() {
+			}, "", new WidgetPointer(a1));
+			break;
+		default:
+			cs2method_20486(new function<none>() {
+			}, "", new WidgetPointer(a0));
+	}
+	cs2method_20486(new function<script_3096>() {
+		script_3097();
+		if (cs2method_10846(cs2method_11025(0, 1, cs2method_10954()), "#") == 0) {
+			script_2422();
+		}
+		return;
+	}, "", new WidgetPointer(a1));
+	return;
+}

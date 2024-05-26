@@ -1,0 +1,23 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1272() {
+	object v1 = "null";
+	object v0 = "House options";
+	cs2method_21121(new function<script_7782>(int a0,int a1,int a2,object a3,int a4) {
+		script_5335(a1, -1, a2, a4, a3, a0, 1);
+		return;
+	}, new WidgetPointer(-32768,3), new WidgetPointer(261,31), (string)v0, 25, 180, "IIsii", new WidgetPointer(261,16));
+	cs2_configs['cfg2'] = 0;
+	script_5641(17104912, 0);
+	return;
+}

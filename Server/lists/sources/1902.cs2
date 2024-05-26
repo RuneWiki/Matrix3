@@ -1,0 +1,94 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1902(int a0,int a1,int a2,int a3) {
+	script_8618(a3, -1);
+	int v1 = cs2method_10439(0, script_8611(a3));
+	int v3 = cs2method_10236(a0);
+	int v2 = cs2method_10461(v3, 8);
+	if (v1 == -1) {
+		cs2method_10606(a0, 4, 0);
+		cs2method_10063(0, 48, 0, 0);
+		cs2method_10013(v3, 14, 0, 0);
+		cs2method_10692(20452);
+		cs2method_10797("Too many results. Please refine your search.");
+		cs2method_11105(1, 1, 0);
+		cs2method_10811(16777215);
+		cs2method_10173(1);
+		cs2method_11130(0, 0, a0);
+		script_1905(a0, a1);
+		return;
+	}
+	if (v1 == 0) {
+		cs2method_10606(a0, 4, 0);
+		cs2method_10063(0, 48, 0, 0);
+		cs2method_10013(v3, 14, 0, 0);
+		cs2method_10692(20452);
+		cs2method_10797("No matching items found.");
+		cs2method_11105(1, 1, 0);
+		cs2method_10811(16777215);
+		cs2method_10173(1);
+		cs2method_11130(0, 0, a0);
+		script_1905(a0, a1);
+		return;
+	}
+	int v4 = 1;
+	int v0 = cs2method_10667();
+	object v5 = "";
+	cs2method_10606(a0, 3, 0);
+	while (v0 != -1) {
+		if (cs2method_10846(v5, cs2method_10259(v0)) != 0) {
+			v5 = cs2method_10259(v0);
+			cs2method_10606(a0, 4, v4);
+			cs2method_10063(4, cs2method_10051(14, cs2method_10461(v4, 1)), 0, 0);
+			cs2method_10013(v2, 14, 0, 0);
+			cs2method_10811(16777215);
+			cs2method_10797(cs2method_10259(v0));
+			cs2method_10692(20452);
+			cs2method_10173(1);
+			cs2method_20674(new function<script_1906>(int a0,int a1,int a2) {
+				if (cs2method_11038(a2, a0) == 1) {
+					script_8618(a1, cs2method_10461(a0, 1));
+					if (cs2method_11038(a2, 0) == 1) {
+						cs2method_10063(cs2method_10878(), cs2method_10406(), 0, 0);
+						cs2method_10013(cs2method_10488(), cs2method_10664(), 0, 0);
+						cs2method_10811(5733957);
+						cs2method_10238(1);
+					}
+				}
+				return;
+			}, v4, new WidgetPointer(a0), a3, "iIi");
+			cs2method_20672(new function<script_1070>(int a0,int a1,int a2,int a3) {
+				script_1071(a2, a3, a1, a0);
+				return;
+			}, new WidgetPointer(a2), v0, 0, a3, "Ieii");
+			v4 = cs2method_10060(v4, 1);
+		}
+		v0 = cs2method_10667();
+	}
+	if (v4 == 1) {
+		cs2method_10606(a0, 4, 0);
+		cs2method_10063(0, 48, 0, 0);
+		cs2method_10013(v3, 14, 0, 0);
+		cs2method_10692(20452);
+		cs2method_10797("No matching items found.");
+		cs2method_11105(1, 1, 0);
+		cs2method_10811(16777215);
+		cs2method_10173(1);
+		cs2method_11130(0, 0, a0);
+		script_1905(a0, a1);
+		return;
+	}
+	cs2method_11130(0, cs2method_10051(14, cs2method_10461(v4, 1)), a0);
+	script_1905(a0, a1);
+	return;
+}

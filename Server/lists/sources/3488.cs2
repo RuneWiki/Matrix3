@@ -1,0 +1,47 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_3488() {
+	cs2_configs['cfg1186'] = 1337;
+	cs2method_10112(cs2method_10191(65077261), 20, 0, 0, 65077261);
+	cs2method_10112(cs2method_10191(65077260), 20, 0, 0, 65077260);
+	cs2method_10112(cs2method_10191(65077259), 20, 0, 0, 65077259);
+	cs2method_10467(1, 65077457);
+	cs2method_10467(1, 65077442);
+	cs2method_10467(1, 65077427);
+	cs2method_10467(1, 65077412);
+	cs2method_10704(255, 65077460);
+	cs2method_10704(255, 65077445);
+	cs2method_10704(255, 65077430);
+	cs2method_10704(255, 65077415);
+	cs2method_10467(1, 65077270);
+	cs2method_10467(1, 65077271);
+	cs2method_10467(1, 65077272);
+	cs2method_10467(1, 65077273);
+	cs2method_10467(1, 65077467);
+	cs2method_10467(1, 65077274);
+	cs2_configs['cfg1184'] = cs2method_11048(1, client_configs['cfg1083'].bitcfg2254);
+	switch (cs2_configs['cfg1184']) {
+		case 1:
+			script_10097(65077460);
+			break;
+		case 2:
+			script_10097(65077445);
+			break;
+		case 3:
+			script_10097(65077430);
+			break;
+		case 4:
+			script_10097(65077415);
+	}
+	return;
+}

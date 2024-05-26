@@ -1,0 +1,40 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8511(int a0) {
+	int v1 = 0;
+	if (cs2method_10265(cs2_configs['cfg2505']) <= 0) {
+		if (cs2method_10265(cs2_configs['cfg2367']) <= 0) {
+			if (cs2_configs['cfg183'] > cs2method_10461(cs2method_10133(), 100)) {
+				return;
+			}
+			cs2method_11102(script_8526(a0), 0, "You have no messages to reply to.");
+			cs2_configs['cfg183'] = cs2method_10133();
+			return;
+		}
+		cs2_configs['cfg2505'] = cs2_configs['cfg2367'];
+	}
+	int v0 = cs2method_10818(cs2_configs['cfg2505']);
+	if (v0 != -1) {
+		if (cs2method_10296() == 0 && cs2method_10870() == 0) {
+			script_8512(cs2_configs['cfg2505'], a0);
+			return;
+		}
+		if (cs2method_10284(v0) == 0) {
+			script_1050(1, a0, cs2_configs['cfg2505']);
+		} else {
+			script_1050(3, a0, cs2_configs['cfg2505']);
+		}
+		return;
+	}
+	return;
+}

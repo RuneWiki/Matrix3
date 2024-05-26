@@ -1,0 +1,29 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+object script_446(int a0,int a1) {
+	object v2;
+	object v0 = "";
+	object v1 = "";
+	object v3 = "";
+	if (cs2method_10991(a1) == 0) {
+		v2 = cs2method_10427(v3, "<col=ff981f>" + (string)cs2method_10018(a1) + "<col=ffffff>" + " x " + "<col=fff000>" + (string)cs2method_10379(a0) + "<br>");
+	} else if (a0 < 100000) {
+		object v4 = script_46(",", a0);
+		v2 = cs2method_10427(v3, "<col=ff981f>" + (string)cs2method_10018(a1) + "<col=ffffff>" + " x " + "<col=fff000>" + (string)v4 + "<br>");
+	} else {
+		object v5 = script_46(",", a0);
+		object v4 = script_46(",", cs2method_10968(a0, 1000));
+		v2 = cs2method_10427(v3, "<col=ff981f>" + (string)cs2method_10018(a1) + "<col=ffffff>" + " x " + "<col=ffffff>" + (string)v4 + "K (" + (string)v5 + ")" + "<br>");
+	}
+	return v2;
+}

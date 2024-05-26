@@ -1,0 +1,22 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+script_9150_struct(2,0,0) script_9150() {
+	int v0 = 0;
+	if (client_configs['cfg3522'].bitcfg17933 >= 2) {
+		return new script_9150_struct(3, script_9170());
+	}
+	if (client_configs['cfg3914'].bitcfg20747 < 15) {
+		return new script_9150_struct(4, cs2method_10461(15, client_configs['cfg3914'].bitcfg20747));
+	}
+	return new script_9150_struct(2, cs2method_10461(60, client_configs['cfg3914'].bitcfg20747));
+}

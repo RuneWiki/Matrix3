@@ -1,0 +1,63 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_9424(int a0) {
+	if (a0 > script_9514()) {
+		switch (a0) {
+			case 2:
+				cs2method_10810("This tier is not available until phase 3 of the event.");
+				break;
+			case 3:
+				cs2method_10810("This tier is not available until phase 5 of the event.");
+				break;
+			default:
+				cs2method_10810("This tier is not yet available.");
+		}
+		cs2method_10670(10046, 1, 0, 200);
+		return;
+	}
+	if (a0 >= 2) {
+		cs2method_10467(1, 46596241);
+	}
+	if (a0 >= 3) {
+		cs2method_10467(1, 46596246);
+	}
+	cs2method_10758(18090, 46596233);
+	cs2method_10758(18091, 46596234);
+	cs2method_10758(18092, 46596235);
+	cs2method_10758(18090, 46596237);
+	cs2method_10758(18091, 46596238);
+	cs2method_10758(18092, 46596239);
+	cs2method_10758(18090, 46596242);
+	cs2method_10758(18091, 46596243);
+	cs2method_10758(18092, 46596244);
+	switch (a0) {
+		case 1:
+			cs2method_10758(18087, 46596233);
+			cs2method_10758(18088, 46596234);
+			cs2method_10758(18089, 46596235);
+			break;
+		case 2:
+			cs2method_10758(18087, 46596237);
+			cs2method_10758(18088, 46596238);
+			cs2method_10758(18089, 46596239);
+			break;
+		case 3:
+			cs2method_10758(18087, 46596242);
+			cs2method_10758(18088, 46596243);
+			cs2method_10758(18089, 46596244);
+	}
+	client_configs['cfg3948'].bitcfg21031 = a0;
+	cs2method_10670(36972, 1, 0, 200);
+	script_9426(cs2_configs['cfg3857']);
+	return;
+}

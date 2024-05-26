@@ -1,0 +1,60 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_8772(int a0) {
+	if (a0 == 1) {
+		int v21 = 5;
+		int v6 = 4;
+		int v16 = 2;
+		script_8825_struct(2,0,0) v10 = script_8825(v6, v16);
+		script_8844(v21, v10.intpart_0, v10.intpart_1, 96796688, -1);
+		int v19 = 6;
+		int v15 = 4;
+		int v12 = 3;
+		script_8825_struct(2,0,0) v3 = script_8825(v15, v12);
+		script_8844(v19, v3.intpart_0, v3.intpart_1, 96796688, -1);
+		int v2 = 7;
+		int v4 = 4;
+		int v8 = 0;
+		script_8825_struct(2,0,0) v1 = script_8825(v4, v8);
+		script_8844(v2, v1.intpart_0, v1.intpart_1, 96796688, -1);
+		int v7 = 8;
+		int v23 = 4;
+		int v22 = 1;
+		script_8825_struct(2,0,0) v9 = script_8825(v23, v22);
+		script_8844(v7, v9.intpart_0, v9.intpart_1, 96796688, -1);
+		int v5 = 9;
+		int v20 = 4;
+		int v17 = 4;
+		script_8825_struct(2,0,0) v13 = script_8825(v20, v17);
+		script_8844(v5, v13.intpart_0, v13.intpart_1, 96796688, -1);
+		int v11 = 10;
+		int v0 = 4;
+		int v18 = 5;
+		script_8825_struct(2,0,0) v14 = script_8825(v0, v18);
+		script_8844(v11, v14.intpart_0, v14.intpart_1, 96796688, -1);
+		cs2method_10076(5, 1, 1, 96796688);
+		cs2method_10076(6, 1, 1, 96796688);
+		cs2method_10076(7, 1, 1, 96796688);
+		cs2method_10076(8, 1, 1, 96796688);
+		cs2method_10076(9, 1, 1, 96796688);
+		cs2method_10076(10, 1, 1, 96796688);
+	} else {
+		cs2method_10009(5, 0, 0, 96796688);
+		cs2method_10009(6, 0, 0, 96796688);
+		cs2method_10009(7, 0, 0, 96796688);
+		cs2method_10009(8, 0, 0, 96796688);
+		cs2method_10009(9, 0, 0, 96796688);
+		cs2method_10009(10, 0, 0, 96796688);
+	}
+	return;
+}

@@ -1,0 +1,79 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1721() {
+	int v14 = 0;
+	int v13 = 5;
+	int v11 = cs2method_10968(cs2method_10236(5767172), v13);
+	int v0 = 0;
+	int v12 = 0;
+	int v1 = 125;
+	int v5 = 15;
+	int v3 = -1;
+	int v10 = 2200;
+	object v6 = "";
+	int v9 = 0;
+	int v7 = -1;
+	int v8 = cs2method_10924(869);
+	int v2 = cs2method_10051(cs2method_10968(v8, v13), v1);
+	if (cs2method_10038(v8, v13) != 0) {
+		v2 = cs2method_10060(v2, v1);
+	}
+	cs2method_10273(5767173);
+	cs2method_10273(5767174);
+	cs2method_11130(cs2method_10051(v13, v11), v2, 5767172);
+	while (v14 < v8) {
+		cs2method_10606(5767173, 6, v14);
+		cs2method_10013(v11, v1, 0, 0);
+		int v17 = v14;
+		script_2791_struct(4,1,0) v15 = script_2791(v17);
+		int v4 = v15.intpart_3;
+		int v16 = v15.intpart_2;
+		int v20 = v15.intpart_1;
+		object v18 = v15.objectpart_0;
+		int v19 = v15.intpart_0;
+		cs2method_10681(v19);
+		cs2method_10304(1, 20, 5, 1950, 0, v16);
+		cs2method_10063(cs2method_10051(v0, v11), cs2method_10051(v12, v1), 0, 0);
+		if (v20 == 1) {
+			cs2method_10057(1, "Speak-to");
+			cs2method_20674(new function<script_1860>(int a0,int a1) {
+				if (cs2method_11038(5767173, a0) == 1) {
+					cs2method_10629(a1);
+				}
+				return;
+			}, -2147483643, v4, "iA");
+			cs2method_20884(new function<script_2607>(int a0) {
+				if (cs2method_11038(5767173, a0) == 1) {
+					cs2method_10629(-1);
+				}
+				return;
+			}, -2147483643, "i");
+		}
+		cs2method_10606(5767174, 4, v14);
+		cs2method_10013(v11, cs2method_10461(v1, cs2method_10051(v5, 2)), 0, 0);
+		cs2method_10811(16750901);
+		cs2method_10692(494);
+		cs2method_10173(1);
+		cs2method_10797(v18);
+		cs2method_11105(1, 0, 0);
+		cs2method_10063(cs2method_10051(v0, v11), cs2method_10060(cs2method_10051(v12, v1), v5), 0, 0);
+		v0 = cs2method_10060(v0, 1);
+		if (v0 >= v13) {
+			v0 = 0;
+			v12 = cs2method_10060(v12, 1);
+		}
+		v14 = cs2method_10060(v14, 1);
+	}
+	script_4529(5767175, 5767172, 7337);
+	return;
+}

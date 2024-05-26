@@ -1,0 +1,16 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+string script_9145() {
+	int v0 = cs2method_10060(client_configs['cfg3915'].bitcfg20753, client_configs['cfg1572'].bitcfg4882);
+	return "You have played " + "<col=ffffff>" + (string)cs2method_10379(v0) + " of 2" + "</col>" + " games today";
+}

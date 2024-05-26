@@ -1,0 +1,26 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_1446(int a0,int a1,int a2,object a3,int a4) {
+	object v0 = (string)a3 + " - Unlocked";
+	if (a4 < a1) {
+		v0 = (string)a3 + " - Kicks required: " + (string)cs2method_10379(a1);
+		script_7794(a0, 21361);
+	} else {
+		script_7794(a0, 25722);
+	}
+	cs2method_21121(new function<script_8799>(int a0,object a1,int a2) {
+		script_8800(a0, a2, a1);
+		return;
+	}, (string)v0, new WidgetPointer(-32768,3), -1, "sIi", new WidgetPointer(a2));
+	return;
+}

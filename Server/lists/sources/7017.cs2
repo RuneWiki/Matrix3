@@ -1,0 +1,107 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_7017(int a0) {
+	switch (a0) {
+		case 93716544:
+		case 94109721:
+			if (client_configs['cfg727'].bitcfg1723 != 8) {
+				return;
+			}
+			break;
+		case 93716557:
+		case 94109734:
+			if (client_configs['cfg728'].bitcfg1725 != 8) {
+				return;
+			}
+			break;
+		case 94109747:
+		case 93716570:
+			if (client_configs['cfg729'].bitcfg1727 != 8) {
+				return;
+			}
+			break;
+		case 94109760:
+		case 93716583:
+			if (client_configs['cfg730'].bitcfg1729 != 8) {
+				return;
+			}
+			break;
+		case 93716596:
+		case 94109773:
+			if (client_configs['cfg731'].bitcfg1731 != 8) {
+				return;
+			}
+			break;
+		case 93716609:
+		case 94109786:
+			if (client_configs['cfg732'].bitcfg1733 != 8) {
+				return;
+			}
+			break;
+		case 94109799:
+		case 93716622:
+			if (client_configs['cfg733'].bitcfg1735 != 8) {
+				return;
+			}
+			break;
+		case 94109812:
+		case 93716635:
+			if (client_configs['cfg734'].bitcfg1737 != 8) {
+				return;
+			}
+			break;
+		case 93716648:
+		case 94109825:
+			if (client_configs['cfg735'].bitcfg1739 != 8) {
+				return;
+			}
+			break;
+		case 93716661:
+		case 94109838:
+			if (client_configs['cfg736'].bitcfg1741 != 8) {
+				return;
+			}
+			break;
+		case 93716674:
+		case 94109851:
+			if (client_configs['cfg737'].bitcfg1743 != 8) {
+				return;
+			}
+			break;
+		case 94109864:
+		case 93716687:
+			if (client_configs['cfg738'].bitcfg1745 != 8) {
+				return;
+			}
+			break;
+		case 93716700:
+		case 94109877:
+			if (client_configs['cfg4432'].bitcfg22337 != 8) {
+				return;
+			}
+			break;
+		case 94109890:
+		case 93716713:
+			if (client_configs['cfg4433'].bitcfg22339 != 8) {
+				return;
+			}
+	}
+	if (cs2method_10769(a0) == 18819 || cs2method_10769(a0) == 18818) {
+		if (client_configs['cfg463'] == 0) {
+			cs2method_10758(18819, a0);
+		} else {
+			cs2method_10758(18818, a0);
+		}
+	}
+	return;
+}

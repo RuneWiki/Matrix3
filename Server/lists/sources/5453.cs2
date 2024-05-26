@@ -1,0 +1,119 @@
+/* 
+ * Script decompiled by jagdecs2 v3.2
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+void script_5453(int a0,int a1) {
+	int v0 = -1;
+	int v1 = -1;
+	switch (a0) {
+		case 1:
+			v0 = 75759706;
+			v1 = 75759705;
+			break;
+		case 2:
+			v0 = 75759816;
+			v1 = 75759814;
+			break;
+		case 3:
+			v0 = 75759822;
+			v1 = 75759820;
+			break;
+		case 4:
+			v0 = 75759828;
+			v1 = 75759826;
+			break;
+		case 5:
+			v0 = 75759834;
+			v1 = 75759832;
+			break;
+		case 6:
+			v0 = 75759840;
+			v1 = 75759838;
+			break;
+		case 7:
+			v0 = 75759846;
+			v1 = 75759844;
+			break;
+		case 8:
+			v0 = 75759852;
+			v1 = 75759850;
+			break;
+		case 9:
+			v0 = 75759858;
+			v1 = 75759856;
+			break;
+		case 10:
+			v0 = 75759864;
+			v1 = 75759862;
+			break;
+		case 11:
+			v0 = 75759870;
+			v1 = 75759868;
+			break;
+		case 12:
+			v0 = 75759876;
+			v1 = 75759874;
+			break;
+		case 13:
+			v0 = 75759882;
+			v1 = 75759880;
+			break;
+		case 14:
+			v0 = 75759888;
+			v1 = 75759886;
+			break;
+		case 15:
+			v0 = 75759894;
+			v1 = 75759892;
+			break;
+		case 16:
+			v0 = 75759900;
+			v1 = 75759898;
+			break;
+		case 17:
+			v0 = 75759906;
+			v1 = 75759904;
+			break;
+		case 18:
+			v0 = 75759912;
+			v1 = 75759910;
+			break;
+		case 19:
+			v0 = 75759918;
+			v1 = 75759916;
+			break;
+		case 20:
+			v0 = 75759924;
+			v1 = 75759922;
+			break;
+		case 21:
+			v0 = 75759930;
+			v1 = 75759928;
+			break;
+		case 22:
+			v0 = 75759942;
+			v1 = 75759940;
+	}
+	if (a1 == 1) {
+		if (a0 == 4 || a0 == 5 || a0 == 9 || a0 == 12 || a0 == 15 || a0 == 20 || a0 == 21 || a0 == 22) {
+			cs2method_10026(v0, "<col=37addd>" + "Claim");
+		} else if (a0 == 16 || a0 == 17 || a0 == 18 || a0 == 19) {
+			cs2method_10026(v0, "<col=37addd>" + "Claim (" + (string)cs2method_10379(client_configs['cfg1323'].bitcfg3790) + " set avail)");
+		} else {
+			cs2method_10026(v0, "Unlocked !");
+		}
+		cs2method_10467(1, v1);
+		cs2method_10520(16101953, v0);
+	} else {
+		cs2method_10026(v0, "Locked");
+	}
+	return;
+}
