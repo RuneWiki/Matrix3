@@ -230,7 +230,7 @@ public class SocketConnection {
 		synchronized (ioWriteLock) {
 			int capacity = writeBuffer.length - writeBufferLength;
 			if (length > capacity) {
-				ioWriteThread.stop(new IOException("Buffer overflow!"));
+				ioWriteThread.stop(); // new IOException("Buffer overflow!")
 				return;
 			}
 

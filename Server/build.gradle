@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+dependencies {
+    implementation 'lib:netty-3.7.0.Final'
+    implementation 'lib:FileStore'
+    implementation 'lib:minifs_v1'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+jar {
+    from { configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+tasks.withType(JavaExec) {
+    workingDir = project.rootDir
+    jvmArgs = ['-XX:-OmitStackTraceInFastThrow', '-server']
+}
+
+task runGame(type: JavaExec) {
+    classpath = sourceSets.main.runtimeClasspath
+    applicationName = "GameLauncher"
+    main = "com.rs.GameLauncher"
+    jvmArgs = ['-Xms2048m', '-Xmx4096m']
+}
+
+task runLogin(type: JavaExec) {
+    classpath = sourceSets.main.runtimeClasspath
+    applicationName = "LoginLauncher"
+    main = "com.rs.LoginLauncher"
+    jvmArgs = ['-Xms2048m', '-Xmx4096m']
+}

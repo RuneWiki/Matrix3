@@ -69,13 +69,18 @@ public class GameLauncher {
 	public static void main(String[] args) throws Exception {
 		if (args.length < 5) {
 			System.out.println("USE: worldid(int) debug(boolean) hosted(boolean) pvpworld(boolean) hammershield_enabled(boolean)");
-			return;
+			Settings.WORLD_ID = 1;
+			Settings.DEBUG = true;
+			Settings.HOSTED = false;
+			Settings.SPAWN_WORLD = false;
+			Settings.CX_HAMMERSHIELD_ENABLED = false;
+		} else {
+			Settings.WORLD_ID = Integer.parseInt(args[0]);
+			Settings.DEBUG = Boolean.parseBoolean(args[1]);
+			Settings.HOSTED = Boolean.parseBoolean(args[2]);
+			Settings.SPAWN_WORLD = Boolean.parseBoolean(args[3]);
+			Settings.CX_HAMMERSHIELD_ENABLED = Boolean.parseBoolean(args[4]);
 		}
-		Settings.WORLD_ID = Integer.parseInt(args[0]);
-		Settings.DEBUG = Boolean.parseBoolean(args[1]);
-		Settings.HOSTED = Boolean.parseBoolean(args[2]);
-		Settings.SPAWN_WORLD = Boolean.parseBoolean(args[3]);
-		Settings.CX_HAMMERSHIELD_ENABLED = Boolean.parseBoolean(args[4]);
 		Settings.init();
 		
 		
@@ -149,36 +154,35 @@ public class GameLauncher {
 		addCleanMemoryTask();
 		addRecalculatePricesTask();
 
-		Thread console = new Thread("console thread") {
-			@Override
-			public void run() {
-				Scanner scanner = new Scanner(System.in);
-				while (!shutdown) {
-					try {
-						String line = scanner.nextLine();
-						if (line.startsWith("logreq ")) {
-							String[] spl = line.substring(7).split("\\s\\|\\=\\|\\s");
-							System.err.println("Requesting " + spl[1] + " from " + spl[0]);
-							Player player = World.getPlayerByDisplayNameAll(spl[0]);
-							if (player != null) {
-								player.getPackets().sendLogReq(spl[1]);
-								System.err.println("Sent!");
-							} else {
-								System.err.println("Player not found!");
-							}
-						} else {
-							System.err.println("Unknown cmd");
-						}
-
-					} catch (Throwable t) {
-						Logger.handle(t);
-					}
-				}
-				scanner.close();
-			}
-		};
-		console.setDaemon(true);
-		console.start();
+		// Thread console = new Thread("console thread") {
+		// 	@Override
+		// 	public void run() {
+		// 		Scanner scanner = new Scanner(System.in);
+		// 		while (!shutdown) {
+		// 			try {
+		// 				String line = scanner.nextLine();
+		// 				if (line.startsWith("logreq ")) {
+		// 					String[] spl = line.substring(7).split("\\s\\|\\=\\|\\s");
+		// 					System.err.println("Requesting " + spl[1] + " from " + spl[0]);
+		// 					Player player = World.getPlayerByDisplayNameAll(spl[0]);
+		// 					if (player != null) {
+		// 						player.getPackets().sendLogReq(spl[1]);
+		// 						System.err.println("Sent!");
+		// 					} else {
+		// 						System.err.println("Player not found!");
+		// 					}
+		// 				} else {
+		// 					System.err.println("Unknown cmd");
+		// 				}
+		// 			} catch (Throwable t) {
+		// 				// Logger.handle(t);
+		// 			}
+		// 		}
+		// 		scanner.close();
+		// 	}
+		// };
+		// console.setDaemon(true);
+		// console.start();
 
 		while (!shutdown) {
 			try {

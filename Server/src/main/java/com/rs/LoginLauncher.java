@@ -24,10 +24,12 @@ public class LoginLauncher {
 	public static void main(String[] args) throws Throwable {
 		if (args.length < 2) {
 			System.out.println("USE: debug(boolean) hosted(boolean)");
-			return;
+			Settings.DEBUG = true;
+			Settings.HOSTED = false;
+		} else {
+			Settings.DEBUG = Boolean.parseBoolean(args[0]);
+			Settings.HOSTED = Boolean.parseBoolean(args[1]);
 		}
-		Settings.DEBUG = Boolean.parseBoolean(args[0]);
-		Settings.HOSTED = Boolean.parseBoolean(args[1]);
 		Settings.init();
 		
 		long currentTime = Utils.currentTimeMillis();
@@ -61,15 +63,15 @@ public class LoginLauncher {
 		LoginServerChannelManager.sendReliablePacket(world, LoginChannelsPacketEncoder.encodeConsoleMessage("Hello there from login!").getBuffer());
 		//LoginServerChannelManager.sendReliablePacket(world, LoginChannelsPacketEncoder.encodePingPong(0).getBuffer());
 
-		Scanner scanner = new Scanner(System.in);
-		for (String line = scanner.nextLine(); line != null; line = scanner.nextLine()) {
-			try {
-				handleCommand(line);
-			} catch (Throwable t) {
-				Logger.handle(t);
-			}
-		}
-		scanner.close();
+		// Scanner scanner = new Scanner(System.in);
+		// for (String line = scanner.nextLine(); line != null; line = scanner.nextLine()) {
+		// 	try {
+		// 		handleCommand(line);
+		// 	} catch (Throwable t) {
+		// 		Logger.handle(t);
+		// 	}
+		// }
+		// scanner.close();
 
 	}
 

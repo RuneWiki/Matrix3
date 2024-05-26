@@ -1,0 +1,10 @@
+rootProject.name = 'Matrix3-Client'
+
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+        flatDir {
+            dirs 'lib'
+        }
+    }
+}

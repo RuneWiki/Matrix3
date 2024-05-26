@@ -5,11 +5,11 @@ package game;
  */
 import java.applet.Applet;
 
-import netscape.javascript.JSObject;
+// import netscape.javascript.JSObject;
 
 public class Class277 {
 	public static void method3717(Applet applet, String string, byte i) throws Throwable {
-		JSObject.getWindow(applet).eval(string);
+		// JSObject.getWindow(applet).eval(string);
 	}
 
 	Class277() throws Throwable {
@@ -17,14 +17,14 @@ public class Class277 {
 	}
 
 	public static Object method3718(Applet applet, String string, int i) throws Throwable {
-		return JSObject.getWindow(applet).call(string, null);
+		return null; // JSObject.getWindow(applet).call(string, null);
 	}
 
 	public static void method3719(Applet applet, String string) throws Throwable {
-		JSObject.getWindow(applet).eval(string);
+		// JSObject.getWindow(applet).eval(string);
 	}
 
 	public static Object method3720(Applet applet, String string, Object[] objects, int i) throws Throwable {
-		return JSObject.getWindow(applet).call(string, objects);
+		return null; // JSObject.getWindow(applet).call(string, objects);
 	}
 }

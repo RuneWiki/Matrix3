@@ -13,8 +13,8 @@ import com.rs.utils.Utils;
 
 public final class Settings {
 
-	public static final String SERVER_NAME = "Aegis NTX";
-	public static final String CACHE_PATH = System.getProperty("user.home") + "/830_cache/";
+	public static final String SERVER_NAME = "Matrix 3";
+	public static final String CACHE_PATH = "data/cache/";
 	public static final String LOGIN_DATA_PATH = "data/accounts_data";
 	public static final String DATA_PATH = "data/server_data";
 
