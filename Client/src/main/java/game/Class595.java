@@ -1,6 +1,6 @@
 package game;
 
-import vartracker.Cs2Tracker;
+// import vartracker.Cs2Tracker;
 
 /* Class595 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
@@ -40,7 +40,7 @@ public class Class595 {
 		IVarDomain domain = ((IVarDomain) ((((Cs2Executor) class441).anIntArray5124[-1280867039 * ((Cs2Executor) class441).instrPtr]) == 0 ? ((Cs2Executor) class441).main_configs_map.get(var.baseVar.domain) : ((Cs2Executor) class441).playerentity_configs_map.get(var.baseVar.domain)));
 		try {
 			int value = (((Cs2Executor) class441).intStack[(((Cs2Executor) class441).intStackPtr -= -1042067865) * 1369304407]);
-			Cs2Tracker.trackWrite(class441, var, value, class441.anIntArray5124[-1280867039 * ((Cs2Executor) class441).instrPtr] != 0);
+			// Cs2Tracker.trackWrite(class441, var, value, class441.anIntArray5124[-1280867039 * ((Cs2Executor) class441).instrPtr] != 0);
 			domain.method81(var, value, 9550832);
 		} catch (Exception_Sub2 exception_sub2) {
 			if (domain instanceof Class510)

@@ -36,13 +36,13 @@ public class Class136 {
 			boolean bool = false;
 			if (anIntArray1594[0] == 0) {
 				bool = true;
-				System.out.println("");
+				// System.out.println("");
 			}
 			OpenGL.glGetShaderiv(i_1_, 35716, anIntArray1594, 1);
 			if (anIntArray1594[1] > 1) {
 				byte[] is = new byte[anIntArray1594[1]];
 				OpenGL.glGetShaderInfoLog(i_1_, anIntArray1594[1], anIntArray1594, 0, is, 0);
-				System.out.println(new String(is));
+				// System.out.println(new String(is));
 			}
 			if (bool) {
 				OpenGL.glDeleteShader(i_1_);

@@ -64,14 +64,14 @@ public final class Class649 {
 
 	public void finalize() throws Throwable {
 		if (((Class649) this).aRandomAccessFile8366 != null) {
-			System.out.println("");
+			// System.out.println("");
 			method7673(1019351040);
 		}
 	}
 
 	void method7669() throws Throwable {
 		if (((Class649) this).aRandomAccessFile8366 != null) {
-			System.out.println("");
+			// System.out.println("");
 			method7673(1303747509);
 		}
 	}

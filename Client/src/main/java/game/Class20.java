@@ -6,7 +6,7 @@ package game;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
-import vartracker.Cs2Tracker;
+// import vartracker.Cs2Tracker;
 
 public class Class20 implements Runnable {
 	volatile String aString146;
@@ -38,18 +38,18 @@ public class Class20 implements Runnable {
 		BaseVarType type = def.dataType.getBaseType(-1644674999);
 		if (type == BaseVarType.INT_T) {
 			int value = domain.method73(def, -1985020343);
-			Cs2Tracker.trackRead(class441, def, value, class441.anIntArray5124[-1280867039 * ((Cs2Executor) class441).instrPtr] != 0);
+			// Cs2Tracker.trackRead(class441, def, value, class441.anIntArray5124[-1280867039 * ((Cs2Executor) class441).instrPtr] != 0);
 			((Cs2Executor) class441).intStack[((((Cs2Executor) class441).intStackPtr += -1042067865) * 1369304407 - 1)] = value;
 		} else if (BaseVarType.LONG_T == type) {
 			long value = domain.method77(def, -1471363331);
-			Cs2Tracker.trackRead(class441, def, value, class441.anIntArray5124[-1280867039 * ((Cs2Executor) class441).instrPtr] != 0);
+			// Cs2Tracker.trackRead(class441, def, value, class441.anIntArray5124[-1280867039 * ((Cs2Executor) class441).instrPtr] != 0);
 			((Cs2Executor) class441).longStack[((((Cs2Executor) class441).longStackPtr += -879214973) * 1097105451 - 1)] = value;
 		} else if (type == BaseVarType.STRING_T) {
 			try {
 				String value = (String) domain.method82(def, (byte) 12);
 				if (value == null)
 					value = "null";
-				Cs2Tracker.trackRead(class441, def, value, class441.anIntArray5124[-1280867039 * ((Cs2Executor) class441).instrPtr] != 0);
+				// Cs2Tracker.trackRead(class441, def, value, class441.anIntArray5124[-1280867039 * ((Cs2Executor) class441).instrPtr] != 0);
 				((Cs2Executor) class441).objectStack[((((Cs2Executor) class441).objectStackPtr += 1019967701) * 1628307581) - 1] = value;
 			} catch (Exception exception) {
 				throw new RuntimeException(exception);

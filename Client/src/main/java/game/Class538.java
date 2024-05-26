@@ -71,7 +71,7 @@ public class Class538 implements Interface73, Interface17 {
 	}
 
 	void method6389(RSByteBuffer class572_sub15, int opcode, int i_12_) {
-		System.out.println(opcode);
+		// System.out.println(opcode);
 		if (opcode == 1) {
 			anInt6022 = class572_sub15.readBigSmart((byte) 81) * 19022545;
 			anInt6058 = class572_sub15.readBigSmart((byte) 126) * 162484423;

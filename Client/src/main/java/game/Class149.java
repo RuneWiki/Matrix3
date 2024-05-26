@@ -30,7 +30,7 @@ public class Class149 {
 			if (anIntArray1691[1] > 1) {
 				byte[] is = new byte[anIntArray1691[1]];
 				OpenGL.glGetProgramInfoLog(i, anIntArray1691[1], anIntArray1691, 0, is, 0);
-				System.out.println(new String(is));
+				// System.out.println(new String(is));
 			}
 			if (anIntArray1691[0] == 0) {
 				for (int i_1_ = 0; i_1_ < class136s.length; i_1_++)

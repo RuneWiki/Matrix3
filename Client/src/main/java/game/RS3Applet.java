@@ -101,10 +101,10 @@ public class RS3Applet extends Applet implements AppletStub {
 	 * Opens the actual frame application.
 	 */
 	private void openFrame() {
-		clientFrame = new JFrame("Aegis NTX");
+		clientFrame = new JFrame("Matrix 3");
 		clientFrame.add(this);
 		clientFrame.setVisible(true);
-		clientFrame.setSize(800, 600);
+		clientFrame.setSize(1024, 768);
 	}
 
 	/**

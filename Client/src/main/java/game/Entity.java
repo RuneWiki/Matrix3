@@ -436,7 +436,7 @@ public abstract class Entity extends Class456_Sub1_Sub2 implements Interface48 {
 							model.method1358(0, -(632461899 * class586.height) << 2, 0);
 					}
 				} else {
-					System.out.println(index+", "+models.length);
+					// System.out.println(index+", "+models.length);
 					Model model = (models[1 + index] = (graphic.method7764(class106, i_57_, class586.anInt7777 * 1670182912, (((Entity) this).anInt11616 * -329006609), (((Entity) this).anInt11648 * -1081740099), (((Entity) this).anInt11618 * -2092938715), class586.aClass663_7776, i_56_, 1913622280)));
 					if (null != model && class586.height * 632461899 != 0)
 						model.method1358(0, -(632461899 * class586.height) << 2, 0);

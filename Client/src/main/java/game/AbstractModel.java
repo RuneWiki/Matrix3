@@ -2493,8 +2493,9 @@ public class AbstractModel extends Model {
 				((AbstractModel) this).shadowY[i_817_] = i_813_;
 			}
 		}
-		if (maxVertexUsed == 930)
-			System.out.println(Arrays.toString(alpha));
+		// if (maxVertexUsed == 930) {
+		// 	System.out.println(Arrays.toString(alpha));
+		// }
 		for (int i = 0; i < ((AbstractModel) this).anInt10815; i++) {
 			if (((AbstractModel) this).alpha == null || ((AbstractModel) this).alpha[i] <= 128) {
 				int i_818_ = ((AbstractModel) this).aShortArray10818[i] & 0xffff;

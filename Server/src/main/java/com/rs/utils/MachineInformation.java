@@ -45,21 +45,21 @@ public class MachineInformation {
 	public void sendSuggestions(Player player) {
 		String suggestion = null;
 		String title = null;
-		if (javaVersion < 6) {
-			title = "Client Issues";
-			suggestion = "You seem to be using java version: " + getVersion() + ".<br>You should update to jre6.";
-		}/*
-			 * else if(javaVersionBuild != 0 || javaVersionBuild2 < 31) { title =
-			 * "Outdated Java Version"; suggestion =
-			 * "Your java seems outdated: "+getVersion
-			 * ()+".<br>You should update your to 6.0.31.";
-			 *//*
-				 * }else if (hasApplet && ((availableProcessors <= (x64Arch ? 2 :
-				 * 1)) || ram <= (x64Arch ? 1024 : 512) || cpuClockFrequency <=
-				 * 1500)) { title = "Weak Specs"; suggestion =
-				 * "Your computer seems to have weak specs. You'd better download desktop client for better perfomance."
-				 * ; }
-				 */
+		// if (javaVersion < 6) {
+		// 	title = "Client Issues";
+		// 	suggestion = "You seem to be using java version: " + getVersion() + ".<br>You should update to jre6.";
+		// }
+		/*
+		* else if(javaVersionBuild != 0 || javaVersionBuild2 < 31) { title =
+		* "Outdated Java Version"; suggestion =
+		* "Your java seems outdated: "+getVersion
+		* ()+".<br>You should update your to 6.0.31.";
+		* }else if (hasApplet && ((availableProcessors <= (x64Arch ? 2 :
+		* 1)) || ram <= (x64Arch ? 1024 : 512) || cpuClockFrequency <=
+		* 1500)) { title = "Weak Specs"; suggestion =
+		* "Your computer seems to have weak specs. You'd better download desktop client for better perfomance."
+		* ; }
+		*/
 		if (title != null) {
 			player.getInterfaceManager().sendCentralInterface(405);
 			player.getPackets().sendIComponentText(405, 16, title);

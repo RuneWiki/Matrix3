@@ -1,6 +1,6 @@
 package game;
 
-import vartracker.Cs2Tracker;
+// import vartracker.Cs2Tracker;
 
 /* Class328 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
@@ -109,17 +109,17 @@ public class Class328 {
 				Class86.method1280(var, (byte) 8);
 			int value = (((Cs2Executor) class441).intStack[(((Cs2Executor) class441).intStackPtr -= -1042067865) * 1369304407]);
 			domain.method76(var, value, (short) 255);
-			Cs2Tracker.trackWrite(class441, var, value, class441.anIntArray5124[-1280867039 * ((Cs2Executor) class441).instrPtr] != 0);
+			// Cs2Tracker.trackWrite(class441, var, value, class441.anIntArray5124[-1280867039 * ((Cs2Executor) class441).instrPtr] != 0);
 		} else if (BaseVarType.LONG_T == type) {
 			long value = (((Cs2Executor) class441).longStack[(((Cs2Executor) class441).longStackPtr -= -879214973) * 1097105451]);
 			domain.method78(var, value);
-			Cs2Tracker.trackWrite(class441, var, value, class441.anIntArray5124[-1280867039 * ((Cs2Executor) class441).instrPtr] != 0);
+			// Cs2Tracker.trackWrite(class441, var, value, class441.anIntArray5124[-1280867039 * ((Cs2Executor) class441).instrPtr] != 0);
 		} else if (BaseVarType.STRING_T == type) {
 			if (VarDomainType.CLIENT_CONFIGS == var.domain)
 				Class133_Sub19.method9534(var, (byte) -19);
 			Object value = (((Cs2Executor) class441).objectStack[(((Cs2Executor) class441).objectStackPtr -= 1019967701) * 1628307581]);
 			domain.method80(var, value, -30259456);
-			Cs2Tracker.trackWrite(class441, var, value, class441.anIntArray5124[-1280867039 * ((Cs2Executor) class441).instrPtr] != 0);
+			// Cs2Tracker.trackWrite(class441, var, value, class441.anIntArray5124[-1280867039 * ((Cs2Executor) class441).instrPtr] != 0);
 		} else
 			throw new RuntimeException();
 	}

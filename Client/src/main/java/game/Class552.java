@@ -1,6 +1,6 @@
 package game;
 
-import vartracker.Cs2Tracker;
+// import vartracker.Cs2Tracker;
 
 /* Class552 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
@@ -96,7 +96,7 @@ public class Class552 {
 		VarBitDefinition def = (VarBitDefinition) (((Cs2Executor) class441).current.anObjectArray11384[((Cs2Executor) class441).instrPtr * -1280867039]);
 		IVarDomain domain = ((IVarDomain) ((((Cs2Executor) class441).anIntArray5124[-1280867039 * ((Cs2Executor) class441).instrPtr]) == 0 ? ((Cs2Executor) class441).main_configs_map.get(def.baseVar.domain) : ((Cs2Executor) class441).playerentity_configs_map.get(def.baseVar.domain)));
 		int value = domain.method72(def, 1569860337);
-		Cs2Tracker.trackRead(class441, def, value, class441.anIntArray5124[-1280867039 * ((Cs2Executor) class441).instrPtr] != 0);
+		// Cs2Tracker.trackRead(class441, def, value, class441.anIntArray5124[-1280867039 * ((Cs2Executor) class441).instrPtr] != 0);
 		((Cs2Executor) class441).intStack[(((Cs2Executor) class441).intStackPtr += -1042067865) * 1369304407 - 1] = value;
 	}
 }

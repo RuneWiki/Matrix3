@@ -84,9 +84,9 @@ public class Class159 {
 		RSByteBuffer class572_sub15_12_ = new RSByteBuffer(is);
 		RSByteBuffer class572_sub15_13_ = new RSByteBuffer(is);
 		int i = class572_sub15.readUnsignedByte(1361089325);
-		if (i != 1)
-			System.out.println(new StringBuilder().append("").append(i).toString());
-		else {
+		if (i != 1) {
+			// System.out.println(new StringBuilder().append("").append(i).toString());
+		} else {
 			class572_sub15.readUnsignedByte(768503588);
 			anInt1773 = class572_sub15.readUnsignedByte(178188476);
 			class572_sub15.o = (is.length - 26) * 310393755;
