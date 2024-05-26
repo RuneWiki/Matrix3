@@ -90,16 +90,16 @@ public class Class567 implements Interface67 {
 			file = (File) ((Class567) this).aHashtable6378.get(string);
 		if (file != null) {
 			try {
-				file = new File(file.getCanonicalPath());
-				Class var_class_5_ = Class.forName("java.lang.Runtime");
-				Class var_class_6_ = Class.forName("java.lang.reflect.AccessibleObject");
-				Method method = var_class_6_.getDeclaredMethod("setAccessible", (new Class[] { Boolean.TYPE }));
-				Method method_7_ = (var_class_5_.getDeclaredMethod("load0", new Class[] { Class.forName("java.lang.Class"), Class.forName("java.lang.String") }));
-				method.invoke(method_7_, new Object[] { Boolean.TRUE });
-				method_7_.invoke(Runtime.getRuntime(), new Object[] { var_class, file.getPath() });
-				method.invoke(method_7_, new Object[] { Boolean.FALSE });
-				((Class567) this).aHashtable6379.put(string, var_class);
-			} catch (NoSuchMethodException nosuchmethodexception) {
+			// 	file = new File(file.getCanonicalPath());
+			// 	Class var_class_5_ = Class.forName("java.lang.Runtime");
+			// 	Class var_class_6_ = Class.forName("java.lang.reflect.AccessibleObject");
+			// 	Method method = var_class_6_.getDeclaredMethod("setAccessible", (new Class[] { Boolean.TYPE }));
+			// 	Method method_7_ = (var_class_5_.getDeclaredMethod("load0", new Class[] { Class.forName("java.lang.Class"), Class.forName("java.lang.String") }));
+			// 	method.invoke(method_7_, new Object[] { Boolean.TRUE });
+			// 	method_7_.invoke(Runtime.getRuntime(), new Object[] { var_class, file.getPath() });
+			// 	method.invoke(method_7_, new Object[] { Boolean.FALSE });
+			// 	((Class567) this).aHashtable6379.put(string, var_class);
+			// } catch (NoSuchMethodException nosuchmethodexception) {
 				System.load(file.getPath());
 				((Class567) this).aHashtable6379.put(string, Class550.class);
 			} catch (Throwable throwable) {
