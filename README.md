@@ -8,6 +8,8 @@ Compatible OpenRS2 cache: https://archive.openrs2.org/caches/runescape/484
 
 ## Running the server
 
+First - download the cache and place it under the Server project, inside a new folder `data/cache/`. You should see `data/cache/main_file_cache.dat2`.
+
 Make sure you open the server and the client folder in separate IntelliJ windows. They are separate projects.
 
 I kept the old batch scripts so they still work if you prefer that approach.
